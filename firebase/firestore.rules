@@ -108,9 +108,9 @@ service cloud.firestore {
 
     match /classrooms/{classroomId} {
       allow read: if signedIn() && (resource.data.teacherIds.hasAny([request.auth.uid]) || roleIs('admin'));
-      allow create: if roleIs('teacher')
+      allow create: if roleIs('admin') || (roleIs('teacher')
         && request.resource.data.teacherIds.hasAny([request.auth.uid])
-        && request.resource.data.createdBy == request.auth.uid;
+        && request.resource.data.createdBy == request.auth.uid);
       allow update: if roleIs('admin') || (
         signedIn()
         && resource.data.teacherIds.hasAny([request.auth.uid])
@@ -131,6 +131,12 @@ service cloud.firestore {
       allow read: if signedIn() && (roleIs('admin') || canAccessLearner(resource.data.learnerId));
       allow create: if roleIs('admin');
       allow update, delete: if false;
+    }
+
+    match /blockedQuestions/{questionKey} {
+      allow read: if signedIn();
+      allow create, update: if roleIs('admin');
+      allow delete: if false;
     }
 
     match /contentItems/{contentId} {

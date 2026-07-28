@@ -23,6 +23,8 @@ let adminSchoolFilter = '';
 let adminTeacherFilter = '';
 let adminParentFilter = '';
 let adminStatusFilter = 'active';
+let adminSelectedSchoolId = '';
+let adminModalResolver = null;
 let syncTimer = null;
 let syncedAttemptIds = new Set();
 let syncedReportIds = new Set();
@@ -50,6 +52,25 @@ function firebaseConfig() {
     measurementId: config.firebase.measurementId || undefined
   };
 }
+
+
+const TURKEY_PROVINCES = ['Adana','Adıyaman','Afyonkarahisar','Ağrı','Amasya','Ankara','Antalya','Artvin','Aydın','Balıkesir','Bilecik','Bingöl','Bitlis','Bolu','Burdur','Bursa','Çanakkale','Çankırı','Çorum','Denizli','Diyarbakır','Edirne','Elazığ','Erzincan','Erzurum','Eskişehir','Gaziantep','Giresun','Gümüşhane','Hakkâri','Hatay','Isparta','Mersin','İstanbul','İzmir','Kars','Kastamonu','Kayseri','Kırklareli','Kırşehir','Kocaeli','Konya','Kütahya','Malatya','Manisa','Kahramanmaraş','Mardin','Muğla','Muş','Nevşehir','Niğde','Ordu','Rize','Sakarya','Samsun','Siirt','Sinop','Sivas','Tekirdağ','Tokat','Trabzon','Tunceli','Şanlıurfa','Uşak','Van','Yozgat','Zonguldak','Aksaray','Bayburt','Karaman','Kırıkkale','Batman','Şırnak','Bartın','Ardahan','Iğdır','Yalova','Karabük','Kilis','Osmaniye','Düzce'];
+const DISTRICTS = {
+  'Uşak':['Merkez','Banaz','Eşme','Karahallı','Sivaslı','Ulubey'],
+  'İstanbul':['Adalar','Arnavutköy','Ataşehir','Avcılar','Bağcılar','Bahçelievler','Bakırköy','Başakşehir','Bayrampaşa','Beşiktaş','Beykoz','Beylikdüzü','Beyoğlu','Büyükçekmece','Çatalca','Çekmeköy','Esenler','Esenyurt','Eyüpsultan','Fatih','Gaziosmanpaşa','Güngören','Kadıköy','Kağıthane','Kartal','Küçükçekmece','Maltepe','Pendik','Sancaktepe','Sarıyer','Silivri','Sultanbeyli','Sultangazi','Şile','Şişli','Tuzla','Ümraniye','Üsküdar','Zeytinburnu'],
+  'Ankara':['Altındağ','Çankaya','Etimesgut','Keçiören','Mamak','Sincan','Yenimahalle','Gölbaşı','Pursaklar','Polatlı'],
+  'İzmir':['Aliağa','Balçova','Bayraklı','Bornova','Buca','Çeşme','Çiğli','Gaziemir','Karabağlar','Karşıyaka','Konak','Menemen','Narlıdere','Torbalı','Urla'],
+  'Denizli':['Merkezefendi','Pamukkale','Acıpayam','Buldan','Çal','Çivril','Honaz','Sarayköy','Tavas']
+};
+function provinceOptions(selected=''){ return TURKEY_PROVINCES.map(x=>`<option value="${esc(x)}" ${x===selected?'selected':''}>${esc(x)}</option>`).join(''); }
+function districtOptions(city,selected=''){ const list=DISTRICTS[city]||[]; return `<option value="">İlçe seçin</option>${list.map(x=>`<option value="${esc(x)}" ${x===selected?'selected':''}>${esc(x)}</option>`).join('')}${selected&&!list.includes(selected)?`<option value="${esc(selected)}" selected>${esc(selected)}</option>`:''}`; }
+function openAdminModal({title,subtitle='',body,submitText='Kaydet'}){
+  return new Promise((resolve)=>{
+    adminModalResolver=resolve;
+    document.body.insertAdjacentHTML('beforeend',`<div class="admin-modal-backdrop" id="admin-modal"><section class="admin-modal" role="dialog" aria-modal="true"><div class="admin-modal-head"><div><span class="badge orange">Yönetim</span><h2>${esc(title)}</h2>${subtitle?`<p>${esc(subtitle)}</p>`:''}</div><button class="icon-button" data-platform-action="admin-modal-close" aria-label="Kapat">✕</button></div><div class="admin-modal-body">${body}</div><div class="admin-modal-actions"><button class="secondary-button" data-platform-action="admin-modal-close">Vazgeç</button><button class="primary-button" data-platform-action="admin-modal-submit">${esc(submitText)}</button></div></section></div>`);
+  });
+}
+function closeAdminModal(result=null){ document.querySelector('#admin-modal')?.remove(); const resolve=adminModalResolver; adminModalResolver=null; resolve?.(result); }
 
 function studentEmail(code) {
   return `${String(code).trim().toLowerCase()}@${config.studentAuthDomain}`;
@@ -198,7 +219,11 @@ async function createStudentAuth({ name, grade, age, classroomIds=[], parentIds=
       createdAt:serverTimestamp(), updatedAt:serverTimestamp(), schemaVersion:5
     }),
     setDoc(doc(db,'learnerStates',learnerId),defaultCloudState(learnerId,name,grade,age)),
-    setDoc(doc(db,'learnerMetrics',learnerId),emptyMetrics(learnerId,name,grade,classroomIds))
+    setDoc(doc(db,'learnerMetrics',learnerId),emptyMetrics(learnerId,name,grade,classroomIds)),
+    setDoc(doc(db,'leaderboards',learnerId),{
+      learnerId, displayName:name||'Öğrenci', grade:Number(grade||0), age:Number(age||0),
+      xp:0, accuracy:0, totalQuestions:0, updatedAt:serverTimestamp()
+    },{merge:true})
   ]);
   return { learnerId, code, pin, name, grade:Number(grade), age:Number(age) };
 }
@@ -376,31 +401,38 @@ function adminOverview(accounts,schools,classrooms,learners) {
 }
 
 function schoolsModule(schools,classrooms,accounts,learners) {
+  if (adminSelectedSchoolId) {
+    const school=schools.find(x=>x.id===adminSelectedSchoolId);
+    if (!school) adminSelectedSchoolId='';
+    else {
+      const rooms=classrooms.filter(x=>x.schoolId===school.id && (x.status||'active')!=='deleted');
+      const teachers=accounts.filter(x=>x.role==='teacher'&&(x.schoolIds||[]).includes(school.id));
+      const roomIds=rooms.map(x=>x.id);
+      const students=learners.filter(x=>x.schoolId===school.id||(x.classroomIds||[]).some(id=>roomIds.includes(id)));
+      return `<div class="school-detail-head"><button class="secondary-button" data-platform-action="admin-school-back">← Okullar</button><div><span class="badge orange">Okul detayı</span><h3>${esc(school.name)}</h3><p>${esc([school.city,school.district].filter(Boolean).join(' / ')||'Konum belirtilmedi')}</p></div></div><div class="platform-metric-grid"><div class="metric-card"><div class="metric-label">Sınıf</div><div class="metric-value">${rooms.length}</div></div><div class="metric-card"><div class="metric-label">Öğretmen</div><div class="metric-value">${teachers.length}</div></div><div class="metric-card"><div class="metric-label">Öğrenci</div><div class="metric-value">${students.length}</div></div></div><div class="button-row school-detail-actions"><button class="primary-button" data-platform-action="admin-create-classroom" data-school-id="${school.id}">+ Yeni sınıf</button><button class="secondary-button" data-platform-action="admin-edit-school" data-id="${school.id}">Okulu düzenle</button></div><div class="admin-card-list">${rooms.length?rooms.map(room=>`<article class="admin-entity-card"><div class="entity-icon">🏫</div><div class="entity-main"><h4>${esc(room.name)}</h4><p>${room.grade||'—'}. sınıf · ${(room.teacherIds||[]).length} öğretmen · ${(room.studentIds||[]).length} öğrenci</p></div><div class="entity-actions"><button class="secondary-button" data-platform-action="admin-edit-classroom" data-id="${room.id}">Düzenle</button></div></article>`).join(''):'<div class="empty-state">Bu okulda henüz sınıf yok.</div>'}</div>`;
+    }
+  }
   const rows=filterRows(schools,['name','city','district']);
-  return `<div class="section-header"><div><h3>Okullar</h3><p>Okula tıklayarak sınıf, öğretmen ve öğrenci silsilesine ilerleyin.</p></div><button class="primary-button" data-platform-action="admin-create-school">+ Yeni okul</button></div><div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Okul</th><th>Konum</th><th>Sınıf</th><th>Öğretmen</th><th>Öğrenci</th><th>Durum</th><th>İşlem</th></tr></thead><tbody>${rows.map(row=>{const roomIds=classrooms.filter(c=>c.schoolId===row.id).map(c=>c.id);const teacherCount=accounts.filter(a=>a.role==='teacher'&&(a.schoolIds||[]).includes(row.id)).length;const studentCount=learners.filter(l=>l.schoolId===row.id||(l.classroomIds||[]).some(id=>roomIds.includes(id))).length;return `<tr><td><button class="text-button" data-platform-action="admin-drill-school" data-id="${row.id}"><strong>${esc(row.name)}</strong></button></td><td>${esc([row.city,row.district].filter(Boolean).join(' / ')||'—')}</td><td>${roomIds.length}</td><td>${teacherCount}</td><td>${studentCount}</td><td>${statusText(row.status)}</td><td><div class="button-row compact"><button class="text-button" data-platform-action="admin-edit-school" data-id="${row.id}">Düzenle</button><button class="text-button" data-platform-action="admin-toggle-record" data-collection="organizations" data-id="${row.id}" data-status="${row.status||'active'}">${(row.status||'active')==='active'?'Pasife al':'Aktifleştir'}</button><button class="text-button danger" data-platform-action="admin-delete-record" data-collection="organizations" data-id="${row.id}">Sil</button></div></td></tr>`}).join('')}</tbody></table></div>`;
+  return `<div class="section-header"><div><h3>Okullar</h3><p>Okula dokun; okul özeti, sınıflar, öğretmenler ve öğrenciler tek ekranda açılsın.</p></div><button class="primary-button" data-platform-action="admin-create-school">+ Yeni okul</button></div><div class="admin-card-list">${rows.map(row=>{const roomIds=classrooms.filter(c=>c.schoolId===row.id).map(c=>c.id);const teacherCount=accounts.filter(a=>a.role==='teacher'&&(a.schoolIds||[]).includes(row.id)).length;const studentCount=learners.filter(l=>l.schoolId===row.id||(l.classroomIds||[]).some(id=>roomIds.includes(id))).length;return `<article class="admin-entity-card clickable" data-platform-action="admin-drill-school" data-id="${row.id}"><div class="entity-icon">🏫</div><div class="entity-main"><h4>${esc(row.name)}</h4><p>${esc([row.city,row.district].filter(Boolean).join(' / ')||'Konum belirtilmedi')}</p><div class="entity-stats"><span>${roomIds.length} sınıf</span><span>${teacherCount} öğretmen</span><span>${studentCount} öğrenci</span></div></div><span class="entity-chevron">›</span></article>`}).join('')||'<div class="empty-state">Henüz okul kaydı yok.</div>'}</div>`;
 }
 
 function classroomsModule(classrooms,schools,accounts,learners) {
   const schoolMap=new Map(schools.map(x=>[x.id,x.name]));
   const rows=filterRows(classrooms,['name']).filter(r=>!adminSchoolFilter||r.schoolId===adminSchoolFilter);
-  return `<div class="section-header"><div><h3>Sınıflar</h3><p>Okul, öğretmen ve öğrenci bağlantılarını yönetin.</p></div><button class="primary-button" data-platform-action="admin-create-classroom">+ Yeni sınıf</button></div><div class="form-field"><label for="admin-school-filter">Okula göre filtrele</label><select id="admin-school-filter"><option value="">Tüm okullar</option>${schools.map(s=>`<option value="${s.id}" ${adminSchoolFilter===s.id?'selected':''}>${esc(s.name)}</option>`).join('')}</select></div><div class="analytics-table-wrap mt-18"><table class="analytics-table"><thead><tr><th>Sınıf</th><th>Okul</th><th>Seviye</th><th>Öğretmen</th><th>Öğrenci</th><th>Durum</th><th>İşlem</th></tr></thead><tbody>${rows.map(row=>`<tr><td><strong>${esc(row.name)}</strong></td><td>${esc(schoolMap.get(row.schoolId)||'Bağımsız')}</td><td>${row.grade||'—'}</td><td>${(row.teacherIds||[]).length}</td><td>${(row.studentIds||[]).length}</td><td>${statusText(row.status)}</td><td><div class="button-row compact"><button class="text-button" data-platform-action="admin-edit-classroom" data-id="${row.id}">Düzenle</button><button class="text-button" data-platform-action="admin-toggle-record" data-collection="classrooms" data-id="${row.id}" data-status="${row.status||'active'}">${(row.status||'active')==='active'?'Pasife al':'Aktifleştir'}</button><button class="text-button danger" data-platform-action="admin-delete-record" data-collection="classrooms" data-id="${row.id}">Sil</button></div></td></tr>`).join('')}</tbody></table></div>`;
+  return `<div class="section-header"><div><h3>Sınıflar</h3><p>Sınıfları okul, öğretmen ve öğrenci sayılarıyla mobil kartlarda yönetin.</p></div><button class="primary-button" data-platform-action="admin-create-classroom">+ Yeni sınıf</button></div><div class="form-field"><label for="admin-school-filter">Okula göre filtrele</label><select id="admin-school-filter"><option value="">Tüm okullar</option>${schools.map(s=>`<option value="${s.id}" ${adminSchoolFilter===s.id?'selected':''}>${esc(s.name)}</option>`).join('')}</select></div><div class="admin-card-list">${rows.map(row=>`<article class="admin-entity-card"><div class="entity-icon">🧑‍🏫</div><div class="entity-main"><h4>${esc(row.name)}</h4><p>${esc(schoolMap.get(row.schoolId)||'Bağımsız')} · ${row.grade||'—'}. sınıf</p><div class="entity-stats"><span>${(row.teacherIds||[]).length} öğretmen</span><span>${(row.studentIds||[]).length} öğrenci</span><span>${statusText(row.status)}</span></div></div><div class="entity-actions"><button class="secondary-button" data-platform-action="admin-edit-classroom" data-id="${row.id}">Düzenle</button></div></article>`).join('')||'<div class="empty-state">Sınıf bulunamadı.</div>'}</div>`;
 }
 
 function adultsModule(role,accounts,schools,classrooms,learners) {
-  const schoolMap=new Map(schools.map(x=>[x.id,x.name]));
-  const rows=filterRows(accounts.filter(x=>x.role===role),['displayName','email']);
+  const schoolMap=new Map(schools.map(x=>[x.id,x.name])); const rows=filterRows(accounts.filter(x=>x.role===role),['displayName','email']);
   const title=role==='teacher'?'Öğretmenler':'Veliler';
-  return `<div class="section-header"><div><h3>${title}</h3><p>${role==='teacher'?'Okul, sınıf ve öğrenci bağlantılarını yönetin.':'Bağlı çocukları ve hesap durumunu yönetin.'}</p></div><button class="primary-button" data-platform-action="admin-create-adult" data-role="${role}">+ Yeni ${role==='teacher'?'öğretmen':'veli'}</button></div><div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Ad Soyad</th><th>E-posta</th><th>${role==='teacher'?'Okullar / Sınıflar':'Çocuklar'}</th><th>Durum</th><th>İşlem</th></tr></thead><tbody>${rows.map(row=>{const rel=role==='teacher'?`${(row.schoolIds||[]).map(id=>schoolMap.get(id)).filter(Boolean).join(', ')||'—'}<br><small>${classrooms.filter(c=>(c.teacherIds||[]).includes(row.id)).map(c=>c.name).join(', ')||'Sınıf yok'}</small>`:learners.filter(l=>(l.parentIds||[]).includes(row.id)).map(l=>l.name).join(', ')||'Çocuk bağlantısı yok';return `<tr><td><strong>${esc(row.displayName||'—')}</strong></td><td>${esc(row.email||'—')}</td><td>${rel}</td><td>${statusText(row.status)}</td><td><div class="button-row compact"><button class="text-button" data-platform-action="admin-edit-adult" data-id="${row.id}">Düzenle</button><button class="text-button" data-platform-action="admin-reset-password" data-email="${esc(row.email||'')}">Şifre yenile</button><button class="text-button" data-platform-action="admin-toggle-record" data-collection="accounts" data-id="${row.id}" data-status="${row.status||'active'}">${(row.status||'active')==='active'?'Pasife al':'Aktifleştir'}</button><button class="text-button danger" data-platform-action="admin-delete-record" data-collection="accounts" data-id="${row.id}">Sil</button></div></td></tr>`}).join('')}</tbody></table></div>`;
+  return `<div class="section-header"><div><h3>${title}</h3><p>${role==='teacher'?'Okul, sınıf ve öğrenci bağlantılarını yönetin.':'Bağlı çocukları ve hesap durumunu yönetin.'}</p></div><button class="primary-button" data-platform-action="admin-create-adult" data-role="${role}">+ Yeni ${role==='teacher'?'öğretmen':'veli'}</button></div><div class="admin-card-list">${rows.map(row=>{const relation=role==='teacher'?`${(row.schoolIds||[]).map(id=>schoolMap.get(id)).filter(Boolean).join(', ')||'Okul bağlantısı yok'} · ${classrooms.filter(c=>(c.teacherIds||[]).includes(row.id)).length} sınıf`:`${learners.filter(l=>(l.parentIds||[]).includes(row.id)).length} öğrenci`;return `<article class="admin-entity-card"><div class="entity-icon">${role==='teacher'?'👩‍🏫':'👨‍👩‍👧'}</div><div class="entity-main"><h4>${esc(row.displayName||'—')}</h4><p>${esc(row.email||'—')}</p><div class="entity-stats"><span>${esc(relation)}</span><span>${statusText(row.status)}</span></div></div><div class="entity-actions"><button class="secondary-button" data-platform-action="admin-edit-adult" data-id="${row.id}">Düzenle</button><button class="icon-button" data-platform-action="admin-reset-password" data-email="${esc(row.email||'')}" title="Şifre yenile">🔑</button></div></article>`}).join('')||'<div class="empty-state">Kayıt bulunamadı.</div>'}</div>`;
 }
 
 function learnersModule(learners,schools,classrooms,accounts) {
   const schoolMap=new Map(schools.map(x=>[x.id,x.name])); const roomMap=new Map(classrooms.map(x=>[x.id,x.name])); const accountMap=new Map(accounts.map(x=>[x.id,x.displayName||x.email]));
-  let rows=filterRows(learners,['name','studentCode']);
-  if(adminSchoolFilter) rows=rows.filter(l=>l.schoolId===adminSchoolFilter||(l.classroomIds||[]).some(id=>classrooms.find(c=>c.id===id)?.schoolId===adminSchoolFilter));
-  if(adminTeacherFilter) rows=rows.filter(l=>(l.teacherIds||[]).includes(adminTeacherFilter));
-  if(adminParentFilter) rows=rows.filter(l=>(l.parentIds||[]).includes(adminParentFilter));
+  let rows=filterRows(learners,['name','studentCode']); if(adminSchoolFilter) rows=rows.filter(l=>l.schoolId===adminSchoolFilter||(l.classroomIds||[]).some(id=>classrooms.find(c=>c.id===id)?.schoolId===adminSchoolFilter)); if(adminTeacherFilter) rows=rows.filter(l=>(l.teacherIds||[]).includes(adminTeacherFilter)); if(adminParentFilter) rows=rows.filter(l=>(l.parentIds||[]).includes(adminParentFilter));
   const teachers=accounts.filter(a=>a.role==='teacher'&&(a.status||'active')!=='deleted'); const parents=accounts.filter(a=>a.role==='parent'&&(a.status||'active')!=='deleted');
-  return `<div class="section-header"><div><h3>Öğrenciler</h3><p>Bağımsız veya okul, sınıf, öğretmen ve veli bağlantılı öğrencileri yönetin.</p></div><div class="button-row"><button class="secondary-button" data-platform-action="print-student-list">PDF / Yazdır</button><button class="primary-button" data-platform-action="admin-create-learner">+ Yeni öğrenci</button></div></div><div class="form-grid"><div class="form-field"><label for="admin-school-filter">Okul</label><select id="admin-school-filter"><option value="">Tümü</option>${schools.map(s=>`<option value="${s.id}" ${adminSchoolFilter===s.id?'selected':''}>${esc(s.name)}</option>`).join('')}</select></div><div class="form-field"><label for="admin-teacher-filter">Öğretmen</label><select id="admin-teacher-filter"><option value="">Tümü</option>${teachers.map(a=>`<option value="${a.id}" ${adminTeacherFilter===a.id?'selected':''}>${esc(a.displayName)}</option>`).join('')}</select></div><div class="form-field"><label for="admin-parent-filter">Veli</label><select id="admin-parent-filter"><option value="">Tümü</option>${parents.map(a=>`<option value="${a.id}" ${adminParentFilter===a.id?'selected':''}>${esc(a.displayName)}</option>`).join('')}</select></div></div><div class="analytics-table-wrap mt-18"><table class="analytics-table"><thead><tr><th>Öğrenci</th><th>Kod / PIN</th><th>Okul / Sınıf</th><th>Öğretmen</th><th>Veli</th><th>Durum</th><th>İşlem</th></tr></thead><tbody>${rows.map(l=>`<tr><td><strong>${esc(l.name)}</strong><br><small>${l.grade}. sınıf • ${l.age||'—'} yaş</small></td><td><code>${esc(l.studentCode||'—')}</code><br><strong>${esc(l.accessPin||'Kayıtlı değil')}</strong></td><td>${esc(schoolMap.get(l.schoolId)||'Bağımsız')}<br><small>${esc((l.classroomIds||[]).map(id=>roomMap.get(id)).filter(Boolean).join(', ')||'Sınıfsız')}</small></td><td>${esc((l.teacherIds||[]).map(id=>accountMap.get(id)).filter(Boolean).join(', ')||'Bağlı değil')}</td><td>${esc((l.parentIds||[]).map(id=>accountMap.get(id)).filter(Boolean).join(', ')||'Bağlı değil')}</td><td>${statusText(l.status)}</td><td><div class="button-row compact"><button class="text-button" data-platform-action="admin-edit-learner" data-id="${l.id}">Düzenle</button><button class="text-button" data-platform-action="admin-reset-pin" data-id="${l.id}">PIN yenile</button><button class="text-button" data-platform-action="admin-custom-pin" data-id="${l.id}">Özel PIN</button><button class="text-button" data-platform-action="analysis-learner" data-learner-id="${l.id}">Analiz</button><button class="text-button" data-platform-action="admin-toggle-record" data-collection="learners" data-id="${l.id}" data-status="${l.status||'active'}">${(l.status||'active')==='active'?'Pasife al':'Aktifleştir'}</button><button class="text-button danger" data-platform-action="admin-delete-record" data-collection="learners" data-id="${l.id}">Sil</button></div></td></tr>`).join('')}</tbody></table></div>`;
+  return `<div class="section-header"><div><h3>Öğrenciler</h3><p>Öğrenci bilgileri ve bağlantıları mobil kartlarda okunabilir.</p></div><div class="button-row"><button class="secondary-button" data-platform-action="print-student-list">PDF / Yazdır</button><button class="primary-button" data-platform-action="admin-create-learner">+ Yeni öğrenci</button></div></div><div class="form-grid"><div class="form-field"><label for="admin-school-filter">Okul</label><select id="admin-school-filter"><option value="">Tümü</option>${schools.map(s=>`<option value="${s.id}" ${adminSchoolFilter===s.id?'selected':''}>${esc(s.name)}</option>`).join('')}</select></div><div class="form-field"><label for="admin-teacher-filter">Öğretmen</label><select id="admin-teacher-filter"><option value="">Tümü</option>${teachers.map(a=>`<option value="${a.id}" ${adminTeacherFilter===a.id?'selected':''}>${esc(a.displayName)}</option>`).join('')}</select></div><div class="form-field"><label for="admin-parent-filter">Veli</label><select id="admin-parent-filter"><option value="">Tümü</option>${parents.map(a=>`<option value="${a.id}" ${adminParentFilter===a.id?'selected':''}>${esc(a.displayName)}</option>`).join('')}</select></div></div><div class="admin-card-list">${rows.map(l=>`<article class="admin-entity-card"><div class="entity-icon">🎓</div><div class="entity-main"><h4>${esc(l.name)}</h4><p>${l.grade}. sınıf · ${l.age||'—'} yaş · ${esc(schoolMap.get(l.schoolId)||'Bağımsız')}</p><div class="credential-inline"><code>${esc(l.studentCode||'—')}</code><strong>PIN: ${esc(l.accessPin||'Kayıtlı değil')}</strong></div><div class="entity-stats"><span>${esc((l.classroomIds||[]).map(id=>roomMap.get(id)).filter(Boolean).join(', ')||'Sınıfsız')}</span><span>${(l.teacherIds||[]).length} öğretmen</span><span>${(l.parentIds||[]).length} veli</span></div></div><div class="entity-actions learner-actions" data-feature="learner-actions"><button class="secondary-button" data-platform-action="admin-edit-learner" data-id="${l.id}" data-feature="learner-edit">Düzenle</button><button class="secondary-button" data-platform-action="admin-reset-pin" data-id="${l.id}" data-feature="learner-random-pin">Yeni PIN</button><button class="secondary-button" data-platform-action="admin-custom-pin" data-id="${l.id}" data-feature="learner-custom-pin">Özel PIN</button><button class="secondary-button" data-platform-action="admin-edit-learner" data-id="${l.id}" data-feature="learner-links">Sınıf / Bağlantılar</button><button class="secondary-button" data-platform-action="analysis-learner" data-learner-id="${l.id}" data-feature="learner-analysis">Analiz</button><button class="secondary-button" data-platform-action="play-learner" data-learner-id="${l.id}" data-feature="learner-preview">Oyun görünümü</button><button class="secondary-button" data-platform-action="admin-toggle-record" data-collection="learners" data-id="${l.id}" data-status="${l.status||'active'}" data-feature="learner-toggle-status">${(l.status||'active')==='active'?'Pasife al':'Aktif et'}</button><button class="danger-button" data-platform-action="admin-delete-record" data-collection="learners" data-id="${l.id}" data-feature="learner-delete">Sil</button></div></article>`).join('')||'<div class="empty-state">Öğrenci bulunamadı.</div>'}</div>`;
 }
 
 function reportReasonText(reason) {
@@ -601,6 +633,40 @@ async function bulkImport() {
 }
 
 
+
+async function ensureLeaderboardCoverage() {
+  if (account?.role !== 'admin') return;
+  try {
+    const [learnerSnap, metricSnap, boardSnap] = await Promise.all([
+      getDocs(query(collection(db,'learners'),limit(500))),
+      getDocs(query(collection(db,'learnerMetrics'),limit(500))),
+      getDocs(query(collection(db,'leaderboards'),limit(500)))
+    ]);
+    const metricsById = new Map(metricSnap.docs.map(x => [x.id, x.data()]));
+    const existing = new Set(boardSnap.docs.map(x => x.id));
+    const missing = learnerSnap.docs.filter(x => !existing.has(x.id) && (x.data().status || 'active') !== 'deleted');
+    if (!missing.length) return;
+    const batch = writeBatch(db);
+    for (const learnerDoc of missing) {
+      const learner = learnerDoc.data();
+      const metrics = metricsById.get(learnerDoc.id) || {};
+      batch.set(doc(db,'leaderboards',learnerDoc.id),{
+        learnerId: learnerDoc.id,
+        displayName: learner.name || 'Öğrenci',
+        grade: Number(learner.grade || 0),
+        age: Number(learner.age || 0),
+        xp: Number(metrics.xp || 0),
+        accuracy: Number(metrics.accuracy || 0),
+        totalQuestions: Number(metrics.totalQuestions || 0),
+        updatedAt: serverTimestamp()
+      },{merge:true});
+    }
+    await batch.commit();
+  } catch (error) {
+    console.warn('Sıralama kapsamı tamamlanamadı:', error);
+  }
+}
+
 async function loadPublicRankings() {
   try {
     const snap=await getDocs(query(collection(db,'leaderboards'),limit(200)));
@@ -609,11 +675,12 @@ async function loadPublicRankings() {
 }
 
 async function loadLearnerState(learnerId) {
-  const [learnerSnap,stateSnap,attemptSnap,reportSnap]=await Promise.all([
+  const [learnerSnap,stateSnap,attemptSnap,reportSnap,blockedSnap]=await Promise.all([
     getDoc(doc(db,'learners',learnerId)),
     getDoc(doc(db,'learnerStates',learnerId)),
     getDocs(query(collection(db,'attempts'),where('learnerId','==',learnerId))),
-    getDocs(query(collection(db,'questionReports'),where('learnerId','==',learnerId),limit(500)))
+    getDocs(query(collection(db,'questionReports'),where('learnerId','==',learnerId),limit(500))),
+    getDocs(query(collection(db,'blockedQuestions'),limit(1000)))
   ]);
   if (!learnerSnap.exists()) throw new Error('Öğrenci kaydı bulunamadı.');
   const learner={id:learnerSnap.id,...learnerSnap.data()};
@@ -622,7 +689,9 @@ async function loadLearnerState(learnerId) {
   const reports=reportSnap.docs.map(x=>x.data()).sort((a,b)=>String(a.createdAt||'').localeCompare(String(b.createdAt||'')));
   syncedAttemptIds=new Set(attempts.map(x=>x.id));
   syncedReportIds=new Set(reports.map(x=>x.id));
-  return {...base,version:5,activeProfileId:learnerId,profiles:[{...defaultProfile(learnerId,learner.name,learner.grade,learner.age),...(base.profiles?.[0]||{}),id:learnerId,name:learner.name,grade:learner.grade,age:learner.age,examPlans:effectiveExamPlans(learner),examPlansCustomized:Boolean(learner.examPlansCustomized),examField:learner.examField||''}],attempts,questionReports:reports};
+  const globalBlocked=Object.fromEntries(blockedSnap.docs.map(x=>[x.id,true]));
+  const mergedBlocked={...(base.blockedQuestionKeys||{}),[learnerId]:{...(base.blockedQuestionKeys?.[learnerId]||{}),...globalBlocked}};
+  return {...base,blockedQuestionKeys:mergedBlocked,version:5,activeProfileId:learnerId,profiles:[{...defaultProfile(learnerId,learner.name,learner.grade,learner.age),...(base.profiles?.[0]||{}),id:learnerId,name:learner.name,grade:learner.grade,age:learner.age,examPlans:effectiveExamPlans(learner),examPlansCustomized:Boolean(learner.examPlansCustomized),examField:learner.examField||''}],attempts,questionReports:reports};
 }
 
 function computeMetrics(state,learner) {
@@ -658,7 +727,7 @@ async function syncStateNow(learnerId,state) {
   }
   const metrics=computeMetrics(state,learner);
   batch.set(doc(db,'learnerMetrics',learnerId),metrics,{merge:true});
-  batch.set(doc(db,'leaderboards',learnerId),{learnerId,displayName:learner.name||'Öğrenci',grade:Number(learner.grade||0),xp:Number(state.profiles?.[0]?.xp||0),accuracy:metrics.accuracy,totalQuestions:metrics.totalQuestions,updatedAt:serverTimestamp()},{merge:true});
+  batch.set(doc(db,'leaderboards',learnerId),{learnerId,displayName:learner.name||'Öğrenci',grade:Number(learner.grade||0),age:Number(learner.age||0),xp:Number(state.profiles?.[0]?.xp||0),accuracy:metrics.accuracy,totalQuestions:metrics.totalQuestions,updatedAt:serverTimestamp()},{merge:true});
   batch.update(doc(db,'learners',learnerId),{updatedAt:serverTimestamp(),lastActiveAt:serverTimestamp()});
   await batch.commit();
 }
@@ -690,6 +759,7 @@ async function routeSignedIn() {
     if (!learners.some(x=>x.id===playLearner)) { sessionStorage.removeItem('kuzenler-play-learner'); toast('Bu öğrenciye erişim yetkiniz yok.','error'); }
     else { await launchLearner(playLearner,true); return; }
   }
+  if (account.role === 'admin') await ensureLeaderboardCoverage();
   await renderAdultPortal();
 }
 
@@ -746,24 +816,27 @@ async function handleAction(target) {
     }
     if (action==='portal' || action==='retry-route') await routeSignedIn();
     if (action==='admin-view') { sessionStorage.setItem('kuzenler-admin-view',target.dataset.view||'admin'); await renderAdultPortal(); }
+    if (action==='admin-modal-close') { closeAdminModal(null); return; }
+    if (action==='admin-modal-submit') { const modal=document.querySelector('#admin-modal'); const payload={}; if(modal?.querySelector('input[name="new-record-type"]')) payload.type=modal.querySelector('input[name="new-record-type"]:checked')?.value; if(modal?.querySelector('#modal-school-name')) payload.name=modal.querySelector('#modal-school-name').value.trim(),payload.city=modal.querySelector('#modal-school-city').value,payload.district=modal.querySelector('#modal-school-district').value,payload.type=modal.querySelector('#modal-school-type').value,payload.phone=modal.querySelector('#modal-school-phone').value.trim(),payload.address=modal.querySelector('#modal-school-address').value.trim(); if(modal?.querySelector('#modal-class-name')) payload.name=modal.querySelector('#modal-class-name').value.trim(),payload.schoolId=modal.querySelector('#modal-class-school').value,payload.grade=modal.querySelector('#modal-class-grade').value,payload.academicYear=modal.querySelector('#modal-class-year').value.trim(),payload.teacherIds=[...modal.querySelectorAll('input[name="modal-class-teacher"]:checked')].map(x=>x.value); if(!payload.name){toast('Ad alanı zorunludur.','error');return;} closeAdminModal(payload); return; }
     if (action==='admin-section') { adminSection=target.dataset.section||'overview'; sessionStorage.setItem('kuzenler-admin-section',adminSection); await renderAdultPortal(); }
     if (action==='admin-apply-filter') { adminSearch=document.querySelector('#admin-search')?.value||''; adminStatusFilter=document.querySelector('#admin-status-filter')?.value||'all'; adminSchoolFilter=document.querySelector('#admin-school-filter')?.value||adminSchoolFilter; adminTeacherFilter=document.querySelector('#admin-teacher-filter')?.value||''; adminParentFilter=document.querySelector('#admin-parent-filter')?.value||''; await renderAdultPortal(); }
-    if (action==='admin-new-menu') { const choice=prompt('Yeni kayıt türü: okul, sınıf, öğretmen, veli, öğrenci')?.toLocaleLowerCase('tr-TR'); if(choice==='okul') await createSchoolByAdmin(); else if(choice==='sınıf'||choice==='sinif') await createClassroomByAdmin(await allSchoolsForAdmin()); else if(choice==='öğretmen'||choice==='ogretmen') await createAdultByAdmin('teacher'); else if(choice==='veli') await createAdultByAdmin('parent'); else if(choice==='öğrenci'||choice==='ogrenci') await createLearnerByAdmin(await allSchoolsForAdmin(),await classroomsForTeacher(),await allAccountsForAdmin()); if(choice) await renderAdultPortal(); }
+    if (action==='admin-new-menu') { const choice=await openAdminModal({title:'Yeni kayıt',subtitle:'Oluşturmak istediğiniz kayıt türünü seçin.',submitText:'Devam et',body:`<div class="new-record-grid"><label><input type="radio" name="new-record-type" value="okul" checked><span>🏫 Okul</span></label><label><input type="radio" name="new-record-type" value="sınıf"><span>🧑‍🏫 Sınıf</span></label><label><input type="radio" name="new-record-type" value="öğretmen"><span>👩‍🏫 Öğretmen</span></label><label><input type="radio" name="new-record-type" value="veli"><span>👨‍👩‍👧 Veli</span></label><label><input type="radio" name="new-record-type" value="öğrenci"><span>🎓 Öğrenci</span></label></div>`}); const normalized=choice?.type||choice; const type=normalized||document.querySelector('input[name="new-record-type"]:checked')?.value; const choiceText=type?.toLocaleLowerCase?.('tr-TR'); if(choiceText==='okul') await createSchoolByAdmin(); else if(choiceText==='sınıf'||choiceText==='sinif') await createClassroomByAdmin(await allSchoolsForAdmin()); else if(choiceText==='öğretmen'||choiceText==='ogretmen') await createAdultByAdmin('teacher'); else if(choiceText==='veli') await createAdultByAdmin('parent'); else if(choiceText==='öğrenci'||choiceText==='ogrenci') await createLearnerByAdmin(await allSchoolsForAdmin(),await classroomsForTeacher(),await allAccountsForAdmin()); if(choiceText) await renderAdultPortal(); }
     if (action==='admin-create-school') { await createSchoolByAdmin(); await renderAdultPortal(); }
-    if (action==='admin-create-classroom') { await createClassroomByAdmin(await allSchoolsForAdmin()); await renderAdultPortal(); }
+    if (action==='admin-create-classroom') { await createClassroomByAdmin(await allSchoolsForAdmin(),target.dataset.schoolId||adminSelectedSchoolId); await renderAdultPortal(); }
     if (action==='admin-create-adult') { await createAdultByAdmin(target.dataset.role); await renderAdultPortal(); }
     if (action==='admin-create-learner') { await createLearnerByAdmin(await allSchoolsForAdmin(),await classroomsForTeacher(),await allAccountsForAdmin()); await renderAdultPortal(); }
     if (action==='admin-edit-learner') { const learners=await accessibleLearners(); const row=learners.find(x=>x.id===target.dataset.id); if(!row) throw new Error('Öğrenci bulunamadı.'); await editLearnerByAdmin(row,await allSchoolsForAdmin(),await classroomsForTeacher(),await allAccountsForAdmin()); await renderAdultPortal(); }
     if (action==='admin-reset-pin' || action==='admin-custom-pin') { const learners=await accessibleLearners(); const row=learners.find(x=>x.id===target.dataset.id); if(!row) throw new Error('Öğrenci bulunamadı.'); const pin=action==='admin-reset-pin'?randomPin():prompt('Dört haneli özel PIN:')?.trim(); if(!pin) return; await changeStudentPin(row,pin); toast(`Yeni PIN: ${pin}`,'success'); await renderAdultPortal(); }
     if (action==='admin-edit-adult') { const rows=await allAccountsForAdmin(); const row=rows.find(x=>x.id===target.dataset.id); if(!row) throw new Error('Hesap bulunamadı.'); await editAdultByAdmin(row,await allSchoolsForAdmin()); await renderAdultPortal(); }
     if (action==='admin-reset-password') { const email=target.dataset.email; if(!email) throw new Error('E-posta bulunamadı.'); await sendPasswordResetEmail(auth,email); toast('Şifre yenileme e-postası gönderildi.','success'); }
-    if (action==='admin-edit-school') { const schools=await allSchoolsForAdmin(); const row=schools.find(x=>x.id===target.dataset.id); const name=prompt('Okul adı:',row?.name||'')?.trim(); if(name) { const city=prompt('İl:',row?.city||'')||''; const district=prompt('İlçe:',row?.district||'')||''; await updateDoc(doc(db,'organizations',target.dataset.id),{name,city,district,updatedAt:serverTimestamp()}); await renderAdultPortal(); } }
-    if (action==='admin-edit-classroom') { const rooms=await classroomsForTeacher(); const row=rooms.find(x=>x.id===target.dataset.id); const name=prompt('Sınıf adı:',row?.name||'')?.trim(); if(name){ const grade=Number(prompt('Seviye:',String(row?.grade||4))); const schoolId=prompt('Okul kimliği:',row?.schoolId||'')||''; await updateDoc(doc(db,'classrooms',target.dataset.id),{name,grade,schoolId,updatedAt:serverTimestamp()}); await renderAdultPortal(); } }
+    if (action==='admin-edit-school') { const schools=await allSchoolsForAdmin(); const row=schools.find(x=>x.id===target.dataset.id); if(row) await createSchoolByAdmin(row); await renderAdultPortal(); }
+    if (action==='admin-edit-classroom') { const rooms=await classroomsForTeacher(); const row=rooms.find(x=>x.id===target.dataset.id); if(row) await createClassroomByAdmin(await allSchoolsForAdmin(),row.schoolId,row); await renderAdultPortal(); }
     if (action==='admin-toggle-record') { const next=target.dataset.status==='active'?'inactive':'active'; await updateDoc(doc(db,target.dataset.collection,target.dataset.id),{status:next,updatedAt:serverTimestamp()}); await renderAdultPortal(); }
     if (action==='admin-delete-record') { if(!confirm('Bu kayıt silinmiş durumuna alınacak. Geçmiş analizler korunacak. Devam edilsin mi?')) return; await updateDoc(doc(db,target.dataset.collection,target.dataset.id),{status:'deleted',deletedAt:serverTimestamp(),deletedBy:currentUser.uid,updatedAt:serverTimestamp()}); await renderAdultPortal(); }
     if (action==='admin-ai-review-report') { const snap=await getDoc(doc(db,'questionReports',target.dataset.id)); if(!snap.exists()) throw new Error('Bildirim bulunamadı.'); const report={id:snap.id,...snap.data()}; const same=await getDocs(query(collection(db,'questionReports'),where('questionKey','==',report.questionKey),limit(50))); const aiReview=aiReviewForReport(report,same.size||1); await updateDoc(doc(db,'questionReports',report.id),{aiReview,reviewedAt:serverTimestamp(),reviewedBy:currentUser.uid,status:'reviewed'}); await renderAdultPortal(); }
-    if (action==='admin-decide-report') { const labels={question_invalid:'Soru hatalı',answer_invalid:'Cevap/çözüm hatalı',student_struggled:'Öğrenci zorlanmış',duplicate:'Tekrar soru',dismissed:'Geçersiz bildirim'}; await updateDoc(doc(db,'questionReports',target.dataset.id),{reviewDecision:target.dataset.decision,status:target.dataset.decision==='dismissed'?'dismissed':'resolved',resolutionNote:labels[target.dataset.decision]||target.dataset.decision,reviewedAt:serverTimestamp(),reviewedBy:currentUser.uid}); await renderAdultPortal(); }
-    if (action==='admin-drill-school') { adminSchoolFilter=target.dataset.id; adminSection='classrooms'; sessionStorage.setItem('kuzenler-admin-section','classrooms'); await renderAdultPortal(); }
+    if (action==='admin-decide-report') { const labels={question_invalid:'Soru hatalı',answer_invalid:'Cevap/çözüm hatalı',student_struggled:'Öğrenci zorlanmış',duplicate:'Tekrar soru',dismissed:'Geçersiz bildirim'}; const reportRef=doc(db,'questionReports',target.dataset.id); const reportSnap=await getDoc(reportRef); const report=reportSnap.exists()?reportSnap.data():{}; await updateDoc(reportRef,{reviewDecision:target.dataset.decision,status:target.dataset.decision==='dismissed'?'dismissed':'resolved',resolutionNote:labels[target.dataset.decision]||target.dataset.decision,reviewedAt:serverTimestamp(),reviewedBy:currentUser.uid}); if(['question_invalid','answer_invalid','duplicate'].includes(target.dataset.decision)&&report.questionKey){ await setDoc(doc(db,'blockedQuestions',report.questionKey),{questionKey:report.questionKey,prompt:report.prompt||'',reason:target.dataset.decision,sourceReportId:target.dataset.id,blockedBy:currentUser.uid,blockedAt:serverTimestamp(),status:'blocked'},{merge:true}); } toast(target.dataset.decision==='dismissed'?'Bildirim kapatıldı.':'Karar kaydedildi; soru karantinaya alındı.','success'); await renderAdultPortal(); }
+    if (action==='admin-drill-school') { adminSelectedSchoolId=target.dataset.id; adminSection='schools'; await renderAdultPortal(); }
+    if (action==='admin-school-back') { adminSelectedSchoolId=''; await renderAdultPortal(); }
     if (action==='admin-save-role') {
       if (account.role!=='admin') throw new Error('Yalnız admin rol değiştirebilir.');
       const id=target.dataset.accountId; const select=document.querySelector(`[data-admin-role="${id}"]`); const role=select?.value;
@@ -805,7 +878,7 @@ export async function startFirebasePlatform(runtimeConfig) {
   config=runtimeConfig;
   app=initializeApp(firebaseConfig()); auth=getAuth(app); db=getFirestore(app);
   root.addEventListener('click',(event)=>{ const target=event.target.closest('[data-platform-action]'); if(target) handleAction(target); });
-  root.addEventListener('change',(event)=>{ if(event.target.id==='class-filter'){ selectedClassroomId=event.target.value; renderAdultPortal().catch(error=>toast(firebaseErrorMessage(error),'error')); } if(['admin-school-filter','admin-teacher-filter','admin-parent-filter'].includes(event.target.id)){ if(event.target.id==='admin-school-filter') adminSchoolFilter=event.target.value; if(event.target.id==='admin-teacher-filter') adminTeacherFilter=event.target.value; if(event.target.id==='admin-parent-filter') adminParentFilter=event.target.value; renderAdultPortal().catch(error=>toast(firebaseErrorMessage(error),'error')); } });
+  root.addEventListener('change',(event)=>{ if(event.target.id==='modal-school-city'){ const d=document.querySelector('#modal-school-district'); if(d) d.innerHTML=districtOptions(event.target.value,''); } if(event.target.id==='class-filter'){ selectedClassroomId=event.target.value; renderAdultPortal().catch(error=>toast(firebaseErrorMessage(error),'error')); } if(['admin-school-filter','admin-teacher-filter','admin-parent-filter'].includes(event.target.id)){ if(event.target.id==='admin-school-filter') adminSchoolFilter=event.target.value; if(event.target.id==='admin-teacher-filter') adminTeacherFilter=event.target.value; if(event.target.id==='admin-parent-filter') adminParentFilter=event.target.value; renderAdultPortal().catch(error=>toast(firebaseErrorMessage(error),'error')); } });
   currentUser=await waitForAuth();
   if (!currentUser) renderAuth('login'); else await routeSignedIn().catch(renderPlatformFailure);
   onAuthStateChanged(auth,async user=>{

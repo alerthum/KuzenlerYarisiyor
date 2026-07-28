@@ -1,9 +1,9 @@
 {
   "name": "kuzenler-yarisiyor",
-  "version": "5.4.0",
+  "version": "5.6.1",
   "private": true,
   "type": "module",
-  "description": "Kalıcı Firebase gelişimi, gerçek çıkış, LGS–TYT–AYT–KPSS planları, sıralama ve soru kalite kapısı.",
+  "description": "Premium mobil yönetim, korunan öğrenci işlemleri ve otomatik regresyon denetimi.",
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
     "dev": "npm run prepare && node server.mjs",

@@ -190,3 +190,16 @@ test('V5.4 admin soru inceleme merkezi ve otomatik sınav planları içerir', as
   assert.match(platform, /if \(g === 12\) return \['YKS', 'KPSS'\]/);
   assert.match(platform, /examPlansCustomized:true/);
 });
+
+
+test('V5.5 sıralama tüm üyeler, aynı sınıf ve aynı yaş kartlarını ayrı gösterir', async () => {
+  const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
+  const platform = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
+  assert.match(app, /Tüm üyeler içinde/);
+  assert.match(app, /Aynı sınıf seviyesi/);
+  assert.match(app, /Aynı yaştaki öğrenciler/);
+  assert.match(app, /rankText\(ownIndex,sorted.length\)/);
+  assert.match(platform, /ensureLeaderboardCoverage/);
+  assert.match(platform, /age:Number\(learner.age\|\|0\)/);
+  assert.match(platform, /setDoc\(doc\(db,'leaderboards',learnerId\)/);
+});

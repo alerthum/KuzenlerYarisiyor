@@ -806,13 +806,22 @@ function renderAnalytics(profile) {
 function renderRanking() {
   const profile=activeProfile();
   const rows=Array.isArray(window.__KUZENLER_RANKINGS__)?window.__KUZENLER_RANKINGS__:[];
-  const sorted=[...rows].sort((a,b)=>(b.xp||0)-(a.xp||0)||(b.accuracy||0)-(a.accuracy||0));
-  const ownIndex=sorted.findIndex(row=>row.learnerId===profile.id);
+  const scoreSort=(a,b)=>(b.xp||0)-(a.xp||0)||(b.accuracy||0)-(a.accuracy||0)||(b.totalQuestions||0)-(a.totalQuestions||0);
+  const sorted=[...rows].sort(scoreSort);
   const sameGrade=sorted.filter(row=>Number(row.grade)===Number(profile.grade));
-  const gradeIndex=sameGrade.findIndex(row=>row.learnerId===profile.id);
-  return `<main class="app-shell">${topbar()}<section class="section mt-0"><span class="badge orange">Kalıcı gelişim sıralaması</span><h1>Sıralama</h1><p class="muted">Sıralama yalnız soru sayısına göre değil; XP, doğruluk ve düzenli çalışma verileriyle oluşturulur.</p></section>
-  <section class="metric-grid"><div class="metric-card"><div class="metric-label">Genel sıra</div><div class="metric-value">${ownIndex>=0?ownIndex+1:'—'}</div></div><div class="metric-card"><div class="metric-label">${profile.grade}. sınıf sırası</div><div class="metric-value">${gradeIndex>=0?gradeIndex+1:'—'}</div></div><div class="metric-card"><div class="metric-label">Toplam öğrenci</div><div class="metric-value">${sorted.length||1}</div></div></section>
-  <section class="section panel"><h2>Genel sıralama</h2>${sorted.length?`<div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Sıra</th><th>Öğrenci</th><th>Sınıf</th><th>XP</th><th>Doğruluk</th><th>Soru</th></tr></thead><tbody>${sorted.slice(0,100).map((row,index)=>`<tr class="${row.learnerId===profile.id?'current-row':''}"><td>${index+1}</td><td>${escapeHtml(row.displayName||row.name||'Öğrenci')}</td><td>${row.grade||'—'}</td><td>${formatNumber(row.xp||0)}</td><td>%${row.accuracy||0}</td><td>${row.totalQuestions||0}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty-state">Sıralama verisi ilk senkronizasyondan sonra oluşacak.</div>'}</section>${bottomNav()}</main>`;
+  const sameAge=sorted.filter(row=>Number(row.age)===Number(profile.age));
+  const rankOf=(list)=>list.findIndex(row=>row.learnerId===profile.id);
+  const ownIndex=rankOf(sorted);
+  const gradeIndex=rankOf(sameGrade);
+  const ageIndex=rankOf(sameAge);
+  const rankText=(index,total)=>index>=0?`${index+1} / ${total}`:`— / ${total}`;
+  return `<main class="app-shell">${topbar()}<section class="section mt-0"><span class="badge orange">Kalıcı gelişim sıralaması</span><h1>Sıralama</h1><p class="muted">Her kart farklı bir karşılaştırma grubunu gösterir. Genel sıralama sistemdeki bütün öğrencileri kapsar.</p></section>
+  <section class="metric-grid ranking-metrics">
+    <div class="metric-card"><div class="metric-label">Tüm üyeler içinde</div><div class="metric-value">${rankText(ownIndex,sorted.length)}</div><div class="metric-note">Genel sıralama</div></div>
+    <div class="metric-card"><div class="metric-label">${profile.grade}. sınıflar içinde</div><div class="metric-value">${rankText(gradeIndex,sameGrade.length)}</div><div class="metric-note">Aynı sınıf seviyesi</div></div>
+    <div class="metric-card"><div class="metric-label">${profile.age} yaş grubu içinde</div><div class="metric-value">${rankText(ageIndex,sameAge.length)}</div><div class="metric-note">Aynı yaştaki öğrenciler</div></div>
+  </section>
+  <section class="section panel"><h2>Genel sıralama</h2><p class="muted">Toplam ${sorted.length} öğrenci.</p>${sorted.length?`<div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Sıra</th><th>Öğrenci</th><th>Yaş</th><th>Sınıf</th><th>XP</th><th>Doğruluk</th><th>Soru</th></tr></thead><tbody>${sorted.slice(0,100).map((row,index)=>`<tr class="${row.learnerId===profile.id?'current-row':''}"><td>${index+1}</td><td>${escapeHtml(row.displayName||row.name||'Öğrenci')}</td><td>${row.age||'—'}</td><td>${row.grade||'—'}</td><td>${formatNumber(row.xp||0)}</td><td>%${row.accuracy||0}</td><td>${row.totalQuestions||0}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty-state">Sıralama verisi ilk senkronizasyondan sonra oluşacak.</div>'}</section>${bottomNav()}</main>`;
 }
 
 function renderParent() {
