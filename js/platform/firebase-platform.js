@@ -337,6 +337,7 @@ async function renderAdultPortal() {
   const management=account.role==='admin'?(adminView==='teacher'?teacherManagement(classrooms,visibleLearners):adminView==='parent'?parentManagement(learners):adminManagement(adminAccounts,classrooms,learners)):account.role==='parent'?parentManagement(learners):teacherManagement(classrooms,visibleLearners);
   root.innerHTML=`<main class="platform-shell portal-shell">
     <header class="portal-topbar"><div class="auth-brand"><div class="platform-logo">🏆</div><div><strong>${esc(config.appName)}</strong><span>${centerLabel}</span></div></div><div class="portal-user"><span>${esc(account.displayName||currentUser.displayName||currentUser.email)}</span><button class="text-button" data-platform-action="logout">Çıkış</button></div></header>
+    ${account.role==='admin'?`<nav class="admin-view-switcher" aria-label="Admin görünüm seçici"><span class="badge orange">Gerçek yetki: Admin</span><button class="secondary-button ${adminView==='admin'?'active':''}" data-platform-action="admin-view" data-view="admin">🛡️ Admin</button><button class="secondary-button ${adminView==='teacher'?'active':''}" data-platform-action="admin-view" data-view="teacher">👩‍🏫 Öğretmen</button><button class="secondary-button ${adminView==='parent'?'active':''}" data-platform-action="admin-view" data-view="parent">👨‍👩‍👧 Veli</button></nav>`:''}
     <section class="portal-hero"><div><span class="badge orange">V5 merkezi pilot</span><h1>${heroTitle}</h1><p>Soru sayısı, doğruluk, çalışma süresi, ipucu kullanımı ve son etkinlik merkezi olarak Firebase’de tutulur.</p></div></section>
     ${metricCards(visibleLearners,metrics)}
     ${management}
@@ -518,7 +519,20 @@ async function handleAction(target) {
       account=await accountFor(currentUser.uid);
       await routeSignedIn();
     }
-    if (action==='logout') { sessionStorage.removeItem('kuzenler-play-learner'); await signOut(auth); }
+    if (action==='logout') {
+      sessionStorage.removeItem('kuzenler-play-learner');
+      sessionStorage.removeItem('kuzenler-admin-view');
+      clearTimeout(syncTimer);
+      syncTimer=null;
+      await signOut(auth);
+      currentUser=null;
+      account=null;
+      selectedClassroomId='';
+      syncedAttemptIds=new Set();
+      syncedReportIds=new Set();
+      renderAuth('login');
+      return;
+    }
     if (action==='portal' || action==='retry-route') await routeSignedIn();
     if (action==='admin-view') { sessionStorage.setItem('kuzenler-admin-view',target.dataset.view||'admin'); await renderAdultPortal(); }
     if (action==='admin-save-role') {

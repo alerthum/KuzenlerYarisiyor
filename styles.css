@@ -680,3 +680,8 @@ button:disabled { cursor: not-allowed; opacity: 0.55; }
 .teaching-solution{margin-top:14px;padding:18px;border-radius:18px;background:rgba(14,165,233,.07);border:1px solid rgba(56,189,248,.2)}.teaching-solution>h3{margin:0 0 14px;color:#bae6fd}.solution-section{padding:11px 0;border-top:1px solid rgba(148,163,184,.12)}.solution-section:first-of-type{border-top:0}.solution-section h4{margin:0 0 6px;color:#fbbf24}.solution-section p,.solution-section li{color:#e2e8f0;line-height:1.65}.solution-section ol{margin:4px 0 0;padding-left:22px}.solution-section li+li{margin-top:7px}
 @media(max-width:820px){.platform-metric-grid{grid-template-columns:1fr 1fr}.portal-two-column{grid-template-columns:1fr}.credential-list>div{grid-template-columns:1fr}.portal-topbar{align-items:flex-start}.portal-user{flex-direction:column;align-items:flex-end}.auth-tabs{grid-template-columns:1fr}.role-choice{grid-template-columns:1fr}}
 @media(max-width:480px){.platform-shell{padding:16px 12px 64px}.auth-shell{padding-top:22px}.auth-card{padding:21px;border-radius:22px}.platform-metric-grid{grid-template-columns:1fr 1fr}.portal-hero{padding:22px}.portal-user span{display:none}}
+
+
+.admin-view-switcher{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0 18px;padding:12px 14px;border:1px solid rgba(72,207,176,.2);border-radius:16px;background:rgba(10,25,45,.68)}
+.admin-view-switcher .secondary-button.active{border-color:rgba(255,132,42,.9);background:rgba(255,132,42,.14)}
+@media(max-width:640px){.admin-view-switcher{display:grid;grid-template-columns:1fr 1fr}.admin-view-switcher .badge{grid-column:1/-1}.admin-view-switcher button:first-of-type{grid-column:1/-1}}

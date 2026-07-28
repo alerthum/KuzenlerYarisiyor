@@ -103,3 +103,13 @@ test('soru kalite kayıtlarının tamamı V5 paketinde bulunur',async()=>{
   const records=await readFile(new URL('../SORU_KALITE_KAYITLARI.md',import.meta.url),'utf8');
   for(let no=1;no<=11;no+=1) assert.ok(records.includes(`Kayıt ${String(no).padStart(3,'0')}`),`Kayıt ${no}`);
 });
+
+
+test('admin görünüm seçici her yönetim görünümünde kalıcıdır ve çıkış ekranı doğrudan yeniler', async () => {
+  const source = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url),'utf8');
+  assert.match(source,/admin-view-switcher/);
+  assert.match(source,/Gerçek yetki: Admin/);
+  assert.match(source,/sessionStorage\.removeItem\('kuzenler-admin-view'\)/);
+  assert.match(source,/currentUser=null/);
+  assert.match(source,/renderAuth\('login'\)/);
+});

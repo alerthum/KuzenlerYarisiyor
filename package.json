@@ -1,6 +1,6 @@
 {
   "name": "kuzenler-yarisiyor",
-  "version": "5.0.3",
+  "version": "5.0.4",
   "private": true,
   "type": "module",
   "description": "Windows yol ve Firebase/Vercel CLI uyumluluk düzeltmeleriyle hazır platform paketi.",
