@@ -44,6 +44,7 @@ import {
 import { createLogicRound } from '../engines/logic-engine.js';
 import { createV4LogicSession, createV4OlympiadSession, createV4ParagraphSession } from '../engines/learning-engine-v4.js';
 import { hashString, pick, seededRandom, shuffle } from '../utils.js';
+import { EXAM_QUESTIONS_V53 } from '../content-exams-v53.js';
 
 const ALL_WORD_MINE_SETS = [...WORD_MINE_SETS, ...EXTRA_WORD_MINE_SETS];
 const BASE_VALID_V3_LADDER_PATHS = WORD_LADDER_PATHS_V3.filter((path) => path.length >= 3 && path.every((word) => word.length === path[0].length) && path.slice(0, -1).every((word, index) => isOneLetterChange(word, path[index + 1])));
@@ -71,6 +72,12 @@ const ALL_WORD_DICTIONARY = [...new Set([
 ])];
 
 export const GAME_CATALOG = [
+
+  { id:'lgs-focus', title:'LGS Akıllı Çalışma', shortTitle:'LGS', category:'lgs', skill:'lgsFamiliarity', icon:'🎓', color:'rgba(251,113,133,.82)', description:'7–8. sınıf kazanımlarını yeni nesil sorularla ve açıklamalı çözümlerle çalış.', minAge:12, maxAge:14, duration:'12–18 dk', sessionLength:8 },
+  { id:'tyt-focus', title:'TYT Akıllı Çalışma', shortTitle:'TYT', category:'exam', skill:'problemSolving', icon:'🧭', color:'rgba(34,211,238,.82)', description:'Türkçe, temel matematik, sosyal ve fen muhakemesini TYT düzeyinde çalış.', minAge:16, maxAge:19, duration:'15–20 dk', sessionLength:8 },
+  { id:'ayt-focus', title:'AYT Alan Çalışması', shortTitle:'AYT', category:'exam', skill:'problemSolving', icon:'🎯', color:'rgba(167,139,250,.82)', description:'11–12. sınıf alan derslerinde kavram ve çok adımlı çözüm çalış.', minAge:16, maxAge:19, duration:'15–20 dk', sessionLength:8 },
+  { id:'kpss-focus', title:'KPSS Genel Yetenek–Kültür', shortTitle:'KPSS', category:'exam', skill:'attention', icon:'🏛️', color:'rgba(249,115,22,.82)', description:'Genel yetenek ve genel kültür sorularını ayrı çalışma planında çöz.', minAge:17, maxAge:99, duration:'15–20 dk', sessionLength:8 },
+
   {
     id: 'word-mine', title: 'Kelime Madeni', shortTitle: 'Kelime Madeni', category: 'turkish', skill: 'vocabulary', icon: '⛏️',
     color: 'rgba(34, 211, 238, .75)', description: 'Uzun bir kelimenin harflerinden yeni ve anlamlı kelimeler çıkar.',
@@ -189,8 +196,13 @@ export const GAME_CATALOG = [
 ];
 
 const GRADE_RULES = {
+  'word-ladder': { minGrade: 1, maxGrade: 8 },
   'religion-practice': { minGrade: 8, maxGrade: 12 },
-  'lgs-foundation': { minGrade: 8, maxGrade: 8 }
+  'lgs-foundation': { minGrade: 8, maxGrade: 8 },
+  'lgs-focus': { minGrade: 7, maxGrade: 8 },
+  'tyt-focus': { minGrade: 11, maxGrade: 12 },
+  'ayt-focus': { minGrade: 11, maxGrade: 12 },
+  'kpss-focus': { minGrade: 11, maxGrade: 12 }
 };
 
 for (const game of GAME_CATALOG) {
@@ -457,6 +469,7 @@ export function createGameSession(gameId, profile, sessionSeed = Date.now(), opt
   }
 
   if (gameId === 'word-ladder') {
+    if (Number(profile.grade||0) >= 9) throw new Error('Kelime Merdiveni lise düzeyinde kalite yenilemesi tamamlanana kadar kapalıdır.');
     const pathCandidates = shuffle(VALID_V3_LADDER_PATHS.filter((path) => {
       if (profile.age <= 10) return path[0].length >= 3 && path[0].length <= 5;
       return path[0].length >= 3 && path[0].length <= 6;
@@ -514,6 +527,7 @@ export function createGameSession(gameId, profile, sessionSeed = Date.now(), opt
       qualityScore: question.qualityScore
     }, game, Math.max(3, Math.min(5, question.cognitiveDepth || difficulty))));
   }
+  if (EXAM_QUESTIONS_V53[gameId]) rounds = unseenRounds(EXAM_QUESTIONS_V53[gameId], game, Math.max(3,difficulty), profile.age, random, seen, game.sessionLength);
   if (gameId === 'science-lab') rounds = unseenRounds(SCIENCE_QUESTIONS, game, difficulty, profile.age, random, seen, game.sessionLength);
   if (gameId === 'science-reasoning') rounds = unseenRounds(SCIENCE_REASONING_QUESTIONS, game, difficulty, profile.age, random, seen, game.sessionLength);
   if (gameId === 'english-vocabulary') rounds = createEnglishRounds(profile, game, difficulty, random, seen, options.preferredEnglishWordIds || []);
@@ -653,6 +667,20 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
       }
     });
   }
+
+
+  const signatureSet = new Set();
+  rounds = rounds.filter((round) => {
+    const signature = `${round.questionKey}|${round.prompt}|${round.context||''}`.toLocaleLowerCase('tr-TR');
+    if (signatureSet.has(signature)) return false;
+    signatureSet.add(signature);
+    if (Number(profile.grade||0) >= 4) {
+      const trivialLinear = /(?:^|\s)[1-4]?x\s*[+\-]\s*\d+\s*=\s*\d+/i.test(round.prompt||'');
+      const trivialPrompt = /(?:sonucu kaçtır|x kaçtır)\??$/i.test(round.prompt||'') && (round.prompt||'').length < 28 && Number(round.cognitiveDepth||round.difficulty||1) < 3;
+      if (trivialLinear || trivialPrompt) return false;
+    }
+    return true;
+  });
 
   return {
     id: `${gameId}-${sessionSeed}`,

@@ -53,12 +53,19 @@ const ui = {
   timerId: null,
   parentUnlocked: false,
   deferredInstallPrompt: null,
-  reportModalOpen: false
+  reportModalOpen: false,
+  paused: false,
+  pauseStartedAt: null,
+  pausedTotalMs: 0,
+  toolsOpen: false,
+  calculatorValue: '0',
+  calculatorExpression: '',
+  whiteboardOpen: false
 };
 
 const NAV_ITEMS = PLATFORM.mode === 'live'
-  ? [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim']]
-  : [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['parent', '⚙', 'Yerel Ayarlar']];
+  ? [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['ranking', '🏅', 'Sıralama']]
+  : [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['ranking', '🏅', 'Sıralama'], ['parent', '⚙', 'Yerel Ayarlar']];
 
 function activeProfile() {
   return getProfile(state);
@@ -76,7 +83,7 @@ function topbar({ back = false, compact = false } = {}) {
       </div>
       <div class="button-row" style="flex-wrap:nowrap">
         ${ui.deferredInstallPrompt ? '<button class="icon-button" data-action="install" aria-label="Uygulamayı telefona kur">⇩</button>' : ''}
-        ${PLATFORM.adultPreview ? '<button class="icon-button" data-action="return-platform" aria-label="Yönetim paneline dön">⇱</button>' : ''}${state.activeProfileId && !back && PLATFORM.mode !== 'live' ? `<button class="icon-button" data-action="profiles" aria-label="Profil değiştir">${escapeHtml(activeProfile()?.avatar || '👤')}</button>` : ''}
+        ${PLATFORM.adultPreview ? '<button class="icon-button" data-action="return-platform" aria-label="Yönetim paneline dön">⇱</button>' : ''}${state.activeProfileId && PLATFORM.mode === 'live' ? '<button class="icon-button" data-action="student-profile" aria-label="Profil ve gelişim">👤</button><button class="icon-button" data-action="student-logout" aria-label="Çıkış yap">⎋</button>' : ''}${state.activeProfileId && !back && PLATFORM.mode !== 'live' ? `<button class="icon-button" data-action="profiles" aria-label="Profil değiştir">${escapeHtml(activeProfile()?.avatar || '👤')}</button>` : ''}
       </div>
     </header>`;
 }
@@ -232,7 +239,7 @@ function renderDashboard() {
       <section class="section">
         <div class="section-header"><div><h2>Yeni ders alanları</h2><p>Günlük görev tamamlandıktan sonra bu alanlarda yeni sorularla aralıksız devam edebilirsin.</p></div></div>
         <div class="game-grid compact-grid">
-          ${['english-cloze','english-sentence-builder','social-time-travel','social-map-skills','social-citizenship', ...(profile.grade >= 8 ? ['religion-practice','lgs-foundation'] : [])].map((id) => gameCard(getGame(id), daily)).join('')}
+          ${['english-cloze','english-sentence-builder','social-time-travel','social-map-skills','social-citizenship', ...(profile.grade >= 7 && profile.grade <= 8 ? ['lgs-focus','religion-practice','lgs-foundation'] : []), ...(profile.grade >= 11 ? ['tyt-focus','ayt-focus', ...((profile.examPlans||[]).includes('KPSS')?['kpss-focus']:[])] : [])].filter(id=>isGameAvailableForProfile(getGame(id),profile)).map((id) => gameCard(getGame(id), daily)).join('')}
         </div>
       </section>
 
@@ -490,7 +497,9 @@ function renderReportModal(round) {
       <div class="report-question-preview">${escapeHtml(round.prompt)}</div>
       <div class="form-field mt-18"><label for="report-reason">Sorundaki durum</label><select id="report-reason">
         <option value="answer-wrong">Doğru cevap veya açıklama yanlış</option>
+        <option value="same-question">Aynı soru tekrar çıktı</option>
         <option value="ambiguous">Soru belirsiz ya da birden fazla cevap var</option>
+        <option value="expression-error">İfade bozukluğu / soru cümlesi anlaşılmıyor</option>
         <option value="typo">Yazım veya anlatım hatası var</option>
         <option value="too-easy">Çeldiriciler çok kolay</option>
         <option value="bad-hint">İpucu belirsiz veya çözümle uyumsuz</option>
@@ -520,6 +529,66 @@ function renderTeachingSolution(round) {
   return `<section class="teaching-solution"><h3>🧭 Çözüm yolunu öğrenelim</h3>${sections.map(([title,value]) => `<div class="solution-section"><h4>${title}</h4>${String(value).startsWith('<ol>') ? value : `<p>${escapeHtml(value)}</p>`}</div>`).join('')}</section>`;
 }
 
+function renderStudentTools() {
+  if (!ui.toolsOpen && !ui.whiteboardOpen) return '';
+  if (ui.whiteboardOpen) return `<div class="tool-overlay" role="dialog" aria-modal="true" aria-label="Beyaz tahta">
+    <section class="tool-panel whiteboard-panel"><div class="section-header"><div><h2>✍️ Beyaz Tahta</h2><p>Sorudan çıkmadan parmağınla veya farenle işlem yap.</p></div><button class="icon-button" data-action="close-tools">×</button></div>
+    <canvas id="whiteboard-canvas" width="900" height="1100" aria-label="Çizim alanı"></canvas>
+    <div class="button-row"><button class="secondary-button" data-action="whiteboard-clear">Temizle</button><button class="primary-button" data-action="close-tools">Soruma Dön</button></div></section></div>`;
+  return `<div class="tool-overlay" role="dialog" aria-modal="true" aria-label="Soru araçları"><section class="tool-panel"><div class="section-header"><div><h2>🧰 Soru Araçları</h2><p>Hesap makinesi öğrencinin isteğiyle açılır. Kullanımı soru kaydına işlenir.</p></div><button class="icon-button" data-action="close-tools">×</button></div>
+    <div class="calculator-display">${escapeHtml(ui.calculatorExpression || ui.calculatorValue)}</div>
+    <div class="calculator-grid">${['7','8','9','÷','4','5','6','×','1','2','3','−','0',',','C','+'].map(k=>`<button data-action="calculator-key" data-key="${k}">${k}</button>`).join('')}<button data-action="calculator-equals" class="equals">=</button></div>
+    <button class="secondary-button full-width mt-12" data-action="open-whiteboard">✍️ Beyaz Tahtayı Aç</button>
+  </section></div>`;
+}
+
+function togglePause() {
+  if (!ui.session || ui.feedback) return;
+  if (!ui.paused) {
+    ui.paused = true;
+    ui.pauseStartedAt = Date.now();
+    clearTimer();
+  } else {
+    ui.pausedTotalMs += Date.now() - (ui.pauseStartedAt || Date.now());
+    ui.pauseStartedAt = null;
+    ui.paused = false;
+  }
+  render();
+}
+
+function calculatorKey(key) {
+  if (key === 'C') { ui.calculatorExpression = ''; ui.calculatorValue = '0'; render(); return; }
+  const normalized = {'÷':'/','×':'*','−':'-',',':'.'}[key] || key;
+  ui.calculatorExpression += normalized;
+  render();
+}
+
+function calculatorEquals() {
+  try {
+    if (!/^[0-9+\-*/.() ]+$/.test(ui.calculatorExpression)) throw new Error('Geçersiz işlem');
+    const value = Function(`"use strict"; return (${ui.calculatorExpression})`)();
+    if (!Number.isFinite(value)) throw new Error('Geçersiz sonuç');
+    ui.calculatorValue = String(Math.round(value * 1000000) / 1000000);
+    ui.calculatorExpression = ui.calculatorValue;
+    if (ui.session) ui.session.calculatorUsed = true;
+  } catch { showToast('İşlem hesaplanamadı.', 'error'); }
+  render();
+}
+
+function initWhiteboard() {
+  const canvas = document.querySelector('#whiteboard-canvas');
+  if (!canvas || canvas.dataset.ready === '1') return;
+  canvas.dataset.ready = '1';
+  const ctx = canvas.getContext('2d');
+  ctx.lineWidth = 6; ctx.lineCap = 'round'; ctx.strokeStyle = '#172033';
+  let drawing = false;
+  const pos = (e) => { const r=canvas.getBoundingClientRect(); return {x:(e.clientX-r.left)*canvas.width/r.width,y:(e.clientY-r.top)*canvas.height/r.height}; };
+  canvas.addEventListener('pointerdown',e=>{drawing=true;const q=pos(e);ctx.beginPath();ctx.moveTo(q.x,q.y);canvas.setPointerCapture(e.pointerId);});
+  canvas.addEventListener('pointermove',e=>{if(!drawing)return;const q=pos(e);ctx.lineTo(q.x,q.y);ctx.stroke();});
+  canvas.addEventListener('pointerup',()=>{drawing=false;});
+  canvas.addEventListener('pointercancel',()=>{drawing=false;});
+}
+
 function renderGame() {
   const session = ui.session;
   if (!session) return renderDashboard();
@@ -535,7 +604,7 @@ function renderGame() {
       <header class="game-header">
         <button class="back-button" data-action="quit-game" aria-label="Oyundan çık">←</button>
         <div class="game-header-copy"><h1>${game.icon} ${escapeHtml(game.title)}</h1><p>${CATEGORY_LABELS[game.category]} • ${session.currentIndex + 1}/${session.rounds.length}</p></div>
-        ${state.settings.timer ? `<div id="timer-pill" class="timer-pill ${ui.timeLeft <= 10 ? 'danger' : ''}">${formatDuration(ui.timeLeft)}</div>` : '<span class="badge cyan">Serbest</span>'}
+        <div class="game-header-actions"><button class="icon-button" data-action="toggle-pause" aria-label="${ui.paused ? 'Devam et' : 'Soruyu durdur'}">${ui.paused ? '▶' : 'Ⅱ'}</button><button class="icon-button" data-action="open-tools" aria-label="Araçları aç">🧰</button><button class="icon-button" data-action="student-profile" aria-label="Profil">👤</button><button class="icon-button" data-action="student-logout" aria-label="Çıkış yap">⎋</button>${state.settings.timer ? `<div id="timer-pill" class="timer-pill ${ui.timeLeft <= 10 ? 'danger' : ''}">${formatDuration(ui.timeLeft)}</div>` : '<span class="badge cyan">Serbest</span>'}</div>
       </header>
       <div class="session-progress" style="grid-template-columns:repeat(${session.rounds.length},minmax(4px,1fr))">${session.rounds.map((_, index) => {
         const answer = session.answers[index];
@@ -543,15 +612,15 @@ function renderGame() {
         return `<span class="session-step ${cls}"></span>`;
       }).join('')}</div>
 
-      <section class="question-card">
+      ${ui.paused ? `<section class="paused-card"><div class="pause-icon">Ⅱ</div><h2>Soru durduruldu</h2><p>Soru gizlendi ve süre durdu. Hazır olduğunda devam et.</p><button class="primary-button" data-action="toggle-pause">Devam Et</button></section>` : `<section class="question-card">`}
         <div class="question-meta"><span class="question-label">${escapeHtml(SKILLS[round.skill])}</span><span class="question-difficulty">${session.rewardEligible ? `Zorluk ${round.difficulty}/5 • İpucusuz doğru: +${noHintXp} XP` : `XP dışı öğrenme alanı • Zorluk ${round.difficulty}/5`}</span></div>${round.targetGrade ? `<div class="curriculum-meta"><span>${escapeHtml(V4_QUALITY_POLICY.labels[round.curriculumRole] || 'Sınıf çalışması')}</span><span>${round.targetGrade}. sınıf hedefi</span>${round.familyId ? `<span>Aile: ${escapeHtml(round.familyId)}</span>` : ''}</div>` : ''}${round.sourceLabel ? `<div class="source-label">${escapeHtml(round.sourceLabel)}</div>` : ""}
         <h2 class="question-text">${escapeHtml(round.prompt)}</h2>
         ${round.context ? `<div class="question-context">${escapeHtml(round.context)}</div>` : ''}
         ${round.visual ? `<div class="visual-stage">${geometryVisual(round.visual)}</div>` : ''}
         ${renderRoundInput(round)}
         ${hintText ? `<div class="hint-panel"><h3>💡 İpucu ${ui.hintIndex}</h3><p>${escapeHtml(hintText)}</p></div>` : ''}
-        ${ui.feedback ? `<div id="feedback-anchor" class="feedback-panel ${ui.feedback.correct ? 'correct' : 'wrong'}"><h3>${ui.feedback.correct ? '✓ Doğru düşünce' : '✦ Birlikte düzeltelim'}</h3><p>${escapeHtml(ui.feedback.message)}</p><div class="feedback-score">${session.rewardEligible ? `Bu sorudan <strong>+${ui.feedback.xp} XP</strong> ve <strong>${ui.feedback.score}/100 soru puanı</strong> aldın.` : `Bu çalışma XP ve günlük hedefe dahil değildir. Soru puanın: <strong>${ui.feedback.score}/100</strong>.`}</div>${session.rewardEligible ? `<div class="xp-breakdown-inline"><span>Temel <strong>+${ui.feedback.xpBreakdown.base}</strong></span><span>Zorluk <strong>+${ui.feedback.xpBreakdown.difficultyBonus}</strong></span>${ui.feedback.xpBreakdown.noHintBonus ? `<span>İpucusuz <strong>+${ui.feedback.xpBreakdown.noHintBonus}</strong></span>` : ''}${ui.feedback.xpBreakdown.persistenceBonus ? `<span>Emek <strong>+${ui.feedback.xpBreakdown.persistenceBonus}</strong></span>` : ''}${ui.feedback.xpBreakdown.hintPenalty ? `<span>İpucu <strong>−${ui.feedback.xpBreakdown.hintPenalty}</strong></span>` : ''}</div>` : ''}</div>${renderTeachingSolution(round)}${renderDetailedOptionAnalysis(round)}` : ''}
-        <button class="report-question-button" data-action="open-report">⚑ Soru yanlış veya hatalı</button>
+        ${ui.feedback ? `<div id="feedback-anchor" class="feedback-panel ${ui.feedback.correct ? 'correct' : 'wrong'}"><h3>${ui.feedback.correct ? '✓ Doğru düşünce' : '✦ Birlikte düzeltelim'}</h3><p>${escapeHtml(ui.feedback.message)}</p><div class="feedback-score">Bu sorudan <strong>+${ui.feedback.xp} XP</strong> ve <strong>${ui.feedback.score}/100 soru puanı</strong> aldın. Bu sonuç gelişim analizine kaydedildi.</div>${session.rewardEligible ? `<div class="xp-breakdown-inline"><span>Temel <strong>+${ui.feedback.xpBreakdown.base}</strong></span><span>Zorluk <strong>+${ui.feedback.xpBreakdown.difficultyBonus}</strong></span>${ui.feedback.xpBreakdown.noHintBonus ? `<span>İpucusuz <strong>+${ui.feedback.xpBreakdown.noHintBonus}</strong></span>` : ''}${ui.feedback.xpBreakdown.persistenceBonus ? `<span>Emek <strong>+${ui.feedback.xpBreakdown.persistenceBonus}</strong></span>` : ''}${ui.feedback.xpBreakdown.hintPenalty ? `<span>İpucu <strong>−${ui.feedback.xpBreakdown.hintPenalty}</strong></span>` : ''}</div>` : ''}</div>${renderTeachingSolution(round)}${renderDetailedOptionAnalysis(round)}` : ''}
+        <div class="question-action-row"><button class="secondary-button pause-question-button" data-action="toggle-pause">Ⅱ Soruyu Durdur</button><button class="report-question-button" data-action="open-report">⚑ Hatalı / Aynı Soru</button></div>
         <div id="game-actions-anchor" class="game-actions sticky-actions">
           ${!ui.feedback && round.hints?.length ? `<button class="secondary-button" data-action="hint" ${ui.hintIndex >= round.hints.length ? 'disabled' : ''}>💡 İpucu</button>` : ''}
           ${!ui.feedback && !['choice','memory'].includes(round.kind) ? `<button class="primary-button" data-action="check-answer">${round.kind === 'wordMine' ? 'Turu Bitir' : 'Cevabı Kontrol Et'}</button>` : ''}
@@ -559,6 +628,7 @@ function renderGame() {
         </div>
       </section>
       ${renderReportModal(round)}
+      ${renderStudentTools()}
     </main>`;
 }
 
@@ -587,7 +657,7 @@ function renderGameResult() {
         <div class="result-emoji">${emoji}</div>
         <span class="badge orange">${escapeHtml(session.game.title)}</span>
         <h1>${percentage >= 85 ? 'Harika bir tur!' : percentage >= 60 ? 'Güçlü ilerleme!' : 'Öğrenme turu tamamlandı!'}</h1>
-        <p>${session.reviewMode ? 'Yeni soru havuzu tamamlandığı için kontrollü tekrar turu yaptın.' : 'Bu turdaki sorular profiline kaydedildi. Aynı oyun, yeni sorularla aralıksız devam edebilir.'}</p>${!session.rewardEligible ? '<p class="xp-free-note">Bu bölüm XP, yıldız ve günlük görev ilerlemesine dahil edilmez; amacı soru kalıplarını öğrenmektir.</p>' : ''}
+        <p>${session.reviewMode ? 'Yeni soru havuzu tamamlandığı için kontrollü tekrar turu yaptın.' : 'Bu turdaki sorular profiline kaydedildi. Aynı oyun, yeni sorularla aralıksız devam edebilir.'}</p><p class="xp-free-note">Bu turdaki bütün cevaplar gelişim, doğruluk, hız, ipucu ve günlük çalışma analizine işlendi.</p>
         <div class="result-score">%${percentage}</div>
         <div class="summary-grid">
           <div class="metric-card"><div class="metric-label">Doğru</div><div class="metric-value">${correctCount}/${session.answers.length}</div></div>
@@ -732,6 +802,19 @@ function renderAnalytics(profile) {
   </section>`;
 }
 
+
+function renderRanking() {
+  const profile=activeProfile();
+  const rows=Array.isArray(window.__KUZENLER_RANKINGS__)?window.__KUZENLER_RANKINGS__:[];
+  const sorted=[...rows].sort((a,b)=>(b.xp||0)-(a.xp||0)||(b.accuracy||0)-(a.accuracy||0));
+  const ownIndex=sorted.findIndex(row=>row.learnerId===profile.id);
+  const sameGrade=sorted.filter(row=>Number(row.grade)===Number(profile.grade));
+  const gradeIndex=sameGrade.findIndex(row=>row.learnerId===profile.id);
+  return `<main class="app-shell">${topbar()}<section class="section mt-0"><span class="badge orange">Kalıcı gelişim sıralaması</span><h1>Sıralama</h1><p class="muted">Sıralama yalnız soru sayısına göre değil; XP, doğruluk ve düzenli çalışma verileriyle oluşturulur.</p></section>
+  <section class="metric-grid"><div class="metric-card"><div class="metric-label">Genel sıra</div><div class="metric-value">${ownIndex>=0?ownIndex+1:'—'}</div></div><div class="metric-card"><div class="metric-label">${profile.grade}. sınıf sırası</div><div class="metric-value">${gradeIndex>=0?gradeIndex+1:'—'}</div></div><div class="metric-card"><div class="metric-label">Toplam öğrenci</div><div class="metric-value">${sorted.length||1}</div></div></section>
+  <section class="section panel"><h2>Genel sıralama</h2>${sorted.length?`<div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Sıra</th><th>Öğrenci</th><th>Sınıf</th><th>XP</th><th>Doğruluk</th><th>Soru</th></tr></thead><tbody>${sorted.slice(0,100).map((row,index)=>`<tr class="${row.learnerId===profile.id?'current-row':''}"><td>${index+1}</td><td>${escapeHtml(row.displayName||row.name||'Öğrenci')}</td><td>${row.grade||'—'}</td><td>${formatNumber(row.xp||0)}</td><td>%${row.accuracy||0}</td><td>${row.totalQuestions||0}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty-state">Sıralama verisi ilk senkronizasyondan sonra oluşacak.</div>'}</section>${bottomNav()}</main>`;
+}
+
 function renderParent() {
   if (!ui.parentUnlocked) {
     return `
@@ -811,8 +894,10 @@ function render() {
   if (ui.screen === 'library') root.innerHTML = renderLibrary();
   if (ui.screen === 'game') root.innerHTML = renderGame();
   if (ui.screen === 'progress') root.innerHTML = renderProgress();
+  if (ui.screen === 'ranking') root.innerHTML = renderRanking();
   if (ui.screen === 'parent') root.innerHTML = renderParent();
-  if (ui.screen === 'game' && ui.session && !ui.session.completed && !ui.feedback && !ui.reportModalOpen) startTimer();
+  if (ui.screen === 'game' && ui.session && !ui.session.completed && !ui.feedback && !ui.reportModalOpen && !ui.paused && !ui.toolsOpen && !ui.whiteboardOpen) startTimer();
+  if (ui.whiteboardOpen) requestAnimationFrame(initWhiteboard);
 }
 
 function navigate(screen) {
@@ -854,6 +939,9 @@ function startGame(gameId) {
     showToast('Bu oyunda şu anda kullanılabilir soru kalmadı. Bildirilen sorular tekrar gösterilmez.', 'error');
     return;
   }
+  session.rewardEligible = true;
+  session.startedAt = session.startedAt || Date.now();
+  session.sessionId = session.sessionId || `session-${profile.id}-${Date.now()}`;
   ui.session = session;
   ui.screen = 'game';
   resetRoundUi();
@@ -872,6 +960,11 @@ function resetRoundUi() {
   const round = ui.session?.rounds?.[ui.session.currentIndex];
   if (round?.kind === 'memory') ui.roundData.memoryVisible = true;
   ui.reportModalOpen = false;
+  ui.paused = false;
+  ui.pauseStartedAt = null;
+  ui.pausedTotalMs = 0;
+  ui.toolsOpen = false;
+  ui.whiteboardOpen = false;
   ui.timeLeft = roundTimeLimit(round, ui.session?.game?.id);
   if (ui.session) ui.session.roundStartedAt = Date.now();
 }
@@ -912,7 +1005,8 @@ function clearTimer() {
 }
 
 function elapsedSeconds() {
-  return Math.max(1, Math.round((Date.now() - ui.session.roundStartedAt) / 1000));
+  const activePause = ui.paused && ui.pauseStartedAt ? Date.now() - ui.pauseStartedAt : 0;
+  return Math.max(1, Math.round((Date.now() - ui.session.roundStartedAt - ui.pausedTotalMs - activePause) / 1000));
 }
 
 function finalizeRound(correct, message, rawScore = correct ? 100 : 25) {
@@ -931,12 +1025,14 @@ function finalizeRound(correct, message, rawScore = correct ? 100 : 25) {
     hintsUsed: ui.hintIndex,
     elapsedSeconds: time,
     score,
-    rewardEligible: session.rewardEligible,
+    rewardEligible: true,
     familyId: round.familyId || null,
     cognitiveDepth: round.cognitiveDepth || round.difficulty,
     curriculumRole: round.curriculumRole || 'current',
     targetGrade: round.targetGrade || activeProfile().grade,
-    qualityScore: round.qualityScore || null
+    qualityScore: round.qualityScore || null,
+    calculatorUsed: Boolean(session.calculatorUsed),
+    sessionId: session.sessionId
   });
   session.answers[session.currentIndex] = {
     correct,
@@ -1045,7 +1141,7 @@ function nextRound() {
   const session = ui.session;
   if (session.currentIndex >= session.rounds.length - 1) {
     session.completed = true;
-    if (session.rewardEligible) completeGameSession(state, activeProfile().id, session.game.id, session.score, session.rounds.length * 100);
+    completeGameSession(state, activeProfile().id, session.game.id, session.score, session.rounds.length * 100);
     clearTimer();
     render();
     return;
@@ -1105,6 +1201,10 @@ function saveCurrentQuestionReport() {
     explanation: round.explanation || '',
     wasAnswered: Boolean(ui.feedback),
     wasCorrect: ui.feedback?.correct ?? null,
+    responseSeconds: elapsedSeconds(),
+    hintCount: ui.hintIndex || 0,
+    difficulty: round.difficulty || null,
+    grade: activeProfile().grade,
     reason,
     note
   });
@@ -1216,6 +1316,15 @@ root.addEventListener('click', async (event) => {
     navigate('dashboard');
   }
   if (action === 'return-platform') { sessionStorage.removeItem('kuzenler-play-learner'); location.reload(); return; }
+  if (action === 'student-profile') { if (ui.session && !ui.feedback && !window.confirm('Profil ekranına dönülsün mü? Çözülen sorular kaydedildi.')) return; ui.session=null; navigate('progress'); return; }
+  if (action === 'student-logout') { if (!window.confirm('Oturum kapatılsın mı? Çözülen bütün sorular kaydedildi.')) return; clearTimer(); ui.session=null; sessionStorage.removeItem('kuzenler-play-learner'); sessionStorage.removeItem('kuzenler-active-learner'); if (PLATFORM.mode==='live') { window.dispatchEvent(new CustomEvent('kuzenler:student-logout',{detail:{state}})); root.innerHTML='<main class="platform-shell auth-shell"><section class="auth-card"><h1>Oturum kapatılıyor…</h1><p>Son gelişim kayıtları Firebase’e aktarılıyor.</p></section></main>'; } else { state.activeProfileId=null; navigate('profiles'); } return; }
+  if (action === 'toggle-pause') { togglePause(); return; }
+  if (action === 'open-tools') { ui.toolsOpen=true; ui.whiteboardOpen=false; clearTimer(); render(); return; }
+  if (action === 'close-tools') { ui.toolsOpen=false; ui.whiteboardOpen=false; render(); return; }
+  if (action === 'open-whiteboard') { ui.toolsOpen=false; ui.whiteboardOpen=true; clearTimer(); render(); return; }
+  if (action === 'calculator-key') { calculatorKey(target.dataset.key); return; }
+  if (action === 'calculator-equals') { calculatorEquals(); return; }
+  if (action === 'whiteboard-clear') { const c=document.querySelector('#whiteboard-canvas'); c?.getContext('2d')?.clearRect(0,0,c.width,c.height); return; }
   if (action === 'profiles') navigate('profiles');
   if (action === 'navigate') navigate(target.dataset.screen);
   if (action === 'filter') { ui.filter = target.dataset.filter; render(); }

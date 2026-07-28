@@ -18,7 +18,7 @@ export function saveStoredState(state) {
       version: state.version,
       profiles: state.profiles,
       settings: state.settings,
-      attempts: state.attempts.slice(-1200),
+      attempts: state.attempts.slice(-5000),
       daily: state.daily,
       badges: state.badges,
       activeProfileId: state.activeProfileId,

@@ -37,6 +37,8 @@ function baseProfile(overrides) {
     lastActiveDate: null,
     skills: { ...DEFAULT_SKILLS },
     completedGames: 0,
+    examPlans: [],
+    examField: '',
     ...overrides
   };
 }
@@ -93,7 +95,9 @@ function normalizeProfile(profile) {
   return baseProfile({
     ...profile,
     grade: inferredGrade,
-    skills: { ...DEFAULT_SKILLS, ...(profile?.skills || {}) }
+    skills: { ...DEFAULT_SKILLS, ...(profile?.skills || {}) },
+    examPlans: Array.isArray(profile?.examPlans) ? profile.examPlans : (inferredGrade >= 11 ? ['YKS'] : inferredGrade >= 7 ? ['LGS'] : []),
+    examField: profile?.examField || ''
   });
 }
 

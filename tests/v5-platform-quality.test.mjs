@@ -113,3 +113,80 @@ test('admin görünüm seçici her yönetim görünümünde kalıcıdır ve çı
   assert.match(source,/currentUser=null/);
   assert.match(source,/renderAuth\('login'\)/);
 });
+
+
+test('öğrenci listesi PIN sütunu ve PDF yazdırma aksiyonu içerir', async () => {
+  const source = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
+  assert.match(source, /accessPin: pin/);
+  assert.match(source, /print-student-list/);
+  assert.match(source, /Öğrenci Giriş Listesi/);
+  assert.match(source, /PDF \/ Yazdır/);
+});
+
+test('V5.1 merkezi yönetim okul, sınıf, öğretmen, veli ve öğrenci modüllerini içerir', async () => {
+  const source = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
+  for (const marker of ['Merkezi yönetim paneli','Okullar','Sınıflar','Öğretmenler','Veliler','Öğrenciler','admin-reset-pin','admin-reset-password','learnerEnrollmentHistory']) {
+    assert.ok(source.includes(marker), `${marker} bulunamadı`);
+  }
+});
+
+test('V5.1 yönetim listeleri arama filtreleme ve kontrollü silme taşır', async () => {
+  const source = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
+  for (const marker of ['admin-search','admin-status-filter','admin-school-filter','admin-teacher-filter','admin-parent-filter','admin-delete-record','admin-toggle-record']) {
+    assert.ok(source.includes(marker), `${marker} bulunamadı`);
+  }
+});
+
+test('V5.2 bütün soru çalışmalarını gelişime dahil eder ve öğrenci araçlarını taşır', async () => {
+  const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
+  assert.match(app, /session\.rewardEligible = true/);
+  assert.match(app, /rewardEligible: true/);
+  assert.match(app, /data-action="toggle-pause"/);
+  assert.match(app, /Soru durduruldu/);
+  assert.match(app, /data-action="open-tools"/);
+  assert.match(app, /whiteboard-canvas/);
+  assert.match(app, /calculator-equals/);
+  assert.match(app, /data-action="student-logout"/);
+  assert.match(app, /gelişim analizine kaydedildi/);
+});
+
+test('V5.3 kalıcı çıkış, sıralama ve sınav planlarını içerir', async () => {
+  const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
+  const platform = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
+  const registry = await readFile(new URL('../js/games/registry.js', import.meta.url), 'utf8');
+  const rules = await readFile(new URL('../firebase/firestore.rules', import.meta.url), 'utf8');
+  assert.match(app, /kuzenler:student-logout/);
+  assert.match(app, /Genel sıralama/);
+  assert.match(platform, /leaderboards/);
+  assert.match(registry, /lgs-focus/);
+  assert.match(registry, /tyt-focus/);
+  assert.match(registry, /ayt-focus/);
+  assert.match(registry, /kpss-focus/);
+  assert.match(rules, /match \/leaderboards/);
+});
+
+test('V5.3 ifade bozukluğu bildirimi ve lise kelime merdiveni karantinası vardır', async () => {
+  const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
+  const registry = await readFile(new URL('../js/games/registry.js', import.meta.url), 'utf8');
+  assert.match(app, /İfade bozukluğu/);
+  assert.match(registry, /'word-ladder': \{ minGrade: 1, maxGrade: 8 \}/);
+  assert.match(registry, /trivialLinear/);
+});
+
+test('V5.4 bütün sorularda görünür durdurma ve aynı soru bildirimi sunar', async () => {
+  const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
+  assert.match(app, /pause-question-button/);
+  assert.match(app, /Soruyu Durdur/);
+  assert.match(app, /same-question/);
+  assert.match(app, /Hatalı \/ Aynı Soru/);
+});
+
+test('V5.4 admin soru inceleme merkezi ve otomatik sınav planları içerir', async () => {
+  const platform = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
+  assert.match(platform, /Soru İnceleme Merkezi/);
+  assert.match(platform, /AI analiz et/);
+  assert.match(platform, /question_invalid/);
+  assert.match(platform, /if \(g === 8\) return \['LGS'\]/);
+  assert.match(platform, /if \(g === 12\) return \['YKS', 'KPSS'\]/);
+  assert.match(platform, /examPlansCustomized:true/);
+});

@@ -1,9 +1,9 @@
 {
   "name": "kuzenler-yarisiyor",
-  "version": "5.0.4",
+  "version": "5.4.0",
   "private": true,
   "type": "module",
-  "description": "Windows yol ve Firebase/Vercel CLI uyumluluk düzeltmeleriyle hazır platform paketi.",
+  "description": "Kalıcı Firebase gelişimi, gerçek çıkış, LGS–TYT–AYT–KPSS planları, sıralama ve soru kalite kapısı.",
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
     "dev": "npm run prepare && node server.mjs",

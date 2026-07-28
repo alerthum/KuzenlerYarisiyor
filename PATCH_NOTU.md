@@ -1,28 +1,31 @@
-# V5.0.4 Oturum ve Admin Görünüm Yaması
+# Kuzenler Yarışıyor V5.4 — Soru İnceleme ve Otomatik Sınav Planı
 
-Bu yama çalışan V5.0.3 ana proje klasörünün üzerine kopyalanır.
+Bu paket V5.3 ana klasörünün üzerine kopyalanır.
 
-## Düzeltilenler
+## Gelen değişiklikler
 
-- Admin, öğretmen ve veli önizlemelerinde admin görünüm seçici sürekli görünür.
-- Öğretmen veya veli görünümünden admin paneline geri dönülebilir.
-- Önizleme modu gerçek `admin` rolünü değiştirmez.
-- Çıkış işlemi giriş ekranını hemen açar.
-- Çıkıştan sonra yeniden giriş için Ctrl+Shift+R gerekmez.
-- Çıkış sırasında seçili öğrenci ve önizleme bilgileri temizlenir.
-- Service worker önbellek sürümü 5.0.4'e yükseltildi.
+- Bütün soru ekranlarında görünür `Soruyu Durdur` düğmesi.
+- Durdurulunca soru ve seçenekler gizlenir; süre ilerlemez.
+- Bildirim seçeneklerine `Aynı soru tekrar çıktı` eklendi.
+- Admin paneline ayrı `Soru İnceleme` modülü eklendi.
+- Bildirimde öğrenci cevabı, sistem cevabı, soru metni, bağlam ve öğrenci notu birlikte gösterilir.
+- `AI analiz et` düğmesi kanıtları özetler ve ön değerlendirme üretir.
+- Admin kararı: Soru hatalı, Cevap/çözüm hatalı, Öğrenci zorlanmış, Tekrar soru, Geçersiz.
+- 8. sınıfa varsayılan LGS planı otomatik atanır.
+- 12. sınıfa varsayılan YKS + KPSS planları otomatik atanır.
+- 11. sınıfa varsayılan YKS planı otomatik atanır.
+- Admin öğrenci düzenlemesinden planları çıkarabilir; `examPlansCustomized` sayesinde sistem tekrar zorla eklemez.
+- Service Worker önbelleği V5.4 olarak yenilendi.
 
-## Değiştirilmeyenler
+## Test sonucu
 
-- `KUZENLER_AYARLARI.env`
-- Firebase bağlantı bilgileri
-- Firestore verileri
-- `.git` klasörü ve GitHub bağlantısı
-- Firestore güvenlik kuralları
+70 test / 70 başarılı / 0 başarısız.
 
-## Uygulama
+## Kurulum
 
-ZIP içindeki dosya ve klasörleri doğrudan ana proje klasörünün üzerine kopyalayın ve dosyaların değiştirilmesini onaylayın.
+ZIP içeriğini mevcut ana klasörün üzerine kopyalayın:
+
+C:\Users\ibrahimyokus\Desktop\Kuzenler_Yarisiyor
 
 Ardından:
 
@@ -32,10 +35,12 @@ npm run check
 npm run dev
 ```
 
-Test başarılıysa:
+Yerel test sonrası GitHub:
 
 ```powershell
 git add .
-git commit -m "V5.0.4 admin gorunum ve oturum duzeltmesi"
+git commit -m "V5.4 soru inceleme ve otomatik sinav planlari"
 git push
 ```
+
+Vercel GitHub bağlantısı açıksa push sonrasında canlı uygulama otomatik güncellenir.

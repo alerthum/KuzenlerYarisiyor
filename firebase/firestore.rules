@@ -127,9 +127,23 @@ service cloud.firestore {
       allow write: if roleIs('admin');
     }
 
+    match /learnerEnrollmentHistory/{historyId} {
+      allow read: if signedIn() && (roleIs('admin') || canAccessLearner(resource.data.learnerId));
+      allow create: if roleIs('admin');
+      allow update, delete: if false;
+    }
+
     match /contentItems/{contentId} {
       allow read: if signedIn();
       allow write: if roleIs('admin');
+    }
+
+
+    match /leaderboards/{learnerId} {
+      allow read: if signedIn();
+      allow create, update: if signedIn() && canAccessLearner(learnerId)
+        && request.resource.data.learnerId == learnerId;
+      allow delete: if roleIs('admin');
     }
 
     match /{document=**} {
