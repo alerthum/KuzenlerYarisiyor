@@ -457,4 +457,4 @@ export const GEOMETRY_QUESTIONS = [
   }
 ];
 
-export { CATEGORY_LABELS } from './catalog-labels.js';
+export { CATEGORY_LABELS } from './catalog/labels.js';

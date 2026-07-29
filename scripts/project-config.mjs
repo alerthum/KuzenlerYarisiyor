@@ -33,7 +33,8 @@ export async function loadProjectConfig() {
     description: raw.APP_DESCRIPTION || 'Öğrenme ve zekâ oyunları.',
     localPort: Number(raw.LOCAL_PORT || 6220),
     dataProvider: provider,
-    contentVersion: raw.CONTENT_VERSION || '5.0.0',
+    contentVersion: raw.CONTENT_VERSION || '8.0.0',
+    aiProvider: raw.AI_PROVIDER || 'local',
     git: {
       repositoryUrl: raw.GIT_REPOSITORY_URL || '',
       defaultBranch: raw.GIT_DEFAULT_BRANCH || 'main',
@@ -103,6 +104,7 @@ export async function writeRuntimeConfig(config, targetRoot = projectRoot) {
     description: config.description,
     dataProvider: config.dataProvider,
     contentVersion: config.contentVersion,
+    aiProvider: config.aiProvider,
     git: { repositoryUrl: config.git.repositoryUrl, defaultBranch: config.git.defaultBranch },
     vercel: { projectName: config.vercel.projectName },
     firebase: config.firebase,

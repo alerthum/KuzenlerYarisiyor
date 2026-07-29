@@ -144,6 +144,29 @@ service cloud.firestore {
       allow write: if roleIs('admin');
     }
 
+    match /clubs/{clubId} {
+      allow read: if signedIn();
+      allow create, update: if roleIs('admin') || roleIs('teacher');
+      allow delete: if roleIs('admin');
+    }
+
+    match /seasons/{seasonId} {
+      allow read: if signedIn();
+      allow write: if roleIs('admin');
+    }
+
+    match /familyLeagues/{leagueId} {
+      allow read: if signedIn() && (roleIs('admin') || request.auth.uid in resource.data.memberIds);
+      allow create: if roleIs('parent') || roleIs('admin');
+      allow update: if roleIs('admin') || request.auth.uid in resource.data.memberIds;
+      allow delete: if roleIs('admin');
+    }
+
+    match /aiInsights/{insightId} {
+      allow read: if signedIn() && canAccessLearner(resource.data.learnerId);
+      allow create, update: if roleIs('admin') || roleIs('teacher');
+      allow delete: if false;
+    }
 
     match /leaderboards/{learnerId} {
       allow read: if signedIn();

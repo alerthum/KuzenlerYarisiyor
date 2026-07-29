@@ -1,33 +1,16 @@
-# Zihin Arenası V6.5.2 Stabilizasyon Yaması
+# Zihin Arenası V8.0.2 — Admin Metrik Hotfix
 
-Bu paket, kullanıcının 29 Temmuz 2026 tarihinde yüklediği gerçek V6.5.1 ana proje üzerinden hazırlanmıştır.
+## Kök neden
+`metricsForLearners()` bir `Map` döndürürken yeni `adminAnalytics()` fonksiyonu bunu dizi sanıp `metrics.map(...)` çağırıyordu. Ayrıca yönetim panelindeki bütün modüller, seçili olmasalar bile önceden render edildiği için Analizler ekranındaki bu hata Genel Bakış dahil tüm admin portalını çökertiyordu.
 
-## Ana düzeltmeler
+## Düzeltmeler
+- `adminAnalytics()` hem `Map` hem dizi metrik girişini güvenli biçimde kabul eder.
+- Admin modülleri yalnız seçildiğinde render edilir.
+- Bir modülde beklenmeyen hata oluşursa tüm portal yerine yalnız ilgili modülde hata kartı gösterilir.
+- Service Worker önbelleği `v8.0.2` olarak yenilendi.
+- Hatanın tekrarını engelleyen üç regresyon testi eklendi.
 
-- 11. sınıf: TYT ve AYT kategori filtreleri.
-- 12. sınıf: TYT, AYT ve KPSS kategori filtreleri.
-- 11–12. sınıf filtrelerinden LGS ve Din kaldırıldı.
-- TYT/AYT/KPSS kartlarındaki `undefined` düzeltildi.
-- Oyun isimleri tek merkezi Türkçe sözlüğe taşındı.
-- Admin/öğretmen/veli oyun analizleri Türkçeleştirildi.
-- 8, 11 ve 12. sınıf otomatik sınav planı normalizasyonu düzeltildi.
-- 6 yeni stabilizasyon kabul testi eklendi.
-
-## Test sonucu
-
-- 90 test başarılı
-- 0 başarısız
+## Doğrulama
+- 97 test / 97 başarılı
 - Proje kontrolü başarılı
 - Vercel build başarılı
-
-## Uygulama
-
-Paket içeriğini ana proje klasörünün üzerine kopyalayın. Ardından:
-
-```powershell
-Ctrl + C
-npm run check
-npm run dev
-```
-
-Firebase kuralları değişmediği için `npm run firebase:deploy` gerekli değildir.

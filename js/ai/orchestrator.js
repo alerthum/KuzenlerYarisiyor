@@ -1,12 +1,18 @@
 import { curriculumMatrix, automaticExamPlans } from '../curriculum/meb-curriculum.js';
+import { buildLearningMemory } from './memory.js';
+import { resolveProvider, providerCapabilities } from './providers.js';
 
 export const AI_AGENT_CATALOG = [
   { id: 'learner-model', name: 'Öğrenci Tanıma AI', purpose: 'Seviye, hız, hata, ipucu ve alışkanlık örüntülerini çıkarır.' },
   { id: 'class-intelligence', name: 'Sınıf Analisti AI', purpose: 'Sınıfın ortak eksiklerini ve öğretmen için öncelikleri belirler.' },
   { id: 'learning-coach', name: 'Öğrenme Koçu AI', purpose: 'Günlük rota, motivasyon ve sürdürülebilir hedef önerir.' },
+  { id: 'ai-teacher', name: 'AI Öğretmen', purpose: 'Yanlış cevabı öğrencinin düzeyine uygun ikinci bir yöntemle açıklar.' },
+  { id: 'parent-analyst', name: 'Veli Analisti AI', purpose: 'Haftalık gelişimi velinin anlayacağı kısa ve somut bir özete dönüştürür.' },
   { id: 'content-editor', name: 'İçerik Editörü AI', purpose: 'Soru çeşitliliğini, zorluk düzeyini ve tekrar riskini denetler.' },
   { id: 'assessment-auditor', name: 'Ölçme Değerlendirme AI', purpose: 'Kazanım kapsamasını ve sınav uyumunu değerlendirir.' },
-  { id: 'question-reviewer', name: 'Soru Denetçisi AI', purpose: 'Hatalı soru, hatalı cevap ve öğrenci zorlanmasını kanıtlarla ayırır.' }
+  { id: 'question-reviewer', name: 'Soru Denetçisi AI', purpose: 'Hatalı soru, hatalı cevap ve öğrenci zorlanmasını kanıtlarla ayırır.' },
+  { id: 'motivation-engine', name: 'Motivasyon AI', purpose: 'Kolaylaştırmadan, doğru meydan okuma ve çeşitlilikle geri dönüşü artırır.' },
+  { id: 'safety-guardian', name: 'Güvenlik ve Denge AI', purpose: 'Aşırı kullanım, anlamsız puan kasma ve yaşa uygunsuz içerik riskini sınırlar.' }
 ];
 
 function average(items) {
@@ -95,4 +101,58 @@ export function reviewQuestionReport(report, siblingReports = []) {
     ],
     recommendation: repeated ? 'Soruyu karantinaya al ve eşdeğer varyantla değiştir.' : answerConflict ? 'Cevap denetimini test et ve soruyu geçici kapat.' : 'İkinci öğrenci sinyali veya editör doğrulaması bekle.'
   };
+}
+
+
+export function runAiOrchestra(profile, attempts = [], options = {}) {
+  const provider = resolveProvider(options);
+  const model = buildLearnerModel(profile, attempts);
+  const memory = buildLearningMemory(profile, attempts);
+  const proactive = createProactivePlan(profile, attempts);
+  const recent = recentAttempts(attempts, 60);
+  const fatigueRisk = recent.filter((a) => Number(a.elapsedSeconds || 0) > 150).length >= 4;
+  const randomGuessRisk = recent.length >= 8 && recent.filter((a) => Number(a.elapsedSeconds || 0) <= 3).length / recent.length > 0.35;
+  return {
+    provider: providerCapabilities(provider),
+    model,
+    memory,
+    proactive,
+    agents: AI_AGENT_CATALOG.map((agent) => ({ ...agent, status: 'ready' })),
+    signals: {
+      fatigueRisk,
+      randomGuessRisk,
+      needsTeacherReview: model.weakest?.attempts >= 5 && model.weakest?.accuracy < 45,
+      needsParentSummary: recent.length >= 10
+    },
+    generatedAt: new Date().toISOString()
+  };
+}
+
+export function createParentWeeklySummary(profile, attempts = []) {
+  const model = buildLearnerModel(profile, attempts);
+  const recent = recentAttempts(attempts, 80);
+  const solved = recent.length;
+  const strongest = model.strongest?.subject || 'henüz belirleniyor';
+  const focus = model.weakest?.subject || 'genel muhakeme';
+  return {
+    title: `${profile.name} için haftalık gelişim özeti`,
+    summary: `${solved} soru çözüldü. En güçlü sinyal ${strongest}; önümüzdeki rota ${focus} alanını zor ama yönlendirilmiş görevlerle güçlendirecek.`,
+    accuracy: model.accuracy,
+    averageSeconds: model.avgTime,
+    hints: model.hints
+  };
+}
+
+export function createClassInsight(learners = []) {
+  const attempts = learners.flatMap((item) => item.attempts || []);
+  const total = attempts.length;
+  const correct = attempts.filter((item) => item.correct).length;
+  const bySkill = new Map();
+  for (const attempt of attempts) {
+    const key = attempt.skill || 'general';
+    const row = bySkill.get(key) || { count: 0, correct: 0 };
+    row.count += 1; row.correct += attempt.correct ? 1 : 0; bySkill.set(key, row);
+  }
+  const priority = [...bySkill.entries()].map(([skill,row]) => ({ skill, accuracy: row.count ? Math.round(row.correct*100/row.count) : 0, count: row.count })).sort((a,b)=>a.accuracy-b.accuracy)[0] || null;
+  return { learnerCount: learners.length, totalQuestions: total, accuracy: total ? Math.round(correct*100/total) : 0, priority, recommendation: priority ? `${priority.skill} alanında kısa bir ortak çalışma ve ardından kişisel görev önerilir.` : 'İlk sınıf verileri oluştuğunda öneri hazırlanacak.' };
 }

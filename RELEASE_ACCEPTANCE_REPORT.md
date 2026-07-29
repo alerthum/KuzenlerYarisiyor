@@ -1,41 +1,51 @@
-# Zihin Arenası V6.5.2 — Sürüm Kabul Raporu
+# Zihin Arenası V8 Mega Release — Kabul Raporu
 
-## Düzeltilen regresyonlar
+## Birleştirilen yol haritası
 
-- 11. sınıf oyun kütüphanesine TYT ve AYT kategori filtreleri eklendi.
-- 12. sınıf oyun kütüphanesine TYT, AYT ve KPSS kategori filtreleri eklendi.
-- 11–12. sınıf filtrelerinden LGS ve Din kaldırıldı.
-- TYT, AYT ve KPSS kartlarında görülen `undefined` kategori değeri kaldırıldı.
-- Oyun adları tek merkezi Türkçe sözlüğe bağlandı.
-- Admin, öğretmen ve veli analizlerinde teknik oyun kimlikleri yerine Türkçe ad kullanılması sağlandı.
-- Yerel profil normalizasyonunda 8. sınıf LGS, 11. sınıf YKS, 12. sınıf YKS+KPSS varsayılanları düzeltildi.
+- V6.0 Premium Yönetim ve Regresyon Güvencesi
+- V6.5 Akıllı İçerik Motoru ve MEB Kazanım Sistemi
+- V7.0 Sosyal Platform temeli
+- V8.0 AI Eğitim Orkestrası temeli
 
-## Korunduğu otomatik testlerle doğrulanan özellikler
+## Bu sürümde çalışan ana yetenekler
 
-- Öğrenci düzenleme ve PIN işlemleri
-- Profil ve çıkış işlemleri
+- Admin, öğretmen, veli ve öğrenci canlı oturum altyapısı
+- Okul, sınıf, öğretmen, veli ve öğrenci yönetimi
+- Öğrenci PIN/kod işlemleri ve mobil kart yönetimi
+- Kalıcı soru denemeleri, gelişim, ipucu, süre ve XP kaydı
+- LGS, TYT, AYT ve KPSS sınıf bazlı kategori ayrımı
+- Kolay soru kalite kapısı ve oturum içi tekrar engeli
+- Soru bildirme, AI ön inceleme ve global karantina
 - Soru durdurma, beyaz tahta ve hesap makinesi
-- Kalıcı gelişim kayıtları
 - Genel, sınıf ve yaş sıralaması
-- Soru bildirme ve admin inceleme akışı
-- Orta-üstü zorluk kalite kapısı
-- Aynı sorunun oturum içinde ve geçmiş profilde tekrarlanmaması
-- V6.5 Zihin Rehberi ve ders/kazanım matrisi
+- Haftalık lig, aylık sezon, rozet ve günlük meydan okuma
+- 10 uzman ajanlı yerel AI orkestrası ve sağlayıcı soyutlaması
+- Öğrenci hafızası, kişisel rota, veli özeti ve sınıf analizi fonksiyonları
 
-## Bilinçli olarak kaldırılan özellik
+## Korunduğu doğrulanan kritik özellikler
 
-Yok.
+- Öğrenci düzenleme
+- Yeni PIN ve özel PIN
+- Sınıf/veli/öğretmen bağlantıları
+- Profil ve çıkış
+- Kalıcı gelişim
+- Türkçe oyun adları
+- Soru inceleme kararlarının karantinaya etkisi
+- Mobil yönetim kartları
 
-## Bilinen eksikler
+## Bilinçli güvenlik sınırları
 
-- MEB kazanımlarının tamamı henüz geniş ve editör onaylı soru havuzuyla doldurulmuş değildir.
-- AI ajanları şu aşamada yerel karar motorlarıdır; harici üretken AI servisi henüz bağlanmamıştır.
-- Mobil yönetim ekranlarının cihaz bazlı görsel test kapsamı genişletilecektir.
+- Öğrenciler arasında mesajlaşma yoktur.
+- Sosyal tabloda kişisel iletişim bilgileri gösterilmez.
+- Üretken AI anahtarları tarayıcıya konulmaz.
+- `AI_PROVIDER=local` durumunda sistem yerel karar motorlarıyla çalışır.
+- OpenAI/Gemini canlı üretken özellikleri için daha sonra sunucu tarafı API katmanı gerekir.
 
-## Kabul senaryoları
+## Tamamlanması veri/içerik çalışması gerektiren alanlar
 
-- 8. sınıf: LGS görünür; TYT, AYT, KPSS görünmez.
-- 11. sınıf: TYT ve AYT görünür; LGS ve KPSS görünmez.
-- 12. sınıf: TYT, AYT ve KPSS görünür; LGS ve Din filtreleri görünmez.
-- Kullanıcı ekranlarında sınav kartı kategorisi `undefined` olamaz.
-- Oyun bazında analizde bilinen oyun kimlikleri İngilizce teknik adla gösterilemez.
+- Bütün MEB kazanımlarının binlerce editör onaylı soruyla doldurulması
+- Kelime Merdiveni için kapsamlı lisanslı Türkçe sözlük ağı
+- Canlı sınıf yarışması ve aile ligi davet akışlarının sunucu tarafı işlemleri
+- Üretken AI sağlayıcılarının güvenli Cloud Function/API bağlantısı
+
+Bu maddeler gizlenmemiştir: V8, sürdürülebilir üretim tabanı ve çalışan sosyal/AI temelidir; içerik havuzu ve harici AI servisleri sürekli büyütülecek katmanlardır.

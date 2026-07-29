@@ -6,6 +6,7 @@ export const RUNTIME_CONFIG = Object.freeze({
   "description": "1-12. sınıf öğrenme omurgasına sahip Türkçe, matematik, İngilizce, fen, sosyal, zekâ ve olimpiyat platformu.",
   "dataProvider": "firebase",
   "contentVersion": "6.5.0",
+  "aiProvider": "local",
   "git": {
     "repositoryUrl": "https://github.com/alerthum/KuzenlerYarisiyor.git",
     "defaultBranch": "main"

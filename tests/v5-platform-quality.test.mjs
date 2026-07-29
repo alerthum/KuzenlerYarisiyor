@@ -105,10 +105,12 @@ test('soru kalite kayıtlarının tamamı V5 paketinde bulunur',async()=>{
 });
 
 
-test('admin görünüm seçici her yönetim görünümünde kalıcıdır ve çıkış ekranı doğrudan yeniler', async () => {
+test('admin görünüm seçici komuta merkezinde kalıcıdır ve çıkış ekranı doğrudan yeniler', async () => {
   const source = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url),'utf8');
-  assert.match(source,/admin-view-switcher/);
-  assert.match(source,/Gerçek yetki: Admin/);
+  assert.match(source,/admin-role-preview/);
+  assert.match(source,/data-view=\"admin\"/);
+  assert.match(source,/data-view=\"teacher\"/);
+  assert.match(source,/data-view=\"parent\"/);
   assert.match(source,/sessionStorage\.removeItem\('kuzenler-admin-view'\)/);
   assert.match(source,/currentUser=null/);
   assert.match(source,/renderAuth\('login'\)/);

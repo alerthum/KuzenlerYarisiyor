@@ -4,9 +4,9 @@ import { AI_AGENT_CATALOG, buildLearnerModel, createProactivePlan, reviewQuestio
 import { automaticExamPlans, subjectsForGrade } from '../js/curriculum/meb-curriculum.js';
 import { passesQualityGate, selectDiverseQuestions } from '../js/engines/smart-learning-engine-v65.js';
 
-test('altı uzman AI ajanı tanımlıdır', () => {
-  assert.equal(AI_AGENT_CATALOG.length, 6);
-  assert.deepEqual(new Set(AI_AGENT_CATALOG.map((agent) => agent.id)).size, 6);
+test('AI orkestrasında en az on uzman ajan tanımlıdır', () => {
+  assert.ok(AI_AGENT_CATALOG.length >= 10);
+  assert.equal(new Set(AI_AGENT_CATALOG.map((agent) => agent.id)).size, AI_AGENT_CATALOG.length);
 });
 
 test('sınav planları sınıfa göre otomatik atanır', () => {

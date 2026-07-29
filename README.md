@@ -1,3 +1,7 @@
+# Zihin Arenası V8 Mega Release
+
+Bu depo V6.0, V6.5, V7.0 ve V8.0 yol haritasını tek üretim tabanında birleştirir. Kurulum için `TEK_KOMUTLA_KURULUM.ps1`, doğrulama için `npm run check` kullanılır. Ayrıntılı kapsam `RELEASE_ACCEPTANCE_REPORT.md` dosyasındadır.
+
 # Zihin Arenası v5.0.1
 
 V5; yerelde tek komutla çalışan oyun alanını korur, canlı yayında ise Firebase Authentication ve Firestore üzerinden zorunlu veli–öğretmen–öğrenci hesabı, çoklu çocuk, sınıf, toplu öğrenci kaydı ve merkezi analiz altyapısını açar.

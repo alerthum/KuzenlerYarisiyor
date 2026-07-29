@@ -44,7 +44,7 @@ function baseProfile(overrides) {
 }
 
 export const DEFAULT_STATE = {
-  version: 5,
+  version: 8,
   activeProfileId: null,
   profiles: [
     baseProfile({
@@ -87,7 +87,9 @@ export const DEFAULT_STATE = {
   badges: [],
   seenQuestions: {},
   questionReports: [],
-  blockedQuestionKeys: {}
+  blockedQuestionKeys: {},
+  social: { seasonHistory: [], clubMemberships: [], familyLeagueIds: [] },
+  aiMemory: {}
 };
 
 function normalizeProfile(profile) {
@@ -96,7 +98,7 @@ function normalizeProfile(profile) {
     ...profile,
     grade: inferredGrade,
     skills: { ...DEFAULT_SKILLS, ...(profile?.skills || {}) },
-    examPlans: Array.isArray(profile?.examPlans) ? profile.examPlans : (inferredGrade === 12 ? ['YKS', 'KPSS'] : inferredGrade === 11 ? ['YKS'] : inferredGrade === 8 ? ['LGS'] : []),
+    examPlans: Array.isArray(profile?.examPlans) && profile.examPlans.length ? profile.examPlans : (inferredGrade >= 12 ? ['YKS','KPSS'] : inferredGrade === 11 ? ['YKS'] : inferredGrade === 8 ? ['LGS'] : []),
     examField: profile?.examField || ''
   });
 }
@@ -116,7 +118,7 @@ export function createInitialState(stored) {
   return {
     ...structuredClone(DEFAULT_STATE),
     ...stored,
-    version: 5,
+    version: 8,
     platform: { ...DEFAULT_STATE.platform, ...(stored.platform || {}) },
     organizations: Array.isArray(stored.organizations) ? stored.organizations : [],
     classrooms: Array.isArray(stored.classrooms) ? stored.classrooms : [],
@@ -128,7 +130,9 @@ export function createInitialState(stored) {
     badges: Array.isArray(stored.badges) ? stored.badges : [],
     seenQuestions: stored.seenQuestions || {},
     questionReports: Array.isArray(stored.questionReports) ? stored.questionReports : [],
-    blockedQuestionKeys: stored.blockedQuestionKeys || {}
+    blockedQuestionKeys: stored.blockedQuestionKeys || {},
+    social: { ...DEFAULT_STATE.social, ...(stored.social || {}) },
+    aiMemory: stored.aiMemory || {}
   };
 }
 
@@ -179,6 +183,8 @@ export function recordAttempt(state, payload) {
   const xpBreakdown = rewardEligible
     ? calculateXpBreakdown(payload)
     : { base: 0, difficultyBonus: 0, noHintBonus: 0, persistenceBonus: 0, hintPenalty: 0, total: 0 };
+  attempt.xp = xpBreakdown.total;
+  attempt.xpBreakdown = xpBreakdown;
   if (rewardEligible) {
     profile.xp += xpBreakdown.total;
     profile.stars += payload.correct ? Math.max(1, Math.round(payload.difficulty / 2)) : 0;

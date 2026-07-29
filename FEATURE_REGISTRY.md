@@ -48,3 +48,30 @@ Bu dosya çalışan özelliklerin sözleşmesidir. Açıkça kaldırma kararı v
 - [x] Aynı oturumda soru tekrarını engelleyen imza denetimi
 - [x] Yüksek sınıflarda aşırı kolay soru kalite kapısı
 - [x] Soru aileleri arasında çeşitlilik kotası
+
+## V8 Mega Release — Korunması zorunlu
+
+### Sosyal platform
+- [x] Genel, sınıf ve yaş sıralaması
+- [x] Haftalık lig ve aylık sezon
+- [x] Bronz, Gümüş, Altın, Elmas, Usta, Şampiyon ligleri
+- [x] Günlük meydan okuma
+- [x] Rozetler
+- [x] Güvenli sosyal görünürlük; mesajlaşma yok
+
+### AI orkestrası
+- [x] En az 10 benzersiz uzman ajan
+- [x] Yerel karar motoru her zaman çalışır
+- [x] Öğrenci öğrenme hafızası
+- [x] Kişisel günlük rota
+- [x] Veli haftalık özeti
+- [x] Sınıf ortak eksik analizi
+- [x] Soru denetçisi ve karantina önerisi
+- [x] Sağlayıcı kapalıyken güvenli geri dönüş
+
+### Sınav görünürlüğü
+- [x] 8. sınıf LGS
+- [x] 11. sınıf TYT ve AYT
+- [x] 12. sınıf TYT, AYT ve KPSS
+- [x] 12. sınıfta LGS filtresi görünmez
+- [x] Kullanıcı ekranında undefined kategori görünmez

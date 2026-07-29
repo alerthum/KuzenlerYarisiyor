@@ -1,10 +1,11 @@
-import { categoryFiltersForGrade, categoryLabel } from './catalog-labels.js';
+import { categoryLabel, categoryFiltersForProfile } from './catalog/labels.js';
 import { ENGLISH_WORDS } from './content-v2.js';
 import { OFFICIAL_LGS_ARCHIVE } from './content-v3.js';
 import { V4_QUALITY_POLICY } from './content-v4.js';
 import { RUNTIME_CONFIG } from './runtime-config.js';
-import { createProactivePlan } from './ai/orchestrator.js';
+import { createProactivePlan, runAiOrchestra } from './ai/orchestrator.js';
 import { curriculumMatrix } from './curriculum/meb-curriculum.js';
+import { socialSnapshot } from './social/league-engine.js';
 import { chooseDiscoveryCard } from './engines/learning-engine-v4.js';
 import { SKILLS, accuracyForAttempts, createDailyEnglishWordIds, createDailyMissionIds, levelFromXp } from './engines/adaptive-engine.js';
 import { validateTargetExpression } from './engines/math-engine.js';
@@ -66,8 +67,8 @@ const ui = {
 };
 
 const NAV_ITEMS = PLATFORM.mode === 'live'
-  ? [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['ranking', '🏅', 'Sıralama']]
-  : [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['ranking', '🏅', 'Sıralama'], ['parent', '⚙', 'Yerel Ayarlar']];
+  ? [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['ranking', '🏅', 'Sıralama'], ['social', '🏆', 'Lig']]
+  : [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['ranking', '🏅', 'Sıralama'], ['social', '🏆', 'Lig'], ['parent', '⚙', 'Yerel Ayarlar']];
 
 function activeProfile() {
   return getProfile(state);
@@ -260,6 +261,8 @@ function renderDashboard() {
         </div>
       </section>
 
+      ${(() => { const social = socialSnapshot(profile, attempts); return `<section class="section panel arena-social-preview"><div class="section-header"><div><span class="badge orange">${social.league.current.icon} ${social.league.current.name} Lig</span><h2>Bu haftaki arena yolculuğun</h2><p>${social.weeklyXp} haftalık XP • ${social.dailyChallenge.solved}/${social.dailyChallenge.targetQuestions} günlük meydan okuma</p></div><button class="text-button" data-action="navigate" data-screen="social">Lig merkezini aç</button></div><div class="progress-track"><div class="progress-fill" style="width:${social.league.progress}%"></div></div></section>`; })()}
+
       <section class="section score-guide">
         <div class="section-header"><div><h2>Puanı nasıl kazanıyorum?</h2><p>Çocukların aldığı XP ve soru puanı artık açıkça gösterilir.</p></div></div>
         <div class="score-rule-grid">
@@ -299,7 +302,7 @@ function renderLibrary() {
   const profile = activeProfile();
   if (!profile) return renderProfiles();
   const daily = getDailyData(profile);
-  const filters = categoryFiltersForGrade(profile.grade);
+  const filters = categoryFiltersForProfile(profile);
   if (!filters.some(([value]) => value === ui.filter)) ui.filter = 'all';
   const games = GAME_CATALOG.filter((game) => isGameAvailableForProfile(game, profile) && (ui.filter === 'all' || game.category === ui.filter));
   return `
@@ -840,6 +843,28 @@ function renderRanking() {
   <section class="section panel"><h2>Genel sıralama</h2><p class="muted">Toplam ${sorted.length} öğrenci.</p>${sorted.length?`<div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Sıra</th><th>Öğrenci</th><th>Yaş</th><th>Sınıf</th><th>XP</th><th>Doğruluk</th><th>Soru</th></tr></thead><tbody>${sorted.slice(0,100).map((row,index)=>`<tr class="${row.learnerId===profile.id?'current-row':''}"><td>${index+1}</td><td>${escapeHtml(row.displayName||row.name||'Öğrenci')}</td><td>${row.age||'—'}</td><td>${row.grade||'—'}</td><td>${formatNumber(row.xp||0)}</td><td>%${row.accuracy||0}</td><td>${row.totalQuestions||0}</td></tr>`).join('')}</tbody></table></div>`:'<div class="empty-state">Sıralama verisi ilk senkronizasyondan sonra oluşacak.</div>'}</section>${bottomNav()}</main>`;
 }
 
+function renderSocial() {
+  const profile = activeProfile();
+  if (!profile) return renderProfiles();
+  const attempts = attemptsForProfile(state, profile.id);
+  const social = socialSnapshot(profile, attempts);
+  const orchestra = runAiOrchestra(profile, attempts, { aiProvider: RUNTIME_CONFIG.aiProvider || 'local' });
+  const rows = Array.isArray(window.__KUZENLER_RANKINGS__) ? [...window.__KUZENLER_RANKINGS__] : [];
+  const weeklyRows = rows.sort((a,b)=>Number(b.weeklyXp||b.xp||0)-Number(a.weeklyXp||a.xp||0));
+  const own = weeklyRows.findIndex((row)=>row.learnerId===profile.id);
+  return `<main class="app-shell">${topbar()}
+    <section class="section mt-0 league-hero"><span class="badge orange">${social.seasonId} Sezonu</span><h1>${social.league.current.icon} ${social.league.current.name} Lig</h1><p>Bu hafta ${social.weeklyXp} XP topladın. ${social.league.next ? `${social.league.next.name} lige ulaşmak için ${Math.max(0,social.league.next.minXp-social.weeklyXp)} XP kaldı.` : 'En üst ligdesin.'}</p><div class="progress-track"><div class="progress-fill" style="width:${social.league.progress}%"></div></div></section>
+    <section class="metric-grid">
+      <div class="metric-card"><div class="metric-label">Haftalık sıra</div><div class="metric-value">${own>=0?`${own+1} / ${weeklyRows.length}`:'—'}</div><div class="metric-note">Tüm üyeler</div></div>
+      <div class="metric-card"><div class="metric-label">Günlük meydan okuma</div><div class="metric-value">${Math.min(social.dailyChallenge.solved,social.dailyChallenge.targetQuestions)}/${social.dailyChallenge.targetQuestions}</div><div class="metric-note">Her soru gelişime işler</div></div>
+      <div class="metric-card"><div class="metric-label">AI Koç</div><div class="metric-value">${orchestra.agents.length}</div><div class="metric-note">Hazır uzman ajan</div></div>
+    </section>
+    <section class="section panel"><div class="section-header"><div><h2>Rozetlerim</h2><p>Rozetler yalnız soru sayısına değil; devamlılık, çeşitlilik ve ipucusuz çözüme göre kazanılır.</p></div></div>${social.badges.length?`<div class="badge-gallery">${social.badges.map((b)=>`<article><span>${b.icon}</span><strong>${escapeHtml(b.name)}</strong><small>${escapeHtml(b.detail)}</small></article>`).join('')}</div>`:'<div class="empty-state">İlk rozetin için 10 meydan okuma sorusunu tamamla.</div>'}</section>
+    <section class="section panel"><h2>Haftalık lig tablosu</h2>${weeklyRows.length?`<div class="mobile-rank-list">${weeklyRows.slice(0,30).map((row,index)=>`<article class="${row.learnerId===profile.id?'current-row':''}"><strong>#${index+1} ${escapeHtml(row.displayName||'Öğrenci')}</strong><span>${formatNumber(row.weeklyXp||row.xp||0)} XP</span><small>${row.grade||'—'}. sınıf • ${row.age||'—'} yaş</small></article>`).join('')}</div>`:'<div class="empty-state">Lig tablosu öğrenciler senkronize oldukça oluşacak.</div>'}</section>
+    <section class="section panel"><h2>Güvenli sosyal yapı</h2><p class="muted">Öğrenciler birbirlerinin yalnızca görünen adını, sınıfını, yaş grubunu ve puanını görür. Mesajlaşma ve kişisel iletişim bilgileri bu sürümde kapalıdır.</p></section>
+    ${bottomNav()}</main>`;
+}
+
 function renderParent() {
   if (!ui.parentUnlocked) {
     return `
@@ -920,6 +945,7 @@ function render() {
   if (ui.screen === 'game') root.innerHTML = renderGame();
   if (ui.screen === 'progress') root.innerHTML = renderProgress();
   if (ui.screen === 'ranking') root.innerHTML = renderRanking();
+  if (ui.screen === 'social') root.innerHTML = renderSocial();
   if (ui.screen === 'parent') root.innerHTML = renderParent();
   if (ui.screen === 'game' && ui.session && !ui.session.completed && !ui.feedback && !ui.reportModalOpen && !ui.paused && !ui.toolsOpen && !ui.whiteboardOpen) startTimer();
   if (ui.whiteboardOpen) requestAnimationFrame(initWhiteboard);
@@ -1246,6 +1272,20 @@ function showToast(message, type = '') {
   setTimeout(() => toast.remove(), 2600);
 }
 
+function askUserConfirm({title='İşlemi onayla',message,confirmText='Onayla',danger=false}) {
+  return new Promise((resolve) => {
+    document.querySelector('#app-confirm-modal')?.remove();
+    const wrapper=document.createElement('div');
+    wrapper.id='app-confirm-modal';
+    wrapper.className='app-confirm-backdrop';
+    wrapper.innerHTML=`<section class="app-confirm-modal" role="dialog" aria-modal="true"><div class="app-confirm-icon">${danger?'⚠️':'✓'}</div><h2>${title}</h2><p>${message}</p><div class="app-confirm-actions"><button class="secondary-button" data-confirm-result="cancel">Vazgeç</button><button class="${danger?'danger-button':'primary-button'}" data-confirm-result="ok">${confirmText}</button></div></section>`;
+    document.body.appendChild(wrapper);
+    const finish=(result)=>{wrapper.remove();resolve(result);};
+    wrapper.addEventListener('click',(event)=>{const result=event.target.closest('[data-confirm-result]')?.dataset.confirmResult;if(result)finish(result==='ok');else if(event.target===wrapper)finish(false);});
+    wrapper.querySelector('[data-confirm-result="ok"]')?.focus();
+  });
+}
+
 function playTone(success, duration = 0.09) {
   if (!state.settings.sound) return;
   try {
@@ -1341,8 +1381,8 @@ root.addEventListener('click', async (event) => {
     navigate('dashboard');
   }
   if (action === 'return-platform') { sessionStorage.removeItem('kuzenler-play-learner'); location.reload(); return; }
-  if (action === 'student-profile') { if (ui.session && !ui.feedback && !window.confirm('Profil ekranına dönülsün mü? Çözülen sorular kaydedildi.')) return; ui.session=null; navigate('progress'); return; }
-  if (action === 'student-logout') { if (!window.confirm('Oturum kapatılsın mı? Çözülen bütün sorular kaydedildi.')) return; clearTimer(); ui.session=null; sessionStorage.removeItem('kuzenler-play-learner'); sessionStorage.removeItem('kuzenler-active-learner'); if (PLATFORM.mode==='live') { window.dispatchEvent(new CustomEvent('kuzenler:student-logout',{detail:{state}})); root.innerHTML='<main class="platform-shell auth-shell"><section class="auth-card"><h1>Oturum kapatılıyor…</h1><p>Son gelişim kayıtları Firebase’e aktarılıyor.</p></section></main>'; } else { state.activeProfileId=null; navigate('profiles'); } return; }
+  if (action === 'student-profile') { if (ui.session && !ui.feedback && !await askUserConfirm({title:'Profile dön',message:'Çözülen sorular kaydedildi. Aktif tur kapatılacak.',confirmText:'Profile dön'})) return; ui.session=null; navigate('progress'); return; }
+  if (action === 'student-logout') { if (!await askUserConfirm({title:'Oturumu kapat',message:'Çözülen bütün sorular kaydedildi. Bu cihazdaki öğrenci oturumu kapatılacak.',confirmText:'Çıkış yap',danger:true})) return; clearTimer(); ui.session=null; sessionStorage.removeItem('kuzenler-play-learner'); sessionStorage.removeItem('kuzenler-active-learner'); if (PLATFORM.mode==='live') { window.dispatchEvent(new CustomEvent('kuzenler:student-logout',{detail:{state}})); root.innerHTML='<main class="platform-shell auth-shell"><section class="auth-card"><h1>Oturum kapatılıyor…</h1><p>Son gelişim kayıtları Firebase’e aktarılıyor.</p></section></main>'; } else { state.activeProfileId=null; navigate('profiles'); } return; }
   if (action === 'toggle-pause') { togglePause(); return; }
   if (action === 'open-tools') { ui.toolsOpen=true; ui.whiteboardOpen=false; clearTimer(); render(); return; }
   if (action === 'close-tools') { ui.toolsOpen=false; ui.whiteboardOpen=false; render(); return; }
@@ -1375,7 +1415,7 @@ root.addEventListener('click', async (event) => {
   if (action === 'hint') showHint();
   if (action === 'next-round') nextRound();
   if (action === 'quit-game') {
-    if (window.confirm('Bu turu bitirmeden çıkmak istiyor musun?')) {
+    if (await askUserConfirm({title:'Oyundan çık',message:'Bu tur tamamlanmadan ana sayfaya dönülecek. Verilmiş cevaplar korunur.',confirmText:'Oyundan çık',danger:true})) {
       ui.session = null;
       navigate('dashboard');
     }
@@ -1398,7 +1438,7 @@ root.addEventListener('click', async (event) => {
     render();
   }
   if (action === 'reset-progress') {
-    if (window.confirm('Tüm profil ilerlemeleri, XP ve geçmiş silinecek. Devam edilsin mi?')) {
+    if (await askUserConfirm({title:'İlerlemeyi sıfırla',message:'Tüm profil ilerlemeleri, XP ve geçmiş kalıcı olarak silinecek.',confirmText:'Tümünü sıfırla',danger:true})) {
       resetProgress(state);
       ui.parentUnlocked = false;
       ui.session = null;
@@ -1444,7 +1484,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 window.addEventListener('hashchange', () => {
   const screen = location.hash.replace('#', '');
-  const allowed = PLATFORM.mode === 'live' ? ['dashboard','library','progress'] : ['dashboard','library','progress','parent'];
+  const allowed = PLATFORM.mode === 'live' ? ['dashboard','library','progress','ranking','social'] : ['dashboard','library','progress','ranking','social','parent'];
   if (allowed.includes(screen) && state.activeProfileId) navigate(screen);
 });
 
