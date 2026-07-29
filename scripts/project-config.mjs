@@ -28,7 +28,7 @@ export async function loadProjectConfig() {
   const provider = mode === 'vercel' ? 'firebase' : 'local';
   return {
     mode,
-    appName: raw.APP_NAME || 'Kuzenler Yarışıyor',
+    appName: raw.APP_NAME || 'Zihin Arenası',
     shortName: raw.APP_SHORT_NAME || 'Kuzenler',
     description: raw.APP_DESCRIPTION || 'Öğrenme ve zekâ oyunları.',
     localPort: Number(raw.LOCAL_PORT || 6220),

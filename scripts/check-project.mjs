@@ -21,7 +21,7 @@ for (const file of required) await access(resolve(root, file));
 const html = await readFile(resolve(root, 'index.html'), 'utf8');
 if (!html.includes('lang="tr"') || !html.includes('/js/bootstrap.js')) throw new Error('index.html temel bağlantıları eksik.');
 const manifest = JSON.parse(await readFile(resolve(root, 'manifest.webmanifest'), 'utf8'));
-if (manifest.name !== 'Kuzenler Yarışıyor') throw new Error(`Manifest adı yanlış: ${manifest.name}`);
+if (manifest.name !== 'Zihin Arenası') throw new Error(`Manifest adı yanlış: ${manifest.name}`);
 const app = await readFile(resolve(root, 'js/app.js'), 'utf8');
 if (!app.includes('isGameAvailableForProfile')) throw new Error('Profil-sınıf görünürlük kontrolü uygulamaya bağlanmamış.');
 const engine = await readFile(resolve(root, 'js/engines/learning-engine-v4.js'), 'utf8');

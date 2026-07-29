@@ -708,3 +708,17 @@ button:disabled { cursor: not-allowed; opacity: 0.55; }
 
 /* V5.6.1 regresyon korumalı öğrenci işlem alanı */
 .learner-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));width:min(420px,100%)}.learner-actions button{min-height:42px;white-space:normal}.danger-button{min-height:42px;padding:10px 14px;border-radius:14px;border:1px solid rgba(239,68,68,.35);background:rgba(239,68,68,.12);color:#fecaca;font-weight:800}@media(max-width:720px){.learner-actions{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.learner-actions button{width:100%;font-size:.88rem}.admin-entity-card .learner-actions{margin-top:4px}}
+
+/* Zihin Arenası V6.0 + V6.5 */
+.ai-guide-card{border:1px solid rgba(249,115,22,.32);background:linear-gradient(145deg,rgba(249,115,22,.10),rgba(15,23,42,.78));}
+.ai-plan-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.ai-plan-item{display:flex;gap:12px;padding:16px;border:1px solid rgba(148,163,184,.18);border-radius:18px;background:rgba(8,17,33,.58)}
+.ai-plan-item>span{display:grid;place-items:center;min-width:34px;height:34px;border-radius:12px;background:#f97316;color:#fff;font-weight:800}
+.ai-plan-item p{margin:6px 0;color:var(--muted,#94a3b8)}
+.ai-plan-item small{color:#fdba74}
+.curriculum-strip{display:flex;gap:8px;overflow:auto;padding:14px 0 2px;scrollbar-width:none}
+.curriculum-chip{min-width:130px;padding:10px 12px;border-radius:14px;border:1px solid rgba(148,163,184,.18);display:flex;flex-direction:column;gap:3px;background:rgba(8,17,33,.55)}
+.curriculum-chip.güçlü{border-color:rgba(52,211,153,.45)}
+.curriculum-chip.kritik{border-color:rgba(251,113,133,.5)}
+.curriculum-chip.gelişiyor{border-color:rgba(250,204,21,.45)}
+@media(max-width:760px){.ai-plan-grid{grid-template-columns:1fr}.ai-guide-card .section-header{align-items:flex-start}.curriculum-chip{min-width:118px}}

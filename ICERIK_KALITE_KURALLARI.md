@@ -1,4 +1,4 @@
-# Kuzenler Yarışıyor V5 — İçerik Kalite Kuralları
+# Zihin Arenası V5 — İçerik Kalite Kuralları
 
 ## 1. Yeni soru, yalnız sayı değişikliği değildir
 

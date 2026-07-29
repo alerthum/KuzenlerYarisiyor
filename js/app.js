@@ -1,8 +1,10 @@
-import { CATEGORY_LABELS } from './content.js';
+import { categoryFiltersForGrade, categoryLabel } from './catalog-labels.js';
 import { ENGLISH_WORDS } from './content-v2.js';
 import { OFFICIAL_LGS_ARCHIVE } from './content-v3.js';
 import { V4_QUALITY_POLICY } from './content-v4.js';
 import { RUNTIME_CONFIG } from './runtime-config.js';
+import { createProactivePlan } from './ai/orchestrator.js';
+import { curriculumMatrix } from './curriculum/meb-curriculum.js';
 import { chooseDiscoveryCard } from './engines/learning-engine-v4.js';
 import { SKILLS, accuracyForAttempts, createDailyEnglishWordIds, createDailyMissionIds, levelFromXp } from './engines/adaptive-engine.js';
 import { validateTargetExpression } from './engines/math-engine.js';
@@ -106,7 +108,7 @@ function renderProfiles() {
       ${topbar()}
       <section class="hero">
         <div class="hero-content">
-          <p class="hero-kicker">Aile içi öğrenme arenası</p>
+          <p class="hero-kicker">Kişisel öğrenme ve zihin arenası</p>
           <h1>Oyna, düşün, çözüm yolunu keşfet.</h1>
           <p>Her kuzen kendi yaşına uygun Türkçe, matematik, mantık ve olimpiyat görevleriyle ilerler. Başlamak için profilini seç.</p>
         </div>
@@ -159,6 +161,8 @@ function renderDashboard() {
   const englishTarget = daily.englishWordIds.length || 20;
   const englishDone = daily.englishLearned >= englishTarget && englishTarget > 0;
   const scienceGame = GAME_CATALOG.find((game) => game.id === 'science-lab');
+  const aiPlan = createProactivePlan(profile, attempts);
+  const curriculum = curriculumMatrix(profile, attempts);
 
   return `
     <main class="app-shell">
@@ -190,6 +194,19 @@ function renderDashboard() {
         </div>
       </section>
 
+
+      <section class="section ai-guide-card">
+        <div class="section-header">
+          <div><span class="badge orange">Zihin Rehberi</span><h2>${escapeHtml(aiPlan.greeting)}</h2><p>${escapeHtml(aiPlan.summary)}</p></div>
+        </div>
+        <div class="ai-plan-grid">
+          ${aiPlan.plan.map((item, index) => `<article class="ai-plan-item"><span>${index + 1}</span><div><strong>${escapeHtml(item.title)}</strong><p>${escapeHtml(item.reason)}</p><small>Yaklaşık ${item.minutes} dakika</small></div></article>`).join('')}
+        </div>
+        <div class="curriculum-strip">
+          ${curriculum.slice(0, 6).map((item) => `<div class="curriculum-chip ${item.status}"><strong>${escapeHtml(item.subject)}</strong><span>${item.attempts ? `%${item.accuracy} • ${item.attempts} soru` : 'Meydan okuma hazır'}</span></div>`).join('')}
+        </div>
+      </section>
+
       <section class="section metric-grid">
         <div class="metric-card"><div class="metric-label">Toplam XP</div><div class="metric-value">${formatNumber(profile.xp)}</div><div class="metric-note">Seviye ${level.level}</div></div>
         <div class="metric-card"><div class="metric-label">Son doğruluk</div><div class="metric-value">%${accuracy}</div><div class="metric-note">Son ${recent.length || 0} soru</div></div>
@@ -210,7 +227,7 @@ function renderDashboard() {
               <button class="mission-card ${done ? 'completed' : ''}" data-action="start-game" data-game-id="${game.id}">
                 <span class="mission-icon">${game.icon}</span>
                 <span>
-                  <small class="mission-category">${CATEGORY_LABELS[game.category]}</small>
+                  <small class="mission-category">${categoryLabel(game.category)}</small>
                   <h3>${index + 1}. ${escapeHtml(game.title)}</h3>
                   <p>${escapeHtml(game.description)}</p>
                 </span>
@@ -274,7 +291,7 @@ function gameCard(game, daily = null) {
       <div class="game-card-top"><span class="game-icon">${game.icon}</span>${playedToday ? '<span class="today-badge">✓ Bugün oynandı</span>' : isDaily ? '<span class="daily-badge">Günlük görev</span>' : ''}</div>
       <h3>${escapeHtml(game.title)}</h3>
       <p>${escapeHtml(game.description)}</p>
-      <span class="game-footer"><span>${CATEGORY_LABELS[game.category]}</span><span>${game.duration} →</span></span>
+      <span class="game-footer"><span>${categoryLabel(game.category)}</span><span>${game.duration} →</span></span>
     </button>`;
 }
 
@@ -282,8 +299,7 @@ function renderLibrary() {
   const profile = activeProfile();
   if (!profile) return renderProfiles();
   const daily = getDailyData(profile);
-  const baseFilters = [['all', 'Tümü'], ['turkish', 'Türkçe'], ['math', 'Matematik'], ['english', 'İngilizce'], ['science', 'Fen'], ['social', 'Sosyal'], ['logic', 'Zekâ'], ['olympiad', 'Olimpiyat']];
-  const filters = profile.grade >= 8 ? [...baseFilters, ['religion', 'Din'], ['lgs', 'LGS']] : baseFilters;
+  const filters = categoryFiltersForGrade(profile.grade);
   if (!filters.some(([value]) => value === ui.filter)) ui.filter = 'all';
   const games = GAME_CATALOG.filter((game) => isGameAvailableForProfile(game, profile) && (ui.filter === 'all' || game.category === ui.filter));
   return `
@@ -603,7 +619,7 @@ function renderGame() {
     <main class="app-shell game-mode">
       <header class="game-header">
         <button class="back-button" data-action="quit-game" aria-label="Oyundan çık">←</button>
-        <div class="game-header-copy"><h1>${game.icon} ${escapeHtml(game.title)}</h1><p>${CATEGORY_LABELS[game.category]} • ${session.currentIndex + 1}/${session.rounds.length}</p></div>
+        <div class="game-header-copy"><h1>${game.icon} ${escapeHtml(game.title)}</h1><p>${categoryLabel(game.category)} • ${session.currentIndex + 1}/${session.rounds.length}</p></div>
         <div class="game-header-actions"><button class="icon-button" data-action="toggle-pause" aria-label="${ui.paused ? 'Devam et' : 'Soruyu durdur'}">${ui.paused ? '▶' : 'Ⅱ'}</button><button class="icon-button" data-action="open-tools" aria-label="Araçları aç">🧰</button><button class="icon-button" data-action="student-profile" aria-label="Profil">👤</button><button class="icon-button" data-action="student-logout" aria-label="Çıkış yap">⎋</button>${state.settings.timer ? `<div id="timer-pill" class="timer-pill ${ui.timeLeft <= 10 ? 'danger' : ''}">${formatDuration(ui.timeLeft)}</div>` : '<span class="badge cyan">Serbest</span>'}</div>
       </header>
       <div class="session-progress" style="grid-template-columns:repeat(${session.rounds.length},minmax(4px,1fr))">${session.rounds.map((_, index) => {
@@ -733,7 +749,7 @@ function learningInsight(profile, attempts) {
   const skills = Object.entries(profile.skills).sort((a, b) => a[1] - b[1]);
   const weakest = skills[0];
   const strongest = skills.at(-1);
-  if (!attempts.length) return '<p class="muted">Henüz yeterli veri yok. İlk oyun tamamlandığında kişisel yorum oluşacak.</p>';
+  if (!attempts.length) return '<p><strong class="orange-text">Başlangıç meydan okuması hazır.</strong> İlk çözümlerden itibaren hızın, doğruluğun ve stratejin gelişim günlüğüne işlenecek.</p>';
   return `<p><strong class="green-text">Güçlü alan:</strong> ${SKILLS[strongest[0]]} (${Math.round(strongest[1])}).</p><p><strong class="orange-text">Öncelikli alan:</strong> ${SKILLS[weakest[0]]} (${Math.round(weakest[1])}). Günlük görev motoru bu beceriyi daha sık çalıştıracak.</p>`;
 }
 
@@ -845,7 +861,7 @@ function renderParent() {
         <div class="section-header"><div><h2>Yerel test kontrol merkezi</h2><p>Hesap sistemi kapalıdır. Bu cihazdaki demo profillerin süre, doğruluk, ipucu ve soru bildirimlerini gösterir.</p></div><button class="text-button" data-action="lock-parent">Kilitle</button></div>
       </section>
       <section class="section panel deployment-status">
-        <div class="section-header"><div><h2>V5 çalışma durumu</h2><p>Bu bilgiler <code>KUZENLER_AYARLARI.env</code> dosyasından üretilir.</p></div><span class="badge ${RUNTIME_CONFIG.mode === 'vercel' ? 'green' : 'cyan'}">${RUNTIME_CONFIG.mode === 'vercel' ? 'Vercel modu' : 'Yerel mod'}</span></div>
+        <div class="section-header"><div><h2>Zihin Arenası çalışma durumu</h2><p>Bu bilgiler <code>KUZENLER_AYARLARI.env</code> dosyasından üretilir.</p></div><span class="badge ${RUNTIME_CONFIG.mode === 'vercel' ? 'green' : 'cyan'}">${RUNTIME_CONFIG.mode === 'vercel' ? 'Vercel modu' : 'Yerel mod'}</span></div>
         <div class="metric-grid">
           <div class="metric-card"><div class="metric-label">İçerik sürümü</div><div class="metric-value">${escapeHtml(RUNTIME_CONFIG.contentVersion)}</div><div class="metric-note">Kalite kurallı soru motoru</div></div>
           <div class="metric-card"><div class="metric-label">Veri sağlayıcı</div><div class="metric-value">${escapeHtml(RUNTIME_CONFIG.dataProvider)}</div><div class="metric-note">${RUNTIME_CONFIG.dataProvider === 'firebase' ? 'Firebase hazırlık ayarı seçili' : 'Bu tarayıcıda yerel kayıt'}</div></div>

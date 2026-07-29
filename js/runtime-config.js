@@ -1,11 +1,11 @@
 // Otomatik üretilir. KUZENLER_AYARLARI.env dosyasını düzenleyin.
 export const RUNTIME_CONFIG = Object.freeze({
   "mode": "vercel",
-  "appName": "Kuzenler Yarışıyor",
-  "shortName": "Kuzenler",
+  "appName": "Zihin Arenası",
+  "shortName": "Zihin",
   "description": "1-12. sınıf öğrenme omurgasına sahip Türkçe, matematik, İngilizce, fen, sosyal, zekâ ve olimpiyat platformu.",
   "dataProvider": "firebase",
-  "contentVersion": "5.0.3",
+  "contentVersion": "6.5.0",
   "git": {
     "repositoryUrl": "https://github.com/alerthum/KuzenlerYarisiyor.git",
     "defaultBranch": "main"

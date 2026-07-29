@@ -1,4 +1,4 @@
-# Kuzenler Yarışıyor — Uygulama Gelişim Planı
+# Zihin Arenası — Uygulama Gelişim Planı
 
 ## V5 sonunda bulunduğumuz yer
 

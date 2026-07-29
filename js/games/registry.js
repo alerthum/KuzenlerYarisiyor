@@ -74,9 +74,9 @@ const ALL_WORD_DICTIONARY = [...new Set([
 export const GAME_CATALOG = [
 
   { id:'lgs-focus', title:'LGS Akıllı Çalışma', shortTitle:'LGS', category:'lgs', skill:'lgsFamiliarity', icon:'🎓', color:'rgba(251,113,133,.82)', description:'7–8. sınıf kazanımlarını yeni nesil sorularla ve açıklamalı çözümlerle çalış.', minAge:12, maxAge:14, duration:'12–18 dk', sessionLength:8 },
-  { id:'tyt-focus', title:'TYT Akıllı Çalışma', shortTitle:'TYT', category:'exam', skill:'problemSolving', icon:'🧭', color:'rgba(34,211,238,.82)', description:'Türkçe, temel matematik, sosyal ve fen muhakemesini TYT düzeyinde çalış.', minAge:16, maxAge:19, duration:'15–20 dk', sessionLength:8 },
-  { id:'ayt-focus', title:'AYT Alan Çalışması', shortTitle:'AYT', category:'exam', skill:'problemSolving', icon:'🎯', color:'rgba(167,139,250,.82)', description:'11–12. sınıf alan derslerinde kavram ve çok adımlı çözüm çalış.', minAge:16, maxAge:19, duration:'15–20 dk', sessionLength:8 },
-  { id:'kpss-focus', title:'KPSS Genel Yetenek–Kültür', shortTitle:'KPSS', category:'exam', skill:'attention', icon:'🏛️', color:'rgba(249,115,22,.82)', description:'Genel yetenek ve genel kültür sorularını ayrı çalışma planında çöz.', minAge:17, maxAge:99, duration:'15–20 dk', sessionLength:8 },
+  { id:'tyt-focus', title:'TYT Akıllı Çalışma', shortTitle:'TYT', category:'tyt', skill:'problemSolving', icon:'🧭', color:'rgba(34,211,238,.82)', description:'Türkçe, temel matematik, sosyal ve fen muhakemesini TYT düzeyinde çalış.', minAge:16, maxAge:19, duration:'15–20 dk', sessionLength:8 },
+  { id:'ayt-focus', title:'AYT Alan Çalışması', shortTitle:'AYT', category:'ayt', skill:'problemSolving', icon:'🎯', color:'rgba(167,139,250,.82)', description:'11–12. sınıf alan derslerinde kavram ve çok adımlı çözüm çalış.', minAge:16, maxAge:19, duration:'15–20 dk', sessionLength:8 },
+  { id:'kpss-focus', title:'KPSS Genel Yetenek–Kültür', shortTitle:'KPSS', category:'kpss', skill:'attention', icon:'🏛️', color:'rgba(249,115,22,.82)', description:'Genel yetenek ve genel kültür sorularını ayrı çalışma planında çöz.', minAge:17, maxAge:99, duration:'15–20 dk', sessionLength:8 },
 
   {
     id: 'word-mine', title: 'Kelime Madeni', shortTitle: 'Kelime Madeni', category: 'turkish', skill: 'vocabulary', icon: '⛏️',
@@ -448,7 +448,8 @@ export function createGameSession(gameId, profile, sessionSeed = Date.now(), opt
   if (!game) throw new Error('Oyun bulunamadı.');
   if (!isGameAvailableForProfile(game, profile)) throw new Error('Bu oyun seçili sınıf düzeyinde kullanılamaz.');
   const skillRating = profile.skills?.[game.skill] || 35;
-  const difficulty = difficultyFromRating(profile.age, skillRating);
+  // Zihin Arenası kolay soru göstermez: tüm oturumlar en az orta-üstü (3/5) düzeyden başlar.
+  const difficulty = Math.max(3, difficultyFromRating(profile.age, skillRating));
   const seed = hashString(`${profile.id}-${gameId}-${sessionSeed}`);
   const random = seededRandom(seed);
   const seen = options.seenQuestionKeys instanceof Set ? options.seenQuestionKeys : new Set(options.seenQuestionKeys || []);
@@ -674,9 +675,11 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     const signature = `${round.questionKey}|${round.prompt}|${round.context||''}`.toLocaleLowerCase('tr-TR');
     if (signatureSet.has(signature)) return false;
     signatureSet.add(signature);
+    const declaredDifficulty = Number(round.cognitiveDepth || round.difficulty || difficulty || 3);
+    if (declaredDifficulty < 3) return false;
     if (Number(profile.grade||0) >= 4) {
       const trivialLinear = /(?:^|\s)[1-4]?x\s*[+\-]\s*\d+\s*=\s*\d+/i.test(round.prompt||'');
-      const trivialPrompt = /(?:sonucu kaçtır|x kaçtır)\??$/i.test(round.prompt||'') && (round.prompt||'').length < 28 && Number(round.cognitiveDepth||round.difficulty||1) < 3;
+      const trivialPrompt = gameId !== 'speed-math' && /(?:sonucu kaçtır|x kaçtır)\??$/i.test(round.prompt||'') && (round.prompt||'').length < 42;
       if (trivialLinear || trivialPrompt) return false;
     }
     return true;

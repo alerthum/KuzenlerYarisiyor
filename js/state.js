@@ -96,7 +96,7 @@ function normalizeProfile(profile) {
     ...profile,
     grade: inferredGrade,
     skills: { ...DEFAULT_SKILLS, ...(profile?.skills || {}) },
-    examPlans: Array.isArray(profile?.examPlans) ? profile.examPlans : (inferredGrade >= 11 ? ['YKS'] : inferredGrade >= 7 ? ['LGS'] : []),
+    examPlans: Array.isArray(profile?.examPlans) ? profile.examPlans : (inferredGrade === 12 ? ['YKS', 'KPSS'] : inferredGrade === 11 ? ['YKS'] : inferredGrade === 8 ? ['LGS'] : []),
     examField: profile?.examField || ''
   });
 }

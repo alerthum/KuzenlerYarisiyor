@@ -457,14 +457,4 @@ export const GEOMETRY_QUESTIONS = [
   }
 ];
 
-export const CATEGORY_LABELS = {
-  turkish: 'Türkçe',
-  math: 'Matematik',
-  logic: 'Zekâ',
-  olympiad: 'Olimpiyat',
-  english: 'İngilizce',
-  science: 'Fen Bilimleri',
-  social: 'Sosyal Bilgiler',
-  religion: 'Din Kültürü',
-  lgs: 'LGS Arşivi'
-};
+export { CATEGORY_LABELS } from './catalog-labels.js';

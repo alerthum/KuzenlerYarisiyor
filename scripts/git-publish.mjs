@@ -27,7 +27,7 @@ const hasOrigin = git(['remote', 'get-url', 'origin'], { allowFailure: true, qui
 git(hasOrigin ? ['remote', 'set-url', 'origin', remote] : ['remote', 'add', 'origin', remote]);
 
 git(['add', '.']);
-const committed = git(['commit', '-m', 'Kuzenler Yarışıyor v5.0.2 Windows uyumluluk düzeltmesi'], { allowFailure: true });
+const committed = git(['commit', '-m', 'Zihin Arenası V6.5 güncellemesi'], { allowFailure: true });
 if (!committed) console.log('Yeni commit oluşturulmadı; değişiklik yoksa bu normaldir.');
 
 // GitHub deposu daha önce README ile oluşturulduysa geçmişleri güvenli şekilde birleştirir.

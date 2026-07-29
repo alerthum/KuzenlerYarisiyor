@@ -8,6 +8,7 @@ import {
   addDoc, serverTimestamp, arrayUnion, arrayRemove, writeBatch, limit
 } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js';
 
+import { gameLabel } from '../catalog-labels.js';
 const root = document.querySelector('#app');
 const toastRoot = document.querySelector('#toast-root');
 let config;
@@ -321,16 +322,8 @@ function printStudentList(learners, classrooms=[]) {
 }
 
 
-const GAME_NAMES = {
-  wordMine:'Kelime Madeni', wordLadder:'Kelime Merdiveni', paragraphDetective:'Paragraf Dedektifi',
-  targetNumber:'Hedef Sayı', geometryLab:'Geometri', problemHunter:'Problem Avcısı', olympiad:'Olimpiyat Merdiveni',
-  logicStation:'Zekâ İstasyonu', englishWords:'İngilizce Kelimeler', englishGap:'İngilizce Boşluk',
-  englishSentence:'İngilizce Cümle', scienceLab:'Fen Laboratuvarı', experimentDetective:'Deney Dedektifi',
-  socialTimeline:'Sosyal Zaman', socialMap:'Harita Becerileri', socialCitizenship:'Vatandaşlık'
-};
-
 function gameName(gameId) {
-  return GAME_NAMES[gameId] || String(gameId || 'Bilinmeyen oyun').replace(/[-_]/g,' ');
+  return gameLabel(String(gameId || ''), 'Bilinmeyen oyun');
 }
 
 async function renderLearnerAnalysis(learnerId) {

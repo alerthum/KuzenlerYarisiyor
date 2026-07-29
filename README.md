@@ -1,4 +1,4 @@
-# Kuzenler Yarışıyor v5.0.1
+# Zihin Arenası v5.0.1
 
 V5; yerelde tek komutla çalışan oyun alanını korur, canlı yayında ise Firebase Authentication ve Firestore üzerinden zorunlu veli–öğretmen–öğrenci hesabı, çoklu çocuk, sınıf, toplu öğrenci kaydı ve merkezi analiz altyapısını açar.
 

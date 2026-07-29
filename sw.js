@@ -1,4 +1,4 @@
-const CACHE_NAME = 'kuzenler-yarisiyor-v5.6.1.0';
+const CACHE_NAME = 'zihin-arenasi-v6.5.2';
 const APP_SHELL = [
   '/',
   '/index.html',

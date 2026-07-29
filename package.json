@@ -1,9 +1,9 @@
 {
-  "name": "kuzenler-yarisiyor",
-  "version": "5.6.1",
+  "name": "zihin-arenasi",
+  "version": "6.5.2",
   "private": true,
   "type": "module",
-  "description": "Premium mobil yönetim, korunan öğrenci işlemleri ve otomatik regresyon denetimi.",
+  "description": "Premium yönetim, regresyon güvencesi, çok ajanlı öğrenme zekâsı ve MEB kazanım omurgası.",
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
     "dev": "npm run prepare && node server.mjs",
