@@ -1,9 +1,9 @@
 {
   "name": "zihin-arenasi",
-  "version": "8.0.3",
+  "version": "9.0.0-alpha.1",
   "private": true,
   "type": "module",
-  "description": "Premium yönetim, akıllı içerik, sosyal ligler ve çok ajanlı AI eğitim orkestrası.",
+  "description": "Akademik metadata, ustalık motoru, sessiz telafi ve anlık soru ailesi karantinası temeli.",
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
     "dev": "npm run prepare && node server.mjs",

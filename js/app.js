@@ -971,8 +971,10 @@ function startGame(gameId) {
   if (!profile) return;
   const daily = getDailyData(profile);
   const seen = seenQuestionKeysForProfile(state, profile.id);
+  const blockedFamilies = new Set(Object.keys(state.blockedQuestionFamilies?.__global || {}));
   let session = createGameSession(gameId, profile, Date.now(), {
     seenQuestionKeys: seen,
+    blockedQuestionFamilies: blockedFamilies,
     preferredEnglishWordIds: gameId === 'english-vocabulary' ? daily.englishWordIds : [],
     recentFamilyIds: recentFamilyIds(profile.id, gameId)
   });
@@ -980,6 +982,7 @@ function startGame(gameId) {
     const blocked = new Set(Object.keys(state.blockedQuestionKeys?.[profile.id] || {}));
     session = createGameSession(gameId, profile, Date.now() + 977, {
       seenQuestionKeys: blocked,
+      blockedQuestionFamilies: blockedFamilies,
       preferredEnglishWordIds: gameId === 'english-vocabulary' ? daily.englishWordIds : [],
       recentFamilyIds: recentFamilyIds(profile.id, gameId)
     });
@@ -1077,7 +1080,15 @@ function finalizeRound(correct, message, rawScore = correct ? 100 : 25) {
     elapsedSeconds: time,
     score,
     rewardEligible: true,
-    familyId: round.familyId || null,
+    familyId: round.familyId || round.questionFamilyId || null,
+    questionFamilyId: round.questionFamilyId || round.familyId || null,
+    subjectId: round.subjectId,
+    visibleCardId: round.visibleCardId,
+    topicId: round.topicId,
+    subtopicId: round.subtopicId,
+    skillId: round.skillId,
+    learningOutcomeId: round.learningOutcomeId,
+    cognitiveLevel: round.cognitiveLevel || round.cognitiveDepth || round.difficulty,
     cognitiveDepth: round.cognitiveDepth || round.difficulty,
     curriculumRole: round.curriculumRole || 'current',
     targetGrade: round.targetGrade || activeProfile().grade,
@@ -1245,6 +1256,13 @@ function saveCurrentQuestionReport() {
     gameId: ui.session.game.id,
     gameTitle: ui.session.game.title,
     questionKey: round.questionKey,
+    questionFamilyId: round.questionFamilyId || round.familyId || null,
+    subjectId: round.subjectId,
+    visibleCardId: round.visibleCardId,
+    topicId: round.topicId,
+    subtopicId: round.subtopicId,
+    skillId: round.skillId,
+    learningOutcomeId: round.learningOutcomeId,
     prompt: round.prompt,
     context: round.context || '',
     userAnswer: selectedAnswerText(round),
@@ -1260,7 +1278,7 @@ function saveCurrentQuestionReport() {
     note
   });
   ui.reportModalOpen = false;
-  showToast('Bildirim kaydedildi. Soru bu profile kapatıldı; otomatik içerik değişikliği yapılmadı.', 'success');
+  showToast('Bildirim kaydedildi. Soru ve soru ailesi admin incelemesine kadar tüm öğrenciler için karantinaya alındı.', 'success');
   render();
 }
 

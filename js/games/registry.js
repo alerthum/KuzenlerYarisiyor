@@ -45,6 +45,8 @@ import { createLogicRound } from '../engines/logic-engine.js';
 import { createV4LogicSession, createV4OlympiadSession, createV4ParagraphSession } from '../engines/learning-engine-v4.js';
 import { hashString, pick, seededRandom, shuffle } from '../utils.js';
 import { EXAM_QUESTIONS_V53 } from '../content-exams-v53.js';
+import { enrichRoundAcademicMetadata } from '../curriculum/academic-metadata-v9.js';
+import { isRoundQuarantined } from '../quality/quarantine-v9.js';
 
 const ALL_WORD_MINE_SETS = [...WORD_MINE_SETS, ...EXTRA_WORD_MINE_SETS];
 const BASE_VALID_V3_LADDER_PATHS = WORD_LADDER_PATHS_V3.filter((path) => path.length >= 3 && path.every((word) => word.length === path[0].length) && path.slice(0, -1).every((word, index) => isOneLetterChange(word, path[index + 1])));
@@ -453,6 +455,7 @@ export function createGameSession(gameId, profile, sessionSeed = Date.now(), opt
   const seed = hashString(`${profile.id}-${gameId}-${sessionSeed}`);
   const random = seededRandom(seed);
   const seen = options.seenQuestionKeys instanceof Set ? options.seenQuestionKeys : new Set(options.seenQuestionKeys || []);
+  const blockedFamilies = options.blockedQuestionFamilies instanceof Set ? options.blockedQuestionFamilies : new Set(options.blockedQuestionFamilies || []);
   let rounds = [];
 
   if (gameId === 'word-mine') {
@@ -670,8 +673,11 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   }
 
 
+  rounds = rounds.map((round) => enrichRoundAcademicMetadata(gameId, round));
+
   const signatureSet = new Set();
   rounds = rounds.filter((round) => {
+    if (isRoundQuarantined(round, seen, blockedFamilies)) return false;
     const signature = `${round.questionKey}|${round.prompt}|${round.context||''}`.toLocaleLowerCase('tr-TR');
     if (signatureSet.has(signature)) return false;
     signatureSet.add(signature);

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'zihin-arenasi-v8.0.3';
+const CACHE_NAME = 'zihin-arenasi-v9-alpha1';
 const APP_SHELL = [
   '/',
   '/index.html',

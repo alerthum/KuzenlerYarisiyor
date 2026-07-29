@@ -135,7 +135,25 @@ service cloud.firestore {
 
     match /blockedQuestions/{questionKey} {
       allow read: if signedIn();
-      allow create, update: if roleIs('admin');
+      allow create: if signedIn() && (
+        roleIs('admin') ||
+        (request.resource.data.status == 'temporary-blocked'
+          && request.resource.data.reportedBy == request.auth.uid
+          && canAccessLearner(request.resource.data.learnerId))
+      );
+      allow update: if roleIs('admin');
+      allow delete: if false;
+    }
+
+    match /blockedQuestionFamilies/{familyId} {
+      allow read: if signedIn();
+      allow create: if signedIn() && (
+        roleIs('admin') ||
+        (request.resource.data.status == 'temporary-blocked'
+          && request.resource.data.reportedBy == request.auth.uid
+          && canAccessLearner(request.resource.data.learnerId))
+      );
+      allow update: if roleIs('admin');
       allow delete: if false;
     }
 

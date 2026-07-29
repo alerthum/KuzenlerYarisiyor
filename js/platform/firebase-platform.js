@@ -8,6 +8,7 @@ import {
   addDoc, serverTimestamp, arrayUnion, arrayRemove, writeBatch, limit
 } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js';
 import { socialSnapshot } from '../social/league-engine.js';
+import { buildQuarantineRecords, shouldImmediatelyQuarantine } from '../quality/quarantine-v9.js';
 
 const root = document.querySelector('#app');
 const toastRoot = document.querySelector('#toast-root');
@@ -696,12 +697,13 @@ async function loadPublicRankings() {
 }
 
 async function loadLearnerState(learnerId) {
-  const [learnerSnap,stateSnap,attemptSnap,reportSnap,blockedSnap]=await Promise.all([
+  const [learnerSnap,stateSnap,attemptSnap,reportSnap,blockedSnap,blockedFamilySnap]=await Promise.all([
     getDoc(doc(db,'learners',learnerId)),
     getDoc(doc(db,'learnerStates',learnerId)),
     getDocs(query(collection(db,'attempts'),where('learnerId','==',learnerId))),
     getDocs(query(collection(db,'questionReports'),where('learnerId','==',learnerId),limit(500))),
-    getDocs(query(collection(db,'blockedQuestions'),limit(1000)))
+    getDocs(query(collection(db,'blockedQuestions'),limit(1000))),
+    getDocs(query(collection(db,'blockedQuestionFamilies'),limit(1000)))
   ]);
   if (!learnerSnap.exists()) throw new Error('Öğrenci kaydı bulunamadı.');
   const learner={id:learnerSnap.id,...learnerSnap.data()};
@@ -710,9 +712,11 @@ async function loadLearnerState(learnerId) {
   const reports=reportSnap.docs.map(x=>x.data()).sort((a,b)=>String(a.createdAt||'').localeCompare(String(b.createdAt||'')));
   syncedAttemptIds=new Set(attempts.map(x=>x.id));
   syncedReportIds=new Set(reports.map(x=>x.id));
-  const globalBlocked=Object.fromEntries(blockedSnap.docs.map(x=>[x.id,true]));
-  const mergedBlocked={...(base.blockedQuestionKeys||{}),[learnerId]:{...(base.blockedQuestionKeys?.[learnerId]||{}),...globalBlocked}};
-  return {...base,blockedQuestionKeys:mergedBlocked,version:5,activeProfileId:learnerId,profiles:[{...defaultProfile(learnerId,learner.name,learner.grade,learner.age),...(base.profiles?.[0]||{}),id:learnerId,name:learner.name,grade:learner.grade,age:learner.age,examPlans:effectiveExamPlans(learner),examPlansCustomized:Boolean(learner.examPlansCustomized),examField:learner.examField||''}],attempts,questionReports:reports};
+  const globalBlocked=Object.fromEntries(blockedSnap.docs.filter(x=>['blocked','temporary-blocked'].includes(x.data().status)).map(x=>[x.id,true]));
+  const globalBlockedFamilies=Object.fromEntries(blockedFamilySnap.docs.filter(x=>['blocked','temporary-blocked'].includes(x.data().status)).map(x=>[x.id,true]));
+  const mergedBlocked={...(base.blockedQuestionKeys||{}),__global:{...(base.blockedQuestionKeys?.__global||{}),...globalBlocked},[learnerId]:{...(base.blockedQuestionKeys?.[learnerId]||{})}};
+  const mergedBlockedFamilies={...(base.blockedQuestionFamilies||{}),__global:{...(base.blockedQuestionFamilies?.__global||{}),...globalBlockedFamilies}};
+  return {...base,blockedQuestionKeys:mergedBlocked,version:9,activeProfileId:learnerId,profiles:[{...defaultProfile(learnerId,learner.name,learner.grade,learner.age),...(base.profiles?.[0]||{}),id:learnerId,name:learner.name,grade:learner.grade,age:learner.age,examPlans:effectiveExamPlans(learner),examPlansCustomized:Boolean(learner.examPlansCustomized),examField:learner.examField||''}],attempts,questionReports:reports,blockedQuestionFamilies:mergedBlockedFamilies};
 }
 
 function computeMetrics(state,learner) {
@@ -733,7 +737,7 @@ async function syncStateNow(learnerId,state) {
   const learnerSnap=await getDoc(doc(db,'learners',learnerId));
   if (!learnerSnap.exists()) return;
   const learner={id:learnerSnap.id,...learnerSnap.data()};
-  const durable={version:8,profiles:state.profiles,settings:state.settings,daily:state.daily,badges:state.badges,activeProfileId:learnerId,seenQuestions:state.seenQuestions,blockedQuestionKeys:state.blockedQuestionKeys||{},updatedAt:serverTimestamp()};
+  const durable={version:8,profiles:state.profiles,settings:state.settings,daily:state.daily,badges:state.badges,activeProfileId:learnerId,seenQuestions:state.seenQuestions,blockedQuestionKeys:state.blockedQuestionKeys||{},blockedQuestionFamilies:state.blockedQuestionFamilies||{},updatedAt:serverTimestamp()};
   const batch=writeBatch(db);
   batch.set(doc(db,'learnerStates',learnerId),durable,{merge:true});
   for (const attempt of (state.attempts||[])) {
@@ -743,7 +747,13 @@ async function syncStateNow(learnerId,state) {
   }
   for (const report of (state.questionReports||[])) {
     if (syncedReportIds.has(report.id)) continue;
-    batch.set(doc(db,'questionReports',report.id),{...report,learnerId,reportedBy:currentUser.uid,classroomIds:learner.classroomIds||[]});
+    const remoteReport={...report,learnerId,reportedBy:currentUser.uid,classroomIds:learner.classroomIds||[]};
+    batch.set(doc(db,'questionReports',report.id),remoteReport);
+    if (shouldImmediatelyQuarantine(report.reason)) {
+      const quarantine=buildQuarantineRecords(remoteReport,currentUser.uid);
+      if (quarantine.question) batch.set(doc(db,'blockedQuestions',quarantine.question.questionKey),{...quarantine.question,learnerId,reportedBy:currentUser.uid},{merge:true});
+      if (quarantine.family) batch.set(doc(db,'blockedQuestionFamilies',quarantine.family.questionFamilyId),{...quarantine.family,learnerId,reportedBy:currentUser.uid},{merge:true});
+    }
     syncedReportIds.add(report.id);
   }
   const metrics=computeMetrics(state,learner);
@@ -855,7 +865,7 @@ async function handleAction(target) {
     if (action==='admin-toggle-record') { const next=target.dataset.status==='active'?'inactive':'active'; await updateDoc(doc(db,target.dataset.collection,target.dataset.id),{status:next,updatedAt:serverTimestamp()}); await renderAdultPortal(); }
     if (action==='admin-delete-record') { if(!await confirmAdmin({title:'Kaydı silinmiş duruma al',message:'Geçmiş analizler korunacak; kayıt aktif listelerden kaldırılacak.',confirmText:'Kaydı kaldır',danger:true})) return; await updateDoc(doc(db,target.dataset.collection,target.dataset.id),{status:'deleted',deletedAt:serverTimestamp(),deletedBy:currentUser.uid,updatedAt:serverTimestamp()}); await renderAdultPortal(); }
     if (action==='admin-ai-review-report') { const snap=await getDoc(doc(db,'questionReports',target.dataset.id)); if(!snap.exists()) throw new Error('Bildirim bulunamadı.'); const report={id:snap.id,...snap.data()}; const same=await getDocs(query(collection(db,'questionReports'),where('questionKey','==',report.questionKey),limit(50))); const aiReview=aiReviewForReport(report,same.size||1); await updateDoc(doc(db,'questionReports',report.id),{aiReview,reviewedAt:serverTimestamp(),reviewedBy:currentUser.uid,status:'reviewed'}); await renderAdultPortal(); }
-    if (action==='admin-decide-report') { const labels={question_invalid:'Soru hatalı',answer_invalid:'Cevap/çözüm hatalı',student_struggled:'Öğrenci zorlanmış',duplicate:'Tekrar soru',dismissed:'Geçersiz bildirim'}; const reportRef=doc(db,'questionReports',target.dataset.id); const reportSnap=await getDoc(reportRef); const report=reportSnap.exists()?reportSnap.data():{}; await updateDoc(reportRef,{reviewDecision:target.dataset.decision,status:target.dataset.decision==='dismissed'?'dismissed':'resolved',resolutionNote:labels[target.dataset.decision]||target.dataset.decision,reviewedAt:serverTimestamp(),reviewedBy:currentUser.uid}); if(['question_invalid','answer_invalid','duplicate'].includes(target.dataset.decision)&&report.questionKey){ await setDoc(doc(db,'blockedQuestions',report.questionKey),{questionKey:report.questionKey,prompt:report.prompt||'',reason:target.dataset.decision,sourceReportId:target.dataset.id,blockedBy:currentUser.uid,blockedAt:serverTimestamp(),status:'blocked'},{merge:true}); } toast(target.dataset.decision==='dismissed'?'Bildirim kapatıldı.':'Karar kaydedildi; soru karantinaya alındı.','success'); await renderAdultPortal(); }
+    if (action==='admin-decide-report') { const labels={question_invalid:'Soru hatalı',answer_invalid:'Cevap/çözüm hatalı',student_struggled:'Öğrenci zorlanmış',duplicate:'Tekrar soru',dismissed:'Geçersiz bildirim'}; const reportRef=doc(db,'questionReports',target.dataset.id); const reportSnap=await getDoc(reportRef); const report=reportSnap.exists()?reportSnap.data():{}; await updateDoc(reportRef,{reviewDecision:target.dataset.decision,status:target.dataset.decision==='dismissed'?'dismissed':'resolved',resolutionNote:labels[target.dataset.decision]||target.dataset.decision,reviewedAt:serverTimestamp(),reviewedBy:currentUser.uid}); if(['question_invalid','answer_invalid','duplicate'].includes(target.dataset.decision)&&report.questionKey){ await setDoc(doc(db,'blockedQuestions',report.questionKey),{questionKey:report.questionKey,questionFamilyId:report.questionFamilyId||report.familyId||'',prompt:report.prompt||'',reason:target.dataset.decision,sourceReportId:target.dataset.id,blockedBy:currentUser.uid,blockedAt:serverTimestamp(),status:'blocked'},{merge:true}); if(report.questionFamilyId||report.familyId) await setDoc(doc(db,'blockedQuestionFamilies',report.questionFamilyId||report.familyId),{questionFamilyId:report.questionFamilyId||report.familyId,reason:target.dataset.decision,sourceReportId:target.dataset.id,blockedBy:currentUser.uid,blockedAt:serverTimestamp(),status:'blocked'},{merge:true}); } if(target.dataset.decision==='dismissed'){ if(report.questionKey) await setDoc(doc(db,'blockedQuestions',report.questionKey),{status:'active',reopenedBy:currentUser.uid,reopenedAt:serverTimestamp()},{merge:true}); if(report.questionFamilyId||report.familyId) await setDoc(doc(db,'blockedQuestionFamilies',report.questionFamilyId||report.familyId),{status:'active',reopenedBy:currentUser.uid,reopenedAt:serverTimestamp()},{merge:true}); } toast(target.dataset.decision==='dismissed'?'Bildirim kapatıldı.':'Karar kaydedildi; soru karantinaya alındı.','success'); await renderAdultPortal(); }
     if (action==='admin-drill-school') { adminSelectedSchoolId=target.dataset.id; adminSection='schools'; await renderAdultPortal(); }
     if (action==='admin-school-back') { adminSelectedSchoolId=''; await renderAdultPortal(); }
     if (action==='admin-save-role') {

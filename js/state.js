@@ -1,6 +1,8 @@
 import { saveStoredState } from './storage.js';
 import { calculateXpBreakdown, levelFromXp, updateSkillRating } from './engines/adaptive-engine.js';
 import { previousDayKey, todayKey, uid } from './utils.js';
+import { normalizeAcademicAttempt } from './curriculum/academic-metadata-v9.js';
+import { buildQuarantineRecords, questionFamilyFromPayload, shouldImmediatelyQuarantine } from './quality/quarantine-v9.js';
 
 const DEFAULT_SKILLS = {
   vocabulary: 42,
@@ -88,6 +90,7 @@ export const DEFAULT_STATE = {
   seenQuestions: {},
   questionReports: [],
   blockedQuestionKeys: {},
+  blockedQuestionFamilies: {},
   social: { seasonHistory: [], clubMemberships: [], familyLeagueIds: [] },
   aiMemory: {}
 };
@@ -131,6 +134,7 @@ export function createInitialState(stored) {
     seenQuestions: stored.seenQuestions || {},
     questionReports: Array.isArray(stored.questionReports) ? stored.questionReports : [],
     blockedQuestionKeys: stored.blockedQuestionKeys || {},
+    blockedQuestionFamilies: stored.blockedQuestionFamilies || {},
     social: { ...DEFAULT_STATE.social, ...(stored.social || {}) },
     aiMemory: stored.aiMemory || {}
   };
@@ -166,12 +170,14 @@ export function recordAttempt(state, payload) {
   if (!profile) throw new Error('Profil bulunamadı.');
 
   const date = todayKey();
-  const attempt = {
+  const createdAt = new Date().toISOString();
+  const attempt = normalizeAcademicAttempt({
     id: uid('attempt'),
     date,
-    createdAt: new Date().toISOString(),
+    createdAt,
+    answeredAt: createdAt,
     ...payload
-  };
+  });
   state.attempts.push(attempt);
 
   if (payload.questionKey) {
@@ -222,7 +228,8 @@ export function completeGameSession(state, profileId, gameId, score, maxScore) {
 export function seenQuestionKeysForProfile(state, profileId) {
   return new Set([
     ...Object.keys(state.seenQuestions?.[profileId] || {}),
-    ...Object.keys(state.blockedQuestionKeys?.[profileId] || {})
+    ...Object.keys(state.blockedQuestionKeys?.[profileId] || {}),
+    ...Object.keys(state.blockedQuestionKeys?.__global || {})
   ]);
 }
 
@@ -234,12 +241,20 @@ export function reportQuestion(state, payload) {
     date: todayKey(),
     status: 'pending',
     resolutionNote: '',
-    ...payload
+    ...payload,
+    questionFamilyId: questionFamilyFromPayload(payload)
   };
   state.questionReports.push(report);
   if (payload.profileId && payload.questionKey) {
     state.blockedQuestionKeys[payload.profileId] ||= {};
     state.blockedQuestionKeys[payload.profileId][payload.questionKey] = report.createdAt;
+  }
+  if (shouldImmediatelyQuarantine(report.reason)) {
+    const quarantine = buildQuarantineRecords(report, payload.profileId || 'student');
+    state.blockedQuestionKeys.__global ||= {};
+    state.blockedQuestionFamilies.__global ||= {};
+    if (quarantine.question) state.blockedQuestionKeys.__global[quarantine.question.questionKey] = quarantine.question.blockedAt;
+    if (quarantine.family) state.blockedQuestionFamilies.__global[quarantine.family.questionFamilyId] = quarantine.family.blockedAt;
   }
   saveStoredState(state);
   return report;
