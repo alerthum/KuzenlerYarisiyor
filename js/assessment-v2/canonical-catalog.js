@@ -10,6 +10,11 @@ import { buildGrade8ScienceBroadWaveQuestions } from './science-g8-wave1-broad.j
 import { buildGrade8ScienceCompletionQuestions } from './science-g8-completion-wave.js';
 import { buildGrade5TurkishCrossPilotQuestions } from './turkish-g5-cross-pilot.js';
 import { buildGrade5TurkishBroadWaveQuestions } from './turkish-g5-broad-wave.js';
+import { buildGrade5TurkishCompletionTasks } from './turkish-g5-completion-wave.js';
+import { buildGrade8TurkishCompletionTasks } from './turkish-g8-completion-wave.js';
+import { buildGrade8HistoryFullScopeTasks } from './history-g8-full-scope-engine.js';
+import { buildGrade8DkabFullScopeTasks } from './dkab-g8-full-scope-engine.js';
+import { buildGrade8EnglishFullScopeTasks } from './english-g8-full-scope-engine.js';
 
 const freezeRows=rows=>Object.freeze(rows.map(row=>Object.freeze(row)));
 
@@ -26,13 +31,18 @@ export function buildAssessmentV2CanonicalCatalog(){
     ...buildGrade8ScienceBroadWaveQuestions(),
     ...buildGrade8ScienceCompletionQuestions(),
     ...buildGrade5TurkishCrossPilotQuestions(),
-    ...buildGrade5TurkishBroadWaveQuestions()
+    ...buildGrade5TurkishBroadWaveQuestions(),
+    ...buildGrade5TurkishCompletionTasks(),
+    ...buildGrade8TurkishCompletionTasks(),
+    ...buildGrade8HistoryFullScopeTasks(),
+    ...buildGrade8DkabFullScopeTasks(),
+    ...buildGrade8EnglishFullScopeTasks()
   ]);
 }
 
 export function auditAssessmentV2CanonicalCatalog(items=buildAssessmentV2CanonicalCatalog()){
   const errors=[];
-  if(items.length!==189)errors.push(`item-count:${items.length}`);
+  if(items.length!==445)errors.push(`item-count:${items.length}`);
   if(new Set(items.map(item=>item.id)).size!==items.length)errors.push('duplicate-item-id');
   for(const item of items){
     if(!item.curriculum?.grade||!item.curriculum?.courseId)errors.push(`${item.id}:curriculum`);

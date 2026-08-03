@@ -21,6 +21,7 @@ const VISUAL_GRAMMAR_WAVE2_CODES = new Set([
   'T.8.3.12', 'T.8.3.27', 'T.8.3.33', 'T.8.4.18', 'T.8.4.19', 'T.8.4.20'
 ]);
 
+import { buildGrade8TurkishCompletionTasks, GRADE8_TURKISH_COMPLETION_OUTCOME_CODES } from './turkish-g8-completion-wave.js';
 const MODE = Object.freeze({
   AUTO_SELECTED: 'AUTO_SELECTED_RESPONSE',
   AUTO_CONSTRUCTED: 'AUTO_CONSTRUCTED_RESPONSE',
@@ -150,12 +151,13 @@ function coverageStatus(code) {
   if (PILOT02_CALIBRATION_CODES.has(code)) return 'PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED';
   if (READING_LANGUAGE_WAVE1_CODES.has(code)) return 'READING_LANGUAGE_WAVE1_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED';
   if (VISUAL_GRAMMAR_WAVE2_CODES.has(code)) return 'VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED';
+  if (GRADE8_TURKISH_COMPLETION_OUTCOME_CODES.includes(code)) return 'FULL_SCOPE_COMPLETION_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED';
   return 'PLANNED_NOT_IMPLEMENTED';
 }
 
 function existingCanonicalCountByCode() {
   const counts = new Map();
-  for (const item of [...buildGrade8TurkishPilot01Questions(), ...buildGrade8TurkishPilot02CalibrationQuestions(), ...buildGrade8TurkishReadingLanguageWave1Questions(), ...buildGrade8TurkishVisualGrammarWave2Questions()]) {
+  for (const item of [...buildGrade8TurkishPilot01Questions(), ...buildGrade8TurkishPilot02CalibrationQuestions(), ...buildGrade8TurkishReadingLanguageWave1Questions(), ...buildGrade8TurkishVisualGrammarWave2Questions(), ...buildGrade8TurkishCompletionTasks()]) {
     const outcomeId = item.curriculum.outcomeIds[0];
     const outcome = GRADE_8_TURKISH_OUTCOMES_2019.find(row => row.id === outcomeId);
     if (!outcome) continue;

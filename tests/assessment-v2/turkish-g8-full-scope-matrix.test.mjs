@@ -48,13 +48,13 @@ test('dinleme ve sözlü olmayan iletişim kazanımları gerekli medya kanalın�
   assert.equal(nonverbal.assessmentChannel, 'VIDEO');
 });
 
-test('51 mühendislik sorusu 31 kazanımı kapsar; tam ders hâlâ tamamlanmış sayılmaz', () => {
+test('96 mühendislik görevi 76 kazanımın tamamını kapsar; yayın hâlâ insan incelemesine bağlıdır', () => {
   assert.equal(GRADE8_TURKISH_PILOT01_COVERED_CODES.length, 8);
   assert.equal(GRADE8_TURKISH_PILOT02_CALIBRATION_CODES.length, 5);
   assert.equal(GRADE8_TURKISH_READING_LANGUAGE_WAVE1_CODES.length, 12);
   assert.equal(GRADE8_TURKISH_VISUAL_GRAMMAR_WAVE2_CODES.length, 6);
-  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount, 31);
-  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedItemCount, 51);
-  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount, 45);
+  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount, 76);
+  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedItemCount, 96);
+  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount, 0);
   assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.productReady, false);
 });

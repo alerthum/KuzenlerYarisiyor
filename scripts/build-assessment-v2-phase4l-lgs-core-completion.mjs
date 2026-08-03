@@ -1,0 +1,45 @@
+#!/usr/bin/env node
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { ASSESSMENT_V2_PRODUCTION_PORTFOLIO, ASSESSMENT_V2_PRODUCTION_PORTFOLIO_AUDIT } from '../js/assessment-v2/production-portfolio.js';
+import { ASSESSMENT_V2_CANONICAL_CATALOG, ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT } from '../js/assessment-v2/canonical-catalog.js';
+import { ASSESSMENT_V2_HUMAN_REVIEW_QUEUE, ASSESSMENT_V2_HUMAN_REVIEW_QUEUE_AUDIT } from '../js/assessment-v2/human-review-queue.js';
+import { ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN, ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN_AUDIT } from '../js/assessment-v2/autonomous-expansion-plan.js';
+import { GRADE8_TURKISH_FULL_SCOPE_AUDIT } from '../js/assessment-v2/turkish-g8-full-scope-matrix.js';
+import { GRADE5_TURKISH_FULL_SCOPE_AUDIT } from '../js/assessment-v2/turkish-g5-full-scope-matrix.js';
+import { GRADE8_MATH_FULL_SCOPE_AUDIT } from '../js/assessment-v2/math-g8-full-scope-matrix.js';
+import { GRADE8_SCIENCE_FULL_SCOPE_AUDIT } from '../js/assessment-v2/science-g8-full-scope-matrix.js';
+import { GRADE8_HISTORY_FULL_SCOPE_AUDIT } from '../js/assessment-v2/history-g8-full-scope-engine.js';
+import { GRADE8_DKAB_FULL_SCOPE_AUDIT } from '../js/assessment-v2/dkab-g8-full-scope-engine.js';
+import { GRADE8_ENGLISH_FULL_SCOPE_AUDIT } from '../js/assessment-v2/english-g8-full-scope-engine.js';
+
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const reportDir=path.join(root,'quality-reports');const publicDir=path.join(root,'public');
+fs.mkdirSync(reportDir,{recursive:true});fs.mkdirSync(publicDir,{recursive:true});
+const audits={portfolio:ASSESSMENT_V2_PRODUCTION_PORTFOLIO_AUDIT,catalog:ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT,reviewQueue:ASSESSMENT_V2_HUMAN_REVIEW_QUEUE_AUDIT,autonomousPlan:ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN_AUDIT,grade8Turkish:GRADE8_TURKISH_FULL_SCOPE_AUDIT,grade5Turkish:GRADE5_TURKISH_FULL_SCOPE_AUDIT,math:GRADE8_MATH_FULL_SCOPE_AUDIT,science:GRADE8_SCIENCE_FULL_SCOPE_AUDIT,history:GRADE8_HISTORY_FULL_SCOPE_AUDIT,dkab:GRADE8_DKAB_FULL_SCOPE_AUDIT,english:GRADE8_ENGLISH_FULL_SCOPE_AUDIT};
+const errors=Object.entries(audits).flatMap(([name,audit])=>audit.ok?[]:audit.errors.map(error=>`${name}:${error}`));
+const status=errors.length?'RED':'ENGINEERING_SCOPE_COMPLETE_HUMAN_REVIEW_REQUIRED';
+const report={schemaVersion:'1.0',generatedAt:new Date().toISOString(),phase:'4L',title:'Assessment V2 LGS Çekirdek Ders Motorları Mühendislik Kapsam Kapanışı',status,productReady:false,publicationAllowed:false,gameAdaptationAllowed:false,errors,audits,portfolio:ASSESSMENT_V2_PRODUCTION_PORTFOLIO,autonomousPlan:ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN,reviewQueueMetrics:ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics};
+fs.writeFileSync(path.join(reportDir,'assessment-engine-v2-phase4l-lgs-core-completion.json'),JSON.stringify(report,null,2));
+fs.writeFileSync(path.join(publicDir,'assessment-v2-human-review-queue.json'),JSON.stringify(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE,null,2));
+fs.writeFileSync(path.join(publicDir,'assessment-v2-autonomous-expansion-plan.json'),JSON.stringify(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN,null,2));
+fs.writeFileSync(path.join(reportDir,'assessment-v2-canonical-catalog-445.json'),JSON.stringify(ASSESSMENT_V2_CANONICAL_CATALOG,null,2));
+
+const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const courses=['turkce','matematik','fen-bilimleri','t-c-inkilap-tarihi-ve-ataturkculuk','din-kulturu-ve-ahlak-bilgisi','ingilizce'];
+const samples=[];
+for(const course of courses){
+  const grade8=ASSESSMENT_V2_CANONICAL_CATALOG.filter(item=>item.curriculum.grade===8&&item.curriculum.courseId===course).slice(-3);samples.push(...grade8);
+}
+samples.push(...ASSESSMENT_V2_CANONICAL_CATALOG.filter(item=>item.curriculum.grade===5&&item.curriculum.courseId==='turkce').slice(-3));
+function stimulus(item){const c=item.content||{};return [c.context,...(c.stimulusBlocks||[])].filter(Boolean).map(x=>`<p>${esc(x)}</p>`).join('');}
+function optionsOrRubric(item){const options=item.content?.options||[];if(options.length)return `<ol type="A">${options.map(o=>`<li>${esc(o.text)}</li>`).join('')}</ol>`;return `<div class="rubric"><strong>Değerlendirme ölçütleri</strong><ol>${(item.responseModel?.rubricCriteria||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>`;}
+const cards=samples.map((item,index)=>`<article><div class="meta"><b>${index+1}. ${item.curriculum.grade}. sınıf · ${esc(item.curriculum.courseId)}</b><span>${esc(item.itemFormat)}</span></div>${stimulus(item)}<h2>${esc(item.content?.stem||'Görevi tamamlayınız.')}</h2>${optionsOrRubric(item)}<details><summary>İpuçları ve çözüm/rubrik grafı</summary><h4>İpuçları</h4><ol>${item.hints.map(h=>`<li>${esc(h.text)}</li>`).join('')}</ol><h4>Çözüm/rubrik adımları</h4><ol>${item.solutionGraph.map(s=>`<li><b>${esc(s.action)}</b><br>${esc(s.evidence)}</li>`).join('')}</ol></details><footer>${esc(item.curriculum.outcomeIds.join(', '))} · ${esc(item.construct.primarySkill)} · HUMAN_REVIEW_REQUIRED</footer></article>`).join('');
+const html=`<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phase 4L Çapraz İnsan İnceleme</title><style>:root{color-scheme:dark;--bg:#07111f;--card:#10243d;--line:#29445f;--muted:#a8b8c8;--orange:#fb923c}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:15px/1.6 Segoe UI,Arial;color:#edf6ff}.wrap{max-width:1080px;margin:auto;padding:28px 18px 80px}.hero,article{background:linear-gradient(145deg,#132b47,#0c1c30);border:1px solid var(--line);border-radius:22px;padding:22px;margin:0 0 17px}.hero h1{margin:.25em 0}.hero p,footer{color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.stats div{padding:12px;background:#ffffff08;border-radius:13px}.stats strong{display:block;font-size:1.45rem}.meta{display:flex;justify-content:space-between;gap:10px;color:#67e8f9}.meta span{color:#fdba74}.rubric,details{padding:12px 15px;background:#07111f99;border:1px solid #ffffff13;border-radius:14px}details{margin-top:13px}summary{cursor:pointer;color:#67e8f9;font-weight:800}footer{margin-top:14px;padding-top:12px;border-top:1px solid #ffffff13;font-size:12px}@media(max-width:700px){.stats{grid-template-columns:1fr 1fr}.meta{display:block}}</style></head><body><main class="wrap"><section class="hero"><span>Assessment Engineering Engine V2 · Phase 4L</span><h1>21 Görevlik LGS Çekirdek İnsan İnceleme Örneklemi</h1><p>Yedi aktif motorun her birinden üç görev. Bu paket mühendislik kapsamını gösterir; insan alan uzmanı onayı, öğrenci pilotu ve oyun adaptasyonu henüz yapılmamıştır.</p><div class="stats"><div><strong>445</strong>Kanonik görev</div><div><strong>420/420</strong>Aktif motor kazanım kapsamı</div><div><strong>7</strong>Ayrı ders motoru</div><div><strong>440</strong>İnceleme kuyruğu</div></div></section>${cards}</main></body></html>`;
+fs.writeFileSync(path.join(reportDir,'assessment-v2-phase4l-human-review-21.html'),html);
+
+const md=`# Assessment Engineering Engine V2 — Phase 4L\n\n## Sonuç\n\n- Durum: **${status}**\n- productReady: **false**\n- Yayın: **kilitli**\n- Oyun adaptasyonu: **kilitli**\n- Aktif ders motoru: **7**\n- Resmî kazanım/çıktı kaydı: **420**\n- Aktif motorlarda mühendislik kapsamı: **420/420**\n- Kanonik soru/görev: **445**\n- İnsan onaylı: **5**\n- İnsan incelemesi bekleyen: **440**\n- Legacy içerik: **604 / UNVERIFIED_LEGACY**\n\n## Tamamlanan motorlar\n\n1. 8. sınıf Türkçe — 76/76 kazanım, 96 görev.\n2. 8. sınıf Matematik — 52/52 kazanım, 52 görev.\n3. 8. sınıf Fen Bilimleri — 61/61 kazanım, 61 görev.\n4. 5. sınıf Türkçe — 100/100 öğrenme çıktısı, 105 görev.\n5. 8. sınıf T.C. İnkılap Tarihi ve Atatürkçülük — 33/33 kazanım, 33 görev.\n6. 8. sınıf Din Kültürü ve Ahlak Bilgisi — 28/28 kazanım, 28 görev.\n7. 8. sınıf İngilizce — 70/70 kazanım, 70 A2 iletişim görevi.\n\n## Dürüst kalan kapılar\n\n- 440 görevin insan/alan uzmanı incelemesi tamamlanmadı.\n- Dinleme görevleri gerçek ses varlıkları bekliyor.\n- Tarih ve DKAB kaynak paketlerinin provenans/telif doğrulaması bekliyor.\n- Deney, çizim ve etkileşim görevlerinin gerçek UI bileşenleri bağlanmadı.\n- Öğrenci pilotu ve madde analizi başlamadı.\n- Oyun uyarlaması yalnız insan onaylı örnekler için sonraki kapıdır.\n- 112 zorunlu sınıf-ders hücresinin 105’i henüz açılmadı.\n`;
+fs.writeFileSync(path.join(root,'ASSESSMENT_ENGINEERING_V2_PHASE4L_LGS_CORE_COMPLETE.md'),md);
+console.log(JSON.stringify({status,errors,summary:ASSESSMENT_V2_PRODUCTION_PORTFOLIO.summary,files:['quality-reports/assessment-engine-v2-phase4l-lgs-core-completion.json','quality-reports/assessment-v2-phase4l-human-review-21.html','quality-reports/assessment-v2-canonical-catalog-445.json','public/assessment-v2-human-review-queue.json','public/assessment-v2-autonomous-expansion-plan.json','ASSESSMENT_ENGINEERING_V2_PHASE4L_LGS_CORE_COMPLETE.md']},null,2));
+if(errors.length)process.exitCode=1;

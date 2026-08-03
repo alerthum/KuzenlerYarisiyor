@@ -1,16 +1,16 @@
 {
-  "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T21:22:23.515Z",
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-08-03T22:12:35.048Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
-  "status": "AUTONOMOUS_EXECUTION_PLAN_READY",
+  "status": "LGS_CORE_COMPLETE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
-    "activeEngineCount": 4,
-    "engineeringScopeCompleteEngineCount": 2,
-    "remainingOutcomeCount": 120,
-    "humanReviewQueueCount": 184,
-    "unopenedCourseCellCount": 108
+    "activeEngineCount": 7,
+    "engineeringScopeCompleteEngineCount": 7,
+    "remainingOutcomeCount": 0,
+    "humanReviewQueueCount": 440,
+    "unopenedCourseCellCount": 105
   },
   "engines": [
     {
@@ -18,11 +18,11 @@
       "grade": 8,
       "courseId": "turkce",
       "officialOutcomeCount": 76,
-      "coveredOutcomeCount": 31,
-      "remainingOutcomeCount": 45,
-      "canonicalQuestionCount": 51,
-      "reviewQueueCount": 46,
-      "engineeringScopeComplete": false,
+      "coveredOutcomeCount": 76,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 96,
+      "reviewQueueCount": 91,
+      "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
     },
     {
@@ -54,62 +54,90 @@
       "grade": 5,
       "courseId": "turkce",
       "officialOutcomeCount": 100,
-      "coveredOutcomeCount": 25,
-      "remainingOutcomeCount": 75,
-      "canonicalQuestionCount": 25,
-      "reviewQueueCount": 25,
-      "engineeringScopeComplete": false,
+      "coveredOutcomeCount": 100,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 105,
+      "reviewQueueCount": 105,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g8-inkilap-v2",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "officialOutcomeCount": 33,
+      "coveredOutcomeCount": 33,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 33,
+      "reviewQueueCount": 33,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g8-dkab-v2",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "officialOutcomeCount": 28,
+      "coveredOutcomeCount": 28,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 28,
+      "reviewQueueCount": 28,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g8-ingilizce-v2",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "officialOutcomeCount": 70,
+      "coveredOutcomeCount": 70,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 70,
+      "reviewQueueCount": 70,
+      "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
     }
   ],
   "backlog": [
     {
       "order": 1,
-      "id": "review-g8-math",
+      "id": "calibrate-risk-sample",
       "kind": "HUMAN_REVIEW",
-      "scope": "8. sınıf Matematik 52 görev",
-      "reason": "Mühendislik kapsamı tamamlandı; etkileşim ve soru kalitesi insan onayı bekliyor.",
-      "count": 52
+      "scope": "7 aktif motor için risk tabakalı örneklem",
+      "reason": "440 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
+      "count": 70
     },
     {
       "order": 2,
-      "id": "review-g8-science",
-      "kind": "HUMAN_REVIEW",
-      "scope": "8. sınıf Fen Bilimleri 61 görev",
-      "reason": "Mühendislik kapsamı tamamlandı; deney, model ve tasarım görevleri insan onayı bekliyor.",
-      "count": 61
+      "id": "media-asset-pipeline",
+      "kind": "MEDIA_AND_RUBRIC",
+      "scope": "İngilizce dinleme, Türkçe dinleme/konuşma, tarih kaynakları ve Fen deneyleri",
+      "reason": "Kanonik görevler gerçek medya, kaynak provenansı ve rubrik örnekleriyle tamamlanmalı.",
+      "count": 1
     },
     {
       "order": 3,
-      "id": "complete-g5-turkish",
-      "kind": "CONTENT_EXPANSION",
-      "scope": "5. sınıf Türkçe",
-      "reason": "100 çıktıdan 25’i görevle kapsandı.",
-      "count": 75
+      "id": "game-adaptation-lab",
+      "kind": "GAME_ADAPTATION",
+      "scope": "Yalnız insan onaylı örneklem",
+      "reason": "Anlam koruma ve tersine doğrulama kapılarıyla ilk oyun adaptasyon laboratuvarı kurulmalı.",
+      "count": 1
     },
     {
       "order": 4,
-      "id": "complete-g8-turkish",
-      "kind": "CONTENT_EXPANSION",
-      "scope": "8. sınıf Türkçe",
-      "reason": "76 kazanımdan 31’i görevle kapsandı.",
-      "count": 45
+      "id": "student-pilot",
+      "kind": "PILOT",
+      "scope": "Küçük öğrenci grupları",
+      "reason": "Madde güçlüğü, ayırt edicilik, çeldirici performansı ve rubrik tutarlılığı gerçek veriyle ölçülmeli.",
+      "count": 1
     },
     {
       "order": 5,
-      "id": "open-lgs-engines",
-      "kind": "NEW_ENGINE",
-      "scope": "8. sınıf İnkılap Tarihi, Din Kültürü ve İngilizce",
-      "reason": "LGS ders motorlarının tamamı açılmalı.",
-      "count": 3
-    },
-    {
-      "order": 6,
       "id": "expand-grade-map",
       "kind": "NEW_ENGINE",
       "scope": "1–12 zorunlu ders hücreleri",
-      "reason": "112 hücrenin yalnız 4’ü aktif.",
-      "count": 108
+      "reason": "112 hücrenin 7’si aktif; ortak sözleşmeyle yeni sınıf-ders motorları açılmalı.",
+      "count": 105
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
-  "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T21:22:23.619Z",
+  "schemaVersion": "3.0",
+  "generatedAt": "2026-08-03T22:12:35.180Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
-  "status": "MULTI_ENGINE_FULL_SCOPE_EXPANSION",
+  "status": "LGS_CORE_ENGINEERING_SCOPE_COMPLETE",
   "productReady": false,
   "publicationAllowed": false,
   "gameAdaptationAllowed": false,
@@ -32,13 +32,13 @@
     "targetGradeCount": 12,
     "activeGradeCount": 2,
     "courseScheduleCellCount": 112,
-    "activeEngineCellCount": 4,
-    "activeEngineCellPercent": 3.6,
-    "curriculumOutcomeRecordCount": 289,
-    "coveredOutcomeCount": 169,
-    "canonicalQuestionCount": 189,
+    "activeEngineCellCount": 7,
+    "activeEngineCellPercent": 6.3,
+    "curriculumOutcomeRecordCount": 420,
+    "coveredOutcomeCount": 420,
+    "canonicalQuestionCount": 445,
     "humanApprovedQuestionCount": 5,
-    "humanReviewQueueCount": 184,
+    "humanReviewQueueCount": 440,
     "gameAdaptedQuestionCount": 0,
     "legacyQuarantineCount": 604
   },
@@ -114,22 +114,22 @@
       "curriculumStatus": "FULL_SCOPE_INGESTED",
       "officialOutcomeCount": 76,
       "ingestedOutcomeCount": 76,
-      "coveredOutcomeCount": 31,
-      "courseCoveragePercent": 40.8,
+      "coveredOutcomeCount": 76,
+      "courseCoveragePercent": 100,
       "ingestionPercent": 100,
-      "canonicalQuestionCount": 51,
+      "canonicalQuestionCount": 96,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 46,
+      "humanReviewQueueCount": 91,
       "gameAdaptedQuestionCount": 0,
       "gameAdaptationAllowed": false,
-      "engineStatus": "EXPANDING",
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
       "engineType": "semantic-evidence + grammar + visual-reading + performance-rubric",
       "verifierType": "independent semantic/constraint verification",
       "misconceptionCatalog": "tr-g8-turkish-domain-misconceptions",
-      "nextAction": "Kalan 45 kazanımı dinleme, konuşma, yazma ve eksik okuma dalgalarıyla kapat.",
+      "nextAction": "96 Türkçe görevini alan ve yaş uygunluğu açısından insan kalibrasyonundan geçir.",
       "blockers": [
-        "45 kazanım henüz kanonik soru veya performans göreviyle kapsanmadı.",
-        "İnsan inceleme kuyruğu tamamlanmadı."
+        "91 Türkçe görevi insan incelemesi bekliyor.",
+        "Dinleme/konuşma görevleri gerçek medya ve rubrik kalibrasyonu gerektiriyor."
       ]
     },
     {
@@ -153,10 +153,10 @@
       "engineType": "symbolic/numeric/geometry solver-backed + interactive construction",
       "verifierType": "independent alternate algorithm and invariant checks",
       "misconceptionCatalog": "tr-g8-math-full-scope-misconceptions",
-      "nextAction": "52 Matematik görevini insan örneklemiyle kalibre et ve onaylananları oyun adaptasyon laboratuvarına geçir.",
+      "nextAction": "52 Matematik görevini insan örneklemiyle kalibre et.",
       "blockers": [
         "52 Matematik görevinin insan gözle kalibrasyonu yapılmadı.",
-        "Etkileşimli çizim görevlerinin UI bileşenleri henüz bağlanmadı."
+        "Etkileşimli çizim görevlerinin UI bileşenleri bağlanmadı."
       ]
     },
     {
@@ -180,10 +180,10 @@
       "engineType": "model/experiment/data reasoning + CER/design rubrics",
       "verifierType": "evidence-constraint + scientific model verification",
       "misconceptionCatalog": "tr-g8-science-full-scope-misconceptions",
-      "nextAction": "61 Fen görevini insan örneklemiyle kalibre et ve onaylanan deney/tasarım görevlerini etkileşim bileşenlerine bağla.",
+      "nextAction": "61 Fen görevini deney, model ve güvenlik açısından insan kalibrasyonundan geçir.",
       "blockers": [
         "61 Fen görevinin insan gözle kalibrasyonu yapılmadı.",
-        "Deney ve tasarım görevlerinin gerçek medya/etkileşim bileşenleri henüz bağlanmadı."
+        "Gerçek deney/medya bileşenleri bağlanmadı."
       ]
     },
     {
@@ -195,22 +195,103 @@
       "curriculumStatus": "FULL_SCOPE_INGESTED",
       "officialOutcomeCount": 100,
       "ingestedOutcomeCount": 100,
-      "coveredOutcomeCount": 25,
-      "courseCoveragePercent": 25,
+      "coveredOutcomeCount": 100,
+      "courseCoveragePercent": 100,
       "ingestionPercent": 100,
-      "canonicalQuestionCount": 25,
+      "canonicalQuestionCount": 105,
       "humanApprovedQuestionCount": 0,
-      "humanReviewQueueCount": 25,
+      "humanReviewQueueCount": 105,
       "gameAdaptedQuestionCount": 0,
       "gameAdaptationAllowed": false,
-      "engineStatus": "EXPANDING",
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
       "engineType": "age-calibrated listening/reading evidence + speaking/writing rubrics",
       "verifierType": "independent evidence intersection + rubric consistency",
       "misconceptionCatalog": "tr-g5-turkish-full-scope-misconceptions",
-      "nextAction": "Kalan 75 öğrenme çıktısını beceri alanı dalgalarıyla kapat.",
+      "nextAction": "105 görevi 5. sınıf dil düzeyi ve performans rubrikleri açısından kalibre et.",
       "blockers": [
-        "75 öğrenme çıktısı henüz görevle kapsanmadı.",
-        "Ses kayıtları ve performans rubriklerinin insan kalibrasyonu yapılmadı."
+        "105 görevin insan kalibrasyonu tamamlanmadı.",
+        "Ses kayıtları ve üretici görev örnekleri hazırlanmadı."
+      ]
+    },
+    {
+      "id": "tr-g8-inkilap-v2",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "courseName": "T.C. İnkılap Tarihi ve Atatürkçülük",
+      "programFamily": "PRE_TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 33,
+      "ingestedOutcomeCount": 33,
+      "coveredOutcomeCount": 33,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 33,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 33,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "source criticism + chronology + causality + continuity/change",
+      "verifierType": "independent source/rubric constraint verification",
+      "misconceptionCatalog": "g8-history-source-reasoning-misconceptions-v1",
+      "nextAction": "33 tarihsel sorgulama görevine gerçek kaynak paketleri ve insan tarihçi incelemesi ekle.",
+      "blockers": [
+        "Kaynak paketleri ve telif/provenans doğrulaması bekliyor.",
+        "İnsan alan uzmanı kalibrasyonu yapılmadı."
+      ]
+    },
+    {
+      "id": "tr-g8-dkab-v2",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "courseName": "Din Kültürü ve Ahlak Bilgisi",
+      "programFamily": "PRE_TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 28,
+      "ingestedOutcomeCount": 28,
+      "coveredOutcomeCount": 28,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 28,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 28,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "curriculum-bound text evidence + concept/ethical reasoning",
+      "verifierType": "independent curriculum/evidence/rubric verification",
+      "misconceptionCatalog": "g8-dkab-curriculum-bound-misconceptions-v1",
+      "nextAction": "28 görevi tarafsız dil, metin bağlamı ve alan uzmanlığı açısından kalibre et.",
+      "blockers": [
+        "Ayet/hadis ve açıklama materyallerinin kaynak doğrulaması bekliyor.",
+        "İnsan alan uzmanı incelemesi yapılmadı."
+      ]
+    },
+    {
+      "id": "tr-g8-ingilizce-v2",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "courseName": "İngilizce",
+      "programFamily": "PRE_TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 70,
+      "ingestedOutcomeCount": 70,
+      "coveredOutcomeCount": 70,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 70,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 70,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "CEFR A2 listening/interaction/production/reading/writing tasks",
+      "verifierType": "independent CEFR task and rubric consistency",
+      "misconceptionCatalog": "g8-english-a2-communication-misconceptions-v1",
+      "nextAction": "70 A2 görevi için gerçek ses kayıtları, örnek cevaplar ve İngilizce öğretmeni kalibrasyonu ekle.",
+      "blockers": [
+        "15 dinleme görevi gerçek ses kaydı bekliyor.",
+        "Konuşma ve yazma rubriklerinin insan kalibrasyonu yapılmadı."
       ]
     }
   ],
@@ -218,38 +299,38 @@
     {
       "id": "curriculum",
       "label": "Resmî müfredat",
-      "status": "IN_PROGRESS",
-      "note": "4 aktif motorun tamamında tam kapsam aktarımı yapıldı."
+      "status": "PASS_FOR_ACTIVE_ENGINES",
+      "note": "7 aktif motorun resmî kapsamı tam aktarıldı."
     },
     {
       "id": "subject-engine",
       "label": "Derse özel motor",
-      "status": "IN_PROGRESS",
-      "note": "Ortak üretici yok; alan çözücüleri ve rubrikleri ayrıdır."
+      "status": "PASS_FOR_ACTIVE_ENGINES",
+      "note": "Her ders kendi çözücü/rubrik ve yanılgı kataloğuyla çalışıyor."
     },
     {
       "id": "canonical-content",
       "label": "Kanonik soru/görev",
-      "status": "IN_PROGRESS",
-      "note": "189 doğrulanmış mühendislik nesnesi mevcut."
+      "status": "ENGINEERING_SCOPE_COMPLETE",
+      "note": "445 kanonik mühendislik nesnesi mevcut."
     },
     {
       "id": "human-review",
       "label": "İnsan kalibrasyonu",
       "status": "BLOCKED",
-      "note": "5 onaylı, 184 inceleme bekliyor."
+      "note": "5 onaylı, 440 inceleme bekliyor."
     },
     {
       "id": "game-adaptation",
       "label": "Oyun uyarlaması",
       "status": "LOCKED",
-      "note": "Yalnız insan onaylı ve alan kapsamı yeterli içerikler açılabilir."
+      "note": "Yalnız insan onaylı içerikler açılabilir."
     },
     {
       "id": "student-pilot",
       "label": "Öğrenci pilotu",
       "status": "NOT_STARTED",
-      "note": "Madde analizi ve çeldirici performansı ölçülmedi."
+      "note": "Madde analizi ve performans verisi ölçülmedi."
     },
     {
       "id": "publication",
@@ -261,33 +342,27 @@
   "nextMilestones": [
     {
       "order": 1,
-      "id": "g8-science-completion",
-      "title": "8. sınıf Fen 61 görev insan kalibrasyonu",
-      "reason": "Mühendislik kapsamı tamamlandı; deney ve tasarım kalitesi insan onayı bekliyor."
+      "id": "human-review-sampling",
+      "title": "7 motor için dengeli insan örneklemi",
+      "reason": "440 görevlik kuyruğu risk ve çeşitliliğe göre örneklemle kalibre et."
     },
     {
       "order": 2,
-      "id": "g5-turkish-completion",
-      "title": "5. sınıf Türkçe kalan 75 çıktı",
-      "reason": "Dört beceri alanı tam matriste; yaşa özel görev dalgaları tamamlanmalı."
+      "id": "media-and-rubrics",
+      "title": "Ses, kaynak, deney ve rubrik varlıkları",
+      "reason": "Dinleme, konuşma, tarih kaynağı ve deney görevlerinin gerçek materyalleri bağlanmalı."
     },
     {
       "order": 3,
-      "id": "g8-turkish-completion",
-      "title": "8. sınıf Türkçe kalan 45 kazanım",
-      "reason": "Dinleme, konuşma ve yazma performans görevleri kapatılmalı."
+      "id": "game-adaptation-lab",
+      "title": "Onaylı içerik için oyun adaptasyon laboratuvarı",
+      "reason": "Anlamı koruyan tersine doğrulamalı adaptasyon yalnız onaylı örneklerde başlatılmalı."
     },
     {
       "order": 4,
-      "id": "human-review-queue",
-      "title": "189 görevlik insan inceleme kuyruğu",
-      "reason": "Oyun kilidinin ana bağımlılığı insan kalibrasyonudur."
-    },
-    {
-      "order": 5,
-      "id": "lgs-other-engines",
-      "title": "8. sınıf diğer LGS ders motorları",
-      "reason": "İnkılap Tarihi, Din Kültürü ve İngilizce motorları açılmalı."
+      "id": "expand-grade-map",
+      "title": "1–12 sınıf-ders hücrelerini genişlet",
+      "reason": "112 zorunlu hücrenin 7’si aktif."
     }
   ]
 }

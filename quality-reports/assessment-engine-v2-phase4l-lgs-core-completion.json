@@ -1,32 +1,207 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T22:12:35.181Z",
-  "phase": "4H",
-  "title": "Assessment V2 Ürün Şekillendirme ve Ders Motorları Panosu",
-  "status": "ENGINEERING_PASS_HUMAN_REVIEW_IN_PROGRESS",
+  "generatedAt": "2026-08-03T22:12:35.049Z",
+  "phase": "4L",
+  "title": "Assessment V2 LGS Çekirdek Ders Motorları Mühendislik Kapsam Kapanışı",
+  "status": "ENGINEERING_SCOPE_COMPLETE_HUMAN_REVIEW_REQUIRED",
   "productReady": false,
+  "publicationAllowed": false,
   "gameAdaptationAllowed": false,
-  "audit": {
-    "ok": true,
-    "errors": [],
-    "metrics": {
-      "targetGradeCount": 12,
-      "activeGradeCount": 2,
-      "courseScheduleCellCount": 112,
-      "activeEngineCellCount": 7,
-      "activeEngineCellPercent": 6.3,
-      "curriculumOutcomeRecordCount": 420,
-      "coveredOutcomeCount": 420,
-      "canonicalQuestionCount": 445,
-      "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 440,
-      "gameAdaptedQuestionCount": 0,
-      "legacyQuarantineCount": 604
+  "errors": [],
+  "audits": {
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 2,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 7,
+        "activeEngineCellPercent": 6.3,
+        "curriculumOutcomeRecordCount": 420,
+        "coveredOutcomeCount": 420,
+        "canonicalQuestionCount": 445,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 440,
+        "gameAdaptedQuestionCount": 0,
+        "legacyQuarantineCount": 604
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 445,
+        "byEngine": {
+          "g8:turkce": 96,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 61,
+          "g5:turkce": 105,
+          "g8:t-c-inkilap-tarihi-ve-ataturkculuk": 33,
+          "g8:din-kulturu-ve-ahlak-bilgisi": 28,
+          "g8:ingilizce": 70
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    },
+    "reviewQueue": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "total": 445,
+        "approved": 5,
+        "pending": 440,
+        "highComplexityPending": 289
+      }
+    },
+    "autonomousPlan": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "activeEngineCount": 7,
+        "engineeringScopeCompleteEngineCount": 7,
+        "remainingOutcomeCount": 0,
+        "humanReviewQueueCount": 440,
+        "unopenedCourseCellCount": 105
+      }
+    },
+    "grade8Turkish": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "outcomeCount": 76,
+        "domainCounts": {
+          "dinleme-izleme": 14,
+          "konusma": 7,
+          "okuma": 35,
+          "yazma": 20
+        },
+        "statusCounts": {
+          "FULL_SCOPE_COMPLETION_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 45,
+          "READING_LANGUAGE_WAVE1_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 12,
+          "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 5,
+          "VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 6,
+          "PILOT01_ENGINEERING_COVERED": 8
+        },
+        "modeCounts": {
+          "MULTIMODAL_SELECTED_RESPONSE": 15,
+          "HYBRID_AUTOMATED_AND_HUMAN": 15,
+          "HUMAN_RUBRIC_PERFORMANCE": 22,
+          "AUTO_SELECTED_RESPONSE": 24
+        },
+        "humanScoredCount": 37,
+        "mediaRequiredCount": 23,
+        "selectedResponseEligibleCount": 42,
+        "implementedOutcomeCount": 76,
+        "implementedItemCount": 96,
+        "uncoveredOutcomeCount": 0,
+        "productReady": false
+      }
+    },
+    "grade5Turkish": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 100,
+        "implementedOutcomeCount": 100,
+        "implementedItemCount": 105,
+        "uncoveredOutcomeCount": 0,
+        "listeningCount": 25,
+        "readingCount": 27,
+        "speakingCount": 26,
+        "writingCount": 22,
+        "humanRubricOutcomeCount": 48,
+        "mediaOutcomeCount": 29,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "math": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 52,
+        "unitCounts": {
+          "Sayılar ve İşlemler": 16,
+          "Cebir": 13,
+          "Geometri ve Ölçme": 16,
+          "Veri İşleme": 2,
+          "Olasılık": 5
+        },
+        "implementedOutcomeCount": 52,
+        "implementedItemCount": 52,
+        "uncoveredOutcomeCount": 0,
+        "visualOrInteractiveOutcomeCount": 24,
+        "humanRubricOutcomeCount": 6,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "science": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 61,
+        "implementedOutcomeCount": 61,
+        "implementedItemCount": 61,
+        "uncoveredOutcomeCount": 0,
+        "humanRubricOutcomeCount": 13,
+        "visualExperimentOutcomeCount": 10,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "history": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 33,
+        "implementedOutcomeCount": 33,
+        "itemCount": 33,
+        "engineeringScopeComplete": true,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "dkab": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 28,
+        "implementedOutcomeCount": 28,
+        "itemCount": 28,
+        "engineeringScopeComplete": true,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "english": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 70,
+        "implementedOutcomeCount": 70,
+        "itemCount": 70,
+        "skillCounts": {
+          "L": 15,
+          "SI": 16,
+          "SP": 15,
+          "R": 14,
+          "W": 10
+        },
+        "engineeringScopeComplete": true,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
     }
   },
   "portfolio": {
     "schemaVersion": "3.0",
-    "generatedAt": "2026-08-03T22:12:35.180Z",
+    "generatedAt": "2026-08-03T22:12:35.045Z",
     "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
     "status": "LGS_CORE_ENGINEERING_SCOPE_COMPLETE",
     "productReady": false,
@@ -391,5 +566,154 @@
         "reason": "112 zorunlu hücrenin 7’si aktif."
       }
     ]
+  },
+  "autonomousPlan": {
+    "schemaVersion": "2.0",
+    "generatedAt": "2026-08-03T22:12:35.048Z",
+    "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
+    "status": "LGS_CORE_COMPLETE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
+    "productReady": false,
+    "gameAdaptationAllowed": false,
+    "metrics": {
+      "activeEngineCount": 7,
+      "engineeringScopeCompleteEngineCount": 7,
+      "remainingOutcomeCount": 0,
+      "humanReviewQueueCount": 440,
+      "unopenedCourseCellCount": 105
+    },
+    "engines": [
+      {
+        "engineId": "tr-g8-turkce-v2",
+        "grade": 8,
+        "courseId": "turkce",
+        "officialOutcomeCount": 76,
+        "coveredOutcomeCount": 76,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 96,
+        "reviewQueueCount": 91,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-matematik-v2",
+        "grade": 8,
+        "courseId": "matematik",
+        "officialOutcomeCount": 52,
+        "coveredOutcomeCount": 52,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 52,
+        "reviewQueueCount": 52,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-fen-v2",
+        "grade": 8,
+        "courseId": "fen-bilimleri",
+        "officialOutcomeCount": 61,
+        "coveredOutcomeCount": 61,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 61,
+        "reviewQueueCount": 61,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g5-turkce-v2",
+        "grade": 5,
+        "courseId": "turkce",
+        "officialOutcomeCount": 100,
+        "coveredOutcomeCount": 100,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 105,
+        "reviewQueueCount": 105,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-inkilap-v2",
+        "grade": 8,
+        "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+        "officialOutcomeCount": 33,
+        "coveredOutcomeCount": 33,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 33,
+        "reviewQueueCount": 33,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-dkab-v2",
+        "grade": 8,
+        "courseId": "din-kulturu-ve-ahlak-bilgisi",
+        "officialOutcomeCount": 28,
+        "coveredOutcomeCount": 28,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 28,
+        "reviewQueueCount": 28,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-ingilizce-v2",
+        "grade": 8,
+        "courseId": "ingilizce",
+        "officialOutcomeCount": 70,
+        "coveredOutcomeCount": 70,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 70,
+        "reviewQueueCount": 70,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      }
+    ],
+    "backlog": [
+      {
+        "order": 1,
+        "id": "calibrate-risk-sample",
+        "kind": "HUMAN_REVIEW",
+        "scope": "7 aktif motor için risk tabakalı örneklem",
+        "reason": "440 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
+        "count": 70
+      },
+      {
+        "order": 2,
+        "id": "media-asset-pipeline",
+        "kind": "MEDIA_AND_RUBRIC",
+        "scope": "İngilizce dinleme, Türkçe dinleme/konuşma, tarih kaynakları ve Fen deneyleri",
+        "reason": "Kanonik görevler gerçek medya, kaynak provenansı ve rubrik örnekleriyle tamamlanmalı.",
+        "count": 1
+      },
+      {
+        "order": 3,
+        "id": "game-adaptation-lab",
+        "kind": "GAME_ADAPTATION",
+        "scope": "Yalnız insan onaylı örneklem",
+        "reason": "Anlam koruma ve tersine doğrulama kapılarıyla ilk oyun adaptasyon laboratuvarı kurulmalı.",
+        "count": 1
+      },
+      {
+        "order": 4,
+        "id": "student-pilot",
+        "kind": "PILOT",
+        "scope": "Küçük öğrenci grupları",
+        "reason": "Madde güçlüğü, ayırt edicilik, çeldirici performansı ve rubrik tutarlılığı gerçek veriyle ölçülmeli.",
+        "count": 1
+      },
+      {
+        "order": 5,
+        "id": "expand-grade-map",
+        "kind": "NEW_ENGINE",
+        "scope": "1–12 zorunlu ders hücreleri",
+        "reason": "112 hücrenin 7’si aktif; ortak sözleşmeyle yeni sınıf-ders motorları açılmalı.",
+        "count": 105
+      }
+    ]
+  },
+  "reviewQueueMetrics": {
+    "total": 445,
+    "approved": 5,
+    "pending": 440,
+    "highComplexityPending": 289
   }
 }

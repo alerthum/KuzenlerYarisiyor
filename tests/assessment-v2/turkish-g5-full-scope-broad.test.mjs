@@ -19,12 +19,12 @@ test('5. sınıf TYMM Türkçe 100 öğrenme çıktısının tamamını dört be
   },{listening:25,reading:27,speaking:26,writing:22});
 });
 
-test('5. sınıf Türkçe geniş dalgası dinleme, okuma, konuşma ve yazmayı dengeli biçimde açar',()=>{
+test('5. sınıf Türkçe geniş dalgası korunurken tamamlama motoru 100 çıktıyı kapatır',()=>{
   const audit=auditGrade5TurkishBroadWaveCatalog(items);
   assert.equal(audit.ok,true,audit.errors.join('\n'));
   assert.deepEqual(audit.metrics,{itemCount:20,outcomeCount:20,choiceCount:10,performanceCount:10,humanReviewStatus:'NOT_MEASURED',gameAdaptationAllowed:false});
-  assert.equal(GRADE5_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,25);
-  assert.equal(GRADE5_TURKISH_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount,75);
+  assert.equal(GRADE5_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,100);
+  assert.equal(GRADE5_TURKISH_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount,0);
 });
 
 test('üretici konuşma ve yazma çıktıları zorla çoktan seçmeliye çevrilmez',()=>{
