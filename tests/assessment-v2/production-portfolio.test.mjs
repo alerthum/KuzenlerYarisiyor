@@ -23,7 +23,7 @@ test('ürün portföyü 1-12 hedefini ve mevcut 7 ders motorunu dürüst sayaçl
 test('insan incelemesi, oyun uyarlaması ve ürün yayını ayrı kapılar olarak kalır', () => {
   assert.equal(portfolio.summary.humanApprovedQuestionCount, 5);
   assert.equal(portfolio.summary.humanReviewQueueCount, 440);
-  assert.equal(portfolio.summary.gameAdaptedQuestionCount, 0);
+  assert.equal(portfolio.summary.gameAdaptedQuestionCount, 5);
   assert.equal(portfolio.gameAdaptationAllowed, false);
   assert.equal(portfolio.productReady, false);
   assert.equal(portfolio.publicationAllowed, false);

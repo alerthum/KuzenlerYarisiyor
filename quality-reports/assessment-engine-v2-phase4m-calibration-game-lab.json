@@ -1,0 +1,79 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T22:13:32.367Z",
+  "phase": "4M",
+  "title": "Risk Tabakalı İnsan Kalibrasyonu ve Onaylı Oyun Adaptasyon Laboratuvarı",
+  "status": "CALIBRATION_SYSTEM_AND_GAME_LAB_ENGINEERING_PASS",
+  "productReady": false,
+  "publicationAllowed": false,
+  "generalGameAdaptationAllowed": false,
+  "errors": [],
+  "audits": {
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 2,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 7,
+        "activeEngineCellPercent": 6.3,
+        "curriculumOutcomeRecordCount": 420,
+        "coveredOutcomeCount": 420,
+        "canonicalQuestionCount": 445,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 440,
+        "gameAdaptedQuestionCount": 5,
+        "legacyQuarantineCount": 604
+      }
+    },
+    "reviewSample": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "engineCount": 7,
+        "perEngine": 10,
+        "total": 70,
+        "pendingSourceCount": 440
+      }
+    },
+    "gameLab": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "adaptedCount": 5,
+        "meaningHuntCount": 3,
+        "paragraphDetectiveCount": 2,
+        "publicationAllowed": false,
+        "studentPilotRequired": true
+      }
+    }
+  },
+  "portfolioSummary": {
+    "targetGradeCount": 12,
+    "activeGradeCount": 2,
+    "courseScheduleCellCount": 112,
+    "activeEngineCellCount": 7,
+    "activeEngineCellPercent": 6.3,
+    "curriculumOutcomeRecordCount": 420,
+    "coveredOutcomeCount": 420,
+    "canonicalQuestionCount": 445,
+    "humanApprovedQuestionCount": 5,
+    "humanReviewQueueCount": 440,
+    "gameAdaptedQuestionCount": 5,
+    "legacyQuarantineCount": 604
+  },
+  "reviewSampleMetrics": {
+    "engineCount": 7,
+    "perEngine": 10,
+    "total": 70,
+    "pendingSourceCount": 440
+  },
+  "gameLabMetrics": {
+    "adaptedCount": 5,
+    "meaningHuntCount": 3,
+    "paragraphDetectiveCount": 2,
+    "publicationAllowed": false,
+    "studentPilotRequired": true
+  }
+}

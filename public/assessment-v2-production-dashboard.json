@@ -1,6 +1,6 @@
 {
   "schemaVersion": "3.0",
-  "generatedAt": "2026-08-03T22:12:35.180Z",
+  "generatedAt": "2026-08-03T22:13:32.480Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "LGS_CORE_ENGINEERING_SCOPE_COMPLETE",
   "productReady": false,
@@ -39,7 +39,7 @@
     "canonicalQuestionCount": 445,
     "humanApprovedQuestionCount": 5,
     "humanReviewQueueCount": 440,
-    "gameAdaptedQuestionCount": 0,
+    "gameAdaptedQuestionCount": 5,
     "legacyQuarantineCount": 604
   },
   "rollout": [
@@ -120,7 +120,7 @@
       "canonicalQuestionCount": 96,
       "humanApprovedQuestionCount": 5,
       "humanReviewQueueCount": 91,
-      "gameAdaptedQuestionCount": 0,
+      "gameAdaptedQuestionCount": 5,
       "gameAdaptationAllowed": false,
       "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
       "engineType": "semantic-evidence + grammar + visual-reading + performance-rubric",
@@ -323,8 +323,8 @@
     {
       "id": "game-adaptation",
       "label": "Oyun uyarlaması",
-      "status": "LOCKED",
-      "note": "Yalnız insan onaylı içerikler açılabilir."
+      "status": "LAB_ONLY",
+      "note": "5 insan onaylı Türkçe sorusu tersine doğrulamalı laboratuvarda; genel açılış kilitli."
     },
     {
       "id": "student-pilot",

@@ -1,0 +1,1835 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T22:13:32.366Z",
+  "status": "RISK_STRATIFIED_HUMAN_CALIBRATION_SAMPLE",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "metrics": {
+    "engineCount": 7,
+    "perEngine": 10,
+    "total": 70,
+    "pendingSourceCount": 440
+  },
+  "rows": [
+    {
+      "order": 259,
+      "questionId": "turkish-g8-complete-t-8-2-1",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-prepared_production",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 245,
+      "questionId": "turkish-g8-complete-t-8-1-1",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "listening-prediction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 68,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 290,
+      "questionId": "tr-g8-pilot01-14-translation-cross-text",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-23"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "cross-text-comparison",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 20,
+      "sampleReason": "Çeldirici ve seçenek dengesi kalibrasyonu"
+    },
+    {
+      "order": 260,
+      "questionId": "turkish-g8-complete-t-8-2-2",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-2-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-speaking_production",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 261,
+      "questionId": "turkish-g8-complete-t-8-2-3",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-2-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-process_management",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 262,
+      "questionId": "turkish-g8-complete-t-8-2-4",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-2-4"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-speaking_production",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 263,
+      "questionId": "turkish-g8-complete-t-8-2-5",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-2-5"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-comprehension",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 264,
+      "questionId": "turkish-g8-complete-t-8-2-6",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-2-6"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-speaking_production",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 265,
+      "questionId": "turkish-g8-complete-t-8-2-7",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-2-7"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-cohesion",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 246,
+      "questionId": "turkish-g8-complete-t-8-1-10",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-1-10"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "listening-comprehension",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:turkce",
+      "riskScore": 68,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 1,
+      "questionId": "math-g8-complete-19-triangle-lines",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "triangle-special-line-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 10,
+      "questionId": "math-g8-complete-01-integer-power",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "integer-power-evaluation",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 10,
+      "sampleReason": "Çeldirici ve seçenek dengesi kalibrasyonu"
+    },
+    {
+      "order": 2,
+      "questionId": "math-g8-complete-21-triangle-construction",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-1-4"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "triangle-sss-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 3,
+      "questionId": "math-g8-complete-22-translation",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "coordinate-translation-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 4,
+      "questionId": "math-g8-complete-23-polygon-transform",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-2-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "compound-polygon-transformation",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 5,
+      "questionId": "math-g8-complete-25-similar-construction",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-3-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "similar-polygon-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 6,
+      "questionId": "math-g8-complete-26-prism-net",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "prism-net-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 7,
+      "questionId": "math-g8-complete-27-cylinder-net",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "cylinder-net-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 8,
+      "questionId": "math-g8-complete-30-pyramid-net",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-5"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "square-pyramid-net",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 9,
+      "questionId": "math-g8-complete-31-cone-net",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-6"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "cone-net-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:matematik",
+      "riskScore": 83,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 53,
+      "questionId": "science-g8-broad-13-biotech-ethics",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-5-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "biotechnology-ethical-evaluation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 67,
+      "questionId": "science-g8-cross-01-seasons",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.fen.f-8-1-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "season-model-reasoning",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 3,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 30,
+      "sampleReason": "Çeldirici ve seçenek dengesi kalibrasyonu"
+    },
+    {
+      "order": 54,
+      "questionId": "science-g8-broad-14-future-biotech",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-5-3"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "future-biotechnology-prediction",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 55,
+      "questionId": "science-g8-broad-23-simple-machine-design",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-5-1-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "simple-machine-design",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 56,
+      "questionId": "science-g8-broad-28-sustainable-project",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-4-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "resource-saving-project-design",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 57,
+      "questionId": "science-g8-complete-19-acid-rain-solution",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-4-7"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "acid-rain-solution-design",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 58,
+      "questionId": "science-g8-complete-20-chemistry-industry-history",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-6-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "chemistry-industry-research",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 59,
+      "questionId": "science-g8-complete-21-chemistry-careers",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-6-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "future-chemistry-career-proposal",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 60,
+      "questionId": "science-g8-complete-22-climate-change",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-3-3"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "climate-cause-consequence-evaluation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 61,
+      "questionId": "science-g8-complete-23-recycling-economy",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-4-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "recycling-economic-solution",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:fen-bilimleri",
+      "riskScore": 78,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 366,
+      "questionId": "turkish-g5-complete-t-k-5-1",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-process_management",
+      "difficultyBand": "GRADE5_BALANCED",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 336,
+      "questionId": "turkish-g5-broad-11-speak-improvised",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-8"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "improvised-speaking",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 68,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 426,
+      "questionId": "turkish-g5-broad-01-listen-predict",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-d-5-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "listening-content-prediction",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 20,
+      "sampleReason": "Çeldirici ve seçenek dengesi kalibrasyonu"
+    },
+    {
+      "order": 367,
+      "questionId": "turkish-g5-complete-t-k-5-11",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-11"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-prediction",
+      "difficultyBand": "GRADE5_BALANCED",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 368,
+      "questionId": "turkish-g5-complete-t-k-5-12",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-12"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-compare",
+      "difficultyBand": "GRADE5_BALANCED",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 369,
+      "questionId": "turkish-g5-complete-t-k-5-13",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-13"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-classify",
+      "difficultyBand": "GRADE5_BALANCED",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 370,
+      "questionId": "turkish-g5-complete-t-k-5-14",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-14"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-interpret",
+      "difficultyBand": "GRADE5_BALANCED",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 371,
+      "questionId": "turkish-g5-complete-t-k-5-16",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-16"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-evaluate",
+      "difficultyBand": "GRADE5_BALANCED",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 372,
+      "questionId": "turkish-g5-complete-t-k-5-17",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-17"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-discuss",
+      "difficultyBand": "GRADE5_BALANCED",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 373,
+      "questionId": "turkish-g5-complete-t-k-5-18",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-18"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "speaking-critique",
+      "difficultyBand": "GRADE5_BALANCED",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "5:turkce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 114,
+      "questionId": "history-g8-1-1",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 119,
+      "questionId": "history-g8-2-2",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-2-2"
+      ],
+      "itemFormat": "ordering",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ORTA_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 115,
+      "questionId": "history-g8-1-2",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-1-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ORTA_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 116,
+      "questionId": "history-g8-1-3",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-1-3"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ORTA_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 117,
+      "questionId": "history-g8-1-4",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-1-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 118,
+      "questionId": "history-g8-2-1",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-2-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ORTA_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 120,
+      "questionId": "history-g8-2-3",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-2-3"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 121,
+      "questionId": "history-g8-2-4",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-2-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ORTA_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 122,
+      "questionId": "history-g8-2-5",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-2-5"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ORTA_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 123,
+      "questionId": "history-g8-2-6",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-2-6"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "tarihsel-kanitla-akil-yurutme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:t-c-inkilap-tarihi-ve-ataturkculuk",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 159,
+      "questionId": "dkab-g8-8-3-2",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-3-2"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 147,
+      "questionId": "dkab-g8-8-1-1",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 168,
+      "questionId": "dkab-g8-8-4-7",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-4-7"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 150,
+      "questionId": "dkab-g8-8-1-4",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-1-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 153,
+      "questionId": "dkab-g8-8-2-1",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-2-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 156,
+      "questionId": "dkab-g8-8-2-4",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-2-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 162,
+      "questionId": "dkab-g8-8-4-1",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-4-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 165,
+      "questionId": "dkab-g8-8-4-4",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-4-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 171,
+      "questionId": "dkab-g8-8-5-1",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-5-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 174,
+      "questionId": "dkab-g8-8-5-4",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-5-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "LGS_ZOR",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:din-kulturu-ve-ahlak-bilgisi",
+      "riskScore": 71,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 175,
+      "questionId": "english-g8-e8-1-l1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-1-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-listening-comprehension",
+      "difficultyBand": "A2_CHALLENGING",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 176,
+      "questionId": "english-g8-e8-1-r1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-1-r1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "a2-reading-comprehension",
+      "difficultyBand": "A2_CHALLENGING",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 68,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 178,
+      "questionId": "english-g8-e8-1-si1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-1-si1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-spoken-interaction",
+      "difficultyBand": "A2_CORE",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 181,
+      "questionId": "english-g8-e8-10-l1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-10-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-listening-comprehension",
+      "difficultyBand": "A2_CHALLENGING",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 183,
+      "questionId": "english-g8-e8-10-si1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-10-si1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-spoken-interaction",
+      "difficultyBand": "A2_CORE",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 184,
+      "questionId": "english-g8-e8-10-si2",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-10-si2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-spoken-interaction",
+      "difficultyBand": "A2_CORE",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 188,
+      "questionId": "english-g8-e8-2-l1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-2-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-listening-comprehension",
+      "difficultyBand": "A2_CHALLENGING",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 190,
+      "questionId": "english-g8-e8-2-si1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-2-si1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-spoken-interaction",
+      "difficultyBand": "A2_CORE",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 194,
+      "questionId": "english-g8-e8-3-l1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-3-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-listening-comprehension",
+      "difficultyBand": "A2_CHALLENGING",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    },
+    {
+      "order": 197,
+      "questionId": "english-g8-e8-3-si1",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-3-si1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-spoken-interaction",
+      "difficultyBand": "A2_CORE",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ],
+      "sampleEngineKey": "8:ingilizce",
+      "riskScore": 73,
+      "sampleReason": "Rubrik, medya ve insan puanlama tutarlılığı kalibrasyonu"
+    }
+  ]
+}
