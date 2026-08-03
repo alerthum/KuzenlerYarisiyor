@@ -73,7 +73,8 @@
     "quality:premium-pilot": "node --test tests/premium-pilot-quality.test.mjs && node scripts/build-premium-pilot-report.mjs",
     "quality:premium-bank": "node --test --test-force-exit tests/premium-question-bank.test.mjs tests/premium-blueprint-core.test.mjs tests/premium-task-engine.test.mjs tests/quality-pilot-release-mode.test.mjs tests/premium-grade35-wave-k.test.mjs tests/premium-grade35-wave-l.test.mjs tests/premium-grade35-wave-m.test.mjs tests/premium-highschool-wave-n.test.mjs tests/premium-highschool-wave-o.test.mjs tests/premium-highschool-wave-p.test.mjs && node scripts/build-premium-bank-development-report.mjs",
     "assessment:v2:phase1": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-report.mjs",
-    "assessment:v2:phase2": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-report.mjs && node scripts/build-assessment-v2-phase2-report.mjs"
+    "assessment:v2:phase2": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-report.mjs && node scripts/build-assessment-v2-phase2-report.mjs",
+    "assessment:v2:phase3": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-report.mjs && node scripts/build-assessment-v2-phase2-report.mjs && node scripts/build-assessment-v2-phase3-report.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-08-03T08:44:20.660Z",
+  "phase": "PHASE_3_IN_PROGRESS",
+  "productReady": false,
+  "targetModelCount": 12,
+  "currentModelCount": 4,
+  "remainingModelCount": 8,
+  "allCurrentModelsPass": true,
+  "automatedAcceptance": "IN_PROGRESS",
+  "independentEvidenceVerifier": "PASS_FOR_MATERIALIZED_MODELS",
+  "humanSampleStatus": "NOT_MEASURED",
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "coveredIdeas": [
+    "main-idea-coverage",
+    "supported-inference",
+    "claim-evidence-match",
+    "scope-certainty-control"
+  ],
+  "items": [
+    {
+      "id": "reading-main-idea-coverage-v2",
+      "constructId": "construct-reading-main-idea-coverage",
+      "knowledgeComponents": [
+        "central-claim",
+        "detail-vs-main-idea",
+        "scope-control"
+      ],
+      "deepFeatures": [
+        "central-claim-coverage",
+        "detail-exclusion",
+        "scope-preservation"
+      ],
+      "answer": "Ağaç gölgesi sıcak yüzeyleri serinletebilir; ancak ağaçlandırma yerel su ve toprak koşullarına göre planlanmalıdır.",
+      "misconceptions": [
+        {
+          "id": "detail-as-main-idea",
+          "text": "Gölgedeki kaldırımlar öğle ölçümünde ortalama 7 derece daha serin çıkmıştır.",
+          "feedback": "Ana düşünce tek bir sayıdan daha geniştir; metnin bütün merkezî iddialarını kapsamalıdır."
+        },
+        {
+          "id": "overgeneralized-main-idea",
+          "text": "Bütün kentlerdeki her sokağa mümkün olduğunca çok ağaç dikilmelidir.",
+          "feedback": "Metin ağaçlandırmayı desteklerken su ve toprak koşullarına göre planlama sınırı koyar."
+        },
+        {
+          "id": "one-sided-summary",
+          "text": "Ağaçlandırma çalışmalarında yalnız su gereksinimi ve toprak yapısı dikkate alınmalıdır.",
+          "feedback": "Ana düşünce iki merkezî hattı birlikte kapsamalıdır; yalnız birini özetlemek eksik kalır."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:13di901",
+      "cognitiveExperienceId": "cx:v2:1lwz3b5",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-supported-inference-v2",
+      "constructId": "construct-reading-supported-inference",
+      "knowledgeComponents": [
+        "textual-entailment",
+        "modality-control",
+        "sample-scope"
+      ],
+      "deepFeatures": [
+        "proposition-entailment",
+        "modality-ceiling",
+        "scope-subset"
+      ],
+      "answer": "Uzatılan saatler, bu kütüphanede sınav ayındaki akşam çalışma kullanımını bazı öğrenciler için desteklemiş olabilir.",
+      "misconceptions": [
+        {
+          "id": "association-to-certain-success",
+          "text": "Kapanış saatinin uzatılması öğrencilerin sınav başarısını kesin olarak yükseltmiştir.",
+          "feedback": "Metin ziyaret sayısını ve anket görüşünü verir; not başarısını ölçmez."
+        },
+        {
+          "id": "reject-observed-association",
+          "text": "Saatlerin uzatılmasının öğrencilerin kütüphane kullanımına hiçbir etkisi olmamıştır.",
+          "feedback": "Not verisi yoktur fakat akşam kullanımındaki artış ve bazı öğrencilerin görüşü metinde açıkça vardır."
+        },
+        {
+          "id": "expand-to-all-libraries",
+          "text": "Kapanış saatini uzatan bütün kütüphanelerde tüm öğrencilerin akşam kullanımı artar.",
+          "feedback": "Çıkarım metindeki yer, zaman ve örneklem sınırları içinde kalmalıdır."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:df15fw",
+      "cognitiveExperienceId": "cx:v2:19lz5fu",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-claim-evidence-match-v2",
+      "constructId": "construct-reading-claim-evidence-match",
+      "knowledgeComponents": [
+        "claim-identification",
+        "evidence-relevance",
+        "support-link"
+      ],
+      "deepFeatures": [
+        "support-edge-validation",
+        "claim-evidence-specificity"
+      ],
+      "answer": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: İzlenen kuşlardan 8 tanesi burada durmuş ve bölgede besin yoğunluğu yüksek bulunmuştur.",
+      "misconceptions": [
+        {
+          "id": "topic-overlap-as-evidence",
+          "text": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: Bölgede bir kuş gözlem kulübesi vardır.",
+          "feedback": "Bir ayrıntının kuşlarla ilgili olması yetmez; belirli iddiayı doğrudan desteklemesi gerekir."
+        },
+        {
+          "id": "historical-detail-as-proof",
+          "text": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: Sulak alanın bugünkü adı 1960'larda verilmiştir.",
+          "feedback": "Adın ne zaman verildiği, alanın göç durağı olarak kullanıldığını göstermez."
+        },
+        {
+          "id": "reverse-support-link",
+          "text": "İddia: Gözlem altyapısı yakın zamanda yenilenmiştir. Kanıt: İşaretli kuşların çoğu sulak alanda en az bir gece durmuştur.",
+          "feedback": "Kanıt ile iddia arasındaki ilişki özel olmalıdır; her veri her iddiayı desteklemez."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:1woupal",
+      "cognitiveExperienceId": "cx:v2:ssz7mw",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-scope-certainty-control-v2",
+      "constructId": "construct-reading-scope-certainty-control",
+      "knowledgeComponents": [
+        "quantifier-strength",
+        "time-scope",
+        "causal-limitation"
+      ],
+      "deepFeatures": [
+        "quantifier-order",
+        "modality-order",
+        "scope-subset"
+      ],
+      "answer": "Aralıklı tekrar, bu okuldaki dokuzuncu sınıf öğrencilerinin 2 hafta sonraki hatırlamasını artırmış olabilir.",
+      "misconceptions": [
+        {
+          "id": "universalize-single-school",
+          "text": "Aralıklı tekrar bütün öğrencilerde öğrenmeyi kesin olarak artırır.",
+          "feedback": "Tek okul ve tek sınıf düzeyinden bütün öğrenciler için evrensel sonuç çıkarılamaz."
+        },
+        {
+          "id": "temporary-to-permanent",
+          "text": "Aralıklı tekrar yapan öğrenciler öğrendiklerini yaşamları boyunca unutmaz.",
+          "feedback": "Çalışma yalnız iki hafta sonraki hatırlamayı ölçmüştür; kalıcı etki ölçülmemiştir."
+        },
+        {
+          "id": "single-cause-certainty",
+          "text": "Gruplar arasındaki farkın tek nedeni tekrarların günlere yayılmasıdır.",
+          "feedback": "Araştırma bulgusu yöntemin etkili olabileceğini destekler; bütün diğer etkenlerin dışlandığını göstermez."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:1tp7dcu",
+      "cognitiveExperienceId": "cx:v2:hbxeyu",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  ],
+  "nextAction": "Add 8 remaining solver-backed reading model(s)."
+}

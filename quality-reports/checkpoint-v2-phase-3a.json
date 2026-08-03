@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "2.0",
+  "checkpoint": "checkpoint-v2-phase-3a",
+  "phase": "PHASE_3A_ENGINEERING_PASS",
+  "productReady": false,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "modelsAdded": [
+    "reading-main-idea-coverage-v2",
+    "reading-supported-inference-v2",
+    "reading-claim-evidence-match-v2",
+    "reading-scope-certainty-control-v2"
+  ],
+  "independentVerifier": "reading-evidence-solver independent rule path",
+  "assessmentTests": "33/33 PASS",
+  "humanSampleStatus": "NOT_MEASURED"
+}
