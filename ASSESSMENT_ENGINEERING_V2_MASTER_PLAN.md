@@ -48,6 +48,8 @@ Kabul: yanlış cevap, çözüm sızıntısı, rastgele çeldirici, oyun-beceri 
 - çözüm grafından 3 kademe ipucu ve hataya özel geri bildirim
 Kabul: en az 12 farklı ana fikir; mutasyonlu yanlış cevapların %100'ü RED; insan örnekleminde 0 kritik hata.
 
+**2026-08-03 mühendislik durumu:** 12/12 solver-backed ana fikir tamamlandı; her modelde bağımsız doğrulayıcı, üç farklı buggy-rule çeldirici ve çözüm grafından türetilen ipuçları mevcut. Otomatik mühendislik kapısı PASS. İnsan uzman örneklemi `NOT_MEASURED`; `productReady=false` ve 604 eski içerik `UNVERIFIED_LEGACY` olarak korunuyor.
+
 ### Faz 3 — Okuma/Paragraf kanıt motoru
 - iddia, kanıt, kapsam, karşıtlık, amaç, tutum, çıkarım haritası
 - doğru seçeneği kanıt kapsama testiyle belirleme

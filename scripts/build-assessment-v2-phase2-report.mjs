@@ -32,17 +32,20 @@ const allCurrentModelsPass = items.every(item => item.gate.ok);
 const report = {
   schemaVersion: '2.0',
   generatedAt: new Date().toISOString(),
-  phase: remainingModelCount === 0 && allCurrentModelsPass ? 'PHASE_2_PASS' : 'PHASE_2_IN_PROGRESS',
+  phase: remainingModelCount === 0 && allCurrentModelsPass ? 'PHASE_2_ENGINEERING_PASS' : 'PHASE_2_IN_PROGRESS',
   productReady: false,
   targetModelCount: TARGET_MODEL_COUNT,
   currentModelCount: items.length,
   remainingModelCount,
   allCurrentModelsPass,
+  automatedAcceptance: remainingModelCount === 0 && allCurrentModelsPass ? 'PASS' : 'IN_PROGRESS',
+  humanSampleStatus: 'NOT_MEASURED',
+  mutationWrongAnswerRejection: 'PASS_FOR_DECLARED_BUGGY_RULES',
   legacyContentPolicy: 'UNVERIFIED_LEGACY',
   coveredIdeas: ['worst-case/pigeonhole', ...PHASE2_MATH_IDEAS],
   items,
   nextAction: remainingModelCount === 0
-    ? 'Lock Phase 2 and continue to Phase 3 without changing productReady=false.'
+    ? 'Engineering model set is complete. Human expert sampling remains NOT_MEASURED; keep productReady=false.'
     : `Add ${remainingModelCount} remaining solver-backed mathematics/olympiad model(s).`
 };
 const out = path.join(process.cwd(), 'quality-reports', 'assessment-engine-v2-phase-2-progress.json');

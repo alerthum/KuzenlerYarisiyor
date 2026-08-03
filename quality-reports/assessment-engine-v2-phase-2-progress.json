@@ -1,12 +1,15 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:10:00.853Z",
-  "phase": "PHASE_2_IN_PROGRESS",
+  "generatedAt": "2026-08-03T08:17:00.584Z",
+  "phase": "PHASE_2_ENGINEERING_PASS",
   "productReady": false,
   "targetModelCount": 12,
-  "currentModelCount": 10,
-  "remainingModelCount": 2,
+  "currentModelCount": 12,
+  "remainingModelCount": 0,
   "allCurrentModelsPass": true,
+  "automatedAcceptance": "PASS",
+  "humanSampleStatus": "NOT_MEASURED",
+  "mutationWrongAnswerRejection": "PASS_FOR_DECLARED_BUGGY_RULES",
   "legacyContentPolicy": "UNVERIFIED_LEGACY",
   "coveredIdeas": [
     "worst-case/pigeonhole",
@@ -18,7 +21,9 @@
     "parity and checkerboard coloring",
     "extremal maximum-degree bound",
     "divisor exponent structure",
-    "geometric reflection transformation"
+    "geometric reflection transformation",
+    "take-away game winning strategy",
+    "weighted inequality and sharp bound"
   ],
   "items": [
     {
@@ -388,7 +393,81 @@
         "ok": true,
         "errors": []
       }
+    },
+    {
+      "id": "math-game-strategy-take-away-v2",
+      "constructId": "construct-winning-strategy-complement",
+      "knowledgeComponents": [
+        "winning-losing-positions",
+        "modular-strategy",
+        "strategy-invariant"
+      ],
+      "deepFeatures": [
+        "backward-winning-state-analysis",
+        "complement-to-modulus-strategy"
+      ],
+      "answer": "1 taş almak",
+      "misconceptions": [
+        {
+          "id": "always-take-maximum",
+          "value": "3 taş almak",
+          "feedback": "İlk hamlede 3 almak 18 bırakır; rakip 2 alarak 16 gibi kaybeden bir konumu sana bırakabilir."
+        },
+        {
+          "id": "make-pile-odd-even",
+          "value": "2 taş almak",
+          "feedback": "Tek-çift bilgisi yeterli değildir; belirleyici yapı 4’e göre kalandır."
+        },
+        {
+          "id": "misclassify-current-as-multiple",
+          "value": "Kazanmayı garanti eden ilk hamle yoktur.",
+          "feedback": "21 sayısının 4 ile bölümünden kalan 1’dir; 1 taş almak 20 bırakarak kazanma stratejisini başlatır."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "math-inequality-weighted-product-v2",
+      "constructId": "construct-weighted-am-gm-bound",
+      "knowledgeComponents": [
+        "am-gm-inequality",
+        "equality-condition",
+        "weighted-allocation"
+      ],
+      "deepFeatures": [
+        "weighted-am-gm",
+        "sharp-upper-bound"
+      ],
+      "answer": "2500",
+      "misconceptions": [
+        {
+          "id": "force-all-original-variables-equal",
+          "value": "1975,31",
+          "feedback": "a değişkeni çarpımda iki kez yer aldığı için optimum payı b ve c’den daha büyük olmalıdır."
+        },
+        {
+          "id": "drop-squared-factor",
+          "value": "296,30",
+          "feedback": "Amaç fonksiyonunda a iki kez çarpandır; a² etkisi kaldırıldığında farklı bir problem çözülmüş olur."
+        },
+        {
+          "id": "allocate-three-shares-to-squared-variable",
+          "value": "2304",
+          "feedback": "a² iki pay, b ve c birer pay taşır; doğru oran a:b:c=2:1:1’dir."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
     }
   ],
-  "nextAction": "Add 2 remaining solver-backed mathematics/olympiad model(s)."
+  "nextAction": "Engineering model set is complete. Human expert sampling remains NOT_MEASURED; keep productReady=false."
 }

@@ -1,26 +1,25 @@
 # CONTEXT_SNAPSHOT
 
-**Guncelleme:** 2026-08-02T15:05:00.000Z · **Mevcut asama:** 15 — Final kabul · **PRODUCT_ACCEPTANCE:** FAIL (eski) · canlı koşu RUNNING
+**Güncelleme:** 2026-08-03 · **Mevcut aşama:** Assessment Engineering Engine V2 — Faz 2 mühendislik kapanışı
 
-## Canli takip
-- **Son tamamlanan islem:** ChatGPT kompakt share JSON (~69 KB) + düğme ayrımı
-- **Su an calisan islem:** yok (strict ABORTED — teşhis için durduruldu)
-- **Son checkpoint:** annual + class30 (`quality-reports/strict-audit-checkpoint.json`)
-- **Siradaki kesin islem:** Underfill kapasite kök nedeni (kullanıcı teşhisi); strict yeniden başlatılmadı
-- **Ilgili dosyalar:**
-  - `public/question-engine-command-center-share.json` (ChatGPT panoya)
-  - `public/question-engine-command-center-export.json` (tam arşiv / indirme)
-  - `scripts/build-question-engine-command-center-share.mjs`
-  - `scripts/lib/command-center-share.mjs`
-- **Son gercek test sonucu:** `tests/command-center-share.test.mjs` → 12/12 PASS
+## Son tamamlanan işlem
+- Matematik/Olimpiyat motoru 12/12 solver-backed item modeline ulaştı.
+- Son grup: oyun stratejisi ve eşitsizlik/sınırlandırma.
+- Her yeni modelde bağımsız doğrulayıcı, üç ayrı buggy-rule çeldirici ve çözüm grafı kaynaklı ipuçları bulunuyor.
 
-## Kullanim
-Admin → Soru Motoru Komuta Merkezi → sağ üst:
-1. **ChatGPT İçin JSON Kopyala** → kompakt share (~100–500 KB, max 750 KB)
-2. Menü → Canlı Durum Özetini Kopyala
-3. Menü → Tam JSON Dosyası İndir (~20 MB arşiv)
+## Korunan güvenlik durumları
+- `productReady=false`
+- Eski 604 içerik `UNVERIFIED_LEGACY`
+- İnsan uzman örneklemi `NOT_MEASURED`
+- V2 dışı premium etiketi yayın yetkisi vermiyor.
 
-Not: Share API `/api/rebuild-command-center-share` için `npm run dev` yenilenmeli.
+## Checkpoint zinciri
+- `checkpoint-v2-phase-2a` — 5/12, yeniden kurulan Git tabanı
+- `checkpoint-v2-phase-2b` — 8/12
+- `checkpoint-v2-phase-2c` — 10/12
+- `checkpoint-v2-phase-2d` — 12/12
 
-## Urun Hazir: HAYIR
-`productReady=false` / decision=FAIL korundu.
+## Kanıt dosyaları
+- `quality-reports/assessment-engine-v2-phase-2-progress.json`
+- `ASSESSMENT_ENGINEERING_V2_PHASE2_COMPLETION.md`
+- `tests/assessment-v2/phase2-completion.test.mjs`

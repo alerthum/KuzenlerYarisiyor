@@ -1,14 +1,14 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:10:00.791Z",
+  "generatedAt": "2026-08-03T08:17:00.521Z",
   "status": "PHASE_1_PASS",
   "productReady": false,
   "scope": "Assessment Engine V2 contracts and three cross-domain proof models",
   "inventory": {
     "schemaVersion": "2.0",
-    "modelCount": 12,
+    "modelCount": 14,
     "domains": {
-      "mathematics": 10,
+      "mathematics": 12,
       "reading": 1,
       "logic": 1
     },
@@ -338,6 +338,62 @@
         "ignore-boundary-point",
         "use-only-vertical-distances",
         "use-manhattan-after-reflection"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-game-strategy-take-away-v2",
+      "domain": "mathematics",
+      "constructId": "construct-winning-strategy-complement",
+      "knowledgeComponents": [
+        "winning-losing-positions",
+        "modular-strategy",
+        "strategy-invariant"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "logic-station"
+      ],
+      "structuralId": "st:v2:jugt2l",
+      "cognitiveExperienceId": "cx:v2:1dmgl6p",
+      "correctAnswer": "1 taş almak",
+      "misconceptionIds": [
+        "always-take-maximum",
+        "make-pile-odd-even",
+        "misclassify-current-as-multiple"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-inequality-weighted-product-v2",
+      "domain": "mathematics",
+      "constructId": "construct-weighted-am-gm-bound",
+      "knowledgeComponents": [
+        "am-gm-inequality",
+        "equality-condition",
+        "weighted-allocation"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "problem-hunter"
+      ],
+      "structuralId": "st:v2:1ea9pel",
+      "cognitiveExperienceId": "cx:v2:wukyn4",
+      "correctAnswer": "2500",
+      "misconceptionIds": [
+        "force-all-original-variables-equal",
+        "drop-squared-factor",
+        "allocate-three-shares-to-squared-variable"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,

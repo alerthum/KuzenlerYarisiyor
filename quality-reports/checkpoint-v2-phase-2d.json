@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "2.0",
+  "checkpoint": "checkpoint-v2-phase-2d",
+  "phase": "PHASE_2_ENGINEERING_PASS",
+  "modelCount": 12,
+  "targetModelCount": 12,
+  "completedGroup": [
+    "game-strategy",
+    "inequality-and-bounding"
+  ],
+  "assessmentV2Tests": {
+    "passed": 27,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "legacy604ProtectionTests": {
+    "passed": 11,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "build": {
+    "status": "PASS",
+    "note": "KUZENLER_AYARLARI.env is gitignored and absent from the uploaded archive; build was verified with a temporary local copy of KUZENLER_AYARLARI.env.ORNEK."
+  },
+  "fullRegression": {
+    "status": "LEGACY_OR_LIVE_ROUTING_FAILURES_OBSERVED_AND_TIMEOUT",
+    "completedTopLevelTestsBeforeTimeout": 372,
+    "passedBeforeTimeout": 327,
+    "failedBeforeTimeout": 45,
+    "timeoutSeconds": 120,
+    "phase2Failures": 0,
+    "baselineReproduction": {
+      "files": [
+        "tests/stage04-word-ladder-families.test.mjs",
+        "tests/stage04-word-mine-families.test.mjs"
+      ],
+      "checkpoint": "checkpoint-v2-phase-2a",
+      "passed": 16,
+      "failed": 4,
+      "conclusion": "The selected four word-ladder/word-mine live-routing failures pre-exist Phase 2B-2D changes; the remaining observed failures were not individually baseline-reproduced."
+    }
+  },
+  "productReady": false,
+  "legacyContentCount": 604,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "humanSampleStatus": "NOT_MEASURED"
+}
