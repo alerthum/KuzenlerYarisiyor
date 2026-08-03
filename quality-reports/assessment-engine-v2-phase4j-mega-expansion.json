@@ -1,0 +1,536 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T21:14:02.768Z",
+  "phase": "4J",
+  "title": "Assessment V2 Mega Genişleme ve Otonom Üretim Hattı",
+  "status": "ENGINEERING_PASS_HUMAN_REVIEW_REQUIRED",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "errors": [],
+  "audits": {
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 2,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 4,
+        "activeEngineCellPercent": 3.6,
+        "curriculumOutcomeRecordCount": 289,
+        "coveredOutcomeCount": 141,
+        "canonicalQuestionCount": 161,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 156,
+        "gameAdaptedQuestionCount": 0,
+        "legacyQuarantineCount": 604
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 161,
+        "byEngine": {
+          "g8:turkce": 51,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 33,
+          "g5:turkce": 25
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    },
+    "reviewQueue": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "total": 161,
+        "approved": 5,
+        "pending": 156,
+        "highComplexityPending": 23
+      }
+    },
+    "autonomousPlan": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "activeEngineCount": 4,
+        "engineeringScopeCompleteEngineCount": 1,
+        "remainingOutcomeCount": 148,
+        "humanReviewQueueCount": 156,
+        "unopenedCourseCellCount": 108
+      }
+    },
+    "math": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 52,
+        "unitCounts": {
+          "Sayılar ve İşlemler": 16,
+          "Cebir": 13,
+          "Geometri ve Ölçme": 16,
+          "Veri İşleme": 2,
+          "Olasılık": 5
+        },
+        "implementedOutcomeCount": 52,
+        "implementedItemCount": 52,
+        "uncoveredOutcomeCount": 0,
+        "visualOrInteractiveOutcomeCount": 24,
+        "humanRubricOutcomeCount": 6,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "science": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 61,
+        "implementedOutcomeCount": 33,
+        "implementedItemCount": 33,
+        "uncoveredOutcomeCount": 28,
+        "humanRubricOutcomeCount": 13,
+        "visualExperimentOutcomeCount": 10,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "grade5Turkish": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 100,
+        "implementedOutcomeCount": 25,
+        "implementedItemCount": 25,
+        "uncoveredOutcomeCount": 75,
+        "listeningCount": 25,
+        "readingCount": 27,
+        "speakingCount": 26,
+        "writingCount": 22,
+        "humanRubricOutcomeCount": 48,
+        "mediaOutcomeCount": 29,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    }
+  },
+  "portfolio": {
+    "schemaVersion": "2.0",
+    "generatedAt": "2026-08-03T21:14:02.766Z",
+    "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
+    "status": "MULTI_ENGINE_FULL_SCOPE_EXPANSION",
+    "productReady": false,
+    "publicationAllowed": false,
+    "gameAdaptationAllowed": false,
+    "legacy": {
+      "count": 604,
+      "status": "UNVERIFIED_LEGACY"
+    },
+    "architecture": {
+      "policyVersion": "3.1",
+      "pipelineOrder": [
+        "AUTHORITATIVE_CURRICULUM",
+        "SUBJECT_SPECIFIC_CONTENT_ENGINE",
+        "INDEPENDENT_ANSWER_VERIFICATION",
+        "PEDAGOGICAL_FEEDBACK",
+        "QUALITY_GATES",
+        "HUMAN_CALIBRATION",
+        "CANONICAL_PILOT_EXPANSION",
+        "GAME_ADAPTATION",
+        "SEMANTIC_ROUND_TRIP",
+        "STUDENT_PILOT",
+        "PUBLICATION"
+      ],
+      "sharedContractNotSharedGenerator": true,
+      "subjectSpecificEnginesRequired": true
+    },
+    "summary": {
+      "targetGradeCount": 12,
+      "activeGradeCount": 2,
+      "courseScheduleCellCount": 112,
+      "activeEngineCellCount": 4,
+      "activeEngineCellPercent": 3.6,
+      "curriculumOutcomeRecordCount": 289,
+      "coveredOutcomeCount": 141,
+      "canonicalQuestionCount": 161,
+      "humanApprovedQuestionCount": 5,
+      "humanReviewQueueCount": 156,
+      "gameAdaptedQuestionCount": 0,
+      "legacyQuarantineCount": 604
+    },
+    "rollout": [
+      {
+        "grade": 1,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 2,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 3,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 4,
+        "programFamily": "PRE_TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 5,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 6,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 7,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 8,
+        "programFamily": "PRE_TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 9,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 10,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 11,
+        "programFamily": "TYMM",
+        "status": "ACTIVE"
+      },
+      {
+        "grade": 12,
+        "programFamily": "PRE_TYMM",
+        "status": "ACTIVE"
+      }
+    ],
+    "engines": [
+      {
+        "id": "tr-g8-turkce-v2",
+        "grade": 8,
+        "courseId": "turkce",
+        "courseName": "Türkçe",
+        "programFamily": "PRE_TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 76,
+        "ingestedOutcomeCount": 76,
+        "coveredOutcomeCount": 31,
+        "courseCoveragePercent": 40.8,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 51,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 46,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "EXPANDING",
+        "engineType": "semantic-evidence + grammar + visual-reading + performance-rubric",
+        "verifierType": "independent semantic/constraint verification",
+        "misconceptionCatalog": "tr-g8-turkish-domain-misconceptions",
+        "nextAction": "Kalan 45 kazanımı dinleme, konuşma, yazma ve eksik okuma dalgalarıyla kapat.",
+        "blockers": [
+          "45 kazanım henüz kanonik soru veya performans göreviyle kapsanmadı.",
+          "İnsan inceleme kuyruğu tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g8-matematik-v2",
+        "grade": 8,
+        "courseId": "matematik",
+        "courseName": "Matematik",
+        "programFamily": "PRE_TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 52,
+        "ingestedOutcomeCount": 52,
+        "coveredOutcomeCount": 52,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 52,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 52,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "symbolic/numeric/geometry solver-backed + interactive construction",
+        "verifierType": "independent alternate algorithm and invariant checks",
+        "misconceptionCatalog": "tr-g8-math-full-scope-misconceptions",
+        "nextAction": "52 Matematik görevini insan örneklemiyle kalibre et ve onaylananları oyun adaptasyon laboratuvarına geçir.",
+        "blockers": [
+          "52 Matematik görevinin insan gözle kalibrasyonu yapılmadı.",
+          "Etkileşimli çizim görevlerinin UI bileşenleri henüz bağlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g8-fen-v2",
+        "grade": 8,
+        "courseId": "fen-bilimleri",
+        "courseName": "Fen Bilimleri",
+        "programFamily": "PRE_TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 61,
+        "ingestedOutcomeCount": 61,
+        "coveredOutcomeCount": 33,
+        "courseCoveragePercent": 54.1,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 33,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 33,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "EXPANDING",
+        "engineType": "model/experiment/data reasoning + CER/design rubrics",
+        "verifierType": "evidence-constraint + scientific model verification",
+        "misconceptionCatalog": "tr-g8-science-full-scope-misconceptions",
+        "nextAction": "Kalan 28 Fen kazanımını deney, çevre, kimya ve elektrik dalgalarıyla kapat.",
+        "blockers": [
+          "28 kazanım henüz görevle kapsanmadı.",
+          "33 Fen görevinin insan gözle kalibrasyonu yapılmadı."
+        ]
+      },
+      {
+        "id": "tr-g5-turkce-v2",
+        "grade": 5,
+        "courseId": "turkce",
+        "courseName": "Türkçe",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 100,
+        "ingestedOutcomeCount": 100,
+        "coveredOutcomeCount": 25,
+        "courseCoveragePercent": 25,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 25,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 25,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "EXPANDING",
+        "engineType": "age-calibrated listening/reading evidence + speaking/writing rubrics",
+        "verifierType": "independent evidence intersection + rubric consistency",
+        "misconceptionCatalog": "tr-g5-turkish-full-scope-misconceptions",
+        "nextAction": "Kalan 75 öğrenme çıktısını beceri alanı dalgalarıyla kapat.",
+        "blockers": [
+          "75 öğrenme çıktısı henüz görevle kapsanmadı.",
+          "Ses kayıtları ve performans rubriklerinin insan kalibrasyonu yapılmadı."
+        ]
+      }
+    ],
+    "pipeline": [
+      {
+        "id": "curriculum",
+        "label": "Resmî müfredat",
+        "status": "IN_PROGRESS",
+        "note": "4 aktif motorun tamamında tam kapsam aktarımı yapıldı."
+      },
+      {
+        "id": "subject-engine",
+        "label": "Derse özel motor",
+        "status": "IN_PROGRESS",
+        "note": "Ortak üretici yok; alan çözücüleri ve rubrikleri ayrıdır."
+      },
+      {
+        "id": "canonical-content",
+        "label": "Kanonik soru/görev",
+        "status": "IN_PROGRESS",
+        "note": "161 doğrulanmış mühendislik nesnesi mevcut."
+      },
+      {
+        "id": "human-review",
+        "label": "İnsan kalibrasyonu",
+        "status": "BLOCKED",
+        "note": "5 onaylı, 156 inceleme bekliyor."
+      },
+      {
+        "id": "game-adaptation",
+        "label": "Oyun uyarlaması",
+        "status": "LOCKED",
+        "note": "Yalnız insan onaylı ve alan kapsamı yeterli içerikler açılabilir."
+      },
+      {
+        "id": "student-pilot",
+        "label": "Öğrenci pilotu",
+        "status": "NOT_STARTED",
+        "note": "Madde analizi ve çeldirici performansı ölçülmedi."
+      },
+      {
+        "id": "publication",
+        "label": "Yayın",
+        "status": "LOCKED",
+        "note": "productReady=false."
+      }
+    ],
+    "nextMilestones": [
+      {
+        "order": 1,
+        "id": "g8-science-completion",
+        "title": "8. sınıf Fen kalan 28 kazanım",
+        "reason": "Tam matris ve 33 görev hazır; ders kapsamı kapatılmalı."
+      },
+      {
+        "order": 2,
+        "id": "g5-turkish-completion",
+        "title": "5. sınıf Türkçe kalan 75 çıktı",
+        "reason": "Dört beceri alanı tam matriste; yaşa özel görev dalgaları tamamlanmalı."
+      },
+      {
+        "order": 3,
+        "id": "g8-turkish-completion",
+        "title": "8. sınıf Türkçe kalan 45 kazanım",
+        "reason": "Dinleme, konuşma ve yazma performans görevleri kapatılmalı."
+      },
+      {
+        "order": 4,
+        "id": "human-review-queue",
+        "title": "161 görevlik insan inceleme kuyruğu",
+        "reason": "Oyun kilidinin ana bağımlılığı insan kalibrasyonudur."
+      },
+      {
+        "order": 5,
+        "id": "lgs-other-engines",
+        "title": "8. sınıf diğer LGS ders motorları",
+        "reason": "İnkılap Tarihi, Din Kültürü ve İngilizce motorları açılmalı."
+      }
+    ]
+  },
+  "autonomousPlan": {
+    "schemaVersion": "1.0",
+    "generatedAt": "2026-08-03T21:14:02.768Z",
+    "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
+    "status": "AUTONOMOUS_EXECUTION_PLAN_READY",
+    "productReady": false,
+    "gameAdaptationAllowed": false,
+    "metrics": {
+      "activeEngineCount": 4,
+      "engineeringScopeCompleteEngineCount": 1,
+      "remainingOutcomeCount": 148,
+      "humanReviewQueueCount": 156,
+      "unopenedCourseCellCount": 108
+    },
+    "engines": [
+      {
+        "engineId": "tr-g8-turkce-v2",
+        "grade": 8,
+        "courseId": "turkce",
+        "officialOutcomeCount": 76,
+        "coveredOutcomeCount": 31,
+        "remainingOutcomeCount": 45,
+        "canonicalQuestionCount": 51,
+        "reviewQueueCount": 46,
+        "engineeringScopeComplete": false,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-matematik-v2",
+        "grade": 8,
+        "courseId": "matematik",
+        "officialOutcomeCount": 52,
+        "coveredOutcomeCount": 52,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 52,
+        "reviewQueueCount": 52,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-fen-v2",
+        "grade": 8,
+        "courseId": "fen-bilimleri",
+        "officialOutcomeCount": 61,
+        "coveredOutcomeCount": 33,
+        "remainingOutcomeCount": 28,
+        "canonicalQuestionCount": 33,
+        "reviewQueueCount": 33,
+        "engineeringScopeComplete": false,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g5-turkce-v2",
+        "grade": 5,
+        "courseId": "turkce",
+        "officialOutcomeCount": 100,
+        "coveredOutcomeCount": 25,
+        "remainingOutcomeCount": 75,
+        "canonicalQuestionCount": 25,
+        "reviewQueueCount": 25,
+        "engineeringScopeComplete": false,
+        "gameAdaptationAllowed": false
+      }
+    ],
+    "backlog": [
+      {
+        "order": 1,
+        "id": "review-g8-math",
+        "kind": "HUMAN_REVIEW",
+        "scope": "8. sınıf Matematik 52 görev",
+        "reason": "Mühendislik kapsamı tamamlandı; etkileşim ve soru kalitesi insan onayı bekliyor.",
+        "count": 52
+      },
+      {
+        "order": 2,
+        "id": "complete-g8-science",
+        "kind": "CONTENT_EXPANSION",
+        "scope": "8. sınıf Fen Bilimleri",
+        "reason": "61 kazanımdan 33’ü görevle kapsandı.",
+        "count": 28
+      },
+      {
+        "order": 3,
+        "id": "complete-g5-turkish",
+        "kind": "CONTENT_EXPANSION",
+        "scope": "5. sınıf Türkçe",
+        "reason": "100 çıktıdan 25’i görevle kapsandı.",
+        "count": 75
+      },
+      {
+        "order": 4,
+        "id": "complete-g8-turkish",
+        "kind": "CONTENT_EXPANSION",
+        "scope": "8. sınıf Türkçe",
+        "reason": "76 kazanımdan 31’i görevle kapsandı.",
+        "count": 45
+      },
+      {
+        "order": 5,
+        "id": "open-lgs-engines",
+        "kind": "NEW_ENGINE",
+        "scope": "8. sınıf İnkılap Tarihi, Din Kültürü ve İngilizce",
+        "reason": "LGS ders motorlarının tamamı açılmalı.",
+        "count": 3
+      },
+      {
+        "order": 6,
+        "id": "expand-grade-map",
+        "kind": "NEW_ENGINE",
+        "scope": "1–12 zorunlu ders hücreleri",
+        "reason": "112 hücrenin yalnız 4’ü aktif.",
+        "count": 108
+      }
+    ]
+  },
+  "reviewQueueMetrics": {
+    "total": 161,
+    "approved": 5,
+    "pending": 156,
+    "highComplexityPending": 23
+  }
+}

@@ -1,0 +1,3718 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T21:14:02.768Z",
+  "status": "HUMAN_REVIEW_BLOCKING_GAME_ADAPTATION",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "metrics": {
+    "total": 161,
+    "approved": 5,
+    "pending": 156,
+    "highComplexityPending": 23
+  },
+  "rows": [
+    {
+      "order": 1,
+      "questionId": "math-g8-complete-19-triangle-lines",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "triangle-special-line-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 2,
+      "questionId": "math-g8-complete-21-triangle-construction",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-1-4"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "triangle-sss-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 3,
+      "questionId": "math-g8-complete-22-translation",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "coordinate-translation-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 4,
+      "questionId": "math-g8-complete-23-polygon-transform",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-2-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "compound-polygon-transformation",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 5,
+      "questionId": "math-g8-complete-25-similar-construction",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-3-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "similar-polygon-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 6,
+      "questionId": "math-g8-complete-26-prism-net",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "prism-net-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 7,
+      "questionId": "math-g8-complete-27-cylinder-net",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "cylinder-net-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 8,
+      "questionId": "math-g8-complete-30-pyramid-net",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-5"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "square-pyramid-net",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 9,
+      "questionId": "math-g8-complete-31-cone-net",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-6"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "cone-net-construction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 10,
+      "questionId": "math-g8-complete-01-integer-power",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "integer-power-evaluation",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 11,
+      "questionId": "math-g8-complete-02-decimal-decomposition",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-2-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "decimal-power-decomposition",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 12,
+      "questionId": "math-g8-complete-03-alternate-power-ten",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-2-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "power-ten-equivalence",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 13,
+      "questionId": "math-g8-complete-04-perfect-square-root",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-3-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "perfect-square-root-relation",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 14,
+      "questionId": "math-g8-complete-05-simplify-radical",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-3-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "radical-simplification",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 15,
+      "questionId": "math-g8-complete-06-radical-product",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-3-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "radical-multiplication",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 16,
+      "questionId": "math-g8-complete-07-natural-radical-factor",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-3-6"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "naturalizing-radical-product",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 17,
+      "questionId": "math-g8-complete-08-decimal-square-root",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-3-7"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "decimal-square-root",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 18,
+      "questionId": "math-g8-complete-09-real-number-classification",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-3-8"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "real-number-classification",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 19,
+      "questionId": "math-g8-complete-10-equivalent-algebra",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "algebraic-equivalence",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 20,
+      "questionId": "math-g8-complete-11-algebra-product",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "algebraic-product",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 21,
+      "questionId": "math-g8-complete-12-factorization",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-1-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "difference-of-squares-factorization",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 22,
+      "questionId": "math-g8-complete-13-coordinate-quadrant",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-2-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "coordinate-location",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 23,
+      "questionId": "math-g8-complete-14-linear-table",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-2-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "linear-table-equation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 24,
+      "questionId": "math-g8-complete-15-line-graph",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-2-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "linear-graph-points",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 25,
+      "questionId": "math-g8-complete-16-slope",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-2-6"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "slope-from-points",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 26,
+      "questionId": "math-g8-complete-17-inequality-model",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-3-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "inequality-context-model",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 27,
+      "questionId": "math-g8-complete-18-number-line",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-3-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "inequality-number-line",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 28,
+      "questionId": "math-g8-complete-20-side-angle",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-1-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "triangle-side-angle-relation",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 29,
+      "questionId": "math-g8-complete-24-congruence-similarity",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-3-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "congruence-similarity-classification",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 30,
+      "questionId": "math-g8-complete-28-cylinder-surface",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "cylinder-surface-area",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 31,
+      "questionId": "math-g8-complete-29-cylinder-volume",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-4-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "cylinder-volume",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 32,
+      "questionId": "math-g8-complete-32-data-conversion",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-4-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "data-representation-conversion",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 33,
+      "questionId": "math-g8-complete-33-sample-space",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-5-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "sample-space-enumeration",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 34,
+      "questionId": "math-g8-complete-34-likelihood-compare",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-5-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "comparative-likelihood",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 35,
+      "questionId": "math-g8-complete-35-equiprobable",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-5-1-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "equiprobable-outcome-probability",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 36,
+      "questionId": "math-g8-cross-01-lcm-maintenance",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "ebob-ekok-problem-solving",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 37,
+      "questionId": "math-g8-cross-02-scientific-notation",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-2-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "scientific-notation-comparison",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 38,
+      "questionId": "math-g8-cross-03-linear-tank",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-2-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "linear-model-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 39,
+      "questionId": "math-g8-cross-04-pythagorean-map",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-1-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "pythagorean-distance",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 40,
+      "questionId": "math-g8-cross-05-probability-cards",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-5-1-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "simple-event-probability",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 41,
+      "questionId": "math-g8-wave1-01-prime-factorization",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "prime-factorization",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 42,
+      "questionId": "math-g8-wave1-02-coprime-locks",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-1-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "coprime-detection",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 43,
+      "questionId": "math-g8-wave1-03-exponent-rules",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-2-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "exponent-rule-composition",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 44,
+      "questionId": "math-g8-wave1-04-root-interval",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-3-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "irrational-root-bounding",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 45,
+      "questionId": "math-g8-wave1-05-radical-combination",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-1-3-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "radical-like-term-combination",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 46,
+      "questionId": "math-g8-wave1-06-square-frame-identity",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-1-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "identity-area-model",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 47,
+      "questionId": "math-g8-wave1-07-linear-equation",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "linear-equation-solving",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 48,
+      "questionId": "math-g8-wave1-08-inequality-direction",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-3-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "linear-inequality-solving",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 49,
+      "questionId": "math-g8-wave1-09-triangle-inequality",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "triangle-inequality-enumeration",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 50,
+      "questionId": "math-g8-wave1-10-reflection-line",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-3-2-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "coordinate-reflection",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 51,
+      "questionId": "math-g8-wave1-11-graph-interpretation",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-4-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "multi-series-graph-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 52,
+      "questionId": "math-g8-wave1-12-probability-complement",
+      "grade": 8,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-5-1-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "probability-complement",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 53,
+      "questionId": "science-g8-broad-13-biotech-ethics",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-5-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "biotechnology-ethical-evaluation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 54,
+      "questionId": "science-g8-broad-14-future-biotech",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-5-3"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "future-biotechnology-prediction",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 55,
+      "questionId": "science-g8-broad-23-simple-machine-design",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-5-1-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "simple-machine-design",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 56,
+      "questionId": "science-g8-broad-28-sustainable-project",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-4-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "resource-saving-project-design",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 57,
+      "questionId": "science-g8-cross-01-seasons",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.fen.f-8-1-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "season-model-reasoning",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 3,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 58,
+      "questionId": "science-g8-broad-01-climate-weather",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-1-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "climate-weather-distinction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 59,
+      "questionId": "science-g8-broad-02-climatology",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-1-2-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "climate-science-role",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 60,
+      "questionId": "science-g8-broad-03-genetic-hierarchy",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "genetic-concept-hierarchy",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 61,
+      "questionId": "science-g8-broad-04-dna-model",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "dna-model-structure",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 62,
+      "questionId": "science-g8-broad-05-dna-replication",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-1-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "dna-copy-model",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 63,
+      "questionId": "science-g8-broad-06-inheritance-concepts",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "inheritance-concept-classification",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 64,
+      "questionId": "science-g8-broad-07-relative-marriage",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-2-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "genetic-risk-reasoning",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 65,
+      "questionId": "science-g8-broad-08-mutation",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-3-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "mutation-identification",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 66,
+      "questionId": "science-g8-broad-09-modification",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-3-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "modification-identification",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 67,
+      "questionId": "science-g8-broad-10-mutation-modification",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-3-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "mutation-modification-comparison",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 68,
+      "questionId": "science-g8-broad-11-adaptation",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-4-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "adaptation-evidence",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 69,
+      "questionId": "science-g8-broad-12-biotech-relation",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-2-5-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "genetic-engineering-biotech-relation",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 70,
+      "questionId": "science-g8-broad-15-liquid-pressure",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-3-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "liquid-pressure-variable-control",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 71,
+      "questionId": "science-g8-broad-16-pressure-applications",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-3-1-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "pressure-technology-application",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 72,
+      "questionId": "science-g8-broad-17-periodic-system",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "periodic-table-organization",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 73,
+      "questionId": "science-g8-broad-18-element-classification",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "element-region-classification",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 74,
+      "questionId": "science-g8-broad-19-physical-chemical",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "physical-chemical-change",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 75,
+      "questionId": "science-g8-broad-20-ph-inference",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-4-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "ph-scale-inference",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 76,
+      "questionId": "science-g8-broad-21-acid-base-safety",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-4-6"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "chemical-safety-decision",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 77,
+      "questionId": "science-g8-broad-22-heating-variables",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-5-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "heating-variable-control",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 78,
+      "questionId": "science-g8-broad-24-food-chain",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "food-chain-roles",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 79,
+      "questionId": "science-g8-broad-25-photosynthesis-factor",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-2-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "photosynthesis-variable-inference",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 80,
+      "questionId": "science-g8-broad-26-charge-interaction",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "electric-charge-interaction",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 81,
+      "questionId": "science-g8-broad-27-grounding",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-2-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "grounding-safety",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 82,
+      "questionId": "science-g8-cross-02-genetics",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.fen.f-8-2-2-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "monohybrid-cross-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 83,
+      "questionId": "science-g8-cross-03-solid-pressure",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.fen.f-8-3-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "solid-pressure-variable-control",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 84,
+      "questionId": "science-g8-cross-04-heating-graph",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.fen.f-8-4-5-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "heating-curve-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 85,
+      "questionId": "science-g8-cross-05-simple-machines",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.fen.f-8-5-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "simple-machine-advantage",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 86,
+      "questionId": "tr-g8-pilot01-14-translation-cross-text",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-23"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "cross-text-comparison",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 87,
+      "questionId": "tr-g8-pilot01-15-city-park-cross-text",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-23"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "cross-text-comparison",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 88,
+      "questionId": "tr-g8-pilot01-18-eco-bottle-media",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-29"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "media-message-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 89,
+      "questionId": "tr-g8-pilot01-19-exhibition-poster-media",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-29"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "media-message-analysis",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 90,
+      "questionId": "tr-g8-pilot01-22-library-table",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-32"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "table-interpretation",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 91,
+      "questionId": "tr-g8-pilot01-23-school-garden-chart",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-32"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "chart-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 92,
+      "questionId": "tr-g8-pilot01-24-audio-guide-table",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-32"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "table-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 93,
+      "questionId": "tr-g8-reading-calibration-03-museum-label-cross-text",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-23"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "cross-text-comparison",
+      "difficultyBand": "LGS_CALIBRATION_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 94,
+      "questionId": "tr-g8-wave1-08-real-fiction-birds",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-24"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "real-fiction-distinction",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 95,
+      "questionId": "tr-g8-wave1-09-emphasis-design",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-28"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "emphasis-form-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 96,
+      "questionId": "tr-g8-wave1-11-process-order-seed",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-35"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "process-step-comprehension",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 97,
+      "questionId": "tr-g8-wave1-12-source-selection-heat-island",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-30"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "effective-source-use",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 98,
+      "questionId": "tr-g8-wave2-01-visual-title-prediction",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-12"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "visual-title-topic-prediction",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 99,
+      "questionId": "tr-g8-wave2-02-cartoon-attention",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-27"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "cartoon-message-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 100,
+      "questionId": "tr-g8-wave2-03-visual-news-accessibility",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-27"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "visual-news-data-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 101,
+      "questionId": "tr-g8-wave2-04-story-film-inner-conflict",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-33"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "literary-media-adaptation-comparison",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 102,
+      "questionId": "tr-g8-wave2-05-poem-animation-time-change",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-33"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "adaptation-change-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 103,
+      "questionId": "tr-g8-wave2-08-sentence-types-comparison",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-4-19"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "sentence-type-comparison",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 104,
+      "questionId": "tr-g8-wave2-09-passive-focus",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-4-20"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "voice-meaning-contribution",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 105,
+      "questionId": "tr-g8-wave2-10-active-passive-responsibility",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-4-20"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "voice-and-responsibility-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 106,
+      "questionId": "tr-g8-pilot01-06-city-sound-archive-topic",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-16"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "topic-identification",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 107,
+      "questionId": "tr-g8-pilot01-07-seed-exchange-topic",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-16"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "topic-identification",
+      "difficultyBand": "LGS_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 108,
+      "questionId": "tr-g8-pilot01-08-night-observation-topic",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-16"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "topic-identification",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 109,
+      "questionId": "tr-g8-pilot01-09-margin-notes-main-idea",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-17"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "main-idea-synthesis",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 110,
+      "questionId": "tr-g8-pilot01-10-nature-photo-main-idea",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-17"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "main-idea-synthesis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 111,
+      "questionId": "tr-g8-pilot01-11-recipe-notebooks-supporting-ideas",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-18"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "supporting-idea-identification",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 112,
+      "questionId": "tr-g8-pilot01-12-repair-cafe-supporting-ideas",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-18"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "supporting-idea-identification",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 113,
+      "questionId": "tr-g8-pilot01-13-bird-tracking-supporting-ideas",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-18"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "supporting-idea-identification",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 114,
+      "questionId": "tr-g8-pilot01-16-clockmaker-inference",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-25"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "supported-inference",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 115,
+      "questionId": "tr-g8-pilot01-17-orchestra-rehearsal-inference",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-25"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "supported-inference",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 116,
+      "questionId": "tr-g8-pilot01-20-historical-photo-source",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-31"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "source-reliability-evaluation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 117,
+      "questionId": "tr-g8-pilot01-21-water-test-source",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-31"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "source-reliability-evaluation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 118,
+      "questionId": "tr-g8-reading-calibration-01-restoration-main-idea",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-17"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "main-idea-synthesis",
+      "difficultyBand": "LGS_CALIBRATION_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 119,
+      "questionId": "tr-g8-reading-calibration-02-contextual-word-inference",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-25"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "supported-inference",
+      "difficultyBand": "LGS_CALIBRATION_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 120,
+      "questionId": "tr-g8-reading-calibration-04-language-app-media-analysis",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-29"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "media-persuasion-analysis",
+      "difficultyBand": "LGS_CALIBRATION_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 121,
+      "questionId": "tr-g8-reading-calibration-05-blue-light-source-reliability",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-31"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "source-reliability-evaluation",
+      "difficultyBand": "LGS_CALIBRATION_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 122,
+      "questionId": "tr-g8-wave1-01-context-ketum",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "contextual-word-meaning",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 123,
+      "questionId": "tr-g8-wave1-02-expression-disorder-revision",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-8"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "expression-disorder-repair",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 124,
+      "questionId": "tr-g8-wave1-03-verbal-function",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-9"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "verbal-function-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 125,
+      "questionId": "tr-g8-wave1-04-transition-functions",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-10"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "transition-expression-function",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 126,
+      "questionId": "tr-g8-wave1-05-title-memory-boxes",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-19"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "title-selection",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 127,
+      "questionId": "tr-g8-wave1-06-story-elements-station",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-20"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "story-element-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 128,
+      "questionId": "tr-g8-wave1-07-problem-solution-library",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-22"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "solution-design",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 129,
+      "questionId": "tr-g8-wave1-10-thought-development",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-34"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "thought-development-methods",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 130,
+      "questionId": "tr-g8-wave2-06-sentence-elements-cleanup",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-4-18"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "sentence-element-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 131,
+      "questionId": "tr-g8-wave2-07-sentence-elements-hidden-subject",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-4-18"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "implicit-subject-and-elements",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 132,
+      "questionId": "turkish-g5-broad-11-speak-improvised",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-8"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "improvised-speaking",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 133,
+      "questionId": "turkish-g5-broad-12-oral-presentation",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-10"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "oral-presentation",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 134,
+      "questionId": "turkish-g5-broad-13-oral-summary",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-15"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "oral-summary",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 135,
+      "questionId": "turkish-g5-broad-14-problem-speaking",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-19"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "problem-solution-speaking",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 136,
+      "questionId": "turkish-g5-broad-15-body-language",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-k-5-25"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "body-language-space",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 137,
+      "questionId": "turkish-g5-broad-16-writing-structure",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-y-5-3"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "writing-content-structure",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 138,
+      "questionId": "turkish-g5-broad-17-creative-writing",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-y-5-7"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "creative-writing",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 139,
+      "questionId": "turkish-g5-broad-18-written-summary",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-y-5-12"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "written-summary",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 140,
+      "questionId": "turkish-g5-broad-19-problem-writing",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-y-5-16"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "problem-solution-writing",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 141,
+      "questionId": "turkish-g5-broad-20-writing-conventions",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-y-5-21"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "spelling-punctuation-application",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 6,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 142,
+      "questionId": "turkish-g5-broad-01-listen-predict",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-d-5-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "listening-content-prediction",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 143,
+      "questionId": "turkish-g5-broad-04-listen-compare",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-d-5-10"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "listening-intertext-comparison",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 144,
+      "questionId": "turkish-g5-broad-06-read-predict",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-o-5-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "reading-content-prediction",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 145,
+      "questionId": "turkish-g5-cross-03-intertext-comparison",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.tymm.g5.turkce.t-o-5-11"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "intertext-comparison",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 146,
+      "questionId": "turkish-g5-broad-02-listen-surface",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-d-5-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "listening-surface-meaning",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 147,
+      "questionId": "turkish-g5-broad-03-listen-infer",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-d-5-7"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "listening-simple-inference",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 148,
+      "questionId": "turkish-g5-broad-05-listen-figure",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-d-5-18"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "listening-figure-of-speech",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 149,
+      "questionId": "turkish-g5-broad-07-read-surface",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-o-5-6"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "reading-surface-meaning",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 150,
+      "questionId": "turkish-g5-broad-08-read-internal-compare",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-o-5-10"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "within-text-comparison",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 151,
+      "questionId": "turkish-g5-broad-09-poem-form",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-o-5-18"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "poem-form-analysis",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 152,
+      "questionId": "turkish-g5-broad-10-read-evaluate",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-o-5-24"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "reading-evaluation",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 153,
+      "questionId": "turkish-g5-cross-01-context-word",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.tymm.g5.turkce.t-o-5-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "contextual-vocabulary-inference",
+      "difficultyBand": "G5_MEDIUM",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 154,
+      "questionId": "turkish-g5-cross-02-simple-inference",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.tymm.g5.turkce.t-o-5-8"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "simple-supported-inference",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 155,
+      "questionId": "turkish-g5-cross-04-story-elements",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.tymm.g5.turkce.t-o-5-14"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "narrative-element-analysis",
+      "difficultyBand": "G5_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 156,
+      "questionId": "turkish-g5-cross-05-figures-of-speech",
+      "grade": 5,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.tymm.g5.turkce.t-o-5-20"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "figure-of-speech-analysis",
+      "difficultyBand": "G5_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 157,
+      "questionId": "tr-g8-pilot02-05-text-types-essay-article",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-26"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "text-type-distinction",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "APPROVED_FOR_NEXT_WAVE",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 158,
+      "questionId": "tr-g8-pilot02-01-idiom-contribution-community-oven",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-6"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "idiom-contribution-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "APPROVED_FOR_NEXT_WAVE",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 159,
+      "questionId": "tr-g8-pilot02-02-figurative-language-station",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-7"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "figurative-language-effect",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "APPROVED_FOR_NEXT_WAVE",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 160,
+      "questionId": "tr-g8-pilot02-03-narration-description-workshop",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-11"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "narrative-mode-analysis",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "APPROVED_FOR_NEXT_WAVE",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 161,
+      "questionId": "tr-g8-pilot02-04-author-view-story-ending",
+      "grade": 8,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-21"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "author-view-interpretation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "APPROVED_FOR_NEXT_WAVE",
+      "gameAdaptationAllowed": false,
+      "complexity": 1,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    }
+  ]
+}

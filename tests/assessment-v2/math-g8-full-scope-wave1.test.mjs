@@ -53,10 +53,10 @@ test('ilk tam kapsam dalgası 12 yeni kazanımda dengeli ve solver-backed çalı
   }
 });
 
-test('pilot ve ilk dalga birlikte 17 kazanımı kapsar; ürün tamamlanmış görünmez',()=>{
-  assert.equal(GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,17);
-  assert.equal(GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.implementedItemCount,17);
-  assert.equal(GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount,35);
+test('pilot, ilk dalga ve tamamlama dalgaları 52 kazanımın tamamını mühendislik nesnesiyle kapsar',()=>{
+  assert.equal(GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,52);
+  assert.equal(GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.implementedItemCount,52);
+  assert.equal(GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount,0);
   assert.equal(GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.productReady,false);
 });
 

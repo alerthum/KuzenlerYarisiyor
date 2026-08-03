@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T21:14:02.768Z",
+  "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
+  "status": "AUTONOMOUS_EXECUTION_PLAN_READY",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "metrics": {
+    "activeEngineCount": 4,
+    "engineeringScopeCompleteEngineCount": 1,
+    "remainingOutcomeCount": 148,
+    "humanReviewQueueCount": 156,
+    "unopenedCourseCellCount": 108
+  },
+  "engines": [
+    {
+      "engineId": "tr-g8-turkce-v2",
+      "grade": 8,
+      "courseId": "turkce",
+      "officialOutcomeCount": 76,
+      "coveredOutcomeCount": 31,
+      "remainingOutcomeCount": 45,
+      "canonicalQuestionCount": 51,
+      "reviewQueueCount": 46,
+      "engineeringScopeComplete": false,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g8-matematik-v2",
+      "grade": 8,
+      "courseId": "matematik",
+      "officialOutcomeCount": 52,
+      "coveredOutcomeCount": 52,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 52,
+      "reviewQueueCount": 52,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g8-fen-v2",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "officialOutcomeCount": 61,
+      "coveredOutcomeCount": 33,
+      "remainingOutcomeCount": 28,
+      "canonicalQuestionCount": 33,
+      "reviewQueueCount": 33,
+      "engineeringScopeComplete": false,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g5-turkce-v2",
+      "grade": 5,
+      "courseId": "turkce",
+      "officialOutcomeCount": 100,
+      "coveredOutcomeCount": 25,
+      "remainingOutcomeCount": 75,
+      "canonicalQuestionCount": 25,
+      "reviewQueueCount": 25,
+      "engineeringScopeComplete": false,
+      "gameAdaptationAllowed": false
+    }
+  ],
+  "backlog": [
+    {
+      "order": 1,
+      "id": "review-g8-math",
+      "kind": "HUMAN_REVIEW",
+      "scope": "8. sınıf Matematik 52 görev",
+      "reason": "Mühendislik kapsamı tamamlandı; etkileşim ve soru kalitesi insan onayı bekliyor.",
+      "count": 52
+    },
+    {
+      "order": 2,
+      "id": "complete-g8-science",
+      "kind": "CONTENT_EXPANSION",
+      "scope": "8. sınıf Fen Bilimleri",
+      "reason": "61 kazanımdan 33’ü görevle kapsandı.",
+      "count": 28
+    },
+    {
+      "order": 3,
+      "id": "complete-g5-turkish",
+      "kind": "CONTENT_EXPANSION",
+      "scope": "5. sınıf Türkçe",
+      "reason": "100 çıktıdan 25’i görevle kapsandı.",
+      "count": 75
+    },
+    {
+      "order": 4,
+      "id": "complete-g8-turkish",
+      "kind": "CONTENT_EXPANSION",
+      "scope": "8. sınıf Türkçe",
+      "reason": "76 kazanımdan 31’i görevle kapsandı.",
+      "count": 45
+    },
+    {
+      "order": 5,
+      "id": "open-lgs-engines",
+      "kind": "NEW_ENGINE",
+      "scope": "8. sınıf İnkılap Tarihi, Din Kültürü ve İngilizce",
+      "reason": "LGS ders motorlarının tamamı açılmalı.",
+      "count": 3
+    },
+    {
+      "order": 6,
+      "id": "expand-grade-map",
+      "kind": "NEW_ENGINE",
+      "scope": "1–12 zorunlu ders hücreleri",
+      "reason": "112 hücrenin yalnız 4’ü aktif.",
+      "count": 108
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T17:38:47.672Z",
+  "generatedAt": "2026-08-03T21:14:02.858Z",
   "phase": "4H",
   "title": "Assessment V2 Ürün Şekillendirme ve Ders Motorları Panosu",
   "status": "ENGINEERING_PASS_HUMAN_REVIEW_IN_PROGRESS",
@@ -15,20 +15,20 @@
       "courseScheduleCellCount": 112,
       "activeEngineCellCount": 4,
       "activeEngineCellPercent": 3.6,
-      "curriculumOutcomeRecordCount": 138,
-      "coveredOutcomeCount": 58,
-      "canonicalQuestionCount": 78,
+      "curriculumOutcomeRecordCount": 289,
+      "coveredOutcomeCount": 141,
+      "canonicalQuestionCount": 161,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 73,
+      "humanReviewQueueCount": 156,
       "gameAdaptedQuestionCount": 0,
       "legacyQuarantineCount": 604
     }
   },
   "portfolio": {
-    "schemaVersion": "1.0",
-    "generatedAt": "2026-08-03T17:38:47.670Z",
+    "schemaVersion": "2.0",
+    "generatedAt": "2026-08-03T21:14:02.857Z",
     "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
-    "status": "FOUNDATION_AND_PILOTS_IN_PROGRESS",
+    "status": "MULTI_ENGINE_FULL_SCOPE_EXPANSION",
     "productReady": false,
     "publicationAllowed": false,
     "gameAdaptationAllowed": false,
@@ -60,11 +60,11 @@
       "courseScheduleCellCount": 112,
       "activeEngineCellCount": 4,
       "activeEngineCellPercent": 3.6,
-      "curriculumOutcomeRecordCount": 138,
-      "coveredOutcomeCount": 58,
-      "canonicalQuestionCount": 78,
+      "curriculumOutcomeRecordCount": 289,
+      "coveredOutcomeCount": 141,
+      "canonicalQuestionCount": 161,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 73,
+      "humanReviewQueueCount": 156,
       "gameAdaptedQuestionCount": 0,
       "legacyQuarantineCount": 604
     },
@@ -149,7 +149,7 @@
         "gameAdaptedQuestionCount": 0,
         "gameAdaptationAllowed": false,
         "engineStatus": "EXPANDING",
-        "engineType": "semantic-evidence + grammar + visual-reading",
+        "engineType": "semantic-evidence + grammar + visual-reading + performance-rubric",
         "verifierType": "independent semantic/constraint verification",
         "misconceptionCatalog": "tr-g8-turkish-domain-misconceptions",
         "nextAction": "Kalan 45 kazanımı dinleme, konuşma, yazma ve eksik okuma dalgalarıyla kapat.",
@@ -167,22 +167,22 @@
         "curriculumStatus": "FULL_SCOPE_INGESTED",
         "officialOutcomeCount": 52,
         "ingestedOutcomeCount": 52,
-        "coveredOutcomeCount": 17,
-        "courseCoveragePercent": 32.7,
+        "coveredOutcomeCount": 52,
+        "courseCoveragePercent": 100,
         "ingestionPercent": 100,
-        "canonicalQuestionCount": 17,
+        "canonicalQuestionCount": 52,
         "humanApprovedQuestionCount": 0,
-        "humanReviewQueueCount": 17,
+        "humanReviewQueueCount": 52,
         "gameAdaptedQuestionCount": 0,
         "gameAdaptationAllowed": false,
-        "engineStatus": "EXPANDING",
-        "engineType": "symbolic/numeric/geometry solver-backed",
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "symbolic/numeric/geometry solver-backed + interactive construction",
         "verifierType": "independent alternate algorithm and invariant checks",
         "misconceptionCatalog": "tr-g8-math-full-scope-misconceptions",
-        "nextAction": "İlk 12 soruluk Matematik dalgasını insan gözüyle kalibre et; kalan 35 kazanımı ünite dalgalarıyla kapat.",
+        "nextAction": "52 Matematik görevini insan örneklemiyle kalibre et ve onaylananları oyun adaptasyon laboratuvarına geçir.",
         "blockers": [
-          "35 kazanım henüz kanonik soru veya etkileşimli görevle kapsanmadı.",
-          "17 Matematik sorusunun insan gözle kalibrasyonu yapılmadı."
+          "52 Matematik görevinin insan gözle kalibrasyonu yapılmadı.",
+          "Etkileşimli çizim görevlerinin UI bileşenleri henüz bağlanmadı."
         ]
       },
       {
@@ -191,25 +191,25 @@
         "courseId": "fen-bilimleri",
         "courseName": "Fen Bilimleri",
         "programFamily": "PRE_TYMM",
-        "curriculumStatus": "PILOT_OUTCOMES_ONLY",
-        "officialOutcomeCount": null,
-        "ingestedOutcomeCount": 5,
-        "coveredOutcomeCount": 5,
-        "courseCoveragePercent": null,
-        "ingestionPercent": null,
-        "canonicalQuestionCount": 5,
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 61,
+        "ingestedOutcomeCount": 61,
+        "coveredOutcomeCount": 33,
+        "courseCoveragePercent": 54.1,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 33,
         "humanApprovedQuestionCount": 0,
-        "humanReviewQueueCount": 5,
+        "humanReviewQueueCount": 33,
         "gameAdaptedQuestionCount": 0,
         "gameAdaptationAllowed": false,
-        "engineStatus": "PILOT_VALIDATED",
-        "engineType": "model/experiment/data reasoning",
+        "engineStatus": "EXPANDING",
+        "engineType": "model/experiment/data reasoning + CER/design rubrics",
         "verifierType": "evidence-constraint + scientific model verification",
-        "misconceptionCatalog": "tr-g8-science-pilot-misconceptions",
-        "nextAction": "8. sınıf Fen Bilimleri tam resmî kapsam matrisini çıkar ve ünite dalgalarını başlat.",
+        "misconceptionCatalog": "tr-g8-science-full-scope-misconceptions",
+        "nextAction": "Kalan 28 Fen kazanımını deney, çevre, kimya ve elektrik dalgalarıyla kapat.",
         "blockers": [
-          "Tam ders kazanım aktarımı henüz yapılmadı.",
-          "İnsan gözle kalibrasyonu yapılmadı."
+          "28 kazanım henüz görevle kapsanmadı.",
+          "33 Fen görevinin insan gözle kalibrasyonu yapılmadı."
         ]
       },
       {
@@ -218,25 +218,25 @@
         "courseId": "turkce",
         "courseName": "Türkçe",
         "programFamily": "TYMM",
-        "curriculumStatus": "PILOT_OUTCOMES_ONLY",
-        "officialOutcomeCount": null,
-        "ingestedOutcomeCount": 5,
-        "coveredOutcomeCount": 5,
-        "courseCoveragePercent": null,
-        "ingestionPercent": null,
-        "canonicalQuestionCount": 5,
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 100,
+        "ingestedOutcomeCount": 100,
+        "coveredOutcomeCount": 25,
+        "courseCoveragePercent": 25,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 25,
         "humanApprovedQuestionCount": 0,
-        "humanReviewQueueCount": 5,
+        "humanReviewQueueCount": 25,
         "gameAdaptedQuestionCount": 0,
         "gameAdaptationAllowed": false,
-        "engineStatus": "PILOT_VALIDATED",
-        "engineType": "age-calibrated semantic evidence",
-        "verifierType": "independent evidence intersection",
-        "misconceptionCatalog": "tr-g5-turkish-pilot-misconceptions",
-        "nextAction": "5. sınıf Türkçe TYMM tam öğrenme çıktısı matrisini çıkar ve yaşa özel dalgaları başlat.",
+        "engineStatus": "EXPANDING",
+        "engineType": "age-calibrated listening/reading evidence + speaking/writing rubrics",
+        "verifierType": "independent evidence intersection + rubric consistency",
+        "misconceptionCatalog": "tr-g5-turkish-full-scope-misconceptions",
+        "nextAction": "Kalan 75 öğrenme çıktısını beceri alanı dalgalarıyla kapat.",
         "blockers": [
-          "Tam ders öğrenme çıktısı aktarımı henüz yapılmadı.",
-          "İnsan gözle kalibrasyonu yapılmadı."
+          "75 öğrenme çıktısı henüz görevle kapsanmadı.",
+          "Ses kayıtları ve performans rubriklerinin insan kalibrasyonu yapılmadı."
         ]
       }
     ],
@@ -245,37 +245,37 @@
         "id": "curriculum",
         "label": "Resmî müfredat",
         "status": "IN_PROGRESS",
-        "note": "Sınıf ve ders bazında sürüm yönlendirmesi zorunlu."
+        "note": "4 aktif motorun tamamında tam kapsam aktarımı yapıldı."
       },
       {
         "id": "subject-engine",
         "label": "Derse özel motor",
         "status": "IN_PROGRESS",
-        "note": "Ortak üretici yok; ortak sözleşme var."
+        "note": "Ortak üretici yok; alan çözücüleri ve rubrikleri ayrıdır."
       },
       {
         "id": "canonical-content",
         "label": "Kanonik soru/görev",
         "status": "IN_PROGRESS",
-        "note": "78 doğrulanan mühendislik nesnesi mevcut."
+        "note": "161 doğrulanmış mühendislik nesnesi mevcut."
       },
       {
         "id": "human-review",
         "label": "İnsan kalibrasyonu",
         "status": "BLOCKED",
-        "note": "5 onaylı, 73 inceleme bekliyor."
+        "note": "5 onaylı, 156 inceleme bekliyor."
       },
       {
         "id": "game-adaptation",
         "label": "Oyun uyarlaması",
         "status": "LOCKED",
-        "note": "Tam kapsam ve insan onayı öncesinde açılamaz."
+        "note": "Yalnız insan onaylı ve alan kapsamı yeterli içerikler açılabilir."
       },
       {
         "id": "student-pilot",
         "label": "Öğrenci pilotu",
         "status": "NOT_STARTED",
-        "note": "Madde analizi ve çeldirici performansı henüz ölçülmedi."
+        "note": "Madde analizi ve çeldirici performansı ölçülmedi."
       },
       {
         "id": "publication",
@@ -287,33 +287,33 @@
     "nextMilestones": [
       {
         "order": 1,
-        "id": "g8-math-full-scope",
-        "title": "8. sınıf Matematik tam kapsam matrisi",
-        "reason": "Çapraz pilot doğrulandı; ders ölçeğine geçilmeli."
+        "id": "g8-science-completion",
+        "title": "8. sınıf Fen kalan 28 kazanım",
+        "reason": "Tam matris ve 33 görev hazır; ders kapsamı kapatılmalı."
       },
       {
         "order": 2,
-        "id": "g8-science-full-scope",
-        "title": "8. sınıf Fen Bilimleri tam kapsam matrisi",
-        "reason": "Deney/model motoru ders ölçeğine genişletilmeli."
+        "id": "g5-turkish-completion",
+        "title": "5. sınıf Türkçe kalan 75 çıktı",
+        "reason": "Dört beceri alanı tam matriste; yaşa özel görev dalgaları tamamlanmalı."
       },
       {
         "order": 3,
-        "id": "g5-turkish-full-scope",
-        "title": "5. sınıf Türkçe TYMM tam kapsam matrisi",
-        "reason": "Yaş düzeyi aktarımı pilot sınırından çıkarılmalı."
+        "id": "g8-turkish-completion",
+        "title": "8. sınıf Türkçe kalan 45 kazanım",
+        "reason": "Dinleme, konuşma ve yazma performans görevleri kapatılmalı."
       },
       {
         "order": 4,
-        "id": "g8-turkish-remaining",
-        "title": "8. sınıf Türkçe kalan 45 kazanım",
-        "reason": "Tam kapsam kayıtlı; içerik boşlukları dalgalarla kapanmalı."
+        "id": "human-review-queue",
+        "title": "161 görevlik insan inceleme kuyruğu",
+        "reason": "Oyun kilidinin ana bağımlılığı insan kalibrasyonudur."
       },
       {
         "order": 5,
-        "id": "human-review-ledger",
-        "title": "İnsan inceleme iş akışı",
-        "reason": "61 soru onay bekliyor; oyun kilidi bu kuyrukla bağlı."
+        "id": "lgs-other-engines",
+        "title": "8. sınıf diğer LGS ders motorları",
+        "reason": "İnkılap Tarihi, Din Kültürü ve İngilizce motorları açılmalı."
       }
     ]
   }

@@ -1,12 +1,13 @@
 import { GRADE8_MATH_OUTCOMES_2018 } from '../curriculum/outcomes/tr-g8-matematik-2018.js';
 import { buildGrade8MathCrossPilotQuestions } from './math-g8-cross-pilot.js';
 import { buildGrade8MathWave1Questions, GRADE8_MATH_WAVE1_OUTCOME_CODES } from './math-g8-wave1.js';
+import { buildGrade8MathCompletionQuestions, GRADE8_MATH_COMPLETION_OUTCOME_CODES } from './math-g8-completion-waves.js';
 
 export const GRADE8_MATH_CROSS_PILOT_OUTCOME_CODES = Object.freeze([
   'M.8.1.1.2','M.8.1.2.5','M.8.2.2.5','M.8.3.1.5','M.8.5.1.5'
 ]);
 
-const IMPLEMENTED_CODES = new Set([...GRADE8_MATH_CROSS_PILOT_OUTCOME_CODES, ...GRADE8_MATH_WAVE1_OUTCOME_CODES]);
+const IMPLEMENTED_CODES = new Set([...GRADE8_MATH_CROSS_PILOT_OUTCOME_CODES, ...GRADE8_MATH_WAVE1_OUTCOME_CODES, ...GRADE8_MATH_COMPLETION_OUTCOME_CODES]);
 const VISUAL_TOPIC_IDS = new Set(['dogrusal-denklemler','ucgenler','donusum-geometrisi','eslik-ve-benzerlik','geometrik-cisimler','veri-analizi']);
 const CONSTRUCTION_CODES = new Set(['M.8.3.1.1','M.8.3.1.4','M.8.3.2.1','M.8.3.2.2','M.8.3.2.3','M.8.3.3.2','M.8.3.4.1','M.8.3.4.2','M.8.3.4.5','M.8.3.4.6']);
 
@@ -102,7 +103,7 @@ export function auditGrade8MathFullScopeMatrix(rows=GRADE8_MATH_FULL_SCOPE_MATRI
   }
   const unitCounts=Object.fromEntries([...new Set(rows.map(row=>row.unitName))].map(unit=>[unit,rows.filter(row=>row.unitName===unit).length]));
   const implementedOutcomeCount=rows.filter(row=>row.implementedItemCount>0).length;
-  const implementedItemCount=buildGrade8MathCrossPilotQuestions().length+buildGrade8MathWave1Questions().length;
+  const implementedItemCount=buildGrade8MathCrossPilotQuestions().length+buildGrade8MathWave1Questions().length+buildGrade8MathCompletionQuestions().length;
   const metrics=Object.freeze({
     officialOutcomeCount:rows.length,
     unitCounts,

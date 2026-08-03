@@ -1,25 +1,44 @@
 # CONTEXT_SNAPSHOT
 
-**Güncelleme:** 2026-08-03 · **Mevcut aşama:** Assessment Engineering Engine V2 — Faz 2 mühendislik kapanışı
+**Güncelleme:** 2026-08-03 · **Mevcut aşama:** Assessment Engineering Engine V2 — Phase 4J büyük genişleme
 
-## Son tamamlanan işlem
-- Matematik/Olimpiyat motoru 12/12 solver-backed item modeline ulaştı.
-- Son grup: oyun stratejisi ve eşitsizlik/sınırlandırma.
-- Her yeni modelde bağımsız doğrulayıcı, üç ayrı buggy-rule çeldirici ve çözüm grafı kaynaklı ipuçları bulunuyor.
+## Değişmeyen nihai hedef
+1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları kurulur. Kanonik soru/görevler alan çözücüsü ve bağımsız doğrulayıcıdan geçer; insan incelemesi tamamlanmadan oyun adaptasyonu ve yayın açılmaz.
+
+## Son tamamlanan büyük paket
+- 8. sınıf Matematik: 52/52 kazanım için mühendislik nesnesi; 43 solver-backed çoktan seçmeli + 9 etkileşimli inşa görevi.
+- 8. sınıf Fen Bilimleri: 61/61 resmî kazanım tam kapsam matrisi; 33 kazanım için görev.
+- 5. sınıf TYMM Türkçe: 100/100 öğrenme çıktısı tam kapsam matrisi; 25 görev.
+- 8. sınıf Türkçe: 76/76 kayıtlı kazanım; 51 görev, 31 kazanım kapsandı.
+- Toplam kanonik katalog: 161 görev.
+- İnsan onaylı: 5; inceleme kuyruğu: 156.
+- Aktif ders motoru: 4 / 112 zorunlu sınıf-ders hücresi.
 
 ## Korunan güvenlik durumları
 - `productReady=false`
-- Eski 604 içerik `UNVERIFIED_LEGACY`
-- İnsan uzman örneklemi `NOT_MEASURED`
-- V2 dışı premium etiketi yayın yetkisi vermiyor.
+- `gameAdaptationAllowed=false`
+- 604 eski içerik `UNVERIFIED_LEGACY`
+- Öğrenci pilotu ve madde analizi başlamadı.
+- Performans/çizim kazanımları zorla çoktan seçmeliye çevrilmiyor.
 
-## Checkpoint zinciri
-- `checkpoint-v2-phase-2a` — 5/12, yeniden kurulan Git tabanı
-- `checkpoint-v2-phase-2b` — 8/12
-- `checkpoint-v2-phase-2c` — 10/12
-- `checkpoint-v2-phase-2d` — 12/12
+## Tek komut
+```powershell
+npm run assessment:v2:autonomous
+```
+Bu komut bütün Assessment V2 testlerini, Phase 4J raporunu ve güncel ders motorları panosunu üretir.
+
+## Sıradaki kesin iş kuyruğu
+1. 8. sınıf Matematik 52 görevlik insan kalibrasyonu.
+2. 8. sınıf Fen kalan 28 kazanım için görev üretimi.
+3. 5. sınıf Türkçe kalan 75 öğrenme çıktısı için beceri alanı dalgaları.
+4. 8. sınıf Türkçe kalan 45 kazanım için dinleme/konuşma/yazma ve eksik okuma görevleri.
+5. 8. sınıf İnkılap Tarihi, Din Kültürü ve İngilizce motorlarının açılması.
+6. Ardından 1–12 sınıf-ders matrisi boyunca aynı hatla genişleme.
 
 ## Kanıt dosyaları
-- `quality-reports/assessment-engine-v2-phase-2-progress.json`
-- `ASSESSMENT_ENGINEERING_V2_PHASE2_COMPLETION.md`
-- `tests/assessment-v2/phase2-completion.test.mjs`
+- `ASSESSMENT_ENGINEERING_V2_PHASE4J_MEGA_EXPANSION.md`
+- `quality-reports/assessment-engine-v2-phase4j-mega-expansion.json`
+- `quality-reports/assessment-v2-canonical-catalog-161.json`
+- `quality-reports/assessment-v2-phase4j-human-review-24.html`
+- `public/assessment-v2-human-review-queue.json`
+- `public/assessment-v2-autonomous-expansion-plan.json`

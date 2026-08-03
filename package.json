@@ -87,7 +87,9 @@
     "assessment:v2:phase4f": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4f-visual-grammar-wave2.mjs",
     "assessment:v2:phase4g": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4g-cross-transfer-pilot.mjs",
     "assessment:v2:phase4h": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
-    "assessment:v2:phase4i": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4i-g8-math-full-scope.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs"
+    "assessment:v2:phase4i": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4i-g8-math-full-scope.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
+    "assessment:v2:phase4j": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4j-mega-expansion.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
+    "assessment:v2:autonomous": "npm run assessment:v2:phase4j"
   },
   "engines": {
     "node": ">=20"
