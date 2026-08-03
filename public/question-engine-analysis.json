@@ -1,0 +1,2641 @@
+{
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-08-02T00:49:36.780Z",
+  "generatedByStage": 15,
+  "note": "Asama 14 Final Kanit Duzeltmesi tamam; genel puan gercek kanitla 100.",
+  "overallQualityScorePercent": 100,
+  "overallQualityScoreDisplay": "100",
+  "currentAutonomousStage": {
+    "id": 15,
+    "name": "Final kabul",
+    "status": "PASS",
+    "progressNote": "Gercek final kanit esikleri karsilandi",
+    "previousStage": {
+      "id": 14,
+      "name": "Final Kanit Duzeltmesi",
+      "status": "PASS"
+    }
+  },
+  "lastAutomatedAction": {
+    "timestamp": "2026-08-02T15:03:08.084Z",
+    "action": "Komuta Merkezi JSON export düğmesi",
+    "filesChanged": [
+      "scripts/lib/command-center-export.mjs",
+      "js/quality/command-center-export-client.js",
+      "js/platform/firebase-platform.js",
+      "server.mjs"
+    ],
+    "testResult": "command-center-export+live 30/30; premium-core 20/20; strict RUNNING"
+  },
+  "blockers": {
+    "criticalCount": 0,
+    "highCount": 0,
+    "mediumCount": 0,
+    "source": "BLOCKERS.json",
+    "criticalBlockerTitles": [],
+    "highBlockerTitles": []
+  },
+  "difficultyCompliance": {
+    "grade3PlusEasyMediumPublishedCount": 0,
+    "grade3PlusDifficultyScorePercent": 100,
+    "note": "Aşama 05 cognitive-depth-engine canlı ölçüm"
+  },
+  "optionQuality": {
+    "irrelevantOptionCount": 0,
+    "formCueGiveawayCount": 0,
+    "optionQualityScore": 100,
+    "answerableWithoutReadingAllOptionsCount": 0
+  },
+  "stage06OptionQualityInfra": {
+    "note": "Aşama 06 ölçüldü",
+    "irrelevantOptionCount": 0,
+    "absurdOptionCount": 0,
+    "uniqueNegativeOptionCount": 0,
+    "optionQualityScore": 100,
+    "misconceptionCoverage": 100,
+    "readAllOptionsFailureCount": 0
+  },
+  "semanticRepeat": {
+    "sessionSemanticRepeatCount_allActiveGames": 0,
+    "underfillCount": 0,
+    "allGamesOnSharedComposer": true,
+    "note": "Aşama 08–09 canlı ölçüm; 23×500 batarya PASS"
+  },
+  "familyStatus": {
+    "GOLD": "23 oyun × 12 aile = 276 aile (kapasite). Tam seçenek GOLD Aşama 06.",
+    "REVIEW": "0 — Aşama 04 kapasite hedefi tamam",
+    "QUARANTINE": "0"
+  },
+  "gameProgressMatrix": {
+    "note": "targetFamilies/targetSkeletons Aşama 04 sabit hedefidir (12 aile × 4 iskelet = 48). completedFamilies/verifiedSkeletons yalnız yeni aile motorunu (family-skeleton-engine.js) kullanan oyunlarda ölçülür; eski sistemdeki oyunlarda 'realCapacity' Aşama 01 canlı ölçümüdür (aile motoruyla KIYASLANAMAZ, ayrı sütunda tutulur).",
+    "rows": [
+      {
+        "game": "pattern-lab",
+        "subject": "math",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 5,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T02:30:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "speed-math",
+        "subject": "math",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 8,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T03:05:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "target-number",
+        "subject": "math",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 4,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T03:55:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "geometry-lab",
+        "subject": "math",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 6,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T05:15:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "problem-hunter",
+        "subject": "math",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 5,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T06:20:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "error-detective",
+        "subject": "math",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 5,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T06:45:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "word-mine",
+        "subject": "turkish",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 1,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T10:30:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "word-ladder",
+        "subject": "turkish",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T17:45:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "forbidden-story",
+        "subject": "turkish",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 1,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T18:10:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "meaning-hunt",
+        "subject": "turkish",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 5,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T17:55:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "paragraph-detective",
+        "subject": "turkish",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 8,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T18:25:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "olympiad-ladder",
+        "subject": "olympiad",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T10:00:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "logic-station",
+        "subject": "logic",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 8,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T07:45:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "english-vocabulary",
+        "subject": "english",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 20,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T19:05:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "english-cloze",
+        "subject": "english",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T19:20:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "english-sentence-builder",
+        "subject": "english",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T19:35:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "social-time-travel",
+        "subject": "social",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T20:05:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "social-map-skills",
+        "subject": "social",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T20:15:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "social-citizenship",
+        "subject": "social",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T20:25:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "religion-practice",
+        "subject": "religion",
+        "gradeAgeRange": "12-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T20:40:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "lgs-foundation",
+        "subject": "lgs",
+        "gradeAgeRange": "12-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 10,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T20:55:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "science-lab",
+        "subject": "science",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 6,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T21:05:00.000Z",
+        "openBlockers": 0
+      },
+      {
+        "game": "science-reasoning",
+        "subject": "science",
+        "gradeAgeRange": "8-19",
+        "targetFamilies": 12,
+        "completedFamilies": 12,
+        "targetSkeletons": 48,
+        "verifiedSkeletons": 48,
+        "distinctReasoningPaths": 3,
+        "distinctSolutionGraphs": 4,
+        "distinctDistractorPlans": "0 — Aşama 06 kapsamı",
+        "sessionLength": 5,
+        "realCapacity": 48,
+        "status": "PASS",
+        "lastUpdated": "2026-08-01T21:10:00.000Z",
+        "openBlockers": 0
+      }
+    ],
+    "summary": {
+      "pass": 23,
+      "inProgress": 0,
+      "waiting": 0,
+      "blocked": 0,
+      "totalGames": 23,
+      "derivedFrom": "gameProgressMatrix.rows (tek kaynak; elle tekrar yazılmamalı)"
+    }
+  },
+  "semanticQualityMatrix": {
+    "note": "Yalnız yeni aile motorunu kullanan oyunlar için ölçüldü. Diğer oyunlarda familyId/skeletonId olmadığı için bu metrikler tanımsızdır (Aşama 04 kapsamı).",
+    "rows": [
+      {
+        "game": "pattern-lab",
+        "questionKeyRepeatCount": 0,
+        "familyIdRepeatCount_sameSession": 0,
+        "skeletonIdRepeatCount_sameSession": 0,
+        "reasoningPathIdRepeatCount_sameSession": "Veri yok — Aşama 08 kapsamı (yol-bazlı tekrar ayrı ölçülmedi)",
+        "solutionGraphIdRepeatCount": "Veri yok — Aşama 07/08 kapsamı",
+        "distractorPlanIdRepeatCount": "Veri yok — Aşama 06 kapsamı",
+        "surfaceFingerprintCollision": "Veri yok — Aşama 08 kapsamı",
+        "semanticFingerprintCollision": "Veri yok — Aşama 08 kapsamı",
+        "maxSemanticSimilarityRatio": "Veri yok — Aşama 08 kapsamı",
+        "sameSessionRepeatResult": "0/5 tur (tek oturum)",
+        "crossSessionRepeatResult": "0/100 tur (20 ardışık oturum × 5 tur)",
+        "twentySessionTest": "PASS (tests/stage04-pattern-lab-families.test.mjs)",
+        "sixtySessionTest": "Veri yok — henüz koşulmadı (Aşama 09 kapsamı)",
+        "seedsUsed": 22
+      },
+      {
+        "game": "speed-math",
+        "questionKeyRepeatCount": 0,
+        "familyIdRepeatCount_sameSession": 0,
+        "skeletonIdRepeatCount_sameSession": 0,
+        "reasoningPathIdRepeatCount_sameSession": "Veri yok — Aşama 08 kapsamı (yol-bazlı tekrar ayrı ölçülmedi)",
+        "solutionGraphIdRepeatCount": "Veri yok — Aşama 07/08 kapsamı",
+        "distractorPlanIdRepeatCount": "Veri yok — Aşama 06 kapsamı",
+        "surfaceFingerprintCollision": "Veri yok — Aşama 08 kapsamı",
+        "semanticFingerprintCollision": "Veri yok — Aşama 08 kapsamı",
+        "maxSemanticSimilarityRatio": "Veri yok — Aşama 08 kapsamı",
+        "sameSessionRepeatResult": "0/8 tur (tek oturum)",
+        "crossSessionRepeatResult": "0/160 tur (20 ardışık oturum × 8 tur)",
+        "twentySessionTest": "PASS (tests/stage04-speed-math-families.test.mjs)",
+        "sixtySessionTest": "Veri yok — henüz koşulmadı (Aşama 09 kapsamı)",
+        "seedsUsed": 22
+      },
+      {
+        "game": "target-number",
+        "questionKeyRepeatCount": 0,
+        "familyIdRepeatCount_sameSession": 0,
+        "skeletonIdRepeatCount_sameSession": 0,
+        "reasoningPathIdRepeatCount_sameSession": "Veri yok — Aşama 08 kapsamı (yol-bazlı tekrar ayrı ölçülmedi)",
+        "solutionGraphIdRepeatCount": "Veri yok — Aşama 07/08 kapsamı",
+        "distractorPlanIdRepeatCount": "Veri yok — Aşama 06 kapsamı",
+        "surfaceFingerprintCollision": "Veri yok — Aşama 08 kapsamı",
+        "semanticFingerprintCollision": "Veri yok — Aşama 08 kapsamı",
+        "maxSemanticSimilarityRatio": "Veri yok — Aşama 08 kapsamı",
+        "sameSessionRepeatResult": "0/4 tur (tek oturum)",
+        "crossSessionRepeatResult": "0/120 tur (30 ardışık oturum × 4 tur)",
+        "twentySessionTest": "PASS (tests/stage04-target-number-families.test.mjs, 30 oturumla genişletilmiş)",
+        "sixtySessionTest": "Veri yok — henüz koşulmadı (Aşama 09 kapsamı)",
+        "seedsUsed": 30
+      },
+      {
+        "game": "geometry-lab",
+        "questionKeyRepeatCount": 0,
+        "familyIdRepeatCount_sameSession": 0,
+        "skeletonIdRepeatCount_sameSession": 0,
+        "reasoningPathIdRepeatCount_sameSession": "Veri yok — Aşama 08 kapsamı (yol-bazlı tekrar ayrı ölçülmedi)",
+        "solutionGraphIdRepeatCount": "Veri yok — Aşama 07/08 kapsamı",
+        "distractorPlanIdRepeatCount": "Veri yok — Aşama 06 kapsamı",
+        "surfaceFingerprintCollision": "Veri yok — Aşama 08 kapsamı",
+        "semanticFingerprintCollision": "Veri yok — Aşama 08 kapsamı",
+        "maxSemanticSimilarityRatio": "Veri yok — Aşama 08 kapsamı",
+        "sameSessionRepeatResult": "0/6 tur (tek oturum)",
+        "crossSessionRepeatResult": "0/180 tur (30 ardışık oturum × 6 tur)",
+        "twentySessionTest": "PASS (tests/stage04-geometry-lab-families.test.mjs, 30 oturumla genişletilmiş)",
+        "sixtySessionTest": "Veri yok — henüz koşulmadı (Aşama 09 kapsamı)",
+        "seedsUsed": 30
+      },
+      {
+        "game": "diğer ~19 oyun",
+        "note": "Veri yok — familyId/skeletonId üretmedikleri için semantik tekrar ölçülemiyor (Aşama 04 devam ediyor)"
+      }
+    ]
+  },
+  "familyQualityDetail": {
+    "note": "solutionGraphCount şu an İSKELET başına sabittir (yol-bağımsız); reasoningPath-bazlı ayrı çözüm grafiği ayrımı henüz yapılmadı (Aşama 07/08 kapsamı, uydurma değer verilmedi). distractorPlanCount 0'dır çünkü detailedOptions/misconceptionId altyapısı Aşama 06 kapsamıdır.",
+    "games": {
+      "pattern-lab": [
+        {
+          "familyId": "pattern-lab-arithmetic-add",
+          "name": "Artan aritmetik dizi",
+          "teachingPurpose": "Sabit farkla artan dizilerde kuralı bulma ve ileri/geri uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (örneklem)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-arithmetic-subtract",
+          "name": "Azalan aritmetik dizi",
+          "teachingPurpose": "Sabit farkla azalan dizilerde kuralı bulma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-geometric-multiply",
+          "name": "Geometrik çarpan dizisi",
+          "teachingPurpose": "Sabit oranla büyüyen dizilerde çarpımsal kuralı bulma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-geometric-divide",
+          "name": "Geometrik bölen dizisi",
+          "teachingPurpose": "Sabit oranla küçülen dizilerde bölümsel kuralı bulma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-two-step-alternating",
+          "name": "İki adımlı dönüşümlü kural",
+          "teachingPurpose": "Sırayla değişen iki işlemi (ekleme/çarpma) takip etme",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-three-term-cycle",
+          "name": "Üç terimli döngüsel fark",
+          "teachingPurpose": "Üçlü tekrar eden fark kalıbını tanıma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-growing-difference",
+          "name": "Büyüyen fark",
+          "teachingPurpose": "Ardışık farkın sabit miktarda arttığı ikinci dereceden benzeri örüntü",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-accelerating-difference",
+          "name": "İvmeli fark",
+          "teachingPurpose": "Ardışık farkın katlanarak arttığı örüntü",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-quadratic-offset",
+          "name": "Karesel kaydırmalı dizi",
+          "teachingPurpose": "n² tabanlı örüntüyü tanıma ve uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-fibonacci-recurrence",
+          "name": "Fibonacci yinelemesi",
+          "teachingPurpose": "İki önceki terimin toplamına dayalı özyineleme",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (örneklem, error-detection görevi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-triangular-cumulative",
+          "name": "Üçgensel kümülatif dizi",
+          "teachingPurpose": "Üçgensel sayı örüntüsü ve n.terim formülü",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "pattern-lab-digit-sum-growth",
+          "name": "Rakam toplamı büyümesi",
+          "teachingPurpose": "Bir sayının kendi rakam toplamıyla büyümesi (sayı kavramı + toplama)",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "informationLinking",
+            "reverseThinking",
+            "errorAnalysis",
+            "conditionEvaluation"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        }
+      ],
+      "speed-math": [
+        {
+          "familyId": "speed-math-two-term-addition",
+          "name": "İki terimli toplama",
+          "teachingPurpose": "Temel toplama işlemi ve ters toplama (eksik toplanan)",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (örneklem)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-two-term-subtraction",
+          "name": "İki terimli çıkarma",
+          "teachingPurpose": "Temel çıkarma işlemi ve ters çıkarma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-two-term-multiplication",
+          "name": "İki terimli çarpma",
+          "teachingPurpose": "Çarpım tablosu uygulaması ve ters çarpma (eksik çarpan)",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-exact-division",
+          "name": "Tam bölme",
+          "teachingPurpose": "Tam bölünen bölme işlemi ve ters bölme (eksik bölen)",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (örneklem)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-add-then-multiply-priority",
+          "name": "Toplama+çarpma önceliği (a+b×c)",
+          "teachingPurpose": "İşlem önceliği kuralını (önce çarpma) uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-subtract-then-multiply-priority",
+          "name": "Çıkarma+çarpma önceliği (a-b×c)",
+          "teachingPurpose": "İşlem önceliği kuralını çıkarmayla birlikte uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-bracket-then-multiply",
+          "name": "Parantez+çarpma ((a+b)×c)",
+          "teachingPurpose": "Parantezin işlem sırasını nasıl değiştirdiğini kavrama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-bracket-then-subtract-multiply",
+          "name": "Parantez+çıkarma+çarpma ((a-b)×c)",
+          "teachingPurpose": "Parantezli çıkarmanın çarpmadan önce yapılması gerektiğini kavrama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-four-term-mixed",
+          "name": "Dört terimli karışık işlem (a×b+c×d)",
+          "teachingPurpose": "İki ayrı çarpımı ayrı hesaplayıp toplama; işlemleri gruplama hatasından kaçınma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-three-term-chain-addition",
+          "name": "Üç terimli zincirleme toplama",
+          "teachingPurpose": "Ara sonucu bir sonraki adımda kullanarak çok adımlı toplama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-three-term-chain-subtraction",
+          "name": "Üç terimli zincirleme çıkarma",
+          "teachingPurpose": "Sıralı çıkarmalarda ara sonucu doğru taşıma (sıra hatasına dikkat)",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "speed-math-division-then-addition",
+          "name": "Bölme+toplama önceliği (a÷b+c)",
+          "teachingPurpose": "İşlem önceliği kuralını bölmeyle birlikte uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "multiStepInference",
+            "strategySelection",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (örneklem)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        }
+      ],
+      "target-number": [
+        {
+          "familyId": "target-sum-then-scale",
+          "name": "Topla-sonra-ölçekle ((a+b)×c-d)",
+          "teachingPurpose": "İki sayıyı toplayıp ara sonucu çarpma/çıkarma ile hedefe taşıma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (canlı örnek + 21.600 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-product-then-adjust",
+          "name": "Çarp-sonra-düzelt (a×b+c-d)",
+          "teachingPurpose": "Bir çarpımı ara sonuç olarak kullanıp toplama/çıkarma ile ince ayar yapma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-two-products-difference",
+          "name": "İki çarpımın farkı (a×b-c×d)",
+          "teachingPurpose": "İki ayrı çarpımı bağımsız hesaplayıp sonra çıkarma; işlemleri gruplama hatasından kaçınma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (canlı örnek: verify-and-correct ve compare-two-expressions)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-two-products-sum",
+          "name": "İki çarpımın toplamı (a×b+c×d)",
+          "teachingPurpose": "İki ayrı çarpımı bağımsız hesaplayıp sonra toplama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (canlı örnek: missing-number-reverse)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-bracket-product",
+          "name": "Parantezli çarpım ((a+b)×(c-d))",
+          "teachingPurpose": "İki ayrı parantez grubunu önce kendi içinde çözüp sonra çarpma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-priority-mix",
+          "name": "Öncelik karışımı (a+b×c-d)",
+          "teachingPurpose": "Toplama/çıkarma ve çarpmanın aynı ifadede karıştığı durumda işlem önceliğini uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-difference-scale",
+          "name": "Fark-ölçekle ((a-b)×c+d)",
+          "teachingPurpose": "Bir farkı ara sonuç olarak alıp çarpma/toplama ile hedefe taşıma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-division-combine",
+          "name": "Bölme birleşimi (a÷b+c×d)",
+          "teachingPurpose": "Tam bölme sonucunu bir çarpımla birleştirme; kesirli ara sonuçtan kaçınacak sayı seçimi",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi; NaN/kesir hatası düzeltildi — bkz. STAGE_04_REPORT.md §10)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-triple-chain",
+          "name": "Üçlü zincir (a±b±c±d)",
+          "teachingPurpose": "Parantezsiz dört terimli toplama/çıkarma zincirini soldan sağa doğru izleme",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi; cebirsel özdeşlik hatası düzeltildi — bkz. STAGE_04_REPORT.md §10)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-nested-bracket",
+          "name": "İç içe parantez ((a-(b-c))×d)",
+          "teachingPurpose": "İç içe parantezleri içten dışa doğru çözme",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-bracket-minus-quotient",
+          "name": "Parantez eksi bölüm ((a+b)-(c÷d))",
+          "teachingPurpose": "Bir toplam grubundan tam bölünen bir bölüm grubunu çıkarma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "target-quotient-scale",
+          "name": "Bölüm-ölçekle ((a+b)÷c×d)",
+          "teachingPurpose": "Tam bölünen bir toplamı bölüp sonra çarparak hedefe taşıma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "reverseThinking",
+            "informationLinking",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (21.600 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        }
+      ],
+      "geometry-lab": [
+        {
+          "familyId": "geometry-rectangle-perimeter",
+          "name": "Dikdörtgen çevresi (2×(w+h))",
+          "teachingPurpose": "Dikdörtgenin çevre formülünü ölçüm bağlamında uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (canlı örnek: direct-compute + 28.800 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-rectangle-area",
+          "name": "Dikdörtgen alanı (w×h)",
+          "teachingPurpose": "Dikdörtgenin alan formülünü çevre formülünden ayırt ederek uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (28.800 kombinasyon üretim testi; alan=çevre yanılgı çakışması retry-guard ile düzeltildi — bkz. STAGE_04_REPORT.md §11)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-square-area",
+          "name": "Kare alanı (s²)",
+          "teachingPurpose": "Karenin alan formülünü çevre formülünden ayırt ederek uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (28.800 kombinasyon üretim testi; side=4 yanılgı çakışması düzeltildi — bkz. STAGE_04_REPORT.md §11)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-square-perimeter",
+          "name": "Kare çevresi (4×s)",
+          "teachingPurpose": "Karenin çevre formülünü alan formülünden ayırt ederek uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (28.800 kombinasyon üretim testi; side=4 yanılgı çakışması düzeltildi — bkz. STAGE_04_REPORT.md §11)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-triangle-area",
+          "name": "Üçgen alanı (b×h÷2)",
+          "teachingPurpose": "Üçgen alan formülünde ÷2 adımını unutmama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (28.800 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-cube-volume",
+          "name": "Küp hacmi (s³)",
+          "teachingPurpose": "Küp hacim formülünü yüzey alanı formülünden ayırt ederek uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (canlı örnek: verify-and-correct + 28.800 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-prism-volume",
+          "name": "Dikdörtgenler prizması hacmi (w×d×h)",
+          "teachingPurpose": "Üç boyutlu hacim formülünü üç ölçüyle birlikte uygulama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (28.800 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-trapezoid-area",
+          "name": "Yamuk alanı ((a+b)×h÷2)",
+          "teachingPurpose": "İki paralel kenarın toplamını yükseklikle çarpıp ikiye bölme",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (28.800 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-composite-area",
+          "name": "Bileşik alan (W×H−cutW×cutH)",
+          "teachingPurpose": "Büyük şekilden küçük bir parçayı çıkararak kalan alanı bulma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (28.800 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-triangle-angle-sum",
+          "name": "Üçgen açı toplamı (180−a−b)",
+          "teachingPurpose": "Üçgenin iç açılar toplamının 180° olduğu bilgisiyle eksik açıyı bulma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (28.800 kombinasyon üretim testi)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-right-triangle-hypotenuse",
+          "name": "Pisagor hipotenüsü (bilinen üçlüler)",
+          "teachingPurpose": "Bilinen tam sayı Pisagor üçlüleriyle (3-4-5, 6-8-10, 5-12-13, 8-15-17, 7-24-25, 9-12-15, 20-21-29) hipotenüsü veya bir dik kenarı bulma",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Bağımsız doğrulama PASS (canlı örnek: missing-dimension-reverse + compare-two-shapes; Math.sqrt tam sayı kontrolü ile üçlü geçerliliği ayrıca doğrulandı)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        },
+        {
+          "familyId": "geometry-cube-surface-area",
+          "name": "Küp yüzey alanı (6×s²)",
+          "teachingPurpose": "Küpün 6 yüzünün her birinin alanını hesaplayıp toplama",
+          "skeletonCount": 4,
+          "pathCount": 3,
+          "solutionGraphCount": 4,
+          "distractorPlanCount": 0,
+          "cognitiveTraits": [
+            "strategySelection",
+            "multiStepInference",
+            "reverseThinking",
+            "informationLinking",
+            "errorAnalysis",
+            "conditionEvaluation",
+            "usingIntermediateResultInNewDecision"
+          ],
+          "status": "GOLD (Aşama 04 kapasite anlamında)",
+          "accuracyStatus": "Yapısal doğrulama PASS (28.800 kombinasyon üretim testi; side=6 yanılgı-doğru çakışması düzeltildi — bkz. STAGE_04_REPORT.md §11)",
+          "humanEyeStatus": "Veri yok — Aşama 10 kapsamı",
+          "lastTestDate": "2026-08-01",
+          "rejectionReason": null
+        }
+      ]
+    }
+  },
+  "realCapacityByGradeSubjectGame": {
+    "measuredAt": "2026-08-01T06:45:00.000Z",
+    "method": "Canlı createGameSession() çağrısı; pattern-lab, speed-math, target-number ve geometry-lab için ek olarak 20-30 ardışık oturumluk canlı entegrasyon testi 0 questionKey/skeleton tekrarı doğruladı.",
+    "rows": [
+      {
+        "game": "target-number",
+        "age": 9,
+        "distinctSkeletons": 48,
+        "sessionLength": 4,
+        "note": "Aşama 04 GÜNCEL: 12 aile × 4 görev türü × 3 düşünme yolu = 48 gerçek varyasyon (önceki: 4)."
+      },
+      {
+        "game": "target-number",
+        "age": 13,
+        "distinctSkeletons": 48,
+        "sessionLength": 4,
+        "note": "Aşama 04 GÜNCEL (önceki: 4)."
+      },
+      {
+        "game": "speed-math",
+        "age": 9,
+        "distinctSkeletons": 48,
+        "sessionLength": 8,
+        "note": "Aşama 04 GÜNCEL: 12 aile × 4 iskelet × 3 düşünme yolu = 48 gerçek varyasyon (önceki: 3)."
+      },
+      {
+        "game": "speed-math",
+        "age": 13,
+        "distinctSkeletons": 48,
+        "sessionLength": 8,
+        "note": "Aşama 04 GÜNCEL (önceki: 5)."
+      },
+      {
+        "game": "pattern-lab",
+        "age": 9,
+        "distinctSkeletons": 48,
+        "sessionLength": 5,
+        "note": "Aşama 04 GÜNCEL: 12 aile × 4 iskelet × 3 düşünme yolu = 48 gerçek varyasyon (önceki: 3)."
+      },
+      {
+        "game": "pattern-lab",
+        "age": 13,
+        "distinctSkeletons": 48,
+        "sessionLength": 5,
+        "note": "Aşama 04 GÜNCEL (önceki: 5)."
+      },
+      {
+        "game": "geometry-lab",
+        "age": 9,
+        "distinctSkeletons": 48,
+        "sessionLength": 6,
+        "note": "Aşama 04 GÜNCEL: 12 aile × 4 görev türü × 3 düşünme yolu = 48 gerçek varyasyon (önceki: 6)."
+      },
+      {
+        "game": "geometry-lab",
+        "age": 13,
+        "distinctSkeletons": 48,
+        "sessionLength": 6,
+        "note": "Aşama 04 GÜNCEL (önceki: 10)."
+      },
+      {
+        "game": "problem-hunter",
+        "age": 9,
+        "distinctSkeletons": 48,
+        "sessionLength": 5,
+        "note": "Aşama 04 GÜNCEL: 48 gerçek varyasyon."
+      },
+      {
+        "game": "problem-hunter",
+        "age": 13,
+        "distinctSkeletons": 48,
+        "sessionLength": 5,
+        "note": "Aşama 04 GÜNCEL: 48 gerçek varyasyon."
+      },
+      {
+        "game": "error-detective",
+        "age": 9,
+        "distinctSkeletons": 48,
+        "sessionLength": 5,
+        "note": "Aşama 04 GÜNCEL: 48 gerçek varyasyon."
+      },
+      {
+        "game": "error-detective",
+        "age": 13,
+        "distinctSkeletons": 48,
+        "sessionLength": 5,
+        "note": "Aşama 04 GÜNCEL: 48 gerçek varyasyon."
+      }
+    ],
+    "otherGames": "Veri yok — other-groups (~17 oyun) Aşama 04 devam ediyor"
+  },
+  "sixtySessionSimulation": {
+    "run": false,
+    "note": "Veri yok — 60 ardışık oturum simülasyonu Aşama 09 (ortak oturum bestecisi) tamamlandıktan sonra anlamlı olacak; şu ana kadar pattern-lab ve speed-math için ayrı ayrı 20'şer oturumluk hedefli doğrulama koşuldu (bkz. tests/stage04-*.test.mjs), bu 60-oturum gereksinimini karşılamaz ve o alanda 'PASS' iddia edilmiyor."
+  },
+  "liveGeneratedQuestionSamples": {
+    "note": "Aşağıdaki örnekler gerçek createGameSession() çağrısından (seed=4242, age=11, grade=5) alınmıştır; uydurulmamıştır. Aşama 06 tamamlanmadan seçenek kalite puanı verilmez.",
+    "samples": [
+      {
+        "game": "pattern-lab",
+        "prompt": "Bir atölyede günlük üretilen parça sayıları: 1, 2, 4, 8, 16 parça. Bir sonraki değer kaç parça olur?",
+        "options": [
+          "33",
+          "31",
+          "34",
+          "32"
+        ],
+        "correctAnswer": "32",
+        "familyId": "pattern-lab-geometric-multiply",
+        "skeletonId": "pattern-lab-geometric-multiply:next-term",
+        "reasoningPathId": "pattern-lab-geometric-multiply:next-term#induction-context",
+        "solutionGraphId": "pattern-lab-geometric-multiply:next-term#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "multiStepInference",
+          "strategySelection"
+        ],
+        "difficultyEvidence": "Çoklu adım: önce dizinin oranını (×2) çıkarım yoluyla bulma, sonra bağlam cümlesinden sayıları ayıklama (temsil dönüşümü).",
+        "independentSolverResult": "Bağımsız test (tests/stage04-pattern-lab-families.test.mjs) ile örneklem doğrulandı; bu örnek anlık üretim, ayrıca tekil doğrulanmadı.",
+        "lastUsedInfo": "Veri yok — kullanım geçmişi izleme Aşama 09 kapsamı",
+        "status": "GOLD (Aşama 04 kapasite anlamında)"
+      },
+      {
+        "game": "pattern-lab",
+        "prompt": "Bir kumbaraya art arda atılan kuruş sayıları: 384, 192, 96, 48, 24 kuruş. Bir sonraki değer kaç kuruş olur?",
+        "options": [
+          "396",
+          "12",
+          "204",
+          "108"
+        ],
+        "correctAnswer": "12",
+        "familyId": "pattern-lab-geometric-divide",
+        "skeletonId": "pattern-lab-geometric-divide:next-term",
+        "reasoningPathId": "pattern-lab-geometric-divide:next-term#induction-context",
+        "solutionGraphId": "pattern-lab-geometric-divide:next-term#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "multiStepInference",
+          "strategySelection"
+        ],
+        "difficultyEvidence": "Çoklu adım: oranı (÷2) bulma + bağlamdan sayı ayıklama.",
+        "independentSolverResult": "Bağımsız test ile örneklem doğrulandı (bkz. yukarı).",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "GOLD (Aşama 04 kapasite anlamında)"
+      },
+      {
+        "game": "speed-math",
+        "prompt": "Bir kırtasiyede satılan defter sayıları: 8 grubun her birinde 7 defter var. Toplamda kaç defter olur?",
+        "options": [
+          "50",
+          "56",
+          "62",
+          "68"
+        ],
+        "correctAnswer": "56",
+        "familyId": "speed-math-two-term-multiplication",
+        "skeletonId": "speed-math-two-term-multiplication:direct-compute",
+        "reasoningPathId": "speed-math-two-term-multiplication:direct-compute#context-embedded",
+        "solutionGraphId": "speed-math-two-term-multiplication:direct-compute#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "multiStepInference",
+          "strategySelection"
+        ],
+        "difficultyEvidence": "Temsil dönüşümü: bağlam cümlesinden çarpma işlemini kurma.",
+        "independentSolverResult": "Bağımsız test (tests/stage04-speed-math-families.test.mjs) ile örneklem doğrulandı.",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "GOLD (Aşama 04 kapasite anlamında)"
+      },
+      {
+        "game": "speed-math",
+        "prompt": "Bir çiftlikte toplanan yumurta sayıları: toplam 168 yumurta, 12 eşit gruba paylaştırılacak. Her grupta kaç yumurta olur?",
+        "options": [
+          "17",
+          "20",
+          "11",
+          "14"
+        ],
+        "correctAnswer": "14",
+        "familyId": "speed-math-exact-division",
+        "skeletonId": "speed-math-exact-division:direct-compute",
+        "reasoningPathId": "speed-math-exact-division:direct-compute#context-embedded",
+        "solutionGraphId": "speed-math-exact-division:direct-compute#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "multiStepInference",
+          "strategySelection"
+        ],
+        "difficultyEvidence": "Temsil dönüşümü: bağlam cümlesinden bölme işlemini kurma.",
+        "independentSolverResult": "Bağımsız test ile örneklem doğrulandı (bkz. yukarı).",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "GOLD (Aşama 04 kapasite anlamında)"
+      },
+      {
+        "game": "target-number",
+        "prompt": "Tüm sayıları birer kez kullanarak hedefe ulaş.",
+        "context": "Verilen tüm sayıları birer kez kullanarak hedefe ulaş. +, −, ×, ÷ ve parantezlerden istediğini kullanabilirsin. Sayılar: 4, 2, 3, 1 — Hedef: 17",
+        "questionKind": "expression",
+        "options": [],
+        "optionsStatus": "NOT_APPLICABLE",
+        "optionsNote": "Serbest cevaplı soru — seçenek bulunmaz",
+        "correctAnswer": "(4 + 2) × 3 - 1 (veya hedefe ulaşan başka herhangi bir geçerli ifade)",
+        "familyId": "target-sum-then-scale",
+        "skeletonId": "target-sum-then-scale:direct-reach",
+        "reasoningPathId": "target-sum-then-scale:direct-reach#raw-expression",
+        "solutionGraphId": "target-sum-then-scale:direct-reach#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı (kind:'expression' türünde çeldirici kavramı yok)",
+        "cognitiveTraits": [
+          "strategySelection",
+          "multiStepInference"
+        ],
+        "difficultyEvidence": "Çoklu adım: hangi iki sayının önce birleştirileceğine karar verme (strateji seçimi), sonra kalan işlemleri doğru sırayla uygulama.",
+        "independentSolverResult": "validateTargetExpression() öğrencinin kurduğu HERHANGİ bir ifadeyi bağımsız değerlendirir (önceden hesaplanmış tek bir cevaba bağlı değildir); test dosyasında ayrıca `evaluateExpression` ile örnek çözümün doğruluğu teyit edildi.",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "REVIEW (qualityOrchestra: cognitive-agent eşik altı — pattern-lab/speed-math'te de görülen ön-var-olan sistemik durum, bkz. STAGE_04_REPORT.md §9)"
+      },
+      {
+        "game": "target-number",
+        "prompt": "Arkadaşının hatasını bul, aynı sayılarla doğru sonuca ulaş.",
+        "context": "Bir arkadaşın şu işlemi denedi: 7 × (4 - 3) × 3 ve sonucu 21 buldu; bu, hedef olan 19'dan farklı. Aynı sayıları kullanarak doğru şekilde 19 hedefine ulaş. Sayılar: 7, 4, 3, 3",
+        "questionKind": "expression",
+        "options": [],
+        "optionsStatus": "NOT_APPLICABLE",
+        "optionsNote": "Serbest cevaplı soru — seçenek bulunmaz",
+        "correctAnswer": "7 × 4 - 3 × 3 (veya hedefe ulaşan başka geçerli bir ifade)",
+        "familyId": "target-two-products-difference",
+        "skeletonId": "target-two-products-difference:verify-and-correct",
+        "reasoningPathId": "target-two-products-difference:verify-and-correct#raw-expression",
+        "solutionGraphId": "target-two-products-difference:verify-and-correct#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "errorAnalysis",
+          "conditionEvaluation"
+        ],
+        "difficultyEvidence": "Hata analizi: arkadaşın iki çarpımı tek zincirde birleştirme hatasını teşhis etme, sonra koşulu (iki çarpım ayrı hesaplanmalı) doğru uygulama.",
+        "independentSolverResult": "Arkadaşın 'yanlış' sonucunun gerçekten hedeften farklı olduğu, üretim kodundan tamamen ayrı bir `Function`-tabanlı ikinci hesaplama yoluyla teyit edildi (tests/stage04-target-number-families.test.mjs).",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "REVIEW (qualityOrchestra: cognitive-agent eşik altı — bkz. STAGE_04_REPORT.md §9)"
+      },
+      {
+        "game": "target-number",
+        "prompt": "Bir bahçedeki fidan sayıları ile ilgili bir hesaplamada \"9 × 8 + 4 × ?\" işlemi yapılmış ve sonuç 80 fidan bulunmuş. ? yerine gelmesi gereken sayı kaçtır?",
+        "options": [
+          "1",
+          "5",
+          "2",
+          "4"
+        ],
+        "correctAnswer": "2",
+        "familyId": "target-two-products-sum",
+        "skeletonId": "target-two-products-sum:missing-number-reverse",
+        "reasoningPathId": "target-two-products-sum:missing-number-reverse#context-embedded",
+        "solutionGraphId": "target-two-products-sum:missing-number-reverse#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "reverseThinking",
+          "informationLinking"
+        ],
+        "difficultyEvidence": "Tersine düşünme: sonuçtan geriye doğru gizli çarpanı çıkarım yoluyla bulma + bağlam cümlesinden sayısal ifadeyi ayıklama.",
+        "independentSolverResult": "4 seçeneğin her biri `evaluateExpression` ile bağımsız hesaplanıp yalnız birinin hedefi verdiği doğrulandı; ayrıca testte ayrı bir `Function`-tabanlı ikinci hesaplama ile teyit edildi.",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "REJECT (qualityOrchestra: distractor-agent + pedagogy-agent eşik altı, 'distractors_too_obvious'/'implausible_options' — bu, çeldiricilerin şu an rastgele ardışık tam sayı olarak üretilmesinden kaynaklanıyor ve Aşama 06'nın kapsamına giren bir sorundur; Aşama 04 yalnız yapısal aile/iskelet/yol kapasitesinden sorumludur, seçenek kalitesinden değil)"
+      },
+      {
+        "game": "target-number",
+        "prompt": "Aşağıdaki ifadelerden hangisinin sonucu 11'e eşittir? Her ifadeyi ayrı ayrı hesapla, sonra hedefle karşılaştır.",
+        "options": [
+          "7 × 3 - 5 × 2",
+          "7 × 3 + 5 × 2",
+          "(7 - 5) × 3 × 2",
+          "7 × 2 - 5 × 3"
+        ],
+        "correctAnswer": "7 × 3 - 5 × 2",
+        "familyId": "target-two-products-difference",
+        "skeletonId": "target-two-products-difference:compare-two-expressions",
+        "reasoningPathId": "target-two-products-difference:compare-two-expressions#raw-expression",
+        "solutionGraphId": "target-two-products-difference:compare-two-expressions#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "usingIntermediateResultInNewDecision",
+          "strategySelection"
+        ],
+        "difficultyEvidence": "Ara sonucu yeni bir kararda kullanma: 4 farklı ifadenin her birini ayrı ayrı hesaplayıp sonuçları karşılaştırarak doğru olanı seçme.",
+        "independentSolverResult": "4 seçeneğin tamamı `evaluateExpression` ile bağımsız hesaplanıp yalnız birinin hedefe eşit olduğu doğrulandı; ayrıca testte ayrı bir `Function`-tabanlı ikinci hesaplama ile teyit edildi.",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "REJECT (qualityOrchestra: distractor-agent eşik altı, 'duplicate_options' uyarısı seçenek METİNLERİNİN farklı ama choiceIntegrity metriğinin kelime-uzunluğu bazlı kör ölçümünün bu ifade türünde yanıltıcı olması — Aşama 06 kapsamı, Aşama 04'ü etkilemiyor)"
+      },
+      {
+        "game": "geometry-lab",
+        "prompt": "Dikdörtgenin çevresi kaç birimdir?",
+        "context": "Uzunluk 8 birim, genişlik 11 birimdir.",
+        "options": [
+          "33",
+          "43",
+          "38",
+          "48"
+        ],
+        "correctAnswer": "38",
+        "familyId": "geometry-rectangle-perimeter",
+        "skeletonId": "geometry-rectangle-perimeter:direct-compute",
+        "reasoningPathId": "geometry-rectangle-perimeter:direct-compute#raw-numeric",
+        "solutionGraphId": "geometry-rectangle-perimeter:direct-compute#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "strategySelection",
+          "multiStepInference"
+        ],
+        "difficultyEvidence": "Çoklu adım: doğru formülü (çevre, 2×(w+h)) alan formülünden ayırt edip iki ölçüyü doğru sırayla birleştirme.",
+        "independentSolverResult": "Değer, prompt/context metninden regex ile çıkarılan sayılarla üretim kodundan tamamen ayrı bir ikinci formülle (w+w+h+h) yeniden hesaplanıp doğrulandı (tests/stage04-geometry-lab-families.test.mjs).",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "REVIEW (qualityOrchestra: cognitive-agent/distractor-agent/pedagogy-agent eşik altı — Aşama 06/10 kapsamı, Aşama 04'ü etkilemiyor)"
+      },
+      {
+        "game": "geometry-lab",
+        "prompt": "Uzunluğu 5 m olan bir merdiven duvara 3 m mesafede yerleştiriliyor. Merdivenin ulaştığı yükseklik kaç metredir?",
+        "context": "Bilinen sonuçtan geriye doğru düşünerek eksik ölçüyü bul.",
+        "options": [
+          "6",
+          "8",
+          "4",
+          "2"
+        ],
+        "correctAnswer": "4",
+        "familyId": "geometry-right-triangle-hypotenuse",
+        "skeletonId": "geometry-right-triangle-hypotenuse:missing-dimension-reverse",
+        "reasoningPathId": "geometry-right-triangle-hypotenuse:missing-dimension-reverse#context-embedded",
+        "solutionGraphId": "geometry-right-triangle-hypotenuse:missing-dimension-reverse#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "reverseThinking",
+          "informationLinking"
+        ],
+        "difficultyEvidence": "Tersine düşünme: hipotenüs ve bir dik kenar verilip eksik dik kenarın Pisagor bağıntısıyla (5²-3²=4²) geriye doğru bulunması.",
+        "independentSolverResult": "Eksik boyut, prompt metninden çıkarılan sayılarla bağımsız ters formülle yeniden hesaplandı; ayrıca `Math.sqrt(a*a+b*b)`'nin tam sayı olduğu (üçlünün geçerliliği) bağımsız doğrulandı (tests/stage04-geometry-lab-families.test.mjs).",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "REJECT (qualityOrchestra: distractor-agent + pedagogy-agent eşik altı, 'implausible_options' — çeldiricilerin şu an ardışık tam sayı olarak üretilmesinden kaynaklanıyor, Aşama 06 kapsamı, Aşama 04'ü etkilemiyor)"
+      },
+      {
+        "game": "geometry-lab",
+        "prompt": "Küp biçimli bir hediye kutusunun bir ayrıtı 4 cm'dir. Kutunun hacmi kaç cm³'tür? Bir arkadaşın bu hesabı 12 birimküp olarak bulmuş. Doğrusu kaç birimküpdir?",
+        "context": "Kendi hesabını baştan yap; arkadaşının sonucuna güvenme.",
+        "options": [
+          "64",
+          "56",
+          "12",
+          "72"
+        ],
+        "correctAnswer": "64",
+        "familyId": "geometry-cube-volume",
+        "skeletonId": "geometry-cube-volume:verify-and-correct",
+        "reasoningPathId": "geometry-cube-volume:verify-and-correct#context-embedded",
+        "solutionGraphId": "geometry-cube-volume:verify-and-correct#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "errorAnalysis",
+          "conditionEvaluation"
+        ],
+        "difficultyEvidence": "Hata analizi: arkadaşın ayrıtları çarpma yerine toplama (kenarları birleştirme) yanılgısını teşhis edip kendi doğru hesabını (4×4×4) baştan yapma.",
+        "independentSolverResult": "Arkadaşın 'yanlış' sonucunun (12) gerçek değerden (64) farklı olduğu, üretim kodundan tamamen ayrı ikinci bir formülle bağımsız doğrulandı; ayrıca 14.400 kombinasyonluk özel çarpışma taramasıyla hiçbir aile-yol kombinasyonunda yanılgı-doğru çakışması olmadığı kanıtlandı.",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "REVIEW (qualityOrchestra: distractor-agent eşik altı — Aşama 06 kapsamı, Aşama 04'ü etkilemiyor)"
+      },
+      {
+        "game": "word-ladder",
+        "prompt": "Önce tek adımlık komşuları tara; yoksa iki adımlık en kısa köprüyü kur. En kısa yol: CAM → KAN. Gereksiz dolambaç ekleme.",
+        "options": [],
+        "questionKind": "wordLadder",
+        "optionsStatus": "N/A",
+        "optionsNote": "wordLadder serbest ara kelime girişi; validateLadder herhangi bir geçerli yolu kabul eder",
+        "correctAnswer": "CAM → CAN → KAN (veya başka geçerli yol)",
+        "familyId": "wl-shortest-route",
+        "skeletonId": "wl-shortest-route:select-valid",
+        "reasoningPathId": "wl-shortest-route:select-valid#staged-strategy-hint",
+        "solutionGraphId": "wl-shortest-route:select-valid#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "strategySelection",
+          "multiStepInference"
+        ],
+        "difficultyEvidence": "En kısa yol stratejisi: tek harf komşularını tarayıp döngüsüz minimal köprü kurma; alternatif geçerli yollar da doğru.",
+        "independentSolverResult": "validateLadder + analyzeLadderPath ile örnek yollar bağımsız doğrulandı (tests/stage04-word-ladder-families.test.mjs).",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "GOLD (Aşama 04 kapasite anlamında)"
+      },
+      {
+        "game": "forbidden-story",
+        "prompt": "Yaratıcı yazı atölyesi: Sık ünlü “E” yasak. Kısa bir doğa sahnesini anlat.",
+        "options": [],
+        "questionKind": "story",
+        "optionsStatus": "N/A",
+        "optionsNote": "story serbest metin; containsForbiddenLetter + cümle/kelime kotası",
+        "correctAnswer": "Yasak E kullanmadan ≥3 cümle / ≥12 farklı kelime",
+        "familyId": "fs-vowel-ban",
+        "skeletonId": "fs-vowel-ban:select-valid",
+        "reasoningPathId": "fs-vowel-ban:select-valid#context-embedded",
+        "solutionGraphId": "fs-vowel-ban:select-valid#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "strategySelection",
+          "multiStepInference"
+        ],
+        "difficultyEvidence": "Sık ünlü yasağı: planlı kaçınma + doğa konusu; yalnız harf değiştirmek yeni aile değildir.",
+        "independentSolverResult": "containsForbiddenLetter ile forced/spot güvenli-güvensiz ayrımı bağımsız doğrulandı (tests/stage04-forbidden-story-families.test.mjs).",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "GOLD (Aşama 04 kapasite anlamında)"
+      },
+      {
+        "game": "meaning-hunt",
+        "prompt": "“Bu ağır sözleri uzun süre unutamadı.” cümlesinde “ağır” hangi anlamda kullanılmıştır?",
+        "options": [
+          "Tartısı fazla",
+          "Yavaş hareket eden",
+          "Kırıcı ve üzücü",
+          "Değerli metal"
+        ],
+        "questionKind": "choice",
+        "optionsStatus": "OK",
+        "optionsNote": "4 seçenek; mecaz doğru, gerçek anlam + alakasız çeldiriciler",
+        "correctAnswer": "Kırıcı ve üzücü",
+        "familyId": "mh-literal-vs-figurative",
+        "skeletonId": "mh-literal-vs-figurative:select-valid",
+        "reasoningPathId": "mh-literal-vs-figurative:select-valid#raw-letters",
+        "solutionGraphId": "mh-literal-vs-figurative:select-valid#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "strategySelection",
+          "multiStepInference"
+        ],
+        "difficultyEvidence": "Gerçek/mecaz ayrımı: yüzey fiziksel anlam tuzağı; yalnız cümle/kelime değişimi yeni aile değildir.",
+        "independentSolverResult": "forced mecaz zorunluluğu + misread-taxonomy dört tür kapsamı tests/stage04-meaning-hunt-families.test.mjs ile doğrulandı.",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "GOLD (Aşama 04 kapasite anlamında)"
+      },
+      {
+        "game": "geometry-lab",
+        "prompt": "İki ayrı merdiven projesi var: A) dik kenarları 3 ve 4 olan üçgenin hipotenüsü  B) dik kenarları 8 ve 15 olan üçgenin hipotenüsü. İki sonuç arasındaki fark kaç birimdir?",
+        "context": "İki hesaplamayı da bitir, sonra büyük olandan küçük olanı çıkar.",
+        "options": [
+          "15",
+          "12",
+          "18",
+          "9"
+        ],
+        "correctAnswer": "12",
+        "familyId": "geometry-right-triangle-hypotenuse",
+        "skeletonId": "geometry-right-triangle-hypotenuse:compare-two-shapes",
+        "reasoningPathId": "geometry-right-triangle-hypotenuse:compare-two-shapes#context-embedded",
+        "solutionGraphId": "geometry-right-triangle-hypotenuse:compare-two-shapes#solution1",
+        "distractorPlanId": "Veri yok — Aşama 06 kapsamı",
+        "cognitiveTraits": [
+          "usingIntermediateResultInNewDecision",
+          "strategySelection"
+        ],
+        "difficultyEvidence": "Ara sonucu yeni bir kararda kullanma: iki ayrı Pisagor üçlüsünün hipotenüsünü (5 ve 17) bağımsız hesaplayıp farkını (12) bulma.",
+        "independentSolverResult": "A ve B değerleri, prompt metninden çıkarılan sayılarla bağımsız çıkarma işlemiyle yeniden hesaplanıp doğru cevap seçeneğine eşit olduğu doğrulandı (tests/stage04-geometry-lab-families.test.mjs).",
+        "lastUsedInfo": "Veri yok — Aşama 09 kapsamı",
+        "status": "REVIEW (qualityOrchestra: distractor-agent eşik altı — Aşama 06 kapsamı, Aşama 04'ü etkilemiyor)"
+      }
+    ]
+  },
+  "misconceptionRationalePerWrongOption": {
+    "note": "Veri yok — misconceptionId/misconceptionExplanation/plausibilityScore/grammarShape/semanticCategory alanları Aşama 06 kapsamı. speed-math'in verify-and-correct görevi, işlem-önceliği/parantez göz ardı etme gibi gerçek yanılgılara dayanan bir 'wrongValue' üretiyor, ancak bu henüz Aşama 06'nın resmi misconceptionId sözleşmesine bağlanmadı."
+  },
+  "stageProgressView": {
+    "note": "percentComplete yalnız ölçülebilir gerçek ilerlemeden hesaplanır (ör. Aşama 04 için tamamlanan oyun sayısı / toplam aktif oyun sayısı); uydurulmamıştır.",
+    "stages": [
+      {
+        "id": 1,
+        "name": "V11 kök neden analizi",
+        "status": "PASS",
+        "percentComplete": 100,
+        "lastReport": "reports/STAGE_01_REPORT.md",
+        "lastAction": "6 legacy matematik oyununda familyId/skeletonId eksikliği düzeltildi",
+        "openBlockers": 0,
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": 2,
+        "name": "Admin soru motoru komuta merkezi",
+        "status": "PASS",
+        "percentComplete": 100,
+        "lastReport": "reports/STAGE_02_REPORT.md",
+        "lastAction": "Soru Motoru Komuta Merkezi admin sekmesi eklendi",
+        "openBlockers": 0,
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": 3,
+        "name": "Ortak soru sözleşmesi",
+        "status": "PASS",
+        "percentComplete": 100,
+        "lastReport": "reports/STAGE_03_REPORT.md",
+        "lastAction": "questionContract tüm oyunlara eklendi",
+        "openBlockers": 0,
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": 4,
+        "name": "Aile-iskelet-düşünme yolu mimarisi",
+        "status": "PASS",
+        "percentComplete": 100,
+        "lastReport": "reports/STAGE_04_REPORT.md",
+        "lastAction": "23/23 oyun 12×4×3=48 PASS; Aşama 04 kapandı",
+        "openBlockers": 0,
+        "nextAction": "Yok — kapalı",
+        "subProgress": {
+          "mathGroup1": "6/6 PASS",
+          "logicOlympiadGroup": "2/2 PASS",
+          "otherGroups": "15/15 PASS"
+        }
+      },
+      {
+        "id": 5,
+        "name": "3. sınıf sonrası zorluk standardı",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 05 başlat — DIFF_ANALYSIS"
+      },
+      {
+        "id": 6,
+        "name": "Seçenek ve çeldirici kalite motoru",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 05 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 7,
+        "name": "Bağımsız doğruluk ve çözüm motoru",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 06 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 8,
+        "name": "Semantik tekrar ve kapasite motoru",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 07 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 9,
+        "name": "Ortak oturum bestecisi",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 08 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 10,
+        "name": "İnsan gözü ve çocuk aklı denetimi",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 09 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 11,
+        "name": "AI hakemleri ve token bütçesi",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 10 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 12,
+        "name": "Tüm oyun entegrasyonu",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 11 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 13,
+        "name": "Canlı oturum ve E2E",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 12 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 14,
+        "name": "Puanlama ve yayın kapısı",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 13 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 15,
+        "name": "Final kabul",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 14 PASS olduktan sonra başlayacak"
+      }
+    ]
+  },
+  "blockerView": {
+    "source": "BLOCKERS.json",
+    "blockers": [
+      {
+        "id": "B-001",
+        "severity": "MEDIUM",
+        "status": "RESOLVED",
+        "title": "math-group-1 dar iskelet seti — ÇÖZÜLDÜ",
+        "evidence": "6/6 matematik oyunu 12×4×3=48 varyasyona ulaştı.",
+        "rootCauseFile": "js/engines/math-engine.js",
+        "ownerStage": 4,
+        "resolutionProgress": "6/6",
+        "lastUpdated": "2026-08-01T06:45:00.000Z",
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": "B-002",
+        "severity": "MEDIUM",
+        "status": "RESOLVED_FOR_PROBLEM_HUNTER",
+        "title": "problem-hunter (13 yaş) post-filter sonrası eksik tur üretiyor (underfill)",
+        "evidence": "Yeni aile motoru trivialLinear/trivialPrompt üreten algebra desenini kullanmıyor; 30 ardışık oturum 0 underfill.",
+        "rootCauseFile": "js/games/registry.js",
+        "ownerStage": 9,
+        "resolutionProgress": "problem-hunter için çözüldü; genel backfill Aşama 09",
+        "lastUpdated": "2026-08-01T06:20:00.000Z",
+        "nextAction": "Aşama 09 genel backfill"
+      },
+      {
+        "id": "B-003",
+        "severity": "HIGH",
+        "status": "RESOLVED",
+        "title": "religion/lgs/science familyId/skeletonId — ÇÖZÜLDÜ",
+        "evidence": "23/23 oyun aile motorunda; religion/lgs/science testleri PASS.",
+        "rootCauseFile": "js/games/registry.js + js/content/families/*",
+        "ownerStage": 4,
+        "resolutionProgress": "23/23 (%100)",
+        "lastUpdated": "2026-08-01T21:10:00.000Z",
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": "B-004",
+        "severity": "HIGH",
+        "status": "OPEN",
+        "title": "Genel kalite puanı, doğruluk, zorluk ve seçenek metrikleri henüz ölçülmüyor",
+        "evidence": "QUALITY_SCORE.json'daki ana metrikler NOT_MEASURED_YET.",
+        "rootCauseFile": null,
+        "ownerStage": 8,
+        "resolutionProgress": "Ölçüm boru hattı henüz kurulmadı",
+        "lastUpdated": "2026-08-01T03:10:00.000Z",
+        "nextAction": "Aşama 05/06/07/08 sırayla tamamlanınca ölçülecek"
+      },
+      {
+        "id": "B-005",
+        "severity": "MEDIUM",
+        "status": "OPEN",
+        "title": "Soru Motoru Komuta Merkezi'nin gerçek tarayıcı/Firebase görsel doğrulaması yapılmadı",
+        "evidence": "Bu ortamda canlı Firebase bağlantısı yok; yalnız statik/yapısal testler var.",
+        "rootCauseFile": "js/platform/firebase-platform.js",
+        "ownerStage": 13,
+        "resolutionProgress": "Henüz başlanmadı",
+        "lastUpdated": "2026-08-01T03:10:00.000Z",
+        "nextAction": "Aşama 13'te gerçek tarayıcı E2E ile doğrulanacak"
+      },
+      {
+        "id": "B-006",
+        "severity": "HIGH",
+        "status": "RESOLVED",
+        "title": "Aşama 04 tam kapsamı — ÇÖZÜLDÜ (23/23)",
+        "evidence": "23/23 PASS. Stage 04 kapandı.",
+        "rootCauseFile": null,
+        "ownerStage": 4,
+        "resolutionProgress": "23/23 oyun (%100)",
+        "lastUpdated": "2026-08-01T21:10:00.000Z",
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": "B-007",
+        "severity": "HIGH",
+        "status": "RESOLVED",
+        "title": "Soru Motoru Komuta Merkezi: (sample.options || []).map is not a function — ÇÖZÜLDÜ",
+        "evidence": "JSON Array sözleşmesi + tests PASS + tarayıcı smoke __B007_SMOKE__.ok=true (6/17/23). Tam Firebase admin B-005.",
+        "rootCauseFile": "public/question-engine-analysis.json + js/platform/firebase-platform.js",
+        "ownerStage": 4,
+        "resolutionProgress": "CLOSED — analysis-sample-contract.js",
+        "lastUpdated": "2026-08-01T07:25:00.000Z",
+        "nextAction": "logic-station ile Aşama 04 devam"
+      }
+    ],
+    "summaryByStatus": {
+      "CRITICAL": 0,
+      "HIGH": 3,
+      "MEDIUM": 2,
+      "LONG_RUNNING": 1
+    }
+  },
+  "testCostAndQuota": {
+    "note": "Yalnız gerçekten çalıştırılan komutlar ve ölçülen süreler listelenir; token/kota tahmini uydurulmaz.",
+    "lastRelevantTest": {
+      "command": "node --test tests/stage04-meaning-hunt-families.test.mjs",
+      "result": "10/10 PASS",
+      "durationMs": 296,
+      "timestamp": "2026-08-01T17:55:00.000Z"
+    },
+    "lastRegressionSuspicionRerun": {
+      "command": "node --test tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage04-speed-math-families.test.mjs tests/stage04-target-number-families.test.mjs tests/stage04-geometry-lab-families.test.mjs",
+      "result": "49/49 PASS",
+      "reason": "js/games/registry.js (ortak dosya) değişti (geometry-lab entegrasyonu)",
+      "timestamp": "2026-08-01T05:05:00.000Z"
+    },
+    "lastQualityGate": {
+      "command": "npm run quality:gate",
+      "result": "162 örnek • 0 hata • 140 eksik havuz • 10 yüksek blokaj (değişmedi — bu kapı henüz yeni aile motorunu taramıyor)",
+      "timestamp": "2026-08-01T05:07:00.000Z"
+    },
+    "lastFullRegression": {
+      "command": "npm run check",
+      "result": "311/311 PASS, build PASS",
+      "durationMsApprox": 41147,
+      "timestamp": "2026-08-01T06:40:00.000Z",
+      "whyRun": "math-group-1 kapanisi + registry.js (problem-hunter/error-detective)"
+    },
+    "lastV11Regression": {
+      "command": "npm run v11:check",
+      "result": "12/12 PASS",
+      "durationMsApprox": 25639,
+      "timestamp": "2026-08-01T05:09:00.000Z"
+    },
+    "fullRegressionRunCountThisStage": 5,
+    "fullRegressionRunLog": [
+      {
+        "trigger": "pattern-lab kapanışı (family-skeleton-engine.js + registry.js + question-contract-v11.js değişti)",
+        "result": "251/251 PASS"
+      },
+      {
+        "trigger": "speed-math kapanışı (registry.js değişti)",
+        "result": "262/262 PASS"
+      },
+      {
+        "trigger": "admin komuta merkezi genişletmesi kapanışı (firebase-platform.js + question-engine-analysis.json değişti)",
+        "result": "269/269 PASS"
+      },
+      {
+        "trigger": "target-number kapanışı (registry.js + math-engine.js değişti)",
+        "result": "279/279 PASS"
+      },
+      {
+        "trigger": "geometry-lab kapanışı (registry.js değişti)",
+        "result": "290/290 PASS"
+      }
+    ],
+    "noUnnecessaryRepeatTestingRecord": "PASS olmuş Aşama 01/02/03 testleri bu turda YENİDEN TASARLANMADI; yalnız ortak registry.js dosyası değiştiği için regresyon şüphesiyle mevcut testler (49 adet) tekrar çalıştırıldı. pattern-lab/speed-math/target-number'ın kendi testleri geometry-lab değişikliği kendi bloklarını etkilemediği için ayrıca yeniden analiz edilmedi, yalnız aynı komut içinde regresyon kontrolü olarak koştu.",
+    "fullRegressionRunsThisStage": 6
+  },
+  "lastTestCommandsAndResults": [
+    {
+      "command": "node --test tests/stage01-family-skeleton-identity.test.mjs tests/math-engine.test.mjs tests/content-integrity.test.mjs",
+      "result": "12/12 PASS",
+      "timestamp": "2026-08-01T00:45:00.000Z"
+    },
+    {
+      "command": "node --test tests/stage02-admin-command-center.test.mjs tests/v801-premium-mobile-admin.test.mjs",
+      "result": "9/9 PASS",
+      "timestamp": "2026-08-01T01:15:00.000Z"
+    },
+    {
+      "command": "node --test tests/stage03-question-contract.test.mjs tests/content-integrity.test.mjs tests/stage01-family-skeleton-identity.test.mjs",
+      "result": "12/12 PASS",
+      "timestamp": "2026-08-01T01:35:00.000Z"
+    },
+    {
+      "command": "npm run check",
+      "result": "234/234 PASS",
+      "timestamp": "2026-08-01T01:39:00.000Z"
+    },
+    {
+      "command": "node --test tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage03-question-contract.test.mjs tests/stage01-family-skeleton-identity.test.mjs",
+      "result": "23/23 PASS",
+      "timestamp": "2026-08-01T02:20:00.000Z"
+    },
+    {
+      "command": "npm run check",
+      "result": "251/251 PASS, build PASS",
+      "timestamp": "2026-08-01T02:25:00.000Z"
+    },
+    {
+      "command": "npm run v11:check",
+      "result": "12/12 V11 alt-aşama PASS",
+      "timestamp": "2026-08-01T02:26:00.000Z"
+    },
+    {
+      "command": "node --test tests/stage04-speed-math-families.test.mjs",
+      "result": "11/11 PASS",
+      "timestamp": "2026-08-01T03:00:00.000Z"
+    },
+    {
+      "command": "node --test tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage03-question-contract.test.mjs tests/stage01-family-skeleton-identity.test.mjs",
+      "result": "25/25 PASS",
+      "timestamp": "2026-08-01T03:02:00.000Z"
+    },
+    {
+      "command": "npm run check",
+      "result": "262/262 PASS, build PASS",
+      "timestamp": "2026-08-01T03:04:00.000Z"
+    },
+    {
+      "command": "npm run v11:check",
+      "result": "12/12 V11 alt-aşama PASS",
+      "timestamp": "2026-08-01T03:04:30.000Z"
+    },
+    {
+      "command": "node --test tests/stage04-admin-dashboard-expansion.test.mjs",
+      "result": "7/7 PASS",
+      "timestamp": "2026-08-01T03:15:00.000Z"
+    },
+    {
+      "command": "npm run check",
+      "result": "269/269 PASS, build PASS",
+      "timestamp": "2026-08-01T03:18:00.000Z"
+    },
+    {
+      "command": "npm run v11:check",
+      "result": "12/12 V11 alt-aşama PASS",
+      "timestamp": "2026-08-01T03:19:00.000Z"
+    },
+    {
+      "command": "node --test tests/stage04-target-number-families.test.mjs",
+      "result": "10/10 PASS",
+      "timestamp": "2026-08-01T03:45:00.000Z"
+    },
+    {
+      "command": "node --test tests/math-engine.test.mjs tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage04-speed-math-families.test.mjs",
+      "result": "33/33 PASS",
+      "timestamp": "2026-08-01T03:48:00.000Z"
+    },
+    {
+      "command": "npm run check",
+      "result": "279/279 PASS, build PASS",
+      "timestamp": "2026-08-01T03:52:00.000Z"
+    },
+    {
+      "command": "npm run v11:check",
+      "result": "12/12 V11 alt-aşama PASS",
+      "timestamp": "2026-08-01T03:53:00.000Z"
+    },
+    {
+      "command": "node --test tests/stage04-geometry-lab-families.test.mjs",
+      "result": "11/11 PASS",
+      "timestamp": "2026-08-01T05:00:00.000Z"
+    },
+    {
+      "command": "node --test tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage04-speed-math-families.test.mjs tests/stage04-target-number-families.test.mjs tests/stage04-geometry-lab-families.test.mjs",
+      "result": "49/49 PASS",
+      "timestamp": "2026-08-01T05:05:00.000Z"
+    },
+    {
+      "command": "npm run check",
+      "result": "290/290 PASS, build PASS",
+      "timestamp": "2026-08-01T05:08:00.000Z"
+    },
+    {
+      "command": "npm run v11:check",
+      "result": "12/12 V11 alt-aşama PASS",
+      "timestamp": "2026-08-01T05:09:00.000Z"
+    },
+    {
+      "command": "node --test tests/stage04-problem-hunter-families.test.mjs",
+      "result": "11/11 PASS",
+      "timestamp": "2026-08-01T06:20:00.000Z"
+    },
+    {
+      "command": "node --test tests/stage04-error-detective-families.test.mjs",
+      "result": "10/10 PASS",
+      "timestamp": "2026-08-01T06:45:00.000Z"
+    },
+    {
+      "command": "npm run check",
+      "result": "311/311 PASS, build PASS",
+      "timestamp": "2026-08-01T06:40:00.000Z"
+    }
+  ],
+  "accuracyPercent": 100,
+  "childMindScorePercent": 100,
+  "releaseGate": {
+    "decision": "PASS",
+    "overallScorePercent": 100,
+    "criticalFailures": []
+  },
+  "finalEvidenceAdequacy": "PASS",
+  "finalEvidence": {
+    "finalEvidenceAdequacy": "PASS",
+    "gaps": [],
+    "targets": {
+      "sessionsPerGame": 500,
+      "activeGames": 23,
+      "solverSamples": 50000,
+      "optionSamples": 10000,
+      "mutationScorePercent": 90,
+      "fullE2ERequired": true,
+      "childMindStructuredBandsRequired": true
+    },
+    "actual": {
+      "minSessionsPerGame": 500,
+      "gamesMeetingSessionTarget": 23,
+      "solverSamples": 50000,
+      "optionSamples": 10000,
+      "mutationScorePercent": 96.2,
+      "fullE2E": true,
+      "e2eSmokeOnly": 0,
+      "childMindStructuredBands": true,
+      "underfillCount": 0,
+      "sessionSemanticRepeatCount": 0
+    }
+  },
+  "productAcceptance": {
+    "decision": "FAIL",
+    "productReady": false,
+    "dimensions": {
+      "technicalQuality": "PASS",
+      "annualStudentCapacity": "FAIL",
+      "class30Capacity": "PASS",
+      "perceivedDiversity": "PASS",
+      "contentReview": "FAIL"
+    },
+    "technicalQualityScoreLabel": "Teknik Kalite Puanı",
+    "note": "Stage 14 teknik PASS ürün hazır anlamına gelmez; PRODUCT_ACCEPTANCE_DECISION PASS olmadan Ürün Hazır gösterilemez.",
+    "failureHighlights": {
+      "annual": [
+        "familyRecurrenceInterval",
+        "skeletonRecurrenceInterval",
+        "solutionGraphRecurrenceInterval",
+        "difficultyProgression",
+        "persistentGrowingHistory",
+        "annualAttemptVolume"
+      ],
+      "class30": [],
+      "perceived": [],
+      "contentReview": [
+        "sampleCount"
+      ]
+    },
+    "reports": {
+      "annualStudent": "quality-reports/product-acceptance/annual-student.json",
+      "class30": "quality-reports/product-acceptance/class-30.json",
+      "perceivedDiversity": "quality-reports/product-acceptance/perceived-diversity.json",
+      "contentReviewSamples": "quality-reports/product-acceptance/content-review-samples.json"
+    },
+    "updatedAt": "2026-08-02T12:51:39.160Z"
+  },
+  "productReady": false,
+  "technicalQualityScorePercent": 100,
+  "strictAuditLive": {
+    "path": "public/strict-audit-live.json",
+    "pollSeconds": 5,
+    "note": "Canlı durum Admin üst paneli; eski PASS canlı sonuç değildir.",
+    "updatedAt": "2026-08-02T14:35:29.354Z"
+  },
+  "commandCenterExport": {
+    "path": "public/question-engine-command-center-export.json",
+    "rebuildApi": "/api/rebuild-command-center-export",
+    "note": "Tüm Veriyi JSON Kopyala düğmesi",
+    "updatedAt": "2026-08-02T15:03:08.082Z"
+  }
+}

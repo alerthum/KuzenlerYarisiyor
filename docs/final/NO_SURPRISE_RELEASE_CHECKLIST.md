@@ -1,0 +1,14 @@
+# Sürpriz Eksik Bırakmama
+- Aynı aile sayı/isim değişerek dönmüyor.
+- Aynı çözüm grafiği erken tekrar etmiyor.
+- 3+ sınıfta kolay/orta yok.
+- Tüm şıklar konu ile ilgili.
+- Doğru cevap biçimden belli değil.
+- Öğrenci tüm şıkları değerlendirmek zorunda.
+- Yanlış şıkların gerçek yanılgısı var.
+- Cevap bağımsız solver ile doğrulandı.
+- Çözüm öğretici ve yanlış şıkları açıklıyor.
+- Yaş/müfredat uygun.
+- Tüm oyunlar ortak kapılardan geçiyor.
+- Karantina yayına çıkmıyor.
+- 500 oturum, web/mobil/admin E2E geçiyor.

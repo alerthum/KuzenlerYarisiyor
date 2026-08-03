@@ -1,0 +1,185 @@
+{
+  "version": "11.0.0",
+  "relations": [
+    {
+      "from": "INFO_SECME_01",
+      "to": "INFO_SECME_02",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "INFO_SECME_01",
+      "to": "INFO_SECME_03",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "INFO_SECME_02",
+      "to": "INFO_SECME_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "INFO_SECME_03",
+      "to": "CELISKI_KARSILASTIRMA_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "INFO_SECME_05",
+      "to": "SENTEZ_COKLU_02",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "BAGLAM_ANLAM_04",
+      "to": "METIN_YAPISI_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "BAGLAM_ANLAM_05",
+      "to": "METIN_AMACI_02",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "KANIT_BIRLESTIRME_02",
+      "to": "SENTEZ_COKLU_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "KANIT_BIRLESTIRME_04",
+      "to": "METIN_AMACI_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "KANIT_BIRLESTIRME_05",
+      "to": "CELISKI_KARSILASTIRMA_02",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_AMACI_01",
+      "to": "METIN_AMACI_05",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_AMACI_02",
+      "to": "GUVENILIRLIK_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_AMACI_03",
+      "to": "METIN_AMACI_02",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_AMACI_04",
+      "to": "CELISKI_KARSILASTIRMA_03",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_AMACI_05",
+      "to": "METIN_AMACI_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_YAPISI_01",
+      "to": "METIN_YAPISI_03",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_YAPISI_03",
+      "to": "METIN_YAPISI_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_YAPISI_04",
+      "to": "KANIT_BIRLESTIRME_04",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "METIN_YAPISI_05",
+      "to": "METIN_AMACI_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "GUVENILIRLIK_01",
+      "to": "METIN_AMACI_02",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "GUVENILIRLIK_04",
+      "to": "KANIT_BIRLESTIRME_04",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "GUVENILIRLIK_05",
+      "to": "GUVENILIRLIK_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "CELISKI_KARSILASTIRMA_01",
+      "to": "CELISKI_KARSILASTIRMA_02",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "CELISKI_KARSILASTIRMA_02",
+      "to": "CELISKI_KARSILASTIRMA_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "CELISKI_KARSILASTIRMA_02",
+      "to": "INFO_SECME_03",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "CELISKI_KARSILASTIRMA_03",
+      "to": "KANIT_BIRLESTIRME_05",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "SENTEZ_COKLU_01",
+      "to": "INFO_SECME_05",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "SENTEZ_COKLU_03",
+      "to": "CELISKI_KARSILASTIRMA_05",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "SENTEZ_COKLU_04",
+      "to": "BAGLAM_ANLAM_05",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    },
+    {
+      "from": "SENTEZ_COKLU_05",
+      "to": "SENTEZ_COKLU_01",
+      "relation": "NOT_SAME_SESSION",
+      "source": "skeleton.notTogetherWith"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+    "schemaVersion":  "1.0",
+    "runId":  "dede0f23-8979-42a4-83a5-9c2a6c181793",
+    "command":  "npm run quality:product-acceptance:strict:core",
+    "status":  "ABORTED",
+    "pid":  0,
+    "startedAt":  "2026-08-02T14:35:15.637Z",
+    "updatedAt":  "2026-08-02T16:12:34.178Z",
+    "lastHeartbeatAt":  "2026-08-02T16:12:34.178Z",
+    "finishedAt":  "2026-08-02T16:12:34.178Z",
+    "elapsedSeconds":  1811,
+    "phase":  "session",
+    "phaseLabel":  "DEVELOPMENT",
+    "currentGameId":  "science-reasoning",
+    "currentGameName":  "science-reasoning",
+    "currentGrade":  4,
+    "currentGradeBand":  "3-5",
+    "currentSessionIndex":  29,
+    "currentSessionTarget":  720,
+    "completedGames":  0,
+    "totalGames":  23,
+    "completedWorkUnits":  154,
+    "totalWorkUnits":  4100,
+    "progressPercent":  3.8,
+    "attemptedCandidates":  1200,
+    "acceptedCandidates":  825,
+    "rejectedCandidates":  375,
+    "underfillCount":  3660,
+    "semanticRepeatCount":  0,
+    "lastCompletedStep":  "science-reasoning oturum 29",
+    "lastActivityMessage":  "Proje kaynak kodunun doğrudan incelenmesi için kullanıcı tarafından güvenli şekilde durduruldu.",
+    "exitCode":  null,
+    "lastError":  null,
+    "hangFail":  null,
+    "checkpoint":  {
+                       "lastCompletedGameId":  null,
+                       "lastCompletedGradeBand":  null,
+                       "nextGameId":  null,
+                       "nextGradeBand":  "perceived",
+                       "completedPhases":  [
+                                               "annual",
+                                               "class30"
+                                           ],
+                       "completedGames":  [
+
+                                          ],
+                       "completedGameBands":  [
+
+                                              ]
+                   },
+    "recentEvents":  [
+                         {
+                             "time":  "2026-08-02T15:05:09.227Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:09.470Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:09.692Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:09.898Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:10.029Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:10.180Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:10.379Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:10.556Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:10.700Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:10.826Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:10.974Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:11.099Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:14.910Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:15.096Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:15.293Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:15.708Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:16.199Z",
+                             "level":  "WARN",
+                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+                         },
+                         {
+                             "time":  "2026-08-02T15:05:27.260Z",
+                             "level":  "ERROR",
+                             "message":  "Underfill kapasite sorunu nedeniyle kullanıcı tarafından teşhis için durduruldu."
+                         },
+                         {
+                             "time":  "2026-08-02T16:07:19.380Z",
+                             "level":  "INFO",
+                             "message":  "Repetition Policy V2 counterfactual shard’ları çalışıyor"
+                         },
+                         {
+                             "time":  "2026-08-02T16:07:19.385Z",
+                             "level":  "INFO",
+                             "message":  "Counterfactual: lgs-foundation / 8 (V1 vs V2)"
+                         }
+                     ],
+    "workType":  "DEVELOPMENT",
+    "currentTask":  "Counterfactual: lgs-foundation / 8 (V1 vs V2)",
+    "rootCause":  null,
+    "changedFiles":  [
+
+                     ],
+    "previousFillRate":  null,
+    "newFillRate":  null,
+    "previousUnderfill":  null,
+    "newUnderfill":  null,
+    "capacityDeficit":  null,
+    "addedBlueprintCount":  0,
+    "completedShard":  null,
+    "nextShard":  "lgs-foundation / 8",
+    "lastRealTestResult":  null
+}

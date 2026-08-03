@@ -1,0 +1,12 @@
+{
+  "version": "11.0.0-stage11",
+  "defaultDecision": "QUARANTINE",
+  "decisions": {
+    "PUBLISH": "Tüm katı sözleşmeler geçti; öğrenciye açılabilir.",
+    "REVIEW": "Yapısal olarak geçerli fakat editör incelemesi gerektiren kalite uyarısı var.",
+    "QUARANTINE": "Düzeltilebilir doğrulama veya biçim hatası var; öğrenciye gösterilemez.",
+    "REJECT": "Kimlik/sözleşme güvenliği ihlali var; üretim tamamen reddedilir."
+  },
+  "studentVisibility": {"PUBLISH": true, "REVIEW": false, "QUARANTINE": false, "REJECT": false},
+  "manualApprovalAllowed": {"PUBLISH": false, "REVIEW": true, "QUARANTINE": false, "REJECT": false}
+}

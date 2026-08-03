@@ -1,0 +1,16 @@
+{
+  "workType": "DEVELOPMENT",
+  "currentTask": "Counterfactual: lgs-foundation / 8 (V1 vs V2)",
+  "rootCause": "CX geçmişi süresiz/oyun bazlı tutuluyordu; akademik zaman ilerlemiyordu",
+  "changedFiles": [
+    "js/quality/repetition-policy-v2.js",
+    "js/games/registry.js",
+    "js/quality/product-acceptance-audit.js",
+    "js/quality/capacity-planner.js",
+    "js/quality/capacity-policy-shard-runner.js"
+  ],
+  "nextShard": "lgs-foundation / 8",
+  "updatedAt": "2026-08-02T16:07:19.383Z",
+  "workName": "CAPACITY POLICY V2 + BLUEPRINT RECOVERY",
+  "completedShard": null
+}

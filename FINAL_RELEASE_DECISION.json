@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "decidedAt": "2026-08-02T21:08:05.587Z",
+  "decision": "PASS",
+  "autoReturnToStage14": false,
+  "overallScorePercent": 100,
+  "overallScoreDisplay": "100",
+  "finalEvidenceAdequacy": "PASS",
+  "criticalFailures": [],
+  "evidenceGaps": [],
+  "evidence": {
+    "index": "FINAL_EVIDENCE_INDEX.json",
+    "actual": {
+      "minSessionsPerGame": 500,
+      "gamesMeetingSessionTarget": 23,
+      "solverSamples": 50000,
+      "optionSamples": 10000,
+      "mutationScorePercent": 96.2,
+      "fullE2E": true,
+      "childMindStructuredBands": true,
+      "underfillCount": 0,
+      "sessionSemanticRepeatCount": 0,
+      "e2eSmokeOnly": 0
+    }
+  },
+  "note": "Gerçek final kanıt eşikleri karşılandı."
+}

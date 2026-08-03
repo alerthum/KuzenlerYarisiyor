@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "learners",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {"fieldPath":"parentIds","arrayConfig":"CONTAINS"},
+        {"fieldPath":"status","order":"ASCENDING"}
+      ]
+    },
+    {
+      "collectionGroup": "classrooms",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {"fieldPath":"teacherIds","arrayConfig":"CONTAINS"},
+        {"fieldPath":"status","order":"ASCENDING"}
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

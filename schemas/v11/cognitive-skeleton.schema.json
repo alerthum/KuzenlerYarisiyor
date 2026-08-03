@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "zihin-arenasi/schemas/v11/cognitive-skeleton.schema.json",
+  "title": "Zihin Arenası V11 Cognitive Skeleton",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "skeletonId",
+    "familyId",
+    "visibleNameTr",
+    "mainSkill",
+    "subSkill",
+    "grades",
+    "textStructure",
+    "requirements",
+    "cognitiveSteps",
+    "correctAnswerLogic",
+    "distractors",
+    "difficultyRules",
+    "realVariationAxes",
+    "surfaceMakeupExamples",
+    "notTogetherWith",
+    "qualityRejectionReasons",
+    "sourceBasis"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "11.0.0"
+    },
+    "skeletonId": {
+      "type": "string",
+      "pattern": "^[A-Z_]+_\\d{2}$"
+    },
+    "familyId": {
+      "type": "string"
+    },
+    "visibleNameTr": {
+      "type": "string",
+      "minLength": 3
+    },
+    "mainSkill": {
+      "type": "string",
+      "minLength": 3
+    },
+    "subSkill": {
+      "type": "string",
+      "minLength": 3
+    },
+    "grades": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 12
+      }
+    },
+    "textStructure": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requirements": {
+      "type": "object"
+    },
+    "cognitiveSteps": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 3
+      }
+    },
+    "correctAnswerLogic": {
+      "type": "string",
+      "minLength": 10
+    },
+    "distractors": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "slot",
+          "misconception"
+        ]
+      }
+    },
+    "difficultyRules": {
+      "type": "object",
+      "required": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    "realVariationAxes": {
+      "type": "array",
+      "minItems": 1
+    },
+    "surfaceMakeupExamples": {
+      "type": "array",
+      "minItems": 1
+    },
+    "notTogetherWith": {
+      "type": "array"
+    },
+    "qualityRejectionReasons": {
+      "type": "array",
+      "minItems": 1
+    },
+    "sourceBasis": {
+      "type": "array",
+      "minItems": 1
+    }
+  }
+}

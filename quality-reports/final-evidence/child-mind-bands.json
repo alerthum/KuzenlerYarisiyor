@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-08-02T00:46:06.825Z",
+  "structuredAgeBands": true,
+  "bands": [
+    {
+      "band": "1-2",
+      "grades": [
+        1,
+        2
+      ],
+      "sampleCount": 208,
+      "audit": {
+        "scorePercent": 100,
+        "criticalRejects": 0,
+        "total": 208,
+        "meetsStageGate": true
+      }
+    },
+    {
+      "band": "3-5",
+      "grades": [
+        3,
+        4,
+        5
+      ],
+      "sampleCount": 208,
+      "audit": {
+        "scorePercent": 100,
+        "criticalRejects": 0,
+        "total": 208,
+        "meetsStageGate": true
+      }
+    },
+    {
+      "band": "6-8",
+      "grades": [
+        6,
+        7,
+        8
+      ],
+      "sampleCount": 200,
+      "audit": {
+        "scorePercent": 100,
+        "criticalRejects": 0,
+        "total": 200,
+        "meetsStageGate": true
+      }
+    },
+    {
+      "band": "9-12",
+      "grades": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "sampleCount": 208,
+      "audit": {
+        "scorePercent": 100,
+        "criticalRejects": 0,
+        "total": 208,
+        "meetsStageGate": true
+      }
+    }
+  ],
+  "overall": {
+    "scorePercent": 100,
+    "criticalRejects": 0,
+    "total": 824,
+    "meetsStageGate": true
+  },
+  "meetsStructuredEvidence": true
+}

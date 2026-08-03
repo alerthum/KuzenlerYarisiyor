@@ -1,0 +1,263 @@
+{
+  "metrics": {
+    "cognitiveDepthScore": 100,
+    "optionQualityScore": 100,
+    "accuracyPercent": 100,
+    "childMindScore": 100,
+    "semanticRepeatCount": 0,
+    "underfillCount": 0,
+    "grade3PlusEasyMediumPublishedCount": 0,
+    "irrelevantOptionCount": 0,
+    "formCueGiveawayCount": 0,
+    "sessionSemanticRepeatCount": 0,
+    "grade3PlusDifficultyScorePercent": 100,
+    "optionDistractorScorePercent": 100,
+    "allGamesOnSharedComposer": true,
+    "sampleCount": 805,
+    "sessionCount": 107
+  },
+  "gate": {
+    "overallScorePercent": 100,
+    "meetsStageGate": true,
+    "openCritical": 0,
+    "openHigh": 0,
+    "criticalFailures": [],
+    "decision": "PASS",
+    "autoReturnToStage14": false
+  },
+  "depth": {
+    "scorePercent": 100,
+    "total": 805,
+    "passing": 805,
+    "easyMediumPublishedCount": 0,
+    "criticalViolations": 0,
+    "violationCounts": {},
+    "meetsStageGate": true
+  },
+  "opts": {
+    "scorePercent": 100,
+    "total": 685,
+    "irrelevantOptionCount": 0,
+    "absurdOptionCount": 0,
+    "uniqueNegativeOptionCount": 0,
+    "formCueGiveawayCount": 0,
+    "answerableWithoutReadingAllOptionsCount": 0,
+    "missingMisconceptionCount": 0,
+    "meetsStageGate": true
+  },
+  "solver": {
+    "accuracyPercent": 100,
+    "total": 805,
+    "ok": 805,
+    "wrongAnswer": 0,
+    "multipleCorrect": 0,
+    "noCorrect": 0,
+    "explanationMismatch": 0,
+    "meetsStageGate": true
+  },
+  "semantic": {
+    "totalRounds": 805,
+    "sessionSemanticRepeatCount": 0,
+    "missingIdentity": 0,
+    "meetsStageGate": true
+  },
+  "child": {
+    "scorePercent": 100,
+    "criticalRejects": 0,
+    "total": 805,
+    "meetsStageGate": true
+  },
+  "smoke09": {
+    "results": [
+      {
+        "gameId": "pattern-lab",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "speed-math",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "target-number",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "geometry-lab",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "problem-hunter",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "error-detective",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "logic-station",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "olympiad-ladder",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "word-mine",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "word-ladder",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "forbidden-story",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "meaning-hunt",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "paragraph-detective",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "english-vocabulary",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "english-cloze",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "english-sentence-builder",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "social-time-travel",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "social-map-skills",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "social-citizenship",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "religion-practice",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "lgs-foundation",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "science-lab",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      },
+      {
+        "gameId": "science-reasoning",
+        "produced": 5,
+        "targetSessions": 5,
+        "underfill": 0,
+        "semanticRepeats": 0,
+        "ok": true
+      }
+    ],
+    "underfill": 0,
+    "semanticRepeats": 0,
+    "failedGames": [],
+    "allGamesOnSharedComposer": true,
+    "meetsStageGate": true
+  }
+}

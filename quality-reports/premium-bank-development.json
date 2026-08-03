@@ -1,0 +1,3581 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-02T23:52:10.328Z",
+  "status": "DEVELOPMENT_NOT_RELEASE",
+  "releaseReady": false,
+  "productReady": false,
+  "bank": {
+    "version": "3.5.0-development",
+    "sourcePackCount": 17,
+    "gameCount": 27,
+    "questionCount": 604,
+    "choiceQuestionCount": 524,
+    "premiumTaskCount": 80,
+    "familyCount": 525,
+    "topicCount": 418,
+    "allHaveThreeMisconceptions": true,
+    "allTasksHaveDiagnosticRules": true,
+    "subjectCount": 15,
+    "distinctTopicCount": 322,
+    "migratedGames": 27,
+    "remainingLegacyGames": []
+  },
+  "qualityGates": {
+    "checked": 604,
+    "passed": 604,
+    "failed": 0,
+    "failures": []
+  },
+  "representativeLiveSessions": {
+    "checkedGames": 27,
+    "passedGames": 27,
+    "failedGames": []
+  },
+  "gradeSafety": {
+    "enabled": true,
+    "wrongGradeFallbackAllowed": false,
+    "legacyFallbackAllowed": false,
+    "uncoveredGrades": [
+      1,
+      2,
+      9,
+      10,
+      11,
+      12
+    ],
+    "matrix": [
+      {
+        "grade": 1,
+        "productGradeSupported": false,
+        "applicableGameCount": 0,
+        "gamesWithAnyEligibleContent": 0,
+        "gamesWithFullSession": 0,
+        "coverageRate": 0,
+        "sourceGapGames": [],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 2,
+        "productGradeSupported": false,
+        "applicableGameCount": 0,
+        "gamesWithAnyEligibleContent": 0,
+        "gamesWithFullSession": 0,
+        "coverageRate": 0,
+        "sourceGapGames": [],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 3,
+        "productGradeSupported": true,
+        "applicableGameCount": 21,
+        "gamesWithAnyEligibleContent": 21,
+        "gamesWithFullSession": 21,
+        "coverageRate": 1,
+        "sourceGapGames": [],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 4,
+        "productGradeSupported": true,
+        "applicableGameCount": 21,
+        "gamesWithAnyEligibleContent": 21,
+        "gamesWithFullSession": 21,
+        "coverageRate": 1,
+        "sourceGapGames": [],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 5,
+        "productGradeSupported": true,
+        "applicableGameCount": 21,
+        "gamesWithAnyEligibleContent": 21,
+        "gamesWithFullSession": 21,
+        "coverageRate": 1,
+        "sourceGapGames": [],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 6,
+        "productGradeSupported": true,
+        "applicableGameCount": 21,
+        "gamesWithAnyEligibleContent": 21,
+        "gamesWithFullSession": 21,
+        "coverageRate": 1,
+        "sourceGapGames": [],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 7,
+        "productGradeSupported": true,
+        "applicableGameCount": 24,
+        "gamesWithAnyEligibleContent": 24,
+        "gamesWithFullSession": 24,
+        "coverageRate": 1,
+        "sourceGapGames": [],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 8,
+        "productGradeSupported": true,
+        "applicableGameCount": 24,
+        "gamesWithAnyEligibleContent": 24,
+        "gamesWithFullSession": 24,
+        "coverageRate": 1,
+        "sourceGapGames": [],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 9,
+        "productGradeSupported": true,
+        "applicableGameCount": 23,
+        "gamesWithAnyEligibleContent": 9,
+        "gamesWithFullSession": 9,
+        "coverageRate": 0.391,
+        "sourceGapGames": [
+          "english-cloze",
+          "pattern-lab",
+          "social-map-skills",
+          "english-vocabulary",
+          "word-ladder",
+          "english-sentence-builder",
+          "forbidden-story",
+          "social-time-travel",
+          "religion-practice",
+          "word-mine",
+          "target-number",
+          "speed-math",
+          "olympiad-ladder",
+          "lgs-foundation"
+        ],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 10,
+        "productGradeSupported": true,
+        "applicableGameCount": 23,
+        "gamesWithAnyEligibleContent": 9,
+        "gamesWithFullSession": 9,
+        "coverageRate": 0.391,
+        "sourceGapGames": [
+          "english-cloze",
+          "pattern-lab",
+          "social-map-skills",
+          "english-vocabulary",
+          "word-ladder",
+          "english-sentence-builder",
+          "forbidden-story",
+          "social-time-travel",
+          "religion-practice",
+          "word-mine",
+          "target-number",
+          "speed-math",
+          "olympiad-ladder",
+          "lgs-foundation"
+        ],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 11,
+        "productGradeSupported": true,
+        "applicableGameCount": 25,
+        "gamesWithAnyEligibleContent": 2,
+        "gamesWithFullSession": 2,
+        "coverageRate": 0.08,
+        "sourceGapGames": [
+          "error-detective",
+          "paragraph-detective",
+          "science-reasoning",
+          "logic-station",
+          "social-citizenship",
+          "english-cloze",
+          "problem-hunter",
+          "meaning-hunt",
+          "science-lab",
+          "pattern-lab",
+          "social-map-skills",
+          "english-vocabulary",
+          "word-ladder",
+          "english-sentence-builder",
+          "forbidden-story",
+          "geometry-lab",
+          "social-time-travel",
+          "religion-practice",
+          "word-mine",
+          "target-number",
+          "speed-math",
+          "olympiad-ladder",
+          "lgs-foundation"
+        ],
+        "underfillRiskGames": []
+      },
+      {
+        "grade": 12,
+        "productGradeSupported": true,
+        "applicableGameCount": 26,
+        "gamesWithAnyEligibleContent": 3,
+        "gamesWithFullSession": 3,
+        "coverageRate": 0.115,
+        "sourceGapGames": [
+          "error-detective",
+          "paragraph-detective",
+          "science-reasoning",
+          "logic-station",
+          "social-citizenship",
+          "english-cloze",
+          "problem-hunter",
+          "meaning-hunt",
+          "science-lab",
+          "pattern-lab",
+          "social-map-skills",
+          "english-vocabulary",
+          "word-ladder",
+          "english-sentence-builder",
+          "forbidden-story",
+          "geometry-lab",
+          "social-time-travel",
+          "religion-practice",
+          "word-mine",
+          "target-number",
+          "speed-math",
+          "olympiad-ladder",
+          "lgs-foundation"
+        ],
+        "underfillRiskGames": []
+      }
+    ]
+  },
+  "annualCapacity": {
+    "status": "NOT_MEASURED",
+    "staticHumanAuthoredContent": 604,
+    "blueprintPilot": {
+      "status": "PILOT_PASS",
+      "gradeBand": "9-10",
+      "coveredGames": 9,
+      "blueprintCount": 59,
+      "variantCount": 118,
+      "verifiedVariantCount": 118
+    },
+    "note": "59 blueprint ve 118/118 doğrulanmış varyantla çekirdek motor pilotu geçti; bu sonuç yıllık benzersiz deneyim kapasitesini kanıtlamaz. Müfredat genişliği ve öğrenci-yıl stres testi tamamlanmadan PASS verilemez."
+  },
+  "blockers": [
+    {
+      "id": "PREMIUM-GRADE-COVERAGE",
+      "severity": "CRITICAL",
+      "status": "OPEN",
+      "summary": "Tam kapsam olmayan desteklenen sınıflar: 9. sınıf 9/23; 10. sınıf 9/23; 11. sınıf 2/25; 12. sınıf 3/26. Yanlış sınıf sorusu vermek yerine SOURCE_GAP üretiliyor."
+    },
+    {
+      "id": "PREMIUM-ANNUAL-CAPACITY",
+      "severity": "CRITICAL",
+      "status": "OPEN",
+      "summary": "Kalite korumalı blueprint çekirdeği 59/59 blueprint ve 118/118 varyant pilotunda geçti; yıllık hacim, konu genişliği ve öğrenci-yıl tekrarsızlık kapasitesi henüz kanıtlanmadı."
+    },
+    {
+      "id": "PREMIUM-CURRICULUM-COVERAGE",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "summary": "27 oyun premium rotada olsa da 1–12 tüm ders, ünite ve kazanım kapsamı henüz tamamlanmadı."
+    }
+  ],
+  "games": [
+    {
+      "gameId": "error-detective",
+      "title": "Yanlış Çözümü Yakala",
+      "inventory": {
+        "questionCount": 34,
+        "familyCount": 21,
+        "topicCount": 22,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 5,
+        "produced": 5,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 14,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 14,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 14,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "paragraph-detective",
+      "title": "Paragraf Dedektifi",
+      "inventory": {
+        "questionCount": 36,
+        "familyCount": 27,
+        "topicCount": 25,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 8,
+        "produced": 8,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 16,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 16,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "science-reasoning",
+      "title": "Deney Dedektifi",
+      "inventory": {
+        "questionCount": 30,
+        "familyCount": 19,
+        "topicCount": 21,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 5,
+        "produced": 5,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "logic-station",
+      "title": "Zekâ İstasyonu",
+      "inventory": {
+        "questionCount": 36,
+        "familyCount": 28,
+        "topicCount": 28,
+        "subjectCount": 3,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 8,
+        "produced": 8,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 16,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 16,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "social-citizenship",
+      "title": "Aktif Vatandaş",
+      "inventory": {
+        "questionCount": 42,
+        "familyCount": 31,
+        "topicCount": 31,
+        "subjectCount": 3,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 22,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 22,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "english-cloze",
+      "title": "İngilizce Boşluk Avı",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 19,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "problem-hunter",
+      "title": "Yeni Nesil Problem Avcısı",
+      "inventory": {
+        "questionCount": 30,
+        "familyCount": 25,
+        "topicCount": 24,
+        "subjectCount": 3,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 5,
+        "produced": 5,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "meaning-hunt",
+      "title": "Anlam Avı",
+      "inventory": {
+        "questionCount": 30,
+        "familyCount": 20,
+        "topicCount": 16,
+        "subjectCount": 3,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 5,
+        "produced": 5,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "science-lab",
+      "title": "Fen Bilimleri Laboratuvarı",
+      "inventory": {
+        "questionCount": 32,
+        "familyCount": 26,
+        "topicCount": 26,
+        "subjectCount": 3,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 6,
+        "produced": 6,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 12,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 12,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 6,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 6,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "pattern-lab",
+      "title": "Örüntü Laboratuvarı",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 12,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 5,
+        "produced": 5,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 5,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 5,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "social-map-skills",
+      "title": "Harita ve Dünya",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 20,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "english-vocabulary",
+      "title": "Günün 20 İngilizce Kelimesi",
+      "inventory": {
+        "questionCount": 42,
+        "familyCount": 42,
+        "topicCount": 20,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 20,
+        "produced": 20,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 20,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 20,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 22,
+          "sessionLength": 20,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 22,
+          "sessionLength": 20,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 22,
+          "sessionLength": 20,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 20,
+          "sessionLength": 20,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 20,
+          "sessionLength": 20,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 20,
+          "sessionLength": 20,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 20,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 20,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 20,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 20,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "word-ladder",
+      "title": "Kelime Merdiveni",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 2,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [
+          "wordLadder"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "english-sentence-builder",
+      "title": "İngilizce Cümle Kurucu",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 2,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [
+          "wordOrder"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "forbidden-story",
+      "title": "Yasak Harf Hikâyesi",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 2,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [
+          "story"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 1,
+        "produced": 1,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "geometry-lab",
+      "title": "Geometri İnşa Alanı",
+      "inventory": {
+        "questionCount": 32,
+        "familyCount": 26,
+        "topicCount": 26,
+        "subjectCount": 3,
+        "gradeBands": [
+          "6-8",
+          "3-5",
+          "9-10"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 6,
+        "produced": 6,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 12,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 12,
+          "sessionLength": 6,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 6,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 6,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "social-time-travel",
+      "title": "Zaman Yolculuğu",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 20,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "religion-practice",
+      "title": "Din Kültürü Öğrenme Alanı",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 10,
+        "topicCount": 10,
+        "subjectCount": 1,
+        "gradeBands": [
+          "6-8"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "taskKinds": []
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 4,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 5,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 6,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "word-mine",
+      "title": "Kelime Madeni",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 10,
+        "topicCount": 1,
+        "subjectCount": 1,
+        "gradeBands": [
+          "3-8"
+        ],
+        "taskKinds": [
+          "wordMine"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 1,
+        "produced": 1,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 1,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 1,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "target-number",
+      "title": "Hedef Sayı",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 10,
+        "topicCount": 1,
+        "subjectCount": 1,
+        "gradeBands": [
+          "3-8"
+        ],
+        "taskKinds": [
+          "expression"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 4,
+        "produced": 4,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 4,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 4,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 4,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 4,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 4,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 4,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 4,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 4,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 4,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 4,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 4,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 4,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "speed-math",
+      "title": "Hızlı İşlem Arenası",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 20,
+        "subjectCount": 2,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 8,
+        "produced": 8,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "olympiad-ladder",
+      "title": "Olimpiyat Merdiveni",
+      "inventory": {
+        "questionCount": 20,
+        "familyCount": 20,
+        "topicCount": 20,
+        "subjectCount": 3,
+        "gradeBands": [
+          "6-8",
+          "3-5"
+        ],
+        "taskKinds": [],
+        "allHaveThreeMisconceptions": true,
+        "allHaveDiagnosticRules": true
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 4,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 5,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 6,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "lgs-foundation",
+      "title": "LGS Soru Kalıbı Arşivi",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 10,
+        "topicCount": 10,
+        "subjectCount": 6,
+        "gradeBands": [
+          "6-8"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "taskKinds": []
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 10,
+        "produced": 10,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 4,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 5,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 6,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 10,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 10,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 0,
+          "sessionLength": 10,
+          "fullSessionPossible": false,
+          "status": "SOURCE_GAP"
+        }
+      ]
+    },
+    {
+      "gameId": "lgs-focus",
+      "title": "LGS Akıllı Çalışma",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 10,
+        "topicCount": 10,
+        "subjectCount": 6,
+        "gradeBands": [
+          "6-8"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "taskKinds": []
+      },
+      "representativeLiveSession": {
+        "grade": 8,
+        "requested": 8,
+        "produced": 8,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 4,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 5,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 6,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 7,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 8,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 9,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 10,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 11,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 12,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    {
+      "gameId": "tyt-focus",
+      "title": "TYT Akıllı Çalışma",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 10,
+        "topicCount": 10,
+        "subjectCount": 7,
+        "gradeBands": [
+          "9-12"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "taskKinds": []
+      },
+      "representativeLiveSession": {
+        "grade": 12,
+        "requested": 8,
+        "produced": 8,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 4,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 5,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 6,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 7,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 8,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 9,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 10,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "gameId": "ayt-focus",
+      "title": "AYT Alan Çalışması",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 10,
+        "topicCount": 10,
+        "subjectCount": 6,
+        "gradeBands": [
+          "9-12"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "taskKinds": []
+      },
+      "representativeLiveSession": {
+        "grade": 12,
+        "requested": 8,
+        "produced": 8,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 4,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 5,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 6,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 7,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 8,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 9,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 10,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 11,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "gameId": "kpss-focus",
+      "title": "KPSS Genel Yetenek–Kültür",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 10,
+        "topicCount": 10,
+        "subjectCount": 5,
+        "gradeBands": [
+          "9-12"
+        ],
+        "allHaveThreeMisconceptions": true,
+        "taskKinds": []
+      },
+      "representativeLiveSession": {
+        "grade": 12,
+        "requested": 8,
+        "produced": 8,
+        "premiumOnly": true,
+        "pass": true
+      },
+      "gradeCoverage": [
+        {
+          "grade": 1,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 2,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 3,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 4,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 5,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 6,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 7,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 8,
+          "applicable": false,
+          "eligibleContent": 0,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 9,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 10,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 11,
+          "applicable": false,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "NOT_APPLICABLE"
+        },
+        {
+          "grade": 12,
+          "applicable": true,
+          "eligibleContent": 10,
+          "sessionLength": 8,
+          "fullSessionPossible": true,
+          "status": "PASS"
+        }
+      ]
+    }
+  ]
+}

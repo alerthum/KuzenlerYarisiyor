@@ -1,0 +1,2153 @@
+{
+  "kind": "annual-student",
+  "pass": false,
+  "gates": {
+    "exactQuestionRepeat": true,
+    "familyRecurrenceInterval": false,
+    "skeletonRecurrenceInterval": false,
+    "reasoningPathRecurrenceInterval": true,
+    "solutionGraphRecurrenceInterval": false,
+    "distractorPlanRecurrenceInterval": true,
+    "perceivedSemanticCluster": true,
+    "curriculumCoverage": true,
+    "difficultyProgression": false,
+    "adaptiveRouteChanges": true,
+    "persistentGrowingHistory": true,
+    "sessionsCompleted": true,
+    "annualAttemptVolume": true
+  },
+  "summary": {
+    "weeks": 36,
+    "sessionsPerWeek": 20,
+    "sessionsCompleted": 875,
+    "attemptsTotal": 3602,
+    "minAttemptsTarget": 3600,
+    "distinctQuestionKeys": 3602,
+    "exactQuestionRepeatCount": 0,
+    "curriculumTopicCount": 56,
+    "difficultyProgression": {
+      "firstHalfMean": 4.88,
+      "secondHalfMean": 5,
+      "delta": 0.12
+    },
+    "adaptiveRouteChanges": 363,
+    "persistentGrowingHistory": true
+  },
+  "metrics": {
+    "exactQuestionRepeat": {
+      "count": 0,
+      "samples": []
+    },
+    "familyRecurrenceInterval": {
+      "distinctKeys": 271,
+      "recurringKeys": 267,
+      "minInterval": 0,
+      "meanInterval": 62.7,
+      "shortRecurrenceKeys": [
+        "wm-vowel-rich",
+        "wl-suffix-stable",
+        "wm-repeated-letter",
+        "wm-consonant-cluster",
+        "wm-loanword-pattern",
+        "wm-long-sparse",
+        "wm-dual-source-compare",
+        "wm-min-length-gate"
+      ],
+      "topRecurring": [
+        {
+          "key": "ev-context-cloze",
+          "occurrences": 33,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            124,
+            23,
+            23
+          ],
+          "meanInterval": 26.88,
+          "minInterval": 23
+        },
+        {
+          "key": "ev-collocation",
+          "occurrences": 32,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            170
+          ],
+          "meanInterval": 27.74,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-cardinal-direction",
+          "occurrences": 28,
+          "intervals": [
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            69,
+            147,
+            23
+          ],
+          "meanInterval": 31,
+          "minInterval": 23
+        },
+        {
+          "key": "rp-value-situation",
+          "occurrences": 26,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            69,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            69,
+            23,
+            23,
+            46,
+            147,
+            23
+          ],
+          "meanInterval": 33.48,
+          "minInterval": 23
+        },
+        {
+          "key": "ls-multi-clue-order",
+          "occurrences": 25,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            46,
+            23,
+            23,
+            23,
+            69,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            69,
+            23,
+            92,
+            101,
+            23,
+            23
+          ],
+          "meanInterval": 35.83,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-article",
+          "occurrences": 25,
+          "intervals": [
+            46,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            46,
+            46,
+            46,
+            23,
+            46,
+            23,
+            23,
+            170
+          ],
+          "meanInterval": 35.83,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-preposition",
+          "occurrences": 25,
+          "intervals": [
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            69,
+            23,
+            23,
+            46,
+            23,
+            193
+          ],
+          "meanInterval": 33.92,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-pronoun",
+          "occurrences": 25,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            69,
+            69,
+            23,
+            69,
+            170,
+            46
+          ],
+          "meanInterval": 35.83,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-legend-symbol",
+          "occurrences": 25,
+          "intervals": [
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            69,
+            23,
+            239
+          ],
+          "meanInterval": 34.88,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-lat-long",
+          "occurrences": 25,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            46,
+            69,
+            170
+          ],
+          "meanInterval": 33.92,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-border-region",
+          "occurrences": 25,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            69,
+            23,
+            23,
+            46
+          ],
+          "meanInterval": 26.83,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-participation",
+          "occurrences": 25,
+          "intervals": [
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            115,
+            23,
+            170
+          ],
+          "meanInterval": 34.88,
+          "minInterval": 23
+        },
+        {
+          "key": "ol-consecutive-sum",
+          "occurrences": 24,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            21,
+            2,
+            23,
+            16,
+            30,
+            44,
+            2,
+            19,
+            2,
+            23
+          ],
+          "meanInterval": 21.91,
+          "minInterval": 2
+        },
+        {
+          "key": "ev-definition-match",
+          "occurrences": 24,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            69,
+            23,
+            23,
+            23,
+            46,
+            262
+          ],
+          "meanInterval": 37.39,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-subject-verb",
+          "occurrences": 24,
+          "intervals": [
+            23,
+            23,
+            23,
+            46,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            69,
+            23,
+            92,
+            46,
+            46,
+            124,
+            46
+          ],
+          "meanInterval": 37.39,
+          "minInterval": 23
+        },
+        {
+          "key": "stt-primary-source",
+          "occurrences": 24,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            46,
+            46,
+            23,
+            46,
+            69,
+            147
+          ],
+          "meanInterval": 35.39,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-map-type",
+          "occurrences": 24,
+          "intervals": [
+            23,
+            23,
+            46,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            69,
+            46,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            46,
+            46,
+            147
+          ],
+          "meanInterval": 36.39,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-rights-duties",
+          "occurrences": 24,
+          "intervals": [
+            23,
+            23,
+            23,
+            46,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            46,
+            46,
+            46,
+            23,
+            170,
+            23
+          ],
+          "meanInterval": 36.39,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-equality",
+          "occurrences": 24,
+          "intervals": [
+            46,
+            23,
+            23,
+            46,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            69,
+            23
+          ],
+          "meanInterval": 29,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-responsibility",
+          "occurrences": 24,
+          "intervals": [
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            23,
+            46,
+            161,
+            124
+          ],
+          "meanInterval": 35.39,
+          "minInterval": 23
+        }
+      ]
+    },
+    "skeletonRecurrenceInterval": {
+      "distinctKeys": 986,
+      "recurringKeys": 909,
+      "minInterval": 0,
+      "meanInterval": 181.32,
+      "shortRecurrenceKeys": [
+        "wl-suffix-stable:compare-worlds"
+      ],
+      "topRecurring": [
+        {
+          "key": "ol-consecutive-sum:select-valid",
+          "occurrences": 15,
+          "intervals": [
+            69,
+            23,
+            69,
+            115,
+            67,
+            2,
+            23,
+            16,
+            30,
+            44,
+            2,
+            19,
+            2,
+            23
+          ],
+          "meanInterval": 36,
+          "minInterval": 2
+        },
+        {
+          "key": "rp-value-situation:select-valid",
+          "occurrences": 12,
+          "intervals": [
+            23,
+            23,
+            92,
+            23,
+            115,
+            92,
+            46,
+            23,
+            46,
+            115,
+            239
+          ],
+          "meanInterval": 76.09,
+          "minInterval": 23
+        },
+        {
+          "key": "lgs-science-claim:select-valid",
+          "occurrences": 12,
+          "intervals": [
+            46,
+            23,
+            69,
+            92,
+            46,
+            161,
+            92,
+            23,
+            69,
+            23,
+            23
+          ],
+          "meanInterval": 60.64,
+          "minInterval": 23
+        },
+        {
+          "key": "wl-bidirectional:select-valid",
+          "occurrences": 12,
+          "intervals": [
+            138,
+            23,
+            69,
+            46,
+            92,
+            23,
+            23,
+            69,
+            23,
+            23,
+            262
+          ],
+          "meanInterval": 71.91,
+          "minInterval": 23
+        },
+        {
+          "key": "ev-definition-match:compare-worlds",
+          "occurrences": 12,
+          "intervals": [
+            115,
+            23,
+            46,
+            69,
+            23,
+            69,
+            23,
+            23,
+            23,
+            46,
+            262
+          ],
+          "meanInterval": 65.64,
+          "minInterval": 23
+        },
+        {
+          "key": "stt-secondary-source:select-valid",
+          "occurrences": 11,
+          "intervals": [
+            23,
+            46,
+            92,
+            46,
+            46,
+            92,
+            92,
+            23,
+            115,
+            239
+          ],
+          "meanInterval": 81.4,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-map-type:select-valid",
+          "occurrences": 11,
+          "intervals": [
+            138,
+            69,
+            46,
+            46,
+            138,
+            92,
+            23,
+            23,
+            23,
+            239
+          ],
+          "meanInterval": 83.7,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-participation:select-valid",
+          "occurrences": 11,
+          "intervals": [
+            115,
+            23,
+            69,
+            46,
+            23,
+            138,
+            92,
+            23,
+            115,
+            193
+          ],
+          "meanInterval": 83.7,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-equality:select-valid",
+          "occurrences": 11,
+          "intervals": [
+            138,
+            92,
+            46,
+            23,
+            69,
+            115,
+            23,
+            23,
+            46,
+            69
+          ],
+          "meanInterval": 64.4,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-responsibility:select-valid",
+          "occurrences": 11,
+          "intervals": [
+            115,
+            69,
+            92,
+            23,
+            23,
+            69,
+            46,
+            23,
+            230,
+            124
+          ],
+          "meanInterval": 81.4,
+          "minInterval": 23
+        },
+        {
+          "key": "rp-empathy-perspective:select-valid",
+          "occurrences": 11,
+          "intervals": [
+            46,
+            46,
+            115,
+            69,
+            23,
+            46,
+            69,
+            69,
+            46,
+            308
+          ],
+          "meanInterval": 83.7,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-preposition:select-valid",
+          "occurrences": 10,
+          "intervals": [
+            161,
+            46,
+            46,
+            46,
+            46,
+            69,
+            92,
+            23,
+            92
+          ],
+          "meanInterval": 69,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-pronoun:select-valid",
+          "occurrences": 10,
+          "intervals": [
+            115,
+            69,
+            23,
+            46,
+            69,
+            23,
+            138,
+            331,
+            46
+          ],
+          "meanInterval": 95.56,
+          "minInterval": 23
+        },
+        {
+          "key": "stt-primary-source:select-valid",
+          "occurrences": 10,
+          "intervals": [
+            69,
+            46,
+            23,
+            115,
+            92,
+            69,
+            69,
+            69,
+            46
+          ],
+          "meanInterval": 66.44,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-population-density:select-valid",
+          "occurrences": 10,
+          "intervals": [
+            23,
+            92,
+            23,
+            115,
+            115,
+            138,
+            46,
+            46,
+            239
+          ],
+          "meanInterval": 93,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-route-planning:select-valid",
+          "occurrences": 10,
+          "intervals": [
+            23,
+            138,
+            138,
+            23,
+            92,
+            161,
+            23,
+            46,
+            193
+          ],
+          "meanInterval": 93,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-environment-civic:select-valid",
+          "occurrences": 10,
+          "intervals": [
+            115,
+            69,
+            23,
+            23,
+            92,
+            23,
+            23,
+            92,
+            69
+          ],
+          "meanInterval": 58.78,
+          "minInterval": 23
+        },
+        {
+          "key": "lgs-data-table:select-valid",
+          "occurrences": 10,
+          "intervals": [
+            161,
+            115,
+            46,
+            69,
+            92,
+            69,
+            69,
+            69,
+            147
+          ],
+          "meanInterval": 93,
+          "minInterval": 46
+        },
+        {
+          "key": "lgs-misread-taxonomy:select-valid",
+          "occurrences": 10,
+          "intervals": [
+            115,
+            46,
+            23,
+            92,
+            23,
+            23,
+            46,
+            92,
+            331
+          ],
+          "meanInterval": 87.89,
+          "minInterval": 23
+        },
+        {
+          "key": "ev-collocation:select-valid",
+          "occurrences": 9,
+          "intervals": [
+            115,
+            115,
+            46,
+            46,
+            115,
+            23,
+            46,
+            184
+          ],
+          "meanInterval": 86.25,
+          "minInterval": 23
+        }
+      ]
+    },
+    "reasoningPathRecurrenceInterval": {
+      "distinctKeys": 2514,
+      "recurringKeys": 769,
+      "minInterval": 2,
+      "meanInterval": 256.8,
+      "shortRecurrenceKeys": [],
+      "topRecurring": [
+        {
+          "key": "ol-consecutive-sum:select-valid#context-embedded",
+          "occurrences": 5,
+          "intervals": [
+            69,
+            299,
+            16,
+            74
+          ],
+          "meanInterval": 114.5,
+          "minInterval": 16
+        },
+        {
+          "key": "ol-consecutive-sum:select-valid#staged-strategy-hint",
+          "occurrences": 5,
+          "intervals": [
+            184,
+            138,
+            65,
+            2
+          ],
+          "meanInterval": 97.25,
+          "minInterval": 2
+        },
+        {
+          "key": "ol-consecutive-sum:select-valid#raw-numeric",
+          "occurrences": 5,
+          "intervals": [
+            182,
+            2,
+            115,
+            44
+          ],
+          "meanInterval": 85.75,
+          "minInterval": 2
+        },
+        {
+          "key": "ec-pronoun:select-valid#raw-letters",
+          "occurrences": 4,
+          "intervals": [
+            115,
+            207,
+            538
+          ],
+          "meanInterval": 286.67,
+          "minInterval": 115
+        },
+        {
+          "key": "ec-connector:select-valid#staged-strategy-hint",
+          "occurrences": 4,
+          "intervals": [
+            276,
+            46,
+            69
+          ],
+          "meanInterval": 130.33,
+          "minInterval": 46
+        },
+        {
+          "key": "stt-primary-source:select-valid#raw-letters",
+          "occurrences": 4,
+          "intervals": [
+            345,
+            138,
+            115
+          ],
+          "meanInterval": 199.33,
+          "minInterval": 115
+        },
+        {
+          "key": "stt-secondary-source:select-valid#staged-strategy-hint",
+          "occurrences": 4,
+          "intervals": [
+            23,
+            230,
+            184
+          ],
+          "meanInterval": 145.67,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-map-type:select-valid#context-embedded",
+          "occurrences": 4,
+          "intervals": [
+            138,
+            299,
+            92
+          ],
+          "meanInterval": 176.33,
+          "minInterval": 92
+        },
+        {
+          "key": "sc-participation:select-valid#raw-letters",
+          "occurrences": 4,
+          "intervals": [
+            138,
+            69,
+            207
+          ],
+          "meanInterval": 138,
+          "minInterval": 69
+        },
+        {
+          "key": "sc-responsibility:select-valid#context-embedded",
+          "occurrences": 4,
+          "intervals": [
+            115,
+            69,
+            506
+          ],
+          "meanInterval": 230,
+          "minInterval": 69
+        },
+        {
+          "key": "rp-value-situation:select-valid#context-embedded",
+          "occurrences": 4,
+          "intervals": [
+            23,
+            23,
+            368
+          ],
+          "meanInterval": 138,
+          "minInterval": 23
+        },
+        {
+          "key": "rp-empathy-perspective:select-valid#raw-letters",
+          "occurrences": 4,
+          "intervals": [
+            46,
+            46,
+            391
+          ],
+          "meanInterval": 161,
+          "minInterval": 46
+        },
+        {
+          "key": "lgs-data-table:select-valid#context-embedded",
+          "occurrences": 4,
+          "intervals": [
+            483,
+            69,
+            138
+          ],
+          "meanInterval": 230,
+          "minInterval": 69
+        },
+        {
+          "key": "lgs-science-claim:select-valid#raw-letters",
+          "occurrences": 4,
+          "intervals": [
+            230,
+            207,
+            207
+          ],
+          "meanInterval": 214.67,
+          "minInterval": 207
+        },
+        {
+          "key": "ev-context-cloze:forced-fact#staged-strategy-hint",
+          "occurrences": 4,
+          "intervals": [
+            115,
+            345,
+            207
+          ],
+          "meanInterval": 222.33,
+          "minInterval": 115
+        },
+        {
+          "key": "ec-pronoun:forced-fact#staged-strategy-hint",
+          "occurrences": 4,
+          "intervals": [
+            46,
+            69,
+            437
+          ],
+          "meanInterval": 184,
+          "minInterval": 46
+        },
+        {
+          "key": "ec-quantifier:forced-fact#staged-strategy-hint",
+          "occurrences": 4,
+          "intervals": [
+            92,
+            23,
+            138
+          ],
+          "meanInterval": 84.33,
+          "minInterval": 23
+        },
+        {
+          "key": "stt-primary-source:forced-fact#staged-strategy-hint",
+          "occurrences": 4,
+          "intervals": [
+            253,
+            161,
+            230
+          ],
+          "meanInterval": 214.67,
+          "minInterval": 161
+        },
+        {
+          "key": "lgs-misread-taxonomy:select-valid#context-embedded",
+          "occurrences": 4,
+          "intervals": [
+            115,
+            345,
+            331
+          ],
+          "meanInterval": 263.67,
+          "minInterval": 115
+        },
+        {
+          "key": "sr-hypothesis-testability:spot-violation#raw-letters",
+          "occurrences": 4,
+          "intervals": [
+            276,
+            138,
+            23
+          ],
+          "meanInterval": 145.67,
+          "minInterval": 23
+        }
+      ]
+    },
+    "solutionGraphRecurrenceInterval": {
+      "distinctKeys": 986,
+      "recurringKeys": 909,
+      "minInterval": 0,
+      "meanInterval": 181.32,
+      "shortRecurrenceKeys": [
+        "wl-suffix-stable:compare-worlds#solution1"
+      ],
+      "topRecurring": [
+        {
+          "key": "ol-consecutive-sum:select-valid#solution1",
+          "occurrences": 15,
+          "intervals": [
+            69,
+            23,
+            69,
+            115,
+            67,
+            2,
+            23,
+            16,
+            30,
+            44,
+            2,
+            19,
+            2,
+            23
+          ],
+          "meanInterval": 36,
+          "minInterval": 2
+        },
+        {
+          "key": "rp-value-situation:select-valid#solution1",
+          "occurrences": 12,
+          "intervals": [
+            23,
+            23,
+            92,
+            23,
+            115,
+            92,
+            46,
+            23,
+            46,
+            115,
+            239
+          ],
+          "meanInterval": 76.09,
+          "minInterval": 23
+        },
+        {
+          "key": "lgs-science-claim:select-valid#solution1",
+          "occurrences": 12,
+          "intervals": [
+            46,
+            23,
+            69,
+            92,
+            46,
+            161,
+            92,
+            23,
+            69,
+            23,
+            23
+          ],
+          "meanInterval": 60.64,
+          "minInterval": 23
+        },
+        {
+          "key": "wl-bidirectional:select-valid#solution1",
+          "occurrences": 12,
+          "intervals": [
+            138,
+            23,
+            69,
+            46,
+            92,
+            23,
+            23,
+            69,
+            23,
+            23,
+            262
+          ],
+          "meanInterval": 71.91,
+          "minInterval": 23
+        },
+        {
+          "key": "ev-definition-match:compare-worlds#solution1",
+          "occurrences": 12,
+          "intervals": [
+            115,
+            23,
+            46,
+            69,
+            23,
+            69,
+            23,
+            23,
+            23,
+            46,
+            262
+          ],
+          "meanInterval": 65.64,
+          "minInterval": 23
+        },
+        {
+          "key": "stt-secondary-source:select-valid#solution1",
+          "occurrences": 11,
+          "intervals": [
+            23,
+            46,
+            92,
+            46,
+            46,
+            92,
+            92,
+            23,
+            115,
+            239
+          ],
+          "meanInterval": 81.4,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-map-type:select-valid#solution1",
+          "occurrences": 11,
+          "intervals": [
+            138,
+            69,
+            46,
+            46,
+            138,
+            92,
+            23,
+            23,
+            23,
+            239
+          ],
+          "meanInterval": 83.7,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-participation:select-valid#solution1",
+          "occurrences": 11,
+          "intervals": [
+            115,
+            23,
+            69,
+            46,
+            23,
+            138,
+            92,
+            23,
+            115,
+            193
+          ],
+          "meanInterval": 83.7,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-equality:select-valid#solution1",
+          "occurrences": 11,
+          "intervals": [
+            138,
+            92,
+            46,
+            23,
+            69,
+            115,
+            23,
+            23,
+            46,
+            69
+          ],
+          "meanInterval": 64.4,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-responsibility:select-valid#solution1",
+          "occurrences": 11,
+          "intervals": [
+            115,
+            69,
+            92,
+            23,
+            23,
+            69,
+            46,
+            23,
+            230,
+            124
+          ],
+          "meanInterval": 81.4,
+          "minInterval": 23
+        },
+        {
+          "key": "rp-empathy-perspective:select-valid#solution1",
+          "occurrences": 11,
+          "intervals": [
+            46,
+            46,
+            115,
+            69,
+            23,
+            46,
+            69,
+            69,
+            46,
+            308
+          ],
+          "meanInterval": 83.7,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-preposition:select-valid#solution1",
+          "occurrences": 10,
+          "intervals": [
+            161,
+            46,
+            46,
+            46,
+            46,
+            69,
+            92,
+            23,
+            92
+          ],
+          "meanInterval": 69,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-pronoun:select-valid#solution1",
+          "occurrences": 10,
+          "intervals": [
+            115,
+            69,
+            23,
+            46,
+            69,
+            23,
+            138,
+            331,
+            46
+          ],
+          "meanInterval": 95.56,
+          "minInterval": 23
+        },
+        {
+          "key": "stt-primary-source:select-valid#solution1",
+          "occurrences": 10,
+          "intervals": [
+            69,
+            46,
+            23,
+            115,
+            92,
+            69,
+            69,
+            69,
+            46
+          ],
+          "meanInterval": 66.44,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-population-density:select-valid#solution1",
+          "occurrences": 10,
+          "intervals": [
+            23,
+            92,
+            23,
+            115,
+            115,
+            138,
+            46,
+            46,
+            239
+          ],
+          "meanInterval": 93,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-route-planning:select-valid#solution1",
+          "occurrences": 10,
+          "intervals": [
+            23,
+            138,
+            138,
+            23,
+            92,
+            161,
+            23,
+            46,
+            193
+          ],
+          "meanInterval": 93,
+          "minInterval": 23
+        },
+        {
+          "key": "sc-environment-civic:select-valid#solution1",
+          "occurrences": 10,
+          "intervals": [
+            115,
+            69,
+            23,
+            23,
+            92,
+            23,
+            23,
+            92,
+            69
+          ],
+          "meanInterval": 58.78,
+          "minInterval": 23
+        },
+        {
+          "key": "lgs-data-table:select-valid#solution1",
+          "occurrences": 10,
+          "intervals": [
+            161,
+            115,
+            46,
+            69,
+            92,
+            69,
+            69,
+            69,
+            147
+          ],
+          "meanInterval": 93,
+          "minInterval": 46
+        },
+        {
+          "key": "lgs-misread-taxonomy:select-valid#solution1",
+          "occurrences": 10,
+          "intervals": [
+            115,
+            46,
+            23,
+            92,
+            23,
+            23,
+            46,
+            92,
+            331
+          ],
+          "meanInterval": 87.89,
+          "minInterval": 23
+        },
+        {
+          "key": "ev-collocation:select-valid#solution1",
+          "occurrences": 9,
+          "intervals": [
+            115,
+            115,
+            46,
+            46,
+            115,
+            23,
+            46,
+            184
+          ],
+          "meanInterval": 86.25,
+          "minInterval": 23
+        }
+      ]
+    },
+    "distractorPlanRecurrenceInterval": {
+      "distinctKeys": 2330,
+      "recurringKeys": 738,
+      "minInterval": 23,
+      "meanInterval": 232.95,
+      "shortRecurrenceKeys": [],
+      "topRecurring": [
+        {
+          "key": "rp-value-situation:select-valid:dp:1r6t4ex",
+          "occurrences": 7,
+          "intervals": [
+            23,
+            92,
+            23,
+            322,
+            115,
+            239
+          ],
+          "meanInterval": 135.67,
+          "minInterval": 23
+        },
+        {
+          "key": "stt-secondary-source:select-valid:dp:1dkl36y",
+          "occurrences": 7,
+          "intervals": [
+            92,
+            92,
+            92,
+            92,
+            138,
+            239
+          ],
+          "meanInterval": 124.17,
+          "minInterval": 92
+        },
+        {
+          "key": "rp-symbol-meaning:select-valid:dp:154iwkj",
+          "occurrences": 6,
+          "intervals": [
+            69,
+            46,
+            138,
+            92,
+            161
+          ],
+          "meanInterval": 101.2,
+          "minInterval": 46
+        },
+        {
+          "key": "ol-calendar-mod7:select-valid:dp:1b9dz6c",
+          "occurrences": 5,
+          "intervals": [
+            92,
+            115,
+            136,
+            48
+          ],
+          "meanInterval": 97.75,
+          "minInterval": 48
+        },
+        {
+          "key": "pd-inference:select-valid:dp:1lca95e",
+          "occurrences": 5,
+          "intervals": [
+            115,
+            23,
+            23,
+            276
+          ],
+          "meanInterval": 109.25,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-comparative:select-valid:dp:1szs6v7",
+          "occurrences": 5,
+          "intervals": [
+            207,
+            322,
+            92,
+            216
+          ],
+          "meanInterval": 209.25,
+          "minInterval": 92
+        },
+        {
+          "key": "sm-legend-symbol:select-valid:dp:1ylv3oy",
+          "occurrences": 5,
+          "intervals": [
+            115,
+            69,
+            207,
+            23
+          ],
+          "meanInterval": 103.5,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-population-density:select-valid:dp:1c4oumq",
+          "occurrences": 5,
+          "intervals": [
+            115,
+            391,
+            92,
+            239
+          ],
+          "meanInterval": 209.25,
+          "minInterval": 92
+        },
+        {
+          "key": "sc-digital-citizenship:select-valid:dp:qacwly",
+          "occurrences": 5,
+          "intervals": [
+            115,
+            161,
+            23,
+            161
+          ],
+          "meanInterval": 115,
+          "minInterval": 23
+        },
+        {
+          "key": "ev-context-cloze:spot-violation:dp:1cxj560",
+          "occurrences": 5,
+          "intervals": [
+            115,
+            23,
+            23,
+            345
+          ],
+          "meanInterval": 126.5,
+          "minInterval": 23
+        },
+        {
+          "key": "sm-climate-zone:forced-fact:dp:14hcsth",
+          "occurrences": 5,
+          "intervals": [
+            253,
+            115,
+            184,
+            239
+          ],
+          "meanInterval": 197.75,
+          "minInterval": 115
+        },
+        {
+          "key": "ev-context-cloze:forced-fact:dp:ov7lar",
+          "occurrences": 5,
+          "intervals": [
+            46,
+            115,
+            391,
+            193
+          ],
+          "meanInterval": 186.25,
+          "minInterval": 46
+        },
+        {
+          "key": "sm-border-region:select-valid:dp:fvacfv",
+          "occurrences": 5,
+          "intervals": [
+            161,
+            69,
+            138,
+            69
+          ],
+          "meanInterval": 109.25,
+          "minInterval": 69
+        },
+        {
+          "key": "ev-definition-match:compare-worlds:dp:fa5klf",
+          "occurrences": 5,
+          "intervals": [
+            368,
+            23,
+            23,
+            46
+          ],
+          "meanInterval": 115,
+          "minInterval": 23
+        },
+        {
+          "key": "ec-article:select-valid:dp:1kqks18",
+          "occurrences": 5,
+          "intervals": [
+            299,
+            46,
+            46,
+            115
+          ],
+          "meanInterval": 126.5,
+          "minInterval": 46
+        },
+        {
+          "key": "sc-equality:select-valid:dp:16g0gpd",
+          "occurrences": 5,
+          "intervals": [
+            69,
+            115,
+            46,
+            115
+          ],
+          "meanInterval": 86.25,
+          "minInterval": 46
+        },
+        {
+          "key": "mh-antonym-contrast:forced-fact:dp:ajm431",
+          "occurrences": 4,
+          "intervals": [
+            207,
+            23,
+            69
+          ],
+          "meanInterval": 99.67,
+          "minInterval": 23
+        },
+        {
+          "key": "mh-idiom:forced-fact:dp:y7gbg",
+          "occurrences": 4,
+          "intervals": [
+            230,
+            138,
+            276
+          ],
+          "meanInterval": 214.67,
+          "minInterval": 138
+        },
+        {
+          "key": "ec-preposition:select-valid:dp:23rpw2",
+          "occurrences": 4,
+          "intervals": [
+            253,
+            46,
+            115
+          ],
+          "meanInterval": 138,
+          "minInterval": 46
+        },
+        {
+          "key": "ec-verb-tense:select-valid:dp:1plzo5s",
+          "occurrences": 4,
+          "intervals": [
+            207,
+            115,
+            299
+          ],
+          "meanInterval": 207,
+          "minInterval": 115
+        }
+      ]
+    },
+    "perceivedSemanticCluster": {
+      "distinctKeys": 3602,
+      "recurringKeys": 0,
+      "minInterval": null,
+      "meanInterval": null,
+      "shortRecurrenceKeys": [],
+      "topRecurring": []
+    },
+    "curriculumCoverage": {
+      "topicCount": 56,
+      "topics": [
+        "patterns",
+        "sequences",
+        "algebraic-thinking",
+        "mental-math",
+        "operations",
+        "number-sense",
+        "numbers",
+        "measurement",
+        "data",
+        "ratio",
+        "error-analysis",
+        "algebra",
+        "geometry",
+        "ordering",
+        "logic",
+        "number-theory",
+        "combinatorics",
+        "proof",
+        "inequality",
+        "word-formation",
+        "vocabulary",
+        "word-relations",
+        "sentence-meaning",
+        "word-meaning",
+        "main-idea",
+        "reading-comprehension",
+        "evidence",
+        "meaning",
+        "grammar",
+        "sentence-building",
+        "chronology",
+        "history",
+        "cause-effect",
+        "maps",
+        "geography",
+        "responsibilities",
+        "rights",
+        "citizenship",
+        "general",
+        "scientific-process",
+        "physics",
+        "biology",
+        "chemistry",
+        "variables",
+        "inference",
+        "percent",
+        "language-control",
+        "word-order",
+        "graph",
+        "probability",
+        "writing",
+        "experiment",
+        "functions",
+        "equations",
+        "word-problems",
+        "spatial-reasoning"
+      ]
+    },
+    "difficultyProgression": {
+      "firstHalfMean": 4.88,
+      "secondHalfMean": 5,
+      "delta": 0.12
+    },
+    "adaptiveRouteChanges": {
+      "changeCount": 363,
+      "logTail": [
+        {
+          "sessionIndex": 863,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sm-cardinal-direction"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 864,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sm-cardinal-direction"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 865,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sm-cardinal-direction"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 866,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sm-cardinal-direction"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 867,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sm-cardinal-direction"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 868,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sm-cardinal-direction"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 869,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sm-cardinal-direction"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 870,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sm-cardinal-direction"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 871,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "rp-value-situation",
+            "lgs-misread-taxonomy",
+            "sc-rights-duties"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 872,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "sl-earth-rotation-daynight",
+            "sl-misread-taxonomy",
+            "sl-magnet-poles"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 873,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "sl-magnet-poles",
+            "sl-light-source-reflector",
+            "sr-control-group"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 874,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "sr-control-group",
+            "sr-repeatability",
+            "ls-multi-clue-order"
+          ],
+          "injected": 0,
+          "planTopics": []
+        }
+      ]
+    }
+  },
+  "failuresByGameFamilySkeletonGraph": {},
+  "orchestrationUsed": [
+    "createGameSession",
+    "options.attempts",
+    "options.seenQuestionKeys",
+    "options.recentFamilyIds",
+    "options.completedSessionCount",
+    "buildStudentBrainProfile",
+    "composeAdaptiveSession",
+    "normalizedPerceivedStructure"
+  ]
+}

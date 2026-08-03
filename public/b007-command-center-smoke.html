@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <title>B-007 Soru Motoru Komuta Merkezi — smoke</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 24px; background: #0f172a; color: #e2e8f0; }
+    h1, h2 { color: #38bdf8; }
+    .metric { display: inline-block; margin: 8px 12px 8px 0; padding: 8px 12px; background: #1e293b; border-radius: 8px; }
+    .admin-entity-card { background: #1e293b; margin: 12px 0; padding: 12px; border-radius: 8px; }
+    .badge { color: #86efac; }
+    .badge.orange { color: #fdba74; }
+    code { color: #fde68a; }
+    #status { font-weight: bold; margin: 16px 0; }
+    #status.ok { color: #86efac; }
+    #status.fail { color: #fca5a5; }
+  </style>
+</head>
+<body>
+  <h1>Soru Motoru Komuta Merkezi — B-007 smoke</h1>
+  <p>Gerçek <code>question-engine-analysis.json</code> + <code>analysis-sample-contract.js</code> render yolu (admin ile aynı sözleşme).</p>
+  <div id="status">Yükleniyor…</div>
+  <div id="summary"></div>
+  <h2>Canlı üretilen soru örnekleri</h2>
+  <div id="samples" class="admin-card-list"></div>
+  <script type="module">
+    import {
+      normalizeAnalysisSample,
+      renderLiveSampleCardHtml,
+      summarizeGameProgress
+    } from '../js/quality/analysis-sample-contract.js';
+
+    const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+    }[char]));
+
+    try {
+      const response = await fetch('/public/question-engine-analysis.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const analysis = await response.json();
+      const rows = analysis.gameProgressMatrix?.rows || [];
+      const summary = summarizeGameProgress(rows);
+      const samples = (analysis.liveGeneratedQuestionSamples?.samples || [])
+        .map((sample, i) => normalizeAnalysisSample(sample, { sourceHint: `smoke[${i}]` }));
+
+      for (const sample of samples) {
+        if (!Array.isArray(sample.options)) {
+          throw new Error(`options Array değil: ${sample.game} typeof=${typeof sample.options}`);
+        }
+      }
+
+      document.getElementById('summary').innerHTML = `
+        <div class="metric">PASS: ${summary.pass}</div>
+        <div class="metric">WAITING: ${summary.waiting}</div>
+        <div class="metric">Toplam: ${summary.totalGames}</div>
+        <div class="metric">Örnek: ${samples.length}</div>`;
+
+      document.getElementById('samples').innerHTML = samples
+        .map((sample) => renderLiveSampleCardHtml(sample, esc))
+        .join('');
+
+      const derivedOk = summary.pass + summary.waiting + summary.inProgress + summary.blocked === summary.totalGames
+        && summary.totalGames === 23
+        && samples.length > 0
+        && !document.body.innerText.includes('map is not a function');
+      const ok = derivedOk;
+      const status = document.getElementById('status');
+      status.textContent = ok
+        ? `B-007 SMOKE PASS — render çökmedi; sayaçlar ${summary.pass}/${summary.waiting}/${summary.totalGames}`
+        : 'B-007 SMOKE FAIL — sayaç veya render beklenenle uyuşmuyor';
+      status.className = ok ? 'ok' : 'fail';
+      window.__B007_SMOKE__ = { ok, summary, sampleCount: samples.length };
+    } catch (error) {
+      const status = document.getElementById('status');
+      status.textContent = `B-007 SMOKE FAIL — ${error.message}`;
+      status.className = 'fail';
+      window.__B007_SMOKE__ = { ok: false, error: String(error) };
+    }
+  </script>
+</body>
+</html>

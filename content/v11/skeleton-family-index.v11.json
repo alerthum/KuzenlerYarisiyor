@@ -1,0 +1,61 @@
+{
+  "version": "11.0.0",
+  "families": {
+    "INFO_SECME": [
+      "INFO_SECME_01",
+      "INFO_SECME_02",
+      "INFO_SECME_03",
+      "INFO_SECME_04",
+      "INFO_SECME_05"
+    ],
+    "BAGLAM_ANLAM": [
+      "BAGLAM_ANLAM_01",
+      "BAGLAM_ANLAM_02",
+      "BAGLAM_ANLAM_03",
+      "BAGLAM_ANLAM_04",
+      "BAGLAM_ANLAM_05"
+    ],
+    "KANIT_BIRLESTIRME": [
+      "KANIT_BIRLESTIRME_01",
+      "KANIT_BIRLESTIRME_02",
+      "KANIT_BIRLESTIRME_03",
+      "KANIT_BIRLESTIRME_04",
+      "KANIT_BIRLESTIRME_05"
+    ],
+    "METIN_AMACI": [
+      "METIN_AMACI_01",
+      "METIN_AMACI_02",
+      "METIN_AMACI_03",
+      "METIN_AMACI_04",
+      "METIN_AMACI_05"
+    ],
+    "METIN_YAPISI": [
+      "METIN_YAPISI_01",
+      "METIN_YAPISI_02",
+      "METIN_YAPISI_03",
+      "METIN_YAPISI_04",
+      "METIN_YAPISI_05"
+    ],
+    "GUVENILIRLIK": [
+      "GUVENILIRLIK_01",
+      "GUVENILIRLIK_02",
+      "GUVENILIRLIK_03",
+      "GUVENILIRLIK_04",
+      "GUVENILIRLIK_05"
+    ],
+    "CELISKI_KARSILASTIRMA": [
+      "CELISKI_KARSILASTIRMA_01",
+      "CELISKI_KARSILASTIRMA_02",
+      "CELISKI_KARSILASTIRMA_03",
+      "CELISKI_KARSILASTIRMA_04",
+      "CELISKI_KARSILASTIRMA_05"
+    ],
+    "SENTEZ_COKLU": [
+      "SENTEZ_COKLU_01",
+      "SENTEZ_COKLU_02",
+      "SENTEZ_COKLU_03",
+      "SENTEZ_COKLU_04",
+      "SENTEZ_COKLU_05"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-08-02T00:49:36.780Z",
+  "measuredAfterStage": "15 (FINAL — gercek kanit)",
+  "overallScorePercent": 100,
+  "overallScoreDisplay": "100",
+  "finalEvidenceAdequacy": "PASS",
+  "evidenceGaps": [],
+  "metrics": {
+    "minSessionsPerGame": 500,
+    "sessionsTarget": 500,
+    "solverSamples": 50000,
+    "solverTarget": 50000,
+    "optionSamples": 10000,
+    "optionTarget": 10000,
+    "mutationScorePercent": 96.2,
+    "mutationTarget": 90,
+    "fullE2E": true,
+    "childMindStructuredBands": true
+  },
+  "conclusion": "Asama 14-15 gercek kanit esikleri PASS."
+}

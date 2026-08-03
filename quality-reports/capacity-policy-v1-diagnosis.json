@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0",
+  "workName": "CAPACITY POLICY V2 + BLUEPRINT RECOVERY",
+  "generatedAt": "2026-08-02T15:20:00.000Z",
+  "productReadyPreserved": false,
+  "liveStatus": "ABORTED",
+  "decisionPreserved": "FAIL",
+  "answers": {
+    "historyGlobalOrPerStudent": {
+      "verdict": "per-student",
+      "evidence": [
+        "js/state.js:232-237 seenQuestionKeysForProfile",
+        "js/state.js:315-316 attemptsForProfile",
+        "js/quality/product-acceptance-audit.js:229-239 createPersistentStudent"
+      ]
+    },
+    "class30SharedHistory": {
+      "verdict": false,
+      "evidence": [
+        "js/quality/product-acceptance-audit.js:701-705 30 independent createPersistentStudent",
+        "js/quality/product-acceptance-audit.js:768-806 historySeparation Jaccard gate"
+      ]
+    },
+    "crossGameHistoryBlock": {
+      "verdict": "partial",
+      "familySkeletonCx": "game-scoped filter — no cross-game block",
+      "questionKeySeen": "student-global Set — not filtered by gameId",
+      "evidence": [
+        "js/games/registry.js:740 seen",
+        "js/games/registry.js:748-770 recent* filtered by gameId"
+      ]
+    },
+    "gradeBandHistoryMix": {
+      "annual": "single fixed grade/age — no band progression",
+      "perceived": "intentional: one student accumulates CX across AGE_BANDS",
+      "contentReview": "fresh student per band×game",
+      "evidence": [
+        "js/quality/product-acceptance-audit.js:865-868",
+        "js/quality/product-acceptance-audit.js:1017-1020"
+      ]
+    },
+    "historiesClearedBetweenPhases": {
+      "verdict": true,
+      "evidence": [
+        "js/quality/product-acceptance-audit.js:1182-1206 separate phase runners",
+        "scripts/run-product-acceptance-audit.mjs:340-346 checkpoint skips phase JSON, no history merge"
+      ]
+    },
+    "academicTimeAdvances": {
+      "verdict": false,
+      "defect": "week is schedule label only; age/grade never incremented",
+      "evidence": [
+        "js/quality/product-acceptance-audit.js:496-510 schedule week",
+        "js/quality/product-acceptance-audit.js:341-346 only skills update"
+      ]
+    },
+    "cooldownsExpire": {
+      "familyId": "soft slice(-36) attempts",
+      "skeletonId": "soft slice(-48) attempts",
+      "solutionGraph": "slice(-48) rank penalty only — not hard filter",
+      "cognitiveExperienceId": "DOES NOT EXPIRE — lifetime Set",
+      "questionKey": "forever Set",
+      "evidence": [
+        "js/games/registry.js:748-770",
+        "js/games/registry.js:1881-1884 hard CX filter"
+      ]
+    },
+    "checkpointResumeBadHistory": {
+      "verdict": false,
+      "notes": "Checkpoint stores completedPhases only — not student.attempts. Mid-phase restart is fresh, not polluted.",
+      "evidence": [
+        "scripts/run-product-acceptance-audit.mjs:60-78",
+        "scripts/run-product-acceptance-audit.mjs:340-346"
+      ]
+    },
+    "cxTooBroadOrNarrow": {
+      "verdict": "structure-aware + surface-abstracted",
+      "includes": ["pattern", "family", "skeleton", "reasoningPath", "solutionGraph", "abstract prompt/context"],
+      "excludes": ["raw numbers/names", "most lexical tokens via abstractSurfaceLexicon"],
+      "evidence": ["js/quality/question-factory-v13.js:303-348"]
+    },
+    "differentStructuresSameCx": {
+      "differentFamilySkeletonPath": false,
+      "sameIdsDifferentDecor": true,
+      "mechanism": "abstractSurfaceLexicon collapses 3+ letter words to ~",
+      "evidence": ["js/quality/question-factory-v13.js:303-342"]
+    },
+    "lifetimeCxBanAcross720": {
+      "verdict": true,
+      "scope": "per-student × per-game lifetime Set over all attempts — no slice",
+      "runner": "36 weeks × 20 sessions = 720",
+      "comment": "Yaşam boyu (oyun bazında) cognitiveExperience tekrarı ürün kabulünde yasak sayılır.",
+      "evidence": [
+        "js/games/registry.js:767-770",
+        "js/games/registry.js:1881-1884",
+        "js/games/registry.js:1998-2008 capacityFailure.recentCognitiveExperience",
+        "scripts/run-product-acceptance-audit.mjs:345"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "layer": "questionKey",
+      "scope": "student (profileId / student.seenQuestionKeys); also __global quarantine",
+      "lifetime": "forever until reset",
+      "storageKey": "state.seenQuestions[profileId][questionKey] | student.seenQuestionKeys",
+      "resetRule": "new student / phase / resetProgress",
+      "expirationRule": "none",
+      "affectedTests": ["annual", "class30", "perceived", "contentReview", "live app"],
+      "realUserBehaviorMatch": "yes — per-learner exact question ban for year is pedagogically sound",
+      "defect": "seen Set not game-scoped; cross-game key collision can block",
+      "evidence": ["js/state.js:232-237", "js/games/registry.js:740", "js/quality/product-acceptance-audit.js:332-333"]
+    },
+    {
+      "layer": "familyId",
+      "scope": "student × game",
+      "lifetime": "rolling ~last 36 attempts of that game",
+      "storageKey": "attempts[].familyId where gameId matches → recentFamilyIds",
+      "resetRule": "window slide / new student",
+      "expirationRule": "slice(-36); backfill may clear recentFamilyIds when guard≥2",
+      "affectedTests": ["annual familyRecurrenceInterval", "createGameSession"],
+      "realUserBehaviorMatch": "mostly — soft cooldown OK; not forever ban",
+      "defect": "underfill can relax recent families earlier than annual spacing gate expects",
+      "evidence": ["js/games/registry.js:748-754", "js/games/registry.js:1825-1826"]
+    },
+    {
+      "layer": "skeletonId",
+      "scope": "student × game",
+      "lifetime": "rolling ~last 48 attempts",
+      "storageKey": "attempts[].skeletonId → recentSkeletonIds",
+      "resetRule": "window slide",
+      "expirationRule": "slice(-48); composer may relax skeleton uniqueness under underfill",
+      "affectedTests": ["annual skeletonRecurrenceInterval", "v11 session uniqueness"],
+      "realUserBehaviorMatch": "yes as soft cooldown",
+      "defect": "final security allows skeleton relax while CX stays hard — asymmetric",
+      "evidence": ["js/games/registry.js:755-758", "js/games/registry.js:1967-1979"]
+    },
+    {
+      "layer": "structuralId",
+      "scope": "derived from pattern|family|skeleton|reasoningPath (question-factory)",
+      "lifetime": "not persisted as dedicated history layer in createGameSession",
+      "storageKey": "buildCognitiveExperience().structuralId",
+      "resetRule": "n/a dedicated",
+      "expirationRule": "n/a — CX lifetime subsumes related structure",
+      "affectedTests": ["indirect via CX"],
+      "realUserBehaviorMatch": "missing explicit structural window policy",
+      "defect": "no dedicated structuralId cooldown window in V1",
+      "evidence": ["js/quality/question-factory-v13.js:344-347"]
+    },
+    {
+      "layer": "solutionGraphId",
+      "scope": "student × game (derived)",
+      "lifetime": "rolling ~48 for ranking only",
+      "storageKey": "attempts[].solutionGraphId",
+      "resetRule": "window slide",
+      "expirationRule": "NOT hard-filtered — only rankAnnualFreshness penalty",
+      "affectedTests": ["annual solutionGraphRecurrenceInterval gate"],
+      "realUserBehaviorMatch": "weak — gate vs engine mismatch",
+      "defect": "DEFECT: annual gate checks spacing; createGameSession rarely hard-blocks SG",
+      "evidence": ["js/games/registry.js:759-762", "js/games/registry.js:1867-1875"]
+    },
+    {
+      "layer": "cognitiveExperienceId",
+      "scope": "student × game",
+      "lifetime": "forever (all attempts for game, no slice)",
+      "storageKey": "cx:${hash(structure)} on attempts → recentCognitiveExperienceIds Set",
+      "resetRule": "new student / new phase only",
+      "expirationRule": "none in createGameSession",
+      "affectedTests": ["annual underfill/capacity", "perceived", "class30", "contentReview"],
+      "realUserBehaviorMatch": "NO — lifetime ban per game is stricter than school pedagogy; skill re-practice after spacing is normal",
+      "defect": "PRIMARY DEFECT: lifetime CX + frozen academic time + abstractSurfaceLexicon collapse → annual capacity exhaustion",
+      "evidence": [
+        "js/games/registry.js:767-770",
+        "js/games/registry.js:1881-1884",
+        "js/games/registry.js:1998-2008",
+        "js/quality/question-factory-v13.js:303-348"
+      ]
+    },
+    {
+      "layer": "semanticFingerprint",
+      "scope": "session-local",
+      "lifetime": "current session only",
+      "storageKey": "fingerprint(family|skeleton|reasoningPath|solutionShape)",
+      "resetRule": "each createGameSession",
+      "expirationRule": "n/a cross-session",
+      "affectedTests": ["publication gates", "stage09 backfill"],
+      "realUserBehaviorMatch": "yes for intra-session",
+      "defect": "cross-session uniqueness delegated to CX/questionKey",
+      "evidence": ["js/quality/semantic-repeat-engine.js:23-135", "js/games/registry.js:1808-1860"]
+    }
+  ],
+  "topDefects": [
+    {
+      "id": "CX_LIFETIME_NO_ACADEMIC_TIME",
+      "severity": "CRITICAL",
+      "summary": "Lifetime per-game CX ban + frozen grade/age in annual sim over-constrains 720-session capacity and causes underfill.",
+      "evidence": [
+        "js/games/registry.js:767-770",
+        "js/quality/product-acceptance-audit.js:478-493",
+        "scripts/run-product-acceptance-audit.mjs:345"
+      ]
+    },
+    {
+      "id": "SOLUTION_GRAPH_SOFT_ONLY",
+      "severity": "HIGH",
+      "summary": "Annual gate checks solutionGraph recurrence, but createGameSession only ranks it.",
+      "evidence": ["js/games/registry.js:759-762", "js/games/registry.js:1867-1875"]
+    },
+    {
+      "id": "SEEN_NOT_GAME_SCOPED",
+      "severity": "MEDIUM",
+      "summary": "seenQuestionKeys can block across games if keys collide.",
+      "evidence": ["js/games/registry.js:740"]
+    },
+    {
+      "id": "PRODUCTION_ATTEMPTS_TRUNCATE",
+      "severity": "MEDIUM",
+      "summary": "storage keeps last 5000 attempts — lifetime CX set can silently lose old IDs in real app.",
+      "evidence": ["js/storage.js:33", "js/games/registry.js:768-770"]
+    }
+  ],
+  "nextAction": "Implement repetition-policy-v2.js and wire createGameSession; add academic time progression; run targeted counterfactual shards."
+}

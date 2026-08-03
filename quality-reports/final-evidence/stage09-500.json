@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-08-02T00:41:16.279Z",
+  "sessionsPerGameTarget": 500,
+  "games": 23,
+  "minSessionsPerGame": 500,
+  "gamesMeetingSessionTarget": 23,
+  "underfillCount": 0,
+  "sessionSemanticRepeatCount": 0,
+  "results": [
+    {
+      "gameId": "pattern-lab",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "speed-math",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "target-number",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "geometry-lab",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "problem-hunter",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "error-detective",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "logic-station",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "olympiad-ladder",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "word-mine",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "word-ladder",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "forbidden-story",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "meaning-hunt",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "paragraph-detective",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "english-vocabulary",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "english-cloze",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "english-sentence-builder",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "social-time-travel",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "social-map-skills",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "social-citizenship",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "religion-practice",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "lgs-foundation",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "science-lab",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    },
+    {
+      "gameId": "science-reasoning",
+      "produced": 500,
+      "targetSessions": 500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true
+    }
+  ]
+}

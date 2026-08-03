@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0",
+  "lastUpdated": "2026-08-02T14:36:00.000Z",
+  "openCriticalCount": 0,
+  "openHighCount": 1,
+  "openMediumCount": 0,
+  "blockers": [
+    {
+      "id": "B-015",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "title": "PRODUCT_ACCEPTANCE strict — annualStudentCapacity + contentReview FAIL; canlı telemetri ile yeniden koşuluyor",
+      "evidence": "PRODUCT_ACCEPTANCE_DECISION.json; public/strict-audit-live.json; quality-reports/strict-audit-progress.json",
+      "ownerStage": 15,
+      "gaps": [
+        "familyRecurrenceInterval",
+        "skeletonRecurrenceInterval",
+        "solutionGraphRecurrenceInterval",
+        "difficultyProgression",
+        "persistentGrowingHistory",
+        "annualAttemptVolume",
+        "contentReview.sampleCount"
+      ]
+    },
+    {
+      "id": "B-014",
+      "severity": "HIGH",
+      "status": "RESOLVED",
+      "title": "Final kanıt yeterliliği — min örnek / mutation / tam E2E / child-mind yaş bantları",
+      "evidence": "FINAL_EVIDENCE_INDEX.json",
+      "ownerStage": 14,
+      "gaps": []
+    },
+    {
+      "id": "B-001",
+      "severity": "MEDIUM",
+      "status": "RESOLVED",
+      "title": "math-group-1 dar iskelet seti — ÇÖZÜLDÜ",
+      "ownerStage": 4
+    },
+    {
+      "id": "B-002",
+      "severity": "MEDIUM",
+      "status": "RESOLVED",
+      "title": "underfill — Aşama 09 ortak besteci + backfill ile kapandı (23×500=0)",
+      "ownerStage": 9
+    },
+    {
+      "id": "B-003",
+      "severity": "HIGH",
+      "status": "RESOLVED",
+      "title": "familyId/skeletonId eksikleri — ÇÖZÜLDÜ",
+      "ownerStage": 4
+    },
+    {
+      "id": "B-004",
+      "severity": "HIGH",
+      "status": "RESOLVED",
+      "title": "Genel kalite metrikleri ölçüldü — ÇÖZÜLDÜ",
+      "evidence": "quality-reports/stage05-15-metrics.json",
+      "ownerStage": 14
+    },
+    {
+      "id": "B-005",
+      "severity": "MEDIUM",
+      "status": "RESOLVED",
+      "title": "E2E smoke + a11y Playwright ile doğrulandı — ÇÖZÜLDÜ",
+      "evidence": "npm run test:e2e:smoke 3/3; npm run test:a11y 1/1",
+      "ownerStage": 13
+    },
+    {
+      "id": "B-006",
+      "severity": "HIGH",
+      "status": "RESOLVED",
+      "title": "Aşama 04 tam kapsam — ÇÖZÜLDÜ",
+      "ownerStage": 4
+    },
+    {
+      "id": "B-007",
+      "severity": "HIGH",
+      "status": "RESOLVED",
+      "title": "Admin options.map — ÇÖZÜLDÜ",
+      "ownerStage": 4
+    }
+  ],
+  "note": "Canlı strict telemetrisi aktif; PASS yazılmadan productReady=true yapılmaz."
+}

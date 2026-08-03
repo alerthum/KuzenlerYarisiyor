@@ -1,0 +1,19 @@
+{
+  "runId": "dede0f23-8979-42a4-83a5-9c2a6c181793",
+  "updatedAt": "2026-08-02T15:05:16.216Z",
+  "status": "RUNNING",
+  "checkpoint": {
+    "lastCompletedGameId": null,
+    "lastCompletedGradeBand": null,
+    "nextGameId": null,
+    "nextGradeBand": "perceived",
+    "completedPhases": [
+      "annual",
+      "class30"
+    ],
+    "completedGames": [],
+    "completedGameBands": []
+  },
+  "completedWorkUnits": 154,
+  "phase": "session"
+}

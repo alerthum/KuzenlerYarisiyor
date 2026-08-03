@@ -1,0 +1,211 @@
+{
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-08-03T08:01:35.817Z",
+  "status": "PHASE_1_PASS",
+  "productReady": false,
+  "scope": "Assessment Engine V2 contracts and three cross-domain proof models",
+  "inventory": {
+    "schemaVersion": "2.0",
+    "modelCount": 7,
+    "domains": {
+      "mathematics": 5,
+      "reading": 1,
+      "logic": 1
+    },
+    "verifiedPremiumPolicy": "ONLY_ASSESSMENT_V2_MODELS",
+    "legacyContentPolicy": "UNVERIFIED_LEGACY"
+  },
+  "samples": [
+    {
+      "itemModelId": "math-pigeonhole-guarantee-v2",
+      "domain": "mathematics",
+      "constructId": "construct-pigeonhole",
+      "knowledgeComponents": [
+        "worst-case-reasoning",
+        "pigeonhole-principle"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "problem-hunter"
+      ],
+      "structuralId": "st:v2:1grsy1y",
+      "cognitiveExperienceId": "cx:v2:1mth37s",
+      "correctAnswer": "25",
+      "misconceptionIds": [
+        "use-target-as-category-count",
+        "omit-final-guarantee-step",
+        "multiply-category-by-target"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-claim-evidence-v2",
+      "domain": "reading",
+      "constructId": "construct-claim-evidence",
+      "knowledgeComponents": [
+        "claim-evidence",
+        "scope-limitation"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:1ho4biu",
+      "cognitiveExperienceId": "cx:v2:1bon2ps",
+      "correctAnswer": "Etkinlik artışla ilişkili olabilir; ölçülmeyen başka etkenler bulunduğu için tek neden olarak gösterilemez.",
+      "misconceptionIds": [
+        "correlation-as-causation",
+        "deny-all-effect",
+        "overgeneralize-sample"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "logic-ordering-v2",
+      "domain": "logic",
+      "constructId": "construct-ordering-constraints",
+      "knowledgeComponents": [
+        "constraint-propagation",
+        "necessary-vs-possible"
+      ],
+      "compatibleGameIds": [
+        "logic-station"
+      ],
+      "structuralId": "st:v2:676va9",
+      "cognitiveExperienceId": "cx:v2:krt5yx",
+      "correctAnswer": "A, C’den önce olmak zorundadır.",
+      "misconceptionIds": [
+        "use-single-rule-only",
+        "reverse-order-relation",
+        "possible-as-necessary"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-lattice-path-checkpoint-v2",
+      "domain": "mathematics",
+      "constructId": "construct-lattice-path-product",
+      "knowledgeComponents": [
+        "combinations",
+        "multiplication-principle",
+        "decompose-at-checkpoint"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "problem-hunter"
+      ],
+      "structuralId": "st:v2:p0pj6x",
+      "cognitiveExperienceId": "cx:v2:ufi76l",
+      "correctAnswer": "700",
+      "misconceptionIds": [
+        "add-stage-counts",
+        "count-as-single-unrestricted-route",
+        "permute-only-right-moves"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-modular-digit-v2",
+      "domain": "mathematics",
+      "constructId": "construct-modular-digit",
+      "knowledgeComponents": [
+        "place-value",
+        "modular-arithmetic",
+        "systematic-enumeration"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder"
+      ],
+      "structuralId": "st:v2:6n90xh",
+      "cognitiveExperienceId": "cx:v2:6rg9qd",
+      "correctAnswer": "12",
+      "misconceptionIds": [
+        "sum-valid-pairs",
+        "sum-valid-b-digits",
+        "treat-tens-as-hundreds"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-compositions-two-three-v2",
+      "domain": "mathematics",
+      "constructId": "construct-compositions",
+      "knowledgeComponents": [
+        "recurrence",
+        "case-splitting",
+        "ordered-compositions"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "pattern-lab"
+      ],
+      "structuralId": "st:v2:108dob7",
+      "cognitiveExperienceId": "cx:v2:163ynj9",
+      "correctAnswer": "114",
+      "misconceptionIds": [
+        "unordered-count",
+        "fibonacci-two-one",
+        "multiply-case-counts"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-two-set-union-v2",
+      "domain": "mathematics",
+      "constructId": "construct-two-set-union",
+      "knowledgeComponents": [
+        "set-intersection",
+        "avoid-double-counting"
+      ],
+      "compatibleGameIds": [
+        "problem-hunter",
+        "olympiad-ladder"
+      ],
+      "structuralId": "st:v2:1ws2t0s",
+      "cognitiveExperienceId": "cx:v2:7rgp7t",
+      "correctAnswer": "21",
+      "misconceptionIds": [
+        "add-totals",
+        "sum-only-regions",
+        "add-intersection-again"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  ],
+  "nextPhase": "Mathematics/Olympiad domain engine with 12 distinct problem ideas"
+}

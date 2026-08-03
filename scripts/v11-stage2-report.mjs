@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const ROOT = process.cwd();
+const inv = JSON.parse(fs.readFileSync(path.join(ROOT,'quality-reports','V11_CONTENT_INVENTORY.json'),'utf8'));
+const map = JSON.parse(fs.readFileSync(path.join(ROOT,'quality-reports','V11_SKELETON_MAPPING_SUGGESTIONS.json'),'utf8'));
+const md = `# Zihin Arenası V11 — Aşama 2 Envanter Raporu\n\nÜretim zamanı: ${new Date().toISOString()}\n\n## Statik kod envanteri\n\n- İçerik sinyali taşıyan kaynak dosya: **${inv.totals.sourceFiles}**\n- Statik havuz dosyası: **${inv.totals.staticPoolFiles}**\n- Dinamik üretici dosyası: **${inv.totals.dynamicGeneratorFiles}**\n- Karma kaynak: **${inv.totals.mixedFiles}**\n- Tespit edilen aile/üretici kimliği: **${inv.totals.detectedFamilyIds}**\n- Soru nesnesi sinyali: **${inv.totals.questionObjectSignals}**\n\n> Bu rakamlar kaynak kod sinyalidir. Dinamik motorların üretebileceği toplam soru sayısını göstermez.\n\n## V11 eşleştirme önerileri\n\n- Eşleştirme adayı: **${map.totals.candidates}**\n- Otomatik öneri üretilebilen: **${map.totals.proposed}**\n- Eşleşmeyen: **${map.totals.unmatched}**\n- Önerilerde kullanılan V11 iskeleti: **${map.totals.usedSkeletons} / 40**\n\n## Kesin kural\n\nOtomatik eşleştirme yalnız ön elemedir. İnsan editör onayı olmadan hiçbir mevcut aileye **skeletonId** yazılmaz ve hiçbir soru yayın statüsü değiştirilmez.\n\n## Sonraki uygulama\n\n1. Paragraf motorundaki aileler tek tek doğrulanır.\n2. Her aile için Question Identity Card şablonu oluşturulur.\n3. Kanıt haritası ve üç yanılgı metadata'sı eklenir.\n4. V11 kalite kapıları mevcut Quality Orchestra ile bağlanır.\n5. Eski sorular KEEP / UPGRADE / REMAP / QUARANTINE / RETIRE olarak sınıflandırılır.\n`;
+fs.mkdirSync(path.join(ROOT,'docs','v11'),{recursive:true});
+fs.writeFileSync(path.join(ROOT,'docs','v11','V11_STAGE2_INVENTORY_REPORT.md'),md);
+console.log('V11 Stage 2 raporu oluşturuldu: docs/v11/V11_STAGE2_INVENTORY_REPORT.md');

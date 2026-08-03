@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-08-02T00:45:07.325Z",
+  "target": 50000,
+  "collected": 50000,
+  "audit": {
+    "accuracyPercent": 100,
+    "total": 50000,
+    "ok": 50000,
+    "wrongAnswer": 0,
+    "multipleCorrect": 0,
+    "noCorrect": 0,
+    "explanationMismatch": 0,
+    "meetsStageGate": true
+  }
+}

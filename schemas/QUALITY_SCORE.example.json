@@ -1,0 +1,24 @@
+{
+  "overall": 0,
+  "releaseStatus": "BLOCKED",
+  "dimensions": {
+    "correctness": 0,
+    "hardOnlyGrade3Plus": 0,
+    "optionQuality": 0,
+    "semanticDiversity": 0,
+    "ageCurriculum": 0,
+    "cognitiveDepth": 0,
+    "explanation": 0,
+    "humanReview": 0,
+    "e2eIntegration": 0
+  },
+  "criticalViolations": {
+    "wrongAnswers": 0,
+    "multipleCorrect": 0,
+    "grade3PlusEasyMedium": 0,
+    "irrelevantOptions": 0,
+    "formCueOptions": 0,
+    "readAllOptionsFailures": 0,
+    "sameSessionSemanticRepeats": 0
+  }
+}

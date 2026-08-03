@@ -1,0 +1,726 @@
+{
+  "report": {
+    "generatedAt": "2026-07-29T21:30:41.227Z",
+    "release": "10.0.0",
+    "scope": "V10 çekirdek",
+    "qualityGate": {
+      "generatedAt": "2026-07-29T21:30:41.221Z",
+      "total": 162,
+      "errors": 0,
+      "incomplete": 140,
+      "heavilyBlocked": 10,
+      "pass": true
+    },
+    "similarity": {
+      "generatedAt": "2026-07-29T21:30:41.196Z",
+      "sampleCount": 384,
+      "uniqueOutputs": 37,
+      "repeatedOutputs": 347,
+      "questionKeyConflicts": 0,
+      "nearDuplicatePairs": 21,
+      "familyCapacity": {
+        "math-error-chain": {
+          "sampleCount": 24,
+          "uniqueCount": 3,
+          "repetitionCount": 21
+        },
+        "tr-inference-evidence": {
+          "sampleCount": 24,
+          "uniqueCount": 3,
+          "repetitionCount": 21
+        },
+        "science-variable-lab": {
+          "sampleCount": 24,
+          "uniqueCount": 3,
+          "repetitionCount": 21
+        },
+        "social-source-compare": {
+          "sampleCount": 24,
+          "uniqueCount": 1,
+          "repetitionCount": 23
+        },
+        "religion-concept-situation": {
+          "sampleCount": 24,
+          "uniqueCount": 1,
+          "repetitionCount": 23
+        },
+        "english-context-choice": {
+          "sampleCount": 24,
+          "uniqueCount": 3,
+          "repetitionCount": 21
+        },
+        "social-cause-chain": {
+          "sampleCount": 24,
+          "uniqueCount": 2,
+          "repetitionCount": 22
+        },
+        "religion-ethical-dilemma": {
+          "sampleCount": 24,
+          "uniqueCount": 2,
+          "repetitionCount": 22
+        },
+        "english-dialogue-completion": {
+          "sampleCount": 24,
+          "uniqueCount": 2,
+          "repetitionCount": 22
+        },
+        "olympiad-proof-strategy": {
+          "sampleCount": 24,
+          "uniqueCount": 2,
+          "repetitionCount": 22
+        },
+        "logic-constraint-grid": {
+          "sampleCount": 24,
+          "uniqueCount": 1,
+          "repetitionCount": 23
+        },
+        "math-reverse-check": {
+          "sampleCount": 24,
+          "uniqueCount": 6,
+          "repetitionCount": 18
+        },
+        "tr-author-purpose": {
+          "sampleCount": 24,
+          "uniqueCount": 3,
+          "repetitionCount": 21
+        },
+        "science-data-claim": {
+          "sampleCount": 24,
+          "uniqueCount": 3,
+          "repetitionCount": 21
+        },
+        "logic-order-chain": {
+          "sampleCount": 24,
+          "uniqueCount": 1,
+          "repetitionCount": 23
+        },
+        "olympiad-invariant": {
+          "sampleCount": 24,
+          "uniqueCount": 1,
+          "repetitionCount": 23
+        }
+      },
+      "pass": true,
+      "notes": [
+        "Aynı deterministik varyasyonun farklı seedlerde yeniden üretilmesi kapasite uyarısıdır; oturum katmanı questionKey/seenQuestionKeys ile tekrar yayınını engeller.",
+        "Release kapısı, aynı questionKey altında farklı soru metni oluşmasını kritik hata kabul eder."
+      ],
+      "nearDuplicateExamples": [
+        {
+          "a": "science-variable-lab:2382081590",
+          "b": "science-variable-lab:3592391294",
+          "familyId": "science-variable-lab",
+          "score": 1
+        },
+        {
+          "a": "science-variable-lab:2382081590",
+          "b": "science-variable-lab:1523713600",
+          "familyId": "science-variable-lab",
+          "score": 1
+        },
+        {
+          "a": "science-variable-lab:3592391294",
+          "b": "science-variable-lab:1523713600",
+          "familyId": "science-variable-lab",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:3892248040",
+          "b": "math-reverse-check:401431703",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:3892248040",
+          "b": "math-reverse-check:3655762972",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:3892248040",
+          "b": "math-reverse-check:941773570",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:3892248040",
+          "b": "math-reverse-check:2511209936",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:3892248040",
+          "b": "math-reverse-check:2257312151",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:401431703",
+          "b": "math-reverse-check:3655762972",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:401431703",
+          "b": "math-reverse-check:941773570",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:401431703",
+          "b": "math-reverse-check:2511209936",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:401431703",
+          "b": "math-reverse-check:2257312151",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:3655762972",
+          "b": "math-reverse-check:941773570",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:3655762972",
+          "b": "math-reverse-check:2511209936",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:3655762972",
+          "b": "math-reverse-check:2257312151",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:941773570",
+          "b": "math-reverse-check:2511209936",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:941773570",
+          "b": "math-reverse-check:2257312151",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "math-reverse-check:2511209936",
+          "b": "math-reverse-check:2257312151",
+          "familyId": "math-reverse-check",
+          "score": 1
+        },
+        {
+          "a": "science-data-claim:2546812874",
+          "b": "science-data-claim:1849710091",
+          "familyId": "science-data-claim",
+          "score": 1
+        },
+        {
+          "a": "science-data-claim:2546812874",
+          "b": "science-data-claim:2153377893",
+          "familyId": "science-data-claim",
+          "score": 1
+        }
+      ]
+    },
+    "retirementSummary": {
+      "active": 3,
+      "watch": 10,
+      "retired": 14
+    },
+    "pass": true
+  },
+  "retirement": {
+    "lgs-focus": {
+      "familyId": "lgs-focus",
+      "status": "WATCH",
+      "enoughEvidence": false,
+      "sampleCount": 1,
+      "average": 0,
+      "generated": 1,
+      "blocked": 1,
+      "blockedRatio": 1,
+      "incompleteCount": 1,
+      "failures": 3,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "tyt-focus": {
+      "familyId": "tyt-focus",
+      "status": "WATCH",
+      "enoughEvidence": false,
+      "sampleCount": 1,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 1,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "ayt-focus": {
+      "familyId": "ayt-focus",
+      "status": "WATCH",
+      "enoughEvidence": false,
+      "sampleCount": 1,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 1,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "kpss-focus": {
+      "familyId": "kpss-focus",
+      "status": "WATCH",
+      "enoughEvidence": false,
+      "sampleCount": 1,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 1,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "word-mine": {
+      "familyId": "word-mine",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "word-ladder": {
+      "familyId": "word-ladder",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 4,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 4,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "forbidden-story": {
+      "familyId": "forbidden-story",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "meaning-hunt": {
+      "familyId": "meaning-hunt",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "paragraph-detective": {
+      "familyId": "paragraph-detective",
+      "status": "WATCH",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 85,
+      "generated": 46,
+      "blocked": 6,
+      "blockedRatio": 0.13043478260869565,
+      "incompleteCount": 4,
+      "failures": 1,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "target-number": {
+      "familyId": "target-number",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "speed-math": {
+      "familyId": "speed-math",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "pattern-lab": {
+      "familyId": "pattern-lab",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "problem-hunter": {
+      "familyId": "problem-hunter",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "geometry-lab": {
+      "familyId": "geometry-lab",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "error-detective": {
+      "familyId": "error-detective",
+      "status": "ACTIVE",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 84,
+      "generated": 30,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 0,
+      "failures": 0,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "olympiad-ladder": {
+      "familyId": "olympiad-ladder",
+      "status": "WATCH",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 85,
+      "generated": 12,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 1,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "logic-station": {
+      "familyId": "logic-station",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 83,
+      "generated": 36,
+      "blocked": 22,
+      "blockedRatio": 0.6111111111111112,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "english-vocabulary": {
+      "familyId": "english-vocabulary",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "english-cloze": {
+      "familyId": "english-cloze",
+      "status": "WATCH",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 80,
+      "generated": 30,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 1,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "english-sentence-builder": {
+      "familyId": "english-sentence-builder",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 28,
+      "generated": 20,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 4,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "social-time-travel": {
+      "familyId": "social-time-travel",
+      "status": "WATCH",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 85,
+      "generated": 15,
+      "blocked": 3,
+      "blockedRatio": 0.2,
+      "incompleteCount": 6,
+      "failures": 1,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "social-map-skills": {
+      "familyId": "social-map-skills",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "social-citizenship": {
+      "familyId": "social-citizenship",
+      "status": "RETIRED",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 6,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "religion-practice": {
+      "familyId": "religion-practice",
+      "status": "WATCH",
+      "enoughEvidence": true,
+      "sampleCount": 3,
+      "average": 83,
+      "generated": 6,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 3,
+      "failures": 1,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "lgs-foundation": {
+      "familyId": "lgs-foundation",
+      "status": "WATCH",
+      "enoughEvidence": false,
+      "sampleCount": 1,
+      "average": 0,
+      "generated": 0,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 1,
+      "failures": 2,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "science-lab": {
+      "familyId": "science-lab",
+      "status": "ACTIVE",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 85,
+      "generated": 36,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 0,
+      "failures": 0,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    },
+    "science-reasoning": {
+      "familyId": "science-reasoning",
+      "status": "ACTIVE",
+      "enoughEvidence": true,
+      "sampleCount": 6,
+      "average": 85,
+      "generated": 30,
+      "blocked": 0,
+      "blockedRatio": 0,
+      "incompleteCount": 0,
+      "failures": 0,
+      "policy": {
+        "minimumScore": 72,
+        "maximumBlockedRatio": 0.25,
+        "minimumSamples": 3,
+        "retirementAfterFailures": 2
+      }
+    }
+  }
+}

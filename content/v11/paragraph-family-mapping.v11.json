@@ -1,0 +1,317 @@
+{
+  "version": "11.0.0-stage3",
+  "scope": "paragraph-engine-v4",
+  "mappingCount": 16,
+  "mappings": [
+    {
+      "familyId": "controlled-experiment-evidence",
+      "skeletonId": "KANIT_BIRLESTIRME_04",
+      "skeletonFamilyId": "KANIT_BIRLESTIRME",
+      "visibleSkillName": "Aşırı Genellemeyi Tespit Etme / Reddetme",
+      "mainSkill": "Kanıtları birleştirerek çıkarım yapma",
+      "subSkill": "İddiaların geçerliğini ve mantığını değerlendirme",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": 2,
+      "distractorMisconceptions": [
+        "Yazarın sadece sınırlı bir bağlam için söylediği doğru çıkarım (Öğrenci bunu yanlış sanıp işaretler)",
+        "Yazarın verdiği spesifik kanıtın birebir tekrarı",
+        "Metinde yazarın itiraz ettiği ama seçeneklerde doğruymuş gibi sunulmayan karşıt görüş"
+      ],
+      "notTogetherWith": [
+        "METIN_AMACI_01"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "event-sequence-reconstruction",
+      "skeletonId": "INFO_SECME_04",
+      "skeletonFamilyId": "INFO_SECME",
+      "visibleSkillName": "Kronolojik / Sıralı Akışta Bilgi Çekme",
+      "mainSkill": "Açık bilgiyi bulma ve seçme",
+      "subSkill": "Metin yapılarından hareketle önemli bilgiyi belirleme",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": 2,
+      "distractorMisconceptions": [
+        "Sürecin en başındaki veya en sonundaki adım (sorulan aralık değil)",
+        "İki adım sonrasındaki olay (hemen sonraki değil, dikkatsizlik tuzağı)",
+        "Süreçle ilgili ancak zaman çizgisine dâhil olmayan genel bir betimleme cümlesi"
+      ],
+      "notTogetherWith": [],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "main-idea-from-support",
+      "skeletonId": "METIN_AMACI_01",
+      "skeletonFamilyId": "METIN_AMACI",
+      "visibleSkillName": "Şemsiye (Kapsayıcı) Düşünceyi İzolasyonla Bulma",
+      "mainSkill": "Ana düşünce ve metnin amacı",
+      "subSkill": "Metnin ana fikrini belirleme",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": "Bütünsel",
+      "distractorMisconceptions": [
+        "Metinde çok geniş yer tutan ancak yazarın asıl savunmak istediği amaca değil o amaca giden yolda bir kanıt olan yardımcı düşünce (Çok Güçlü Çeldirici)",
+        "Metnin sadece ilk paragrafını özetleyen ifade",
+        "Metnin sadece son paragrafındaki (sonuç cümlesi olmayan) spesifik bir örneğin genellenmiş hâli"
+      ],
+      "notTogetherWith": [
+        "METIN_AMACI_05"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "irrelevant-data-filter",
+      "skeletonId": "INFO_SECME_02",
+      "skeletonFamilyId": "INFO_SECME",
+      "visibleSkillName": "Negatif Açık Bilgi (Dışta Bırakma)",
+      "mainSkill": "Açık bilgiyi bulma ve seçme",
+      "subSkill": "Bilgileri sınıflandırma ve ayıklama",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": 3,
+      "distractorMisconceptions": [
+        "Metinde çok küçük bir yan cümle veya sıfat tamlaması olarak geçen, gözden kaçması kolay bilgi",
+        "Paragrafın genel temasına çok uygun olan ama yazarın listesine dâhil etmediği bilgi",
+        "Farklı bir kavram için metinde geçen ancak sorulan kavrama ait olmayan bilgi"
+      ],
+      "notTogetherWith": [
+        "INFO_SECME_01"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "text-data-integration-dynamic",
+      "skeletonId": "KANIT_BIRLESTIRME_02",
+      "skeletonFamilyId": "KANIT_BIRLESTIRME",
+      "visibleSkillName": "İki Ayrı Olgunun Neden-Sonuç Sentezi",
+      "mainSkill": "Kanıtları birleştirerek çıkarım yapma",
+      "subSkill": "Sebep-sonuç ilişkilerini kurma",
+      "requiredSourceCount": "1 veya 2",
+      "requiredEvidenceCount": 2,
+      "distractorMisconceptions": [
+        "Sadece ilk olgunun bir özelliği (Sentez yok)",
+        "Sadece ikinci olgunun bir özelliği (Sentez yok)",
+        "İki olguyu da içeren ancak neden-sonuç yönünü ters veren ifade (Y, X'e sebep olmuştur tuzağı)"
+      ],
+      "notTogetherWith": [
+        "SENTEZ_COKLU_01"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "claim-evidence-dynamic",
+      "skeletonId": "GUVENILIRLIK_04",
+      "skeletonFamilyId": "GUVENILIRLIK",
+      "visibleSkillName": "Dayanağı (Kanıtı) Olmayan İddiayı (Spekülasyonu) Tespit",
+      "mainSkill": "Kaynak ve iddia güvenilirliğini değerlendirme",
+      "subSkill": "Argümanın mantığını ve geçerliliğini tartma",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": "Bütünsel tarama",
+      "distractorMisconceptions": [
+        "Yazarın hiç savunmadığı bir cümlenin aranması (Soru, yazarın söylediği ama kanıtlamadığı şeyi aramaktadır)",
+        "İstatistikle desteklenmiş, çok sağlam kanıtı olan ana fikrin (Sadece önemli diye) işaretlenmesi",
+        "Metinde geçen bir örneğin bizzat iddia zannedilmesi"
+      ],
+      "notTogetherWith": [
+        "KANIT_BIRLESTIRME_04"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "argument-weakness-dynamic",
+      "skeletonId": "METIN_YAPISI_04",
+      "skeletonFamilyId": "METIN_YAPISI",
+      "visibleSkillName": "Mantıksal Sıçrama / Boşluk Tespit Etme",
+      "mainSkill": "Metnin yapısı ve düşünce akışı",
+      "subSkill": "Düşünceyi geliştirme yolları ve yapısal tutarlılık",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": 2,
+      "distractorMisconceptions": [
+        "Yazarın kullandığı örneklerin zayıf olmasının mantıksal boşluk sanılması",
+        "Metinde yazarın hiç değinmediği yeni bir argümanın boşluk sanılması",
+        "Sıçramanın yazarın değil, alıntı yaptığı kişinin sözünde olduğunun düşünülmesi"
+      ],
+      "notTogetherWith": [
+        "KANIT_BIRLESTIRME_04"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "multiple-source-synthesis-dynamic",
+      "skeletonId": "CELISKI_KARSILASTIRMA_04",
+      "skeletonFamilyId": "CELISKI_KARSILASTIRMA",
+      "visibleSkillName": "Çelişkiyi Hakem Olarak Çözümleme (Eksik Kanıtı İsteme)",
+      "mainSkill": "Çelişki, uyuşmazlık ve bakış açısı karşılaştırma",
+      "subSkill": "Uyuşmazlıkların üstesinden gelmek için strateji/çözüm üretme",
+      "requiredSourceCount": 2,
+      "requiredEvidenceCount": "Bütünsel (Çatışma alanı)",
+      "distractorMisconceptions": [
+        "Zaten Yazar A'nın metninde bulunan verinin aynısını \"bunu bulmalıyız\" diyerek seçme",
+        "Yazar B'nin kullandığı veriyi seçme",
+        "Tartışmanın konusuyla (süt ve kemik) hiç ilgisi olmayan \"Sütün ekonomik maliyeti hesaplanmalıdır\" gibi alakasız bir öneri getirme"
+      ],
+      "notTogetherWith": [],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "multi-condition-reading-dynamic",
+      "skeletonId": "KANIT_BIRLESTIRME_03",
+      "skeletonFamilyId": "KANIT_BIRLESTIRME",
+      "visibleSkillName": "Çapraz Kural Eşleştirme (Senaryo Doğrulama)",
+      "mainSkill": "Kanıtları birleştirerek çıkarım yapma",
+      "subSkill": "Bilgiyi yeni bir duruma uygulama (Sentez)",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": 3,
+      "distractorMisconceptions": [
+        "X ve Y kuralını sağlayıp Z'yi sağlamayan senaryo",
+        "Y ve Z'yi sağlayıp X'i sağlamayan senaryo",
+        "Hiçbir kuralı sağlamayan ama gerçek dünyada doğru olan (genel bilgi) senaryo"
+      ],
+      "notTogetherWith": [],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "media-source-check-dynamic",
+      "skeletonId": "GUVENILIRLIK_02",
+      "skeletonFamilyId": "GUVENILIRLIK",
+      "visibleSkillName": "Uzmanlık ve Otorite Kriterlerine Göre Kaynak Seçimi",
+      "mainSkill": "Kaynak ve iddia güvenilirliğini değerlendirme",
+      "subSkill": "Metnin güvenilirliğini, kaynağın yetkinliğine göre değerlendirme",
+      "requiredSourceCount": 3,
+      "requiredEvidenceCount": 2,
+      "distractorMisconceptions": [
+        "Kendi şahsi deneyimi olumlu sonuçlandığı için en güvenilir kaynağın \"Ben denedim oldu\" diyen sıradan kişi sanılması (Deneyim = Bilim yanılgısı)",
+        "\"Ben uzmanım\" diyen ama hiçbir kanıt sunmayan kişinin sırf unvanı yüzünden tam güvenilir bulunması (Sadece unvana yaslanma)",
+        "Soruyu soran kişinin güvenirliğini değerlendirmeye kalkışma"
+      ],
+      "notTogetherWith": [],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "generalization-trap-dynamic",
+      "skeletonId": "KANIT_BIRLESTIRME_04",
+      "skeletonFamilyId": "KANIT_BIRLESTIRME",
+      "visibleSkillName": "Aşırı Genellemeyi Tespit Etme / Reddetme",
+      "mainSkill": "Kanıtları birleştirerek çıkarım yapma",
+      "subSkill": "İddiaların geçerliğini ve mantığını değerlendirme",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": 2,
+      "distractorMisconceptions": [
+        "Yazarın sadece sınırlı bir bağlam için söylediği doğru çıkarım (Öğrenci bunu yanlış sanıp işaretler)",
+        "Yazarın verdiği spesifik kanıtın birebir tekrarı",
+        "Metinde yazarın itiraz ettiği ama seçeneklerde doğruymuş gibi sunulmayan karşıt görüş"
+      ],
+      "notTogetherWith": [
+        "METIN_AMACI_01"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "paragraph-coherence-dynamic",
+      "skeletonId": "METIN_YAPISI_05",
+      "skeletonFamilyId": "METIN_YAPISI",
+      "visibleSkillName": "Alternatif Yapılandırma (Tümdengelim/Tümevarım Dönüşümü)",
+      "mainSkill": "Metnin yapısı ve düşünce akışı",
+      "subSkill": "Metin organizasyonunu yorumlama ve dönüştürme",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": "Bütünsel",
+      "distractorMisconceptions": [
+        "Sadece ilk cümlesi ana fikir olan ama devamındaki kanıtların mantıksız sıralandığı seçenek",
+        "Orijinal metnin sırasının aynen korunup sadece başlık eklenmiş hali",
+        "Cümlelerin kronolojik sıralanması gerektiği yanılgısı (Tartışma metni olmasına rağmen)"
+      ],
+      "notTogetherWith": [
+        "METIN_AMACI_01"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "best-title-dynamic",
+      "skeletonId": "METIN_AMACI_05",
+      "skeletonFamilyId": "METIN_AMACI",
+      "visibleSkillName": "Başlık ve İçerik Tutarlılığı (Kavramsal Temsiliyet)",
+      "mainSkill": "Ana düşünce ve metnin amacı",
+      "subSkill": "Metnin ana fikrini kavramsal olarak en iyi temsil eden ifadeyi bulma",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": "Bütünsel",
+      "distractorMisconceptions": [
+        "Metnin çok küçük bir parçasını anlatan, dolayısıyla \"dar\" kalan başlık",
+        "Metnin konusunu çok aşan, çok geniş ve genel bir kavramı ifade eden \"geniş\" başlık",
+        "Metindeki en ilginç kelimeyi barındıran ancak metnin ana temasıyla tamamen ilgisiz olan, sırf dikkat çekici diye seçilen başlık (\"Klik tuzağı\" başlık)"
+      ],
+      "notTogetherWith": [
+        "METIN_AMACI_01"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "implicit-inference-dynamic",
+      "skeletonId": "KANIT_BIRLESTIRME_02",
+      "skeletonFamilyId": "KANIT_BIRLESTIRME",
+      "visibleSkillName": "İki Ayrı Olgunun Neden-Sonuç Sentezi",
+      "mainSkill": "Kanıtları birleştirerek çıkarım yapma",
+      "subSkill": "Sebep-sonuç ilişkilerini kurma",
+      "requiredSourceCount": "1 veya 2",
+      "requiredEvidenceCount": 2,
+      "distractorMisconceptions": [
+        "Sadece ilk olgunun bir özelliği (Sentez yok)",
+        "Sadece ikinci olgunun bir özelliği (Sentez yok)",
+        "İki olguyu da içeren ancak neden-sonuç yönünü ters veren ifade (Y, X'e sebep olmuştur tuzağı)"
+      ],
+      "notTogetherWith": [
+        "SENTEZ_COKLU_01"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "author-purpose-dynamic",
+      "skeletonId": "METIN_AMACI_02",
+      "skeletonFamilyId": "METIN_AMACI",
+      "visibleSkillName": "Yazarın Örtük Niyetini / Asıl Amacını Deşifre Etme",
+      "mainSkill": "Ana düşünce ve metnin amacı",
+      "subSkill": "Yazarın yazma amacını, niyetini ve tutumunu belirleme",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": "Bütünsel (Üslup + İçerik)",
+      "distractorMisconceptions": [
+        "Metnin sadece yüzey anlamını özetleyen \"X hakkında bilgi vermek\" şeklindeki düz seçenek",
+        "Yazarın örtük niyetiyle çelişen ancak kullandığı nesnel kanıtlarla eşleşen amaç (\"Bilimsel verileri listelemek\" gibi)",
+        "Yazarın niyetinden çok daha aşırı, agresif veya provokatif uydurma bir amaç"
+      ],
+      "notTogetherWith": [
+        "GUVENILIRLIK_01"
+      ],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    },
+    {
+      "familyId": "contradiction-detection-dynamic",
+      "skeletonId": "CELISKI_KARSILASTIRMA_05",
+      "skeletonFamilyId": "CELISKI_KARSILASTIRMA",
+      "visibleSkillName": "Metin İçi Mantıksal Çelişki / Paradoks Tespit Etme",
+      "mainSkill": "Çelişki, uyuşmazlık ve bakış açısı karşılaştırma",
+      "subSkill": "Metnin tutarlılığını ve geçerliğini sorgulama",
+      "requiredSourceCount": 1,
+      "requiredEvidenceCount": 2,
+      "distractorMisconceptions": [
+        "Metindeki iki uyumlu ve birbirini destekleyen cümlenin çelişki sanılması",
+        "Yazarın çelişkiye düşmediği, sadece istisna (\"Bu duruma rağmen...\") belirttiği yerin asıl çelişki sanılması (İstisna ile çelişki ayrımını yapamama)",
+        "Yazarın kendi fikriyle değil de başkasının fikriyle çeliştiği cümlenin seçilmesi (Soru iç tutarsızlığı aramaktadır)"
+      ],
+      "notTogetherWith": [],
+      "mappingStatus": "CONFIRMED",
+      "mappingBasis": "Üreticinin bağlamı, soru kökü, doğru cevap mantığı ve çeldirici yapısı kod üzerinden incelendi."
+    }
+  ]
+}

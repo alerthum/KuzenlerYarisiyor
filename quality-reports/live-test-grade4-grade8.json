@@ -1,0 +1,465 @@
+{
+  "generatedAt": "2026-08-02T23:52:41.294Z",
+  "grade4": {
+    "games": 21,
+    "passed": 21
+  },
+  "grade8": {
+    "games": 24,
+    "passed": 24
+  },
+  "failureCount": 0,
+  "failures": [],
+  "results": [
+    {
+      "grade": 4,
+      "gameId": "word-mine",
+      "requested": 1,
+      "produced": 1,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "word-ladder",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "forbidden-story",
+      "requested": 1,
+      "produced": 1,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "meaning-hunt",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "paragraph-detective",
+      "requested": 8,
+      "produced": 8,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "target-number",
+      "requested": 4,
+      "produced": 4,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "speed-math",
+      "requested": 8,
+      "produced": 8,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "pattern-lab",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "problem-hunter",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "geometry-lab",
+      "requested": 6,
+      "produced": 6,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "error-detective",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "olympiad-ladder",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "logic-station",
+      "requested": 8,
+      "produced": 8,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "english-vocabulary",
+      "requested": 20,
+      "produced": 20,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "english-cloze",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "english-sentence-builder",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "social-time-travel",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "social-map-skills",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "social-citizenship",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "science-lab",
+      "requested": 6,
+      "produced": 6,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 4,
+      "gameId": "science-reasoning",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "lgs-focus",
+      "requested": 8,
+      "produced": 8,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "word-mine",
+      "requested": 1,
+      "produced": 1,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "word-ladder",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "forbidden-story",
+      "requested": 1,
+      "produced": 1,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "meaning-hunt",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "paragraph-detective",
+      "requested": 8,
+      "produced": 8,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "target-number",
+      "requested": 4,
+      "produced": 4,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "speed-math",
+      "requested": 8,
+      "produced": 8,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "pattern-lab",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "problem-hunter",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "geometry-lab",
+      "requested": 6,
+      "produced": 6,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "error-detective",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "olympiad-ladder",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "logic-station",
+      "requested": 8,
+      "produced": 8,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "english-vocabulary",
+      "requested": 20,
+      "produced": 20,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "english-cloze",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "english-sentence-builder",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "social-time-travel",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "social-map-skills",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "social-citizenship",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "religion-practice",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "lgs-foundation",
+      "requested": 10,
+      "produced": 10,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "science-lab",
+      "requested": 6,
+      "produced": 6,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    },
+    {
+      "grade": 8,
+      "gameId": "science-reasoning",
+      "requested": 5,
+      "produced": 5,
+      "full": true,
+      "premiumOnly": true,
+      "noLegacyFallback": true,
+      "productPass": true
+    }
+  ]
+}

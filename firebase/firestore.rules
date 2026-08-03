@@ -1,0 +1,200 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function accountPath(uid) { return /databases/$(database)/documents/accounts/$(uid); }
+    function accountExists() { return signedIn() && exists(accountPath(request.auth.uid)); }
+    function myAccount() { return get(accountPath(request.auth.uid)).data; }
+    function roleIs(role) { return accountExists() && myAccount().role == role; }
+    function adult() { return roleIs('parent') || roleIs('teacher') || roleIs('admin'); }
+    function learnerPath(learnerId) { return /databases/$(database)/documents/learners/$(learnerId); }
+    function learnerExists(learnerId) { return exists(learnerPath(learnerId)); }
+    function learnerData(learnerId) { return get(learnerPath(learnerId)).data; }
+    function isOwnStudent(learnerId) { return roleIs('student') && myAccount().learnerId == learnerId; }
+    function isParentOf(learnerId) { return learnerExists(learnerId) && learnerData(learnerId).parentIds.hasAny([request.auth.uid]); }
+    function isTeacherOf(learnerId) { return learnerExists(learnerId) && learnerData(learnerId).teacherIds.hasAny([request.auth.uid]); }
+    function canAccessLearner(learnerId) {
+      return signedIn() && (isOwnStudent(learnerId) || isParentOf(learnerId) || isTeacherOf(learnerId) || roleIs('admin'));
+    }
+    function isOwnerAdminEmail() { return signedIn() && request.auth.token.email == 'alerthum@yahoo.com'; }
+    function ownAdultAccountCreate(accountId) {
+      return request.auth.uid == accountId
+        && (request.resource.data.role == 'parent' || request.resource.data.role == 'teacher' || (request.resource.data.role == 'admin' && isOwnerAdminEmail()))
+        && request.resource.data.status == 'active';
+    }
+    function adultStudentAccountCreate(accountId) {
+      return adult()
+        && request.resource.data.role == 'student'
+        && request.resource.data.status == 'active'
+        && request.resource.data.learnerId is string
+        && learnerExists(request.resource.data.learnerId)
+        && learnerData(request.resource.data.learnerId).authUid == accountId
+        && canAccessLearner(request.resource.data.learnerId);
+    }
+
+    match /accounts/{accountId} {
+      allow read: if signedIn() && (request.auth.uid == accountId || roleIs('admin'));
+      allow create: if signedIn() && (ownAdultAccountCreate(accountId) || adultStudentAccountCreate(accountId));
+      allow update: if roleIs('admin') || (
+        signedIn()
+        && request.auth.uid == accountId
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName', 'updatedAt'])
+        && request.resource.data.role == resource.data.role
+        && request.resource.data.status == resource.data.status
+      );
+      allow delete: if false;
+    }
+
+    match /learners/{learnerId} {
+      allow read: if canAccessLearner(learnerId);
+      allow create: if adult()
+        && request.resource.data.authUid is string
+        && request.resource.data.studentCode is string
+        && request.resource.data.createdBy == request.auth.uid
+        && (
+          request.resource.data.parentIds.hasAny([request.auth.uid])
+          || request.resource.data.teacherIds.hasAny([request.auth.uid])
+          || roleIs('admin')
+        );
+      allow update: if roleIs('admin') || (
+        (isParentOf(learnerId) || isTeacherOf(learnerId))
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'name', 'grade', 'age', 'avatar', 'status', 'updatedAt', 'lastActiveAt'
+        ])
+        && request.resource.data.authUid == resource.data.authUid
+        && request.resource.data.studentCode == resource.data.studentCode
+        && request.resource.data.parentIds == resource.data.parentIds
+        && request.resource.data.teacherIds == resource.data.teacherIds
+        && request.resource.data.classroomIds == resource.data.classroomIds
+      ) || (
+        isOwnStudent(learnerId)
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['updatedAt', 'lastActiveAt'])
+      );
+      allow delete: if roleIs('admin') || isParentOf(learnerId);
+    }
+
+    match /learnerStates/{learnerId} {
+      allow read, create, update: if canAccessLearner(learnerId);
+      allow delete: if false;
+    }
+
+    match /learnerMetrics/{learnerId} {
+      allow read, create, update: if canAccessLearner(learnerId);
+      allow delete: if false;
+    }
+
+    match /attempts/{attemptId} {
+      allow read: if signedIn() && canAccessLearner(resource.data.learnerId);
+      allow create: if signedIn()
+        && canAccessLearner(request.resource.data.learnerId)
+        && request.resource.data.accountUid == request.auth.uid
+        && request.resource.data.id == attemptId;
+      allow update, delete: if false;
+    }
+
+    match /questionReports/{reportId} {
+      allow read: if signedIn() && canAccessLearner(resource.data.learnerId);
+      allow create: if signedIn()
+        && canAccessLearner(request.resource.data.learnerId)
+        && request.resource.data.reportedBy == request.auth.uid
+        && request.resource.data.id == reportId;
+      allow update: if roleIs('admin') || (
+        signedIn()
+        && (isParentOf(resource.data.learnerId) || isTeacherOf(resource.data.learnerId))
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status', 'reviewedAt', 'reviewedBy'])
+      );
+      allow delete: if false;
+    }
+
+    match /classrooms/{classroomId} {
+      allow read: if signedIn() && (resource.data.teacherIds.hasAny([request.auth.uid]) || roleIs('admin'));
+      allow create: if roleIs('admin') || (roleIs('teacher')
+        && request.resource.data.teacherIds.hasAny([request.auth.uid])
+        && request.resource.data.createdBy == request.auth.uid);
+      allow update: if roleIs('admin') || (
+        signedIn()
+        && resource.data.teacherIds.hasAny([request.auth.uid])
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly([
+          'name', 'grade', 'status', 'studentIds', 'updatedAt'
+        ])
+        && request.resource.data.teacherIds == resource.data.teacherIds
+      );
+      allow delete: if roleIs('admin');
+    }
+
+    match /organizations/{organizationId} {
+      allow read: if signedIn();
+      allow write: if roleIs('admin');
+    }
+
+    match /learnerEnrollmentHistory/{historyId} {
+      allow read: if signedIn() && (roleIs('admin') || canAccessLearner(resource.data.learnerId));
+      allow create: if roleIs('admin');
+      allow update, delete: if false;
+    }
+
+    match /blockedQuestions/{questionKey} {
+      allow read: if signedIn();
+      allow create: if signedIn() && (
+        roleIs('admin') ||
+        (request.resource.data.status == 'temporary-blocked'
+          && request.resource.data.reportedBy == request.auth.uid
+          && canAccessLearner(request.resource.data.learnerId))
+      );
+      allow update: if roleIs('admin');
+      allow delete: if false;
+    }
+
+    match /blockedQuestionFamilies/{familyId} {
+      allow read: if signedIn();
+      allow create: if signedIn() && (
+        roleIs('admin') ||
+        (request.resource.data.status == 'temporary-blocked'
+          && request.resource.data.reportedBy == request.auth.uid
+          && canAccessLearner(request.resource.data.learnerId))
+      );
+      allow update: if roleIs('admin');
+      allow delete: if false;
+    }
+
+    match /contentItems/{contentId} {
+      allow read: if signedIn();
+      allow write: if roleIs('admin');
+    }
+
+    match /clubs/{clubId} {
+      allow read: if signedIn();
+      allow create, update: if roleIs('admin') || roleIs('teacher');
+      allow delete: if roleIs('admin');
+    }
+
+    match /seasons/{seasonId} {
+      allow read: if signedIn();
+      allow write: if roleIs('admin');
+    }
+
+    match /familyLeagues/{leagueId} {
+      allow read: if signedIn() && (roleIs('admin') || request.auth.uid in resource.data.memberIds);
+      allow create: if roleIs('parent') || roleIs('admin');
+      allow update: if roleIs('admin') || request.auth.uid in resource.data.memberIds;
+      allow delete: if roleIs('admin');
+    }
+
+    match /aiInsights/{insightId} {
+      allow read: if signedIn() && canAccessLearner(resource.data.learnerId);
+      allow create, update: if roleIs('admin') || roleIs('teacher');
+      allow delete: if false;
+    }
+
+    match /leaderboards/{learnerId} {
+      allow read: if signedIn();
+      allow create, update: if signedIn() && canAccessLearner(learnerId)
+        && request.resource.data.learnerId == learnerId;
+      allow delete: if roleIs('admin');
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

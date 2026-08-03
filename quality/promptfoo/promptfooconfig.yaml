@@ -1,0 +1,24 @@
+description: Zihin Arenası seçilmiş soru kalite hakemliği
+providers:
+  - id: ollama:chat:qwen3:8b
+    config:
+      temperature: 0
+prompts:
+  - file://review-prompt.txt
+defaultTest:
+  assert:
+    - type: is-json
+    - type: javascript
+      value: |
+        const x = JSON.parse(output);
+        return ['PASS','REVIEW','REJECT'].includes(x.verdict)
+          && Number.isFinite(x.ageFitScore)
+          && Number.isFinite(x.optionQualityScore)
+          && Array.isArray(x.reasons);
+tests:
+  - vars:
+      grade: 4
+      question: "{{question}}"
+      options: "{{options}}"
+      answer: "{{answer}}"
+      explanation: "{{explanation}}"

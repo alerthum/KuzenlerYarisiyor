@@ -1,0 +1,12 @@
+{
+  "runId": "",
+  "status": "IN_PROGRESS",
+  "currentStage": 1,
+  "completedStages": [],
+  "startedAt": null,
+  "updatedAt": null,
+  "lastAction": "",
+  "nextAction": "",
+  "resumeInstruction": "",
+  "autonomousContinue": true
+}

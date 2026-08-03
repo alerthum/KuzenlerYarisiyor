@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zihinarena.local/schemas/v11/ai-generation-output.schema.json",
+  "title": "V11 AI Question Generation Output",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["contractId","skeletonId","difficulty","variationAxis","source","prompt","options","correctIndex","explanation","evidenceMap","optionDiagnostics","qualitySelfCheck"],
+  "properties": {
+    "contractId": {"type":"string","minLength":1},
+    "skeletonId": {"type":"string","pattern":"^[A-Z0-9_]+$"},
+    "difficulty": {"type":"integer","minimum":1,"maximum":3},
+    "variationAxis": {"type":"string","minLength":1},
+    "source": {"oneOf":[{"type":"string","minLength":1},{"type":"array","minItems":1,"items":{"type":"string","minLength":1}}]},
+    "prompt": {"type":"string","minLength":1},
+    "options": {"type":"array","minItems":4,"maxItems":4,"items":{"type":"string","minLength":1}},
+    "correctIndex": {"type":"integer","minimum":0,"maximum":3},
+    "explanation": {"type":"string","minLength":1},
+    "evidenceMap": {
+      "type":"object","additionalProperties":false,"required":["evidenceUnits","correctAnswerEvidenceIds"],
+      "properties":{
+        "evidenceUnits":{"type":"array","minItems":1,"items":{"type":"object","additionalProperties":false,"required":["evidenceId","text"],"properties":{"evidenceId":{"type":"string","minLength":1},"text":{"type":"string","minLength":1},"sourceIndex":{"type":"integer","minimum":0}}}},
+        "correctAnswerEvidenceIds":{"type":"array","minItems":1,"uniqueItems":true,"items":{"type":"string","minLength":1}}
+      }
+    },
+    "optionDiagnostics": {"type":"array","minItems":4,"maxItems":4,"items":{"type":"object","additionalProperties":false,"required":["optionIndex","isCorrect","misconceptionId","evidenceIds"],"properties":{"optionIndex":{"type":"integer","minimum":0,"maximum":3},"isCorrect":{"type":"boolean"},"misconceptionId":{"type":["string","null"]},"evidenceIds":{"type":"array","items":{"type":"string"}}}}},
+    "qualitySelfCheck": {"type":"object","additionalProperties":false,"required":["oneBestAnswer","noAnswerLeak","skeletonLogicPreserved","distinctMisconceptions","realVariationUsed"],"properties":{"oneBestAnswer":{"const":true},"noAnswerLeak":{"const":true},"skeletonLogicPreserved":{"const":true},"distinctMisconceptions":{"const":true},"realVariationUsed":{"const":true}}}
+  }
+}

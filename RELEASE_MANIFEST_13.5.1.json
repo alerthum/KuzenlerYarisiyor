@@ -1,0 +1,46 @@
+{
+  "release": "13.5.1-quality-pilot",
+  "releaseType": "controlled-child-quality-pilot",
+  "productReady": false,
+  "gitReadyPilot": true,
+  "qualityPilotMode": true,
+  "approvedGames": [
+    "error-detective",
+    "paragraph-detective",
+    "science-reasoning"
+  ],
+  "humanAuthoredQuestionCount": 34,
+  "qualityEvidence": {
+    "premiumPilotGate": "5/5 PASS",
+    "qualityPilotReleaseMode": "9/9 PASS",
+    "premiumCore": "20/20 PASS",
+    "relatedIntegrationRegression": "13/13 PASS",
+    "productionBuild": "PASS"
+  },
+  "primaryChangedFiles": [
+    "js/content/premium-pilot-bank.js",
+    "js/games/registry.js",
+    "js/quality/premium-options-engine.js",
+    "js/quality/question-factory-v13.js",
+    "js/quality/global-quality-engine-v10.js",
+    "js/engines/v11-session-composer.js",
+    "js/app.js",
+    "scripts/project-config.mjs",
+    "scripts/build-premium-pilot-report.mjs",
+    "tests/premium-pilot-quality.test.mjs",
+    "tests/quality-pilot-release-mode.test.mjs",
+    "quality-reports/premium-pilot-release.json",
+    "PREMIUM_PILOT_RELEASE.md",
+    "KUZENLER_AYARLARI.env",
+    "package.json"
+  ],
+  "knownNonPilotBlockers": [
+    "english-vocabulary produces 12/20 in an old long-session regression",
+    "geometry-lab uses only 2/4 task types in the old 30-session regression",
+    "logic-station long-run underfill",
+    "olympiad-ladder long-run underfill",
+    "some old admin/LGS tests have stale expectations"
+  ],
+  "excludedFromChildUI": "All games except the three approved pilot games",
+  "legacyFallbackWhenPilotExhausted": false
+}

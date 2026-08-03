@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-08-03T08:01:35.844Z",
+  "phase": "PHASE_2_IN_PROGRESS",
+  "productReady": false,
+  "targetModelCount": 12,
+  "currentModelCount": 5,
+  "remainingModelCount": 7,
+  "allCurrentModelsPass": true,
+  "coveredIdeas": [
+    "worst-case/pigeonhole",
+    "two-stage lattice path counting",
+    "modular digit enumeration",
+    "ordered compositions/recurrence",
+    "two-set inclusion-exclusion"
+  ],
+  "items": [
+    {
+      "id": "math-pigeonhole-guarantee-v2",
+      "constructId": "construct-pigeonhole",
+      "knowledgeComponents": [
+        "worst-case-reasoning",
+        "pigeonhole-principle"
+      ],
+      "deepFeatures": [
+        "worst-case-capacity",
+        "guarantee-threshold"
+      ],
+      "answer": "25",
+      "misconceptions": [
+        {
+          "id": "use-target-as-category-count",
+          "value": "21",
+          "feedback": "Çarpan, aynı renkten istenen sayı değil renk sayısıdır."
+        },
+        {
+          "id": "omit-final-guarantee-step",
+          "value": "24",
+          "feedback": "Bu toplamda garanti henüz oluşmayabilir; bir seçim daha gerekir."
+        },
+        {
+          "id": "multiply-category-by-target",
+          "value": "30",
+          "feedback": "Hedef sayıya ulaşıldığı anda garanti zaten oluşmuştur."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "math-lattice-path-checkpoint-v2",
+      "constructId": "construct-lattice-path-product",
+      "knowledgeComponents": [
+        "combinations",
+        "multiplication-principle",
+        "decompose-at-checkpoint"
+      ],
+      "deepFeatures": [
+        "two-stage-counting",
+        "checkpoint-decomposition"
+      ],
+      "answer": "700",
+      "misconceptions": [
+        {
+          "id": "add-stage-counts",
+          "value": "55",
+          "feedback": "Aşamalar alternatif değil ardışıktır; her ilk yol her ikinci yolla eşleşir."
+        },
+        {
+          "id": "count-as-single-unrestricted-route",
+          "value": "1716",
+          "feedback": "Tek aşamalı sayım, yolun B’den geçmesini garanti etmez."
+        },
+        {
+          "id": "permute-only-right-moves",
+          "value": "12",
+          "feedback": "Aynı tür hareketler ayırt edilmez; sağ ve yukarı hareketlerinin toplam sıralaması sayılmalıdır."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "math-modular-digit-v2",
+      "constructId": "construct-modular-digit",
+      "knowledgeComponents": [
+        "place-value",
+        "modular-arithmetic",
+        "systematic-enumeration"
+      ],
+      "deepFeatures": [
+        "modular-filter",
+        "digit-enumeration"
+      ],
+      "answer": "12",
+      "misconceptions": [
+        {
+          "id": "sum-valid-pairs",
+          "value": "3",
+          "feedback": "Soru çift sayısını değil farklı A değerlerinin toplamını ister."
+        },
+        {
+          "id": "sum-valid-b-digits",
+          "value": "15",
+          "feedback": "Koşulu sağlayan çiftler bulunsa da istenen B değil A rakamlarının toplamıdır."
+        },
+        {
+          "id": "treat-tens-as-hundreds",
+          "value": "14",
+          "feedback": "3 rakamı onlar basamağındadır ve sayıya katkısı 30’dur, 300 değil."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "math-compositions-two-three-v2",
+      "constructId": "construct-compositions",
+      "knowledgeComponents": [
+        "recurrence",
+        "case-splitting",
+        "ordered-compositions"
+      ],
+      "deepFeatures": [
+        "ordered-composition",
+        "recurrence"
+      ],
+      "answer": "114",
+      "misconceptions": [
+        {
+          "id": "unordered-count",
+          "value": "4",
+          "feedback": "Günlerin sırası değiştiğinde farklı tüketim planı oluşur."
+        },
+        {
+          "id": "fibonacci-two-one",
+          "value": "6765",
+          "feedback": "Bu problemde bir günde 1 tüketme seçeneği yoktur."
+        },
+        {
+          "id": "multiply-case-counts",
+          "value": "3185",
+          "feedback": "Bu iki durum birbirini dışlayan alternatiflerdir; sayıları toplanır."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "math-two-set-union-v2",
+      "constructId": "construct-two-set-union",
+      "knowledgeComponents": [
+        "set-intersection",
+        "avoid-double-counting"
+      ],
+      "deepFeatures": [
+        "derive-intersection",
+        "inclusion-exclusion"
+      ],
+      "answer": "21",
+      "misconceptions": [
+        {
+          "id": "add-totals",
+          "value": "25",
+          "feedback": "Ortak üyeler iki kez sayılmış olur."
+        },
+        {
+          "id": "sum-only-regions",
+          "value": "17",
+          "feedback": "En az bir kulüpte olanlara ortak üyeler de dahildir."
+        },
+        {
+          "id": "add-intersection-again",
+          "value": "29",
+          "feedback": "Ortak üyeler A ve B toplamlarında zaten iki kez yer almaktadır; ayrıca eklenmez."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    }
+  ],
+  "nextAction": "Add seven distinct models: invariant, parity/coloring, extremal, divisor structure, geometry transformation, game strategy, inequality."
+}

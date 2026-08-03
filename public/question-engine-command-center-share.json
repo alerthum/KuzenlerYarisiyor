@@ -1,0 +1,2777 @@
+{
+  "schemaVersion": "1.0",
+  "exportMeta": {
+    "exportedAt": "2026-08-02T21:10:23.259Z",
+    "projectName": "Zihin Arenası",
+    "screen": "Soru Motoru Komuta Merkezi",
+    "kind": "chatgpt-share",
+    "appVersion": "13.5.1-quality-pilot",
+    "runId": "dede0f23-8979-42a4-83a5-9c2a6c181793",
+    "dataFreshness": "STALE",
+    "sourceCount": 11,
+    "failedShardCount": 6,
+    "liveStatus": "ABORTED",
+    "compactMaxBytes": 768000,
+    "exportSizeBytes": 54144,
+    "exportSize": "53 KB"
+  },
+  "currentLiveOperation": {
+    "schemaVersion": "1.0",
+    "runId": "dede0f23-8979-42a4-83a5-9c2a6c181793",
+    "command": "npm run quality:product-acceptance:strict:core",
+    "status": "ABORTED",
+    "pid": 0,
+    "startedAt": "2026-08-02T14:35:15.637Z",
+    "updatedAt": "2026-08-02T16:12:34.178Z",
+    "lastHeartbeatAt": "2026-08-02T16:12:34.178Z",
+    "finishedAt": "2026-08-02T16:12:34.178Z",
+    "elapsedSeconds": 1811,
+    "phase": "session",
+    "phaseLabel": "DEVELOPMENT",
+    "currentGameId": "science-reasoning",
+    "currentGameName": "science-reasoning",
+    "currentGrade": 4,
+    "currentGradeBand": "3-5",
+    "currentSessionIndex": 29,
+    "currentSessionTarget": 720,
+    "completedGames": 0,
+    "totalGames": 23,
+    "completedWorkUnits": 154,
+    "totalWorkUnits": 4100,
+    "progressPercent": 3.8,
+    "attemptedCandidates": 1200,
+    "acceptedCandidates": 825,
+    "rejectedCandidates": 375,
+    "underfillCount": 3660,
+    "semanticRepeatCount": 0,
+    "lastCompletedStep": "science-reasoning oturum 29",
+    "lastActivityMessage": "Proje kaynak kodunun doğrudan incelenmesi için kullanıcı tarafından güvenli şekilde durduruldu.",
+    "exitCode": null,
+    "lastError": null,
+    "hangFail": null,
+    "checkpoint": {
+      "lastCompletedGameId": null,
+      "lastCompletedGradeBand": null,
+      "nextGameId": null,
+      "nextGradeBand": "perceived",
+      "completedPhases": [
+        "annual",
+        "class30"
+      ],
+      "completedGames": [],
+      "completedGameBands": []
+    },
+    "recentEvents": [
+      {
+        "time": "2026-08-02T15:05:09.227Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:09.470Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:09.692Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:09.898Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:10.029Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:10.180Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:10.379Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:10.556Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:10.700Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:10.826Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:10.974Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:11.099Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:14.910Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:15.096Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:15.293Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:15.708Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:16.199Z",
+        "level": "WARN",
+        "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+      },
+      {
+        "time": "2026-08-02T15:05:27.260Z",
+        "level": "ERROR",
+        "message": "Underfill kapasite sorunu nedeniyle kullanıcı tarafından teşhis için durduruldu."
+      },
+      {
+        "time": "2026-08-02T16:07:19.380Z",
+        "level": "INFO",
+        "message": "Repetition Policy V2 counterfactual shard’ları çalışıyor"
+      },
+      {
+        "time": "2026-08-02T16:07:19.385Z",
+        "level": "INFO",
+        "message": "Counterfactual: lgs-foundation / 8 (V1 vs V2)"
+      }
+    ],
+    "workType": "DEVELOPMENT",
+    "currentTask": "Counterfactual: lgs-foundation / 8 (V1 vs V2)",
+    "rootCause": null,
+    "changedFiles": [],
+    "previousFillRate": null,
+    "newFillRate": null,
+    "previousUnderfill": null,
+    "newUnderfill": null,
+    "capacityDeficit": null,
+    "addedBlueprintCount": 0,
+    "completedShard": null,
+    "nextShard": "lgs-foundation / 8",
+    "lastRealTestResult": null
+  },
+  "latestDecision": {
+    "decision": "FAIL",
+    "productReady": false,
+    "dimensions": {
+      "technicalQuality": "PASS",
+      "annualStudentCapacity": "FAIL",
+      "class30Capacity": "PASS",
+      "perceivedDiversity": "PASS",
+      "contentReview": "FAIL"
+    },
+    "failureHighlights": {
+      "annual": [
+        "familyRecurrenceInterval",
+        "skeletonRecurrenceInterval",
+        "solutionGraphRecurrenceInterval",
+        "difficultyProgression",
+        "persistentGrowingHistory",
+        "annualAttemptVolume"
+      ],
+      "class30": [],
+      "perceived": [],
+      "contentReview": [
+        "sampleCount"
+      ]
+    },
+    "updatedAt": "2026-08-02T12:51:39.160Z",
+    "note": "Stage 14 teknik PASS ürün hazır anlamına gelmez; PRODUCT_ACCEPTANCE_DECISION PASS olmadan Ürün Hazır gösterilemez.",
+    "elapsedMs": 2142226
+  },
+  "productAcceptance": {
+    "decision": "FAIL",
+    "productReady": false,
+    "dimensions": {
+      "technicalQuality": "PASS",
+      "annualStudentCapacity": "FAIL",
+      "class30Capacity": "PASS",
+      "perceivedDiversity": "PASS",
+      "contentReview": "FAIL"
+    },
+    "failureHighlights": {
+      "annual": [
+        "familyRecurrenceInterval",
+        "skeletonRecurrenceInterval",
+        "solutionGraphRecurrenceInterval",
+        "difficultyProgression",
+        "persistentGrowingHistory",
+        "annualAttemptVolume"
+      ],
+      "class30": [],
+      "perceived": [],
+      "contentReview": [
+        "sampleCount"
+      ]
+    },
+    "fromAnalysis": {
+      "decision": "FAIL",
+      "productReady": false,
+      "dimensions": {
+        "technicalQuality": "PASS",
+        "annualStudentCapacity": "FAIL",
+        "class30Capacity": "PASS",
+        "perceivedDiversity": "PASS",
+        "contentReview": "FAIL"
+      },
+      "technicalQualityScoreLabel": "Teknik Kalite Puanı",
+      "note": "Stage 14 teknik PASS ürün hazır anlamına gelmez; PRODUCT_ACCEPTANCE_DECISION PASS olmadan Ürün Hazır gösterilemez.",
+      "failureHighlights": {
+        "annual": [
+          "familyRecurrenceInterval",
+          "skeletonRecurrenceInterval",
+          "solutionGraphRecurrenceInterval",
+          "difficultyProgression",
+          "persistentGrowingHistory",
+          "annualAttemptVolume"
+        ],
+        "class30": [],
+        "perceived": [],
+        "contentReview": [
+          "sampleCount"
+        ]
+      },
+      "reports": {
+        "annualStudent": "quality-reports/product-acceptance/annual-student.json",
+        "class30": "quality-reports/product-acceptance/class-30.json",
+        "perceivedDiversity": "quality-reports/product-acceptance/perceived-diversity.json",
+        "contentReviewSamples": "quality-reports/product-acceptance/content-review-samples.json"
+      },
+      "updatedAt": "2026-08-02T12:51:39.160Z"
+    }
+  },
+  "qualityScore": {
+    "overall": 100,
+    "technicalQualityScorePercent": 100,
+    "finalEvidenceAdequacy": "PASS",
+    "file": {
+      "schemaVersion": "1.0",
+      "updatedAt": "2026-08-02T00:49:36.780Z"
+    }
+  },
+  "projectStateSummary": {
+    "currentStage": 15,
+    "overallStatus": "IN_PROGRESS",
+    "lastUpdated": "2026-08-02T14:36:00.000Z",
+    "productAcceptance": {
+      "decision": "FAIL",
+      "productReady": false,
+      "liveTelemetry": "public/strict-audit-live.json",
+      "command": "npm run quality:product-acceptance:strict",
+      "note": "Canlı koşu Admin > Soru Motoru Komuta Merkezi en üstünde; terminal zorunlu değil"
+    }
+  },
+  "blockers": [
+    {
+      "id": "B-015",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "title": "PRODUCT_ACCEPTANCE strict — annualStudentCapacity + contentReview FAIL; canlı telemetri ile yeniden koşuluyor",
+      "evidence": "PRODUCT_ACCEPTANCE_DECISION.json; public/strict-audit-live.json; quality-reports/strict-audit-progress.json",
+      "ownerStage": 15,
+      "gaps": [
+        "familyRecurrenceInterval",
+        "skeletonRecurrenceInterval",
+        "solutionGraphRecurrenceInterval",
+        "difficultyProgression",
+        "persistentGrowingHistory",
+        "annualAttemptVolume",
+        "contentReview.sampleCount"
+      ]
+    }
+  ],
+  "blockersClosedSummary": {
+    "count": 8,
+    "bySeverity": {
+      "HIGH": 5,
+      "MEDIUM": 3
+    }
+  },
+  "blockerCounts": {
+    "openCriticalCount": 0,
+    "openHighCount": 1,
+    "openMediumCount": 0
+  },
+  "stageProgress": {
+    "note": "percentComplete yalnız ölçülebilir gerçek ilerlemeden hesaplanır (ör. Aşama 04 için tamamlanan oyun sayısı / toplam aktif oyun sayısı); uydurulmamıştır.",
+    "stages": [
+      {
+        "id": 1,
+        "name": "V11 kök neden analizi",
+        "status": "PASS",
+        "percentComplete": 100,
+        "lastReport": "reports/STAGE_01_REPORT.md",
+        "lastAction": "6 legacy matematik oyununda familyId/skeletonId eksikliği düzeltildi",
+        "openBlockers": 0,
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": 2,
+        "name": "Admin soru motoru komuta merkezi",
+        "status": "PASS",
+        "percentComplete": 100,
+        "lastReport": "reports/STAGE_02_REPORT.md",
+        "lastAction": "Soru Motoru Komuta Merkezi admin sekmesi eklendi",
+        "openBlockers": 0,
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": 3,
+        "name": "Ortak soru sözleşmesi",
+        "status": "PASS",
+        "percentComplete": 100,
+        "lastReport": "reports/STAGE_03_REPORT.md",
+        "lastAction": "questionContract tüm oyunlara eklendi",
+        "openBlockers": 0,
+        "nextAction": "Yok — kapalı"
+      },
+      {
+        "id": 4,
+        "name": "Aile-iskelet-düşünme yolu mimarisi",
+        "status": "PASS",
+        "percentComplete": 100,
+        "lastReport": "reports/STAGE_04_REPORT.md",
+        "lastAction": "23/23 oyun 12×4×3=48 PASS; Aşama 04 kapandı",
+        "openBlockers": 0,
+        "nextAction": "Yok — kapalı",
+        "subProgress": {
+          "mathGroup1": "6/6 PASS",
+          "logicOlympiadGroup": "2/2 PASS",
+          "otherGroups": "15/15 PASS"
+        }
+      },
+      {
+        "id": 5,
+        "name": "3. sınıf sonrası zorluk standardı",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 05 başlat — DIFF_ANALYSIS"
+      },
+      {
+        "id": 6,
+        "name": "Seçenek ve çeldirici kalite motoru",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 05 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 7,
+        "name": "Bağımsız doğruluk ve çözüm motoru",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 06 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 8,
+        "name": "Semantik tekrar ve kapasite motoru",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 07 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 9,
+        "name": "Ortak oturum bestecisi",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 08 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 10,
+        "name": "İnsan gözü ve çocuk aklı denetimi",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 09 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 11,
+        "name": "AI hakemleri ve token bütçesi",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 10 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 12,
+        "name": "Tüm oyun entegrasyonu",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 11 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 13,
+        "name": "Canlı oturum ve E2E",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 12 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 14,
+        "name": "Puanlama ve yayın kapısı",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 13 PASS olduktan sonra başlayacak"
+      },
+      {
+        "id": 15,
+        "name": "Final kabul",
+        "status": "WAITING",
+        "percentComplete": 0,
+        "lastReport": null,
+        "lastAction": null,
+        "openBlockers": 0,
+        "nextAction": "Aşama 14 PASS olduktan sonra başlayacak"
+      }
+    ]
+  },
+  "auditSummary": {
+    "runId": "dede0f23-8979-42a4-83a5-9c2a6c181793",
+    "mode": "full",
+    "resume": false,
+    "status": "ABORTED",
+    "startedAt": "2026-08-02T14:35:15.637Z",
+    "finishedAt": "2026-08-02T16:12:34.178Z",
+    "elapsedSeconds": 1811,
+    "completedWorkUnits": 154,
+    "totalWorkUnits": 4100,
+    "progressPercent": 3.8,
+    "underfillCount": 3660,
+    "attemptedCandidates": 1200,
+    "acceptedCandidates": 825,
+    "rejectedCandidates": 375,
+    "eventCountInProgressFile": 226,
+    "gameCountTracked": 23,
+    "checkpoint": {
+      "lastCompletedGameId": null,
+      "lastCompletedGradeBand": null,
+      "nextGameId": null,
+      "nextGradeBand": "perceived",
+      "completedPhases": [
+        "annual",
+        "class30"
+      ],
+      "completedGames": [],
+      "completedGameBands": []
+    },
+    "hangFail": null,
+    "decisionInProgress": null
+  },
+  "capacitySummary": {
+    "annual": {
+      "pass": false,
+      "gates": {
+        "exactQuestionRepeat": true,
+        "familyRecurrenceInterval": false,
+        "skeletonRecurrenceInterval": false,
+        "reasoningPathRecurrenceInterval": true,
+        "solutionGraphRecurrenceInterval": false,
+        "distractorPlanRecurrenceInterval": true,
+        "perceivedSemanticCluster": true,
+        "curriculumCoverage": true,
+        "difficultyProgression": false,
+        "adaptiveRouteChanges": true,
+        "persistentGrowingHistory": true,
+        "sessionsCompleted": true,
+        "annualAttemptVolume": true
+      },
+      "attemptCount": null,
+      "failureHighlights": [
+        "familyRecurrenceInterval",
+        "skeletonRecurrenceInterval",
+        "solutionGraphRecurrenceInterval",
+        "difficultyProgression",
+        "persistentGrowingHistory",
+        "annualAttemptVolume"
+      ]
+    },
+    "class30": {
+      "pass": true,
+      "gates": {
+        "sameQuestionSimultaneousRate": true,
+        "equivalentDifficulty": true,
+        "historySeparation": true,
+        "classQuestionConcentration": true,
+        "teacherTargetEffect": true,
+        "persistentPerStudentHistory": true
+      }
+    },
+    "perceived": {
+      "pass": true,
+      "gates": {
+        "samplesCollected": true,
+        "clusterDiversity": true,
+        "perceivedCollapseBounded": true,
+        "comparesBeyondQuestionKeyFamilyId": true
+      },
+      "summary": {
+        "totalRounds": 4316,
+        "distinctClusters": 4294,
+        "clusterRatio": 0.995,
+        "sameExperienceRate": 0.01,
+        "multiIdSameExperienceClusters": 21
+      }
+    },
+    "contentReview": {
+      "pass": false,
+      "gates": {
+        "allActiveGamesRepresented": true,
+        "ageBandsPresent": true,
+        "requiredFieldsPresent": true,
+        "criticalContentViolationsZero": true,
+        "sampleCount": false
+      },
+      "metrics": null,
+      "sampleCount": 1825
+    }
+  },
+  "capacityPolicyDiagnosis": {
+    "topDefects": [
+      {
+        "id": "CX_LIFETIME_NO_ACADEMIC_TIME",
+        "severity": "CRITICAL",
+        "summary": "Lifetime per-game CX ban + frozen grade/age in annual sim over-constrains 720-session capacity and causes underfill.",
+        "evidence": [
+          "js/games/registry.js:767-770",
+          "js/quality/product-acceptance-audit.js:478-493",
+          "scripts/run-product-acceptance-audit.mjs:345"
+        ]
+      },
+      {
+        "id": "SOLUTION_GRAPH_SOFT_ONLY",
+        "severity": "HIGH",
+        "summary": "Annual gate checks solutionGraph recurrence, but createGameSession only ranks it.",
+        "evidence": [
+          "js/games/registry.js:759-762",
+          "js/games/registry.js:1867-1875"
+        ]
+      },
+      {
+        "id": "SEEN_NOT_GAME_SCOPED",
+        "severity": "MEDIUM",
+        "summary": "seenQuestionKeys can block across games if keys collide.",
+        "evidence": [
+          "js/games/registry.js:740"
+        ]
+      },
+      {
+        "id": "PRODUCTION_ATTEMPTS_TRUNCATE",
+        "severity": "MEDIUM",
+        "summary": "storage keeps last 5000 attempts — lifetime CX set can silently lose old IDs in real app.",
+        "evidence": [
+          "js/storage.js:33",
+          "js/games/registry.js:768-770"
+        ]
+      }
+    ],
+    "answers": {
+      "historyGlobalOrPerStudent": {
+        "verdict": "per-student",
+        "evidence": [
+          "js/state.js:232-237 seenQuestionKeysForProfile",
+          "js/state.js:315-316 attemptsForProfile",
+          "js/quality/product-acceptance-audit.js:229-239 createPersistentStudent"
+        ]
+      },
+      "class30SharedHistory": {
+        "verdict": false,
+        "evidence": [
+          "js/quality/product-acceptance-audit.js:701-705 30 independent createPersistentStudent",
+          "js/quality/product-acceptance-audit.js:768-806 historySeparation Jaccard gate"
+        ]
+      },
+      "crossGameHistoryBlock": {
+        "verdict": "partial",
+        "familySkeletonCx": "game-scoped filter — no cross-game block",
+        "questionKeySeen": "student-global Set — not filtered by gameId",
+        "evidence": [
+          "js/games/registry.js:740 seen",
+          "js/games/registry.js:748-770 recent* filtered by gameId"
+        ]
+      },
+      "gradeBandHistoryMix": {
+        "annual": "single fixed grade/age — no band progression",
+        "perceived": "intentional: one student accumulates CX across AGE_BANDS",
+        "contentReview": "fresh student per band×game",
+        "evidence": [
+          "js/quality/product-acceptance-audit.js:865-868",
+          "js/quality/product-acceptance-audit.js:1017-1020"
+        ]
+      },
+      "historiesClearedBetweenPhases": {
+        "verdict": true,
+        "evidence": [
+          "js/quality/product-acceptance-audit.js:1182-1206 separate phase runners",
+          "scripts/run-product-acceptance-audit.mjs:340-346 checkpoint skips phase JSON, no history merge"
+        ]
+      },
+      "academicTimeAdvances": {
+        "verdict": false,
+        "defect": "week is schedule label only; age/grade never incremented",
+        "evidence": [
+          "js/quality/product-acceptance-audit.js:496-510 schedule week",
+          "js/quality/product-acceptance-audit.js:341-346 only skills update"
+        ]
+      },
+      "cooldownsExpire": {
+        "familyId": "soft slice(-36) attempts",
+        "skeletonId": "soft slice(-48) attempts",
+        "solutionGraph": "slice(-48) rank penalty only — not hard filter",
+        "cognitiveExperienceId": "DOES NOT EXPIRE — lifetime Set",
+        "questionKey": "forever Set",
+        "evidence": [
+          "js/games/registry.js:748-770",
+          "js/games/registry.js:1881-1884 hard CX filter"
+        ]
+      },
+      "checkpointResumeBadHistory": {
+        "verdict": false,
+        "notes": "Checkpoint stores completedPhases only — not student.attempts. Mid-phase restart is fresh, not polluted.",
+        "evidence": [
+          "scripts/run-product-acceptance-audit.mjs:60-78",
+          "scripts/run-product-acceptance-audit.mjs:340-346"
+        ]
+      },
+      "cxTooBroadOrNarrow": {
+        "verdict": "structure-aware + surface-abstracted",
+        "includes": [
+          "pattern",
+          "family",
+          "skeleton",
+          "reasoningPath",
+          "solutionGraph",
+          "abstract prompt/context"
+        ],
+        "excludes": [
+          "raw numbers/names",
+          "most lexical tokens via abstractSurfaceLexicon"
+        ],
+        "evidence": [
+          "js/quality/question-factory-v13.js:303-348"
+        ]
+      },
+      "differentStructuresSameCx": {
+        "differentFamilySkeletonPath": false,
+        "sameIdsDifferentDecor": true,
+        "mechanism": "abstractSurfaceLexicon collapses 3+ letter words to ~",
+        "evidence": [
+          "js/quality/question-factory-v13.js:303-342"
+        ]
+      },
+      "lifetimeCxBanAcross720": {
+        "verdict": true,
+        "scope": "per-student × per-game lifetime Set over all attempts — no slice",
+        "runner": "36 weeks × 20 sessions = 720",
+        "comment": "Yaşam boyu (oyun bazında) cognitiveExperience tekrarı ürün kabulünde yasak sayılır.",
+        "evidence": [
+          "js/games/registry.js:767-770",
+          "js/games/registry.js:1881-1884",
+          "js/games/registry.js:1998-2008 capacityFailure.recentCognitiveExperience",
+          "scripts/run-product-acceptance-audit.mjs:345"
+        ]
+      }
+    },
+    "liveStatus": "ABORTED",
+    "nextAction": "Implement repetition-policy-v2.js and wire createGameSession; add academic time progression; run targeted counterfactual shards."
+  },
+  "oldVsNewPolicy": null,
+  "targetedShardResults": [],
+  "capacityPlannerResults": [],
+  "addedBlueprints": 0,
+  "failedShard": "lgs-foundation",
+  "nextDevelopmentAction": "Counterfactual: lgs-foundation / 8 (V1 vs V2)",
+  "developmentLive": {
+    "workType": "DEVELOPMENT",
+    "currentTask": "Counterfactual: lgs-foundation / 8 (V1 vs V2)",
+    "rootCause": "CX geçmişi süresiz/oyun bazlı tutuluyordu; akademik zaman ilerlemiyordu",
+    "completedShard": null,
+    "nextShard": "lgs-foundation / 8",
+    "lastRealTestResult": null
+  },
+  "failedShards": [
+    {
+      "gameId": "lgs-foundation",
+      "gradeBand": "6-8",
+      "sessions": 120,
+      "requested": 1200,
+      "produced": 124,
+      "fillRate": 0.103,
+      "underfillRate": 1,
+      "attempted": 1200,
+      "accepted": 124,
+      "rejected": 1076,
+      "underfillSessions": 60,
+      "capacityFailSessions": 60,
+      "firstFailureSession": 20,
+      "lastFailureSession": 79,
+      "topRejectionReasons": [
+        {
+          "id": "capacity_underfill",
+          "count": 60
+        },
+        {
+          "id": "underfill",
+          "count": 60
+        }
+      ],
+      "topBlockedFamilies": [
+        {
+          "id": "lgs-variable-control",
+          "count": 57
+        },
+        {
+          "id": "lgs-misread-taxonomy",
+          "count": 56
+        },
+        {
+          "id": "lgs-text-inference",
+          "count": 55
+        },
+        {
+          "id": "lgs-graph-read",
+          "count": 52
+        },
+        {
+          "id": "lgs-data-table",
+          "count": 52
+        },
+        {
+          "id": "lgs-science-claim",
+          "count": 52
+        }
+      ],
+      "topBlockedSkeletons": [
+        {
+          "id": "lgs-variable-control:compare-worlds",
+          "count": 51
+        },
+        {
+          "id": "lgs-misread-taxonomy:compare-worlds",
+          "count": 46
+        },
+        {
+          "id": "lgs-geometry-figure:spot-violation",
+          "count": 42
+        },
+        {
+          "id": "lgs-text-inference:forced-fact",
+          "count": 39
+        },
+        {
+          "id": "lgs-science-claim:spot-violation",
+          "count": 37
+        },
+        {
+          "id": "lgs-english-pragmatic:forced-fact",
+          "count": 31
+        }
+      ],
+      "topBlockedCognitiveExperiences": [
+        {
+          "id": "cx:7gotyr",
+          "count": 36
+        },
+        {
+          "id": "cx:ogxesm",
+          "count": 35
+        },
+        {
+          "id": "cx:1qhtu62",
+          "count": 29
+        },
+        {
+          "id": "cx:u30wix",
+          "count": 29
+        },
+        {
+          "id": "cx:1rrhsdv",
+          "count": 29
+        },
+        {
+          "id": "cx:16sawd8",
+          "count": 29
+        }
+      ]
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "9-12",
+      "sessions": 40,
+      "requested": 240,
+      "produced": 0,
+      "fillRate": 0,
+      "underfillRate": 1,
+      "attempted": 240,
+      "accepted": 0,
+      "rejected": 240,
+      "underfillSessions": 20,
+      "capacityFailSessions": 20,
+      "firstFailureSession": 60,
+      "lastFailureSession": 79,
+      "topRejectionReasons": [
+        {
+          "id": "capacity_underfill",
+          "count": 20
+        },
+        {
+          "id": "underfill",
+          "count": 20
+        }
+      ],
+      "topBlockedFamilies": [
+        {
+          "id": "sl-force-push-pull",
+          "count": 20
+        },
+        {
+          "id": "sl-misread-taxonomy",
+          "count": 20
+        },
+        {
+          "id": "sl-phase-change",
+          "count": 20
+        },
+        {
+          "id": "sl-light-source-reflector",
+          "count": 20
+        },
+        {
+          "id": "sl-shadow-formation",
+          "count": 20
+        },
+        {
+          "id": "sl-earth-rotation-daynight",
+          "count": 20
+        }
+      ],
+      "topBlockedSkeletons": [
+        {
+          "id": "sl-force-push-pull:spot-violation",
+          "count": 20
+        },
+        {
+          "id": "sl-shadow-formation:select-valid",
+          "count": 20
+        },
+        {
+          "id": "sl-phase-change:spot-violation",
+          "count": 20
+        },
+        {
+          "id": "sl-light-source-reflector:select-valid",
+          "count": 20
+        },
+        {
+          "id": "sl-magnet-poles:compare-worlds",
+          "count": 20
+        },
+        {
+          "id": "sl-light-source-reflector:forced-fact",
+          "count": 20
+        }
+      ],
+      "topBlockedCognitiveExperiences": [
+        {
+          "id": "cx:9u66kf",
+          "count": 20
+        },
+        {
+          "id": "cx:1ff1ukl",
+          "count": 20
+        },
+        {
+          "id": "cx:y40v85",
+          "count": 20
+        },
+        {
+          "id": "cx:1pjfnku",
+          "count": 20
+        },
+        {
+          "id": "cx:4vprnf",
+          "count": 20
+        },
+        {
+          "id": "cx:ebed95",
+          "count": 20
+        }
+      ]
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "6-8",
+      "sessions": 36,
+      "requested": 216,
+      "produced": 20,
+      "fillRate": 0.093,
+      "underfillRate": 1,
+      "attempted": 216,
+      "accepted": 20,
+      "rejected": 196,
+      "underfillSessions": 18,
+      "capacityFailSessions": 18,
+      "firstFailureSession": 40,
+      "lastFailureSession": 59,
+      "topRejectionReasons": [
+        {
+          "id": "capacity_underfill",
+          "count": 18
+        },
+        {
+          "id": "underfill",
+          "count": 18
+        }
+      ],
+      "topBlockedFamilies": [
+        {
+          "id": "sl-shadow-formation",
+          "count": 18
+        },
+        {
+          "id": "sl-magnet-poles",
+          "count": 17
+        },
+        {
+          "id": "sl-force-push-pull",
+          "count": 17
+        },
+        {
+          "id": "sl-phase-change",
+          "count": 17
+        },
+        {
+          "id": "sl-photosynthesis-structure",
+          "count": 17
+        },
+        {
+          "id": "sl-earth-rotation-daynight",
+          "count": 16
+        }
+      ],
+      "topBlockedSkeletons": [
+        {
+          "id": "sl-force-push-pull:spot-violation",
+          "count": 18
+        },
+        {
+          "id": "sl-shadow-formation:select-valid",
+          "count": 15
+        },
+        {
+          "id": "sl-phase-change:spot-violation",
+          "count": 15
+        },
+        {
+          "id": "sl-earth-rotation-daynight:spot-violation",
+          "count": 10
+        },
+        {
+          "id": "sl-sound-medium:spot-violation",
+          "count": 10
+        },
+        {
+          "id": "sl-force-push-pull:forced-fact",
+          "count": 10
+        }
+      ],
+      "topBlockedCognitiveExperiences": [
+        {
+          "id": "cx:q8vwwx",
+          "count": 8
+        },
+        {
+          "id": "cx:1ai5l4w",
+          "count": 8
+        },
+        {
+          "id": "cx:1g7ek54",
+          "count": 8
+        },
+        {
+          "id": "cx:9u66kf",
+          "count": 8
+        },
+        {
+          "id": "cx:1ff1ukl",
+          "count": 8
+        },
+        {
+          "id": "cx:y40v85",
+          "count": 8
+        }
+      ]
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "3-5",
+      "sessions": 18,
+      "requested": 108,
+      "produced": 36,
+      "fillRate": 0.333,
+      "underfillRate": 1,
+      "attempted": 108,
+      "accepted": 36,
+      "rejected": 72,
+      "underfillSessions": 9,
+      "capacityFailSessions": 9,
+      "firstFailureSession": 25,
+      "lastFailureSession": 39,
+      "topRejectionReasons": [
+        {
+          "id": "capacity_underfill",
+          "count": 9
+        },
+        {
+          "id": "underfill",
+          "count": 9
+        }
+      ],
+      "topBlockedFamilies": [
+        {
+          "id": "sl-sound-medium",
+          "count": 9
+        },
+        {
+          "id": "sl-misread-taxonomy",
+          "count": 8
+        },
+        {
+          "id": "sl-chemical-vs-physical",
+          "count": 7
+        },
+        {
+          "id": "sl-phase-change",
+          "count": 7
+        },
+        {
+          "id": "sl-shadow-formation",
+          "count": 7
+        },
+        {
+          "id": "sl-photosynthesis-structure",
+          "count": 6
+        }
+      ],
+      "topBlockedSkeletons": [
+        {
+          "id": "sl-shadow-formation:compare-worlds",
+          "count": 4
+        },
+        {
+          "id": "sl-earth-rotation-daynight:spot-violation",
+          "count": 4
+        },
+        {
+          "id": "sl-sound-medium:spot-violation",
+          "count": 4
+        },
+        {
+          "id": "sl-light-source-reflector:spot-violation",
+          "count": 3
+        },
+        {
+          "id": "sl-magnet-poles:forced-fact",
+          "count": 3
+        },
+        {
+          "id": "sl-earth-rotation-daynight:forced-fact",
+          "count": 3
+        }
+      ],
+      "topBlockedCognitiveExperiences": [
+        {
+          "id": "cx:l7ume9",
+          "count": 2
+        },
+        {
+          "id": "cx:xwrvqi",
+          "count": 2
+        },
+        {
+          "id": "cx:wlgp7f",
+          "count": 2
+        },
+        {
+          "id": "cx:1e1qk61",
+          "count": 2
+        },
+        {
+          "id": "cx:qligb3",
+          "count": 2
+        },
+        {
+          "id": "cx:1fwc01",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "gameId": "science-reasoning",
+      "gradeBand": "3-5",
+      "sessions": 10,
+      "requested": 50,
+      "produced": 30,
+      "fillRate": 0.6,
+      "underfillRate": 1,
+      "attempted": 50,
+      "accepted": 30,
+      "rejected": 20,
+      "underfillSessions": 5,
+      "capacityFailSessions": 5,
+      "firstFailureSession": 21,
+      "lastFailureSession": 29,
+      "topRejectionReasons": [
+        {
+          "id": "capacity_underfill",
+          "count": 5
+        },
+        {
+          "id": "underfill",
+          "count": 5
+        }
+      ],
+      "topBlockedFamilies": [
+        {
+          "id": "sr-heat-conduction-inference",
+          "count": 5
+        },
+        {
+          "id": "sr-friction-inference",
+          "count": 5
+        },
+        {
+          "id": "sr-independent-variable",
+          "count": 4
+        },
+        {
+          "id": "sr-rate-temperature",
+          "count": 4
+        },
+        {
+          "id": "sr-model-limits",
+          "count": 4
+        },
+        {
+          "id": "sr-repeatability",
+          "count": 4
+        }
+      ],
+      "topBlockedSkeletons": [
+        {
+          "id": "sr-rate-temperature:spot-violation",
+          "count": 3
+        },
+        {
+          "id": "sr-hypothesis-testability:compare-worlds",
+          "count": 3
+        },
+        {
+          "id": "sr-friction-inference:compare-worlds",
+          "count": 3
+        },
+        {
+          "id": "sr-confounding-variables:forced-fact",
+          "count": 2
+        },
+        {
+          "id": "sr-control-group:compare-worlds",
+          "count": 2
+        },
+        {
+          "id": "sr-control-group:select-valid",
+          "count": 2
+        }
+      ],
+      "topBlockedCognitiveExperiences": [
+        {
+          "id": "cx:tq2eyv",
+          "count": 3
+        },
+        {
+          "id": "cx:43s9ne",
+          "count": 2
+        },
+        {
+          "id": "cx:36z44z",
+          "count": 2
+        },
+        {
+          "id": "cx:aww5bv",
+          "count": 2
+        },
+        {
+          "id": "cx:1dodhh5",
+          "count": 2
+        },
+        {
+          "id": "cx:oo34wh",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "1-2",
+      "sessions": 2,
+      "requested": 12,
+      "produced": 10,
+      "fillRate": 0.833,
+      "underfillRate": 1,
+      "attempted": 12,
+      "accepted": 10,
+      "rejected": 2,
+      "underfillSessions": 1,
+      "capacityFailSessions": 1,
+      "firstFailureSession": 19,
+      "lastFailureSession": 19,
+      "topRejectionReasons": [
+        {
+          "id": "capacity_underfill",
+          "count": 1
+        },
+        {
+          "id": "underfill",
+          "count": 1
+        }
+      ],
+      "topBlockedFamilies": [
+        {
+          "id": "sl-shadow-formation",
+          "count": 1
+        },
+        {
+          "id": "sl-phase-change",
+          "count": 1
+        },
+        {
+          "id": "sl-photosynthesis-structure",
+          "count": 1
+        },
+        {
+          "id": "sl-light-source-reflector",
+          "count": 1
+        },
+        {
+          "id": "sl-sound-medium",
+          "count": 1
+        },
+        {
+          "id": "sl-conductor-insulator",
+          "count": 1
+        }
+      ],
+      "topBlockedSkeletons": [
+        {
+          "id": "sl-force-push-pull:spot-violation",
+          "count": 1
+        },
+        {
+          "id": "sl-chemical-vs-physical:spot-violation",
+          "count": 1
+        },
+        {
+          "id": "sl-sound-medium:compare-worlds",
+          "count": 1
+        },
+        {
+          "id": "sl-photosynthesis-structure:compare-worlds",
+          "count": 1
+        },
+        {
+          "id": "sl-magnet-poles:compare-worlds",
+          "count": 1
+        },
+        {
+          "id": "sl-heart-pump:forced-fact",
+          "count": 1
+        }
+      ],
+      "topBlockedCognitiveExperiences": [
+        {
+          "id": "cx:8z18ug",
+          "count": 1
+        },
+        {
+          "id": "cx:bgcp84",
+          "count": 1
+        },
+        {
+          "id": "cx:j91bmh",
+          "count": 1
+        },
+        {
+          "id": "cx:1pmg681",
+          "count": 1
+        },
+        {
+          "id": "cx:u33v0f",
+          "count": 1
+        },
+        {
+          "id": "cx:rr7jlr",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "gameBandSummary": [
+    {
+      "gameId": "english-cloze",
+      "gradeBand": "all",
+      "sessions": 144,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.931,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 67,
+      "capacityFailSessions": 67
+    },
+    {
+      "gameId": "english-sentence-builder",
+      "gradeBand": "all",
+      "sessions": 143,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 2,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 143,
+      "capacityFailSessions": 143
+    },
+    {
+      "gameId": "english-vocabulary",
+      "gradeBand": "all",
+      "sessions": 144,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 2,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 144,
+      "capacityFailSessions": 144
+    },
+    {
+      "gameId": "error-detective",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.36,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 119,
+      "capacityFailSessions": 119
+    },
+    {
+      "gameId": "forbidden-story",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.057,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 5,
+      "capacityFailSessions": 5
+    },
+    {
+      "gameId": "geometry-lab",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.109,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 97,
+      "capacityFailSessions": 97
+    },
+    {
+      "gameId": "lgs-foundation",
+      "gradeBand": "6-8",
+      "sessions": 120,
+      "requested": 1200,
+      "produced": 124,
+      "fillRate": 0.103,
+      "underfillRate": 1,
+      "attempted": 1200,
+      "accepted": 124,
+      "rejected": 1076,
+      "underfillSessions": 60,
+      "capacityFailSessions": 60
+    },
+    {
+      "gameId": "lgs-foundation",
+      "gradeBand": "all",
+      "sessions": 143,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.175,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 84,
+      "capacityFailSessions": 84
+    },
+    {
+      "gameId": "logic-station",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.166,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 102,
+      "capacityFailSessions": 102
+    },
+    {
+      "gameId": "meaning-hunt",
+      "gradeBand": "all",
+      "sessions": 174,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.46,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 40,
+      "capacityFailSessions": 40
+    },
+    {
+      "gameId": "olympiad-ladder",
+      "gradeBand": "all",
+      "sessions": 219,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.397,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 153,
+      "capacityFailSessions": 153
+    },
+    {
+      "gameId": "paragraph-detective",
+      "gradeBand": "all",
+      "sessions": 174,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.793,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 69,
+      "capacityFailSessions": 69
+    },
+    {
+      "gameId": "pattern-lab",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.2,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 105,
+      "capacityFailSessions": 105
+    },
+    {
+      "gameId": "problem-hunter",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.823,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 72,
+      "capacityFailSessions": 72
+    },
+    {
+      "gameId": "religion-practice",
+      "gradeBand": "all",
+      "sessions": 143,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.301,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 93,
+      "capacityFailSessions": 93
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "1-2",
+      "sessions": 2,
+      "requested": 12,
+      "produced": 10,
+      "fillRate": 0.833,
+      "underfillRate": 1,
+      "attempted": 12,
+      "accepted": 10,
+      "rejected": 2,
+      "underfillSessions": 1,
+      "capacityFailSessions": 1
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "3-5",
+      "sessions": 18,
+      "requested": 108,
+      "produced": 36,
+      "fillRate": 0.333,
+      "underfillRate": 1,
+      "attempted": 108,
+      "accepted": 36,
+      "rejected": 72,
+      "underfillSessions": 9,
+      "capacityFailSessions": 9
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "6-8",
+      "sessions": 36,
+      "requested": 216,
+      "produced": 20,
+      "fillRate": 0.093,
+      "underfillRate": 1,
+      "attempted": 216,
+      "accepted": 20,
+      "rejected": 196,
+      "underfillSessions": 18,
+      "capacityFailSessions": 18
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "9-12",
+      "sessions": 40,
+      "requested": 240,
+      "produced": 0,
+      "fillRate": 0,
+      "underfillRate": 1,
+      "attempted": 240,
+      "accepted": 0,
+      "rejected": 240,
+      "underfillSessions": 20,
+      "capacityFailSessions": 20
+    },
+    {
+      "gameId": "science-lab",
+      "gradeBand": "all",
+      "sessions": 143,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.685,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 49,
+      "capacityFailSessions": 49
+    },
+    {
+      "gameId": "science-reasoning",
+      "gradeBand": "3-5",
+      "sessions": 10,
+      "requested": 50,
+      "produced": 30,
+      "fillRate": 0.6,
+      "underfillRate": 1,
+      "attempted": 50,
+      "accepted": 30,
+      "rejected": 20,
+      "underfillSessions": 5,
+      "capacityFailSessions": 5
+    },
+    {
+      "gameId": "science-reasoning",
+      "gradeBand": "all",
+      "sessions": 93,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.108,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 5,
+      "capacityFailSessions": 5
+    },
+    {
+      "gameId": "social-citizenship",
+      "gradeBand": "all",
+      "sessions": 143,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.077,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 77,
+      "capacityFailSessions": 77
+    },
+    {
+      "gameId": "social-map-skills",
+      "gradeBand": "all",
+      "sessions": 143,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.979,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 70,
+      "capacityFailSessions": 70
+    },
+    {
+      "gameId": "social-time-travel",
+      "gradeBand": "all",
+      "sessions": 143,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.979,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 70,
+      "capacityFailSessions": 70
+    },
+    {
+      "gameId": "speed-math",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.257,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 110,
+      "capacityFailSessions": 110
+    },
+    {
+      "gameId": "target-number",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.594,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 52,
+      "capacityFailSessions": 52
+    },
+    {
+      "gameId": "word-ladder",
+      "gradeBand": "all",
+      "sessions": 175,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 1.177,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 103,
+      "capacityFailSessions": 103
+    },
+    {
+      "gameId": "word-mine",
+      "gradeBand": "all",
+      "sessions": 221,
+      "requested": 0,
+      "produced": 0,
+      "fillRate": null,
+      "underfillRate": 0.009,
+      "attempted": 0,
+      "accepted": 0,
+      "rejected": 0,
+      "underfillSessions": 1,
+      "capacityFailSessions": 1
+    }
+  ],
+  "topRejectionReasons": [
+    {
+      "id": "capacity_underfill",
+      "count": 113
+    },
+    {
+      "id": "underfill",
+      "count": 113
+    }
+  ],
+  "blockedFamilySummary": [
+    {
+      "id": "lgs-variable-control",
+      "count": 57
+    },
+    {
+      "id": "lgs-misread-taxonomy",
+      "count": 56
+    },
+    {
+      "id": "lgs-text-inference",
+      "count": 55
+    },
+    {
+      "id": "lgs-graph-read",
+      "count": 52
+    },
+    {
+      "id": "lgs-data-table",
+      "count": 52
+    },
+    {
+      "id": "lgs-science-claim",
+      "count": 52
+    },
+    {
+      "id": "lgs-geometry-figure",
+      "count": 49
+    },
+    {
+      "id": "lgs-cause-effect",
+      "count": 46
+    },
+    {
+      "id": "sl-shadow-formation",
+      "count": 46
+    },
+    {
+      "id": "sl-phase-change",
+      "count": 45
+    },
+    {
+      "id": "sl-photosynthesis-structure",
+      "count": 44
+    },
+    {
+      "id": "sl-misread-taxonomy",
+      "count": 44
+    },
+    {
+      "id": "sl-force-push-pull",
+      "count": 42
+    },
+    {
+      "id": "sl-light-source-reflector",
+      "count": 41
+    },
+    {
+      "id": "sl-earth-rotation-daynight",
+      "count": 41
+    },
+    {
+      "id": "sl-magnet-poles",
+      "count": 41
+    },
+    {
+      "id": "lgs-ratio-proportion",
+      "count": 30
+    },
+    {
+      "id": "lgs-english-pragmatic",
+      "count": 27
+    },
+    {
+      "id": "sl-sound-medium",
+      "count": 20
+    },
+    {
+      "id": "sl-chemical-vs-physical",
+      "count": 8
+    }
+  ],
+  "blockedSkeletonSummary": [
+    {
+      "id": "lgs-variable-control:compare-worlds",
+      "count": 51
+    },
+    {
+      "id": "lgs-misread-taxonomy:compare-worlds",
+      "count": 46
+    },
+    {
+      "id": "lgs-geometry-figure:spot-violation",
+      "count": 42
+    },
+    {
+      "id": "lgs-text-inference:forced-fact",
+      "count": 39
+    },
+    {
+      "id": "sl-force-push-pull:spot-violation",
+      "count": 39
+    },
+    {
+      "id": "lgs-science-claim:spot-violation",
+      "count": 37
+    },
+    {
+      "id": "sl-shadow-formation:select-valid",
+      "count": 36
+    },
+    {
+      "id": "sl-phase-change:spot-violation",
+      "count": 35
+    },
+    {
+      "id": "sl-magnet-poles:compare-worlds",
+      "count": 32
+    },
+    {
+      "id": "lgs-english-pragmatic:forced-fact",
+      "count": 31
+    },
+    {
+      "id": "lgs-data-table:forced-fact",
+      "count": 31
+    },
+    {
+      "id": "sl-earth-rotation-daynight:compare-worlds",
+      "count": 30
+    },
+    {
+      "id": "sl-light-source-reflector:forced-fact",
+      "count": 30
+    },
+    {
+      "id": "lgs-cause-effect:forced-fact",
+      "count": 29
+    },
+    {
+      "id": "sl-misread-taxonomy:forced-fact",
+      "count": 29
+    },
+    {
+      "id": "sl-light-source-reflector:select-valid",
+      "count": 28
+    },
+    {
+      "id": "lgs-variable-control:forced-fact",
+      "count": 23
+    },
+    {
+      "id": "lgs-science-claim:forced-fact",
+      "count": 23
+    },
+    {
+      "id": "lgs-misread-taxonomy:spot-violation",
+      "count": 23
+    },
+    {
+      "id": "lgs-graph-read:compare-worlds",
+      "count": 19
+    }
+  ],
+  "blockedCognitiveExperienceSummary": [
+    {
+      "id": "cx:7gotyr",
+      "count": 36
+    },
+    {
+      "id": "cx:ogxesm",
+      "count": 35
+    },
+    {
+      "id": "cx:1qhtu62",
+      "count": 29
+    },
+    {
+      "id": "cx:u30wix",
+      "count": 29
+    },
+    {
+      "id": "cx:1rrhsdv",
+      "count": 29
+    },
+    {
+      "id": "cx:16sawd8",
+      "count": 29
+    },
+    {
+      "id": "cx:dv0m04",
+      "count": 29
+    },
+    {
+      "id": "cx:1glxqnf",
+      "count": 29
+    },
+    {
+      "id": "cx:9u66kf",
+      "count": 28
+    },
+    {
+      "id": "cx:1ff1ukl",
+      "count": 28
+    },
+    {
+      "id": "cx:y40v85",
+      "count": 28
+    },
+    {
+      "id": "cx:1pjfnku",
+      "count": 28
+    },
+    {
+      "id": "cx:4vprnf",
+      "count": 28
+    },
+    {
+      "id": "cx:ebed95",
+      "count": 28
+    },
+    {
+      "id": "cx:mwkkoq",
+      "count": 28
+    },
+    {
+      "id": "cx:1u1f803",
+      "count": 28
+    },
+    {
+      "id": "cx:w7euoj",
+      "count": 15
+    },
+    {
+      "id": "cx:1xyzqi4",
+      "count": 14
+    },
+    {
+      "id": "cx:1e5xufx",
+      "count": 12
+    },
+    {
+      "id": "cx:fxxcg1",
+      "count": 11
+    }
+  ],
+  "testSummary": {
+    "lastAutomatedAction": {
+      "timestamp": "2026-08-02T15:03:08.084Z",
+      "action": "Komuta Merkezi JSON export düğmesi",
+      "filesChanged": [
+        "scripts/lib/command-center-export.mjs",
+        "js/quality/command-center-export-client.js",
+        "js/platform/firebase-platform.js",
+        "server.mjs"
+      ],
+      "testResult": "command-center-export+live 30/30; premium-core 20/20; strict RUNNING"
+    },
+    "lastTestCommandsAndResults": [
+      {
+        "command": "node --test tests/stage01-family-skeleton-identity.test.mjs tests/math-engine.test.mjs tests/content-integrity.test.mjs",
+        "result": "12/12 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T00:45:00.000Z"
+      },
+      {
+        "command": "node --test tests/stage02-admin-command-center.test.mjs tests/v801-premium-mobile-admin.test.mjs",
+        "result": "9/9 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T01:15:00.000Z"
+      },
+      {
+        "command": "node --test tests/stage03-question-contract.test.mjs tests/content-integrity.test.mjs tests/stage01-family-skeleton-identity.test.mjs",
+        "result": "12/12 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T01:35:00.000Z"
+      },
+      {
+        "command": "npm run check",
+        "result": "234/234 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T01:39:00.000Z"
+      },
+      {
+        "command": "node --test tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage03-question-contract.test.mjs tests/stage01-family-skeleton-identity.test.mjs",
+        "result": "23/23 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T02:20:00.000Z"
+      },
+      {
+        "command": "npm run check",
+        "result": "251/251 PASS, build PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T02:25:00.000Z"
+      },
+      {
+        "command": "npm run v11:check",
+        "result": "12/12 V11 alt-aşama PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T02:26:00.000Z"
+      },
+      {
+        "command": "node --test tests/stage04-speed-math-families.test.mjs",
+        "result": "11/11 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:00:00.000Z"
+      },
+      {
+        "command": "node --test tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage03-question-contract.test.mjs tests/stage01-family-skeleton-identity.test.mjs",
+        "result": "25/25 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:02:00.000Z"
+      },
+      {
+        "command": "npm run check",
+        "result": "262/262 PASS, build PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:04:00.000Z"
+      },
+      {
+        "command": "npm run v11:check",
+        "result": "12/12 V11 alt-aşama PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:04:30.000Z"
+      },
+      {
+        "command": "node --test tests/stage04-admin-dashboard-expansion.test.mjs",
+        "result": "7/7 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:15:00.000Z"
+      },
+      {
+        "command": "npm run check",
+        "result": "269/269 PASS, build PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:18:00.000Z"
+      },
+      {
+        "command": "npm run v11:check",
+        "result": "12/12 V11 alt-aşama PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:19:00.000Z"
+      },
+      {
+        "command": "node --test tests/stage04-target-number-families.test.mjs",
+        "result": "10/10 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:45:00.000Z"
+      },
+      {
+        "command": "node --test tests/math-engine.test.mjs tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage04-speed-math-families.test.mjs",
+        "result": "33/33 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:48:00.000Z"
+      },
+      {
+        "command": "npm run check",
+        "result": "279/279 PASS, build PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:52:00.000Z"
+      },
+      {
+        "command": "npm run v11:check",
+        "result": "12/12 V11 alt-aşama PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T03:53:00.000Z"
+      },
+      {
+        "command": "node --test tests/stage04-geometry-lab-families.test.mjs",
+        "result": "11/11 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T05:00:00.000Z"
+      },
+      {
+        "command": "node --test tests/family-skeleton-engine.test.mjs tests/stage04-pattern-lab-families.test.mjs tests/stage04-speed-math-families.test.mjs tests/stage04-target-number-families.test.mjs tests/stage04-geometry-lab-families.test.mjs",
+        "result": "49/49 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T05:05:00.000Z"
+      },
+      {
+        "command": "npm run check",
+        "result": "290/290 PASS, build PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T05:08:00.000Z"
+      },
+      {
+        "command": "npm run v11:check",
+        "result": "12/12 V11 alt-aşama PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T05:09:00.000Z"
+      },
+      {
+        "command": "node --test tests/stage04-problem-hunter-families.test.mjs",
+        "result": "11/11 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T06:20:00.000Z"
+      },
+      {
+        "command": "node --test tests/stage04-error-detective-families.test.mjs",
+        "result": "10/10 PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T06:45:00.000Z"
+      },
+      {
+        "command": "npm run check",
+        "result": "311/311 PASS, build PASS",
+        "passed": true,
+        "failed": null,
+        "total": null,
+        "durationMs": null,
+        "timestamp": "2026-08-01T06:40:00.000Z"
+      }
+    ],
+    "finalEvidence": {
+      "adequacy": "PASS",
+      "actual": {
+        "minSessionsPerGame": 500,
+        "gamesMeetingSessionTarget": 23,
+        "solverSamples": 50000,
+        "optionSamples": 10000,
+        "mutationScorePercent": 96.2,
+        "fullE2E": true,
+        "e2eSmokeOnly": 0,
+        "childMindStructuredBands": true,
+        "underfillCount": 0,
+        "sessionSemanticRepeatCount": 0
+      },
+      "targets": {
+        "sessionsPerGame": 500,
+        "activeGames": 23,
+        "solverSamples": 50000,
+        "optionSamples": 10000,
+        "mutationScorePercent": 90,
+        "fullE2ERequired": true,
+        "childMindStructuredBandsRequired": true
+      }
+    }
+  },
+  "sourceHealth": [
+    {
+      "source": "public/strict-audit-live.json",
+      "required": true,
+      "status": "OK",
+      "updatedAt": "2026-08-02T16:12:34.000Z",
+      "error": null,
+      "bytes": 8511
+    },
+    {
+      "source": "public/question-engine-analysis.json",
+      "required": true,
+      "status": "OK",
+      "updatedAt": "2026-08-02T15:03:08.000Z",
+      "error": null,
+      "bytes": 108747
+    },
+    {
+      "source": "PRODUCT_ACCEPTANCE_DECISION.json",
+      "required": true,
+      "status": "OK",
+      "updatedAt": "2026-08-02T12:51:39.000Z",
+      "error": null,
+      "bytes": 3761
+    },
+    {
+      "source": "QUALITY_SCORE.json",
+      "required": true,
+      "status": "OK",
+      "updatedAt": "2026-08-02T10:11:39.000Z",
+      "error": null,
+      "bytes": 613
+    },
+    {
+      "source": "PROJECT_STATE.json",
+      "required": true,
+      "status": "OK",
+      "updatedAt": "2026-08-02T14:35:24.000Z",
+      "error": null,
+      "bytes": 27073
+    },
+    {
+      "source": "BLOCKERS.json",
+      "required": true,
+      "status": "OK",
+      "updatedAt": "2026-08-02T14:35:22.000Z",
+      "error": null,
+      "bytes": 2574
+    },
+    {
+      "source": "quality-reports/strict-audit-progress.json",
+      "required": false,
+      "status": "OK",
+      "updatedAt": "2026-08-02T15:05:16.000Z",
+      "error": null,
+      "bytes": 184635
+    },
+    {
+      "source": "quality-reports/product-acceptance/annual-student.json",
+      "required": false,
+      "status": "OK",
+      "updatedAt": "2026-08-02T14:42:36.000Z",
+      "error": null,
+      "bytes": 44881
+    },
+    {
+      "source": "quality-reports/product-acceptance/class-30.json",
+      "required": false,
+      "status": "OK",
+      "updatedAt": "2026-08-02T14:50:44.000Z",
+      "error": null,
+      "bytes": 8339
+    },
+    {
+      "source": "quality-reports/product-acceptance/content-review-samples.json",
+      "required": false,
+      "status": "OK",
+      "updatedAt": "2026-08-02T12:51:39.000Z",
+      "error": null,
+      "bytes": 8773076
+    },
+    {
+      "source": "public/question-engine-command-center-export.json",
+      "required": false,
+      "status": "OK",
+      "updatedAt": "2026-08-02T21:09:15.438Z",
+      "error": null,
+      "bytes": 19799977
+    }
+  ],
+  "recentEvents": [
+    {
+      "time": "2026-08-02T15:05:09.227Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:09.470Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:09.692Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:09.898Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:10.029Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:10.180Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:10.379Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:10.556Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:10.700Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:10.826Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:10.974Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:11.099Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:14.910Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:15.096Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:15.293Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:15.708Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:16.199Z",
+      "level": "WARN",
+      "message": "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
+    },
+    {
+      "time": "2026-08-02T15:05:27.260Z",
+      "level": "ERROR",
+      "message": "Underfill kapasite sorunu nedeniyle kullanıcı tarafından teşhis için durduruldu."
+    },
+    {
+      "time": "2026-08-02T16:07:19.380Z",
+      "level": "INFO",
+      "message": "Repetition Policy V2 counterfactual shard’ları çalışıyor"
+    },
+    {
+      "time": "2026-08-02T16:07:19.385Z",
+      "level": "INFO",
+      "message": "Counterfactual: lgs-foundation / 8 (V1 vs V2)"
+    }
+  ],
+  "representativeQuestionSamples": [
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "pattern-lab-arithmetic-add",
+      "skeletonId": "pattern-lab-arithmetic-add:next-term",
+      "cognitiveExperienceId": null,
+      "question": "Kural: Her terimde 7 ekleniyor. İlk iki terim 20 ve 27. Bu kurala göre 6. terim kaçtır?",
+      "correctAnswer": "55",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:rzt0tt"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "pattern-lab-quadratic-offset",
+      "skeletonId": "pattern-lab-quadratic-offset:next-term",
+      "cognitiveExperienceId": null,
+      "question": "Kural: Terimler, sırasıyla 1², 2², 3², ... sayılarına 6 eklenerek bulunuyor. İlk iki terim 7 ve 10. Bu kurala göre 6. terim kaçtır?",
+      "correctAnswer": "42",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:17b2t24"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "pattern-lab-arithmetic-subtract",
+      "skeletonId": "pattern-lab-arithmetic-subtract:extended-position",
+      "cognitiveExperienceId": null,
+      "question": "Kural: Her terimde 8 çıkarılıyor. İlk iki terim 131 ve 123. Bu kurala göre 9. terim kaçtır?",
+      "correctAnswer": "67",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:qb7odw"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "pattern-lab-geometric-divide",
+      "skeletonId": "pattern-lab-geometric-divide:missing-middle",
+      "cognitiveExperienceId": null,
+      "question": "Kural: Her terim, bir önceki terimin 2'ye bölünmüş halidir. İlk iki terim 256 ve 128. Bu kurala göre 4. terim kaçtır?",
+      "correctAnswer": "32",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:7wk9js"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "pattern-lab-two-step-alternating",
+      "skeletonId": "pattern-lab-two-step-alternating:error-detection",
+      "cognitiveExperienceId": null,
+      "question": "Kural: Sırayla +2 ve ×2 uygulanıyor (bir ekleme, bir çarpma dönüşümlü). İlk iki terim 3 ve 5. Verilen dizi: 3  •  5  •  10  •  13  •  24  •  26.",
+      "correctAnswer": "12",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:34hwgn"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "pattern-lab-accelerating-difference",
+      "skeletonId": "pattern-lab-accelerating-difference:extended-position",
+      "cognitiveExperienceId": null,
+      "question": "Kural: Ardışık farklar her adımda 2 katına çıkıyor. İlk iki terim 4 ve 6. Bu kurala göre 7. terim kaçtır?",
+      "correctAnswer": "130",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:15ibrn4"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "pattern-lab-digit-sum-growth",
+      "skeletonId": "pattern-lab-digit-sum-growth:extended-position",
+      "cognitiveExperienceId": null,
+      "question": "39  •  51  •  57  •  69  •  84  •  …  •  9. terim = ?",
+      "correctAnswer": "120",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:11hak1r"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "pattern-lab-fibonacci-recurrence",
+      "skeletonId": "pattern-lab-fibonacci-recurrence:next-term",
+      "cognitiveExperienceId": null,
+      "question": "1  •  2  •  3  •  5  •  8  •  ?",
+      "correctAnswer": "13",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:1qh6kda"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "3-5",
+      "grade": 4,
+      "familyId": "pattern-lab-three-term-cycle",
+      "skeletonId": "pattern-lab-three-term-cycle:next-term",
+      "cognitiveExperienceId": null,
+      "question": "Bir okul bahçesine dikilen fidan sayıları: 2, 7, 13, 15, 20 fidan. Bir sonraki değer kaç fidan olur?",
+      "correctAnswer": "26",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:1xstx3i"
+    },
+    {
+      "gameId": "pattern-lab",
+      "ageBand": "6-8",
+      "grade": 7,
+      "familyId": "pattern-lab-geometric-multiply",
+      "skeletonId": "pattern-lab-geometric-multiply:error-detection",
+      "cognitiveExperienceId": null,
+      "question": "Kural: Her terim, bir önceki terimin 2 katıdır. İlk iki terim 2 ve 4. Verilen dizi: 2  •  4  •  8  •  17  •  32  •  64.",
+      "correctAnswer": "16",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:15mf489"
+    },
+    {
+      "gameId": "speed-math",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "speed-math-two-term-addition",
+      "skeletonId": "speed-math-two-term-addition:direct-compute",
+      "cognitiveExperienceId": null,
+      "question": "Bir kütüphaneye gelen kitap sayıları: önce 41 kitap, sonra 30 kitap daha ekleniyor. Toplamda kaç kitap olur?",
+      "correctAnswer": "71",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:1kdiuta"
+    },
+    {
+      "gameId": "speed-math",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "speed-math-two-term-subtraction",
+      "skeletonId": "speed-math-two-term-subtraction:direct-compute",
+      "cognitiveExperienceId": null,
+      "question": "Bir çiftlikte toplanan yumurta sayıları: başlangıçta 75 yumurta vardı, bunlardan 21 tanesi kullanıldı. Geriye kaç yumurta kaldı?",
+      "correctAnswer": "54",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:owgg18"
+    },
+    {
+      "gameId": "speed-math",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "speed-math-bracket-then-multiply",
+      "skeletonId": "speed-math-bracket-then-multiply:missing-operand",
+      "cognitiveExperienceId": null,
+      "question": "(16 + 17) × ? = 264",
+      "correctAnswer": "8",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:2r84ll"
+    },
+    {
+      "gameId": "speed-math",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "speed-math-two-term-multiplication",
+      "skeletonId": "speed-math-two-term-multiplication:compare-two-instances",
+      "cognitiveExperienceId": null,
+      "question": "Birinci işlem: 14 sayısını 9 ile çarp. İkinci işlem: 17 sayısını 10 ile çarp. İki işlemin sonuçları arasındaki fark kaçtır?",
+      "correctAnswer": "44",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:uj0u8i"
+    },
+    {
+      "gameId": "speed-math",
+      "ageBand": "1-2",
+      "grade": 2,
+      "familyId": "speed-math-exact-division",
+      "skeletonId": "speed-math-exact-division:verify-and-correct",
+      "cognitiveExperienceId": null,
+      "question": "84 ÷ 12 işlemini bir arkadaşın 72 olarak hesaplamış. Doğru sonuç kaçtır?",
+      "correctAnswer": "7",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": "cx:1wyrzpw"
+    },
+    {
+      "gameId": null,
+      "ageBand": null,
+      "grade": null,
+      "familyId": "pattern-lab-geometric-multiply",
+      "skeletonId": "pattern-lab-geometric-multiply:next-term",
+      "cognitiveExperienceId": null,
+      "question": "Bir atölyede günlük üretilen parça sayıları: 1, 2, 4, 8, 16 parça. Bir sonraki değer kaç parça olur?",
+      "correctAnswer": "32",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": null
+    },
+    {
+      "gameId": null,
+      "ageBand": null,
+      "grade": null,
+      "familyId": "pattern-lab-geometric-divide",
+      "skeletonId": "pattern-lab-geometric-divide:next-term",
+      "cognitiveExperienceId": null,
+      "question": "Bir kumbaraya art arda atılan kuruş sayıları: 384, 192, 96, 48, 24 kuruş. Bir sonraki değer kaç kuruş olur?",
+      "correctAnswer": "12",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": null
+    },
+    {
+      "gameId": null,
+      "ageBand": null,
+      "grade": null,
+      "familyId": "speed-math-two-term-multiplication",
+      "skeletonId": "speed-math-two-term-multiplication:direct-compute",
+      "cognitiveExperienceId": null,
+      "question": "Bir kırtasiyede satılan defter sayıları: 8 grubun her birinde 7 defter var. Toplamda kaç defter olur?",
+      "correctAnswer": "56",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": null
+    },
+    {
+      "gameId": null,
+      "ageBand": null,
+      "grade": null,
+      "familyId": "speed-math-exact-division",
+      "skeletonId": "speed-math-exact-division:direct-compute",
+      "cognitiveExperienceId": null,
+      "question": "Bir çiftlikte toplanan yumurta sayıları: toplam 168 yumurta, 12 eşit gruba paylaştırılacak. Her grupta kaç yumurta olur?",
+      "correctAnswer": "14",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": null
+    },
+    {
+      "gameId": null,
+      "ageBand": null,
+      "grade": null,
+      "familyId": "target-sum-then-scale",
+      "skeletonId": "target-sum-then-scale:direct-reach",
+      "cognitiveExperienceId": null,
+      "question": "Tüm sayıları birer kez kullanarak hedefe ulaş.",
+      "correctAnswer": "(4 + 2) × 3 - 1 (veya hedefe ulaşan başka herhangi bir geçerli ifade)",
+      "contentQualityViolations": [],
+      "perceivedSimilarityCluster": null
+    }
+  ],
+  "omittedData": {
+    "fullExportAvailable": true,
+    "fullExportFile": "question-engine-command-center-export.json",
+    "omittedSections": [
+      {
+        "section": "rawSources",
+        "reason": "Full export içinde mevcut",
+        "originalItemCount": null
+      },
+      {
+        "section": "contentReviewSamples.samples",
+        "reason": "Tam dizi yerine en fazla 30 temsilî örnek",
+        "originalItemCount": 1825
+      },
+      {
+        "section": "strictAuditProgress.events",
+        "reason": "Binlerce event yerine shard özetleri",
+        "originalItemCount": 226
+      },
+      {
+        "section": "solver-50k",
+        "reason": "Full export / final-evidence içinde",
+        "originalItemCount": null
+      },
+      {
+        "section": "options-10k",
+        "reason": "Full export / final-evidence içinde",
+        "originalItemCount": null
+      },
+      {
+        "section": "CONTEXT_SNAPSHOT.md full text",
+        "reason": "Full export içinde; kompaktta yok",
+        "originalItemCount": 1
+      },
+      {
+        "section": "liveGeneratedQuestionSamples full",
+        "reason": "En fazla 20 temsilî soru",
+        "originalItemCount": 15
+      }
+    ],
+    "originalSizeBytes": 19799977,
+    "compactSizeBytes": 54144,
+    "compressionRatio": 365.69
+  }
+}

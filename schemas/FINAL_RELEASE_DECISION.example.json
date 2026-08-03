@@ -1,0 +1,22 @@
+{
+  "decision": "FAIL",
+  "overallScore": 0,
+  "stageResults": {
+    "5": "WAITING",
+    "6": "WAITING",
+    "7": "WAITING",
+    "8": "WAITING",
+    "9": "WAITING",
+    "10": "WAITING",
+    "11": "WAITING",
+    "12": "WAITING",
+    "13": "WAITING",
+    "14": "WAITING",
+    "15": "WAITING"
+  },
+  "criticalBlockers": 0,
+  "highBlockers": 0,
+  "failedGates": [],
+  "evidence": [],
+  "generatedAt": null
+}

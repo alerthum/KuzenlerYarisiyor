@@ -1,0 +1,346 @@
+{
+  "kind": "class-30",
+  "pass": true,
+  "gates": {
+    "sameQuestionSimultaneousRate": true,
+    "equivalentDifficulty": true,
+    "historySeparation": true,
+    "classQuestionConcentration": true,
+    "teacherTargetEffect": true,
+    "persistentPerStudentHistory": true
+  },
+  "summary": {
+    "teacherId": "teacher-class-30",
+    "studentCount": 30,
+    "weeks": 36,
+    "sameQuestionRate": 0.027,
+    "difficultyStdDev": 0.106,
+    "meanHistoryOverlap": 0.004,
+    "meanMaxStudentShare": 0.063,
+    "teacherEffectDelta": -0.083,
+    "teacherTargetHitDelta": 1154,
+    "focusClassTargetHits": 1227,
+    "teacherTargetWiredToCreateGameSession": true
+  },
+  "metrics": {
+    "sameQuestionSimultaneousRate": {
+      "rate": 0.027,
+      "comparablePairs": 15660,
+      "sameQuestionPairs": 423
+    },
+    "equivalentDifficulty": {
+      "mean": 4.965,
+      "stdDev": 0.106
+    },
+    "historySeparation": {
+      "meanJaccardOverlap": 0.004
+    },
+    "classQuestionConcentration": {
+      "weeks": [
+        {
+          "week": 0,
+          "gameId": "pattern-lab",
+          "maxStudentShare": 0.1,
+          "distinctKeys": 137
+        },
+        {
+          "week": 1,
+          "gameId": "speed-math",
+          "maxStudentShare": 0.067,
+          "distinctKeys": 235
+        },
+        {
+          "week": 2,
+          "gameId": "target-number",
+          "maxStudentShare": 0.067,
+          "distinctKeys": 118
+        },
+        {
+          "week": 3,
+          "gameId": "geometry-lab",
+          "maxStudentShare": 0.1,
+          "distinctKeys": 163
+        },
+        {
+          "week": 4,
+          "gameId": "problem-hunter",
+          "maxStudentShare": 0.067,
+          "distinctKeys": 142
+        },
+        {
+          "week": 5,
+          "gameId": "error-detective",
+          "maxStudentShare": 0.167,
+          "distinctKeys": 124
+        },
+        {
+          "week": 6,
+          "gameId": "logic-station",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 240
+        },
+        {
+          "week": 7,
+          "gameId": "olympiad-ladder",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 300
+        },
+        {
+          "week": 8,
+          "gameId": "word-mine",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 30
+        },
+        {
+          "week": 9,
+          "gameId": "word-ladder",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 300
+        },
+        {
+          "week": 10,
+          "gameId": "forbidden-story",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 30
+        },
+        {
+          "week": 11,
+          "gameId": "meaning-hunt",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 150
+        },
+        {
+          "week": 12,
+          "gameId": "paragraph-detective",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 240
+        },
+        {
+          "week": 13,
+          "gameId": "english-vocabulary",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 360
+        },
+        {
+          "week": 14,
+          "gameId": "english-cloze",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 300
+        },
+        {
+          "week": 15,
+          "gameId": "english-sentence-builder",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 79
+        },
+        {
+          "week": 16,
+          "gameId": "social-time-travel",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 300
+        },
+        {
+          "week": 17,
+          "gameId": "social-map-skills",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 300
+        },
+        {
+          "week": 18,
+          "gameId": "social-citizenship",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 300
+        },
+        {
+          "week": 19,
+          "gameId": "religion-practice",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 300
+        },
+        {
+          "week": 20,
+          "gameId": "lgs-foundation",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 300
+        },
+        {
+          "week": 21,
+          "gameId": "science-lab",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 180
+        },
+        {
+          "week": 22,
+          "gameId": "science-reasoning",
+          "maxStudentShare": 0.033,
+          "distinctKeys": 150
+        },
+        {
+          "week": 23,
+          "gameId": "pattern-lab",
+          "maxStudentShare": 0.067,
+          "distinctKeys": 141
+        }
+      ]
+    },
+    "teacherTargetEffect": {
+      "teacherClassTarget": {
+        "files": [
+          "js/games/registry.js (options.classTarget)",
+          "js/engines/session-composer-v9.js",
+          "js/platform/firebase-platform.js"
+        ],
+        "wiredToCreateGameSession": [
+          "options.classTarget.topicIds",
+          "options.classTarget.focusShare"
+        ],
+        "status": "present"
+      },
+      "teacherEffectDelta": -0.083,
+      "teacherTargetWiredToCreateGameSession": true,
+      "note": null,
+      "teacherTargetHitDelta": 1154,
+      "focusClassTargetHits": 1227
+    }
+  },
+  "failuresByGameFamilySkeletonGraph": {
+    "pattern-lab": {
+      "gameId": "pattern-lab",
+      "week": 23,
+      "maxStudentShare": 0.067,
+      "reason": null
+    },
+    "speed-math": {
+      "gameId": "speed-math",
+      "week": 24,
+      "maxStudentShare": 0.067,
+      "reason": null
+    },
+    "target-number": {
+      "gameId": "target-number",
+      "week": 25,
+      "maxStudentShare": 0.067,
+      "reason": null
+    },
+    "geometry-lab": {
+      "gameId": "geometry-lab",
+      "week": 26,
+      "maxStudentShare": 0.1,
+      "reason": null
+    },
+    "problem-hunter": {
+      "gameId": "problem-hunter",
+      "week": 27,
+      "maxStudentShare": 0.067,
+      "reason": null
+    },
+    "error-detective": {
+      "gameId": "error-detective",
+      "week": 28,
+      "maxStudentShare": 0.533,
+      "reason": null
+    },
+    "logic-station": {
+      "gameId": "logic-station",
+      "week": 29,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "olympiad-ladder": {
+      "gameId": "olympiad-ladder",
+      "week": 30,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "word-mine": {
+      "gameId": "word-mine",
+      "week": 31,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "word-ladder": {
+      "gameId": "word-ladder",
+      "week": 32,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "forbidden-story": {
+      "gameId": "forbidden-story",
+      "week": 33,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "meaning-hunt": {
+      "gameId": "meaning-hunt",
+      "week": 34,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "paragraph-detective": {
+      "gameId": "paragraph-detective",
+      "week": 35,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "english-vocabulary": {
+      "gameId": "english-vocabulary",
+      "week": 13,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "english-cloze": {
+      "gameId": "english-cloze",
+      "week": 14,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "english-sentence-builder": {
+      "gameId": "english-sentence-builder",
+      "week": 15,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "social-time-travel": {
+      "gameId": "social-time-travel",
+      "week": 16,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "social-map-skills": {
+      "gameId": "social-map-skills",
+      "week": 17,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "social-citizenship": {
+      "gameId": "social-citizenship",
+      "week": 18,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "religion-practice": {
+      "gameId": "religion-practice",
+      "week": 19,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "lgs-foundation": {
+      "gameId": "lgs-foundation",
+      "week": 20,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "science-lab": {
+      "gameId": "science-lab",
+      "week": 21,
+      "maxStudentShare": 0.033,
+      "reason": null
+    },
+    "science-reasoning": {
+      "gameId": "science-reasoning",
+      "week": 22,
+      "maxStudentShare": 0.033,
+      "reason": null
+    }
+  }
+}

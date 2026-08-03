@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-02T00:48:42.832Z",
+  "command": "npm run test:e2e:full",
+  "exitCode": 0,
+  "passCount": 7,
+  "failCount": 0,
+  "fullE2E": true,
+  "includes": [
+    "tests/e2e/full-student-admin.spec.mjs",
+    "tests/e2e/smoke.spec.mjs",
+    "tests/e2e/accessibility.spec.mjs"
+  ],
+  "tail": "\n> zihin-arenasi@12.0.0-quality-tooling test:e2e:full\n> playwright test tests/e2e/full-student-admin.spec.mjs tests/e2e/smoke.spec.mjs tests/e2e/accessibility.spec.mjs --project=chromium\n\n\nRunning 7 tests using 3 workers\n\n  ok 1 [chromium] › tests\\e2e\\smoke.spec.mjs:4:3 › smoke / (3.1s)\n  ok 2 [chromium] › tests\\e2e\\full-student-admin.spec.mjs:13:3 › tam öğrenci + admin E2E › öğrenci ana ekran ve oyun kataloğu yüklenir (4.4s)\n  ok 4 [chromium] › tests\\e2e\\smoke.spec.mjs:4:3 › smoke /public/question-engine-analysis.json (1.7s)\n  ok 5 [chromium] › tests\\e2e\\full-student-admin.spec.mjs:23:3 › tam öğrenci + admin E2E › admin komuta merkezi final kanıt sayaçlarını gösterir (2.6s)\n  ok 6 [chromium] › tests\\e2e\\smoke.spec.mjs:20:1 › mobil görünüm yatay taşma üretmez (2.7s)\n  ok 3 [chromium] › tests\\e2e\\accessibility.spec.mjs:4:1 › ana ekran kritik erişilebilirlik ihlali içermez (6.9s)\n  ok 7 [chromium] › tests\\e2e\\full-student-admin.spec.mjs:49:3 › tam öğrenci + admin E2E › öğrenci bir oyuna girebilir veya uygun boş durum görür (2.1s)\n\n  7 passed (14.9s)\n\n"
+}

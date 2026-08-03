@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0",
+  "decision": "FAIL",
+  "productReady": false,
+  "dimensions": {
+    "technicalQuality": "PASS",
+    "annualStudentCapacity": "FAIL",
+    "class30Capacity": "PASS",
+    "perceivedDiversity": "PASS",
+    "contentReview": "FAIL"
+  },
+  "note": "Stage 14 teknik PASS ürün hazır anlamına gelmez; PRODUCT_ACCEPTANCE_DECISION PASS olmadan Ürün Hazır gösterilemez.",
+  "orchestrationInventory": {
+    "studentHistory": {
+      "files": [
+        "js/state.js",
+        "js/storage.js",
+        "js/engines/student-brain-profile-v10.js",
+        "js/engines/mastery-engine-v9.js"
+      ],
+      "wiredToCreateGameSession": [
+        "options.attempts",
+        "options.seenQuestionKeys",
+        "options.completedSessionCount"
+      ],
+      "status": "present"
+    },
+    "familySkeletonReasoningCooldown": {
+      "files": [
+        "js/quality/family-skeleton-engine.js",
+        "js/games/registry.js"
+      ],
+      "wiredToCreateGameSession": [
+        "options.recentFamilyIds",
+        "options.attempts→recentSkeletonIds"
+      ],
+      "status": "present"
+    },
+    "masteryAdaptiveTarget": {
+      "files": [
+        "js/engines/adaptive-engine.js",
+        "js/engines/session-composer-v9.js",
+        "js/engines/student-brain-profile-v10.js"
+      ],
+      "wiredToCreateGameSession": [
+        "difficultyFromRating",
+        "brainProfileSessionPolicy"
+      ],
+      "postSession": "composeAdaptiveSession in js/app.js (not inside createGameSession)",
+      "status": "present_partial"
+    },
+    "silentRemediation": {
+      "files": [
+        "js/engines/v11-misconception-remediation.js"
+      ],
+      "wiredToCreateGameSession": [
+        "attachV11SilentRemediation(options.attempts)"
+      ],
+      "status": "present"
+    },
+    "teacherClassTarget": {
+      "files": [
+        "js/games/registry.js (options.classTarget)",
+        "js/engines/session-composer-v9.js",
+        "js/platform/firebase-platform.js"
+      ],
+      "wiredToCreateGameSession": [
+        "options.classTarget.topicIds",
+        "options.classTarget.focusShare"
+      ],
+      "status": "present"
+    },
+    "quarantine": {
+      "files": [
+        "js/quality/quarantine-v9.js"
+      ],
+      "wiredToCreateGameSession": [
+        "options.seenQuestionKeys",
+        "options.blockedQuestionFamilies"
+      ],
+      "status": "present"
+    },
+    "semanticComparison": {
+      "files": [
+        "js/quality/semantic-repeat-engine.js"
+      ],
+      "wiredToCreateGameSession": [
+        "applyPublicationGates / filterSessionSemanticRepeats"
+      ],
+      "status": "present"
+    },
+    "sessionComposer": {
+      "files": [
+        "js/engines/v11-session-composer.js",
+        "js/engines/premium-session-composer-v10.js",
+        "js/quality/session-composer-audit.js"
+      ],
+      "wiredToCreateGameSession": [
+        "composeV11Session"
+      ],
+      "status": "present"
+    }
+  },
+  "failureHighlights": {
+    "annual": [
+      "familyRecurrenceInterval",
+      "skeletonRecurrenceInterval",
+      "solutionGraphRecurrenceInterval",
+      "difficultyProgression",
+      "persistentGrowingHistory",
+      "annualAttemptVolume"
+    ],
+    "class30": [],
+    "perceived": [],
+    "contentReview": [
+      "sampleCount"
+    ]
+  },
+  "updatedAt": "2026-08-02T12:51:39.160Z",
+  "reports": {
+    "annualStudent": "quality-reports/product-acceptance/annual-student.json",
+    "class30": "quality-reports/product-acceptance/class-30.json",
+    "perceivedDiversity": "quality-reports/product-acceptance/perceived-diversity.json",
+    "contentReviewSamples": "quality-reports/product-acceptance/content-review-samples.json"
+  },
+  "elapsedMs": 2142226,
+  "nextExactCommand": "node scripts/run-product-acceptance-audit.mjs"
+}

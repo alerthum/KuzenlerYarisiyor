@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0",
+  "releaseName": "Zihin Arenası 13.6.0 Premium Canlı Test",
+  "releaseType": "CONTROLLED_LIVE_TEST",
+  "productReady": false,
+  "releaseReady": false,
+  "targetGrades": [4, 8],
+  "bank": {
+    "premiumContent": 604,
+    "premiumGames": 27,
+    "qualityGate": "604/604 PASS",
+    "premiumRegression": "49/49 PASS"
+  },
+  "liveGradeVerification": {
+    "grade4": "21/21 PASS",
+    "grade8": "24/24 PASS",
+    "failureCount": 0,
+    "legacyFallbackCount": 0
+  },
+  "build": {
+    "vercelBuild": "PASS",
+    "command": "npm run build"
+  },
+  "knownLimits": [
+    "1-2 ve 9-12 sınıf kapsamı tamamlanmadı",
+    "Yıllık öğrenci kapasitesi NOT_MEASURED",
+    "Final ürün kabulü verilmedi"
+  ],
+  "sourceCommit": "4ce3d08",
+  "generatedAt": "2026-08-03T02:55:00+03:00"
+}

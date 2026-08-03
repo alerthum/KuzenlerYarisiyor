@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-08-02T00:49:36.780Z",
+  "finalEvidenceAdequacy": "PASS",
+  "note": "Onceki PASS gecersizdi: stage09 olcumu 5 oturum/oyun, solver 805, options 685, mutation 45.22, E2E smoke-only, child-mind yapisal yas kaniti yok.",
+  "targets": {
+    "sessionsPerGame": 500,
+    "activeGames": 23,
+    "solverSamples": 50000,
+    "optionSamples": 10000,
+    "mutationScorePercent": 90,
+    "fullE2ERequired": true,
+    "childMindStructuredBandsRequired": true
+  },
+  "actual": {
+    "minSessionsPerGame": 500,
+    "gamesMeetingSessionTarget": 23,
+    "solverSamples": 50000,
+    "optionSamples": 10000,
+    "mutationScorePercent": 96.2,
+    "fullE2E": true,
+    "e2eSmokeOnly": 0,
+    "childMindStructuredBands": true,
+    "underfillCount": 0,
+    "sessionSemanticRepeatCount": 0
+  },
+  "gaps": [],
+  "reports": {
+    "metricsSnapshot": "quality-reports/stage05-15-metrics.json",
+    "stage09": "quality-reports/final-evidence/stage09-500.json",
+    "solver": "quality-reports/final-evidence/solver-50k.json",
+    "options": "quality-reports/final-evidence/options-10k.json",
+    "mutation": "quality-reports/mutation/mutation-report.json",
+    "e2e": "quality-reports/final-evidence/e2e-full.json",
+    "childMind": "quality-reports/final-evidence/child-mind-bands.json"
+  },
+  "nextExactCommand": null,
+  "lastAction": "Asama 14-15 final kanit PASS",
+  "lastTestResult": "fullE2E=true passed=7 failed=0 exit=0",
+  "partialScores": {
+    "cognitiveDepthScore": 100,
+    "accuracyPercent": 100,
+    "optionQualityScore": 100,
+    "irrelevantOptionCount": 0,
+    "formCueGiveawayCount": 0,
+    "childMindScore": 100,
+    "grade3PlusEasyMediumPublishedCount": 0
+  }
+}

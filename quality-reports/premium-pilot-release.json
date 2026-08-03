@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-02T21:13:30.250Z",
+  "releaseType": "QUALITY_PILOT",
+  "productReady": false,
+  "gitReadyPilot": true,
+  "approvedGames": [
+    "error-detective",
+    "paragraph-detective",
+    "science-reasoning"
+  ],
+  "scope": {
+    "games": 3,
+    "subjects": [
+      "mathematics",
+      "turkish",
+      "science"
+    ],
+    "humanAuthoredQuestions": 34,
+    "note": "Bu rapor yalnız üç oyunluk kalite pilotunu onaylar; 1-12 tüm müfredat tamamlanmış değildir."
+  },
+  "nonNegotiableRules": [
+    "Düşük kaliteli legacy içeriğe sessiz fallback yok",
+    "Her yanlış seçenekte ayrı misconception ve yapım kuralı zorunlu",
+    "Rastgele/alakasız çeldirici yok",
+    "Bağımsız solver ve seçenek bütünlüğü geçmeden yayın yok"
+  ],
+  "games": [
+    {
+      "gameId": "error-detective",
+      "subject": "mathematics",
+      "inventory": {
+        "questionCount": 14,
+        "familyCount": 7,
+        "topicCount": 8,
+        "allHaveThreeMisconceptions": true
+      },
+      "rawQuestionGate": {
+        "total": 14,
+        "passed": 14,
+        "failed": []
+      },
+      "liveSession": {
+        "requested": 5,
+        "produced": 5,
+        "premiumPilotCount": 5,
+        "pass": true
+      },
+      "representativeSamples": [
+        {
+          "questionKey": "premium-pilot:error-detective:math-fraction-error-02:19o9bd7",
+          "context": "Öğrenci 3/5 ÷ 2/7 işlemini 3/5 × 2/7 = 6/35 olarak çözüyor.",
+          "prompt": "Hangi düzeltme işlemin anlamını korur?",
+          "options": [
+            "Her iki kesir de ters çevrilip 5/3 × 7/2 yapılmalıdır.",
+            "Bölen kesir 2/7 ters çevrilip 7/2 yapılmalı; 3/5 × 7/2 hesaplanmalıdır.",
+            "Bölünen kesir 3/5 ters çevrilip 5/3 yapılmalıdır.",
+            "Paylar bölünüp paydalar çarpılmalı; 3/10 bulunmalıdır."
+          ],
+          "answerIndex": 1,
+          "explanation": "Kesirle bölme, bölen kesrin çarpmaya göre tersiyle çarpmaktır. 3/5 × 7/2 = 21/10 olur.",
+          "distractors": [
+            {
+              "optionText": "Her iki kesir de ters çevrilip 5/3 × 7/2 yapılmalıdır.",
+              "misconceptionId": "fraction:invert-both",
+              "whyStudentChoosesThis": "Öğrenci bölmeyi çarpmaya çevirirken iki kesri de ters çevirir.",
+              "constructionRule": "invert-both-fractions"
+            },
+            {
+              "optionText": "Bölünen kesir 3/5 ters çevrilip 5/3 yapılmalıdır.",
+              "misconceptionId": "fraction:invert-dividend",
+              "whyStudentChoosesThis": "Öğrenci hangi kesrin ters çevrileceğini karıştırır.",
+              "constructionRule": "invert-first-fraction"
+            },
+            {
+              "optionText": "Paylar bölünüp paydalar çarpılmalı; 3/10 bulunmalıdır.",
+              "misconceptionId": "fraction:mixed-operation",
+              "whyStudentChoosesThis": "Öğrenci pay ve paydalara farklı işlemler uygular.",
+              "constructionRule": "divide-numerator-multiply-denominator"
+            }
+          ]
+        },
+        {
+          "questionKey": "premium-pilot:error-detective:math-equation-error-01:nl452y",
+          "context": "Öğrenci 3x + 7 = 25 denkleminde 7’yi sağ tarafa geçirip 3x = 25 + 7 yazıyor.",
+          "prompt": "Denklem dengesini koruyan düzeltme hangisidir?",
+          "options": [
+            "Her iki tarafa 7 eklenmeli ve 3x = 32 yazılmalıdır.",
+            "25 ile 7 çarpılmalı; 3x = 175 bulunmalıdır.",
+            "Yalnız sol taraftan 7 çıkarılmalı; sağ taraf 25 kalmalıdır.",
+            "Her iki taraftan 7 çıkarılmalı ve 3x = 18 yazılmalıdır."
+          ],
+          "answerIndex": 3,
+          "explanation": "Eşitliğin iki tarafından 7 çıkarılır: 3x + 7 − 7 = 25 − 7, yani 3x = 18 ve x = 6.",
+          "distractors": [
+            {
+              "optionText": "Her iki tarafa 7 eklenmeli ve 3x = 32 yazılmalıdır.",
+              "misconceptionId": "equation:add-instead-of-subtract",
+              "whyStudentChoosesThis": "Öğrenci +7 terimini yok etmek için ters işlem yerine aynı işlemi uygular.",
+              "constructionRule": "apply-same-sign-instead-of-inverse"
+            },
+            {
+              "optionText": "25 ile 7 çarpılmalı; 3x = 175 bulunmalıdır.",
+              "misconceptionId": "equation:operation-symbol-transfer",
+              "whyStudentChoosesThis": "Öğrenci terimi karşı tarafa geçirirken işlemi anlamsız biçimde çarpmaya çevirir.",
+              "constructionRule": "convert-addition-to-multiplication"
+            },
+            {
+              "optionText": "Yalnız sol taraftan 7 çıkarılmalı; sağ taraf 25 kalmalıdır.",
+              "misconceptionId": "equation:change-one-side-only",
+              "whyStudentChoosesThis": "Öğrenci eşitliğin iki tarafına aynı işlemi uygulama kuralını ihlal eder.",
+              "constructionRule": "modify-left-side-only"
+            }
+          ]
+        },
+        {
+          "questionKey": "premium-pilot:error-detective:math-discount-first-error-01:1k5y0p",
+          "context": "Bir öğrenci 240 TL etiket fiyatlı bir ürüne %25 indirim uyguluyor. Çözümü şöyledir: 1) 240 × 25 = 6000  2) 6000 ÷ 100 = 60  3) 240 − 25 = 215 TL.",
+          "prompt": "Çözümdeki ilk hatalı adım ve hatanın nedeni hangi seçenekte birlikte verilmiştir?",
+          "options": [
+            "Hiçbir adım hatalı değildir; sonuç 215 TL’dir.",
+            "1. adım; yüzde hesabında fiyat ile oran çarpılmamalıdır.",
+            "3. adım; etiket fiyatından indirim oranı değil, 60 TL indirim tutarı çıkarılmalıdır.",
+            "2. adım; yüzde hesabında 100’e bölmek yerine 25’e bölmek gerekir."
+          ],
+          "answerIndex": 2,
+          "explanation": "İlk iki adım %25 indirim tutarını 60 TL olarak doğru bulur. İlk hata 3. adımdadır; 240 − 60 = 180 TL olmalıdır.",
+          "distractors": [
+            {
+              "optionText": "Hiçbir adım hatalı değildir; sonuç 215 TL’dir.",
+              "misconceptionId": "percent:rate-as-amount",
+              "whyStudentChoosesThis": "Öğrenci %25 ifadesini 25 TL gibi yorumlayıp sonucun mantığını kontrol etmez.",
+              "constructionRule": "accept-rate-as-currency"
+            },
+            {
+              "optionText": "1. adım; yüzde hesabında fiyat ile oran çarpılmamalıdır.",
+              "misconceptionId": "percent:reject-required-multiplication",
+              "whyStudentChoosesThis": "Öğrenci yüzde tutarını bulmak için yapılan ilk çarpmanın gereksiz olduğunu sanır.",
+              "constructionRule": "required-step-marked-as-error"
+            },
+            {
+              "optionText": "2. adım; yüzde hesabında 100’e bölmek yerine 25’e bölmek gerekir.",
+              "misconceptionId": "percent:divide-by-rate",
+              "whyStudentChoosesThis": "Öğrenci yüzdeyi yüz üzerinden oranlamak yerine oran sayısına bölmeyi seçer.",
+              "constructionRule": "divide-by-percent-number"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "paragraph-detective",
+      "subject": "turkish",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 5,
+        "topicCount": 7,
+        "allHaveThreeMisconceptions": true
+      },
+      "rawQuestionGate": {
+        "total": 10,
+        "passed": 10,
+        "failed": []
+      },
+      "liveSession": {
+        "requested": 8,
+        "produced": 8,
+        "premiumPilotCount": 8,
+        "pass": true
+      },
+      "representativeSamples": [
+        {
+          "questionKey": "premium-pilot:paragraph-detective:tr-relation-01:166akue",
+          "context": "“Kentte yağmur suyu toplama depoları kuruldu. Böylece parkların sulanmasında şebeke suyu kullanımı azaldı.”",
+          "prompt": "İkinci cümle, birinci cümleyle hangi anlam ilişkisini kurmaktadır?",
+          "options": [
+            "Birinci cümledeki düşünceyi örneklendirmektedir.",
+            "Birinci cümledeki uygulamanın sonucunu açıklamaktadır.",
+            "Birinci cümledeki bilgiyi çürütmektedir.",
+            "Birinci cümledeki uygulamanın nedenini açıklamaktadır."
+          ],
+          "answerIndex": 1,
+          "explanation": "“Böylece” sözcüğü, depoların kurulmasının ardından ortaya çıkan su kullanımındaki azalmayı sonuç olarak bağlar.",
+          "distractors": [
+            {
+              "optionText": "Birinci cümledeki düşünceyi örneklendirmektedir.",
+              "misconceptionId": "structure:result-as-example",
+              "whyStudentChoosesThis": "Sonuç bildiren “böylece” bağlacını örnekleme işareti gibi yorumlar.",
+              "constructionRule": "misread-result-marker-as-example"
+            },
+            {
+              "optionText": "Birinci cümledeki bilgiyi çürütmektedir.",
+              "misconceptionId": "structure:result-as-contradiction",
+              "whyStudentChoosesThis": "İki cümle uyumlu olduğu hâlde karşıtlık varmış gibi okur.",
+              "constructionRule": "invent-contradiction"
+            },
+            {
+              "optionText": "Birinci cümledeki uygulamanın nedenini açıklamaktadır.",
+              "misconceptionId": "structure:reverse-cause-effect",
+              "whyStudentChoosesThis": "Depoların sonucu olan azalmayı neden olarak ters çevirir.",
+              "constructionRule": "reverse-causal-direction"
+            }
+          ]
+        },
+        {
+          "questionKey": "premium-pilot:paragraph-detective:tr-inference-02:9b3bfq",
+          "context": "Bir okul, teneffüslerde koridorlara su sebilleri yerleştirdi. Sonraki haftalarda öğrencilerin plastik şişe satın alma sayısı azaldı. Aynı dönemde okul, tek kullanımlık plastiklerin çevresel etkisi hakkında bir farkındalık çalışması da yürüttü.",
+          "prompt": "Parçaya göre en dikkatli çıkarım hangisidir?",
+          "options": [
+            "Farkındalık çalışması, öğrencilerin şişe kullanımını artırmış olabilir.",
+            "Azalma, sebiller ile farkındalık çalışmasının ortak etkisiyle ilişkili olabilir.",
+            "Azalmanın temel nedeni su sebilleridir; diğer etkenler önemsizdir.",
+            "Okuldaki öğrencilerin büyük bölümü plastik kullanımını bırakmıştır."
+          ],
+          "answerIndex": 1,
+          "explanation": "İki uygulama aynı dönemde yürütülmüştür. Veriler ilişkiyi gösterir; yalnız bir uygulamayı kesin neden ilan etmek için yeterli değildir.",
+          "distractors": [
+            {
+              "optionText": "Farkındalık çalışması, öğrencilerin şişe kullanımını artırmış olabilir.",
+              "misconceptionId": "inference:reverse-effect",
+              "whyStudentChoosesThis": "Gözlenen azalışı, kanıt sunulmadan ters yönde yorumlar.",
+              "constructionRule": "reverse-observed-direction"
+            },
+            {
+              "optionText": "Azalmanın temel nedeni su sebilleridir; diğer etkenler önemsizdir.",
+              "misconceptionId": "inference:single-cause-certainty",
+              "whyStudentChoosesThis": "Aynı dönemdeki farkındalık çalışmasını dışlayıp tek nedeni kesinleştirir.",
+              "constructionRule": "force-one-cause"
+            },
+            {
+              "optionText": "Okuldaki öğrencilerin büyük bölümü plastik kullanımını bırakmıştır.",
+              "misconceptionId": "inference:total-population-absolute",
+              "whyStudentChoosesThis": "Satın alma sayısındaki azalmayı bütün öğrencilerin tamamen bırakmasına geneller.",
+              "constructionRule": "convert-decrease-to-zero"
+            }
+          ]
+        },
+        {
+          "questionKey": "premium-pilot:paragraph-detective:tr-inference-01:1jvpwze",
+          "context": "Mahalle kütüphanesi hafta içi akşamları boş kalıyordu. Yönetim, yalnız açılış saatini uzatmak yerine kısa atölyeler düzenledi. Bir ay sonra toplam ziyaretçi sayısı çok az değişti; ancak içeride geçirilen süre ve ödünç alınan kitap sayısı arttı.",
+          "prompt": "Bu bilgilerden hangisine güvenle ulaşılabilir?",
+          "options": [
+            "Atölyelere katılan herkes daha önce kütüphaneye hiç gelmemiştir.",
+            "Kütüphanenin kullanım niteliği, yalnız ziyaretçi sayısıyla ölçülemeyecek biçimde gelişmiştir.",
+            "Yönetim akşam saatlerini yeniden kısaltmaya karar vermiştir.",
+            "Ziyaretçi sayısı belirgin artmadığı için uygulama başarısız olmuştur."
+          ],
+          "answerIndex": 1,
+          "explanation": "Ziyaretçi sayısı çok değişmemiş olsa da içeride kalma ve ödünç alma artmıştır. Bu iki kanıt kullanımın niteliğinin geliştiğini destekler.",
+          "distractors": [
+            {
+              "optionText": "Atölyelere katılan herkes daha önce kütüphaneye hiç gelmemiştir.",
+              "misconceptionId": "inference:invent-participant-history",
+              "whyStudentChoosesThis": "Metinde katılımcıların önceki kullanım geçmişi hakkında bilgi yoktur.",
+              "constructionRule": "add-unsupported-background"
+            },
+            {
+              "optionText": "Yönetim akşam saatlerini yeniden kısaltmaya karar vermiştir.",
+              "misconceptionId": "inference:invent-future-action",
+              "whyStudentChoosesThis": "Metin gelecekteki yönetim kararını bildirmez.",
+              "constructionRule": "invent-future-decision"
+            },
+            {
+              "optionText": "Ziyaretçi sayısı belirgin artmadığı için uygulama başarısız olmuştur.",
+              "misconceptionId": "inference:single-metric-fixation",
+              "whyStudentChoosesThis": "İçeride kalma süresi ve ödünç kitap artışını yok sayıp tek göstergeye odaklanır.",
+              "constructionRule": "ignore-two-supporting-metrics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "gameId": "science-reasoning",
+      "subject": "science",
+      "inventory": {
+        "questionCount": 10,
+        "familyCount": 5,
+        "topicCount": 6,
+        "allHaveThreeMisconceptions": true
+      },
+      "rawQuestionGate": {
+        "total": 10,
+        "passed": 10,
+        "failed": []
+      },
+      "liveSession": {
+        "requested": 5,
+        "produced": 5,
+        "premiumPilotCount": 5,
+        "pass": true
+      },
+      "representativeSamples": [
+        {
+          "questionKey": "premium-pilot:science-reasoning:sci-data-02:1jv467r",
+          "context": "Aynı tohum türüyle yapılan deneyde A grubundaki beş bitkinin ortalama boyu 18 cm, B grubundaki beş bitkinin ortalama boyu 21 cm ölçülmüştür. Her grupta ölçümler birbirinden farklıdır.",
+          "prompt": "Yalnız bu bilgilere dayanarak en dikkatli yorum hangisidir?",
+          "options": [
+            "B grubunun daha uzun olmasının temel nedeni verilen su miktarıdır.",
+            "B grubunun ortalaması yüksektir; farkın nedeni için deney koşulları incelenmelidir.",
+            "B grubundaki bitkilerin tamamı A grubundakilerden daha uzundur.",
+            "Ortalamalar farklı olduğuna göre gruplardan birinin ölçümü hatalıdır."
+          ],
+          "answerIndex": 1,
+          "explanation": "Ortalama değerler B grubunda daha yüksektir. Bireysel dağılım ve deney koşulları bilinmeden her bitki veya neden hakkında kesin yargı kurulamaz.",
+          "distractors": [
+            {
+              "optionText": "B grubunun daha uzun olmasının temel nedeni verilen su miktarıdır.",
+              "misconceptionId": "data:invent-cause",
+              "whyStudentChoosesThis": "Sulama hakkında veri olmadığı hâlde neden atar.",
+              "constructionRule": "invent-unreported-variable"
+            },
+            {
+              "optionText": "B grubundaki bitkilerin tamamı A grubundakilerden daha uzundur.",
+              "misconceptionId": "data:mean-as-every-individual",
+              "whyStudentChoosesThis": "Ortalama farkını bütün bireylerin sıralaması gibi yorumlar.",
+              "constructionRule": "extend-mean-to-all-members"
+            },
+            {
+              "optionText": "Ortalamalar farklı olduğuna göre gruplardan birinin ölçümü hatalıdır.",
+              "misconceptionId": "data:difference-as-measurement-error",
+              "whyStudentChoosesThis": "Gruplar arası farkı otomatik olarak hata kabul eder.",
+              "constructionRule": "treat-group-difference-as-invalid-data"
+            }
+          ]
+        },
+        {
+          "questionKey": "premium-pilot:science-reasoning:sci-causation-01:wbnmf8",
+          "context": "Bir şehirde yaz aylarında hem dondurma satışı hem güneş yanığı vakaları artıyor.",
+          "prompt": "Bu iki artıştan çıkarılabilecek en bilimsel yorum hangisidir?",
+          "options": [
+            "Dondurma tüketimi, güneş yanığının doğrudan nedeni olabilir.",
+            "Sıcak hava, hem dondurma satışını hem güneş yanığını artıran ortak etken olabilir.",
+            "İki artış aynı dönemde görülse de aralarında anlamlı ilişki bulunmaz.",
+            "Güneş yanığı, insanların daha fazla dondurma almasına yol açabilir."
+          ],
+          "answerIndex": 1,
+          "explanation": "Birlikte artış nedenselliği kanıtlamaz. Sıcak hava hem dondurma talebini hem güneşe maruz kalmayı artırabilir.",
+          "distractors": [
+            {
+              "optionText": "Dondurma tüketimi, güneş yanığının doğrudan nedeni olabilir.",
+              "misconceptionId": "causation:correlation-as-direct-cause",
+              "whyStudentChoosesThis": "Birlikte değişimi doğrudan nedensellik olarak yorumlar.",
+              "constructionRule": "convert-correlation-to-cause"
+            },
+            {
+              "optionText": "İki artış aynı dönemde görülse de aralarında anlamlı ilişki bulunmaz.",
+              "misconceptionId": "causation:deny-shared-factor",
+              "whyStudentChoosesThis": "Ortak mevsimsel etken olasılığını yok sayar.",
+              "constructionRule": "dismiss-observed-association"
+            },
+            {
+              "optionText": "Güneş yanığı, insanların daha fazla dondurma almasına yol açabilir.",
+              "misconceptionId": "causation:reverse-cause",
+              "whyStudentChoosesThis": "Nedensel yönü ters kurar ve kesinlik ekler.",
+              "constructionRule": "invent-reverse-causality"
+            }
+          ]
+        },
+        {
+          "questionKey": "premium-pilot:science-reasoning:sci-hypothesis-01:p1j6va",
+          "context": "Bir öğrenci sınıftaki bitkilerin büyümesiyle ilgili araştırma planlıyor.",
+          "prompt": "Aşağıdaki ifadelerden hangisi ölçülebilir ve test edilebilir bir hipotezdir?",
+          "options": [
+            "Görünüşü güzel olan bitkiler, diğerlerinden daha sağlıklıdır.",
+            "Sekiz saat ışık alan bitkiler, dört saat alanlardan dört haftada daha çok uzar.",
+            "Işık alan bitkiler, ışık almayan bitkilere göre daha iyi gelişir.",
+            "Kendini iyi hisseden bitkiler, diğer bitkilerden daha hızlı büyür."
+          ],
+          "answerIndex": 1,
+          "explanation": "Doğru hipotez ışık süresini değişken olarak tanımlar, aynı tür koşulunu belirtir ve dört haftalık boy uzamasıyla ölçülebilir sonuç öngörür.",
+          "distractors": [
+            {
+              "optionText": "Görünüşü güzel olan bitkiler, diğerlerinden daha sağlıklıdır.",
+              "misconceptionId": "hypothesis:value-judgment",
+              "whyStudentChoosesThis": "Ölçütleri tanımlanmamış öznel bir değer yargısıdır.",
+              "constructionRule": "use-undefined-aesthetic-criterion"
+            },
+            {
+              "optionText": "Işık alan bitkiler, ışık almayan bitkilere göre daha iyi gelişir.",
+              "misconceptionId": "hypothesis:vague-no-comparison",
+              "whyStudentChoosesThis": "Değişken, ölçüm ve karşılaştırma belirtmeyen genel bir ifadedir.",
+              "constructionRule": "state-general-fact-not-testable-prediction"
+            },
+            {
+              "optionText": "Kendini iyi hisseden bitkiler, diğer bitkilerden daha hızlı büyür.",
+              "misconceptionId": "hypothesis:undefined-subjective-variable",
+              "whyStudentChoosesThis": "“Mutlu hissetme” operasyonel olarak tanımlanmamış ve ölçülebilir değildir.",
+              "constructionRule": "use-unmeasurable-state"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

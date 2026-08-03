@@ -1,0 +1,814 @@
+{
+  "kind": "perceived-diversity",
+  "pass": true,
+  "gates": {
+    "samplesCollected": true,
+    "clusterDiversity": true,
+    "perceivedCollapseBounded": true,
+    "comparesBeyondQuestionKeyFamilyId": true
+  },
+  "summary": {
+    "totalRounds": 4316,
+    "distinctClusters": 4294,
+    "clusterRatio": 0.995,
+    "sameExperienceRate": 0.01,
+    "multiIdSameExperienceClusters": 21
+  },
+  "metrics": {
+    "comparedAxes": [
+      "informationFlow",
+      "solutionSteps",
+      "requestedResult",
+      "representation",
+      "distractorMechanism",
+      "solutionGraph"
+    ],
+    "multiIdSameExperience": [
+      {
+        "clusterKey": "cx:1e995p1",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "logic-station"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "logic-station:ls-constraint-schedule:spot-violation:staged-strategy-hint:51hneh",
+            "familyId": "ls-constraint-schedule",
+            "skeletonId": "ls-constraint-schedule:spot-violation",
+            "solutionGraphId": "ls-constraint-schedule:spot-violation#solution1",
+            "promptPreview": "strateji ipucu cevabı doğrudan vermez yalnız düşünme sırasını gösterir önce sabi"
+          },
+          {
+            "questionKey": "logic-station:ls-constraint-schedule:spot-violation:staged-strategy-hint:6jkg1g",
+            "familyId": "ls-constraint-schedule",
+            "skeletonId": "ls-constraint-schedule:spot-violation",
+            "solutionGraphId": "ls-constraint-schedule:spot-violation#solution1",
+            "promptPreview": "strateji ipucu cevabı doğrudan vermez yalnız düşünme sırasını gösterir önce sabi"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:a8i2k2",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "word-ladder"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "word-ladder:wl-shortest-route:compare-worlds:raw-letters:giurz0",
+            "familyId": "wl-shortest-route",
+            "skeletonId": "wl-shortest-route:compare-worlds",
+            "solutionGraphId": "wl-shortest-route:compare-worlds#solution1",
+            "promptPreview": "her adımda yalnız bir harf değişir ara kelimeler sözlükte olmalıdır wl shortest "
+          },
+          {
+            "questionKey": "word-ladder:wl-shortest-route:compare-worlds:raw-letters:st2q9d",
+            "familyId": "wl-shortest-route",
+            "skeletonId": "wl-shortest-route:compare-worlds",
+            "solutionGraphId": "wl-shortest-route:compare-worlds#solution1",
+            "promptPreview": "her adımda yalnız bir harf değişir ara kelimeler sözlükte olmalıdır wl shortest "
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:17so3z",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "word-ladder"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "word-ladder:wl-shortest-route:compare-worlds:context-embedded:qmvkml",
+            "familyId": "wl-shortest-route",
+            "skeletonId": "wl-shortest-route:compare-worlds",
+            "solutionGraphId": "wl-shortest-route:compare-worlds#solution1",
+            "promptPreview": "senaryodaki gereksiz ayrıntıları ayıkla dönüşüm kuralına odaklan kelime merdiven"
+          },
+          {
+            "questionKey": "word-ladder:wl-shortest-route:compare-worlds:context-embedded:k2i6md",
+            "familyId": "wl-shortest-route",
+            "skeletonId": "wl-shortest-route:compare-worlds",
+            "solutionGraphId": "wl-shortest-route:compare-worlds#solution1",
+            "promptPreview": "senaryodaki gereksiz ayrıntıları ayıkla dönüşüm kuralına odaklan kelime merdiven"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:endj2v",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "paragraph-detective"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "paragraph-detective:pd-evidence-claim:forced-fact:raw-letters:1crkpy",
+            "familyId": "pd-evidence-claim",
+            "skeletonId": "pd-evidence-claim:forced-fact",
+            "solutionGraphId": "pd-evidence-claim:forced-fact#solution1",
+            "promptPreview": "metindeki kanıta dayan metinde olmayanı ekleme paragraf araştırmacıya göre düzen"
+          },
+          {
+            "questionKey": "paragraph-detective:pd-evidence-claim:forced-fact:raw-letters:2vow4e",
+            "familyId": "pd-evidence-claim",
+            "skeletonId": "pd-evidence-claim:forced-fact",
+            "solutionGraphId": "pd-evidence-claim:forced-fact#solution1",
+            "promptPreview": "metindeki kanıta dayan metinde olmayanı ekleme paragraf araştırmacıya göre düzen"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:1572at1",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "english-cloze"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "english-cloze:ec-collocation-gap:spot-violation:staged-strategy-hint:r6kx8q",
+            "familyId": "ec-collocation-gap",
+            "skeletonId": "ec-collocation-gap:spot-violation",
+            "solutionGraphId": "ec-collocation-gap:spot-violation#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir önce boşluğun kura"
+          },
+          {
+            "questionKey": "english-cloze:ec-collocation-gap:spot-violation:staged-strategy-hint:nxqm8q",
+            "familyId": "ec-collocation-gap",
+            "skeletonId": "ec-collocation-gap:spot-violation",
+            "solutionGraphId": "ec-collocation-gap:spot-violation#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir önce boşluğun kura"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:7nqqp2",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "english-cloze"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "english-cloze:ec-phrasal-slot:spot-violation:staged-strategy-hint:mcdvx5",
+            "familyId": "ec-phrasal-slot",
+            "skeletonId": "ec-phrasal-slot:spot-violation",
+            "solutionGraphId": "ec-phrasal-slot:spot-violation#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir önce boşluğun kura"
+          },
+          {
+            "questionKey": "english-cloze:ec-phrasal-slot:spot-violation:staged-strategy-hint:2mhymx",
+            "familyId": "ec-phrasal-slot",
+            "skeletonId": "ec-phrasal-slot:spot-violation",
+            "solutionGraphId": "ec-phrasal-slot:spot-violation#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir önce boşluğun kura"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:b4lmrl",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "english-cloze"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "english-cloze:ec-modal:select-valid:context-embedded:ddtq7e",
+            "familyId": "ec-modal",
+            "skeletonId": "ec-modal:select-valid",
+            "solutionGraphId": "ec-modal:select-valid#solution1",
+            "promptPreview": "senaryo süsünü ayıkla yalnız dilbilgisi kuralına odaklan gap lab practice modal "
+          },
+          {
+            "questionKey": "english-cloze:ec-modal:select-valid:context-embedded:z498yo",
+            "familyId": "ec-modal",
+            "skeletonId": "ec-modal:select-valid",
+            "solutionGraphId": "ec-modal:select-valid#solution1",
+            "promptPreview": "senaryo süsünü ayıkla yalnız dilbilgisi kuralına odaklan gap lab practice modal "
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:15y8kj4",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "english-cloze"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "english-cloze:ec-quantifier:select-valid:raw-letters:67isnl",
+            "familyId": "ec-quantifier",
+            "skeletonId": "ec-quantifier:select-valid",
+            "solutionGraphId": "ec-quantifier:select-valid#solution1",
+            "promptPreview": "boşluğa dilbilgisi ve anlam bakımından uygun kelimeyi seç quantifier do you have"
+          },
+          {
+            "questionKey": "english-cloze:ec-quantifier:select-valid:raw-letters:5escqg",
+            "familyId": "ec-quantifier",
+            "skeletonId": "ec-quantifier:select-valid",
+            "solutionGraphId": "ec-quantifier:select-valid#solution1",
+            "promptPreview": "boşluğa dilbilgisi ve anlam bakımından uygun kelimeyi seç quantifier do you have"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:1wpo0po",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-time-travel"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-time-travel:stt-perspective:spot-violation:context-embedded:99mdd6",
+            "familyId": "stt-perspective",
+            "skeletonId": "stt-perspective:spot-violation",
+            "solutionGraphId": "stt-perspective:spot-violation#solution1",
+            "promptPreview": "senaryo süsünü ayıkla yalnız kaynak zaman kanıt ilişkisine odaklan tarih atölyes"
+          },
+          {
+            "questionKey": "social-time-travel:stt-perspective:spot-violation:context-embedded:g0zfwv",
+            "familyId": "stt-perspective",
+            "skeletonId": "stt-perspective:spot-violation",
+            "solutionGraphId": "stt-perspective:spot-violation#solution1",
+            "promptPreview": "senaryo süsünü ayıkla yalnız kaynak zaman kanıt ilişkisine odaklan tarih atölyes"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:1fvq93l",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-time-travel"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-time-travel:stt-continuity-change:select-valid:staged-strategy-hint:tcsyte",
+            "familyId": "stt-continuity-change",
+            "skeletonId": "stt-continuity-change:select-valid",
+            "solutionGraphId": "stt-continuity-change:select-valid#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir ne aynı kaldı ne d"
+          },
+          {
+            "questionKey": "social-time-travel:stt-continuity-change:select-valid:staged-strategy-hint:ljvtbn",
+            "familyId": "stt-continuity-change",
+            "skeletonId": "stt-continuity-change:select-valid",
+            "solutionGraphId": "stt-continuity-change:select-valid#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir ne aynı kaldı ne d"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:1odelc7",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-time-travel"
+        ],
+        "ageBands": [
+          "6-8"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-time-travel:stt-secondary-source:select-valid:staged-strategy-hint:c36r78",
+            "familyId": "stt-secondary-source",
+            "skeletonId": "stt-secondary-source:select-valid",
+            "solutionGraphId": "stt-secondary-source:select-valid#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir yazar olayı yaşadı"
+          },
+          {
+            "questionKey": "social-time-travel:stt-secondary-source:select-valid:staged-strategy-hint:cnelbl",
+            "familyId": "stt-secondary-source",
+            "skeletonId": "stt-secondary-source:select-valid",
+            "solutionGraphId": "stt-secondary-source:select-valid#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir yazar olayı yaşadı"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:4z668a",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-map-skills"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-map-skills:sm-map-type:compare-worlds:raw-letters:wusao0",
+            "familyId": "sm-map-type",
+            "skeletonId": "sm-map-type:compare-worlds",
+            "solutionGraphId": "sm-map-type:compare-worlds#solution1",
+            "promptPreview": "harita düşünme türünü ayır yüzey yer adı tuzağına düşme a fiziki b siyasi hangis"
+          },
+          {
+            "questionKey": "social-map-skills:sm-map-type:compare-worlds:raw-letters:4esjwk",
+            "familyId": "sm-map-type",
+            "skeletonId": "sm-map-type:compare-worlds",
+            "solutionGraphId": "sm-map-type:compare-worlds#solution1",
+            "promptPreview": "harita düşünme türünü ayır yüzey yer adı tuzağına düşme a siyasi b fiziki hangis"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:7r5i77",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-map-skills"
+        ],
+        "ageBands": [
+          "6-8"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-map-skills:sm-climate-zone:forced-fact:raw-letters:plxyn0",
+            "familyId": "sm-climate-zone",
+            "skeletonId": "sm-climate-zone:forced-fact",
+            "solutionGraphId": "sm-climate-zone:forced-fact#solution1",
+            "promptPreview": "harita düşünme türünü ayır yüzey yer adı tuzağına düşme çöl bölgesi için zorunlu"
+          },
+          {
+            "questionKey": "social-map-skills:sm-climate-zone:forced-fact:raw-letters:j7mlc1",
+            "familyId": "sm-climate-zone",
+            "skeletonId": "sm-climate-zone:forced-fact",
+            "solutionGraphId": "sm-climate-zone:forced-fact#solution1",
+            "promptPreview": "harita düşünme türünü ayır yüzey yer adı tuzağına düşme çöl bölgesi için zorunlu"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:yqork2",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-citizenship"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-citizenship:sc-local-global:compare-worlds:staged-strategy-hint:c8egxt",
+            "familyId": "sc-local-global",
+            "skeletonId": "sc-local-global:compare-worlds",
+            "solutionGraphId": "sc-local-global:compare-worlds#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir önce düşünme türün"
+          },
+          {
+            "questionKey": "social-citizenship:sc-local-global:compare-worlds:staged-strategy-hint:yp3w8y",
+            "familyId": "sc-local-global",
+            "skeletonId": "sc-local-global:compare-worlds",
+            "solutionGraphId": "sc-local-global:compare-worlds#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir önce düşünme türün"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:1k4pnls",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-citizenship"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-citizenship:sc-digital-citizenship:compare-worlds:raw-letters:5133dn",
+            "familyId": "sc-digital-citizenship",
+            "skeletonId": "sc-digital-citizenship:compare-worlds",
+            "solutionGraphId": "sc-digital-citizenship:compare-worlds#solution1",
+            "promptPreview": "vatandaşlık düşünme türünü ayır yüzey isim tuzağına düşme a guvenli b riskli han"
+          },
+          {
+            "questionKey": "social-citizenship:sc-digital-citizenship:compare-worlds:raw-letters:ju22sf",
+            "familyId": "sc-digital-citizenship",
+            "skeletonId": "sc-digital-citizenship:compare-worlds",
+            "solutionGraphId": "sc-digital-citizenship:compare-worlds#solution1",
+            "promptPreview": "vatandaşlık düşünme türünü ayır yüzey isim tuzağına düşme a riskli b guvenli han"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:1tciu5t",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-citizenship"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-citizenship:sc-media-literacy:select-valid:context-embedded:cuht7p",
+            "familyId": "sc-media-literacy",
+            "skeletonId": "sc-media-literacy:select-valid",
+            "solutionGraphId": "sc-media-literacy:select-valid#solution1",
+            "promptPreview": "senaryo süsünü ayıkla yalnız hak ödev kural ilişkisine odaklan vatandaşlık atöly"
+          },
+          {
+            "questionKey": "social-citizenship:sc-media-literacy:select-valid:context-embedded:bvk7eo",
+            "familyId": "sc-media-literacy",
+            "skeletonId": "sc-media-literacy:select-valid",
+            "solutionGraphId": "sc-media-literacy:select-valid#solution1",
+            "promptPreview": "senaryo süsünü ayıkla yalnız hak ödev kural ilişkisine odaklan vatandaşlık atöly"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:bm3kaz",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-citizenship"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-citizenship:sc-conflict-resolution:select-valid:raw-letters:2wk3gp",
+            "familyId": "sc-conflict-resolution",
+            "skeletonId": "sc-conflict-resolution:select-valid",
+            "solutionGraphId": "sc-conflict-resolution:select-valid#solution1",
+            "promptPreview": "vatandaşlık düşünme türünü ayır yüzey isim tuzağına düşme bağırmak çatışma çözüm"
+          },
+          {
+            "questionKey": "social-citizenship:sc-conflict-resolution:select-valid:raw-letters:whewe5",
+            "familyId": "sc-conflict-resolution",
+            "skeletonId": "sc-conflict-resolution:select-valid",
+            "solutionGraphId": "sc-conflict-resolution:select-valid#solution1",
+            "promptPreview": "vatandaşlık düşünme türünü ayır yüzey isim tuzağına düşme dinleyip uzlaşmak çatı"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:akokf0",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "social-citizenship"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "social-citizenship:sc-local-global:compare-worlds:raw-letters:ycdnqq",
+            "familyId": "sc-local-global",
+            "skeletonId": "sc-local-global:compare-worlds",
+            "solutionGraphId": "sc-local-global:compare-worlds#solution1",
+            "promptPreview": "vatandaşlık düşünme türünü ayır yüzey isim tuzağına düşme a kuresel b yerel hang"
+          },
+          {
+            "questionKey": "social-citizenship:sc-local-global:compare-worlds:raw-letters:exjco4",
+            "familyId": "sc-local-global",
+            "skeletonId": "sc-local-global:compare-worlds",
+            "solutionGraphId": "sc-local-global:compare-worlds#solution1",
+            "promptPreview": "vatandaşlık düşünme türünü ayır yüzey isim tuzağına düşme a yerel b kuresel hang"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:4re6bq",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "lgs-foundation"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "lgs-foundation:lgs-option-trap:compare-worlds:staged-strategy-hint:vhb05a",
+            "familyId": "lgs-option-trap",
+            "skeletonId": "lgs-option-trap:compare-worlds",
+            "solutionGraphId": "lgs-option-trap:compare-worlds#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir önce kalıp türünü "
+          },
+          {
+            "questionKey": "lgs-foundation:lgs-option-trap:compare-worlds:staged-strategy-hint:lk5331",
+            "familyId": "lgs-option-trap",
+            "skeletonId": "lgs-option-trap:compare-worlds",
+            "solutionGraphId": "lgs-option-trap:compare-worlds#solution1",
+            "promptPreview": "strateji ipucu cevabı vermez yalnız düşünme sırasını gösterir önce kalıp türünü "
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:jzt3wk",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "lgs-foundation"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "lgs-foundation:lgs-geometry-figure:spot-violation:context-embedded:1ud6mz",
+            "familyId": "lgs-geometry-figure",
+            "skeletonId": "lgs-geometry-figure:spot-violation",
+            "solutionGraphId": "lgs-geometry-figure:spot-violation#solution1",
+            "promptPreview": "süs bağlamı ayıkla yalnız kalıp düşüncesine odaklan deneme kitapçığındaki bir ka"
+          },
+          {
+            "questionKey": "lgs-foundation:lgs-geometry-figure:spot-violation:context-embedded:wvrk3b",
+            "familyId": "lgs-geometry-figure",
+            "skeletonId": "lgs-geometry-figure:spot-violation",
+            "solutionGraphId": "lgs-geometry-figure:spot-violation#solution1",
+            "promptPreview": "süs bağlamı ayıkla yalnız kalıp düşüncesine odaklan deneme kitapçığındaki bir ka"
+          }
+        ]
+      },
+      {
+        "clusterKey": "cx:ttudmu",
+        "size": 2,
+        "distinctQuestionKeys": 2,
+        "distinctFamilies": 1,
+        "games": [
+          "science-lab",
+          "science-reasoning"
+        ],
+        "ageBands": [
+          "1-2"
+        ],
+        "sample": [
+          {
+            "questionKey": "science-data-claim:2546812874",
+            "familyId": "science-data-claim",
+            "skeletonId": null,
+            "solutionGraphId": null,
+            "promptPreview": "aynı bitki türünden üç grup günde sırasıyla # # ve # saat ışık altında yetiştiri"
+          },
+          {
+            "questionKey": "science-data-claim:1849710091",
+            "familyId": "science-data-claim",
+            "skeletonId": null,
+            "solutionGraphId": null,
+            "promptPreview": "aynı bitki türünden üç grup günde sırasıyla # # ve # saat ışık altında yetiştiri"
+          }
+        ]
+      }
+    ]
+  },
+  "failuresByGameFamilySkeletonGraph": {
+    "logic-station": {
+      "gameId": "logic-station",
+      "clusters": [
+        "cx:1e995p1",
+        "cx:1e995p1"
+      ],
+      "families": {
+        "ls-constraint-schedule": 2
+      },
+      "skeletons": {
+        "ls-constraint-schedule:spot-violation": 2
+      },
+      "solutionGraphs": {
+        "ls-constraint-schedule:spot-violation#solution1": 2
+      }
+    },
+    "word-ladder": {
+      "gameId": "word-ladder",
+      "clusters": [
+        "cx:a8i2k2",
+        "cx:a8i2k2",
+        "cx:17so3z",
+        "cx:17so3z"
+      ],
+      "families": {
+        "wl-shortest-route": 4
+      },
+      "skeletons": {
+        "wl-shortest-route:compare-worlds": 4
+      },
+      "solutionGraphs": {
+        "wl-shortest-route:compare-worlds#solution1": 4
+      }
+    },
+    "paragraph-detective": {
+      "gameId": "paragraph-detective",
+      "clusters": [
+        "cx:endj2v",
+        "cx:endj2v"
+      ],
+      "families": {
+        "pd-evidence-claim": 2
+      },
+      "skeletons": {
+        "pd-evidence-claim:forced-fact": 2
+      },
+      "solutionGraphs": {
+        "pd-evidence-claim:forced-fact#solution1": 2
+      }
+    },
+    "english-cloze": {
+      "gameId": "english-cloze",
+      "clusters": [
+        "cx:1572at1",
+        "cx:1572at1",
+        "cx:7nqqp2",
+        "cx:7nqqp2",
+        "cx:b4lmrl",
+        "cx:b4lmrl",
+        "cx:15y8kj4",
+        "cx:15y8kj4"
+      ],
+      "families": {
+        "ec-collocation-gap": 2,
+        "ec-phrasal-slot": 2,
+        "ec-modal": 2,
+        "ec-quantifier": 2
+      },
+      "skeletons": {
+        "ec-collocation-gap:spot-violation": 2,
+        "ec-phrasal-slot:spot-violation": 2,
+        "ec-modal:select-valid": 2,
+        "ec-quantifier:select-valid": 2
+      },
+      "solutionGraphs": {
+        "ec-collocation-gap:spot-violation#solution1": 2,
+        "ec-phrasal-slot:spot-violation#solution1": 2,
+        "ec-modal:select-valid#solution1": 2,
+        "ec-quantifier:select-valid#solution1": 2
+      }
+    },
+    "social-time-travel": {
+      "gameId": "social-time-travel",
+      "clusters": [
+        "cx:1wpo0po",
+        "cx:1wpo0po",
+        "cx:1fvq93l",
+        "cx:1fvq93l",
+        "cx:1odelc7",
+        "cx:1odelc7"
+      ],
+      "families": {
+        "stt-perspective": 2,
+        "stt-continuity-change": 2,
+        "stt-secondary-source": 2
+      },
+      "skeletons": {
+        "stt-perspective:spot-violation": 2,
+        "stt-continuity-change:select-valid": 2,
+        "stt-secondary-source:select-valid": 2
+      },
+      "solutionGraphs": {
+        "stt-perspective:spot-violation#solution1": 2,
+        "stt-continuity-change:select-valid#solution1": 2,
+        "stt-secondary-source:select-valid#solution1": 2
+      }
+    },
+    "social-map-skills": {
+      "gameId": "social-map-skills",
+      "clusters": [
+        "cx:4z668a",
+        "cx:4z668a",
+        "cx:7r5i77",
+        "cx:7r5i77"
+      ],
+      "families": {
+        "sm-map-type": 2,
+        "sm-climate-zone": 2
+      },
+      "skeletons": {
+        "sm-map-type:compare-worlds": 2,
+        "sm-climate-zone:forced-fact": 2
+      },
+      "solutionGraphs": {
+        "sm-map-type:compare-worlds#solution1": 2,
+        "sm-climate-zone:forced-fact#solution1": 2
+      }
+    },
+    "social-citizenship": {
+      "gameId": "social-citizenship",
+      "clusters": [
+        "cx:yqork2",
+        "cx:yqork2",
+        "cx:1k4pnls",
+        "cx:1k4pnls",
+        "cx:1tciu5t",
+        "cx:1tciu5t",
+        "cx:bm3kaz",
+        "cx:bm3kaz",
+        "cx:akokf0",
+        "cx:akokf0"
+      ],
+      "families": {
+        "sc-local-global": 4,
+        "sc-digital-citizenship": 2,
+        "sc-media-literacy": 2,
+        "sc-conflict-resolution": 2
+      },
+      "skeletons": {
+        "sc-local-global:compare-worlds": 4,
+        "sc-digital-citizenship:compare-worlds": 2,
+        "sc-media-literacy:select-valid": 2,
+        "sc-conflict-resolution:select-valid": 2
+      },
+      "solutionGraphs": {
+        "sc-local-global:compare-worlds#solution1": 4,
+        "sc-digital-citizenship:compare-worlds#solution1": 2,
+        "sc-media-literacy:select-valid#solution1": 2,
+        "sc-conflict-resolution:select-valid#solution1": 2
+      }
+    },
+    "lgs-foundation": {
+      "gameId": "lgs-foundation",
+      "clusters": [
+        "cx:4re6bq",
+        "cx:4re6bq",
+        "cx:jzt3wk",
+        "cx:jzt3wk"
+      ],
+      "families": {
+        "lgs-option-trap": 2,
+        "lgs-geometry-figure": 2
+      },
+      "skeletons": {
+        "lgs-option-trap:compare-worlds": 2,
+        "lgs-geometry-figure:spot-violation": 2
+      },
+      "solutionGraphs": {
+        "lgs-option-trap:compare-worlds#solution1": 2,
+        "lgs-geometry-figure:spot-violation#solution1": 2
+      }
+    },
+    "science-lab": {
+      "gameId": "science-lab",
+      "clusters": [
+        "cx:ttudmu",
+        "cx:ttudmu"
+      ],
+      "families": {
+        "science-data-claim": 2
+      },
+      "skeletons": {},
+      "solutionGraphs": {}
+    }
+  }
+}

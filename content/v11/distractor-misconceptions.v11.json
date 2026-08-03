@@ -1,0 +1,726 @@
+{
+  "version": "11.0.0",
+  "count": 120,
+  "items": [
+    {
+      "id": "INFO_SECME_01_D1",
+      "skeletonId": "INFO_SECME_01",
+      "slot": 1,
+      "description": "Metinde birebir geçen ancak sorunun bağlamıyla ilgisi olmayan kelime öbeği (görsel eşleşme tuzağı)"
+    },
+    {
+      "id": "INFO_SECME_01_D2",
+      "skeletonId": "INFO_SECME_01",
+      "slot": 2,
+      "description": "Cümlenin yan cümleciğinde geçen, doğru ancak sorulan \"özneye\" ait olmayan bilgi"
+    },
+    {
+      "id": "INFO_SECME_01_D3",
+      "skeletonId": "INFO_SECME_01",
+      "slot": 3,
+      "description": "Öğrencinin ön bilgisine göre doğru olan ancak metinde hiç geçmeyen mantıklı bilgi"
+    },
+    {
+      "id": "INFO_SECME_02_D1",
+      "skeletonId": "INFO_SECME_02",
+      "slot": 1,
+      "description": "Metinde çok küçük bir yan cümle veya sıfat tamlaması olarak geçen, gözden kaçması kolay bilgi"
+    },
+    {
+      "id": "INFO_SECME_02_D2",
+      "skeletonId": "INFO_SECME_02",
+      "slot": 2,
+      "description": "Paragrafın genel temasına çok uygun olan ama yazarın listesine dâhil etmediği bilgi"
+    },
+    {
+      "id": "INFO_SECME_02_D3",
+      "skeletonId": "INFO_SECME_02",
+      "slot": 3,
+      "description": "Farklı bir kavram için metinde geçen ancak sorulan kavrama ait olmayan bilgi"
+    },
+    {
+      "id": "INFO_SECME_03_D1",
+      "skeletonId": "INFO_SECME_03",
+      "slot": 1,
+      "description": "Sadece A kategorisine ait olan spesifik bilgi"
+    },
+    {
+      "id": "INFO_SECME_03_D2",
+      "skeletonId": "INFO_SECME_03",
+      "slot": 2,
+      "description": "Sadece B kategorisine ait olan spesifik bilgi"
+    },
+    {
+      "id": "INFO_SECME_03_D3",
+      "skeletonId": "INFO_SECME_03",
+      "slot": 3,
+      "description": "A ve B'nin metinde hiç bahsedilmeyen ancak mantıklı görünen ortak bir özelliği"
+    },
+    {
+      "id": "INFO_SECME_04_D1",
+      "skeletonId": "INFO_SECME_04",
+      "slot": 1,
+      "description": "Sürecin en başındaki veya en sonundaki adım (sorulan aralık değil)"
+    },
+    {
+      "id": "INFO_SECME_04_D2",
+      "skeletonId": "INFO_SECME_04",
+      "slot": 2,
+      "description": "İki adım sonrasındaki olay (hemen sonraki değil, dikkatsizlik tuzağı)"
+    },
+    {
+      "id": "INFO_SECME_04_D3",
+      "skeletonId": "INFO_SECME_04",
+      "slot": 3,
+      "description": "Süreçle ilgili ancak zaman çizgisine dâhil olmayan genel bir betimleme cümlesi"
+    },
+    {
+      "id": "INFO_SECME_05_D1",
+      "skeletonId": "INFO_SECME_05",
+      "slot": 1,
+      "description": "Görselde en yüksek/en büyük olan ancak metindeki koşulu sağlamayan veri"
+    },
+    {
+      "id": "INFO_SECME_05_D2",
+      "skeletonId": "INFO_SECME_05",
+      "slot": 2,
+      "description": "Metinde örneği verilen ancak görselde yer almayan veya görselde eşleşmeyen kısmi veri"
+    },
+    {
+      "id": "INFO_SECME_05_D3",
+      "skeletonId": "INFO_SECME_05",
+      "slot": 3,
+      "description": "Metin okunmadan sadece görsel okunarak ulaşılabilen yüzeysel bir veri"
+    },
+    {
+      "id": "BAGLAM_ANLAM_01_D1",
+      "skeletonId": "BAGLAM_ANLAM_01",
+      "slot": 1,
+      "description": "İfadenin en yaygın sözlük anlamı (Gerçek anlam tuzağı)"
+    },
+    {
+      "id": "BAGLAM_ANLAM_01_D2",
+      "skeletonId": "BAGLAM_ANLAM_01",
+      "slot": 2,
+      "description": "İfadede geçen somut kelimelerden birini içeren ancak bağlamla ilgisiz uydurma anlam"
+    },
+    {
+      "id": "BAGLAM_ANLAM_01_D3",
+      "skeletonId": "BAGLAM_ANLAM_01",
+      "slot": 3,
+      "description": "Metnin genel ana fikri (Öğrenci, özel kelimeyi sormasına rağmen metnin ana fikrini işaretler)"
+    },
+    {
+      "id": "BAGLAM_ANLAM_02_D1",
+      "skeletonId": "BAGLAM_ANLAM_02",
+      "slot": 1,
+      "description": "Gönderim ifadesinin hemen bir önceki kelimeye ait olduğunun sanılması (Yakınlık tuzağı)"
+    },
+    {
+      "id": "BAGLAM_ANLAM_02_D2",
+      "skeletonId": "BAGLAM_ANLAM_02",
+      "slot": 2,
+      "description": "Metinde çokça tekrar eden ancak gönderim ifadesinin kastetmediği ana tema"
+    },
+    {
+      "id": "BAGLAM_ANLAM_02_D3",
+      "skeletonId": "BAGLAM_ANLAM_02",
+      "slot": 3,
+      "description": "Gönderimin, sonraki cümlede geçen bir sonucu işaret ettiğinin düşünülmesi (Art gönderim yerine ön gönderim yanılgısı)"
+    },
+    {
+      "id": "BAGLAM_ANLAM_03_D1",
+      "skeletonId": "BAGLAM_ANLAM_03",
+      "slot": 1,
+      "description": "Metnin bir noktasında geçen ancak o anki sahneye ait olmayan geçici bir his"
+    },
+    {
+      "id": "BAGLAM_ANLAM_03_D2",
+      "skeletonId": "BAGLAM_ANLAM_03",
+      "slot": 2,
+      "description": "Eylemin dışarıdan görünüşünün aşırı düz/mekanik yorumu (Örn. \"üşümek\" - oysa elleri heyecandan titriyordur)"
+    },
+    {
+      "id": "BAGLAM_ANLAM_03_D3",
+      "skeletonId": "BAGLAM_ANLAM_03",
+      "slot": 3,
+      "description": "Karakterin değil, anlatıcının kendi duygusu"
+    },
+    {
+      "id": "BAGLAM_ANLAM_04_D1",
+      "skeletonId": "BAGLAM_ANLAM_04",
+      "slot": 1,
+      "description": "Boşluktan önceki cümleyi kelime kelime tekrar eden ancak konuyu ilerletmeyen ifade"
+    },
+    {
+      "id": "BAGLAM_ANLAM_04_D2",
+      "skeletonId": "BAGLAM_ANLAM_04",
+      "slot": 2,
+      "description": "Metnin ana fikrine uygun olan ancak o spesifik cümlenin mantıksal zincirine uymayan (örneğin, zıtlık gerekirken destekleme veren) cümle"
+    },
+    {
+      "id": "BAGLAM_ANLAM_04_D3",
+      "skeletonId": "BAGLAM_ANLAM_04",
+      "slot": 3,
+      "description": "Boşluktan sonraki cümleyle çelişen ancak öncekiyle uyumlu cümle"
+    },
+    {
+      "id": "BAGLAM_ANLAM_05_D1",
+      "skeletonId": "BAGLAM_ANLAM_05",
+      "slot": 1,
+      "description": "Tırnak veya ünlemin sadece dilbilgisel düzeltme amacı taşıdığının düşünülmesi"
+    },
+    {
+      "id": "BAGLAM_ANLAM_05_D2",
+      "skeletonId": "BAGLAM_ANLAM_05",
+      "slot": 2,
+      "description": "Formattan bağımsız olarak yazarın sadece metin içindeki doğrudan bir iddiası"
+    },
+    {
+      "id": "BAGLAM_ANLAM_05_D3",
+      "skeletonId": "BAGLAM_ANLAM_05",
+      "slot": 3,
+      "description": "Formatın rastgele seçildiğinin düşünülmesi, niyetin göz ardı edilmesi"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_01_D1",
+      "skeletonId": "KANIT_BIRLESTIRME_01",
+      "slot": 1,
+      "description": "Hastanın zaten verdiği bilginin işaretlenmesi (dikkatsizlik)"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_01_D2",
+      "skeletonId": "KANIT_BIRLESTIRME_01",
+      "slot": 2,
+      "description": "Uzmanın istemediği ancak genel kültürle faydalı olacağı düşünülen ilgisiz bilgi"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_01_D3",
+      "skeletonId": "KANIT_BIRLESTIRME_01",
+      "slot": 3,
+      "description": "Uzmanın verdiği kuralın bizzat kendisinin işaretlenmesi"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_02_D1",
+      "skeletonId": "KANIT_BIRLESTIRME_02",
+      "slot": 1,
+      "description": "Sadece ilk olgunun bir özelliği (Sentez yok)"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_02_D2",
+      "skeletonId": "KANIT_BIRLESTIRME_02",
+      "slot": 2,
+      "description": "Sadece ikinci olgunun bir özelliği (Sentez yok)"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_02_D3",
+      "skeletonId": "KANIT_BIRLESTIRME_02",
+      "slot": 3,
+      "description": "İki olguyu da içeren ancak neden-sonuç yönünü ters veren ifade (Y, X'e sebep olmuştur tuzağı)"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_03_D1",
+      "skeletonId": "KANIT_BIRLESTIRME_03",
+      "slot": 1,
+      "description": "X ve Y kuralını sağlayıp Z'yi sağlamayan senaryo"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_03_D2",
+      "skeletonId": "KANIT_BIRLESTIRME_03",
+      "slot": 2,
+      "description": "Y ve Z'yi sağlayıp X'i sağlamayan senaryo"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_03_D3",
+      "skeletonId": "KANIT_BIRLESTIRME_03",
+      "slot": 3,
+      "description": "Hiçbir kuralı sağlamayan ama gerçek dünyada doğru olan (genel bilgi) senaryo"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_04_D1",
+      "skeletonId": "KANIT_BIRLESTIRME_04",
+      "slot": 1,
+      "description": "Yazarın sadece sınırlı bir bağlam için söylediği doğru çıkarım (Öğrenci bunu yanlış sanıp işaretler)"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_04_D2",
+      "skeletonId": "KANIT_BIRLESTIRME_04",
+      "slot": 2,
+      "description": "Yazarın verdiği spesifik kanıtın birebir tekrarı"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_04_D3",
+      "skeletonId": "KANIT_BIRLESTIRME_04",
+      "slot": 3,
+      "description": "Metinde yazarın itiraz ettiği ama seçeneklerde doğruymuş gibi sunulmayan karşıt görüş"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_05_D1",
+      "skeletonId": "KANIT_BIRLESTIRME_05",
+      "slot": 1,
+      "description": "Yeni veriyi görmezden gelip eski teoriyi savunan çıkarım (Statik düşünme tuzağı)"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_05_D2",
+      "skeletonId": "KANIT_BIRLESTIRME_05",
+      "slot": 2,
+      "description": "Yeni verinin, ilgisiz bir başka teoriye destek olduğunun düşünülmesi"
+    },
+    {
+      "id": "KANIT_BIRLESTIRME_05_D3",
+      "skeletonId": "KANIT_BIRLESTIRME_05",
+      "slot": 3,
+      "description": "Yeni verinin metindeki her şeyi tamamen geçersiz kıldığını sanma (kısmi etkiyi fark edememe)"
+    },
+    {
+      "id": "METIN_AMACI_01_D1",
+      "skeletonId": "METIN_AMACI_01",
+      "slot": 1,
+      "description": "Metinde çok geniş yer tutan ancak yazarın asıl savunmak istediği amaca değil o amaca giden yolda bir kanıt olan yardımcı düşünce (Çok Güçlü Çeldirici)"
+    },
+    {
+      "id": "METIN_AMACI_01_D2",
+      "skeletonId": "METIN_AMACI_01",
+      "slot": 2,
+      "description": "Metnin sadece ilk paragrafını özetleyen ifade"
+    },
+    {
+      "id": "METIN_AMACI_01_D3",
+      "skeletonId": "METIN_AMACI_01",
+      "slot": 3,
+      "description": "Metnin sadece son paragrafındaki (sonuç cümlesi olmayan) spesifik bir örneğin genellenmiş hâli"
+    },
+    {
+      "id": "METIN_AMACI_02_D1",
+      "skeletonId": "METIN_AMACI_02",
+      "slot": 1,
+      "description": "Metnin sadece yüzey anlamını özetleyen \"X hakkında bilgi vermek\" şeklindeki düz seçenek"
+    },
+    {
+      "id": "METIN_AMACI_02_D2",
+      "skeletonId": "METIN_AMACI_02",
+      "slot": 2,
+      "description": "Yazarın örtük niyetiyle çelişen ancak kullandığı nesnel kanıtlarla eşleşen amaç (\"Bilimsel verileri listelemek\" gibi)"
+    },
+    {
+      "id": "METIN_AMACI_02_D3",
+      "skeletonId": "METIN_AMACI_02",
+      "slot": 3,
+      "description": "Yazarın niyetinden çok daha aşırı, agresif veya provokatif uydurma bir amaç"
+    },
+    {
+      "id": "METIN_AMACI_03_D1",
+      "skeletonId": "METIN_AMACI_03",
+      "slot": 1,
+      "description": "Metinde bahsedilen, ancak yazarın hitap etmediği üçüncü şahıs grubudur"
+    },
+    {
+      "id": "METIN_AMACI_03_D2",
+      "skeletonId": "METIN_AMACI_03",
+      "slot": 2,
+      "description": "İlgili konuya ilgi duyabilecek ama yazarın kullandığı teknik veya kaba dille uyuşmayan genel izleyici grubu (\"Herkes\" tuzağı)"
+    },
+    {
+      "id": "METIN_AMACI_03_D3",
+      "skeletonId": "METIN_AMACI_03",
+      "slot": 3,
+      "description": "Yazarın kendi ait olduğu meslek grubu (Yazan kişinin hedef kitle zannedilmesi)"
+    },
+    {
+      "id": "METIN_AMACI_04_D1",
+      "skeletonId": "METIN_AMACI_04",
+      "slot": 1,
+      "description": "Sadece metin 1 ve metin 2'nin amacını yansıtan ancak 3'ü dışarıda bırakan çatı"
+    },
+    {
+      "id": "METIN_AMACI_04_D2",
+      "skeletonId": "METIN_AMACI_04",
+      "slot": 2,
+      "description": "Sadece metin 3'ün çok belirgin olan amacının, tümüne şamil sanılması (Son etki tuzağı)"
+    },
+    {
+      "id": "METIN_AMACI_04_D3",
+      "skeletonId": "METIN_AMACI_04",
+      "slot": 3,
+      "description": "Çok genel olan, metinlerin amacından ziyade konusunu (\"Uzay\") veren ama niyeti (\"Uzay yolculuğunun maliyetini tartışmak\") içermeyen ifade"
+    },
+    {
+      "id": "METIN_AMACI_05_D1",
+      "skeletonId": "METIN_AMACI_05",
+      "slot": 1,
+      "description": "Metnin çok küçük bir parçasını anlatan, dolayısıyla \"dar\" kalan başlık"
+    },
+    {
+      "id": "METIN_AMACI_05_D2",
+      "skeletonId": "METIN_AMACI_05",
+      "slot": 2,
+      "description": "Metnin konusunu çok aşan, çok geniş ve genel bir kavramı ifade eden \"geniş\" başlık"
+    },
+    {
+      "id": "METIN_AMACI_05_D3",
+      "skeletonId": "METIN_AMACI_05",
+      "slot": 3,
+      "description": "Metindeki en ilginç kelimeyi barındıran ancak metnin ana temasıyla tamamen ilgisiz olan, sırf dikkat çekici diye seçilen başlık (\"Klik tuzağı\" başlık)"
+    },
+    {
+      "id": "METIN_YAPISI_01_D1",
+      "skeletonId": "METIN_YAPISI_01",
+      "slot": 1,
+      "description": "İkinci paragrafın içeriğini kelimesi kelimesine özetleyen ancak \"işlevini\" söylemeyen seçenek"
+    },
+    {
+      "id": "METIN_YAPISI_01_D2",
+      "skeletonId": "METIN_YAPISI_01",
+      "slot": 2,
+      "description": "Metnin genel ana fikri (Öğrenci işlev yerine ana fikri işaretler)"
+    },
+    {
+      "id": "METIN_YAPISI_01_D3",
+      "skeletonId": "METIN_YAPISI_01",
+      "slot": 3,
+      "description": "İlk paragrafın işlevinin ikinci paragrafınki sanılması"
+    },
+    {
+      "id": "METIN_YAPISI_02_D1",
+      "skeletonId": "METIN_YAPISI_02",
+      "slot": 1,
+      "description": "Metnin ana temasıyla aynı kelimeleri içeren ama yapısal olarak farklı bir yere ait olan cümlenin \"akışa uygun\" sanılması"
+    },
+    {
+      "id": "METIN_YAPISI_02_D2",
+      "skeletonId": "METIN_YAPISI_02",
+      "slot": 2,
+      "description": "İçinde yabancı veya farklı bir kelime geçen cümlenin sırf bu yüzden akışı bozduğunun düşünülmesi (Kelime tuzağı)"
+    },
+    {
+      "id": "METIN_YAPISI_02_D3",
+      "skeletonId": "METIN_YAPISI_02",
+      "slot": 3,
+      "description": "Paragrafın son cümlesinin konuyu bağlamamasına rağmen her zaman sonuç cümlesi sanılması"
+    },
+    {
+      "id": "METIN_YAPISI_03_D1",
+      "skeletonId": "METIN_YAPISI_03",
+      "slot": 1,
+      "description": "Metinde çok küçük bir karşılaştırma geçtiği için ana yapının karşılaştırma şeması sanılması"
+    },
+    {
+      "id": "METIN_YAPISI_03_D2",
+      "skeletonId": "METIN_YAPISI_03",
+      "slot": 2,
+      "description": "Şemanın çok karmaşık ve havalı görünmesi sebebiyle (bilimsel sanılarak) seçilmesi"
+    },
+    {
+      "id": "METIN_YAPISI_03_D3",
+      "skeletonId": "METIN_YAPISI_03",
+      "slot": 3,
+      "description": "Olayları alt alta sıralayan liste şemasının, neden-sonuç ağı gerektiren metin için seçilmesi"
+    },
+    {
+      "id": "METIN_YAPISI_04_D1",
+      "skeletonId": "METIN_YAPISI_04",
+      "slot": 1,
+      "description": "Yazarın kullandığı örneklerin zayıf olmasının mantıksal boşluk sanılması"
+    },
+    {
+      "id": "METIN_YAPISI_04_D2",
+      "skeletonId": "METIN_YAPISI_04",
+      "slot": 2,
+      "description": "Metinde yazarın hiç değinmediği yeni bir argümanın boşluk sanılması"
+    },
+    {
+      "id": "METIN_YAPISI_04_D3",
+      "skeletonId": "METIN_YAPISI_04",
+      "slot": 3,
+      "description": "Sıçramanın yazarın değil, alıntı yaptığı kişinin sözünde olduğunun düşünülmesi"
+    },
+    {
+      "id": "METIN_YAPISI_05_D1",
+      "skeletonId": "METIN_YAPISI_05",
+      "slot": 1,
+      "description": "Sadece ilk cümlesi ana fikir olan ama devamındaki kanıtların mantıksız sıralandığı seçenek"
+    },
+    {
+      "id": "METIN_YAPISI_05_D2",
+      "skeletonId": "METIN_YAPISI_05",
+      "slot": 2,
+      "description": "Orijinal metnin sırasının aynen korunup sadece başlık eklenmiş hali"
+    },
+    {
+      "id": "METIN_YAPISI_05_D3",
+      "skeletonId": "METIN_YAPISI_05",
+      "slot": 3,
+      "description": "Cümlelerin kronolojik sıralanması gerektiği yanılgısı (Tartışma metni olmasına rağmen)"
+    },
+    {
+      "id": "GUVENILIRLIK_01_D1",
+      "skeletonId": "GUVENILIRLIK_01",
+      "slot": 1,
+      "description": "Yazarın verdiği bilginin doğrudan doğru kabul edilip \"Güvenilirdir çünkü kesin bilgi veriyor\" denmesi (Yüzey okuma tuzağı)"
+    },
+    {
+      "id": "GUVENILIRLIK_01_D2",
+      "skeletonId": "GUVENILIRLIK_01",
+      "slot": 2,
+      "description": "Kaynağın sadece yardım etmek için yazdığının düşünülmesi (İyi niyet tuzağı)"
+    },
+    {
+      "id": "GUVENILIRLIK_01_D3",
+      "skeletonId": "GUVENILIRLIK_01",
+      "slot": 3,
+      "description": "Güvenilmezliğin yazarın kimliğinde değil, kelime hatalarında aranması"
+    },
+    {
+      "id": "GUVENILIRLIK_02_D1",
+      "skeletonId": "GUVENILIRLIK_02",
+      "slot": 1,
+      "description": "Kendi şahsi deneyimi olumlu sonuçlandığı için en güvenilir kaynağın \"Ben denedim oldu\" diyen sıradan kişi sanılması (Deneyim = Bilim yanılgısı)"
+    },
+    {
+      "id": "GUVENILIRLIK_02_D2",
+      "skeletonId": "GUVENILIRLIK_02",
+      "slot": 2,
+      "description": "\"Ben uzmanım\" diyen ama hiçbir kanıt sunmayan kişinin sırf unvanı yüzünden tam güvenilir bulunması (Sadece unvana yaslanma)"
+    },
+    {
+      "id": "GUVENILIRLIK_02_D3",
+      "skeletonId": "GUVENILIRLIK_02",
+      "slot": 3,
+      "description": "Soruyu soran kişinin güvenirliğini değerlendirmeye kalkışma"
+    },
+    {
+      "id": "GUVENILIRLIK_03_D1",
+      "skeletonId": "GUVENILIRLIK_03",
+      "slot": 1,
+      "description": "Çok bilimsel kelimeler içeren ama aslında yazarın kişisel tahmini olan bir cümlenin (örn: \"Bence küresel ısınma insanlığın sonunu getirecek\") bilimsel/nesnel sanılması"
+    },
+    {
+      "id": "GUVENILIRLIK_03_D2",
+      "skeletonId": "GUVENILIRLIK_03",
+      "slot": 2,
+      "description": "Tarihi veya sayısal verilerin yalan olabileceği düşüncesiyle nesnel cümlenin öznel sayılması (Yanlışlık ile öznelliğin birbirine karıştırılması)"
+    },
+    {
+      "id": "GUVENILIRLIK_03_D3",
+      "skeletonId": "GUVENILIRLIK_03",
+      "slot": 3,
+      "description": "Yazarın birinden yaptığı alıntının (\"Ali, bu kitabın sıkıcı olduğunu söyledi\") öznel sanılması (Oysa Ali'nin bunu söylemesi doğrulanabilir bir nesnel eylemdir)"
+    },
+    {
+      "id": "GUVENILIRLIK_04_D1",
+      "skeletonId": "GUVENILIRLIK_04",
+      "slot": 1,
+      "description": "Yazarın hiç savunmadığı bir cümlenin aranması (Soru, yazarın söylediği ama kanıtlamadığı şeyi aramaktadır)"
+    },
+    {
+      "id": "GUVENILIRLIK_04_D2",
+      "skeletonId": "GUVENILIRLIK_04",
+      "slot": 2,
+      "description": "İstatistikle desteklenmiş, çok sağlam kanıtı olan ana fikrin (Sadece önemli diye) işaretlenmesi"
+    },
+    {
+      "id": "GUVENILIRLIK_04_D3",
+      "skeletonId": "GUVENILIRLIK_04",
+      "slot": 3,
+      "description": "Metinde geçen bir örneğin bizzat iddia zannedilmesi"
+    },
+    {
+      "id": "GUVENILIRLIK_05_D1",
+      "skeletonId": "GUVENILIRLIK_05",
+      "slot": 1,
+      "description": "Metindeki profesör veya doktor isimlerine aldanarak metnin %100 tarafsız ve bilimsel olduğunu savunma (Otorite safsatası)"
+    },
+    {
+      "id": "GUVENILIRLIK_05_D2",
+      "skeletonId": "GUVENILIRLIK_05",
+      "slot": 2,
+      "description": "\"Dernek\" kelimesini okuyup bunun kâr amacı gütmeyen, sadece halk sağlığını düşünen bir yapı olduğunu zannetme"
+    },
+    {
+      "id": "GUVENILIRLIK_05_D3",
+      "skeletonId": "GUVENILIRLIK_05",
+      "slot": 3,
+      "description": "Metnin tamamen yanlış, yalan bilim (sahte bilim) olduğunu iddia etme (Oysa bilgi kısmen doğru olabilir, sorun seçici aktarımdadır)"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_01_D1",
+      "skeletonId": "CELISKI_KARSILASTIRMA_01",
+      "slot": 1,
+      "description": "A yazarının argümanının tamamı (Öğrenci soruyu okumadan ilk metindeki doğruya atlar)"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_01_D2",
+      "skeletonId": "CELISKI_KARSILASTIRMA_01",
+      "slot": 2,
+      "description": "B yazarının argümanının tamamı"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_01_D3",
+      "skeletonId": "CELISKI_KARSILASTIRMA_01",
+      "slot": 3,
+      "description": "İki yazarın da üzerinde mutabık olduğu (çelişmedikleri) ortak bir olgunun, çelişki noktası gibi sunulması"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_02_D1",
+      "skeletonId": "CELISKI_KARSILASTIRMA_02",
+      "slot": 1,
+      "description": "Yalnızca Diamond'ın savunduğu teori"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_02_D2",
+      "skeletonId": "CELISKI_KARSILASTIRMA_02",
+      "slot": 2,
+      "description": "Yalnızca Lipo ve Hunt'ın savunduğu teori"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_02_D3",
+      "skeletonId": "CELISKI_KARSILASTIRMA_02",
+      "slot": 3,
+      "description": "İki grubun da hiç bahsetmediği, genel bir dış bilgi"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_03_D1",
+      "skeletonId": "CELISKI_KARSILASTIRMA_03",
+      "slot": 1,
+      "description": "Yazar A'nın değil, metindeki karşıt görüşlü Yazar B'nin vereceği tepki (Tutum karmaşası)"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_03_D2",
+      "skeletonId": "CELISKI_KARSILASTIRMA_03",
+      "slot": 2,
+      "description": "Normal ve sağduyulu bir insanın verebileceği ama Yazar A'nın aşırı uçlardaki fikirlerine uymayan tepki"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_03_D3",
+      "skeletonId": "CELISKI_KARSILASTIRMA_03",
+      "slot": 3,
+      "description": "Yazarın doğrudan metindeki cümlesini tekrar eden ama yeni senaryo ile ilgisi olmayan tepki"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_04_D1",
+      "skeletonId": "CELISKI_KARSILASTIRMA_04",
+      "slot": 1,
+      "description": "Zaten Yazar A'nın metninde bulunan verinin aynısını \"bunu bulmalıyız\" diyerek seçme"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_04_D2",
+      "skeletonId": "CELISKI_KARSILASTIRMA_04",
+      "slot": 2,
+      "description": "Yazar B'nin kullandığı veriyi seçme"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_04_D3",
+      "skeletonId": "CELISKI_KARSILASTIRMA_04",
+      "slot": 3,
+      "description": "Tartışmanın konusuyla (süt ve kemik) hiç ilgisi olmayan \"Sütün ekonomik maliyeti hesaplanmalıdır\" gibi alakasız bir öneri getirme"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_05_D1",
+      "skeletonId": "CELISKI_KARSILASTIRMA_05",
+      "slot": 1,
+      "description": "Metindeki iki uyumlu ve birbirini destekleyen cümlenin çelişki sanılması"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_05_D2",
+      "skeletonId": "CELISKI_KARSILASTIRMA_05",
+      "slot": 2,
+      "description": "Yazarın çelişkiye düşmediği, sadece istisna (\"Bu duruma rağmen...\") belirttiği yerin asıl çelişki sanılması (İstisna ile çelişki ayrımını yapamama)"
+    },
+    {
+      "id": "CELISKI_KARSILASTIRMA_05_D3",
+      "skeletonId": "CELISKI_KARSILASTIRMA_05",
+      "slot": 3,
+      "description": "Yazarın kendi fikriyle değil de başkasının fikriyle çeliştiği cümlenin seçilmesi (Soru iç tutarsızlığı aramaktadır)"
+    },
+    {
+      "id": "SENTEZ_COKLU_01_D1",
+      "skeletonId": "SENTEZ_COKLU_01",
+      "slot": 1,
+      "description": "Kuralı okumadan, grafikteki \"en yüksek/en düşük\" değeri safça işaretleme (Görsel çekicilik tuzağı)"
+    },
+    {
+      "id": "SENTEZ_COKLU_01_D2",
+      "skeletonId": "SENTEZ_COKLU_01",
+      "slot": 2,
+      "description": "Kuralı yanlış anlayıp (Örn: %100'den azı sanıp) ters grafiği işaretleme"
+    },
+    {
+      "id": "SENTEZ_COKLU_01_D3",
+      "skeletonId": "SENTEZ_COKLU_01",
+      "slot": 3,
+      "description": "Kurala kısmen uyan ama tam eşleşmeyen verinin seçilmesi"
+    },
+    {
+      "id": "SENTEZ_COKLU_02_D1",
+      "skeletonId": "SENTEZ_COKLU_02",
+      "slot": 1,
+      "description": "1. ve 2. kurala uyan ama 3. kurala (örn. yaş sınırı) uymayan seçeneğin işaretlenmesi"
+    },
+    {
+      "id": "SENTEZ_COKLU_02_D2",
+      "skeletonId": "SENTEZ_COKLU_02",
+      "slot": 2,
+      "description": "2. ve 3. kurala uyan ama saati tutmayan (1. kuralı çiğneyen) seçenek"
+    },
+    {
+      "id": "SENTEZ_COKLU_02_D3",
+      "skeletonId": "SENTEZ_COKLU_02",
+      "slot": 3,
+      "description": "Hiçbir kuralı umursamadan, metindeki görsellerden en ilgi çekici olanın seçilmesi"
+    },
+    {
+      "id": "SENTEZ_COKLU_03_D1",
+      "skeletonId": "SENTEZ_COKLU_03",
+      "slot": 1,
+      "description": "Yazarın cümlesinin grafikle doğrulandığını zannetmek (Görseli hiç okumama veya yanlış okuma)"
+    },
+    {
+      "id": "SENTEZ_COKLU_03_D2",
+      "skeletonId": "SENTEZ_COKLU_03",
+      "slot": 2,
+      "description": "Grafikteki doğruların metni çürütmesi yerine, farklı bir konuyu (örn. sadece yangınları) gösterdiğini düşünme"
+    },
+    {
+      "id": "SENTEZ_COKLU_03_D3",
+      "skeletonId": "SENTEZ_COKLU_03",
+      "slot": 3,
+      "description": "Uyuşmazlığı tespit edip \"Grafik yanlıştır\" sonucuna varmak (Oysa sorun metnin yorumundadır)"
+    },
+    {
+      "id": "SENTEZ_COKLU_04_D1",
+      "skeletonId": "SENTEZ_COKLU_04",
+      "slot": 1,
+      "description": "\"Haritada göç yolları gösterilmiştir\" diyerek görselin işlevini değil içeriğini söyleyen, yüzey anlamlı seçenek (En çok düşülen tuzak)"
+    },
+    {
+      "id": "SENTEZ_COKLU_04_D2",
+      "skeletonId": "SENTEZ_COKLU_04",
+      "slot": 2,
+      "description": "Görselin metni \"çürüttüğünü\" iddia eden uydurma işlev (Oysa destekliyordur)"
+    },
+    {
+      "id": "SENTEZ_COKLU_04_D3",
+      "skeletonId": "SENTEZ_COKLU_04",
+      "slot": 3,
+      "description": "Sırf sayfayı \"süslemek\" veya \"okurun can sıkıntısını almak\" için konduğunu savunan yüzeysel seçenek"
+    },
+    {
+      "id": "SENTEZ_COKLU_05_D1",
+      "skeletonId": "SENTEZ_COKLU_05",
+      "slot": 1,
+      "description": "Sadece 1. grafikten okunabilen ama tabloya entegre edilmemiş yarım (eksik) bilgi"
+    },
+    {
+      "id": "SENTEZ_COKLU_05_D2",
+      "skeletonId": "SENTEZ_COKLU_05",
+      "slot": 2,
+      "description": "Sadece 2. tablodan okunabilen ama ilk grafikteki veriyle çelişen genel bilgi"
+    },
+    {
+      "id": "SENTEZ_COKLU_05_D3",
+      "skeletonId": "SENTEZ_COKLU_05",
+      "slot": 3,
+      "description": "Grafikteki tepe veya dip noktaları (\"En yüksek olan\", \"en düşük olan\") sırf dikkat çekiyor diye dikkatsizce birbiriyle eşleştirme"
+    }
+  ]
+}

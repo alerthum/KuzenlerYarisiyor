@@ -1,0 +1,15 @@
+# Final Kabul Matrisi
+- Genel kalite >=90
+- Doğruluk 100
+- Tek doğru cevap 100
+- 3+ kolay/orta yayın 0
+- Zorluk >=95
+- Seçenek kalitesi >=95
+- Alakasız/saçma/biçimsel ipucu 0
+- Tüm şıkları okumadan cevap 0
+- Aynı oturum semantik tekrar 0
+- 500 oturum PASS
+- İnsan gözü >=90
+- Aktif oyun entegrasyonu 100
+- Kritik/yüksek blocker 0
+- Web/mobil E2E PASS

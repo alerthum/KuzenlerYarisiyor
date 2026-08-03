@@ -1,0 +1,1041 @@
+{
+  "kind": "annual-student",
+  "pass": false,
+  "gates": {
+    "exactQuestionRepeat": true,
+    "familyRecurrenceInterval": false,
+    "skeletonRecurrenceInterval": false,
+    "reasoningPathRecurrenceInterval": false,
+    "solutionGraphRecurrenceInterval": false,
+    "distractorPlanRecurrenceInterval": true,
+    "perceivedSemanticCluster": true,
+    "curriculumCoverage": false,
+    "difficultyProgression": true,
+    "adaptiveRouteChanges": true,
+    "persistentGrowingHistory": true,
+    "sessionsCompleted": true,
+    "annualAttemptVolume": false
+  },
+  "summary": {
+    "weeks": 1,
+    "sessionsPerWeek": 20,
+    "sessionsCompleted": 33,
+    "attemptsTotal": 78,
+    "minAttemptsTarget": 160,
+    "distinctQuestionKeys": 78,
+    "exactQuestionRepeatCount": 0,
+    "curriculumTopicCount": 3,
+    "difficultyProgression": {
+      "firstHalfMean": 4.6,
+      "secondHalfMean": 5,
+      "delta": 0.4
+    },
+    "adaptiveRouteChanges": 30,
+    "persistentGrowingHistory": true
+  },
+  "metrics": {
+    "exactQuestionRepeat": {
+      "count": 0,
+      "samples": []
+    },
+    "familyRecurrenceInterval": {
+      "distinctKeys": 7,
+      "recurringKeys": 7,
+      "minInterval": 1,
+      "meanInterval": 2.89,
+      "shortRecurrenceKeys": [
+        "pattern-lab-arithmetic-add",
+        "pattern-lab-arithmetic-subtract",
+        "pattern-lab-two-step-alternating",
+        "pattern-lab-three-term-cycle",
+        "pattern-lab-digit-sum-growth",
+        "pattern-lab-fibonacci-recurrence"
+      ],
+      "topRecurring": [
+        {
+          "key": "pattern-lab-arithmetic-add",
+          "occurrences": 20,
+          "intervals": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            3,
+            3,
+            2,
+            2,
+            2,
+            2,
+            1,
+            2,
+            1,
+            1,
+            2
+          ],
+          "meanInterval": 1.58,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract",
+          "occurrences": 17,
+          "intervals": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            3,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            5
+          ],
+          "meanInterval": 1.56,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-two-step-alternating",
+          "occurrences": 11,
+          "intervals": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            3,
+            4,
+            8,
+            1,
+            3
+          ],
+          "meanInterval": 2.4,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-three-term-cycle",
+          "occurrences": 11,
+          "intervals": [
+            3,
+            1,
+            1,
+            1,
+            2,
+            1,
+            4,
+            12,
+            1,
+            4
+          ],
+          "meanInterval": 3,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth",
+          "occurrences": 10,
+          "intervals": [
+            2,
+            1,
+            1,
+            5,
+            1,
+            1,
+            11,
+            1,
+            4
+          ],
+          "meanInterval": 3,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-fibonacci-recurrence",
+          "occurrences": 7,
+          "intervals": [
+            1,
+            2,
+            1,
+            1,
+            10,
+            1
+          ],
+          "meanInterval": 2.67,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-geometric-multiply",
+          "occurrences": 2,
+          "intervals": [
+            6
+          ],
+          "meanInterval": 6,
+          "minInterval": 6
+        }
+      ]
+    },
+    "skeletonRecurrenceInterval": {
+      "distinctKeys": 26,
+      "recurringKeys": 21,
+      "minInterval": 1,
+      "meanInterval": 11.91,
+      "shortRecurrenceKeys": [
+        "pattern-lab-two-step-alternating:next-term",
+        "pattern-lab-three-term-cycle:next-term",
+        "pattern-lab-digit-sum-growth:next-term",
+        "pattern-lab-fibonacci-recurrence:next-term",
+        "pattern-lab-arithmetic-subtract:extended-position"
+      ],
+      "topRecurring": [
+        {
+          "key": "pattern-lab-arithmetic-add:next-term",
+          "occurrences": 5,
+          "intervals": [
+            4,
+            5,
+            8,
+            13
+          ],
+          "meanInterval": 7.5,
+          "minInterval": 4
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:next-term",
+          "occurrences": 5,
+          "intervals": [
+            4,
+            1,
+            3,
+            12
+          ],
+          "meanInterval": 5,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-three-term-cycle:next-term",
+          "occurrences": 5,
+          "intervals": [
+            6,
+            2,
+            1,
+            4
+          ],
+          "meanInterval": 3.25,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:missing-middle",
+          "occurrences": 5,
+          "intervals": [
+            9,
+            3,
+            2,
+            2
+          ],
+          "meanInterval": 4,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:missing-middle",
+          "occurrences": 5,
+          "intervals": [
+            6,
+            8,
+            4,
+            9
+          ],
+          "meanInterval": 6.75,
+          "minInterval": 4
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:extended-position",
+          "occurrences": 5,
+          "intervals": [
+            4,
+            6,
+            12,
+            3
+          ],
+          "meanInterval": 6.25,
+          "minInterval": 3
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:extended-position",
+          "occurrences": 5,
+          "intervals": [
+            5,
+            11,
+            1,
+            6
+          ],
+          "meanInterval": 5.75,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:error-detection",
+          "occurrences": 5,
+          "intervals": [
+            5,
+            13,
+            2,
+            3
+          ],
+          "meanInterval": 5.75,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:next-term",
+          "occurrences": 4,
+          "intervals": [
+            5,
+            9,
+            2
+          ],
+          "meanInterval": 5.33,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:next-term",
+          "occurrences": 4,
+          "intervals": [
+            9,
+            1,
+            1
+          ],
+          "meanInterval": 3.67,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-fibonacci-recurrence:next-term",
+          "occurrences": 4,
+          "intervals": [
+            5,
+            10,
+            1
+          ],
+          "meanInterval": 5.33,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:error-detection",
+          "occurrences": 3,
+          "intervals": [
+            8,
+            9
+          ],
+          "meanInterval": 8.5,
+          "minInterval": 8
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:missing-middle",
+          "occurrences": 2,
+          "intervals": [
+            11
+          ],
+          "meanInterval": 11,
+          "minInterval": 11
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:extended-position",
+          "occurrences": 2,
+          "intervals": [
+            19
+          ],
+          "meanInterval": 19,
+          "minInterval": 19
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:missing-middle",
+          "occurrences": 2,
+          "intervals": [
+            20
+          ],
+          "meanInterval": 20,
+          "minInterval": 20
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:extended-position",
+          "occurrences": 2,
+          "intervals": [
+            20
+          ],
+          "meanInterval": 20,
+          "minInterval": 20
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:error-detection",
+          "occurrences": 2,
+          "intervals": [
+            21
+          ],
+          "meanInterval": 21,
+          "minInterval": 21
+        },
+        {
+          "key": "pattern-lab-three-term-cycle:missing-middle",
+          "occurrences": 2,
+          "intervals": [
+            22
+          ],
+          "meanInterval": 22,
+          "minInterval": 22
+        },
+        {
+          "key": "pattern-lab-three-term-cycle:extended-position",
+          "occurrences": 2,
+          "intervals": [
+            22
+          ],
+          "meanInterval": 22,
+          "minInterval": 22
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:error-detection",
+          "occurrences": 2,
+          "intervals": [
+            23
+          ],
+          "meanInterval": 23,
+          "minInterval": 23
+        }
+      ]
+    },
+    "reasoningPathRecurrenceInterval": {
+      "distinctKeys": 47,
+      "recurringKeys": 12,
+      "minInterval": 1,
+      "meanInterval": 7.33,
+      "shortRecurrenceKeys": [
+        "pattern-lab-three-term-cycle:next-term#induction-context",
+        "pattern-lab-two-step-alternating:next-term#induction-context",
+        "pattern-lab-arithmetic-subtract:extended-position#induction-context",
+        "pattern-lab-digit-sum-growth:next-term#induction-context"
+      ],
+      "topRecurring": [
+        {
+          "key": "pattern-lab-arithmetic-add:next-term#induction-context",
+          "occurrences": 4,
+          "intervals": [
+            9,
+            8,
+            13
+          ],
+          "meanInterval": 10,
+          "minInterval": 8
+        },
+        {
+          "key": "pattern-lab-three-term-cycle:next-term#induction-context",
+          "occurrences": 4,
+          "intervals": [
+            8,
+            1,
+            4
+          ],
+          "meanInterval": 4.33,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:missing-middle#induction-context",
+          "occurrences": 4,
+          "intervals": [
+            12,
+            2,
+            2
+          ],
+          "meanInterval": 5.33,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:extended-position#induction-context",
+          "occurrences": 4,
+          "intervals": [
+            10,
+            12,
+            3
+          ],
+          "meanInterval": 8.33,
+          "minInterval": 3
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:error-detection#induction-context",
+          "occurrences": 4,
+          "intervals": [
+            18,
+            2,
+            3
+          ],
+          "meanInterval": 7.67,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:next-term#induction-context",
+          "occurrences": 4,
+          "intervals": [
+            1,
+            3,
+            12
+          ],
+          "meanInterval": 5.33,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:missing-middle#induction-context",
+          "occurrences": 4,
+          "intervals": [
+            8,
+            4,
+            9
+          ],
+          "meanInterval": 7,
+          "minInterval": 4
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:extended-position#induction-context",
+          "occurrences": 4,
+          "intervals": [
+            11,
+            1,
+            6
+          ],
+          "meanInterval": 6,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:next-term#induction-context",
+          "occurrences": 3,
+          "intervals": [
+            14,
+            2
+          ],
+          "meanInterval": 8,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-fibonacci-recurrence:next-term#induction-context",
+          "occurrences": 3,
+          "intervals": [
+            5,
+            11
+          ],
+          "meanInterval": 8,
+          "minInterval": 5
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:next-term#induction-context",
+          "occurrences": 3,
+          "intervals": [
+            1,
+            1
+          ],
+          "meanInterval": 1,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:error-detection#induction-context",
+          "occurrences": 2,
+          "intervals": [
+            17
+          ],
+          "meanInterval": 17,
+          "minInterval": 17
+        }
+      ]
+    },
+    "solutionGraphRecurrenceInterval": {
+      "distinctKeys": 26,
+      "recurringKeys": 21,
+      "minInterval": 1,
+      "meanInterval": 11.91,
+      "shortRecurrenceKeys": [
+        "pattern-lab-two-step-alternating:next-term#solution1",
+        "pattern-lab-three-term-cycle:next-term#solution1",
+        "pattern-lab-digit-sum-growth:next-term#solution1",
+        "pattern-lab-fibonacci-recurrence:next-term#solution1",
+        "pattern-lab-arithmetic-subtract:extended-position#solution1"
+      ],
+      "topRecurring": [
+        {
+          "key": "pattern-lab-arithmetic-add:next-term#solution1",
+          "occurrences": 5,
+          "intervals": [
+            4,
+            5,
+            8,
+            13
+          ],
+          "meanInterval": 7.5,
+          "minInterval": 4
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:next-term#solution1",
+          "occurrences": 5,
+          "intervals": [
+            4,
+            1,
+            3,
+            12
+          ],
+          "meanInterval": 5,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-three-term-cycle:next-term#solution1",
+          "occurrences": 5,
+          "intervals": [
+            6,
+            2,
+            1,
+            4
+          ],
+          "meanInterval": 3.25,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:missing-middle#solution1",
+          "occurrences": 5,
+          "intervals": [
+            9,
+            3,
+            2,
+            2
+          ],
+          "meanInterval": 4,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:missing-middle#solution1",
+          "occurrences": 5,
+          "intervals": [
+            6,
+            8,
+            4,
+            9
+          ],
+          "meanInterval": 6.75,
+          "minInterval": 4
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:extended-position#solution1",
+          "occurrences": 5,
+          "intervals": [
+            4,
+            6,
+            12,
+            3
+          ],
+          "meanInterval": 6.25,
+          "minInterval": 3
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:extended-position#solution1",
+          "occurrences": 5,
+          "intervals": [
+            5,
+            11,
+            1,
+            6
+          ],
+          "meanInterval": 5.75,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:error-detection#solution1",
+          "occurrences": 5,
+          "intervals": [
+            5,
+            13,
+            2,
+            3
+          ],
+          "meanInterval": 5.75,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:next-term#solution1",
+          "occurrences": 4,
+          "intervals": [
+            5,
+            9,
+            2
+          ],
+          "meanInterval": 5.33,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:next-term#solution1",
+          "occurrences": 4,
+          "intervals": [
+            9,
+            1,
+            1
+          ],
+          "meanInterval": 3.67,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-fibonacci-recurrence:next-term#solution1",
+          "occurrences": 4,
+          "intervals": [
+            5,
+            10,
+            1
+          ],
+          "meanInterval": 5.33,
+          "minInterval": 1
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:error-detection#solution1",
+          "occurrences": 3,
+          "intervals": [
+            8,
+            9
+          ],
+          "meanInterval": 8.5,
+          "minInterval": 8
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:missing-middle#solution1",
+          "occurrences": 2,
+          "intervals": [
+            11
+          ],
+          "meanInterval": 11,
+          "minInterval": 11
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:extended-position#solution1",
+          "occurrences": 2,
+          "intervals": [
+            19
+          ],
+          "meanInterval": 19,
+          "minInterval": 19
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:missing-middle#solution1",
+          "occurrences": 2,
+          "intervals": [
+            20
+          ],
+          "meanInterval": 20,
+          "minInterval": 20
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:extended-position#solution1",
+          "occurrences": 2,
+          "intervals": [
+            20
+          ],
+          "meanInterval": 20,
+          "minInterval": 20
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:error-detection#solution1",
+          "occurrences": 2,
+          "intervals": [
+            21
+          ],
+          "meanInterval": 21,
+          "minInterval": 21
+        },
+        {
+          "key": "pattern-lab-three-term-cycle:missing-middle#solution1",
+          "occurrences": 2,
+          "intervals": [
+            22
+          ],
+          "meanInterval": 22,
+          "minInterval": 22
+        },
+        {
+          "key": "pattern-lab-three-term-cycle:extended-position#solution1",
+          "occurrences": 2,
+          "intervals": [
+            22
+          ],
+          "meanInterval": 22,
+          "minInterval": 22
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:error-detection#solution1",
+          "occurrences": 2,
+          "intervals": [
+            23
+          ],
+          "meanInterval": 23,
+          "minInterval": 23
+        }
+      ]
+    },
+    "distractorPlanRecurrenceInterval": {
+      "distinctKeys": 71,
+      "recurringKeys": 6,
+      "minInterval": 2,
+      "meanInterval": 14.08,
+      "shortRecurrenceKeys": [],
+      "topRecurring": [
+        {
+          "key": "pattern-lab-three-term-cycle:next-term:dp:1cqa80",
+          "occurrences": 3,
+          "intervals": [
+            2,
+            5
+          ],
+          "meanInterval": 3.5,
+          "minInterval": 2
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:next-term:dp:1r9t7ag",
+          "occurrences": 2,
+          "intervals": [
+            30
+          ],
+          "meanInterval": 30,
+          "minInterval": 30
+        },
+        {
+          "key": "pattern-lab-digit-sum-growth:next-term:dp:1wuohno",
+          "occurrences": 2,
+          "intervals": [
+            10
+          ],
+          "meanInterval": 10,
+          "minInterval": 10
+        },
+        {
+          "key": "pattern-lab-arithmetic-subtract:extended-position:dp:16r2z5k",
+          "occurrences": 2,
+          "intervals": [
+            17
+          ],
+          "meanInterval": 17,
+          "minInterval": 17
+        },
+        {
+          "key": "pattern-lab-two-step-alternating:next-term:dp:ui1iab",
+          "occurrences": 2,
+          "intervals": [
+            3
+          ],
+          "meanInterval": 3,
+          "minInterval": 3
+        },
+        {
+          "key": "pattern-lab-arithmetic-add:extended-position:dp:1mlu8o",
+          "occurrences": 2,
+          "intervals": [
+            21
+          ],
+          "meanInterval": 21,
+          "minInterval": 21
+        }
+      ]
+    },
+    "perceivedSemanticCluster": {
+      "distinctKeys": 78,
+      "recurringKeys": 0,
+      "minInterval": null,
+      "meanInterval": null,
+      "shortRecurrenceKeys": [],
+      "topRecurring": []
+    },
+    "curriculumCoverage": {
+      "topicCount": 3,
+      "topics": [
+        "algebraic-thinking",
+        "sequences",
+        "patterns"
+      ]
+    },
+    "difficultyProgression": {
+      "firstHalfMean": 4.6,
+      "secondHalfMean": 5,
+      "delta": 0.4
+    },
+    "adaptiveRouteChanges": {
+      "changeCount": 30,
+      "logTail": [
+        {
+          "sessionIndex": 21,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 0,
+          "planTopics": [
+            "algebraic-thinking",
+            "sequences"
+          ]
+        },
+        {
+          "sessionIndex": 22,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 1,
+          "planTopics": [
+            "patterns",
+            "algebraic-thinking",
+            "sequences"
+          ]
+        },
+        {
+          "sessionIndex": 23,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 0,
+          "planTopics": [
+            "patterns",
+            "algebraic-thinking"
+          ]
+        },
+        {
+          "sessionIndex": 24,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 0,
+          "planTopics": [
+            "patterns",
+            "algebraic-thinking",
+            "sequences"
+          ]
+        },
+        {
+          "sessionIndex": 25,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 1,
+          "planTopics": [
+            "patterns",
+            "sequences"
+          ]
+        },
+        {
+          "sessionIndex": 26,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 1,
+          "planTopics": [
+            "patterns",
+            "algebraic-thinking",
+            "sequences"
+          ]
+        },
+        {
+          "sessionIndex": 27,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-subtract",
+            "pattern-lab-three-term-cycle"
+          ],
+          "injected": 0,
+          "planTopics": [
+            "algebraic-thinking",
+            "sequences"
+          ]
+        },
+        {
+          "sessionIndex": 28,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 1,
+          "planTopics": [
+            "algebraic-thinking",
+            "sequences"
+          ]
+        },
+        {
+          "sessionIndex": 29,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 30,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 1,
+          "planTopics": [
+            "patterns",
+            "sequences"
+          ]
+        },
+        {
+          "sessionIndex": 31,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 0,
+          "planTopics": []
+        },
+        {
+          "sessionIndex": 32,
+          "targetDifficulty": 4,
+          "weakPatterns": [
+            "pattern-lab-geometric-multiply",
+            "pattern-lab-arithmetic-add",
+            "pattern-lab-arithmetic-subtract"
+          ],
+          "injected": 0,
+          "planTopics": []
+        }
+      ]
+    }
+  },
+  "failuresByGameFamilySkeletonGraph": {},
+  "orchestrationUsed": [
+    "createGameSession",
+    "options.attempts",
+    "options.seenQuestionKeys",
+    "options.recentFamilyIds",
+    "options.completedSessionCount",
+    "buildStudentBrainProfile",
+    "composeAdaptiveSession",
+    "normalizedPerceivedStructure"
+  ]
+}

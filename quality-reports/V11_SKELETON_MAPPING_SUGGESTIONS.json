@@ -1,0 +1,1336 @@
+{
+  "schemaVersion": "11.0.0-stage2",
+  "generatedAt": "2026-08-01T03:23:37.708Z",
+  "warning": "Bu çıktı otomatik öneridir. Bir soru veya aile, insan incelemesi olmadan V11 iskeletine atanmaz.",
+  "totals": {
+    "candidates": 147,
+    "proposed": 56,
+    "unmatched": 91,
+    "usedSkeletons": 8
+  },
+  "mappings": [
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "math-error-chain",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "tr-inference-evidence",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "science-variable-lab",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "social-source-compare",
+      "proposedSkeletonId": "GUVENILIRLIK_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "source|reliab|güvenilir|sponsor|authority",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "religion-concept-situation",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "english-context-choice",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "social-cause-chain",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "religion-ethical-dilemma",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "english-dialogue-completion",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "olympiad-proof-strategy",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "logic-constraint-grid",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "math-reverse-check",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "tr-author-purpose",
+      "proposedSkeletonId": "METIN_AMACI_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "purpose|amaç|author-intent",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "science-data-claim",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "logic-order-chain",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-family-studio-v10.js",
+      "currentFamilyId": "olympiad-invariant",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "math-error-chain",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "tr-inference-evidence",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "science-variable-lab",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "social-source-compare",
+      "proposedSkeletonId": "GUVENILIRLIK_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "source|reliab|güvenilir|sponsor|authority",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "religion-concept-situation",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "english-context-choice",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "logic-constraint-grid",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "olympiad-invariant",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "math-reverse-check",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "tr-author-purpose",
+      "proposedSkeletonId": "METIN_AMACI_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "purpose|amaç|author-intent",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "science-data-claim",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "logic-order-chain",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "social-cause-chain",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "religion-ethical-dilemma",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "english-dialogue-completion",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-studio/premium-gold-content-v10.js",
+      "currentFamilyId": "olympiad-proof-strategy",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "evidence-selection",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "event-order",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "main-idea",
+      "proposedSkeletonId": "METIN_AMACI_01",
+      "matchConfidence": 0.72,
+      "mappingBasis": "main-idea|ana-fikir|mainidea",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "irrelevant-information",
+      "proposedSkeletonId": "METIN_YAPISI_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "irrelevant|gereksiz|akışı-bozan",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "implicit-inference",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "argument-evaluation",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "text-data-integration",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "hidden-assumption",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "comparison-two-sources",
+      "proposedSkeletonId": "GUVENILIRLIK_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "source|reliab|güvenilir|sponsor|authority",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "cause-effect-chain",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "sentence-insertion",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "best-title",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "simple-data-interpretation",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "hidden-classification-rule",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "contradiction-detection",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "authors-purpose",
+      "proposedSkeletonId": "METIN_AMACI_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "purpose|amaç|author-intent",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "multiple-source-synthesis",
+      "proposedSkeletonId": "GUVENILIRLIK_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "source|reliab|güvenilir|sponsor|authority",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "claim-evidence-match",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "argument-weakness",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "paragraph-coherence",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "tone-and-attitude",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "multi-condition-text",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "media-literacy",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "experimental-variable-analysis",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "distractor-analysis",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "d-azim-1",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "d-merak-1",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "d-strateji-1",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "d-okuma-1",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "d-zaman-1",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "d-lgs-1",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/content-v4.js",
+      "currentFamilyId": "d-english-1",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "consecutive-sum",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "pair-sum-count",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "digit-reversal-difference",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "square-grid-total",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "rectangle-grid-count",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "path-through-checkpoint",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "calendar-cycle",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "two-equation-balance",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "magic-square-missing",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "joined-rectangles-perimeter",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "pigeonhole-socks",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "parity-invariant",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "set-overlap",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "fold-and-punch",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "second-difference-pattern",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "reverse-machine",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "subset-target",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "largest-square-tiles",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "cycle-lcm",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "last-digit-cycle",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "divisible-missing-digit",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "restricted-combination",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "probability-without-replacement",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "domino-corners-invariant",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "tournament-matches",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "angle-chase",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "recursive-growth",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "logical-number-card",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "multi-clue-order",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "weekly-schedule",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "conditional-team",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "three-truth-liars",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "two-step-code",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "direction-route",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "venn-classification",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "book-owner-matching",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "ranking-comparisons",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "necessary-conclusion",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "binary-switches",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "constraint-table",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "shelf-order-block",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "race-chain-four",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "age-order-conditions",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "bridge-route-constraint",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "three-digit-code",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "set-logic-no-overlap",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "task-dependency-block",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "linear-seating-elimination",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "shape-color-matrix",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "meeting-day-intersection",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "nested-containers",
+      "proposedSkeletonId": null,
+      "matchConfidence": 0,
+      "mappingBasis": "NO_RULE",
+      "decision": "UNMATCHED",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/learning-engine-v4.js",
+      "currentFamilyId": "conditional-contrapositive",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "controlled-experiment-evidence",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "event-sequence-reconstruction",
+      "proposedSkeletonId": "INFO_SECME_04",
+      "matchConfidence": 0.72,
+      "mappingBasis": "sequence|chronolog|olay-sırası|event-sequence",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "main-idea-from-support",
+      "proposedSkeletonId": "METIN_AMACI_01",
+      "matchConfidence": 0.72,
+      "mappingBasis": "main-idea|ana-fikir|mainidea",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "irrelevant-data-filter",
+      "proposedSkeletonId": "METIN_YAPISI_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "irrelevant|gereksiz|akışı-bozan",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "text-data-integration-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "claim-evidence-dynamic",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "argument-weakness-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "multiple-source-synthesis-dynamic",
+      "proposedSkeletonId": "GUVENILIRLIK_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "source|reliab|güvenilir|sponsor|authority",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "multi-condition-reading-dynamic",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "media-source-check-dynamic",
+      "proposedSkeletonId": "GUVENILIRLIK_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "source|reliab|güvenilir|sponsor|authority",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "generalization-trap-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "paragraph-coherence-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "best-title-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "implicit-inference-dynamic",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "author-purpose-dynamic",
+      "proposedSkeletonId": "METIN_AMACI_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "purpose|amaç|author-intent",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/paragraph-engine-v4.js",
+      "currentFamilyId": "contradiction-detection-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "main-idea-from-support",
+      "proposedSkeletonId": "METIN_AMACI_01",
+      "matchConfidence": 0.72,
+      "mappingBasis": "main-idea|ana-fikir|mainidea",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "text-data-integration-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "claim-evidence-dynamic",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "argument-weakness-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "multiple-source-synthesis-dynamic",
+      "proposedSkeletonId": "GUVENILIRLIK_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "source|reliab|güvenilir|sponsor|authority",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "media-source-check-dynamic",
+      "proposedSkeletonId": "GUVENILIRLIK_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "source|reliab|güvenilir|sponsor|authority",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "generalization-trap-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "contradiction-detection-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "paragraph-coherence-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "best-title-dynamic",
+      "proposedSkeletonId": "INFO_SECME_05",
+      "matchConfidence": 0.72,
+      "mappingBasis": "table|chart|graph|visual|tablo|görsel",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "implicit-inference-dynamic",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "experiment|evidence|kanıt|inference|çıkarım",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "author-purpose-dynamic",
+      "proposedSkeletonId": "METIN_AMACI_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "purpose|amaç|author-intent",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "irrelevant-data-filter",
+      "proposedSkeletonId": "METIN_YAPISI_02",
+      "matchConfidence": 0.72,
+      "mappingBasis": "irrelevant|gereksiz|akışı-bozan",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "multi-condition-reading-dynamic",
+      "proposedSkeletonId": "KANIT_BIRLESTIRME_03",
+      "matchConfidence": 0.72,
+      "mappingBasis": "rule|condition|constraint|koşul",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    },
+    {
+      "sourceFile": "js/engines/premium-paragraph-engine-v11.js",
+      "currentFamilyId": "event-sequence-reconstruction",
+      "proposedSkeletonId": "INFO_SECME_04",
+      "matchConfidence": 0.72,
+      "mappingBasis": "sequence|chronolog|olay-sırası|event-sequence",
+      "decision": "REVIEW_MAPPING",
+      "humanApprovalRequired": true
+    }
+  ]
+}

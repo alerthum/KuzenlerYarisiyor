@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "2.0",
+  "checkedAt": "2026-08-03T08:03:59Z",
+  "sourceArchive": "Zihin_Arenasi_V2_CHECKPOINT_02_PHASE2A(1).zip",
+  "sourceArchiveSha256": "812738d3ad2913a074c32060135c108779789503f37208564b3540d659318828",
+  "archiveCompressionIntegrity": "PASS",
+  "gitMetadataInArchive": false,
+  "gitVerificationMode": "RECONSTRUCTED_FROM_CONTENT_AND_REPORTS",
+  "declaredCheckpointTag": "checkpoint-v2-phase-2a",
+  "phase2ReportModelCount": 5,
+  "phase2TargetModelCount": 12,
+  "productReady": false,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "assessmentV2Tests": {"passed": 15, "failed": 0, "status": "PASS"},
+  "workingTreeContentSha256BeforeIntegrityFile": "b8b15b960dda855f49d6b0d05fb083ee6a67ee0f5221f5aedb2d09a7b506756b"
+}

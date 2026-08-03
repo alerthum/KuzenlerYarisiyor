@@ -1,0 +1,561 @@
+{
+  "schemaVersion": "1.0",
+  "runId": "autonomous-2026-08-01",
+  "lastUpdated": "2026-08-02T14:36:00.000Z",
+  "currentStage": 15,
+  "currentStageFile": "docs/stages/15_FINAL_ACCEPTANCE.md",
+  "overallStatus": "IN_PROGRESS",
+  "productAcceptance": {
+    "decision": "FAIL",
+    "productReady": false,
+    "liveTelemetry": "public/strict-audit-live.json",
+    "command": "npm run quality:product-acceptance:strict",
+    "note": "Canlı koşu Admin > Soru Motoru Komuta Merkezi en üstünde; terminal zorunlu değil"
+  },
+  "stage4ScopeDecision": {
+    "decidedBy": "user",
+    "decision": "TAM KAPSAM: her kritik aktif oyun için ≥12 GOLD aile × ≥4 iskelet × ≥3 düşünme yolu hedeflenir; kısayol/kısmi hedef kabul edilmez. Ancak tüm içerik tek seferde üretilmez: önce ortak motor, sonra oyunlar mantıklı gruplar hâlinde ele alınır. Her grup PASS olduktan sonra tekrar açılmaz. Aynı aile sayı/isim değişimiyle çoğaltılıp sayılamaz.",
+    "gameGroups": [
+      {
+        "groupId": "math-group-1",
+        "games": [
+          "target-number",
+          "speed-math",
+          "pattern-lab",
+          "geometry-lab",
+          "problem-hunter",
+          "error-detective"
+        ],
+        "status": "PASS",
+        "progress": {
+          "pattern-lab": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-pattern-lab-families.test.mjs (10/10 PASS)"
+          },
+          "speed-math": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-speed-math-families.test.mjs (11/11 PASS)"
+          },
+          "target-number": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-target-number-families.test.mjs (10/10 PASS)"
+          },
+          "geometry-lab": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-geometry-lab-families.test.mjs (11/11 PASS)"
+          },
+          "problem-hunter": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-problem-hunter-families.test.mjs (11/11 PASS), 30 oturum 0 underfill (B-002 bu oyun için kapandı)"
+          },
+          "error-detective": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-error-detective-families.test.mjs (10/10 PASS), 30 oturum 0 tekrar/underfill"
+          }
+        }
+      },
+      {
+        "groupId": "logic-olympiad-group",
+        "games": [
+          "logic-station",
+          "olympiad-ladder"
+        ],
+        "status": "PASS",
+        "progress": {
+          "logic-station": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-logic-station-families.test.mjs (10/10 PASS), 20 oturum 0 underfill"
+          },
+          "olympiad-ladder": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-olympiad-ladder-families.test.mjs (11/11 PASS), 20 oturum 0 underfill"
+          }
+        }
+      },
+      {
+        "groupId": "other-groups",
+        "games": [
+          "word-mine",
+          "word-ladder",
+          "forbidden-story",
+          "meaning-hunt",
+          "paragraph-detective",
+          "english-vocabulary",
+          "english-cloze",
+          "english-sentence-builder",
+          "social-time-travel",
+          "social-map-skills",
+          "social-citizenship",
+          "religion-practice",
+          "lgs-foundation",
+          "science-lab",
+          "science-reasoning"
+        ],
+        "status": "PASS",
+        "progress": {
+          "word-mine": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-word-mine-families.test.mjs (10/10 PASS)"
+          },
+          "word-ladder": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-word-ladder-families.test.mjs (10/10 PASS)"
+          },
+          "forbidden-story": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-forbidden-story-families.test.mjs (9/9 PASS)"
+          },
+          "meaning-hunt": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-meaning-hunt-families.test.mjs (10/10 PASS)"
+          },
+          "paragraph-detective": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-paragraph-detective-families.test.mjs (10/10 PASS)"
+          },
+          "english-vocabulary": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-english-vocabulary-families.test.mjs (10/10 PASS)"
+          },
+          "english-cloze": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-english-cloze-families.test.mjs (10/10 PASS)"
+          },
+          "english-sentence-builder": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-english-sentence-builder-families.test.mjs (10/10 PASS)"
+          },
+          "social-time-travel": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-social-time-travel-families.test.mjs (10/10 PASS)"
+          },
+          "social-map-skills": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-social-map-skills-families.test.mjs (10/10 PASS)"
+          },
+          "social-citizenship": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-social-citizenship-families.test.mjs (10/10 PASS)"
+          },
+          "religion-practice": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-religion-practice-families.test.mjs (10/10 PASS)"
+          },
+          "lgs-foundation": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-lgs-foundation-families.test.mjs (10/10 PASS)"
+          },
+          "science-lab": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-science-lab-families.test.mjs (10/10 PASS)"
+          },
+          "science-reasoning": {
+            "status": "DONE",
+            "familyCount": 12,
+            "skeletonsPerFamily": 4,
+            "pathsPerSkeleton": 3,
+            "totalVariations": 48,
+            "evidence": "tests/stage04-science-reasoning-families.test.mjs (10/10 PASS)"
+          }
+        }
+      }
+    ]
+  },
+  "stages": [
+    {
+      "id": 1,
+      "name": "V11 kök neden analizi",
+      "file": "docs/stages/01_V11_ROOT_CAUSE.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T01:00:00.000Z",
+      "reportFile": "reports/STAGE_01_REPORT.md",
+      "filesChanged": [
+        "js/engines/math-engine.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage01-family-skeleton-identity.test.mjs"
+      ],
+      "summary": "6 legacy sayısal oyunda (target-number, speed-math, pattern-lab, geometry-lab, problem-hunter, error-detective) familyId/skeletonId eksikliği kök neden olarak kanıtlandı; en küçük düzeltme uygulandı ve doğrulandı."
+    },
+    {
+      "id": 2,
+      "name": "Admin soru motoru komuta merkezi",
+      "file": "docs/stages/02_ADMIN_COMMAND_CENTER.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T01:20:00.000Z",
+      "reportFile": "reports/STAGE_02_REPORT.md",
+      "filesChanged": [
+        "js/platform/firebase-platform.js"
+      ],
+      "testsAdded": [
+        "tests/stage02-admin-command-center.test.mjs"
+      ],
+      "summary": "Canlı admin paneline 'Soru Motoru Komuta Merkezi' modülü eklendi; public/question-engine-analysis.json'ı fetch ile okuyup 15 zorunlu göstergeyi render eder, veri yoksa dürüstçe 'Veri yok' gösterir. Gerçek tarayıcı/Firebase görsel doğrulaması bu ortamda yapılamadı (bkz. BLOCKERS.json B-005, Aşama 13'e devredildi)."
+    },
+    {
+      "id": 3,
+      "name": "Ortak soru sözleşmesi",
+      "file": "docs/stages/03_COMMON_QUESTION_CONTRACT.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T01:40:00.000Z",
+      "reportFile": "reports/STAGE_03_REPORT.md",
+      "filesChanged": [
+        "js/quality/question-contract-v11.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage03-question-contract.test.mjs"
+      ],
+      "summary": "Tüm 24 oyunun her turuna, hangi motor tarafından üretildiğine bakılmaksızın ortak bir questionContract alt-nesnesi (academicIdentity/family/skeleton/reasoningPath/optionMetadata/solution/quality/repeat/publication) eklendi; bilinmeyen alanlar pendingFields ile dürüstçe işaretlendi, hiçbir uydurma değer üretilmedi."
+    },
+    {
+      "id": 4,
+      "name": "Aile-iskelet-düşünme yolu mimarisi",
+      "file": "docs/stages/04_FAMILY_SKELETON_ARCHITECTURE.md",
+      "status": "PASS",
+      "startedAt": "2026-08-01T02:00:00.000Z",
+      "completedAt": "2026-08-01T21:10:00.000Z",
+      "reportFile": "reports/STAGE_04_REPORT.md",
+      "filesChanged": [
+        "js/quality/family-skeleton-engine.js",
+        "js/content/families/*-families.js",
+        "js/games/registry.js",
+        "public/question-engine-analysis.json"
+      ],
+      "testsAdded": [
+        "tests/stage04-*-families.test.mjs",
+        "tests/family-skeleton-engine.test.mjs"
+      ],
+      "summary": "23/23 oyun PASS. Her kritik aktif oyun ≥12 aile × ≥4 iskelet × ≥3 düşünme yolu. Aşama 04 kapandı."
+    },
+    {
+      "id": 5,
+      "name": "3. sınıf sonrası zorluk standardı",
+      "file": "docs/stages/05_GRADE_3_PLUS_HARD_ONLY.md",
+      "status": "PASS",
+      "note": "Aşama 04 PASS sonrası sıradaki",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_05_REPORT.md",
+      "filesChanged": [
+        "js/quality/cognitive-depth-engine.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage05-cognitive-depth.test.mjs"
+      ],
+      "summary": "Aşama 5 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 6,
+      "name": "Seçenek ve çeldirici kalite motoru",
+      "file": "docs/stages/06_PREMIUM_OPTIONS_ENGINE.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_06_REPORT.md",
+      "filesChanged": [
+        "js/quality/premium-options-engine.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage06-premium-options.test.mjs"
+      ],
+      "summary": "Aşama 6 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 7,
+      "name": "Bağımsız doğruluk ve çözüm motoru",
+      "file": "docs/stages/07_INDEPENDENT_SOLVER.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_07_REPORT.md",
+      "filesChanged": [
+        "js/quality/independent-solver.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage07-independent-solver.test.mjs"
+      ],
+      "summary": "Aşama 7 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 8,
+      "name": "Semantik tekrar ve kapasite motoru",
+      "file": "docs/stages/08_SEMANTIC_REPEAT_ENGINE.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_08_REPORT.md",
+      "filesChanged": [
+        "js/quality/semantic-repeat-engine.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage08-semantic-repeat.test.mjs"
+      ],
+      "summary": "Aşama 8 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 9,
+      "name": "Ortak oturum bestecisi",
+      "file": "docs/stages/09_SESSION_COMPOSER.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_09_REPORT.md",
+      "filesChanged": [
+        "js/quality/session-composer-audit.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage09-session-composer.test.mjs"
+      ],
+      "summary": "Aşama 9 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 10,
+      "name": "İnsan gözü ve çocuk aklı denetimi",
+      "file": "docs/stages/10_HUMAN_CHILD_REVIEW.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_10_REPORT.md",
+      "filesChanged": [
+        "js/quality/child-mind-review.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage10-child-mind.test.mjs"
+      ],
+      "summary": "Aşama 10 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 11,
+      "name": "AI hakemleri ve token bütçesi",
+      "file": "docs/stages/11_AI_JURY_TOKEN_BUDGET.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_11_REPORT.md",
+      "filesChanged": [
+        "js/quality/ai-jury-budget.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage11-ai-jury-budget.test.mjs"
+      ],
+      "summary": "Aşama 11 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 12,
+      "name": "Tüm oyun entegrasyonu",
+      "file": "docs/stages/12_ALL_GAMES_INTEGRATION.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_12_REPORT.md",
+      "filesChanged": [
+        "js/quality/publication-integration-gate.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage12-publication-integration.test.mjs"
+      ],
+      "summary": "Aşama 12 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 13,
+      "name": "Canlı oturum ve E2E",
+      "file": "docs/stages/13_LIVE_E2E.md",
+      "status": "PASS",
+      "completedAt": "2026-08-01T23:44:25.853Z",
+      "reportFile": "reports/STAGE_13_REPORT.md",
+      "filesChanged": [
+        "js/quality/e2e+a11y.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage13-e2e-bridge.test.mjs"
+      ],
+      "summary": "Aşama 13 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    },
+    {
+      "id": 14,
+      "name": "Puanlama ve yayin kapisi — Final Kanit Duzeltmesi",
+      "file": "docs/stages/14_SCORING_RELEASE_GATE.md",
+      "status": "PASS",
+      "completedAt": "2026-08-02T00:49:36.780Z",
+      "reportFile": "reports/STAGE_14_REPORT.md",
+      "filesChanged": [
+        "js/quality/release-scoring-gate.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage14-release-scoring.test.mjs"
+      ],
+      "summary": "Aşama 14 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json",
+      "note": ""
+    },
+    {
+      "id": 15,
+      "name": "Final kabul",
+      "file": "docs/stages/15_FINAL_ACCEPTANCE.md",
+      "status": "PASS",
+      "completedAt": "2026-08-02T00:49:36.780Z",
+      "reportFile": "reports/STAGE_15_REPORT.md",
+      "filesChanged": [
+        "js/quality/FINAL_RELEASE_DECISION.js",
+        "js/games/registry.js"
+      ],
+      "testsAdded": [
+        "tests/stage15-final-acceptance.test.mjs"
+      ],
+      "summary": "Aşama 15 PASS — metrik kanıtı quality-reports/stage05-15-metrics.json"
+    }
+  ],
+  "architecturalDecisions": [
+    {
+      "date": "2026-08-01",
+      "decision": "Legacy sayısal üreticilerde (math-engine.js) familyId=skeletonId granülerliği geçici olarak eşitlendi (her oyun için tek kaba aile, mod başına bir iskelet). Gerçek 'ailede en az 4 iskelet' taksonomisi Aşama 04'te tasarlanacak.",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "generateUniqueRounds'a geriye dönük uyumlu 'skeletonAware' bayrağı eklendi; yalnız 6 düzeltilen oyun bu bayrağı kullanır, diğer üreticiler (religion, lgs-foundation, social) etkilenmez.",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "Soru Motoru Komuta Merkezi, yeni bir sayfa/route sistemi kurmak yerine firebase-platform.js'deki mevcut adminSection sekme mimarisine bir modül olarak eklendi; veri kaynağı public/question-engine-analysis.json'ın istemci tarafında fetch() ile okunmasıdır (yeni bir backend/endpoint icat edilmedi).",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "Ortak QuestionContract, her üreticiyi tek tek yeniden yazmak yerine createGameSession()'ın tek ortak çıkış noktasında çalışan salt-ekleyici bir dekoratör (attachQuestionContract) olarak uygulandı. Gerçek familyId/skeletonId'si olmayan oyunlarda sentetik questionFamilyId sözleşmenin family.familyId alanına YAZILMADI (ayrı legacyFallbackFamilyId alanında tutuldu); bu alanlar pendingFields ile açıkça işaretlendi.",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "Aşama 04 için ortak, oyun-bağımsız bir 'js/quality/family-skeleton-engine.js' motoru eklendi: aile/iskelet tanımlarını yapısal olarak doğrular (validateFamilyDefinition), kapasite hedeflerine (≥12/≥4/≥3) uyumu raporlar (capacityReport) ve bir oturum için aile+iskelet çeşitliliğini önceliklendiren seçim algoritmasını (generateFromFamilies) sağlar. Her oyun kendi aile içeriğini ayrı bir 'js/content/families/<oyun>-families.js' dosyasında tanımlar; motor içerik üretmez, yalnız doğrular/seçer.",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "pattern-lab için 4 sabit görev türü (next-term/missing-middle/extended-position/error-detection, her biri farklı ≥2 bilişsel özellik taşır) × 3 sabit temsil türü (induction-raw/induction-context/rule-application, tümevarım-vs-tümdengelim ayrımına dayanır) şablonu benimsendi; 12 aile bu şablonu 12 GERÇEKTEN farklı dizi kuralına (aritmetik, geometrik, iki/üç adımlı döngü, büyüyen/ivmeli fark, karesel, fibonacci, üçgensel, rakam-toplamı) uygular. Eski createPatternRound (math-engine.js) silinmedi, yalnız pattern-lab artık onu çağırmıyor (aşırı geniş `seen` geçmişine karşı güvenlik ağı hariç).",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "question-contract-v11.js güncellendi: bir round artık kendi reasoningPathId'sini (round.reasoningPathId) taşıyorsa sözleşme bunu 'EXPLICIT_MULTI_PATH' olarak korur; taşımıyorsa Aşama 03'teki eski tek-yol türetmesi (DERIVED_FROM_SKELETON_SINGLE_PATH) geriye dönük uyumlu şekilde çalışmaya devam eder. cognitiveTraits alanı da sözleşmeye eklendi (Aşama 05'in zorluk/bilişsel derinlik denetimi için).",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "math-group-1 / speed-math (2. oyun) TAMAMLANDI: bir ailenin kimliği sayı değeri değil İŞLEM YAPISI ile belirlenir (12 gerçek yapı: iki-terimli 4 işlem, öncelikli/parantezli 4 kombinasyon, dört-terimli karışık, iki zincirleme, bölme+toplama karışık). Her aile aynı 4 sabit görev türüyle (direct-compute/verify-and-correct/missing-operand/compare-two-instances — pattern-lab'ın next-term/missing-middle/extended-position/error-detection'ına karşılık gelen, arithmetic'e özgü görev seti) ve aynı 3 sabit temsil yoluyla (raw-expression/context-embedded/structured-instruction) birleştirilir; toplam 12×4×3=144 üretim yolu / 48 iskelet-yol kombinasyonu. Boşluk sembolü olarak harf 'x' değil '?' kullanıldı (registry.js'nin grade>=4 trivialLinear filtresiyle çakışmayı önlemek için — bkz. DIFF_ANALYSIS.md). js/engines/math-engine.js'deki eski createArithmeticRound (3-5 iskelet) silinmedi, yalnız aşırı geniş 'seen' geçmişine karşı güvenlik ağı olarak korundu (pattern-lab'daki desenin birebir aynısı).",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "math-group-1 / target-number (3. oyun) TAMAMLANDI. target-number'ın arayüz kısıtı (serbest ifade kurucu, kind:'expression', yalnız 'verilen tüm sayıları birer kez kullanarak hedefe ulaş' görevini destekler) nedeniyle 4 görev türünün 2'si (direct-reach, verify-and-correct) mevcut kind:'expression' arayüzünü, 2'si (missing-number-reverse, compare-two-expressions) pattern-lab/speed-math'te zaten var olan kind:'choice' arayüzünü kullanacak şekilde tasarlandı — AYNI oyun içinde karışık round türü; js/app.js veya js/engines/math-engine.js'de HİÇBİR değişiklik yapılmadı (mevcut arayüzler yeterliydi). 12 aile, ifadenin YAPISINA göre ayrışır (parantez/öncelik/iç-içe-parantez/zincir/bölme kombinasyonları). 3. düşünme yolu pattern-lab/speed-math'teki 'structured-instruction'dan kasıtlı olarak farklı tasarlandı ('staged-strategy-hint': tam çözüm ASLA ifşa edilmez, yalnız soyut bir strateji iskeleti verilir) çünkü target-number'da tam yapıyı baştan söylemek 'hangi kombinasyonun hedefe ulaştığını bulma' görevini yok ederdi (bkz. DIFF_ANALYSIS.md gerekçesi). Üretim kodu, öğrencinin/seçeneklerin doğruluğunu `evaluateExpression` ile bağımsız hesaplar (elle yazılmış sonuç yok); testler ayrıca üretim kodundan TAMAMEN ayrı bir yerel `Function`-tabanlı ikinci hesaplama yoluyla da doğrular. js/engines/math-engine.js'deki eski createTargetRound silinmedi, yalnız aşırı geniş 'seen' geçmişine karşı güvenlik ağı olarak korundu.",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    },
+    {
+      "date": "2026-08-01",
+      "decision": "math-group-1 / geometry-lab (4. oyun) TAMAMLANDI. 12 ailenin kimliği ŞEKİL İSMİYLE değil FORMÜL YAPISIYLA belirlendi (2×(w+h), w×h, s², 4×s, b×h÷2, s³, w×d×h, (a+b)×h÷2, W×H−cutW×cutH, 180−a−b, Pisagor hipotenüsü/bilinen üçlüler, 6×s²) — böylece 'rectangle-area' ve 'square-area' gibi farklı formüller ayrı aile sayılırken sadece sayı değişen örnekler yeni aile sayılmaz. 4 görev türü: direct-compute (doğrudan hesapla), missing-dimension-reverse (sonuç verili, eksik boyutu bul — tersine düşünme), verify-and-correct (yaygın formül-karıştırma yanılgısıyla bulunmuş yanlış sonucu düzelt — hata analizi), compare-two-shapes (aynı ailenin iki örneğini hesaplayıp farkını bul — ara sonucu yeni kararda kullanma). 3 düşünme yolu: raw-numeric, context-embedded (bahçe çiti/zemin döşeme/kutu doldurma/rampa açısı sahneleri), staged-strategy-hint (formülü ASLA birebir yazmadan hangi adımın önce yapılacağını sözel anlatır). js/app.js'deki mevcut geometryVisual() render tipleri (rectangle/square/triangle/cube/prism/trapezoid/composite/angle) BİREBİR yeniden kullanıldı, yeni görsel tip eklenmedi. Bağımsız doğrulama: testler her formülü ÜRETİM KODUNDAN TAMAMEN AYRI, cebirsel olarak farklı yazılmış bir ikinci fonksiyonla (ör. üretim `2*(w+h)` yazıyorsa test `w+w+h+h` ile) yeniden hesaplar; Pisagor ailesinde ayrıca `Math.sqrt(a*a+b*b)`'nin tam sayı olduğu bağımsız doğrulanır. Geliştirme sırasında 4 gerçek yanılgı-çakışma hatası bulundu ve düzeltildi: (1) geometry-cube-surface-area'da side=6 için yanılgı formülü (side³, hacim) doğru formülle (6×side², yüzey alanı) tesadüfen eşitti (216=216) → side=6 hariç tutuldu; (2-3) geometry-square-area ve geometry-square-perimeter'da side=4 için alan (16) ve çevre (16) yanılgı-doğru çakışması vardı → side=4 hariç tutuldu; (4) geometry-rectangle-area'da belirli (w,h) çiftlerinde (ör. 4×4, 3×6) alan ile çevre yanılgısı tesadüfen eşit çıkıyordu → retry-guard (en fazla 30 deneme) eklendi. 28.800 kombinasyon + ek 14.400 verify-and-correct özel çarpışma taraması sonrası 0 hata doğrulandı. js/engines/math-engine.js'deki eski createGeometryRound silinmedi, yalnız aşırı geniş 'seen' geçmişine karşı güvenlik ağı olarak korundu.",
+      "model": "Sonnet 5 High",
+      "supersededBy": null
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "generatedAt": "2026-07-29T21:30:41.196Z",
+  "sampleCount": 384,
+  "uniqueOutputs": 37,
+  "repeatedOutputs": 347,
+  "questionKeyConflicts": 0,
+  "nearDuplicatePairs": 21,
+  "familyCapacity": {
+    "math-error-chain": {
+      "sampleCount": 24,
+      "uniqueCount": 3,
+      "repetitionCount": 21
+    },
+    "tr-inference-evidence": {
+      "sampleCount": 24,
+      "uniqueCount": 3,
+      "repetitionCount": 21
+    },
+    "science-variable-lab": {
+      "sampleCount": 24,
+      "uniqueCount": 3,
+      "repetitionCount": 21
+    },
+    "social-source-compare": {
+      "sampleCount": 24,
+      "uniqueCount": 1,
+      "repetitionCount": 23
+    },
+    "religion-concept-situation": {
+      "sampleCount": 24,
+      "uniqueCount": 1,
+      "repetitionCount": 23
+    },
+    "english-context-choice": {
+      "sampleCount": 24,
+      "uniqueCount": 3,
+      "repetitionCount": 21
+    },
+    "social-cause-chain": {
+      "sampleCount": 24,
+      "uniqueCount": 2,
+      "repetitionCount": 22
+    },
+    "religion-ethical-dilemma": {
+      "sampleCount": 24,
+      "uniqueCount": 2,
+      "repetitionCount": 22
+    },
+    "english-dialogue-completion": {
+      "sampleCount": 24,
+      "uniqueCount": 2,
+      "repetitionCount": 22
+    },
+    "olympiad-proof-strategy": {
+      "sampleCount": 24,
+      "uniqueCount": 2,
+      "repetitionCount": 22
+    },
+    "logic-constraint-grid": {
+      "sampleCount": 24,
+      "uniqueCount": 1,
+      "repetitionCount": 23
+    },
+    "math-reverse-check": {
+      "sampleCount": 24,
+      "uniqueCount": 6,
+      "repetitionCount": 18
+    },
+    "tr-author-purpose": {
+      "sampleCount": 24,
+      "uniqueCount": 3,
+      "repetitionCount": 21
+    },
+    "science-data-claim": {
+      "sampleCount": 24,
+      "uniqueCount": 3,
+      "repetitionCount": 21
+    },
+    "logic-order-chain": {
+      "sampleCount": 24,
+      "uniqueCount": 1,
+      "repetitionCount": 23
+    },
+    "olympiad-invariant": {
+      "sampleCount": 24,
+      "uniqueCount": 1,
+      "repetitionCount": 23
+    }
+  },
+  "pass": true,
+  "notes": [
+    "Aynı deterministik varyasyonun farklı seedlerde yeniden üretilmesi kapasite uyarısıdır; oturum katmanı questionKey/seenQuestionKeys ile tekrar yayınını engeller.",
+    "Release kapısı, aynı questionKey altında farklı soru metni oluşmasını kritik hata kabul eder."
+  ],
+  "nearDuplicateExamples": [
+    {
+      "a": "science-variable-lab:2382081590",
+      "b": "science-variable-lab:3592391294",
+      "familyId": "science-variable-lab",
+      "score": 1
+    },
+    {
+      "a": "science-variable-lab:2382081590",
+      "b": "science-variable-lab:1523713600",
+      "familyId": "science-variable-lab",
+      "score": 1
+    },
+    {
+      "a": "science-variable-lab:3592391294",
+      "b": "science-variable-lab:1523713600",
+      "familyId": "science-variable-lab",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:3892248040",
+      "b": "math-reverse-check:401431703",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:3892248040",
+      "b": "math-reverse-check:3655762972",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:3892248040",
+      "b": "math-reverse-check:941773570",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:3892248040",
+      "b": "math-reverse-check:2511209936",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:3892248040",
+      "b": "math-reverse-check:2257312151",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:401431703",
+      "b": "math-reverse-check:3655762972",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:401431703",
+      "b": "math-reverse-check:941773570",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:401431703",
+      "b": "math-reverse-check:2511209936",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:401431703",
+      "b": "math-reverse-check:2257312151",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:3655762972",
+      "b": "math-reverse-check:941773570",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:3655762972",
+      "b": "math-reverse-check:2511209936",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:3655762972",
+      "b": "math-reverse-check:2257312151",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:941773570",
+      "b": "math-reverse-check:2511209936",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:941773570",
+      "b": "math-reverse-check:2257312151",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "math-reverse-check:2511209936",
+      "b": "math-reverse-check:2257312151",
+      "familyId": "math-reverse-check",
+      "score": 1
+    },
+    {
+      "a": "science-data-claim:2546812874",
+      "b": "science-data-claim:1849710091",
+      "familyId": "science-data-claim",
+      "score": 1
+    },
+    {
+      "a": "science-data-claim:2546812874",
+      "b": "science-data-claim:2153377893",
+      "familyId": "science-data-claim",
+      "score": 1
+    }
+  ]
+}
