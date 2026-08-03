@@ -1,11 +1,11 @@
 import { pigeonholeModel, readingEvidenceModel, logicConstraintModel } from './pilots.js';
-import { PHASE2_MATH_MODELS } from './math-models.js';
+import { ALL_PHASE2_MATH_MODELS } from './math-model-catalog.js';
 
 export const ASSESSMENT_V2_MODELS = Object.freeze([
   pigeonholeModel,
   readingEvidenceModel,
   logicConstraintModel,
-  ...PHASE2_MATH_MODELS
+  ...ALL_PHASE2_MATH_MODELS
 ]);
 
 export function assessmentV2Inventory() {

@@ -1,14 +1,14 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:01:35.817Z",
+  "generatedAt": "2026-08-03T08:07:22.191Z",
   "status": "PHASE_1_PASS",
   "productReady": false,
   "scope": "Assessment Engine V2 contracts and three cross-domain proof models",
   "inventory": {
     "schemaVersion": "2.0",
-    "modelCount": 7,
+    "modelCount": 10,
     "domains": {
-      "mathematics": 5,
+      "mathematics": 8,
       "reading": 1,
       "logic": 1
     },
@@ -198,6 +198,90 @@
         "add-totals",
         "sum-only-regions",
         "add-intersection-again"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-invariant-euclid-v2",
+      "domain": "mathematics",
+      "constructId": "construct-invariant-gcd",
+      "knowledgeComponents": [
+        "greatest-common-divisor",
+        "invariant",
+        "reverse-operation"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "problem-hunter"
+      ],
+      "structuralId": "st:v2:1x7c21t",
+      "cognitiveExperienceId": "cx:v2:vrbhjq",
+      "correctAnswer": "(8, 12)",
+      "misconceptionIds": [
+        "fibonacci-only-path",
+        "sum-parity-as-invariant",
+        "difference-growth-ban"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-parity-coloring-domino-v2",
+      "domain": "mathematics",
+      "constructId": "construct-parity-coloring",
+      "knowledgeComponents": [
+        "checkerboard-coloring",
+        "parity",
+        "domino-tiling"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "logic-station"
+      ],
+      "structuralId": "st:v2:vhrkpf",
+      "cognitiveExperienceId": "cx:v2:iejz9g",
+      "correctAnswer": "Döşenemez; kalan siyah ve beyaz kare sayıları eşit değildir.",
+      "misconceptionIds": [
+        "area-even-is-sufficient",
+        "ignore-removed-corners",
+        "treat-holes-as-one-domino"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-extremal-graph-degree-v2",
+      "domain": "mathematics",
+      "constructId": "construct-extremal-maximum-degree",
+      "knowledgeComponents": [
+        "handshaking-lemma",
+        "average-degree",
+        "extremal-construction"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "problem-hunter"
+      ],
+      "structuralId": "st:v2:141ztx3",
+      "cognitiveExperienceId": "cx:v2:v84f5v",
+      "correctAnswer": "3",
+      "misconceptionIds": [
+        "round-average-down",
+        "count-each-edge-once",
+        "add-unneeded-safety-margin"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "2.0",
+  "checkpoint": "checkpoint-v2-phase-2b",
+  "phase": "PHASE_2_IN_PROGRESS",
+  "modelCount": 8,
+  "targetModelCount": 12,
+  "completedGroup": ["invariant", "parity-coloring", "extremal-principle"],
+  "assessmentV2Tests": {"passed": 19, "failed": 0, "status": "PASS"},
+  "productReady": false,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY"
+}

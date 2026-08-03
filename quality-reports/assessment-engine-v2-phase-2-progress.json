@@ -1,18 +1,22 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:01:35.844Z",
+  "generatedAt": "2026-08-03T08:07:22.247Z",
   "phase": "PHASE_2_IN_PROGRESS",
   "productReady": false,
   "targetModelCount": 12,
-  "currentModelCount": 5,
-  "remainingModelCount": 7,
+  "currentModelCount": 8,
+  "remainingModelCount": 4,
   "allCurrentModelsPass": true,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
   "coveredIdeas": [
     "worst-case/pigeonhole",
     "two-stage lattice path counting",
     "modular digit enumeration",
     "ordered compositions/recurrence",
-    "two-set inclusion-exclusion"
+    "two-set inclusion-exclusion",
+    "gcd invariant/reverse Euclidean reachability",
+    "parity and checkerboard coloring",
+    "extremal maximum-degree bound"
   ],
   "items": [
     {
@@ -197,7 +201,118 @@
         "ok": true,
         "errors": []
       }
+    },
+    {
+      "id": "math-invariant-euclid-v2",
+      "constructId": "construct-invariant-gcd",
+      "knowledgeComponents": [
+        "greatest-common-divisor",
+        "invariant",
+        "reverse-operation"
+      ],
+      "deepFeatures": [
+        "gcd-invariant",
+        "reverse-euclidean-reachability"
+      ],
+      "answer": "(8, 12)",
+      "misconceptions": [
+        {
+          "id": "fibonacci-only-path",
+          "value": "(7, 11)",
+          "feedback": "Hamleler yalnız Fibonacci çiftleri üretmez; gerekli koşul sayıların aralarında asal olmasıdır."
+        },
+        {
+          "id": "sum-parity-as-invariant",
+          "value": "(8, 13)",
+          "feedback": "Hamlede toplam x+y’den 2x+y veya x+2y’ye dönüşür; toplamın paritesi değişmez değildir."
+        },
+        {
+          "id": "difference-growth-ban",
+          "value": "(5, 12)",
+          "feedback": "Koordinatlar arasındaki fark korunmaz; bir sayıya diğerini eklemek farkı büyütebilir."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "math-parity-coloring-domino-v2",
+      "constructId": "construct-parity-coloring",
+      "knowledgeComponents": [
+        "checkerboard-coloring",
+        "parity",
+        "domino-tiling"
+      ],
+      "deepFeatures": [
+        "bipartite-color-balance",
+        "exact-cover-impossibility"
+      ],
+      "answer": "Döşenemez; kalan siyah ve beyaz kare sayıları eşit değildir.",
+      "misconceptions": [
+        {
+          "id": "area-even-is-sufficient",
+          "value": "Döşenebilir; boş kalan 14 kare için 7 domino yeterlidir.",
+          "feedback": "Alanın çift olması gereklidir ama yeterli değildir; renk dengesi de sağlanmalıdır."
+        },
+        {
+          "id": "ignore-removed-corners",
+          "value": "Döşenebilir; 4×4 tahta için 8 domino kullanılır.",
+          "feedback": "İki kare çıkarıldığı için tam tahtanın 8 dominoluk hesabı geçerli değildir."
+        },
+        {
+          "id": "treat-holes-as-one-domino",
+          "value": "Döşenebilir; çıkarılan iki köşe bir domino eksiltir ve 6 domino yeterlidir.",
+          "feedback": "İki eksik kare alan hesabında yalnız bir domino kadar yer azaltır; ayrıca köşeler komşu değildir."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "math-extremal-graph-degree-v2",
+      "constructId": "construct-extremal-maximum-degree",
+      "knowledgeComponents": [
+        "handshaking-lemma",
+        "average-degree",
+        "extremal-construction"
+      ],
+      "deepFeatures": [
+        "extremal-lower-bound",
+        "tight-construction"
+      ],
+      "answer": "3",
+      "misconceptions": [
+        {
+          "id": "round-average-down",
+          "value": "2",
+          "feedback": "Ortalama 2’den büyükse bütün dereceler en fazla 2 olamaz; en az bir derece 3’e çıkmalıdır."
+        },
+        {
+          "id": "count-each-edge-once",
+          "value": "1",
+          "feedback": "Derece toplamında her kenar iki kez sayılır; toplam 7 değil 14’tür."
+        },
+        {
+          "id": "add-unneeded-safety-margin",
+          "value": "4",
+          "feedback": "En büyük derecesi 3 olan somut bir 7 kenarlı grafik kurulabildiği için 4 zorunlu değildir."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
     }
   ],
-  "nextAction": "Add seven distinct models: invariant, parity/coloring, extremal, divisor structure, geometry transformation, game strategy, inequality."
+  "nextAction": "Add 4 remaining solver-backed mathematics/olympiad model(s)."
 }
