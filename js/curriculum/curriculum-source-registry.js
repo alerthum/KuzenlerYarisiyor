@@ -60,6 +60,11 @@ export const CURRICULUM_SOURCES = Object.freeze([
     notes: 'Primary source for TYMM learning outcomes, content framework and skill components.'
   }),
   defineCurriculumSource({
+    id: 'meb-tymm-turkce-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Ortaokul Türkçe Dersi Öğretim Programı (5-8), TYMM 2024', url: 'https://tymm.meb.gov.tr/upload/program/2024programtur5678Onayli.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Active source for grades 5, 6 and 7 Turkish in 2026-2027.'
+  }),
+  defineCurriculumSource({
     id: 'meb-tymm-matematik-5-8-2024',
     kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
     title: 'Ortaokul Matematik Dersi Öğretim Programı (5-8), TYMM 2024',

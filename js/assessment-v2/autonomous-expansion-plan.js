@@ -20,11 +20,11 @@ export function buildAssessmentV2AutonomousExpansionPlan(portfolio=ASSESSMENT_V2
 }
 export function auditAssessmentV2AutonomousExpansionPlan(plan=buildAssessmentV2AutonomousExpansionPlan()){
   const errors=[];
-  if(plan.metrics.activeEngineCount!==12)errors.push('active-engine-count');
-  if(plan.metrics.engineeringScopeCompleteEngineCount!==12)errors.push(`scope-complete:${plan.metrics.engineeringScopeCompleteEngineCount}`);
+  if(plan.metrics.activeEngineCount!==24)errors.push('active-engine-count');
+  if(plan.metrics.engineeringScopeCompleteEngineCount!==24)errors.push(`scope-complete:${plan.metrics.engineeringScopeCompleteEngineCount}`);
   if(plan.metrics.remainingOutcomeCount!==0)errors.push(`remaining-outcomes:${plan.metrics.remainingOutcomeCount}`);
-  if(plan.metrics.humanReviewQueueCount!==712)errors.push(`review-queue:${plan.metrics.humanReviewQueueCount}`);
-  if(plan.metrics.unopenedCourseCellCount!==100)errors.push(`unopened-cells:${plan.metrics.unopenedCourseCellCount}`);
+  if(plan.metrics.humanReviewQueueCount!==1486)errors.push(`review-queue:${plan.metrics.humanReviewQueueCount}`);
+  if(plan.metrics.unopenedCourseCellCount!==88)errors.push(`unopened-cells:${plan.metrics.unopenedCourseCellCount}`);
   if(plan.gameAdaptationAllowed!==false||plan.productReady!==false)errors.push('release-leak');
   if(plan.backlog.some((row,index)=>row.order!==index+1))errors.push('backlog-order');
   return Object.freeze({ok:errors.length===0,errors:Object.freeze(errors),metrics:plan.metrics});

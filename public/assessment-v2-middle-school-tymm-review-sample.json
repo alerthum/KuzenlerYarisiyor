@@ -1,0 +1,1130 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T23:43:35.448Z",
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "metrics": {
+    "engineCount": 12,
+    "itemCount": 36,
+    "perEngine": 3,
+    "approved": 0,
+    "pending": 36
+  },
+  "rows": [
+    {
+      "questionId": "turkce-g6-t-d-6-1",
+      "engineKey": "g6:turkce",
+      "grade": 6,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g6-turkce-t-d-6-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "anlama-ve-kanıt",
+      "difficultyBand": "G6_CHALLENGING",
+      "context": "6. sınıf Türkçe çalışmasında “Dinleme/İzleme” alanına uygun özgün metin, ses, görsel veya iletişim durumu verilir.",
+      "stem": "Dinlemede/izlemede materyal seçimini yönetebilme öğrenme çıktısını gösterecek biçimde görevi tamamla ve kullandığın kanıtları açıkla.",
+      "rubricCriteria": [
+        "Materyalin amacı, ana bilgileri ve gerekli ayrıntıları doğru belirler.",
+        "Çıkarım, karşılaştırma veya değerlendirmeyi en az iki metin içi kanıtla gerekçelendirir.",
+        "Metnin göstermediği bilgiyi eklemeden yaş düzeyine uygun açık bir sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metin-kanıtı-yerine-genel-bilgi",
+        "amaç-ve-türü-karıştırma",
+        "gözden-geçirmeden-ürünü-bitirme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g6-t-k-6-1",
+      "engineKey": "g6:turkce",
+      "grade": 6,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g6-turkce-t-k-6-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "üretici-dil-becerisi",
+      "difficultyBand": "G6_CHALLENGING",
+      "context": "6. sınıf Türkçe çalışmasında “Konuşma” alanına uygun özgün metin, ses, görsel veya iletişim durumu verilir.",
+      "stem": "Konuşma sürecini yönetebilme öğrenme çıktısını gösterecek biçimde görevi tamamla ve kullandığın kanıtları açıkla.",
+      "rubricCriteria": [
+        "Amaç, hedef kitle, tür ve iletişim durumuna uygun bir plan oluşturur.",
+        "Düşünceleri tutarlı, anlaşılır ve Türkçenin kurallarına uygun biçimde ifade eder.",
+        "Geri bildirim ve öz değerlendirme ile ürününü geliştirip son hâlini gerekçelendirir."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metin-kanıtı-yerine-genel-bilgi",
+        "amaç-ve-türü-karıştırma",
+        "gözden-geçirmeden-ürünü-bitirme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g6-t-o-6-1",
+      "engineKey": "g6:turkce",
+      "grade": 6,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g6-turkce-t-o-6-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "anlama-ve-kanıt",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf Türkçe çalışmasında “Okuma” alanına uygun özgün metin, ses, görsel veya iletişim durumu verilir.",
+      "stem": "Okumada materyal seçimini yönetebilme öğrenme çıktısını gösterecek biçimde görevi tamamla ve kullandığın kanıtları açıkla.",
+      "rubricCriteria": [
+        "Materyalin amacı, ana bilgileri ve gerekli ayrıntıları doğru belirler.",
+        "Çıkarım, karşılaştırma veya değerlendirmeyi en az iki metin içi kanıtla gerekçelendirir.",
+        "Metnin göstermediği bilgiyi eklemeden yaş düzeyine uygun açık bir sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metin-kanıtı-yerine-genel-bilgi",
+        "amaç-ve-türü-karıştırma",
+        "gözden-geçirmeden-ürünü-bitirme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g6-mat-6-1-1",
+      "engineKey": "g6:matematik",
+      "grade": 6,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g6-matematik-mat-6-1-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G6_CHALLENGING",
+      "context": "6. sınıf matematik laboratuvarında “Matematik 6. Sınıf / 1. Tema” için sayı, cebir, geometri veya veri temelli bir durum incelenir.",
+      "stem": "Karşılaştığı problem durumlarında bir doğal sayının çarpan ve katlarına yönelik muhakeme yapabilme çıktısını gösterecek problemi çöz; yöntemi, ara adımları ve bağımsız kontrolünü göster.",
+      "rubricCriteria": [
+        "Verilenleri, isteneni ve matematiksel koşulları eksiksiz belirler.",
+        "Uygun işlem, model, temsil veya inşa yolunu doğru uygular.",
+        "Sonucu ters işlem, tahmin, örnekleme veya alternatif temsil ile doğrular."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "koşulu-yanlış-modelleme",
+        "işlem-kuralını-eksik-uygulama",
+        "sonucu-kontrol-etmeme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g6-mat-6-2-1",
+      "engineKey": "g6:matematik",
+      "grade": 6,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g6-matematik-mat-6-2-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf matematik laboratuvarında “Matematik 6. Sınıf / 2. Tema” için sayı, cebir, geometri veya veri temelli bir durum incelenir.",
+      "stem": "Gerçek yaşam durumlarında bilinen niceliklerden bilinmeyen niceliklere ilişkin muhakeme yapabilme çıktısını gösterecek problemi çöz; yöntemi, ara adımları ve bağımsız kontrolünü göster.",
+      "rubricCriteria": [
+        "Verilenleri, isteneni ve matematiksel koşulları eksiksiz belirler.",
+        "Uygun işlem, model, temsil veya inşa yolunu doğru uygular.",
+        "Sonucu ters işlem, tahmin, örnekleme veya alternatif temsil ile doğrular."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "koşulu-yanlış-modelleme",
+        "işlem-kuralını-eksik-uygulama",
+        "sonucu-kontrol-etmeme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g6-mat-6-3-1",
+      "engineKey": "g6:matematik",
+      "grade": 6,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g6-matematik-mat-6-3-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf matematik laboratuvarında “Matematik 6. Sınıf / 3. Tema” için sayı, cebir, geometri veya veri temelli bir durum incelenir.",
+      "stem": "Düzlemde iki paralel doğru ve bir kesen ile oluşan açıları sınıflandırabilme çıktısını gösterecek problemi çöz; yöntemi, ara adımları ve bağımsız kontrolünü göster.",
+      "rubricCriteria": [
+        "Verilenleri, isteneni ve matematiksel koşulları eksiksiz belirler.",
+        "Uygun işlem, model, temsil veya inşa yolunu doğru uygular.",
+        "Sonucu ters işlem, tahmin, örnekleme veya alternatif temsil ile doğrular."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "koşulu-yanlış-modelleme",
+        "işlem-kuralını-eksik-uygulama",
+        "sonucu-kontrol-etmeme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g6-fb-6-1-1-1",
+      "engineKey": "g6:fen-bilimleri",
+      "grade": 6,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g6-fen-bilimleri-fb-6-1-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G6_CHALLENGING",
+      "context": "6. sınıf Fen Bilimleri çalışmasında “Fen Bilimleri 6. Sınıf / 1. Tema” için gözlem, deney, model veya veri paketi incelenir.",
+      "stem": "Güneş sistemindeki gezegenleri niteliklerine göre sınıflandırabilme çıktısını gösterecek bilimsel açıklama, model veya araştırma ürününü oluştur.",
+      "rubricCriteria": [
+        "Araştırılan olayı, değişkenleri ve gerekli kanıtları doğru belirler.",
+        "Kanıt, model veya deney basamaklarını bilimsel ilkeye uygun biçimde ilişkilendirir.",
+        "Sonucun sınırlarını, hata kaynaklarını ve alternatif açıklamayı değerlendirir."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "gözlem-yorum-karışıklığı",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g6-fb-6-1-1-2",
+      "engineKey": "g6:fen-bilimleri",
+      "grade": 6,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g6-fen-bilimleri-fb-6-1-1-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf Fen Bilimleri çalışmasında “Fen Bilimleri 6. Sınıf / 1. Tema” için gözlem, deney, model veya veri paketi incelenir.",
+      "stem": "Güneş sistemi ile ilgili bilimsel model oluşturabilme çıktısını gösterecek bilimsel açıklama, model veya araştırma ürününü oluştur.",
+      "rubricCriteria": [
+        "Araştırılan olayı, değişkenleri ve gerekli kanıtları doğru belirler.",
+        "Kanıt, model veya deney basamaklarını bilimsel ilkeye uygun biçimde ilişkilendirir.",
+        "Sonucun sınırlarını, hata kaynaklarını ve alternatif açıklamayı değerlendirir."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "gözlem-yorum-karışıklığı",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g6-fb-6-2-1-1",
+      "engineKey": "g6:fen-bilimleri",
+      "grade": 6,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g6-fen-bilimleri-fb-6-2-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf Fen Bilimleri çalışmasında “Fen Bilimleri 6. Sınıf / 2. Tema” için gözlem, deney, model veya veri paketi incelenir.",
+      "stem": "Bir cisme etki eden aynı doğrultudaki kuvvetler arasındaki ilişkileri açıklayarak bileşke kuvveti yapılandırabilme çıktısını gösterecek bilimsel açıklama, model veya araştırma ürününü oluştur.",
+      "rubricCriteria": [
+        "Araştırılan olayı, değişkenleri ve gerekli kanıtları doğru belirler.",
+        "Kanıt, model veya deney basamaklarını bilimsel ilkeye uygun biçimde ilişkilendirir.",
+        "Sonucun sınırlarını, hata kaynaklarını ve alternatif açıklamayı değerlendirir."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "gözlem-yorum-karışıklığı",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "sosyal-bilgiler-g6-sb-6-1-1",
+      "engineKey": "g6:sosyal-bilgiler",
+      "grade": 6,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g6-sosyal-bilgiler-sb-6-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G6_CHALLENGING",
+      "context": "6. sınıf Sosyal Bilgiler laboratuvarında “Sosyal Bilgiler 6. Sınıf / 1. Tema” için harita, belge, tablo, görsel veya toplumsal durum incelenir.",
+      "stem": "Dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içerisinde değişebileceğine ilişkin çıkarım yapabilme çıktısını gösterecek kanıta dayalı yorum veya proje ürününü oluştur.",
+      "rubricCriteria": [
+        "Kaynağın, haritanın veya toplumsal durumun doğrudan gösterdiği bilgileri ayırt eder.",
+        "Neden-sonuç, değişim-süreklilik, konum veya hak-sorumluluk ilişkisini kanıtla kurar.",
+        "Farklı bakış açılarını ve kaynağın sınırlarını belirterek ölçülü sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "kronoloji-ve-nedeni-karıştırma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "sosyal-bilgiler-g6-sb-6-2-1",
+      "engineKey": "g6:sosyal-bilgiler",
+      "grade": 6,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g6-sosyal-bilgiler-sb-6-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf Sosyal Bilgiler laboratuvarında “Sosyal Bilgiler 6. Sınıf / 2. Tema” için harita, belge, tablo, görsel veya toplumsal durum incelenir.",
+      "stem": "Ülkemizin, kıtaların ve okyanusların konum özelliklerini belirleyebilme çıktısını gösterecek kanıta dayalı yorum veya proje ürününü oluştur.",
+      "rubricCriteria": [
+        "Kaynağın, haritanın veya toplumsal durumun doğrudan gösterdiği bilgileri ayırt eder.",
+        "Neden-sonuç, değişim-süreklilik, konum veya hak-sorumluluk ilişkisini kanıtla kurar.",
+        "Farklı bakış açılarını ve kaynağın sınırlarını belirterek ölçülü sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "kronoloji-ve-nedeni-karıştırma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "sosyal-bilgiler-g6-sb-6-3-1",
+      "engineKey": "g6:sosyal-bilgiler",
+      "grade": 6,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g6-sosyal-bilgiler-sb-6-3-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf Sosyal Bilgiler laboratuvarında “Sosyal Bilgiler 6. Sınıf / 3. Tema” için harita, belge, tablo, görsel veya toplumsal durum incelenir.",
+      "stem": "Türkistan’da kurulan ilk Türk devletlerinin medeniyetimize katkılarını sorgulayabilme çıktısını gösterecek kanıta dayalı yorum veya proje ürününü oluştur.",
+      "rubricCriteria": [
+        "Kaynağın, haritanın veya toplumsal durumun doğrudan gösterdiği bilgileri ayırt eder.",
+        "Neden-sonuç, değişim-süreklilik, konum veya hak-sorumluluk ilişkisini kanıtla kurar.",
+        "Farklı bakış açılarını ve kaynağın sınırlarını belirterek ölçülü sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "kronoloji-ve-nedeni-karıştırma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g6-dkab-6-1-1",
+      "engineKey": "g6:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 6,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g6-din-kulturu-ve-ahlak-bilgisi-dkab-6-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G6_CHALLENGING",
+      "context": "6. sınıf Din Kültürü çalışmasında “Din Kültürü ve Ahlak Bilgisi 6. Sınıf / 1. Tema” için programla sınırlı kısa metin, kavram haritası, görsel veya günlük yaşam durumu verilir.",
+      "stem": "Peygamberlerin insanlara rehber olarak gönderilmesi hakkında bilgi toplayabilme çıktısını gösterecek tarafsız ve kanıta dayalı yanıtını oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, kavram veya görseldeki ana bilgiyi bağlamından koparmadan belirler.",
+        "Bilgiyi programdaki kavram ve ilkelerle doğru biçimde ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metni-bağlamından-koparma",
+        "kavramları-karıştırma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g6-dkab-6-1-2",
+      "engineKey": "g6:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 6,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g6-din-kulturu-ve-ahlak-bilgisi-dkab-6-1-2"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf Din Kültürü çalışmasında “Din Kültürü ve Ahlak Bilgisi 6. Sınıf / 1. Tema” için programla sınırlı kısa metin, kavram haritası, görsel veya günlük yaşam durumu verilir.",
+      "stem": "Vahiylerin insanlara ilettiği mesajları yapılandırabilme çıktısını gösterecek tarafsız ve kanıta dayalı yanıtını oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, kavram veya görseldeki ana bilgiyi bağlamından koparmadan belirler.",
+        "Bilgiyi programdaki kavram ve ilkelerle doğru biçimde ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metni-bağlamından-koparma",
+        "kavramları-karıştırma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g6-dkab-6-2-1",
+      "engineKey": "g6:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 6,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g6-din-kulturu-ve-ahlak-bilgisi-dkab-6-2-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G6_CORE",
+      "context": "6. sınıf Din Kültürü çalışmasında “Din Kültürü ve Ahlak Bilgisi 6. Sınıf / 2. Tema” için programla sınırlı kısa metin, kavram haritası, görsel veya günlük yaşam durumu verilir.",
+      "stem": "Ramazan ayının oruç ve Kur’an ayı olduğunu çözümleyebilme çıktısını gösterecek tarafsız ve kanıta dayalı yanıtını oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, kavram veya görseldeki ana bilgiyi bağlamından koparmadan belirler.",
+        "Bilgiyi programdaki kavram ve ilkelerle doğru biçimde ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metni-bağlamından-koparma",
+        "kavramları-karıştırma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g6-eng-6-1-g1",
+      "engineKey": "g6:yabanci-dil",
+      "grade": 6,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g6-yabanci-dil-eng-6-1-g1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "a2-g-communication",
+      "difficultyBand": "G6_CHALLENGING",
+      "context": "Year 6 communicative English task for “İngilizce 6. Sınıf / 1. Tema”.",
+      "stem": "Complete an age-appropriate communicative task that demonstrates: Students can select and use the target grammatical elements of the current content about “school life with roles, and responsibilities at school; school routines; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others",
+      "rubricCriteria": [
+        "Plans all content points required by the communication goal.",
+        "Uses understandable level-appropriate vocabulary, structures and interaction conventions.",
+        "Reviews or repairs the message so the listener or reader can follow it."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g6-eng-6-1-l1",
+      "engineKey": "g6:yabanci-dil",
+      "grade": 6,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g6-yabanci-dil-eng-6-1-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-l-communication",
+      "difficultyBand": "G6_CORE",
+      "context": "Year 6 communicative English task for “İngilizce 6. Sınıf / 1. Tema”.",
+      "stem": "Complete an age-appropriate communicative task that demonstrates: Students can get ready for the listening/watching-comprehension process for the current content on “school life with roles, and responsibilities at school; school routines; national days and celebrations” carefully",
+      "rubricCriteria": [
+        "Identifies the topic, purpose and required details in the input.",
+        "Connects relevant clues when comparison, classification or inference is required.",
+        "Responds clearly without adding unsupported information."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g6-eng-6-1-r1",
+      "engineKey": "g6:yabanci-dil",
+      "grade": 6,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g6-yabanci-dil-eng-6-1-r1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "a2-r-communication",
+      "difficultyBand": "G6_CORE",
+      "context": "Year 6 communicative English task for “İngilizce 6. Sınıf / 1. Tema”.",
+      "stem": "Complete an age-appropriate communicative task that demonstrates: Students can get ready for the reading-comprehension process about the current content on “school life with roles, and responsibilities at school; school routines; national days and celebrations”",
+      "rubricCriteria": [
+        "Identifies the topic, purpose and required details in the input.",
+        "Connects relevant clues when comparison, classification or inference is required.",
+        "Responds clearly without adding unsupported information."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g7-t-d-7-1",
+      "engineKey": "g7:turkce",
+      "grade": 7,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g7-turkce-t-d-7-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "anlama-ve-kanıt",
+      "difficultyBand": "G7_CHALLENGING",
+      "context": "7. sınıf Türkçe çalışmasında “Dinleme/İzleme” alanına uygun özgün metin, ses, görsel veya iletişim durumu verilir.",
+      "stem": "Dinlemede/izlemede materyal seçimini yönetebilme öğrenme çıktısını gösterecek biçimde görevi tamamla ve kullandığın kanıtları açıkla.",
+      "rubricCriteria": [
+        "Materyalin amacı, ana bilgileri ve gerekli ayrıntıları doğru belirler.",
+        "Çıkarım, karşılaştırma veya değerlendirmeyi en az iki metin içi kanıtla gerekçelendirir.",
+        "Metnin göstermediği bilgiyi eklemeden yaş düzeyine uygun açık bir sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metin-kanıtı-yerine-genel-bilgi",
+        "amaç-ve-türü-karıştırma",
+        "gözden-geçirmeden-ürünü-bitirme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g7-t-k-7-1",
+      "engineKey": "g7:turkce",
+      "grade": 7,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g7-turkce-t-k-7-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "üretici-dil-becerisi",
+      "difficultyBand": "G7_CORE",
+      "context": "7. sınıf Türkçe çalışmasında “Konuşma” alanına uygun özgün metin, ses, görsel veya iletişim durumu verilir.",
+      "stem": "Konuşma sürecini yönetebilme öğrenme çıktısını gösterecek biçimde görevi tamamla ve kullandığın kanıtları açıkla.",
+      "rubricCriteria": [
+        "Amaç, hedef kitle, tür ve iletişim durumuna uygun bir plan oluşturur.",
+        "Düşünceleri tutarlı, anlaşılır ve Türkçenin kurallarına uygun biçimde ifade eder.",
+        "Geri bildirim ve öz değerlendirme ile ürününü geliştirip son hâlini gerekçelendirir."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metin-kanıtı-yerine-genel-bilgi",
+        "amaç-ve-türü-karıştırma",
+        "gözden-geçirmeden-ürünü-bitirme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g7-t-o-7-1",
+      "engineKey": "g7:turkce",
+      "grade": 7,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g7-turkce-t-o-7-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "anlama-ve-kanıt",
+      "difficultyBand": "G7_CORE",
+      "context": "7. sınıf Türkçe çalışmasında “Okuma” alanına uygun özgün metin, ses, görsel veya iletişim durumu verilir.",
+      "stem": "Okumada materyal seçimini yönetebilme öğrenme çıktısını gösterecek biçimde görevi tamamla ve kullandığın kanıtları açıkla.",
+      "rubricCriteria": [
+        "Materyalin amacı, ana bilgileri ve gerekli ayrıntıları doğru belirler.",
+        "Çıkarım, karşılaştırma veya değerlendirmeyi en az iki metin içi kanıtla gerekçelendirir.",
+        "Metnin göstermediği bilgiyi eklemeden yaş düzeyine uygun açık bir sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metin-kanıtı-yerine-genel-bilgi",
+        "amaç-ve-türü-karıştırma",
+        "gözden-geçirmeden-ürünü-bitirme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g7-mat-7-1-1",
+      "engineKey": "g7:matematik",
+      "grade": 7,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g7-matematik-mat-7-1-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G7_CHALLENGING",
+      "context": "7. sınıf matematik laboratuvarında “Matematik 7. Sınıf / 1. Tema” için sayı, cebir, geometri veya veri temelli bir durum incelenir.",
+      "stem": "Gerçek yaşam ya da matematiksel durumlarda doğal sayı, tam sayı ve rasyonel sayıları yorumlayabilme çıktısını gösterecek problemi çöz; yöntemi, ara adımları ve bağımsız kontrolünü göster.",
+      "rubricCriteria": [
+        "Verilenleri, isteneni ve matematiksel koşulları eksiksiz belirler.",
+        "Uygun işlem, model, temsil veya inşa yolunu doğru uygular.",
+        "Sonucu ters işlem, tahmin, örnekleme veya alternatif temsil ile doğrular."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "koşulu-yanlış-modelleme",
+        "işlem-kuralını-eksik-uygulama",
+        "sonucu-kontrol-etmeme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g7-mat-7-2-1",
+      "engineKey": "g7:matematik",
+      "grade": 7,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g7-matematik-mat-7-2-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G7_CORE",
+      "context": "7. sınıf matematik laboratuvarında “Matematik 7. Sınıf / 2. Tema” için sayı, cebir, geometri veya veri temelli bir durum incelenir.",
+      "stem": "Gerçek yaşam durumları ya da matematiksel durumlar üzerinden cebirsel ifadelerle toplama, çıkarma ve bir rasyonel sayıyla çarpma işlemlerini yorumlayabilme çıktısını gösterecek problemi çöz; yöntemi, ara adımları ve bağımsız kontrolünü göster.",
+      "rubricCriteria": [
+        "Verilenleri, isteneni ve matematiksel koşulları eksiksiz belirler.",
+        "Uygun işlem, model, temsil veya inşa yolunu doğru uygular.",
+        "Sonucu ters işlem, tahmin, örnekleme veya alternatif temsil ile doğrular."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "koşulu-yanlış-modelleme",
+        "işlem-kuralını-eksik-uygulama",
+        "sonucu-kontrol-etmeme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g7-mat-7-3-1",
+      "engineKey": "g7:matematik",
+      "grade": 7,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g7-matematik-mat-7-3-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G7_CORE",
+      "context": "7. sınıf matematik laboratuvarında “Matematik 7. Sınıf / 3. Tema” için sayı, cebir, geometri veya veri temelli bir durum incelenir.",
+      "stem": "Şekillerin yansıma dönüşümü altındaki görüntülerinin oluşturulmasına dair çıktısını gösterecek problemi çöz; yöntemi, ara adımları ve bağımsız kontrolünü göster.",
+      "rubricCriteria": [
+        "Verilenleri, isteneni ve matematiksel koşulları eksiksiz belirler.",
+        "Uygun işlem, model, temsil veya inşa yolunu doğru uygular.",
+        "Sonucu ters işlem, tahmin, örnekleme veya alternatif temsil ile doğrular."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "koşulu-yanlış-modelleme",
+        "işlem-kuralını-eksik-uygulama",
+        "sonucu-kontrol-etmeme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g7-fb-7-1-1-1",
+      "engineKey": "g7:fen-bilimleri",
+      "grade": 7,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g7-fen-bilimleri-fb-7-1-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G7_CHALLENGING",
+      "context": "7. sınıf Fen Bilimleri çalışmasında “Fen Bilimleri 7. Sınıf / 1. Tema” için gözlem, deney, model veya veri paketi incelenir.",
+      "stem": "Uzay araştırmaları için geliştirilen teknolojileri karşılaştırabilme çıktısını gösterecek bilimsel açıklama, model veya araştırma ürününü oluştur.",
+      "rubricCriteria": [
+        "Araştırılan olayı, değişkenleri ve gerekli kanıtları doğru belirler.",
+        "Kanıt, model veya deney basamaklarını bilimsel ilkeye uygun biçimde ilişkilendirir.",
+        "Sonucun sınırlarını, hata kaynaklarını ve alternatif açıklamayı değerlendirir."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "gözlem-yorum-karışıklığı",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g7-fb-7-1-1-2",
+      "engineKey": "g7:fen-bilimleri",
+      "grade": 7,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g7-fen-bilimleri-fb-7-1-1-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G7_CORE",
+      "context": "7. sınıf Fen Bilimleri çalışmasında “Fen Bilimleri 7. Sınıf / 1. Tema” için gözlem, deney, model veya veri paketi incelenir.",
+      "stem": "Uzay gözlem araçları ile ilgili bilimsel model oluşturabilme çıktısını gösterecek bilimsel açıklama, model veya araştırma ürününü oluştur.",
+      "rubricCriteria": [
+        "Araştırılan olayı, değişkenleri ve gerekli kanıtları doğru belirler.",
+        "Kanıt, model veya deney basamaklarını bilimsel ilkeye uygun biçimde ilişkilendirir.",
+        "Sonucun sınırlarını, hata kaynaklarını ve alternatif açıklamayı değerlendirir."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "gözlem-yorum-karışıklığı",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g7-fb-7-2-1-1",
+      "engineKey": "g7:fen-bilimleri",
+      "grade": 7,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g7-fen-bilimleri-fb-7-2-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G7_CHALLENGING",
+      "context": "7. sınıf Fen Bilimleri çalışmasında “Fen Bilimleri 7. Sınıf / 2. Tema” için gözlem, deney, model veya veri paketi incelenir.",
+      "stem": "Fiziksel anlamda yapılan işin bağlı olduğu faktörlere ilişkin bilimsel çıkarım yapabilme çıktısını gösterecek bilimsel açıklama, model veya araştırma ürününü oluştur.",
+      "rubricCriteria": [
+        "Araştırılan olayı, değişkenleri ve gerekli kanıtları doğru belirler.",
+        "Kanıt, model veya deney basamaklarını bilimsel ilkeye uygun biçimde ilişkilendirir.",
+        "Sonucun sınırlarını, hata kaynaklarını ve alternatif açıklamayı değerlendirir."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "gözlem-yorum-karışıklığı",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "sosyal-bilgiler-g7-sb-7-1-1",
+      "engineKey": "g7:sosyal-bilgiler",
+      "grade": 7,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g7-sosyal-bilgiler-sb-7-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G7_CHALLENGING",
+      "context": "7. sınıf Sosyal Bilgiler laboratuvarında “Sosyal Bilgiler 7. Sınıf / 1. Tema” için harita, belge, tablo, görsel veya toplumsal durum incelenir.",
+      "stem": "Dâhil olduğu gruplarda ve sosyal hayatta etkili iletişimin önemini sorgulayabilme çıktısını gösterecek kanıta dayalı yorum veya proje ürününü oluştur.",
+      "rubricCriteria": [
+        "Kaynağın, haritanın veya toplumsal durumun doğrudan gösterdiği bilgileri ayırt eder.",
+        "Neden-sonuç, değişim-süreklilik, konum veya hak-sorumluluk ilişkisini kanıtla kurar.",
+        "Farklı bakış açılarını ve kaynağın sınırlarını belirterek ölçülü sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "kronoloji-ve-nedeni-karıştırma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "sosyal-bilgiler-g7-sb-7-2-1",
+      "engineKey": "g7:sosyal-bilgiler",
+      "grade": 7,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g7-sosyal-bilgiler-sb-7-2-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G7_CORE",
+      "context": "7. sınıf Sosyal Bilgiler laboratuvarında “Sosyal Bilgiler 7. Sınıf / 2. Tema” için harita, belge, tablo, görsel veya toplumsal durum incelenir.",
+      "stem": "Küreselleşmenin insan ve toplum hayatında meydana getirdiği değişimi yorumlayabilme çıktısını gösterecek kanıta dayalı yorum veya proje ürününü oluştur.",
+      "rubricCriteria": [
+        "Kaynağın, haritanın veya toplumsal durumun doğrudan gösterdiği bilgileri ayırt eder.",
+        "Neden-sonuç, değişim-süreklilik, konum veya hak-sorumluluk ilişkisini kanıtla kurar.",
+        "Farklı bakış açılarını ve kaynağın sınırlarını belirterek ölçülü sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "kronoloji-ve-nedeni-karıştırma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "sosyal-bilgiler-g7-sb-7-3-1",
+      "engineKey": "g7:sosyal-bilgiler",
+      "grade": 7,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g7-sosyal-bilgiler-sb-7-3-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G7_CHALLENGING",
+      "context": "7. sınıf Sosyal Bilgiler laboratuvarında “Sosyal Bilgiler 7. Sınıf / 3. Tema” için harita, belge, tablo, görsel veya toplumsal durum incelenir.",
+      "stem": "Osmanlı Devleti’nin cihan devleti hâline gelmesini sağlayan politikaları sorgulayabilme çıktısını gösterecek kanıta dayalı yorum veya proje ürününü oluştur.",
+      "rubricCriteria": [
+        "Kaynağın, haritanın veya toplumsal durumun doğrudan gösterdiği bilgileri ayırt eder.",
+        "Neden-sonuç, değişim-süreklilik, konum veya hak-sorumluluk ilişkisini kanıtla kurar.",
+        "Farklı bakış açılarını ve kaynağın sınırlarını belirterek ölçülü sonuç oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "kronoloji-ve-nedeni-karıştırma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g7-dkab-7-1-1",
+      "engineKey": "g7:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 7,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g7-din-kulturu-ve-ahlak-bilgisi-dkab-7-1-1"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G7_CHALLENGING",
+      "context": "7. sınıf Din Kültürü çalışmasında “Din Kültürü ve Ahlak Bilgisi 7. Sınıf / 1. Tema” için programla sınırlı kısa metin, kavram haritası, görsel veya günlük yaşam durumu verilir.",
+      "stem": "Melekleri sınıflandırabilme çıktısını gösterecek tarafsız ve kanıta dayalı yanıtını oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, kavram veya görseldeki ana bilgiyi bağlamından koparmadan belirler.",
+        "Bilgiyi programdaki kavram ve ilkelerle doğru biçimde ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metni-bağlamından-koparma",
+        "kavramları-karıştırma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g7-dkab-7-1-2",
+      "engineKey": "g7:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 7,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g7-din-kulturu-ve-ahlak-bilgisi-dkab-7-1-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G7_CORE",
+      "context": "7. sınıf Din Kültürü çalışmasında “Din Kültürü ve Ahlak Bilgisi 7. Sınıf / 1. Tema” için programla sınırlı kısa metin, kavram haritası, görsel veya günlük yaşam durumu verilir.",
+      "stem": "Ahiret hayatının aşamalarını çözümleyebilme çıktısını gösterecek tarafsız ve kanıta dayalı yanıtını oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, kavram veya görseldeki ana bilgiyi bağlamından koparmadan belirler.",
+        "Bilgiyi programdaki kavram ve ilkelerle doğru biçimde ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metni-bağlamından-koparma",
+        "kavramları-karıştırma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g7-dkab-7-2-1",
+      "engineKey": "g7:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 7,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g7-din-kulturu-ve-ahlak-bilgisi-dkab-7-2-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G7_CORE",
+      "context": "7. sınıf Din Kültürü çalışmasında “Din Kültürü ve Ahlak Bilgisi 7. Sınıf / 2. Tema” için programla sınırlı kısa metin, kavram haritası, görsel veya günlük yaşam durumu verilir.",
+      "stem": "Hac ve umre ibadetlerini inceleyebilme çıktısını gösterecek tarafsız ve kanıta dayalı yanıtını oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, kavram veya görseldeki ana bilgiyi bağlamından koparmadan belirler.",
+        "Bilgiyi programdaki kavram ve ilkelerle doğru biçimde ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde oluşturur."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "metni-bağlamından-koparma",
+        "kavramları-karıştırma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g7-eng-7-1-g1",
+      "engineKey": "g7:yabanci-dil",
+      "grade": 7,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g7-yabanci-dil-eng-7-1-g1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "a2-g-communication",
+      "difficultyBand": "G7_CHALLENGING",
+      "context": "Year 7 communicative English task for “İngilizce 7. Sınıf / 1. Tema”.",
+      "stem": "Complete an age-appropriate communicative task that demonstrates: Students can select and use target grammatical language items efficiently, effectively, and accurately, based on the current content about “school life and education with extra-curricular activities at school; competitions and celebrations at school; national days and celebrations”, after recognising them in context and developing their conscious and inductive grammaring skills through consciousness-raising and discovery",
+      "rubricCriteria": [
+        "Plans all content points required by the communication goal.",
+        "Uses understandable level-appropriate vocabulary, structures and interaction conventions.",
+        "Reviews or repairs the message so the listener or reader can follow it."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g7-eng-7-1-l1",
+      "engineKey": "g7:yabanci-dil",
+      "grade": 7,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g7-yabanci-dil-eng-7-1-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-l-communication",
+      "difficultyBand": "G7_CORE",
+      "context": "Year 7 communicative English task for “İngilizce 7. Sınıf / 1. Tema”.",
+      "stem": "Complete an age-appropriate communicative task that demonstrates: Students can prepare and get ready for listening (to)/watching about the current content on “school life and education with extra-curricular activities at school; competitions and celebrations at school; national days and celebrations”",
+      "rubricCriteria": [
+        "Identifies the topic, purpose and required details in the input.",
+        "Connects relevant clues when comparison, classification or inference is required.",
+        "Responds clearly without adding unsupported information."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g7-eng-7-1-r1",
+      "engineKey": "g7:yabanci-dil",
+      "grade": 7,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g7-yabanci-dil-eng-7-1-r1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "a2-r-communication",
+      "difficultyBand": "G7_CORE",
+      "context": "Year 7 communicative English task for “İngilizce 7. Sınıf / 1. Tema”.",
+      "stem": "Complete an age-appropriate communicative task that demonstrates: Students can prepare for reading the content on “school life and education with extra-curricular activities at school; competitions and celebrations at school; national days and celebrations” efficiently and effectively",
+      "rubricCriteria": [
+        "Identifies the topic, purpose and required details in the input.",
+        "Connects relevant clues when comparison, classification or inference is required.",
+        "Responds clearly without adding unsupported information."
+      ],
+      "hints": [
+        "Görevin amacını, verilen kanıtları ve senden beklenen ürünü ayrı ayrı belirle.",
+        "Kazanımdaki ilişkiyi gösterecek uygun temsil, yöntem veya dil yapısını seç.",
+        "Sonucunu rubrik ölçütleriyle ve bağımsız bir kontrol yoluyla gözden geçir."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    }
+  ]
+}

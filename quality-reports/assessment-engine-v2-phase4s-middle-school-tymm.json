@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T23:43:35.516Z",
+  "phase": "4S",
+  "title": "6–7. Sınıf TYMM Çekirdek Ders Motorları",
+  "status": "GRADES6_7_TYMM_CORE_ENGINEERING_SCOPE_COMPLETE",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "errors": [],
+  "audits": {
+    "grade6": {
+      "ok": true,
+      "metrics": {
+        "engineCount": 6,
+        "officialOutcomeCount": 380,
+        "itemCount": 380,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "grade7": {
+      "ok": true,
+      "metrics": {
+        "engineCount": 6,
+        "officialOutcomeCount": 394,
+        "itemCount": 394,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "middleSchool": {
+      "ok": true,
+      "metrics": {
+        "engineCount": 12,
+        "officialOutcomeCount": 774,
+        "itemCount": 774,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "reviewSample": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "engineCount": 12,
+        "itemCount": 36,
+        "perEngine": 3,
+        "approved": 0,
+        "pending": 36
+      }
+    },
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 4,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 24,
+        "activeEngineCellPercent": 21.4,
+        "curriculumOutcomeRecordCount": 1466,
+        "coveredOutcomeCount": 1466,
+        "canonicalQuestionCount": 1491,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 1486,
+        "gameAdaptedQuestionCount": 5,
+        "legacyQuarantineCount": 604,
+        "unmatchedActiveCourseCellCount": 0
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 1491,
+        "byEngine": {
+          "g8:turkce": 96,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 61,
+          "g5:turkce": 105,
+          "g8:t-c-inkilap-tarihi-ve-ataturkculuk": 33,
+          "g8:din-kulturu-ve-ahlak-bilgisi": 28,
+          "g8:ingilizce": 70,
+          "g5:matematik": 23,
+          "g5:fen-bilimleri": 28,
+          "g5:sosyal-bilgiler": 19,
+          "g5:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g5:yabanci-dil": 184,
+          "g6:turkce": 100,
+          "g6:matematik": 24,
+          "g6:fen-bilimleri": 36,
+          "g6:sosyal-bilgiler": 18,
+          "g6:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g6:yabanci-dil": 184,
+          "g7:turkce": 103,
+          "g7:matematik": 30,
+          "g7:fen-bilimleri": 36,
+          "g7:sosyal-bilgiler": 17,
+          "g7:din-kulturu-ve-ahlak-bilgisi": 17,
+          "g7:yabanci-dil": 191
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    }
+  },
+  "metrics": {
+    "newGradeCount": 2,
+    "newEngineCount": 12,
+    "newOfficialOutcomeCount": 774,
+    "newCanonicalTaskCount": 774,
+    "totalActiveGradeCount": 4,
+    "totalActiveEngineCount": 24,
+    "totalOfficialOutcomeCount": 1466,
+    "totalCanonicalTaskCount": 1491,
+    "humanReviewPending": 1486,
+    "unopenedCourseCells": 88
+  },
+  "honesty": {
+    "humanReviewStatus": "NOT_MEASURED",
+    "realMediaAssets": "INCOMPLETE",
+    "realStudentPilot": "NOT_COMPLETED"
+  }
+}

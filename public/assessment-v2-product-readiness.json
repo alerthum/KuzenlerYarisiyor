@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T23:33:48.581Z",
+  "generatedAt": "2026-08-03T23:43:35.909Z",
   "status": "PRODUCT_BLOCKED",
   "productReady": false,
   "publicationAllowed": false,
@@ -30,27 +30,27 @@
       "label": "112 zorunlu sınıf–ders hücresi",
       "passed": false,
       "evidence": {
-        "active": 12,
+        "active": 24,
         "required": 112
       },
-      "blocker": "100 sınıf–ders hücresi henüz açılmadı."
+      "blocker": "88 sınıf–ders hücresi henüz açılmadı."
     },
     {
       "id": "grade-coverage",
       "label": "1–12 sınıf kapsamı",
       "passed": false,
       "evidence": {
-        "active": 2,
+        "active": 4,
         "required": 12
       },
-      "blocker": "10 sınıf düzeyinde aktif motor yok."
+      "blocker": "8 sınıf düzeyinde aktif motor yok."
     },
     {
       "id": "active-engine-curriculum",
       "label": "Aktif motorlarda tam resmî kapsam",
       "passed": true,
       "evidence": {
-        "engines": 12
+        "engines": 24
       },
       "blocker": null
     },
@@ -139,8 +139,8 @@
     }
   ],
   "blockers": [
-    "100 sınıf–ders hücresi henüz açılmadı.",
-    "10 sınıf düzeyinde aktif motor yok.",
+    "88 sınıf–ders hücresi henüz açılmadı.",
+    "8 sınıf düzeyinde aktif motor yok.",
     "İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var.",
     "Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez.",
     "23 oyun için 500 oturumluk canlı tekrar/underfill kanıtı tamamlanmadı.",
