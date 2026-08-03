@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-08-03T09:34:24.810Z",
+  "checkpoint": "checkpoint-v2-phase-3r",
+  "phase": "PHASE_3R_NATURAL_PARAGRAPH_HUMAN_REVIEW_READY",
+  "parentCheckpoint": "checkpoint-v2-phase-3d",
+  "parentCommit": "e163f34",
+  "commit": "RESOLVE_FROM_GIT_TAG_checkpoint-v2-phase-3r",
+  "previousReviewDisposition": "REJECTED_AI_TEMPLATE_FAILURE",
+  "benchmarkPolicy": "STRUCTURAL_BENCHMARK_ONLY_DO_NOT_COPY_SOURCE_TEXT",
+  "scope": {
+    "readingModels": 12,
+    "choicesPerItem": 5,
+    "distinctDistractorPathsPerItem": 4,
+    "genres": 12,
+    "voices": 11,
+    "sourceModes": 10,
+    "stemFamilies": 12,
+    "researchHeavyItems": 2
+  },
+  "automatedEvidence": {
+    "assessmentV2": {
+      "passed": 54,
+      "total": 54,
+      "status": "PASS"
+    },
+    "legacy604Protection": {
+      "passed": 11,
+      "total": 11,
+      "legacyContentCount": 604,
+      "status": "PASS"
+    },
+    "build": "PASS",
+    "surfaceQuality": {
+      "status": "PASS",
+      "longestAnswerRate": 0.5,
+      "maxTrigramSimilarity": 0.008
+    },
+    "staleDraftLeakMutation": "PASS"
+  },
+  "rejectedArtifacts": [
+    "quality-reports/rejected/phase3d-ai-template-failure/assessment-engine-v2-phase3-first-review.REJECTED.json",
+    "quality-reports/rejected/phase3d-ai-template-failure/assessment-engine-v2-phase3-first-review.REJECTED.html"
+  ],
+  "reviewArtifacts": [
+    "quality-reports/assessment-engine-v2-phase3-first-review.json",
+    "quality-reports/assessment-engine-v2-phase3-first-review.html",
+    "quality-reports/assessment-engine-v2-reading-surface-quality.json"
+  ],
+  "productReady": false,
+  "humanSampleStatus": "NOT_MEASURED",
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "nextGate": "HUMAN_VISUAL_REVIEW"
+}

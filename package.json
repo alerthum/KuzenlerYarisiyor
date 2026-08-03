@@ -76,7 +76,9 @@
     "assessment:v2:phase2": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-report.mjs && node scripts/build-assessment-v2-phase2-report.mjs",
     "assessment:v2:phase3": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-report.mjs && node scripts/build-assessment-v2-phase2-report.mjs && node scripts/build-assessment-v2-phase3-report.mjs",
     "assessment:v2:phase3:review": "node scripts/build-assessment-v2-phase3-review-pack.mjs",
-    "assessment:v2:phase3:complete": "npm run assessment:v2:phase3 && npm run assessment:v2:phase3:review"
+    "assessment:v2:phase3:complete": "npm run assessment:v2:phase3 && npm run assessment:v2:phase3:review",
+    "assessment:v2:phase3r:surface": "node --test tests/assessment-v2/reading-surface-quality.test.mjs && node scripts/build-assessment-v2-reading-surface-report.mjs",
+    "assessment:v2:phase3r": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-report.mjs && node scripts/build-assessment-v2-phase2-report.mjs && node scripts/build-assessment-v2-phase3-report.mjs && node scripts/build-assessment-v2-reading-surface-report.mjs && node scripts/build-assessment-v2-phase3-review-pack.mjs"
   },
   "engines": {
     "node": ">=20"

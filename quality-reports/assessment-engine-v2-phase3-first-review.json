@@ -1,11 +1,11 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:55:38.927Z",
-  "phase": "PHASE_3_FIRST_HUMAN_REVIEW_READY",
+  "generatedAt": "2026-08-03T09:33:34.226Z",
+  "phase": "PHASE_3R_NATURAL_PARAGRAPH_HUMAN_REVIEW_READY",
   "productReady": false,
   "legacyContentPolicy": "UNVERIFIED_LEGACY",
   "humanSampleStatus": "NOT_MEASURED",
-  "instructions": "Her soruda metin, kök, dört seçenek, doğru cevap, hata yolları ve ipuçlarını gözle inceleyin. Kritik hata görülürse model kimliğiyle kaydedin.",
+  "instructions": "Her soruda metin türünü, doğal Türkçe akışını, soru kökünü, beş seçeneğin yakınlığını, doğru cevabı, hata yollarını ve ipuçlarını gözle inceleyin. Yapay kalıp veya ders kitabı dışı ifade görülürse model kimliğiyle kaydedin.",
   "sampleCount": 12,
   "samples": [
     {
@@ -13,57 +13,74 @@
       "itemModelId": "reading-main-idea-coverage-v2",
       "constructId": "construct-reading-main-idea-coverage",
       "queryType": "main-idea",
-      "context": "Güneydere Belediyesi, aynı sokakta gölge altında ve doğrudan güneş alan kaldırımları öğle saatlerinde ölçtü. Ağaçların gölgelediği yüzeyler ortalama 7 derece daha serindi. Uzmanlar bu farkın sıcak günlerde yaya konforunu artırabileceğini, ancak yeni ağaçlandırmada su gereksinimi ve toprak yapısının birlikte değerlendirilmesi gerektiğini belirtti.",
+      "surfaceProfile": {
+        "genre": "deneme",
+        "voice": "birinci-tekil-düşünsel",
+        "sourceMode": "özgün-edebî",
+        "rhetoricalMoves": [
+          "örnekleme",
+          "karşıtlık",
+          "sonuç"
+        ],
+        "stemFamily": "ana-düşünce"
+      },
+      "context": "Eski Sarıova haritalarına baktığımda önce yolları değil, artık kullanılmayan sözcükleri görüyorum. Bir zamanlar çeşmeye, hana ya da bir zanaata açılan sokak adları, kentin kendini nasıl anlattığını bugüne taşıyor. Bu yüzden eski bir haritayı korumak, yalnız kâğıdı değil, bir bakış biçimini de korumaktır. Ne var ki belleğe sahip çıkmak, şehri geçmişin dekoruna çevirmek demek değildir. Kent yaşadıkça değişir; önemli olan, değişirken hangi izleri neden taşıdığını unutmamasıdır.",
       "prompt": "Bu parçanın ana düşüncesi aşağıdakilerden hangisidir?",
       "options": [
         {
-          "text": "Gölgedeki kaldırımlar öğle ölçümünde ortalama 7 derece daha serin çıkmıştır.",
+          "text": "Eski sokak adları, geçmişteki çeşme, han ve zanaatların izlerini günümüze ulaştırır.",
           "correct": false,
           "misconceptionId": "detail-as-main-idea",
-          "feedback": "Ana düşünce tek bir sayıdan daha geniştir; metnin bütün merkezî iddialarını kapsamalıdır."
+          "feedback": "Sokak adları, yazarın genel düşüncesini destekleyen ayrıntılardır."
         },
         {
-          "text": "Bütün kentlerdeki her sokağa mümkün olduğunca çok ağaç dikilmelidir.",
+          "text": "Kimliğini ve kültürel değerlerini yitirmek istemeyen kentler, geçmişteki sokak düzenini ve yapılarını hiçbir değişikliğe uğratmadan olduğu gibi korumalıdır.",
           "correct": false,
           "misconceptionId": "overgeneralized-main-idea",
-          "feedback": "Metin ağaçlandırmayı desteklerken su ve toprak koşullarına göre planlama sınırı koyar."
+          "feedback": "Yazar, kentin yaşayan ve değişen bir yapı olduğunu açıkça kabul eder."
         },
         {
-          "text": "Ağaçlandırma çalışmalarında yalnız su gereksinimi ve toprak yapısı dikkate alınmalıdır.",
+          "text": "Bir kentin canlılığını koruyabilmesi, geçmişten kalan bütün izleri geride bırakmasına bağlıdır.",
           "correct": false,
           "misconceptionId": "one-sided-summary",
-          "feedback": "Ana düşünce iki merkezî hattı birlikte kapsamalıdır; yalnız birini özetlemek eksik kalır."
+          "feedback": "Parçanın ilk bölümü haritaların kent belleğini taşımasını temel bir değer olarak sunar."
         },
         {
-          "text": "Ağaç gölgesi sıcak yüzeyleri serinletebilir; ancak ağaçlandırma yerel su ve toprak koşullarına göre planlanmalıdır.",
+          "text": "Parçada eski kent haritaları ile sokak adlarının tarihsel özelliklerinden söz edilmektedir.",
+          "correct": false,
+          "misconceptionId": "topic-label-as-main-idea",
+          "feedback": "“Eski kent haritaları” yalnız konudur; ana düşünce bu konu hakkında ileri sürülen yargıdır."
+        },
+        {
+          "text": "Kent belleğini taşıyan eski haritaları korumak değerlidir; ancak bu koruma, yaşayan şehri değişime kapatmadan sürdürülmelidir.",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
         }
       ],
-      "answerIndex": 3,
-      "answerText": "Ağaç gölgesi sıcak yüzeyleri serinletebilir; ancak ağaçlandırma yerel su ve toprak koşullarına göre planlanmalıdır.",
+      "answerIndex": 4,
+      "answerText": "Kent belleğini taşıyan eski haritaları korumak değerlidir; ancak bu koruma, yaşayan şehri değişime kapatmadan sürdürülmelidir.",
       "hints": [
-        "Paragrafın birden fazla cümlesinde sürdürülen iki temel düşünceyi işaretle.",
-        "Sayılar ve ölçüm ayrıntıları çıkarıldığında geriye kalan ortak mesajı düşün.",
-        "Seçenek hem yararı hem de planlama koşulunu birlikte taşıyor mu?"
+        "Tek tek sokak adlarından önce yazarın haritalara yüklediği genel anlamı bul.",
+        "“Ne var ki” sonrasındaki sınırlama ana düşünceye hangi ikinci boyutu ekliyor?",
+        "Seçenek yalnız korumayı ya da yalnız değişimi değil, ikisinin dengesini veriyor mu?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Metin hem ağaç gölgesinin yüzey sıcaklığını azalttığını hem de ağaçlandırmanın yerel koşullara göre planlanması gerektiğini vurgular."
+          "explanation": "Yazar eski haritaları yalnız yön bulma aracı olarak değil, kentin belleğini taşıyan belgeler olarak değerlendirir."
         },
         {
           "id": "s2",
-          "explanation": "Ölçüm saati ve sıcaklık farkı ana düşünceyi destekleyen ayrıntılardır; tek başlarına paragrafın amacı değildir."
+          "explanation": "Yazar belleği korumanın kenti geçmişte dondurmak anlamına gelmediğini de özellikle söyler."
         },
         {
           "id": "s3",
-          "explanation": "Doğru ana düşünce, gölgenin yararını kabul ederken her yere aynı uygulamayı önermek yerine su ve toprak koşullarına uygun planlamayı da içerir."
+          "explanation": "Doğru seçenek hem geçmişin izlerini korumayı hem de yaşayan kentin değişimini kabul etmeyi birlikte taşır."
         }
       ],
-      "structuralId": "st:v2:13di901",
-      "cognitiveExperienceId": "cx:v2:1lwz3b5",
+      "structuralId": "st:v2:ccek46",
+      "cognitiveExperienceId": "cx:v2:1vc44ug",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -71,57 +88,74 @@
       "itemModelId": "reading-supported-inference-v2",
       "constructId": "construct-reading-supported-inference",
       "queryType": "supported-inference",
-      "context": "Kavaklı Halk Kütüphanesi, sınav ayı boyunca 4 hafta süreyle kapanış saatini iki saat geciktirdi. Bu dönemde akşam girişleri önceki aya göre arttı. Ankete katılan bazı öğrenciler sessiz çalışma olanağı nedeniyle daha sık geldiklerini söyledi; öğrencilerin sınav notları ise araştırılmadı.",
-      "prompt": "Bu parçadan aşağıdakilerden hangisi çıkarılabilir?",
+      "surfaceProfile": {
+        "genre": "anekdot",
+        "voice": "üçüncü-tekil-anlatıcı",
+        "sourceMode": "özgün-kurmaca",
+        "rhetoricalMoves": [
+          "diyalog",
+          "mecaz",
+          "örtük-sonuç"
+        ],
+        "stemFamily": "çıkarım"
+      },
+      "context": "Bir cilt ustasının yıllar önce yaptığı deri kaplı defteri gören müşteri, “Bundan bir tane daha istiyorum, tıpkısının aynısı olsun.” der. Usta defteri uzun uzun inceler, sonra başını sallar: “Benzerini yaparım ama aynısını yapamam; çünkü elim artık bu defteri yapan el değil.”",
+      "prompt": "Bu parçadan aşağıdakilerin hangisine ulaşılabilir?",
       "options": [
         {
-          "text": "Uzatılan saatler, bazı öğrencilerin bu kütüphaneyi sınav ayında akşamları daha sık kullanmasına katkı sağlamış olabilir.",
+          "text": "Usta, deneyimi arttığı için ilk defterin bütünüyle aynısını yapabileceğinden emindir.",
+          "correct": false,
+          "misconceptionId": "reverse-inference",
+          "feedback": "Usta, deneyim kazandığı için aynı ürünü birebir tekrarlayamayacağını söyler."
+        },
+        {
+          "text": "Usta, kazandığı deneyimin ikinci çalışmayı ilkinden farklı kılacağını düşünmektedir.",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
         },
         {
-          "text": "Kapanış saatinin uzatılması öğrencilerin sınav başarısını kesin olarak yükseltmiştir.",
+          "text": "Hiçbir sanatçı daha önce yaptığı bir eserin benzerini yeniden ortaya koyamaz.",
           "correct": false,
           "misconceptionId": "association-to-certain-success",
-          "feedback": "Metin ziyaret sayısını ve anket görüşünü verir; not başarısını ölçmez."
+          "feedback": "Parça bir ustanın yaklaşımını verir; bütün yaratıcılar için kesin hüküm kurmaz."
         },
         {
-          "text": "Saatlerin uzatılmasının öğrencilerin kütüphane kullanımına hiçbir etkisi olmamıştır.",
+          "text": "Ustanın yıllar içinde el becerisi azaldığı için nitelikli bir defter yapması artık mümkün değildir.",
           "correct": false,
           "misconceptionId": "reject-observed-association",
-          "feedback": "Not verisi yoktur fakat akşam kullanımındaki artış ve bazı öğrencilerin görüşü metinde açıkça vardır."
+          "feedback": "Ustanın “elim değişti” sözü deneyimle dönüşen üretim anlayışını anlatır."
         },
         {
-          "text": "Kapanış saatini uzatan bütün kütüphanelerde tüm öğrencilerin akşam kullanımı artar.",
+          "text": "Usta, müşteriden daha yüksek ücret alabilmek için işi olduğundan güç göstermektedir.",
           "correct": false,
           "misconceptionId": "expand-to-all-libraries",
-          "feedback": "Çıkarım metindeki yer, zaman ve örneklem sınırları içinde kalmalıdır."
+          "feedback": "Ustanın daha fazla ücret istemek ya da işi reddetmek için böyle söylediğine dair kanıt yoktur."
         }
       ],
-      "answerIndex": 0,
-      "answerText": "Uzatılan saatler, bazı öğrencilerin bu kütüphaneyi sınav ayında akşamları daha sık kullanmasına katkı sağlamış olabilir.",
+      "answerIndex": 1,
+      "answerText": "Usta, kazandığı deneyimin ikinci çalışmayı ilkinden farklı kılacağını düşünmektedir.",
       "hints": [
-        "Metinde sayılan gözlem ve katılımcıların yorumu aynı tür bilgi değildir.",
-        "Metinde ölçülmeyen sonuç hakkında kesin hüküm veren seçenekleri ele.",
-        "Seçenek başka okulları, bütün öğrencileri veya kalıcı sonuçları kapsıyor mu?"
+        "Müşterinin “aynı” dediği şeyle ustanın “aynı” saymadığı şeyi ayır.",
+        "“Elim artık o defteri yapan el değil” sözü yalnız fiziksel eli mi anlatıyor?",
+        "Seçenek metindeki ustanın düşüncesini mi çıkarıyor, yoksa herkese yayılan kesin bir kural mı koyuyor?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Akşam ziyaretlerinin arttığı doğrudan kayıttır; bunun öğrenciler için yararlı olduğu anket yanıtlarıyla sınırlı bir yorumdur."
+          "explanation": "Müşteri aynı defteri isterken usta, ikinci çalışmayı ilkinden sonra değişen eli nedeniyle birebir tekrar saymaz."
         },
         {
           "id": "s2",
-          "explanation": "Not başarısı ölçülmediği için uzatılmış saatlerin başarıyı kesin artırdığı söylenemez."
+          "explanation": "Ustanın sözü, deneyimin yapan kişiyi değiştirdiğini ve tekrarın ilk üretimden bağımsız olamayacağını düşündürür."
         },
         {
           "id": "s3",
-          "explanation": "Sonuç yalnız belirtilen kütüphane, sınav ayı ve ankete katılan bazı öğrenciler için desteklenir."
+          "explanation": "Doğru yargı ustanın ikinci ürünü birebir kopya saymadığını belirtir; bütün sanatçılar için kesin yasa kurmaz."
         }
       ],
-      "structuralId": "st:v2:df15fw",
-      "cognitiveExperienceId": "cx:v2:19lz5fu",
+      "structuralId": "st:v2:1v6lrhs",
+      "cognitiveExperienceId": "cx:v2:9623qa",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -129,57 +163,74 @@
       "itemModelId": "reading-claim-evidence-match-v2",
       "constructId": "construct-reading-claim-evidence-match",
       "queryType": "claim-evidence",
-      "context": "Araştırmacılar göç döneminde verici takılan 10 saz bülbülünü izledi; izlenen kuşlardan 8 tanesi Akgöl'de en az bir gece durdu. Aynı tarihlerde yapılan örneklemelerde alandaki böcek yoğunluğu çevredeki kuru bölgelere göre daha yüksekti. Sulak alanın bugünkü adı 1960'larda verilmiş, gözlem kulübesi ise geçen yıl yenilenmiştir.",
-      "prompt": "Aşağıdaki iddia–kanıt eşleştirmelerinden hangisi doğrudur?",
+      "surfaceProfile": {
+        "genre": "edebî-inceleme",
+        "voice": "nesnel-eleştirel",
+        "sourceMode": "özgün-kültür-yazısı",
+        "rhetoricalMoves": [
+          "alıntılama",
+          "karşılaştırma",
+          "örneklendirme"
+        ],
+        "stemFamily": "yargı-kanıt"
+      },
+      "context": "Kıyı dergisinin ilk sayılarındaki başyazılar, okurla konuşmaktan çok rakiplerle hesaplaşan bir tona sahiptir: “Bizden olmayan edebiyatın dışında kalacaktır.” gibi keskin cümleler sıkça yinelenir. On yıl sonraki başyazılarda ise aynı konular, “Bir eseri kendi imkânları içinde anlamadan hüküm vermemeliyiz.” türünden daha ölçülü ifadelerle ele alınır. Derginin kapak rengi bu yıllarda üç kez değişmiş, arşivi de başka bir binaya taşınmıştır.",
+      "prompt": "Aşağıdaki yargı–kanıt eşleştirmelerinden hangisi doğrudur?",
       "options": [
         {
-          "text": "İddia: Gözlem altyapısı yakın zamanda yenilenmiştir. Kanıt: İşaretli kuşların çoğu sulak alanda en az bir gece durmuştur.",
+          "text": "Yargı: Kıyı dergisinin dili zamanla daha ölçülü olmuştur. Kanıt: Dergi arşivi başka bir binaya taşınmıştır.",
           "correct": false,
-          "misconceptionId": "reverse-support-link",
-          "feedback": "Kanıt ile iddia arasındaki ilişki özel olmalıdır; her veri her iddiayı desteklemez."
+          "misconceptionId": "historical-detail-as-proof",
+          "feedback": "Arşivin taşınması, başyazıların üslubuyla ilgili değildir."
         },
         {
-          "text": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: İzlenen kuşlardan 8 tanesi burada durmuş ve bölgede besin yoğunluğu yüksek bulunmuştur.",
+          "text": "Yargı: Derginin arşivi başka bir binaya taşınmıştır. Kanıt: Sonraki başyazılarda daha ölçülü cümlelere yer verilmiştir.",
+          "correct": false,
+          "misconceptionId": "reverse-support-link",
+          "feedback": "Sonraki başyazılardaki ölçülü cümleler, arşivin taşındığını değil yayın dilinin değiştiğini destekler."
+        },
+        {
+          "text": "Yargı: Kıyı dergisinin dili zamanla daha ölçülü olmuştur. Kanıt: Dergi, ilk yıllardaki sert söyleyişini zaman içinde bırakmış ve daha sakin bir anlatıma yönelmiştir.",
+          "correct": false,
+          "misconceptionId": "claim-restatement-as-evidence",
+          "feedback": "Kanıt, iddiadan bağımsız bir gözlem ya da örnek sunmalıdır."
+        },
+        {
+          "text": "Yargı: Kıyı dergisinin dili zamanla daha ölçülü olmuştur. Kanıt: İlk ve sonraki dönem başyazılarındaki ifadeler farklı bir söyleyiş tutumu göstermektedir.",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
         },
         {
-          "text": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: Bölgede bir kuş gözlem kulübesi vardır.",
+          "text": "Yargı: Kıyı dergisinin dili zamanla daha ölçülü olmuştur. Kanıt: Derginin kapak rengi üç kez değiştirilmiştir.",
           "correct": false,
           "misconceptionId": "topic-overlap-as-evidence",
-          "feedback": "Bir ayrıntının kuşlarla ilgili olması yetmez; belirli iddiayı doğrudan desteklemesi gerekir."
-        },
-        {
-          "text": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: Sulak alanın bugünkü adı 1960'larda verilmiştir.",
-          "correct": false,
-          "misconceptionId": "historical-detail-as-proof",
-          "feedback": "Adın ne zaman verildiği, alanın göç durağı olarak kullanıldığını göstermez."
+          "feedback": "Derginin kapağıyla ilgili bilgi, yazı dilindeki dönüşümü göstermez."
         }
       ],
-      "answerIndex": 1,
-      "answerText": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: İzlenen kuşlardan 8 tanesi burada durmuş ve bölgede besin yoğunluğu yüksek bulunmuştur.",
+      "answerIndex": 3,
+      "answerText": "Yargı: Kıyı dergisinin dili zamanla daha ölçülü olmuştur. Kanıt: İlk ve sonraki dönem başyazılarındaki ifadeler farklı bir söyleyiş tutumu göstermektedir.",
       "hints": [
-        "Önce kanıtlanması istenen yargıyı tek cümleye indir.",
-        "Hangi veri kuşların orayı gerçekten kullandığını ve neden kullanabileceğini gösteriyor?",
-        "Kanıt çıkarıldığında iddia zayıflıyor mu? Zayıflamıyorsa o ayrıntı doğrudan kanıt değildir."
+        "Derginin fiziksel özellikleriyle yayın dilindeki değişimi birbirinden ayır.",
+        "Hangi ayrıntı iddiayı yalnız tekrarlamıyor, gözlenebilir bir karşılaştırma sunuyor?",
+        "Ayrıntı dergi hakkında olsa bile hedef yargıyı gerçekten destekliyor mu?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "İddia, sulak alanın göç sırasında önemli bir durak işlevi gördüğüdür."
+          "explanation": "Parça derginin ilk sayılarındaki tartışmacı dilin zamanla daha sakin ve çözümleyici bir dile dönüştüğünü ileri sürer."
         },
         {
           "id": "s2",
-          "explanation": "İşaretli kuşların çoğunun alanda durması ve besin yoğunluğunun yüksek olması durak işlevini doğrudan destekler."
+          "explanation": "İlk ve son dönem başyazılarından verilen ifade örnekleri, dil değişimini doğrudan gösterir."
         },
         {
           "id": "s3",
-          "explanation": "Alan adının geçmişi veya gözlem kulübesinin yapım yılı, göç durağı iddiasını kanıtlamaz."
+          "explanation": "Kapak rengi, arşivin taşınması ve okur sayısı dergiyle ilgilidir; ancak yayın dilinin değiştiğini kanıtlamaz."
         }
       ],
-      "structuralId": "st:v2:1woupal",
-      "cognitiveExperienceId": "cx:v2:ssz7mw",
+      "structuralId": "st:v2:17y6jyt",
+      "cognitiveExperienceId": "cx:v2:1b8cg7g",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -187,57 +238,74 @@
       "itemModelId": "reading-scope-certainty-control-v2",
       "constructId": "construct-reading-scope-certainty-control",
       "queryType": "scope-control",
-      "context": "Yelken Anadolu Lisesi'nde 120 dokuzuncu sınıf öğrencisi iki gruba ayrıldı. Aynı konuyu çalışan gruplardan biri tekrarları günlere yaydı, diğeri tek oturumda tamamladı. 2 hafta sonraki ölçümde aralıklı tekrar yapan grup ortalama olarak daha çok bilgiyi hatırladı. Çalışma başka okul veya sınıf düzeylerinde tekrarlanmadı.",
-      "prompt": "Araştırmanın kapsamına en uygun yorum hangisidir?",
+      "surfaceProfile": {
+        "genre": "bilimsel-popüler",
+        "voice": "nesnel-açıklayıcı",
+        "sourceMode": "sınırlı-araştırma",
+        "rhetoricalMoves": [
+          "karşılaştırma",
+          "sonuç",
+          "sınırlama"
+        ],
+        "stemFamily": "araştırma-yorumu"
+      },
+      "context": "Aydınlık Ortaokulundaki iki yedinci sınıfta aynı öykü kitabı okundu. Sınıflardan biri her bölümün ardından öğretmen yönetiminde kısa tartışmalar yaptı; diğer sınıf yalnız bireysel okuma notları tuttu. 6 hafta sonra uygulanan metni hatırlama çalışmasında tartışma yapan sınıfın ortalaması daha yüksek çıktı. Uygulama başka okul ve sınıf düzeylerinde denenmedi; grupların okul dışındaki okuma alışkanlıkları da karşılaştırılmadı.",
+      "prompt": "Bu araştırmanın sonuçlarına dayanılarak aşağıdakilerden hangisi söylenebilir?",
       "options": [
         {
-          "text": "Aralıklı tekrar yapan öğrenciler öğrendiklerini yaşamları boyunca unutmaz.",
-          "correct": false,
-          "misconceptionId": "temporary-to-permanent",
-          "feedback": "Çalışma yalnız iki hafta sonraki hatırlamayı ölçmüştür; kalıcı etki ölçülmemiştir."
-        },
-        {
-          "text": "Gruplar arasındaki farkın tek nedeni tekrarların günlere yayılmasıdır.",
-          "correct": false,
-          "misconceptionId": "single-cause-certainty",
-          "feedback": "Araştırma bulgusu yöntemin etkili olabileceğini destekler; bütün diğer etkenlerin dışlandığını göstermez."
-        },
-        {
-          "text": "Aralıklı tekrar, bu okuldaki dokuzuncu sınıf öğrencilerinin 2 hafta sonraki hatırlamasını artırmış olabilir.",
+          "text": "Bölüm sonu tartışmaları, bu okuldaki iki sınıfın 6 hafta sonraki metin hatırlamasına katkı sağlamış olabilir.",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
         },
         {
-          "text": "Aralıklı tekrar bütün öğrencilerde öğrenmeyi kesin olarak artırır.",
+          "text": "Okudukları metinleri sınıfta tartışan bütün öğrenciler, okul türü ve yaşları ne olursa olsun her derste ve her koşulda daha başarılı olur.",
           "correct": false,
           "misconceptionId": "universalize-single-school",
-          "feedback": "Tek okul ve tek sınıf düzeyinden bütün öğrenciler için evrensel sonuç çıkarılamaz."
+          "feedback": "Araştırma yalnız bir okuldaki iki sınıfla sınırlıdır."
+        },
+        {
+          "text": "Tartışma yöntemiyle okuyan öğrenciler öğrendikleri hiçbir metni yaşamları boyunca unutmaz.",
+          "correct": false,
+          "misconceptionId": "temporary-to-permanent",
+          "feedback": "Çalışma yaşam boyu okuma alışkanlığını ölçmemiştir."
+        },
+        {
+          "text": "İki sınıf arasındaki farkın tek nedeni bölüm sonu tartışmalarıdır.",
+          "correct": false,
+          "misconceptionId": "single-cause-certainty",
+          "feedback": "Gruplar arasındaki bütün farklılıkların dışlandığı belirtilmemiştir."
+        },
+        {
+          "text": "Çalışma yalnız iki sınıfta yapıldığı için tartışma grubunda görülen farkın hiçbir anlamı yoktur.",
+          "correct": false,
+          "misconceptionId": "dismiss-limited-evidence",
+          "feedback": "Kapsamın sınırlı olması, incelenen öğrencilerdeki bulguyu yok saymayı gerektirmez."
         }
       ],
-      "answerIndex": 2,
-      "answerText": "Aralıklı tekrar, bu okuldaki dokuzuncu sınıf öğrencilerinin 2 hafta sonraki hatırlamasını artırmış olabilir.",
+      "answerIndex": 0,
+      "answerText": "Bölüm sonu tartışmaları, bu okuldaki iki sınıfın 6 hafta sonraki metin hatırlamasına katkı sağlamış olabilir.",
       "hints": [
-        "Kimler, nerede ve ne kadar süreyle incelenmiş?",
-        "“Her zaman”, “bütün öğrenciler” ve “tek neden” ifadelerini özellikle denetle.",
-        "Seçenekteki kişi grubu ve zaman aralığı metindekinden daha geniş mi?"
+        "Yer, öğrenci grubu ve süre sınırlarını ayrı ayrı not et.",
+        "Seçenek metinde ölçülmeyen hangi sonucu ekliyor?",
+        "“Bu öğrencilerde” ile “bütün öğrencilerde” arasındaki farkı gözet."
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Çalışma tek okulda 120 dokuzuncu sınıf öğrencisiyle ve iki haftalık hatırlama ölçümüyle sınırlıdır."
+          "explanation": "Çalışma tek bir okulun iki sınıfında ve altı haftalık bir dönemde yürütülmüştür."
         },
         {
           "id": "s2",
-          "explanation": "Aralıklı tekrar grubunun daha çok hatırlaması bu örneklem için güçlü bir bulgudur; bütün öğrenciler ve kalıcı etki için yeterli değildir."
+          "explanation": "Ölçülen sonuç altı hafta sonundaki metin hatırlamadır; yaşam boyu okuma alışkanlığı ya da bütün derslerde başarı değildir."
         },
         {
           "id": "s3",
-          "explanation": "Doğru yorum yalnız incelenen okulun dokuzuncu sınıfları ve iki haftalık dönem için olasılıklı bir sonuç bildirir."
+          "explanation": "Doğru yorum, tartışma grubunun bu örneklemde daha yüksek hatırlama göstermesini kabul eder fakat evrenselleştirmez."
         }
       ],
-      "structuralId": "st:v2:1tp7dcu",
-      "cognitiveExperienceId": "cx:v2:hbxeyu",
+      "structuralId": "st:v2:1ip0i1a",
+      "cognitiveExperienceId": "cx:v2:mit6oj",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -245,57 +313,74 @@
       "itemModelId": "reading-author-purpose-v2",
       "constructId": "construct-reading-author-purpose",
       "queryType": "purpose",
-      "context": "Bağpınar'da kurulan yerel tohum arşivinde bölgede uzun süredir yetiştirilen 46 çeşit kayıt altına alındı. Her örnek, yetiştiği yer ve özellikleriyle birlikte saklanıyor; böylece kuraklık ya da hastalık gibi koşullara dayanıklı çeşitlerin kaybolması önlenmeye çalışılıyor. Arşiv ekibi, elinde eski yerel tohum bulunanları cumartesi günü düzenlenecek kayıt buluşmasına çağırıyor.",
-      "prompt": "Yazarın bu parçayı yazmaktaki temel amacı nedir?",
+      "surfaceProfile": {
+        "genre": "eleştirel-deneme",
+        "voice": "birinci-çoğul-sorgulayıcı",
+        "sourceMode": "özgün-kültür-yazısı",
+        "rhetoricalMoves": [
+          "örnekleme",
+          "karşıtlık",
+          "retorik-soru"
+        ],
+        "stemFamily": "yazılış-amacı"
+      },
+      "context": "Eski bir mahalle çeşmesini onarıyor, taşlarını temizliyor, kitabesini okunur hâle getiriyoruz; sonra da musluğunu söküp önüne küçük bir zincir çekiyoruz. Böylece yapıyı koruduğumuzu düşünüyoruz. Oysa o çeşmeyi mahalle belleğinin parçası yapan yalnızca yaşı ve süslemeleri değildi; insanların önünde durması, su içmesi, birbirine yol sormasıydı. Bir yapıyı hayattan çekip yalnız seyredilecek bir nesneye dönüştürmek, onu korumak mıdır, yoksa sessizce başka bir şeye çevirmek mi?",
+      "prompt": "Yazarın bu parçayı kaleme alma amacı aşağıdakilerden hangisidir?",
       "options": [
         {
-          "text": "Yalnızca arşivde kaç çeşit tohum bulunduğunu bildirmek",
-          "correct": false,
-          "misconceptionId": "information-only-purpose",
-          "feedback": "Metnin sonundaki kayıt gününe katılım çağrısı temel amacın bir parçasıdır."
-        },
-        {
-          "text": "Yerel tohumlarla ilgili eğlenceli bir olay anlatmak",
-          "correct": false,
-          "misconceptionId": "entertainment-purpose",
-          "feedback": "Metin olay örgüsü kurmuyor; süreç açıklıyor ve okuru bir davranışa yönlendiriyor."
-        },
-        {
-          "text": "Bölgedeki çiftçileri eski tohumları korumadıkları için eleştirmek",
+          "text": "Mahalle sakinlerini tarihî yapılara yeterince sahip çıkmadıkları için suçlamak",
           "correct": false,
           "misconceptionId": "criticism-purpose",
-          "feedback": "Metinde çiftçilere veya kurumlara yönelik bir suçlama yoktur."
+          "feedback": "Metinde çeşmeleri kullanan insanlara yönelik bir suçlama yoktur."
         },
         {
-          "text": "Yerel tohum arşivinin önemini açıklamak ve okurları çeşitlerin korunmasına katkı vermeye yöneltmek",
+          "text": "Onarılan çeşmelerin kente daha fazla turist çekebileceğini göstermek",
+          "correct": false,
+          "misconceptionId": "commercial-purpose",
+          "feedback": "Parça ziyaretçi çekme ya da ekonomik kazanç amacı taşımaz."
+        },
+        {
+          "text": "Kültürel mirası korumanın yalnız dış görünüşü yenilemek değil, yapının yaşam içindeki işlevini de sürdürmek olduğunu düşündürmek",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
+        },
+        {
+          "text": "Tarihî çeşmelerin mimari özellikleri ve onarım aşamaları hakkında bilgi vermek",
+          "correct": false,
+          "misconceptionId": "information-only-purpose",
+          "feedback": "Metin tarihî bilgi sıralamıyor; belirli bir koruma anlayışına karşı çıkıyor."
+        },
+        {
+          "text": "Çeşme başında kurulan eski mahalle ilişkilerine duyulan özlemi canlandırmak ve okuru geçmişin daha sıcak bir yaşam sunduğuna inandırmak",
+          "correct": false,
+          "misconceptionId": "entertainment-purpose",
+          "feedback": "Yazar geçmişi anmakla yetinmiyor, bugünkü onarım uygulamasını sorguluyor."
         }
       ],
-      "answerIndex": 3,
-      "answerText": "Yerel tohum arşivinin önemini açıklamak ve okurları çeşitlerin korunmasına katkı vermeye yöneltmek",
+      "answerIndex": 2,
+      "answerText": "Kültürel mirası korumanın yalnız dış görünüşü yenilemek değil, yapının yaşam içindeki işlevini de sürdürmek olduğunu düşündürmek",
       "hints": [
-        "Yazar hangi bilgileri özellikle seçmiş: tarih, eğlence, eleştiri yoksa koruma süreci mi?",
-        "Metnin sonunda okura yöneltilen somut çağrıyı bul.",
-        "Doğru seçenek hem açıklama bölümünü hem de çağrı bölümünü kapsıyor mu?"
+        "Parçada onarımın hangi yönü yetersiz bulunuyor?",
+        "Yazar için bir yapıyı “yaşatan” şey yalnız taşları mı, yoksa kullanım biçimi mi?",
+        "Doğru seçenek yazarın okurda oluşturmak istediği düşünsel değişimi veriyor mu?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Metin yerel tohumların nasıl saklandığını ve neden çeşitlilik için önemli olduğunu açıklar."
+          "explanation": "Yazar, tarihî çeşmelerin dış görünüşü onarılırken su verme işlevinin ortadan kaldırılmasını eleştirir."
         },
         {
           "id": "s2",
-          "explanation": "Son cümlede okurlar, ellerindeki yerel tohumları kayıt gününe getirmeye çağrılır."
+          "explanation": "Bir yapının yalnız görüntüsünün değil, yaşam içindeki işlevinin de kültürel mirasın parçası olduğu savunulur."
         },
         {
           "id": "s3",
-          "explanation": "Amaç yalnız bilgi vermek değil, yerel çeşitlerin korunmasına katılımı da artırmaktır."
+          "explanation": "Amaç çeşmeler hakkında bilgi vermekten ya da nostalji oluşturmaktan çok, koruma anlayışını sorgulatmaktır."
         }
       ],
-      "structuralId": "st:v2:1ussvyw",
-      "cognitiveExperienceId": "cx:v2:1t8xvt6",
+      "structuralId": "st:v2:j73lzj",
+      "cognitiveExperienceId": "cx:v2:vvcs8r",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -303,57 +388,74 @@
       "itemModelId": "reading-author-attitude-v2",
       "constructId": "construct-reading-author-attitude",
       "queryType": "attitude",
-      "context": "Eski tren garının kültür merkezine dönüştürülmesi sevindirici. Yıllardır kapalı kalan bir yapının kent yaşamına dönmesi, belleğin korunması açısından değerli. Ancak projenin gerçek bir başarı sayılabilmesi için özgün mimari ayrıntıların korunması ve yapının yalnız ticari işletmelere ayrılmaması gerekir.",
-      "prompt": "Yazarın projeye yönelik tutumu aşağıdakilerden hangisidir?",
+      "surfaceProfile": {
+        "genre": "kitap-eleştirisi",
+        "voice": "üçüncü-tekil-değerlendirici",
+        "sourceMode": "özgün-edebî-eleştiri",
+        "rhetoricalMoves": [
+          "örneklendirme",
+          "övgü",
+          "sınırlama"
+        ],
+        "stemFamily": "tutum"
+      },
+      "context": "Kuyudaki Sesler, daha ilk sayfalarda kasabanın ağır sessizliğini okura duyurmayı başarıyor. Yazar, görünüşte önemsiz ayrıntıları öyle yerli yerinde kullanıyor ki kapı gıcırtıları, yarım bırakılmış cümleler ve boş meydan, romanın kişilerinden biri hâline geliyor. Ne var ki bu canlı atmosferin içinde yan kişiler fazla silik kalmış; çoğu, ana kahramanın düşüncelerini doğrulamak için kısa süreliğine sahneye çıkarılmış gibi. Romanın dili ustalıklı, dünyası etkileyici; fakat insanları, mekânları kadar derin değil.",
+      "prompt": "Bu parçada sözü edilen romana yönelik tutum aşağıdakilerden hangisidir?",
       "options": [
         {
-          "text": "Projeyi olumlu bulmakla birlikte başarısını koruma koşullarına bağlayan temkinli bir tutum",
+          "text": "Romanın dilini, atmosferini ve bütün kişilerini aynı ölçüde başarılı ve kusursuz bulan, hiçbir eleştiri taşımayan koşulsuz bir hayranlık",
+          "correct": false,
+          "misconceptionId": "unconditional-praise",
+          "feedback": "Yazar yan kişilerin işlenişini açık bir eksiklik olarak görüyor."
+        },
+        {
+          "text": "Eseri dil ve kurgu bakımından bütünüyle başarısız sayan küçümseyici bir yaklaşım",
+          "correct": false,
+          "misconceptionId": "pure-opposition",
+          "feedback": "Romanın dili ve atmosferi güçlü biçimde övülmektedir."
+        },
+        {
+          "text": "Romanla ilgili hiçbir değer yargısı içermeyen tarafsız bir aktarım",
+          "correct": false,
+          "misconceptionId": "neutral-reporting",
+          "feedback": "“Ustalık”, “canlı”, “eksiklik” gibi sözcükler açık değerlendirme taşır."
+        },
+        {
+          "text": "Yazarın kişiliğine ve yaşamına karşı kuşkulu bir yaklaşım",
+          "correct": false,
+          "misconceptionId": "author-biography-focus",
+          "feedback": "Parça romancının kişiliğini değil, romanın anlatım ve kişi kurulumunu değerlendirir."
+        },
+        {
+          "text": "Anlatım ve atmosferdeki başarısını takdir eden ancak kişi kurulumunu yetersiz bulan dengeli bir tutum",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
-        },
-        {
-          "text": "Projeyi hiçbir çekince taşımadan bütünüyle öven bir tutum",
-          "correct": false,
-          "misconceptionId": "unconditional-praise",
-          "feedback": "Yazar projeyi destekliyor fakat başarıyı belirli koruma koşullarına bağlıyor."
-        },
-        {
-          "text": "Yapının yeniden kullanılmasına bütünüyle karşı çıkan bir tutum",
-          "correct": false,
-          "misconceptionId": "pure-opposition",
-          "feedback": "Metin yeniden kullanımı sevindirici buluyor; yalnız uygulamanın niteliğine dikkat çekiyor."
-        },
-        {
-          "text": "Projeyle ilgili hiçbir değerlendirme içermeyen tarafsız bir tutum",
-          "correct": false,
-          "misconceptionId": "neutral-reporting",
-          "feedback": "“Sevindirici” ve “başarı sayılabilmesi” ifadeleri açık değerlendirme içerir."
         }
       ],
-      "answerIndex": 0,
-      "answerText": "Projeyi olumlu bulmakla birlikte başarısını koruma koşullarına bağlayan temkinli bir tutum",
+      "answerIndex": 4,
+      "answerText": "Anlatım ve atmosferdeki başarısını takdir eden ancak kişi kurulumunu yetersiz bulan dengeli bir tutum",
       "hints": [
-        "Metindeki olumlu yargı bildiren sözcükleri işaretle.",
-        "“Ancak”, “başarı sayılabilmesi için” gibi sınırlama bildiren bölümlere bak.",
-        "Seçenek hem memnuniyeti hem de çekinceyi taşıyor mu?"
+        "Eserin hangi özellikleri açıkça beğeniliyor?",
+        "“Ne var ki” sonrasında eserin hangi yönü yetersiz bulunuyor?",
+        "Seçenek hem takdiri hem de eleştiriyi taşıyor mu?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Yazar yapının yeniden kullanılmasını sevindirici ve değerli bir gelişme olarak görür."
+          "explanation": "Yazar romanın dili, atmosferi ve ayrıntı seçimini güçlü bulur."
         },
         {
           "id": "s2",
-          "explanation": "Yazar başarının, özgün ayrıntıların korunmasına ve yapının yalnız ticari kullanıma bırakılmamasına bağlı olduğunu söyler."
+          "explanation": "Yan kişilerin yalnız ana kahramanın düşüncesini doğrulayan araçlar gibi kalması önemli bir eksiklik sayılır."
         },
         {
           "id": "s3",
-          "explanation": "Tutum ne koşulsuz övgü ne de bütünüyle karşı çıkıştır; olumlu fakat temkinlidir."
+          "explanation": "Yazar ne eseri bütünüyle över ne de değersiz bulur; güçlü yanlarını teslim ederek belirgin bir kusuru eleştirir."
         }
       ],
-      "structuralId": "st:v2:b51lqh",
-      "cognitiveExperienceId": "cx:v2:9344c3",
+      "structuralId": "st:v2:rmcr2z",
+      "cognitiveExperienceId": "cx:v2:1aus8in",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -361,57 +463,74 @@
       "itemModelId": "reading-contrast-relation-v2",
       "constructId": "construct-reading-contrast-relation",
       "queryType": "contrast",
-      "context": "Kıyıkent'te trafik sıkışıklığına çözüm olarak bazı uzmanlar ana yolların genişletilmesini öneriyor. Bu yöntem ilk aylarda akışı rahatlatabilse de yeni araç kullanımını teşvik ederek yoğunluğu yeniden artırabiliyor. Buna karşılık toplu taşıma sıklığını ve güvenli yaya bağlantılarını artırmak, yol kapasitesini büyütmeden özel araç bağımlılığını azaltmayı hedefliyor.",
-      "prompt": "Parçada iki yaklaşım arasındaki temel karşıtlık nasıl kurulmuştur?",
+      "surfaceProfile": {
+        "genre": "düşünce-yazısı",
+        "voice": "nesnel-karşılaştırıcı",
+        "sourceMode": "özgün-dil-incelemesi",
+        "rhetoricalMoves": [
+          "tanımlama",
+          "karşılaştırma",
+          "benzetme"
+        ],
+        "stemFamily": "karşıtlık"
+      },
+      "context": "Çeviride sadakat denince iki ayrı yol beliriyor. Birine göre çevirmen, metnin sözcüklerinden ve cümle düzeninden mümkün olduğunca ayrılmamalıdır; çünkü yazarın seçimi en küçük dil biriminde bile görünür. Ötekine göre ise sözcüklere bu ölçüde bağlanmak, metnin sesini öldürebilir. Bu görüşü savunanlar, aynı etkiyi başka araçlarla kurmayı ihanet değil, asıl sadakat sayar. İlki metnin ayak izlerini tek tek korumaya, ikincisi yürüyüşünü yeniden duyurmaya çalışır.",
+      "prompt": "Bu parçada karşılaştırılan iki yaklaşım arasındaki temel ayrım aşağıdakilerden hangisidir?",
       "options": [
         {
-          "text": "Yol genişletme ucuz, toplu taşıma ise pahalı olduğu için iki yaklaşım birbirine karşıttır.",
+          "text": "Birinci yaklaşım çeviriyi gereksiz bulurken ikinci yaklaşım bütün eserlerin çevrilmesini ister.",
           "correct": false,
-          "misconceptionId": "change-comparison-dimension",
-          "feedback": "Parçada maliyet karşılaştırması yapılmıyor; trafik etkisinin süresi ve araç bağımlılığı tartışılıyor."
+          "misconceptionId": "false-total-opposition",
+          "feedback": "İki yaklaşım da çeviriyi mümkün görür; yalnız yöntem anlayışları ayrıdır."
         },
         {
-          "text": "Yol genişletme kısa süreli rahatlama sağlayabilirken toplu taşıma ve yaya bağlantıları araç talebini azaltmaya yönelir.",
+          "text": "Birinci yaklaşım sadakati sözcük ve yapıya bağlılıkta, ikinci yaklaşım metnin sesini ve etkisini yeniden kurmakta görür.",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
         },
         {
-          "text": "Toplu taşıma yalnız kısa süreli rahatlama sağlarken yol genişletme araç bağımlılığını kalıcı olarak azaltır.",
+          "text": "Birinci yaklaşım metnin etkisini özgürce yeniden kurmayı, ikinci yaklaşım sözcüklere bağlı kalmayı savunur.",
           "correct": false,
           "misconceptionId": "reverse-contrast-direction",
-          "feedback": "Metin kalıcı etkiyi yol genişletmeye değil, araç bağımlılığını azaltan yaklaşıma bağlar."
+          "feedback": "Sözcük düzenine bağlılık ilk, ses ve etkiyi koruma ikinci görüşe aittir."
         },
         {
-          "text": "Her iki yaklaşım da yalnız mevcut yolların kapasitesini artırmayı amaçlar.",
+          "text": "İki yaklaşım da sadakatin yalnız cümle yapısını değiştirmemekle sağlanacağını ileri sürer.",
           "correct": false,
           "misconceptionId": "erase-contrast",
-          "feedback": "“Buna karşılık” bağlacı iki farklı çözüm mantığını açıkça ayırır."
+          "feedback": "İki görüş sadakati farklı ölçütlerle tanımlar."
+        },
+        {
+          "text": "İlk yaklaşım hızlı, ikinci yaklaşım yavaş çeviri yapmanın daha başarılı olduğunu savunur.",
+          "correct": false,
+          "misconceptionId": "change-comparison-dimension",
+          "feedback": "Parçada çevirinin süresi ya da kolaylığı üzerinde durulmaz."
         }
       ],
       "answerIndex": 1,
-      "answerText": "Yol genişletme kısa süreli rahatlama sağlayabilirken toplu taşıma ve yaya bağlantıları araç talebini azaltmaya yönelir.",
+      "answerText": "Birinci yaklaşım sadakati sözcük ve yapıya bağlılıkta, ikinci yaklaşım metnin sesini ve etkisini yeniden kurmakta görür.",
       "hints": [
-        "“Buna karşılık” bağlacının iki yanında hangi çözümler bulunuyor?",
-        "İki yaklaşımın kısa ve uzun vadeli etkilerini ayrı yaz.",
-        "Seçenekte hangi yaklaşımın kısa, hangisinin uzun vadeli sayıldığı doğru mu?"
+        "“Birine göre” ve “ötekine göre” bölümlerini ayrı birer yargı hâline getir.",
+        "Görüşler farklı konulardan mı söz ediyor, yoksa aynı kavramı farklı mı tanımlıyor?",
+        "Sözcüğe bağlılık ile etkiye bağlılık doğru görüşe mi yerleştirilmiş?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Metin yol genişletme ile toplu taşıma ve yaya bağlantılarını güçlendirme yaklaşımlarını karşılaştırır."
+          "explanation": "Bir yaklaşım sözcük ve söz dizimine bağlılığı, diğeri metnin sesini ve okurda bıraktığı etkiyi yeniden kurmayı öne çıkarır."
         },
         {
           "id": "s2",
-          "explanation": "İlk yaklaşım kısa süreli rahatlama fakat yeniden yoğunluk; ikinci yaklaşım araç bağımlılığını azaltan daha kalıcı çözüm olarak sunulur."
+          "explanation": "İki görüş de çeviride sadakati tartışır; ayrılık, sadakatin neye gösterileceğindedir."
         },
         {
           "id": "s3",
-          "explanation": "Doğru seçenek, kısa süreli kapasite artışı ile talebi azaltmaya dönük kalıcı yaklaşımı ters çevirmeden verir."
+          "explanation": "Doğru seçenek ilk görüşü biçime, ikinciyi ses ve etkiye bağlı sadakat olarak verir."
         }
       ],
-      "structuralId": "st:v2:v1ayrc",
-      "cognitiveExperienceId": "cx:v2:prs3n6",
+      "structuralId": "st:v2:1khdbnm",
+      "cognitiveExperienceId": "cx:v2:1qxmqgn",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -419,57 +538,74 @@
       "itemModelId": "reading-paragraph-function-v2",
       "constructId": "construct-reading-paragraph-function",
       "queryType": "paragraph-function",
-      "context": "Kent Belleği Müzesi'nde yapılan gözlemler, ziyaretçilerin birçok eserin etiketine yalnız birkaç saniye baktığını gösterdi. Çıkış görüşmelerinde ziyaretçilerin önemli bir bölümü eserlerin bağlamına ilişkin temel bilgileri hatırlayamadı.\n\nBunun üzerine bazı salonlarda, etiketlerin yanına cevabı metinde bulunan kısa sorular eklendi. 6 haftalık denemede bu kartları kullanan ziyaretçilerin etiketlerin önünde daha uzun kaldığı ve çıkış sorularına daha ayrıntılı cevap verdiği görüldü.",
-      "prompt": "İkinci paragrafın metnin bütünündeki işlevi nedir?",
+      "surfaceProfile": {
+        "genre": "iki-paragraflı-eleştiri",
+        "voice": "açıklayıcı-örnekleyici",
+        "sourceMode": "özgün-müze-yazısı",
+        "rhetoricalMoves": [
+          "sorun",
+          "uygulama-örneği",
+          "sonuç"
+        ],
+        "stemFamily": "paragraf-işlevi"
+      },
+      "context": "Müzelerde bazen nesneden önce açıklama levhasını okuruz. Uzun metinler, neye bakacağımızı ve ne düşüneceğimizi baştan söylediğinde vitrindeki eşya yalnız yazının kanıtına dönüşür. Bilgi vermek isterken merakı ortadan kaldıran bu tutum, ziyaretçiyi dikkatli bir gözlemci olmaktan çıkarabilir.\n\nKent Müzesi, yeni sergisinde levhaları birkaç kısa soruyla sınırladı: “Bu kap neden tek kulplu?”, “Üzerindeki aşınma size ne söylüyor?” Ziyaretçiler önce nesneyi inceleyip kendi tahminlerini yaptı, ayrıntılı bilgiye ise daha sonra açılan bölümlerden ulaştı. Sergi sonunda yapılan görüşmelerde pek çok kişi, eşyalara eskisinden daha uzun süre baktığını belirtti.",
+      "prompt": "İkinci paragrafın metnin bütünü içindeki işlevi aşağıdakilerden hangisidir?",
       "options": [
         {
-          "text": "Müze konusundan bağımsız bir eğitim uygulaması örneği vermek",
+          "text": "Müzelerde sergilenen kapların tarihsel özellikleri hakkında bağımsız bilgi vermek",
           "correct": false,
-          "misconceptionId": "unrelated-example-function",
-          "feedback": "Kart uygulaması doğrudan etiketlerin okunmaması sorununa karşı geliştirilmiştir."
+          "misconceptionId": "unrelated-detail",
+          "feedback": "İki paragraf da açıklama levhalarının ziyaretçi deneyimine etkisini ele alır."
         },
         {
-          "text": "Müzenin kuruluş sürecine ilişkin tarihsel arka plan sunmak",
+          "text": "İlk paragraftaki eleştirinin bütünüyle yanlış olduğunu kanıtlamak",
           "correct": false,
-          "misconceptionId": "historical-background-function",
-          "feedback": "İkinci paragraf geçmiş bilgi vermiyor; güncel bir deneme ve sonucunu açıklıyor."
+          "misconceptionId": "reverse-function",
+          "feedback": "Örnek, levhaların her kullanımına değil, ziyaretçiyi yöneten kullanımına getirilen eleştiriyi destekler."
         },
         {
-          "text": "İlk paragrafta belirtilen soruna yönelik bir çözüm denemesini ve sonucunu sunmak",
+          "text": "Müze açıklama levhalarının geçmişten günümüze gelişimini anlatmak",
+          "correct": false,
+          "misconceptionId": "historical-background",
+          "feedback": "İkinci paragraf geçmiş bilgisi vermiyor; alternatif tasarımın sonucunu gösteriyor."
+        },
+        {
+          "text": "İlk paragrafta eleştirilen uygulamaya alternatif bir yöntem sunup bu yöntemin sonucunu örneklemek",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
         },
         {
-          "text": "Ziyaretçilerin etiketleri okumama sorununu aynı biçimde yeniden açıklamak",
+          "text": "İlk paragraftaki eleştiriyi hiçbir yeni yön eklemeden farklı sözcüklerle yinelemek",
           "correct": false,
-          "misconceptionId": "repeat-problem-as-function",
-          "feedback": "Sorun ilk paragraftadır; ikinci paragraf uygulama ve sonuç getirir."
+          "misconceptionId": "repeat-problem",
+          "feedback": "İkinci paragraf farklı bir uygulama göstererek eleştiriyi tekrarlamakla kalmaz."
         }
       ],
-      "answerIndex": 2,
-      "answerText": "İlk paragrafta belirtilen soruna yönelik bir çözüm denemesini ve sonucunu sunmak",
+      "answerIndex": 3,
+      "answerText": "İlk paragrafta eleştirilen uygulamaya alternatif bir yöntem sunup bu yöntemin sonucunu örneklemek",
       "hints": [
-        "Birinci paragraf hangi eksikliği veya sorunu görünür kılıyor?",
-        "İkinci paragraf yalnız örnek mi veriyor, yoksa soruna yönelik bir uygulama ve sonuç mu sunuyor?",
-        "İkinci paragraf çıkarıldığında metindeki hangi problem–çözüm bağlantısı kaybolur?"
+        "İlk paragraf hangi genel sorunu dile getiriyor?",
+        "İkinci paragraf yalnız yeni bilgi mi ekliyor, yoksa ilk soruna bir çözüm örneği mi getiriyor?",
+        "Doğru seçenek “örnek”, “çözüm” ve “ilk düşünceyi geliştirme” ilişkilerinden hangisini birlikte taşıyor?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "İlk paragraf ziyaretçilerin eser etiketlerini okumadan geçmesi ve bilgiyi hatırlamaması sorununu tanımlar."
+          "explanation": "İlk paragraf, açıklama levhalarının nesnenin önüne geçerek bakma deneyimini yönettiğini savunur."
         },
         {
           "id": "s2",
-          "explanation": "İkinci paragraf kısa sorular içeren kartların denenmesini ve bu uygulamanın gözlenen sonucunu açıklar."
+          "explanation": "İkinci paragraf, kısa ve soru biçimindeki levhaların kullanıldığı bir uygulamayı örnekleyerek soruna alternatif sunar."
         },
         {
           "id": "s3",
-          "explanation": "İkinci paragraf, ilk paragraftaki soruna yönelik çözüm denemesini ve bu denemenin etkisini sunar."
+          "explanation": "İkinci paragraf, ilk paragraftaki eleştiriyi somut bir karşı uygulamayla geliştirir."
         }
       ],
-      "structuralId": "st:v2:4co0ga",
-      "cognitiveExperienceId": "cx:v2:5l24sg",
+      "structuralId": "st:v2:810no2",
+      "cognitiveExperienceId": "cx:v2:h2xu7h",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -477,57 +613,74 @@
       "itemModelId": "reading-necessary-assumption-v2",
       "constructId": "construct-reading-necessary-assumption",
       "queryType": "assumption",
-      "context": "Çınarlı'ya 12 ücretsiz su dolum istasyonu yerleştirildikten sonraki üç ayda, istasyonların yakınındaki büfelerde tek kullanımlık su şişesi satışı önceki yılın aynı dönemine göre yüzde 18 azaldı. Belediye bu veriye dayanarak istasyonların bölgede tek kullanımlık plastik tüketimini azalttığını açıkladı.",
-      "prompt": "Belediyenin çıkarımının geçerli olabilmesi için aşağıdakilerden hangisinin varsayılması gerekir?",
+      "surfaceProfile": {
+        "genre": "kısa-olay-yazısı",
+        "voice": "üçüncü-tekil-anlatıcı",
+        "sourceMode": "özgün-gündelik-gözlem",
+        "rhetoricalMoves": [
+          "önce-sonra",
+          "alıntı",
+          "çıkarım"
+        ],
+        "stemFamily": "zorunlu-varsayım"
+      },
+      "context": "İskele Kütüphanesinde şiir kitapları yıllardır arka koridorun alt raflarında duruyordu. Kütüphane yönetimi bu kitapları girişe yakın, göz hizasındaki raflara taşıdı. Sonraki iki ayda şiir kitaplarının ödünç alınma sayısı önceki iki aya göre belirgin biçimde arttı. Müdür, “Demek ki okur şiirden uzak değildi; şiir okurun gözünden uzaktı.” diyerek artışı yeni yerleşime bağladı.",
+      "prompt": "Kütüphane müdürünün çıkarımı aşağıdaki varsayımlardan hangisine dayanır?",
       "options": [
         {
-          "text": "Bölge sakinlerinin çoğu çevreyi korumayı önemli bulmaktadır.",
-          "correct": false,
-          "misconceptionId": "desirable-but-not-necessary",
-          "feedback": "Bir varsayım yalnız yararlı değil zorunlu olmalıdır; yanlış olduğunda çıkarım çökmelidir."
-        },
-        {
-          "text": "Büfelerdeki şişe satışı yüzde 18 azalmıştır.",
-          "correct": false,
-          "misconceptionId": "repeat-explicit-evidence",
-          "feedback": "Satış düşüşü zaten metinde verilmiştir; soru kanıt ile sonuç arasındaki eksik bağlantıyı sorar."
-        },
-        {
-          "text": "Dolum istasyonlarının tamamı aynı renkte tasarlanmıştır.",
-          "correct": false,
-          "misconceptionId": "irrelevant-operational-detail",
-          "feedback": "İstasyonların rengi veya tasarımı, satış verisinin plastik tüketimini temsil edip etmediğini belirlemez."
-        },
-        {
-          "text": "Yakındaki büfelerin şişe satışları, bölgede kullanılan tek kullanımlık su şişesi miktarını anlamlı ölçüde yansıtmaktadır.",
+          "text": "Aynı dönemde şiir kitaplarının ödünç alınmasını özellikle artırabilecek başka önemli bir uygulama yapılmamıştır.",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
+        },
+        {
+          "text": "Kütüphaneye gelen bütün okurlar aslında şiir okumayı sevmektedir.",
+          "correct": false,
+          "misconceptionId": "desirability-as-assumption",
+          "feedback": "Ödünç artışı için bütün okurların şiiri sevmesi gerekmez."
+        },
+        {
+          "text": "Ödünç alınan her şiir kitabı okurlar tarafından son sayfasına kadar okunmuştur.",
+          "correct": false,
+          "misconceptionId": "outcome-equivalence",
+          "feedback": "Yöneticinin iddiası ödünç sayısıyla ilgilidir; kitapların bitirilmesi gerekli değildir."
+        },
+        {
+          "text": "Göz hizasına yerleştirilen her kitap, konusu ne olursa olsun daha çok ödünç alınır.",
+          "correct": false,
+          "misconceptionId": "universal-rule-as-assumption",
+          "feedback": "Bu kütüphanedeki açıklama, her kitap ve her raf için evrensel yasa gerektirmez."
+        },
+        {
+          "text": "Şiir kitaplarının ödünç sayısındaki artış bundan sonra hiç azalmadan sürecektir.",
+          "correct": false,
+          "misconceptionId": "duration-as-assumption",
+          "feedback": "İddia yalnız gözlenen dönemdeki artışı açıklamaktadır."
         }
       ],
-      "answerIndex": 3,
-      "answerText": "Yakındaki büfelerin şişe satışları, bölgede kullanılan tek kullanımlık su şişesi miktarını anlamlı ölçüde yansıtmaktadır.",
+      "answerIndex": 0,
+      "answerText": "Aynı dönemde şiir kitaplarının ödünç alınmasını özellikle artırabilecek başka önemli bir uygulama yapılmamıştır.",
       "hints": [
-        "Metindeki ölçülen veri ile ulaşılan genel sonuç aynı şeyi mi ifade ediyor?",
-        "Büfe satışı, hangi görünmeyen davranışın göstergesi olarak kullanılıyor?",
-        "Seçenekteki varsayım yanlış olsaydı sonuç yine kurulabilir miydi?"
+        "Metinde doğrudan görülen değişimle yöneticinin buna getirdiği açıklamayı ayrı yaz.",
+        "Rafların yeri değişmese bile ödünç sayısını artırabilecek başka ne olmuş olabilir?",
+        "Seçeneği yanlış kabul ettiğinde yöneticinin sonucu çöker mi? Çöküyorsa gerekli varsayıma yaklaşmışsın."
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Kanıt, yakın büfelerdeki tek kullanımlık şişe satışının azalmasıdır; sonuç ise dolum istasyonlarının plastik kullanımını azalttığıdır."
+          "explanation": "Gözlem şiir kitaplarının ödünç alınmasının artmasıdır; sonuç bu artışın rafların görünür yere taşınmasından kaynaklandığıdır."
         },
         {
           "id": "s2",
-          "explanation": "Satış verisinin bölgedeki tek kullanımlık şişe tüketimini anlamlı biçimde yansıtması gerekir."
+          "explanation": "Aynı dönemde şiir etkinliği, yeni kitap alımı veya kampanya yapılmışsa artış yalnız yer değişikliğine bağlanamaz."
         },
         {
           "id": "s3",
-          "explanation": "Satış verisi tüketimi yansıtmıyorsa satış düşüşünden plastik kullanımının azaldığı sonucu çıkarılamaz; bu nedenle varsayım zorunludur."
+          "explanation": "Sonuç, şiir ödünçlerini özellikle etkileyen başka önemli bir değişiklik yapılmadığı varsayımına ihtiyaç duyar."
         }
       ],
-      "structuralId": "st:v2:okm2y7",
-      "cognitiveExperienceId": "cx:v2:et8gkl",
+      "structuralId": "st:v2:nzy2u4",
+      "cognitiveExperienceId": "cx:v2:1uu7jxk",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -535,57 +688,74 @@
       "itemModelId": "reading-causal-boundary-v2",
       "constructId": "construct-reading-causal-boundary",
       "queryType": "causal-boundary",
-      "context": "240 lise öğrencisinin bir ay boyunca uyku süreleri ve matematik sınav puanları kaydedildi. Geceleri ortalama en az 8 saat uyuyan öğrencilerin sınav puanı ortalaması, daha az uyuyanlarınkinden yüksekti. Öğrenciler gruplara rastgele atanmadı; çalışma süresi, sağlık durumu ve aile düzeni gibi etkenler ölçülmedi.",
-      "prompt": "Bu araştırmaya dayanarak aşağıdakilerden hangisi söylenebilir?",
+      "surfaceProfile": {
+        "genre": "araştırma-özeti",
+        "voice": "nesnel-bilimsel",
+        "sourceMode": "gözlemsel-araştırma",
+        "rhetoricalMoves": [
+          "bulgu",
+          "yöntem-sınırı",
+          "karşılaştırma"
+        ],
+        "stemFamily": "nedensellik-sınırı"
+      },
+      "context": "164 lise öğrencisinden bir ay boyunca ders çalışırken nasıl bir ses ortamını tercih ettikleri kaydedildi. Sessiz ortamda çalışanların okuduğunu anlama puanı ortalaması, sözsüz müzik dinleyenlerinkinden daha yüksekti. Ancak öğrenciler bu iki gruba araştırmacılar tarafından atanmadı; önceki başarı düzeyleri, günlük çalışma süreleri ve metin okuma alışkanlıkları eşitlenmedi.",
+      "prompt": "Bu araştırmaya dayanılarak aşağıdakilerden hangisi söylenebilir?",
       "options": [
         {
-          "text": "İncelenen öğrencilerde daha uzun uyku ile daha yüksek matematik puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.",
+          "text": "Ses ortamı tercihi ile okuduğunu anlama puanı arasında hiçbir ilişki bulunmamıştır.",
+          "correct": false,
+          "misconceptionId": "deny-observed-relation",
+          "feedback": "Neden kesinleşmese de grupların ortalamaları arasında fark kaydedilmiştir."
+        },
+        {
+          "text": "Her yaştaki insan en iyi okuma performansını yalnız bütünüyle sessiz ortamlarda gösterir.",
+          "correct": false,
+          "misconceptionId": "overgeneralize-population",
+          "feedback": "Çalışma belirli öğrencilerle yapılmıştır; bütün yaş ve gruplara genellenemez."
+        },
+        {
+          "text": "İncelenen öğrencilerde sessiz çalışma tercihi ile daha yüksek okuduğunu anlama puanı arasında bir ilişki görülmüştür; ancak sessizliğin tek neden olduğu söylenemez.",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
         },
         {
-          "text": "Her gece en az 8 saat uyumak matematik başarısını kesin olarak yükseltir.",
+          "text": "Sözsüz müzik dinlemek bütün öğrencilerin okuduğunu anlama başarısını kesin olarak düşürür.",
           "correct": false,
-          "misconceptionId": "correlation-means-cause",
-          "feedback": "Gözlemsel veri ilişki gösterir; diğer etkenler dışlanmadan kesin neden göstermez."
+          "misconceptionId": "association-as-cause",
+          "feedback": "Gruplar rastgele oluşturulmadığı için müziğin puanı düşürdüğü kesinleşmez."
         },
         {
-          "text": "Yüksek matematik puanı öğrencilerin daha uzun uyumasına kesin olarak neden olur.",
+          "text": "Yüksek okuma puanı, öğrencilerin sessiz ortamı seçmesine kesin olarak neden olur.",
           "correct": false,
-          "misconceptionId": "reverse-causality-certainty",
-          "feedback": "Yüksek puanın daha uzun uykuya neden olduğu da bu araştırmayla kanıtlanmış değildir."
-        },
-        {
-          "text": "Uyku süresi ile matematik puanı arasında hiçbir ilişki yoktur.",
-          "correct": false,
-          "misconceptionId": "deny-observed-relation",
-          "feedback": "Nedensellik ayrı bir iddiadır; gruplar arasındaki ortalama puan farkı gözlenmiştir."
+          "misconceptionId": "reverse-causality",
+          "feedback": "Yüksek puanın öğrenciyi sessiz çalışmaya yönelttiği de bu verilerle kanıtlanamaz."
         }
       ],
-      "answerIndex": 0,
-      "answerText": "İncelenen öğrencilerde daha uzun uyku ile daha yüksek matematik puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.",
+      "answerIndex": 2,
+      "answerText": "İncelenen öğrencilerde sessiz çalışma tercihi ile daha yüksek okuduğunu anlama puanı arasında bir ilişki görülmüştür; ancak sessizliğin tek neden olduğu söylenemez.",
       "hints": [
-        "Araştırmacılar değişkeni atadı mı, yoksa yalnız mevcut davranışı mı gözledi?",
-        "Metnin doğrudan gösterdiği iki değişken arasındaki ilişkiyi yaz.",
-        "İlişkiyi kabul eden fakat “kesin neden” demeyen seçeneği ara."
+        "Araştırma hangi iki özelliği birlikte kaydetmiş?",
+        "Gruplar araştırmacı tarafından mı oluşturulmuş, yoksa öğrencilerin alışkanlıkları mı gözlenmiş?",
+        "Seçenek hem bulguyu kabul ediyor hem de “kesin neden” dilinden kaçınıyor mu?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Öğrenciler uyku sürelerine göre sonradan gruplandırılmış, uyku süresi araştırmacılar tarafından rastgele belirlenmemiştir."
+          "explanation": "Sessiz ortamı tercih eden öğrencilerle sözsüz müzik dinleyen öğrencilerin okuma puanları arasında ortalama fark gözlenmiştir."
         },
         {
           "id": "s2",
-          "explanation": "Daha uzun uyuyan grupta ortalama sınav puanı daha yüksektir."
+          "explanation": "Öğrenciler gruplara rastgele atanmadığı ve önceki başarı, çalışma süresi gibi etkenler eşitlenmediği için müziğin tek neden olduğu söylenemez."
         },
         {
           "id": "s3",
-          "explanation": "Çalışma alışkanlığı, sağlık veya aile düzeni gibi etkenler ölçülmediği için uyku tek neden olarak gösterilemez."
+          "explanation": "Doğru yorum gözlenen ortalama farkı korur, ancak bunu müziğin kesin etkisi diye sunmaz."
         }
       ],
-      "structuralId": "st:v2:ez9jzr",
-      "cognitiveExperienceId": "cx:v2:1520gd9",
+      "structuralId": "st:v2:qq1nbt",
+      "cognitiveExperienceId": "cx:v2:f2kpfr",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -593,57 +763,74 @@
       "itemModelId": "reading-cross-text-relation-v2",
       "constructId": "construct-reading-cross-text-relation",
       "queryType": "cross-text",
-      "context": "I. Metin: Derin dikkat gerektiren rapor ve analiz işleri, kesintilerin az olduğu ev ortamında daha verimli yürütülebiliyor. Bu nedenle çalışanlara haftada 2 gün uzaktan çalışma olanağı tanıyan karma düzen, bireysel odaklanmayı güçlendirebilir.\n\nII. Metin: Yeni fikirlerin çoğu planlanmamış kısa konuşmalarda ve aynı masada yapılan hızlı denemelerde gelişiyor. Bu yüzden uzaktan çalışma bütünüyle kaldırılmasa bile ekiplerin belirli günlerde aynı ortamda bulunması yaratıcı iş birliği için önemlidir.",
-      "prompt": "Bu iki metnin görüşleri arasındaki ilişki aşağıdakilerden hangisidir?",
+      "surfaceProfile": {
+        "genre": "iki-metimli-deneme",
+        "voice": "karşılaştırmalı-birinci-çoğul",
+        "sourceMode": "özgün-edebî",
+        "rhetoricalMoves": [
+          "özdeyiş",
+          "karşıtlık",
+          "tanımlama"
+        ],
+        "stemFamily": "iki-metin-ilişkisi"
+      },
+      "context": "I. Metin: Günlüğün değeri, cümle daha kendini savunmayı öğrenmeden yakalanan ilk sestedir. Akşam yazılan bir öfkeyi ertesi gün düzeltmek, belki onu daha ölçülü kılar ama o anın sıcaklığını da söndürür. Günlük, kusurunu saklamadığı ölçüde gerçektir.\n\nII. Metin: İlk anda yazdıklarımızın hepsi bize ait olabilir ama hepsi bizi anlatmaz. Günlük sayfasına geri dönmek, yaşananı değiştirmek değil; gürültünün içinden asıl sesi seçmektir. Bazen en sahici cümle, ilk değil üçüncü kez kurduğumuz cümledir.",
+      "prompt": "Bu iki metinle ilgili olarak aşağıdakilerden hangisi söylenebilir?",
       "options": [
         {
-          "text": "Birinci metin yüz yüze etkileşimi, ikinci metin evde bireysel odaklanmayı temel gerekçe yapar.",
+          "text": "Birinci metin günlük yazmayı değerli bulurken ikinci metin günlüklerin gerçeği hiçbir biçimde yansıtamayacağını savunur.",
           "correct": false,
-          "misconceptionId": "reverse-emphasis",
-          "feedback": "Odaklanma vurgusu birinci, yüz yüze etkileşim vurgusu ikinci metne aittir."
+          "misconceptionId": "false-total-opposition",
+          "feedback": "İki metin de günlüğün kişisel gerçeği taşıyabileceğini kabul eder."
         },
         {
-          "text": "İki metin de karma çalışma düzenini kabul eder; birincisi bireysel odaklanmayı, ikincisi yüz yüze etkileşimi öne çıkarır.",
+          "text": "İki metin de günlüğün yalnız ilk anda yazıldığı ve hiç değiştirilmediği zaman sahici olacağını söyler.",
+          "correct": false,
+          "misconceptionId": "false-total-agreement",
+          "feedback": "Birinci metin ilk hâli, ikinci metin yeniden düşünülmüş hâli önemser."
+        },
+        {
+          "text": "Birinci metin yeniden yazmayı, ikinci metin ilk duyguyu değiştirmeden bırakmayı savunur.",
+          "correct": false,
+          "misconceptionId": "reverse-emphasis",
+          "feedback": "Kendiliğindenlik birinci, gözden geçirme ikinci metne aittir."
+        },
+        {
+          "text": "İki metin de günlüklerin yazıldıktan hemen sonra okurla paylaşılması gerektiğini ileri sürer.",
+          "correct": false,
+          "misconceptionId": "wrong-common-point",
+          "feedback": "İki metin de günlüklerin yayımlanması hakkında görüş bildirmez."
+        },
+        {
+          "text": "İki metin de günlüğün sahici bir anlatı olabileceğini kabul eder; birincisi kendiliğindenliği, ikincisi gözden geçirerek seçmeyi öne çıkarır.",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
-        },
-        {
-          "text": "Birinci metin uzaktan çalışmayı bütünüyle savunurken ikinci metin uzaktan çalışmaya bütünüyle karşı çıkar.",
-          "correct": false,
-          "misconceptionId": "false-total-opposition",
-          "feedback": "İki metin de karma düzeni kabul eder; ayrılık düzenin gerekçesi ve ağırlığındadır."
-        },
-        {
-          "text": "İki metin de karma düzeni yalnız çalışanların bireysel olarak daha iyi odaklanması için savunur.",
-          "correct": false,
-          "misconceptionId": "false-total-agreement",
-          "feedback": "Birinci metin odaklanmayı, ikinci metin spontane ekip etkileşimini temel alır."
         }
       ],
-      "answerIndex": 1,
-      "answerText": "İki metin de karma çalışma düzenini kabul eder; birincisi bireysel odaklanmayı, ikincisi yüz yüze etkileşimi öne çıkarır.",
+      "answerIndex": 4,
+      "answerText": "İki metin de günlüğün sahici bir anlatı olabileceğini kabul eder; birincisi kendiliğindenliği, ikincisi gözden geçirerek seçmeyi öne çıkarır.",
       "hints": [
-        "İki metnin önerisini ayrı ayrı birer cümleyle yaz.",
-        "Metinler tamamen zıt mı, yoksa aynı düzenin farklı yararlarını mı vurguluyor?",
-        "Seçenek hem ortak noktayı hem de vurgu farkını içeriyor mu?"
+        "Her metin “sahicilik” duygusunu hangi yazma davranışına bağlıyor?",
+        "Metinler günlüğün değerinde mi, bu değere ulaşma biçiminde mi anlaşamıyor?",
+        "Seçenek hem ortak amacı hem farklı yöntemi taşıyor mu?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "Birinci metin odaklanma için uzaktan çalışma günlerini; ikinci metin etkileşim için yüz yüze günleri savunur."
+          "explanation": "Birinci metin ilk anda yazılanın tazeliğini, ikinci metin yeniden okuma ve düzeltmenin daha sahici bir seçime ulaştırmasını önemser."
         },
         {
           "id": "s2",
-          "explanation": "İki metin de tek biçimli çalışma yerine karma düzeni kabul eder; biri bireysel odaklanmayı, diğeri ekip etkileşimini öne çıkarır."
+          "explanation": "İki metin de günlüğün kişisel gerçeği yakalayabileceğini kabul eder; yöntem konusunda ayrılır."
         },
         {
           "id": "s3",
-          "explanation": "Doğru ilişki, ortak karma düzen önerisini korurken gerekçe farkını da belirtir."
+          "explanation": "Doğru ilişki, ortak sahicilik arayışını korurken ilk metnin kendiliğindenliği, ikincinin gözden geçirmeyi savunduğunu belirtir."
         }
       ],
-      "structuralId": "st:v2:oraa5m",
-      "cognitiveExperienceId": "cx:v2:o74joq",
+      "structuralId": "st:v2:96s9k7",
+      "cognitiveExperienceId": "cx:v2:3hrjmo",
       "humanVerdict": "NOT_REVIEWED"
     },
     {
@@ -651,57 +838,73 @@
       "itemModelId": "reading-strongest-evidence-v2",
       "constructId": "construct-reading-strongest-evidence",
       "queryType": "evidence-strength",
-      "context": "Bilim Ortaokulu, bahçenin bir bölümüne yerli çiçeklerden oluşan bir alan kurdu ve bu düzenlemenin arı ile kelebek ziyaretlerini artırdığını ileri sürdü.",
-      "prompt": "Aşağıdaki bilgilerden hangisi bu iddiayı en güçlü biçimde destekler?",
+      "surfaceProfile": {
+        "genre": "kaynak-değerlendirme",
+        "voice": "nesnel-sorgulayıcı",
+        "sourceMode": "tarihsel-iddia",
+        "rhetoricalMoves": [
+          "iddia",
+          "kanıt-karşılaştırma"
+        ],
+        "stemFamily": "en-güçlü-kanıt"
+      },
+      "context": "“Turnalar Geçerken” adlı türkünün bilinen ilk plak kaydı 1924 yılına aittir. Bu yüzden eser uzun süre o dönemin ürünü sayılmıştır. Bir araştırmacı ise plağın türkünün doğduğu tarihi değil, yalnız kayda geçtiği tarihi gösterdiğini; eserin daha önce de söylendiğini ileri sürüyor.",
+      "prompt": "Aşağıdakilerden hangisi araştırmacının iddiasını en güçlü biçimde destekler?",
       "options": [
         {
-          "text": "Çiçeklerin açtığı gün bahçede üç arının göründüğü bir fotoğraf çekilmiştir.",
+          "text": "Kaynak göstermeyen birçok internet sayfasında türkünün 1900 öncesine ait olduğunun yazılması",
           "correct": false,
-          "misconceptionId": "single-photo-as-proof",
-          "feedback": "Tek fotoğraf değişimi göstermez; önceki durum ve karşılaştırma alanı gerekir."
+          "misconceptionId": "topic-popularity-as-proof",
+          "feedback": "Bir bilginin çok sayıda sayfada tekrarlanması, kaynağının güvenilir olduğunu göstermez."
         },
         {
-          "text": "Tohumları satan firmanın broşüründe yerli çiçeklerin tozlayıcıları çektiği yazmaktadır.",
-          "correct": false,
-          "misconceptionId": "interested-source-as-proof",
-          "feedback": "Çıkarı bulunan kaynağın genel iddiası, yerel ve kontrollü ölçümden daha zayıftır."
-        },
-        {
-          "text": "Çiçek alanı kurulmadan önce ve sonra 10 hafta yapılan standart sayımlarda ziyaretler artmış, değişiklik yapılmayan benzer bahçe bölümünde aynı artış görülmemiştir.",
+          "text": "1892 tarihli olduğu kâğıt, mürekkep ve arşiv kaydıyla doğrulanan bir nota defterinde türkünün sözleriyle ezgisinin birlikte yer alması",
           "correct": true,
           "misconceptionId": null,
           "feedback": null
         },
         {
-          "text": "Bir öğrenci, geçen hafta bahçede her zamankinden daha çok kelebek gördüğünü söylemiştir.",
+          "text": "Bir ailenin büyükannesinin, türküyü kendi büyükannesinden öğrendiğini anlatması",
           "correct": false,
           "misconceptionId": "anecdote-as-strongest-evidence",
-          "feedback": "Tek kişinin gözlemi seçici olabilir; tekrarlı ve karşılaştırmalı sayım daha güçlüdür."
+          "feedback": "Aile anlatısı değerli olabilir ancak tarih ve içerik bakımından bağımsız doğrulaması daha zordur."
+        },
+        {
+          "text": "Türkünün günümüzde farklı yörelerde çok sayıda sanatçı tarafından seslendirilmesi",
+          "correct": false,
+          "misconceptionId": "single-photo-as-proof",
+          "feedback": "Bugün söylenmesi, türkünün belirli bir geçmiş tarihte var olduğunu göstermez."
+        },
+        {
+          "text": "Yeni çıkan bir albümün tanıtım yazısında türkünün “yüzyıllık bir eser” olarak nitelenmesi",
+          "correct": false,
+          "misconceptionId": "interested-source-as-proof",
+          "feedback": "Albüm tanıtımı iddiayı yineleyebilir fakat dayandığı belgeyi göstermedikçe güçlü kanıt değildir."
         }
       ],
-      "answerIndex": 2,
-      "answerText": "Çiçek alanı kurulmadan önce ve sonra 10 hafta yapılan standart sayımlarda ziyaretler artmış, değişiklik yapılmayan benzer bahçe bölümünde aynı artış görülmemiştir.",
+      "answerIndex": 1,
+      "answerText": "1892 tarihli olduğu kâğıt, mürekkep ve arşiv kaydıyla doğrulanan bir nota defterinde türkünün sözleriyle ezgisinin birlikte yer alması",
       "hints": [
-        "İddiayı doğrulamak için hangi değişimin doğrudan sayılması gerekir?",
-        "Hangi seçenek ölçüm, karşılaştırma ve tekrar içeriyor?",
-        "Görüş ile ölçümü; tek gözlem ile tekrarlı karşılaştırmayı ayır."
+        "Kanıtlanması gereken şey türkünün güzelliği mi, yaygınlığı mı, yoksa belirli bir tarihten önce var olması mı?",
+        "Hangi kaynak hem döneme ait hem de türkünün kendisini içeriyor?",
+        "Kaynak olaya ne kadar yakın ve bağımsız biçimde doğrulanabilir?"
       ],
       "solution": [
         {
           "id": "s1",
-          "explanation": "İddia, okul bahçesindeki yerli çiçek düzenlemesinin tozlayıcı ziyaretlerini artırdığıdır."
+          "explanation": "İddia, belirli bir türkünün sanılandan daha eski bir tarihte söylendiğidir."
         },
         {
           "id": "s2",
-          "explanation": "Önce-sonra sayımları ve değişiklik yapılmayan karşılaştırma alanı, iddiayı doğrudan ve denetlenebilir biçimde sınar."
+          "explanation": "Tarihi ve kökeni doğrulanmış eski bir defterde sözlerle ezginin bulunması, iddiayı doğrudan geçmişe bağlar."
         },
         {
           "id": "s3",
-          "explanation": "Tek fotoğraf, öğrenci görüşü ve ürün broşürü iddiayla ilgili olabilir; ancak kontrollü sistematik sayım kadar güçlü değildir."
+          "explanation": "Aile anlatısı, güncel blog ve albüm tanıtımı destekleyici olabilir; ancak tarihli birincil belge kadar güçlü değildir."
         }
       ],
-      "structuralId": "st:v2:hzsro4",
-      "cognitiveExperienceId": "cx:v2:syz2bv",
+      "structuralId": "st:v2:rhgzcf",
+      "cognitiveExperienceId": "cx:v2:1almr8n",
       "humanVerdict": "NOT_REVIEWED"
     }
   ]

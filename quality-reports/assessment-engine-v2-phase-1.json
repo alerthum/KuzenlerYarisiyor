@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:55:38.766Z",
+  "generatedAt": "2026-08-03T09:33:34.003Z",
   "status": "PHASE_1_PASS",
   "productReady": false,
   "scope": "Assessment Engine V2 contracts and three cross-domain proof models",
@@ -415,13 +415,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:13di901",
-      "cognitiveExperienceId": "cx:v2:1lwz3b5",
-      "correctAnswer": "Ağaç gölgesi sıcak yüzeyleri serinletebilir; ancak ağaçlandırma yerel su ve toprak koşullarına göre planlanmalıdır.",
+      "structuralId": "st:v2:ccek46",
+      "cognitiveExperienceId": "cx:v2:1vc44ug",
+      "correctAnswer": "Kent belleğini taşıyan eski haritaları korumak değerlidir; ancak bu koruma, yaşayan şehri değişime kapatmadan sürdürülmelidir.",
       "misconceptionIds": [
         "detail-as-main-idea",
         "overgeneralized-main-idea",
-        "one-sided-summary"
+        "one-sided-summary",
+        "topic-label-as-main-idea"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -443,13 +444,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:df15fw",
-      "cognitiveExperienceId": "cx:v2:19lz5fu",
-      "correctAnswer": "Uzatılan saatler, bazı öğrencilerin bu kütüphaneyi sınav ayında akşamları daha sık kullanmasına katkı sağlamış olabilir.",
+      "structuralId": "st:v2:1v6lrhs",
+      "cognitiveExperienceId": "cx:v2:9623qa",
+      "correctAnswer": "Usta, kazandığı deneyimin ikinci çalışmayı ilkinden farklı kılacağını düşünmektedir.",
       "misconceptionIds": [
         "association-to-certain-success",
         "reject-observed-association",
-        "expand-to-all-libraries"
+        "expand-to-all-libraries",
+        "reverse-inference"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -471,13 +473,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:1woupal",
-      "cognitiveExperienceId": "cx:v2:ssz7mw",
-      "correctAnswer": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: İzlenen kuşlardan 8 tanesi burada durmuş ve bölgede besin yoğunluğu yüksek bulunmuştur.",
+      "structuralId": "st:v2:17y6jyt",
+      "cognitiveExperienceId": "cx:v2:1b8cg7g",
+      "correctAnswer": "Yargı: Kıyı dergisinin dili zamanla daha ölçülü olmuştur. Kanıt: İlk ve sonraki dönem başyazılarındaki ifadeler farklı bir söyleyiş tutumu göstermektedir.",
       "misconceptionIds": [
         "topic-overlap-as-evidence",
         "historical-detail-as-proof",
-        "reverse-support-link"
+        "reverse-support-link",
+        "claim-restatement-as-evidence"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -499,13 +502,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:1tp7dcu",
-      "cognitiveExperienceId": "cx:v2:hbxeyu",
-      "correctAnswer": "Aralıklı tekrar, bu okuldaki dokuzuncu sınıf öğrencilerinin 2 hafta sonraki hatırlamasını artırmış olabilir.",
+      "structuralId": "st:v2:1ip0i1a",
+      "cognitiveExperienceId": "cx:v2:mit6oj",
+      "correctAnswer": "Bölüm sonu tartışmaları, bu okuldaki iki sınıfın 6 hafta sonraki metin hatırlamasına katkı sağlamış olabilir.",
       "misconceptionIds": [
         "universalize-single-school",
         "temporary-to-permanent",
-        "single-cause-certainty"
+        "single-cause-certainty",
+        "dismiss-limited-evidence"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -527,13 +531,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:1ussvyw",
-      "cognitiveExperienceId": "cx:v2:1t8xvt6",
-      "correctAnswer": "Yerel tohum arşivinin önemini açıklamak ve okurları çeşitlerin korunmasına katkı vermeye yöneltmek",
+      "structuralId": "st:v2:j73lzj",
+      "cognitiveExperienceId": "cx:v2:vvcs8r",
+      "correctAnswer": "Kültürel mirası korumanın yalnız dış görünüşü yenilemek değil, yapının yaşam içindeki işlevini de sürdürmek olduğunu düşündürmek",
       "misconceptionIds": [
         "information-only-purpose",
         "entertainment-purpose",
-        "criticism-purpose"
+        "criticism-purpose",
+        "commercial-purpose"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -555,13 +560,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:b51lqh",
-      "cognitiveExperienceId": "cx:v2:9344c3",
-      "correctAnswer": "Projeyi olumlu bulmakla birlikte başarısını koruma koşullarına bağlayan temkinli bir tutum",
+      "structuralId": "st:v2:rmcr2z",
+      "cognitiveExperienceId": "cx:v2:1aus8in",
+      "correctAnswer": "Anlatım ve atmosferdeki başarısını takdir eden ancak kişi kurulumunu yetersiz bulan dengeli bir tutum",
       "misconceptionIds": [
         "unconditional-praise",
         "pure-opposition",
-        "neutral-reporting"
+        "neutral-reporting",
+        "author-biography-focus"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -583,13 +589,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:v1ayrc",
-      "cognitiveExperienceId": "cx:v2:prs3n6",
-      "correctAnswer": "Yol genişletme kısa süreli rahatlama sağlayabilirken toplu taşıma ve yaya bağlantıları araç talebini azaltmaya yönelir.",
+      "structuralId": "st:v2:1khdbnm",
+      "cognitiveExperienceId": "cx:v2:1qxmqgn",
+      "correctAnswer": "Birinci yaklaşım sadakati sözcük ve yapıya bağlılıkta, ikinci yaklaşım metnin sesini ve etkisini yeniden kurmakta görür.",
       "misconceptionIds": [
         "reverse-contrast-direction",
         "erase-contrast",
-        "change-comparison-dimension"
+        "change-comparison-dimension",
+        "false-total-opposition"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -603,21 +610,22 @@
       "domain": "reading",
       "constructId": "construct-reading-paragraph-function",
       "knowledgeComponents": [
-        "text-organization",
-        "problem-solution",
-        "paragraph-role"
+        "paragraph-role",
+        "argument-flow",
+        "example-counterexample"
       ],
       "compatibleGameIds": [
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:4co0ga",
-      "cognitiveExperienceId": "cx:v2:5l24sg",
-      "correctAnswer": "İlk paragrafta belirtilen soruna yönelik bir çözüm denemesini ve sonucunu sunmak",
+      "structuralId": "st:v2:810no2",
+      "cognitiveExperienceId": "cx:v2:h2xu7h",
+      "correctAnswer": "İlk paragrafta eleştirilen uygulamaya alternatif bir yöntem sunup bu yöntemin sonucunu örneklemek",
       "misconceptionIds": [
-        "repeat-problem-as-function",
-        "unrelated-example-function",
-        "historical-background-function"
+        "repeat-problem",
+        "unrelated-detail",
+        "reverse-function",
+        "historical-background"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -631,21 +639,22 @@
       "domain": "reading",
       "constructId": "construct-reading-necessary-assumption",
       "knowledgeComponents": [
-        "claim-premise-gap",
-        "necessary-assumption",
+        "argument-gap",
+        "necessary-condition",
         "alternative-explanation"
       ],
       "compatibleGameIds": [
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:okm2y7",
-      "cognitiveExperienceId": "cx:v2:et8gkl",
-      "correctAnswer": "Yakındaki büfelerin şişe satışları, bölgede kullanılan tek kullanımlık su şişesi miktarını anlamlı ölçüde yansıtmaktadır.",
+      "structuralId": "st:v2:nzy2u4",
+      "cognitiveExperienceId": "cx:v2:1uu7jxk",
+      "correctAnswer": "Aynı dönemde şiir kitaplarının ödünç alınmasını özellikle artırabilecek başka önemli bir uygulama yapılmamıştır.",
       "misconceptionIds": [
-        "desirable-but-not-necessary",
-        "repeat-explicit-evidence",
-        "irrelevant-operational-detail"
+        "desirability-as-assumption",
+        "outcome-equivalence",
+        "universal-rule-as-assumption",
+        "duration-as-assumption"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -659,21 +668,22 @@
       "domain": "reading",
       "constructId": "construct-reading-causal-boundary",
       "knowledgeComponents": [
-        "association-vs-causation",
-        "confounding-variable",
-        "directionality"
+        "observational-study",
+        "confounder",
+        "causal-language"
       ],
       "compatibleGameIds": [
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:ez9jzr",
-      "cognitiveExperienceId": "cx:v2:1520gd9",
-      "correctAnswer": "İncelenen öğrencilerde daha uzun uyku ile daha yüksek matematik puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.",
+      "structuralId": "st:v2:qq1nbt",
+      "cognitiveExperienceId": "cx:v2:f2kpfr",
+      "correctAnswer": "İncelenen öğrencilerde sessiz çalışma tercihi ile daha yüksek okuduğunu anlama puanı arasında bir ilişki görülmüştür; ancak sessizliğin tek neden olduğu söylenemez.",
       "misconceptionIds": [
-        "correlation-means-cause",
-        "reverse-causality-certainty",
-        "deny-observed-relation"
+        "association-as-cause",
+        "reverse-causality",
+        "deny-observed-relation",
+        "overgeneralize-population"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -695,13 +705,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:oraa5m",
-      "cognitiveExperienceId": "cx:v2:o74joq",
-      "correctAnswer": "İki metin de karma çalışma düzenini kabul eder; birincisi bireysel odaklanmayı, ikincisi yüz yüze etkileşimi öne çıkarır.",
+      "structuralId": "st:v2:96s9k7",
+      "cognitiveExperienceId": "cx:v2:3hrjmo",
+      "correctAnswer": "İki metin de günlüğün sahici bir anlatı olabileceğini kabul eder; birincisi kendiliğindenliği, ikincisi gözden geçirerek seçmeyi öne çıkarır.",
       "misconceptionIds": [
         "false-total-opposition",
         "false-total-agreement",
-        "reverse-emphasis"
+        "reverse-emphasis",
+        "wrong-common-point"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
@@ -723,13 +734,14 @@
         "paragraph-detective",
         "meaning-hunt"
       ],
-      "structuralId": "st:v2:hzsro4",
-      "cognitiveExperienceId": "cx:v2:syz2bv",
-      "correctAnswer": "Çiçek alanı kurulmadan önce ve sonra 10 hafta yapılan standart sayımlarda ziyaretler artmış, değişiklik yapılmayan benzer bahçe bölümünde aynı artış görülmemiştir.",
+      "structuralId": "st:v2:rhgzcf",
+      "cognitiveExperienceId": "cx:v2:1almr8n",
+      "correctAnswer": "1892 tarihli olduğu kâğıt, mürekkep ve arşiv kaydıyla doğrulanan bir nota defterinde türkünün sözleriyle ezgisinin birlikte yer alması",
       "misconceptionIds": [
         "anecdote-as-strongest-evidence",
         "single-photo-as-proof",
-        "interested-source-as-proof"
+        "interested-source-as-proof",
+        "topic-popularity-as-proof"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,

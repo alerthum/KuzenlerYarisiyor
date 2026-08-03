@@ -13,36 +13,38 @@ import {
 function materializeAndPass(model, seed = {}) {
   const item = materializeItemModel(model, seed);
   assert.equal(item.solverProof.verified, true, model.id);
-  assert.equal(item.distractors.length, 3, model.id);
-  assert.equal(new Set(item.distractors.map(d => d.misconceptionId)).size, 3, model.id);
+  assert.equal(item.distractors.length, 4, model.id);
+  assert.equal(new Set(item.distractors.map(d => d.misconceptionId)).size, 4, model.id);
   assert.equal(evaluateV2Publication(item, { gameId: 'meaning-hunt' }).ok, true, model.id);
   return item;
 }
 
-test('Faz 3B amaç, tutum, karşıtlık ve paragraf işlevi modelleri yayın kapısını geçer', () => {
+test('Faz 3B amaç, tutum, karşıtlık ve paragraf işlevi modelleri beş seçenekle yayın kapısını geçer', () => {
   for (const model of PHASE3B_READING_MODELS) materializeAndPass(model);
 });
 
-test('amaç modeli bilgilendirme ile katılım çağrısını birlikte taşır', () => {
-  const item = materializeAndPass(authorPurposeModel, { district: 'Çamlık', varieties: 52, day: 'pazar' });
-  assert.match(item.answerText, /önemini açıklamak/);
-  assert.match(item.answerText, /katkı vermeye yöneltmek/);
+test('amaç modeli görünüşü koruma ile yaşayan işlevi sürdürme ayrımını yakalar', () => {
+  const item = materializeAndPass(authorPurposeModel, { structure: 'semt çeşmesi' });
+  assert.match(item.answerText, /yaşam içindeki işlevini/);
+  assert.match(item.answerText, /düşündürmek/);
 });
 
-test('tutum modeli koşulsuz övgü yerine temkinli desteği seçer', () => {
-  const item = materializeAndPass(authorAttitudeModel);
-  assert.match(item.answerText, /temkinli/);
-  assert.equal(item.distractors.some(d => /hiçbir çekince/.test(d.text)), true);
+test('tutum modeli edebî başarıyı teslim ederken kişi kurulumunu eleştirir', () => {
+  const item = materializeAndPass(authorAttitudeModel, { work: 'Kırık Saatler' });
+  assert.match(item.answerText, /takdir eden/);
+  assert.match(item.answerText, /yetersiz bulan/);
+  assert.equal(item.distractors.some(d => /kusursuz/.test(d.text)), true);
 });
 
-test('karşıtlık modeli kısa rahatlama ile talep azaltma yönünü ters çevirmeden kurar', () => {
-  const item = materializeAndPass(contrastRelationModel, { city: 'Uşak' });
-  assert.match(item.answerText, /kısa süreli/);
-  assert.match(item.answerText, /araç talebini azaltmaya/);
+test('karşıtlık modeli biçimsel sadakat ile etki sadakatini ters çevirmeden kurar', () => {
+  const item = materializeAndPass(contrastRelationModel);
+  assert.match(item.answerText, /sözcük ve yapıya/);
+  assert.match(item.answerText, /sesini ve etkisini/);
 });
 
-test('paragraf işlevi modeli ikinci paragrafı çözüm denemesi ve sonuç olarak sınıflandırır', () => {
-  const item = materializeAndPass(paragraphFunctionModel, { museum: 'Arkeoloji Müzesi', duration: 8 });
-  assert.match(item.answerText, /çözüm denemesini ve sonucunu/);
+test('paragraf işlevi modeli ikinci paragrafı alternatif uygulama ve sonuç örneği olarak sınıflandırır', () => {
+  const item = materializeAndPass(paragraphFunctionModel, { museum: 'Uşak Kent Müzesi' });
+  assert.match(item.answerText, /alternatif bir yöntem/);
+  assert.match(item.answerText, /sonucunu örneklemek/);
   assert.equal(item.context.includes('\n\n'), true);
 });

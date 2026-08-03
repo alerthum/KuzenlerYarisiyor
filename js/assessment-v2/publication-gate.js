@@ -5,8 +5,8 @@ const ARTIFICIAL_WRAPPERS = ['olimpiyat kulübünde çözülen bir soru:', 'sena
 export function evaluateV2Publication(item, { gameId, previousItems = [] } = {}) {
   const errors = [];
   if (item?.solverProof?.verified !== true) errors.push('solver_not_verified');
-  if (!Array.isArray(item?.distractors) || item.distractors.length !== 3) errors.push('three_distractors_required');
-  if (new Set((item?.distractors || []).map(d => d.misconceptionId)).size !== 3) errors.push('distinct_misconceptions_required');
+  if (!Array.isArray(item?.distractors) || item.distractors.length < 3) errors.push('three_distractors_required');
+  if (new Set((item?.distractors || []).map(d => d.misconceptionId)).size !== (item?.distractors || []).length) errors.push('distinct_misconceptions_required');
   const fullPrompt = norm(`${item?.context || ''} ${item?.prompt || ''}`);
   if (ARTIFICIAL_WRAPPERS.some(w => fullPrompt.includes(w))) errors.push('artificial_wrapper');
   if ((item?.hints || []).some(h => BANNED_GENERIC_HINTS.has(norm(h)))) errors.push('generic_hint');

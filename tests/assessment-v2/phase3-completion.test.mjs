@@ -35,7 +35,7 @@ test('Faz 3 on iki ayrı kanıt sorgusu türü taşır', () => {
   assert.equal(new Set(queryTypes).size, 12);
 });
 
-test('Faz 3 modellerinin tamamı bağımsız doğrulama, çözüm grafı ve üç ayrı öğrenci hata yolu taşır', () => {
+test('Faz 3 modellerinin tamamı bağımsız doğrulama, çözüm grafı ve dört ayrı öğrenci hata yolu taşır', () => {
   for (const model of ALL_PHASE3_READING_MODELS) {
     const task = model.generateTask({});
     const item = materializeItemModel(model, {});
@@ -43,9 +43,9 @@ test('Faz 3 modellerinin tamamı bağımsız doğrulama, çözüm grafı ve üç
     assert.equal(item.hints.length, model.solutionGraph.steps.length, model.id);
     assert.equal(item.solution.length, model.solutionGraph.steps.length, model.id);
     assert.deepEqual(item.hints, model.solutionGraph.steps.map(step => step.hint), model.id);
-    assert.equal(item.distractors.length, 3, model.id);
-    assert.equal(new Set(item.distractors.map(d => d.misconceptionId)).size, 3, model.id);
-    assert.equal(new Set(item.distractors.map(d => d.text)).size, 3, model.id);
+    assert.equal(item.distractors.length, 4, model.id);
+    assert.equal(new Set(item.distractors.map(d => d.misconceptionId)).size, 4, model.id);
+    assert.equal(new Set(item.distractors.map(d => d.text)).size, 4, model.id);
     assert.equal(evaluateV2Publication(item, { gameId: model.compatibleGameIds[0] }).ok, true, model.id);
     assert.equal(evaluateV2Publication(item, { gameId: 'science-lab' }).errors.includes('game_construct_mismatch'), true, model.id);
 

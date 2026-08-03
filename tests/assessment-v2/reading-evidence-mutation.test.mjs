@@ -31,7 +31,7 @@ test('iddia-kanıt destek kenarı değiştiğinde eski cevap geçersiz, yeni des
   task.evidenceMap.evidence.find(evidence => evidence.id === 'e2').supports = ['c1'];
   const mutatedAnswer = solveReadingEvidenceTask(structuredClone(task));
   assert.equal(originalAnswer.id, 'a');
-  assert.equal(mutatedAnswer.id, 'b');
+  assert.equal(mutatedAnswer.id, 'c');
   assert.equal(verifyReadingEvidenceAnswer(structuredClone(task), originalAnswer), false);
   assert.equal(verifyReadingEvidenceAnswer(structuredClone(task), mutatedAnswer), true);
 });

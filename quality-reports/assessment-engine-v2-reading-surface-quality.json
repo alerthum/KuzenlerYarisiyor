@@ -1,0 +1,241 @@
+{
+  "schemaVersion": "2.0",
+  "generatedAt": "2026-08-03T09:33:34.181Z",
+  "phase": "PHASE_3R_NATURAL_SURFACE_REMEDIATION",
+  "productReady": false,
+  "previousReviewDisposition": "REJECTED_AI_TEMPLATE_FAILURE",
+  "benchmarkPolicy": "STRUCTURAL_BENCHMARK_ONLY_DO_NOT_COPY_SOURCE_TEXT",
+  "result": "PASS",
+  "metrics": {
+    "modelCount": 12,
+    "genreCount": 12,
+    "voiceCount": 11,
+    "sourceModeCount": 10,
+    "stemFamilyCount": 12,
+    "dataHeavyCount": 2,
+    "longestAnswerRate": 0.5,
+    "maxTrigramSimilarity": 0.008,
+    "mostSimilarPair": [
+      "reading-main-idea-coverage-v2",
+      "reading-author-attitude-v2"
+    ]
+  },
+  "errors": [],
+  "samples": [
+    {
+      "modelId": "reading-main-idea-coverage-v2",
+      "genre": "deneme",
+      "voice": "birinci-tekil-düşünsel",
+      "sourceMode": "özgün-edebî",
+      "stemFamily": "ana-düşünce",
+      "rhetoricalMoves": [
+        "örnekleme",
+        "karşıtlık",
+        "sonuç"
+      ],
+      "context": "Eski Sarıova haritalarına baktığımda önce yolları değil, artık kullanılmayan sözcükleri görüyorum. Bir zamanlar çeşmeye, hana ya da bir zanaata açılan sokak adları, kentin kendini nasıl anlattığını bugüne taşıyor. Bu yüzden eski bir haritayı korumak, yalnız kâğıdı değil, bir bakış biçimini de korumaktır. Ne var ki belleğe sahip çıkmak, şehri geçmişin dekoruna çevirmek demek değildir. Kent yaşadıkça değişir; önemli olan, değişirken hangi izleri neden taşıdığını unutmamasıdır.",
+      "prompt": "Bu parçanın ana düşüncesi aşağıdakilerden hangisidir?",
+      "passageWordCount": 66,
+      "answerWordCount": 15,
+      "answerIsLongest": false,
+      "answerPassageOverlap": 0.308
+    },
+    {
+      "modelId": "reading-supported-inference-v2",
+      "genre": "anekdot",
+      "voice": "üçüncü-tekil-anlatıcı",
+      "sourceMode": "özgün-kurmaca",
+      "stemFamily": "çıkarım",
+      "rhetoricalMoves": [
+        "diyalog",
+        "mecaz",
+        "örtük-sonuç"
+      ],
+      "context": "Bir cilt ustasının yıllar önce yaptığı deri kaplı defteri gören müşteri, “Bundan bir tane daha istiyorum, tıpkısının aynısı olsun.” der. Usta defteri uzun uzun inceler, sonra başını sallar: “Benzerini yaparım ama aynısını yapamam; çünkü elim artık bu defteri yapan el değil.”",
+      "prompt": "Bu parçadan aşağıdakilerin hangisine ulaşılabilir?",
+      "passageWordCount": 41,
+      "answerWordCount": 9,
+      "answerIsLongest": false,
+      "answerPassageOverlap": 0.111
+    },
+    {
+      "modelId": "reading-claim-evidence-match-v2",
+      "genre": "edebî-inceleme",
+      "voice": "nesnel-eleştirel",
+      "sourceMode": "özgün-kültür-yazısı",
+      "stemFamily": "yargı-kanıt",
+      "rhetoricalMoves": [
+        "alıntılama",
+        "karşılaştırma",
+        "örneklendirme"
+      ],
+      "context": "Kıyı dergisinin ilk sayılarındaki başyazılar, okurla konuşmaktan çok rakiplerle hesaplaşan bir tona sahiptir: “Bizden olmayan edebiyatın dışında kalacaktır.” gibi keskin cümleler sıkça yinelenir. On yıl sonraki başyazılarda ise aynı konular, “Bir eseri kendi imkânları içinde anlamadan hüküm vermemeliyiz.” türünden daha ölçülü ifadelerle ele alınır. Derginin kapak rengi bu yıllarda üç kez değişmiş, arşivi de başka bir binaya taşınmıştır.",
+      "prompt": "Aşağıdaki yargı–kanıt eşleştirmelerinden hangisi doğrudur?",
+      "passageWordCount": 59,
+      "answerWordCount": 20,
+      "answerIsLongest": false,
+      "answerPassageOverlap": 0.25
+    },
+    {
+      "modelId": "reading-scope-certainty-control-v2",
+      "genre": "bilimsel-popüler",
+      "voice": "nesnel-açıklayıcı",
+      "sourceMode": "sınırlı-araştırma",
+      "stemFamily": "araştırma-yorumu",
+      "rhetoricalMoves": [
+        "karşılaştırma",
+        "sonuç",
+        "sınırlama"
+      ],
+      "context": "Aydınlık Ortaokulundaki iki yedinci sınıfta aynı öykü kitabı okundu. Sınıflardan biri her bölümün ardından öğretmen yönetiminde kısa tartışmalar yaptı; diğer sınıf yalnız bireysel okuma notları tuttu. 6 hafta sonra uygulanan metni hatırlama çalışmasında tartışma yapan sınıfın ortalaması daha yüksek çıktı. Uygulama başka okul ve sınıf düzeylerinde denenmedi; grupların okul dışındaki okuma alışkanlıkları da karşılaştırılmadı.",
+      "prompt": "Bu araştırmanın sonuçlarına dayanılarak aşağıdakilerden hangisi söylenebilir?",
+      "passageWordCount": 54,
+      "answerWordCount": 15,
+      "answerIsLongest": false,
+      "answerPassageOverlap": 0.167
+    },
+    {
+      "modelId": "reading-author-purpose-v2",
+      "genre": "eleştirel-deneme",
+      "voice": "birinci-çoğul-sorgulayıcı",
+      "sourceMode": "özgün-kültür-yazısı",
+      "stemFamily": "yazılış-amacı",
+      "rhetoricalMoves": [
+        "örnekleme",
+        "karşıtlık",
+        "retorik-soru"
+      ],
+      "context": "Eski bir mahalle çeşmesini onarıyor, taşlarını temizliyor, kitabesini okunur hâle getiriyoruz; sonra da musluğunu söküp önüne küçük bir zincir çekiyoruz. Böylece yapıyı koruduğumuzu düşünüyoruz. Oysa o çeşmeyi mahalle belleğinin parçası yapan yalnızca yaşı ve süslemeleri değildi; insanların önünde durması, su içmesi, birbirine yol sormasıydı. Bir yapıyı hayattan çekip yalnız seyredilecek bir nesneye dönüştürmek, onu korumak mıdır, yoksa sessizce başka bir şeye çevirmek mi?",
+      "prompt": "Yazarın bu parçayı kaleme alma amacı aşağıdakilerden hangisidir?",
+      "passageWordCount": 64,
+      "answerWordCount": 16,
+      "answerIsLongest": false,
+      "answerPassageOverlap": 0.071
+    },
+    {
+      "modelId": "reading-author-attitude-v2",
+      "genre": "kitap-eleştirisi",
+      "voice": "üçüncü-tekil-değerlendirici",
+      "sourceMode": "özgün-edebî-eleştiri",
+      "stemFamily": "tutum",
+      "rhetoricalMoves": [
+        "örneklendirme",
+        "övgü",
+        "sınırlama"
+      ],
+      "context": "Kuyudaki Sesler, daha ilk sayfalarda kasabanın ağır sessizliğini okura duyurmayı başarıyor. Yazar, görünüşte önemsiz ayrıntıları öyle yerli yerinde kullanıyor ki kapı gıcırtıları, yarım bırakılmış cümleler ve boş meydan, romanın kişilerinden biri hâline geliyor. Ne var ki bu canlı atmosferin içinde yan kişiler fazla silik kalmış; çoğu, ana kahramanın düşüncelerini doğrulamak için kısa süreliğine sahneye çıkarılmış gibi. Romanın dili ustalıklı, dünyası etkileyici; fakat insanları, mekânları kadar derin değil.",
+      "prompt": "Bu parçada sözü edilen romana yönelik tutum aşağıdakilerden hangisidir?",
+      "passageWordCount": 69,
+      "answerWordCount": 14,
+      "answerIsLongest": false,
+      "answerPassageOverlap": 0
+    },
+    {
+      "modelId": "reading-contrast-relation-v2",
+      "genre": "düşünce-yazısı",
+      "voice": "nesnel-karşılaştırıcı",
+      "sourceMode": "özgün-dil-incelemesi",
+      "stemFamily": "karşıtlık",
+      "rhetoricalMoves": [
+        "tanımlama",
+        "karşılaştırma",
+        "benzetme"
+      ],
+      "context": "Çeviride sadakat denince iki ayrı yol beliriyor. Birine göre çevirmen, metnin sözcüklerinden ve cümle düzeninden mümkün olduğunca ayrılmamalıdır; çünkü yazarın seçimi en küçük dil biriminde bile görünür. Ötekine göre ise sözcüklere bu ölçüde bağlanmak, metnin sesini öldürebilir. Bu görüşü savunanlar, aynı etkiyi başka araçlarla kurmayı ihanet değil, asıl sadakat sayar. İlki metnin ayak izlerini tek tek korumaya, ikincisi yürüyüşünü yeniden duyurmaya çalışır.",
+      "prompt": "Bu parçada karşılaştırılan iki yaklaşım arasındaki temel ayrım aşağıdakilerden hangisidir?",
+      "passageWordCount": 62,
+      "answerWordCount": 16,
+      "answerIsLongest": true,
+      "answerPassageOverlap": 0.231
+    },
+    {
+      "modelId": "reading-paragraph-function-v2",
+      "genre": "iki-paragraflı-eleştiri",
+      "voice": "açıklayıcı-örnekleyici",
+      "sourceMode": "özgün-müze-yazısı",
+      "stemFamily": "paragraf-işlevi",
+      "rhetoricalMoves": [
+        "sorun",
+        "uygulama-örneği",
+        "sonuç"
+      ],
+      "context": "Müzelerde bazen nesneden önce açıklama levhasını okuruz. Uzun metinler, neye bakacağımızı ve ne düşüneceğimizi baştan söylediğinde vitrindeki eşya yalnız yazının kanıtına dönüşür. Bilgi vermek isterken merakı ortadan kaldıran bu tutum, ziyaretçiyi dikkatli bir gözlemci olmaktan çıkarabilir.\n\nKent Müzesi, yeni sergisinde levhaları birkaç kısa soruyla sınırladı: “Bu kap neden tek kulplu?”, “Üzerindeki aşınma size ne söylüyor?” Ziyaretçiler önce nesneyi inceleyip kendi tahminlerini yaptı, ayrıntılı bilgiye ise daha sonra açılan bölümlerden ulaştı. Sergi sonunda yapılan görüşmelerde pek çok kişi, eşyalara eskisinden daha uzun süre baktığını belirtti.",
+      "prompt": "İkinci paragrafın metnin bütünü içindeki işlevi aşağıdakilerden hangisidir?",
+      "passageWordCount": 84,
+      "answerWordCount": 12,
+      "answerIsLongest": true,
+      "answerPassageOverlap": 0
+    },
+    {
+      "modelId": "reading-necessary-assumption-v2",
+      "genre": "kısa-olay-yazısı",
+      "voice": "üçüncü-tekil-anlatıcı",
+      "sourceMode": "özgün-gündelik-gözlem",
+      "stemFamily": "zorunlu-varsayım",
+      "rhetoricalMoves": [
+        "önce-sonra",
+        "alıntı",
+        "çıkarım"
+      ],
+      "context": "İskele Kütüphanesinde şiir kitapları yıllardır arka koridorun alt raflarında duruyordu. Kütüphane yönetimi bu kitapları girişe yakın, göz hizasındaki raflara taşıdı. Sonraki iki ayda şiir kitaplarının ödünç alınma sayısı önceki iki aya göre belirgin biçimde arttı. Müdür, “Demek ki okur şiirden uzak değildi; şiir okurun gözünden uzaktı.” diyerek artışı yeni yerleşime bağladı.",
+      "prompt": "Kütüphane müdürünün çıkarımı aşağıdaki varsayımlardan hangisine dayanır?",
+      "passageWordCount": 51,
+      "answerWordCount": 13,
+      "answerIsLongest": true,
+      "answerPassageOverlap": 0.25
+    },
+    {
+      "modelId": "reading-causal-boundary-v2",
+      "genre": "araştırma-özeti",
+      "voice": "nesnel-bilimsel",
+      "sourceMode": "gözlemsel-araştırma",
+      "stemFamily": "nedensellik-sınırı",
+      "rhetoricalMoves": [
+        "bulgu",
+        "yöntem-sınırı",
+        "karşılaştırma"
+      ],
+      "context": "164 lise öğrencisinden bir ay boyunca ders çalışırken nasıl bir ses ortamını tercih ettikleri kaydedildi. Sessiz ortamda çalışanların okuduğunu anlama puanı ortalaması, sözsüz müzik dinleyenlerinkinden daha yüksekti. Ancak öğrenciler bu iki gruba araştırmacılar tarafından atanmadı; önceki başarı düzeyleri, günlük çalışma süreleri ve metin okuma alışkanlıkları eşitlenmedi.",
+      "prompt": "Bu araştırmaya dayanılarak aşağıdakilerden hangisi söylenebilir?",
+      "passageWordCount": 46,
+      "answerWordCount": 21,
+      "answerIsLongest": true,
+      "answerPassageOverlap": 0.333
+    },
+    {
+      "modelId": "reading-cross-text-relation-v2",
+      "genre": "iki-metimli-deneme",
+      "voice": "karşılaştırmalı-birinci-çoğul",
+      "sourceMode": "özgün-edebî",
+      "stemFamily": "iki-metin-ilişkisi",
+      "rhetoricalMoves": [
+        "özdeyiş",
+        "karşıtlık",
+        "tanımlama"
+      ],
+      "context": "I. Metin: Günlüğün değeri, cümle daha kendini savunmayı öğrenmeden yakalanan ilk sestedir. Akşam yazılan bir öfkeyi ertesi gün düzeltmek, belki onu daha ölçülü kılar ama o anın sıcaklığını da söndürür. Günlük, kusurunu saklamadığı ölçüde gerçektir.\n\nII. Metin: İlk anda yazdıklarımızın hepsi bize ait olabilir ama hepsi bizi anlatmaz. Günlük sayfasına geri dönmek, yaşananı değiştirmek değil; gürültünün içinden asıl sesi seçmektir. Bazen en sahici cümle, ilk değil üçüncü kez kurduğumuz cümledir.",
+      "prompt": "Bu iki metinle ilgili olarak aşağıdakilerden hangisi söylenebilir?",
+      "passageWordCount": 70,
+      "answerWordCount": 18,
+      "answerIsLongest": true,
+      "answerPassageOverlap": 0.214
+    },
+    {
+      "modelId": "reading-strongest-evidence-v2",
+      "genre": "kaynak-değerlendirme",
+      "voice": "nesnel-sorgulayıcı",
+      "sourceMode": "tarihsel-iddia",
+      "stemFamily": "en-güçlü-kanıt",
+      "rhetoricalMoves": [
+        "iddia",
+        "kanıt-karşılaştırma"
+      ],
+      "context": "“Turnalar Geçerken” adlı türkünün bilinen ilk plak kaydı 1924 yılına aittir. Bu yüzden eser uzun süre o dönemin ürünü sayılmıştır. Bir araştırmacı ise plağın türkünün doğduğu tarihi değil, yalnız kayda geçtiği tarihi gösterdiğini; eserin daha önce de söylendiğini ileri sürüyor.",
+      "prompt": "Aşağıdakilerden hangisi araştırmacının iddiasını en güçlü biçimde destekler?",
+      "passageWordCount": 40,
+      "answerWordCount": 19,
+      "answerIsLongest": true,
+      "answerPassageOverlap": 0.077
+    }
+  ]
+}
