@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T10:36:15.988Z",
+  "generatedAt": "2026-08-03T10:49:36.736Z",
   "batchId": "GRADE8_TURKISH_PILOT_01_CALIBRATION_5",
   "decision": "HUMAN_REVIEW_REQUIRED",
   "productReady": false,
@@ -26,12 +26,52 @@
           "requiredEvidenceCount": 3,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0.182,
+          "maxSingleSentenceAnswerOverlap": 0.077,
           "optionWordCounts": [
+            16,
             15,
-            12,
-            14,
-            13
+            16,
+            15
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 16,
+              "qualifierCount": 1,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            },
+            {
+              "id": "B",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "D",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
           ]
         }
       },
@@ -43,12 +83,52 @@
           "requiredEvidenceCount": 3,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0.083,
+          "maxSingleSentenceAnswerOverlap": 0.231,
           "optionWordCounts": [
-            15,
-            15,
             14,
-            12
+            15,
+            16,
+            16
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 14,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "B",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "C",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 16,
+              "qualifierCount": 1,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            }
           ]
         }
       },
@@ -60,12 +140,52 @@
           "requiredEvidenceCount": 4,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0.059,
+          "maxSingleSentenceAnswerOverlap": 0.067,
           "optionWordCounts": [
-            19,
-            16,
+            18,
+            18,
             17,
-            14
+            18
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "B",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "C",
+              "wordCount": 17,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "D",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            }
           ]
         }
       },
@@ -79,10 +199,50 @@
           "semanticFieldCount": 1,
           "maxSingleSentenceAnswerOverlap": 0,
           "optionWordCounts": [
+            19,
             18,
-            17,
-            15,
-            15
+            16,
+            17
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 19,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "B",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "C",
+              "wordCount": 16,
+              "qualifierCount": 1,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            },
+            {
+              "id": "D",
+              "wordCount": 17,
+              "qualifierCount": 1,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            }
           ]
         }
       },
@@ -94,12 +254,52 @@
           "requiredEvidenceCount": 4,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0.167,
+          "maxSingleSentenceAnswerOverlap": 0.133,
           "optionWordCounts": [
+            16,
+            17,
             18,
-            15,
-            22,
-            17
+            16
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 16,
+              "qualifierCount": 1,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            },
+            {
+              "id": "B",
+              "wordCount": 17,
+              "qualifierCount": 1,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            },
+            {
+              "id": "C",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 2,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "D",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            }
           ]
         }
       }
@@ -141,19 +341,19 @@
       "options": [
         {
           "id": "A",
-          "text": "Eski yapılardaki her bozulma, yapının tarihsel değerini artıran ve mutlaka korunması gereken bir belge sayılmalıdır."
+          "text": "Yapının geçirdiği zamanı gösteren izler korunmalı; güvenliği tehdit eden bölümler ise özgün görünüme uygun biçimde yenilenmelidir."
         },
         {
           "id": "B",
-          "text": "Restorasyonda yapının güvenliği sağlanırken zamanın bıraktığı anlamlı izlerin de silinmemesine özen gösterilmelidir."
+          "text": "Restorasyon, yapının bugünkü güvenliğini sağlarken zaman içinde kazandığı tarihsel tanıklığı da koruyacak bir denge kurmalıdır."
         },
         {
           "id": "C",
-          "text": "Tarihî yapıların özgünlüğünü korumanın en güvenilir yolu, onları mümkün olduğunca az müdahaleyle kullanıma kapatmaktır."
+          "text": "Tarihî yapılara sınırlı müdahale edilmesi özgünlüğü korur; bu nedenle kullanım sürse bile sonradan oluşan izlere dokunulmamalıdır."
         },
         {
           "id": "D",
-          "text": "Başarılı bir restorasyonun temel ölçütü, yapının ilk inşa edildiği dönemdeki görünümüne olabildiğince yaklaşmasıdır."
+          "text": "Restorasyonda güvenlik gereksinimleri karşılandıktan sonra yapının ilk dönem görünümüne dönmesi, tarihsel değerini daha belirgin kılar."
         }
       ],
       "answerKey": {
@@ -186,7 +386,7 @@
           "optionId": "A",
           "correct": false,
           "misconceptionId": "all-damage-is-heritage",
-          "text": "Parça bazı izlerin tarihsel tanıklık taşıyabileceğini söyler; çürüyen kiriş gibi güvenliği bozan her unsurun korunmasını savunmaz.",
+          "text": "Seçenek güvenlik müdahalesini kabul eder; ancak hangi izin anlamlı olduğuna yalnız “özgün görünüme uygunluk” üzerinden karar vererek parçadaki tarihsel tanıklık ölçütünü daraltır.",
           "supportingEvidenceIds": [
             "e2"
           ],
@@ -198,7 +398,7 @@
           "optionId": "B",
           "correct": true,
           "misconceptionId": null,
-          "text": "Parçanın iki yönünü birlikte taşır: zorunlu güvenlik müdahalesi yapılmalı, fakat yapının tarihsel tanıklığı yok edilmemelidir.",
+          "text": "Parçanın iki yönünü birlikte taşır: yapı güvenli kılınmalı, bunu yaparken zamanın bıraktığı tarihsel tanıklık yok edilmemelidir.",
           "supportingEvidenceIds": [
             "e2",
             "e3",
@@ -210,7 +410,7 @@
           "optionId": "C",
           "correct": false,
           "misconceptionId": "preservation-means-nonuse",
-          "text": "Yazar müdahaleyi tümüyle reddetmez; yapının güvenli kılınması için gerekli onarımları açıkça kabul eder.",
+          "text": "Parça, bütün sonradan oluşmuş izlerin dokunulmaz olduğunu söylemez; güvenlik için gerekli müdahaleyi kabul eder ve yalnız anlamlı tanıklığın korunmasını ister.",
           "supportingEvidenceIds": [
             "e1",
             "e2"
@@ -223,7 +423,7 @@
           "optionId": "D",
           "correct": false,
           "misconceptionId": "renewal-equals-preservation",
-          "text": "Parçanın karşı çıktığı görüş tam olarak budur: korumayı yüzeyi yenileyip geçmişe benzeyen bir dekor üretmekle karıştırmak.",
+          "text": "Seçenek güvenliği doğru bir ayrıntı olarak kullanır; fakat restorasyonun ölçütünü ilk dönem görünümüne dönmek sayarak parçanın karşı çıktığı yenileme anlayışına yaklaşır.",
           "supportingEvidenceIds": [
             "e1"
           ],
@@ -277,12 +477,52 @@
           "requiredEvidenceCount": 3,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0.182,
+          "maxSingleSentenceAnswerOverlap": 0.077,
           "optionWordCounts": [
+            16,
             15,
-            12,
-            14,
-            13
+            16,
+            15
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 16,
+              "qualifierCount": 1,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            },
+            {
+              "id": "B",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "D",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
           ]
         }
       }
@@ -321,19 +561,19 @@
       "options": [
         {
           "id": "A",
-          "text": "Okurun bilmediği sözcükleri araştırmasını sağlamak için bu tür sözcükler metinde herhangi bir açıklama yapılmadan bırakılmalıdır."
+          "text": "Yabancı sözcükler okuru araştırmaya yöneltebilir; bu nedenle anlamları bağlamdan sezilse bile metinde açıklanmadan bırakılmalıdır."
         },
         {
           "id": "B",
-          "text": "Bir metnin akıcı ve anlaşılır olması, okurun metindeki bütün sözcüklerin anlamını okumadan önce bilmesine bağlıdır."
+          "text": "Okurun sözcüğü önceden bilmemesi akışı güçleştirebilir; bu yüzden editörün daha yaygın karşılık önerisi anlaşılabilirliği artırır."
         },
         {
           "id": "C",
-          "text": "Yabancı bir sözcük, bağlam yeterli ipucu verdiğinde okurun anlamasını engellemeden metnin dil dünyasını zenginleştirebilir."
+          "text": "Sözcüğün anlamını sezdiren bağlam, okurun metinden kopmadan farklı bir söyleyişle karşılaşmasını ve onu merak etmesini sağlayabilir."
         },
         {
           "id": "D",
-          "text": "Editörlerin sözcük değişikliği önerileri, yazarın anlatım tercihlerini sınırladığı için genellikle dikkate alınmamalıdır."
+          "text": "Okurun sonradan sözlüğe bakması sözcüğün ilgi çektiğini gösterir; ancak bağlamın anlamı aktarmakta yetersiz kaldığını da düşündürür."
         }
       ],
       "answerKey": {
@@ -366,7 +606,7 @@
           "optionId": "A",
           "correct": false,
           "misconceptionId": "research-justifies-no-context",
-          "text": "Okur sözcüğü merak etmiştir; fakat anlamı sezebilmesini sağlayan şey açıklamasız bırakılması değil, sahneye yerleştirilen bağlamsal ipuçlarıdır.",
+          "text": "Seçenek okurun araştırma isteğini doğru yakalar; ancak bağlam anlamı sezdirdiği hâlde sözcüğün açıklamasız bırakılması gerektiği sonucunu gereksiz biçimde geneller.",
           "supportingEvidenceIds": [
             "e3"
           ],
@@ -378,7 +618,7 @@
           "optionId": "B",
           "correct": false,
           "misconceptionId": "unknown-word-blocks-comprehension",
-          "text": "Parça, okurun sözcüğü önceden bilmediği hâlde bağlamdan anlam çıkarabildiğini gösterir.",
+          "text": "Editörün kaygısı anlaşılabilir olsa da parça, sözcüğün değiştirilmeden de bağlam sayesinde anlaşılabildiğini gösterir; zorunlu değişiklik sonucu çıkarılamaz.",
           "supportingEvidenceIds": [
             "e1"
           ],
@@ -391,7 +631,7 @@
           "optionId": "C",
           "correct": true,
           "misconceptionId": null,
-          "text": "Yazar sözcüğü korumuş, bağlamla anlaşılmasını sağlamış; okur da hem anlamı sezmiş hem sözcüğe ilgi duymuştur.",
+          "text": "Yazar sözcüğü korurken çevresine anlamı sezdirecek ayrıntılar yerleştirmiş; okur da metinden kopmadan sözcüğü anlamış ve merak etmiştir.",
           "supportingEvidenceIds": [
             "e1",
             "e2",
@@ -403,7 +643,7 @@
           "optionId": "D",
           "correct": false,
           "misconceptionId": "single-case-discredits-editing",
-          "text": "Parça yalnız bir önerinin nasıl karşılandığını anlatır; editörlerin önerilerinin genel olarak değersiz olduğu sonucunu desteklemez.",
+          "text": "Okurun sonradan araştırması bağlamın yetersiz olduğunu değil, sözcüğün merak uyandırdığını gösterir; anlamı sözlüğe bakmadan sezdiği açıkça belirtilmiştir.",
           "supportingEvidenceIds": [
             "e1"
           ],
@@ -452,12 +692,52 @@
           "requiredEvidenceCount": 3,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0.083,
+          "maxSingleSentenceAnswerOverlap": 0.231,
           "optionWordCounts": [
-            15,
-            15,
             14,
-            12
+            15,
+            16,
+            16
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 14,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "B",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "C",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 16,
+              "qualifierCount": 1,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            }
           ]
         }
       }
@@ -499,19 +779,19 @@
       "options": [
         {
           "id": "A",
-          "text": "İki metin de ziyaretçinin bağımsız düşünmesini önemser; ilki etiketin ölçülü olmasını, ikincisi gerekli bağlamı sunup yorumu açık bırakmasını ister."
+          "text": "Birinci metin etiketin eseri gölgelemesini, ikinci metin bağlam eksikliğini eleştirir; ikisi de etiketin yönlendirici olup yorumu belirlememesinde birleşir."
         },
         {
           "id": "B",
-          "text": "Birinci metin müze etiketlerini gereksiz bulurken ikinci metin etikette verilen bilgiyi eserin tek geçerli yorumu sayar."
+          "text": "Birinci metin etiketin gereksizliğini savunurken ikinci metin tarihsel açıklamayı zorunlu görür; bu nedenle etiketin işlevi konusunda karşıt görüştedirler."
         },
         {
           "id": "C",
-          "text": "İki metin de tarihsel bilgi vermenin ziyaretçiyi eserden uzaklaştıracağını düşündüğü için etiketlerin yalnız eser adından oluşmasını savunur."
+          "text": "Birinci metin kısa, ikinci metin ayrıntılı etiketleri savunur; ikisi de ziyaretçinin yorumunu etiketteki bilginin belirlemesi gerektiğini düşünür."
         },
         {
           "id": "D",
-          "text": "Metinler, müze etiketlerinin uzunluğu konusunda uzlaşsa da ziyaretçiye yorum alanı bırakılıp bırakılmaması konusunda ayrılır."
+          "text": "Birinci metin görsel deneyimi, ikinci metin tarihsel bilgiyi öne çıkarır; bu yüzden ziyaretçiye yorum alanı bırakma konusunda ayrılırlar."
         }
       ],
       "answerKey": {
@@ -545,7 +825,7 @@
           "optionId": "A",
           "correct": true,
           "misconceptionId": null,
-          "text": "Ortak nokta ziyaretçiye hazır hüküm vermemektir; ayrıldıkları vurgu ise kısa tutma ile bağlam sunma arasındadır.",
+          "text": "Her iki metin etiketi ziyaretçinin yerine düşünen bir hükme dönüştürmez; birincisi eseri gölgelememeyi, ikincisi gerekli bağlamı verip yorumu açık tutmayı öne çıkarır.",
           "supportingEvidenceIds": [
             "e1",
             "e2",
@@ -558,7 +838,7 @@
           "optionId": "B",
           "correct": false,
           "misconceptionId": "difference-becomes-total-opposition",
-          "text": "Birinci metin etiketi kaldırmayı değil kısa tutmayı, ikinci metin ise tek yorumu dayatmamayı savunur.",
+          "text": "Birinci metin etiketi kaldırmayı değil eseri gölgelemeyecek ölçüde kullanmayı, ikinci metin ise etiketi tek yorum hâline getirmemeyi savunur; tam karşıtlık yoktur.",
           "supportingEvidenceIds": [
             "e1",
             "e3"
@@ -572,7 +852,7 @@
           "optionId": "C",
           "correct": false,
           "misconceptionId": "first-text-applied-to-both",
-          "text": "İkinci metin, nesnenin kökeni ve işlevi gibi tarihsel bağlamın verilmesini özellikle gerekli görür.",
+          "text": "İkinci metin bağlam bilgisini gerekli görür; ayrıca iki metinden hiçbiri ziyaretçinin yorumunu etiketin belirlemesini istemez.",
           "supportingEvidenceIds": [
             "e1",
             "e2"
@@ -585,7 +865,7 @@
           "optionId": "D",
           "correct": false,
           "misconceptionId": "swap-common-and-different-points",
-          "text": "Metinlerin ortaklaştığı nokta yorum alanı bırakmaktır; uzunluk ve bilgi miktarı konusunda aynı şeyi söylemezler.",
+          "text": "Metinler vurgu bakımından farklılaşsa da ziyaretçinin kendi yorumuna alan bırakma konusunda ayrılmaz; bu, ortak noktalarıdır.",
           "supportingEvidenceIds": [
             "e2",
             "e4"
@@ -642,12 +922,52 @@
           "requiredEvidenceCount": 4,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0.059,
+          "maxSingleSentenceAnswerOverlap": 0.067,
           "optionWordCounts": [
-            19,
-            16,
+            18,
+            18,
             17,
-            14
+            18
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "B",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "C",
+              "wordCount": 17,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "D",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            }
           ]
         }
       }
@@ -686,19 +1006,19 @@
       "options": [
         {
           "id": "A",
-          "text": "Reklam, kısa çalışma süresi ile indirme sayısını verdiği için uygulamanın başarı oranını nesnel ve karşılaştırılabilir biçimde ortaya koymuştur."
+          "text": "Reklam, kısa çalışma süresiyle kolaylık ve indirme sayısıyla yaygınlık izlenimi verir; bu iki bilgi uygulamanın başarı düzeyini karşılaştırmaya yeterlidir."
         },
         {
           "id": "B",
-          "text": "Canlandırılmış bir başarı öyküsü ve uygulamanın yaygınlığı ikna amacıyla kullanılmıştır; bunlar aynı sonucun bütün kullanıcılarda oluşacağını kanıtlamaz."
+          "text": "Reklam, canlandırılmış bir örneği ve popülerlik bilgisini etkililik göstergesi gibi sunar; verilenler konuşma becerisindeki gelişimin düzeyini belirlemeye yetmez."
         },
         {
           "id": "C",
-          "text": "Küçük puntolu uyarı, reklamda gösterilen gelişimin bilimsel olarak ölçüldüğünü ve yalnız bazı kullanıcılarda görülmediğini doğrular."
+          "text": "Küçük yazı sonuçların değişebileceğini belirtir; buna karşılık reklamda gösterilen gelişimin gerçek kullanıcı verilerine dayandığını da doğrular."
         },
         {
           "id": "D",
-          "text": "Öğrencinin havaalanında konuşabilmesi, uygulamanın özellikle yolculuk dilini geliştirdiğine ilişkin doğrudan ve genellenebilir bir sonuç sunar."
+          "text": "Havaalanı sahnesi uygulamanın yolculuk dilinde işe yarayabileceğini düşündürür; fakat günlük on dakikanın başka konuşma durumlarına etkisini göstermez."
         }
       ],
       "answerKey": {
@@ -731,7 +1051,7 @@
           "optionId": "A",
           "correct": false,
           "misconceptionId": "numbers-equal-effectiveness",
-          "text": "Süre ve indirme sayısı verilir; ancak bunlar başarı oranı, karşılaştırma grubu veya öğrenme sonucu ölçümü değildir.",
+          "text": "Süre ve indirme sayısı kolaylık ve yaygınlık izlenimi verir; bunlar başarı düzeyini ölçen karşılaştırmalı sonuçlar değildir.",
           "supportingEvidenceIds": [
             "e2"
           ],
@@ -743,7 +1063,7 @@
           "optionId": "B",
           "correct": true,
           "misconceptionId": null,
-          "text": "Reklam hem örnek başarı sahnesinden hem popülerlik göstergesinden yararlanır; küçük yazı da sonucun genellenemeyeceğini kabul eder.",
+          "text": "Canlandırılmış sahne ile indirme sayısı ikna unsuru olarak kullanılır; ancak bunlar konuşma becerisindeki gelişimin ne kadar olduğunu ölçmez.",
           "supportingEvidenceIds": [
             "e1",
             "e2",
@@ -755,7 +1075,7 @@
           "optionId": "C",
           "correct": false,
           "misconceptionId": "disclaimer-as-proof",
-          "text": "Uyarı bilimsel ölçüm kanıtı değildir; tam tersine sahnenin canlandırma olduğunu ve sonuçların değişebileceğini bildirir.",
+          "text": "Küçük yazı gerçek kullanıcı verisini doğrulamaz; sahnenin canlandırma olduğunu ve sonuçların değişebileceğini bildirerek genelleme sınırı koyar.",
           "supportingEvidenceIds": [
             "e3"
           ],
@@ -767,7 +1087,7 @@
           "optionId": "D",
           "correct": false,
           "misconceptionId": "single-scene-generalization",
-          "text": "Tek bir canlandırılmış sahne, uygulamanın gerçek kullanıcılar üzerindeki etkisini ya da belirli bir becerideki başarısını genellemek için yeterli değildir.",
+          "text": "Sahne yolculuk diline ilişkin bir kullanım örneği oluşturur; ancak canlandırma olduğu için uygulamanın o alandaki gerçek etkisini bile kanıtlamaz.",
           "supportingEvidenceIds": [
             "e1"
           ],
@@ -819,10 +1139,50 @@
           "semanticFieldCount": 1,
           "maxSingleSentenceAnswerOverlap": 0,
           "optionWordCounts": [
+            19,
             18,
-            17,
-            15,
-            15
+            16,
+            17
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 19,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "B",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "C",
+              "wordCount": 16,
+              "qualifierCount": 1,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            },
+            {
+              "id": "D",
+              "wordCount": 17,
+              "qualifierCount": 1,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            }
           ]
         }
       }
@@ -863,19 +1223,19 @@
       "options": [
         {
           "id": "A",
-          "text": "Çalışmanın üniversitede yapılmış olması, çocukların göz sağlığı ve okul başarısıyla ilgili sonraki yorumların da güvenilir kabul edilmesini sağlar."
+          "text": "Çalışmanın üniversitede yürütülmesi bulguyu değerli kılar; ancak yetişkin örneklemi çocukların okul başarısıyla ilgili yorumu doğrudan desteklemez."
         },
         {
           "id": "B",
-          "text": "Derlemede sonuçların tutarsız bulunması, ilk çalışmada görülen 12 dakikalık farkın kesinlikle ölçüm hatasından kaynaklandığını gösterir."
+          "text": "Derlemenin sonuçları tutarsız bulması ilk çalışmayı geçersiz kılmaz; buna karşılık on iki araştırmada aynı etkinin doğrulandığını gösterir."
         },
         {
           "id": "C",
-          "text": "İlk çalışma yetişkinlerde kısa süreli bir uykuya dalma bulgusu sunar; çocuklar, okul başarısı ve kalıcı göz hasarı iddiaları için yeterli kanıt sağlamaz."
+          "text": "İlk bulgu yetişkinlerin uykuya dalma süresiyle sınırlıdır; kuruluşun çocuk, göz sağlığı ve başarı yorumları incelenen verilerin kapsamını aşmaktadır."
         },
         {
           "id": "D",
-          "text": "Araştırmayı paylaşan kuruluşun gözlük satması, aktardığı çalışma verilerinin ve filtreli gözlüklerle ilgili bütün bilgilerin yanlış olduğunu kanıtlar."
+          "text": "Kuruluşun satış ilişkisi yorumlarına kuşkuyla yaklaşmayı gerektirir; bu nedenle üniversite çalışmasındaki uyku bulgusu da güvenilir sayılamaz."
         }
       ],
       "answerKey": {
@@ -909,7 +1269,7 @@
           "optionId": "A",
           "correct": false,
           "misconceptionId": "institution-authority-overrides-scope",
-          "text": "Araştırmanın kurumu önemli olabilir; ancak yetişkinlerde ölçülen kısa süreli uyku bulgusunu çocukların göz sağlığına ve okul başarısına taşımaz.",
+          "text": "Seçenek örneklem sınırını kısmen fark eder; fakat göz sağlığı iddiasını ve derlemenin tutarsızlık bulgusunu değerlendirmediği için kaynakları birlikte çözümlemez.",
           "supportingEvidenceIds": [
             "e1"
           ],
@@ -922,7 +1282,7 @@
           "optionId": "B",
           "correct": false,
           "misconceptionId": "inconsistency-means-false",
-          "text": "Tutarsız sonuçlar bulgunun kesinleşmediğini gösterir; belirli bir sonucun mutlaka ölçüm hatası olduğunu kanıtlamaz.",
+          "text": "Derleme sonuçların tutarsız olduğunu söyler; aynı etkinin on iki araştırmada doğrulandığı sonucuna ulaşılamaz.",
           "supportingEvidenceIds": [
             "e2",
             "e4"
@@ -933,7 +1293,7 @@
           "optionId": "C",
           "correct": true,
           "misconceptionId": null,
-          "text": "Seçenek örneklemi, süreyi, ölçülen sonucu ve sonradan eklenen iddiaları birbirinden ayırarak kaynakların gerçek kapsamını korur.",
+          "text": "Seçenek ilk çalışmanın örneklem ve ölçüm sınırını korur; kuruluşun çocuk, göz sağlığı ve başarı iddialarının bu sınırları aştığını doğru belirler.",
           "supportingEvidenceIds": [
             "e1",
             "e2",
@@ -946,7 +1306,7 @@
           "optionId": "D",
           "correct": false,
           "misconceptionId": "conflict-means-automatic-falsehood",
-          "text": "Çıkar ilişkisi kaynağı daha dikkatli değerlendirmeyi gerektirir; fakat aktarılan bütün verilerin otomatik olarak yanlış olduğunu göstermez.",
+          "text": "Satış ilişkisi kuruluşun yorumlarına kuşkuyla yaklaşmayı gerektirir; fakat bağımsız üniversite çalışmasının bulgusunu kendiliğinden geçersiz kılmaz.",
           "supportingEvidenceIds": [
             "e3"
           ],
@@ -998,12 +1358,52 @@
           "requiredEvidenceCount": 4,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0.167,
+          "maxSingleSentenceAnswerOverlap": 0.133,
           "optionWordCounts": [
+            16,
+            17,
             18,
-            15,
-            22,
-            17
+            16
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 16,
+              "qualifierCount": 1,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            },
+            {
+              "id": "B",
+              "wordCount": 17,
+              "qualifierCount": 1,
+              "limitationCount": 1,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 3
+            },
+            {
+              "id": "C",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 2,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "D",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            }
           ]
         }
       }

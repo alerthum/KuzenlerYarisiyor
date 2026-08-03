@@ -28,6 +28,7 @@ test('her soru tek cümle ipucunu engeller ve çoklu kanıt sentezi ister', () =
     assert.equal(audit.metrics.partialDistractorCount >= 2, true);
     assert.equal(audit.metrics.semanticFieldCount, 1);
     assert.equal(audit.metrics.maxSingleSentenceAnswerOverlap <= 0.72, true);
+    assert.equal(audit.metrics.blindOptionCueRisk, 0);
   }
 });
 
@@ -75,6 +76,18 @@ test('katalog tür, kaynak biçimi, kazanım ve cevap konumu bakımından tek ka
     humanReviewStatus: 'NOT_MEASURED',
     productReady: false
   });
+});
+
+test('yalnız seçeneklere bakılarak doğruyu ele veren retorik yapı reddedilir', () => {
+  const item = structuredClone(items[3]);
+  const correct = item.content.options.find(entry => entry.id === item.answerKey.optionId);
+  correct.text = 'Ancak verilenler, uygulamanın bütün kullanıcılarda aynı sonucu oluşturduğunu kanıtlamak için tek başına yeterli değildir.';
+  for (const distractor of item.content.options.filter(entry => entry.id !== item.answerKey.optionId)) {
+    distractor.text = 'Reklamdaki bilgiler uygulamanın kullanıcılar üzerindeki etkisini açık biçimde ortaya koymaktadır.';
+  }
+  const audit = auditGrade8TurkishCalibrationQuestion(item);
+  assert.equal(audit.ok, false);
+  assert.equal(audit.errors.includes('option-only-rhetorical-giveaway'), true);
 });
 
 test('doğru seçeneğin tek kanıta düşürülmesi mutasyon kapısını kırar', () => {

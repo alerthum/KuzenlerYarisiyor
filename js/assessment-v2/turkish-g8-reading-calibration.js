@@ -60,21 +60,21 @@ const CALIBRATION_SPECS = Object.freeze([
     ],
     synthesis: { requiredEvidenceIds: ['e2', 'e3', 'e4'], singleSentenceSufficient: false },
     options: [
-      option('A', 'Eski yapılardaki her bozulma, yapının tarihsel değerini artıran ve mutlaka korunması gereken bir belge sayılmalıdır.', {
+      option('A', 'Yapının geçirdiği zamanı gösteren izler korunmalı; güvenliği tehdit eden bölümler ise özgün görünüme uygun biçimde yenilenmelidir.', {
         semanticField: 'restoration-principle', partialSupport: ['e2'], contradictions: ['e3'], scope: 'expanded', claimFit: 'partial', misconceptionId: 'all-damage-is-heritage',
-        feedback: 'Parça bazı izlerin tarihsel tanıklık taşıyabileceğini söyler; çürüyen kiriş gibi güvenliği bozan her unsurun korunmasını savunmaz.'
+        feedback: 'Seçenek güvenlik müdahalesini kabul eder; ancak hangi izin anlamlı olduğuna yalnız “özgün görünüme uygunluk” üzerinden karar vererek parçadaki tarihsel tanıklık ölçütünü daraltır.'
       }),
-      option('B', 'Restorasyonda yapının güvenliği sağlanırken zamanın bıraktığı anlamlı izlerin de silinmemesine özen gösterilmelidir.', {
+      option('B', 'Restorasyon, yapının bugünkü güvenliğini sağlarken zaman içinde kazandığı tarihsel tanıklığı da koruyacak bir denge kurmalıdır.', {
         correct: true, semanticField: 'restoration-principle', support: ['e2', 'e3', 'e4'], scope: 'preserved', claimFit: 'full',
-        feedback: 'Parçanın iki yönünü birlikte taşır: zorunlu güvenlik müdahalesi yapılmalı, fakat yapının tarihsel tanıklığı yok edilmemelidir.'
+        feedback: 'Parçanın iki yönünü birlikte taşır: yapı güvenli kılınmalı, bunu yaparken zamanın bıraktığı tarihsel tanıklık yok edilmemelidir.'
       }),
-      option('C', 'Tarihî yapıların özgünlüğünü korumanın en güvenilir yolu, onları mümkün olduğunca az müdahaleyle kullanıma kapatmaktır.', {
+      option('C', 'Tarihî yapılara sınırlı müdahale edilmesi özgünlüğü korur; bu nedenle kullanım sürse bile sonradan oluşan izlere dokunulmamalıdır.', {
         semanticField: 'restoration-principle', partialSupport: ['e1', 'e2'], contradictions: ['e3'], scope: 'shifted', claimFit: 'partial', misconceptionId: 'preservation-means-nonuse',
-        feedback: 'Yazar müdahaleyi tümüyle reddetmez; yapının güvenli kılınması için gerekli onarımları açıkça kabul eder.'
+        feedback: 'Parça, bütün sonradan oluşmuş izlerin dokunulmaz olduğunu söylemez; güvenlik için gerekli müdahaleyi kabul eder ve yalnız anlamlı tanıklığın korunmasını ister.'
       }),
-      option('D', 'Başarılı bir restorasyonun temel ölçütü, yapının ilk inşa edildiği dönemdeki görünümüne olabildiğince yaklaşmasıdır.', {
+      option('D', 'Restorasyonda güvenlik gereksinimleri karşılandıktan sonra yapının ilk dönem görünümüne dönmesi, tarihsel değerini daha belirgin kılar.', {
         semanticField: 'restoration-principle', partialSupport: ['e1'], contradictions: ['e1', 'e4'], scope: 'reversed', claimFit: 'opposite', misconceptionId: 'renewal-equals-preservation',
-        feedback: 'Parçanın karşı çıktığı görüş tam olarak budur: korumayı yüzeyi yenileyip geçmişe benzeyen bir dekor üretmekle karıştırmak.'
+        feedback: 'Seçenek güvenliği doğru bir ayrıntı olarak kullanır; fakat restorasyonun ölçütünü ilk dönem görünümüne dönmek sayarak parçanın karşı çıktığı yenileme anlayışına yaklaşır.'
       })
     ],
     solutionSteps: [
@@ -108,21 +108,21 @@ const CALIBRATION_SPECS = Object.freeze([
     ],
     synthesis: { requiredEvidenceIds: ['e1', 'e2', 'e3'], singleSentenceSufficient: false },
     options: [
-      option('A', 'Okurun bilmediği sözcükleri araştırmasını sağlamak için bu tür sözcükler metinde herhangi bir açıklama yapılmadan bırakılmalıdır.', {
+      option('A', 'Yabancı sözcükler okuru araştırmaya yöneltebilir; bu nedenle anlamları bağlamdan sezilse bile metinde açıklanmadan bırakılmalıdır.', {
         semanticField: 'unfamiliar-word-use', partialSupport: ['e3'], contradictions: ['e2'], scope: 'expanded', claimFit: 'partial', misconceptionId: 'research-justifies-no-context',
-        feedback: 'Okur sözcüğü merak etmiştir; fakat anlamı sezebilmesini sağlayan şey açıklamasız bırakılması değil, sahneye yerleştirilen bağlamsal ipuçlarıdır.'
+        feedback: 'Seçenek okurun araştırma isteğini doğru yakalar; ancak bağlam anlamı sezdirdiği hâlde sözcüğün açıklamasız bırakılması gerektiği sonucunu gereksiz biçimde geneller.'
       }),
-      option('B', 'Bir metnin akıcı ve anlaşılır olması, okurun metindeki bütün sözcüklerin anlamını okumadan önce bilmesine bağlıdır.', {
+      option('B', 'Okurun sözcüğü önceden bilmemesi akışı güçleştirebilir; bu yüzden editörün daha yaygın karşılık önerisi anlaşılabilirliği artırır.', {
         semanticField: 'unfamiliar-word-use', partialSupport: ['e1'], contradictions: ['e2', 'e3'], scope: 'reversed', claimFit: 'opposite', misconceptionId: 'unknown-word-blocks-comprehension',
-        feedback: 'Parça, okurun sözcüğü önceden bilmediği hâlde bağlamdan anlam çıkarabildiğini gösterir.'
+        feedback: 'Editörün kaygısı anlaşılabilir olsa da parça, sözcüğün değiştirilmeden de bağlam sayesinde anlaşılabildiğini gösterir; zorunlu değişiklik sonucu çıkarılamaz.'
       }),
-      option('C', 'Yabancı bir sözcük, bağlam yeterli ipucu verdiğinde okurun anlamasını engellemeden metnin dil dünyasını zenginleştirebilir.', {
+      option('C', 'Sözcüğün anlamını sezdiren bağlam, okurun metinden kopmadan farklı bir söyleyişle karşılaşmasını ve onu merak etmesini sağlayabilir.', {
         correct: true, semanticField: 'unfamiliar-word-use', support: ['e1', 'e2', 'e3'], scope: 'preserved', claimFit: 'full',
-        feedback: 'Yazar sözcüğü korumuş, bağlamla anlaşılmasını sağlamış; okur da hem anlamı sezmiş hem sözcüğe ilgi duymuştur.'
+        feedback: 'Yazar sözcüğü korurken çevresine anlamı sezdirecek ayrıntılar yerleştirmiş; okur da metinden kopmadan sözcüğü anlamış ve merak etmiştir.'
       }),
-      option('D', 'Editörlerin sözcük değişikliği önerileri, yazarın anlatım tercihlerini sınırladığı için genellikle dikkate alınmamalıdır.', {
+      option('D', 'Okurun sonradan sözlüğe bakması sözcüğün ilgi çektiğini gösterir; ancak bağlamın anlamı aktarmakta yetersiz kaldığını da düşündürür.', {
         semanticField: 'unfamiliar-word-use', partialSupport: ['e1'], contradictions: [], scope: 'shifted', claimFit: 'unsupported', misconceptionId: 'single-case-discredits-editing',
-        feedback: 'Parça yalnız bir önerinin nasıl karşılandığını anlatır; editörlerin önerilerinin genel olarak değersiz olduğu sonucunu desteklemez.'
+        feedback: 'Okurun sonradan araştırması bağlamın yetersiz olduğunu değil, sözcüğün merak uyandırdığını gösterir; anlamı sözlüğe bakmadan sezdiği açıkça belirtilmiştir.'
       })
     ],
     solutionSteps: [
@@ -160,21 +160,21 @@ const CALIBRATION_SPECS = Object.freeze([
     ],
     synthesis: { requiredEvidenceIds: ['e1', 'e2', 'e3', 'e4'], singleSentenceSufficient: false },
     options: [
-      option('A', 'İki metin de ziyaretçinin bağımsız düşünmesini önemser; ilki etiketin ölçülü olmasını, ikincisi gerekli bağlamı sunup yorumu açık bırakmasını ister.', {
+      option('A', 'Birinci metin etiketin eseri gölgelemesini, ikinci metin bağlam eksikliğini eleştirir; ikisi de etiketin yönlendirici olup yorumu belirlememesinde birleşir.', {
         correct: true, semanticField: 'museum-label-function', support: ['e1', 'e2', 'e3', 'e4'], scope: 'preserved', claimFit: 'full',
-        feedback: 'Ortak nokta ziyaretçiye hazır hüküm vermemektir; ayrıldıkları vurgu ise kısa tutma ile bağlam sunma arasındadır.'
+        feedback: 'Her iki metin etiketi ziyaretçinin yerine düşünen bir hükme dönüştürmez; birincisi eseri gölgelememeyi, ikincisi gerekli bağlamı verip yorumu açık tutmayı öne çıkarır.'
       }),
-      option('B', 'Birinci metin müze etiketlerini gereksiz bulurken ikinci metin etikette verilen bilgiyi eserin tek geçerli yorumu sayar.', {
+      option('B', 'Birinci metin etiketin gereksizliğini savunurken ikinci metin tarihsel açıklamayı zorunlu görür; bu nedenle etiketin işlevi konusunda karşıt görüştedirler.', {
         semanticField: 'museum-label-function', partialSupport: ['e1', 'e3'], contradictions: ['e2', 'e4'], scope: 'polarized', claimFit: 'opposite', misconceptionId: 'difference-becomes-total-opposition',
-        feedback: 'Birinci metin etiketi kaldırmayı değil kısa tutmayı, ikinci metin ise tek yorumu dayatmamayı savunur.'
+        feedback: 'Birinci metin etiketi kaldırmayı değil eseri gölgelemeyecek ölçüde kullanmayı, ikinci metin ise etiketi tek yorum hâline getirmemeyi savunur; tam karşıtlık yoktur.'
       }),
-      option('C', 'İki metin de tarihsel bilgi vermenin ziyaretçiyi eserden uzaklaştıracağını düşündüğü için etiketlerin yalnız eser adından oluşmasını savunur.', {
+      option('C', 'Birinci metin kısa, ikinci metin ayrıntılı etiketleri savunur; ikisi de ziyaretçinin yorumunu etiketteki bilginin belirlemesi gerektiğini düşünür.', {
         semanticField: 'museum-label-function', partialSupport: ['e1', 'e2'], contradictions: ['e3'], scope: 'expanded', claimFit: 'partial', misconceptionId: 'first-text-applied-to-both',
-        feedback: 'İkinci metin, nesnenin kökeni ve işlevi gibi tarihsel bağlamın verilmesini özellikle gerekli görür.'
+        feedback: 'İkinci metin bağlam bilgisini gerekli görür; ayrıca iki metinden hiçbiri ziyaretçinin yorumunu etiketin belirlemesini istemez.'
       }),
-      option('D', 'Metinler, müze etiketlerinin uzunluğu konusunda uzlaşsa da ziyaretçiye yorum alanı bırakılıp bırakılmaması konusunda ayrılır.', {
+      option('D', 'Birinci metin görsel deneyimi, ikinci metin tarihsel bilgiyi öne çıkarır; bu yüzden ziyaretçiye yorum alanı bırakma konusunda ayrılırlar.', {
         semanticField: 'museum-label-function', partialSupport: ['e2', 'e4'], contradictions: ['e3', 'e4'], scope: 'misaligned', claimFit: 'partial', misconceptionId: 'swap-common-and-different-points',
-        feedback: 'Metinlerin ortaklaştığı nokta yorum alanı bırakmaktır; uzunluk ve bilgi miktarı konusunda aynı şeyi söylemezler.'
+        feedback: 'Metinler vurgu bakımından farklılaşsa da ziyaretçinin kendi yorumuna alan bırakma konusunda ayrılmaz; bu, ortak noktalarıdır.'
       })
     ],
     solutionSteps: [
@@ -208,21 +208,21 @@ const CALIBRATION_SPECS = Object.freeze([
     ],
     synthesis: { requiredEvidenceIds: ['e1', 'e2', 'e3'], singleSentenceSufficient: false },
     options: [
-      option('A', 'Reklam, kısa çalışma süresi ile indirme sayısını verdiği için uygulamanın başarı oranını nesnel ve karşılaştırılabilir biçimde ortaya koymuştur.', {
+      option('A', 'Reklam, kısa çalışma süresiyle kolaylık ve indirme sayısıyla yaygınlık izlenimi verir; bu iki bilgi uygulamanın başarı düzeyini karşılaştırmaya yeterlidir.', {
         semanticField: 'advertising-evidence', partialSupport: ['e2'], contradictions: ['e3'], scope: 'expanded', claimFit: 'partial', misconceptionId: 'numbers-equal-effectiveness',
-        feedback: 'Süre ve indirme sayısı verilir; ancak bunlar başarı oranı, karşılaştırma grubu veya öğrenme sonucu ölçümü değildir.'
+        feedback: 'Süre ve indirme sayısı kolaylık ve yaygınlık izlenimi verir; bunlar başarı düzeyini ölçen karşılaştırmalı sonuçlar değildir.'
       }),
-      option('B', 'Canlandırılmış bir başarı öyküsü ve uygulamanın yaygınlığı ikna amacıyla kullanılmıştır; bunlar aynı sonucun bütün kullanıcılarda oluşacağını kanıtlamaz.', {
+      option('B', 'Reklam, canlandırılmış bir örneği ve popülerlik bilgisini etkililik göstergesi gibi sunar; verilenler konuşma becerisindeki gelişimin düzeyini belirlemeye yetmez.', {
         correct: true, semanticField: 'advertising-evidence', support: ['e1', 'e2', 'e3'], scope: 'preserved', claimFit: 'full',
-        feedback: 'Reklam hem örnek başarı sahnesinden hem popülerlik göstergesinden yararlanır; küçük yazı da sonucun genellenemeyeceğini kabul eder.'
+        feedback: 'Canlandırılmış sahne ile indirme sayısı ikna unsuru olarak kullanılır; ancak bunlar konuşma becerisindeki gelişimin ne kadar olduğunu ölçmez.'
       }),
-      option('C', 'Küçük puntolu uyarı, reklamda gösterilen gelişimin bilimsel olarak ölçüldüğünü ve yalnız bazı kullanıcılarda görülmediğini doğrular.', {
+      option('C', 'Küçük yazı sonuçların değişebileceğini belirtir; buna karşılık reklamda gösterilen gelişimin gerçek kullanıcı verilerine dayandığını da doğrular.', {
         semanticField: 'advertising-evidence', partialSupport: ['e3'], contradictions: ['e3'], scope: 'reversed', claimFit: 'opposite', misconceptionId: 'disclaimer-as-proof',
-        feedback: 'Uyarı bilimsel ölçüm kanıtı değildir; tam tersine sahnenin canlandırma olduğunu ve sonuçların değişebileceğini bildirir.'
+        feedback: 'Küçük yazı gerçek kullanıcı verisini doğrulamaz; sahnenin canlandırma olduğunu ve sonuçların değişebileceğini bildirerek genelleme sınırı koyar.'
       }),
-      option('D', 'Öğrencinin havaalanında konuşabilmesi, uygulamanın özellikle yolculuk dilini geliştirdiğine ilişkin doğrudan ve genellenebilir bir sonuç sunar.', {
+      option('D', 'Havaalanı sahnesi uygulamanın yolculuk dilinde işe yarayabileceğini düşündürür; fakat günlük on dakikanın başka konuşma durumlarına etkisini göstermez.', {
         semanticField: 'advertising-evidence', partialSupport: ['e1'], contradictions: ['e3'], scope: 'expanded', claimFit: 'partial', misconceptionId: 'single-scene-generalization',
-        feedback: 'Tek bir canlandırılmış sahne, uygulamanın gerçek kullanıcılar üzerindeki etkisini ya da belirli bir becerideki başarısını genellemek için yeterli değildir.'
+        feedback: 'Sahne yolculuk diline ilişkin bir kullanım örneği oluşturur; ancak canlandırma olduğu için uygulamanın o alandaki gerçek etkisini bile kanıtlamaz.'
       })
     ],
     solutionSteps: [
@@ -257,21 +257,21 @@ const CALIBRATION_SPECS = Object.freeze([
     ],
     synthesis: { requiredEvidenceIds: ['e1', 'e2', 'e3', 'e4'], singleSentenceSufficient: false },
     options: [
-      option('A', 'Çalışmanın üniversitede yapılmış olması, çocukların göz sağlığı ve okul başarısıyla ilgili sonraki yorumların da güvenilir kabul edilmesini sağlar.', {
+      option('A', 'Çalışmanın üniversitede yürütülmesi bulguyu değerli kılar; ancak yetişkin örneklemi çocukların okul başarısıyla ilgili yorumu doğrudan desteklemez.', {
         semanticField: 'source-scope-reliability', partialSupport: ['e1'], contradictions: ['e3', 'e4'], scope: 'expanded', claimFit: 'partial', misconceptionId: 'institution-authority-overrides-scope',
-        feedback: 'Araştırmanın kurumu önemli olabilir; ancak yetişkinlerde ölçülen kısa süreli uyku bulgusunu çocukların göz sağlığına ve okul başarısına taşımaz.'
+        feedback: 'Seçenek örneklem sınırını kısmen fark eder; fakat göz sağlığı iddiasını ve derlemenin tutarsızlık bulgusunu değerlendirmediği için kaynakları birlikte çözümlemez.'
       }),
-      option('B', 'Derlemede sonuçların tutarsız bulunması, ilk çalışmada görülen 12 dakikalık farkın kesinlikle ölçüm hatasından kaynaklandığını gösterir.', {
+      option('B', 'Derlemenin sonuçları tutarsız bulması ilk çalışmayı geçersiz kılmaz; buna karşılık on iki araştırmada aynı etkinin doğrulandığını gösterir.', {
         semanticField: 'source-scope-reliability', partialSupport: ['e2', 'e4'], contradictions: [], scope: 'overcertain', claimFit: 'partial', misconceptionId: 'inconsistency-means-false',
-        feedback: 'Tutarsız sonuçlar bulgunun kesinleşmediğini gösterir; belirli bir sonucun mutlaka ölçüm hatası olduğunu kanıtlamaz.'
+        feedback: 'Derleme sonuçların tutarsız olduğunu söyler; aynı etkinin on iki araştırmada doğrulandığı sonucuna ulaşılamaz.'
       }),
-      option('C', 'İlk çalışma yetişkinlerde kısa süreli bir uykuya dalma bulgusu sunar; çocuklar, okul başarısı ve kalıcı göz hasarı iddiaları için yeterli kanıt sağlamaz.', {
+      option('C', 'İlk bulgu yetişkinlerin uykuya dalma süresiyle sınırlıdır; kuruluşun çocuk, göz sağlığı ve başarı yorumları incelenen verilerin kapsamını aşmaktadır.', {
         correct: true, semanticField: 'source-scope-reliability', support: ['e1', 'e2', 'e3', 'e4'], scope: 'preserved', claimFit: 'full',
-        feedback: 'Seçenek örneklemi, süreyi, ölçülen sonucu ve sonradan eklenen iddiaları birbirinden ayırarak kaynakların gerçek kapsamını korur.'
+        feedback: 'Seçenek ilk çalışmanın örneklem ve ölçüm sınırını korur; kuruluşun çocuk, göz sağlığı ve başarı iddialarının bu sınırları aştığını doğru belirler.'
       }),
-      option('D', 'Araştırmayı paylaşan kuruluşun gözlük satması, aktardığı çalışma verilerinin ve filtreli gözlüklerle ilgili bütün bilgilerin yanlış olduğunu kanıtlar.', {
+      option('D', 'Kuruluşun satış ilişkisi yorumlarına kuşkuyla yaklaşmayı gerektirir; bu nedenle üniversite çalışmasındaki uyku bulgusu da güvenilir sayılamaz.', {
         semanticField: 'source-scope-reliability', partialSupport: ['e3'], contradictions: ['e1', 'e2'], scope: 'expanded', claimFit: 'partial', misconceptionId: 'conflict-means-automatic-falsehood',
-        feedback: 'Çıkar ilişkisi kaynağı daha dikkatli değerlendirmeyi gerektirir; fakat aktarılan bütün verilerin otomatik olarak yanlış olduğunu göstermez.'
+        feedback: 'Satış ilişkisi kuruluşun yorumlarına kuşkuyla yaklaşmayı gerektirir; fakat bağımsız üniversite çalışmasının bulgusunu kendiliğinden geçersiz kılmaz.'
       })
     ],
     solutionSteps: [
@@ -393,6 +393,70 @@ function wordCount(value) {
   return normalize(value).split(' ').filter(Boolean).length;
 }
 
+const QUALIFICATION_MARKERS = Object.freeze([
+  'ancak', 'fakat', 'buna karşılık', 'oysa', 'ne var ki', 'ise', 'bununla birlikte'
+]);
+
+const LIMITATION_MARKERS = Object.freeze([
+  'yeterli değildir', 'yetmez', 'kanıtlamaz', 'göstermez', 'desteklemez',
+  'sınırlıdır', 'aşmaktadır', 'değişebilir', 'doğrulamaz', 'sayılmaz',
+  'gerektirmez', 'kılmaz', 'yetersiz', 'tek başına'
+]);
+
+const CERTAINTY_MARKERS = Object.freeze([
+  'kesinlikle', 'mutlaka', 'her zaman', 'bütün', 'tümü', 'asla',
+  'tek geçerli', 'otomatik olarak', 'doğrudan ve genellenebilir'
+]);
+
+function markerCount(value, markers) {
+  const text = ` ${normalize(value)} `;
+  return markers.reduce((count, marker) => count + (text.includes(` ${normalize(marker)} `) ? 1 : 0), 0);
+}
+
+function rhetoricalProfile(value) {
+  const text = String(value ?? '');
+  const qualifierCount = markerCount(text, QUALIFICATION_MARKERS);
+  const limitationCount = markerCount(text, LIMITATION_MARKERS);
+  const certaintyCount = markerCount(text, CERTAINTY_MARKERS);
+  const semicolonCount = (text.match(/;/g) || []).length;
+  return Object.freeze({
+    wordCount: wordCount(text),
+    qualifierCount,
+    limitationCount,
+    certaintyCount,
+    semicolonCount,
+    clauseComplexity: 1 + qualifierCount + semicolonCount
+  });
+}
+
+function auditOptionOnlyCueRisk(options, answerOptionId) {
+  const profiles = options.map(entry => ({ id: entry.id, ...rhetoricalProfile(entry.text) }));
+  const correct = profiles.find(entry => entry.id === answerOptionId);
+  const distractors = profiles.filter(entry => entry.id !== answerOptionId);
+  if (!correct || distractors.length === 0) {
+    return Object.freeze({ risk: 1, reasons: Object.freeze(['missing-option-profile']), profiles: Object.freeze(profiles) });
+  }
+
+  const reasons = [];
+  const maxQualifier = Math.max(...distractors.map(entry => entry.qualifierCount));
+  const maxLimitation = Math.max(...distractors.map(entry => entry.limitationCount));
+  const minCertainty = Math.min(...distractors.map(entry => entry.certaintyCount));
+  const maxComplexity = Math.max(...distractors.map(entry => entry.clauseComplexity));
+  const distractorBalancedCount = distractors.filter(entry => entry.qualifierCount > 0 && entry.limitationCount > 0).length;
+
+  if (correct.qualifierCount > maxQualifier) reasons.push('correct-uniquely-qualified');
+  if (correct.limitationCount > 0 && maxLimitation === 0) reasons.push('correct-uniquely-limited');
+  if (correct.certaintyCount < minCertainty) reasons.push('correct-uniquely-cautious');
+  if (correct.clauseComplexity > maxComplexity + 1) reasons.push('correct-uniquely-complex');
+  if (correct.qualifierCount > 0 && correct.limitationCount > 0 && distractorBalancedCount === 0) reasons.push('correct-only-balanced-claim');
+
+  return Object.freeze({
+    risk: Number((reasons.length / 5).toFixed(3)),
+    reasons: Object.freeze(reasons),
+    profiles: Object.freeze(profiles)
+  });
+}
+
 function sentenceOverlap(stimulus, answerText) {
   const answerWords = new Set(normalize(answerText).split(' ').filter(word => word.length > 3));
   const sentences = String(stimulus).split(/[.!?]+/).map(normalize).filter(Boolean);
@@ -420,6 +484,7 @@ export function auditGrade8TurkishCalibrationQuestion(item) {
   const sortedLengths = [...lengths].sort((a, b) => a - b);
   const median = (sortedLengths[1] + sortedLengths[2]) / 2;
   const fullStimulus = item.content.stimulus || (item.content.stimulusBlocks || []).join(' ');
+  const optionOnlyCueAudit = auditOptionOnlyCueRisk(options, item.answerKey.optionId);
 
   if (options.length !== 4) errors.push('four-options-required');
   if (correct.length !== 1) errors.push('unique-correct-option-required');
@@ -433,6 +498,7 @@ export function auditGrade8TurkishCalibrationQuestion(item) {
   if (item.contentStatus !== 'HUMAN_REVIEW_REQUIRED') errors.push('human-review-status-required');
   if (sentenceOverlap(fullStimulus, answer?.text || '') > 0.72) errors.push('answer-too-close-to-single-sentence');
   if (lengths.some(length => length < median * 0.55 || length > median * 1.65)) errors.push('option-length-cue');
+  if (optionOnlyCueAudit.risk > 0) errors.push('option-only-rhetorical-giveaway');
   try {
     if (!verifyByConstraintIntersection(item, solveBySemanticScore(item))) errors.push('independent-verification-failed');
   } catch {
@@ -447,7 +513,10 @@ export function auditGrade8TurkishCalibrationQuestion(item) {
       partialDistractorCount: partialDistractors.length,
       semanticFieldCount: semanticFields.size,
       maxSingleSentenceAnswerOverlap: Number(sentenceOverlap(fullStimulus, answer?.text || '').toFixed(3)),
-      optionWordCounts: Object.freeze(lengths)
+      optionWordCounts: Object.freeze(lengths),
+      blindOptionCueRisk: optionOnlyCueAudit.risk,
+      blindOptionCueReasons: optionOnlyCueAudit.reasons,
+      optionRhetoricalProfiles: optionOnlyCueAudit.profiles
     })
   });
 }
