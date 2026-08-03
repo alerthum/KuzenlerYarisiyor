@@ -60,6 +60,33 @@ export const CURRICULUM_SOURCES = Object.freeze([
     notes: 'Primary source for TYMM learning outcomes, content framework and skill components.'
   }),
   defineCurriculumSource({
+    id: 'meb-tymm-matematik-5-8-2024',
+    kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Ortaokul Matematik Dersi Öğretim Programı (5-8), TYMM 2024',
+    url: 'https://mufredat.meb.gov.tr/Dosyalar/202582516434252-ortaokul%20matematik.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Active source for grade 5 mathematics in 2026-2027.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-fen-3-8-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Fen Bilimleri Dersi Öğretim Programı (3-8), TYMM 2024', url: 'https://mufredat.meb.gov.tr/Dosyalar/2025825154137627-fen%20bilimleri.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Active source for grade 5 science in 2026-2027.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-sosyal-4-7-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Sosyal Bilgiler Dersi Öğretim Programı (4-7), TYMM 2024', url: 'https://mufredat.meb.gov.tr/Dosyalar/202582516728345-sosyal%20bilgiler.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Active source for grade 5 social studies in 2026-2027.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-dkab-4-8-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Din Kültürü ve Ahlak Bilgisi Dersi Öğretim Programı (4-8), TYMM 2024', url: 'https://mufredat.meb.gov.tr/Dosyalar/2025825154011486-din%20k%C3%BClt%C3%BCr%C3%BC%204_8.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Active source for grade 5 DKAB in 2026-2027.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-ingilizce-2-8-2025', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'English Language Curriculum (2-8), TYMM 2025', url: 'https://mufredat.meb.gov.tr/Dosyalar/202591011405337-26-08-ekli-english-regular.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Active source for grade 5 English in 2026-2027.'
+  }),
+  defineCurriculumSource({
     id: 'meb-legacy-programs',
     kind: 'official-curriculum',
     useMode: 'AUTHORITATIVE_DATA',

@@ -1,8 +1,8 @@
 {
-  "schemaVersion": "3.0",
-  "generatedAt": "2026-08-03T22:54:33.701Z",
+  "schemaVersion": "3.1",
+  "generatedAt": "2026-08-03T23:33:48.435Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
-  "status": "LGS_CORE_ENGINEERING_SCOPE_COMPLETE",
+  "status": "GRADE5_AND_LGS_CORE_ENGINEERING_SCOPE_COMPLETE",
   "productReady": false,
   "publicationAllowed": false,
   "gameAdaptationAllowed": false,
@@ -32,15 +32,16 @@
     "targetGradeCount": 12,
     "activeGradeCount": 2,
     "courseScheduleCellCount": 112,
-    "activeEngineCellCount": 7,
-    "activeEngineCellPercent": 6.3,
-    "curriculumOutcomeRecordCount": 420,
-    "coveredOutcomeCount": 420,
-    "canonicalQuestionCount": 445,
+    "activeEngineCellCount": 12,
+    "activeEngineCellPercent": 10.7,
+    "curriculumOutcomeRecordCount": 692,
+    "coveredOutcomeCount": 692,
+    "canonicalQuestionCount": 717,
     "humanApprovedQuestionCount": 5,
-    "humanReviewQueueCount": 440,
+    "humanReviewQueueCount": 712,
     "gameAdaptedQuestionCount": 5,
-    "legacyQuarantineCount": 604
+    "legacyQuarantineCount": 604,
+    "unmatchedActiveCourseCellCount": 0
   },
   "rollout": [
     {
@@ -109,6 +110,7 @@
       "id": "tr-g8-turkce-v2",
       "grade": 8,
       "courseId": "turkce",
+      "scheduleCourseId": "turkce",
       "courseName": "Türkçe",
       "programFamily": "PRE_TYMM",
       "curriculumStatus": "FULL_SCOPE_INGESTED",
@@ -136,6 +138,7 @@
       "id": "tr-g8-matematik-v2",
       "grade": 8,
       "courseId": "matematik",
+      "scheduleCourseId": "matematik",
       "courseName": "Matematik",
       "programFamily": "PRE_TYMM",
       "curriculumStatus": "FULL_SCOPE_INGESTED",
@@ -163,6 +166,7 @@
       "id": "tr-g8-fen-v2",
       "grade": 8,
       "courseId": "fen-bilimleri",
+      "scheduleCourseId": "fen-bilimleri",
       "courseName": "Fen Bilimleri",
       "programFamily": "PRE_TYMM",
       "curriculumStatus": "FULL_SCOPE_INGESTED",
@@ -190,6 +194,7 @@
       "id": "tr-g5-turkce-v2",
       "grade": 5,
       "courseId": "turkce",
+      "scheduleCourseId": "turkce",
       "courseName": "Türkçe",
       "programFamily": "TYMM",
       "curriculumStatus": "FULL_SCOPE_INGESTED",
@@ -217,6 +222,7 @@
       "id": "tr-g8-inkilap-v2",
       "grade": 8,
       "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "scheduleCourseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
       "courseName": "T.C. İnkılap Tarihi ve Atatürkçülük",
       "programFamily": "PRE_TYMM",
       "curriculumStatus": "FULL_SCOPE_INGESTED",
@@ -244,6 +250,7 @@
       "id": "tr-g8-dkab-v2",
       "grade": 8,
       "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "scheduleCourseId": "din-kulturu-ve-ahlak-bilgisi",
       "courseName": "Din Kültürü ve Ahlak Bilgisi",
       "programFamily": "PRE_TYMM",
       "curriculumStatus": "FULL_SCOPE_INGESTED",
@@ -271,6 +278,7 @@
       "id": "tr-g8-ingilizce-v2",
       "grade": 8,
       "courseId": "ingilizce",
+      "scheduleCourseId": "yabanci-dil",
       "courseName": "İngilizce",
       "programFamily": "PRE_TYMM",
       "curriculumStatus": "FULL_SCOPE_INGESTED",
@@ -293,6 +301,146 @@
         "15 dinleme görevi gerçek ses kaydı bekliyor.",
         "Konuşma ve yazma rubriklerinin insan kalibrasyonu yapılmadı."
       ]
+    },
+    {
+      "id": "tr-g5-matematik-v2",
+      "grade": 5,
+      "courseId": "matematik",
+      "scheduleCourseId": "matematik",
+      "courseName": "Matematik",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 23,
+      "ingestedOutcomeCount": 23,
+      "coveredOutcomeCount": 23,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 23,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 23,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "age-calibrated mathematical investigation + independent verification",
+      "verifierType": "rubric criteria plus alternate representation/control check",
+      "misconceptionCatalog": "g5-math-misconceptions-v1",
+      "nextAction": "23 Matematik görevini yaş uygunluğu ve gerçek problem bağlamları açısından kalibre et.",
+      "blockers": [
+        "23 görev insan incelemesi bekliyor.",
+        "Etkileşimli matematik araçları bağlanmadı."
+      ]
+    },
+    {
+      "id": "tr-g5-fen-v2",
+      "grade": 5,
+      "courseId": "fen-bilimleri",
+      "scheduleCourseId": "fen-bilimleri",
+      "courseName": "Fen Bilimleri",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 28,
+      "ingestedOutcomeCount": 28,
+      "coveredOutcomeCount": 28,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 28,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 28,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "grade5 observation/experiment/model/evidence engine",
+      "verifierType": "independent evidence and rubric consistency",
+      "misconceptionCatalog": "g5-science-inquiry-misconceptions-v1",
+      "nextAction": "28 Fen görevini güvenlik, deney ve model açısından insan kalibrasyonundan geçir.",
+      "blockers": [
+        "Deney ve model görevleri gerçek bileşen bekliyor.",
+        "28 görev insan incelemesi bekliyor."
+      ]
+    },
+    {
+      "id": "tr-g5-sosyal-v2",
+      "grade": 5,
+      "courseId": "sosyal-bilgiler",
+      "scheduleCourseId": "sosyal-bilgiler",
+      "courseName": "Sosyal Bilgiler",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 19,
+      "ingestedOutcomeCount": 19,
+      "coveredOutcomeCount": 19,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 19,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 19,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "map/source/civic project social inquiry engine",
+      "verifierType": "independent source and rubric constraint verification",
+      "misconceptionCatalog": "g5-social-evidence-misconceptions-v1",
+      "nextAction": "19 Sosyal Bilgiler görevine gerçek harita ve kaynak paketleri bağla.",
+      "blockers": [
+        "Harita ve kaynak varlıkları tamamlanmadı.",
+        "19 görev insan incelemesi bekliyor."
+      ]
+    },
+    {
+      "id": "tr-g5-dkab-v2",
+      "grade": 5,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "scheduleCourseId": "din-kulturu-ve-ahlak-bilgisi",
+      "courseName": "Din Kültürü ve Ahlak Bilgisi",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 18,
+      "ingestedOutcomeCount": 18,
+      "coveredOutcomeCount": 18,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 18,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 18,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "neutral curriculum-bound text/concept/ethical reasoning engine",
+      "verifierType": "independent evidence and rubric verification",
+      "misconceptionCatalog": "g5-dkab-curriculum-misconceptions-v1",
+      "nextAction": "18 görevi tarafsız dil, kaynak ve yaş uygunluğu açısından kalibre et.",
+      "blockers": [
+        "Kültürel görsellerin provenansı bekliyor.",
+        "18 görev insan incelemesi bekliyor."
+      ]
+    },
+    {
+      "id": "tr-g5-ingilizce-v2",
+      "grade": 5,
+      "courseId": "yabanci-dil",
+      "scheduleCourseId": "yabanci-dil",
+      "courseName": "İngilizce",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 184,
+      "ingestedOutcomeCount": 184,
+      "coveredOutcomeCount": 184,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 184,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 184,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "CEFR A2.1 communicative listening/pronunciation/reading/speaking/writing engine",
+      "verifierType": "independent A2.1 task and rubric consistency",
+      "misconceptionCatalog": "g5-english-a2-1-misconceptions-v1",
+      "nextAction": "184 İngilizce görevi için gerçek ses, konuşma örnekleri ve öğretmen kalibrasyonu ekle.",
+      "blockers": [
+        "Dinleme ve konuşma görevleri gerçek ses varlığı bekliyor.",
+        "184 görev insan incelemesi bekliyor."
+      ]
     }
   ],
   "pipeline": [
@@ -300,7 +448,7 @@
       "id": "curriculum",
       "label": "Resmî müfredat",
       "status": "PASS_FOR_ACTIVE_ENGINES",
-      "note": "7 aktif motorun resmî kapsamı tam aktarıldı."
+      "note": "12 aktif motorun resmî kapsamı tam aktarıldı."
     },
     {
       "id": "subject-engine",
@@ -312,13 +460,13 @@
       "id": "canonical-content",
       "label": "Kanonik soru/görev",
       "status": "ENGINEERING_SCOPE_COMPLETE",
-      "note": "445 kanonik mühendislik nesnesi mevcut."
+      "note": "717 kanonik mühendislik nesnesi mevcut."
     },
     {
       "id": "human-review",
       "label": "İnsan kalibrasyonu",
       "status": "BLOCKED",
-      "note": "5 onaylı, 440 inceleme bekliyor."
+      "note": "5 onaylı, 712 inceleme bekliyor."
     },
     {
       "id": "game-adaptation",
@@ -330,7 +478,7 @@
       "id": "student-pilot",
       "label": "Öğrenci pilotu",
       "status": "NOT_STARTED",
-      "note": "Madde analizi ve performans verisi ölçülmedi."
+      "note": "Gerçek öğrenci madde analizi ölçülmedi."
     },
     {
       "id": "publication",
@@ -342,27 +490,27 @@
   "nextMilestones": [
     {
       "order": 1,
-      "id": "human-review-sampling",
-      "title": "7 motor için dengeli insan örneklemi",
-      "reason": "440 görevlik kuyruğu risk ve çeşitliliğe göre örneklemle kalibre et."
+      "id": "grade5-core-review",
+      "title": "5. sınıf çekirdek motor kalibrasyonu",
+      "reason": "Yeni 272 görev risk tabakalı insan örneklemiyle doğrulanmalı."
     },
     {
       "order": 2,
       "id": "media-and-rubrics",
-      "title": "Ses, kaynak, deney ve rubrik varlıkları",
-      "reason": "Dinleme, konuşma, tarih kaynağı ve deney görevlerinin gerçek materyalleri bağlanmalı."
+      "title": "Ses, harita, deney ve rubrik varlıkları",
+      "reason": "Dil, Sosyal ve Fen performans görevlerinin gerçek materyalleri bağlanmalı."
     },
     {
       "order": 3,
-      "id": "game-adaptation-lab",
-      "title": "Onaylı içerik için oyun adaptasyon laboratuvarı",
-      "reason": "Anlamı koruyan tersine doğrulamalı adaptasyon yalnız onaylı örneklerde başlatılmalı."
+      "id": "expand-grades-6-7",
+      "title": "6–7. sınıf TYMM çekirdeğini aç",
+      "reason": "Aynı resmî programlardan 6. ve 7. sınıf motorları tamamlanmalı."
     },
     {
       "order": 4,
       "id": "expand-grade-map",
       "title": "1–12 sınıf-ders hücrelerini genişlet",
-      "reason": "112 zorunlu hücrenin 7’si aktif."
+      "reason": "112 zorunlu hücrenin 12’si aktif."
     }
   ]
 }

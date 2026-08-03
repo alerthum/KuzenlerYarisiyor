@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T23:33:48.308Z",
+  "phase": "4R",
+  "title": "5. Sınıf Çekirdek Ders Motorları Tam Kapsam",
+  "status": "GRADE5_CORE_ENGINEERING_SCOPE_COMPLETE",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "errors": [],
+  "audits": {
+    "grade5Core": {
+      "ok": true,
+      "metrics": {
+        "engineCount": 5,
+        "officialOutcomeCount": 272,
+        "itemCount": 272,
+        "gameAdaptationAllowed": false,
+        "humanReviewStatus": "NOT_MEASURED"
+      }
+    },
+    "reviewSample": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "engineCount": 5,
+        "itemCount": 25,
+        "perEngine": 5,
+        "approved": 0,
+        "pending": 25
+      }
+    },
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 2,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 12,
+        "activeEngineCellPercent": 10.7,
+        "curriculumOutcomeRecordCount": 692,
+        "coveredOutcomeCount": 692,
+        "canonicalQuestionCount": 717,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 712,
+        "gameAdaptedQuestionCount": 5,
+        "legacyQuarantineCount": 604,
+        "unmatchedActiveCourseCellCount": 0
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 717,
+        "byEngine": {
+          "g8:turkce": 96,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 61,
+          "g5:turkce": 105,
+          "g8:t-c-inkilap-tarihi-ve-ataturkculuk": 33,
+          "g8:din-kulturu-ve-ahlak-bilgisi": 28,
+          "g8:ingilizce": 70,
+          "g5:matematik": 23,
+          "g5:fen-bilimleri": 28,
+          "g5:sosyal-bilgiler": 19,
+          "g5:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g5:yabanci-dil": 184
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    },
+    "reviewQueue": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "total": 717,
+        "approved": 5,
+        "pending": 712,
+        "highComplexityPending": 561
+      }
+    }
+  },
+  "metrics": {
+    "newEngineCount": 5,
+    "newOfficialOutcomeCount": 272,
+    "newCanonicalTaskCount": 272,
+    "totalActiveEngineCount": 12,
+    "totalOfficialOutcomeCount": 692,
+    "totalCanonicalTaskCount": 717,
+    "humanReviewPending": 712,
+    "unopenedCourseCells": 100
+  },
+  "honesty": {
+    "humanReviewStatus": "NOT_MEASURED",
+    "realMediaAssets": "INCOMPLETE",
+    "realStudentPilot": "NOT_COMPLETED",
+    "generalGameAdaptationAllowed": false
+  }
+}

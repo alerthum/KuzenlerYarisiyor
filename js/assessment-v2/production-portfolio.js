@@ -7,10 +7,15 @@ import { GRADE5_TURKISH_OUTCOMES_TYMM_2024 } from '../curriculum/outcomes/tr-g5-
 import { GRADE8_HISTORY_OUTCOMES_2018 } from '../curriculum/outcomes/tr-g8-inkilap-2018.js';
 import { GRADE8_DKAB_OUTCOMES_2018 } from '../curriculum/outcomes/tr-g8-dkab-2018.js';
 import { GRADE8_ENGLISH_OUTCOMES_2018 } from '../curriculum/outcomes/tr-g8-ingilizce-2018.js';
-import { GRADE8_TURKISH_FULL_SCOPE_AUDIT, GRADE8_TURKISH_FULL_SCOPE_MATRIX } from './turkish-g8-full-scope-matrix.js';
-import { GRADE8_MATH_FULL_SCOPE_AUDIT, GRADE8_MATH_FULL_SCOPE_MATRIX } from './math-g8-full-scope-matrix.js';
-import { GRADE8_SCIENCE_FULL_SCOPE_AUDIT, GRADE8_SCIENCE_FULL_SCOPE_MATRIX } from './science-g8-full-scope-matrix.js';
-import { GRADE5_TURKISH_FULL_SCOPE_AUDIT, GRADE5_TURKISH_FULL_SCOPE_MATRIX } from './turkish-g5-full-scope-matrix.js';
+import { GRADE5_MATH_OUTCOMES_TYMM_2024 } from '../curriculum/outcomes/tr-g5-matematik-tymm-2024.js';
+import { GRADE5_SCIENCE_OUTCOMES_TYMM_2024 } from '../curriculum/outcomes/tr-g5-fen-tymm-2024.js';
+import { GRADE5_SOCIAL_OUTCOMES_TYMM_2024 } from '../curriculum/outcomes/tr-g5-sosyal-tymm-2024.js';
+import { GRADE5_DKAB_OUTCOMES_TYMM_2024 } from '../curriculum/outcomes/tr-g5-dkab-tymm-2024.js';
+import { GRADE5_ENGLISH_OUTCOMES_TYMM_2025 } from '../curriculum/outcomes/tr-g5-ingilizce-tymm-2025.js';
+import { GRADE8_TURKISH_FULL_SCOPE_AUDIT } from './turkish-g8-full-scope-matrix.js';
+import { GRADE8_MATH_FULL_SCOPE_AUDIT } from './math-g8-full-scope-matrix.js';
+import { GRADE8_SCIENCE_FULL_SCOPE_AUDIT } from './science-g8-full-scope-matrix.js';
+import { GRADE5_TURKISH_FULL_SCOPE_AUDIT } from './turkish-g5-full-scope-matrix.js';
 import { buildGrade8TurkishPilot01Questions } from './turkish-g8-reading-pilot01.js';
 import { buildGrade8TurkishPilot02CalibrationQuestions } from './turkish-g8-pilot02-calibration.js';
 import { buildGrade8TurkishReadingLanguageWave1Questions } from './turkish-g8-reading-language-wave1.js';
@@ -28,6 +33,18 @@ import { buildGrade5TurkishCompletionTasks } from './turkish-g5-completion-wave.
 import { buildGrade8HistoryFullScopeTasks } from './history-g8-full-scope-engine.js';
 import { buildGrade8DkabFullScopeTasks } from './dkab-g8-full-scope-engine.js';
 import { buildGrade8EnglishFullScopeTasks } from './english-g8-full-scope-engine.js';
+import {
+  buildGrade5MathFullScopeTasks,
+  buildGrade5ScienceFullScopeTasks,
+  buildGrade5SocialFullScopeTasks,
+  buildGrade5DkabFullScopeTasks,
+  buildGrade5EnglishFullScopeTasks,
+  GRADE5_MATH_FULL_SCOPE_AUDIT,
+  GRADE5_SCIENCE_FULL_SCOPE_AUDIT,
+  GRADE5_SOCIAL_FULL_SCOPE_AUDIT,
+  GRADE5_DKAB_FULL_SCOPE_AUDIT,
+  GRADE5_ENGLISH_FULL_SCOPE_AUDIT
+} from './grade5-core-full-scope-engines.js';
 import { GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS } from './turkish-g8-human-review-registry.js';
 import { QUESTION_ARCHITECTURE_POLICY } from './question-architecture-policy.js';
 import { ASSESSMENT_V2_GAME_ADAPTATION_LAB_AUDIT } from './game-adaptation-lab.js';
@@ -41,7 +58,7 @@ function engineRow(input){
   const approved=new Set(input.approvedQuestionIds||[]);
   const humanApprovedQuestionCount=input.items.filter(item=>approved.has(item.id)).length;
   return Object.freeze({
-    id:input.id,grade:input.grade,courseId:input.courseId,courseName:input.courseName,programFamily:input.programFamily,
+    id:input.id,grade:input.grade,courseId:input.courseId,scheduleCourseId:input.scheduleCourseId||input.courseId,courseName:input.courseName,programFamily:input.programFamily,
     curriculumStatus:'FULL_SCOPE_INGESTED',officialOutcomeCount:input.officialOutcomeCount,ingestedOutcomeCount:input.officialOutcomeCount,
     coveredOutcomeCount:input.coveredOutcomeCount,courseCoveragePercent:percent(input.coveredOutcomeCount,input.officialOutcomeCount),ingestionPercent:100,
     canonicalQuestionCount:input.items.length,humanApprovedQuestionCount,humanReviewQueueCount:input.items.length-humanApprovedQuestionCount,
@@ -58,6 +75,11 @@ export function buildAssessmentV2ProductionPortfolio(){
   const grade8HistoryItems=[...buildGrade8HistoryFullScopeTasks()];
   const grade8DkabItems=[...buildGrade8DkabFullScopeTasks()];
   const grade8EnglishItems=[...buildGrade8EnglishFullScopeTasks()];
+  const grade5MathItems=[...buildGrade5MathFullScopeTasks()];
+  const grade5ScienceItems=[...buildGrade5ScienceFullScopeTasks()];
+  const grade5SocialItems=[...buildGrade5SocialFullScopeTasks()];
+  const grade5DkabItems=[...buildGrade5DkabFullScopeTasks()];
+  const grade5EnglishItems=[...buildGrade5EnglishFullScopeTasks()];
   const approvedTurkishIds=GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS.map(row=>row.questionId);
   const engines=frozenArray([
     engineRow({id:'tr-g8-turkce-v2',grade:8,courseId:'turkce',courseName:'Türkçe',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE_8_TURKISH_OUTCOMES_2019.length,coveredOutcomeCount:GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8TurkishItems,approvedQuestionIds:approvedTurkishIds,gameAdaptedQuestionCount:5,engineType:'semantic-evidence + grammar + visual-reading + performance-rubric',verifierType:'independent semantic/constraint verification',misconceptionCatalog:'tr-g8-turkish-domain-misconceptions',nextAction:'96 Türkçe görevini alan ve yaş uygunluğu açısından insan kalibrasyonundan geçir.',blockers:['91 Türkçe görevi insan incelemesi bekliyor.','Dinleme/konuşma görevleri gerçek medya ve rubrik kalibrasyonu gerektiriyor.']}),
@@ -66,33 +88,40 @@ export function buildAssessmentV2ProductionPortfolio(){
     engineRow({id:'tr-g5-turkce-v2',grade:5,courseId:'turkce',courseName:'Türkçe',programFamily:'TYMM',officialOutcomeCount:GRADE5_TURKISH_OUTCOMES_TYMM_2024.length,coveredOutcomeCount:GRADE5_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5TurkishItems,engineType:'age-calibrated listening/reading evidence + speaking/writing rubrics',verifierType:'independent evidence intersection + rubric consistency',misconceptionCatalog:'tr-g5-turkish-full-scope-misconceptions',nextAction:'105 görevi 5. sınıf dil düzeyi ve performans rubrikleri açısından kalibre et.',blockers:['105 görevin insan kalibrasyonu tamamlanmadı.','Ses kayıtları ve üretici görev örnekleri hazırlanmadı.']}),
     engineRow({id:'tr-g8-inkilap-v2',grade:8,courseId:'t-c-inkilap-tarihi-ve-ataturkculuk',courseName:'T.C. İnkılap Tarihi ve Atatürkçülük',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE8_HISTORY_OUTCOMES_2018.length,coveredOutcomeCount:33,items:grade8HistoryItems,engineType:'source criticism + chronology + causality + continuity/change',verifierType:'independent source/rubric constraint verification',misconceptionCatalog:'g8-history-source-reasoning-misconceptions-v1',nextAction:'33 tarihsel sorgulama görevine gerçek kaynak paketleri ve insan tarihçi incelemesi ekle.',blockers:['Kaynak paketleri ve telif/provenans doğrulaması bekliyor.','İnsan alan uzmanı kalibrasyonu yapılmadı.']}),
     engineRow({id:'tr-g8-dkab-v2',grade:8,courseId:'din-kulturu-ve-ahlak-bilgisi',courseName:'Din Kültürü ve Ahlak Bilgisi',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE8_DKAB_OUTCOMES_2018.length,coveredOutcomeCount:28,items:grade8DkabItems,engineType:'curriculum-bound text evidence + concept/ethical reasoning',verifierType:'independent curriculum/evidence/rubric verification',misconceptionCatalog:'g8-dkab-curriculum-bound-misconceptions-v1',nextAction:'28 görevi tarafsız dil, metin bağlamı ve alan uzmanlığı açısından kalibre et.',blockers:['Ayet/hadis ve açıklama materyallerinin kaynak doğrulaması bekliyor.','İnsan alan uzmanı incelemesi yapılmadı.']}),
-    engineRow({id:'tr-g8-ingilizce-v2',grade:8,courseId:'ingilizce',courseName:'İngilizce',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE8_ENGLISH_OUTCOMES_2018.length,coveredOutcomeCount:70,items:grade8EnglishItems,engineType:'CEFR A2 listening/interaction/production/reading/writing tasks',verifierType:'independent CEFR task and rubric consistency',misconceptionCatalog:'g8-english-a2-communication-misconceptions-v1',nextAction:'70 A2 görevi için gerçek ses kayıtları, örnek cevaplar ve İngilizce öğretmeni kalibrasyonu ekle.',blockers:['15 dinleme görevi gerçek ses kaydı bekliyor.','Konuşma ve yazma rubriklerinin insan kalibrasyonu yapılmadı.']})
+    engineRow({id:'tr-g8-ingilizce-v2',grade:8,courseId:'ingilizce',scheduleCourseId:'yabanci-dil',courseName:'İngilizce',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE8_ENGLISH_OUTCOMES_2018.length,coveredOutcomeCount:70,items:grade8EnglishItems,engineType:'CEFR A2 listening/interaction/production/reading/writing tasks',verifierType:'independent CEFR task and rubric consistency',misconceptionCatalog:'g8-english-a2-communication-misconceptions-v1',nextAction:'70 A2 görevi için gerçek ses kayıtları, örnek cevaplar ve İngilizce öğretmeni kalibrasyonu ekle.',blockers:['15 dinleme görevi gerçek ses kaydı bekliyor.','Konuşma ve yazma rubriklerinin insan kalibrasyonu yapılmadı.']}),
+    engineRow({id:'tr-g5-matematik-v2',grade:5,courseId:'matematik',courseName:'Matematik',programFamily:'TYMM',officialOutcomeCount:GRADE5_MATH_OUTCOMES_TYMM_2024.length,coveredOutcomeCount:GRADE5_MATH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5MathItems,engineType:'age-calibrated mathematical investigation + independent verification',verifierType:'rubric criteria plus alternate representation/control check',misconceptionCatalog:'g5-math-misconceptions-v1',nextAction:'23 Matematik görevini yaş uygunluğu ve gerçek problem bağlamları açısından kalibre et.',blockers:['23 görev insan incelemesi bekliyor.','Etkileşimli matematik araçları bağlanmadı.']}),
+    engineRow({id:'tr-g5-fen-v2',grade:5,courseId:'fen-bilimleri',courseName:'Fen Bilimleri',programFamily:'TYMM',officialOutcomeCount:GRADE5_SCIENCE_OUTCOMES_TYMM_2024.length,coveredOutcomeCount:GRADE5_SCIENCE_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5ScienceItems,engineType:'grade5 observation/experiment/model/evidence engine',verifierType:'independent evidence and rubric consistency',misconceptionCatalog:'g5-science-inquiry-misconceptions-v1',nextAction:'28 Fen görevini güvenlik, deney ve model açısından insan kalibrasyonundan geçir.',blockers:['Deney ve model görevleri gerçek bileşen bekliyor.','28 görev insan incelemesi bekliyor.']}),
+    engineRow({id:'tr-g5-sosyal-v2',grade:5,courseId:'sosyal-bilgiler',courseName:'Sosyal Bilgiler',programFamily:'TYMM',officialOutcomeCount:GRADE5_SOCIAL_OUTCOMES_TYMM_2024.length,coveredOutcomeCount:GRADE5_SOCIAL_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5SocialItems,engineType:'map/source/civic project social inquiry engine',verifierType:'independent source and rubric constraint verification',misconceptionCatalog:'g5-social-evidence-misconceptions-v1',nextAction:'19 Sosyal Bilgiler görevine gerçek harita ve kaynak paketleri bağla.',blockers:['Harita ve kaynak varlıkları tamamlanmadı.','19 görev insan incelemesi bekliyor.']}),
+    engineRow({id:'tr-g5-dkab-v2',grade:5,courseId:'din-kulturu-ve-ahlak-bilgisi',courseName:'Din Kültürü ve Ahlak Bilgisi',programFamily:'TYMM',officialOutcomeCount:GRADE5_DKAB_OUTCOMES_TYMM_2024.length,coveredOutcomeCount:GRADE5_DKAB_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5DkabItems,engineType:'neutral curriculum-bound text/concept/ethical reasoning engine',verifierType:'independent evidence and rubric verification',misconceptionCatalog:'g5-dkab-curriculum-misconceptions-v1',nextAction:'18 görevi tarafsız dil, kaynak ve yaş uygunluğu açısından kalibre et.',blockers:['Kültürel görsellerin provenansı bekliyor.','18 görev insan incelemesi bekliyor.']}),
+    engineRow({id:'tr-g5-ingilizce-v2',grade:5,courseId:'yabanci-dil',scheduleCourseId:'yabanci-dil',courseName:'İngilizce',programFamily:'TYMM',officialOutcomeCount:GRADE5_ENGLISH_OUTCOMES_TYMM_2025.length,coveredOutcomeCount:GRADE5_ENGLISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5EnglishItems,engineType:'CEFR A2.1 communicative listening/pronunciation/reading/speaking/writing engine',verifierType:'independent A2.1 task and rubric consistency',misconceptionCatalog:'g5-english-a2-1-misconceptions-v1',nextAction:'184 İngilizce görevi için gerçek ses, konuşma örnekleri ve öğretmen kalibrasyonu ekle.',blockers:['Dinleme ve konuşma görevleri gerçek ses varlığı bekliyor.','184 görev insan incelemesi bekliyor.']})
   ]);
   const questionCount=engines.reduce((s,r)=>s+r.canonicalQuestionCount,0);
   const approvedCount=engines.reduce((s,r)=>s+r.humanApprovedQuestionCount,0);
   const ingestedOutcomeCount=engines.reduce((s,r)=>s+r.ingestedOutcomeCount,0);
   const coveredOutcomeCount=engines.reduce((s,r)=>s+r.coveredOutcomeCount,0);
-  const uniqueCourseCells=new Set(COURSE_SCHEDULE_REGISTRY_2026_2027.map(row=>`${row.grade}:${row.courseId}`));
+  const scheduleCellKeys=new Set(COURSE_SCHEDULE_REGISTRY_2026_2027.map(row=>`${row.grade}:${row.courseId}`));
+  const activeCellKeys=new Set(engines.map(row=>`${row.grade}:${row.scheduleCourseId}`));
+  const unmatchedActiveCells=[...activeCellKeys].filter(key=>!scheduleCellKeys.has(key));
   const activeGrades=new Set(engines.map(row=>row.grade));
   return Object.freeze({
-    schemaVersion:'3.0',generatedAt:new Date().toISOString(),target:ASSESSMENT_V2_TARGET_STATEMENT,status:'LGS_CORE_ENGINEERING_SCOPE_COMPLETE',productReady:false,publicationAllowed:false,gameAdaptationAllowed:false,
+    schemaVersion:'3.1',generatedAt:new Date().toISOString(),target:ASSESSMENT_V2_TARGET_STATEMENT,status:'GRADE5_AND_LGS_CORE_ENGINEERING_SCOPE_COMPLETE',productReady:false,publicationAllowed:false,gameAdaptationAllowed:false,
     legacy:Object.freeze({count:LEGACY_QUARANTINE_COUNT,status:'UNVERIFIED_LEGACY'}),architecture:Object.freeze({policyVersion:QUESTION_ARCHITECTURE_POLICY.version,pipelineOrder:QUESTION_ARCHITECTURE_POLICY.pipelineOrder,sharedContractNotSharedGenerator:true,subjectSpecificEnginesRequired:true}),
-    summary:Object.freeze({targetGradeCount:12,activeGradeCount:activeGrades.size,courseScheduleCellCount:uniqueCourseCells.size,activeEngineCellCount:engines.length,activeEngineCellPercent:percent(engines.length,uniqueCourseCells.size),curriculumOutcomeRecordCount:ingestedOutcomeCount,coveredOutcomeCount,canonicalQuestionCount:questionCount,humanApprovedQuestionCount:approvedCount,humanReviewQueueCount:questionCount-approvedCount,gameAdaptedQuestionCount:engines.reduce((s,r)=>s+r.gameAdaptedQuestionCount,0),legacyQuarantineCount:LEGACY_QUARANTINE_COUNT}),
+    summary:Object.freeze({targetGradeCount:12,activeGradeCount:activeGrades.size,courseScheduleCellCount:scheduleCellKeys.size,activeEngineCellCount:activeCellKeys.size,activeEngineCellPercent:percent(activeCellKeys.size,scheduleCellKeys.size),curriculumOutcomeRecordCount:ingestedOutcomeCount,coveredOutcomeCount,canonicalQuestionCount:questionCount,humanApprovedQuestionCount:approvedCount,humanReviewQueueCount:questionCount-approvedCount,gameAdaptedQuestionCount:engines.reduce((s,r)=>s+r.gameAdaptedQuestionCount,0),legacyQuarantineCount:LEGACY_QUARANTINE_COUNT,unmatchedActiveCourseCellCount:unmatchedActiveCells.length}),
     rollout:frozenArray(CURRICULUM_ROLLOUT_2026_2027.map(row=>({grade:row.grade,programFamily:row.programFamily,status:row.programVersionStatus}))),engines,
     pipeline:frozenArray([
-      {id:'curriculum',label:'Resmî müfredat',status:'PASS_FOR_ACTIVE_ENGINES',note:'7 aktif motorun resmî kapsamı tam aktarıldı.'},
+      {id:'curriculum',label:'Resmî müfredat',status:'PASS_FOR_ACTIVE_ENGINES',note:'12 aktif motorun resmî kapsamı tam aktarıldı.'},
       {id:'subject-engine',label:'Derse özel motor',status:'PASS_FOR_ACTIVE_ENGINES',note:'Her ders kendi çözücü/rubrik ve yanılgı kataloğuyla çalışıyor.'},
       {id:'canonical-content',label:'Kanonik soru/görev',status:'ENGINEERING_SCOPE_COMPLETE',note:`${questionCount} kanonik mühendislik nesnesi mevcut.`},
       {id:'human-review',label:'İnsan kalibrasyonu',status:'BLOCKED',note:`${approvedCount} onaylı, ${questionCount-approvedCount} inceleme bekliyor.`},
       {id:'game-adaptation',label:'Oyun uyarlaması',status:'LAB_ONLY',note:'5 insan onaylı Türkçe sorusu tersine doğrulamalı laboratuvarda; genel açılış kilitli.'},
-      {id:'student-pilot',label:'Öğrenci pilotu',status:'NOT_STARTED',note:'Madde analizi ve performans verisi ölçülmedi.'},
+      {id:'student-pilot',label:'Öğrenci pilotu',status:'NOT_STARTED',note:'Gerçek öğrenci madde analizi ölçülmedi.'},
       {id:'publication',label:'Yayın',status:'LOCKED',note:'productReady=false.'}
     ]),
     nextMilestones:frozenArray([
-      {order:1,id:'human-review-sampling',title:'7 motor için dengeli insan örneklemi',reason:'440 görevlik kuyruğu risk ve çeşitliliğe göre örneklemle kalibre et.'},
-      {order:2,id:'media-and-rubrics',title:'Ses, kaynak, deney ve rubrik varlıkları',reason:'Dinleme, konuşma, tarih kaynağı ve deney görevlerinin gerçek materyalleri bağlanmalı.'},
-      {order:3,id:'game-adaptation-lab',title:'Onaylı içerik için oyun adaptasyon laboratuvarı',reason:'Anlamı koruyan tersine doğrulamalı adaptasyon yalnız onaylı örneklerde başlatılmalı.'},
-      {order:4,id:'expand-grade-map',title:'1–12 sınıf-ders hücrelerini genişlet',reason:'112 zorunlu hücrenin 7’si aktif.'}
+      {order:1,id:'grade5-core-review',title:'5. sınıf çekirdek motor kalibrasyonu',reason:'Yeni 272 görev risk tabakalı insan örneklemiyle doğrulanmalı.'},
+      {order:2,id:'media-and-rubrics',title:'Ses, harita, deney ve rubrik varlıkları',reason:'Dil, Sosyal ve Fen performans görevlerinin gerçek materyalleri bağlanmalı.'},
+      {order:3,id:'expand-grades-6-7',title:'6–7. sınıf TYMM çekirdeğini aç',reason:'Aynı resmî programlardan 6. ve 7. sınıf motorları tamamlanmalı.'},
+      {order:4,id:'expand-grade-map',title:'1–12 sınıf-ders hücrelerini genişlet',reason:`112 zorunlu hücrenin ${activeCellKeys.size}’si aktif.`}
     ])
   });
 }
@@ -101,13 +130,15 @@ export function auditAssessmentV2ProductionPortfolio(portfolio=buildAssessmentV2
   const errors=[];
   if(portfolio.summary.targetGradeCount!==12)errors.push('target-grade-count');
   if(portfolio.summary.courseScheduleCellCount!==112)errors.push(`course-cell-count:${portfolio.summary.courseScheduleCellCount}`);
-  if(portfolio.engines.length!==7)errors.push(`engine-count:${portfolio.engines.length}`);
+  if(portfolio.engines.length!==12)errors.push(`engine-count:${portfolio.engines.length}`);
   if(new Set(portfolio.engines.map(r=>r.id)).size!==portfolio.engines.length)errors.push('duplicate-engine-id');
-  if(portfolio.summary.canonicalQuestionCount!==445)errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
-  if(portfolio.summary.curriculumOutcomeRecordCount!==420)errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
-  if(portfolio.summary.coveredOutcomeCount!==420)errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
+  if(portfolio.summary.activeEngineCellCount!==12)errors.push(`active-cell-count:${portfolio.summary.activeEngineCellCount}`);
+  if(portfolio.summary.unmatchedActiveCourseCellCount!==0)errors.push(`unmatched-active-cells:${portfolio.summary.unmatchedActiveCourseCellCount}`);
+  if(portfolio.summary.canonicalQuestionCount!==717)errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
+  if(portfolio.summary.curriculumOutcomeRecordCount!==692)errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
+  if(portfolio.summary.coveredOutcomeCount!==692)errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
   if(portfolio.summary.humanApprovedQuestionCount!==5)errors.push(`approved-count:${portfolio.summary.humanApprovedQuestionCount}`);
-  if(portfolio.summary.humanReviewQueueCount!==440)errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
+  if(portfolio.summary.humanReviewQueueCount!==712)errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
   if(portfolio.productReady!==false||portfolio.publicationAllowed!==false)errors.push('product-ready-leak');
   if(portfolio.gameAdaptationAllowed!==false||portfolio.summary.gameAdaptedQuestionCount!==5||!ASSESSMENT_V2_GAME_ADAPTATION_LAB_AUDIT.ok)errors.push('game-adaptation-lab-or-global-lock');
   if(portfolio.legacy.count!==604||portfolio.legacy.status!=='UNVERIFIED_LEGACY')errors.push('legacy-policy');

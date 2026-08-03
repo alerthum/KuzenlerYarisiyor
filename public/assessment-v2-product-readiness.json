@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T23:18:50.126Z",
+  "generatedAt": "2026-08-03T23:33:48.581Z",
   "status": "PRODUCT_BLOCKED",
   "productReady": false,
   "publicationAllowed": false,
@@ -30,10 +30,10 @@
       "label": "112 zorunlu sınıf–ders hücresi",
       "passed": false,
       "evidence": {
-        "active": 7,
+        "active": 12,
         "required": 112
       },
-      "blocker": "105 sınıf–ders hücresi henüz açılmadı."
+      "blocker": "100 sınıf–ders hücresi henüz açılmadı."
     },
     {
       "id": "grade-coverage",
@@ -50,7 +50,7 @@
       "label": "Aktif motorlarda tam resmî kapsam",
       "passed": true,
       "evidence": {
-        "engines": 7
+        "engines": 12
       },
       "blocker": null
     },
@@ -139,7 +139,7 @@
     }
   ],
   "blockers": [
-    "105 sınıf–ders hücresi henüz açılmadı.",
+    "100 sınıf–ders hücresi henüz açılmadı.",
     "10 sınıf düzeyinde aktif motor yok.",
     "İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var.",
     "Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez.",

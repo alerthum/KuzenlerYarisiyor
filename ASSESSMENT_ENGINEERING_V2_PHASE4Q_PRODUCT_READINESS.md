@@ -7,7 +7,7 @@
 - publicationAllowed: **false**
 
 ## Açık engeller
-- 105 sınıf–ders hücresi henüz açılmadı.
+- 100 sınıf–ders hücresi henüz açılmadı.
 - 10 sınıf düzeyinde aktif motor yok.
 - İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var.
 - Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez.

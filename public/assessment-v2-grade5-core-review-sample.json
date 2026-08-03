@@ -1,0 +1,989 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T23:33:48.256Z",
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "metrics": {
+    "engineCount": 5,
+    "itemCount": 25,
+    "perEngine": 5,
+    "approved": 0,
+    "pending": 25
+  },
+  "rows": [
+    {
+      "questionId": "math-g5-mat-5-1-1",
+      "engineKey": "g5:matematik",
+      "grade": 5,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g5-matematik-mat-5-1-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "5. sınıf matematik atölyesinde “Sayılar ve Nicelikler” teması için gerçek yaşam, sayı, şekil veya veri temelli bir durum incelenmektedir.",
+      "stem": "Altı basamaklı sayıları okuma ve yazmayı çok basamaklı sayılara genelleyebilme öğrenme çıktısını gösterecek biçimde problemi çöz, kullandığın yöntemi açıkla ve sonucunu bağımsız bir kontrolle doğrula.",
+      "rubricCriteria": [
+        "Problemin verilenlerini, istenenini ve aralarındaki matematiksel ilişkiyi belirler.",
+        "Uygun işlem, temsil veya muhakeme zincirini hatasız uygular.",
+        "Bulduğu sonucu tahmin, ters işlem veya alternatif temsil ile doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri, isteneni ve değişmeyen koşulları ayrı ayrı yaz.",
+        "İşleme başlamadan önce uygun tablo, şekil, sayı doğrusu veya eşitlik temsilini seç.",
+        "Sonucu ters işlem, tahmin veya ikinci bir temsil kullanarak kontrol et."
+      ],
+      "misconceptionIds": [
+        "işlem-seçimini-gerekçelendirmeme",
+        "temsil-ile-koşulu-karıştırma",
+        "sonucu-kontrol-etmeden-kabul-etme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "math-g5-mat-5-2-1",
+      "engineKey": "g5:matematik",
+      "grade": 5,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g5-matematik-mat-5-2-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "5. sınıf matematik atölyesinde “İşlemlerle Cebirsel Düşünme” teması için gerçek yaşam, sayı, şekil veya veri temelli bir durum incelenmektedir.",
+      "stem": "Eşitliğin korunumuna ve işlem özelliklerine yönelik çıkarım yapabilme öğrenme çıktısını gösterecek biçimde problemi çöz, kullandığın yöntemi açıkla ve sonucunu bağımsız bir kontrolle doğrula.",
+      "rubricCriteria": [
+        "Problemin verilenlerini, istenenini ve aralarındaki matematiksel ilişkiyi belirler.",
+        "Uygun işlem, temsil veya muhakeme zincirini hatasız uygular.",
+        "Bulduğu sonucu tahmin, ters işlem veya alternatif temsil ile doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri, isteneni ve değişmeyen koşulları ayrı ayrı yaz.",
+        "İşleme başlamadan önce uygun tablo, şekil, sayı doğrusu veya eşitlik temsilini seç.",
+        "Sonucu ters işlem, tahmin veya ikinci bir temsil kullanarak kontrol et."
+      ],
+      "misconceptionIds": [
+        "işlem-seçimini-gerekçelendirmeme",
+        "temsil-ile-koşulu-karıştırma",
+        "sonucu-kontrol-etmeden-kabul-etme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "math-g5-mat-5-3-1",
+      "engineKey": "g5:matematik",
+      "grade": 5,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g5-matematik-mat-5-3-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "geometrik-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "5. sınıf matematik atölyesinde “Geometrik Şekiller” teması için gerçek yaşam, sayı, şekil veya veri temelli bir durum incelenmektedir.",
+      "stem": "Temel geometrik çizimler için matematiksel araç ve teknolojiden yararlanabilme öğrenme çıktısını gösterecek biçimde problemi çöz, kullandığın yöntemi açıkla ve sonucunu bağımsız bir kontrolle doğrula.",
+      "rubricCriteria": [
+        "Matematiksel aracı amaca uygun ve ölçülü biçimde kullanır.",
+        "Oluşturduğu şekil ya da modeli kazanımdaki koşullara göre doğrular.",
+        "İşlem veya çizim basamaklarını gerekçelendirip sonucu kontrol eder."
+      ],
+      "hints": [
+        "Önce verilenleri, isteneni ve değişmeyen koşulları ayrı ayrı yaz.",
+        "İşleme başlamadan önce uygun tablo, şekil, sayı doğrusu veya eşitlik temsilini seç.",
+        "Sonucu ters işlem, tahmin veya ikinci bir temsil kullanarak kontrol et."
+      ],
+      "misconceptionIds": [
+        "işlem-seçimini-gerekçelendirmeme",
+        "temsil-ile-koşulu-karıştırma",
+        "sonucu-kontrol-etmeden-kabul-etme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "math-g5-mat-5-4-1",
+      "engineKey": "g5:matematik",
+      "grade": 5,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g5-matematik-mat-5-4-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "geometrik-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "5. sınıf matematik atölyesinde “Geometrik Nicelikler” teması için gerçek yaşam, sayı, şekil veya veri temelli bir durum incelenmektedir.",
+      "stem": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu verildiğinde kenar uzunluklarını yorumlayabilme öğrenme çıktısını gösterecek biçimde problemi çöz, kullandığın yöntemi açıkla ve sonucunu bağımsız bir kontrolle doğrula.",
+      "rubricCriteria": [
+        "Verilen veri veya olasılık durumundaki nicelikleri ve koşulları doğru belirler.",
+        "Uygun temsil, karşılaştırma veya hesaplama yolunu seçip uygular.",
+        "Sonucu bağlama göre yorumlar ve farklı bir kontrol yoluyla doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri, isteneni ve değişmeyen koşulları ayrı ayrı yaz.",
+        "İşleme başlamadan önce uygun tablo, şekil, sayı doğrusu veya eşitlik temsilini seç.",
+        "Sonucu ters işlem, tahmin veya ikinci bir temsil kullanarak kontrol et."
+      ],
+      "misconceptionIds": [
+        "işlem-seçimini-gerekçelendirmeme",
+        "temsil-ile-koşulu-karıştırma",
+        "sonucu-kontrol-etmeden-kabul-etme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "math-g5-mat-5-5-1",
+      "engineKey": "g5:matematik",
+      "grade": 5,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g5-matematik-mat-5-5-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "matematiksel-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "5. sınıf matematik atölyesinde “İstatistiksel Araştırma Süreci” teması için gerçek yaşam, sayı, şekil veya veri temelli bir durum incelenmektedir.",
+      "stem": "Kategorik veri ile çalışabilme ve veriye dayalı karar verebilme öğrenme çıktısını gösterecek biçimde problemi çöz, kullandığın yöntemi açıkla ve sonucunu bağımsız bir kontrolle doğrula.",
+      "rubricCriteria": [
+        "Verilen veri veya olasılık durumundaki nicelikleri ve koşulları doğru belirler.",
+        "Uygun temsil, karşılaştırma veya hesaplama yolunu seçip uygular.",
+        "Sonucu bağlama göre yorumlar ve farklı bir kontrol yoluyla doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri, isteneni ve değişmeyen koşulları ayrı ayrı yaz.",
+        "İşleme başlamadan önce uygun tablo, şekil, sayı doğrusu veya eşitlik temsilini seç.",
+        "Sonucu ters işlem, tahmin veya ikinci bir temsil kullanarak kontrol et."
+      ],
+      "misconceptionIds": [
+        "işlem-seçimini-gerekçelendirmeme",
+        "temsil-ile-koşulu-karıştırma",
+        "sonucu-kontrol-etmeden-kabul-etme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "science-g5-fb-5-1-1-1",
+      "engineKey": "g5:fen-bilimleri",
+      "grade": 5,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g5-fen-bilimleri-fb-5-1-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "Bir bilim atölyesinde “Gökyüzündeki Komşularımız ve Biz” ünitesi için gözlem, deney, model veya veri paketi üzerinde çalışılmaktadır.",
+      "stem": "Güneş’in yapısı ve dönme hareketi ile ilgili bilgileri toplayabilme öğrenme çıktısını gösterecek bilimsel ürünü oluştur ve iddianı kanıtlarla gerekçelendir.",
+      "rubricCriteria": [
+        "Gözlem veya veri içindeki ilgili kanıtları ayırt eder.",
+        "Kanıtlardan bilimsel ilke veya nedensel ilişkiye ulaşır.",
+        "Sonucu desteklemeyen genellemelerden kaçınır ve alternatif açıklamayı kontrol eder."
+      ],
+      "hints": [
+        "Önce araştırılan olay, değişkenler ve gözlenebilir kanıtları ayır.",
+        "İddianı yalnız gözlem, veri veya modelde gerçekten gösterilen ilişkilere bağla.",
+        "Sonucun hangi koşullarda geçerli olduğunu ve olası hata kaynağını kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-ile-yorumu-karıştırma",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "science-g5-fb-5-1-2-2",
+      "engineKey": "g5:fen-bilimleri",
+      "grade": 5,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g5-fen-bilimleri-fb-5-1-2-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "Bir bilim atölyesinde “Gökyüzündeki Komşularımız ve Biz” ünitesi için gözlem, deney, model veya veri paketi üzerinde çalışılmaktadır.",
+      "stem": "Ay’ın evrelerini temsil eden bilimsel model oluşturabilme öğrenme çıktısını gösterecek bilimsel ürünü oluştur ve iddianı kanıtlarla gerekçelendir.",
+      "rubricCriteria": [
+        "Modelin göstereceği yapı, ilişki veya süreci doğru seçer.",
+        "Model parçaları arasındaki ilişkiyi resmî öğrenme çıktısına uygun kurar.",
+        "Modelin güçlü yanlarını ve gerçeği temsil etmediği sınırlarını açıklar."
+      ],
+      "hints": [
+        "Önce araştırılan olay, değişkenler ve gözlenebilir kanıtları ayır.",
+        "İddianı yalnız gözlem, veri veya modelde gerçekten gösterilen ilişkilere bağla.",
+        "Sonucun hangi koşullarda geçerli olduğunu ve olası hata kaynağını kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-ile-yorumu-karıştırma",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "science-g5-fb-5-2-1-1",
+      "engineKey": "g5:fen-bilimleri",
+      "grade": 5,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g5-fen-bilimleri-fb-5-2-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "Bir bilim atölyesinde “Kuvveti Tanıyalım” ünitesi için gözlem, deney, model veya veri paketi üzerinde çalışılmaktadır.",
+      "stem": "Kuvveti büyüklüğü ile tanımlayabilme öğrenme çıktısını gösterecek bilimsel ürünü oluştur ve iddianı kanıtlarla gerekçelendir.",
+      "rubricCriteria": [
+        "Gözlem veya veri içindeki ilgili kanıtları ayırt eder.",
+        "Kanıtlardan bilimsel ilke veya nedensel ilişkiye ulaşır.",
+        "Sonucu desteklemeyen genellemelerden kaçınır ve alternatif açıklamayı kontrol eder."
+      ],
+      "hints": [
+        "Önce araştırılan olay, değişkenler ve gözlenebilir kanıtları ayır.",
+        "İddianı yalnız gözlem, veri veya modelde gerçekten gösterilen ilişkilere bağla.",
+        "Sonucun hangi koşullarda geçerli olduğunu ve olası hata kaynağını kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-ile-yorumu-karıştırma",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "science-g5-fb-5-3-1-1",
+      "engineKey": "g5:fen-bilimleri",
+      "grade": 5,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g5-fen-bilimleri-fb-5-3-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "Bir bilim atölyesinde “Canlıların Yapısına Yolculuk” ünitesi için gözlem, deney, model veya veri paketi üzerinde çalışılmaktadır.",
+      "stem": "Bitki ve hayvan hücrelerini temel kısımları ve özellikleri açısından karşılaştırabilme öğrenme çıktısını gösterecek bilimsel ürünü oluştur ve iddianı kanıtlarla gerekçelendir.",
+      "rubricCriteria": [
+        "Gözlem veya veri içindeki ilgili kanıtları ayırt eder.",
+        "Kanıtlardan bilimsel ilke veya nedensel ilişkiye ulaşır.",
+        "Sonucu desteklemeyen genellemelerden kaçınır ve alternatif açıklamayı kontrol eder."
+      ],
+      "hints": [
+        "Önce araştırılan olay, değişkenler ve gözlenebilir kanıtları ayır.",
+        "İddianı yalnız gözlem, veri veya modelde gerçekten gösterilen ilişkilere bağla.",
+        "Sonucun hangi koşullarda geçerli olduğunu ve olası hata kaynağını kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-ile-yorumu-karıştırma",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "science-g5-fb-5-4-1-1",
+      "engineKey": "g5:fen-bilimleri",
+      "grade": 5,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g5-fen-bilimleri-fb-5-4-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "bilimsel-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "Bir bilim atölyesinde “Işığın Dünyası” ünitesi için gözlem, deney, model veya veri paketi üzerinde çalışılmaktadır.",
+      "stem": "Bir kaynaktan çıkan ışığın her yönde doğrusal bir yol izlediğini gözlem yoluyla açıklayabilme öğrenme çıktısını gösterecek bilimsel ürünü oluştur ve iddianı kanıtlarla gerekçelendir.",
+      "rubricCriteria": [
+        "Gözlem veya veri içindeki ilgili kanıtları ayırt eder.",
+        "Kanıtlardan bilimsel ilke veya nedensel ilişkiye ulaşır.",
+        "Sonucu desteklemeyen genellemelerden kaçınır ve alternatif açıklamayı kontrol eder."
+      ],
+      "hints": [
+        "Önce araştırılan olay, değişkenler ve gözlenebilir kanıtları ayır.",
+        "İddianı yalnız gözlem, veri veya modelde gerçekten gösterilen ilişkilere bağla.",
+        "Sonucun hangi koşullarda geçerli olduğunu ve olası hata kaynağını kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-ile-yorumu-karıştırma",
+        "değişkenleri-kontrol-etmeme",
+        "tek-veriden-genelleme"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "social-g5-sb-5-1-1",
+      "engineKey": "g5:sosyal-bilgiler",
+      "grade": 5,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g5-sosyal-bilgiler-sb-5-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "Bir sosyal bilgiler laboratuvarında “Birlikte Yaşamak” öğrenme alanıyla ilgili harita, kısa kaynak, tablo, görsel veya günlük yaşam durumu incelenmektedir.",
+      "stem": "Dâhil olduğu gruplar ve bu gruplardaki rolleri arasındaki ilişkileri çözümleyebilme öğrenme çıktısını gösterecek biçimde materyalleri incele ve kanıta dayalı ürününü oluştur.",
+      "rubricCriteria": [
+        "Toplumsal durumdaki kişi, kurum, rol ve ilişkileri ayırt eder.",
+        "Neden, sonuç, değişim veya süreklilik ilişkisini kanıtla açıklar.",
+        "Farklı bakış açılarını dikkate alarak saygılı ve uygulanabilir sonuç oluşturur."
+      ],
+      "hints": [
+        "Önce materyalin doğrudan gösterdiği kişi, yer, zaman ve kanıtları not et.",
+        "Neden-sonuç, değişim-süreklilik veya hak-sorumluluk ilişkilerinden hangisinin istendiğini belirle.",
+        "Sonucunu en az iki kanıtla destekle ve materyalin göstermediği bilgiyi ekleme."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "harita-sembolünü-yanlış-okuma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "social-g5-sb-5-2-1",
+      "engineKey": "g5:sosyal-bilgiler",
+      "grade": 5,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g5-sosyal-bilgiler-sb-5-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "Bir sosyal bilgiler laboratuvarında “Evimiz Dünya” öğrenme alanıyla ilgili harita, kısa kaynak, tablo, görsel veya günlük yaşam durumu incelenmektedir.",
+      "stem": "Yaşadığı ilin göreceli konum özelliklerini belirleyebilme öğrenme çıktısını gösterecek biçimde materyalleri incele ve kanıta dayalı ürününü oluştur.",
+      "rubricCriteria": [
+        "Haritadaki yön, sembol, ölçek veya göreceli konum bilgisini doğru okur.",
+        "Harita kanıtını yaşadığı çevre veya verilen durumla ilişkilendirir.",
+        "Haritada gösterilmeyen bir ayrıntıyı kesin bilgi gibi eklemeden sonuç çıkarır."
+      ],
+      "hints": [
+        "Önce materyalin doğrudan gösterdiği kişi, yer, zaman ve kanıtları not et.",
+        "Neden-sonuç, değişim-süreklilik veya hak-sorumluluk ilişkilerinden hangisinin istendiğini belirle.",
+        "Sonucunu en az iki kanıtla destekle ve materyalin göstermediği bilgiyi ekleme."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "harita-sembolünü-yanlış-okuma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "social-g5-sb-5-3-1",
+      "engineKey": "g5:sosyal-bilgiler",
+      "grade": 5,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g5-sosyal-bilgiler-sb-5-3-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "Bir sosyal bilgiler laboratuvarında “Ortak Mirasımız” öğrenme alanıyla ilgili harita, kısa kaynak, tablo, görsel veya günlük yaşam durumu incelenmektedir.",
+      "stem": "Yaşadığı ildeki ortak miras ögelerine ilişkin oluşturduğu ürünü paylaşabilme öğrenme çıktısını gösterecek biçimde materyalleri incele ve kanıta dayalı ürününü oluştur.",
+      "rubricCriteria": [
+        "Sorun veya ihtiyacı ilgili kişi ve grupların bakış açılarıyla tanımlar.",
+        "Hak, sorumluluk ve uygulanabilir kaynakları gözeten çözüm önerir.",
+        "Önerinin etkisini değerlendirecek ölçüt ve geri bildirim planı oluşturur."
+      ],
+      "hints": [
+        "Önce materyalin doğrudan gösterdiği kişi, yer, zaman ve kanıtları not et.",
+        "Neden-sonuç, değişim-süreklilik veya hak-sorumluluk ilişkilerinden hangisinin istendiğini belirle.",
+        "Sonucunu en az iki kanıtla destekle ve materyalin göstermediği bilgiyi ekleme."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "harita-sembolünü-yanlış-okuma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "social-g5-sb-5-4-1",
+      "engineKey": "g5:sosyal-bilgiler",
+      "grade": 5,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g5-sosyal-bilgiler-sb-5-4-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "Bir sosyal bilgiler laboratuvarında “Yaşayan Demokrasimiz” öğrenme alanıyla ilgili harita, kısa kaynak, tablo, görsel veya günlük yaşam durumu incelenmektedir.",
+      "stem": "Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi çözümleyebilme öğrenme çıktısını gösterecek biçimde materyalleri incele ve kanıta dayalı ürününü oluştur.",
+      "rubricCriteria": [
+        "Toplumsal durumdaki kişi, kurum, rol ve ilişkileri ayırt eder.",
+        "Neden, sonuç, değişim veya süreklilik ilişkisini kanıtla açıklar.",
+        "Farklı bakış açılarını dikkate alarak saygılı ve uygulanabilir sonuç oluşturur."
+      ],
+      "hints": [
+        "Önce materyalin doğrudan gösterdiği kişi, yer, zaman ve kanıtları not et.",
+        "Neden-sonuç, değişim-süreklilik veya hak-sorumluluk ilişkilerinden hangisinin istendiğini belirle.",
+        "Sonucunu en az iki kanıtla destekle ve materyalin göstermediği bilgiyi ekleme."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "harita-sembolünü-yanlış-okuma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "social-g5-sb-5-5-1",
+      "engineKey": "g5:sosyal-bilgiler",
+      "grade": 5,
+      "courseId": "sosyal-bilgiler",
+      "outcomeIds": [
+        "tr-tymm-g5-sosyal-bilgiler-sb-5-5-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "sosyal-bilimsel-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "Bir sosyal bilgiler laboratuvarında “Hayatımızdaki Ekonomi” öğrenme alanıyla ilgili harita, kısa kaynak, tablo, görsel veya günlük yaşam durumu incelenmektedir.",
+      "stem": "Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini yorumlayabilme öğrenme çıktısını gösterecek biçimde materyalleri incele ve kanıta dayalı ürününü oluştur.",
+      "rubricCriteria": [
+        "Kaynağın kim tarafından, ne zaman ve hangi amaçla üretildiğini belirler.",
+        "En az iki kanıtı karşılaştırarak ortak ve farklı noktaları gösterir.",
+        "Kaynağın sınırlarını belirterek ölçülü ve gerekçeli sonuç oluşturur."
+      ],
+      "hints": [
+        "Önce materyalin doğrudan gösterdiği kişi, yer, zaman ve kanıtları not et.",
+        "Neden-sonuç, değişim-süreklilik veya hak-sorumluluk ilişkilerinden hangisinin istendiğini belirle.",
+        "Sonucunu en az iki kanıtla destekle ve materyalin göstermediği bilgiyi ekleme."
+      ],
+      "misconceptionIds": [
+        "tek-kaynaktan-genelleme",
+        "harita-sembolünü-yanlış-okuma",
+        "hak-sorumluluk-dengesini-atlama"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "dkab-g5-dkab-5-1-1",
+      "engineKey": "g5:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 5,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g5-din-kulturu-ve-ahlak-bilgisi-dkab-5-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "“Allah İnancı” ünitesi için yaş düzeyine uygun kısa metin, görsel, kavram haritası veya günlük yaşam durumu verilmektedir.",
+      "stem": "Evrendeki mükemmel düzene ilişkin akıl yürütebilme öğrenme çıktısını gösterecek biçimde materyali incele ve gerekçeli yanıtını oluştur.",
+      "rubricCriteria": [
+        "Durumdaki değer, hak ve sorumlulukları belirler.",
+        "Görüşünü ilgili dinî veya ahlaki ilke ve somut kanıtla gerekçelendirir.",
+        "Farklı bakış açısını saygıyla ele alıp uygulanabilir sonuç önerir."
+      ],
+      "hints": [
+        "Önce metin veya görselde açıkça verilen bilgi ve kavramları ayır.",
+        "Kavramlar arasındaki ilişkiyi öğrenme çıktısının sınırları içinde kur.",
+        "Gerekçenin verilen metin, görsel veya ilkeyle desteklendiğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "metni-baglamindan-koparma",
+        "kavramlari-karistirma",
+        "gerekcesiz-deger-yargisi"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "dkab-g5-dkab-5-2-1",
+      "engineKey": "g5:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 5,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g5-din-kulturu-ve-ahlak-bilgisi-dkab-5-2-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "“Namaz” ünitesi için yaş düzeyine uygun kısa metin, görsel, kavram haritası veya günlük yaşam durumu verilmektedir.",
+      "stem": "Namaz ibadetini özetleyebilme öğrenme çıktısını gösterecek biçimde materyali incele ve gerekçeli yanıtını oluştur.",
+      "rubricCriteria": [
+        "Durumdaki değer, hak ve sorumlulukları belirler.",
+        "Görüşünü ilgili dinî veya ahlaki ilke ve somut kanıtla gerekçelendirir.",
+        "Farklı bakış açısını saygıyla ele alıp uygulanabilir sonuç önerir."
+      ],
+      "hints": [
+        "Önce metin veya görselde açıkça verilen bilgi ve kavramları ayır.",
+        "Kavramlar arasındaki ilişkiyi öğrenme çıktısının sınırları içinde kur.",
+        "Gerekçenin verilen metin, görsel veya ilkeyle desteklendiğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "metni-baglamindan-koparma",
+        "kavramlari-karistirma",
+        "gerekcesiz-deger-yargisi"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "dkab-g5-dkab-5-3-1",
+      "engineKey": "g5:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 5,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g5-din-kulturu-ve-ahlak-bilgisi-dkab-5-3-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "“Kur’an-ı Kerim” ünitesi için yaş düzeyine uygun kısa metin, görsel, kavram haritası veya günlük yaşam durumu verilmektedir.",
+      "stem": "Kur’an-ı Kerim’in iç düzenini çözümleyebilme öğrenme çıktısını gösterecek biçimde materyali incele ve gerekçeli yanıtını oluştur.",
+      "rubricCriteria": [
+        "Verilen meal veya açıklamadaki ana mesajı bağlamından koparmadan belirler.",
+        "Mesajı öğrenme çıktısındaki kavramlarla doğru biçimde ilişkilendirir.",
+        "Metinde bulunmayan hüküm eklemeden günlük yaşam bağlantısı kurar."
+      ],
+      "hints": [
+        "Önce metin veya görselde açıkça verilen bilgi ve kavramları ayır.",
+        "Kavramlar arasındaki ilişkiyi öğrenme çıktısının sınırları içinde kur.",
+        "Gerekçenin verilen metin, görsel veya ilkeyle desteklendiğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "metni-baglamindan-koparma",
+        "kavramlari-karistirma",
+        "gerekcesiz-deger-yargisi"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "dkab-g5-dkab-5-3-3",
+      "engineKey": "g5:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 5,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g5-din-kulturu-ve-ahlak-bilgisi-dkab-5-3-3"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G5_CORE",
+      "context": "“Kur’an-ı Kerim” ünitesi için yaş düzeyine uygun kısa metin, görsel, kavram haritası veya günlük yaşam durumu verilmektedir.",
+      "stem": "Kuran-ı Kerim’in ana konularını sınıflandırabilme öğrenme çıktısını gösterecek biçimde materyali incele ve gerekçeli yanıtını oluştur.",
+      "rubricCriteria": [
+        "Temel kavramları doğru ve tarafsız biçimde açıklar.",
+        "Kavramlar arasında parça-bütün, sınıf-örnek veya neden-sonuç ilişkisi kurar.",
+        "Yaygın bir kavram yanılgısını gerekçesiyle düzeltir."
+      ],
+      "hints": [
+        "Önce metin veya görselde açıkça verilen bilgi ve kavramları ayır.",
+        "Kavramlar arasındaki ilişkiyi öğrenme çıktısının sınırları içinde kur.",
+        "Gerekçenin verilen metin, görsel veya ilkeyle desteklendiğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "metni-baglamindan-koparma",
+        "kavramlari-karistirma",
+        "gerekcesiz-deger-yargisi"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "dkab-g5-dkab-5-4-1",
+      "engineKey": "g5:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 5,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g5-din-kulturu-ve-ahlak-bilgisi-dkab-5-4-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G5_CHALLENGING",
+      "context": "“Peygamber Kıssaları” ünitesi için yaş düzeyine uygun kısa metin, görsel, kavram haritası veya günlük yaşam durumu verilmektedir.",
+      "stem": "Peygamberlik hakkında akıl yürütebilme öğrenme çıktısını gösterecek biçimde materyali incele ve gerekçeli yanıtını oluştur.",
+      "rubricCriteria": [
+        "Durumdaki değer, hak ve sorumlulukları belirler.",
+        "Görüşünü ilgili dinî veya ahlaki ilke ve somut kanıtla gerekçelendirir.",
+        "Farklı bakış açısını saygıyla ele alıp uygulanabilir sonuç önerir."
+      ],
+      "hints": [
+        "Önce metin veya görselde açıkça verilen bilgi ve kavramları ayır.",
+        "Kavramlar arasındaki ilişkiyi öğrenme çıktısının sınırları içinde kur.",
+        "Gerekçenin verilen metin, görsel veya ilkeyle desteklendiğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "metni-baglamindan-koparma",
+        "kavramlari-karistirma",
+        "gerekcesiz-deger-yargisi"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "english-g5-eng-5-1-g1",
+      "engineKey": "g5:yabanci-dil",
+      "grade": 5,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g5-ingilizce-eng-5-1-g1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "a2-grammar-in-communication",
+      "difficultyBand": "A2_1_CHALLENGING",
+      "context": "Year 5 A2.1 communication task about school life, people, places, rules, clubs, countries and celebrations.",
+      "stem": "Complete a short age-appropriate A2.1 task that demonstrates this learning outcome: Students can select and use the target grammatical elements of the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+      "rubricCriteria": [
+        "Selects the target language element according to meaning and context.",
+        "Uses the element in an accurate and understandable A2-level example.",
+        "Checks that form, meaning and communicative purpose agree."
+      ],
+      "hints": [
+        "Focus on the communication goal and identify the key words or details.",
+        "Use short, clear A2.1 language and the useful expressions from this theme.",
+        "Check that every required detail is present and that the message is understandable."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "english-g5-eng-5-1-l1",
+      "engineKey": "g5:yabanci-dil",
+      "grade": 5,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g5-ingilizce-eng-5-1-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a2-listening-comprehension",
+      "difficultyBand": "A2_1_CORE",
+      "context": "Year 5 A2.1 communication task about school life, people, places, rules, clubs, countries and celebrations.",
+      "stem": "Complete a short age-appropriate A2.1 task that demonstrates this learning outcome: Students can get ready for the listening/watching-comprehension process for the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” carefully.",
+      "rubricCriteria": [
+        "Identifies the topic, communication goal and required details in the A2-level input.",
+        "Connects two relevant clues when classification, comparison or inference is required.",
+        "Responds clearly without adding information that the input does not support."
+      ],
+      "hints": [
+        "Focus on the communication goal and identify the key words or details.",
+        "Use short, clear A2.1 language and the useful expressions from this theme.",
+        "Check that every required detail is present and that the message is understandable."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "english-g5-eng-5-1-r1",
+      "engineKey": "g5:yabanci-dil",
+      "grade": 5,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g5-ingilizce-eng-5-1-r1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "a2-reading-comprehension",
+      "difficultyBand": "A2_1_CORE",
+      "context": "Year 5 A2.1 communication task about school life, people, places, rules, clubs, countries and celebrations.",
+      "stem": "Complete a short age-appropriate A2.1 task that demonstrates this learning outcome: Students can get ready for the reading-comprehension process about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.",
+      "rubricCriteria": [
+        "Identifies the topic, communication goal and required details in the A2-level input.",
+        "Connects two relevant clues when classification, comparison or inference is required.",
+        "Responds clearly without adding information that the input does not support."
+      ],
+      "hints": [
+        "Focus on the communication goal and identify the key words or details.",
+        "Use short, clear A2.1 language and the useful expressions from this theme.",
+        "Check that every required detail is present and that the message is understandable."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "english-g5-eng-5-1-v1",
+      "engineKey": "g5:yabanci-dil",
+      "grade": 5,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g5-ingilizce-eng-5-1-v1"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "a2-vocabulary-in-context",
+      "difficultyBand": "A2_1_CORE",
+      "context": "Year 5 A2.1 communication task about school life, people, places, rules, clubs, countries and celebrations.",
+      "stem": "Complete a short age-appropriate A2.1 task that demonstrates this learning outcome: Students can select and use the target vocabulary of the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+      "rubricCriteria": [
+        "Selects the target language element according to meaning and context.",
+        "Uses the element in an accurate and understandable A2-level example.",
+        "Checks that form, meaning and communicative purpose agree."
+      ],
+      "hints": [
+        "Focus on the communication goal and identify the key words or details.",
+        "Use short, clear A2.1 language and the useful expressions from this theme.",
+        "Check that every required detail is present and that the message is understandable."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    },
+    {
+      "questionId": "english-g5-eng-5-2-g1",
+      "engineKey": "g5:yabanci-dil",
+      "grade": 5,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g5-ingilizce-eng-5-2-g1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "a2-grammar-in-communication",
+      "difficultyBand": "A2_1_CORE",
+      "context": "Year 5 A2.1 communication task about classroom rules, subjects, timetables, objects, days and time.",
+      "stem": "Complete a short age-appropriate A2.1 task that demonstrates this learning outcome: Students can select and use the target grammatical elements of the current content about “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+      "rubricCriteria": [
+        "Selects the target language element according to meaning and context.",
+        "Uses the element in an accurate and understandable A2-level example.",
+        "Checks that form, meaning and communicative purpose agree."
+      ],
+      "hints": [
+        "Focus on the communication goal and identify the key words or details.",
+        "Use short, clear A2.1 language and the useful expressions from this theme.",
+        "Check that every required detail is present and that the message is understandable."
+      ],
+      "misconceptionIds": [
+        "task-goal-missed",
+        "word-match-without-meaning",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false,
+      "requiredChecks": [
+        "curriculum-alignment",
+        "domain-correctness",
+        "age-language-fit",
+        "rubric-observability",
+        "hint-non-leakage",
+        "media-provenance-and-accessibility"
+      ]
+    }
+  ]
+}

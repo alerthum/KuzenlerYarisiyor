@@ -1,0 +1,1387 @@
+{
+  "matematik": {
+    "count": 23,
+    "outcomes": [
+      {
+        "code": "MAT.5.1.1",
+        "text": "Altı basamaklı sayıları okuma ve yazmayı çok basamaklı sayılara genelleyebilme",
+        "sourceTextLine": 1105
+      },
+      {
+        "code": "MAT.5.1.2",
+        "text": "Doğal sayılar ve işlemler içeren gerçek yaşam problemlerini çözebilme",
+        "sourceTextLine": 1113
+      },
+      {
+        "code": "MAT.5.1.3",
+        "text": "Gerçek yaşam durumlarına karşılık gelen kesirleri farklı biçimlerde temsil edebilme",
+        "sourceTextLine": 1401
+      },
+      {
+        "code": "MAT.5.1.4",
+        "text": "Farklı gösterimlerle ifade edilen kesirlerin karşılaştırılmasına yönelik çıkarım yapabilme",
+        "sourceTextLine": 1413
+      },
+      {
+        "code": "MAT.5.2.1",
+        "text": "Eşitliğin korunumuna ve işlem özelliklerine yönelik çıkarım yapabilme",
+        "sourceTextLine": 1688
+      },
+      {
+        "code": "MAT.5.2.2",
+        "text": "Karşılaştığı günlük hayat ya da matematiksel durumlarda işlem önceliğini yorumlayabilme",
+        "sourceTextLine": 1698
+      },
+      {
+        "code": "MAT.5.2.3",
+        "text": "Sayı ve şekil örüntülerinin kuralına ilişkin muhakeme yapabilme",
+        "sourceTextLine": 1705
+      },
+      {
+        "code": "MAT.5.2.4",
+        "text": "Temel aritmetik işlem içeren durumlardaki algoritmaları yorumlayabilme",
+        "sourceTextLine": 1716
+      },
+      {
+        "code": "MAT.5.3.1",
+        "text": "Temel geometrik çizimler için matematiksel araç ve teknolojiden yararlanabilme",
+        "sourceTextLine": 2091
+      },
+      {
+        "code": "MAT.5.3.2",
+        "text": "Temel geometrik çizimlere dayalı deneyimlerini yansıtabilme",
+        "sourceTextLine": 2099
+      },
+      {
+        "code": "MAT.5.3.3",
+        "text": "Açıları ölçmek için matematiksel araç ve teknolojiden yararlanabilme",
+        "sourceTextLine": 2103
+      },
+      {
+        "code": "MAT.5.3.4",
+        "text": "Düzlemde iki veya üç doğrunun birbirine göre durumuna bağlı olarak oluşabilecek açılara dair çıkarım yapabilme",
+        "sourceTextLine": 2107
+      },
+      {
+        "code": "MAT.5.3.5",
+        "text": "Çokgenleri düzlemde ardışık olarak kesişen doğruların oluşturduğu kapalı şekiller olarak yorumlayabilme",
+        "sourceTextLine": 2118
+      },
+      {
+        "code": "MAT.5.3.6",
+        "text": "Çokgenlerin özellikleri ile ilgili edindiği deneyimleri yansıtabilme",
+        "sourceTextLine": 2126
+      },
+      {
+        "code": "MAT.5.3.7",
+        "text": "Matematiksel araç ve teknoloji yardımıyla düzlemde iki noktada kesişen çember çiftinin merkezleri ve kesişim noktalarından biri ile inşa edilen üçgenlerin kenar özelliklerine yönelik muhakeme yapabilme",
+        "sourceTextLine": 2130
+      },
+      {
+        "code": "MAT.5.4.1",
+        "text": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin çevre uzunluğu verildiğinde kenar uzunluklarını yorumlayabilme",
+        "sourceTextLine": 2582
+      },
+      {
+        "code": "MAT.5.4.2",
+        "text": "Birim karelerden yola çıkarak dikdörtgenin alanını değerlendirebilme",
+        "sourceTextLine": 2590
+      },
+      {
+        "code": "MAT.5.4.3",
+        "text": "Kenar uzunlukları doğal sayı olan bir dikdörtgenin alanının ölçüsü verildiğinde çevre uzunluğunu, çevre uzunluğu verildiğinde alanını yorumlayabilme",
+        "sourceTextLine": 2596
+      },
+      {
+        "code": "MAT.5.4.4",
+        "text": "Dikdörtgenin çevre uzunluğu ve alanı ile ilgili problemleri çözebilme",
+        "sourceTextLine": 2604
+      },
+      {
+        "code": "MAT.5.5.1",
+        "text": "Kategorik veri ile çalışabilme ve veriye dayalı karar verebilme VE SÜREÇ BİLEŞENLERİ a) Kategorik veriye dayanan istatistiksel araştırma gerektiren durumları fark eder.",
+        "sourceTextLine": 2852
+      },
+      {
+        "code": "MAT.5.5.2",
+        "text": "Başkaları tarafından oluşturulan kategorik veriye dayalı istatistiksel sonuç veya yorumları tartışabilme",
+        "sourceTextLine": 2869
+      },
+      {
+        "code": "MAT.5.6.1",
+        "text": "Herhangi bir olayın olasılığının 0 (imkânsız) ile 1 (kesin) arasında (0 ve 1 dâhil) olduğunu (olasılık spektrumu) yorumlayabilme",
+        "sourceTextLine": 3156
+      },
+      {
+        "code": "MAT.5.6.2",
+        "text": "Olayları az ya da çok olasılıklı şeklinde yapılandırabilme",
+        "sourceTextLine": 3164
+      }
+    ]
+  },
+  "fen-bilimleri": {
+    "count": 28,
+    "outcomes": [
+      {
+        "code": "FB.5.1.1.1",
+        "text": "Ders Kodu Ünite Numarası Ders Kodu Öğrenme Çıktısı Numarası",
+        "sourceTextLine": 737
+      },
+      {
+        "code": "FB.5.1.2.1",
+        "text": "Ay’ın özellikleri, dönme ve dolanma hareketleri ile ilgili bilimsel çıkarım yapabilme",
+        "sourceTextLine": 3907
+      },
+      {
+        "code": "FB.5.1.2.2",
+        "text": "Ay’ın evrelerini temsil eden bilimsel model oluşturabilme",
+        "sourceTextLine": 3913
+      },
+      {
+        "code": "FB.5.1.3.1",
+        "text": "Güneş, Dünya ve Ay’ın birbirlerine göre hareketlerini ve hacimsel büyüklüklerini temsil eden bilimsel model oluşturabilme",
+        "sourceTextLine": 3917
+      },
+      {
+        "code": "FB.5.2.1.1",
+        "text": "Kuvveti büyüklüğü ile tanımlayabilme",
+        "sourceTextLine": 4158
+      },
+      {
+        "code": "FB.5.2.1.2",
+        "text": "Basit araç gereçler kullanarak bir dinamometre modeli tasarlayabilme",
+        "sourceTextLine": 4162
+      },
+      {
+        "code": "FB.5.2.2.1",
+        "text": "Kütleye etki eden yer çekimi kuvvetini ağırlık olarak tanımlayabilme",
+        "sourceTextLine": 4166
+      },
+      {
+        "code": "FB.5.2.3.1",
+        "text": "Sürtünme kuvvetinin çeşitli ortamlardaki etkilerine yönelik tümevarımsal akıl yürütebilme",
+        "sourceTextLine": 4171
+      },
+      {
+        "code": "FB.5.2.3.2",
+        "text": "Günlük yaşamda sürtünmeyi artırma veya azaltmaya yönelik bilimsel bir model tasarlayabilme",
+        "sourceTextLine": 4176
+      },
+      {
+        "code": "FB.5.3.1.1",
+        "text": "Bitki ve hayvan hücrelerini temel kısımları ve özellikleri açısından karşılaştırabilme",
+        "sourceTextLine": 4405
+      },
+      {
+        "code": "FB.5.3.1.2",
+        "text": "Hücre-doku-organ-sistem-organizma kavramlarını yapılandırabilme",
+        "sourceTextLine": 4410
+      },
+      {
+        "code": "FB.5.3.2.1",
+        "text": "Destek ve hareket sistemine ait yapıları sınıflandırabilme",
+        "sourceTextLine": 4416
+      },
+      {
+        "code": "FB.5.3.2.2",
+        "text": "Destek ve hareket sisteminin sağlığı için yapılması gerekenler konusunda bilgi toplayabilme",
+        "sourceTextLine": 4421
+      },
+      {
+        "code": "FB.5.4.1.1",
+        "text": "Bir kaynaktan çıkan ışığın her yönde doğrusal bir yol izlediğini gözlem yoluyla açıklayabilme",
+        "sourceTextLine": 4653
+      },
+      {
+        "code": "FB.5.4.2.1",
+        "text": "Maddeleri ışığı geçirme durumlarına göre sınıflandırabilme",
+        "sourceTextLine": 4659
+      },
+      {
+        "code": "FB.5.4.3.1",
+        "text": "Tam gölgeye yönelik bilimsel gözlem yapabilme",
+        "sourceTextLine": 4665
+      },
+      {
+        "code": "FB.5.5.1.1",
+        "text": "Maddeleri tanecikli, boşluklu ve hareketli yapısına göre sınıflandırabilme",
+        "sourceTextLine": 4853
+      },
+      {
+        "code": "FB.5.5.2.1",
+        "text": "Isı ve sıcaklık kavramlarını karşılaştırabilme",
+        "sourceTextLine": 4861
+      },
+      {
+        "code": "FB.5.5.2.2",
+        "text": "Sıcaklığı farklı olan sıvıların karıştırılması sonucu ısı alışverişi olduğuna yönelik bilimsel çıkarım yapabilme",
+        "sourceTextLine": 4865
+      },
+      {
+        "code": "FB.5.5.3.1",
+        "text": "Maddenin ısı etkisiyle hâl değiştirebileceğini bilimsel gözleme dayalı tahmin edebilme",
+        "sourceTextLine": 4871
+      },
+      {
+        "code": "FB.5.5.4.1",
+        "text": "Maddeleri ısı iletimi bakımından sınıflandırabilme",
+        "sourceTextLine": 4881
+      },
+      {
+        "code": "FB.5.5.4.2",
+        "text": "Isı yalıtımını gösteren model oluşturabilme",
+        "sourceTextLine": 4886
+      },
+      {
+        "code": "FB.5.6.1.1",
+        "text": "Bir elektrik devresindeki elemanları sembollerinin olup olmamasına göre sınıflandırabilme",
+        "sourceTextLine": 5182
+      },
+      {
+        "code": "FB.5.6.1.2",
+        "text": "Şemasını çizdiği elektrik devresine uygun deney yapabilme",
+        "sourceTextLine": 5190
+      },
+      {
+        "code": "FB.5.6.2.1",
+        "text": "Bir elektrik devresindeki ampul parlaklığını etkileyen değişkenlerin neler olduğuna ilişkin hipotez oluşturabilme",
+        "sourceTextLine": 5194
+      },
+      {
+        "code": "FB.5.7.1.1",
+        "text": "Evsel atıklarda geri dönüştürülebilen ve dönüştürülemeyen maddeleri sınıflandırabilme",
+        "sourceTextLine": 5390
+      },
+      {
+        "code": "FB.5.7.1.2",
+        "text": "Kaynakların etkili kullanımı konusunda geri dönüşümün önemli olduğuna yönelik bilimsel çıkarımda bulunabilme",
+        "sourceTextLine": 5396
+      },
+      {
+        "code": "FB.5.7.1.3",
+        "text": "Yakın çevresinde atık yönetiminin uygulanabilirliğine ilişkin deneyimlerini yansıtabilme",
+        "sourceTextLine": 5403
+      }
+    ]
+  },
+  "sosyal-bilgiler": {
+    "count": 19,
+    "outcomes": [
+      {
+        "code": "SB.5.1.1",
+        "text": "Dâhil olduğu gruplar ve bu gruplardaki rolleri arasındaki ilişkileri çözümleyebilme",
+        "sourceTextLine": 1876
+      },
+      {
+        "code": "SB.5.1.2",
+        "text": "Kültürel özelliklere saygı duymanın birlikte yaşamaya etkisini yorumlayabilme",
+        "sourceTextLine": 1879
+      },
+      {
+        "code": "SB.5.1.3",
+        "text": "Toplumsal birliği sürdürmeye yönelik yardımlaşma ve dayanışma faaliyetlerine katkı sağlayabilme",
+        "sourceTextLine": 1885
+      },
+      {
+        "code": "SB.5.2.1",
+        "text": "Yaşadığı ilin göreceli konum özelliklerini belirleyebilme",
+        "sourceTextLine": 2119
+      },
+      {
+        "code": "SB.5.2.2",
+        "text": "Yaşadığı ilde doğal ve beşerî çevredeki değişimi neden ve sonuçlarıyla yorumlayabilme",
+        "sourceTextLine": 2123
+      },
+      {
+        "code": "SB.5.2.3",
+        "text": "Yaşadığı ilde meydana gelebilecek afetlerin etkilerini azaltmaya yönelik farkındalık etkinlikleri düzenleyebilme",
+        "sourceTextLine": 2130
+      },
+      {
+        "code": "SB.5.2.4",
+        "text": "Ülkemize komşu devletler hakkında bilgi toplayabilme",
+        "sourceTextLine": 2138
+      },
+      {
+        "code": "SB.5.3.1",
+        "text": "Yaşadığı ildeki ortak miras ögelerine ilişkin oluşturduğu ürünü paylaşabilme",
+        "sourceTextLine": 2369
+      },
+      {
+        "code": "SB.5.3.2",
+        "text": "Anadolu’da ilk yerleşimleri kuran toplumların sosyal hayatlarına yönelik bakış açısı geliştirebilme",
+        "sourceTextLine": 2374
+      },
+      {
+        "code": "SB.5.3.3",
+        "text": "Mezopotamya ve Anadolu medeniyetlerinin ortak mirasa katkılarını karşılaştırabilme",
+        "sourceTextLine": 2388
+      },
+      {
+        "code": "SB.5.4.1",
+        "text": "Demokrasi ve cumhuriyet kavramları arasındaki ilişkiyi çözümleyebilme",
+        "sourceTextLine": 2609
+      },
+      {
+        "code": "SB.5.4.2",
+        "text": "Toplum düzenine etkisi bakımından etkin vatandaş olmanın önemine yönelik çıkarımda bulunabilme",
+        "sourceTextLine": 2612
+      },
+      {
+        "code": "SB.5.4.3",
+        "text": "Temel insan hak ve sorumluluklarının önemini sorgulayabilme",
+        "sourceTextLine": 2619
+      },
+      {
+        "code": "SB.5.4.4",
+        "text": "Bir ihtiyaç hâlinde veya sorun karşısında başvuru yapılabilecek kurumlar hakkında bilgi toplayabilme",
+        "sourceTextLine": 2626
+      },
+      {
+        "code": "SB.5.5.1",
+        "text": "Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini yorumlayabilme",
+        "sourceTextLine": 2879
+      },
+      {
+        "code": "SB.5.5.2",
+        "text": "İhtiyaç ve isteklerini karşılamak için gerekli bütçeyi planlayabilme",
+        "sourceTextLine": 2886
+      },
+      {
+        "code": "SB.5.5.3",
+        "text": "Yaşadığı ildeki ekonomik faaliyetleri özetleyebilme",
+        "sourceTextLine": 2890
+      },
+      {
+        "code": "SB.5.6.1",
+        "text": "Teknolojik gelişmelerin toplum hayatına etkilerini tartışabilme",
+        "sourceTextLine": 3088
+      },
+      {
+        "code": "SB.5.6.2",
+        "text": "Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin ürün oluşturabilme",
+        "sourceTextLine": 3094
+      }
+    ]
+  },
+  "din-kulturu-ve-ahlak-bilgisi": {
+    "count": 18,
+    "outcomes": [
+      {
+        "code": "DKAB.5.1.1",
+        "text": "Evrendeki mükemmel düzene ilişkin akıl yürütebilme",
+        "sourceTextLine": 1943
+      },
+      {
+        "code": "DKAB.5.1.2",
+        "text": "Evrendeki mükemmel düzeni gözlem yoluyla fark edip Allah’ın (cc) varlığı ve birliğini gözleme dayalı tahmin edebilme",
+        "sourceTextLine": 1948
+      },
+      {
+        "code": "DKAB.5.1.3",
+        "text": "Allah’ın (cc) güzel isimleri hakkında bilgi toplayabilme",
+        "sourceTextLine": 1955
+      },
+      {
+        "code": "DKAB.5.1.4",
+        "text": "İhlas suresini ve bu surenin anlamını okuyarak yorumlayabilme",
+        "sourceTextLine": 1961
+      },
+      {
+        "code": "DKAB.5.2.1",
+        "text": "Namaz ibadetini özetleyebilme",
+        "sourceTextLine": 2139
+      },
+      {
+        "code": "DKAB.5.2.2",
+        "text": "Namazın kılınışını gözlemleyebilme",
+        "sourceTextLine": 2144
+      },
+      {
+        "code": "DKAB.5.2.3",
+        "text": "Namazın insan hayatına etkileri hakkında düşünebilme",
+        "sourceTextLine": 2149
+      },
+      {
+        "code": "DKAB.5.2.4",
+        "text": "Tahiyyat duasını ve bu duanın anlamını okuyarak yorumlayabilme",
+        "sourceTextLine": 2154
+      },
+      {
+        "code": "DKAB.5.3.1",
+        "text": "Kur’an-ı Kerim’in iç düzenini çözümleyebilme",
+        "sourceTextLine": 2341
+      },
+      {
+        "code": "DKAB.5.3.2",
+        "text": "Kur’an-ı Kerim’in temel özellikleri hakkında bilgi toplayabilme",
+        "sourceTextLine": 2345
+      },
+      {
+        "code": "DKAB.5.3.3",
+        "text": "Kuran-ı Kerim’in ana konularını sınıflandırabilme",
+        "sourceTextLine": 2352
+      },
+      {
+        "code": "DKAB.5.3.4",
+        "text": "Kevser suresini ve bu surenin anlamını okuyarak yorumlayabilme",
+        "sourceTextLine": 2358
+      },
+      {
+        "code": "DKAB.5.4.1",
+        "text": "Peygamberlik hakkında akıl yürütebilme",
+        "sourceTextLine": 2528
+      },
+      {
+        "code": "DKAB.5.4.2",
+        "text": "Peygamber kıssalarında verilen öğütleri sentezleyebilme",
+        "sourceTextLine": 2533
+      },
+      {
+        "code": "DKAB.5.4.3",
+        "text": "Kureyş suresini ve bu surenin anlamını okuyarak yorumlayabilme",
+        "sourceTextLine": 2539
+      },
+      {
+        "code": "DKAB.5.5.1",
+        "text": "Dinin mimarimize etkisini çözümleyebilme",
+        "sourceTextLine": 2705
+      },
+      {
+        "code": "DKAB.5.5.2",
+        "text": "Camilerin bölümlerini tanıyabilme",
+        "sourceTextLine": 2709
+      },
+      {
+        "code": "DKAB.5.5.3",
+        "text": "Kültürümüzde yer alan cami örneklerini karşılaştırabilme",
+        "sourceTextLine": 2715
+      }
+    ]
+  },
+  "ingilizce": {
+    "count": 184,
+    "outcomes": [
+      {
+        "code": "ENG.5.1.L1",
+        "text": "Students can get ready for the listening/watching-comprehension process for the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” carefully.",
+        "sourceTextLine": 22181
+      },
+      {
+        "code": "ENG.5.1.L2",
+        "text": "Students can bring information about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” together through significant details and main components while listening/watching it.",
+        "sourceTextLine": 22193
+      },
+      {
+        "code": "ENG.5.1.L3",
+        "text": "Students can make meaning of/derive meaning from the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” through significant details by listening/watching it carefully.",
+        "sourceTextLine": 22199
+      },
+      {
+        "code": "ENG.5.1.L4",
+        "text": "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.",
+        "sourceTextLine": 22218
+      },
+      {
+        "code": "ENG.5.1.P1",
+        "text": "Students can select and use the target phonological elements of the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” accurately, authentically, and naturally through spontaneous decision-making processes and use it in an appropriate and effective way when communicating with others.",
+        "sourceTextLine": 22236
+      },
+      {
+        "code": "ENG.5.1.R1",
+        "text": "Students can get ready for the reading-comprehension process about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.",
+        "sourceTextLine": 22252
+      },
+      {
+        "code": "ENG.5.1.R2",
+        "text": "Students can bring information about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.",
+        "sourceTextLine": 22263
+      },
+      {
+        "code": "ENG.5.1.R3",
+        "text": "Students can make meaning of / derive meaning from the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” by reading it carefully.",
+        "sourceTextLine": 22272
+      },
+      {
+        "code": "ENG.5.1.R4",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “school life with people, places and rules at school; school clubs; countries; national days and celebrations” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 22294
+      },
+      {
+        "code": "ENG.5.1.V1",
+        "text": "Students can select and use the target vocabulary of the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 22306
+      },
+      {
+        "code": "ENG.5.1.G1",
+        "text": "Students can select and use the target grammatical elements of the current content about “school life with people, places and rules at school; school clubs; countries; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 22327
+      },
+      {
+        "code": "ENG.5.1.W1",
+        "text": "Students can get ready for the writing-expression process about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.",
+        "sourceTextLine": 22363
+      },
+      {
+        "code": "ENG.5.1.W2",
+        "text": "Students can understand the model/example for the writing task about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.",
+        "sourceTextLine": 22372
+      },
+      {
+        "code": "ENG.5.1.W3",
+        "text": "Students can organise a content for the assigned writing task on the current content “school life with people, places and rules at school; school clubs; countries; national days and celebrations” based on the model/example provided.",
+        "sourceTextLine": 22377
+      },
+      {
+        "code": "ENG.5.1.W4",
+        "text": "Students can individually construct/form content for the assigned writing task on the current content “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.",
+        "sourceTextLine": 22386
+      },
+      {
+        "code": "ENG.5.1.W5",
+        "text": "Students can reorganise (reconstruct) and use information in the new written tasks about the “school life with people, places and rules at school; school clubs; countries; national days and celebrations” to communicate with other people.",
+        "sourceTextLine": 22404
+      },
+      {
+        "code": "ENG.5.1.W6",
+        "text": "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “school life with people, places and rules at school; school clubs; countries; national days and celebrations” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 22412
+      },
+      {
+        "code": "ENG.5.1.S1",
+        "text": "Students can get ready for speaking-expression process about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.",
+        "sourceTextLine": 22422
+      },
+      {
+        "code": "ENG.5.1.S2",
+        "text": "Students can use the model/example for producing verbal content about the current content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations”.",
+        "sourceTextLine": 22428
+      },
+      {
+        "code": "ENG.5.1.S3",
+        "text": "Students can organise a new verbal content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 22433
+      },
+      {
+        "code": "ENG.5.1.S4",
+        "text": "Students can construct a new verbal content on “school life with people, places and rules at school; school clubs; countries; national days and celebrations” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 22457
+      },
+      {
+        "code": "ENG.5.1.S5",
+        "text": "Students can reorganise (reconstruct) and use information about the “school life with people, places and rules at school; school clubs; countries; national days and celebrations” to communicate with other people.",
+        "sourceTextLine": 22470
+      },
+      {
+        "code": "ENG.5.1.S6",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “school life with people, places and rules at school; school clubs; countries; national days and celebrations” to communicate with other people in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 22477
+      },
+      {
+        "code": "ENG.5.2.L1",
+        "text": "Students can get ready for the listening/watching-comprehension process for the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” carefully.",
+        "sourceTextLine": 23238
+      },
+      {
+        "code": "ENG.5.2.L2",
+        "text": "Students can bring information about the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” together through significant details and main components while listening/watching it.",
+        "sourceTextLine": 23251
+      },
+      {
+        "code": "ENG.5.2.L3",
+        "text": "Students can make meaning of/derive meaning from the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” through significant details by listening/watching it carefully.",
+        "sourceTextLine": 23257
+      },
+      {
+        "code": "ENG.5.2.L4",
+        "text": "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time”.",
+        "sourceTextLine": 23276
+      },
+      {
+        "code": "ENG.5.2.P1",
+        "text": "Students can select and use the target phonological elements of the current content about “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” accurately, authentically, and naturally through spontaneous decision-making processes and use it in an appropriate and effective way when communicating with others.",
+        "sourceTextLine": 23295
+      },
+      {
+        "code": "ENG.5.2.R1",
+        "text": "Students can get ready for the reading-comprehension process about the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time”.",
+        "sourceTextLine": 23312
+      },
+      {
+        "code": "ENG.5.2.R2",
+        "text": "Students can bring information about the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.",
+        "sourceTextLine": 23323
+      },
+      {
+        "code": "ENG.5.2.R3",
+        "text": "Students can make meaning of / derive meaning from the current content about “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” by reading it carefully.",
+        "sourceTextLine": 23333
+      },
+      {
+        "code": "ENG.5.2.R4",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 23357
+      },
+      {
+        "code": "ENG.5.2.V1",
+        "text": "Students can select and use the target vocabulary of the current content about “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 23369
+      },
+      {
+        "code": "ENG.5.2.G1",
+        "text": "Students can select and use the target grammatical elements of the current content about “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 23399
+      },
+      {
+        "code": "ENG.5.2.W1",
+        "text": "Students can get ready for the writing-expression process about the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time”.",
+        "sourceTextLine": 23426
+      },
+      {
+        "code": "ENG.5.2.W2",
+        "text": "Students can understand the model/example for the writing task about the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time”.",
+        "sourceTextLine": 23435
+      },
+      {
+        "code": "ENG.5.2.W3",
+        "text": "Students can organise a content for the assigned writing task on the current content “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” based on the model/example provided.",
+        "sourceTextLine": 23440
+      },
+      {
+        "code": "ENG.5.2.W4",
+        "text": "Students can individually construct/form content for the assigned writing task on the current content “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time”.",
+        "sourceTextLine": 23458
+      },
+      {
+        "code": "ENG.5.2.W5",
+        "text": "Students can reorganise (reconstruct) and use information in the new written tasks about the “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” to communicate with other people.",
+        "sourceTextLine": 23471
+      },
+      {
+        "code": "ENG.5.2.W6",
+        "text": "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 23479
+      },
+      {
+        "code": "ENG.5.2.S1",
+        "text": "Students can get ready for speaking-expression process about the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time”.",
+        "sourceTextLine": 23489
+      },
+      {
+        "code": "ENG.5.2.S2",
+        "text": "Students can use the model/example for producing verbal content about the current content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time”.",
+        "sourceTextLine": 23495
+      },
+      {
+        "code": "ENG.5.2.S3",
+        "text": "Students can organise a new verbal content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 23509
+      },
+      {
+        "code": "ENG.5.2.S4",
+        "text": "Students can construct a new verbal content on “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 23524
+      },
+      {
+        "code": "ENG.5.2.S5",
+        "text": "Students can reorganise (reconstruct) and use information about the “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” to communicate with other people.",
+        "sourceTextLine": 23537
+      },
+      {
+        "code": "ENG.5.2.S6",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “classroom life with classroom rules and language; school subjects; timetables; classroom objects; days of the week; time” to communicate with other people in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 23544
+      },
+      {
+        "code": "ENG.5.3.L1",
+        "text": "Students can get ready for the listening/watching-comprehension process for the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities” carefully.",
+        "sourceTextLine": 24310
+      },
+      {
+        "code": "ENG.5.3.L2",
+        "text": "Students can bring information about the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities” together through significant details and main components while listening/watching it.",
+        "sourceTextLine": 24323
+      },
+      {
+        "code": "ENG.5.3.L3",
+        "text": "Students can make meaning of/derive meaning from the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities” through significant details by listening/watching it carefully.",
+        "sourceTextLine": 24329
+      },
+      {
+        "code": "ENG.5.3.L4",
+        "text": "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities”.",
+        "sourceTextLine": 24348
+      },
+      {
+        "code": "ENG.5.3.P1",
+        "text": "Students can select and use the target phonological elements of the current content about “personal life with basic body parts and physical features; clothes; daily routines and activities” accurately, authentically, and naturally through spontaneous decision-making processes and use it in an appropriate and effective way when communicating with others.",
+        "sourceTextLine": 24367
+      },
+      {
+        "code": "ENG.5.3.R1",
+        "text": "Students can get ready for the reading-comprehension process about the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities”.",
+        "sourceTextLine": 24383
+      },
+      {
+        "code": "ENG.5.3.R2",
+        "text": "Students can bring information about the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.",
+        "sourceTextLine": 24394
+      },
+      {
+        "code": "ENG.5.3.R3",
+        "text": "Students can make meaning of / derive meaning from the current content about “personal life with basic body parts and physical features; clothes; daily routines and activities” by reading it carefully.",
+        "sourceTextLine": 24403
+      },
+      {
+        "code": "ENG.5.3.R4",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “personal life with basic body parts and physical features; clothes; daily routines and activities” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 24427
+      },
+      {
+        "code": "ENG.5.3.V1",
+        "text": "Students can select and use the target vocabulary of the current content about “personal life with basic body parts and physical features; clothes; daily routines and activities” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 24439
+      },
+      {
+        "code": "ENG.5.3.G1",
+        "text": "Students can select and use the target grammatical elements of the current content about “personal life with basic body parts and physical features; clothes; daily routines and activities” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 24461
+      },
+      {
+        "code": "ENG.5.3.W1",
+        "text": "Students can get ready for the writing-expression process about the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities”.",
+        "sourceTextLine": 24497
+      },
+      {
+        "code": "ENG.5.3.W2",
+        "text": "Students can understand the model/example for the writing task about the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities”.",
+        "sourceTextLine": 24506
+      },
+      {
+        "code": "ENG.5.3.W3",
+        "text": "Students can organise a content for the assigned writing task on the current content “personal life with basic body parts and physical features; clothes; daily routines and activities” based on the model/example provided.",
+        "sourceTextLine": 24511
+      },
+      {
+        "code": "ENG.5.3.W4",
+        "text": "Students can individually construct/form content for the assigned writing task on the current content “personal life with basic body parts and physical features; clothes; daily routines and activities”.",
+        "sourceTextLine": 24529
+      },
+      {
+        "code": "ENG.5.3.W5",
+        "text": "Students can reorganise (reconstruct) and use information in the new written tasks about the “personal life with basic body parts and physical features; clothes; daily routines and activities” to communicate with other people.",
+        "sourceTextLine": 24542
+      },
+      {
+        "code": "ENG.5.3.W6",
+        "text": "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “personal life with basic body parts and physical features; clothes; daily routines and activities” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 24550
+      },
+      {
+        "code": "ENG.5.3.S1",
+        "text": "Students can get ready for speaking-expression process about the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities”.",
+        "sourceTextLine": 24560
+      },
+      {
+        "code": "ENG.5.3.S2",
+        "text": "Students can use the model/example for producing verbal content about the current content on “personal life with basic body parts and physical features; clothes; daily routines and activities”.",
+        "sourceTextLine": 24565
+      },
+      {
+        "code": "ENG.5.3.S3",
+        "text": "Students can organise a new verbal content on “personal life with basic body parts and physical features; clothes; daily routines and activities” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 24570
+      },
+      {
+        "code": "ENG.5.3.S4",
+        "text": "Students can construct a new verbal content on “personal life with basic body parts and physical features; clothes; daily routines and activities” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 24592
+      },
+      {
+        "code": "ENG.5.3.S5",
+        "text": "Students can reorganise (reconstruct) and use information about the “personal life with basic body parts and physical features; clothes; daily routines and activities” to communicate with other people.",
+        "sourceTextLine": 24605
+      },
+      {
+        "code": "ENG.5.3.S6",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “personal life with basic body parts and physical features; clothes; daily routines and activities” to communicate with other people in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 24612
+      },
+      {
+        "code": "ENG.5.4.L1",
+        "text": "Students can get ready for the listening/watching-comprehension process for the current content on “family life with family members’ routines; family members’ hobbies and activities” carefully.",
+        "sourceTextLine": 25363
+      },
+      {
+        "code": "ENG.5.4.L2",
+        "text": "Students can bring information about the current content on “family life with family members’ routines; family members’ hobbies and activities” together through significant details and main components while listening/watching it.",
+        "sourceTextLine": 25375
+      },
+      {
+        "code": "ENG.5.4.L3",
+        "text": "Students can make meaning of/derive meaning from the current content on “family life with family members’ routines; family members’ hobbies and activities” through significant details by listening/watching it carefully.",
+        "sourceTextLine": 25381
+      },
+      {
+        "code": "ENG.5.4.L4",
+        "text": "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content on “family life with family members’ routines; family members’ hobbies and activities”.",
+        "sourceTextLine": 25400
+      },
+      {
+        "code": "ENG.5.4.P1",
+        "text": "Students can select and use the target phonological elements of the current content about “family life with family members’ routines; family members’ hobbies and activities” accurately, authentically, and naturally through spontaneous decision-making processes and use it in an appropriate and effective way when communicating with others.",
+        "sourceTextLine": 25417
+      },
+      {
+        "code": "ENG.5.4.R1",
+        "text": "Students can get ready for the writing-comprehension process about the current content on “family life with family members’ routines; family members’ hobbies and activities”.",
+        "sourceTextLine": 25432
+      },
+      {
+        "code": "ENG.5.4.R2",
+        "text": "Students can bring information about the current content on “family life with family members’ routines; family members’ hobbies and activities” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.",
+        "sourceTextLine": 25442
+      },
+      {
+        "code": "ENG.5.4.R3",
+        "text": "Students can make meaning of / derive meaning from the current content about “family life with family members’ routines; family members’ hobbies and activities” by reading it carefully.",
+        "sourceTextLine": 25451
+      },
+      {
+        "code": "ENG.5.4.R4",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “family life with family members’ routines; family members’ hobbies and activities” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 25474
+      },
+      {
+        "code": "ENG.5.4.V1",
+        "text": "Students can select and use the target vocabulary of the current content about “family life with family members’ routines; family members’ hobbies and activities” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 25486
+      },
+      {
+        "code": "ENG.5.4.G1",
+        "text": "Students can select and use the target grammatical elements of the current content about “family life with family members’ routines; family members’ hobbies and activities” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 25507
+      },
+      {
+        "code": "ENG.5.4.W1",
+        "text": "Students can get ready for the writing-expression process about the current content on “family life with family members’ routines; family members’ hobbies and activities”.",
+        "sourceTextLine": 25542
+      },
+      {
+        "code": "ENG.5.4.W2",
+        "text": "Students can understand the model/example for the writing task about the current content on “family life with family members’ routines; family members’ hobbies and activities”.",
+        "sourceTextLine": 25550
+      },
+      {
+        "code": "ENG.5.4.W3",
+        "text": "Students can organise a content for the assigned writing task on the current content “family life with family members’ routines; family members’ hobbies and activities” based on the model/example provided.",
+        "sourceTextLine": 25554
+      },
+      {
+        "code": "ENG.5.4.W4",
+        "text": "Students can individually construct/form content for the assigned writing task on the current content “family life with family members’ routines; family members’ hobbies and activities”.",
+        "sourceTextLine": 25563
+      },
+      {
+        "code": "ENG.5.4.W5",
+        "text": "Students can reorganise (reconstruct) and use information in the new written tasks about the “family life with family members’ routines; family members’ hobbies and activities” to communicate with other people.",
+        "sourceTextLine": 25584
+      },
+      {
+        "code": "ENG.5.4.W6",
+        "text": "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “family life with family members’ routines; family members’ hobbies and activities” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 25592
+      },
+      {
+        "code": "ENG.5.4.S1",
+        "text": "Students can get ready for speaking-expression process about the current content on “family life with family members’ routines; family members’ hobbies and activities”.",
+        "sourceTextLine": 25602
+      },
+      {
+        "code": "ENG.5.4.S2",
+        "text": "Students can use the model/example for producing verbal content about the current content on “family life with family members’ routines; family members’ hobbies and activities”.",
+        "sourceTextLine": 25607
+      },
+      {
+        "code": "ENG.5.4.S3",
+        "text": "Students can organise a new verbal content on “family life with family members’ routines; family members’ hobbies and activities” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 25611
+      },
+      {
+        "code": "ENG.5.4.S4",
+        "text": "Students can construct a new verbal content on “family life with family members’ routines; family members’ hobbies and activities” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 25634
+      },
+      {
+        "code": "ENG.5.4.S5",
+        "text": "Students can reorganise (reconstruct) and use information about the “family life with family members’ routines; family members’ hobbies and activities” to communicate with other people.",
+        "sourceTextLine": 25646
+      },
+      {
+        "code": "ENG.5.4.S6",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “family life with family members’ routines; family members’ hobbies and activities” to communicate with other people in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 25653
+      },
+      {
+        "code": "ENG.5.5.L1",
+        "text": "Students can get ready for the listening/watching-comprehension process for the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” carefully.",
+        "sourceTextLine": 26414
+      },
+      {
+        "code": "ENG.5.5.L2",
+        "text": "Students can bring information about the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” together through significant details and main components while listening/ watching it.",
+        "sourceTextLine": 26427
+      },
+      {
+        "code": "ENG.5.5.L3",
+        "text": "Students can make meaning of/derive meaning from the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” through significant details by listening/watching it carefully.",
+        "sourceTextLine": 26434
+      },
+      {
+        "code": "ENG.5.5.L4",
+        "text": "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses”.",
+        "sourceTextLine": 26453
+      },
+      {
+        "code": "ENG.5.5.P1",
+        "text": "Students can select and use the target phonological elements of the current content about “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” accurately, authentically, and naturally through spontaneous decision-making processes and use it in an appropriate and effective way when communicating with others.",
+        "sourceTextLine": 26473
+      },
+      {
+        "code": "ENG.5.5.R1",
+        "text": "Students can get ready for the reading-comprehension process about the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses”.",
+        "sourceTextLine": 26489
+      },
+      {
+        "code": "ENG.5.5.R2",
+        "text": "Students can bring information about the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.",
+        "sourceTextLine": 26500
+      },
+      {
+        "code": "ENG.5.5.R3",
+        "text": "Students can make meaning of / derive meaning from the current content about “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” by reading it carefully.",
+        "sourceTextLine": 26510
+      },
+      {
+        "code": "ENG.5.5.R4",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 26534
+      },
+      {
+        "code": "ENG.5.5.V1",
+        "text": "Students can select and use the target vocabulary of the current content about “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 26546
+      },
+      {
+        "code": "ENG.5.5.G1",
+        "text": "Students can select and use the target grammatical elements of the current content about “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 26577
+      },
+      {
+        "code": "ENG.5.5.W1",
+        "text": "Students can get ready for the writing-expression process about the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses”.",
+        "sourceTextLine": 26604
+      },
+      {
+        "code": "ENG.5.5.W2",
+        "text": "Students can understand the model/example for the writing task about the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses”.",
+        "sourceTextLine": 26613
+      },
+      {
+        "code": "ENG.5.5.W3",
+        "text": "Students can organise a content for the assigned writing task on the current content “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” based on the model/example provided.",
+        "sourceTextLine": 26618
+      },
+      {
+        "code": "ENG.5.5.W4",
+        "text": "Students can individually construct/form content for the assigned writing task on the current content “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses”.",
+        "sourceTextLine": 26636
+      },
+      {
+        "code": "ENG.5.5.W5",
+        "text": "Students can reorganise (reconstruct) and use information in the new written tasks about the “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” to communicate with other people.",
+        "sourceTextLine": 26649
+      },
+      {
+        "code": "ENG.5.5.W6",
+        "text": "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 26657
+      },
+      {
+        "code": "ENG.5.5.S1",
+        "text": "Students can get ready for speaking-expression process about the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses”.",
+        "sourceTextLine": 26667
+      },
+      {
+        "code": "ENG.5.5.S2",
+        "text": "Students can use the model/example for producing verbal content about the current content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ;different types of houses”.",
+        "sourceTextLine": 26673
+      },
+      {
+        "code": "ENG.5.5.S3",
+        "text": "Students can organise a new verbal content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 26687
+      },
+      {
+        "code": "ENG.5.5.S4",
+        "text": "Students can construct a new verbal content on “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 26702
+      },
+      {
+        "code": "ENG.5.5.S5",
+        "text": "Students can reorganise (reconstruct) and use information about the “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” to communicate with other people.",
+        "sourceTextLine": 26715
+      },
+      {
+        "code": "ENG.5.5.S6",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “life in the neighbourhood and city with places for recreation and attractions in the neighbourhood and city ; different types of houses” to communicate with other people in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 26722
+      },
+      {
+        "code": "ENG.5.6.L1",
+        "text": "Students can get ready for the listening/watching-comprehension process for the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city” carefully.",
+        "sourceTextLine": 27480
+      },
+      {
+        "code": "ENG.5.6.L2",
+        "text": "Students can bring information about the current conte t on “life in the world with basic food types; ordering in a restaurant; food events in the city” together through significant details and main components while listening/watching it.",
+        "sourceTextLine": 27493
+      },
+      {
+        "code": "ENG.5.6.L3",
+        "text": "Students can make meaning of/derive meaning from the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city” through significant details by listening/watching it carefully.",
+        "sourceTextLine": 27499
+      },
+      {
+        "code": "ENG.5.6.L4",
+        "text": "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city”.",
+        "sourceTextLine": 27518
+      },
+      {
+        "code": "ENG.5.6.P1",
+        "text": "Students can select and use the target phonological elements of the current content about “life in the world with basic food types; ordering in a restaurant; food events in the city” accurately, authentically, and naturally through spontaneous decision-making processes and use it in an appropriate and effective way when communicating with others.",
+        "sourceTextLine": 27534
+      },
+      {
+        "code": "ENG.5.6.R1",
+        "text": "Students can get ready for the reading-comprehension process about the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city”.",
+        "sourceTextLine": 27549
+      },
+      {
+        "code": "ENG.5.6.R2",
+        "text": "Students can bring information about the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.",
+        "sourceTextLine": 27559
+      },
+      {
+        "code": "ENG.5.6.R3",
+        "text": "Students can make meaning of / derive meaning from the current content about “life in the world with basic food types; ordering in a restaurant; food events in the city” by reading it carefully.",
+        "sourceTextLine": 27568
+      },
+      {
+        "code": "ENG.5.6.R4",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “life in the world with basic food types; ordering in a restaurant; food events in the city” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 27592
+      },
+      {
+        "code": "ENG.5.6.V1",
+        "text": "Students can select and use the target vocabulary of the current content about “life in the world with basic food types; ordering in a restaurant; food events in the city” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 27604
+      },
+      {
+        "code": "ENG.5.6.G1",
+        "text": "Students can select and use the target grammatical elements of the current content about “life in the world with basic food types; ordering in a restaurant; food events in the city” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 27626
+      },
+      {
+        "code": "ENG.5.6.W1",
+        "text": "Students can get ready for the writing-expression process about the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city”.",
+        "sourceTextLine": 27661
+      },
+      {
+        "code": "ENG.5.6.W2",
+        "text": "Students can understand the model/example for the writing task about the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city”.",
+        "sourceTextLine": 27669
+      },
+      {
+        "code": "ENG.5.6.W3",
+        "text": "Students can organise a content for the assigned writing task on the current content “life in the world with basic food types; ordering in a restaurant; food events in the city” based on the model/example provided.",
+        "sourceTextLine": 27673
+      },
+      {
+        "code": "ENG.5.6.W4",
+        "text": "Students can individually construct/form content for the assigned writing task on the current content “life in the world with basic food types; ordering in a restaurant; food events in the city”.",
+        "sourceTextLine": 27682
+      },
+      {
+        "code": "ENG.5.6.W5",
+        "text": "Students can reorganise (reconstruct) and use information in the new written tasks about the “life in the world with basic food types; ordering in a restaurant; food events in the city” to communicate with other people.",
+        "sourceTextLine": 27704
+      },
+      {
+        "code": "ENG.5.6.W6",
+        "text": "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “life in the world with basic food types; ordering in a restaurant; food events in the city” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 27712
+      },
+      {
+        "code": "ENG.5.6.S1",
+        "text": "Students can get ready for speaking-expression process about the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city”.",
+        "sourceTextLine": 27722
+      },
+      {
+        "code": "ENG.5.6.S2",
+        "text": "Students can use the model/example for producing verbal content about the current content on “life in the world with basic food types; ordering in a restaurant; food events in the city”.",
+        "sourceTextLine": 27727
+      },
+      {
+        "code": "ENG.5.6.S3",
+        "text": "Students can organise a new verbal content on “life in the world with basic food types; ordering in a restaurant; food events in the city” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 27731
+      },
+      {
+        "code": "ENG.5.6.S4",
+        "text": "Students can construct a new verbal content on “life in the world with basic food types; ordering in a restaurant; food events in the city” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 27754
+      },
+      {
+        "code": "ENG.5.6.S5",
+        "text": "Students can reorganise (reconstruct) and use information about the “life in the world with basic food types; ordering in a restaurant; food events in the city” to communicate with other people.",
+        "sourceTextLine": 27767
+      },
+      {
+        "code": "ENG.5.6.S6",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “life in the world with basic food types; ordering in a restaurant; food events in the city” to communicate with other people in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 27774
+      },
+      {
+        "code": "ENG.5.7.L1",
+        "text": "Students can get ready for the listening/watching-comprehension process for the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats” carefully.",
+        "sourceTextLine": 28522
+      },
+      {
+        "code": "ENG.5.7.L2",
+        "text": "Students can bring information about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats” together through significant details and main components while listening/watching it.",
+        "sourceTextLine": 28536
+      },
+      {
+        "code": "ENG.5.7.L3",
+        "text": "Students can make meaning of/derive meaning from the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats” through significant details by listening/watching it carefully.",
+        "sourceTextLine": 28542
+      },
+      {
+        "code": "ENG.5.7.L4",
+        "text": "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats”.",
+        "sourceTextLine": 28561
+      },
+      {
+        "code": "ENG.5.7.P1",
+        "text": "Students can select and use the target phonological elements of the current content about “life in nature with types of animals in nature; wild animals in nature; their habitats” accurately, authentically, and naturally through spontaneous decision-making processes and use it in an appropriate and effective way when communicating with others.",
+        "sourceTextLine": 28576
+      },
+      {
+        "code": "ENG.5.7.R1",
+        "text": "Students can get ready for the reading-comprehension process about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats”.",
+        "sourceTextLine": 28592
+      },
+      {
+        "code": "ENG.5.7.R2",
+        "text": "Students can bring information about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.",
+        "sourceTextLine": 28603
+      },
+      {
+        "code": "ENG.5.7.R3",
+        "text": "Students can make meaning of / derive meaning from the current content about “life in nature with types of animals in nature; wild animals in nature; their habitats” by reading it carefully.",
+        "sourceTextLine": 28612
+      },
+      {
+        "code": "ENG.5.7.R4",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “life in nature with types of animals in nature; wild animals in nature; their habitats” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 28635
+      },
+      {
+        "code": "ENG.5.7.V1",
+        "text": "Students can select and use the target vocabulary of the current content about “life in nature with types of animals in nature; wild animals in nature; their habitats” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 28648
+      },
+      {
+        "code": "ENG.5.7.G1",
+        "text": "Students can select and use the target grammatical elements of the current content about “life in nature with types of animals in nature; wild animals in nature; their habitats” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 28670
+      },
+      {
+        "code": "ENG.5.7.W1",
+        "text": "Students can get ready for the writing-expression process about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats”.",
+        "sourceTextLine": 28706
+      },
+      {
+        "code": "ENG.5.7.W2",
+        "text": "Students can understand the model/example for the writing task about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats”.",
+        "sourceTextLine": 28715
+      },
+      {
+        "code": "ENG.5.7.W3",
+        "text": "Students can organise a content for the assigned writing task on the current content “life in nature with types of animals in nature; wild animals in nature; their habitats” based on the model/example provided.",
+        "sourceTextLine": 28719
+      },
+      {
+        "code": "ENG.5.7.W4",
+        "text": "Students can individually construct/form content for the assigned writing task on the current content “life in nature with types of animals in nature; wild animals in nature; their habitats”.",
+        "sourceTextLine": 28728
+      },
+      {
+        "code": "ENG.5.7.W5",
+        "text": "Students can reorganise (reconstruct) and use information in the new written tasks about the “life in nature with types of animals in nature; wild animals in nature; their habitats” to communicate with other people.",
+        "sourceTextLine": 28748
+      },
+      {
+        "code": "ENG.5.7.W6",
+        "text": "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “life in nature with types of animals in nature; wild animals in nature; their habitats” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 28756
+      },
+      {
+        "code": "ENG.5.7.S1",
+        "text": "Students can get ready for speaking-expression process about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats”.",
+        "sourceTextLine": 28766
+      },
+      {
+        "code": "ENG.5.7.S2",
+        "text": "Students can use the model/example for producing verbal content about the current content on “life in nature with types of animals in nature; wild animals in nature; their habitats”.",
+        "sourceTextLine": 28772
+      },
+      {
+        "code": "ENG.5.7.S3",
+        "text": "Students can organise a new verbal content on “life in nature with types of animals in nature; wild animals in nature; their habitats” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 28776
+      },
+      {
+        "code": "ENG.5.7.S4",
+        "text": "Students can construct a new verbal content on “life in nature with types of animals in nature; wild animals in nature; their habitats” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 28798
+      },
+      {
+        "code": "ENG.5.7.S5",
+        "text": "Students can reorganise (reconstruct) and use information about the “life in nature with types of animals in nature; wild animals in nature; their habitats” to communicate with other people.",
+        "sourceTextLine": 28810
+      },
+      {
+        "code": "ENG.5.7.S6",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “life in nature with types of animals in nature; wild animals in nature; their habitats” to communicate with other people in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 28816
+      },
+      {
+        "code": "ENG.5.8.L1",
+        "text": "Students can get ready for the listening/watching-comprehension process for the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” carefully.",
+        "sourceTextLine": 29562
+      },
+      {
+        "code": "ENG.5.8.L2",
+        "text": "Students can bring information about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” together through significant details and main components while listening/watching it.",
+        "sourceTextLine": 29575
+      },
+      {
+        "code": "ENG.5.8.L3",
+        "text": "Students can make meaning of/derive meaning from the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” through significant details by listening/watching it carefully.",
+        "sourceTextLine": 29581
+      },
+      {
+        "code": "ENG.5.8.L4",
+        "text": "Students can convey their knowledge, experience, thoughts, and feelings examined carefully about the whole listening/watching-comprehension process in relation to the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays”.",
+        "sourceTextLine": 29600
+      },
+      {
+        "code": "ENG.5.8.P1",
+        "text": "Students can select and use the target phonological elements of the current content about “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” accurately, authentically, and naturally through spontaneous decisionmaking processes and use it in an appropriate and effective way when communicating with others.",
+        "sourceTextLine": 29618
+      },
+      {
+        "code": "ENG.5.8.R1",
+        "text": "Students can get ready for the reading-comprehension process about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays”.",
+        "sourceTextLine": 29634
+      },
+      {
+        "code": "ENG.5.8.R2",
+        "text": "Students can bring information about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” through skimming (looking quickly at) the audio-visual elements and reading the content very quickly.",
+        "sourceTextLine": 29645
+      },
+      {
+        "code": "ENG.5.8.R3",
+        "text": "Students can make meaning of / derive meaning from the current content about “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” by reading it carefully.",
+        "sourceTextLine": 29654
+      },
+      {
+        "code": "ENG.5.8.R4",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the reading-comprehension process about the current content, “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 29678
+      },
+      {
+        "code": "ENG.5.8.V1",
+        "text": "Students can select and use the target vocabulary of the current content about “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 29690
+      },
+      {
+        "code": "ENG.5.8.G1",
+        "text": "Students can select and use the target grammatical elements of the current content about “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+        "sourceTextLine": 29721
+      },
+      {
+        "code": "ENG.5.8.W1",
+        "text": "Students can get ready for the writing-expression process about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays”.",
+        "sourceTextLine": 29748
+      },
+      {
+        "code": "ENG.5.8.W2",
+        "text": "Students can understand the model/example for the writing task about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays”.",
+        "sourceTextLine": 29757
+      },
+      {
+        "code": "ENG.5.8.W3",
+        "text": "Students can organise a content for the assigned writing task on the current content “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” based on the model/example provided.",
+        "sourceTextLine": 29762
+      },
+      {
+        "code": "ENG.5.8.W4",
+        "text": "Students can individually construct/form content for the assigned writing task on the current content “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays”.",
+        "sourceTextLine": 29780
+      },
+      {
+        "code": "ENG.5.8.W5",
+        "text": "Students can reorganise (reconstruct) and use information in the new written tasks about the “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” to communicate with other people.",
+        "sourceTextLine": 29793
+      },
+      {
+        "code": "ENG.5.8.W6",
+        "text": "Students can reflect on their knowledge, experiences, thoughts, and feelings related to the writing-expression process about the current content, “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 29801
+      },
+      {
+        "code": "ENG.5.8.S1",
+        "text": "Students can get ready for speaking-expression process about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays”.",
+        "sourceTextLine": 29811
+      },
+      {
+        "code": "ENG.5.8.S2",
+        "text": "Students can use the model/example for producing verbal content about the current content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays”.",
+        "sourceTextLine": 29817
+      },
+      {
+        "code": "ENG.5.8.S3",
+        "text": "Students can organise a new verbal content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 29831
+      },
+      {
+        "code": "ENG.5.8.S4",
+        "text": "Students can construct a new verbal content on “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” by speaking accurately, efficiently, and authentically.",
+        "sourceTextLine": 29846
+      },
+      {
+        "code": "ENG.5.8.S5",
+        "text": "Students can reorganise (reconstruct) and use information about the “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” to communicate with other people.",
+        "sourceTextLine": 29859
+      },
+      {
+        "code": "ENG.5.8.S6",
+        "text": "Students can convey their knowledge, experiences, thoughts, and feelings related to the speaking-expression process about the current content, “life in the universe and future with planet Earth; holidays; school holidays, places, activities, and plans for holidays” to communicate with other people in relation to themselves or others, both individually and/or with others.",
+        "sourceTextLine": 29866
+      }
+    ]
+  }
+}
