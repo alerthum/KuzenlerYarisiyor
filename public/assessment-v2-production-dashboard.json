@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T17:10:26.388Z",
+  "generatedAt": "2026-08-03T17:38:47.670Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "FOUNDATION_AND_PILOTS_IN_PROGRESS",
   "productReady": false,
@@ -34,11 +34,11 @@
     "courseScheduleCellCount": 112,
     "activeEngineCellCount": 4,
     "activeEngineCellPercent": 3.6,
-    "curriculumOutcomeRecordCount": 91,
-    "coveredOutcomeCount": 46,
-    "canonicalQuestionCount": 66,
+    "curriculumOutcomeRecordCount": 138,
+    "coveredOutcomeCount": 58,
+    "canonicalQuestionCount": 78,
     "humanApprovedQuestionCount": 5,
-    "humanReviewQueueCount": 61,
+    "humanReviewQueueCount": 73,
     "gameAdaptedQuestionCount": 0,
     "legacyQuarantineCount": 604
   },
@@ -138,25 +138,25 @@
       "courseId": "matematik",
       "courseName": "Matematik",
       "programFamily": "PRE_TYMM",
-      "curriculumStatus": "PILOT_OUTCOMES_ONLY",
-      "officialOutcomeCount": null,
-      "ingestedOutcomeCount": 5,
-      "coveredOutcomeCount": 5,
-      "courseCoveragePercent": null,
-      "ingestionPercent": null,
-      "canonicalQuestionCount": 5,
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 52,
+      "ingestedOutcomeCount": 52,
+      "coveredOutcomeCount": 17,
+      "courseCoveragePercent": 32.7,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 17,
       "humanApprovedQuestionCount": 0,
-      "humanReviewQueueCount": 5,
+      "humanReviewQueueCount": 17,
       "gameAdaptedQuestionCount": 0,
       "gameAdaptationAllowed": false,
-      "engineStatus": "PILOT_VALIDATED",
-      "engineType": "symbolic/numeric solver-backed",
-      "verifierType": "independent alternate algorithm",
-      "misconceptionCatalog": "tr-g8-math-pilot-misconceptions",
-      "nextAction": "8. sınıf Matematik tam resmî kapsam matrisini çıkar ve ünite dalgalarını başlat.",
+      "engineStatus": "EXPANDING",
+      "engineType": "symbolic/numeric/geometry solver-backed",
+      "verifierType": "independent alternate algorithm and invariant checks",
+      "misconceptionCatalog": "tr-g8-math-full-scope-misconceptions",
+      "nextAction": "İlk 12 soruluk Matematik dalgasını insan gözüyle kalibre et; kalan 35 kazanımı ünite dalgalarıyla kapat.",
       "blockers": [
-        "Tam ders kazanım aktarımı henüz yapılmadı.",
-        "İnsan gözle kalibrasyonu yapılmadı."
+        "35 kazanım henüz kanonik soru veya etkileşimli görevle kapsanmadı.",
+        "17 Matematik sorusunun insan gözle kalibrasyonu yapılmadı."
       ]
     },
     {
@@ -231,13 +231,13 @@
       "id": "canonical-content",
       "label": "Kanonik soru/görev",
       "status": "IN_PROGRESS",
-      "note": "66 doğrulanan mühendislik nesnesi mevcut."
+      "note": "78 doğrulanan mühendislik nesnesi mevcut."
     },
     {
       "id": "human-review",
       "label": "İnsan kalibrasyonu",
       "status": "BLOCKED",
-      "note": "5 onaylı, 61 inceleme bekliyor."
+      "note": "5 onaylı, 73 inceleme bekliyor."
     },
     {
       "id": "game-adaptation",

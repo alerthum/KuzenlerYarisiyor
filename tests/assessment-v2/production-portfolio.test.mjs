@@ -15,14 +15,14 @@ test('ürün portföyü 1-12 hedefini ve mevcut 4 ders motorunu dürüst sayaçl
   assert.equal(portfolio.summary.targetGradeCount, 12);
   assert.equal(portfolio.summary.courseScheduleCellCount, 112);
   assert.equal(portfolio.summary.activeEngineCellCount, 4);
-  assert.equal(portfolio.summary.canonicalQuestionCount, 66);
-  assert.equal(portfolio.summary.curriculumOutcomeRecordCount, 91);
-  assert.equal(portfolio.summary.coveredOutcomeCount, 46);
+  assert.equal(portfolio.summary.canonicalQuestionCount, 78);
+  assert.equal(portfolio.summary.curriculumOutcomeRecordCount, 138);
+  assert.equal(portfolio.summary.coveredOutcomeCount, 58);
 });
 
 test('insan incelemesi, oyun uyarlaması ve ürün yayını ayrı kapılar olarak kalır', () => {
   assert.equal(portfolio.summary.humanApprovedQuestionCount, 5);
-  assert.equal(portfolio.summary.humanReviewQueueCount, 61);
+  assert.equal(portfolio.summary.humanReviewQueueCount, 73);
   assert.equal(portfolio.summary.gameAdaptedQuestionCount, 0);
   assert.equal(portfolio.gameAdaptationAllowed, false);
   assert.equal(portfolio.productReady, false);
@@ -62,7 +62,7 @@ test('admin panel renderer kritik ürün durumunu ve motor kartlarını gösteri
   assert.match(html, /Fen Bilimleri/);
   assert.match(html, /5\. sınıf/);
   assert.match(html, /productReady=false/);
-  assert.match(html, /61/);
+  assert.match(html, /73/);
 });
 
 test('admin platformu üretim panosunu soru motoru modülüne bağlar', () => {

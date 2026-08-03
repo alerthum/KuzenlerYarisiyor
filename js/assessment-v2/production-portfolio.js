@@ -1,7 +1,7 @@
 import { COURSE_SCHEDULE_REGISTRY_2026_2027 } from '../curriculum/course-schedule-registry-2026-2027.js';
 import { CURRICULUM_ROLLOUT_2026_2027 } from '../curriculum/curriculum-rollout-2026-2027.js';
 import { GRADE_8_TURKISH_OUTCOMES_2019 } from '../curriculum/outcomes/tr-g8-turkce-2019.js';
-import { GRADE8_MATH_PILOT_OUTCOMES } from '../curriculum/outcomes/tr-g8-matematik-2018-pilot.js';
+import { GRADE8_MATH_OUTCOMES_2018 } from '../curriculum/outcomes/tr-g8-matematik-2018.js';
 import { GRADE8_SCIENCE_PILOT_OUTCOMES } from '../curriculum/outcomes/tr-g8-fen-2018-pilot.js';
 import { GRADE5_TURKISH_PILOT_OUTCOMES } from '../curriculum/outcomes/tr-g5-turkce-tymm-2024-pilot.js';
 import {
@@ -13,6 +13,8 @@ import { buildGrade8TurkishPilot02CalibrationQuestions } from './turkish-g8-pilo
 import { buildGrade8TurkishReadingLanguageWave1Questions } from './turkish-g8-reading-language-wave1.js';
 import { buildGrade8TurkishVisualGrammarWave2Questions } from './turkish-g8-visual-grammar-wave2.js';
 import { buildGrade8MathCrossPilotQuestions } from './math-g8-cross-pilot.js';
+import { buildGrade8MathWave1Questions } from './math-g8-wave1.js';
+import { GRADE8_MATH_FULL_SCOPE_AUDIT, GRADE8_MATH_FULL_SCOPE_MATRIX } from './math-g8-full-scope-matrix.js';
 import { buildGrade8ScienceCrossPilotQuestions } from './science-g8-cross-pilot.js';
 import { buildGrade5TurkishCrossPilotQuestions } from './turkish-g5-cross-pilot.js';
 import { GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS } from './turkish-g8-human-review-registry.js';
@@ -84,7 +86,7 @@ export function buildAssessmentV2ProductionPortfolio() {
     ...buildGrade8TurkishReadingLanguageWave1Questions(),
     ...buildGrade8TurkishVisualGrammarWave2Questions()
   ];
-  const grade8MathItems = buildGrade8MathCrossPilotQuestions();
+  const grade8MathItems = [...buildGrade8MathCrossPilotQuestions(), ...buildGrade8MathWave1Questions()];
   const grade8ScienceItems = buildGrade8ScienceCrossPilotQuestions();
   const grade5TurkishItems = buildGrade5TurkishCrossPilotQuestions();
   const approvedTurkishIds = GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS.map(row => row.questionId);
@@ -115,17 +117,17 @@ export function buildAssessmentV2ProductionPortfolio() {
       courseId: 'matematik',
       courseName: 'Matematik',
       programFamily: 'PRE_TYMM',
-      curriculumStatus: 'PILOT_OUTCOMES_ONLY',
-      officialOutcomeCount: null,
-      ingestedOutcomeCount: GRADE8_MATH_PILOT_OUTCOMES.length,
-      coveredOutcomeCount: GRADE8_MATH_PILOT_OUTCOMES.length,
+      curriculumStatus: 'FULL_SCOPE_INGESTED',
+      officialOutcomeCount: GRADE8_MATH_OUTCOMES_2018.length,
+      ingestedOutcomeCount: GRADE8_MATH_FULL_SCOPE_MATRIX.length,
+      coveredOutcomeCount: GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,
       items: grade8MathItems,
-      engineStatus: 'PILOT_VALIDATED',
-      engineType: 'symbolic/numeric solver-backed',
-      verifierType: 'independent alternate algorithm',
-      misconceptionCatalog: 'tr-g8-math-pilot-misconceptions',
-      nextAction: '8. sınıf Matematik tam resmî kapsam matrisini çıkar ve ünite dalgalarını başlat.',
-      blockers: ['Tam ders kazanım aktarımı henüz yapılmadı.', 'İnsan gözle kalibrasyonu yapılmadı.']
+      engineStatus: 'EXPANDING',
+      engineType: 'symbolic/numeric/geometry solver-backed',
+      verifierType: 'independent alternate algorithm and invariant checks',
+      misconceptionCatalog: 'tr-g8-math-full-scope-misconceptions',
+      nextAction: 'İlk 12 soruluk Matematik dalgasını insan gözüyle kalibre et; kalan 35 kazanımı ünite dalgalarıyla kapat.',
+      blockers: ['35 kazanım henüz kanonik soru veya etkileşimli görevle kapsanmadı.', '17 Matematik sorusunun insan gözle kalibrasyonu yapılmadı.']
     }),
     engineRow({
       id: 'tr-g8-fen-v2',
@@ -233,11 +235,11 @@ export function auditAssessmentV2ProductionPortfolio(portfolio = buildAssessment
   if (portfolio.summary.courseScheduleCellCount !== 112) errors.push(`course-cell-count:${portfolio.summary.courseScheduleCellCount}`);
   if (portfolio.engines.length !== 4) errors.push(`engine-count:${portfolio.engines.length}`);
   if (new Set(portfolio.engines.map(row => row.id)).size !== portfolio.engines.length) errors.push('duplicate-engine-id');
-  if (portfolio.summary.canonicalQuestionCount !== 66) errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
-  if (portfolio.summary.curriculumOutcomeRecordCount !== 91) errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
-  if (portfolio.summary.coveredOutcomeCount !== 46) errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
+  if (portfolio.summary.canonicalQuestionCount !== 78) errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
+  if (portfolio.summary.curriculumOutcomeRecordCount !== 138) errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
+  if (portfolio.summary.coveredOutcomeCount !== 58) errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
   if (portfolio.summary.humanApprovedQuestionCount !== 5) errors.push(`approved-count:${portfolio.summary.humanApprovedQuestionCount}`);
-  if (portfolio.summary.humanReviewQueueCount !== 61) errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
+  if (portfolio.summary.humanReviewQueueCount !== 73) errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
   if (portfolio.productReady !== false || portfolio.publicationAllowed !== false) errors.push('product-ready-leak');
   if (portfolio.gameAdaptationAllowed !== false || portfolio.summary.gameAdaptedQuestionCount !== 0) errors.push('game-adaptation-leak');
   if (portfolio.legacy.count !== 604 || portfolio.legacy.status !== 'UNVERIFIED_LEGACY') errors.push('legacy-policy');

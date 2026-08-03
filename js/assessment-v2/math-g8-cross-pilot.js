@@ -1,6 +1,6 @@
 import { defineCanonicalQuestion } from './canonical-question-contract.js';
 import { defineSubjectEngine } from './subject-engine-contract.js';
-import { grade8MathPilotOutcomeByCode } from '../curriculum/outcomes/tr-g8-matematik-2018-pilot.js';
+import { grade8MathOutcomeByCode } from '../curriculum/outcomes/tr-g8-matematik-2018.js';
 
 const STYLE_REFERENCE_IDS = Object.freeze(['meb-mcq-writing-guide', 'oecd-pisa-2025-framework']);
 
@@ -75,7 +75,7 @@ function independentExpected(model) {
 }
 
 function canonical(spec){
-  const outcome=grade8MathPilotOutcomeByCode(spec.outcomeCode); if(!outcome)throw new Error(`${spec.id}: outcome missing`);
+  const outcome=grade8MathOutcomeByCode(spec.outcomeCode); if(!outcome)throw new Error(`${spec.id}: outcome missing`);
   const [primarySkill,secondarySkills,cognitiveProcess,knowledgeComponents,intendedDifficultyBand]=spec.construct;
   const options=spec.options.map(([id,text,value,misconceptionId,feedback])=>({id,text,value,misconceptionId,feedback,correct:value===spec.answer}));
   const answer=options.find(o=>o.correct);

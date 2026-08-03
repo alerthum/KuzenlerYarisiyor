@@ -1,0 +1,2617 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T17:38:47.499Z",
+  "phase": "4I",
+  "title": "8. Sınıf Matematik Tam Kapsam — Dalga 1",
+  "status": "ENGINEERING_PASS_HUMAN_REVIEW_REQUIRED",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "humanReviewStatus": "NOT_MEASURED",
+  "source": {
+    "title": "Matematik Dersi Öğretim Programı (1-8. Sınıflar), 2018",
+    "outcomeCount": 52
+  },
+  "matrixMetrics": {
+    "officialOutcomeCount": 52,
+    "unitCounts": {
+      "Sayılar ve İşlemler": 16,
+      "Cebir": 13,
+      "Geometri ve Ölçme": 16,
+      "Veri İşleme": 2,
+      "Olasılık": 5
+    },
+    "implementedOutcomeCount": 17,
+    "implementedItemCount": 17,
+    "uncoveredOutcomeCount": 35,
+    "visualOrInteractiveOutcomeCount": 24,
+    "humanRubricOutcomeCount": 6,
+    "productReady": false,
+    "humanReviewStatus": "NOT_MEASURED",
+    "gameAdaptationAllowed": false
+  },
+  "waveMetrics": {
+    "itemCount": 12,
+    "outcomeCount": 12,
+    "answerCounts": {
+      "A": 3,
+      "B": 3,
+      "C": 3,
+      "D": 3
+    },
+    "humanReviewStatus": "NOT_MEASURED",
+    "gameAdaptationAllowed": false
+  },
+  "errors": [],
+  "questions": [
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-01-prime-factorization",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "sayilar-ve-islemler",
+        "topicId": "carpanlar-ve-katlar",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-1-1-1"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "prime-factorization",
+        "secondarySkills": [
+          "multiplicative-structure"
+        ],
+        "cognitiveProcess": "decompose-and-verify",
+        "knowledgeComponents": [
+          "prime-factor",
+          "exponent"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM"
+      },
+      "content": {
+        "context": "Bir veri merkezinde 756 eş kayıt, dosya gruplarının büyüklükleri asal sayı olacak biçimde art arda bölünerek arşivlenecektir.",
+        "stem": "756 sayısının asal çarpanlarının üslü ifadelerle doğru gösterimi hangisidir?",
+        "model": {
+          "type": "prime-factorization",
+          "n": 756
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "2² · 3³ · 7"
+          },
+          {
+            "id": "B",
+            "text": "2³ · 3² · 7"
+          },
+          {
+            "id": "C",
+            "text": "2² · 3 · 7²"
+          },
+          {
+            "id": "D",
+            "text": "2 · 3³ · 14"
+          }
+        ],
+        "optionValues": {
+          "A": "2^2*3^3*7",
+          "B": "2^3*3^2*7",
+          "C": "2^2*3*7^2",
+          "D": "2*3^3*14"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "A",
+        "value": "2^2*3^3*7"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "756’yı en küçük asal sayıya böl",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "756 ÷ 2 ÷ 2 = 189."
+        },
+        {
+          "id": "s2",
+          "action": "kalanı 3 ve 7 ile ayır",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "189 = 3³ · 7."
+        },
+        {
+          "id": "s3",
+          "action": "üsleri tekrar sayıları olarak yaz",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "756 = 2² · 3³ · 7."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "2 ile kaç kez tam bölünebildiğini izle.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "189’u asal çarpanlarına ayır.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Her asal çarpanın kaç kez kullanıldığını üs yap.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "756; 2, 3 ve 7 asal çarpanlarına ayrıldığında üsler sırasıyla 2, 3 ve 1 olur.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "swap-prime-exponents",
+          "text": "2 ve 3 asal çarpanlarının tekrar sayıları yer değiştirilmiştir; bu ifade 504 eder.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "repeat-last-factor",
+          "text": "7’nin iki kez bulunduğu varsayılmıştır; oysa 756 yalnız bir kez 7’ye bölünür.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "composite-factor-left",
+          "text": "Çarpım 756 olsa da 14 asal değildir; gösterim tümüyle asal çarpanlardan oluşmalıdır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "swap-prime-exponents",
+        "repeat-last-factor",
+        "composite-factor-left"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-02-coprime-locks",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "sayilar-ve-islemler",
+        "topicId": "carpanlar-ve-katlar",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-1-1-3"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "coprime-detection",
+        "secondarySkills": [
+          "gcd-reasoning"
+        ],
+        "cognitiveProcess": "compare-common-factors",
+        "knowledgeComponents": [
+          "common-divisor",
+          "coprime"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "content": {
+        "context": "Bir şifreleme sisteminde iki çarkın diş sayıları aralarında asal seçildiğinde çarklar ortak bir küçük döngüye kilitlenmeden çalışmaktadır.",
+        "stem": "Aşağıdaki diş sayısı çiftlerinden hangisi aralarında asaldır?",
+        "model": {
+          "type": "coprime-choice",
+          "pairs": {
+            "A": [
+              35,
+              48
+            ],
+            "B": [
+              42,
+              63
+            ],
+            "C": [
+              45,
+              75
+            ],
+            "D": [
+              56,
+              70
+            ]
+          }
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "35 ve 48"
+          },
+          {
+            "id": "B",
+            "text": "42 ve 63"
+          },
+          {
+            "id": "C",
+            "text": "45 ve 75"
+          },
+          {
+            "id": "D",
+            "text": "56 ve 70"
+          }
+        ],
+        "optionValues": {
+          "A": "35&48",
+          "B": "42&63",
+          "C": "45&75",
+          "D": "56&70"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "A",
+        "value": "35&48"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "her sayıyı asal çarpanlarına ayır",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "35=5·7, 48=2⁴·3 biçimindedir."
+        },
+        {
+          "id": "s2",
+          "action": "diğer çiftlerde ortak çarpanı kontrol et",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "42-63 için 21, 45-75 için 15, 56-70 için 14 ortaktır."
+        },
+        {
+          "id": "s3",
+          "action": "yalnız ortak böleni 1 olan çifti seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "35 ve 48 aralarında asaldır."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "İlk çiftte ortak asal çarpan ara.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Bir tek ortak bölen bile çifti eler.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Aralarında asal olmak iki sayının da asal olması demek değildir.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "35 = 5·7 ve 48 = 2⁴·3 olduğundan 1 dışında ortak bölenleri yoktur.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "miss-common-21",
+          "text": "42 ve 63 sayılarının ortak bölenleri arasında 3, 7 ve 21 vardır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "miss-common-15",
+          "text": "Her iki sayı da 15’e bölünür; bu nedenle aralarında asal değildir.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "miss-common-14",
+          "text": "Her iki sayı 14’e bölündüğü için ortak bölenleri 1’den fazladır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "miss-common-21",
+        "miss-common-15",
+        "miss-common-14"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-03-exponent-rules",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "sayilar-ve-islemler",
+        "topicId": "uslu-ifadeler",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-1-2-2"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "exponent-rule-composition",
+        "secondarySkills": [
+          "equivalent-expression"
+        ],
+        "cognitiveProcess": "simplify-and-cross-check",
+        "knowledgeComponents": [
+          "same-base-rules",
+          "power-of-power"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "context": "Bir sıkıştırma algoritmasının işlem yükü (2⁵ · 4³) / 8² ifadesiyle modellenmektedir.",
+        "stem": "Bu ifade 2’nin kuvveti biçiminde sadeleştirildiğinde hangisi elde edilir?",
+        "model": {
+          "type": "power-expression",
+          "terms": [
+            [
+              2,
+              5,
+              1
+            ],
+            [
+              4,
+              3,
+              1
+            ],
+            [
+              8,
+              2,
+              -1
+            ]
+          ],
+          "targetBase": 2
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "2³"
+          },
+          {
+            "id": "B",
+            "text": "2¹¹"
+          },
+          {
+            "id": "C",
+            "text": "2⁷"
+          },
+          {
+            "id": "D",
+            "text": "2⁵"
+          }
+        ],
+        "optionValues": {
+          "A": "2^3",
+          "B": "2^11",
+          "C": "2^7",
+          "D": "2^5"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "D",
+        "value": "2^5"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "bütün tabanları 2’nin kuvvetine dönüştür",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "4³=(2²)³=2⁶ ve 8²=(2³)²=2⁶."
+        },
+        {
+          "id": "s2",
+          "action": "aynı tabanlı çarpma ve bölme kurallarını uygula",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "Üs 5+6−6 olur."
+        },
+        {
+          "id": "s3",
+          "action": "üssü hesapla",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "5+6−6=5."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Önce 4 ve 8’i 2 tabanında yaz.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Çarpımda üsleri topla, bölümde çıkar.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Son üsteki aritmetiği tamamla.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "subtract-all-exponents",
+          "text": "4 ve 8’in tabanları 2’ye çevrilmeden yalnız görünen üslerle işlem yapılmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "denominator-added",
+          "text": "Paydadaki 2⁶ çıkarılmak yerine üslere eklenmiştir.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "power-base-multiplied",
+          "text": "4³ ve 8² dönüşümlerinde taban ile üs çarpımı karıştırılmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "4³=2⁶ ve 8²=2⁶ olduğundan 2⁵·2⁶/2⁶=2⁵ kalır.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "subtract-all-exponents",
+        "denominator-added",
+        "power-base-multiplied"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-04-root-interval",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "sayilar-ve-islemler",
+        "topicId": "karekoklu-ifadeler",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-1-3-2"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "irrational-root-bounding",
+        "secondarySkills": [
+          "number-line-estimation"
+        ],
+        "cognitiveProcess": "bound-and-compare-distance",
+        "knowledgeComponents": [
+          "perfect-squares",
+          "square-root"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "content": {
+        "context": "Kenar uzunluğu √70 metre olan kare biçimindeki bir sergi alanı planlanmaktadır.",
+        "stem": "Bu kenar uzunluğunun bulunduğu aralık ve yakın olduğu doğal sayı hangi seçenekte doğru verilmiştir?",
+        "model": {
+          "type": "root-bound",
+          "n": 70
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "7 ile 8 arasında, 8’e daha yakın"
+          },
+          {
+            "id": "B",
+            "text": "8 ile 9 arasında, 9’a daha yakın"
+          },
+          {
+            "id": "C",
+            "text": "8 ile 9 arasında, 8’e daha yakın"
+          },
+          {
+            "id": "D",
+            "text": "9 ile 10 arasında, 9’a daha yakın"
+          }
+        ],
+        "optionValues": {
+          "A": "7-8-near8",
+          "B": "8-9-near9",
+          "C": "8-9-near8",
+          "D": "9-10-near9"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "C",
+        "value": "8-9-near8"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "70’i çevreleyen tam kareleri bul",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "64=8² ve 81=9²."
+        },
+        {
+          "id": "s2",
+          "action": "karekök aralığını yaz",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "8<√70<9."
+        },
+        {
+          "id": "s3",
+          "action": "hangi sınıra yakın olduğunu karşılaştır",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "70−64=6 ve 81−70=11."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "70’ten küçük ve büyük en yakın tam kareler hangileri?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Tam karelerin kareköklerini sınır olarak kullan.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "70 hangi tam kareye daha yakın?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "use-neighbouring-integers",
+          "text": "70 sayısı 7² ile 8² arasında değil; 8²=64’ten büyüktür.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "compare-linear-not-square-distance",
+          "text": "70, 64’e 6; 81’e 11 uzaktadır. Bu nedenle √70, 8’e daha yakındır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "64<70<81 olduğundan 8<√70<9 ve 70 sayısı 64’e daha yakındır.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "ceil-from-seventy",
+          "text": "9²=81, 70’ten büyüktür; √70 henüz 9’a ulaşmaz.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "use-neighbouring-integers",
+        "compare-linear-not-square-distance",
+        "ceil-from-seventy"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-05-radical-combination",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "sayilar-ve-islemler",
+        "topicId": "karekoklu-ifadeler",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-1-3-5"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "radical-like-term-combination",
+        "secondarySkills": [
+          "simplification"
+        ],
+        "cognitiveProcess": "simplify-group-and-check",
+        "knowledgeComponents": [
+          "radical-form",
+          "like-radicals"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "context": "Bir mimari çizimde üç uzunluğun cebirsel toplamı 3√12 + 2√27 − √75 santimetre olarak verilmiştir.",
+        "stem": "Bu toplamın en sade biçimi hangisidir?",
+        "model": {
+          "type": "radical-linear-combination",
+          "terms": [
+            [
+              3,
+              12
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              -1,
+              75
+            ]
+          ]
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "4√3"
+          },
+          {
+            "id": "B",
+            "text": "4√114"
+          },
+          {
+            "id": "C",
+            "text": "12√3"
+          },
+          {
+            "id": "D",
+            "text": "7√3"
+          }
+        ],
+        "optionValues": {
+          "A": "4sqrt3",
+          "B": "4sqrt114",
+          "C": "12sqrt3",
+          "D": "7sqrt3"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "D",
+        "value": "7sqrt3"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "her kökü tam kare çarpanı kullanarak sadeleştir",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "√12=2√3, √27=3√3, √75=5√3."
+        },
+        {
+          "id": "s2",
+          "action": "dış katsayıları verilen katsayılarla çarp",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "3·2√3 + 2·3√3 − 5√3."
+        },
+        {
+          "id": "s3",
+          "action": "benzer köklü terimleri birleştir",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "(6+6−5)√3=7√3."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Kök içlerinden 4, 9 ve 25’i dışarı çıkar.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Sadeleşen köklerin önündeki sayıları unutma.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Kök içi aynı olan terimlerin katsayılarını işle.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "combine-outside-only",
+          "text": "Kök içleri sadeleştirilmeden dış katsayılar 3+2−1 biçiminde toplanmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "add-radicands",
+          "text": "Toplama ve çıkarma sırasında kök içleri doğrudan birleştirilemez; önce benzer köklü terimler oluşturulmalıdır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "ignore-subtraction-term",
+          "text": "İlk iki terim doğru toplanmış ancak −√75 terimi hesaba katılmamıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "√12=2√3, √27=3√3 ve √75=5√3 olduğundan 6√3+6√3−5√3=7√3 olur.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "combine-outside-only",
+        "add-radicands",
+        "ignore-subtraction-term"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-06-square-frame-identity",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "cebir",
+        "topicId": "cebirsel-ifadeler-ve-ozdeslikler",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-2-1-3"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "identity-area-model",
+        "secondarySkills": [
+          "geometric-algebra"
+        ],
+        "cognitiveProcess": "model-expand-and-verify",
+        "knowledgeComponents": [
+          "square-identity",
+          "area-difference"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "context": "Kenar uzunluğu x metre olan kare bir avlunun çevresine ekleme yapılarak dıştaki karenin kenarı x+3 metreye çıkarılıyor.",
+        "stem": "Eklenen bölgenin alanını veren cebirsel ifade hangisidir?",
+        "model": {
+          "type": "square-frame",
+          "inner": "x",
+          "add": 3
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "6x + 9"
+          },
+          {
+            "id": "B",
+            "text": "3x + 9"
+          },
+          {
+            "id": "C",
+            "text": "x² + 9"
+          },
+          {
+            "id": "D",
+            "text": "6x + 18"
+          }
+        ],
+        "optionValues": {
+          "A": "6x+9",
+          "B": "3x+9",
+          "C": "x^2+9",
+          "D": "6x+18"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "A",
+        "value": "6x+9"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "dış ve iç alanları yaz",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "Dış alan (x+3)², iç alan x²’dir."
+        },
+        {
+          "id": "s2",
+          "action": "özdeşliği kullanarak dış alanı aç",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "(x+3)²=x²+6x+9."
+        },
+        {
+          "id": "s3",
+          "action": "iç alanı çıkar",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "x²+6x+9−x²=6x+9."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Eklenen bölge dış kareden iç karenin çıkarılmasıdır.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "2·x·3 orta terimini ekle.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Aynı x² terimleri birbirini götürür.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "(x+3)²−x²=x²+6x+9−x²=6x+9 olur.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "one-side-strip-only",
+          "text": "Karenin yalnız bir kenarındaki şerit hesaba katılmış, diğer bölgeler eksik bırakılmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "omit-middle-term",
+          "text": "(x+3)² açılımındaki 6x orta terimi atlanmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "double-corner-area",
+          "text": "Köşe karelerinin toplam alanı iki kez sayılmıştır; sabit alan 9’dur.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "one-side-strip-only",
+        "omit-middle-term",
+        "double-corner-area"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-07-linear-equation",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "cebir",
+        "topicId": "dogrusal-denklemler",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-2-2-1"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "linear-equation-solving",
+        "secondarySkills": [
+          "equivalence-preservation"
+        ],
+        "cognitiveProcess": "form-solve-substitute",
+        "knowledgeComponents": [
+          "distribution",
+          "unknown-isolation"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "content": {
+        "context": "Bir atölyede dört eş rafın her birine, kenarlarda üçer santimetre boşluk kalacak biçimde x−3 santimetrelik parça yerleştiriliyor. Bu toplam uzunluk, 2x+18 santimetrelik başka bir düzene eşittir.",
+        "stem": "4(x−3)=2x+18 eşitliğini sağlayan x değeri kaçtır?",
+        "model": {
+          "type": "linear-equation",
+          "a": 4,
+          "b": -12,
+          "c": 2,
+          "d": 18
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "9"
+          },
+          {
+            "id": "B",
+            "text": "12"
+          },
+          {
+            "id": "C",
+            "text": "15"
+          },
+          {
+            "id": "D",
+            "text": "21"
+          }
+        ],
+        "optionValues": {
+          "A": 9,
+          "B": 12,
+          "C": 15,
+          "D": 21
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "C",
+        "value": 15
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "parantezi dağıt",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "4x−12=2x+18."
+        },
+        {
+          "id": "s2",
+          "action": "bilinmeyenli ve sabit terimleri karşılıklı topla",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "2x=30."
+        },
+        {
+          "id": "s3",
+          "action": "katsayıya böl ve kontrol et",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "x=15; iki taraf da 48 olur."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "4 sayısını parantezin iki terimiyle de çarp.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "2x’i sola, −12’yi sağa aktar.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Bulduğun değeri başlangıç denklemine koy.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "move-constant-wrong-direction",
+          "text": "−12 sabiti karşı tarafa geçirilirken işareti değiştirilmemiştir.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "divide-before-collecting",
+          "text": "Benzer x terimleri ve sabitler tamamen toplanmadan ikiye bölünmüştür.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "4x−12=2x+18, buradan 2x=30 ve x=15 bulunur.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "add-x-coefficients",
+          "text": "2x terimi karşı tarafa çıkarılmak yerine 4x ile toplanmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "move-constant-wrong-direction",
+        "divide-before-collecting",
+        "add-x-coefficients"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-08-inequality-direction",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "cebir",
+        "topicId": "esitsizlikler",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-2-3-3"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "linear-inequality-solving",
+        "secondarySkills": [
+          "order-reversal"
+        ],
+        "cognitiveProcess": "solve-and-test-boundary",
+        "knowledgeComponents": [
+          "negative-division",
+          "solution-set"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "context": "Bir sıcaklık denetim modelinde güvenli çalışma koşulu −3x+12≤27 eşitsizliğiyle ifade edilmektedir.",
+        "stem": "Bu eşitsizliğin çözüm kümesi hangisidir?",
+        "model": {
+          "type": "linear-inequality",
+          "a": -3,
+          "b": 12,
+          "op": "<=",
+          "c": 27
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "x ≤ −5"
+          },
+          {
+            "id": "B",
+            "text": "x ≥ −5"
+          },
+          {
+            "id": "C",
+            "text": "x ≥ 5"
+          },
+          {
+            "id": "D",
+            "text": "x ≤ 5"
+          }
+        ],
+        "optionValues": {
+          "A": "x<=-5",
+          "B": "x>=-5",
+          "C": "x>=5",
+          "D": "x<=5"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "B",
+        "value": "x>=-5"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "sabit terimi diğer tarafa geçir",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "−3x≤15."
+        },
+        {
+          "id": "s2",
+          "action": "iki tarafı −3’e böl",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "Negatif sayıya bölündüğü için ≤ işareti ≥ olur."
+        },
+        {
+          "id": "s3",
+          "action": "sınır değerini ve bir örneği kontrol et",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "x=−5 eşitliği sağlar; x=0 da çözüm içindedir."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Her iki taraftan 12 çıkar.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Negatifle bölmede yön değişimini unutma.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Çözüm yönünü bir sayı deneyerek doğrula.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "forget-reverse-sign",
+          "text": "Her iki taraf −3’e bölünürken eşitsizliğin yönü değiştirilmemiştir.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "−3x≤15 ve negatif sayıya bölündüğünde yön değişerek x≥−5 olur.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "lose-negative-bound",
+          "text": "15 sayısı −3’e bölünürken sonucun −5 olduğu gözden kaçırılmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "two-sign-errors",
+          "text": "Hem sınırın işareti hem de eşitsizliğin yönü yanlış belirlenmiştir.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "forget-reverse-sign",
+        "lose-negative-bound",
+        "two-sign-errors"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-09-triangle-inequality",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "geometri-ve-olcme",
+        "topicId": "ucgenler",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-3-1-2"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "triangle-inequality-enumeration",
+        "secondarySkills": [
+          "integer-range"
+        ],
+        "cognitiveProcess": "derive-bound-enumerate",
+        "knowledgeComponents": [
+          "triangle-inequality",
+          "strict-bound"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "context": "Bir üçgen çerçevenin iki kenarı 7 cm ve 12 cm’dir. Üçüncü kenarın uzunluğu tam sayı santimetre olacaktır.",
+        "stem": "Bu koşullarla üçgen oluşturabilecek kaç farklı üçüncü kenar uzunluğu vardır?",
+        "model": {
+          "type": "triangle-third-side-count",
+          "a": 7,
+          "b": 12,
+          "integer": true
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "12"
+          },
+          {
+            "id": "B",
+            "text": "13"
+          },
+          {
+            "id": "C",
+            "text": "14"
+          },
+          {
+            "id": "D",
+            "text": "15"
+          }
+        ],
+        "optionValues": {
+          "A": 12,
+          "B": 13,
+          "C": 14,
+          "D": 15
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "B",
+        "value": 13
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "üçüncü kenar için alt ve üst sınırı kur",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "|12−7|<x<12+7."
+        },
+        {
+          "id": "s2",
+          "action": "sayısal aralığı yaz",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "5<x<19."
+        },
+        {
+          "id": "s3",
+          "action": "tam sayıları say",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "6’dan 18’e kadar 13 tam sayı vardır."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Farktan büyük, toplamdan küçük olmalı.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Eşitlik işaretleri yoktur.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Son−ilk+1 yöntemini kullan.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "exclude-one-valid-end-neighbour",
+          "text": "6 ile 18 arasındaki tam sayılardan biri gereksiz yere dışarıda bırakılmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "|12−7|<x<12+7 olduğundan 5<x<19; x=6,…,18 olmak üzere 13 değer vardır.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "include-lower-equality",
+          "text": "x=5 değeri de sayılmıştır; 5+7=12 olduğundan bu değer üçgen oluşturmaz.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "include-both-equalities",
+          "text": "Hem x=5 hem x=19 dâhil edilmiştir; üçgen eşitsizliği sıkıdır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "exclude-one-valid-end-neighbour",
+        "include-lower-equality",
+        "include-both-equalities"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-10-reflection-line",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "geometri-ve-olcme",
+        "topicId": "donusum-geometrisi",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-3-2-2"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "coordinate-reflection",
+        "secondarySkills": [
+          "distance-to-axis"
+        ],
+        "cognitiveProcess": "transform-and-check-invariant",
+        "knowledgeComponents": [
+          "reflection-line",
+          "coordinate-image"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "content": {
+        "context": "Koordinat düzlemindeki P(4,−2) noktası x=1 doğrusu boyunca yerleştirilen aynaya göre yansıtılıyor.",
+        "stem": "P noktasının görüntüsünün koordinatları hangisidir?",
+        "model": {
+          "type": "reflection-vertical-line",
+          "point": [
+            4,
+            -2
+          ],
+          "lineX": 1
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "(−4, −2)"
+          },
+          {
+            "id": "B",
+            "text": "(−2, −2)"
+          },
+          {
+            "id": "C",
+            "text": "(4, 2)"
+          },
+          {
+            "id": "D",
+            "text": "(2, −2)"
+          }
+        ],
+        "optionValues": {
+          "A": "(-4,-2)",
+          "B": "(-2,-2)",
+          "C": "(4,2)",
+          "D": "(2,-2)"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "B",
+        "value": "(-2,-2)"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "noktanın aynaya yatay uzaklığını bul",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "4−1=3 birim."
+        },
+        {
+          "id": "s2",
+          "action": "aynı uzaklığı doğrunun öbür tarafına taşı",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "1−3=−2."
+        },
+        {
+          "id": "s3",
+          "action": "değişmeyen koordinatı koru",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "y=−2 kalır; görüntü (−2,−2)."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Dikey x=1 doğrusunda yalnız x koordinatı değişir.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Aynadan sola 3 birim git.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Dikey yansımada y koordinatı aynıdır.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "reflect-over-y-axis",
+          "text": "Yansıma x=1 doğrusu yerine y eksenine göre yapılmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "P noktası x=1 doğrusunun 3 birim sağındadır; görüntüsü 3 birim solunda, x=−2’dedir ve y değişmez.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "reflect-over-x-axis",
+          "text": "Y koordinatının işareti değiştirilerek x eksenine göre yansıma yapılmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "move-to-line-not-across",
+          "text": "Nokta aynanın öbür tarafına eş uzaklıkta geçirilmek yerine yalnız aynaya yaklaştırılmıştır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "reflect-over-y-axis",
+        "reflect-over-x-axis",
+        "move-to-line-not-across"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-11-graph-interpretation",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "veri-isleme",
+        "topicId": "veri-analizi",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-4-1-1"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "multi-series-graph-interpretation",
+        "secondarySkills": [
+          "trend-and-total"
+        ],
+        "cognitiveProcess": "calculate-compare-justify",
+        "knowledgeComponents": [
+          "line-graph",
+          "multi-group-data"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "context": "Bir okulun üç kulübüne dört ayda katılan yeni öğrenci sayıları şöyledir:\n\nAy | Bilim | Spor | Sanat\n1 | 18 | 24 | 12\n2 | 22 | 20 | 18\n3 | 26 | 16 | 24\n4 | 30 | 12 | 30",
+        "stem": "Bu verilerin çizgi grafiği yorumlandığında aşağıdaki ifadelerden hangisi doğrudur?",
+        "model": {
+          "type": "series-statements",
+          "series": {
+            "bilim": [
+              18,
+              22,
+              26,
+              30
+            ],
+            "spor": [
+              24,
+              20,
+              16,
+              12
+            ],
+            "sanat": [
+              12,
+              18,
+              24,
+              30
+            ]
+          },
+          "statements": {
+            "A": "sport-total-greater-science",
+            "B": "art-constant-increase-4",
+            "C": "science-and-art-equal-month4",
+            "D": "science-growth-greater-art"
+          }
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "Dört ayın toplamında spor kulübü, bilim kulübünden daha fazla yeni üye kazanmıştır."
+          },
+          {
+            "id": "B",
+            "text": "Sanat kulübüne katılım her ay 4 öğrenci artmıştır."
+          },
+          {
+            "id": "C",
+            "text": "Dördüncü ay bilim ve sanat kulüplerine katılan yeni öğrenci sayıları eşittir."
+          },
+          {
+            "id": "D",
+            "text": "Bilim kulübünün ilk aydan son aya artışı, sanat kulübünün artışından fazladır."
+          }
+        ],
+        "optionValues": {
+          "A": "A",
+          "B": "B",
+          "C": "C",
+          "D": "D"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "C",
+        "value": "C"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "her ifadenin gerektirdiği karşılaştırmayı belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "Toplam, artış miktarı ve tek ay değeri farklı işlemlerdir."
+        },
+        {
+          "id": "s2",
+          "action": "tablodan gerekli fark ve toplamları hesapla",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "Bilim toplam 96, spor 72; sanat artışı her ay 6; son ay bilim=sanat=30."
+        },
+        {
+          "id": "s3",
+          "action": "tek doğru ifadeyi seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "Yalnız C ifadesi verilerle tam uyuşur."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Şıkların aynı şeyi sormadığını fark et.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Her şık için yalnız gerekli veriyi kullan.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Bir şıkkı doğru bulunca diğerlerini de kontrol et.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "compare-last-not-total",
+          "text": "Spor ilk ay daha yüksek olsa da toplamı 72, bilim kulübünün toplamı 96’dır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "assume-common-increment",
+          "text": "Sanat kulübündeki artışlar 6, 6 ve 6’dır; 4 değildir.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Dördüncü ay her iki kulübün değeri de 30’dur.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "compare-final-values-only",
+          "text": "Bilim 12, sanat 18 artmıştır; son değerler eşit olsa da değişimler eşit değildir.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "compare-last-not-total",
+        "assume-common-increment",
+        "compare-final-values-only"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "math-g8-wave1-12-probability-complement",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "matematik",
+        "unitId": "olasilik",
+        "topicId": "basit-olaylarin-olma-olasiligi",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.matematik.m-8-5-1-4"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "probability-complement",
+        "secondarySkills": [
+          "probability-range"
+        ],
+        "cognitiveProcess": "complement-and-bound-check",
+        "knowledgeComponents": [
+          "complement-event",
+          "unit-interval"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "content": {
+        "context": "Bir kalite sensörünün rastgele seçilen bir ürünü “yeniden inceleme gerekli” olarak işaretleme olasılığı 3/8’dir.",
+        "stem": "Sensörün ürünü “yeniden inceleme gerekli değil” olarak işaretleme olasılığı kaçtır?",
+        "model": {
+          "type": "probability-complement",
+          "pNum": 3,
+          "pDen": 8
+        },
+        "options": [
+          {
+            "id": "A",
+            "text": "3/8"
+          },
+          {
+            "id": "B",
+            "text": "1/8"
+          },
+          {
+            "id": "C",
+            "text": "8/3"
+          },
+          {
+            "id": "D",
+            "text": "5/8"
+          }
+        ],
+        "optionValues": {
+          "A": "3/8",
+          "B": "1/8",
+          "C": "8/3",
+          "D": "5/8"
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "batch": "G8_MATH_FULL_SCOPE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "D",
+        "value": "5/8"
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "olay ve tamamlayıcısının toplamını hatırla",
+          "dependsOn": [],
+          "evidenceIds": [
+            "calc-1"
+          ],
+          "evidence": "P(A)+P(Ā)=1."
+        },
+        {
+          "id": "s2",
+          "action": "1’i aynı paydada yaz",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "calc-2"
+          ],
+          "evidence": "1=8/8."
+        },
+        {
+          "id": "s3",
+          "action": "tamamlayıcı olasılığı çıkar",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "calc-3"
+          ],
+          "evidence": "8/8−3/8=5/8."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sorulan, verilen olayın gerçekleşmemesidir.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Çıkarma için paydaları eşitle.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Sonucun 0 ile 1 arasında olduğunu kontrol et.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "repeat-event-probability",
+          "text": "Verilen olayın olasılığı aynen tekrar edilmiştir; sorulan olay bunun tamamlayıcısıdır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "subtract-numerators-only",
+          "text": "Paydada 8 olası pay bulunurken kalan pay sayısı 8−3=5 olmalıdır.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "invert-probability",
+          "text": "Kesir ters çevrilmiştir; 1’den büyük bir değer olasılık olamaz.",
+          "supportingEvidenceIds": [],
+          "contradictionEvidenceIds": [
+            "calculation-proof"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Bir olay ile olmama olasılığının toplamı 1 olduğundan 1−3/8=5/8’dir.",
+          "supportingEvidenceIds": [
+            "calculation-proof"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "repeat-event-probability",
+        "subtract-numerators-only",
+        "invert-probability"
+      ],
+      "verifier": {
+        "solverId": "g8-math-full-scope-solver-v1",
+        "independentVerifierId": "g8-math-alternate-enumerative-verifier-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "mathematical-model-and-reasoning",
+        "voice": "objective",
+        "sourceMode": "original-curriculum-aligned",
+        "rhetoricalMoves": [
+          "represent",
+          "calculate",
+          "verify",
+          "interpret"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "meb-mcq-writing-guide",
+          "oecd-pisa-2025-framework"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    }
+  ]
+}
