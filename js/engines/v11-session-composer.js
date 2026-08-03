@@ -139,26 +139,45 @@ export function composeV11Session(rounds = [], {
     const usedF = new Set();
     const usedS = new Set();
     const usedCx = new Set();
+    const enforceFamilyUniqueness = new Set(source.map(familyOf).filter(Boolean)).size >= limit;
+    const enforceSkeletonUniqueness = new Set(source.map(skeletonOf).filter(Boolean)).size >= limit;
+    const enforceCxUniqueness = new Set(source.map(cognitiveExperienceOf).filter(Boolean)).size >= limit;
     const take = (round, { allowSkeletonDup = false, allowCxDup = false } = {}) => {
-      if (unique.length >= limit) return;
-      if (unique.some((x) => roundKey(x) === roundKey(round))) return;
+      if (unique.length >= limit) return false;
+      if (unique.some((x) => roundKey(x) === roundKey(round))) return false;
+      if (unique.some((x) => isForbidden(x, round))) return false;
       const f = familyOf(round);
       const s = skeletonOf(round);
       const cx = cognitiveExperienceOf(round);
-      if (f && usedF.has(f)) return;
-      if (!allowSkeletonDup && s && usedS.has(s)) return;
-      if (!allowCxDup && cx && usedCx.has(cx)) return;
+      if (enforceFamilyUniqueness && f && usedF.has(f)) return false;
+      if (enforceSkeletonUniqueness && !allowSkeletonDup && s && usedS.has(s)) return false;
+      if (enforceCxUniqueness && !allowCxDup && cx && usedCx.has(cx)) return false;
       unique.push(round);
       if (f) usedF.add(f);
       if (s) usedS.add(s);
       if (cx) usedCx.add(cx);
+      return true;
     };
+    // Kaynakta birden çok görev türü varsa, oturum hedefi elverdiği ölçüde
+    // her türden en az bir temsilci seç. Bu, sayısal/geometrik oyunlarda
+    // bestecinin yalnız tek iskelet türüne yığılmasını engeller.
+    const taskTypes = [...new Set([...selected, ...source].map(taskTypeOf).filter(Boolean))];
+    if (taskTypes.length > 1 && limit >= taskTypes.length) {
+      for (const type of taskTypes) {
+        const candidates = [...selected, ...source].filter((round) => taskTypeOf(round) === type);
+        for (const candidate of candidates) {
+          if (take(candidate)) break;
+        }
+      }
+    }
     for (const round of selected) take(round);
     for (const round of source) take(round);
     if (unique.length < limit) {
       for (const round of [...selected, ...source]) take(round, { allowSkeletonDup: true });
     }
-    // Aile ve cognitiveExperience tekrarı underfill için bile açılmaz.
+    // Yeterli benzersiz kaynak varsa aile/iskelet/CX tekilliği korunur;
+    // oturum hedefi kaynak çeşitliliğini aşıyorsa farklı iskelet ve soru anahtarıyla
+    // aynı aileden kontrollü tekrar kabul edilir.
     selected = unique;
   }
   let remediationCount = selected.filter(x=>x.adaptivePlacement).length;

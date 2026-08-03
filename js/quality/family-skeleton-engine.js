@@ -105,11 +105,25 @@ export function generateFromFamilies(families, { seed, count, seenQuestionKeys =
     const ordered = [...pool].sort((a, b) => rank(a) - rank(b));
     let picked = null;
     // Oturum içi tekillik + recent cooldown: alternatif varken tekrar/yasak aileye düşme.
-    const unusedNonRecentFamilyExists = ordered.some((e) => !usedFamilyIds.has(e.family.familyId) && !recentFamilySet.has(e.family.familyId));
-    const unusedFamilyExists = ordered.some((e) => !usedFamilyIds.has(e.family.familyId));
+    // Aile tazeliği yalnız gerçekten seçilebilir bir iskeleti kalan aileler
+    // üzerinden hesaplanır. Eski hâlde dört iskeleti de cooldown altında olan
+    // tek bir kullanılmamış aile, başka ailelerin taze iskeletlerini bloke edip
+    // uzun oturumlarda yapay underfill üretebiliyordu.
     const unusedNonRecentSkeletonExists = ordered.some((e) => !usedSkeletonIds.has(e.skeleton.skeletonId) && !recentSkeletonSet.has(e.skeleton.skeletonId));
     const unusedSkeletonExists = ordered.some((e) => !usedSkeletonIds.has(e.skeleton.skeletonId));
-    for (let attempt = 0; attempt < maxAttemptsPerSlot && !picked; attempt += 1) {
+    const unusedNonRecentFamilyExists = ordered.some((e) => (
+      !usedFamilyIds.has(e.family.familyId)
+      && !recentFamilySet.has(e.family.familyId)
+      && !usedSkeletonIds.has(e.skeleton.skeletonId)
+      && !recentSkeletonSet.has(e.skeleton.skeletonId)
+    ));
+    const unusedFamilyExists = ordered.some((e) => (
+      !usedFamilyIds.has(e.family.familyId)
+      && !usedSkeletonIds.has(e.skeleton.skeletonId)
+      && (!unusedNonRecentSkeletonExists || !recentSkeletonSet.has(e.skeleton.skeletonId))
+    ));
+    const attemptLimit = Math.max(maxAttemptsPerSlot, ordered.length * 2);
+    for (let attempt = 0; attempt < attemptLimit && !picked; attempt += 1) {
       const candidateEntry = ordered[attempt % ordered.length];
       if (unusedFamilyExists && usedFamilyIds.has(candidateEntry.family.familyId)) continue;
       if (unusedSkeletonExists && usedSkeletonIds.has(candidateEntry.skeleton.skeletonId)) continue;

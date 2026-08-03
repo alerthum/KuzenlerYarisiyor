@@ -154,9 +154,26 @@ export function auditGlobalSession(rounds=[],context={}){
   return {ok:errors.length===0,errors,warnings,reports,average:reports.length?Math.round(reports.reduce((s,r)=>s+r.overall,0)/reports.length):0};
 }
 
+function isVerifiedHumanPremium(question={}) {
+  return question.premiumQuestion === true
+    && question.familyEngineCertified !== true
+    && question.premiumTier === 'GOLD'
+    && question.productQualityGate === 'PASS'
+    && question.distractorValidation?.verified === true;
+}
+
 export function attachGlobalQuality(question,context={}){
   const report=evaluateQuestionQuality(question,context);
-  return {...question,thinkingPatternId:question.thinkingPatternId||report.thinkingPatternId,globalQualityScore:report.overall,globalQualityStatus:report.status,globalQualityDimensions:report.dimensions,globalQualityWarnings:report.warnings};
+  const verifiedHumanPremium = isVerifiedHumanPremium(question);
+  return {
+    ...question,
+    thinkingPatternId:question.thinkingPatternId||report.thinkingPatternId,
+    globalQualityScore:verifiedHumanPremium?Math.max(90,report.overall):report.overall,
+    globalQualityStatus:verifiedHumanPremium?'GOLD':report.status,
+    globalQualityDimensions:report.dimensions,
+    globalQualityWarnings:report.warnings,
+    verifiedHumanPremium
+  };
 }
 
 const ARTIFICIAL_CONTEXT_PATTERNS = [
@@ -255,7 +272,8 @@ export function enforceSessionQuality(rounds=[], context={}, options={}) {
       rejected.push({questionKey:round.questionKey||'',familyId:family,reason:'quality_reject',blockingErrors,report});
       continue;
     }
-    const verifiedGold = round.premiumTier === 'GOLD' && round.premiumShowcase === true && round.distractorValidation?.verified === true;
+    const verifiedGold = (round.premiumTier === 'GOLD' && round.premiumShowcase === true && round.distractorValidation?.verified === true)
+      || isVerifiedHumanPremium(round);
     const runtimeStatus = verifiedGold ? 'GOLD' : (report.status==='REJECT'?'REVIEW':report.status);
     const showcaseEligible = verifiedGold || report.showcaseEligible;
     candidates.push({...round,globalQualityScore:verifiedGold?Math.max(90,report.overall):report.overall,globalQualityStatus:runtimeStatus,globalQualityDimensions:report.dimensions,globalQualityWarnings:report.warnings,globalQualityErrors:report.errors,choiceIntegrity:report.choiceIntegrity,qualityOrchestra:report.qualityOrchestra,showcaseEligible,contextTemplateId:template});

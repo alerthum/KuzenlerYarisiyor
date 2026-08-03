@@ -121,7 +121,9 @@ export function buildBlockedSetsV2(attempts = [], options = {}) {
     gameId,
     gradeBand = null,
     academicYear = null,
-    currentSessionIndex = 0
+    currentSessionIndex = 0,
+    skeletonPoolSize = null,
+    sessionLength = null
   } = options;
 
   const famScope = attemptsForScope(attempts, {
@@ -145,7 +147,10 @@ export function buildBlockedSetsV2(attempts = [], options = {}) {
 
   const bySession = groupBySession(famScope);
   const prevSessions = bySession.filter(([idx]) => idx < currentSessionIndex);
-  const lookbackSk = cfg.skeletonId.forbiddenLookbackSessions;
+  const capacityLookback = Number.isFinite(Number(skeletonPoolSize)) && Number.isFinite(Number(sessionLength)) && Number(sessionLength) > 0
+    ? Math.max(0, Math.floor(Number(skeletonPoolSize) / Number(sessionLength)) - 1)
+    : cfg.skeletonId.forbiddenLookbackSessions;
+  const lookbackSk = Math.min(cfg.skeletonId.forbiddenLookbackSessions, capacityLookback);
   const lookbackSt = cfg.structuralId.forbiddenLookbackSessions;
   const lookbackCx = cfg.cognitiveExperienceId.forbiddenLookbackSessions;
   const lookbackFam = cfg.familyId.lookbackSessions;

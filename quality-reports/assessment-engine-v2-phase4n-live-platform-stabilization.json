@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T23:04:34.411Z",
+  "title": "Assessment Engineering Engine V2 — Phase 4N Live Platform Stabilization",
+  "status": "LIVE_PLATFORM_ENGINEERING_PASS",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "legacyContentStatus": "UNVERIFIED_LEGACY",
+  "metrics": {
+    "assessmentV2Tests": {
+      "passed": 172,
+      "total": 172
+    },
+    "stage04FamilyTests": {
+      "passed": 233,
+      "total": 233
+    },
+    "premiumBankTests": {
+      "passed": 12,
+      "total": 12
+    },
+    "liveSessionBattery": {
+      "games": 23,
+      "sessionsPerGame": 20,
+      "totalSessions": 460,
+      "underfill": 0,
+      "semanticRepeats": 0
+    },
+    "premiumInventoryCount": 604
+  },
+  "fixes": [
+    "Premium banka ile üretken aile motorunun kaynak kuralları ayrıldı.",
+    "İnsan yazımı premium bankada aynı ölçme iskeletine sahip farklı görevler tek soruya düşürülmüyor.",
+    "Normal öğrenci attempts geçmişi ile explicit seenQuestionKeys tüketimi ayrıldı.",
+    "Aile motoru seçilebilirlik ve kapasiteye duyarlı cooldown hesabı düzeltildi.",
+    "Canlı aile kimliklerinin premium banka tarafından ezilmesi önlendi.",
+    "Stage09 bataryası oyun başına izole süreçte de çalışabilecek hâle getirildi."
+  ],
+  "remainingGates": [
+    "23 oyun x 500 oturum ağır batarya",
+    "İnsan kalibrasyonu",
+    "Gerçek öğrenci pilotu ve madde analizi",
+    "Yayın kapısı"
+  ],
+  "errors": []
+}

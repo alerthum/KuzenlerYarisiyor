@@ -33,9 +33,7 @@ function wrapKey(skeletonId, pathId, raw) {
 const PATH_IDS = [
   'raw-letters',
   'context-embedded',
-  'staged-strategy-hint',
-  'counterexample-first',
-  'constraint-ordering'
+  'staged-strategy-hint'
 ];
 
 const TASK_TRAITS = {
@@ -677,8 +675,10 @@ const LGS_FOUNDATION_FAMILIES_BASE = [
   familyMisread()
 ];
 
-// Capacity Policy V2: recovery iskeletleri + oturum marjı için yeni aileler.
-export const LGS_FOUNDATION_FAMILIES = [
+// Aşama 04 sözleşmesi tam olarak 12 aile × 4 iskelet × en az 3 yol kullanır.
+// Geniş kapasite paketi ayrı dışa aktarılır; çekirdek katalog sessizce şişirilmez.
+export const LGS_FOUNDATION_FAMILIES = LGS_FOUNDATION_FAMILIES_BASE;
+export const LGS_FOUNDATION_CAPACITY_FAMILIES = [
   ...attachLgsRecoveryBlueprints(LGS_FOUNDATION_FAMILIES_BASE),
   ...buildLgsNewFamiliesV2()
 ];

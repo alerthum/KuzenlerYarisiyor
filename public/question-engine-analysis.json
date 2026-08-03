@@ -3,8 +3,8 @@
   "generatedAt": "2026-08-02T00:49:36.780Z",
   "generatedByStage": 15,
   "note": "Asama 14 Final Kanit Duzeltmesi tamam; genel puan gercek kanitla 100.",
-  "overallQualityScorePercent": 100,
-  "overallQualityScoreDisplay": "100",
+  "overallQualityScorePercent": null,
+  "overallQualityScoreDisplay": "Veri yok — kanonik katalog insan kalibrasyonu tamamlanmadı",
   "currentAutonomousStage": {
     "id": 15,
     "name": "Final kabul",
@@ -41,19 +41,26 @@
     "note": "Aşama 05 cognitive-depth-engine canlı ölçüm"
   },
   "optionQuality": {
-    "irrelevantOptionCount": 0,
-    "formCueGiveawayCount": 0,
-    "optionQualityScore": 100,
-    "answerableWithoutReadingAllOptionsCount": 0
+    "irrelevantOptionCount": "Veri yok — insan kalibrasyonu bekleniyor",
+    "formCueGiveawayCount": "Veri yok — insan kalibrasyonu bekleniyor",
+    "optionQualityScore": "Veri yok — insan kalibrasyonu bekleniyor",
+    "answerableWithoutReadingAllOptionsCount": "Veri yok — insan kalibrasyonu bekleniyor"
   },
   "stage06OptionQualityInfra": {
-    "note": "Aşama 06 ölçüldü",
-    "irrelevantOptionCount": 0,
-    "absurdOptionCount": 0,
-    "uniqueNegativeOptionCount": 0,
-    "optionQualityScore": 100,
-    "misconceptionCoverage": 100,
-    "readAllOptionsFailureCount": 0
+    "note": "Kanonik V2 katalog için insan kalibrasyonu tamamlanmadan ölçülmüş sayılmaz",
+    "irrelevantOptionCount": "NOT_MEASURED_YET",
+    "absurdOptionCount": "NOT_MEASURED_YET",
+    "uniqueNegativeOptionCount": "NOT_MEASURED_YET",
+    "grammarShapeMismatchCount": "NOT_MEASURED_YET",
+    "optionLengthCueCount": "NOT_MEASURED_YET",
+    "correctOptionVerbosityCueCount": "NOT_MEASURED_YET",
+    "semanticCategoryMismatchCount": "NOT_MEASURED_YET",
+    "readAllOptionsFailureCount": "NOT_MEASURED_YET",
+    "blindOptionClassifierAccuracy": "NOT_MEASURED_YET",
+    "misconceptionCoverage": "NOT_MEASURED_YET",
+    "strongDistractorCount": "NOT_MEASURED_YET",
+    "weakDistractorCount": "NOT_MEASURED_YET",
+    "optionQualityScore": "NOT_MEASURED_YET"
   },
   "semanticRepeat": {
     "sessionSemanticRepeatCount_allActiveGames": 0,

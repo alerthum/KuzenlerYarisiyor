@@ -65,6 +65,7 @@ export function runGameSessionBattery(gameId, {
     semanticRepeats += findSessionSemanticRepeats(rounds).length;
     attempts = attempts.concat(session.rounds.map((r) => ({
       gameId,
+      questionKey: r.questionKey,
       familyId: r.familyId,
       skeletonId: r.skeletonId,
       correct: true

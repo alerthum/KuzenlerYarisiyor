@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T22:13:32.481Z",
+  "generatedAt": "2026-08-03T22:54:33.702Z",
   "phase": "4H",
   "title": "Assessment V2 Ürün Şekillendirme ve Ders Motorları Panosu",
   "status": "ENGINEERING_PASS_HUMAN_REVIEW_IN_PROGRESS",
@@ -26,7 +26,7 @@
   },
   "portfolio": {
     "schemaVersion": "3.0",
-    "generatedAt": "2026-08-03T22:13:32.480Z",
+    "generatedAt": "2026-08-03T22:54:33.701Z",
     "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
     "status": "LGS_CORE_ENGINEERING_SCOPE_COMPLETE",
     "productReady": false,

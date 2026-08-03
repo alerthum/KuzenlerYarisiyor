@@ -823,7 +823,7 @@ function questionEngineCommandCenterModule(analysis, liveState = null, productio
         </div>
       </section>`
     : `<div class="platform-metric-grid">
-    <div class="metric-card"><div class="metric-label">Teknik Kalite Puanı</div><div class="metric-value">${overallDisplay}</div><div class="metric-note">${overallNote}</div></div>
+    <div class="metric-card"><div class="metric-label">Genel kalite puanı / Teknik Kalite Puanı</div><div class="metric-value">${overallDisplay}</div><div class="metric-note">${overallNote}</div></div>
     <div class="metric-card"><div class="metric-label">Ürün Hazır</div><div class="metric-value">${productReadyDisplay}</div><div class="metric-note">${esc(productReadyNote)}</div></div>
     <div class="metric-card"><div class="metric-label">Final kanıt yeterliliği</div><div class="metric-value"><span class="badge ${feBadge}">${esc(feAdequacy)}</span></div><div class="metric-note">${esc((finalEvidence.gaps || []).slice(0, 4).join(' • ') || 'Sayaçlar FINAL_EVIDENCE_INDEX.json')}</div></div>
     <div class="metric-card"><div class="metric-label">Mevcut otonom aşama</div><div class="metric-value">${dv(stage.id)}</div><div class="metric-note">${dv(stage.name)} — ${dv(stage.status)}</div></div>

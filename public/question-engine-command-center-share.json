@@ -1,18 +1,18 @@
 {
   "schemaVersion": "1.0",
   "exportMeta": {
-    "exportedAt": "2026-08-02T21:10:23.259Z",
+    "exportedAt": "2026-08-03T22:23:05.956Z",
     "projectName": "Zihin Arenası",
     "screen": "Soru Motoru Komuta Merkezi",
     "kind": "chatgpt-share",
-    "appVersion": "13.5.1-quality-pilot",
+    "appVersion": "13.6.0-premium-migration-dev",
     "runId": "dede0f23-8979-42a4-83a5-9c2a6c181793",
     "dataFreshness": "STALE",
     "sourceCount": 11,
     "failedShardCount": 6,
     "liveStatus": "ABORTED",
     "compactMaxBytes": 768000,
-    "exportSizeBytes": 54144,
+    "exportSizeBytes": 54152,
     "exportSize": "53 KB"
   },
   "currentLiveOperation": {
@@ -2301,7 +2301,7 @@
       "source": "public/strict-audit-live.json",
       "required": true,
       "status": "OK",
-      "updatedAt": "2026-08-02T16:12:34.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 8511
     },
@@ -2309,7 +2309,7 @@
       "source": "public/question-engine-analysis.json",
       "required": true,
       "status": "OK",
-      "updatedAt": "2026-08-02T15:03:08.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 108747
     },
@@ -2317,7 +2317,7 @@
       "source": "PRODUCT_ACCEPTANCE_DECISION.json",
       "required": true,
       "status": "OK",
-      "updatedAt": "2026-08-02T12:51:39.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 3761
     },
@@ -2325,7 +2325,7 @@
       "source": "QUALITY_SCORE.json",
       "required": true,
       "status": "OK",
-      "updatedAt": "2026-08-02T10:11:39.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 613
     },
@@ -2333,7 +2333,7 @@
       "source": "PROJECT_STATE.json",
       "required": true,
       "status": "OK",
-      "updatedAt": "2026-08-02T14:35:24.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 27073
     },
@@ -2341,7 +2341,7 @@
       "source": "BLOCKERS.json",
       "required": true,
       "status": "OK",
-      "updatedAt": "2026-08-02T14:35:22.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 2574
     },
@@ -2349,7 +2349,7 @@
       "source": "quality-reports/strict-audit-progress.json",
       "required": false,
       "status": "OK",
-      "updatedAt": "2026-08-02T15:05:16.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 184635
     },
@@ -2357,7 +2357,7 @@
       "source": "quality-reports/product-acceptance/annual-student.json",
       "required": false,
       "status": "OK",
-      "updatedAt": "2026-08-02T14:42:36.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 44881
     },
@@ -2365,7 +2365,7 @@
       "source": "quality-reports/product-acceptance/class-30.json",
       "required": false,
       "status": "OK",
-      "updatedAt": "2026-08-02T14:50:44.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 8339
     },
@@ -2373,7 +2373,7 @@
       "source": "quality-reports/product-acceptance/content-review-samples.json",
       "required": false,
       "status": "OK",
-      "updatedAt": "2026-08-02T12:51:39.000Z",
+      "updatedAt": "2026-08-02T23:53:53.000Z",
       "error": null,
       "bytes": 8773076
     },
@@ -2381,9 +2381,9 @@
       "source": "public/question-engine-command-center-export.json",
       "required": false,
       "status": "OK",
-      "updatedAt": "2026-08-02T21:09:15.438Z",
+      "updatedAt": "2026-08-03T22:15:36.000Z",
       "error": null,
-      "bytes": 19799977
+      "bytes": 19799989
     }
   ],
   "recentEvents": [
@@ -2770,8 +2770,8 @@
         "originalItemCount": 15
       }
     ],
-    "originalSizeBytes": 19799977,
-    "compactSizeBytes": 54144,
-    "compressionRatio": 365.69
+    "originalSizeBytes": 19799989,
+    "compactSizeBytes": 54152,
+    "compressionRatio": 365.64
   }
 }
