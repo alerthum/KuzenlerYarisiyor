@@ -56,6 +56,8 @@ Kabul: en az 12 farklı ana fikir; mutasyonlu yanlış cevapların %100'ü RED; 
 - kapsam genişletme, yardımcı fikri ana fikir yapma, kesinlik ekleme gibi dönüşümler
 Kabul: aynı metin haritasının sayı/kelime değişmiş varyantları aynı CX; fen değişken sorusu paragraf oyununa giremez.
 
+**2026-08-03 mühendislik durumu:** 12/12 solver-backed okuma/paragraf modeli tamamlandı. Ana düşünce, çıkarım, iddia–kanıt, kapsam, amaç, tutum, karşıtlık, paragraf işlevi, zorunlu varsayım, nedensellik sınırı, metinler arası ilişki ve kanıt gücü modelleri ayrı kanıt çözümü ve bağımsız doğrulama taşır. İlk insan gözle test paketi hazır; insan örneklemi `NOT_MEASURED`, `productReady=false` ve legacy içerik `UNVERIFIED_LEGACY` olarak korunur.
+
 ### Faz 4 — Sözel mantık ve kısıt çözme motoru
 - sıralama, eşleştirme, yerleştirme, zamanlama, grup, koşullu seçim
 - bütün çözümleri enumerasyon/SAT-benzeri çözümle doğrulama

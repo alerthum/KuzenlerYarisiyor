@@ -2,7 +2,10 @@ import { defineItemModel } from './contracts.js';
 import { solveReadingEvidenceTask, verifyReadingEvidenceAnswer } from './reading-evidence-solver.js';
 
 function freezeTask(task) {
-  return structuredClone(task);
+  // JSON round-trip intentionally breaks shared object aliases between the
+  // evidence map and answer options. A mutation in one layer must never
+  // silently mutate the independent verification source.
+  return JSON.parse(JSON.stringify(task));
 }
 
 export function defineReadingEvidenceModel(config) {

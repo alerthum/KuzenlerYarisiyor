@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:50:26.061Z",
+  "generatedAt": "2026-08-03T08:55:38.880Z",
   "phase": "PHASE_3_ENGINEERING_PASS",
   "productReady": false,
   "targetModelCount": 12,
@@ -10,6 +10,8 @@
   "automatedAcceptance": "PASS",
   "independentEvidenceVerifier": "PASS_FOR_MATERIALIZED_MODELS",
   "humanSampleStatus": "NOT_MEASURED",
+  "firstHumanReviewStatus": "READY",
+  "reviewPack": "quality-reports/assessment-engine-v2-phase3-first-review.html",
   "legacyContentPolicy": "UNVERIFIED_LEGACY",
   "coveredIdeas": [
     "main-idea-coverage",
@@ -79,7 +81,7 @@
         "modality-ceiling",
         "scope-subset"
       ],
-      "answer": "Uzatılan saatler, bu kütüphanede sınav ayındaki akşam çalışma kullanımını bazı öğrenciler için desteklemiş olabilir.",
+      "answer": "Uzatılan saatler, bazı öğrencilerin bu kütüphaneyi sınav ayında akşamları daha sık kullanmasına katkı sağlamış olabilir.",
       "misconceptions": [
         {
           "id": "association-to-certain-success",

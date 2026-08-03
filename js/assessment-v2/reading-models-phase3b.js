@@ -58,8 +58,8 @@ export const authorAttitudeModel = defineReadingEvidenceModel({
     { id: 'pure-opposition', optionRole: 'opposed', description: 'Çekince bildiren cümleyi projeye bütünüyle karşı çıkma sanır.', buggyRule: 'treat-caution-as-rejection', feedback: 'Metin yeniden kullanımı sevindirici buluyor; yalnız uygulamanın niteliğine dikkat çekiyor.' },
     { id: 'neutral-reporting', optionRole: 'neutral', description: 'Değer yargısı taşıyan sözcükleri görmez ve metni tarafsız haber sayar.', buggyRule: 'erase-evaluative-language', feedback: '“Sevindirici” ve “başarı sayılabilmesi” ifadeleri açık değerlendirme içerir.' }
   ],
-  createTask: ({ building = 'eski tren garı', use = 'kültür merkezi' } = {}) => ({
-    passage: `${building}nın ${use} olarak yeniden kullanılacak olması sevindirici. Yıllardır kapalı kalan bir yapının kent yaşamına dönmesi, belleğin korunması açısından değerli. Ancak projenin gerçek bir başarı sayılabilmesi için özgün mimari ayrıntıların korunması ve yapının yalnız ticari işletmelere ayrılmaması gerekir.`,
+  createTask: ({ project = 'Eski tren garının kültür merkezine dönüştürülmesi' } = {}) => ({
+    passage: `${project} sevindirici. Yıllardır kapalı kalan bir yapının kent yaşamına dönmesi, belleğin korunması açısından değerli. Ancak projenin gerçek bir başarı sayılabilmesi için özgün mimari ayrıntıların korunması ve yapının yalnız ticari işletmelere ayrılmaması gerekir.`,
     prompt: 'Yazarın projeye yönelik tutumu aşağıdakilerden hangisidir?',
     query: { type: 'attitude' },
     evidenceMap: { attitude: 'cautiously-supportive' },

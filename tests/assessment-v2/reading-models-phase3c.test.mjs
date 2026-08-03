@@ -31,9 +31,11 @@ test('zorunlu varsayım modeli satış verisinin tüketimi temsil etmesi bağlan
 
 test('nedensellik sınırı modeli gözlemsel ilişkiyi kabul eder fakat tek neden üretmez', () => {
   const item = pass(causalBoundaryModel, { students: 180, threshold: 7, subject: 'fen' });
+  assert.match(item.answerText, /fen puanı/);
   assert.match(item.answerText, /ilişki vardır/);
   assert.match(item.answerText, /tek neden/);
-  assert.equal(item.distractors.some(d => /kesin olarak yükseltir/.test(d.text)), true);
+  assert.equal(item.distractors.some(d => /fen başarısını kesin olarak yükseltir/.test(d.text)), true);
+  assert.equal(item.distractors.some(d => /matematik/.test(d.text)), false);
 });
 
 test('iki metin modeli ortak karma düzeni ve farklı gerekçeleri birlikte eşler', () => {

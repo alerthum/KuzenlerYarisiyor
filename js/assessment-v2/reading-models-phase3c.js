@@ -74,10 +74,10 @@ export const causalBoundaryModel = defineReadingEvidenceModel({
       query: { type: 'causal-boundary' },
       evidenceMap: { claims: [{ id: 'c1', proposition: association }] },
       options: [
-        option('a', 'correct', 'İncelenen öğrencilerde daha uzun uyku ile daha yüksek matematik puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.', { claimId: 'c1', proposition: association }),
-        option('b', 'cause', `Her gece en az ${threshold} saat uyumak matematik başarısını kesin olarak yükseltir.`, { claimId: 'c1', proposition: proposition({ ...association, predicate: 'causes', relation: 'cause', modality: 'certain', quantifier: 'all' }) }),
-        option('c', 'reverse-cause', 'Yüksek matematik puanı öğrencilerin daha uzun uyumasına kesin olarak neden olur.', { claimId: 'c1', proposition: proposition({ ...association, subject: `${subject}-score`, object: 'longer-sleep', predicate: 'causes', relation: 'cause', modality: 'certain' }) }),
-        option('d', 'deny', 'Uyku süresi ile matematik puanı arasında hiçbir ilişki yoktur.', { claimId: 'c1', proposition: proposition({ ...association, polarity: 'negative', modality: 'certain' }) })
+        option('a', 'correct', `İncelenen öğrencilerde daha uzun uyku ile daha yüksek ${subject} puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.`, { claimId: 'c1', proposition: association }),
+        option('b', 'cause', `Her gece en az ${threshold} saat uyumak ${subject} başarısını kesin olarak yükseltir.`, { claimId: 'c1', proposition: proposition({ ...association, predicate: 'causes', relation: 'cause', modality: 'certain', quantifier: 'all' }) }),
+        option('c', 'reverse-cause', `Yüksek ${subject} puanı öğrencilerin daha uzun uyumasına kesin olarak neden olur.`, { claimId: 'c1', proposition: proposition({ ...association, subject: `${subject}-score`, object: 'longer-sleep', predicate: 'causes', relation: 'cause', modality: 'certain' }) }),
+        option('d', 'deny', `Uyku süresi ile ${subject} puanı arasında hiçbir ilişki yoktur.`, { claimId: 'c1', proposition: proposition({ ...association, polarity: 'negative', modality: 'certain' }) })
       ]
     };
   }

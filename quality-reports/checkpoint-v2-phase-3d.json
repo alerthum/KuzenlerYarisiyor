@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "2.0",
+  "checkpoint": "checkpoint-v2-phase-3d",
+  "phase": "PHASE_3_ENGINEERING_PASS_FIRST_REVIEW_READY",
+  "modelCount": 12,
+  "targetModelCount": 12,
+  "assessmentV2Tests": {
+    "passed": 51,
+    "failed": 0,
+    "status": "PASS"
+  },
+  "readingMutationGates": {
+    "passed": 4,
+    "failed": 0,
+    "status": "PASS",
+    "covered": [
+      "certainty-upgrade-rejection",
+      "ambiguous-two-correct-rejection",
+      "support-edge-answer-recomputation",
+      "evidence-strength-answer-recomputation"
+    ]
+  },
+  "legacy604ProtectionTests": {
+    "passed": 11,
+    "failed": 0,
+    "status": "PASS",
+    "legacyContentCount": 604
+  },
+  "build": {
+    "status": "PASS",
+    "note": "KUZENLER_AYARLARI.env is gitignored and absent from the checkpoint archive; build was verified using a temporary local copy of KUZENLER_AYARLARI.env.ORNEK and the temporary file was removed."
+  },
+  "criticalFixes": [
+    "evidence-map and option semantic object aliases are now separated before solving and verification",
+    "dynamic subject names now propagate to all causal-boundary option texts",
+    "visual Turkish surface issues found during review-pack inspection were corrected"
+  ],
+  "firstHumanReview": {
+    "status": "READY",
+    "sampleCount": 12,
+    "html": "quality-reports/assessment-engine-v2-phase3-first-review.html",
+    "json": "quality-reports/assessment-engine-v2-phase3-first-review.json"
+  },
+  "productReady": false,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "humanSampleStatus": "NOT_MEASURED"
+}

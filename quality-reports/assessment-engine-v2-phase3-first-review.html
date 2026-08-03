@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zihin Arenası V2 — Faz 3 İlk Gözle Test</title>
+<style>
+:root{font-family:Inter,Segoe UI,Arial,sans-serif;color:#172033;background:#f3f5f8}*{box-sizing:border-box}body{margin:0}.wrap{max-width:980px;margin:auto;padding:32px 18px 72px}header{background:#111827;color:white;padding:28px;border-radius:20px;margin-bottom:22px}header h1{margin:0 0 8px;font-size:28px}header p{margin:6px 0;color:#d1d5db}.warning{background:#fff4dc;color:#7c4a00;padding:12px 14px;border-radius:12px;margin-top:16px}.card{background:white;border:1px solid #dde2ea;border-radius:18px;padding:24px;margin:18px 0;box-shadow:0 8px 24px rgba(20,30,50,.06)}.meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;color:#596579;font-size:13px}.meta span,.meta code{background:#eef1f5;padding:5px 8px;border-radius:8px}.context{line-height:1.72;background:#f8fafc;border-left:4px solid #f97316;padding:16px;border-radius:8px}.card h2{font-size:20px}.choices{padding:0;list-style:none}.choices li{display:flex;gap:12px;align-items:flex-start;border:1px solid #e2e8f0;padding:12px 14px;border-radius:11px;margin:9px 0;line-height:1.5}.letter{display:inline-grid;place-items:center;min-width:28px;height:28px;border-radius:50%;background:#111827;color:white;font-weight:700}details{margin-top:16px;border-top:1px dashed #cbd5e1;padding-top:14px}summary{cursor:pointer;font-weight:700;color:#9a3412}.answer{background:#ecfdf5;padding:12px;border-radius:10px;color:#065f46}.ids{color:#64748b;overflow-wrap:anywhere}h3{font-size:15px;margin-top:18px}details li{margin:7px 0;line-height:1.45}@media(max-width:600px){.wrap{padding:14px 10px 50px}.card{padding:17px}header{padding:20px}.card h2{font-size:18px}}
+</style></head><body><main class="wrap"><header><h1>Faz 3 — İlk Gözle Test Paketi</h1><p>12 solver-backed paragraf modeli • cevaplar ayrı kanıt doğrulayıcısıyla onaylandı</p><div class="warning">Bu paket insan örneklemi için hazırdır; henüz ölçülmüş insan onayı değildir. productReady=false korunur.</div></header><article class="card">
+    <div class="meta"><span>#1</span><code>reading-main-idea-coverage-v2</code><span>main-idea</span></div>
+    <p class="context">Güneydere Belediyesi, aynı sokakta gölge altında ve doğrudan güneş alan kaldırımları öğle saatlerinde ölçtü. Ağaçların gölgelediği yüzeyler ortalama 7 derece daha serindi. Uzmanlar bu farkın sıcak günlerde yaya konforunu artırabileceğini, ancak yeni ağaçlandırmada su gereksinimi ve toprak yapısının birlikte değerlendirilmesi gerektiğini belirtti.</p>
+    <h2>Bu parçanın ana düşüncesi aşağıdakilerden hangisidir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Gölgedeki kaldırımlar öğle ölçümünde ortalama 7 derece daha serin çıkmıştır.</li>
+    <li><span class="letter">B</span>Bütün kentlerdeki her sokağa mümkün olduğunca çok ağaç dikilmelidir.</li>
+    <li><span class="letter">C</span>Ağaçlandırma çalışmalarında yalnız su gereksinimi ve toprak yapısı dikkate alınmalıdır.</li>
+    <li><span class="letter">D</span>Ağaç gölgesi sıcak yüzeyleri serinletebilir; ancak ağaçlandırma yerel su ve toprak koşullarına göre planlanmalıdır.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: D</strong> — Ağaç gölgesi sıcak yüzeyleri serinletebilir; ancak ağaçlandırma yerel su ve toprak koşullarına göre planlanmalıdır.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>detail-as-main-idea</strong>: Ana düşünce tek bir sayıdan daha geniştir; metnin bütün merkezî iddialarını kapsamalıdır.</li>
+    <li><strong>overgeneralized-main-idea</strong>: Metin ağaçlandırmayı desteklerken su ve toprak koşullarına göre planlama sınırı koyar.</li>
+    <li><strong>one-sided-summary</strong>: Ana düşünce iki merkezî hattı birlikte kapsamalıdır; yalnız birini özetlemek eksik kalır.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Paragrafın birden fazla cümlesinde sürdürülen iki temel düşünceyi işaretle.</li><li>2. Sayılar ve ölçüm ayrıntıları çıkarıldığında geriye kalan ortak mesajı düşün.</li><li>3. Seçenek hem yararı hem de planlama koşulunu birlikte taşıyor mu?</li></ol>
+      <p class="ids"><code>cx:v2:1lwz3b5</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#2</span><code>reading-supported-inference-v2</code><span>supported-inference</span></div>
+    <p class="context">Kavaklı Halk Kütüphanesi, sınav ayı boyunca 4 hafta süreyle kapanış saatini iki saat geciktirdi. Bu dönemde akşam girişleri önceki aya göre arttı. Ankete katılan bazı öğrenciler sessiz çalışma olanağı nedeniyle daha sık geldiklerini söyledi; öğrencilerin sınav notları ise araştırılmadı.</p>
+    <h2>Bu parçadan aşağıdakilerden hangisi çıkarılabilir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Uzatılan saatler, bazı öğrencilerin bu kütüphaneyi sınav ayında akşamları daha sık kullanmasına katkı sağlamış olabilir.</li>
+    <li><span class="letter">B</span>Kapanış saatinin uzatılması öğrencilerin sınav başarısını kesin olarak yükseltmiştir.</li>
+    <li><span class="letter">C</span>Saatlerin uzatılmasının öğrencilerin kütüphane kullanımına hiçbir etkisi olmamıştır.</li>
+    <li><span class="letter">D</span>Kapanış saatini uzatan bütün kütüphanelerde tüm öğrencilerin akşam kullanımı artar.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: A</strong> — Uzatılan saatler, bazı öğrencilerin bu kütüphaneyi sınav ayında akşamları daha sık kullanmasına katkı sağlamış olabilir.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>association-to-certain-success</strong>: Metin ziyaret sayısını ve anket görüşünü verir; not başarısını ölçmez.</li>
+    <li><strong>reject-observed-association</strong>: Not verisi yoktur fakat akşam kullanımındaki artış ve bazı öğrencilerin görüşü metinde açıkça vardır.</li>
+    <li><strong>expand-to-all-libraries</strong>: Çıkarım metindeki yer, zaman ve örneklem sınırları içinde kalmalıdır.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Metinde sayılan gözlem ve katılımcıların yorumu aynı tür bilgi değildir.</li><li>2. Metinde ölçülmeyen sonuç hakkında kesin hüküm veren seçenekleri ele.</li><li>3. Seçenek başka okulları, bütün öğrencileri veya kalıcı sonuçları kapsıyor mu?</li></ol>
+      <p class="ids"><code>cx:v2:19lz5fu</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#3</span><code>reading-claim-evidence-match-v2</code><span>claim-evidence</span></div>
+    <p class="context">Araştırmacılar göç döneminde verici takılan 10 saz bülbülünü izledi; izlenen kuşlardan 8 tanesi Akgöl&#039;de en az bir gece durdu. Aynı tarihlerde yapılan örneklemelerde alandaki böcek yoğunluğu çevredeki kuru bölgelere göre daha yüksekti. Sulak alanın bugünkü adı 1960&#039;larda verilmiş, gözlem kulübesi ise geçen yıl yenilenmiştir.</p>
+    <h2>Aşağıdaki iddia–kanıt eşleştirmelerinden hangisi doğrudur?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>İddia: Gözlem altyapısı yakın zamanda yenilenmiştir. Kanıt: İşaretli kuşların çoğu sulak alanda en az bir gece durmuştur.</li>
+    <li><span class="letter">B</span>İddia: Akgöl önemli bir göç durağıdır. Kanıt: İzlenen kuşlardan 8 tanesi burada durmuş ve bölgede besin yoğunluğu yüksek bulunmuştur.</li>
+    <li><span class="letter">C</span>İddia: Akgöl önemli bir göç durağıdır. Kanıt: Bölgede bir kuş gözlem kulübesi vardır.</li>
+    <li><span class="letter">D</span>İddia: Akgöl önemli bir göç durağıdır. Kanıt: Sulak alanın bugünkü adı 1960&#039;larda verilmiştir.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: B</strong> — İddia: Akgöl önemli bir göç durağıdır. Kanıt: İzlenen kuşlardan 8 tanesi burada durmuş ve bölgede besin yoğunluğu yüksek bulunmuştur.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>reverse-support-link</strong>: Kanıt ile iddia arasındaki ilişki özel olmalıdır; her veri her iddiayı desteklemez.</li>
+    <li><strong>topic-overlap-as-evidence</strong>: Bir ayrıntının kuşlarla ilgili olması yetmez; belirli iddiayı doğrudan desteklemesi gerekir.</li>
+    <li><strong>historical-detail-as-proof</strong>: Adın ne zaman verildiği, alanın göç durağı olarak kullanıldığını göstermez.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Önce kanıtlanması istenen yargıyı tek cümleye indir.</li><li>2. Hangi veri kuşların orayı gerçekten kullandığını ve neden kullanabileceğini gösteriyor?</li><li>3. Kanıt çıkarıldığında iddia zayıflıyor mu? Zayıflamıyorsa o ayrıntı doğrudan kanıt değildir.</li></ol>
+      <p class="ids"><code>cx:v2:ssz7mw</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#4</span><code>reading-scope-certainty-control-v2</code><span>scope-control</span></div>
+    <p class="context">Yelken Anadolu Lisesi&#039;nde 120 dokuzuncu sınıf öğrencisi iki gruba ayrıldı. Aynı konuyu çalışan gruplardan biri tekrarları günlere yaydı, diğeri tek oturumda tamamladı. 2 hafta sonraki ölçümde aralıklı tekrar yapan grup ortalama olarak daha çok bilgiyi hatırladı. Çalışma başka okul veya sınıf düzeylerinde tekrarlanmadı.</p>
+    <h2>Araştırmanın kapsamına en uygun yorum hangisidir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Aralıklı tekrar yapan öğrenciler öğrendiklerini yaşamları boyunca unutmaz.</li>
+    <li><span class="letter">B</span>Gruplar arasındaki farkın tek nedeni tekrarların günlere yayılmasıdır.</li>
+    <li><span class="letter">C</span>Aralıklı tekrar, bu okuldaki dokuzuncu sınıf öğrencilerinin 2 hafta sonraki hatırlamasını artırmış olabilir.</li>
+    <li><span class="letter">D</span>Aralıklı tekrar bütün öğrencilerde öğrenmeyi kesin olarak artırır.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: C</strong> — Aralıklı tekrar, bu okuldaki dokuzuncu sınıf öğrencilerinin 2 hafta sonraki hatırlamasını artırmış olabilir.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>temporary-to-permanent</strong>: Çalışma yalnız iki hafta sonraki hatırlamayı ölçmüştür; kalıcı etki ölçülmemiştir.</li>
+    <li><strong>single-cause-certainty</strong>: Araştırma bulgusu yöntemin etkili olabileceğini destekler; bütün diğer etkenlerin dışlandığını göstermez.</li>
+    <li><strong>universalize-single-school</strong>: Tek okul ve tek sınıf düzeyinden bütün öğrenciler için evrensel sonuç çıkarılamaz.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Kimler, nerede ve ne kadar süreyle incelenmiş?</li><li>2. “Her zaman”, “bütün öğrenciler” ve “tek neden” ifadelerini özellikle denetle.</li><li>3. Seçenekteki kişi grubu ve zaman aralığı metindekinden daha geniş mi?</li></ol>
+      <p class="ids"><code>cx:v2:hbxeyu</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#5</span><code>reading-author-purpose-v2</code><span>purpose</span></div>
+    <p class="context">Bağpınar&#039;da kurulan yerel tohum arşivinde bölgede uzun süredir yetiştirilen 46 çeşit kayıt altına alındı. Her örnek, yetiştiği yer ve özellikleriyle birlikte saklanıyor; böylece kuraklık ya da hastalık gibi koşullara dayanıklı çeşitlerin kaybolması önlenmeye çalışılıyor. Arşiv ekibi, elinde eski yerel tohum bulunanları cumartesi günü düzenlenecek kayıt buluşmasına çağırıyor.</p>
+    <h2>Yazarın bu parçayı yazmaktaki temel amacı nedir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Yalnızca arşivde kaç çeşit tohum bulunduğunu bildirmek</li>
+    <li><span class="letter">B</span>Yerel tohumlarla ilgili eğlenceli bir olay anlatmak</li>
+    <li><span class="letter">C</span>Bölgedeki çiftçileri eski tohumları korumadıkları için eleştirmek</li>
+    <li><span class="letter">D</span>Yerel tohum arşivinin önemini açıklamak ve okurları çeşitlerin korunmasına katkı vermeye yöneltmek</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: D</strong> — Yerel tohum arşivinin önemini açıklamak ve okurları çeşitlerin korunmasına katkı vermeye yöneltmek</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>information-only-purpose</strong>: Metnin sonundaki kayıt gününe katılım çağrısı temel amacın bir parçasıdır.</li>
+    <li><strong>entertainment-purpose</strong>: Metin olay örgüsü kurmuyor; süreç açıklıyor ve okuru bir davranışa yönlendiriyor.</li>
+    <li><strong>criticism-purpose</strong>: Metinde çiftçilere veya kurumlara yönelik bir suçlama yoktur.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Yazar hangi bilgileri özellikle seçmiş: tarih, eğlence, eleştiri yoksa koruma süreci mi?</li><li>2. Metnin sonunda okura yöneltilen somut çağrıyı bul.</li><li>3. Doğru seçenek hem açıklama bölümünü hem de çağrı bölümünü kapsıyor mu?</li></ol>
+      <p class="ids"><code>cx:v2:1t8xvt6</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#6</span><code>reading-author-attitude-v2</code><span>attitude</span></div>
+    <p class="context">Eski tren garının kültür merkezine dönüştürülmesi sevindirici. Yıllardır kapalı kalan bir yapının kent yaşamına dönmesi, belleğin korunması açısından değerli. Ancak projenin gerçek bir başarı sayılabilmesi için özgün mimari ayrıntıların korunması ve yapının yalnız ticari işletmelere ayrılmaması gerekir.</p>
+    <h2>Yazarın projeye yönelik tutumu aşağıdakilerden hangisidir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Projeyi olumlu bulmakla birlikte başarısını koruma koşullarına bağlayan temkinli bir tutum</li>
+    <li><span class="letter">B</span>Projeyi hiçbir çekince taşımadan bütünüyle öven bir tutum</li>
+    <li><span class="letter">C</span>Yapının yeniden kullanılmasına bütünüyle karşı çıkan bir tutum</li>
+    <li><span class="letter">D</span>Projeyle ilgili hiçbir değerlendirme içermeyen tarafsız bir tutum</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: A</strong> — Projeyi olumlu bulmakla birlikte başarısını koruma koşullarına bağlayan temkinli bir tutum</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>unconditional-praise</strong>: Yazar projeyi destekliyor fakat başarıyı belirli koruma koşullarına bağlıyor.</li>
+    <li><strong>pure-opposition</strong>: Metin yeniden kullanımı sevindirici buluyor; yalnız uygulamanın niteliğine dikkat çekiyor.</li>
+    <li><strong>neutral-reporting</strong>: “Sevindirici” ve “başarı sayılabilmesi” ifadeleri açık değerlendirme içerir.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Metindeki olumlu yargı bildiren sözcükleri işaretle.</li><li>2. “Ancak”, “başarı sayılabilmesi için” gibi sınırlama bildiren bölümlere bak.</li><li>3. Seçenek hem memnuniyeti hem de çekinceyi taşıyor mu?</li></ol>
+      <p class="ids"><code>cx:v2:9344c3</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#7</span><code>reading-contrast-relation-v2</code><span>contrast</span></div>
+    <p class="context">Kıyıkent&#039;te trafik sıkışıklığına çözüm olarak bazı uzmanlar ana yolların genişletilmesini öneriyor. Bu yöntem ilk aylarda akışı rahatlatabilse de yeni araç kullanımını teşvik ederek yoğunluğu yeniden artırabiliyor. Buna karşılık toplu taşıma sıklığını ve güvenli yaya bağlantılarını artırmak, yol kapasitesini büyütmeden özel araç bağımlılığını azaltmayı hedefliyor.</p>
+    <h2>Parçada iki yaklaşım arasındaki temel karşıtlık nasıl kurulmuştur?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Yol genişletme ucuz, toplu taşıma ise pahalı olduğu için iki yaklaşım birbirine karşıttır.</li>
+    <li><span class="letter">B</span>Yol genişletme kısa süreli rahatlama sağlayabilirken toplu taşıma ve yaya bağlantıları araç talebini azaltmaya yönelir.</li>
+    <li><span class="letter">C</span>Toplu taşıma yalnız kısa süreli rahatlama sağlarken yol genişletme araç bağımlılığını kalıcı olarak azaltır.</li>
+    <li><span class="letter">D</span>Her iki yaklaşım da yalnız mevcut yolların kapasitesini artırmayı amaçlar.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: B</strong> — Yol genişletme kısa süreli rahatlama sağlayabilirken toplu taşıma ve yaya bağlantıları araç talebini azaltmaya yönelir.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>change-comparison-dimension</strong>: Parçada maliyet karşılaştırması yapılmıyor; trafik etkisinin süresi ve araç bağımlılığı tartışılıyor.</li>
+    <li><strong>reverse-contrast-direction</strong>: Metin kalıcı etkiyi yol genişletmeye değil, araç bağımlılığını azaltan yaklaşıma bağlar.</li>
+    <li><strong>erase-contrast</strong>: “Buna karşılık” bağlacı iki farklı çözüm mantığını açıkça ayırır.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. “Buna karşılık” bağlacının iki yanında hangi çözümler bulunuyor?</li><li>2. İki yaklaşımın kısa ve uzun vadeli etkilerini ayrı yaz.</li><li>3. Seçenekte hangi yaklaşımın kısa, hangisinin uzun vadeli sayıldığı doğru mu?</li></ol>
+      <p class="ids"><code>cx:v2:prs3n6</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#8</span><code>reading-paragraph-function-v2</code><span>paragraph-function</span></div>
+    <p class="context">Kent Belleği Müzesi&#039;nde yapılan gözlemler, ziyaretçilerin birçok eserin etiketine yalnız birkaç saniye baktığını gösterdi. Çıkış görüşmelerinde ziyaretçilerin önemli bir bölümü eserlerin bağlamına ilişkin temel bilgileri hatırlayamadı.<br><br>Bunun üzerine bazı salonlarda, etiketlerin yanına cevabı metinde bulunan kısa sorular eklendi. 6 haftalık denemede bu kartları kullanan ziyaretçilerin etiketlerin önünde daha uzun kaldığı ve çıkış sorularına daha ayrıntılı cevap verdiği görüldü.</p>
+    <h2>İkinci paragrafın metnin bütünündeki işlevi nedir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Müze konusundan bağımsız bir eğitim uygulaması örneği vermek</li>
+    <li><span class="letter">B</span>Müzenin kuruluş sürecine ilişkin tarihsel arka plan sunmak</li>
+    <li><span class="letter">C</span>İlk paragrafta belirtilen soruna yönelik bir çözüm denemesini ve sonucunu sunmak</li>
+    <li><span class="letter">D</span>Ziyaretçilerin etiketleri okumama sorununu aynı biçimde yeniden açıklamak</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: C</strong> — İlk paragrafta belirtilen soruna yönelik bir çözüm denemesini ve sonucunu sunmak</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>unrelated-example-function</strong>: Kart uygulaması doğrudan etiketlerin okunmaması sorununa karşı geliştirilmiştir.</li>
+    <li><strong>historical-background-function</strong>: İkinci paragraf geçmiş bilgi vermiyor; güncel bir deneme ve sonucunu açıklıyor.</li>
+    <li><strong>repeat-problem-as-function</strong>: Sorun ilk paragraftadır; ikinci paragraf uygulama ve sonuç getirir.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Birinci paragraf hangi eksikliği veya sorunu görünür kılıyor?</li><li>2. İkinci paragraf yalnız örnek mi veriyor, yoksa soruna yönelik bir uygulama ve sonuç mu sunuyor?</li><li>3. İkinci paragraf çıkarıldığında metindeki hangi problem–çözüm bağlantısı kaybolur?</li></ol>
+      <p class="ids"><code>cx:v2:5l24sg</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#9</span><code>reading-necessary-assumption-v2</code><span>assumption</span></div>
+    <p class="context">Çınarlı&#039;ya 12 ücretsiz su dolum istasyonu yerleştirildikten sonraki üç ayda, istasyonların yakınındaki büfelerde tek kullanımlık su şişesi satışı önceki yılın aynı dönemine göre yüzde 18 azaldı. Belediye bu veriye dayanarak istasyonların bölgede tek kullanımlık plastik tüketimini azalttığını açıkladı.</p>
+    <h2>Belediyenin çıkarımının geçerli olabilmesi için aşağıdakilerden hangisinin varsayılması gerekir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Bölge sakinlerinin çoğu çevreyi korumayı önemli bulmaktadır.</li>
+    <li><span class="letter">B</span>Büfelerdeki şişe satışı yüzde 18 azalmıştır.</li>
+    <li><span class="letter">C</span>Dolum istasyonlarının tamamı aynı renkte tasarlanmıştır.</li>
+    <li><span class="letter">D</span>Yakındaki büfelerin şişe satışları, bölgede kullanılan tek kullanımlık su şişesi miktarını anlamlı ölçüde yansıtmaktadır.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: D</strong> — Yakındaki büfelerin şişe satışları, bölgede kullanılan tek kullanımlık su şişesi miktarını anlamlı ölçüde yansıtmaktadır.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>desirable-but-not-necessary</strong>: Bir varsayım yalnız yararlı değil zorunlu olmalıdır; yanlış olduğunda çıkarım çökmelidir.</li>
+    <li><strong>repeat-explicit-evidence</strong>: Satış düşüşü zaten metinde verilmiştir; soru kanıt ile sonuç arasındaki eksik bağlantıyı sorar.</li>
+    <li><strong>irrelevant-operational-detail</strong>: İstasyonların rengi veya tasarımı, satış verisinin plastik tüketimini temsil edip etmediğini belirlemez.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Metindeki ölçülen veri ile ulaşılan genel sonuç aynı şeyi mi ifade ediyor?</li><li>2. Büfe satışı, hangi görünmeyen davranışın göstergesi olarak kullanılıyor?</li><li>3. Seçenekteki varsayım yanlış olsaydı sonuç yine kurulabilir miydi?</li></ol>
+      <p class="ids"><code>cx:v2:et8gkl</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#10</span><code>reading-causal-boundary-v2</code><span>causal-boundary</span></div>
+    <p class="context">240 lise öğrencisinin bir ay boyunca uyku süreleri ve matematik sınav puanları kaydedildi. Geceleri ortalama en az 8 saat uyuyan öğrencilerin sınav puanı ortalaması, daha az uyuyanlarınkinden yüksekti. Öğrenciler gruplara rastgele atanmadı; çalışma süresi, sağlık durumu ve aile düzeni gibi etkenler ölçülmedi.</p>
+    <h2>Bu araştırmaya dayanarak aşağıdakilerden hangisi söylenebilir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>İncelenen öğrencilerde daha uzun uyku ile daha yüksek matematik puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.</li>
+    <li><span class="letter">B</span>Her gece en az 8 saat uyumak matematik başarısını kesin olarak yükseltir.</li>
+    <li><span class="letter">C</span>Yüksek matematik puanı öğrencilerin daha uzun uyumasına kesin olarak neden olur.</li>
+    <li><span class="letter">D</span>Uyku süresi ile matematik puanı arasında hiçbir ilişki yoktur.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: A</strong> — İncelenen öğrencilerde daha uzun uyku ile daha yüksek matematik puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>correlation-means-cause</strong>: Gözlemsel veri ilişki gösterir; diğer etkenler dışlanmadan kesin neden göstermez.</li>
+    <li><strong>reverse-causality-certainty</strong>: Yüksek puanın daha uzun uykuya neden olduğu da bu araştırmayla kanıtlanmış değildir.</li>
+    <li><strong>deny-observed-relation</strong>: Nedensellik ayrı bir iddiadır; gruplar arasındaki ortalama puan farkı gözlenmiştir.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. Araştırmacılar değişkeni atadı mı, yoksa yalnız mevcut davranışı mı gözledi?</li><li>2. Metnin doğrudan gösterdiği iki değişken arasındaki ilişkiyi yaz.</li><li>3. İlişkiyi kabul eden fakat “kesin neden” demeyen seçeneği ara.</li></ol>
+      <p class="ids"><code>cx:v2:1520gd9</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#11</span><code>reading-cross-text-relation-v2</code><span>cross-text</span></div>
+    <p class="context">I. Metin: Derin dikkat gerektiren rapor ve analiz işleri, kesintilerin az olduğu ev ortamında daha verimli yürütülebiliyor. Bu nedenle çalışanlara haftada 2 gün uzaktan çalışma olanağı tanıyan karma düzen, bireysel odaklanmayı güçlendirebilir.<br><br>II. Metin: Yeni fikirlerin çoğu planlanmamış kısa konuşmalarda ve aynı masada yapılan hızlı denemelerde gelişiyor. Bu yüzden uzaktan çalışma bütünüyle kaldırılmasa bile ekiplerin belirli günlerde aynı ortamda bulunması yaratıcı iş birliği için önemlidir.</p>
+    <h2>Bu iki metnin görüşleri arasındaki ilişki aşağıdakilerden hangisidir?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Birinci metin yüz yüze etkileşimi, ikinci metin evde bireysel odaklanmayı temel gerekçe yapar.</li>
+    <li><span class="letter">B</span>İki metin de karma çalışma düzenini kabul eder; birincisi bireysel odaklanmayı, ikincisi yüz yüze etkileşimi öne çıkarır.</li>
+    <li><span class="letter">C</span>Birinci metin uzaktan çalışmayı bütünüyle savunurken ikinci metin uzaktan çalışmaya bütünüyle karşı çıkar.</li>
+    <li><span class="letter">D</span>İki metin de karma düzeni yalnız çalışanların bireysel olarak daha iyi odaklanması için savunur.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: B</strong> — İki metin de karma çalışma düzenini kabul eder; birincisi bireysel odaklanmayı, ikincisi yüz yüze etkileşimi öne çıkarır.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>reverse-emphasis</strong>: Odaklanma vurgusu birinci, yüz yüze etkileşim vurgusu ikinci metne aittir.</li>
+    <li><strong>false-total-opposition</strong>: İki metin de karma düzeni kabul eder; ayrılık düzenin gerekçesi ve ağırlığındadır.</li>
+    <li><strong>false-total-agreement</strong>: Birinci metin odaklanmayı, ikinci metin spontane ekip etkileşimini temel alır.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. İki metnin önerisini ayrı ayrı birer cümleyle yaz.</li><li>2. Metinler tamamen zıt mı, yoksa aynı düzenin farklı yararlarını mı vurguluyor?</li><li>3. Seçenek hem ortak noktayı hem de vurgu farkını içeriyor mu?</li></ol>
+      <p class="ids"><code>cx:v2:o74joq</code></p>
+    </details>
+  </article>
+<article class="card">
+    <div class="meta"><span>#12</span><code>reading-strongest-evidence-v2</code><span>evidence-strength</span></div>
+    <p class="context">Bilim Ortaokulu, bahçenin bir bölümüne yerli çiçeklerden oluşan bir alan kurdu ve bu düzenlemenin arı ile kelebek ziyaretlerini artırdığını ileri sürdü.</p>
+    <h2>Aşağıdaki bilgilerden hangisi bu iddiayı en güçlü biçimde destekler?</h2>
+    <ol class="choices">
+    <li><span class="letter">A</span>Çiçeklerin açtığı gün bahçede üç arının göründüğü bir fotoğraf çekilmiştir.</li>
+    <li><span class="letter">B</span>Tohumları satan firmanın broşüründe yerli çiçeklerin tozlayıcıları çektiği yazmaktadır.</li>
+    <li><span class="letter">C</span>Çiçek alanı kurulmadan önce ve sonra 10 hafta yapılan standart sayımlarda ziyaretler artmış, değişiklik yapılmayan benzer bahçe bölümünde aynı artış görülmemiştir.</li>
+    <li><span class="letter">D</span>Bir öğrenci, geçen hafta bahçede her zamankinden daha çok kelebek gördüğünü söylemiştir.</li></ol>
+    <details>
+      <summary>Cevap ve mühendislik kanıtını göster</summary>
+      <p class="answer"><strong>Doğru cevap: C</strong> — Çiçek alanı kurulmadan önce ve sonra 10 hafta yapılan standart sayımlarda ziyaretler artmış, değişiklik yapılmayan benzer bahçe bölümünde aynı artış görülmemiştir.</p>
+      <h3>Çeldirici hata yolları</h3><ul>
+    <li><strong>single-photo-as-proof</strong>: Tek fotoğraf değişimi göstermez; önceki durum ve karşılaştırma alanı gerekir.</li>
+    <li><strong>interested-source-as-proof</strong>: Çıkarı bulunan kaynağın genel iddiası, yerel ve kontrollü ölçümden daha zayıftır.</li>
+    <li><strong>anecdote-as-strongest-evidence</strong>: Tek kişinin gözlemi seçici olabilir; tekrarlı ve karşılaştırmalı sayım daha güçlüdür.</li></ul>
+      <h3>İpucu grafı</h3><ol><li>1. İddiayı doğrulamak için hangi değişimin doğrudan sayılması gerekir?</li><li>2. Hangi seçenek ölçüm, karşılaştırma ve tekrar içeriyor?</li><li>3. Görüş ile ölçümü; tek gözlem ile tekrarlı karşılaştırmayı ayır.</li></ol>
+      <p class="ids"><code>cx:v2:syz2bv</code></p>
+    </details>
+  </article></main></body></html>

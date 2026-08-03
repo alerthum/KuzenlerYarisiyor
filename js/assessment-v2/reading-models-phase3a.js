@@ -67,12 +67,12 @@ export const supportedInferenceModel = defineReadingEvidenceModel({
   createTask: ({ library = 'Kavaklı Halk Kütüphanesi', weeks = 4 } = {}) => {
     const supported = proposition({ subject: 'extended-hours', predicate: 'may-support', object: 'evening-study-use', relation: 'association', modality: 'possible', quantifier: 'some', scope: [library, 'exam-month'] });
     return {
-      passage: `${library}, sınav ayı boyunca kapanış saatini ${weeks} hafta süreyle iki saat ileri aldı. Bu dönemde akşam girişleri önceki aya göre arttı. Ankete katılan bazı öğrenciler sessiz çalışma olanağı nedeniyle daha sık geldiklerini söyledi; öğrencilerin sınav notları ise araştırılmadı.`,
+      passage: `${library}, sınav ayı boyunca ${weeks} hafta süreyle kapanış saatini iki saat geciktirdi. Bu dönemde akşam girişleri önceki aya göre arttı. Ankete katılan bazı öğrenciler sessiz çalışma olanağı nedeniyle daha sık geldiklerini söyledi; öğrencilerin sınav notları ise araştırılmadı.`,
       prompt: 'Bu parçadan aşağıdakilerden hangisi çıkarılabilir?',
       query: { type: 'supported-inference' },
       evidenceMap: { claims: [{ id: 'c1', centrality: 'central', proposition: supported }] },
       options: [
-        option('a', 'correct', 'Uzatılan saatler, bu kütüphanede sınav ayındaki akşam çalışma kullanımını bazı öğrenciler için desteklemiş olabilir.', { claimId: 'c1', proposition: supported }),
+        option('a', 'correct', 'Uzatılan saatler, bazı öğrencilerin bu kütüphaneyi sınav ayında akşamları daha sık kullanmasına katkı sağlamış olabilir.', { claimId: 'c1', proposition: supported }),
         option('b', 'causation', 'Kapanış saatinin uzatılması öğrencilerin sınav başarısını kesin olarak yükseltmiştir.', { claimId: 'c1', proposition: proposition({ ...supported, predicate: 'raises', object: 'exam-success', relation: 'cause', modality: 'certain', quantifier: 'all' }) }),
         option('c', 'denial', 'Saatlerin uzatılmasının öğrencilerin kütüphane kullanımına hiçbir etkisi olmamıştır.', { claimId: 'c1', proposition: proposition({ ...supported, polarity: 'negative', modality: 'certain' }) }),
         option('d', 'overgeneralized', 'Kapanış saatini uzatan bütün kütüphanelerde tüm öğrencilerin akşam kullanımı artar.', { claimId: 'c1', proposition: proposition({ ...supported, modality: 'certain', quantifier: 'all', scope: ['all-libraries', 'all-times'] }) })

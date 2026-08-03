@@ -41,6 +41,8 @@ const report = {
   automatedAcceptance: remainingModelCount === 0 && allCurrentModelsPass ? 'PASS' : 'IN_PROGRESS',
   independentEvidenceVerifier: 'PASS_FOR_MATERIALIZED_MODELS',
   humanSampleStatus: 'NOT_MEASURED',
+  firstHumanReviewStatus: remainingModelCount === 0 && allCurrentModelsPass ? 'READY' : 'NOT_READY',
+  reviewPack: remainingModelCount === 0 && allCurrentModelsPass ? 'quality-reports/assessment-engine-v2-phase3-first-review.html' : null,
   legacyContentPolicy: 'UNVERIFIED_LEGACY',
   coveredIdeas: PHASE3_READING_IDEAS,
   items,

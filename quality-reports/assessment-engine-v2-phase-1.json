@@ -1,15 +1,15 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:17:00.521Z",
+  "generatedAt": "2026-08-03T08:55:38.766Z",
   "status": "PHASE_1_PASS",
   "productReady": false,
   "scope": "Assessment Engine V2 contracts and three cross-domain proof models",
   "inventory": {
     "schemaVersion": "2.0",
-    "modelCount": 14,
+    "modelCount": 26,
     "domains": {
       "mathematics": 12,
-      "reading": 1,
+      "reading": 13,
       "logic": 1
     },
     "verifiedPremiumPolicy": "ONLY_ASSESSMENT_V2_MODELS",
@@ -394,6 +394,342 @@
         "force-all-original-variables-equal",
         "drop-squared-factor",
         "allocate-three-shares-to-squared-variable"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-main-idea-coverage-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-main-idea-coverage",
+      "knowledgeComponents": [
+        "central-claim",
+        "detail-vs-main-idea",
+        "scope-control"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:13di901",
+      "cognitiveExperienceId": "cx:v2:1lwz3b5",
+      "correctAnswer": "Ağaç gölgesi sıcak yüzeyleri serinletebilir; ancak ağaçlandırma yerel su ve toprak koşullarına göre planlanmalıdır.",
+      "misconceptionIds": [
+        "detail-as-main-idea",
+        "overgeneralized-main-idea",
+        "one-sided-summary"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-supported-inference-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-supported-inference",
+      "knowledgeComponents": [
+        "textual-entailment",
+        "modality-control",
+        "sample-scope"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:df15fw",
+      "cognitiveExperienceId": "cx:v2:19lz5fu",
+      "correctAnswer": "Uzatılan saatler, bazı öğrencilerin bu kütüphaneyi sınav ayında akşamları daha sık kullanmasına katkı sağlamış olabilir.",
+      "misconceptionIds": [
+        "association-to-certain-success",
+        "reject-observed-association",
+        "expand-to-all-libraries"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-claim-evidence-match-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-claim-evidence-match",
+      "knowledgeComponents": [
+        "claim-identification",
+        "evidence-relevance",
+        "support-link"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:1woupal",
+      "cognitiveExperienceId": "cx:v2:ssz7mw",
+      "correctAnswer": "İddia: Akgöl önemli bir göç durağıdır. Kanıt: İzlenen kuşlardan 8 tanesi burada durmuş ve bölgede besin yoğunluğu yüksek bulunmuştur.",
+      "misconceptionIds": [
+        "topic-overlap-as-evidence",
+        "historical-detail-as-proof",
+        "reverse-support-link"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-scope-certainty-control-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-scope-certainty-control",
+      "knowledgeComponents": [
+        "quantifier-strength",
+        "time-scope",
+        "causal-limitation"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:1tp7dcu",
+      "cognitiveExperienceId": "cx:v2:hbxeyu",
+      "correctAnswer": "Aralıklı tekrar, bu okuldaki dokuzuncu sınıf öğrencilerinin 2 hafta sonraki hatırlamasını artırmış olabilir.",
+      "misconceptionIds": [
+        "universalize-single-school",
+        "temporary-to-permanent",
+        "single-cause-certainty"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-author-purpose-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-author-purpose",
+      "knowledgeComponents": [
+        "communicative-purpose",
+        "evidence-purpose-alignment",
+        "call-to-action"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:1ussvyw",
+      "cognitiveExperienceId": "cx:v2:1t8xvt6",
+      "correctAnswer": "Yerel tohum arşivinin önemini açıklamak ve okurları çeşitlerin korunmasına katkı vermeye yöneltmek",
+      "misconceptionIds": [
+        "information-only-purpose",
+        "entertainment-purpose",
+        "criticism-purpose"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-author-attitude-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-author-attitude",
+      "knowledgeComponents": [
+        "evaluative-language",
+        "mixed-attitude",
+        "certainty-tone"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:b51lqh",
+      "cognitiveExperienceId": "cx:v2:9344c3",
+      "correctAnswer": "Projeyi olumlu bulmakla birlikte başarısını koruma koşullarına bağlayan temkinli bir tutum",
+      "misconceptionIds": [
+        "unconditional-praise",
+        "pure-opposition",
+        "neutral-reporting"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-contrast-relation-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-contrast-relation",
+      "knowledgeComponents": [
+        "contrast-marker",
+        "compared-dimensions",
+        "relation-direction"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:v1ayrc",
+      "cognitiveExperienceId": "cx:v2:prs3n6",
+      "correctAnswer": "Yol genişletme kısa süreli rahatlama sağlayabilirken toplu taşıma ve yaya bağlantıları araç talebini azaltmaya yönelir.",
+      "misconceptionIds": [
+        "reverse-contrast-direction",
+        "erase-contrast",
+        "change-comparison-dimension"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-paragraph-function-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-paragraph-function",
+      "knowledgeComponents": [
+        "text-organization",
+        "problem-solution",
+        "paragraph-role"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:4co0ga",
+      "cognitiveExperienceId": "cx:v2:5l24sg",
+      "correctAnswer": "İlk paragrafta belirtilen soruna yönelik bir çözüm denemesini ve sonucunu sunmak",
+      "misconceptionIds": [
+        "repeat-problem-as-function",
+        "unrelated-example-function",
+        "historical-background-function"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-necessary-assumption-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-necessary-assumption",
+      "knowledgeComponents": [
+        "claim-premise-gap",
+        "necessary-assumption",
+        "alternative-explanation"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:okm2y7",
+      "cognitiveExperienceId": "cx:v2:et8gkl",
+      "correctAnswer": "Yakındaki büfelerin şişe satışları, bölgede kullanılan tek kullanımlık su şişesi miktarını anlamlı ölçüde yansıtmaktadır.",
+      "misconceptionIds": [
+        "desirable-but-not-necessary",
+        "repeat-explicit-evidence",
+        "irrelevant-operational-detail"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-causal-boundary-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-causal-boundary",
+      "knowledgeComponents": [
+        "association-vs-causation",
+        "confounding-variable",
+        "directionality"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:ez9jzr",
+      "cognitiveExperienceId": "cx:v2:1520gd9",
+      "correctAnswer": "İncelenen öğrencilerde daha uzun uyku ile daha yüksek matematik puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.",
+      "misconceptionIds": [
+        "correlation-means-cause",
+        "reverse-causality-certainty",
+        "deny-observed-relation"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-cross-text-relation-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-cross-text-relation",
+      "knowledgeComponents": [
+        "cross-text-claim-map",
+        "partial-agreement",
+        "emphasis-difference"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:oraa5m",
+      "cognitiveExperienceId": "cx:v2:o74joq",
+      "correctAnswer": "İki metin de karma çalışma düzenini kabul eder; birincisi bireysel odaklanmayı, ikincisi yüz yüze etkileşimi öne çıkarır.",
+      "misconceptionIds": [
+        "false-total-opposition",
+        "false-total-agreement",
+        "reverse-emphasis"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "reading-strongest-evidence-v2",
+      "domain": "reading",
+      "constructId": "construct-reading-strongest-evidence",
+      "knowledgeComponents": [
+        "evidence-directness",
+        "source-reliability",
+        "controlled-comparison"
+      ],
+      "compatibleGameIds": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "structuralId": "st:v2:hzsro4",
+      "cognitiveExperienceId": "cx:v2:syz2bv",
+      "correctAnswer": "Çiçek alanı kurulmadan önce ve sonra 10 hafta yapılan standart sayımlarda ziyaretler artmış, değişiklik yapılmayan benzer bahçe bölümünde aynı artış görülmemiştir.",
+      "misconceptionIds": [
+        "anecdote-as-strongest-evidence",
+        "single-photo-as-proof",
+        "interested-source-as-proof"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
