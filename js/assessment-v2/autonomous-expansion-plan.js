@@ -16,7 +16,7 @@ export function buildAssessmentV2AutonomousExpansionPlan(portfolio=ASSESSMENT_V2
   }));
   const backlog=Object.freeze([
     Object.freeze({order:1,id:'review-g8-math',kind:'HUMAN_REVIEW',scope:'8. sınıf Matematik 52 görev',reason:'Mühendislik kapsamı tamamlandı; etkileşim ve soru kalitesi insan onayı bekliyor.',count:52}),
-    Object.freeze({order:2,id:'complete-g8-science',kind:'CONTENT_EXPANSION',scope:'8. sınıf Fen Bilimleri',reason:'61 kazanımdan 33’ü görevle kapsandı.',count:28}),
+    Object.freeze({order:2,id:'review-g8-science',kind:'HUMAN_REVIEW',scope:'8. sınıf Fen Bilimleri 61 görev',reason:'Mühendislik kapsamı tamamlandı; deney, model ve tasarım görevleri insan onayı bekliyor.',count:61}),
     Object.freeze({order:3,id:'complete-g5-turkish',kind:'CONTENT_EXPANSION',scope:'5. sınıf Türkçe',reason:'100 çıktıdan 25’i görevle kapsandı.',count:75}),
     Object.freeze({order:4,id:'complete-g8-turkish',kind:'CONTENT_EXPANSION',scope:'8. sınıf Türkçe',reason:'76 kazanımdan 31’i görevle kapsandı.',count:45}),
     Object.freeze({order:5,id:'open-lgs-engines',kind:'NEW_ENGINE',scope:'8. sınıf İnkılap Tarihi, Din Kültürü ve İngilizce',reason:'LGS ders motorlarının tamamı açılmalı.',count:3}),
@@ -32,9 +32,9 @@ export function buildAssessmentV2AutonomousExpansionPlan(portfolio=ASSESSMENT_V2
 export function auditAssessmentV2AutonomousExpansionPlan(plan=buildAssessmentV2AutonomousExpansionPlan()){
   const errors=[];
   if(plan.metrics.activeEngineCount!==4)errors.push('active-engine-count');
-  if(plan.metrics.engineeringScopeCompleteEngineCount!==1)errors.push(`scope-complete:${plan.metrics.engineeringScopeCompleteEngineCount}`);
-  if(plan.metrics.remainingOutcomeCount!==148)errors.push(`remaining-outcomes:${plan.metrics.remainingOutcomeCount}`);
-  if(plan.metrics.humanReviewQueueCount!==156)errors.push(`review-queue:${plan.metrics.humanReviewQueueCount}`);
+  if(plan.metrics.engineeringScopeCompleteEngineCount!==2)errors.push(`scope-complete:${plan.metrics.engineeringScopeCompleteEngineCount}`);
+  if(plan.metrics.remainingOutcomeCount!==120)errors.push(`remaining-outcomes:${plan.metrics.remainingOutcomeCount}`);
+  if(plan.metrics.humanReviewQueueCount!==184)errors.push(`review-queue:${plan.metrics.humanReviewQueueCount}`);
   if(plan.metrics.unopenedCourseCellCount!==108)errors.push(`unopened-cells:${plan.metrics.unopenedCourseCellCount}`);
   if(plan.gameAdaptationAllowed!==false||plan.productReady!==false)errors.push('release-leak');
   if(plan.backlog.some((row,index)=>row.order!==index+1))errors.push('backlog-order');

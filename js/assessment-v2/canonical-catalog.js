@@ -7,6 +7,7 @@ import { buildGrade8MathWave1Questions } from './math-g8-wave1.js';
 import { buildGrade8MathCompletionQuestions } from './math-g8-completion-waves.js';
 import { buildGrade8ScienceCrossPilotQuestions } from './science-g8-cross-pilot.js';
 import { buildGrade8ScienceBroadWaveQuestions } from './science-g8-wave1-broad.js';
+import { buildGrade8ScienceCompletionQuestions } from './science-g8-completion-wave.js';
 import { buildGrade5TurkishCrossPilotQuestions } from './turkish-g5-cross-pilot.js';
 import { buildGrade5TurkishBroadWaveQuestions } from './turkish-g5-broad-wave.js';
 
@@ -23,6 +24,7 @@ export function buildAssessmentV2CanonicalCatalog(){
     ...buildGrade8MathCompletionQuestions(),
     ...buildGrade8ScienceCrossPilotQuestions(),
     ...buildGrade8ScienceBroadWaveQuestions(),
+    ...buildGrade8ScienceCompletionQuestions(),
     ...buildGrade5TurkishCrossPilotQuestions(),
     ...buildGrade5TurkishBroadWaveQuestions()
   ]);
@@ -30,7 +32,7 @@ export function buildAssessmentV2CanonicalCatalog(){
 
 export function auditAssessmentV2CanonicalCatalog(items=buildAssessmentV2CanonicalCatalog()){
   const errors=[];
-  if(items.length!==161)errors.push(`item-count:${items.length}`);
+  if(items.length!==189)errors.push(`item-count:${items.length}`);
   if(new Set(items.map(item=>item.id)).size!==items.length)errors.push('duplicate-item-id');
   for(const item of items){
     if(!item.curriculum?.grade||!item.curriculum?.courseId)errors.push(`${item.id}:curriculum`);

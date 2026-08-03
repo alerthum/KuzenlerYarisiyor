@@ -1,9 +1,10 @@
 import { GRADE8_SCIENCE_OUTCOMES_2018 } from '../curriculum/outcomes/tr-g8-fen-2018.js';
 import { buildGrade8ScienceCrossPilotQuestions } from './science-g8-cross-pilot.js';
 import { buildGrade8ScienceBroadWaveQuestions, GRADE8_SCIENCE_BROAD_WAVE_OUTCOME_CODES } from './science-g8-wave1-broad.js';
+import { buildGrade8ScienceCompletionQuestions, GRADE8_SCIENCE_COMPLETION_OUTCOME_CODES } from './science-g8-completion-wave.js';
 
 export const GRADE8_SCIENCE_CROSS_PILOT_OUTCOME_CODES = Object.freeze(['F.8.1.1.1','F.8.2.2.2','F.8.3.1.1','F.8.4.5.3','F.8.5.1.1']);
-const IMPLEMENTED = new Set([...GRADE8_SCIENCE_CROSS_PILOT_OUTCOME_CODES,...GRADE8_SCIENCE_BROAD_WAVE_OUTCOME_CODES]);
+const IMPLEMENTED = new Set([...GRADE8_SCIENCE_CROSS_PILOT_OUTCOME_CODES,...GRADE8_SCIENCE_BROAD_WAVE_OUTCOME_CODES,...GRADE8_SCIENCE_COMPLETION_OUTCOME_CODES]);
 
 function isPerformance(text){return /(tasarlar|tartışır|özen gösterir|araştırır|öneriler sunar|fikirler üretir|tahminde bulunur)/i.test(text);}
 function requiresExperiment(text){return /(deney|gözlem|model üzerinde|şema üzerinde|grafiğini)/i.test(text);}
@@ -68,7 +69,7 @@ export function auditGrade8ScienceFullScopeMatrix(rows=GRADE8_SCIENCE_FULL_SCOPE
     if(row.gameAdaptationAllowed!==false)errors.push(`${row.outcomeCode}:game-open`);
   }
   const implementedOutcomeCount=rows.filter(r=>r.implementedItemCount>0).length;
-  const implementedItemCount=buildGrade8ScienceCrossPilotQuestions().length+buildGrade8ScienceBroadWaveQuestions().length;
+  const implementedItemCount=buildGrade8ScienceCrossPilotQuestions().length+buildGrade8ScienceBroadWaveQuestions().length+buildGrade8ScienceCompletionQuestions().length;
   return Object.freeze({ok:errors.length===0,errors:Object.freeze(errors),metrics:Object.freeze({officialOutcomeCount:rows.length,implementedOutcomeCount,implementedItemCount,uncoveredOutcomeCount:rows.length-implementedOutcomeCount,humanRubricOutcomeCount:rows.filter(r=>r.requiresHumanScoring).length,visualExperimentOutcomeCount:rows.filter(r=>r.requiresVisual).length,productReady:false,humanReviewStatus:'NOT_MEASURED',gameAdaptationAllowed:false})});
 }
 

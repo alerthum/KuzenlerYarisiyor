@@ -17,6 +17,7 @@ import { buildGrade8MathWave1Questions } from './math-g8-wave1.js';
 import { buildGrade8MathCompletionQuestions } from './math-g8-completion-waves.js';
 import { buildGrade8ScienceCrossPilotQuestions } from './science-g8-cross-pilot.js';
 import { buildGrade8ScienceBroadWaveQuestions } from './science-g8-wave1-broad.js';
+import { buildGrade8ScienceCompletionQuestions } from './science-g8-completion-wave.js';
 import { buildGrade5TurkishCrossPilotQuestions } from './turkish-g5-cross-pilot.js';
 import { buildGrade5TurkishBroadWaveQuestions } from './turkish-g5-broad-wave.js';
 import { GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS } from './turkish-g8-human-review-registry.js';
@@ -44,14 +45,14 @@ function engineRow(input){
 export function buildAssessmentV2ProductionPortfolio(){
   const grade8TurkishItems=[...buildGrade8TurkishPilot01Questions(),...buildGrade8TurkishPilot02CalibrationQuestions(),...buildGrade8TurkishReadingLanguageWave1Questions(),...buildGrade8TurkishVisualGrammarWave2Questions()];
   const grade8MathItems=[...buildGrade8MathCrossPilotQuestions(),...buildGrade8MathWave1Questions(),...buildGrade8MathCompletionQuestions()];
-  const grade8ScienceItems=[...buildGrade8ScienceCrossPilotQuestions(),...buildGrade8ScienceBroadWaveQuestions()];
+  const grade8ScienceItems=[...buildGrade8ScienceCrossPilotQuestions(),...buildGrade8ScienceBroadWaveQuestions(),...buildGrade8ScienceCompletionQuestions()];
   const grade5TurkishItems=[...buildGrade5TurkishCrossPilotQuestions(),...buildGrade5TurkishBroadWaveQuestions()];
   const approvedTurkishIds=GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS.map(row=>row.questionId);
 
   const engines=frozenArray([
     engineRow({id:'tr-g8-turkce-v2',grade:8,courseId:'turkce',courseName:'Türkçe',programFamily:'PRE_TYMM',curriculumStatus:'FULL_SCOPE_INGESTED',officialOutcomeCount:GRADE_8_TURKISH_OUTCOMES_2019.length,ingestedOutcomeCount:GRADE8_TURKISH_FULL_SCOPE_MATRIX.length,coveredOutcomeCount:GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8TurkishItems,approvedQuestionIds:approvedTurkishIds,engineStatus:'EXPANDING',engineType:'semantic-evidence + grammar + visual-reading + performance-rubric',verifierType:'independent semantic/constraint verification',misconceptionCatalog:'tr-g8-turkish-domain-misconceptions',nextAction:'Kalan 45 kazanımı dinleme, konuşma, yazma ve eksik okuma dalgalarıyla kapat.',blockers:['45 kazanım henüz kanonik soru veya performans göreviyle kapsanmadı.','İnsan inceleme kuyruğu tamamlanmadı.']}),
     engineRow({id:'tr-g8-matematik-v2',grade:8,courseId:'matematik',courseName:'Matematik',programFamily:'PRE_TYMM',curriculumStatus:'FULL_SCOPE_INGESTED',officialOutcomeCount:GRADE8_MATH_OUTCOMES_2018.length,ingestedOutcomeCount:GRADE8_MATH_FULL_SCOPE_MATRIX.length,coveredOutcomeCount:GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8MathItems,engineStatus:'ENGINEERING_SCOPE_COMPLETE',engineType:'symbolic/numeric/geometry solver-backed + interactive construction',verifierType:'independent alternate algorithm and invariant checks',misconceptionCatalog:'tr-g8-math-full-scope-misconceptions',nextAction:'52 Matematik görevini insan örneklemiyle kalibre et ve onaylananları oyun adaptasyon laboratuvarına geçir.',blockers:['52 Matematik görevinin insan gözle kalibrasyonu yapılmadı.','Etkileşimli çizim görevlerinin UI bileşenleri henüz bağlanmadı.']}),
-    engineRow({id:'tr-g8-fen-v2',grade:8,courseId:'fen-bilimleri',courseName:'Fen Bilimleri',programFamily:'PRE_TYMM',curriculumStatus:'FULL_SCOPE_INGESTED',officialOutcomeCount:GRADE8_SCIENCE_OUTCOMES_2018.length,ingestedOutcomeCount:GRADE8_SCIENCE_FULL_SCOPE_MATRIX.length,coveredOutcomeCount:GRADE8_SCIENCE_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8ScienceItems,engineStatus:'EXPANDING',engineType:'model/experiment/data reasoning + CER/design rubrics',verifierType:'evidence-constraint + scientific model verification',misconceptionCatalog:'tr-g8-science-full-scope-misconceptions',nextAction:'Kalan 28 Fen kazanımını deney, çevre, kimya ve elektrik dalgalarıyla kapat.',blockers:['28 kazanım henüz görevle kapsanmadı.','33 Fen görevinin insan gözle kalibrasyonu yapılmadı.']}),
+    engineRow({id:'tr-g8-fen-v2',grade:8,courseId:'fen-bilimleri',courseName:'Fen Bilimleri',programFamily:'PRE_TYMM',curriculumStatus:'FULL_SCOPE_INGESTED',officialOutcomeCount:GRADE8_SCIENCE_OUTCOMES_2018.length,ingestedOutcomeCount:GRADE8_SCIENCE_FULL_SCOPE_MATRIX.length,coveredOutcomeCount:GRADE8_SCIENCE_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8ScienceItems,engineStatus:'ENGINEERING_SCOPE_COMPLETE',engineType:'model/experiment/data reasoning + CER/design rubrics',verifierType:'evidence-constraint + scientific model verification',misconceptionCatalog:'tr-g8-science-full-scope-misconceptions',nextAction:'61 Fen görevini insan örneklemiyle kalibre et ve onaylanan deney/tasarım görevlerini etkileşim bileşenlerine bağla.',blockers:['61 Fen görevinin insan gözle kalibrasyonu yapılmadı.','Deney ve tasarım görevlerinin gerçek medya/etkileşim bileşenleri henüz bağlanmadı.']}),
     engineRow({id:'tr-g5-turkce-v2',grade:5,courseId:'turkce',courseName:'Türkçe',programFamily:'TYMM',curriculumStatus:'FULL_SCOPE_INGESTED',officialOutcomeCount:GRADE5_TURKISH_OUTCOMES_TYMM_2024.length,ingestedOutcomeCount:GRADE5_TURKISH_FULL_SCOPE_MATRIX.length,coveredOutcomeCount:GRADE5_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5TurkishItems,engineStatus:'EXPANDING',engineType:'age-calibrated listening/reading evidence + speaking/writing rubrics',verifierType:'independent evidence intersection + rubric consistency',misconceptionCatalog:'tr-g5-turkish-full-scope-misconceptions',nextAction:'Kalan 75 öğrenme çıktısını beceri alanı dalgalarıyla kapat.',blockers:['75 öğrenme çıktısı henüz görevle kapsanmadı.','Ses kayıtları ve performans rubriklerinin insan kalibrasyonu yapılmadı.']})
   ]);
 
@@ -77,10 +78,10 @@ export function buildAssessmentV2ProductionPortfolio(){
       {id:'publication',label:'Yayın',status:'LOCKED',note:'productReady=false.'}
     ]),
     nextMilestones:frozenArray([
-      {order:1,id:'g8-science-completion',title:'8. sınıf Fen kalan 28 kazanım',reason:'Tam matris ve 33 görev hazır; ders kapsamı kapatılmalı.'},
+      {order:1,id:'g8-science-completion',title:'8. sınıf Fen 61 görev insan kalibrasyonu',reason:'Mühendislik kapsamı tamamlandı; deney ve tasarım kalitesi insan onayı bekliyor.'},
       {order:2,id:'g5-turkish-completion',title:'5. sınıf Türkçe kalan 75 çıktı',reason:'Dört beceri alanı tam matriste; yaşa özel görev dalgaları tamamlanmalı.'},
       {order:3,id:'g8-turkish-completion',title:'8. sınıf Türkçe kalan 45 kazanım',reason:'Dinleme, konuşma ve yazma performans görevleri kapatılmalı.'},
-      {order:4,id:'human-review-queue',title:'161 görevlik insan inceleme kuyruğu',reason:'Oyun kilidinin ana bağımlılığı insan kalibrasyonudur.'},
+      {order:4,id:'human-review-queue',title:'189 görevlik insan inceleme kuyruğu',reason:'Oyun kilidinin ana bağımlılığı insan kalibrasyonudur.'},
       {order:5,id:'lgs-other-engines',title:'8. sınıf diğer LGS ders motorları',reason:'İnkılap Tarihi, Din Kültürü ve İngilizce motorları açılmalı.'}
     ])
   });
@@ -92,11 +93,11 @@ export function auditAssessmentV2ProductionPortfolio(portfolio=buildAssessmentV2
   if(portfolio.summary.courseScheduleCellCount!==112)errors.push(`course-cell-count:${portfolio.summary.courseScheduleCellCount}`);
   if(portfolio.engines.length!==4)errors.push(`engine-count:${portfolio.engines.length}`);
   if(new Set(portfolio.engines.map(r=>r.id)).size!==portfolio.engines.length)errors.push('duplicate-engine-id');
-  if(portfolio.summary.canonicalQuestionCount!==161)errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
+  if(portfolio.summary.canonicalQuestionCount!==189)errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
   if(portfolio.summary.curriculumOutcomeRecordCount!==289)errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
-  if(portfolio.summary.coveredOutcomeCount!==141)errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
+  if(portfolio.summary.coveredOutcomeCount!==169)errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
   if(portfolio.summary.humanApprovedQuestionCount!==5)errors.push(`approved-count:${portfolio.summary.humanApprovedQuestionCount}`);
-  if(portfolio.summary.humanReviewQueueCount!==156)errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
+  if(portfolio.summary.humanReviewQueueCount!==184)errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
   if(portfolio.productReady!==false||portfolio.publicationAllowed!==false)errors.push('product-ready-leak');
   if(portfolio.gameAdaptationAllowed!==false||portfolio.summary.gameAdaptedQuestionCount!==0)errors.push('game-adaptation-leak');
   if(portfolio.legacy.count!==604||portfolio.legacy.status!=='UNVERIFIED_LEGACY')errors.push('legacy-policy');

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T21:14:02.857Z",
+  "generatedAt": "2026-08-03T21:22:23.619Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "MULTI_ENGINE_FULL_SCOPE_EXPANSION",
   "productReady": false,
@@ -35,10 +35,10 @@
     "activeEngineCellCount": 4,
     "activeEngineCellPercent": 3.6,
     "curriculumOutcomeRecordCount": 289,
-    "coveredOutcomeCount": 141,
-    "canonicalQuestionCount": 161,
+    "coveredOutcomeCount": 169,
+    "canonicalQuestionCount": 189,
     "humanApprovedQuestionCount": 5,
-    "humanReviewQueueCount": 156,
+    "humanReviewQueueCount": 184,
     "gameAdaptedQuestionCount": 0,
     "legacyQuarantineCount": 604
   },
@@ -168,22 +168,22 @@
       "curriculumStatus": "FULL_SCOPE_INGESTED",
       "officialOutcomeCount": 61,
       "ingestedOutcomeCount": 61,
-      "coveredOutcomeCount": 33,
-      "courseCoveragePercent": 54.1,
+      "coveredOutcomeCount": 61,
+      "courseCoveragePercent": 100,
       "ingestionPercent": 100,
-      "canonicalQuestionCount": 33,
+      "canonicalQuestionCount": 61,
       "humanApprovedQuestionCount": 0,
-      "humanReviewQueueCount": 33,
+      "humanReviewQueueCount": 61,
       "gameAdaptedQuestionCount": 0,
       "gameAdaptationAllowed": false,
-      "engineStatus": "EXPANDING",
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
       "engineType": "model/experiment/data reasoning + CER/design rubrics",
       "verifierType": "evidence-constraint + scientific model verification",
       "misconceptionCatalog": "tr-g8-science-full-scope-misconceptions",
-      "nextAction": "Kalan 28 Fen kazanımını deney, çevre, kimya ve elektrik dalgalarıyla kapat.",
+      "nextAction": "61 Fen görevini insan örneklemiyle kalibre et ve onaylanan deney/tasarım görevlerini etkileşim bileşenlerine bağla.",
       "blockers": [
-        "28 kazanım henüz görevle kapsanmadı.",
-        "33 Fen görevinin insan gözle kalibrasyonu yapılmadı."
+        "61 Fen görevinin insan gözle kalibrasyonu yapılmadı.",
+        "Deney ve tasarım görevlerinin gerçek medya/etkileşim bileşenleri henüz bağlanmadı."
       ]
     },
     {
@@ -231,13 +231,13 @@
       "id": "canonical-content",
       "label": "Kanonik soru/görev",
       "status": "IN_PROGRESS",
-      "note": "161 doğrulanmış mühendislik nesnesi mevcut."
+      "note": "189 doğrulanmış mühendislik nesnesi mevcut."
     },
     {
       "id": "human-review",
       "label": "İnsan kalibrasyonu",
       "status": "BLOCKED",
-      "note": "5 onaylı, 156 inceleme bekliyor."
+      "note": "5 onaylı, 184 inceleme bekliyor."
     },
     {
       "id": "game-adaptation",
@@ -262,8 +262,8 @@
     {
       "order": 1,
       "id": "g8-science-completion",
-      "title": "8. sınıf Fen kalan 28 kazanım",
-      "reason": "Tam matris ve 33 görev hazır; ders kapsamı kapatılmalı."
+      "title": "8. sınıf Fen 61 görev insan kalibrasyonu",
+      "reason": "Mühendislik kapsamı tamamlandı; deney ve tasarım kalitesi insan onayı bekliyor."
     },
     {
       "order": 2,
@@ -280,7 +280,7 @@
     {
       "order": 4,
       "id": "human-review-queue",
-      "title": "161 görevlik insan inceleme kuyruğu",
+      "title": "189 görevlik insan inceleme kuyruğu",
       "reason": "Oyun kilidinin ana bağımlılığı insan kalibrasyonudur."
     },
     {

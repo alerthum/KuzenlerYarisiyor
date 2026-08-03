@@ -1,14 +1,14 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T21:14:02.768Z",
+  "generatedAt": "2026-08-03T21:22:23.515Z",
   "status": "HUMAN_REVIEW_BLOCKING_GAME_ADAPTATION",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
-    "total": 161,
+    "total": 189,
     "approved": 5,
-    "pending": 156,
-    "highComplexityPending": 23
+    "pending": 184,
+    "highComplexityPending": 33
   },
   "rows": [
     {
@@ -1301,6 +1301,236 @@
     },
     {
       "order": 57,
+      "questionId": "science-g8-complete-19-acid-rain-solution",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-4-7"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "acid-rain-solution-design",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 58,
+      "questionId": "science-g8-complete-20-chemistry-industry-history",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-6-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "chemistry-industry-research",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 59,
+      "questionId": "science-g8-complete-21-chemistry-careers",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-6-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "future-chemistry-career-proposal",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 60,
+      "questionId": "science-g8-complete-22-climate-change",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-3-3"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "climate-cause-consequence-evaluation",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 61,
+      "questionId": "science-g8-complete-23-recycling-economy",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-4-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "recycling-economic-solution",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 62,
+      "questionId": "science-g8-complete-24-resource-future",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-4-5"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "resource-future-scenario",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 63,
+      "questionId": "science-g8-complete-25-electrical-model",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-3-2"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "electrical-energy-model-design",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 64,
+      "questionId": "science-g8-complete-26-power-plant-tradeoff",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-3-4"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "power-plant-tradeoff",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 65,
+      "questionId": "science-g8-complete-27-energy-economy",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-3-5"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "energy-saving-economic-discussion",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 66,
+      "questionId": "science-g8-complete-28-home-energy-plan",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-3-6"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "home-energy-action-plan",
+      "difficultyBand": "LGS_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 7,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 67,
       "questionId": "science-g8-cross-01-seasons",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1323,7 +1553,7 @@
       ]
     },
     {
-      "order": 58,
+      "order": 68,
       "questionId": "science-g8-broad-01-climate-weather",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1346,7 +1576,7 @@
       ]
     },
     {
-      "order": 59,
+      "order": 69,
       "questionId": "science-g8-broad-02-climatology",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1369,7 +1599,7 @@
       ]
     },
     {
-      "order": 60,
+      "order": 70,
       "questionId": "science-g8-broad-03-genetic-hierarchy",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1392,7 +1622,7 @@
       ]
     },
     {
-      "order": 61,
+      "order": 71,
       "questionId": "science-g8-broad-04-dna-model",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1415,7 +1645,7 @@
       ]
     },
     {
-      "order": 62,
+      "order": 72,
       "questionId": "science-g8-broad-05-dna-replication",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1438,7 +1668,7 @@
       ]
     },
     {
-      "order": 63,
+      "order": 73,
       "questionId": "science-g8-broad-06-inheritance-concepts",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1461,7 +1691,7 @@
       ]
     },
     {
-      "order": 64,
+      "order": 74,
       "questionId": "science-g8-broad-07-relative-marriage",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1484,7 +1714,7 @@
       ]
     },
     {
-      "order": 65,
+      "order": 75,
       "questionId": "science-g8-broad-08-mutation",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1507,7 +1737,7 @@
       ]
     },
     {
-      "order": 66,
+      "order": 76,
       "questionId": "science-g8-broad-09-modification",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1530,7 +1760,7 @@
       ]
     },
     {
-      "order": 67,
+      "order": 77,
       "questionId": "science-g8-broad-10-mutation-modification",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1553,7 +1783,7 @@
       ]
     },
     {
-      "order": 68,
+      "order": 78,
       "questionId": "science-g8-broad-11-adaptation",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1576,7 +1806,7 @@
       ]
     },
     {
-      "order": 69,
+      "order": 79,
       "questionId": "science-g8-broad-12-biotech-relation",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1599,7 +1829,7 @@
       ]
     },
     {
-      "order": 70,
+      "order": 80,
       "questionId": "science-g8-broad-15-liquid-pressure",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1622,7 +1852,7 @@
       ]
     },
     {
-      "order": 71,
+      "order": 81,
       "questionId": "science-g8-broad-16-pressure-applications",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1645,7 +1875,7 @@
       ]
     },
     {
-      "order": 72,
+      "order": 82,
       "questionId": "science-g8-broad-17-periodic-system",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1668,7 +1898,7 @@
       ]
     },
     {
-      "order": 73,
+      "order": 83,
       "questionId": "science-g8-broad-18-element-classification",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1691,7 +1921,7 @@
       ]
     },
     {
-      "order": 74,
+      "order": 84,
       "questionId": "science-g8-broad-19-physical-chemical",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1714,7 +1944,7 @@
       ]
     },
     {
-      "order": 75,
+      "order": 85,
       "questionId": "science-g8-broad-20-ph-inference",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1737,7 +1967,7 @@
       ]
     },
     {
-      "order": 76,
+      "order": 86,
       "questionId": "science-g8-broad-21-acid-base-safety",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1760,7 +1990,7 @@
       ]
     },
     {
-      "order": 77,
+      "order": 87,
       "questionId": "science-g8-broad-22-heating-variables",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1783,7 +2013,7 @@
       ]
     },
     {
-      "order": 78,
+      "order": 88,
       "questionId": "science-g8-broad-24-food-chain",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1806,7 +2036,7 @@
       ]
     },
     {
-      "order": 79,
+      "order": 89,
       "questionId": "science-g8-broad-25-photosynthesis-factor",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1829,7 +2059,7 @@
       ]
     },
     {
-      "order": 80,
+      "order": 90,
       "questionId": "science-g8-broad-26-charge-interaction",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1852,7 +2082,7 @@
       ]
     },
     {
-      "order": 81,
+      "order": 91,
       "questionId": "science-g8-broad-27-grounding",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1875,7 +2105,421 @@
       ]
     },
     {
-      "order": 82,
+      "order": 92,
+      "questionId": "science-g8-complete-01-compound",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-3-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "compound-formation",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 93,
+      "questionId": "science-g8-complete-02-acid-base-properties",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-4-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "acid-base-property-comparison",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 94,
+      "questionId": "science-g8-complete-03-daily-acid-base",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-4-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "daily-acid-base-examples",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 95,
+      "questionId": "science-g8-complete-04-natural-indicator",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-4-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "natural-indicator-experiment",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 96,
+      "questionId": "science-g8-complete-05-acid-material-effect",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-4-5"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "acid-material-effect-experiment",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 97,
+      "questionId": "science-g8-complete-06-latent-heat-mass-type",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-5-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "phase-change-heat-variables",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 98,
+      "questionId": "science-g8-complete-07-phase-change-life",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-4-5-4"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "phase-change-heat-exchange",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 99,
+      "questionId": "science-g8-complete-08-photosynthesis-importance",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "photosynthesis-ecosystem-role",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 100,
+      "questionId": "science-g8-complete-09-respiration-importance",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-2-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "cellular-respiration-role",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 101,
+      "questionId": "science-g8-complete-10-cycles-schema",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-3-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "matter-cycle-schema",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 102,
+      "questionId": "science-g8-complete-11-cycle-importance",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-3-2"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "matter-cycle-importance",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 103,
+      "questionId": "science-g8-complete-12-resource-saving",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-4-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "resource-saving-decision",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 104,
+      "questionId": "science-g8-complete-13-waste-separation",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-4-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "solid-waste-separation",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 105,
+      "questionId": "science-g8-complete-14-electrification-examples",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "electrification-application-explanation",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 106,
+      "questionId": "science-g8-complete-15-electrification-types",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-1-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "electrification-types-experiment",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 107,
+      "questionId": "science-g8-complete-16-charge-classification",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "charge-classification",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 108,
+      "questionId": "science-g8-complete-17-energy-conversions",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-3-1"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "electrical-energy-conversions",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 109,
+      "questionId": "science-g8-complete-18-power-plant-generation",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-7-3-3"
+      ],
+      "itemFormat": "single-choice",
+      "primarySkill": "power-plant-generation-chain",
+      "difficultyBand": "LGS_MEDIUM_HIGH",
+      "reviewStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameAdaptationAllowed": false,
+      "complexity": 2,
+      "requiredChecks": [
+        "correctness-and-independent-verification",
+        "option-or-rubric-quality",
+        "age-and-language-fit",
+        "hint-non-leakage",
+        "feedback-teaching-value",
+        "game-adaptation-remains-locked"
+      ]
+    },
+    {
+      "order": 110,
       "questionId": "science-g8-cross-02-genetics",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1898,7 +2542,7 @@
       ]
     },
     {
-      "order": 83,
+      "order": 111,
       "questionId": "science-g8-cross-03-solid-pressure",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1921,7 +2565,7 @@
       ]
     },
     {
-      "order": 84,
+      "order": 112,
       "questionId": "science-g8-cross-04-heating-graph",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1944,7 +2588,7 @@
       ]
     },
     {
-      "order": 85,
+      "order": 113,
       "questionId": "science-g8-cross-05-simple-machines",
       "grade": 8,
       "courseId": "fen-bilimleri",
@@ -1967,7 +2611,7 @@
       ]
     },
     {
-      "order": 86,
+      "order": 114,
       "questionId": "tr-g8-pilot01-14-translation-cross-text",
       "grade": 8,
       "courseId": "turkce",
@@ -1990,7 +2634,7 @@
       ]
     },
     {
-      "order": 87,
+      "order": 115,
       "questionId": "tr-g8-pilot01-15-city-park-cross-text",
       "grade": 8,
       "courseId": "turkce",
@@ -2013,7 +2657,7 @@
       ]
     },
     {
-      "order": 88,
+      "order": 116,
       "questionId": "tr-g8-pilot01-18-eco-bottle-media",
       "grade": 8,
       "courseId": "turkce",
@@ -2036,7 +2680,7 @@
       ]
     },
     {
-      "order": 89,
+      "order": 117,
       "questionId": "tr-g8-pilot01-19-exhibition-poster-media",
       "grade": 8,
       "courseId": "turkce",
@@ -2059,7 +2703,7 @@
       ]
     },
     {
-      "order": 90,
+      "order": 118,
       "questionId": "tr-g8-pilot01-22-library-table",
       "grade": 8,
       "courseId": "turkce",
@@ -2082,7 +2726,7 @@
       ]
     },
     {
-      "order": 91,
+      "order": 119,
       "questionId": "tr-g8-pilot01-23-school-garden-chart",
       "grade": 8,
       "courseId": "turkce",
@@ -2105,7 +2749,7 @@
       ]
     },
     {
-      "order": 92,
+      "order": 120,
       "questionId": "tr-g8-pilot01-24-audio-guide-table",
       "grade": 8,
       "courseId": "turkce",
@@ -2128,7 +2772,7 @@
       ]
     },
     {
-      "order": 93,
+      "order": 121,
       "questionId": "tr-g8-reading-calibration-03-museum-label-cross-text",
       "grade": 8,
       "courseId": "turkce",
@@ -2151,7 +2795,7 @@
       ]
     },
     {
-      "order": 94,
+      "order": 122,
       "questionId": "tr-g8-wave1-08-real-fiction-birds",
       "grade": 8,
       "courseId": "turkce",
@@ -2174,7 +2818,7 @@
       ]
     },
     {
-      "order": 95,
+      "order": 123,
       "questionId": "tr-g8-wave1-09-emphasis-design",
       "grade": 8,
       "courseId": "turkce",
@@ -2197,7 +2841,7 @@
       ]
     },
     {
-      "order": 96,
+      "order": 124,
       "questionId": "tr-g8-wave1-11-process-order-seed",
       "grade": 8,
       "courseId": "turkce",
@@ -2220,7 +2864,7 @@
       ]
     },
     {
-      "order": 97,
+      "order": 125,
       "questionId": "tr-g8-wave1-12-source-selection-heat-island",
       "grade": 8,
       "courseId": "turkce",
@@ -2243,7 +2887,7 @@
       ]
     },
     {
-      "order": 98,
+      "order": 126,
       "questionId": "tr-g8-wave2-01-visual-title-prediction",
       "grade": 8,
       "courseId": "turkce",
@@ -2266,7 +2910,7 @@
       ]
     },
     {
-      "order": 99,
+      "order": 127,
       "questionId": "tr-g8-wave2-02-cartoon-attention",
       "grade": 8,
       "courseId": "turkce",
@@ -2289,7 +2933,7 @@
       ]
     },
     {
-      "order": 100,
+      "order": 128,
       "questionId": "tr-g8-wave2-03-visual-news-accessibility",
       "grade": 8,
       "courseId": "turkce",
@@ -2312,7 +2956,7 @@
       ]
     },
     {
-      "order": 101,
+      "order": 129,
       "questionId": "tr-g8-wave2-04-story-film-inner-conflict",
       "grade": 8,
       "courseId": "turkce",
@@ -2335,7 +2979,7 @@
       ]
     },
     {
-      "order": 102,
+      "order": 130,
       "questionId": "tr-g8-wave2-05-poem-animation-time-change",
       "grade": 8,
       "courseId": "turkce",
@@ -2358,7 +3002,7 @@
       ]
     },
     {
-      "order": 103,
+      "order": 131,
       "questionId": "tr-g8-wave2-08-sentence-types-comparison",
       "grade": 8,
       "courseId": "turkce",
@@ -2381,7 +3025,7 @@
       ]
     },
     {
-      "order": 104,
+      "order": 132,
       "questionId": "tr-g8-wave2-09-passive-focus",
       "grade": 8,
       "courseId": "turkce",
@@ -2404,7 +3048,7 @@
       ]
     },
     {
-      "order": 105,
+      "order": 133,
       "questionId": "tr-g8-wave2-10-active-passive-responsibility",
       "grade": 8,
       "courseId": "turkce",
@@ -2427,7 +3071,7 @@
       ]
     },
     {
-      "order": 106,
+      "order": 134,
       "questionId": "tr-g8-pilot01-06-city-sound-archive-topic",
       "grade": 8,
       "courseId": "turkce",
@@ -2450,7 +3094,7 @@
       ]
     },
     {
-      "order": 107,
+      "order": 135,
       "questionId": "tr-g8-pilot01-07-seed-exchange-topic",
       "grade": 8,
       "courseId": "turkce",
@@ -2473,7 +3117,7 @@
       ]
     },
     {
-      "order": 108,
+      "order": 136,
       "questionId": "tr-g8-pilot01-08-night-observation-topic",
       "grade": 8,
       "courseId": "turkce",
@@ -2496,7 +3140,7 @@
       ]
     },
     {
-      "order": 109,
+      "order": 137,
       "questionId": "tr-g8-pilot01-09-margin-notes-main-idea",
       "grade": 8,
       "courseId": "turkce",
@@ -2519,7 +3163,7 @@
       ]
     },
     {
-      "order": 110,
+      "order": 138,
       "questionId": "tr-g8-pilot01-10-nature-photo-main-idea",
       "grade": 8,
       "courseId": "turkce",
@@ -2542,7 +3186,7 @@
       ]
     },
     {
-      "order": 111,
+      "order": 139,
       "questionId": "tr-g8-pilot01-11-recipe-notebooks-supporting-ideas",
       "grade": 8,
       "courseId": "turkce",
@@ -2565,7 +3209,7 @@
       ]
     },
     {
-      "order": 112,
+      "order": 140,
       "questionId": "tr-g8-pilot01-12-repair-cafe-supporting-ideas",
       "grade": 8,
       "courseId": "turkce",
@@ -2588,7 +3232,7 @@
       ]
     },
     {
-      "order": 113,
+      "order": 141,
       "questionId": "tr-g8-pilot01-13-bird-tracking-supporting-ideas",
       "grade": 8,
       "courseId": "turkce",
@@ -2611,7 +3255,7 @@
       ]
     },
     {
-      "order": 114,
+      "order": 142,
       "questionId": "tr-g8-pilot01-16-clockmaker-inference",
       "grade": 8,
       "courseId": "turkce",
@@ -2634,7 +3278,7 @@
       ]
     },
     {
-      "order": 115,
+      "order": 143,
       "questionId": "tr-g8-pilot01-17-orchestra-rehearsal-inference",
       "grade": 8,
       "courseId": "turkce",
@@ -2657,7 +3301,7 @@
       ]
     },
     {
-      "order": 116,
+      "order": 144,
       "questionId": "tr-g8-pilot01-20-historical-photo-source",
       "grade": 8,
       "courseId": "turkce",
@@ -2680,7 +3324,7 @@
       ]
     },
     {
-      "order": 117,
+      "order": 145,
       "questionId": "tr-g8-pilot01-21-water-test-source",
       "grade": 8,
       "courseId": "turkce",
@@ -2703,7 +3347,7 @@
       ]
     },
     {
-      "order": 118,
+      "order": 146,
       "questionId": "tr-g8-reading-calibration-01-restoration-main-idea",
       "grade": 8,
       "courseId": "turkce",
@@ -2726,7 +3370,7 @@
       ]
     },
     {
-      "order": 119,
+      "order": 147,
       "questionId": "tr-g8-reading-calibration-02-contextual-word-inference",
       "grade": 8,
       "courseId": "turkce",
@@ -2749,7 +3393,7 @@
       ]
     },
     {
-      "order": 120,
+      "order": 148,
       "questionId": "tr-g8-reading-calibration-04-language-app-media-analysis",
       "grade": 8,
       "courseId": "turkce",
@@ -2772,7 +3416,7 @@
       ]
     },
     {
-      "order": 121,
+      "order": 149,
       "questionId": "tr-g8-reading-calibration-05-blue-light-source-reliability",
       "grade": 8,
       "courseId": "turkce",
@@ -2795,7 +3439,7 @@
       ]
     },
     {
-      "order": 122,
+      "order": 150,
       "questionId": "tr-g8-wave1-01-context-ketum",
       "grade": 8,
       "courseId": "turkce",
@@ -2818,7 +3462,7 @@
       ]
     },
     {
-      "order": 123,
+      "order": 151,
       "questionId": "tr-g8-wave1-02-expression-disorder-revision",
       "grade": 8,
       "courseId": "turkce",
@@ -2841,7 +3485,7 @@
       ]
     },
     {
-      "order": 124,
+      "order": 152,
       "questionId": "tr-g8-wave1-03-verbal-function",
       "grade": 8,
       "courseId": "turkce",
@@ -2864,7 +3508,7 @@
       ]
     },
     {
-      "order": 125,
+      "order": 153,
       "questionId": "tr-g8-wave1-04-transition-functions",
       "grade": 8,
       "courseId": "turkce",
@@ -2887,7 +3531,7 @@
       ]
     },
     {
-      "order": 126,
+      "order": 154,
       "questionId": "tr-g8-wave1-05-title-memory-boxes",
       "grade": 8,
       "courseId": "turkce",
@@ -2910,7 +3554,7 @@
       ]
     },
     {
-      "order": 127,
+      "order": 155,
       "questionId": "tr-g8-wave1-06-story-elements-station",
       "grade": 8,
       "courseId": "turkce",
@@ -2933,7 +3577,7 @@
       ]
     },
     {
-      "order": 128,
+      "order": 156,
       "questionId": "tr-g8-wave1-07-problem-solution-library",
       "grade": 8,
       "courseId": "turkce",
@@ -2956,7 +3600,7 @@
       ]
     },
     {
-      "order": 129,
+      "order": 157,
       "questionId": "tr-g8-wave1-10-thought-development",
       "grade": 8,
       "courseId": "turkce",
@@ -2979,7 +3623,7 @@
       ]
     },
     {
-      "order": 130,
+      "order": 158,
       "questionId": "tr-g8-wave2-06-sentence-elements-cleanup",
       "grade": 8,
       "courseId": "turkce",
@@ -3002,7 +3646,7 @@
       ]
     },
     {
-      "order": 131,
+      "order": 159,
       "questionId": "tr-g8-wave2-07-sentence-elements-hidden-subject",
       "grade": 8,
       "courseId": "turkce",
@@ -3025,7 +3669,7 @@
       ]
     },
     {
-      "order": 132,
+      "order": 160,
       "questionId": "turkish-g5-broad-11-speak-improvised",
       "grade": 5,
       "courseId": "turkce",
@@ -3048,7 +3692,7 @@
       ]
     },
     {
-      "order": 133,
+      "order": 161,
       "questionId": "turkish-g5-broad-12-oral-presentation",
       "grade": 5,
       "courseId": "turkce",
@@ -3071,7 +3715,7 @@
       ]
     },
     {
-      "order": 134,
+      "order": 162,
       "questionId": "turkish-g5-broad-13-oral-summary",
       "grade": 5,
       "courseId": "turkce",
@@ -3094,7 +3738,7 @@
       ]
     },
     {
-      "order": 135,
+      "order": 163,
       "questionId": "turkish-g5-broad-14-problem-speaking",
       "grade": 5,
       "courseId": "turkce",
@@ -3117,7 +3761,7 @@
       ]
     },
     {
-      "order": 136,
+      "order": 164,
       "questionId": "turkish-g5-broad-15-body-language",
       "grade": 5,
       "courseId": "turkce",
@@ -3140,7 +3784,7 @@
       ]
     },
     {
-      "order": 137,
+      "order": 165,
       "questionId": "turkish-g5-broad-16-writing-structure",
       "grade": 5,
       "courseId": "turkce",
@@ -3163,7 +3807,7 @@
       ]
     },
     {
-      "order": 138,
+      "order": 166,
       "questionId": "turkish-g5-broad-17-creative-writing",
       "grade": 5,
       "courseId": "turkce",
@@ -3186,7 +3830,7 @@
       ]
     },
     {
-      "order": 139,
+      "order": 167,
       "questionId": "turkish-g5-broad-18-written-summary",
       "grade": 5,
       "courseId": "turkce",
@@ -3209,7 +3853,7 @@
       ]
     },
     {
-      "order": 140,
+      "order": 168,
       "questionId": "turkish-g5-broad-19-problem-writing",
       "grade": 5,
       "courseId": "turkce",
@@ -3232,7 +3876,7 @@
       ]
     },
     {
-      "order": 141,
+      "order": 169,
       "questionId": "turkish-g5-broad-20-writing-conventions",
       "grade": 5,
       "courseId": "turkce",
@@ -3255,7 +3899,7 @@
       ]
     },
     {
-      "order": 142,
+      "order": 170,
       "questionId": "turkish-g5-broad-01-listen-predict",
       "grade": 5,
       "courseId": "turkce",
@@ -3278,7 +3922,7 @@
       ]
     },
     {
-      "order": 143,
+      "order": 171,
       "questionId": "turkish-g5-broad-04-listen-compare",
       "grade": 5,
       "courseId": "turkce",
@@ -3301,7 +3945,7 @@
       ]
     },
     {
-      "order": 144,
+      "order": 172,
       "questionId": "turkish-g5-broad-06-read-predict",
       "grade": 5,
       "courseId": "turkce",
@@ -3324,7 +3968,7 @@
       ]
     },
     {
-      "order": 145,
+      "order": 173,
       "questionId": "turkish-g5-cross-03-intertext-comparison",
       "grade": 5,
       "courseId": "turkce",
@@ -3347,7 +3991,7 @@
       ]
     },
     {
-      "order": 146,
+      "order": 174,
       "questionId": "turkish-g5-broad-02-listen-surface",
       "grade": 5,
       "courseId": "turkce",
@@ -3370,7 +4014,7 @@
       ]
     },
     {
-      "order": 147,
+      "order": 175,
       "questionId": "turkish-g5-broad-03-listen-infer",
       "grade": 5,
       "courseId": "turkce",
@@ -3393,7 +4037,7 @@
       ]
     },
     {
-      "order": 148,
+      "order": 176,
       "questionId": "turkish-g5-broad-05-listen-figure",
       "grade": 5,
       "courseId": "turkce",
@@ -3416,7 +4060,7 @@
       ]
     },
     {
-      "order": 149,
+      "order": 177,
       "questionId": "turkish-g5-broad-07-read-surface",
       "grade": 5,
       "courseId": "turkce",
@@ -3439,7 +4083,7 @@
       ]
     },
     {
-      "order": 150,
+      "order": 178,
       "questionId": "turkish-g5-broad-08-read-internal-compare",
       "grade": 5,
       "courseId": "turkce",
@@ -3462,7 +4106,7 @@
       ]
     },
     {
-      "order": 151,
+      "order": 179,
       "questionId": "turkish-g5-broad-09-poem-form",
       "grade": 5,
       "courseId": "turkce",
@@ -3485,7 +4129,7 @@
       ]
     },
     {
-      "order": 152,
+      "order": 180,
       "questionId": "turkish-g5-broad-10-read-evaluate",
       "grade": 5,
       "courseId": "turkce",
@@ -3508,7 +4152,7 @@
       ]
     },
     {
-      "order": 153,
+      "order": 181,
       "questionId": "turkish-g5-cross-01-context-word",
       "grade": 5,
       "courseId": "turkce",
@@ -3531,7 +4175,7 @@
       ]
     },
     {
-      "order": 154,
+      "order": 182,
       "questionId": "turkish-g5-cross-02-simple-inference",
       "grade": 5,
       "courseId": "turkce",
@@ -3554,7 +4198,7 @@
       ]
     },
     {
-      "order": 155,
+      "order": 183,
       "questionId": "turkish-g5-cross-04-story-elements",
       "grade": 5,
       "courseId": "turkce",
@@ -3577,7 +4221,7 @@
       ]
     },
     {
-      "order": 156,
+      "order": 184,
       "questionId": "turkish-g5-cross-05-figures-of-speech",
       "grade": 5,
       "courseId": "turkce",
@@ -3600,7 +4244,7 @@
       ]
     },
     {
-      "order": 157,
+      "order": 185,
       "questionId": "tr-g8-pilot02-05-text-types-essay-article",
       "grade": 8,
       "courseId": "turkce",
@@ -3623,7 +4267,7 @@
       ]
     },
     {
-      "order": 158,
+      "order": 186,
       "questionId": "tr-g8-pilot02-01-idiom-contribution-community-oven",
       "grade": 8,
       "courseId": "turkce",
@@ -3646,7 +4290,7 @@
       ]
     },
     {
-      "order": 159,
+      "order": 187,
       "questionId": "tr-g8-pilot02-02-figurative-language-station",
       "grade": 8,
       "courseId": "turkce",
@@ -3669,7 +4313,7 @@
       ]
     },
     {
-      "order": 160,
+      "order": 188,
       "questionId": "tr-g8-pilot02-03-narration-description-workshop",
       "grade": 8,
       "courseId": "turkce",
@@ -3692,7 +4336,7 @@
       ]
     },
     {
-      "order": 161,
+      "order": 189,
       "questionId": "tr-g8-pilot02-04-author-view-story-ending",
       "grade": 8,
       "courseId": "turkce",

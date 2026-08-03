@@ -21,8 +21,8 @@ test('Fen geniş dalgası 28 yeni kazanımı model, deney ve rubrik görevleriyl
   assert.equal(audit.metrics.outcomeCount,28);
   assert.equal(audit.metrics.choiceCount,24);
   assert.equal(audit.metrics.openResponseCount,4);
-  assert.equal(GRADE8_SCIENCE_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,33);
-  assert.equal(GRADE8_SCIENCE_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount,28);
+  assert.equal(GRADE8_SCIENCE_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,61);
+  assert.equal(GRADE8_SCIENCE_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount,0);
 });
 
 test('Fen görevleri alan doğrulayıcısı ve kapalı oyun sözleşmesi taşır',()=>{

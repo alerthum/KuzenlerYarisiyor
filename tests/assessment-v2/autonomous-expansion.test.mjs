@@ -4,22 +4,22 @@ import { ASSESSMENT_V2_CANONICAL_CATALOG, ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT,
 import { ASSESSMENT_V2_HUMAN_REVIEW_QUEUE, ASSESSMENT_V2_HUMAN_REVIEW_QUEUE_AUDIT, auditAssessmentV2HumanReviewQueue } from '../../js/assessment-v2/human-review-queue.js';
 import { ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN, ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN_AUDIT } from '../../js/assessment-v2/autonomous-expansion-plan.js';
 
-test('kanonik katalog dört aktif ders motorundan 161 benzersiz görev toplar',()=>{
+test('kanonik katalog dört aktif ders motorundan 189 benzersiz görev toplar',()=>{
   assert.equal(ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT.ok,true,ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT.errors.join('\n'));
-  assert.equal(ASSESSMENT_V2_CANONICAL_CATALOG.length,161);
+  assert.equal(ASSESSMENT_V2_CANONICAL_CATALOG.length,189);
   assert.deepEqual(ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT.metrics.byEngine,{
     'g8:turkce':51,
     'g8:matematik':52,
-    'g8:fen-bilimleri':33,
+    'g8:fen-bilimleri':61,
     'g5:turkce':25
   });
 });
 
-test('insan inceleme kuyruğu 5 onaylı ve 156 bekleyen görevi önceliklendirir',()=>{
+test('insan inceleme kuyruğu 5 onaylı ve 184 bekleyen görevi önceliklendirir',()=>{
   assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE_AUDIT.ok,true,ASSESSMENT_V2_HUMAN_REVIEW_QUEUE_AUDIT.errors.join('\n'));
-  assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.total,161);
+  assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.total,189);
   assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.approved,5);
-  assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.pending,156);
+  assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.pending,184);
   assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.rows.every(row=>row.gameAdaptationAllowed===false),true);
 });
 
@@ -28,7 +28,7 @@ test('otonom genişleme planı mühendislik kapsamı tamamlanan Matematik ile ka
   const math=ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.engines.find(row=>row.courseId==='matematik');
   assert.equal(math.engineeringScopeComplete,true);
   assert.equal(math.remainingOutcomeCount,0);
-  assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.metrics.remainingOutcomeCount,148);
+  assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.metrics.remainingOutcomeCount,120);
   assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.backlog[0].id,'review-g8-math');
 });
 

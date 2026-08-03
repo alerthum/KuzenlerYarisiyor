@@ -1,15 +1,15 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T21:14:02.768Z",
+  "generatedAt": "2026-08-03T21:22:23.515Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "AUTONOMOUS_EXECUTION_PLAN_READY",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
     "activeEngineCount": 4,
-    "engineeringScopeCompleteEngineCount": 1,
-    "remainingOutcomeCount": 148,
-    "humanReviewQueueCount": 156,
+    "engineeringScopeCompleteEngineCount": 2,
+    "remainingOutcomeCount": 120,
+    "humanReviewQueueCount": 184,
     "unopenedCourseCellCount": 108
   },
   "engines": [
@@ -42,11 +42,11 @@
       "grade": 8,
       "courseId": "fen-bilimleri",
       "officialOutcomeCount": 61,
-      "coveredOutcomeCount": 33,
-      "remainingOutcomeCount": 28,
-      "canonicalQuestionCount": 33,
-      "reviewQueueCount": 33,
-      "engineeringScopeComplete": false,
+      "coveredOutcomeCount": 61,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 61,
+      "reviewQueueCount": 61,
+      "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
     },
     {
@@ -73,11 +73,11 @@
     },
     {
       "order": 2,
-      "id": "complete-g8-science",
-      "kind": "CONTENT_EXPANSION",
-      "scope": "8. sınıf Fen Bilimleri",
-      "reason": "61 kazanımdan 33’ü görevle kapsandı.",
-      "count": 28
+      "id": "review-g8-science",
+      "kind": "HUMAN_REVIEW",
+      "scope": "8. sınıf Fen Bilimleri 61 görev",
+      "reason": "Mühendislik kapsamı tamamlandı; deney, model ve tasarım görevleri insan onayı bekliyor.",
+      "count": 61
     },
     {
       "order": 3,

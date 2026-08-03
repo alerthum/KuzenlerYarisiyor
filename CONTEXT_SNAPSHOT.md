@@ -7,11 +7,11 @@
 
 ## Son tamamlanan büyük paket
 - 8. sınıf Matematik: 52/52 kazanım için mühendislik nesnesi; 43 solver-backed çoktan seçmeli + 9 etkileşimli inşa görevi.
-- 8. sınıf Fen Bilimleri: 61/61 resmî kazanım tam kapsam matrisi; 33 kazanım için görev.
+- 8. sınıf Fen Bilimleri: 61/61 resmî kazanım için mühendislik görevi tamamlandı.
 - 5. sınıf TYMM Türkçe: 100/100 öğrenme çıktısı tam kapsam matrisi; 25 görev.
 - 8. sınıf Türkçe: 76/76 kayıtlı kazanım; 51 görev, 31 kazanım kapsandı.
-- Toplam kanonik katalog: 161 görev.
-- İnsan onaylı: 5; inceleme kuyruğu: 156.
+- Toplam kanonik katalog: 189 görev.
+- İnsan onaylı: 5; inceleme kuyruğu: 184.
 - Aktif ders motoru: 4 / 112 zorunlu sınıf-ders hücresi.
 
 ## Korunan güvenlik durumları
@@ -29,7 +29,7 @@ Bu komut bütün Assessment V2 testlerini, Phase 4J raporunu ve güncel ders mot
 
 ## Sıradaki kesin iş kuyruğu
 1. 8. sınıf Matematik 52 görevlik insan kalibrasyonu.
-2. 8. sınıf Fen kalan 28 kazanım için görev üretimi.
+2. 8. sınıf Fen 61 görevlik insan kalibrasyonu.
 3. 5. sınıf Türkçe kalan 75 öğrenme çıktısı için beceri alanı dalgaları.
 4. 8. sınıf Türkçe kalan 45 kazanım için dinleme/konuşma/yazma ve eksik okuma görevleri.
 5. 8. sınıf İnkılap Tarihi, Din Kültürü ve İngilizce motorlarının açılması.

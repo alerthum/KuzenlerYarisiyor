@@ -1,32 +1,127 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T21:22:23.620Z",
-  "phase": "4H",
-  "title": "Assessment V2 Ürün Şekillendirme ve Ders Motorları Panosu",
-  "status": "ENGINEERING_PASS_HUMAN_REVIEW_IN_PROGRESS",
+  "generatedAt": "2026-08-03T21:22:23.516Z",
+  "phase": "4K",
+  "title": "Assessment V2 8. Sınıf Fen Mühendislik Kapsam Kapanışı",
+  "status": "ENGINEERING_PASS_HUMAN_REVIEW_REQUIRED",
   "productReady": false,
   "gameAdaptationAllowed": false,
-  "audit": {
-    "ok": true,
-    "errors": [],
-    "metrics": {
-      "targetGradeCount": 12,
-      "activeGradeCount": 2,
-      "courseScheduleCellCount": 112,
-      "activeEngineCellCount": 4,
-      "activeEngineCellPercent": 3.6,
-      "curriculumOutcomeRecordCount": 289,
-      "coveredOutcomeCount": 169,
-      "canonicalQuestionCount": 189,
-      "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 184,
-      "gameAdaptedQuestionCount": 0,
-      "legacyQuarantineCount": 604
+  "errors": [],
+  "audits": {
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 2,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 4,
+        "activeEngineCellPercent": 3.6,
+        "curriculumOutcomeRecordCount": 289,
+        "coveredOutcomeCount": 169,
+        "canonicalQuestionCount": 189,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 184,
+        "gameAdaptedQuestionCount": 0,
+        "legacyQuarantineCount": 604
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 189,
+        "byEngine": {
+          "g8:turkce": 51,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 61,
+          "g5:turkce": 25
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    },
+    "reviewQueue": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "total": 189,
+        "approved": 5,
+        "pending": 184,
+        "highComplexityPending": 33
+      }
+    },
+    "autonomousPlan": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "activeEngineCount": 4,
+        "engineeringScopeCompleteEngineCount": 2,
+        "remainingOutcomeCount": 120,
+        "humanReviewQueueCount": 184,
+        "unopenedCourseCellCount": 108
+      }
+    },
+    "math": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 52,
+        "unitCounts": {
+          "Sayılar ve İşlemler": 16,
+          "Cebir": 13,
+          "Geometri ve Ölçme": 16,
+          "Veri İşleme": 2,
+          "Olasılık": 5
+        },
+        "implementedOutcomeCount": 52,
+        "implementedItemCount": 52,
+        "uncoveredOutcomeCount": 0,
+        "visualOrInteractiveOutcomeCount": 24,
+        "humanRubricOutcomeCount": 6,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "science": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 61,
+        "implementedOutcomeCount": 61,
+        "implementedItemCount": 61,
+        "uncoveredOutcomeCount": 0,
+        "humanRubricOutcomeCount": 13,
+        "visualExperimentOutcomeCount": 10,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "grade5Turkish": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "officialOutcomeCount": 100,
+        "implementedOutcomeCount": 25,
+        "implementedItemCount": 25,
+        "uncoveredOutcomeCount": 75,
+        "listeningCount": 25,
+        "readingCount": 27,
+        "speakingCount": 26,
+        "writingCount": 22,
+        "humanRubricOutcomeCount": 48,
+        "mediaOutcomeCount": 29,
+        "productReady": false,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
     }
   },
   "portfolio": {
     "schemaVersion": "2.0",
-    "generatedAt": "2026-08-03T21:22:23.619Z",
+    "generatedAt": "2026-08-03T21:22:23.514Z",
     "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
     "status": "MULTI_ENGINE_FULL_SCOPE_EXPANSION",
     "productReady": false,
@@ -316,5 +411,126 @@
         "reason": "İnkılap Tarihi, Din Kültürü ve İngilizce motorları açılmalı."
       }
     ]
+  },
+  "autonomousPlan": {
+    "schemaVersion": "1.0",
+    "generatedAt": "2026-08-03T21:22:23.515Z",
+    "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
+    "status": "AUTONOMOUS_EXECUTION_PLAN_READY",
+    "productReady": false,
+    "gameAdaptationAllowed": false,
+    "metrics": {
+      "activeEngineCount": 4,
+      "engineeringScopeCompleteEngineCount": 2,
+      "remainingOutcomeCount": 120,
+      "humanReviewQueueCount": 184,
+      "unopenedCourseCellCount": 108
+    },
+    "engines": [
+      {
+        "engineId": "tr-g8-turkce-v2",
+        "grade": 8,
+        "courseId": "turkce",
+        "officialOutcomeCount": 76,
+        "coveredOutcomeCount": 31,
+        "remainingOutcomeCount": 45,
+        "canonicalQuestionCount": 51,
+        "reviewQueueCount": 46,
+        "engineeringScopeComplete": false,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-matematik-v2",
+        "grade": 8,
+        "courseId": "matematik",
+        "officialOutcomeCount": 52,
+        "coveredOutcomeCount": 52,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 52,
+        "reviewQueueCount": 52,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g8-fen-v2",
+        "grade": 8,
+        "courseId": "fen-bilimleri",
+        "officialOutcomeCount": 61,
+        "coveredOutcomeCount": 61,
+        "remainingOutcomeCount": 0,
+        "canonicalQuestionCount": 61,
+        "reviewQueueCount": 61,
+        "engineeringScopeComplete": true,
+        "gameAdaptationAllowed": false
+      },
+      {
+        "engineId": "tr-g5-turkce-v2",
+        "grade": 5,
+        "courseId": "turkce",
+        "officialOutcomeCount": 100,
+        "coveredOutcomeCount": 25,
+        "remainingOutcomeCount": 75,
+        "canonicalQuestionCount": 25,
+        "reviewQueueCount": 25,
+        "engineeringScopeComplete": false,
+        "gameAdaptationAllowed": false
+      }
+    ],
+    "backlog": [
+      {
+        "order": 1,
+        "id": "review-g8-math",
+        "kind": "HUMAN_REVIEW",
+        "scope": "8. sınıf Matematik 52 görev",
+        "reason": "Mühendislik kapsamı tamamlandı; etkileşim ve soru kalitesi insan onayı bekliyor.",
+        "count": 52
+      },
+      {
+        "order": 2,
+        "id": "review-g8-science",
+        "kind": "HUMAN_REVIEW",
+        "scope": "8. sınıf Fen Bilimleri 61 görev",
+        "reason": "Mühendislik kapsamı tamamlandı; deney, model ve tasarım görevleri insan onayı bekliyor.",
+        "count": 61
+      },
+      {
+        "order": 3,
+        "id": "complete-g5-turkish",
+        "kind": "CONTENT_EXPANSION",
+        "scope": "5. sınıf Türkçe",
+        "reason": "100 çıktıdan 25’i görevle kapsandı.",
+        "count": 75
+      },
+      {
+        "order": 4,
+        "id": "complete-g8-turkish",
+        "kind": "CONTENT_EXPANSION",
+        "scope": "8. sınıf Türkçe",
+        "reason": "76 kazanımdan 31’i görevle kapsandı.",
+        "count": 45
+      },
+      {
+        "order": 5,
+        "id": "open-lgs-engines",
+        "kind": "NEW_ENGINE",
+        "scope": "8. sınıf İnkılap Tarihi, Din Kültürü ve İngilizce",
+        "reason": "LGS ders motorlarının tamamı açılmalı.",
+        "count": 3
+      },
+      {
+        "order": 6,
+        "id": "expand-grade-map",
+        "kind": "NEW_ENGINE",
+        "scope": "1–12 zorunlu ders hücreleri",
+        "reason": "112 hücrenin yalnız 4’ü aktif.",
+        "count": 108
+      }
+    ]
+  },
+  "reviewQueueMetrics": {
+    "total": 189,
+    "approved": 5,
+    "pending": 184,
+    "highComplexityPending": 33
   }
 }
