@@ -1,0 +1,36 @@
+<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Phase 4Q Ürün Hazırlık Kapısı</title><style>body{font-family:Segoe UI,sans-serif;background:#f5f7fb;color:#172033;margin:0}.hero{background:#111827;color:#fff;padding:28px}.hero b{color:#fb923c}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px;padding:22px}.card{background:#fff;border-radius:14px;padding:17px;box-shadow:0 4px 16px #18223012;border-left:6px solid #dc2626}.card.pass{border-left-color:#16a34a}.label{font-weight:800}.evidence{font:12px ui-monospace,monospace;background:#f8fafc;padding:8px;border-radius:7px;white-space:pre-wrap}.blockers{margin:0 22px 32px;background:#fff7ed;border:1px solid #fdba74;border-radius:14px;padding:18px}.blockers li{margin:8px 0}</style></head><body><section class="hero"><h1>Assessment V2 · Ürün Hazırlık Kapısı</h1><p>Durum: <b>PRODUCT_BLOCKED</b> · PASS 3/11 · productReady=false</p></section><main class="grid"><article class="card "><div class="label">BLOCKED · 112 zorunlu sınıf–ders hücresi</div><p>105 sınıf–ders hücresi henüz açılmadı.</p><div class="evidence">{
+  &quot;active&quot;: 7,
+  &quot;required&quot;: 112
+}</div></article><article class="card "><div class="label">BLOCKED · 1–12 sınıf kapsamı</div><p>10 sınıf düzeyinde aktif motor yok.</p><div class="evidence">{
+  &quot;active&quot;: 2,
+  &quot;required&quot;: 12
+}</div></article><article class="card pass"><div class="label">PASS · Aktif motorlarda tam resmî kapsam</div><p>Kanıt tamamlandı.</p><div class="evidence">{
+  &quot;engines&quot;: 7
+}</div></article><article class="card "><div class="label">BLOCKED · İnsan inceleme konsensüsü</div><p>İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var.</p><div class="evidence">{
+  &quot;total&quot;: 70,
+  &quot;approved&quot;: 0,
+  &quot;pending&quot;: 70,
+  &quot;revisionRequired&quot;: 0,
+  &quot;rejected&quot;: 0
+}</div></article><article class="card "><div class="label">BLOCKED · Gerçek öğrenci pilotu ve madde analizi</div><p>Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez.</p><div class="evidence">{
+  &quot;status&quot;: &quot;BLOCKED&quot;,
+  &quot;source&quot;: &quot;MISSING&quot;
+}</div></article><article class="card "><div class="label">BLOCKED · 23 oyun × 500 oturum canlı bataryası</div><p>23 oyun için 500 oturumluk canlı tekrar/underfill kanıtı tamamlanmadı.</p><div class="evidence">{
+  &quot;gameCount&quot;: 23,
+  &quot;sessionsPerGame&quot;: 20,
+  &quot;underfill&quot;: 0,
+  &quot;semanticRepeats&quot;: 0
+}</div></article><article class="card pass"><div class="label">PASS · Production build</div><p>Kanıt tamamlandı.</p><div class="evidence">{
+  &quot;status&quot;: &quot;PASS&quot;,
+  &quot;command&quot;: &quot;npm run build&quot;
+}</div></article><article class="card "><div class="label">BLOCKED · Erişilebilirlik kapısı</div><p>Erişilebilirlik kanıtı tamamlanmadı.</p><div class="evidence">{
+  &quot;status&quot;: &quot;NOT_MEASURED_CURRENT_CHECKPOINT&quot;
+}</div></article><article class="card "><div class="label">BLOCKED · Güvenlik ve veri gizliliği kapısı</div><p>Güvenlik/veri gizliliği kanıtı tamamlanmadı.</p><div class="evidence">{
+  &quot;status&quot;: &quot;NOT_MEASURED_CURRENT_CHECKPOINT&quot;
+}</div></article><article class="card "><div class="label">BLOCKED · Gerçek medya ve rubrik varlıkları</div><p>Ses, görsel, deney, kaynak ve rubrik varlıklarının tamamlanma kanıtı yok.</p><div class="evidence">{
+  &quot;status&quot;: &quot;INCOMPLETE&quot;
+}</div></article><article class="card pass"><div class="label">PASS · 604 legacy içeriğin karantinası</div><p>Kanıt tamamlandı.</p><div class="evidence">{
+  &quot;count&quot;: 604,
+  &quot;status&quot;: &quot;UNVERIFIED_LEGACY&quot;,
+  &quot;quarantined&quot;: true
+}</div></article></main><section class="blockers"><h2>Kapanmadan yayın açılamayan işler</h2><ol><li>105 sınıf–ders hücresi henüz açılmadı.</li><li>10 sınıf düzeyinde aktif motor yok.</li><li>İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var.</li><li>Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez.</li><li>23 oyun için 500 oturumluk canlı tekrar/underfill kanıtı tamamlanmadı.</li><li>Erişilebilirlik kanıtı tamamlanmadı.</li><li>Güvenlik/veri gizliliği kanıtı tamamlanmadı.</li><li>Ses, görsel, deney, kaynak ve rubrik varlıklarının tamamlanma kanıtı yok.</li></ol></section></body></html>

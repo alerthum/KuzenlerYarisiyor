@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T23:18:50.126Z",
+  "phase": "4Q",
+  "title": "Birleşik Ürün Hazırlık Kapısı",
+  "status": "PRODUCT_READINESS_GATE_PASS_BLOCKERS_VISIBLE",
+  "productReady": false,
+  "publicationAllowed": false,
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "metrics": {
+      "checkCount": 11,
+      "passed": 3,
+      "blocked": 8
+    }
+  },
+  "result": {
+    "schemaVersion": "1.0",
+    "generatedAt": "2026-08-03T23:18:50.126Z",
+    "status": "PRODUCT_BLOCKED",
+    "productReady": false,
+    "publicationAllowed": false,
+    "gameAdaptationAllowed": false,
+    "requirements": {
+      "requiredCourseCells": 112,
+      "requiredActiveGradeCount": 12,
+      "requiredLiveGameCount": 23,
+      "requiredSessionsPerGame": 500,
+      "requiredHumanReviewPending": 0,
+      "requiredHumanRevisionOrReject": 0,
+      "realStudentPilotRequired": true,
+      "accessibilityRequired": true,
+      "securityRequired": true,
+      "mediaAndRubricAssetsRequired": true,
+      "productionBuildRequired": true,
+      "legacyQuarantineCount": 604
+    },
+    "metrics": {
+      "checkCount": 11,
+      "passed": 3,
+      "blocked": 8
+    },
+    "checks": [
+      {
+        "id": "course-cell-coverage",
+        "label": "112 zorunlu sınıf–ders hücresi",
+        "passed": false,
+        "evidence": {
+          "active": 7,
+          "required": 112
+        },
+        "blocker": "105 sınıf–ders hücresi henüz açılmadı."
+      },
+      {
+        "id": "grade-coverage",
+        "label": "1–12 sınıf kapsamı",
+        "passed": false,
+        "evidence": {
+          "active": 2,
+          "required": 12
+        },
+        "blocker": "10 sınıf düzeyinde aktif motor yok."
+      },
+      {
+        "id": "active-engine-curriculum",
+        "label": "Aktif motorlarda tam resmî kapsam",
+        "passed": true,
+        "evidence": {
+          "engines": 7
+        },
+        "blocker": null
+      },
+      {
+        "id": "human-review",
+        "label": "İnsan inceleme konsensüsü",
+        "passed": false,
+        "evidence": {
+          "total": 70,
+          "approved": 0,
+          "pending": 70,
+          "revisionRequired": 0,
+          "rejected": 0
+        },
+        "blocker": "İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var."
+      },
+      {
+        "id": "real-student-pilot",
+        "label": "Gerçek öğrenci pilotu ve madde analizi",
+        "passed": false,
+        "evidence": {
+          "status": "BLOCKED",
+          "source": "MISSING"
+        },
+        "blocker": "Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez."
+      },
+      {
+        "id": "live-session-battery",
+        "label": "23 oyun × 500 oturum canlı bataryası",
+        "passed": false,
+        "evidence": {
+          "gameCount": 23,
+          "sessionsPerGame": 20,
+          "underfill": 0,
+          "semanticRepeats": 0
+        },
+        "blocker": "23 oyun için 500 oturumluk canlı tekrar/underfill kanıtı tamamlanmadı."
+      },
+      {
+        "id": "production-build",
+        "label": "Production build",
+        "passed": true,
+        "evidence": {
+          "status": "PASS",
+          "command": "npm run build"
+        },
+        "blocker": null
+      },
+      {
+        "id": "accessibility",
+        "label": "Erişilebilirlik kapısı",
+        "passed": false,
+        "evidence": {
+          "status": "NOT_MEASURED_CURRENT_CHECKPOINT"
+        },
+        "blocker": "Erişilebilirlik kanıtı tamamlanmadı."
+      },
+      {
+        "id": "security",
+        "label": "Güvenlik ve veri gizliliği kapısı",
+        "passed": false,
+        "evidence": {
+          "status": "NOT_MEASURED_CURRENT_CHECKPOINT"
+        },
+        "blocker": "Güvenlik/veri gizliliği kanıtı tamamlanmadı."
+      },
+      {
+        "id": "media-rubric-assets",
+        "label": "Gerçek medya ve rubrik varlıkları",
+        "passed": false,
+        "evidence": {
+          "status": "INCOMPLETE"
+        },
+        "blocker": "Ses, görsel, deney, kaynak ve rubrik varlıklarının tamamlanma kanıtı yok."
+      },
+      {
+        "id": "legacy-quarantine",
+        "label": "604 legacy içeriğin karantinası",
+        "passed": true,
+        "evidence": {
+          "count": 604,
+          "status": "UNVERIFIED_LEGACY",
+          "quarantined": true
+        },
+        "blocker": null
+      }
+    ],
+    "blockers": [
+      "105 sınıf–ders hücresi henüz açılmadı.",
+      "10 sınıf düzeyinde aktif motor yok.",
+      "İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var.",
+      "Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez.",
+      "23 oyun için 500 oturumluk canlı tekrar/underfill kanıtı tamamlanmadı.",
+      "Erişilebilirlik kanıtı tamamlanmadı.",
+      "Güvenlik/veri gizliliği kanıtı tamamlanmadı.",
+      "Ses, görsel, deney, kaynak ve rubrik varlıklarının tamamlanma kanıtı yok."
+    ]
+  }
+}
