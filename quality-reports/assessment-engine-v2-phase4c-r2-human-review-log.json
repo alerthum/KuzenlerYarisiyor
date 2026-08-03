@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "batchId": "GRADE8_TURKISH_PILOT_01_FRESH_REVIEW_12_R2",
+  "reviewStatus": "PARTIAL_ACCEPTANCE_WITH_REVISIONS",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "feedback": [
+    {
+      "questionNumber": 2,
+      "finding": "correct option predictable from option set",
+      "severity": "HIGH",
+      "resolution": "all distractors rewritten to combine at least two evidence areas and use comparable abstraction and length",
+      "verification": "PASS"
+    },
+    {
+      "questionNumber": 12,
+      "finding": "table column meaning and the value 80 were not immediately clear",
+      "severity": "MEDIUM",
+      "resolution": "column semantics and units stated above the table; pipe text rendered as an accessible HTML table with row and column headers",
+      "verification": "PASS"
+    },
+    {
+      "scope": "future-grade8-turkish-wave",
+      "finding": "current pilot is still narrow in literary language and Turkish-specific constructs",
+      "severity": "PLANNING",
+      "resolution": "next-wave contract requires simile, personification, sayings, narrative modes, author views, literary criticism and safe quotation provenance",
+      "verification": "CONTRACT_LOCKED"
+    }
+  ],
+  "humanSummary": "Overall direction and quality improved; two concrete issues were reported and corrected. Full human approval is not yet recorded.",
+  "automatedEvidence": {
+    "assessmentV2": "89/89 PASS",
+    "legacyPolicy": "2/2 PASS",
+    "build": "PASS"
+  }
+}

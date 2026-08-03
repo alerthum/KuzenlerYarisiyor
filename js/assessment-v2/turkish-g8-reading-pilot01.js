@@ -141,10 +141,10 @@ const NEW_SPECS = Object.freeze([
       { id: 'e3', sentence: 3, claim: 'Koşullar ile canlıların görünmesi arasında ilişki fark edilmektedir.' }
     ], requiredEvidenceIds: ['e1', 'e2', 'e3'],
     options: [
-      opt('A', 'Gece görülen hayvanların adlarını doğru biçimde öğrenmenin yolları', { partial: ['e1'], scope: 'narrowed', fit: 'partial', misconceptionId: 'initial-step-as-topic', feedback: 'Tür adlarını yazmak yalnız başlangıçtır; parça ad öğrenme yöntemini anlatmaz.' }),
-      opt('B', 'Ayın evresi ve rüzgâr yönünün gece yürüyüşlerini zorlaştırması', { partial: ['e2'], scope: 'shifted', fit: 'unsupported', misconceptionId: 'condition-as-obstacle', feedback: 'Bu koşullar zorluk olarak değil, gözlemi anlamlandıran veriler olarak kaydedilir.' }),
-      opt('C', 'Aynı patikada yapılan yürüyüşlerin kişiye zamanla alışkanlık kazandırması', { partial: ['e3'], scope: 'shifted', fit: 'partial', misconceptionId: 'repetition-as-habit', feedback: 'Tekrarlı gözlem vardır; fakat odak alışkanlık değil, canlıların hangi koşullarda göründüğünü belirlemektir.' }),
-      opt('D', 'Doğa gözlemlerinde tür adlarıyla birlikte çevresel koşulların da kaydedilmesi', { correct: true, support: ['e1', 'e2', 'e3'], feedback: 'Parça, basit tür listesinin koşulları içeren anlamlı bir gözlem kaydına dönüşmesini anlatır.' })
+      opt('A', 'Aynı patikaya farklı gecelerde dönmenin, canlıların görülme sıklığını karşılaştırmaya katkısı', { partial: ['e1', 'e3'], scope: 'narrowed', fit: 'partial', misconceptionId: 'repeated-route-as-main-topic', feedback: 'Farklı gecelerde aynı patikaya dönmek karşılaştırma olanağı sağlar; ancak parça yalnız görülme sıklığını incelemeye odaklanmaz.' }),
+      opt('B', 'Ayın evresi, rüzgâr ve saat bilgisinin gece yürüyüşlerinin planlanmasındaki işlevi', { partial: ['e2', 'e3'], scope: 'shifted', fit: 'partial', misconceptionId: 'recorded-conditions-as-planning-tool', feedback: 'Ay, rüzgâr ve saat kaydedilir; fakat bu bilgiler yürüyüşü planlamak için değil, canlılarla karşılaşma koşullarını anlamak için kullanılır.' }),
+      opt('C', 'Gözlem notlarının tür adlarından, canlı davranışlarını sınıflandıran kayıtlara doğru genişlemesi', { partial: ['e1', 'e3'], scope: 'shifted', fit: 'partial', misconceptionId: 'conditions-as-behaviour-classification', feedback: 'Defter tür listesinden daha kapsamlı hâle gelir; ancak canlı davranışlarını sınıflandırmaz, karşılaşmaların gerçekleştiği koşulları kaydeder.' }),
+      opt('D', 'Gözlem kayıtlarının tür adlarıyla birlikte karşılaşma koşullarını içerecek biçimde geliştirilmesi', { correct: true, support: ['e1', 'e2', 'e3'], feedback: 'Parça, yalnız tür adlarının yazıldığı defterin çevresel koşulları ve karşılaşma bağlamını da içeren bir kayda dönüşmesini anlatır.' })
     ],
     steps: [
       { action: 'defterdeki ilk kayıt biçimini belirle', evidenceIds: ['e1'], explanation: 'İlk kayıtlar yalnız hayvan adlarından oluşur.', hint: 'Anlatıcı başlangıçta defterine yalnız ne yazıyor?' },
@@ -547,8 +547,12 @@ const NEW_SPECS = Object.freeze([
     construct: { primarySkill: 'table-interpretation', secondarySkills: ['percentage-vs-count', 'group-comparison'], cognitiveProcess: 'analysis', knowledgeComponents: ['sample-size', 'percentage'], intendedDifficultyBand: 'LGS_HIGH' },
     style: { genre: 'anket-tablosu', voice: 'nesnel', sourceMode: 'özgün-müze-anketi', rhetoricalMoves: ['örneklem', 'oran-karşılaştırması'] },
     stimulusBlocks: [
-      `Bir müze, sesli rehber kullanan ziyaretçilere “anlatım süresi uygun muydu?” sorusunu yöneltmiştir:`,
-      `Grup | Katılımcı sayısı | “Uygun” diyenlerin oranı\n12-17 yaş | 80 | %65\n18-35 yaş | 150 | %58\n36-55 yaş | 100 | %72\n56+ yaş | 50 | %76`
+      `Bir müze, sesli rehber kullanan ziyaretçilere “Anlatım süresi uygun muydu?” sorusunu yöneltmiştir. Tablonun ikinci sütunu her yaş grubunda ankete katılan toplam kişi sayısını, üçüncü sütunu ise bu katılımcılar arasında “uygun” yanıtını verenlerin oranını göstermektedir.`,
+      `Yaş grubu | Ankete katılan toplam kişi sayısı (kişi) | Bu grupta “uygun” diyenlerin oranı (%)
+12-17 yaş | 80 | 65
+18-35 yaş | 150 | 58
+36-55 yaş | 100 | 72
+56+ yaş | 50 | 76`
     ],
     stem: 'Tablodaki bilgilere göre aşağıdaki yorumlardan hangisi doğrudur?',
     evidence: [

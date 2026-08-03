@@ -10,6 +10,7 @@ import {
 } from '../../js/assessment-v2/turkish-g8-reading-pilot01.js';
 import { produceCanonicalQuestion } from '../../js/assessment-v2/question-production-pipeline.js';
 import { auditGrade8TurkishCalibrationQuestion } from '../../js/assessment-v2/turkish-g8-reading-calibration.js';
+import { GRADE8_TURKISH_NEXT_WAVE_CONTRACT, auditGrade8TurkishNextWaveContract } from '../../js/assessment-v2/turkish-g8-next-wave-contract.js';
 
 const items = buildGrade8TurkishPilot01Questions();
 const audit = auditGrade8TurkishPilot01Catalog(items);
@@ -105,7 +106,7 @@ test('katalog metin türü ve kaynak biçiminde tek kalıba düşmez', () => {
 });
 
 
-test('R1 gözle paketi daha önce gösterilen hiçbir soruyu tekrar etmez', () => {
+test('gözle paketi daha önce gösterilen hiçbir soruyu tekrar etmez', () => {
   const previousIds = new Set(GRADE8_TURKISH_PILOT01_PREVIOUS_REVIEW_IDS);
   const freshItems = items.filter(item => GRADE8_TURKISH_PILOT01_FRESH_REVIEW_IDS.includes(item.id));
   assert.equal(GRADE8_TURKISH_PILOT01_PREVIOUS_REVIEW_IDS.length, 12);
@@ -116,4 +117,34 @@ test('R1 gözle paketi daha önce gösterilen hiçbir soruyu tekrar etmez', () =
     { A: 3, B: 3, C: 3, D: 3 }
   );
   assert.equal(new Set(freshItems.flatMap(item => item.curriculum.outcomeIds)).size, 8);
+});
+
+
+test('insan geri bildirimi sonrası Soru 2 seçenekleri aynı kanıt alanında ve benzer soyutluk düzeyindedir', () => {
+  const item = items.find(entry => entry.id.endsWith('08-night-observation-topic'));
+  assert.ok(item);
+  const wrong = item.content.optionSemantics.filter(entry => !entry.correct);
+  assert.equal(wrong.every(entry => entry.partialSupport.length >= 2), true);
+  const lengths = item.content.options.map(option => option.text.split(/\s+/).length);
+  assert.equal(Math.max(...lengths) - Math.min(...lengths) <= 3, true);
+  assert.equal(auditGrade8TurkishCalibrationQuestion(item).metrics.blindOptionCueRisk, 0);
+});
+
+test('Soru 12 tablosu sayı, birim ve yüzde sütunlarını ilk okumada açıklar', () => {
+  const item = items.find(entry => entry.id.endsWith('24-audio-guide-table'));
+  assert.ok(item);
+  assert.match(item.content.stimulusBlocks[0], /ikinci sütunu.*katılan toplam kişi sayısını/i);
+  assert.match(item.content.stimulusBlocks[0], /üçüncü sütunu.*oranını/i);
+  assert.match(item.content.stimulusBlocks[1], /Ankete katılan toplam kişi sayısı \(kişi\)/);
+  assert.match(item.content.stimulusBlocks[1], /oranı \(%\)/);
+  assert.match(item.content.stimulusBlocks[1], /12-17 yaş \| 80 \| 65/);
+});
+
+test('bir sonraki Türkçe dalgası söz sanatları, edebî dil ve güvenli alıntı politikasını zorunlu tutar', () => {
+  const result = auditGrade8TurkishNextWaveContract();
+  assert.equal(result.ok, true, result.errors.join('\n'));
+  assert.deepEqual(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.requiredOutcomeCodes, ['T.8.3.6', 'T.8.3.7', 'T.8.3.11', 'T.8.3.21', 'T.8.3.26']);
+  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.quotationPolicy.fabricatedAttributionForbidden, true);
+  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.diversityMinimums.figurativeLanguageItemCount >= 4, true);
+  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.diversityMinimums.authorViewOrQuotationItemCount >= 4, true);
 });

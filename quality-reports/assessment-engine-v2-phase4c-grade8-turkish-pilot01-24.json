@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T11:11:19.667Z",
+  "generatedAt": "2026-08-03T11:48:44.243Z",
   "batchId": "GRADE8_TURKISH_PILOT_01_24",
   "decision": "HUMAN_REVIEW_REQUIRED",
   "productReady": false,
@@ -441,19 +441,19 @@
           "requiredEvidenceCount": 3,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0,
+          "maxSingleSentenceAnswerOverlap": 0.111,
           "optionWordCounts": [
-            8,
-            9,
-            8,
-            9
+            10,
+            11,
+            10,
+            10
           ],
           "blindOptionCueRisk": 0,
           "blindOptionCueReasons": [],
           "optionRhetoricalProfiles": [
             {
               "id": "A",
-              "wordCount": 8,
+              "wordCount": 10,
               "qualifierCount": 0,
               "limitationCount": 0,
               "certaintyCount": 0,
@@ -462,7 +462,7 @@
             },
             {
               "id": "B",
-              "wordCount": 9,
+              "wordCount": 11,
               "qualifierCount": 0,
               "limitationCount": 0,
               "certaintyCount": 0,
@@ -471,7 +471,7 @@
             },
             {
               "id": "C",
-              "wordCount": 8,
+              "wordCount": 10,
               "qualifierCount": 0,
               "limitationCount": 0,
               "certaintyCount": 0,
@@ -480,7 +480,7 @@
             },
             {
               "id": "D",
-              "wordCount": 9,
+              "wordCount": 10,
               "qualifierCount": 0,
               "limitationCount": 0,
               "certaintyCount": 0,
@@ -1353,7 +1353,7 @@
           "requiredEvidenceCount": 4,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0,
+          "maxSingleSentenceAnswerOverlap": 0.143,
           "optionWordCounts": [
             18,
             16,
@@ -2959,19 +2959,19 @@
       "options": [
         {
           "id": "A",
-          "text": "Gece görülen hayvanların adlarını doğru biçimde öğrenmenin yolları"
+          "text": "Aynı patikaya farklı gecelerde dönmenin, canlıların görülme sıklığını karşılaştırmaya katkısı"
         },
         {
           "id": "B",
-          "text": "Ayın evresi ve rüzgâr yönünün gece yürüyüşlerini zorlaştırması"
+          "text": "Ayın evresi, rüzgâr ve saat bilgisinin gece yürüyüşlerinin planlanmasındaki işlevi"
         },
         {
           "id": "C",
-          "text": "Aynı patikada yapılan yürüyüşlerin kişiye zamanla alışkanlık kazandırması"
+          "text": "Gözlem notlarının tür adlarından, canlı davranışlarını sınıflandıran kayıtlara doğru genişlemesi"
         },
         {
           "id": "D",
-          "text": "Doğa gözlemlerinde tür adlarıyla birlikte çevresel koşulların da kaydedilmesi"
+          "text": "Gözlem kayıtlarının tür adlarıyla birlikte karşılaşma koşullarını içerecek biçimde geliştirilmesi"
         }
       ],
       "answerKey": {
@@ -3003,29 +3003,32 @@
         {
           "optionId": "A",
           "correct": false,
-          "misconceptionId": "initial-step-as-topic",
-          "text": "Tür adlarını yazmak yalnız başlangıçtır; parça ad öğrenme yöntemini anlatmaz.",
+          "misconceptionId": "repeated-route-as-main-topic",
+          "text": "Farklı gecelerde aynı patikaya dönmek karşılaştırma olanağı sağlar; ancak parça yalnız görülme sıklığını incelemeye odaklanmaz.",
           "supportingEvidenceIds": [
-            "e1"
+            "e1",
+            "e3"
           ],
           "contradictionEvidenceIds": []
         },
         {
           "optionId": "B",
           "correct": false,
-          "misconceptionId": "condition-as-obstacle",
-          "text": "Bu koşullar zorluk olarak değil, gözlemi anlamlandıran veriler olarak kaydedilir.",
+          "misconceptionId": "recorded-conditions-as-planning-tool",
+          "text": "Ay, rüzgâr ve saat kaydedilir; fakat bu bilgiler yürüyüşü planlamak için değil, canlılarla karşılaşma koşullarını anlamak için kullanılır.",
           "supportingEvidenceIds": [
-            "e2"
+            "e2",
+            "e3"
           ],
           "contradictionEvidenceIds": []
         },
         {
           "optionId": "C",
           "correct": false,
-          "misconceptionId": "repetition-as-habit",
-          "text": "Tekrarlı gözlem vardır; fakat odak alışkanlık değil, canlıların hangi koşullarda göründüğünü belirlemektir.",
+          "misconceptionId": "conditions-as-behaviour-classification",
+          "text": "Defter tür listesinden daha kapsamlı hâle gelir; ancak canlı davranışlarını sınıflandırmaz, karşılaşmaların gerçekleştiği koşulları kaydeder.",
           "supportingEvidenceIds": [
+            "e1",
             "e3"
           ],
           "contradictionEvidenceIds": []
@@ -3034,7 +3037,7 @@
           "optionId": "D",
           "correct": true,
           "misconceptionId": null,
-          "text": "Parça, basit tür listesinin koşulları içeren anlamlı bir gözlem kaydına dönüşmesini anlatır.",
+          "text": "Parça, yalnız tür adlarının yazıldığı defterin çevresel koşulları ve karşılaşma bağlamını da içeren bir kayda dönüşmesini anlatır.",
           "supportingEvidenceIds": [
             "e1",
             "e2",
@@ -3086,19 +3089,19 @@
           "requiredEvidenceCount": 3,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0,
+          "maxSingleSentenceAnswerOverlap": 0.111,
           "optionWordCounts": [
-            8,
-            9,
-            8,
-            9
+            10,
+            11,
+            10,
+            10
           ],
           "blindOptionCueRisk": 0,
           "blindOptionCueReasons": [],
           "optionRhetoricalProfiles": [
             {
               "id": "A",
-              "wordCount": 8,
+              "wordCount": 10,
               "qualifierCount": 0,
               "limitationCount": 0,
               "certaintyCount": 0,
@@ -3107,7 +3110,7 @@
             },
             {
               "id": "B",
-              "wordCount": 9,
+              "wordCount": 11,
               "qualifierCount": 0,
               "limitationCount": 0,
               "certaintyCount": 0,
@@ -3116,7 +3119,7 @@
             },
             {
               "id": "C",
-              "wordCount": 8,
+              "wordCount": 10,
               "qualifierCount": 0,
               "limitationCount": 0,
               "certaintyCount": 0,
@@ -3125,7 +3128,7 @@
             },
             {
               "id": "D",
-              "wordCount": 9,
+              "wordCount": 10,
               "qualifierCount": 0,
               "limitationCount": 0,
               "certaintyCount": 0,
@@ -6421,8 +6424,8 @@
       },
       "stimulus": null,
       "stimulusBlocks": [
-        "Bir müze, sesli rehber kullanan ziyaretçilere “anlatım süresi uygun muydu?” sorusunu yöneltmiştir:",
-        "Grup | Katılımcı sayısı | “Uygun” diyenlerin oranı\n12-17 yaş | 80 | %65\n18-35 yaş | 150 | %58\n36-55 yaş | 100 | %72\n56+ yaş | 50 | %76"
+        "Bir müze, sesli rehber kullanan ziyaretçilere “Anlatım süresi uygun muydu?” sorusunu yöneltmiştir. Tablonun ikinci sütunu her yaş grubunda ankete katılan toplam kişi sayısını, üçüncü sütunu ise bu katılımcılar arasında “uygun” yanıtını verenlerin oranını göstermektedir.",
+        "Yaş grubu | Ankete katılan toplam kişi sayısı (kişi) | Bu grupta “uygun” diyenlerin oranı (%)\n12-17 yaş | 80 | 65\n18-35 yaş | 150 | 58\n36-55 yaş | 100 | 72\n56+ yaş | 50 | 76"
       ],
       "stem": "Tablodaki bilgilere göre aşağıdaki yorumlardan hangisi doğrudur?",
       "options": [
@@ -6566,7 +6569,7 @@
           "requiredEvidenceCount": 4,
           "partialDistractorCount": 3,
           "semanticFieldCount": 1,
-          "maxSingleSentenceAnswerOverlap": 0,
+          "maxSingleSentenceAnswerOverlap": 0.143,
           "optionWordCounts": [
             18,
             16,

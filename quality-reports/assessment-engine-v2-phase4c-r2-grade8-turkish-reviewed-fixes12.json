@@ -1,0 +1,2634 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T11:48:44.243Z",
+  "batchId": "GRADE8_TURKISH_PILOT_01_FRESH_REVIEW_12_R2",
+  "decision": "HUMAN_REVIEW_REQUIRED",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "selection": {
+    "itemCount": 12,
+    "outcomeCount": 8,
+    "answerCounts": {
+      "A": 3,
+      "B": 3,
+      "C": 3,
+      "D": 3
+    },
+    "previousReviewOverlapCount": 0,
+    "excludedPreviouslyShownItemCount": 12,
+    "humanFeedbackApplied": [
+      "question-2-option-balance",
+      "question-12-table-semantics"
+    ]
+  },
+  "questions": [
+    {
+      "number": 1,
+      "id": "tr-g8-pilot01-07-seed-exchange-topic",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-16",
+      "construct": {
+        "primarySkill": "topic-identification",
+        "secondarySkills": [
+          "example-abstraction",
+          "scope-control"
+        ],
+        "cognitiveProcess": "comprehension",
+        "knowledgeComponents": [
+          "topic",
+          "example"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM"
+      },
+      "styleProfile": {
+        "genre": "yerel-girişim-yazısı",
+        "voice": "gözlemci-anlatıcı",
+        "sourceMode": "özgün-tohum-takası-metni",
+        "rhetoricalMoves": [
+          "örnekleme",
+          "işlev-açıklama"
+        ]
+      },
+      "stimulus": "Köy meydanında kurulan masalara bu yıl domates, fasulye ve kavun tohumları bırakıldı. Paketlerin üzerinde tohumun yetiştiği yer, sulama biçimi ve kaç yıldır aynı ailede korunduğu yazıyordu. Katılanlar yalnız paket değiş tokuş etmedi; hangi çeşidin kuraklığa dayandığını, hangisinin erken ürün verdiğini de anlattı. Böylece her tohum, yanında onu yaşatan deneyimi de başka bir bahçeye taşıdı.",
+      "stimulusBlocks": null,
+      "stem": "Bu parçada aşağıdakilerin hangisinden söz edilmektedir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kuraklığa dayanıklı sebze çeşitlerinin ticari üretimde yaygınlaştırılmasından"
+        },
+        {
+          "id": "B",
+          "text": "Ailelerin yıllardır sakladıkları tohumların bilimsel laboratuvarlarda incelenmesinden"
+        },
+        {
+          "id": "C",
+          "text": "Yerel tohumlarla birlikte bu tohumlara ilişkin yetiştirme bilgisinin paylaşılmasından"
+        },
+        {
+          "id": "D",
+          "text": "Köy meydanlarında düzenlenen etkinliklerin üreticiler arasındaki rekabeti artırmasından"
+        }
+      ],
+      "answerKey": {
+        "optionId": "C",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Meydandaki masalarda ne paylaşılmaktadır?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Paketlerin üstündeki bilgiler ve katılımcıların anlattıkları neyi gösteriyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Yalnız “tohum” diyen değil, “tohumla birlikte bilgi” diyen seçeneği ara.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "one-property-expanded",
+          "text": "Kuraklığa dayanıklılık yalnız aktarılan bilgilerden biridir; ticari üretim metnin konusu değildir.",
+          "supportingEvidenceIds": [
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "recording-equals-lab",
+          "text": "Tohum geçmişi yazılır ancak laboratuvar incelemesinden söz edilmez.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Parça hem tohum değişimini hem de tohumla birlikte deneyimin aktarılmasını anlatır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "exchange-as-competition",
+          "text": "Etkinlik vardır fakat rekabet değil, paylaşım ve bilgi aktarımı öne çıkar.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "olayın merkezindeki nesneyi belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Etkinliğin merkezinde yerel tohumlar bulunur."
+        },
+        {
+          "id": "s2",
+          "action": "paylaşımın yalnız nesneyle sınırlı olup olmadığını incele",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "evidence": "Tohumlarla birlikte yetiştirme bilgisi ve deneyim de aktarılır."
+        },
+        {
+          "id": "s3",
+          "action": "iki yönü de kapsayan konu seçeneğini bul",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "evidence": "Doğru konu, tohum ile deneyim paylaşımını birlikte içerir."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-07-seed-exchange-topic",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0,
+          "optionWordCounts": [
+            7,
+            7,
+            9,
+            8
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 7,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 7,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 9,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 8,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 2,
+      "id": "tr-g8-pilot01-08-night-observation-topic",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-16",
+      "construct": {
+        "primarySkill": "topic-identification",
+        "secondarySkills": [
+          "detail-unification",
+          "cause-purpose-distinction"
+        ],
+        "cognitiveProcess": "comprehension",
+        "knowledgeComponents": [
+          "topic",
+          "observation-method"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "styleProfile": {
+        "genre": "doğa-gözlem-notu",
+        "voice": "birinci-tekil",
+        "sourceMode": "özgün-gece-gözlemi",
+        "rhetoricalMoves": [
+          "kişisel-deneyim",
+          "yöntem-açıklama"
+        ]
+      },
+      "stimulus": "Gece yürüyüşlerine ilk başladığımda yalnız gördüğüm hayvanların adını yazıyordum. Bir süre sonra ayın evresini, rüzgârın yönünü ve duyduğum sesin saatini de not etmeye başladım. Aynı patikaya farklı gecelerde döndüğümde, bazı canlıların yalnız belirli koşullarda ortaya çıktığını fark ettim. Defterim artık bir tür listesi olmaktan çıkmış, karşılaşmaların hangi şartlarda gerçekleştiğini gösteren bir gözlem kaydına dönüşmüştü.",
+      "stimulusBlocks": null,
+      "stem": "Bu parçanın konusu aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Aynı patikaya farklı gecelerde dönmenin, canlıların görülme sıklığını karşılaştırmaya katkısı"
+        },
+        {
+          "id": "B",
+          "text": "Ayın evresi, rüzgâr ve saat bilgisinin gece yürüyüşlerinin planlanmasındaki işlevi"
+        },
+        {
+          "id": "C",
+          "text": "Gözlem notlarının tür adlarından, canlı davranışlarını sınıflandıran kayıtlara doğru genişlemesi"
+        },
+        {
+          "id": "D",
+          "text": "Gözlem kayıtlarının tür adlarıyla birlikte karşılaşma koşullarını içerecek biçimde geliştirilmesi"
+        }
+      ],
+      "answerKey": {
+        "optionId": "D",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Anlatıcı başlangıçta defterine yalnız ne yazıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Daha sonra hangi çevresel bilgiler kayda katılıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek, tür adları ile çevresel koşulların birlikte kaydedilmesini kapsamalı.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "repeated-route-as-main-topic",
+          "text": "Farklı gecelerde aynı patikaya dönmek karşılaştırma olanağı sağlar; ancak parça yalnız görülme sıklığını incelemeye odaklanmaz.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "recorded-conditions-as-planning-tool",
+          "text": "Ay, rüzgâr ve saat kaydedilir; fakat bu bilgiler yürüyüşü planlamak için değil, canlılarla karşılaşma koşullarını anlamak için kullanılır.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "conditions-as-behaviour-classification",
+          "text": "Defter tür listesinden daha kapsamlı hâle gelir; ancak canlı davranışlarını sınıflandırmaz, karşılaşmaların gerçekleştiği koşulları kaydeder.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Parça, yalnız tür adlarının yazıldığı defterin çevresel koşulları ve karşılaşma bağlamını da içeren bir kayda dönüşmesini anlatır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "defterdeki ilk kayıt biçimini belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "İlk kayıtlar yalnız hayvan adlarından oluşur."
+        },
+        {
+          "id": "s2",
+          "action": "sonradan eklenen veri türlerini belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Ay, rüzgâr ve saat gibi koşullar eklenir."
+        },
+        {
+          "id": "s3",
+          "action": "değişimin ortak konusunu seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "evidence": "Konu, gözlem kaydının koşulları da içerecek biçimde gelişmesidir."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-08-night-observation-topic",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.111,
+          "optionWordCounts": [
+            10,
+            11,
+            10,
+            10
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 10,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 11,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 10,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 10,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 3,
+      "id": "tr-g8-pilot01-09-margin-notes-main-idea",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-17",
+      "construct": {
+        "primarySkill": "main-idea-synthesis",
+        "secondarySkills": [
+          "contrast-integration",
+          "author-purpose"
+        ],
+        "cognitiveProcess": "analysis-and-synthesis",
+        "knowledgeComponents": [
+          "central-claim",
+          "qualification"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "styleProfile": {
+        "genre": "kişisel-deneme",
+        "voice": "birinci-tekil",
+        "sourceMode": "özgün-okuma-denemesi",
+        "rhetoricalMoves": [
+          "itiraf",
+          "karşıtlık",
+          "sonuç"
+        ]
+      },
+      "stimulus": "Kitapların kenarına not düşmeye uzun süre cesaret edemedim; sanki basılı cümleye dokunursam ona zarar verecekmişim gibi gelirdi. Sonra yıllar önce okuduğum bir kitabı yeniden açtım ve o zamanki sessizliğimin metinle arama mesafe koyduğunu fark ettim. Şimdi her satırı işaretlemiyorum, yazarın yerine de konuşmuyorum. Yalnızca durduğum, itiraz ettiğim ya da başka bir metni hatırladığım yerlere küçük izler bırakıyorum. Böylece kitap değişmiyor ama benim onunla kurduğum ilişki görünür hâle geliyor.",
+      "stimulusBlocks": null,
+      "stem": "Bu parçanın ana düşüncesi aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Kenar notları, metni değiştirmeden okurun düşünsel katılımını ve metinle kurduğu kişisel ilişkiyi görünür kılabilir."
+        },
+        {
+          "id": "B",
+          "text": "Kitaplara not yazmak, ilk okumada gözden kaçan önemli ayrıntıların sonraki okumada bulunmasını kolaylaştırır."
+        },
+        {
+          "id": "C",
+          "text": "Okur, yazarın düşüncelerine katılmadığı her yerde kendi görüşünü metnin kenarına ayrıntılı biçimde yazmalıdır."
+        },
+        {
+          "id": "D",
+          "text": "Basılı bir kitaba müdahale etmek metnin bütünlüğünü bozduğu için okuma notları ayrı bir defterde tutulmalıdır."
+        }
+      ],
+      "answerKey": {
+        "optionId": "A",
+        "supportingEvidenceIds": [
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "İlk cümlede anlatıcının hangi çekincesi var?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Anlatıcı her yeri mi işaretliyor, yoksa yalnız belirli anlarda mı not düşüyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek hem “metnin değişmemesi”ni hem de “okurun ilişkisinin görünür olması”nı taşımalı.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Parçanın vardığı sonuç, seçici notların okur ile metin arasındaki ilişkiyi görünür kılmasıdır.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "note-as-memory-tool-only",
+          "text": "Yeniden okuma anılır; ancak notların amacı bütün ayrıntıları bulmak değil, okurun tepkisini kaydetmektir.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "selective-note-to-every-disagreement",
+          "text": "Anlatıcı her satırı işaretlemediğini ve yazarın yerine konuşmadığını özellikle belirtir.",
+          "supportingEvidenceIds": [
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "initial-fear-as-thesis",
+          "text": "Bu seçenek anlatıcının başlangıçtaki çekincesini ana düşünce sanır; parça sonunda bu görüş aşılır.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e4"
+          ]
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "başlangıçtaki çekinceyi belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Anlatıcı kitaba zarar verme korkusuyla not almaktan kaçınır."
+        },
+        {
+          "id": "s2",
+          "action": "anlatıcının sonradan benimsediği not alma biçimini ayır",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Notlar seçici, ölçülü ve metne verilen tepkileri kaydeden izlerdir."
+        },
+        {
+          "id": "s3",
+          "action": "parçanın ulaştığı sonucu seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Not almak metni değiştirmez; okurun metinle ilişkisini görünür kılar."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-09-margin-notes-main-idea",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.077,
+          "optionWordCounts": [
+            14,
+            13,
+            13,
+            15
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 14,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 13,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 13,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "id": "tr-g8-pilot01-12-repair-cafe-supporting-ideas",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-18",
+      "construct": {
+        "primarySkill": "supporting-idea-identification",
+        "secondarySkills": [
+          "claim-evidence-matching",
+          "scope-control"
+        ],
+        "cognitiveProcess": "analysis",
+        "knowledgeComponents": [
+          "explicit-detail",
+          "inference-boundary"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "styleProfile": {
+        "genre": "toplum-haberi",
+        "voice": "haber-anlatıcısı",
+        "sourceMode": "özgün-tamir-buluşması",
+        "rhetoricalMoves": [
+          "olay-anlatımı",
+          "sonuç-çıkarma"
+        ]
+      },
+      "stimulus": "Mahallede ayda bir kurulan tamir buluşmasına bozulan küçük ev aletleri getiriliyor. Gönüllüler cihazı sahibinin yanında açıyor; hangi parçanın neden bozulduğunu ve güvenli biçimde neyin yapılabileceğini anlatıyor. Her eşya onarılamıyor, fakat onarılamayanlar da doğrudan çöpe gitmiyor; kullanılabilir parçaları ayrılıyor. Etkinliğe gelenlerin bir kısmı sonraki aylarda yalnız eşya getirmek için değil, öğrendiklerini başkalarına aktarmak için de masaya oturuyor.",
+      "stimulusBlocks": null,
+      "stem": "Bu parçadan aşağıdakilerin hangisi çıkarılamaz?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Etkinlik, eşyanın onarılmasının yanında katılımcıların tamir bilgisini paylaşmasına da ortam hazırlar."
+        },
+        {
+          "id": "B",
+          "text": "Onarılamayan cihazların bazı parçaları başka kullanımlar için değerlendirilebilir."
+        },
+        {
+          "id": "C",
+          "text": "Tamir buluşmalarına düzenli katılanlar, zamanla küçük ev aletlerini uzman desteği olmadan onarabilecek yeterliliğe ulaşır."
+        },
+        {
+          "id": "D",
+          "text": "Bazı katılımcılar zamanla yalnız hizmet alan kişi olmaktan çıkıp bilgi aktaran kişiye dönüşür."
+        }
+      ],
+      "answerKey": {
+        "optionId": "C",
+        "supportingEvidenceIds": [
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Metinde yalnız tamir mi var; öğrenme ve parça değerlendirme de var mı?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Üçüncü cümlede etkinliğin başarısı için hangi sınır konuyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "“Her eşya onarılamıyor” bilgisi hangi seçeneği desteklemez?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "supported-synthesis-rejected",
+          "text": "Gönüllülerin açıklaması ve eski katılımcıların bilgi aktarması bu sonucu destekler.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "explicit-detail-missed",
+          "text": "Kullanılabilir parçaların ayrıldığı açıkça belirtilmiştir.",
+          "supportingEvidenceIds": [
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Bazı katılımcıların öğrendiklerini aktardığı söylenir; herkesin bağımsız onarım yeterliliğine ulaştığına ilişkin veri yoktur.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "role-change-overlooked",
+          "text": "Son cümle, bazı katılımcıların daha sonra masaya bilgi aktarmak için oturduğunu söyler.",
+          "supportingEvidenceIds": [
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "etkinliğin üç farklı işlevini ayır",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Tamir, parça değerlendirme ve bilgi aktarımı birlikte vardır."
+        },
+        {
+          "id": "s2",
+          "action": "metnin sınırlamasını fark et",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Her eşyanın onarılamadığı açıkça belirtilir."
+        },
+        {
+          "id": "s3",
+          "action": "bu sınırı aşan seçeneği bul",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Yeni cihaz ihtiyacının tümden bittiği sonucu metni aşar."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-12-repair-cafe-supporting-ideas",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.154,
+          "optionWordCounts": [
+            11,
+            8,
+            14,
+            13
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 11,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 8,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 14,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 13,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "id": "tr-g8-pilot01-13-bird-tracking-supporting-ideas",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-18",
+      "construct": {
+        "primarySkill": "supporting-idea-identification",
+        "secondarySkills": [
+          "data-interpretation",
+          "negative-stem-control"
+        ],
+        "cognitiveProcess": "analysis",
+        "knowledgeComponents": [
+          "explicit-result",
+          "limitation"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "styleProfile": {
+        "genre": "bilim-haberi",
+        "voice": "nesnel-bilim-anlatıcısı",
+        "sourceMode": "özgün-kuş-izleme-raporu",
+        "rhetoricalMoves": [
+          "yöntem",
+          "bulgu",
+          "sınırlama"
+        ]
+      },
+      "stimulus": "Araştırmacılar, göç eden on iki leyleğe hafif vericiler takarak üç yıl boyunca rotalarını izledi. Kuşların çoğu aynı dinlenme alanlarına döndü; ancak kurak geçen yılda iki sulak alan atlanarak daha kuzeydeki alanlar kullanıldı. Vericiler yalnız konumu ve zamanı kaydettiği için kuşların neden rota değiştirdiği doğrudan bilinmiyordu. Ekip, uydu görüntülerindeki su düzeyiyle hareket kayıtlarını karşılaştırarak kuraklığın olası etkisini değerlendirdi.",
+      "stimulusBlocks": null,
+      "stem": "Bu parçadan aşağıdakilerin hangisine ulaşılamaz?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Leyleklerin çoğunun aynı alanlara dönmesi, dinlenme alanı seçiminin çevresel değişimlerden bağımsız olduğunu gösterir."
+        },
+        {
+          "id": "B",
+          "text": "Hareket kayıtları, kuşların nerede ve ne zaman bulunduğunu göstermiştir."
+        },
+        {
+          "id": "C",
+          "text": "Rota değişikliğinin olası nedeni, hareket verileri ile çevresel veriler karşılaştırılarak araştırılmıştır."
+        },
+        {
+          "id": "D",
+          "text": "Bazı leylekler kurak geçen yılda önceki yıllardan farklı dinlenme alanları kullanmıştır."
+        }
+      ],
+      "answerKey": {
+        "optionId": "A",
+        "supportingEvidenceIds": [
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "İkinci cümlede hem devamlılık hem de değişiklik var; ikisini ayır.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Verici kuşun kararının nedenini mi, yalnız hareketini mi kaydediyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Kurak yıldaki iki farklı alan, hangi seçeneği geçersiz kılıyor?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Çoğu alan tekrar kullanılsa da kurak yılda bazı sulak alanların atlanması, seçimin çevresel koşullardan bağımsız olmadığını gösterir.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "method-detail-missed",
+          "text": "Vericilerin konum ve zaman bilgisini kaydettiği açıkça söylenir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "data-combination-overlooked",
+          "text": "Uydu görüntülerindeki su düzeyi ile hareket kayıtları karşılaştırılmıştır.",
+          "supportingEvidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "exception-overlooked",
+          "text": "İki sulak alanın atlanıp daha kuzeydeki alanların kullanıldığı belirtilmiştir.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "normal yıllar ile kurak yılı karşılaştır",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Çoğu rota korunmuş fakat bazı dinlenme alanları değişmiştir."
+        },
+        {
+          "id": "s2",
+          "action": "vericinin neyi gösterip neyi göstermediğini belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Konum ve zaman görünür, neden doğrudan görünmez."
+        },
+        {
+          "id": "s3",
+          "action": "metne aykırı mutlak yargıyı seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Alanların bütünüyle değişmeden kaldığı söylenemez."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-13-bird-tracking-supporting-ideas",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.154,
+          "optionWordCounts": [
+            13,
+            9,
+            11,
+            11
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 13,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 9,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 11,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 11,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 6,
+      "id": "tr-g8-pilot01-14-translation-cross-text",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-23",
+      "construct": {
+        "primarySkill": "cross-text-comparison",
+        "secondarySkills": [
+          "perspective-mapping",
+          "common-topic-different-emphasis"
+        ],
+        "cognitiveProcess": "analysis",
+        "knowledgeComponents": [
+          "shared-topic",
+          "distinct-claim"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "styleProfile": {
+        "genre": "iki-görüş-metni",
+        "voice": "iki-uzman",
+        "sourceMode": "özgün-çeviri-tartışması",
+        "rhetoricalMoves": [
+          "görüş",
+          "gerekçelendirme"
+        ]
+      },
+      "stimulus": null,
+      "stimulusBlocks": [
+        "I. Çevirmen: Eski bir romandaki günlük konuşmaları bugünün okuruna bütünüyle yabancı bırakmak, karakterlerin canlılığını azaltabilir. Bu nedenle bazı deyimleri güncel karşılıklarla veririm; fakat dönemin toplumsal ilişkilerini değiştirecek sözcüklerden kaçınırım.",
+        "II. Çevirmen: Metnin yaşı, yalnız olaylarda değil, cümlelerin yürüyüşünde de hissedilir. Okuma biraz yavaşlasa bile bu ritmi korumayı seçerim. Yabancı gelen her ifadeyi güncellemek, eserin zamanla arasındaki bağı zayıflatabilir."
+      ],
+      "stem": "Bu iki metinle ilgili aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "İki çevirmen de metnin tarihsel özelliklerini korumak ister; birincisi seçici güncellemeye, ikincisi dilsel mesafeyi sürdürmeye ağırlık verir."
+        },
+        {
+          "id": "B",
+          "text": "Birinci çevirmen okurun rahatlığını, ikinci çevirmen yazarın anlatımını önemser; bu nedenle amaçları birbiriyle bağdaşmaz."
+        },
+        {
+          "id": "C",
+          "text": "İki çevirmen de eski ifadelerin güncellenmesini gerekli görür; yalnız güncellemenin kapsamı konusunda ayrılır."
+        },
+        {
+          "id": "D",
+          "text": "Birinci metin çeviride sözcük seçimini, ikinci metin yalnız olay örgüsünün döneme uygunluğunu ele alır."
+        }
+      ],
+      "answerKey": {
+        "optionId": "A",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Birinci çevirmen neyi güncelliyor, hangi sınırı koruyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "İkinci çevirmen okuma yavaşlasa bile hangi özelliği korumayı seçiyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek “ikisi de korumak istiyor” derken yöntem farkını da göstermeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Ortak amaç tarihsel yapıyı korumaktır; yöntem ve öncelikler farklıdır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "difference-as-total-conflict",
+          "text": "Öncelikleri farklıdır fakat ikisi de eserin tarihsel niteliğini korumaya çalışır; amaçları bütünüyle zıt değildir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e2"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "one-view-generalized-to-both",
+          "text": "İkinci çevirmen yabancı ifadeleri güncellemek yerine korumayı savunur.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e3",
+            "e4"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "second-text-topic-shift",
+          "text": "İkinci metin olay örgüsünü değil, cümle ritmi ve dilsel yabancılığı ele alır.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "birinci metnin koruduğu ve değiştirdiği yönleri ayır",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Bazı deyimler güncellenir, dönem ilişkileri korunur."
+        },
+        {
+          "id": "s2",
+          "action": "ikinci metnin temel önceliğini belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "evidence": "İkinci çevirmen metnin eski ritmini ve zaman bağını korur."
+        },
+        {
+          "id": "s3",
+          "action": "ortak amaç ile farklı yöntemi birlikte ifade eden seçeneği bul",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "İki görüşün ortaklığı ve ayrılığı birlikte kurulmalıdır."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-14-translation-cross-text",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.133,
+          "optionWordCounts": [
+            17,
+            14,
+            13,
+            14
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 17,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "B",
+              "wordCount": 14,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "C",
+              "wordCount": 13,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "D",
+              "wordCount": 14,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 7,
+      "id": "tr-g8-pilot01-16-clockmaker-inference",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-25",
+      "construct": {
+        "primarySkill": "supported-inference",
+        "secondarySkills": [
+          "action-motive-link",
+          "detail-synthesis"
+        ],
+        "cognitiveProcess": "inference",
+        "knowledgeComponents": [
+          "implicit-trait",
+          "cause-action"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "styleProfile": {
+        "genre": "kısa-anekdot",
+        "voice": "üçüncü-tekil",
+        "sourceMode": "özgün-saatçi-anlatısı",
+        "rhetoricalMoves": [
+          "sorun",
+          "çözüm",
+          "sonuç"
+        ]
+      },
+      "stimulus": "Saatçi, yüz yıllık duvar saatinin kırılan dişlisini hazır parça kutularında bulamadı. Müşteriye yeni bir mekanizma takmayı önermek yerine eski dişlinin ölçülerini çıkardı, sertliğine yakın bir metal seçti ve parçayı elde biçimlendirdi. Saat çalışmaya başladığında kasadaki çizikleri cilalamadı; “Bunlar mekanizmanın kusuru değil, evde geçirdiği yılların izi.” dedi.",
+      "stimulusBlocks": null,
+      "stem": "Bu parçadan saatçiyle ilgili aşağıdakilerin hangisine ulaşılabilir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eski saatlerin görünümünü yenilemenin, mekanizmayı onarmaktan daha önemli olduğunu düşünmektedir."
+        },
+        {
+          "id": "B",
+          "text": "Hazır parça bulunmadığında onarımı bırakmak yerine özgün yapıya uygun çözüm üretmeye ve kullanım izlerini korumaya çalışmaktadır."
+        },
+        {
+          "id": "C",
+          "text": "Müşterinin eski eşyaya bağlılığını önemsemese de teknik becerisini göstermek için parçayı kendi üretmiştir."
+        },
+        {
+          "id": "D",
+          "text": "Yeni mekanizmaların eski saatlerle uyumsuz olduğunu düşündüğü için benzer onarımlarda el yapımı parçayı tercih etmektedir."
+        }
+      ],
+      "answerKey": {
+        "optionId": "B",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Saatçi hazır parça yokken işi bırakıyor mu, nasıl bir çözüm geliştiriyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Kasadaki çizikleri neden cilalamıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek hem mekanizma çözümünü hem de izleri koruma tutumunu içermeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "surface-over-function",
+          "text": "Saatçi çizikleri cilalamaz; görünümü yenilemekten çok işlevi ve tarihsel izi korur.",
+          "supportingEvidenceIds": [
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Saatçi hem mekanizmaya uygun özel parça üretir hem de geçmişin izlerini silmez.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "skill-display-as-motive",
+          "text": "Parçayı üretmesi teknik beceri gösterir; fakat kullanım izlerini koruması eski eşyaya bağlılığı önemsediğini düşündürür.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "single-case-generalized",
+          "text": "Bu saat için özel parça üretmiştir; benzer bütün onarımlarda aynı tercihi yaptığına ilişkin başka örnek verilmez.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "hazır çözüm bulunmadığında saatçinin davranışını belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Saatçi özgün ölçülere uygun yeni bir parça üretir."
+        },
+        {
+          "id": "s2",
+          "action": "saatin görünümüne yaklaşımını belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Çizikleri kusur değil, yaşanmışlık izi olarak görür."
+        },
+        {
+          "id": "s3",
+          "action": "iki davranıştan ortak tutumu çıkar",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "evidence": "Özgün yapıyı ve tarihsel izi koruyan bir onarım anlayışı vardır."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-16-clockmaker-inference",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.133,
+          "optionWordCounts": [
+            10,
+            16,
+            13,
+            15
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 10,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 13,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 8,
+      "id": "tr-g8-pilot01-18-eco-bottle-media",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-29",
+      "construct": {
+        "primarySkill": "media-message-analysis",
+        "secondarySkills": [
+          "claim-evidence-gap",
+          "selective-framing"
+        ],
+        "cognitiveProcess": "evaluation",
+        "knowledgeComponents": [
+          "advertising-claim",
+          "missing-comparison"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "styleProfile": {
+        "genre": "reklam-incelemesi",
+        "voice": "medya-okuru",
+        "sourceMode": "özgün-eko-şişe-reklamı",
+        "rhetoricalMoves": [
+          "iddia",
+          "veri-seçimi",
+          "karşılaştırma"
+        ]
+      },
+      "stimulus": null,
+      "stimulusBlocks": [
+        "Reklam: “Yeni Terra şişe, önceki modelimize göre üretimde yüzde 30 daha az plastik kullanır. Her yudumda doğaya daha hafif bir iz bırakın.”",
+        "Ürün bilgisinde şişenin kapağı ve dış ambalajı hesaba katılmadan yalnız gövde ağırlığının karşılaştırıldığı; ürünün kaç kez kullanılabileceğine ilişkin test yapılmadığı belirtilmektedir."
+      ],
+      "stem": "Bu reklamla ilgili aşağıdaki değerlendirmelerden hangisi en uygundur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reklam, ürünün önceki modelden daha hafif olduğunu açıklar; çevresel yarar konusunda tüketiciye ayrıca bir çıkarım sunmaz."
+        },
+        {
+          "id": "B",
+          "text": "Önceki modele göre daha az plastik kullanılması, kapağın ve ambalajın aynı miktarda plastik içerdiğini düşündürmektedir."
+        },
+        {
+          "id": "C",
+          "text": "Ürünün kullanım ömrü ölçülmediği için gövdede yüzde 30 daha az plastik kullanıldığı bilgisi de geçersiz kabul edilmelidir."
+        },
+        {
+          "id": "D",
+          "text": "Yüzde 30 ifadesi gövde ağırlığına dayanır; reklam bu sınırlı karşılaştırmayı ürünün toplam çevresel etkisini temsil edecek biçimde genişletmektedir."
+        }
+      ],
+      "answerKey": {
+        "optionId": "D",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Reklam hangi sayısal karşılaştırmayı öne çıkarıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Karşılaştırmaya hangi parçalar ve hangi kullanım bilgisi dâhil edilmemiş?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek, “ölçülen şey” ile “reklamın ima ettiği şey” arasındaki farkı göstermeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "persuasive-framing-ignored",
+          "text": "“Doğaya daha hafif iz” sözü, veriyi çevresel yarar mesajına dönüştüren ikna edici bir çıkarımdır.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e1"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "omitted-data-assumed-equal",
+          "text": "Kapağın ve ambalajın miktarı verilmediği için aynı kaldıkları sonucu çıkarılamaz.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "one-limitation-erases-other-data",
+          "text": "Kullanım ömrünün bilinmemesi çevresel yorumun kapsamını sınırlar; gövde ağırlığı karşılaştırmasını geçersiz kılmaz.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Veri yalnız gövde plastiğini kapsarken reklam bunu genel çevresel iz iddiasına dönüştürür.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "reklamın kullandığı sayısal iddiayı belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Yüzde 30 azalma önceki modele göre ileri sürülür."
+        },
+        {
+          "id": "s2",
+          "action": "ürün bilgisindeki kapsam sınırlarını ayır",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "evidence": "Veri yalnız gövdeyi kapsar ve kullanım ömrü bilinmez."
+        },
+        {
+          "id": "s3",
+          "action": "veri ile reklam mesajı arasındaki genişlemeyi değerlendir",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "evidence": "Sınırlı plastik verisi toplam çevresel etki iddiasına taşınır."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-18-eco-bottle-media",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.125,
+          "optionWordCounts": [
+            16,
+            15,
+            17,
+            18
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "B",
+              "wordCount": 15,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 17,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 9,
+      "id": "tr-g8-pilot01-19-exhibition-poster-media",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-29",
+      "construct": {
+        "primarySkill": "media-message-analysis",
+        "secondarySkills": [
+          "audience-targeting",
+          "omission-analysis"
+        ],
+        "cognitiveProcess": "evaluation",
+        "knowledgeComponents": [
+          "poster-purpose",
+          "selective-presentation"
+        ],
+        "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+      },
+      "styleProfile": {
+        "genre": "afiş-incelemesi",
+        "voice": "medya-okuru",
+        "sourceMode": "özgün-müze-afişi",
+        "rhetoricalMoves": [
+          "slogan",
+          "görsel-seçim",
+          "bilgi-eksiltme"
+        ]
+      },
+      "stimulus": null,
+      "stimulusBlocks": [
+        "Afişin üstünde karanlık bir koridorda parlayan tek bir maske görülüyor. Altında “Yasaklı Törenler: Hiç anlatılmayan geceyi görmeye hazır mısın?” sloganı yer alıyor.",
+        "Müzenin ayrıntılı açıklamasında serginin farklı toplumların mevsim geçişi törenlerini ele aldığı, “yasaklı” sözcüğünün yalnız iki eserin geçmişte kısa süre sergilenmemesine gönderme yaptığı yazıyor."
+      ],
+      "stem": "Bu afişin medya mesajıyla ilgili aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Afiş, sergideki törenleri ayrıntılı biçimde tanıttığını göstermek için tek bir maskeyi merkezde kullanmıştır."
+        },
+        {
+          "id": "B",
+          "text": "Slogan, yalnız iki esere ait sınırlı bir özelliği serginin geneline yayarak merak ve gizem duygusunu güçlendirmektedir."
+        },
+        {
+          "id": "C",
+          "text": "Afiş ile ayrıntılı açıklama aynı bilgileri farklı uzunluklarda verir; aralarında vurgu bakımından belirgin bir ayrım yoktur."
+        },
+        {
+          "id": "D",
+          "text": "Müze, sergideki eserlerin geçmişte sergilenmediğini gizlediği için afişte yalnız mevsim geçişlerini öne çıkarmıştır."
+        }
+      ],
+      "answerKey": {
+        "optionId": "B",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Görsel ve slogan izleyicide hangi beklentiyi oluşturuyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "“Yasaklı” sözcüğü serginin tamamını mı, yalnız kaç eseri mi ilgilendiriyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek, afişin hangi bilgiyi büyüterek dikkat çektiğini açıklamalı.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "single-image-as-complete-summary",
+          "text": "Tek maske ayrıntılı kapsam sunmaz; daha çok gizem duygusu oluşturur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "“Yasaklı” çerçevesi serginin genel konusundan daha geniş gösterilerek dikkat çekici bir mesaj kurulmuştur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "framing-difference-ignored",
+          "text": "Afiş yasak ve gizemi büyütürken açıklama asıl kapsamı ve sınırlamayı gösterir.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e4"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "poster-emphasis-reversed",
+          "text": "Afiş mevsim geçişlerini değil, “yasaklı” ve “hiç anlatılmayan” söylemini öne çıkarır.",
+          "supportingEvidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e2"
+          ]
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "afişin oluşturduğu duyguyu belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Karanlık görsel ve slogan gizem ile yasak duygusu kurar."
+        },
+        {
+          "id": "s2",
+          "action": "ayrıntılı açıklamanın gerçek kapsamını belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "evidence": "Sergi mevsim törenlerini kapsar; yasaklılık iki eserle sınırlıdır."
+        },
+        {
+          "id": "s3",
+          "action": "sınırlı özelliğin nasıl genelleştirildiğini seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Afiş sınırlı durumu genel merak unsuruna dönüştürür."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-19-exhibition-poster-media",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.167,
+          "optionWordCounts": [
+            13,
+            16,
+            16,
+            13
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 13,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "D",
+              "wordCount": 13,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 10,
+      "id": "tr-g8-pilot01-20-historical-photo-source",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-31",
+      "construct": {
+        "primarySkill": "source-reliability-evaluation",
+        "secondarySkills": [
+          "provenance-check",
+          "cross-source-verification"
+        ],
+        "cognitiveProcess": "evaluation",
+        "knowledgeComponents": [
+          "original-source",
+          "caption-verification"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "styleProfile": {
+        "genre": "dijital-doğrulama-vakası",
+        "voice": "araştırmacı-anlatıcı",
+        "sourceMode": "özgün-tarihî-fotoğraf-vakası",
+        "rhetoricalMoves": [
+          "iddia",
+          "kaynak-izleme",
+          "karşılaştırma"
+        ]
+      },
+      "stimulus": "Bir paylaşımda, kalabalık bir istasyon fotoğrafının 1923'te yeni başkente taşınan memurları gösterdiği yazıyordu. Paylaşım binlerce kez aktarılmış, fakat fotoğrafçının adı ve arşiv numarası verilmemişti. Görsel arama yapan bir öğrenci, aynı fotoğrafı bir demiryolu müzesinin dijital arşivinde buldu. Arşiv kaydında fotoğrafın 1937'de başka bir şehirdeki bayram yolculuğu sırasında çekildiği, negatif numarası ve fotoğrafçısı ile birlikte belirtiliyordu.",
+      "stimulusBlocks": null,
+      "stem": "Bu bilginin güvenilirliğini değerlendiren öğrencinin aşağıdakilerden hangisini yapması en uygundur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Paylaşım çok sayıda kişi tarafından aktarıldığı için tarih bilgisini koruyup yalnız fotoğrafçının adını arşiv kaydından eklemelidir."
+        },
+        {
+          "id": "B",
+          "text": "Müze arşivi kurumsal olduğu için kayıt açıklamasını başka hiçbir belgeyle karşılaştırmadan kesin sonuç olarak kabul etmelidir."
+        },
+        {
+          "id": "C",
+          "text": "Sosyal medya iddiası ile arşiv kaydının tarih, yer ve kaynak bilgilerini karşılaştırıp paylaşımın açıklamasının desteklenmediğini belirtmelidir."
+        },
+        {
+          "id": "D",
+          "text": "İki açıklama birbiriyle çeliştiği için fotoğrafın hangi döneme ait olduğunun hiçbir yöntemle belirlenemeyeceğini söylemelidir."
+        }
+      ],
+      "answerKey": {
+        "optionId": "C",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "İlk paylaşımda fotoğrafı doğrulayacak hangi bilgiler eksik?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Müze kaydı yalnız farklı bir açıklama mı veriyor, yoksa izlenebilir kayıt bilgileri de sunuyor mu?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek popülerliğe değil, iki kaydın tarih-yer-kaynak karşılaştırmasına dayanmalı.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "popularity-over-provenance",
+          "text": "Aktarım sayısı iddiayı doğrulamaz; arşiv kaydı tarih ve yer bilgisinin de yanlış olduğunu gösterir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e4"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "authority-without-crosscheck",
+          "text": "Kurumsal ve izlenebilir kayıt daha güçlüdür; yine de gerekirse başka kaynaklarla karşılaştırılabilir, “hiçbir karşılaştırma gerekmez” sonucu doğru değildir.",
+          "supportingEvidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Öğrenci iddiayı, izlenebilir arşiv kaydıyla karşılaştırarak tarih ve yer uyuşmazlığını gösterir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "conflict-means-unknowable",
+          "text": "Çelişki vardır; ancak arşiv numarası, negatif ve fotoğrafçı bilgisi araştırılabilir bir kanıt zinciri sunar.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "ilk paylaşımın kaynak eksiklerini belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "İddia vardır fakat kaynak bilgisi yoktur."
+        },
+        {
+          "id": "s2",
+          "action": "arşiv kaydının sağladığı doğrulanabilir bilgileri belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "evidence": "Tarih, yer, negatif ve fotoğrafçı bilgisi bulunur."
+        },
+        {
+          "id": "s3",
+          "action": "iki kaynağı karşılaştıran değerlendirmeyi seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Güvenilirlik kaynak zinciri ve bilgi uyuşması üzerinden değerlendirilir."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-20-historical-photo-source",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.077,
+          "optionWordCounts": [
+            16,
+            16,
+            16,
+            14
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 1,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 14,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 1,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 11,
+      "id": "tr-g8-pilot01-21-water-test-source",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-31",
+      "construct": {
+        "primarySkill": "source-reliability-evaluation",
+        "secondarySkills": [
+          "sampling-evaluation",
+          "method-comparison"
+        ],
+        "cognitiveProcess": "evaluation",
+        "knowledgeComponents": [
+          "sample-scope",
+          "measurement-method"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "styleProfile": {
+        "genre": "yerel-haber-doğrulaması",
+        "voice": "sorgulayıcı-anlatıcı",
+        "sourceMode": "özgün-su-testi-vakası",
+        "rhetoricalMoves": [
+          "iddia",
+          "yöntem-karşılaştırma",
+          "sınırlama"
+        ]
+      },
+      "stimulus": "Bir mahalle grubunda, ev tipi renk şeridiyle yapılan tek ölçümün fotoğrafı paylaşılarak “Bölgenin şebeke suyu içilemez durumda.” denildi. Ölçümün hangi musluktan, ne zaman ve şeritlerin son kullanma tarihi kontrol edilerek yapılıp yapılmadığı belirtilmedi. Belediyenin laboratuvar raporunda ise aynı hafta farklı sokaklardan alınan sekiz örneğin yöntemi, ölçüm belirsizliği ve sonuçları yayımlandı; değerlerin yasal aralıkta olduğu, iki noktada tadı etkileyebilecek fakat sağlık sınırını aşmayan farklılık görüldüğü açıklandı.",
+      "stimulusBlocks": null,
+      "stem": "Bu iki kaynağın güvenilirliğiyle ilgili aşağıdaki değerlendirmelerden hangisi en uygundur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ev tipi test doğrudan musluk suyunu ölçtüğü için laboratuvar raporundan daha güncel ve mahalleyi temsil etmeye daha uygundur."
+        },
+        {
+          "id": "B",
+          "text": "Laboratuvar raporu daha çok örnek ve yöntem bilgisi sunduğundan daha güçlüdür; yine de yalnız raporlanan hafta ve örnekleme noktaları için değerlendirilmelidir."
+        },
+        {
+          "id": "C",
+          "text": "İki kaynakta farklı sonuç bulunduğu için suyun güvenliği konusunda ikisinin de aynı ölçüde güvenilir olduğu kabul edilmelidir."
+        },
+        {
+          "id": "D",
+          "text": "Laboratuvar iki noktada tat farklılığı bildirdiğine göre mahalle paylaşımındaki “içilemez” sonucu yöntem ayrıntısı olmasa da doğrulanmıştır."
+        }
+      ],
+      "answerKey": {
+        "optionId": "B",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "İlk paylaşım kaç ölçüme dayanıyor ve ölçüm koşulları biliniyor mu?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "İkinci kaynak örnek sayısı, yöntem ve sonuç ayrımı bakımından ne sunuyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek hem neden daha güvenilir olduğunu hem de hangi kapsamla sınırlı olduğunu belirtmeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "directness-over-method",
+          "text": "Tek ölçümün koşulları belirsizdir ve mahalleyi temsil etmez; güncellik tek başına yöntem kalitesinin yerini tutmaz.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e2",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Çoklu örnek ve açık yöntem güvenilirliği artırır; sonuçların zaman ve örnekleme kapsamı da korunur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "all-conflicting-sources-equal",
+          "text": "Kaynaklar yöntem, örnek sayısı ve şeffaflık bakımından eşit değildir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "taste-equals-health-risk",
+          "text": "Rapor tat farklılığını sağlık sınırının aşılmasıyla eşitlemez; ikisini açıkça ayırır.",
+          "supportingEvidenceIds": [
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e4"
+          ]
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "ilk kaynağın örnek ve yöntem sorunlarını belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Tek ölçüm tüm bölgeye genellenmiş ve koşullar açıklanmamıştır."
+        },
+        {
+          "id": "s2",
+          "action": "laboratuvar raporunun kanıt gücünü belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "evidence": "Birden çok örnek, açık yöntem ve ölçülü sonuç vardır."
+        },
+        {
+          "id": "s3",
+          "action": "güçlü kaynağı seçerken kapsam sınırını koru",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Laboratuvar güçlüdür fakat belirli hafta ve noktalara dayanır."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-21-water-test-source",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.125,
+          "optionWordCounts": [
+            18,
+            21,
+            17,
+            16
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 21,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 1,
+              "clauseComplexity": 2
+            },
+            {
+              "id": "C",
+              "wordCount": 17,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "number": 12,
+      "id": "tr-g8-pilot01-24-audio-guide-table",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-32",
+      "construct": {
+        "primarySkill": "table-interpretation",
+        "secondarySkills": [
+          "percentage-vs-count",
+          "group-comparison"
+        ],
+        "cognitiveProcess": "analysis",
+        "knowledgeComponents": [
+          "sample-size",
+          "percentage"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "styleProfile": {
+        "genre": "anket-tablosu",
+        "voice": "nesnel",
+        "sourceMode": "özgün-müze-anketi",
+        "rhetoricalMoves": [
+          "örneklem",
+          "oran-karşılaştırması"
+        ]
+      },
+      "stimulus": null,
+      "stimulusBlocks": [
+        "Bir müze, sesli rehber kullanan ziyaretçilere “Anlatım süresi uygun muydu?” sorusunu yöneltmiştir. Tablonun ikinci sütunu her yaş grubunda ankete katılan toplam kişi sayısını, üçüncü sütunu ise bu katılımcılar arasında “uygun” yanıtını verenlerin oranını göstermektedir.",
+        "Yaş grubu | Ankete katılan toplam kişi sayısı (kişi) | Bu grupta “uygun” diyenlerin oranı (%)\n12-17 yaş | 80 | 65\n18-35 yaş | 150 | 58\n36-55 yaş | 100 | 72\n56+ yaş | 50 | 76"
+      ],
+      "stem": "Tablodaki bilgilere göre aşağıdaki yorumlardan hangisi doğrudur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "En yüksek uygunluk oranına sahip grup, katılımcı sayısı en fazla olduğu için toplam olumlu yanıtta da ilk sıradadır."
+        },
+        {
+          "id": "B",
+          "text": "18-35 yaş grubundaki olumlu yanıt sayısı, 36-55 ve 56+ gruplarındaki olumlu yanıtların toplamından fazladır."
+        },
+        {
+          "id": "C",
+          "text": "Katılımcı sayıları farklı olduğu için grupların uygunluk oranları karşılaştırılamaz."
+        },
+        {
+          "id": "D",
+          "text": "56+ grubu en yüksek orana sahipken toplam olumlu yanıt sayısında daha büyük örneklemli grupların gerisinde kalabilir."
+        }
+      ],
+      "answerKey": {
+        "optionId": "D",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Yüzde sütunu ile katılımcı sayısı sütununu birbirine karıştırma.",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Örneğin 56+ grubu için 50 × %76 yaklaşık kaç kişi eder?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek “en yüksek yüzde” ile “en çok kişi”nin aynı şey olmadığını göstermeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "percentage-equals-count",
+          "text": "56+ grubunun oranı en yüksek olsa da katılımcı sayısı düşüktür; olumlu yanıt sayısı yaklaşık 38 dir.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "large-sample-always-largest-count",
+          "text": "18-35 grubunda yaklaşık 87 olumlu yanıt vardır; 36-55 ve 56+ gruplarının toplamı yaklaşık 110 olduğu için bu yargı doğru değildir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "unequal-sample-blocks-percentage-comparison",
+          "text": "Oranlar farklı büyüklükteki grupları karşılaştırmak için kullanılabilir; yalnız kişi sayısıyla karıştırılmamalıdır.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Yüksek yüzde, küçük örneklem nedeniyle en yüksek kişi sayısı anlamına gelmez; yaklaşık 38 olumlu yanıt vardır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "oran ile katılımcı sayısını ayrı oku",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "En yüksek yüzde, en büyük örneklem değildir."
+        },
+        {
+          "id": "s2",
+          "action": "yaklaşık olumlu yanıt sayılarını hesapla",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "evidence": "Yüzde, grup büyüklüğüyle çarpılarak kişi sayısı bulunur."
+        },
+        {
+          "id": "s3",
+          "action": "yüksek oran ile toplam sayı farkını ifade eden seçeneği seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "56+ oran olarak önde, kişi sayısı olarak daha geridedir."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-pilot01-24-audio-guide-table",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.143,
+          "optionWordCounts": [
+            18,
+            16,
+            9,
+            16
+          ],
+          "blindOptionCueRisk": 0,
+          "blindOptionCueReasons": [],
+          "optionRhetoricalProfiles": [
+            {
+              "id": "A",
+              "wordCount": 18,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "B",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "C",
+              "wordCount": 9,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            },
+            {
+              "id": "D",
+              "wordCount": 16,
+              "qualifierCount": 0,
+              "limitationCount": 0,
+              "certaintyCount": 0,
+              "semicolonCount": 0,
+              "clauseComplexity": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
