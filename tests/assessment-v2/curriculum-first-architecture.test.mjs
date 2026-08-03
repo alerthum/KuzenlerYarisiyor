@@ -115,6 +115,8 @@ test('mimari politika içerik önce oyun sonra ilkesini zorunlu tutar', () => {
   assert.equal(audit.ok, true);
   assert.equal(QUESTION_ARCHITECTURE_POLICY.invariants.contentBeforeGame, true);
   assert.equal(QUESTION_ARCHITECTURE_POLICY.invariants.sharedContractNotSharedGenerator, true);
+  assert.equal(QUESTION_ARCHITECTURE_POLICY.invariants.humanCalibrationBeforeScale, true);
+  assert.equal(QUESTION_ARCHITECTURE_POLICY.invariants.canonicalApprovalBeforeGame, true);
   assert.equal(QUESTION_ARCHITECTURE_POLICY.prohibitedShortcuts.includes('USE_ONE_GLOBAL_DISTRACTOR_RECIPE_FOR_ALL_SUBJECTS'), true);
 });
 

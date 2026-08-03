@@ -21,6 +21,9 @@ export function defineGameAdapter(input = {}) {
 }
 
 export function adaptCanonicalQuestion(adapter, canonicalQuestion) {
+  if (canonicalQuestion.content?.humanReview?.gameAdaptationAllowed === false) {
+    throw new Error(`${adapter.id}: canonical question is locked until human calibration approval`);
+  }
   if (!adapter.supports(canonicalQuestion)) throw new Error(`${adapter.id}: unsupported canonical question`);
   const adapted = adapter.adapt(structuredClone(canonicalQuestion));
   if (!adapted || !adapted.gamePayload) throw new Error(`${adapter.id}: gamePayload is required`);

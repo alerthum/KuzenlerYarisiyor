@@ -1,0 +1,1012 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T10:36:15.988Z",
+  "batchId": "GRADE8_TURKISH_PILOT_01_CALIBRATION_5",
+  "decision": "HUMAN_REVIEW_REQUIRED",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "metrics": {
+      "itemCount": 5,
+      "outcomeCount": 5,
+      "genreCount": 5,
+      "sourceModeCount": 5,
+      "answerPositionCount": 3,
+      "humanReviewStatus": "NOT_MEASURED",
+      "productReady": false
+    },
+    "itemAudits": [
+      {
+        "id": "tr-g8-reading-calibration-01-restoration-main-idea",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.182,
+          "optionWordCounts": [
+            15,
+            12,
+            14,
+            13
+          ]
+        }
+      },
+      {
+        "id": "tr-g8-reading-calibration-02-contextual-word-inference",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.083,
+          "optionWordCounts": [
+            15,
+            15,
+            14,
+            12
+          ]
+        }
+      },
+      {
+        "id": "tr-g8-reading-calibration-03-museum-label-cross-text",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.059,
+          "optionWordCounts": [
+            19,
+            16,
+            17,
+            14
+          ]
+        }
+      },
+      {
+        "id": "tr-g8-reading-calibration-04-language-app-media-analysis",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0,
+          "optionWordCounts": [
+            18,
+            17,
+            15,
+            15
+          ]
+        }
+      },
+      {
+        "id": "tr-g8-reading-calibration-05-blue-light-source-reliability",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.167,
+          "optionWordCounts": [
+            18,
+            15,
+            22,
+            17
+          ]
+        }
+      }
+    ]
+  },
+  "questions": [
+    {
+      "number": 1,
+      "id": "tr-g8-reading-calibration-01-restoration-main-idea",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-17",
+      "construct": {
+        "primarySkill": "main-idea-synthesis",
+        "secondarySkills": [
+          "scope-control",
+          "contrast-integration"
+        ],
+        "cognitiveProcess": "analysis-and-synthesis",
+        "knowledgeComponents": [
+          "central-claim",
+          "qualification",
+          "detail-vs-thesis"
+        ],
+        "intendedDifficultyBand": "LGS_CALIBRATION_MEDIUM_HIGH"
+      },
+      "styleProfile": {
+        "genre": "düşünsel-deneme",
+        "voice": "eleştirel-birinci-çoğul",
+        "sourceMode": "özgün-kültür-yazısı",
+        "rhetoricalMoves": [
+          "tanımlama",
+          "örnekleme",
+          "karşıtlık",
+          "sonuç"
+        ]
+      },
+      "stimulus": "Bir yapıyı onarmak, onu ilk yapıldığı güne döndürmek değildir. Eski bir hanın duvarındaki eğrilik, taş ustasının hatası değil, yapının geçirdiği zamanın kaydı olabilir. Restorasyon sırasında her izi silip yüzeyi pürüzsüzleştirdiğimizde yapıyı kurtarmış görünürüz; oysa bazen tanıklığını eksiltiriz. Elbette çürüyen kirişi değiştirmek, binayı güvenli kılmak gerekir. Ama korumayı yenilemeyle karıştırırsak geçmişten kalan yapıyı değil, geçmişe benzeyen yeni bir dekor üretiriz.",
+      "stimulusBlocks": null,
+      "stem": "Bu parçanın ana düşüncesi aşağıdakilerden hangisidir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Eski yapılardaki her bozulma, yapının tarihsel değerini artıran ve mutlaka korunması gereken bir belge sayılmalıdır."
+        },
+        {
+          "id": "B",
+          "text": "Restorasyonda yapının güvenliği sağlanırken zamanın bıraktığı anlamlı izlerin de silinmemesine özen gösterilmelidir."
+        },
+        {
+          "id": "C",
+          "text": "Tarihî yapıların özgünlüğünü korumanın en güvenilir yolu, onları mümkün olduğunca az müdahaleyle kullanıma kapatmaktır."
+        },
+        {
+          "id": "D",
+          "text": "Başarılı bir restorasyonun temel ölçütü, yapının ilk inşa edildiği dönemdeki görünümüne olabildiğince yaklaşmasıdır."
+        }
+      ],
+      "answerKey": {
+        "optionId": "B",
+        "supportingEvidenceIds": [
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Yazarın “onarmak değildir” ve “dekor üretiriz” sözleri hangi anlayışı reddediyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Parça, yapıya hiç dokunulmamasını mı savunuyor; yoksa bazı müdahaleleri gerekli mi görüyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek hem “tanıklığı koruma” hem de “güvenli kılma” yönlerini birlikte taşımalı.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "all-damage-is-heritage",
+          "text": "Parça bazı izlerin tarihsel tanıklık taşıyabileceğini söyler; çürüyen kiriş gibi güvenliği bozan her unsurun korunmasını savunmaz.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Parçanın iki yönünü birlikte taşır: zorunlu güvenlik müdahalesi yapılmalı, fakat yapının tarihsel tanıklığı yok edilmemelidir.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "preservation-means-nonuse",
+          "text": "Yazar müdahaleyi tümüyle reddetmez; yapının güvenli kılınması için gerekli onarımları açıkça kabul eder.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "renewal-equals-preservation",
+          "text": "Parçanın karşı çıktığı görüş tam olarak budur: korumayı yüzeyi yenileyip geçmişe benzeyen bir dekor üretmekle karıştırmak.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e4"
+          ]
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "parçanın karşı çıktığı restorasyon anlayışını belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e4"
+          ],
+          "evidence": "Yazar, onarımı yapıyı ilk günkü görüntüsüne döndürmek ve geçmişe benzeyen yeni bir dekor üretmek olarak görmez."
+        },
+        {
+          "id": "s2",
+          "action": "yazarın kabul ettiği zorunlu müdahaleyi ayır",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Güvenliği bozan unsurların değiştirilmesi korumaya aykırı sayılmaz."
+        },
+        {
+          "id": "s3",
+          "action": "koruma ile güvenliği birlikte taşıyan seçeneği bul",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Ana düşünce ancak tarihsel izlerin korunması ile güvenliğin sağlanmasını birlikte içerdiğinde tamamlanır."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-reading-calibration-01-restoration-main-idea",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.182,
+          "optionWordCounts": [
+            15,
+            12,
+            14,
+            13
+          ]
+        }
+      }
+    },
+    {
+      "number": 2,
+      "id": "tr-g8-reading-calibration-02-contextual-word-inference",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-25",
+      "construct": {
+        "primarySkill": "supported-inference",
+        "secondarySkills": [
+          "context-clue-use",
+          "generalization-control"
+        ],
+        "cognitiveProcess": "inference",
+        "knowledgeComponents": [
+          "implicit-result",
+          "example-to-principle",
+          "scope-boundary"
+        ],
+        "intendedDifficultyBand": "LGS_CALIBRATION_MEDIUM_HIGH"
+      },
+      "styleProfile": {
+        "genre": "kısa-anekdot",
+        "voice": "üçüncü-tekil-anlatıcı",
+        "sourceMode": "özgün-edebiyat-anlatısı",
+        "rhetoricalMoves": [
+          "öneri",
+          "uygulama",
+          "okur-tepkisi"
+        ]
+      },
+      "stimulus": "Editör, romandaki “göcen” sözcüğünün çoğu okura yabancı gelebileceğini söyleyip yerine “göçebe” yazılmasını önerdi. Yazar sözcüğü değiştirmedi; ancak geçtiği sahnede obanın sökülmesini, yüklerin hayvanlara bağlanmasını ve yol hazırlığını ayrıntılandırdı. Aylar sonra bir okur, imza gününde “göcen”in anlamını sözlüğe bakmadan sezdiğini, yine de sözcüğün sesini merak edip sonradan araştırdığını anlattı.",
+      "stimulusBlocks": null,
+      "stem": "Bu parçadan aşağıdakilerin hangisine ulaşılabilir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Okurun bilmediği sözcükleri araştırmasını sağlamak için bu tür sözcükler metinde herhangi bir açıklama yapılmadan bırakılmalıdır."
+        },
+        {
+          "id": "B",
+          "text": "Bir metnin akıcı ve anlaşılır olması, okurun metindeki bütün sözcüklerin anlamını okumadan önce bilmesine bağlıdır."
+        },
+        {
+          "id": "C",
+          "text": "Yabancı bir sözcük, bağlam yeterli ipucu verdiğinde okurun anlamasını engellemeden metnin dil dünyasını zenginleştirebilir."
+        },
+        {
+          "id": "D",
+          "text": "Editörlerin sözcük değişikliği önerileri, yazarın anlatım tercihlerini sınırladığı için genellikle dikkate alınmamalıdır."
+        }
+      ],
+      "answerKey": {
+        "optionId": "C",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "İlk cümlede hangi okuma güçlüğünden söz ediliyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Yazar sözlük tanımı vermeden anlamı hangi ayrıntılarla sezdiriyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Okur sözcük yüzünden metinden kopuyor mu, yoksa hem anlıyor hem de sözcüğe ilgi mi duyuyor?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "research-justifies-no-context",
+          "text": "Okur sözcüğü merak etmiştir; fakat anlamı sezebilmesini sağlayan şey açıklamasız bırakılması değil, sahneye yerleştirilen bağlamsal ipuçlarıdır.",
+          "supportingEvidenceIds": [
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e2"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "unknown-word-blocks-comprehension",
+          "text": "Parça, okurun sözcüğü önceden bilmediği hâlde bağlamdan anlam çıkarabildiğini gösterir.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e2",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Yazar sözcüğü korumuş, bağlamla anlaşılmasını sağlamış; okur da hem anlamı sezmiş hem sözcüğe ilgi duymuştur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "single-case-discredits-editing",
+          "text": "Parça yalnız bir önerinin nasıl karşılandığını anlatır; editörlerin önerilerinin genel olarak değersiz olduğu sonucunu desteklemez.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "başlangıçtaki anlama riskini belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Editör, sözcüğün çoğu okura yabancı gelebileceğini düşünür."
+        },
+        {
+          "id": "s2",
+          "action": "yazarın bu riski nasıl azalttığını belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Yazar sözcüğü silmek yerine çevresine anlamı sezdirecek olay ayrıntıları yerleştirir."
+        },
+        {
+          "id": "s3",
+          "action": "okur tepkisiyle sonucu birleştir",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "evidence": "Okurun hem anlaması hem merak etmesi, bağlamlı kullanımın anlaşılabilirlik ile dil zenginliğini birlikte taşıyabildiğini gösterir."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-reading-calibration-02-contextual-word-inference",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.083,
+          "optionWordCounts": [
+            15,
+            15,
+            14,
+            12
+          ]
+        }
+      }
+    },
+    {
+      "number": 3,
+      "id": "tr-g8-reading-calibration-03-museum-label-cross-text",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-23",
+      "construct": {
+        "primarySkill": "cross-text-comparison",
+        "secondarySkills": [
+          "shared-position",
+          "difference-in-emphasis"
+        ],
+        "cognitiveProcess": "compare-and-relate",
+        "knowledgeComponents": [
+          "common-claim",
+          "method-difference",
+          "false-opposition"
+        ],
+        "intendedDifficultyBand": "LGS_CALIBRATION_HIGH"
+      },
+      "styleProfile": {
+        "genre": "iki-metimli-görüş",
+        "voice": "karşılaştırmalı-uzman-görüşü",
+        "sourceMode": "özgün-müze-tartışması",
+        "rhetoricalMoves": [
+          "eleştiri",
+          "gerekçelendirme",
+          "sınırlama"
+        ]
+      },
+      "stimulus": null,
+      "stimulusBlocks": [
+        "I. Metin: Bir tablonun yanına bütün yorumları sıralarsanız ziyaretçi kendi gözünü kullanmadan etiketi okur. Müze yazısı, eserin yerine geçmemeli; bakışı açacak kadar kısa tutulmalıdır.",
+        "II. Metin: Bir nesnenin nereden geldiğini, hangi dönemde ne işe yaradığını söylemezseniz ziyaretçiye yalnız biçimini göstermiş olursunuz. Etiket gereklidir; fakat tek doğru yorumu ilan eden bir hüküm değil, sorulara açılan bir kapı olmalıdır."
+      ],
+      "stem": "Bu iki metinle ilgili olarak aşağıdakilerden hangisi söylenebilir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "İki metin de ziyaretçinin bağımsız düşünmesini önemser; ilki etiketin ölçülü olmasını, ikincisi gerekli bağlamı sunup yorumu açık bırakmasını ister."
+        },
+        {
+          "id": "B",
+          "text": "Birinci metin müze etiketlerini gereksiz bulurken ikinci metin etikette verilen bilgiyi eserin tek geçerli yorumu sayar."
+        },
+        {
+          "id": "C",
+          "text": "İki metin de tarihsel bilgi vermenin ziyaretçiyi eserden uzaklaştıracağını düşündüğü için etiketlerin yalnız eser adından oluşmasını savunur."
+        },
+        {
+          "id": "D",
+          "text": "Metinler, müze etiketlerinin uzunluğu konusunda uzlaşsa da ziyaretçiye yorum alanı bırakılıp bırakılmaması konusunda ayrılır."
+        }
+      ],
+      "answerKey": {
+        "optionId": "A",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Birinci metin etiketi kaldırıyor mu, yoksa etiketin ziyaretçinin yerine düşünmesine mi karşı çıkıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "İkinci metin hem hangi bilgiyi gerekli görüyor hem de hangi sınırı koyuyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek yalnız ortaklığı değil, iki metnin farklı ağırlık noktalarını da göstermeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Ortak nokta ziyaretçiye hazır hüküm vermemektir; ayrıldıkları vurgu ise kısa tutma ile bağlam sunma arasındadır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "difference-becomes-total-opposition",
+          "text": "Birinci metin etiketi kaldırmayı değil kısa tutmayı, ikinci metin ise tek yorumu dayatmamayı savunur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e2",
+            "e4"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "first-text-applied-to-both",
+          "text": "İkinci metin, nesnenin kökeni ve işlevi gibi tarihsel bağlamın verilmesini özellikle gerekli görür.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "swap-common-and-different-points",
+          "text": "Metinlerin ortaklaştığı nokta yorum alanı bırakmaktır; uzunluk ve bilgi miktarı konusunda aynı şeyi söylemezler.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e3",
+            "e4"
+          ]
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "birinci metnin etiket anlayışını belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Birinci metin, ziyaretçinin bakışını bastırmayacak kısa ve yön açıcı etiket ister."
+        },
+        {
+          "id": "s2",
+          "action": "ikinci metnin etiket anlayışını belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "evidence": "İkinci metin bağlam bilgisini gerekli görür; ama etiketin hüküm vermesini istemez."
+        },
+        {
+          "id": "s3",
+          "action": "ortak ilke ile vurgu farkını birlikte ifade et",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Her ikisi bağımsız yorumu korur; birincisi kısalığı, ikincisi bağlamı öne çıkarır."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-reading-calibration-03-museum-label-cross-text",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.059,
+          "optionWordCounts": [
+            19,
+            16,
+            17,
+            14
+          ]
+        }
+      }
+    },
+    {
+      "number": 4,
+      "id": "tr-g8-reading-calibration-04-language-app-media-analysis",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-29",
+      "construct": {
+        "primarySkill": "media-persuasion-analysis",
+        "secondarySkills": [
+          "evidence-vs-appeal",
+          "disclaimer-interpretation"
+        ],
+        "cognitiveProcess": "critical-analysis",
+        "knowledgeComponents": [
+          "anecdotal-proof",
+          "popularity-cue",
+          "generalizability"
+        ],
+        "intendedDifficultyBand": "LGS_CALIBRATION_HIGH"
+      },
+      "styleProfile": {
+        "genre": "reklam-betimlemesi",
+        "voice": "nesnel-medya-gözlemi",
+        "sourceMode": "özgün-dijital-reklam",
+        "rhetoricalMoves": [
+          "başarı-hikâyesi",
+          "sayıyla-ikna",
+          "küçük-yazı-sınırlaması"
+        ]
+      },
+      "stimulus": "Bir yabancı dil uygulamasının reklamında, konuşmaya çekinen bir öğrenci uygulamayı kullanmaya başladıktan üç hafta sonra havaalanında akıcı biçimde yol tarif ediyor. Ekranda “Her gün yalnız 10 dakika” ve “İki milyon indirme” ifadeleri beliriyor. Reklamın sonunda küçük puntolarla “Gösterilen sahne canlandırmadır, sonuçlar kullanıcıya göre değişebilir.” uyarısı yer alıyor.",
+      "stimulusBlocks": null,
+      "stem": "Bu reklamı eleştirel biçimde değerlendiren bir öğrencinin aşağıdakilerden hangisini söylemesi en uygundur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Reklam, kısa çalışma süresi ile indirme sayısını verdiği için uygulamanın başarı oranını nesnel ve karşılaştırılabilir biçimde ortaya koymuştur."
+        },
+        {
+          "id": "B",
+          "text": "Canlandırılmış bir başarı öyküsü ve uygulamanın yaygınlığı ikna amacıyla kullanılmıştır; bunlar aynı sonucun bütün kullanıcılarda oluşacağını kanıtlamaz."
+        },
+        {
+          "id": "C",
+          "text": "Küçük puntolu uyarı, reklamda gösterilen gelişimin bilimsel olarak ölçüldüğünü ve yalnız bazı kullanıcılarda görülmediğini doğrular."
+        },
+        {
+          "id": "D",
+          "text": "Öğrencinin havaalanında konuşabilmesi, uygulamanın özellikle yolculuk dilini geliştirdiğine ilişkin doğrudan ve genellenebilir bir sonuç sunar."
+        }
+      ],
+      "answerKey": {
+        "optionId": "B",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Gösterilen başarı gerçek bir araştırma sonucu mu, yoksa bir örnek sahne mi?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "“İki milyon indirme” uygulamanın kullanıldığını mı, etkili olduğunu mu kanıtlar?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Son uyarı reklamın iddiasını güçlendiriyor mu, yoksa hangi sınırı kabul ediyor?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "numbers-equal-effectiveness",
+          "text": "Süre ve indirme sayısı verilir; ancak bunlar başarı oranı, karşılaştırma grubu veya öğrenme sonucu ölçümü değildir.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Reklam hem örnek başarı sahnesinden hem popülerlik göstergesinden yararlanır; küçük yazı da sonucun genellenemeyeceğini kabul eder.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "disclaimer-as-proof",
+          "text": "Uyarı bilimsel ölçüm kanıtı değildir; tam tersine sahnenin canlandırma olduğunu ve sonuçların değişebileceğini bildirir.",
+          "supportingEvidenceIds": [
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "single-scene-generalization",
+          "text": "Tek bir canlandırılmış sahne, uygulamanın gerçek kullanıcılar üzerindeki etkisini ya da belirli bir becerideki başarısını genellemek için yeterli değildir.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "reklamdaki başarı kanıtının türünü belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Reklam kontrollü bir ölçüm değil, tek kişilik canlandırılmış bir başarı öyküsü sunar."
+        },
+        {
+          "id": "s2",
+          "action": "sayısal ifadelerin neyi gösterip neyi göstermediğini ayır",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "On dakika ve iki milyon indirme ifadeleri kolaylık ve popülerlik izlenimi verir; öğrenme başarısını ölçmez."
+        },
+        {
+          "id": "s3",
+          "action": "küçük yazının genelleme sınırını belirle",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Uyarı, sahnenin canlandırma olduğunu ve aynı sonucun herkese uygulanamayacağını belirtir."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-reading-calibration-04-language-app-media-analysis",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 3,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0,
+          "optionWordCounts": [
+            18,
+            17,
+            15,
+            15
+          ]
+        }
+      }
+    },
+    {
+      "number": 5,
+      "id": "tr-g8-reading-calibration-05-blue-light-source-reliability",
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-31",
+      "construct": {
+        "primarySkill": "source-reliability-evaluation",
+        "secondarySkills": [
+          "population-transfer",
+          "outcome-transfer",
+          "conflict-of-interest"
+        ],
+        "cognitiveProcess": "evaluate-evidence",
+        "knowledgeComponents": [
+          "sample-scope",
+          "measured-outcome",
+          "independent-review"
+        ],
+        "intendedDifficultyBand": "LGS_CALIBRATION_HIGH"
+      },
+      "styleProfile": {
+        "genre": "çok-kaynaklı-bilgi-notu",
+        "voice": "araştırma-değerlendirme",
+        "sourceMode": "özgün-kaynak-karşılaştırması",
+        "rhetoricalMoves": [
+          "araştırma-özeti",
+          "iddia-genişletme",
+          "çıkar-ilişkisi",
+          "derleme-karşılaştırması"
+        ]
+      },
+      "stimulus": "Bir üniversitede 18-35 yaş arasındaki 60 gönüllüyle üç hafta süren bir çalışma yapılmıştır. Akşamları filtreli gözlük kullanan grup, uykuya ortalama 12 dakika daha erken daldığını bildirmiş; iki grubun toplam uyku süreleri arasında belirgin fark görülmemiştir. Filtreli gözlük satan bir kuruluş, bu çalışmayı “Çocukların gözlerini korur, okul başarısını yükseltir.” başlığıyla paylaşmıştır. Daha sonra yayımlanan ve on iki araştırmayı inceleyen bir derleme, uykuya ilişkin sonuçların birbiriyle tutarlı olmadığını; incelenen çalışmaların çocuklarda okul başarısını veya kalıcı göz hasarını ölçmediğini bildirmiştir.",
+      "stimulusBlocks": null,
+      "stem": "Bu kaynaklardaki bilgileri karşılaştıran bir öğrencinin aşağıdaki değerlendirmelerden hangisine ulaşması en uygundur?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Çalışmanın üniversitede yapılmış olması, çocukların göz sağlığı ve okul başarısıyla ilgili sonraki yorumların da güvenilir kabul edilmesini sağlar."
+        },
+        {
+          "id": "B",
+          "text": "Derlemede sonuçların tutarsız bulunması, ilk çalışmada görülen 12 dakikalık farkın kesinlikle ölçüm hatasından kaynaklandığını gösterir."
+        },
+        {
+          "id": "C",
+          "text": "İlk çalışma yetişkinlerde kısa süreli bir uykuya dalma bulgusu sunar; çocuklar, okul başarısı ve kalıcı göz hasarı iddiaları için yeterli kanıt sağlamaz."
+        },
+        {
+          "id": "D",
+          "text": "Araştırmayı paylaşan kuruluşun gözlük satması, aktardığı çalışma verilerinin ve filtreli gözlüklerle ilgili bütün bilgilerin yanlış olduğunu kanıtlar."
+        }
+      ],
+      "answerKey": {
+        "optionId": "C",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "hints": [
+        {
+          "level": 1,
+          "text": "Araştırmaya kimler katılmış ve çalışma ne kadar sürmüş?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Araştırmanın ölçtüğü değişkenle satış sayfasının iddia ettiği sonuçlar aynı mı?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "On iki araştırmayı inceleyen kaynak, hangi iddiaların henüz ölçülmediğini söylüyor?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "institution-authority-overrides-scope",
+          "text": "Araştırmanın kurumu önemli olabilir; ancak yetişkinlerde ölçülen kısa süreli uyku bulgusunu çocukların göz sağlığına ve okul başarısına taşımaz.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e3",
+            "e4"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "inconsistency-means-false",
+          "text": "Tutarsız sonuçlar bulgunun kesinleşmediğini gösterir; belirli bir sonucun mutlaka ölçüm hatası olduğunu kanıtlamaz.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Seçenek örneklemi, süreyi, ölçülen sonucu ve sonradan eklenen iddiaları birbirinden ayırarak kaynakların gerçek kapsamını korur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "conflict-means-automatic-falsehood",
+          "text": "Çıkar ilişkisi kaynağı daha dikkatli değerlendirmeyi gerektirir; fakat aktarılan bütün verilerin otomatik olarak yanlış olduğunu göstermez.",
+          "supportingEvidenceIds": [
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e2"
+          ]
+        }
+      ],
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "ilk araştırmanın örneklem ve süre sınırını belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Araştırma yalnız 18-35 yaşındaki 60 gönüllüyü üç hafta boyunca incelemiştir."
+        },
+        {
+          "id": "s2",
+          "action": "ölçülen sonuç ile sonradan ileri sürülen sonuçları ayır",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "evidence": "Araştırma uykuya dalma süresini ölçerken paylaşım çocukların göz sağlığı ve okul başarısına geçer."
+        },
+        {
+          "id": "s3",
+          "action": "bağımsız derlemenin kanıt sınırını kullan",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e4"
+          ],
+          "evidence": "Derleme hem uyku sonuçlarının tutarsızlığını hem de çocuk, başarı ve kalıcı hasar sonuçlarının ölçülmediğini gösterir."
+        }
+      ],
+      "audit": {
+        "id": "tr-g8-reading-calibration-05-blue-light-source-reliability",
+        "ok": true,
+        "errors": [],
+        "metrics": {
+          "requiredEvidenceCount": 4,
+          "partialDistractorCount": 3,
+          "semanticFieldCount": 1,
+          "maxSingleSentenceAnswerOverlap": 0.167,
+          "optionWordCounts": [
+            18,
+            15,
+            22,
+            17
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,14 +1,16 @@
 export const QUESTION_ARCHITECTURE_POLICY = Object.freeze({
-  version: '3.0',
+  version: '3.1',
   pipelineOrder: Object.freeze([
     'AUTHORITATIVE_CURRICULUM',
     'SUBJECT_SPECIFIC_CONTENT_ENGINE',
     'INDEPENDENT_ANSWER_VERIFICATION',
     'PEDAGOGICAL_FEEDBACK',
     'QUALITY_GATES',
+    'HUMAN_CALIBRATION',
+    'CANONICAL_PILOT_EXPANSION',
     'GAME_ADAPTATION',
     'SEMANTIC_ROUND_TRIP',
-    'HUMAN_PILOT',
+    'STUDENT_PILOT',
     'PUBLICATION'
   ]),
   invariants: Object.freeze({
@@ -21,6 +23,8 @@ export const QUESTION_ARCHITECTURE_POLICY = Object.freeze({
     allOptionsRequireFeedback: true,
     hintsMustBeProgressive: true,
     independentVerifierRequired: true,
+    humanCalibrationBeforeScale: true,
+    canonicalApprovalBeforeGame: true,
     humanPilotRequiredForPublication: true
   }),
   prohibitedShortcuts: Object.freeze([
@@ -42,6 +46,8 @@ export function validateQuestionArchitecturePolicy(policy = QUESTION_ARCHITECTUR
     'allOptionsRequireFeedback',
     'hintsMustBeProgressive',
     'independentVerifierRequired',
+    'humanCalibrationBeforeScale',
+    'canonicalApprovalBeforeGame',
     'humanPilotRequiredForPublication'
   ];
   return Object.freeze({
