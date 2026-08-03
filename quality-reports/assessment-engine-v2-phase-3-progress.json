@@ -1,13 +1,13 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:47:18.646Z",
-  "phase": "PHASE_3_IN_PROGRESS",
+  "generatedAt": "2026-08-03T08:50:26.061Z",
+  "phase": "PHASE_3_ENGINEERING_PASS",
   "productReady": false,
   "targetModelCount": 12,
-  "currentModelCount": 8,
-  "remainingModelCount": 4,
+  "currentModelCount": 12,
+  "remainingModelCount": 0,
   "allCurrentModelsPass": true,
-  "automatedAcceptance": "IN_PROGRESS",
+  "automatedAcceptance": "PASS",
   "independentEvidenceVerifier": "PASS_FOR_MATERIALIZED_MODELS",
   "humanSampleStatus": "NOT_MEASURED",
   "legacyContentPolicy": "UNVERIFIED_LEGACY",
@@ -19,7 +19,11 @@
     "author-purpose",
     "author-attitude",
     "contrast-relation",
-    "paragraph-function"
+    "paragraph-function",
+    "necessary-assumption",
+    "causal-boundary",
+    "cross-text-relation",
+    "strongest-evidence"
   ],
   "items": [
     {
@@ -338,7 +342,167 @@
         "ok": true,
         "errors": []
       }
+    },
+    {
+      "id": "reading-necessary-assumption-v2",
+      "constructId": "construct-reading-necessary-assumption",
+      "knowledgeComponents": [
+        "claim-premise-gap",
+        "necessary-assumption",
+        "alternative-explanation"
+      ],
+      "deepFeatures": [
+        "premise-gap",
+        "necessity-test",
+        "proxy-validity"
+      ],
+      "answer": "Yakındaki büfelerin şişe satışları, bölgede kullanılan tek kullanımlık su şişesi miktarını anlamlı ölçüde yansıtmaktadır.",
+      "misconceptions": [
+        {
+          "id": "desirable-but-not-necessary",
+          "text": "Bölge sakinlerinin çoğu çevreyi korumayı önemli bulmaktadır.",
+          "feedback": "Bir varsayım yalnız yararlı değil zorunlu olmalıdır; yanlış olduğunda çıkarım çökmelidir."
+        },
+        {
+          "id": "repeat-explicit-evidence",
+          "text": "Büfelerdeki şişe satışı yüzde 18 azalmıştır.",
+          "feedback": "Satış düşüşü zaten metinde verilmiştir; soru kanıt ile sonuç arasındaki eksik bağlantıyı sorar."
+        },
+        {
+          "id": "irrelevant-operational-detail",
+          "text": "Dolum istasyonlarının tamamı aynı renkte tasarlanmıştır.",
+          "feedback": "İstasyonların rengi veya tasarımı, satış verisinin plastik tüketimini temsil edip etmediğini belirlemez."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:okm2y7",
+      "cognitiveExperienceId": "cx:v2:et8gkl",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-causal-boundary-v2",
+      "constructId": "construct-reading-causal-boundary",
+      "knowledgeComponents": [
+        "association-vs-causation",
+        "confounding-variable",
+        "directionality"
+      ],
+      "deepFeatures": [
+        "causal-boundary",
+        "observational-study",
+        "confound-awareness"
+      ],
+      "answer": "İncelenen öğrencilerde daha uzun uyku ile daha yüksek matematik puanı arasında bir ilişki vardır; ancak uyku tek neden olarak gösterilemez.",
+      "misconceptions": [
+        {
+          "id": "correlation-means-cause",
+          "text": "Her gece en az 8 saat uyumak matematik başarısını kesin olarak yükseltir.",
+          "feedback": "Gözlemsel veri ilişki gösterir; diğer etkenler dışlanmadan kesin neden göstermez."
+        },
+        {
+          "id": "reverse-causality-certainty",
+          "text": "Yüksek matematik puanı öğrencilerin daha uzun uyumasına kesin olarak neden olur.",
+          "feedback": "Yüksek puanın daha uzun uykuya neden olduğu da bu araştırmayla kanıtlanmış değildir."
+        },
+        {
+          "id": "deny-observed-relation",
+          "text": "Uyku süresi ile matematik puanı arasında hiçbir ilişki yoktur.",
+          "feedback": "Nedensellik ayrı bir iddiadır; gruplar arasındaki ortalama puan farkı gözlenmiştir."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:ez9jzr",
+      "cognitiveExperienceId": "cx:v2:1520gd9",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-cross-text-relation-v2",
+      "constructId": "construct-reading-cross-text-relation",
+      "knowledgeComponents": [
+        "cross-text-claim-map",
+        "partial-agreement",
+        "emphasis-difference"
+      ],
+      "deepFeatures": [
+        "two-text-claim-alignment",
+        "partial-agreement",
+        "different-rationale"
+      ],
+      "answer": "İki metin de karma çalışma düzenini kabul eder; birincisi bireysel odaklanmayı, ikincisi yüz yüze etkileşimi öne çıkarır.",
+      "misconceptions": [
+        {
+          "id": "false-total-opposition",
+          "text": "Birinci metin uzaktan çalışmayı bütünüyle savunurken ikinci metin uzaktan çalışmaya bütünüyle karşı çıkar.",
+          "feedback": "İki metin de karma düzeni kabul eder; ayrılık düzenin gerekçesi ve ağırlığındadır."
+        },
+        {
+          "id": "false-total-agreement",
+          "text": "İki metin de karma düzeni yalnız çalışanların bireysel olarak daha iyi odaklanması için savunur.",
+          "feedback": "Birinci metin odaklanmayı, ikinci metin spontane ekip etkileşimini temel alır."
+        },
+        {
+          "id": "reverse-emphasis",
+          "text": "Birinci metin yüz yüze etkileşimi, ikinci metin evde bireysel odaklanmayı temel gerekçe yapar.",
+          "feedback": "Odaklanma vurgusu birinci, yüz yüze etkileşim vurgusu ikinci metne aittir."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:oraa5m",
+      "cognitiveExperienceId": "cx:v2:o74joq",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-strongest-evidence-v2",
+      "constructId": "construct-reading-strongest-evidence",
+      "knowledgeComponents": [
+        "evidence-directness",
+        "source-reliability",
+        "controlled-comparison"
+      ],
+      "deepFeatures": [
+        "evidence-ranking",
+        "directness-times-reliability",
+        "controlled-comparison"
+      ],
+      "answer": "Çiçek alanı kurulmadan önce ve sonra 10 hafta yapılan standart sayımlarda ziyaretler artmış, değişiklik yapılmayan benzer bahçe bölümünde aynı artış görülmemiştir.",
+      "misconceptions": [
+        {
+          "id": "anecdote-as-strongest-evidence",
+          "text": "Bir öğrenci, geçen hafta bahçede her zamankinden daha çok kelebek gördüğünü söylemiştir.",
+          "feedback": "Tek kişinin gözlemi seçici olabilir; tekrarlı ve karşılaştırmalı sayım daha güçlüdür."
+        },
+        {
+          "id": "single-photo-as-proof",
+          "text": "Çiçeklerin açtığı gün bahçede üç arının göründüğü bir fotoğraf çekilmiştir.",
+          "feedback": "Tek fotoğraf değişimi göstermez; önceki durum ve karşılaştırma alanı gerekir."
+        },
+        {
+          "id": "interested-source-as-proof",
+          "text": "Tohumları satan firmanın broşüründe yerli çiçeklerin tozlayıcıları çektiği yazmaktadır.",
+          "feedback": "Çıkarı bulunan kaynağın genel iddiası, yerel ve kontrollü ölçümden daha zayıftır."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:hzsro4",
+      "cognitiveExperienceId": "cx:v2:syz2bv",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
     }
   ],
-  "nextAction": "Add 4 remaining solver-backed reading model(s)."
+  "nextAction": "Run first human visual review and student-facing pilot; keep productReady=false until measured."
 }

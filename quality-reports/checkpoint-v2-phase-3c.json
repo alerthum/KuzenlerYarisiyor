@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "2.0",
+  "checkpoint": "checkpoint-v2-phase-3c",
+  "phase": "PHASE_3C_MODEL_SET_COMPLETE",
+  "productReady": false,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "readingModelProgress": "12/12",
+  "modelsAdded": [
+    "reading-necessary-assumption-v2",
+    "reading-causal-boundary-v2",
+    "reading-cross-text-relation-v2",
+    "reading-strongest-evidence-v2"
+  ],
+  "humanSampleStatus": "NOT_MEASURED"
+}
