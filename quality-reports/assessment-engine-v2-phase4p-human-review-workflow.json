@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T23:12:35.584Z",
+  "phase": "4P",
+  "title": "İnsan İnceleme İş Akışı",
+  "status": "HUMAN_REVIEW_WORKBENCH_PASS_DECISIONS_REQUIRED",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "audit": {
+    "ok": true,
+    "errors": [],
+    "metrics": {
+      "taskCount": 70,
+      "engineCount": 7,
+      "singleReviewTaskCount": 4,
+      "doubleReviewTaskCount": 66,
+      "decisionCount": 0,
+      "total": 70,
+      "approved": 0,
+      "pending": 70,
+      "revisionRequired": 0,
+      "rejected": 0
+    }
+  },
+  "metrics": {
+    "taskCount": 70,
+    "engineCount": 7,
+    "singleReviewTaskCount": 4,
+    "doubleReviewTaskCount": 66,
+    "decisionCount": 0,
+    "total": 70,
+    "approved": 0,
+    "pending": 70,
+    "revisionRequired": 0,
+    "rejected": 0
+  },
+  "blockers": [
+    "70 görev için uzman kararları henüz girilmedi.",
+    "Yüksek riskli görevlerde ikinci bağımsız uzman zorunlu.",
+    "Gerçek öğrenci pilotu ve madde analizi henüz yok."
+  ]
+}
