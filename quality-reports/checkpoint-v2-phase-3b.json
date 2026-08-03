@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "2.0",
+  "checkpoint": "checkpoint-v2-phase-3b",
+  "phase": "PHASE_3B_ENGINEERING_PASS",
+  "productReady": false,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "readingModelProgress": "8/12",
+  "modelsAdded": [
+    "reading-author-purpose-v2",
+    "reading-author-attitude-v2",
+    "reading-contrast-relation-v2",
+    "reading-paragraph-function-v2"
+  ],
+  "humanSampleStatus": "NOT_MEASURED"
+}

@@ -1,11 +1,11 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:44:20.660Z",
+  "generatedAt": "2026-08-03T08:47:18.646Z",
   "phase": "PHASE_3_IN_PROGRESS",
   "productReady": false,
   "targetModelCount": 12,
-  "currentModelCount": 4,
-  "remainingModelCount": 8,
+  "currentModelCount": 8,
+  "remainingModelCount": 4,
   "allCurrentModelsPass": true,
   "automatedAcceptance": "IN_PROGRESS",
   "independentEvidenceVerifier": "PASS_FOR_MATERIALIZED_MODELS",
@@ -15,7 +15,11 @@
     "main-idea-coverage",
     "supported-inference",
     "claim-evidence-match",
-    "scope-certainty-control"
+    "scope-certainty-control",
+    "author-purpose",
+    "author-attitude",
+    "contrast-relation",
+    "paragraph-function"
   ],
   "items": [
     {
@@ -176,7 +180,165 @@
         "ok": true,
         "errors": []
       }
+    },
+    {
+      "id": "reading-author-purpose-v2",
+      "constructId": "construct-reading-author-purpose",
+      "knowledgeComponents": [
+        "communicative-purpose",
+        "evidence-purpose-alignment",
+        "call-to-action"
+      ],
+      "deepFeatures": [
+        "purpose-from-content-selection",
+        "inform-plus-encourage"
+      ],
+      "answer": "Yerel tohum arşivinin önemini açıklamak ve okurları çeşitlerin korunmasına katkı vermeye yöneltmek",
+      "misconceptions": [
+        {
+          "id": "information-only-purpose",
+          "text": "Yalnızca arşivde kaç çeşit tohum bulunduğunu bildirmek",
+          "feedback": "Metnin sonundaki kayıt gününe katılım çağrısı temel amacın bir parçasıdır."
+        },
+        {
+          "id": "entertainment-purpose",
+          "text": "Yerel tohumlarla ilgili eğlenceli bir olay anlatmak",
+          "feedback": "Metin olay örgüsü kurmuyor; süreç açıklıyor ve okuru bir davranışa yönlendiriyor."
+        },
+        {
+          "id": "criticism-purpose",
+          "text": "Bölgedeki çiftçileri eski tohumları korumadıkları için eleştirmek",
+          "feedback": "Metinde çiftçilere veya kurumlara yönelik bir suçlama yoktur."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:1ussvyw",
+      "cognitiveExperienceId": "cx:v2:1t8xvt6",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-author-attitude-v2",
+      "constructId": "construct-reading-author-attitude",
+      "knowledgeComponents": [
+        "evaluative-language",
+        "mixed-attitude",
+        "certainty-tone"
+      ],
+      "deepFeatures": [
+        "mixed-evaluation",
+        "cautious-optimism",
+        "tone-evidence"
+      ],
+      "answer": "Projeyi olumlu bulmakla birlikte başarısını koruma koşullarına bağlayan temkinli bir tutum",
+      "misconceptions": [
+        {
+          "id": "unconditional-praise",
+          "text": "Projeyi hiçbir çekince taşımadan bütünüyle öven bir tutum",
+          "feedback": "Yazar projeyi destekliyor fakat başarıyı belirli koruma koşullarına bağlıyor."
+        },
+        {
+          "id": "pure-opposition",
+          "text": "Yapının yeniden kullanılmasına bütünüyle karşı çıkan bir tutum",
+          "feedback": "Metin yeniden kullanımı sevindirici buluyor; yalnız uygulamanın niteliğine dikkat çekiyor."
+        },
+        {
+          "id": "neutral-reporting",
+          "text": "Projeyle ilgili hiçbir değerlendirme içermeyen tarafsız bir tutum",
+          "feedback": "“Sevindirici” ve “başarı sayılabilmesi” ifadeleri açık değerlendirme içerir."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:b51lqh",
+      "cognitiveExperienceId": "cx:v2:9344c3",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-contrast-relation-v2",
+      "constructId": "construct-reading-contrast-relation",
+      "knowledgeComponents": [
+        "contrast-marker",
+        "compared-dimensions",
+        "relation-direction"
+      ],
+      "deepFeatures": [
+        "two-position-map",
+        "contrast-dimension",
+        "relation-direction"
+      ],
+      "answer": "Yol genişletme kısa süreli rahatlama sağlayabilirken toplu taşıma ve yaya bağlantıları araç talebini azaltmaya yönelir.",
+      "misconceptions": [
+        {
+          "id": "reverse-contrast-direction",
+          "text": "Toplu taşıma yalnız kısa süreli rahatlama sağlarken yol genişletme araç bağımlılığını kalıcı olarak azaltır.",
+          "feedback": "Metin kalıcı etkiyi yol genişletmeye değil, araç bağımlılığını azaltan yaklaşıma bağlar."
+        },
+        {
+          "id": "erase-contrast",
+          "text": "Her iki yaklaşım da yalnız mevcut yolların kapasitesini artırmayı amaçlar.",
+          "feedback": "“Buna karşılık” bağlacı iki farklı çözüm mantığını açıkça ayırır."
+        },
+        {
+          "id": "change-comparison-dimension",
+          "text": "Yol genişletme ucuz, toplu taşıma ise pahalı olduğu için iki yaklaşım birbirine karşıttır.",
+          "feedback": "Parçada maliyet karşılaştırması yapılmıyor; trafik etkisinin süresi ve araç bağımlılığı tartışılıyor."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:v1ayrc",
+      "cognitiveExperienceId": "cx:v2:prs3n6",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "reading-paragraph-function-v2",
+      "constructId": "construct-reading-paragraph-function",
+      "knowledgeComponents": [
+        "text-organization",
+        "problem-solution",
+        "paragraph-role"
+      ],
+      "deepFeatures": [
+        "paragraph-role-map",
+        "problem-to-solution-transition"
+      ],
+      "answer": "İlk paragrafta belirtilen soruna yönelik bir çözüm denemesini ve sonucunu sunmak",
+      "misconceptions": [
+        {
+          "id": "repeat-problem-as-function",
+          "text": "Ziyaretçilerin etiketleri okumama sorununu aynı biçimde yeniden açıklamak",
+          "feedback": "Sorun ilk paragraftadır; ikinci paragraf uygulama ve sonuç getirir."
+        },
+        {
+          "id": "unrelated-example-function",
+          "text": "Müze konusundan bağımsız bir eğitim uygulaması örneği vermek",
+          "feedback": "Kart uygulaması doğrudan etiketlerin okunmaması sorununa karşı geliştirilmiştir."
+        },
+        {
+          "id": "historical-background-function",
+          "text": "Müzenin kuruluş sürecine ilişkin tarihsel arka plan sunmak",
+          "feedback": "İkinci paragraf geçmiş bilgi vermiyor; güncel bir deneme ve sonucunu açıklıyor."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "structuralId": "st:v2:4co0ga",
+      "cognitiveExperienceId": "cx:v2:5l24sg",
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
     }
   ],
-  "nextAction": "Add 8 remaining solver-backed reading model(s)."
+  "nextAction": "Add 4 remaining solver-backed reading model(s)."
 }
