@@ -1,11 +1,11 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:07:22.247Z",
+  "generatedAt": "2026-08-03T08:10:00.853Z",
   "phase": "PHASE_2_IN_PROGRESS",
   "productReady": false,
   "targetModelCount": 12,
-  "currentModelCount": 8,
-  "remainingModelCount": 4,
+  "currentModelCount": 10,
+  "remainingModelCount": 2,
   "allCurrentModelsPass": true,
   "legacyContentPolicy": "UNVERIFIED_LEGACY",
   "coveredIdeas": [
@@ -16,7 +16,9 @@
     "two-set inclusion-exclusion",
     "gcd invariant/reverse Euclidean reachability",
     "parity and checkerboard coloring",
-    "extremal maximum-degree bound"
+    "extremal maximum-degree bound",
+    "divisor exponent structure",
+    "geometric reflection transformation"
   ],
   "items": [
     {
@@ -312,7 +314,81 @@
         "ok": true,
         "errors": []
       }
+    },
+    {
+      "id": "math-divisor-structure-minimum-v2",
+      "constructId": "construct-divisor-exponent-structure",
+      "knowledgeComponents": [
+        "prime-factorization",
+        "divisor-count-formula",
+        "exponent-partitions"
+      ],
+      "deepFeatures": [
+        "multiplicative-partitions",
+        "prime-exponent-minimization"
+      ],
+      "answer": "180",
+      "misconceptions": [
+        {
+          "id": "use-first-composite-factorization",
+          "value": "768",
+          "feedback": "9·2 kalıbı geçerlidir fakat en küçük sonucu vermeyebilir; 3·3·2 kalıbı da incelenmelidir."
+        },
+        {
+          "id": "omit-three-prime-pattern",
+          "value": "288",
+          "feedback": "Üç asal çarpanlı 3·3·2 kalıbı 180’i verir ve iki asal çarpanlı 288’den daha küçüktür."
+        },
+        {
+          "id": "forget-plus-one-in-divisor-formula",
+          "value": "5400",
+          "feedback": "Bölen sayısında kullanılan çarpanlar üslerin kendisi değil, üslerin bir fazlasıdır."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "id": "math-geometric-reflection-path-v2",
+      "constructId": "construct-geometric-reflection-shortest-path",
+      "knowledgeComponents": [
+        "reflection",
+        "triangle-inequality",
+        "distance-formula"
+      ],
+      "deepFeatures": [
+        "reflection-transformation",
+        "shortest-broken-path"
+      ],
+      "answer": "10",
+      "misconceptions": [
+        {
+          "id": "ignore-boundary-point",
+          "value": "6,32",
+          "feedback": "Doğrudan AB parçası x eksenine uğramaz; yolun P noktasından geçmesi zorunludur."
+        },
+        {
+          "id": "use-only-vertical-distances",
+          "value": "8",
+          "feedback": "Noktaların x koordinatları farklı olduğu için yatay uzaklık da toplam yolu etkiler."
+        },
+        {
+          "id": "use-manhattan-after-reflection",
+          "value": "14",
+          "feedback": "En kısa düz yolun uzunluğu farkların toplamı değil, Pisagor bağıntısıyla bulunan Öklid uzaklığıdır."
+        }
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "gate": {
+        "ok": true,
+        "errors": []
+      }
     }
   ],
-  "nextAction": "Add 4 remaining solver-backed mathematics/olympiad model(s)."
+  "nextAction": "Add 2 remaining solver-backed mathematics/olympiad model(s)."
 }

@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "2.0",
+  "checkpoint": "checkpoint-v2-phase-2c",
+  "phase": "PHASE_2_IN_PROGRESS",
+  "modelCount": 10,
+  "targetModelCount": 12,
+  "completedGroup": ["divisor-structure", "geometric-transformation"],
+  "assessmentV2Tests": {"passed": 22, "failed": 0, "status": "PASS"},
+  "productReady": false,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY"
+}

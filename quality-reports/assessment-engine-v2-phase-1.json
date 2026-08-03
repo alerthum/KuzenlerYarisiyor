@@ -1,14 +1,14 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T08:07:22.191Z",
+  "generatedAt": "2026-08-03T08:10:00.791Z",
   "status": "PHASE_1_PASS",
   "productReady": false,
   "scope": "Assessment Engine V2 contracts and three cross-domain proof models",
   "inventory": {
     "schemaVersion": "2.0",
-    "modelCount": 10,
+    "modelCount": 12,
     "domains": {
-      "mathematics": 8,
+      "mathematics": 10,
       "reading": 1,
       "logic": 1
     },
@@ -282,6 +282,62 @@
         "round-average-down",
         "count-each-edge-once",
         "add-unneeded-safety-margin"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-divisor-structure-minimum-v2",
+      "domain": "mathematics",
+      "constructId": "construct-divisor-exponent-structure",
+      "knowledgeComponents": [
+        "prime-factorization",
+        "divisor-count-formula",
+        "exponent-partitions"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "problem-hunter"
+      ],
+      "structuralId": "st:v2:x2p1k",
+      "cognitiveExperienceId": "cx:v2:1b4gmc0",
+      "correctAnswer": "180",
+      "misconceptionIds": [
+        "use-first-composite-factorization",
+        "omit-three-prime-pattern",
+        "forget-plus-one-in-divisor-formula"
+      ],
+      "hintCount": 3,
+      "solutionStepCount": 3,
+      "publicationGate": {
+        "ok": true,
+        "errors": []
+      }
+    },
+    {
+      "itemModelId": "math-geometric-reflection-path-v2",
+      "domain": "mathematics",
+      "constructId": "construct-geometric-reflection-shortest-path",
+      "knowledgeComponents": [
+        "reflection",
+        "triangle-inequality",
+        "distance-formula"
+      ],
+      "compatibleGameIds": [
+        "olympiad-ladder",
+        "problem-hunter"
+      ],
+      "structuralId": "st:v2:by6wdy",
+      "cognitiveExperienceId": "cx:v2:1x8w4ga",
+      "correctAnswer": "10",
+      "misconceptionIds": [
+        "ignore-boundary-point",
+        "use-only-vertical-distances",
+        "use-manhattan-after-reflection"
       ],
       "hintCount": 3,
       "solutionStepCount": 3,
