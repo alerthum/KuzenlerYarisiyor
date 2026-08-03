@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "PHASE_4C",
+  "batchId": "GRADE8_TURKISH_PILOT_01_24",
+  "decision": "ENGINEERING_PASS_HUMAN_REVIEW_REQUIRED",
+  "metrics": {
+    "questionCount": 24,
+    "outcomeCount": 8,
+    "questionsPerOutcome": 3,
+    "answerDistribution": { "A": 6, "B": 6, "C": 6, "D": 6 },
+    "reviewQuestionCount": 12,
+    "reviewAnswerDistribution": { "A": 3, "B": 3, "C": 3, "D": 3 },
+    "genreCount": 23,
+    "sourceModeCount": 24,
+    "pilotTests": { "passed": 10, "total": 10 },
+    "assessmentV2Regression": { "passed": 85, "total": 85 },
+    "legacyPolicy": { "passed": 2, "total": 2 },
+    "build": "PASS"
+  },
+  "humanReviewStatus": "NOT_MEASURED",
+  "gameAdaptationAllowed": false,
+  "productReady": false,
+  "legacyContentStatus": "UNVERIFIED_LEGACY"
+}

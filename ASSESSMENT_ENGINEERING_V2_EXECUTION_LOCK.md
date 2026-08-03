@@ -15,11 +15,12 @@
 
 ## Current stage
 
-- Stage: `GRADE8_TURKISH_PILOT_01_CALIBRATION_5`
-- Scope: five game-independent canonical questions
+- Stage: `GRADE8_TURKISH_PILOT_01_24`
+- Scope: eight official reading outcomes × three game-independent canonical questions
 - Human review: `NOT_MEASURED`
+- Review sample: 12 questions covering all eight outcomes, with A/B/C/D answers distributed 3/3/3/3
 - Game adaptation: locked
-- Expansion to 24 questions: locked until all five calibration questions are reviewed
+- Next subject/grade expansion: locked until the 12-question review sample is evaluated
 - Product readiness: `false`
 
 ## Non-negotiable calibration gates
@@ -29,6 +30,8 @@
 - At least two distractors must receive partial support from the text but fail for a distinct reason.
 - All options must remain in the same semantic field.
 - Correct-answer length, caution language or visual balance may not provide a reliable cue.
+- A certainty word appearing in only one option (for example “bütün”, “hiçbir”, “her durumda”) must turn the blind-option gate RED.
+- Options must be presented in physical A-B-C-D order, and answer positions must be balanced at catalog and review-sample level.
 - Each distractor must represent a named student error and receive teaching feedback.
 - Hints must narrow the evidence progressively without stating the answer.
 - A second valid option, a missing evidence edge or a single-evidence answer must turn the gate RED.

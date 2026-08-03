@@ -405,7 +405,7 @@ const LIMITATION_MARKERS = Object.freeze([
 
 const CERTAINTY_MARKERS = Object.freeze([
   'kesinlikle', 'mutlaka', 'her zaman', 'bütün', 'tümü', 'asla',
-  'tek geçerli', 'otomatik olarak', 'doğrudan ve genellenebilir'
+  'tek geçerli', 'otomatik olarak', 'doğrudan ve genellenebilir', 'her durumda', 'hiçbir', 'tamamen', 'bütünüyle'
 ]);
 
 function markerCount(value, markers) {
@@ -443,7 +443,9 @@ function auditOptionOnlyCueRisk(options, answerOptionId) {
   const minCertainty = Math.min(...distractors.map(entry => entry.certaintyCount));
   const maxComplexity = Math.max(...distractors.map(entry => entry.clauseComplexity));
   const distractorBalancedCount = distractors.filter(entry => entry.qualifierCount > 0 && entry.limitationCount > 0).length;
+  const certaintyBearing = profiles.filter(entry => entry.certaintyCount > 0);
 
+  if (certaintyBearing.length === 1) reasons.push('single-option-uses-certainty-marker');
   if (correct.qualifierCount > maxQualifier) reasons.push('correct-uniquely-qualified');
   if (correct.limitationCount > 0 && maxLimitation === 0) reasons.push('correct-uniquely-limited');
   if (correct.certaintyCount < minCertainty) reasons.push('correct-uniquely-cautious');
@@ -451,7 +453,7 @@ function auditOptionOnlyCueRisk(options, answerOptionId) {
   if (correct.qualifierCount > 0 && correct.limitationCount > 0 && distractorBalancedCount === 0) reasons.push('correct-only-balanced-claim');
 
   return Object.freeze({
-    risk: Number((reasons.length / 5).toFixed(3)),
+    risk: Number((reasons.length / 6).toFixed(3)),
     reasons: Object.freeze(reasons),
     profiles: Object.freeze(profiles)
   });
