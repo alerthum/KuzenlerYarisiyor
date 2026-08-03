@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "4A",
+  "decision": "CURRICULUM_FIRST_ARCHITECTURE_ACCEPTED",
+  "productReady": false,
+  "legacyContentPolicy": "UNVERIFIED_LEGACY",
+  "curriculumSchoolYear": "2026-2027",
+  "curriculumRouting": {
+    "TYMM": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11
+    ],
+    "PRE_TYMM": [
+      4,
+      8,
+      12
+    ]
+  },
+  "architecture": {
+    "sharedQuestionContract": true,
+    "singleUniversalGenerator": false,
+    "subjectSpecificEngines": true,
+    "contentBeforeGame": true,
+    "independentVerifierRequired": true,
+    "progressiveHintsRequired": true,
+    "allOptionFeedbackRequired": true,
+    "semanticRoundTripRequired": true,
+    "humanPilotRequiredForPublication": true
+  },
+  "attachedConversationAudit": {
+    "accepted": [
+      "curriculum registry before generation",
+      "canonical item data model",
+      "option-by-option feedback",
+      "student hint layer",
+      "reverse verification",
+      "separate game adaptation"
+    ],
+    "rejectedOrCorrected": [
+      "one distractor recipe for every subject",
+      "option count derived from grade alone",
+      "daily-life scenario required for every item",
+      "LLM self-check treated as independent verification",
+      "unverified sample outcome codes treated as official"
+    ],
+    "exampleDefectsFound": [
+      "LGS-TUR-804 contains an unsupported certain inference",
+      "LGS-TUR-807 contains a malformed Turkish stem",
+      "some distractor role labels do not match the represented error",
+      "LGS-TUR-805 has weak discrimination because the off-topic sentence is explicit",
+      "genre and narrator diversity is insufficient"
+    ]
+  },
+  "automatedEvidence": {
+    "newArchitectureTests": {
+      "passed": 11,
+      "failed": 0
+    },
+    "assessmentV2Tests": {
+      "passed": 65,
+      "failed": 0
+    },
+    "legacyPolicyTests": {
+      "passed": 2,
+      "failed": 0
+    },
+    "productionBuild": "PASS"
+  },
+  "outcomeIngestion": {
+    "status": "PARTIAL_GLOBAL_COMPLETE_PILOT",
+    "rule": "No outcome may be invented or treated as official before source-location verification.",
+    "completedCoursePrograms": [
+      {
+        "grade": 8,
+        "courseId": "turkce",
+        "programFamily": "PRE_TYMM",
+        "officialOutcomeCount": 76,
+        "domainCounts": {
+          "dinleme-izleme": 14,
+          "konusma": 7,
+          "okuma": 35,
+          "yazma": 20
+        },
+        "sourceLocationVerified": true
+      }
+    ],
+    "allGradesAllCoursesComplete": false
+  },
+  "courseCatalog": {
+    "verifiedCompulsoryRecords": 112,
+    "gradesCovered": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "schoolTypesCovered": [
+      "ILKOKUL_ORTAOKUL_GENEL",
+      "ANADOLU_LISESI"
+    ],
+    "electives": "NOT_YET_INGESTED",
+    "otherHighSchoolTypes": "NOT_YET_INGESTED",
+    "completeForAllTurkishSchoolTypes": false
+  }
+}
