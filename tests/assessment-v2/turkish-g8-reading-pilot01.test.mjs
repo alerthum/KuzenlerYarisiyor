@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
+  GRADE8_TURKISH_PILOT01_FRESH_REVIEW_IDS,
   GRADE8_TURKISH_PILOT01_IDS,
+  GRADE8_TURKISH_PILOT01_PREVIOUS_REVIEW_IDS,
   auditGrade8TurkishPilot01Catalog,
   buildGrade8TurkishPilot01Questions,
   grade8TurkishPilot01Engine
@@ -100,4 +102,18 @@ test('katalog metin türü ve kaynak biçiminde tek kalıba düşmez', () => {
   assert.equal(audit.metrics.sourceModeCount >= 20, true);
   assert.equal(audit.metrics.productReady, false);
   assert.equal(audit.metrics.gameAdaptationAllowed, false);
+});
+
+
+test('R1 gözle paketi daha önce gösterilen hiçbir soruyu tekrar etmez', () => {
+  const previousIds = new Set(GRADE8_TURKISH_PILOT01_PREVIOUS_REVIEW_IDS);
+  const freshItems = items.filter(item => GRADE8_TURKISH_PILOT01_FRESH_REVIEW_IDS.includes(item.id));
+  assert.equal(GRADE8_TURKISH_PILOT01_PREVIOUS_REVIEW_IDS.length, 12);
+  assert.equal(freshItems.length, 12);
+  assert.equal(freshItems.some(item => previousIds.has(item.id)), false);
+  assert.deepEqual(
+    Object.fromEntries(['A', 'B', 'C', 'D'].map(id => [id, freshItems.filter(item => item.answerKey.optionId === id).length])),
+    { A: 3, B: 3, C: 3, D: 3 }
+  );
+  assert.equal(new Set(freshItems.flatMap(item => item.curriculum.outcomeIds)).size, 8);
 });

@@ -575,6 +575,36 @@ const ACCEPTED_ITEMS = buildGrade8TurkishCalibrationQuestions();
 const NEW_ITEMS = Object.freeze(NEW_SPECS.map(makeCanonical));
 const PILOT_ITEMS = Object.freeze([...ACCEPTED_ITEMS, ...NEW_ITEMS]);
 
+export const GRADE8_TURKISH_PILOT01_PREVIOUS_REVIEW_IDS = Object.freeze([
+  'tr-g8-reading-calibration-01-restoration-main-idea',
+  'tr-g8-reading-calibration-02-contextual-word-inference',
+  'tr-g8-reading-calibration-03-museum-label-cross-text',
+  'tr-g8-reading-calibration-04-language-app-media-analysis',
+  'tr-g8-reading-calibration-05-blue-light-source-reliability',
+  'tr-g8-pilot01-06-city-sound-archive-topic',
+  'tr-g8-pilot01-10-nature-photo-main-idea',
+  'tr-g8-pilot01-11-recipe-notebooks-supporting-ideas',
+  'tr-g8-pilot01-15-city-park-cross-text',
+  'tr-g8-pilot01-17-orchestra-rehearsal-inference',
+  'tr-g8-pilot01-22-library-table',
+  'tr-g8-pilot01-23-school-garden-chart'
+]);
+
+export const GRADE8_TURKISH_PILOT01_FRESH_REVIEW_IDS = Object.freeze([
+  'tr-g8-pilot01-07-seed-exchange-topic',
+  'tr-g8-pilot01-08-night-observation-topic',
+  'tr-g8-pilot01-09-margin-notes-main-idea',
+  'tr-g8-pilot01-12-repair-cafe-supporting-ideas',
+  'tr-g8-pilot01-13-bird-tracking-supporting-ideas',
+  'tr-g8-pilot01-14-translation-cross-text',
+  'tr-g8-pilot01-16-clockmaker-inference',
+  'tr-g8-pilot01-18-eco-bottle-media',
+  'tr-g8-pilot01-19-exhibition-poster-media',
+  'tr-g8-pilot01-20-historical-photo-source',
+  'tr-g8-pilot01-21-water-test-source',
+  'tr-g8-pilot01-24-audio-guide-table'
+]);
+
 function semanticScore(entry, requiredEvidenceIds) {
   const required = new Set(requiredEvidenceIds);
   const covered = entry.support.filter(id => required.has(id)).length;
