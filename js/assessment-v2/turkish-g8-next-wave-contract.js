@@ -1,9 +1,25 @@
 import { grade8TurkishOutcomeByCode } from '../curriculum/outcomes/tr-g8-turkce-2019.js';
+import {
+  GRADE8_TURKISH_FULL_SCOPE_MATRIX,
+  GRADE8_TURKISH_PILOT02_CALIBRATION_CODES,
+  auditGrade8TurkishFullScopeMatrix
+} from './turkish-g8-full-scope-matrix.js';
+
+const ALL_OUTCOME_CODES = Object.freeze(GRADE8_TURKISH_FULL_SCOPE_MATRIX.map(row => row.outcomeCode));
 
 export const GRADE8_TURKISH_NEXT_WAVE_CONTRACT = Object.freeze({
-  id: 'GRADE8_TURKISH_PILOT_02_LITERARY_LANGUAGE',
-  purpose: '8. sınıf Türkçe havuzunu bilgi ve veri metinlerine sıkışmadan söz varlığı, edebî dil ve anlatım çeşitliliğiyle genişletmek',
-  requiredOutcomeCodes: Object.freeze(['T.8.3.6', 'T.8.3.7', 'T.8.3.11', 'T.8.3.21', 'T.8.3.26']),
+  id: 'GRADE8_TURKISH_FULL_SCOPE_ROLLOUT',
+  purpose: '8. sınıf Türkçenin 76 resmî kazanımını kendi doğasına uygun ölçme biçimleriyle eksiksiz kapsamak; güncel kalibrasyon grubu bu bütünün yalnız ilk uygulama dilimidir',
+  requiredOutcomeCodes: ALL_OUTCOME_CODES,
+  currentCalibrationOutcomeCodes: GRADE8_TURKISH_PILOT02_CALIBRATION_CODES,
+  fullScopeOutcomeCount: 76,
+  assessmentModePolicy: Object.freeze({
+    forceAllOutcomesIntoMultipleChoice: false,
+    performanceOutcomesRequireRubric: true,
+    listeningOutcomesRequireAudioOrVideo: true,
+    speakingOutcomesRequirePerformanceEvidence: true,
+    writingOutcomesRequireConstructedProduct: true
+  }),
   requiredStimulusFamilies: Object.freeze([
     'benzetme-ve-karsilastirma',
     'kisilestirme-ve-konusturma',
@@ -12,7 +28,11 @@ export const GRADE8_TURKISH_NEXT_WAVE_CONTRACT = Object.freeze({
     'yazar-gorusu-ve-edebi-elestiri',
     'kisa-oyku-ve-anlatici',
     'deneme-ve-kose-yazisi',
-    'siirsel-soyleyis'
+    'siirsel-soyleyis',
+    'dinleme-ve-izleme',
+    'konusma-performansi',
+    'yazma-ve-duzenleme',
+    'gorsel-medya-ve-veri'
   ]),
   quotationPolicy: Object.freeze({
     fabricatedAttributionForbidden: true,
@@ -21,36 +41,55 @@ export const GRADE8_TURKISH_NEXT_WAVE_CONTRACT = Object.freeze({
     requireAuthorAndWorkMetadata: true,
     fallbackWhenRightsUnknown: 'ORIGINAL_UNATTRIBUTED_AUTHOR_VIEW'
   }),
-  diversityMinimums: Object.freeze({
-    itemCount: 20,
-    literaryOrPersonalStimulusCount: 10,
-    figurativeLanguageItemCount: 4,
-    authorViewOrQuotationItemCount: 4,
-    narrativeItemCount: 3,
-    informationalDataItemMaximum: 4
+  currentCalibrationMinimums: Object.freeze({
+    itemCount: 5,
+    outcomeCount: 5,
+    literaryOrPersonalStimulusCount: 4,
+    figurativeLanguageItemCount: 2,
+    authorViewOrQuotationItemCount: 1,
+    narrativeItemCount: 2,
+    informationalDataItemMaximum: 1
   }),
   releaseRules: Object.freeze({
     humanReviewRequired: true,
     gameAdaptationAllowedBeforeHumanReview: false,
     blindOptionAuditRequired: true,
-    allOptionFeedbackRequired: true
+    allOptionFeedbackRequired: true,
+    fullScopeGapMustBeZeroBeforeCourseCompletion: true
   })
 });
 
 export function auditGrade8TurkishNextWaveContract(contract = GRADE8_TURKISH_NEXT_WAVE_CONTRACT) {
   const errors = [];
-  const outcomes = contract.requiredOutcomeCodes.map(code => grade8TurkishOutcomeByCode(code));
-  outcomes.forEach((outcome, index) => {
-    if (!outcome) errors.push(`missing-outcome:${contract.requiredOutcomeCodes[index]}`);
+  const matrixAudit = auditGrade8TurkishFullScopeMatrix();
+  if (!matrixAudit.ok) errors.push(...matrixAudit.errors.map(error => `matrix:${error}`));
+  if (contract.requiredOutcomeCodes.length !== 76) errors.push(`full-scope-outcome-count:${contract.requiredOutcomeCodes.length}`);
+  if (new Set(contract.requiredOutcomeCodes).size !== 76) errors.push('full-scope-outcome-duplicates');
+  contract.requiredOutcomeCodes.forEach(code => {
+    if (!grade8TurkishOutcomeByCode(code)) errors.push(`missing-outcome:${code}`);
   });
+  if (contract.currentCalibrationOutcomeCodes.length !== 5) errors.push(`calibration-outcome-count:${contract.currentCalibrationOutcomeCodes.length}`);
+  contract.currentCalibrationOutcomeCodes.forEach(code => {
+    if (!contract.requiredOutcomeCodes.includes(code)) errors.push(`calibration-outside-full-scope:${code}`);
+  });
+  if (contract.assessmentModePolicy.forceAllOutcomesIntoMultipleChoice !== false) errors.push('all-outcomes-forced-into-multiple-choice');
+  if (contract.assessmentModePolicy.performanceOutcomesRequireRubric !== true) errors.push('performance-rubric-not-required');
   if (!contract.requiredStimulusFamilies.includes('benzetme-ve-karsilastirma')) errors.push('missing-simile-family');
-  if (!contract.requiredStimulusFamilies.includes('kisilestirme-ve-konusturma')) errors.push('missing-personification-family');
-  if (!contract.requiredStimulusFamilies.includes('yazar-gorusu-ve-edebi-elestiri')) errors.push('missing-author-view-family');
+  if (!contract.requiredStimulusFamilies.includes('dinleme-ve-izleme')) errors.push('missing-listening-family');
+  if (!contract.requiredStimulusFamilies.includes('konusma-performansi')) errors.push('missing-speaking-family');
+  if (!contract.requiredStimulusFamilies.includes('yazma-ve-duzenleme')) errors.push('missing-writing-family');
   if (contract.quotationPolicy.fabricatedAttributionForbidden !== true) errors.push('fabricated-attribution-not-blocked');
   if (contract.releaseRules.gameAdaptationAllowedBeforeHumanReview !== false) errors.push('game-adaptation-not-locked');
+  if (contract.releaseRules.fullScopeGapMustBeZeroBeforeCourseCompletion !== true) errors.push('course-completion-gap-gate-missing');
   return Object.freeze({
     ok: errors.length === 0,
     errors: Object.freeze(errors),
-    outcomes: Object.freeze(outcomes.map(outcome => outcome && Object.freeze({ code: outcome.code, text: outcome.text })))
+    metrics: Object.freeze({
+      fullScopeOutcomeCount: contract.requiredOutcomeCodes.length,
+      currentCalibrationOutcomeCount: contract.currentCalibrationOutcomeCodes.length,
+      currentImplementedOutcomeCount: matrixAudit.metrics.implementedOutcomeCount,
+      currentUncoveredOutcomeCount: matrixAudit.metrics.uncoveredOutcomeCount,
+      productReady: false
+    })
   });
 }

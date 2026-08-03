@@ -140,11 +140,13 @@ test('Soru 12 tablosu sayı, birim ve yüzde sütunlarını ilk okumada açıkla
   assert.match(item.content.stimulusBlocks[1], /12-17 yaş \| 80 \| 65/);
 });
 
-test('bir sonraki Türkçe dalgası söz sanatları, edebî dil ve güvenli alıntı politikasını zorunlu tutar', () => {
+test('Türkçe geliştirme sözleşmesi yalnız örnek verilen beş alana değil 76 kazanımın tamamına bağlıdır', () => {
   const result = auditGrade8TurkishNextWaveContract();
   assert.equal(result.ok, true, result.errors.join('\n'));
-  assert.deepEqual(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.requiredOutcomeCodes, ['T.8.3.6', 'T.8.3.7', 'T.8.3.11', 'T.8.3.21', 'T.8.3.26']);
+  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.requiredOutcomeCodes.length, 76);
+  assert.deepEqual(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.currentCalibrationOutcomeCodes, ['T.8.3.6', 'T.8.3.7', 'T.8.3.11', 'T.8.3.21', 'T.8.3.26']);
+  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.assessmentModePolicy.forceAllOutcomesIntoMultipleChoice, false);
+  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.assessmentModePolicy.performanceOutcomesRequireRubric, true);
   assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.quotationPolicy.fabricatedAttributionForbidden, true);
-  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.diversityMinimums.figurativeLanguageItemCount >= 4, true);
-  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.diversityMinimums.authorViewOrQuotationItemCount >= 4, true);
+  assert.equal(GRADE8_TURKISH_NEXT_WAVE_CONTRACT.releaseRules.fullScopeGapMustBeZeroBeforeCourseCompletion, true);
 });

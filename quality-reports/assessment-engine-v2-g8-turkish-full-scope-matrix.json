@@ -1,0 +1,2276 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T12:38:48.097Z",
+  "title": "8. Sınıf Türkçe Tam Kapsam Ölçme Matrisi",
+  "status": "ENGINEERING_PASS",
+  "productReady": false,
+  "humanReviewStatus": "NOT_MEASURED",
+  "metrics": {
+    "outcomeCount": 76,
+    "domainCounts": {
+      "dinleme-izleme": 14,
+      "konusma": 7,
+      "okuma": 35,
+      "yazma": 20
+    },
+    "statusCounts": {
+      "PLANNED_NOT_IMPLEMENTED": 63,
+      "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 5,
+      "PILOT01_ENGINEERING_COVERED": 8
+    },
+    "modeCounts": {
+      "MULTIMODAL_SELECTED_RESPONSE": 15,
+      "HYBRID_AUTOMATED_AND_HUMAN": 15,
+      "HUMAN_RUBRIC_PERFORMANCE": 22,
+      "AUTO_SELECTED_RESPONSE": 24
+    },
+    "humanScoredCount": 37,
+    "mediaRequiredCount": 23,
+    "selectedResponseEligibleCount": 42,
+    "implementedOutcomeCount": 13,
+    "implementedItemCount": 29,
+    "uncoveredOutcomeCount": 63,
+    "productReady": false
+  },
+  "errors": [],
+  "rows": [
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-1",
+      "outcomeCode": "T.8.1.1",
+      "outcomeText": "Dinlediklerinde/izlediklerinde geçen olayların gelişimi ve sonucu hakkında tahminde bulunur.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.1; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "olay-gelisimi-tahmini",
+        "sonuc-tahmini"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-2",
+      "outcomeCode": "T.8.1.2",
+      "outcomeText": "Dinlediklerinde/izlediklerinde geçen bilmediği kelimelerin anlamını tahmin eder.",
+      "guidanceNotes": [
+        "Öğrencilerin kelime anlamlarına yönelik tahminleri ile sözlük anlamlarını karşılaştırmaları sağlanır."
+      ],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.2; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "baglamdan-kelime-anlami-dinleme",
+        "tahmin-sozluk-karsilastirma"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-3",
+      "outcomeCode": "T.8.1.3",
+      "outcomeText": "Dinlediklerini/izlediklerini özetler.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.3; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "short-answer",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "dinleme-ozeti",
+        "ana-olay-ve-ayrinti-ayirma"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-4",
+      "outcomeCode": "T.8.1.4",
+      "outcomeText": "Dinledikleri/izlediklerine yönelik sorulara cevap verir.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.4; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "dinleme-metin-ici-soru",
+        "dinleme-cikarim-sorusu"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-5",
+      "outcomeCode": "T.8.1.5",
+      "outcomeText": "Dinlediklerinin/izlediklerinin konusunu tespit eder.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.5; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "single-choice"
+      ],
+      "questionFamilies": [
+        "dinleme-konu-belirleme"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-6",
+      "outcomeCode": "T.8.1.6",
+      "outcomeText": "Dinlediklerinin/izlediklerinin ana fikrini/ana duygusunu tespit eder.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.6; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "dinleme-ana-fikir",
+        "dinleme-ana-duygu"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-7",
+      "outcomeCode": "T.8.1.7",
+      "outcomeText": "Dinlediklerine/izlediklerine yönelik farklı başlıklar önerir.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.7; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "multiple-select",
+        "short-answer",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "dinleme-baslik-onerme",
+        "baslik-uygunluk-gerekcelendirme"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-8",
+      "outcomeCode": "T.8.1.8",
+      "outcomeText": "Dinlediği/izlediği hikâye edici metinleri canlandırır.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.8; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "LIVE_SPEECH",
+      "recommendedItemFormats": [
+        "open-response",
+        "interactive-simulation"
+      ],
+      "questionFamilies": [
+        "hikaye-canlandirma",
+        "rol-ve-olay-orgusu-performansi"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-9",
+      "outcomeCode": "T.8.1.9",
+      "outcomeText": "Dinlediklerinde/izlediklerinde tutarlılığı sorgular.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.9; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "single-choice",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "dinleme-tutarlilik",
+        "celiski-ve-kanit-denetimi"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-10",
+      "outcomeCode": "T.8.1.10",
+      "outcomeText": "Dinledikleriyle/izledikleriyle ilgili görüşlerini bildirir.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.10; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "dinlenene-gorus-bildirme",
+        "kanitli-kisisel-degerlendirme"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-11",
+      "outcomeCode": "T.8.1.11",
+      "outcomeText": "Dinledikleri/izledikleri medya metinlerini değerlendirir.",
+      "guidanceNotes": [
+        "Medya metinlerinin amacını ve kaynağını sorgulamaları sağlanır."
+      ],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.11; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "MIXED_MEDIA",
+      "recommendedItemFormats": [
+        "single-choice",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "dinleme-medya-amaci",
+        "dinleme-kaynak-guvenilirligi"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-12",
+      "outcomeCode": "T.8.1.12",
+      "outcomeText": "Dinlediklerinde/izlediklerinde başvurulan düşünceyi geliştirme yollarını tespit eder.",
+      "guidanceNotes": [
+        "Düşünceyi geliştirme yollarından örneklendirme, tanık gösterme ve sayısal verilerden yararlanma belirlenir."
+      ],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.12; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "dinlemede-orneklendirme",
+        "dinlemede-tanik-gosterme",
+        "dinlemede-sayisal-veri"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-13",
+      "outcomeCode": "T.8.1.13",
+      "outcomeText": "Konuşmacının sözlü olmayan mesajlarını kavrar.",
+      "guidanceNotes": [],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.13; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "VIDEO",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "beden-dili-anlami",
+        "ses-tonu-jest-mimik"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-1-14",
+      "outcomeCode": "T.8.1.14",
+      "outcomeText": "Dinleme stratejilerini uygular.",
+      "guidanceNotes": [
+        "Seçici, yaratıcı, eleştirel, empati kurarak, not alarak dinleme gibi yöntem ve teknikleri uygulamaları sağlanır."
+      ],
+      "domainId": "dinleme-izleme",
+      "domainName": "Dinleme/İzleme",
+      "topicId": "dinleme-izleme",
+      "topicName": "Dinleme/İzleme",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.1.14; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "AUDIO",
+      "recommendedItemFormats": [
+        "interactive-simulation",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "secici-dinleme",
+        "not-alarak-dinleme",
+        "elestirel-dinleme",
+        "empati-kurarak-dinleme"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-2-1",
+      "outcomeCode": "T.8.2.1",
+      "outcomeText": "Hazırlıklı konuşma yapar.",
+      "guidanceNotes": [
+        "a) Öğrencilerin düşüncelerini mantıksal bir bütünlük içinde sunmaları, görsel, işitsel vb. destekleyici materyaller kullanmaları, sunu hazırlamaları sağlanır.",
+        "b)Öğrenciler araştırma sonuçlarını sempozyum, panel, forum vb. ortamlarda sunmaya teşvik edilir."
+      ],
+      "domainId": "konusma",
+      "domainName": "Konuşma",
+      "topicId": "konusma",
+      "topicName": "Konuşma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.2.1; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "LIVE_SPEECH",
+      "recommendedItemFormats": [
+        "open-response",
+        "interactive-simulation"
+      ],
+      "questionFamilies": [
+        "hazirlikli-sunum",
+        "panel-forum-sempozyum"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-2-2",
+      "outcomeCode": "T.8.2.2",
+      "outcomeText": "Hazırlıksız konuşma yapar.",
+      "guidanceNotes": [],
+      "domainId": "konusma",
+      "domainName": "Konuşma",
+      "topicId": "konusma",
+      "topicName": "Konuşma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.2.2; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "LIVE_SPEECH",
+      "recommendedItemFormats": [
+        "open-response",
+        "interactive-simulation"
+      ],
+      "questionFamilies": [
+        "hazirliksiz-konusma",
+        "anlik-gorus-gelistirme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-2-3",
+      "outcomeCode": "T.8.2.3",
+      "outcomeText": "Konuşma stratejilerini uygular.",
+      "guidanceNotes": [
+        "Yaratıcı, güdümlü, empati kurma, tartışma, ikna etme ve eleştirel konuşma gibi yöntem ve tekniklerinin kullanılması sağlanır."
+      ],
+      "domainId": "konusma",
+      "domainName": "Konuşma",
+      "topicId": "konusma",
+      "topicName": "Konuşma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.2.3; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "LIVE_SPEECH",
+      "recommendedItemFormats": [
+        "interactive-simulation"
+      ],
+      "questionFamilies": [
+        "ikna-konusmasi",
+        "elestirel-konusma",
+        "empati-konusmasi",
+        "tartisma-stratejisi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-2-4",
+      "outcomeCode": "T.8.2.4",
+      "outcomeText": "Konuşmalarında beden dilini etkili bir şekilde kullanır.",
+      "guidanceNotes": [],
+      "domainId": "konusma",
+      "domainName": "Konuşma",
+      "topicId": "konusma",
+      "topicName": "Konuşma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.2.4; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "VIDEO",
+      "recommendedItemFormats": [
+        "interactive-simulation"
+      ],
+      "questionFamilies": [
+        "beden-dili-performansi",
+        "jest-mimik-goz-temasi"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-2-5",
+      "outcomeCode": "T.8.2.5",
+      "outcomeText": "Kelimeleri anlamlarına uygun kullanır.",
+      "guidanceNotes": [],
+      "domainId": "konusma",
+      "domainName": "Konuşma",
+      "topicId": "konusma",
+      "topicName": "Konuşma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.2.5; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "LIVE_SPEECH",
+      "recommendedItemFormats": [
+        "single-choice",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "baglama-uygun-kelime-secimi",
+        "anlam-duzeltme-konusma"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-2-6",
+      "outcomeCode": "T.8.2.6",
+      "outcomeText": "Konuşmalarında yabancı dillerden alınmış, dilimize henüz yerleşmemiş kelimelerin Türkçelerini kullanır.",
+      "guidanceNotes": [],
+      "domainId": "konusma",
+      "domainName": "Konuşma",
+      "topicId": "konusma",
+      "topicName": "Konuşma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.2.6; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "LIVE_SPEECH",
+      "recommendedItemFormats": [
+        "matching",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "yabanci-sozcuk-turkce-karsilik",
+        "konusma-dil-sadelestirme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-2-7",
+      "outcomeCode": "T.8.2.7",
+      "outcomeText": "Konuşmalarında uygun geçiş ve bağlantı ifadelerini kullanır.",
+      "guidanceNotes": [],
+      "domainId": "konusma",
+      "domainName": "Konuşma",
+      "topicId": "konusma",
+      "topicName": "Konuşma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 47; T.8.2.7; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "LIVE_SPEECH",
+      "recommendedItemFormats": [
+        "single-choice",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "gecis-baglanti-ifadesi-konusma",
+        "mantiksal-akis-konusma"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-1",
+      "outcomeCode": "T.8.3.1",
+      "outcomeText": "Noktalama işaretlerine dikkat ederek sesli ve sessiz okur.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "akici-okuma",
+      "topicName": "Akıcı Okuma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.1; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "interactive-simulation"
+      ],
+      "questionFamilies": [
+        "noktalama-vurgulu-okuma",
+        "sesli-okuma-akicilik"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-2",
+      "outcomeCode": "T.8.3.2",
+      "outcomeText": "Metni türün özelliklerine uygun biçimde okur.",
+      "guidanceNotes": [
+        "Öğrencilerin seviyelerine uygun, edebî değeri olan şiirleri ve kısa yazıları türünün özelliğine göre okumaları ve ezberlemeleri sağlanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "akici-okuma",
+      "topicName": "Akıcı Okuma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.2; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "interactive-simulation"
+      ],
+      "questionFamilies": [
+        "ture-uygun-okuma",
+        "siir-ve-edebi-metin-seslendirme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-3",
+      "outcomeCode": "T.8.3.3",
+      "outcomeText": "Farklı yazı karakterleri ile yazılmış yazıları okur.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "akici-okuma",
+      "topicName": "Akıcı Okuma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.3; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "VISUAL",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "farkli-yazi-karakteri-okuma",
+        "tipografik-cozumleme"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-4",
+      "outcomeCode": "T.8.3.4",
+      "outcomeText": "Okuma stratejilerini kullanır.",
+      "guidanceNotes": [
+        "Göz atarak, özetleyerek, not alarak, tartışarak ve eleştirerek okuma gibi yöntem ve teknikleri kullanmaları sağlanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "akici-okuma",
+      "topicName": "Akıcı Okuma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.4; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "interactive-simulation",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "goz-atarak-okuma",
+        "not-alarak-okuma",
+        "ozetleyerek-okuma",
+        "elestirel-okuma"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-5",
+      "outcomeCode": "T.8.3.5",
+      "outcomeText": "Bağlamdan yararlanarak bilmediği kelime ve kelime gruplarının anlamını tahmin eder.",
+      "guidanceNotes": [
+        "a) Öğrencilerin tahmin ettikleri kelime ve kelime gruplarını öğrenmek için sözlük, atasözleri ve deyimler sözlüğü vb. araçları kullanmaları sağlanır.",
+        "b) Öğrencinin öğrendiği kelime ve kelime gruplarından sözlük oluşturması teşvik edilir."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "soz-varligi",
+      "topicName": "Söz Varlığı",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.5; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "baglamdan-kelime-anlami",
+        "deyim-sozluk-karsilastirma"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-6",
+      "outcomeCode": "T.8.3.6",
+      "outcomeText": "Deyim, atasözü ve özdeyişlerin metne katkısını belirler.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "soz-varligi",
+      "topicName": "Söz Varlığı",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.6; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "deyimin-metne-katkisi",
+        "atasozunun-islevi",
+        "ozdeyis-ve-dusunceyi-destekleme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 1,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-7",
+      "outcomeCode": "T.8.3.7",
+      "outcomeText": "Metindeki söz sanatlarını tespit eder.",
+      "guidanceNotes": [
+        "Benzetme (teşbih), kişileştirme (teşhis), konuşturma (intak) ve karşıtlık (tezat), abartma (mübalağa) söz sanatlarının belirlenmesi sağlanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "soz-varligi",
+      "topicName": "Söz Varlığı",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.7; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "benzetme",
+        "kisilestirme",
+        "konusturma",
+        "karsitlik",
+        "abartma",
+        "soz-sanati-etkisi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 1,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-8",
+      "outcomeCode": "T.8.3.8",
+      "outcomeText": "Metindeki anlatım bozukluklarını belirler.",
+      "guidanceNotes": [
+        "Dil bilgisi yönünden anlatım bozuklukları üzerinde durulur."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "soz-varligi",
+      "topicName": "Söz Varlığı",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.8; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "drag-drop"
+      ],
+      "questionFamilies": [
+        "anlatim-bozuklugu-tespit",
+        "anlam-ve-dilbilgisi-duzeltme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-9",
+      "outcomeCode": "T.8.3.9",
+      "outcomeText": "Fiilimsilerin cümledeki işlevlerini kavrar.",
+      "guidanceNotes": [
+        "Fiilimsilerin türleri fark ettirilir. Ekler ezberletilmez."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "soz-varligi",
+      "topicName": "Söz Varlığı",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.9; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "fiilimsi-islevi",
+        "fiilimsi-turu-ve-anlam-katkisi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-10",
+      "outcomeCode": "T.8.3.10",
+      "outcomeText": "Geçiş ve bağlantı ifadelerinin metnin anlamına olan katkısını değerlendirir.",
+      "guidanceNotes": [
+        "Oysaki, başka bir deyişle, özellikle, kısaca, böylece, ilk olarak ve son olarak ifadeleri üzerinde durulur."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "soz-varligi",
+      "topicName": "Söz Varlığı",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.10; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "drag-drop"
+      ],
+      "questionFamilies": [
+        "gecis-ifadesi-islevi",
+        "baglanti-ifadesi-anlam-katkisi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-11",
+      "outcomeCode": "T.8.3.11",
+      "outcomeText": "Metindeki anlatım biçimlerini belirler.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "soz-varligi",
+      "topicName": "Söz Varlığı",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.11; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "oykuleme",
+        "betimleme",
+        "aciklama",
+        "tartisma",
+        "karma-anlatim-bicimi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 1,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-12",
+      "outcomeCode": "T.8.3.12",
+      "outcomeText": "Görsel ve başlıktan hareketle okuyacağı metnin konusunu tahmin eder.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.12; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "VISUAL",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "gorsel-basliktan-konu-tahmini"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-13",
+      "outcomeCode": "T.8.3.13",
+      "outcomeText": "Okuduklarını özetler.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.13; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "short-answer",
+        "open-response",
+        "ordering"
+      ],
+      "questionFamilies": [
+        "okuma-ozeti",
+        "ana-ve-yardimci-bilgi-secimi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-14",
+      "outcomeCode": "T.8.3.14",
+      "outcomeText": "Metinle ilgili soruları cevaplar.",
+      "guidanceNotes": [
+        "Metin içi ve metin dışı anlam ilişkisi kurulur."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.14; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "metin-ici-soru",
+        "metin-disi-baglanti-sorusu"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-15",
+      "outcomeCode": "T.8.3.15",
+      "outcomeText": "Metinle ilgili sorular sorar.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.15; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "metne-soru-yazma",
+        "ust-duzey-soru-uretme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-16",
+      "outcomeCode": "T.8.3.16",
+      "outcomeText": "Metnin konusunu belirler.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.16; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice"
+      ],
+      "questionFamilies": [
+        "metin-konusu"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT01_ENGINEERING_COVERED",
+      "existingCanonicalItemCount": 3,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-17",
+      "outcomeCode": "T.8.3.17",
+      "outcomeText": "Metnin ana fikrini/ana duygusunu belirler.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.17; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "ana-fikir",
+        "ana-duygu"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT01_ENGINEERING_COVERED",
+      "existingCanonicalItemCount": 3,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-18",
+      "outcomeCode": "T.8.3.18",
+      "outcomeText": "Metindeki yardımcı fikirleri belirler.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.18; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "multiple-select"
+      ],
+      "questionFamilies": [
+        "yardimci-dusunce",
+        "ulasilamaz-yargi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT01_ENGINEERING_COVERED",
+      "existingCanonicalItemCount": 3,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-19",
+      "outcomeCode": "T.8.3.19",
+      "outcomeText": "Metnin içeriğine uygun başlık/başlıklar belirler.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 48; T.8.3.19; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "baslik-belirleme",
+        "alternatif-baslik-gerekcelendirme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-20",
+      "outcomeCode": "T.8.3.20",
+      "outcomeText": "Okuduğu metinlerdeki hikâye unsurlarını belirler.",
+      "guidanceNotes": [
+        "Olay örgüsü, mekân, zaman, şahıs ve varlık kadrosu, anlatıcı üzerinde durulur."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.20; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching",
+        "ordering"
+      ],
+      "questionFamilies": [
+        "olay-orgusu",
+        "zaman-mekan",
+        "sahis-kadrosu",
+        "anlatici"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-21",
+      "outcomeCode": "T.8.3.21",
+      "outcomeText": "Metnin içeriğini yorumlar.",
+      "guidanceNotes": [
+        "a) Yazarın olaylara bakış açısının tespit edilmesi sağlanır.",
+        "b) Metindeki öznel ve nesnel yaklaşımların tespit edilmesi sağlanır.",
+        "c) Metindeki örnek ve ayrıntılara atıf yapılması sağlanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.21; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "yazar-bakis-acisi",
+        "oznel-nesnel",
+        "ayrintiya-dayali-yorum"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 1,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-22",
+      "outcomeCode": "T.8.3.22",
+      "outcomeText": "Metinde ele alınan sorunlara farklı çözümler üretir.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.22; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "open-response",
+        "multiple-select"
+      ],
+      "questionFamilies": [
+        "soruna-alternatif-cozum",
+        "cozum-kanitlama"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-23",
+      "outcomeCode": "T.8.3.23",
+      "outcomeText": "Metinler arasında karşılaştırma yapar.",
+      "guidanceNotes": [
+        "Aynı metnin çeviri, farklı baskı vb. özellikleri itibarıyla karşılaştırılması sağlanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.23; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "iki-metin-karsilastirma",
+        "ceviri-baski-karsilastirma"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT01_ENGINEERING_COVERED",
+      "existingCanonicalItemCount": 3,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-24",
+      "outcomeCode": "T.8.3.24",
+      "outcomeText": "Metindeki gerçek ve kurgusal unsurları ayırt eder.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.24; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "gercek-kurgusal-ayrimi",
+        "metin-ici-kanit"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-25",
+      "outcomeCode": "T.8.3.25",
+      "outcomeText": "Okudukları ile ilgili çıkarımlarda bulunur.",
+      "guidanceNotes": [
+        "Neden-sonuç, amaç-sonuç, koşul, karşılaştırma, benzetme, örneklendirme, abartma, nesnel, öznel ve duygu belirten ifadeler üzerinde durulur."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.25; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "multiple-select"
+      ],
+      "questionFamilies": [
+        "neden-sonuc",
+        "amac-sonuc",
+        "kosul",
+        "karsilastirma",
+        "benzetme",
+        "orneklendirme",
+        "nesnel-oznel",
+        "duygu-cikarimi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT01_ENGINEERING_COVERED",
+      "existingCanonicalItemCount": 3,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-26",
+      "outcomeCode": "T.8.3.26",
+      "outcomeText": "Metin türlerini ayırt eder.",
+      "guidanceNotes": [
+        "a) Fıkra (köşe yazısı), makale, deneme, roman, destan türleri üzerinde durulur.",
+        "b) Metin türlerine ilişkin ayrıntılı bilgi verilmemelidir."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.26; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "fikra-kose-yazisi",
+        "makale",
+        "deneme",
+        "roman",
+        "destan",
+        "tur-karsilastirma"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 1,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-27",
+      "outcomeCode": "T.8.3.27",
+      "outcomeText": "Görsellerle ilgili soruları cevaplar.",
+      "guidanceNotes": [
+        "a) Çizgi roman ve karikatürleri yorumlayarak görüşlerini bildirmeleri sağlanır.",
+        "b) Haberi/bilgiyi görsel yorumcuların nasıl ilettikleri üzerinde durulur."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.27; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "VISUAL",
+      "recommendedItemFormats": [
+        "single-choice",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "karikatur-yorumlama",
+        "cizgi-roman-yorumlama",
+        "gorsel-haber-yorumu"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-28",
+      "outcomeCode": "T.8.3.28",
+      "outcomeText": "Metinde önemli noktaların vurgulanış biçimlerini kavrar.",
+      "guidanceNotes": [
+        "Altını çizmenin, koyu veya italik yazmanın, renklendirmenin, farklı punto veya font kullanmanın işlevi vurgulanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.28; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "VISUAL",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "koyu-italik-islevi",
+        "punto-renk-vurgu",
+        "alt-cizgi-vurgusu"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-29",
+      "outcomeCode": "T.8.3.29",
+      "outcomeText": "Medya metinlerini analiz eder.",
+      "guidanceNotes": [
+        "Medya metinlerinin amaçlarının (kültür aktarma, olay yorumlama, bilgilendirme, eğlendirme, ikna etme) belirlenmesi sağlanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.29; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "MIXED_MEDIA",
+      "recommendedItemFormats": [
+        "single-choice",
+        "multiple-select"
+      ],
+      "questionFamilies": [
+        "medya-amaci",
+        "ikna-bilgilendirme-eglendirme",
+        "olay-yorumlama"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT01_ENGINEERING_COVERED",
+      "existingCanonicalItemCount": 3,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-30",
+      "outcomeCode": "T.8.3.30",
+      "outcomeText": "Bilgi kaynaklarını etkili bir şekilde kullanır.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.30; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "MIXED_MEDIA",
+      "recommendedItemFormats": [
+        "interactive-simulation",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "arama-stratejisi",
+        "kaynak-secme",
+        "anahtar-kelime-kullanma"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-31",
+      "outcomeCode": "T.8.3.31",
+      "outcomeText": "Bilgi kaynaklarının güvenilirliğini sorgular.",
+      "guidanceNotes": [
+        "a) Blog ve şahsi internet sayfalarındaki bilgilerin güvenilirliği konusunda çalışmalar yapılır.",
+        "b) Bilimsel çalışmalarda ağırlıklı olarak “edu” ve “gov” uzantılı sitelerin kullanıldığı vurgulanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.31; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "MIXED_MEDIA",
+      "recommendedItemFormats": [
+        "single-choice",
+        "multiple-select"
+      ],
+      "questionFamilies": [
+        "kaynak-guvenilirligi",
+        "blog-ve-kisisel-sayfa",
+        "edu-gov-kaynak",
+        "yontem-ve-orneklem"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT01_ENGINEERING_COVERED",
+      "existingCanonicalItemCount": 3,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-32",
+      "outcomeCode": "T.8.3.32",
+      "outcomeText": "Grafik, tablo ve çizelgeyle sunulan bilgileri yorumlar.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.32; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "VISUAL",
+      "recommendedItemFormats": [
+        "single-choice",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "grafik-yorumlama",
+        "tablo-yorumlama",
+        "cizelge-karsilastirma"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PILOT01_ENGINEERING_COVERED",
+      "existingCanonicalItemCount": 3,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-33",
+      "outcomeCode": "T.8.3.33",
+      "outcomeText": "Edebî eserin yazılı metni ile medya sunumunu karşılaştırır.",
+      "guidanceNotes": [
+        "Kahramanlar, mekân, zaman ve olay yönünden karşılaştırılması sağlanır."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.33; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "MULTIMODAL_SELECTED_RESPONSE",
+      "assessmentChannel": "MIXED_MEDIA",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "edebi-metin-film-karsilastirma",
+        "kahraman-mekan-zaman-olay"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-34",
+      "outcomeCode": "T.8.3.34",
+      "outcomeText": "Okuduklarında kullanılan düşünceyi geliştirme yollarını belirler.",
+      "guidanceNotes": [],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.34; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "orneklendirme",
+        "tanimlama",
+        "karsilastirma",
+        "tanik-gosterme",
+        "sayisal-veri"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-3-35",
+      "outcomeCode": "T.8.3.35",
+      "outcomeText": "Metindeki iş ve işlem basamaklarını kavrar.",
+      "guidanceNotes": [
+        "Kullanım kılavuzları inceletilir."
+      ],
+      "domainId": "okuma",
+      "domainName": "Okuma",
+      "topicId": "anlama",
+      "topicName": "Anlama",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 49; T.8.3.35; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "ordering",
+        "single-choice",
+        "drag-drop"
+      ],
+      "questionFamilies": [
+        "islem-basamagi-siralama",
+        "kullanim-kilavuzu-uygulama"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-1",
+      "outcomeCode": "T.8.4.1",
+      "outcomeText": "Şiir yazar.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.1; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "siir-yazma",
+        "imge-ritim-duygu"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-2",
+      "outcomeCode": "T.8.4.2",
+      "outcomeText": "Bilgilendirici metin yazar.",
+      "guidanceNotes": [
+        "a) Öğrencilerin belirledikleri bir konu ve ana fikir etrafında giriş, gelişme ve sonuç bölümlerinden oluşan bir metin taslağı oluşturmaları, gelişme bölümünde düşünceyi geliştirme yollarını kullanarak görüşlerini ifade etmeleri, görüşlerini destekleyecek kanıtlar sunmaları, sonuç bölümünde ise görüşlerini sonuca bağlamaları sağlanır.",
+        "b) Öğrenciler günlük hayattan örnekler vermeye teşvik edilir."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.2; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "bilgilendirici-metin-yazma",
+        "kanitli-gorus",
+        "giris-gelisme-sonuc"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-3",
+      "outcomeCode": "T.8.4.3",
+      "outcomeText": "Hikâye edici metin yazar.",
+      "guidanceNotes": [
+        "a) Öğrencilerin anlatımın türü ve konusuna göre gerçekçi veya hayalî ögeleri tasarlamaları, uyumlu bir zaman ve mekân kurgusu yapmaları, serim, düğüm ve çözüm bölümlerine yer vermeleri sağlanır.",
+        "b) Öğrenciler yazım kılavuzundan yaralanmaya, günlük hayattan örnekler vermeye yönlendirilir."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.3; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "hikaye-yazma",
+        "serim-dugum-cozum",
+        "zaman-mekan-kurgusu"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-4",
+      "outcomeCode": "T.8.4.4",
+      "outcomeText": "Yazma stratejilerini uygular.",
+      "guidanceNotes": [
+        "Not alma, özet çıkarma, eleştirel, yaratıcı, serbest, kelime ve kavram havuzundan seçerek yazma, bir metinden ve duyulardan hareketle yazma gibi yöntem ve tekniklerin kullanılması sağlanır."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.4; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response",
+        "interactive-simulation"
+      ],
+      "questionFamilies": [
+        "yaratici-yazma",
+        "elestirel-yazma",
+        "duyudan-hareketle-yazma",
+        "kavram-havuzu-yazma"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-5",
+      "outcomeCode": "T.8.4.5",
+      "outcomeText": "Anlatımı desteklemek için grafik ve tablo kullanır.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.5; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response",
+        "drag-drop"
+      ],
+      "questionFamilies": [
+        "grafik-ve-tabloyla-yaziyi-destekleme"
+      ],
+      "requiresMedia": true,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-6",
+      "outcomeCode": "T.8.4.6",
+      "outcomeText": "Bir işi işlem basamaklarına göre yazar.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.6; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "ordering",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "islem-basamaklarini-yazma",
+        "yordamsal-metin"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-7",
+      "outcomeCode": "T.8.4.7",
+      "outcomeText": "Yazılarını zenginleştirmek için atasözleri, deyimler ve özdeyişler kullanır.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.7; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "deyim-atasozu-ozdeyisle-zenginlestirme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-8",
+      "outcomeCode": "T.8.4.8",
+      "outcomeText": "Yazılarında mizahi ögeler kullanır.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.8; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "mizahi-metin-yazma",
+        "uygun-mizah-ogesi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-9",
+      "outcomeCode": "T.8.4.9",
+      "outcomeText": "Yazılarında anlatım biçimlerini kullanır.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.9; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "anlatim-bicimiyle-yazma",
+        "karma-anlatim-uygulama"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-10",
+      "outcomeCode": "T.8.4.10",
+      "outcomeText": "Yazdıklarında yabancı dillerden alınmış, dilimize henüz yerleşmemiş kelimelerin Türkçelerini kullanır.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.10; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "drag-drop",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "yabanci-kelimeyi-turkcelestirme-yazma"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-11",
+      "outcomeCode": "T.8.4.11",
+      "outcomeText": "Formları yönergelerine uygun doldurur.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.11; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "interactive-simulation",
+        "short-answer"
+      ],
+      "questionFamilies": [
+        "form-doldurma",
+        "yonerge-alan-eslestirme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-12",
+      "outcomeCode": "T.8.4.12",
+      "outcomeText": "Kısa metinler yazar.",
+      "guidanceNotes": [
+        "Haber metni, günlük ve anı yazmaya teşvik edilir."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.12; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "haber-metni",
+        "gunluk",
+        "ani"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-13",
+      "outcomeCode": "T.8.4.13",
+      "outcomeText": "Yazdıklarının içeriğine uygun başlık belirler.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.13; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "short-answer",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "yaziya-baslik-belirleme",
+        "baslik-icerik-uyumu"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-14",
+      "outcomeCode": "T.8.4.14",
+      "outcomeText": "Araştırmalarının sonuçlarını yazılı olarak sunar.",
+      "guidanceNotes": [
+        "a) Öğrencilerin taslak hazırlamaları, taslaklarında giriş, gelişme, sonuç bölümlerine yer vermeleri sağlanır.",
+        "b) Kaynak gösterme hakkında bilgi verilir."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.14; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "open-response"
+      ],
+      "questionFamilies": [
+        "arastirma-raporu-yazma",
+        "kaynak-gosterme",
+        "taslak-ve-bolumleme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-15",
+      "outcomeCode": "T.8.4.15",
+      "outcomeText": "Yazılarında uygun geçiş ve bağlantı ifadelerini kullanır.",
+      "guidanceNotes": [
+        "Oysaki, başka bir deyişle, özellikle, ilk olarak ve son olarak ifadelerinin kullanılması sağlanır."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.15; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "drag-drop",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "gecis-baglanti-ifadesi-yazma",
+        "metin-akisi-duzenleme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-16",
+      "outcomeCode": "T.8.4.16",
+      "outcomeText": "Yazdıklarını düzenler.",
+      "guidanceNotes": [
+        "a) Dil bilgisine dayalı anlatım bozuklukları bakımından yazdıklarını gözden geçirmesi ve düzeltmesi sağlanır.",
+        "b) Metinde yer alan yazım ve noktalama kuralları ile sınırlı tutulur."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.16; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HYBRID_AUTOMATED_AND_HUMAN",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "drag-drop",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "yazim-noktalama-duzeltme",
+        "anlatim-bozuklugu-duzeltme",
+        "oz-duzenleme"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-17",
+      "outcomeCode": "T.8.4.17",
+      "outcomeText": "Yazdıklarını paylaşır.",
+      "guidanceNotes": [
+        "Öğrenciler yazdıklarını sınıf ve okul panosu ile sosyal medya ortamlarında paylaşmaya, şiir ve kompozisyon yarışmalarına katılmaya teşvik edilir."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.17; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "HUMAN_RUBRIC_PERFORMANCE",
+      "assessmentChannel": "WRITING",
+      "recommendedItemFormats": [
+        "interactive-simulation",
+        "open-response"
+      ],
+      "questionFamilies": [
+        "hedef-kitleye-gore-paylasma",
+        "yayinlama-etik-ve-duzen"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": true,
+      "automatedScoringAllowed": false,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-18",
+      "outcomeCode": "T.8.4.18",
+      "outcomeText": "Cümlenin ögelerini ayırt eder.",
+      "guidanceNotes": [],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.18; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching",
+        "drag-drop"
+      ],
+      "questionFamilies": [
+        "cumle-ogeleri",
+        "oge-islevi"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-19",
+      "outcomeCode": "T.8.4.19",
+      "outcomeText": "Cümle türlerini tanır.",
+      "guidanceNotes": [
+        "Kavramsal tanımlamalara girilmez."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.19; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "matching"
+      ],
+      "questionFamilies": [
+        "cumle-turu-anlam",
+        "yapi-yuklem-yerine-gore-cumle"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    },
+    {
+      "outcomeId": "tr.pre-tymm.g8.turkce.t-8-4-20",
+      "outcomeCode": "T.8.4.20",
+      "outcomeText": "Fiillerin çatı özelliklerinin anlama olan katkısını kavrar.",
+      "guidanceNotes": [
+        "Kavram tanımlarına girilmeden anlamsal farklılıklara değinilir."
+      ],
+      "domainId": "yazma",
+      "domainName": "Yazma",
+      "topicId": "yazma",
+      "topicName": "Yazma",
+      "sourceId": "meb-legacy-programs",
+      "sourceLocator": "Türkçe Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2019; s. 50; T.8.4.20; https://mufredat.meb.gov.tr/Dosyalar/20195716392253-02-T%C3%BCrk%C3%A7e%20%C3%96%C4%9Fretim%20Program%C4%B1%202019.pdf",
+      "assessmentMode": "AUTO_SELECTED_RESPONSE",
+      "assessmentChannel": "TEXT",
+      "recommendedItemFormats": [
+        "single-choice",
+        "drag-drop"
+      ],
+      "questionFamilies": [
+        "fiilde-cati-anlam-katkisi",
+        "etken-edilgen-anlam-farki"
+      ],
+      "requiresMedia": false,
+      "requiresHumanScoring": false,
+      "automatedScoringAllowed": true,
+      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
+      "existingCanonicalItemCount": 0,
+      "notes": ""
+    }
+  ]
+}

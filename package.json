@@ -81,7 +81,8 @@
     "assessment:v2:phase3r": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-report.mjs && node scripts/build-assessment-v2-phase2-report.mjs && node scripts/build-assessment-v2-phase3-report.mjs && node scripts/build-assessment-v2-reading-surface-report.mjs && node scripts/build-assessment-v2-phase3-review-pack.mjs",
     "assessment:v2:phase4a": "node --test tests/assessment-v2/*.test.mjs",
     "assessment:v2:phase4b": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4b-calibration-review.mjs",
-    "assessment:v2:phase4c": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4c-pilot01-review.mjs"
+    "assessment:v2:phase4c": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4c-pilot01-review.mjs",
+    "assessment:v2:phase4d": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4d-full-scope.mjs"
   },
   "engines": {
     "node": ">=20"
