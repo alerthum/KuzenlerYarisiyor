@@ -2,6 +2,7 @@ import { GRADE_8_TURKISH_OUTCOMES_2019 } from '../curriculum/outcomes/tr-g8-turk
 import { buildGrade8TurkishPilot01Questions } from './turkish-g8-reading-pilot01.js';
 import { buildGrade8TurkishPilot02CalibrationQuestions } from './turkish-g8-pilot02-calibration.js';
 import { buildGrade8TurkishReadingLanguageWave1Questions } from './turkish-g8-reading-language-wave1.js';
+import { buildGrade8TurkishVisualGrammarWave2Questions } from './turkish-g8-visual-grammar-wave2.js';
 
 const COVERED_PILOT01_CODES = new Set([
   'T.8.3.16', 'T.8.3.17', 'T.8.3.18', 'T.8.3.23', 'T.8.3.25', 'T.8.3.29', 'T.8.3.31', 'T.8.3.32'
@@ -14,6 +15,10 @@ const PILOT02_CALIBRATION_CODES = new Set([
 const READING_LANGUAGE_WAVE1_CODES = new Set([
   'T.8.3.5', 'T.8.3.8', 'T.8.3.9', 'T.8.3.10', 'T.8.3.19', 'T.8.3.20',
   'T.8.3.22', 'T.8.3.24', 'T.8.3.28', 'T.8.3.30', 'T.8.3.34', 'T.8.3.35'
+]);
+
+const VISUAL_GRAMMAR_WAVE2_CODES = new Set([
+  'T.8.3.12', 'T.8.3.27', 'T.8.3.33', 'T.8.4.18', 'T.8.4.19', 'T.8.4.20'
 ]);
 
 const MODE = Object.freeze({
@@ -144,12 +149,13 @@ function coverageStatus(code) {
   if (COVERED_PILOT01_CODES.has(code)) return 'PILOT01_ENGINEERING_COVERED';
   if (PILOT02_CALIBRATION_CODES.has(code)) return 'PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED';
   if (READING_LANGUAGE_WAVE1_CODES.has(code)) return 'READING_LANGUAGE_WAVE1_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED';
+  if (VISUAL_GRAMMAR_WAVE2_CODES.has(code)) return 'VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED';
   return 'PLANNED_NOT_IMPLEMENTED';
 }
 
 function existingCanonicalCountByCode() {
   const counts = new Map();
-  for (const item of [...buildGrade8TurkishPilot01Questions(), ...buildGrade8TurkishPilot02CalibrationQuestions(), ...buildGrade8TurkishReadingLanguageWave1Questions()]) {
+  for (const item of [...buildGrade8TurkishPilot01Questions(), ...buildGrade8TurkishPilot02CalibrationQuestions(), ...buildGrade8TurkishReadingLanguageWave1Questions(), ...buildGrade8TurkishVisualGrammarWave2Questions()]) {
     const outcomeId = item.curriculum.outcomeIds[0];
     const outcome = GRADE_8_TURKISH_OUTCOMES_2019.find(row => row.id === outcomeId);
     if (!outcome) continue;
@@ -239,3 +245,4 @@ export const GRADE8_TURKISH_FULL_SCOPE_AUDIT = auditGrade8TurkishFullScopeMatrix
 export const GRADE8_TURKISH_PILOT02_CALIBRATION_CODES = Object.freeze([...PILOT02_CALIBRATION_CODES]);
 export const GRADE8_TURKISH_PILOT01_COVERED_CODES = Object.freeze([...COVERED_PILOT01_CODES]);
 export const GRADE8_TURKISH_READING_LANGUAGE_WAVE1_CODES = Object.freeze([...READING_LANGUAGE_WAVE1_CODES]);
+export const GRADE8_TURKISH_VISUAL_GRAMMAR_WAVE2_CODES = Object.freeze([...VISUAL_GRAMMAR_WAVE2_CODES]);

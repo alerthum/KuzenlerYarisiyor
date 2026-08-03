@@ -244,8 +244,8 @@ const SPECS = Object.freeze([
     construct: { primarySkill: 'emphasis-form-analysis', secondarySkills: ['layout-meaning', 'argument-focus'], cognitiveProcess: 'multimodal-text-analysis', knowledgeComponents: ['bolding', 'repetition', 'example-sequence', 'central-claim'], intendedDifficultyBand: 'LGS_HIGH' },
     style: { genre: 'dergi-sayfasi-taslagi', voice: 'kulturel-yorum', sourceMode: 'ozgun-tipografik-metin', rhetoricalMoves: ['ornek-siralama', 'tekrar', 'koyu-vurgu'] },
     stimulusBlocks: [
-      `Bir kentin belleğini yalnız büyük yapılar taşımaz. Bir çeşmenin kitabesi, eski bir dükkân tabelası, kaldırımdaki aşınmış taş da geçmişten söz eder.`,
-      `Dergi tasarımında “küçük izler” sözü iki kez yinelenmiş; son cümledeki “Asıl kayıp, küçük izleri önemsiz saydığımızda başlar.” ifadesi koyu yazılmıştır.`
+      `Bir kentin belleğini yalnız büyük yapılar taşımaz. Bir çeşmenin kitabesi, eski bir dükkân tabelası ve kaldırımdaki aşınmış taş gibi “küçük izler” de geçmişten söz eder. Bu izler önemsiz görüldüğünde kentin gündelik yaşamına ait tanıklıklar zamanla kaybolur.`,
+      `Dergi tasarımında “küçük izler” sözü iki kez yinelenmiş; “Asıl kayıp, küçük izleri önemsiz saydığımızda başlar.” cümlesi koyu yazılmıştır.`
     ],
     stem: 'Metindeki düşüncenin vurgulanış biçimiyle ilgili doğru değerlendirme aşağıdakilerden hangisidir?',
     evidence: [

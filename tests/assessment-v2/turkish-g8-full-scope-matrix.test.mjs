@@ -6,6 +6,7 @@ import {
   GRADE8_TURKISH_PILOT01_COVERED_CODES,
   GRADE8_TURKISH_PILOT02_CALIBRATION_CODES,
   GRADE8_TURKISH_READING_LANGUAGE_WAVE1_CODES,
+  GRADE8_TURKISH_VISUAL_GRAMMAR_WAVE2_CODES,
   auditGrade8TurkishFullScopeMatrix
 } from '../../js/assessment-v2/turkish-g8-full-scope-matrix.js';
 
@@ -47,12 +48,13 @@ test('dinleme ve sözlü olmayan iletişim kazanımları gerekli medya kanalın�
   assert.equal(nonverbal.assessmentChannel, 'VIDEO');
 });
 
-test('41 mühendislik sorusu 25 kazanımı kapsar; tam ders hâlâ tamamlanmış sayılmaz', () => {
+test('51 mühendislik sorusu 31 kazanımı kapsar; tam ders hâlâ tamamlanmış sayılmaz', () => {
   assert.equal(GRADE8_TURKISH_PILOT01_COVERED_CODES.length, 8);
   assert.equal(GRADE8_TURKISH_PILOT02_CALIBRATION_CODES.length, 5);
   assert.equal(GRADE8_TURKISH_READING_LANGUAGE_WAVE1_CODES.length, 12);
-  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount, 25);
-  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedItemCount, 41);
-  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount, 51);
+  assert.equal(GRADE8_TURKISH_VISUAL_GRAMMAR_WAVE2_CODES.length, 6);
+  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount, 31);
+  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedItemCount, 51);
+  assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.uncoveredOutcomeCount, 45);
   assert.equal(GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.productReady, false);
 });

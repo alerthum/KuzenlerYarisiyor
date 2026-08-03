@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "1.1",
-  "generatedAt": "2026-08-03T14:00:19.506Z",
+  "schemaVersion": "1.2",
+  "generatedAt": "2026-08-03T14:43:34.427Z",
   "status": "ENGINEERING_PASS",
   "productReady": false,
   "metrics": {
@@ -12,9 +12,10 @@
       "yazma": 20
     },
     "statusCounts": {
-      "PLANNED_NOT_IMPLEMENTED": 51,
+      "PLANNED_NOT_IMPLEMENTED": 45,
       "READING_LANGUAGE_WAVE1_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 12,
       "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 5,
+      "VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 6,
       "PILOT01_ENGINEERING_COVERED": 8
     },
     "modeCounts": {
@@ -26,9 +27,9 @@
     "humanScoredCount": 37,
     "mediaRequiredCount": 23,
     "selectedResponseEligibleCount": 42,
-    "implementedOutcomeCount": 25,
-    "implementedItemCount": 41,
-    "uncoveredOutcomeCount": 51,
+    "implementedOutcomeCount": 31,
+    "implementedItemCount": 51,
+    "uncoveredOutcomeCount": 45,
     "productReady": false
   },
   "errors": [],
@@ -989,8 +990,8 @@
       "requiresMedia": true,
       "requiresHumanScoring": false,
       "automatedScoringAllowed": true,
-      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
-      "existingCanonicalItemCount": 0,
+      "implementationStatus": "VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 1,
       "notes": ""
     },
     {
@@ -1440,8 +1441,8 @@
       "requiresMedia": true,
       "requiresHumanScoring": false,
       "automatedScoringAllowed": true,
-      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
-      "existingCanonicalItemCount": 0,
+      "implementationStatus": "VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 2,
       "notes": ""
     },
     {
@@ -1624,8 +1625,8 @@
       "requiresMedia": true,
       "requiresHumanScoring": false,
       "automatedScoringAllowed": true,
-      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
-      "existingCanonicalItemCount": 0,
+      "implementationStatus": "VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 2,
       "notes": ""
     },
     {
@@ -2207,8 +2208,8 @@
       "requiresMedia": false,
       "requiresHumanScoring": false,
       "automatedScoringAllowed": true,
-      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
-      "existingCanonicalItemCount": 0,
+      "implementationStatus": "VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 2,
       "notes": ""
     },
     {
@@ -2237,8 +2238,8 @@
       "requiresMedia": false,
       "requiresHumanScoring": false,
       "automatedScoringAllowed": true,
-      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
-      "existingCanonicalItemCount": 0,
+      "implementationStatus": "VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 1,
       "notes": ""
     },
     {
@@ -2267,8 +2268,8 @@
       "requiresMedia": false,
       "requiresHumanScoring": false,
       "automatedScoringAllowed": true,
-      "implementationStatus": "PLANNED_NOT_IMPLEMENTED",
-      "existingCanonicalItemCount": 0,
+      "implementationStatus": "VISUAL_GRAMMAR_WAVE2_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED",
+      "existingCanonicalItemCount": 2,
       "notes": ""
     }
   ]
