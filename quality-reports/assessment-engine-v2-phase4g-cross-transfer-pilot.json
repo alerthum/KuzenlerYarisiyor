@@ -1,0 +1,4337 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T15:20:02.957Z",
+  "title": "Phase 4G — Ders ve Sınıf Çapraz Aktarılabilirlik Pilotu",
+  "status": "ENGINEERING_PASS_HUMAN_REVIEW_REQUIRED",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "humanReviewStatus": "NOT_MEASURED",
+  "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; oyun uyarlaması en son.",
+  "metrics": {
+    "questionCount": 15,
+    "courseEngineCount": 3,
+    "gradeCount": 2,
+    "outcomeCount": 15,
+    "programFamilies": [
+      "PRE_TYMM",
+      "TYMM"
+    ],
+    "groups": {
+      "g8-math": {
+        "itemCount": 5,
+        "outcomeCount": 5,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      },
+      "g8-science": {
+        "itemCount": 5,
+        "outcomeCount": 5,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      },
+      "g5-turkish": {
+        "itemCount": 5,
+        "outcomeCount": 5,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    }
+  },
+  "errors": [],
+  "groups": [
+    {
+      "key": "g8-math",
+      "title": "8. Sınıf Matematik",
+      "outcomes": [
+        {
+          "id": "tr.pre-tymm.g8.matematik.m-8-1-1-2",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "matematik",
+          "courseName": "Matematik",
+          "unitId": "sayilar-ve-islemler",
+          "unitName": "Sayılar ve İşlemler",
+          "topicId": "carpanlar-ve-katlar",
+          "topicName": "Çarpanlar ve Katlar",
+          "officialOutcomeCode": "M.8.1.1.2",
+          "officialOutcomeText": "İki doğal sayının en büyük ortak bölenini (EBOB) ve en küçük ortak katını (EKOK) hesaplar, ilgili problemleri çözer.",
+          "officialGuidanceNotes": [
+            "Alan ve hacim hesaplamayı gerektiren problemlere girilmez."
+          ],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Matematik Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2018; PDF s. 73; M.8.1.1.2; https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "worked-solution",
+            "independent-computation"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.pre-tymm.g8.matematik.m-8-1-2-5",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "matematik",
+          "courseName": "Matematik",
+          "unitId": "sayilar-ve-islemler",
+          "unitName": "Sayılar ve İşlemler",
+          "topicId": "uslu-ifadeler",
+          "topicName": "Üslü İfadeler",
+          "officialOutcomeCode": "M.8.1.2.5",
+          "officialOutcomeText": "Çok büyük ve çok küçük sayıları bilimsel gösterimle ifade eder ve karşılaştırır.",
+          "officialGuidanceNotes": [
+            "a sayısı pozitif, 1 veya 1’den büyük ve 10’dan küçük olacak biçimde bilimsel gösterim ele alınır."
+          ],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Matematik Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2018; PDF s. 73; M.8.1.2.5; https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "worked-solution",
+            "independent-computation"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.pre-tymm.g8.matematik.m-8-2-2-5",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "matematik",
+          "courseName": "Matematik",
+          "unitId": "cebir",
+          "unitName": "Cebir",
+          "topicId": "dogrusal-denklemler",
+          "topicName": "Doğrusal Denklemler",
+          "officialOutcomeCode": "M.8.2.2.5",
+          "officialOutcomeText": "Doğrusal ilişki içeren gerçek hayat durumlarına ait denklem, tablo ve grafiği oluşturur ve yorumlar.",
+          "officialGuidanceNotes": [],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Matematik Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2018; PDF s. 75; M.8.2.2.5; https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "worked-solution",
+            "independent-computation"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.pre-tymm.g8.matematik.m-8-3-1-5",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "matematik",
+          "courseName": "Matematik",
+          "unitId": "geometri-ve-olcme",
+          "unitName": "Geometri ve Ölçme",
+          "topicId": "ucgenler",
+          "topicName": "Üçgenler",
+          "officialOutcomeCode": "M.8.3.1.5",
+          "officialOutcomeText": "Pisagor bağıntısını oluşturur, ilgili problemleri çözer.",
+          "officialGuidanceNotes": [
+            "Gerçek hayat uygulamaları, koordinat düzleminde uzaklık ve bir üçgenin dik olup olmadığını belirleme çalışmaları yapılır."
+          ],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Matematik Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2018; PDF s. 76; M.8.3.1.5; https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "worked-solution",
+            "independent-computation"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.pre-tymm.g8.matematik.m-8-5-1-5",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "matematik",
+          "courseName": "Matematik",
+          "unitId": "olasilik",
+          "unitName": "Olasılık",
+          "topicId": "basit-olaylarin-olma-olasiligi",
+          "topicName": "Basit Olayların Olma Olasılığı",
+          "officialOutcomeCode": "M.8.5.1.5",
+          "officialOutcomeText": "Basit bir olayın olma olasılığını hesaplar.",
+          "officialGuidanceNotes": [
+            "Birden fazla olayın olma olasılığı ele alınmaz."
+          ],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Matematik Dersi Öğretim Programı (İlkokul ve Ortaokul 1-8. Sınıflar), 2018; PDF s. 78; M.8.5.1.5; https://mufredat.meb.gov.tr/Dosyalar/201813017165445-MATEMAT%C4%B0K%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%202018v.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "worked-solution",
+            "independent-computation"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        }
+      ],
+      "questions": [
+        {
+          "schemaVersion": "3.0",
+          "id": "math-g8-cross-01-lcm-maintenance",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "matematik",
+            "unitId": "sayilar-ve-islemler",
+            "topicId": "carpanlar-ve-katlar",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.matematik.m-8-1-1-2"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "ebob-ekok-problem-solving",
+            "secondarySkills": [
+              "periodic-events"
+            ],
+            "cognitiveProcess": "model-and-calculate",
+            "knowledgeComponents": [
+              "least-common-multiple",
+              "periodicity"
+            ],
+            "intendedDifficultyBand": "LGS_MEDIUM"
+          },
+          "content": {
+            "context": "Bir gözlemevindeki iki ölçüm cihazından biri 18 günde, diğeri 24 günde bir aynı kapsamlı bakıma alınmaktadır. İki cihazın bakımı bugün birlikte yapılmıştır.",
+            "stem": "Bakım düzeni değişmezse iki cihaz kaç gün sonra yeniden aynı gün bakıma alınır?",
+            "model": {
+              "type": "lcm",
+              "a": 18,
+              "b": 24
+            },
+            "options": [
+              {
+                "id": "A",
+                "text": "42 gün"
+              },
+              {
+                "id": "B",
+                "text": "72 gün"
+              },
+              {
+                "id": "C",
+                "text": "6 gün"
+              },
+              {
+                "id": "D",
+                "text": "432 gün"
+              }
+            ],
+            "optionValues": {
+              "A": 42,
+              "B": 72,
+              "C": 6,
+              "D": 432
+            },
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_MATH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "B",
+            "value": 72
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "bakım günlerini iki ayrı periyodik dizi olarak düşün",
+              "dependsOn": [],
+              "evidenceIds": [
+                "calc-1"
+              ],
+              "evidence": "18, 36, 54… ve 24, 48, 72… dizileri kurulur."
+            },
+            {
+              "id": "s2",
+              "action": "ilk ortak günü belirle",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "calc-2"
+              ],
+              "evidence": "İki dizide ilk ortak değer 72’dir."
+            },
+            {
+              "id": "s3",
+              "action": "sonucu bakım bağlamında yorumla",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "calc-3"
+              ],
+              "evidence": "72 gün sonra iki cihaz yeniden aynı gün bakıma girer."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Her cihaz için ilk birkaç bakım gününü yaz.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "İki listenin ilk kez nerede kesiştiğine bak.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Bulduğun ortak katların en küçüğünü seç.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "periods-added",
+              "text": "İki bakım aralığını toplamak, iki döngünün aynı güne geldiği ilk zamanı vermez.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "18 ve 24’ün ilk ortak katı 72’dir; iki bakım döngüsü ilk kez bu gün yeniden birleşir.",
+              "supportingEvidenceIds": [
+                "calculation-proof"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "gcd-instead-of-lcm",
+              "text": "6 sayısı iki sürenin EBOB’udur; ortak döngünün tekrarını değil ortak böleni gösterir.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "multiply-without-reducing",
+              "text": "Aralıkları doğrudan çarpmak ortak kat verir fakat ilk ortak katı gereksiz yere büyütür.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "periods-added",
+            "gcd-instead-of-lcm",
+            "multiply-without-reducing"
+          ],
+          "verifier": {
+            "solverId": "g8-math-domain-solver-v1",
+            "independentVerifierId": "g8-math-enumerative-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "mathematical-real-life-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "model",
+              "calculate",
+              "interpret"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "math-g8-cross-02-scientific-notation",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "matematik",
+            "unitId": "sayilar-ve-islemler",
+            "topicId": "uslu-ifadeler",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.matematik.m-8-1-2-5"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "scientific-notation-comparison",
+            "secondarySkills": [
+              "magnitude-ordering"
+            ],
+            "cognitiveProcess": "compare-and-justify",
+            "knowledgeComponents": [
+              "coefficient",
+              "power-of-ten"
+            ],
+            "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+          },
+          "content": {
+            "context": "Bir laboratuvarda üç parçacığın çapı bilimsel gösterimle ölçülmüştür: K = 4,8 × 10⁻⁷ m, L = 7,2 × 10⁻⁸ m, M = 5,1 × 10⁻⁷ m.",
+            "stem": "Parçacıkların çaplarının büyükten küçüğe doğru sıralanışı hangisidir?",
+            "model": {
+              "type": "scientific-order",
+              "values": {
+                "K": [
+                  4.8,
+                  -7
+                ],
+                "L": [
+                  7.2,
+                  -8
+                ],
+                "M": [
+                  5.1,
+                  -7
+                ]
+              }
+            },
+            "options": [
+              {
+                "id": "A",
+                "text": "L > M > K"
+              },
+              {
+                "id": "B",
+                "text": "M > L > K"
+              },
+              {
+                "id": "C",
+                "text": "M > K > L"
+              },
+              {
+                "id": "D",
+                "text": "K > M > L"
+              }
+            ],
+            "optionValues": {
+              "A": "L>M>K",
+              "B": "M>L>K",
+              "C": "M>K>L",
+              "D": "K>M>L"
+            },
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_MATH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "C",
+            "value": "M>K>L"
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "üsleri karşılaştır",
+              "dependsOn": [],
+              "evidenceIds": [
+                "calc-1"
+              ],
+              "evidence": "10⁻⁷ ölçeğindeki K ve M, 10⁻⁸ ölçeğindeki L’den büyüktür."
+            },
+            {
+              "id": "s2",
+              "action": "aynı üslü sayıları katsayıyla sırala",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "calc-2"
+              ],
+              "evidence": "5,1 × 10⁻⁷, 4,8 × 10⁻⁷’den büyüktür."
+            },
+            {
+              "id": "s3",
+              "action": "sıralamayı birleştir",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "calc-3"
+              ],
+              "evidence": "M > K > L elde edilir."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Önce katsayıları değil 10’un kuvvetlerini karşılaştır.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Üsler eşitse hangi katsayı daha büyük?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "İki aşamadaki karşılaştırmayı tek sıraya dönüştür.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "negative-exponent-direction",
+              "text": "Negatif üs küçüldükçe sayının büyüdüğünü varsayar; oysa 10⁻⁸, 10⁻⁷’den daha küçük bir ölçek verir.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "coefficient-only-comparison",
+              "text": "L’nin katsayısı büyük olsa da üs değeri farklıdır; önce ondalık basamak ölçeği karşılaştırılmalıdır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "M ve K aynı 10⁻⁷ ölçeğindedir ve 5,1 > 4,8’dir; L ise 10⁻⁸ ölçeğinde olduğu için ikisinden küçüktür.",
+              "supportingEvidenceIds": [
+                "calculation-proof"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "same-exponent-coefficient-reversed",
+              "text": "K ile M’nin üsleri aynıdır; katsayı karşılaştırması 5,1’in 4,8’den büyük olduğunu gösterir.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "negative-exponent-direction",
+            "coefficient-only-comparison",
+            "same-exponent-coefficient-reversed"
+          ],
+          "verifier": {
+            "solverId": "g8-math-domain-solver-v1",
+            "independentVerifierId": "g8-math-enumerative-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "mathematical-real-life-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "model",
+              "calculate",
+              "interpret"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "math-g8-cross-03-linear-tank",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "matematik",
+            "unitId": "cebir",
+            "topicId": "dogrusal-denklemler",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.matematik.m-8-2-2-5"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "linear-model-interpretation",
+            "secondarySkills": [
+              "rate-and-intercept"
+            ],
+            "cognitiveProcess": "model-solve-and-check",
+            "knowledgeComponents": [
+              "linear-equation",
+              "table-interpretation"
+            ],
+            "intendedDifficultyBand": "LGS_HIGH"
+          },
+          "content": {
+            "context": "Bir depoda başlangıçta 180 litre su vardır. Pompa çalıştıktan 2 dakika sonra 150 litre, 6 dakika sonra 90 litre su kalmıştır. Pompanın her dakika aynı miktarda su boşalttığı bilinmektedir.",
+            "stem": "t dakika sonra depoda kalan su miktarını V ile gösteren denklem ve 45 litre su kaldığı an birlikte hangi seçenekte doğru verilmiştir?",
+            "model": {
+              "type": "linear-from-points",
+              "points": [
+                [
+                  2,
+                  150
+                ],
+                [
+                  6,
+                  90
+                ]
+              ],
+              "targetY": 45
+            },
+            "options": [
+              {
+                "id": "A",
+                "text": "V = 180 − 15t; 8. dakika"
+              },
+              {
+                "id": "B",
+                "text": "V = 180 − 10t; 13,5. dakika"
+              },
+              {
+                "id": "C",
+                "text": "V = 210 − 15t; 11. dakika"
+              },
+              {
+                "id": "D",
+                "text": "V = 180 − 15t; 9. dakika"
+              }
+            ],
+            "optionValues": {
+              "A": "180−15t;8",
+              "B": "180−10t;13.5",
+              "C": "210−15t;11",
+              "D": "180−15t;9"
+            },
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_MATH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "D",
+            "value": "180−15t;9"
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "iki ölçümden değişim hızını bul",
+              "dependsOn": [],
+              "evidenceIds": [
+                "calc-1"
+              ],
+              "evidence": "(90−150)/(6−2) = −15 L/dk."
+            },
+            {
+              "id": "s2",
+              "action": "başlangıç değerini kullanarak denklemi kur",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "calc-2"
+              ],
+              "evidence": "V = 180 − 15t."
+            },
+            {
+              "id": "s3",
+              "action": "hedef miktar için zamanı çöz",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "calc-3"
+              ],
+              "evidence": "45 = 180 − 15t denkleminden t = 9."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Dört dakikada kaç litre azalmış?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "t = 0 iken V kaç olmalı?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Kalan suyu 45’e eşitle ve t’yi bul.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "target-time-arithmetic",
+              "text": "Denklem doğrudur; ancak 45 = 180 − 15t eşitliği t = 9 verir, 8 değil.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "rate-from-single-point",
+              "text": "Başlangıç ile 6. dakika arasındaki değişim yanlış orana bağlanmıştır; iki veri arasındaki azalma dakikada 15 litredir.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "intercept-shift",
+              "text": "Azalma hızı doğru olsa da başlangıç miktarı 180 litredir; 210 litrelik başlangıç verilerle uyuşmaz.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "İki ölçüm arasında 4 dakikada 60 litre azalma vardır; hız 15 L/dk, başlangıç 180 L ve 45 litreye ulaşma süresi 9 dakikadır.",
+              "supportingEvidenceIds": [
+                "calculation-proof"
+              ],
+              "contradictionEvidenceIds": []
+            }
+          ],
+          "misconceptionIds": [
+            "target-time-arithmetic",
+            "rate-from-single-point",
+            "intercept-shift"
+          ],
+          "verifier": {
+            "solverId": "g8-math-domain-solver-v1",
+            "independentVerifierId": "g8-math-enumerative-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "mathematical-real-life-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "model",
+              "calculate",
+              "interpret"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "math-g8-cross-04-pythagorean-map",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "matematik",
+            "unitId": "geometri-ve-olcme",
+            "topicId": "ucgenler",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.matematik.m-8-3-1-5"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "pythagorean-distance",
+            "secondarySkills": [
+              "coordinate-difference"
+            ],
+            "cognitiveProcess": "represent-and-calculate",
+            "knowledgeComponents": [
+              "right-triangle",
+              "distance"
+            ],
+            "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+          },
+          "content": {
+            "context": "Kareli bir kent planında bir acil çıkış noktası A(−2, 1), toplanma alanı B(4, 9) olarak işaretlenmiştir. Bir kare kenarı 1 metreyi temsil etmektedir.",
+            "stem": "A ile B arasına doğrusal bir güvenlik şeridi çekilirse şeridin uzunluğu kaç metre olur?",
+            "model": {
+              "type": "coordinate-distance",
+              "a": [
+                -2,
+                1
+              ],
+              "b": [
+                4,
+                9
+              ]
+            },
+            "options": [
+              {
+                "id": "A",
+                "text": "10 metre"
+              },
+              {
+                "id": "B",
+                "text": "8 metre"
+              },
+              {
+                "id": "C",
+                "text": "12 metre"
+              },
+              {
+                "id": "D",
+                "text": "14 metre"
+              }
+            ],
+            "optionValues": {
+              "A": 10,
+              "B": 8,
+              "C": 12,
+              "D": 14
+            },
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_MATH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "A",
+            "value": 10
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "yatay ve düşey farkları belirle",
+              "dependsOn": [],
+              "evidenceIds": [
+                "calc-1"
+              ],
+              "evidence": "Δx = 6 ve Δy = 8."
+            },
+            {
+              "id": "s2",
+              "action": "farkları dik üçgenin kenarları olarak gör",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "calc-2"
+              ],
+              "evidence": "6 ve 8 dik kenarlardır."
+            },
+            {
+              "id": "s3",
+              "action": "Pisagor bağıntısını uygula",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "calc-3"
+              ],
+              "evidence": "√(36+64)=√100=10."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Aynı tür koordinatları birbirinden çıkar.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Kareli planda yatay ve düşey hareketler birbirine diktir.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "İki farkın karelerini toplayıp karekökünü al.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Yatay fark 6, düşey fark 8 metredir; √(6²+8²)=10 bulunur.",
+              "supportingEvidenceIds": [
+                "calculation-proof"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "use-only-larger-leg",
+              "text": "Yalnız düşey uzaklığı kullanır; yatay uzaklık da doğrusal mesafeye katkı sağlar.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "add-coordinate-differences",
+              "text": "Koordinat farklarını doğrudan toplamak yol uzunluğunu verir; iki nokta arasındaki doğrusal uzaklığı vermez.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "add-absolute-coordinates",
+              "text": "Noktaların koordinatlarını toplamaya dayanır; mesafe için önce karşılıklı koordinatların farkları alınmalıdır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "use-only-larger-leg",
+            "add-coordinate-differences",
+            "add-absolute-coordinates"
+          ],
+          "verifier": {
+            "solverId": "g8-math-domain-solver-v1",
+            "independentVerifierId": "g8-math-enumerative-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "mathematical-real-life-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "model",
+              "calculate",
+              "interpret"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "math-g8-cross-05-probability-cards",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "matematik",
+            "unitId": "olasilik",
+            "topicId": "basit-olaylarin-olma-olasiligi",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.matematik.m-8-5-1-5"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "simple-event-probability",
+            "secondarySkills": [
+              "set-enumeration"
+            ],
+            "cognitiveProcess": "enumerate-and-ratio",
+            "knowledgeComponents": [
+              "favourable-outcomes",
+              "sample-space"
+            ],
+            "intendedDifficultyBand": "LGS_HIGH"
+          },
+          "content": {
+            "context": "Üzerlerinde 1’den 15’e kadar doğal sayıların yazılı olduğu eş kartlardan biri rastgele seçiliyor.",
+            "stem": "Seçilen karttaki sayının asal veya 5’in katı olma olasılığı kaçtır?",
+            "model": {
+              "type": "set-probability",
+              "min": 1,
+              "max": 15,
+              "predicates": [
+                "prime",
+                "multiple-of-5"
+              ],
+              "union": true
+            },
+            "options": [
+              {
+                "id": "A",
+                "text": "7/15"
+              },
+              {
+                "id": "B",
+                "text": "8/14"
+              },
+              {
+                "id": "C",
+                "text": "8/15"
+              },
+              {
+                "id": "D",
+                "text": "9/15"
+              }
+            ],
+            "optionValues": {
+              "A": "7/15",
+              "B": "8/14",
+              "C": "8/15",
+              "D": "9/15"
+            },
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_MATH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "C",
+            "value": "8/15"
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "asal sayıları listele",
+              "dependsOn": [],
+              "evidenceIds": [
+                "calc-1"
+              ],
+              "evidence": "2, 3, 5, 7, 11, 13."
+            },
+            {
+              "id": "s2",
+              "action": "5’in katlarını ekleyip tekrarı kaldır",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "calc-2"
+              ],
+              "evidence": "5, 10, 15 eklenir; 5 yalnız bir kez sayılır."
+            },
+            {
+              "id": "s3",
+              "action": "uygun sonuçları tüm sonuçlara oranla",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "calc-3"
+              ],
+              "evidence": "8 uygun sonuç / 15 olası sonuç."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "1 ile 15 arasındaki asal sayıları yaz.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "İki özelliği de taşıyan sayı varsa iki kez sayma.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Payda bütün kartların sayısıdır.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "omit-overlap-member",
+              "text": "Asal sayılar ile 5’in katlarını birleştirirken iki kümeye de giren 5 sayısını yanlış biçimde dışarıda bırakır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "exclude-one-from-sample-space",
+              "text": "Uygun sonuçları doğru sayar; fakat 1 sayısını olası durumlar kümesinden çıkardığı için paydayı 14 alır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Uygun sayılar 2, 3, 5, 7, 10, 11, 13 ve 15 olmak üzere 8 tanedir; toplam 15 eş olasılıklı kart vardır.",
+              "supportingEvidenceIds": [
+                "calculation-proof"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "double-count-overlap",
+              "text": "5 sayısını hem asal hem 5’in katı olduğu için iki kez sayar; tek kart tek sonuç olarak sayılmalıdır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "calculation-proof"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "omit-overlap-member",
+            "exclude-one-from-sample-space",
+            "double-count-overlap"
+          ],
+          "verifier": {
+            "solverId": "g8-math-domain-solver-v1",
+            "independentVerifierId": "g8-math-enumerative-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "mathematical-real-life-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "model",
+              "calculate",
+              "interpret"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        }
+      ]
+    },
+    {
+      "key": "g8-science",
+      "title": "8. Sınıf Fen Bilimleri",
+      "outcomes": [
+        {
+          "id": "tr.pre-tymm.g8.fen.f-8-1-1-1",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "fen-bilimleri",
+          "courseName": "Fen Bilimleri",
+          "unitId": "mevsimler-ve-iklim",
+          "unitName": "Mevsimler ve İklim",
+          "topicId": "mevsimlerin-olusumu",
+          "topicName": "Mevsimlerin Oluşumu",
+          "officialOutcomeCode": "F.8.1.1.1",
+          "officialOutcomeText": "Mevsimlerin oluşumuna yönelik tahminlerde bulunur.",
+          "officialGuidanceNotes": [
+            "Dünya’nın dönme ekseni olduğuna ve eksen eğikliğine değinilir."
+          ],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Fen Bilimleri Dersi Öğretim Programı (3-8. Sınıflar), 2018; PDF s. 49; F.8.1.1.1; https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "experiment-interpretation",
+            "model-based-reasoning"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.pre-tymm.g8.fen.f-8-2-2-2",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "fen-bilimleri",
+          "courseName": "Fen Bilimleri",
+          "unitId": "dna-ve-genetik-kod",
+          "unitName": "DNA ve Genetik Kod",
+          "topicId": "kalitim",
+          "topicName": "Kalıtım",
+          "officialOutcomeCode": "F.8.2.2.2",
+          "officialOutcomeText": "Tek karakter çaprazlamaları ile ilgili problemler çözerek sonuçlar hakkında yorum yapar.",
+          "officialGuidanceNotes": [
+            "Çaprazlamalarda sadece bezelye karakterleri kullanılır; baskın ve çekinik gen kavramları ele alınır."
+          ],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Fen Bilimleri Dersi Öğretim Programı (3-8. Sınıflar), 2018; PDF s. 50; F.8.2.2.2; https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "experiment-interpretation",
+            "model-based-reasoning"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.pre-tymm.g8.fen.f-8-3-1-1",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "fen-bilimleri",
+          "courseName": "Fen Bilimleri",
+          "unitId": "basinc",
+          "unitName": "Basınç",
+          "topicId": "kati-basinci",
+          "topicName": "Katı Basıncı",
+          "officialOutcomeCode": "F.8.3.1.1",
+          "officialOutcomeText": "Katı basıncını etkileyen değişkenleri deneyerek keşfeder.",
+          "officialGuidanceNotes": [
+            "Basınç birimi Pascal verilir; matematiksel bağıntılara girilmez."
+          ],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Fen Bilimleri Dersi Öğretim Programı (3-8. Sınıflar), 2018; PDF s. 51; F.8.3.1.1; https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "experiment-interpretation",
+            "model-based-reasoning"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.pre-tymm.g8.fen.f-8-4-5-3",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "fen-bilimleri",
+          "courseName": "Fen Bilimleri",
+          "unitId": "madde-ve-endustri",
+          "unitName": "Madde ve Endüstri",
+          "topicId": "maddenin-isi-ile-etkilesimi",
+          "topicName": "Maddenin Isı ile Etkileşimi",
+          "officialOutcomeCode": "F.8.4.5.3",
+          "officialOutcomeText": "Maddelerin hâl değişimi ve ısınma grafiğini çizerek yorumlar.",
+          "officialGuidanceNotes": [],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Fen Bilimleri Dersi Öğretim Programı (3-8. Sınıflar), 2018; PDF s. 53; F.8.4.5.3; https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "experiment-interpretation",
+            "model-based-reasoning"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.pre-tymm.g8.fen.f-8-5-1-1",
+          "schoolYear": "2026-2027",
+          "programFamily": "PRE_TYMM",
+          "grade": 8,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "fen-bilimleri",
+          "courseName": "Fen Bilimleri",
+          "unitId": "basit-makineler",
+          "unitName": "Basit Makineler",
+          "topicId": "basit-makineler",
+          "topicName": "Basit Makineler",
+          "officialOutcomeCode": "F.8.5.1.1",
+          "officialOutcomeText": "Basit makinelerin sağladığı avantajları örnekler üzerinden açıklar.",
+          "officialGuidanceNotes": [
+            "Basit makinelerde işten kazanç olmadığı vurgulanır; matematiksel bağıntılara girilmez."
+          ],
+          "sourceId": "meb-legacy-programs",
+          "sourceLocator": "Fen Bilimleri Dersi Öğretim Programı (3-8. Sınıflar), 2018; PDF s. 53; F.8.5.1.1; https://mufredat.meb.gov.tr/Dosyalar/201812312311937-FEN%20B%C4%B0L%C4%B0MLER%C4%B0%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI2018.pdf",
+          "contentFramework": [],
+          "fieldSkills": [],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "experiment-interpretation",
+            "model-based-reasoning"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        }
+      ],
+      "questions": [
+        {
+          "schemaVersion": "3.0",
+          "id": "science-g8-cross-01-seasons",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "fen-bilimleri",
+            "unitId": "mevsimler-ve-iklim",
+            "topicId": "mevsimlerin-olusumu",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.fen.f-8-1-1-1"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "season-model-reasoning",
+            "secondarySkills": [
+              "axis-tilt",
+              "sunlight-angle"
+            ],
+            "cognitiveProcess": "predict-from-model",
+            "knowledgeComponents": [
+              "axial-tilt",
+              "hemisphere",
+              "day-length"
+            ],
+            "intendedDifficultyBand": "LGS_HIGH"
+          },
+          "content": {
+            "stimulusBlocks": [
+              "Bir modelde Dünya’nın ekseni yörünge düzlemine göre eğik tutulmuş ve eksenin uzaydaki yönü değiştirilmeden Dünya, Güneş’in çevresindeki K ve L konumlarına taşınmıştır.",
+              "K konumunda Kuzey Yarım Küre Güneş’e doğru eğik, L konumunda ise Güneş’ten uzağa eğiktir."
+            ],
+            "stem": "Bu modele göre Kuzey Yarım Küre için aşağıdaki yorumlardan hangisi doğrudur?",
+            "options": [
+              {
+                "id": "A",
+                "text": "K konumunda ışınlar daha eğik gelir ve gündüz süresi kısalır; L konumunda bunun tersi gerçekleşir."
+              },
+              {
+                "id": "B",
+                "text": "K konumunda ışınlar daha dik gelir ve gündüz süresi uzar; L konumunda ışınlar daha eğik gelir ve gündüz süresi kısalır."
+              },
+              {
+                "id": "C",
+                "text": "K ve L konumlarında eksen eğikliği aynı kaldığı için ışınların geliş açısı ve gündüz süresi değişmez."
+              },
+              {
+                "id": "D",
+                "text": "K konumunda Dünya Güneş’e daha yakın olduğu için yaz, L konumunda daha uzak olduğu için kış yaşanır."
+              }
+            ],
+            "model": {
+              "type": "seasons",
+              "hemisphere": "north",
+              "K": "toward",
+              "L": "away"
+            },
+            "requiredEvidenceIds": [
+              "tilt",
+              "direct-rays",
+              "day-length"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "K konumunda ışınlar daha eğik gelir ve gündüz süresi kısalır; L konumunda bunun tersi gerçekleşir.",
+                "correct": false,
+                "misconceptionId": "toward-means-colder",
+                "support": [],
+                "contradictions": [
+                  "direct-rays",
+                  "day-length"
+                ]
+              },
+              {
+                "id": "B",
+                "text": "K konumunda ışınlar daha dik gelir ve gündüz süresi uzar; L konumunda ışınlar daha eğik gelir ve gündüz süresi kısalır.",
+                "correct": true,
+                "misconceptionId": null,
+                "support": [
+                  "tilt",
+                  "direct-rays",
+                  "day-length"
+                ],
+                "contradictions": []
+              },
+              {
+                "id": "C",
+                "text": "K ve L konumlarında eksen eğikliği aynı kaldığı için ışınların geliş açısı ve gündüz süresi değişmez.",
+                "correct": false,
+                "misconceptionId": "constant-tilt-means-no-season",
+                "support": [],
+                "contradictions": [
+                  "direct-rays",
+                  "day-length"
+                ]
+              },
+              {
+                "id": "D",
+                "text": "K konumunda Dünya Güneş’e daha yakın olduğu için yaz, L konumunda daha uzak olduğu için kış yaşanır.",
+                "correct": false,
+                "misconceptionId": "distance-causes-seasons",
+                "support": [],
+                "contradictions": [
+                  "tilt"
+                ]
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_SCIENCE_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "B",
+            "supportingEvidenceIds": [
+              "tilt",
+              "direct-rays",
+              "day-length"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "K ve L konumlarında yarım kürenin yönelimini belirle",
+              "dependsOn": [],
+              "evidenceIds": [
+                "tilt"
+              ],
+              "evidence": "K’de kuzey Güneş’e dönük, L’de Güneş’ten uzaktır."
+            },
+            {
+              "id": "s2",
+              "action": "ışın açısını yönelimle ilişkilendir",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "direct-rays"
+              ],
+              "evidence": "Güneş’e dönük yarım küre daha dik ışın alır."
+            },
+            {
+              "id": "s3",
+              "action": "gündüz süresi ve mevsim sonucunu birleştir",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "day-length"
+              ],
+              "evidence": "K’de gündüz uzar, L’de kısalır."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Önce eksenin hangi yarım küreyi Güneş’e çevirdiğini belirle.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Daha doğrudan aydınlanan yüzey hangisidir?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Işın açısı ile aydınlık kalma süresini birlikte düşün.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "toward-means-colder",
+              "text": "Kuzey Yarım Küre K konumunda Güneş’e yöneldiği için ışınlar daha dik gelir ve gündüz süresi uzar; seçenek iki sonucu da ters çevirmiştir.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "direct-rays",
+                "day-length"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Eksen eğikliği nedeniyle Güneş’e dönük yarım küre daha dik ışın alır ve daha uzun gündüz yaşar; karşı konumda iki özellik tersine döner.",
+              "supportingEvidenceIds": [
+                "tilt",
+                "direct-rays",
+                "day-length"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "constant-tilt-means-no-season",
+              "text": "Eksenin eğikliği sabit kalsa da Dünya’nın yörüngedeki konumu değiştiğinde yarım kürenin Güneş’e yönelimi değişir; mevsimsel fark buradan doğar.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "direct-rays",
+                "day-length"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "distance-causes-seasons",
+              "text": "Modelde mevsim farkı Dünya-Güneş uzaklığına değil eksen eğikliği ve yarım kürenin Güneş’e yönelimine bağlanır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "tilt"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "toward-means-colder",
+            "constant-tilt-means-no-season",
+            "distance-causes-seasons"
+          ],
+          "verifier": {
+            "solverId": "g8-science-model-rule-solver-v1",
+            "independentVerifierId": "g8-science-evidence-constraint-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "science-investigation-and-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "observe",
+              "control-variables",
+              "infer"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "science-g8-cross-02-genetics",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "fen-bilimleri",
+            "unitId": "dna-ve-genetik-kod",
+            "topicId": "kalitim",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.fen.f-8-2-2-2"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "monohybrid-cross-interpretation",
+            "secondarySkills": [
+              "dominance",
+              "gamete-enumeration"
+            ],
+            "cognitiveProcess": "model-and-infer",
+            "knowledgeComponents": [
+              "genotype",
+              "phenotype",
+              "probability"
+            ],
+            "intendedDifficultyBand": "LGS_HIGH"
+          },
+          "content": {
+            "stimulusBlocks": [
+              "Bezelyelerde mor çiçek geni M, beyaz çiçek geni m’ye baskındır. Heterozigot mor çiçekli bir bezelye (Mm) ile beyaz çiçekli bir bezelye (mm) çaprazlanıyor."
+            ],
+            "stem": "Yavruların fenotip dağılımıyla ilgili hangi sonuç beklenir?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Yavruların yaklaşık yarısı mor, yarısı beyaz çiçekli olur."
+              },
+              {
+                "id": "B",
+                "text": "Mor renk baskın olduğu için yavruların tamamı mor çiçekli olur."
+              },
+              {
+                "id": "C",
+                "text": "Yavruların dörtte üçü mor, dörtte biri beyaz çiçekli olur."
+              },
+              {
+                "id": "D",
+                "text": "Beyaz renk çekinik olduğu için yavruların tamamı beyaz çiçekli olur."
+              }
+            ],
+            "model": {
+              "type": "cross",
+              "parent1": [
+                "M",
+                "m"
+              ],
+              "parent2": [
+                "m",
+                "m"
+              ],
+              "dominant": "M"
+            },
+            "requiredEvidenceIds": [
+              "gametes",
+              "genotypes",
+              "phenotypes"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "Yavruların yaklaşık yarısı mor, yarısı beyaz çiçekli olur.",
+                "correct": true,
+                "misconceptionId": null,
+                "support": [
+                  "gametes",
+                  "genotypes",
+                  "phenotypes"
+                ],
+                "contradictions": []
+              },
+              {
+                "id": "B",
+                "text": "Mor renk baskın olduğu için yavruların tamamı mor çiçekli olur.",
+                "correct": false,
+                "misconceptionId": "dominant-means-all-offspring",
+                "support": [],
+                "contradictions": [
+                  "gametes",
+                  "genotypes"
+                ]
+              },
+              {
+                "id": "C",
+                "text": "Yavruların dörtte üçü mor, dörtte biri beyaz çiçekli olur.",
+                "correct": false,
+                "misconceptionId": "apply-heterozygous-cross-ratio",
+                "support": [],
+                "contradictions": [
+                  "genotypes"
+                ]
+              },
+              {
+                "id": "D",
+                "text": "Beyaz renk çekinik olduğu için yavruların tamamı beyaz çiçekli olur.",
+                "correct": false,
+                "misconceptionId": "recessive-parent-controls-all",
+                "support": [],
+                "contradictions": [
+                  "phenotypes"
+                ]
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_SCIENCE_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "A",
+            "supportingEvidenceIds": [
+              "gametes",
+              "genotypes",
+              "phenotypes"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "ebeveynlerin oluşturabileceği gametleri yaz",
+              "dependsOn": [],
+              "evidenceIds": [
+                "gametes"
+              ],
+              "evidence": "Mm → M veya m; mm → yalnız m."
+            },
+            {
+              "id": "s2",
+              "action": "olası genotipleri eşleştir",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "genotypes"
+              ],
+              "evidence": "Mm ve mm genotipleri eşit sayıda oluşur."
+            },
+            {
+              "id": "s3",
+              "action": "genotipleri fenotipe çevir",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "phenotypes"
+              ],
+              "evidence": "Mm mor, mm beyazdır; oran 1:1 olur."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Her ebeveyn yavruya hangi tek harfi verebilir?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "İki gamet listesini küçük bir çaprazlama tablosunda birleştir.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Baskın M harfi bulunan yavru hangi renkte görünür?",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Mm birey M veya m, mm birey yalnız m gameti oluşturur; Mm ve mm yavrular eş olasılıkla oluşur.",
+              "supportingEvidenceIds": [
+                "gametes",
+                "genotypes",
+                "phenotypes"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "dominant-means-all-offspring",
+              "text": "Baskınlık, M genini alan bireyin mor görünmesini sağlar; ancak heterozigot ebeveyn her yavruya M aktarmak zorunda değildir.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "gametes",
+                "genotypes"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "apply-heterozygous-cross-ratio",
+              "text": "3:1 oranı iki heterozigot bireyin Mm × Mm çaprazlamasında beklenir; burada ikinci ebeveyn mm’dir.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "genotypes"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "recessive-parent-controls-all",
+              "text": "mm ebeveyn her zaman m verir; ancak diğer ebeveynden M alan yavrular Mm olur ve mor çiçek açar.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "phenotypes"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "dominant-means-all-offspring",
+            "apply-heterozygous-cross-ratio",
+            "recessive-parent-controls-all"
+          ],
+          "verifier": {
+            "solverId": "g8-science-model-rule-solver-v1",
+            "independentVerifierId": "g8-science-evidence-constraint-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "science-investigation-and-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "observe",
+              "control-variables",
+              "infer"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "science-g8-cross-03-solid-pressure",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "fen-bilimleri",
+            "unitId": "basinc",
+            "topicId": "kati-basinci",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.fen.f-8-3-1-1"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "solid-pressure-variable-control",
+            "secondarySkills": [
+              "contact-area",
+              "weight-control"
+            ],
+            "cognitiveProcess": "compare-experimental-cases",
+            "knowledgeComponents": [
+              "force",
+              "surface-area",
+              "pressure"
+            ],
+            "intendedDifficultyBand": "LGS_MEDIUM_HIGH"
+          },
+          "content": {
+            "stimulusBlocks": [
+              "Özdeş üç tuğla aynı yatay zemine farklı yüzeyleri üzerine konuluyor. K düzeninde temas alanı 20 cm², L düzeninde 40 cm², M düzeninde 80 cm²’dir. Tuğlaların ağırlıkları eşittir."
+            ],
+            "stem": "Zemine uygulanan katı basınçlarının sıralaması hangisidir?",
+            "options": [
+              {
+                "id": "A",
+                "text": "K = L = M"
+              },
+              {
+                "id": "B",
+                "text": "M > L > K"
+              },
+              {
+                "id": "C",
+                "text": "K > L > M"
+              },
+              {
+                "id": "D",
+                "text": "L > K > M"
+              }
+            ],
+            "model": {
+              "type": "solid-pressure",
+              "areas": {
+                "K": 20,
+                "L": 40,
+                "M": 80
+              },
+              "weights": {
+                "K": 1,
+                "L": 1,
+                "M": 1
+              }
+            },
+            "requiredEvidenceIds": [
+              "equal-force",
+              "area-inverse",
+              "ranking"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "K = L = M",
+                "correct": false,
+                "misconceptionId": "equal-weight-means-equal-pressure",
+                "support": [],
+                "contradictions": [
+                  "area-inverse"
+                ]
+              },
+              {
+                "id": "B",
+                "text": "M > L > K",
+                "correct": false,
+                "misconceptionId": "pressure-direct-with-area",
+                "support": [],
+                "contradictions": [
+                  "area-inverse",
+                  "ranking"
+                ]
+              },
+              {
+                "id": "C",
+                "text": "K > L > M",
+                "correct": true,
+                "misconceptionId": null,
+                "support": [
+                  "equal-force",
+                  "area-inverse",
+                  "ranking"
+                ],
+                "contradictions": []
+              },
+              {
+                "id": "D",
+                "text": "L > K > M",
+                "correct": false,
+                "misconceptionId": "middle-area-assumed-highest",
+                "support": [],
+                "contradictions": [
+                  "ranking"
+                ]
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_SCIENCE_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "C",
+            "supportingEvidenceIds": [
+              "equal-force",
+              "area-inverse",
+              "ranking"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "kontrol edilen ve değiştirilen değişkenleri ayır",
+              "dependsOn": [],
+              "evidenceIds": [
+                "equal-force"
+              ],
+              "evidence": "Ağırlık eşit, temas alanı farklıdır."
+            },
+            {
+              "id": "s2",
+              "action": "temas alanı ile basınç ilişkisini kullan",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "area-inverse"
+              ],
+              "evidence": "Aynı kuvvette alan küçüldükçe basınç artar."
+            },
+            {
+              "id": "s3",
+              "action": "alanları küçükten büyüğe sırala",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "ranking"
+              ],
+              "evidence": "20 < 40 < 80 olduğundan basınç K > L > M olur."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Hangi özellik üç düzende aynı tutulmuş?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Ağırlığı daha küçük alana yaymak zemini nasıl etkiler?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Basınç sırası alan sırasının tersidir.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "equal-weight-means-equal-pressure",
+              "text": "Ağırlıkların eşit olması tek başına basıncı eşitlemez; temas alanları farklı olduğu için basınçlar da farklıdır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "area-inverse"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "pressure-direct-with-area",
+              "text": "Temas alanı büyüdükçe aynı ağırlık daha geniş yüzeye dağıldığı için basınç azalır; seçenek ilişkiyi ters kurar.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "area-inverse",
+                "ranking"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Ağırlıklar eşitken temas alanı küçüldükçe basınç artar; 20 cm²’lik K en büyük, 80 cm²’lik M en küçük basıncı uygular.",
+              "supportingEvidenceIds": [
+                "equal-force",
+                "area-inverse",
+                "ranking"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "middle-area-assumed-highest",
+              "text": "L’nin temas alanı K’den büyük, M’den küçüktür; bu nedenle basıncı da K ile M arasında olmalıdır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "ranking"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "equal-weight-means-equal-pressure",
+            "pressure-direct-with-area",
+            "middle-area-assumed-highest"
+          ],
+          "verifier": {
+            "solverId": "g8-science-model-rule-solver-v1",
+            "independentVerifierId": "g8-science-evidence-constraint-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "science-investigation-and-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "observe",
+              "control-variables",
+              "infer"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "science-g8-cross-04-heating-graph",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "fen-bilimleri",
+            "unitId": "madde-ve-endustri",
+            "topicId": "maddenin-isi-ile-etkilesimi",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.fen.f-8-4-5-3"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "heating-curve-interpretation",
+            "secondarySkills": [
+              "plateau-detection",
+              "phase-change"
+            ],
+            "cognitiveProcess": "interpret-data-pattern",
+            "knowledgeComponents": [
+              "temperature",
+              "time",
+              "phase-change"
+            ],
+            "intendedDifficultyBand": "LGS_HIGH"
+          },
+          "content": {
+            "stimulusBlocks": [
+              "Saf bir katı madde sabit güçlü bir ısıtıcıyla ısıtılıyor. Ölçümler şöyledir: 0. dk 20 °C, 2. dk 40 °C, 4. dk 60 °C, 6. dk 60 °C, 8. dk 60 °C, 10. dk 80 °C."
+            ],
+            "stem": "4–8. dakikalar arasındaki süreç için hangi yorum doğrudur?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Isıtıcı enerji vermeyi durdurduğu için sıcaklık sabit kalmıştır."
+              },
+              {
+                "id": "B",
+                "text": "Madde 4–8. dakikalarda enerji kaybettiği için sıcaklık değişmemiştir."
+              },
+              {
+                "id": "C",
+                "text": "Madde 60 °C’de tamamen gaz hâline geçmiş ve 8. dakikadan sonra yoğuşmaya başlamıştır."
+              },
+              {
+                "id": "D",
+                "text": "Madde erirken enerji almaya devam etmiş, sıcaklığı hâl değişimi boyunca 60 °C’de kalmıştır."
+              }
+            ],
+            "model": {
+              "type": "heating-table",
+              "readings": [
+                [
+                  0,
+                  20
+                ],
+                [
+                  2,
+                  40
+                ],
+                [
+                  4,
+                  60
+                ],
+                [
+                  6,
+                  60
+                ],
+                [
+                  8,
+                  60
+                ],
+                [
+                  10,
+                  80
+                ]
+              ],
+              "initialPhase": "solid"
+            },
+            "requiredEvidenceIds": [
+              "plateau",
+              "heat-continues",
+              "melting"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "Isıtıcı enerji vermeyi durdurduğu için sıcaklık sabit kalmıştır.",
+                "correct": false,
+                "misconceptionId": "plateau-means-heater-off",
+                "support": [],
+                "contradictions": [
+                  "heat-continues"
+                ]
+              },
+              {
+                "id": "B",
+                "text": "Madde 4–8. dakikalarda enerji kaybettiği için sıcaklık değişmemiştir.",
+                "correct": false,
+                "misconceptionId": "constant-temperature-means-no-energy",
+                "support": [],
+                "contradictions": [
+                  "heat-continues"
+                ]
+              },
+              {
+                "id": "C",
+                "text": "Madde 60 °C’de tamamen gaz hâline geçmiş ve 8. dakikadan sonra yoğuşmaya başlamıştır.",
+                "correct": false,
+                "misconceptionId": "first-plateau-read-as-boiling",
+                "support": [],
+                "contradictions": [
+                  "melting"
+                ]
+              },
+              {
+                "id": "D",
+                "text": "Madde erirken enerji almaya devam etmiş, sıcaklığı hâl değişimi boyunca 60 °C’de kalmıştır.",
+                "correct": true,
+                "misconceptionId": null,
+                "support": [
+                  "plateau",
+                  "heat-continues",
+                  "melting"
+                ],
+                "contradictions": []
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_SCIENCE_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "D",
+            "supportingEvidenceIds": [
+              "plateau",
+              "heat-continues",
+              "melting"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "sıcaklığın değişmediği aralığı belirle",
+              "dependsOn": [],
+              "evidenceIds": [
+                "plateau"
+              ],
+              "evidence": "4, 6 ve 8. dakikalarda sıcaklık 60 °C’dir."
+            },
+            {
+              "id": "s2",
+              "action": "ısıtıcının çalışmaya devam ettiğini kullan",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "heat-continues"
+              ],
+              "evidence": "Sabit güçlü ısıtıcı enerji vermeyi sürdürür."
+            },
+            {
+              "id": "s3",
+              "action": "başlangıç hâlinden değişimi yorumla",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "melting"
+              ],
+              "evidence": "Katı maddenin ilk platosu erimeyi gösterir."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Tabloda aynı sıcaklığın tekrarlandığı zamanları bul.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Soru, ısıtıcının kapatıldığını söylüyor mu?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Başlangıçta katı olan madde ilk hâl değişiminde neye dönüşür?",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "plateau-means-heater-off",
+              "text": "Isıtıcının sabit güçlü olduğu belirtilmiştir; sıcaklığın sabit kalması verilen enerjinin hâl değişiminde kullanılmasındandır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "heat-continues"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "constant-temperature-means-no-energy",
+              "text": "Sıcaklığın sabit kalması enerji alışverişi olmadığı anlamına gelmez; enerji tanecikler arası bağların değişmesinde kullanılır.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "heat-continues"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "first-plateau-read-as-boiling",
+              "text": "Başlangıçta katı olan madde ilk sıcaklık platosunda erir; 8. dakikadan sonra sıcaklığın yeniden artması sıvının ısındığını gösterir.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "melting"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Saf katı maddenin sıcaklığı 4–8. dakikalarda sabitken ısıtma sürer; bu aralık erime sürecidir.",
+              "supportingEvidenceIds": [
+                "plateau",
+                "heat-continues",
+                "melting"
+              ],
+              "contradictionEvidenceIds": []
+            }
+          ],
+          "misconceptionIds": [
+            "plateau-means-heater-off",
+            "constant-temperature-means-no-energy",
+            "first-plateau-read-as-boiling"
+          ],
+          "verifier": {
+            "solverId": "g8-science-model-rule-solver-v1",
+            "independentVerifierId": "g8-science-evidence-constraint-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "science-investigation-and-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "observe",
+              "control-variables",
+              "infer"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "science-g8-cross-05-simple-machines",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "PRE_TYMM",
+            "grade": 8,
+            "courseId": "fen-bilimleri",
+            "unitId": "basit-makineler",
+            "topicId": "basit-makineler",
+            "outcomeIds": [
+              "tr.pre-tymm.g8.fen.f-8-5-1-1"
+            ],
+            "sourceIds": [
+              "meb-legacy-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "simple-machine-advantage",
+            "secondarySkills": [
+              "force-distance-tradeoff",
+              "work-conservation"
+            ],
+            "cognitiveProcess": "evaluate-design-claim",
+            "knowledgeComponents": [
+              "inclined-plane",
+              "mechanical-advantage",
+              "work"
+            ],
+            "intendedDifficultyBand": "LGS_HIGH"
+          },
+          "content": {
+            "stimulusBlocks": [
+              "Bir öğrenci ağır bir sandığı kamyon kasasına çıkarmak için dört öneriyi değerlendiriyor. Sürtünmenin önemsenmediği düşünülüyor."
+            ],
+            "stem": "Basit makinelerin sağladığı avantajı doğru açıklayan öneri hangisidir?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Eğik düzlem kısaltıldıkça gereken kuvvet azalır; çünkü yük hedefe daha kısa yoldan ulaşır."
+              },
+              {
+                "id": "B",
+                "text": "Sabit makara kullanılırsa hem kuvvet azalır hem de sandığın aldığı yol kısalır; böylece işten kazanç sağlanır."
+              },
+              {
+                "id": "C",
+                "text": "Daha uzun bir eğik düzlem kullanılırsa daha az kuvvet gerekir; sandık daha uzun yol alır ve ideal durumda yapılan iş değişmez."
+              },
+              {
+                "id": "D",
+                "text": "Bir kaldıraç kullanıldığında makine sandığa ek enerji üretir; bu nedenle giriş işi çıkış işinden küçük olur."
+              }
+            ],
+            "model": {
+              "type": "simple-machine-principle",
+              "ideal": true
+            },
+            "requiredEvidenceIds": [
+              "less-force",
+              "greater-distance",
+              "no-work-gain"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "Eğik düzlem kısaltıldıkça gereken kuvvet azalır; çünkü yük hedefe daha kısa yoldan ulaşır.",
+                "correct": false,
+                "misconceptionId": "shorter-ramp-means-less-force",
+                "support": [],
+                "contradictions": [
+                  "less-force",
+                  "greater-distance"
+                ]
+              },
+              {
+                "id": "B",
+                "text": "Sabit makara kullanılırsa hem kuvvet azalır hem de sandığın aldığı yol kısalır; böylece işten kazanç sağlanır.",
+                "correct": false,
+                "misconceptionId": "fixed-pulley-force-and-work-gain",
+                "support": [],
+                "contradictions": [
+                  "less-force",
+                  "no-work-gain"
+                ]
+              },
+              {
+                "id": "C",
+                "text": "Daha uzun bir eğik düzlem kullanılırsa daha az kuvvet gerekir; sandık daha uzun yol alır ve ideal durumda yapılan iş değişmez.",
+                "correct": true,
+                "misconceptionId": null,
+                "support": [
+                  "less-force",
+                  "greater-distance",
+                  "no-work-gain"
+                ],
+                "contradictions": []
+              },
+              {
+                "id": "D",
+                "text": "Bir kaldıraç kullanıldığında makine sandığa ek enerji üretir; bu nedenle giriş işi çıkış işinden küçük olur.",
+                "correct": false,
+                "misconceptionId": "machine-creates-energy",
+                "support": [],
+                "contradictions": [
+                  "no-work-gain"
+                ]
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G8_SCIENCE_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "C",
+            "supportingEvidenceIds": [
+              "less-force",
+              "greater-distance",
+              "no-work-gain"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "önerilerde kuvvet ve yol değişimini birlikte incele",
+              "dependsOn": [],
+              "evidenceIds": [
+                "less-force"
+              ],
+              "evidence": "Kuvvet azalması çoğu basit makinede yol artışıyla karşılanır."
+            },
+            {
+              "id": "s2",
+              "action": "ideal basit makine ilkesini uygula",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "greater-distance"
+              ],
+              "evidence": "İşten kazanç olmaz; makine enerji üretmez."
+            },
+            {
+              "id": "s3",
+              "action": "eğik düzlem önerisini değerlendir",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "no-work-gain"
+              ],
+              "evidence": "Uzun rampa kuvveti azaltır, yolu artırır ve işi korur."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Yalnız kuvvete değil yükün aldığı yola da bak.",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "“Daha az kuvvet” ifadesi “daha az iş” anlamına gelir mi?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Aynı yüksekliğe daha uzun yoldan çıkmanın kuvvete etkisini düşün.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "shorter-ramp-means-less-force",
+              "text": "Aynı yüksekliğe daha kısa rampayla çıkmak eğimi artırır ve gereken kuvveti büyütür; kuvvet kazancı uzun yol karşılığında oluşur.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "less-force",
+                "greater-distance"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "fixed-pulley-force-and-work-gain",
+              "text": "Sabit makara esas olarak kuvvetin yönünü değiştirir; ideal basit makineler işten kazanç sağlamaz.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "less-force",
+                "no-work-gain"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Eğik düzlem kuvvetten kazanç sağlayabilir; bunun karşılığında yol artar ve ideal basit makinede işten kazanç olmaz.",
+              "supportingEvidenceIds": [
+                "less-force",
+                "greater-distance",
+                "no-work-gain"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "machine-creates-energy",
+              "text": "Kaldıraç kuvvet ve yol dağılımını değiştirir; enerji üretmez ve ideal durumda işten kazanç sağlamaz.",
+              "supportingEvidenceIds": [],
+              "contradictionEvidenceIds": [
+                "no-work-gain"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "shorter-ramp-means-less-force",
+            "fixed-pulley-force-and-work-gain",
+            "machine-creates-energy"
+          ],
+          "verifier": {
+            "solverId": "g8-science-model-rule-solver-v1",
+            "independentVerifierId": "g8-science-evidence-constraint-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "science-investigation-and-model",
+            "voice": "objective",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "observe",
+              "control-variables",
+              "infer"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-legacy-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "oecd-pisa-2025-framework"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        }
+      ]
+    },
+    {
+      "key": "g5-turkish",
+      "title": "5. Sınıf Türkçe",
+      "outcomes": [
+        {
+          "id": "tr.tymm.g5.turkce.t-o-5-5",
+          "schoolYear": "2026-2027",
+          "programFamily": "TYMM",
+          "grade": 5,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "turkce",
+          "courseName": "Türkçe",
+          "unitId": "okuma",
+          "unitName": "Okuma",
+          "topicId": "baglamdan-anlam",
+          "topicName": "Bağlamdan Anlam Tahmini",
+          "officialOutcomeCode": "T.O.5.5",
+          "officialOutcomeText": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+          "officialGuidanceNotes": [],
+          "sourceId": "meb-tymm-programs",
+          "sourceLocator": "Ortaokul Türkçe Dersi Öğretim Programı (5, 6, 7 ve 8. Sınıflar), Türkiye Yüzyılı Maarif Modeli, 2024; PDF s. 43; T.O.5.5; https://tymm.meb.gov.tr/upload/program/2024programtur5678Onayli.pdf",
+          "contentFramework": [],
+          "fieldSkills": [
+            "okuma"
+          ],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "evidence-linked-reading"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.tymm.g5.turkce.t-o-5-8",
+          "schoolYear": "2026-2027",
+          "programFamily": "TYMM",
+          "grade": 5,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "turkce",
+          "courseName": "Türkçe",
+          "unitId": "okuma",
+          "unitName": "Okuma",
+          "topicId": "basit-cikarim",
+          "topicName": "Basit Çıkarım",
+          "officialOutcomeCode": "T.O.5.8",
+          "officialOutcomeText": "Metnin derin anlamını belirlemeye yönelik basit çıkarımlar yapabilme",
+          "officialGuidanceNotes": [],
+          "sourceId": "meb-tymm-programs",
+          "sourceLocator": "Ortaokul Türkçe Dersi Öğretim Programı (5, 6, 7 ve 8. Sınıflar), Türkiye Yüzyılı Maarif Modeli, 2024; PDF s. 44; T.O.5.8; https://tymm.meb.gov.tr/upload/program/2024programtur5678Onayli.pdf",
+          "contentFramework": [],
+          "fieldSkills": [
+            "okuma"
+          ],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "evidence-linked-reading"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.tymm.g5.turkce.t-o-5-11",
+          "schoolYear": "2026-2027",
+          "programFamily": "TYMM",
+          "grade": 5,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "turkce",
+          "courseName": "Türkçe",
+          "unitId": "okuma",
+          "unitName": "Okuma",
+          "topicId": "metinler-arasi-karsilastirma",
+          "topicName": "Metinler Arası Karşılaştırma",
+          "officialOutcomeCode": "T.O.5.11",
+          "officialOutcomeText": "Metinler arası karşılaştırma yapabilme",
+          "officialGuidanceNotes": [],
+          "sourceId": "meb-tymm-programs",
+          "sourceLocator": "Ortaokul Türkçe Dersi Öğretim Programı (5, 6, 7 ve 8. Sınıflar), Türkiye Yüzyılı Maarif Modeli, 2024; PDF s. 44; T.O.5.11; https://tymm.meb.gov.tr/upload/program/2024programtur5678Onayli.pdf",
+          "contentFramework": [],
+          "fieldSkills": [
+            "okuma"
+          ],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "evidence-linked-reading"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.tymm.g5.turkce.t-o-5-14",
+          "schoolYear": "2026-2027",
+          "programFamily": "TYMM",
+          "grade": 5,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "turkce",
+          "courseName": "Türkçe",
+          "unitId": "okuma",
+          "unitName": "Okuma",
+          "topicId": "hikaye-unsurlari",
+          "topicName": "Hikâye Unsurları",
+          "officialOutcomeCode": "T.O.5.14",
+          "officialOutcomeText": "Öyküleyici metinlerdeki hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme",
+          "officialGuidanceNotes": [],
+          "sourceId": "meb-tymm-programs",
+          "sourceLocator": "Ortaokul Türkçe Dersi Öğretim Programı (5, 6, 7 ve 8. Sınıflar), Türkiye Yüzyılı Maarif Modeli, 2024; PDF s. 45; T.O.5.14; https://tymm.meb.gov.tr/upload/program/2024programtur5678Onayli.pdf",
+          "contentFramework": [],
+          "fieldSkills": [
+            "okuma"
+          ],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "evidence-linked-reading"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        },
+        {
+          "id": "tr.tymm.g5.turkce.t-o-5-20",
+          "schoolYear": "2026-2027",
+          "programFamily": "TYMM",
+          "grade": 5,
+          "schoolType": "ILKOKUL_ORTAOKUL_GENEL",
+          "courseId": "turkce",
+          "courseName": "Türkçe",
+          "unitId": "okuma",
+          "unitName": "Okuma",
+          "topicId": "soz-sanatlari",
+          "topicName": "Söz Sanatları",
+          "officialOutcomeCode": "T.O.5.20",
+          "officialOutcomeText": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme",
+          "officialGuidanceNotes": [],
+          "sourceId": "meb-tymm-programs",
+          "sourceLocator": "Ortaokul Türkçe Dersi Öğretim Programı (5, 6, 7 ve 8. Sınıflar), Türkiye Yüzyılı Maarif Modeli, 2024; PDF s. 46; T.O.5.20; https://tymm.meb.gov.tr/upload/program/2024programtur5678Onayli.pdf",
+          "contentFramework": [],
+          "fieldSkills": [
+            "okuma"
+          ],
+          "conceptualSkills": [],
+          "literacySkills": [],
+          "assessmentEvidenceTypes": [
+            "single-choice",
+            "evidence-linked-reading"
+          ],
+          "verificationStatus": "SOURCE_VERIFIED"
+        }
+      ],
+      "questions": [
+        {
+          "schemaVersion": "3.0",
+          "id": "turkish-g5-cross-01-context-word",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "TYMM",
+            "grade": 5,
+            "courseId": "turkce",
+            "unitId": "okuma",
+            "topicId": "baglamdan-anlam",
+            "outcomeIds": [
+              "tr.tymm.g5.turkce.t-o-5-5"
+            ],
+            "sourceIds": [
+              "meb-tymm-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "contextual-vocabulary-inference",
+            "secondarySkills": [
+              "detail-integration"
+            ],
+            "cognitiveProcess": "infer-from-context",
+            "knowledgeComponents": [
+              "descriptive-clues",
+              "word-meaning"
+            ],
+            "intendedDifficultyBand": "G5_MEDIUM"
+          },
+          "content": {
+            "stimulus": "Bahçenin köşesindeki kulübe, birbirine uymayan tahta parçalarından yapılmıştı. Çatısında eski tenekeler vardı; kapısı rüzgâr estiğinde yerinden çıkacakmış gibi sallanıyordu. Babam, “Bu derme çatma yapıyı kış gelmeden güçlendirmeliyiz.” dedi.",
+            "stimulusBlocks": null,
+            "stem": "“Derme çatma” sözü bu metinde hangi anlamda kullanılmıştır?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Farklı malzemelerle özensiz ve dayanıksız biçimde yapılmış"
+              },
+              {
+                "id": "B",
+                "text": "Uzun süre kullanılmadığı için içi boş bırakılmış"
+              },
+              {
+                "id": "C",
+                "text": "Küçük olduğu hâlde düzenli ve kullanışlı biçimde hazırlanmış"
+              },
+              {
+                "id": "D",
+                "text": "Eski görünmesi için özellikle farklı parçalarla süslenmiş"
+              }
+            ],
+            "requiredEvidenceIds": [
+              "unequal-materials",
+              "weak-construction",
+              "needs-repair"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "Farklı malzemelerle özensiz ve dayanıksız biçimde yapılmış",
+                "correct": true,
+                "support": [
+                  "unequal-materials",
+                  "weak-construction",
+                  "needs-repair"
+                ],
+                "partialSupport": [],
+                "contradictions": [],
+                "scope": "preserved",
+                "fit": "full",
+                "misconceptionId": null
+              },
+              {
+                "id": "B",
+                "text": "Uzun süre kullanılmadığı için içi boş bırakılmış",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "needs-repair"
+                ],
+                "contradictions": [
+                  "unequal-materials"
+                ],
+                "scope": "shifted",
+                "fit": "partial",
+                "misconceptionId": "repair-read-as-abandoned"
+              },
+              {
+                "id": "C",
+                "text": "Küçük olduğu hâlde düzenli ve kullanışlı biçimde hazırlanmış",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "unequal-materials"
+                ],
+                "contradictions": [
+                  "weak-construction",
+                  "needs-repair"
+                ],
+                "scope": "reversed",
+                "fit": "partial",
+                "misconceptionId": "small-read-as-useful"
+              },
+              {
+                "id": "D",
+                "text": "Eski görünmesi için özellikle farklı parçalarla süslenmiş",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "unequal-materials"
+                ],
+                "contradictions": [
+                  "weak-construction",
+                  "needs-repair"
+                ],
+                "scope": "expanded",
+                "fit": "partial",
+                "misconceptionId": "description-read-as-design-choice"
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G5_TURKISH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "A",
+            "supportingEvidenceIds": [
+              "unequal-materials",
+              "weak-construction",
+              "needs-repair"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "sözcüğün çevresindeki ayrıntıları belirle",
+              "dependsOn": [],
+              "evidenceIds": [
+                "unequal-materials"
+              ],
+              "evidence": "Uyumsuz tahtalar, eski tenekeler ve sallanan kapı anlatılır."
+            },
+            {
+              "id": "s2",
+              "action": "ayrıntıların ortak anlamını bul",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "weak-construction"
+              ],
+              "evidence": "Ayrıntılar yapının özensiz ve zayıf olduğunu gösterir."
+            },
+            {
+              "id": "s3",
+              "action": "anlamı cümle içinde dene",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "needs-repair"
+              ],
+              "evidence": "“Özensiz ve dayanıksız” anlamı cümleye uygundur."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Sözcükten önce kulübenin hangi özellikleri veriliyor?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Bu özellikler sağlam ve planlı bir yapıya mı işaret ediyor?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Seçtiğin anlamı “derme çatma” yerine koyup cümleyi yeniden oku.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Tahtaların uyumsuzluğu, kapının sallanması ve yapının güçlendirilme gereği sözün özensiz ve dayanıksız yapı anlamını destekler.",
+              "supportingEvidenceIds": [
+                "unequal-materials",
+                "weak-construction",
+                "needs-repair"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "repair-read-as-abandoned",
+              "text": "Kulübenin onarılacak olması kullanılmadığını göstermez; metin asıl olarak yapımındaki uyumsuz ve zayıf malzemeleri vurgular.",
+              "supportingEvidenceIds": [
+                "needs-repair"
+              ],
+              "contradictionEvidenceIds": [
+                "unequal-materials"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "small-read-as-useful",
+              "text": "Metinde kulübenin küçük olduğu söylenmez; ayrıca sallanan kapı ve güçlendirme gereği düzenli ve sağlam olmadığını gösterir.",
+              "supportingEvidenceIds": [
+                "unequal-materials"
+              ],
+              "contradictionEvidenceIds": [
+                "weak-construction",
+                "needs-repair"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "description-read-as-design-choice",
+              "text": "Farklı parçalar dekor amacıyla kullanılmamıştır; yapının dayanıksızlığı ve onarım ihtiyacı bunun plansız bir yapım olduğunu gösterir.",
+              "supportingEvidenceIds": [
+                "unequal-materials"
+              ],
+              "contradictionEvidenceIds": [
+                "weak-construction",
+                "needs-repair"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "repair-read-as-abandoned",
+            "small-read-as-useful",
+            "description-read-as-design-choice"
+          ],
+          "verifier": {
+            "solverId": "g5-turkish-semantic-evidence-solver-v1",
+            "independentVerifierId": "g5-turkish-evidence-intersection-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "age-appropriate-varied-reading",
+            "voice": "natural",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "read",
+              "connect-clues",
+              "justify"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-tymm-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "user-ozdebir-paragraph-sample"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "turkish-g5-cross-02-simple-inference",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "TYMM",
+            "grade": 5,
+            "courseId": "turkce",
+            "unitId": "okuma",
+            "topicId": "basit-cikarim",
+            "outcomeIds": [
+              "tr.tymm.g5.turkce.t-o-5-8"
+            ],
+            "sourceIds": [
+              "meb-tymm-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "simple-supported-inference",
+            "secondarySkills": [
+              "cause-effect"
+            ],
+            "cognitiveProcess": "combine-details",
+            "knowledgeComponents": [
+              "implicit-result",
+              "behaviour-evidence"
+            ],
+            "intendedDifficultyBand": "G5_MEDIUM_HIGH"
+          },
+          "content": {
+            "stimulus": "Okul kütüphanecisi, ay sonunda en çok yıpranan kitap kapaklarını ve öğrencilerin öneri kutusuna bıraktığı notları inceledi. Sonraki hafta macera kitaplarını daha görünür bir rafa taşıdı, az bulunan bilim kitaplarından yeni örnekler istedi. Bir ay sonra ödünç alınan kitap sayısı arttı.",
+            "stimulusBlocks": null,
+            "stem": "Bu metinden aşağıdakilerden hangisi çıkarılabilir?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Ödünç alma sayısındaki artışın tek nedeni kitap kapaklarının yenilenmesidir."
+              },
+              {
+                "id": "B",
+                "text": "Öğrenciler yalnız macera kitaplarını sevdiği için bilim kitapları raftan kaldırılmıştır."
+              },
+              {
+                "id": "C",
+                "text": "Kütüphanedeki düzenlemeler, öğrencilerin okuma ilgileri dikkate alınarak yapılmıştır."
+              },
+              {
+                "id": "D",
+                "text": "Öneri kutusuna not bırakmayan öğrencilerin kitap seçmesine izin verilmemiştir."
+              }
+            ],
+            "requiredEvidenceIds": [
+              "usage-traces",
+              "student-requests",
+              "collection-change"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "Ödünç alma sayısındaki artışın tek nedeni kitap kapaklarının yenilenmesidir.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "usage-traces"
+                ],
+                "contradictions": [
+                  "student-requests",
+                  "collection-change"
+                ],
+                "scope": "overclaimed",
+                "fit": "partial",
+                "misconceptionId": "single-cause-from-multiple-actions"
+              },
+              {
+                "id": "B",
+                "text": "Öğrenciler yalnız macera kitaplarını sevdiği için bilim kitapları raftan kaldırılmıştır.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "usage-traces",
+                  "collection-change"
+                ],
+                "contradictions": [
+                  "student-requests"
+                ],
+                "scope": "expanded",
+                "fit": "partial",
+                "misconceptionId": "one-interest-excludes-another"
+              },
+              {
+                "id": "C",
+                "text": "Kütüphanedeki düzenlemeler, öğrencilerin okuma ilgileri dikkate alınarak yapılmıştır.",
+                "correct": true,
+                "support": [
+                  "usage-traces",
+                  "student-requests",
+                  "collection-change"
+                ],
+                "partialSupport": [],
+                "contradictions": [],
+                "scope": "preserved",
+                "fit": "full",
+                "misconceptionId": null
+              },
+              {
+                "id": "D",
+                "text": "Öneri kutusuna not bırakmayan öğrencilerin kitap seçmesine izin verilmemiştir.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "student-requests"
+                ],
+                "contradictions": [
+                  "collection-change"
+                ],
+                "scope": "invented",
+                "fit": "partial",
+                "misconceptionId": "feedback-system-read-as-restriction"
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G5_TURKISH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "C",
+            "supportingEvidenceIds": [
+              "usage-traces",
+              "student-requests",
+              "collection-change"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "kütüphanecinin hangi bilgileri topladığını belirle",
+              "dependsOn": [],
+              "evidenceIds": [
+                "usage-traces"
+              ],
+              "evidence": "Kapak yıpranması ve öğrenci notları incelenmiştir."
+            },
+            {
+              "id": "s2",
+              "action": "bu bilgilerin hangi değişikliklere yol açtığını eşleştir",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "student-requests"
+              ],
+              "evidence": "Raf yeri ve kitap siparişi değiştirilmiştir."
+            },
+            {
+              "id": "s3",
+              "action": "ortak sonucu çıkar",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "collection-change"
+              ],
+              "evidence": "Düzenleme öğrencilerin kullanım ve isteklerine göre yapılmıştır."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Kütüphaneci karar vermeden önce nelere bakmış?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Toplanan her bilgi hangi uygulamaya dönüşmüş?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "İki bilgi kaynağını birlikte açıklayan seçeneği ara.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "single-cause-from-multiple-actions",
+              "text": "Kapakların yenilendiği söylenmez; raf düzeni ve kitap çeşitliliği değişmiştir, artışı tek bir nedene bağlamak mümkün değildir.",
+              "supportingEvidenceIds": [
+                "usage-traces"
+              ],
+              "contradictionEvidenceIds": [
+                "student-requests",
+                "collection-change"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "one-interest-excludes-another",
+              "text": "Macera kitapları görünür yapılırken bilim kitapları kaldırılmamış, tersine yeni bilim kitapları istenmiştir; iki ilgi alanı birlikte gözetilmiştir.",
+              "supportingEvidenceIds": [
+                "usage-traces",
+                "collection-change"
+              ],
+              "contradictionEvidenceIds": [
+                "student-requests"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Yıpranan kapaklar kullanım bilgisini, öneri notları öğrenci isteğini göstermiş; raf ve kitap seçimleri bu iki bilgiye göre değiştirilmiştir.",
+              "supportingEvidenceIds": [
+                "usage-traces",
+                "student-requests",
+                "collection-change"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "feedback-system-read-as-restriction",
+              "text": "Öneri kutusu öğrenci görüşlerini toplamak için kullanılmıştır; kitap seçme hakkını sınırlayan bir uygulamadan söz edilmez.",
+              "supportingEvidenceIds": [
+                "student-requests"
+              ],
+              "contradictionEvidenceIds": [
+                "collection-change"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "single-cause-from-multiple-actions",
+            "one-interest-excludes-another",
+            "feedback-system-read-as-restriction"
+          ],
+          "verifier": {
+            "solverId": "g5-turkish-semantic-evidence-solver-v1",
+            "independentVerifierId": "g5-turkish-evidence-intersection-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "age-appropriate-varied-reading",
+            "voice": "natural",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "read",
+              "connect-clues",
+              "justify"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-tymm-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "user-ozdebir-paragraph-sample"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "turkish-g5-cross-03-intertext-comparison",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "TYMM",
+            "grade": 5,
+            "courseId": "turkce",
+            "unitId": "okuma",
+            "topicId": "metinler-arasi-karsilastirma",
+            "outcomeIds": [
+              "tr.tymm.g5.turkce.t-o-5-11"
+            ],
+            "sourceIds": [
+              "meb-tymm-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "intertext-comparison",
+            "secondarySkills": [
+              "common-topic",
+              "different-emphasis"
+            ],
+            "cognitiveProcess": "compare-and-synthesize",
+            "knowledgeComponents": [
+              "shared-setting",
+              "distinct-benefits"
+            ],
+            "intendedDifficultyBand": "G5_HIGH"
+          },
+          "content": {
+            "stimulus": null,
+            "stimulusBlocks": [
+              "I. Metin: Mahalle bahçesine her gidişimde küçük bir büyüteç götürüyorum. Yaprakların altındaki böcekleri, toprağın nemini ve yeni açan çiçekleri gözlemliyorum. Burası bana ders kitaplarında gördüğüm canlıları yakından tanıma fırsatı veriyor.",
+              "II. Metin: Mahalle bahçesinde akşamları farklı yaşlardan insanlar buluşuyor. Kimi fide getiriyor, kimi sulama sırasını düzenliyor. Birlikte çalışırken daha önce selamlaşmayan komşular bile uzun uzun konuşuyor."
+            ],
+            "stem": "Bu iki metinle ilgili en uygun değerlendirme hangisidir?",
+            "options": [
+              {
+                "id": "A",
+                "text": "İki metinde de bahçedeki bitkilerin yetiştirilme aşamaları aynı sırayla açıklanmıştır."
+              },
+              {
+                "id": "B",
+                "text": "İki metin de bahçede çalışmanın yalnız çocukların sorumluluk duygusunu geliştirdiğini savunmuştur."
+              },
+              {
+                "id": "C",
+                "text": "Birinci metin bahçenin yararlarını anlatmış, ikinci metin ortak kullanımın sorunlarını eleştirmiştir."
+              },
+              {
+                "id": "D",
+                "text": "Aynı ortamın bir metinde doğayı öğrenmeye, diğerinde komşuluk ilişkilerine katkısı anlatılmıştır."
+              }
+            ],
+            "requiredEvidenceIds": [
+              "shared-garden",
+              "learning-benefit",
+              "social-benefit"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "İki metinde de bahçedeki bitkilerin yetiştirilme aşamaları aynı sırayla açıklanmıştır.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "shared-garden"
+                ],
+                "contradictions": [
+                  "learning-benefit",
+                  "social-benefit"
+                ],
+                "scope": "shifted",
+                "fit": "partial",
+                "misconceptionId": "topic-word-match"
+              },
+              {
+                "id": "B",
+                "text": "İki metin de bahçede çalışmanın yalnız çocukların sorumluluk duygusunu geliştirdiğini savunmuştur.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "shared-garden",
+                  "social-benefit"
+                ],
+                "contradictions": [
+                  "learning-benefit"
+                ],
+                "scope": "narrowed",
+                "fit": "partial",
+                "misconceptionId": "shared-setting-read-as-same-message"
+              },
+              {
+                "id": "C",
+                "text": "Birinci metin bahçenin yararlarını anlatmış, ikinci metin ortak kullanımın sorunlarını eleştirmiştir.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "shared-garden",
+                  "learning-benefit"
+                ],
+                "contradictions": [
+                  "social-benefit"
+                ],
+                "scope": "reversed",
+                "fit": "partial",
+                "misconceptionId": "cooperation-read-as-conflict"
+              },
+              {
+                "id": "D",
+                "text": "Aynı ortamın bir metinde doğayı öğrenmeye, diğerinde komşuluk ilişkilerine katkısı anlatılmıştır.",
+                "correct": true,
+                "support": [
+                  "shared-garden",
+                  "learning-benefit",
+                  "social-benefit"
+                ],
+                "partialSupport": [],
+                "contradictions": [],
+                "scope": "preserved",
+                "fit": "full",
+                "misconceptionId": null
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G5_TURKISH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "D",
+            "supportingEvidenceIds": [
+              "shared-garden",
+              "learning-benefit",
+              "social-benefit"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "iki metnin ortak konusunu bul",
+              "dependsOn": [],
+              "evidenceIds": [
+                "shared-garden"
+              ],
+              "evidence": "Her iki metin mahalle bahçesini anlatır."
+            },
+            {
+              "id": "s2",
+              "action": "her metnin ayrı vurgusunu belirle",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "learning-benefit"
+              ],
+              "evidence": "I. metin gözlem ve öğrenme, II. metin iletişim ve iş birliği üzerinedir."
+            },
+            {
+              "id": "s3",
+              "action": "ortak konu ile farklı vurguları birleştir",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "social-benefit"
+              ],
+              "evidence": "Aynı ortam iki farklı katkısıyla ele alınmıştır."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "İki metinde tekrar eden yer veya konu nedir?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Birinci ve ikinci metnin kazandırdığı yararlar aynı mı?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Doğru seçenek hem ortaklığı hem farkı söylemeli.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "topic-word-match",
+              "text": "Metinlerde ekim aşamaları sıralanmaz; bahçe sözcüğünün ortak olması, anlatılan amaçların aynı olduğu anlamına gelmez.",
+              "supportingEvidenceIds": [
+                "shared-garden"
+              ],
+              "contradictionEvidenceIds": [
+                "learning-benefit",
+                "social-benefit"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "shared-setting-read-as-same-message",
+              "text": "Birinci metinde yaş veya sorumluluk değil doğa gözlemi vardır; ikinci metin de yalnız çocuklardan değil farklı yaşlardaki komşulardan söz eder.",
+              "supportingEvidenceIds": [
+                "shared-garden",
+                "social-benefit"
+              ],
+              "contradictionEvidenceIds": [
+                "learning-benefit"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "cooperation-read-as-conflict",
+              "text": "İkinci metin sorun anlatmaz; birlikte sulama ve konuşma, bahçenin toplumsal katkısı olarak olumlu sunulur.",
+              "supportingEvidenceIds": [
+                "shared-garden",
+                "learning-benefit"
+              ],
+              "contradictionEvidenceIds": [
+                "social-benefit"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "İki metnin ortak yeri mahalle bahçesidir; birinci metin gözlem ve öğrenmeyi, ikinci metin birlikte çalışma ve iletişimi öne çıkarır.",
+              "supportingEvidenceIds": [
+                "shared-garden",
+                "learning-benefit",
+                "social-benefit"
+              ],
+              "contradictionEvidenceIds": []
+            }
+          ],
+          "misconceptionIds": [
+            "topic-word-match",
+            "shared-setting-read-as-same-message",
+            "cooperation-read-as-conflict"
+          ],
+          "verifier": {
+            "solverId": "g5-turkish-semantic-evidence-solver-v1",
+            "independentVerifierId": "g5-turkish-evidence-intersection-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "age-appropriate-varied-reading",
+            "voice": "natural",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "read",
+              "connect-clues",
+              "justify"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-tymm-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "user-ozdebir-paragraph-sample"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "turkish-g5-cross-04-story-elements",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "TYMM",
+            "grade": 5,
+            "courseId": "turkce",
+            "unitId": "okuma",
+            "topicId": "hikaye-unsurlari",
+            "outcomeIds": [
+              "tr.tymm.g5.turkce.t-o-5-14"
+            ],
+            "sourceIds": [
+              "meb-tymm-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "narrative-element-analysis",
+            "secondarySkills": [
+              "problem-solution",
+              "character-action"
+            ],
+            "cognitiveProcess": "analyse-story-structure",
+            "knowledgeComponents": [
+              "character",
+              "conflict",
+              "resolution"
+            ],
+            "intendedDifficultyBand": "G5_MEDIUM_HIGH"
+          },
+          "content": {
+            "stimulus": "Elif, okul sergisi için hazırladığı fasulye fidelerini cuma günü sınıfın pencere önüne dizdi. Gece beklenmedik bir fırtına çıkınca pencerenin kenarından içeri su sızdı. Cumartesi sabahı okula gelen güvenlik görevlisi durumu öğretmene bildirdi. Elif ve öğretmeni fideleri kuru bir masaya taşıdı, ıslanan etiketleri yeniden yazdı. Pazartesi günü sergi planlandığı gibi açıldı.",
+            "stimulusBlocks": null,
+            "stem": "Metindeki sorun ve bu sorunun çözümü hangi seçenekte doğru eşleştirilmiştir?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Sorun: Sergi için hiç fide yetiştirilememesi — Çözüm: Yeni tohumların pazartesi günü ekilmesi"
+              },
+              {
+                "id": "B",
+                "text": "Sorun: Fırtınada sınıfa su sızıp fideleri ve etiketleri tehlikeye atması — Çözüm: Fidelerin taşınıp etiketlerin yenilenmesi"
+              },
+              {
+                "id": "C",
+                "text": "Sorun: Güvenlik görevlisinin sergiye katılamaması — Çözüm: Öğretmenin sergiyi başka bir güne ertelemesi"
+              },
+              {
+                "id": "D",
+                "text": "Sorun: Elif’in etiketleri yanlış yazması — Çözüm: Fidelerin pencere önüne yeniden dizilmesi"
+              }
+            ],
+            "requiredEvidenceIds": [
+              "storm-water",
+              "seedlings-at-risk",
+              "move-and-relabel"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "Sorun: Sergi için hiç fide yetiştirilememesi — Çözüm: Yeni tohumların pazartesi günü ekilmesi",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "seedlings-at-risk"
+                ],
+                "contradictions": [
+                  "move-and-relabel"
+                ],
+                "scope": "invented",
+                "fit": "partial",
+                "misconceptionId": "risk-read-as-total-loss"
+              },
+              {
+                "id": "B",
+                "text": "Sorun: Fırtınada sınıfa su sızıp fideleri ve etiketleri tehlikeye atması — Çözüm: Fidelerin taşınıp etiketlerin yenilenmesi",
+                "correct": true,
+                "support": [
+                  "storm-water",
+                  "seedlings-at-risk",
+                  "move-and-relabel"
+                ],
+                "partialSupport": [],
+                "contradictions": [],
+                "scope": "preserved",
+                "fit": "full",
+                "misconceptionId": null
+              },
+              {
+                "id": "C",
+                "text": "Sorun: Güvenlik görevlisinin sergiye katılamaması — Çözüm: Öğretmenin sergiyi başka bir güne ertelemesi",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "storm-water"
+                ],
+                "contradictions": [
+                  "move-and-relabel"
+                ],
+                "scope": "shifted",
+                "fit": "partial",
+                "misconceptionId": "minor-character-read-as-conflict"
+              },
+              {
+                "id": "D",
+                "text": "Sorun: Elif’in etiketleri yanlış yazması — Çözüm: Fidelerin pencere önüne yeniden dizilmesi",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "move-and-relabel"
+                ],
+                "contradictions": [
+                  "storm-water",
+                  "seedlings-at-risk"
+                ],
+                "scope": "reversed",
+                "fit": "partial",
+                "misconceptionId": "repair-action-read-as-original-problem"
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G5_TURKISH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "B",
+            "supportingEvidenceIds": [
+              "storm-water",
+              "seedlings-at-risk",
+              "move-and-relabel"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "olay akışını bozan durumu belirle",
+              "dependsOn": [],
+              "evidenceIds": [
+                "storm-water"
+              ],
+              "evidence": "Fırtına nedeniyle sınıfa su sızar."
+            },
+            {
+              "id": "s2",
+              "action": "bu olayın neyi tehlikeye attığını bul",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "seedlings-at-risk"
+              ],
+              "evidence": "Fideler ve etiketler zarar görme riski taşır."
+            },
+            {
+              "id": "s3",
+              "action": "kahramanların çözüm davranışlarını eşleştir",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "move-and-relabel"
+              ],
+              "evidence": "Fideler taşınır, etiketler yenilenir."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "Planın normal ilerlemesini hangi olay değiştirdi?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Su sızıntısı sergide kullanılacak hangi şeyleri etkiliyor?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Sorundan sonra yapılan hangi iki işlem doğrudan düzeltme sağlar?",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "risk-read-as-total-loss",
+              "text": "Fideler yetişmiştir ve atılmamıştır; kuru masaya taşınıp etiketleri yenilenerek sergide kullanılmıştır.",
+              "supportingEvidenceIds": [
+                "seedlings-at-risk"
+              ],
+              "contradictionEvidenceIds": [
+                "move-and-relabel"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "Fırtına ve su sızıntısı temel sorunu oluşturur; fidelerin kuru yere alınması ve etiketlerin yeniden yazılması doğrudan bu sorunu çözer.",
+              "supportingEvidenceIds": [
+                "storm-water",
+                "seedlings-at-risk",
+                "move-and-relabel"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "C",
+              "correct": false,
+              "misconceptionId": "minor-character-read-as-conflict",
+              "text": "Güvenlik görevlisi yalnız durumu bildirir; katılımıyla ilgili sorun yoktur ve sergi ertelenmeden pazartesi açılır.",
+              "supportingEvidenceIds": [
+                "storm-water"
+              ],
+              "contradictionEvidenceIds": [
+                "move-and-relabel"
+              ]
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "repair-action-read-as-original-problem",
+              "text": "Etiketler yanlış olduğu için değil ıslandığı için yeniden yazılmıştır; fideler pencereye değil kuru bir masaya taşınmıştır.",
+              "supportingEvidenceIds": [
+                "move-and-relabel"
+              ],
+              "contradictionEvidenceIds": [
+                "storm-water",
+                "seedlings-at-risk"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "risk-read-as-total-loss",
+            "minor-character-read-as-conflict",
+            "repair-action-read-as-original-problem"
+          ],
+          "verifier": {
+            "solverId": "g5-turkish-semantic-evidence-solver-v1",
+            "independentVerifierId": "g5-turkish-evidence-intersection-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "age-appropriate-varied-reading",
+            "voice": "natural",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "read",
+              "connect-clues",
+              "justify"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-tymm-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "user-ozdebir-paragraph-sample"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        },
+        {
+          "schemaVersion": "3.0",
+          "id": "turkish-g5-cross-05-figures-of-speech",
+          "curriculum": {
+            "country": "TR",
+            "schoolYear": "2026-2027",
+            "programFamily": "TYMM",
+            "grade": 5,
+            "courseId": "turkce",
+            "unitId": "okuma",
+            "topicId": "soz-sanatlari",
+            "outcomeIds": [
+              "tr.tymm.g5.turkce.t-o-5-20"
+            ],
+            "sourceIds": [
+              "meb-tymm-programs"
+            ]
+          },
+          "construct": {
+            "primarySkill": "figure-of-speech-analysis",
+            "secondarySkills": [
+              "simile",
+              "personification"
+            ],
+            "cognitiveProcess": "identify-and-explain",
+            "knowledgeComponents": [
+              "comparison-marker",
+              "human-action"
+            ],
+            "intendedDifficultyBand": "G5_HIGH"
+          },
+          "content": {
+            "stimulus": "Rüzgâr, kuru yaprakları yaramaz çocuklar gibi sokağın başından sonuna koşturuyor; kapı aralıkları da ince ince ıslık çalıyordu.",
+            "stimulusBlocks": null,
+            "stem": "Bu cümledeki söz sanatlarıyla ilgili doğru açıklama hangisidir?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Kapı aralıkları yapraklara benzetilmiş, rüzgâr ile sessizlik arasında karşıtlık kurulmuştur."
+              },
+              {
+                "id": "B",
+                "text": "Rüzgârın çok güçlü olduğu abartılmış, yaprakların sesi konuşturma yoluyla doğrudan verilmiştir."
+              },
+              {
+                "id": "C",
+                "text": "Yapraklar çocuklara benzetilmiş, kapı aralıklarına insanın yapabileceği bir davranış verilmiştir."
+              },
+              {
+                "id": "D",
+                "text": "Yapraklar gerçekten koştuğu için anlatım gerçek anlamlıdır; ıslık sözü yalnız çıkan sesin adıdır."
+              }
+            ],
+            "requiredEvidenceIds": [
+              "simile-marker",
+              "leaves-compared-to-children",
+              "doors-human-action"
+            ],
+            "optionSemantics": [
+              {
+                "id": "A",
+                "text": "Kapı aralıkları yapraklara benzetilmiş, rüzgâr ile sessizlik arasında karşıtlık kurulmuştur.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "simile-marker"
+                ],
+                "contradictions": [
+                  "leaves-compared-to-children",
+                  "doors-human-action"
+                ],
+                "scope": "reversed",
+                "fit": "partial",
+                "misconceptionId": "comparison-direction-reversed"
+              },
+              {
+                "id": "B",
+                "text": "Rüzgârın çok güçlü olduğu abartılmış, yaprakların sesi konuşturma yoluyla doğrudan verilmiştir.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "doors-human-action"
+                ],
+                "contradictions": [
+                  "simile-marker",
+                  "leaves-compared-to-children"
+                ],
+                "scope": "shifted",
+                "fit": "partial",
+                "misconceptionId": "personification-confused-with-speaking"
+              },
+              {
+                "id": "C",
+                "text": "Yapraklar çocuklara benzetilmiş, kapı aralıklarına insanın yapabileceği bir davranış verilmiştir.",
+                "correct": true,
+                "support": [
+                  "simile-marker",
+                  "leaves-compared-to-children",
+                  "doors-human-action"
+                ],
+                "partialSupport": [],
+                "contradictions": [],
+                "scope": "preserved",
+                "fit": "full",
+                "misconceptionId": null
+              },
+              {
+                "id": "D",
+                "text": "Yapraklar gerçekten koştuğu için anlatım gerçek anlamlıdır; ıslık sözü yalnız çıkan sesin adıdır.",
+                "correct": false,
+                "support": [],
+                "partialSupport": [
+                  "doors-human-action"
+                ],
+                "contradictions": [
+                  "simile-marker",
+                  "leaves-compared-to-children"
+                ],
+                "scope": "literalized",
+                "fit": "partial",
+                "misconceptionId": "figurative-language-read-literally"
+              }
+            ],
+            "humanReview": {
+              "status": "NOT_MEASURED",
+              "batch": "CROSS_TRANSFER_G5_TURKISH_5",
+              "gameAdaptationAllowed": false
+            }
+          },
+          "itemFormat": "single-choice",
+          "responseModel": {
+            "optionIds": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "optionCount": 4
+          },
+          "answerKey": {
+            "optionId": "C",
+            "supportingEvidenceIds": [
+              "simile-marker",
+              "leaves-compared-to-children",
+              "doors-human-action"
+            ]
+          },
+          "solutionGraph": [
+            {
+              "id": "s1",
+              "action": "“gibi” sözcüğünün bağladığı varlıkları bul",
+              "dependsOn": [],
+              "evidenceIds": [
+                "simile-marker"
+              ],
+              "evidence": "Yapraklar yaramaz çocuklara benzetilir."
+            },
+            {
+              "id": "s2",
+              "action": "insana özgü davranışı belirle",
+              "dependsOn": [
+                "s1"
+              ],
+              "evidenceIds": [
+                "leaves-compared-to-children"
+              ],
+              "evidence": "Islık çalmak kapı aralıklarına verilmiştir."
+            },
+            {
+              "id": "s3",
+              "action": "iki sanatı birlikte adlandır",
+              "dependsOn": [
+                "s2"
+              ],
+              "evidenceIds": [
+                "doors-human-action"
+              ],
+              "evidence": "Benzetme ve kişileştirme birlikte kullanılmıştır."
+            }
+          ],
+          "hints": [
+            {
+              "level": 1,
+              "text": "“Gibi” sözcüğünün iki yanında hangi varlıklar var?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 2,
+              "text": "Cansız bir varlık hangi insan davranışını yapıyor?",
+              "revealsAnswer": false
+            },
+            {
+              "level": 3,
+              "text": "Doğru seçenekte hem karşılaştırma hem insan özelliği açıklanmalı.",
+              "revealsAnswer": false
+            }
+          ],
+          "optionFeedback": [
+            {
+              "optionId": "A",
+              "correct": false,
+              "misconceptionId": "comparison-direction-reversed",
+              "text": "Benzetilen kapı değil yapraklardır; ayrıca cümlede rüzgâr ve sessizlik karşılaştırılarak bir karşıtlık kurulmamıştır.",
+              "supportingEvidenceIds": [
+                "simile-marker"
+              ],
+              "contradictionEvidenceIds": [
+                "leaves-compared-to-children",
+                "doors-human-action"
+              ]
+            },
+            {
+              "optionId": "B",
+              "correct": false,
+              "misconceptionId": "personification-confused-with-speaking",
+              "text": "Cümlede rüzgârın gücü olağanüstü büyütülmez ve yapraklar konuşmaz; belirgin sanatlar benzetme ile kişileştirmedir.",
+              "supportingEvidenceIds": [
+                "doors-human-action"
+              ],
+              "contradictionEvidenceIds": [
+                "simile-marker",
+                "leaves-compared-to-children"
+              ]
+            },
+            {
+              "optionId": "C",
+              "correct": true,
+              "misconceptionId": null,
+              "text": "“Yaramaz çocuklar gibi” sözü benzetme kurar; kapı aralıklarının ıslık çalması ise cansız bir varlığa insan özelliği kazandırır.",
+              "supportingEvidenceIds": [
+                "simile-marker",
+                "leaves-compared-to-children",
+                "doors-human-action"
+              ],
+              "contradictionEvidenceIds": []
+            },
+            {
+              "optionId": "D",
+              "correct": false,
+              "misconceptionId": "figurative-language-read-literally",
+              "text": "Yaprakların çocuklar gibi koşması ve kapının ıslık çalması gerçek anlamda mümkün değildir; bu ifadeler hayal gücüne dayalı söz sanatlarıdır.",
+              "supportingEvidenceIds": [
+                "doors-human-action"
+              ],
+              "contradictionEvidenceIds": [
+                "simile-marker",
+                "leaves-compared-to-children"
+              ]
+            }
+          ],
+          "misconceptionIds": [
+            "comparison-direction-reversed",
+            "personification-confused-with-speaking",
+            "figurative-language-read-literally"
+          ],
+          "verifier": {
+            "solverId": "g5-turkish-semantic-evidence-solver-v1",
+            "independentVerifierId": "g5-turkish-evidence-intersection-verifier-v1",
+            "verified": true
+          },
+          "styleProfile": {
+            "genre": "age-appropriate-varied-reading",
+            "voice": "natural",
+            "sourceMode": "original-curriculum-aligned",
+            "rhetoricalMoves": [
+              "read",
+              "connect-clues",
+              "justify"
+            ]
+          },
+          "provenance": {
+            "generatedFromSourceIds": [
+              "meb-tymm-programs"
+            ],
+            "styleReferenceIds": [
+              "meb-mcq-writing-guide",
+              "user-ozdebir-paragraph-sample"
+            ],
+            "copiedText": false
+          },
+          "contentStatus": "HUMAN_REVIEW_REQUIRED",
+          "gameBindings": []
+        }
+      ]
+    }
+  ]
+}
