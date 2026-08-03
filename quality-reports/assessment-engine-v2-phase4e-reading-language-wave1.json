@@ -1,0 +1,3896 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T14:00:19.505Z",
+  "title": "Phase 4E — 8. Sınıf Türkçe Okuma ve Dil Dalgası 1",
+  "status": "ENGINEERING_PASS_HUMAN_REVIEW_REQUIRED",
+  "productReady": false,
+  "gameAdaptationAllowed": false,
+  "humanReviewStatus": "NOT_MEASURED_FOR_WAVE1",
+  "previousHumanReview": [
+    {
+      "questionId": "tr-g8-pilot02-01-idiom-contribution-community-oven",
+      "batchId": "GRADE8_TURKISH_PILOT_02_CALIBRATION_5",
+      "decision": "APPROVED_FOR_NEXT_WAVE",
+      "reviewedAt": "2026-08-03T13:46:45+03:00",
+      "reviewerType": "USER_HUMAN_REVIEW",
+      "gameAdaptationAllowed": false,
+      "note": "Soru grubu genel kalite yönü açısından kabul edildi; tam Türkçe kapsamı tamamlanmadan oyun adaptasyonu açılmayacak."
+    },
+    {
+      "questionId": "tr-g8-pilot02-02-figurative-language-station",
+      "batchId": "GRADE8_TURKISH_PILOT_02_CALIBRATION_5",
+      "decision": "APPROVED_FOR_NEXT_WAVE",
+      "reviewedAt": "2026-08-03T13:46:45+03:00",
+      "reviewerType": "USER_HUMAN_REVIEW",
+      "gameAdaptationAllowed": false,
+      "note": "Soru grubu genel kalite yönü açısından kabul edildi; tam Türkçe kapsamı tamamlanmadan oyun adaptasyonu açılmayacak."
+    },
+    {
+      "questionId": "tr-g8-pilot02-03-narration-description-workshop",
+      "batchId": "GRADE8_TURKISH_PILOT_02_CALIBRATION_5",
+      "decision": "APPROVED_FOR_NEXT_WAVE",
+      "reviewedAt": "2026-08-03T13:46:45+03:00",
+      "reviewerType": "USER_HUMAN_REVIEW",
+      "gameAdaptationAllowed": false,
+      "note": "Soru grubu genel kalite yönü açısından kabul edildi; tam Türkçe kapsamı tamamlanmadan oyun adaptasyonu açılmayacak."
+    },
+    {
+      "questionId": "tr-g8-pilot02-04-author-view-story-ending",
+      "batchId": "GRADE8_TURKISH_PILOT_02_CALIBRATION_5",
+      "decision": "APPROVED_FOR_NEXT_WAVE",
+      "reviewedAt": "2026-08-03T13:46:45+03:00",
+      "reviewerType": "USER_HUMAN_REVIEW",
+      "gameAdaptationAllowed": false,
+      "note": "Soru grubu genel kalite yönü açısından kabul edildi; tam Türkçe kapsamı tamamlanmadan oyun adaptasyonu açılmayacak."
+    },
+    {
+      "questionId": "tr-g8-pilot02-05-text-types-essay-article",
+      "batchId": "GRADE8_TURKISH_PILOT_02_CALIBRATION_5",
+      "decision": "APPROVED_FOR_NEXT_WAVE",
+      "reviewedAt": "2026-08-03T13:46:45+03:00",
+      "reviewerType": "USER_HUMAN_REVIEW",
+      "gameAdaptationAllowed": false,
+      "note": "Soru grubu genel kalite yönü açısından kabul edildi; tam Türkçe kapsamı tamamlanmadan oyun adaptasyonu açılmayacak."
+    }
+  ],
+  "fullScopeMetrics": {
+    "outcomeCount": 76,
+    "domainCounts": {
+      "dinleme-izleme": 14,
+      "konusma": 7,
+      "okuma": 35,
+      "yazma": 20
+    },
+    "statusCounts": {
+      "PLANNED_NOT_IMPLEMENTED": 51,
+      "READING_LANGUAGE_WAVE1_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 12,
+      "PILOT02_ENGINEERING_COVERED_HUMAN_REVIEW_REQUIRED": 5,
+      "PILOT01_ENGINEERING_COVERED": 8
+    },
+    "modeCounts": {
+      "MULTIMODAL_SELECTED_RESPONSE": 15,
+      "HYBRID_AUTOMATED_AND_HUMAN": 15,
+      "HUMAN_RUBRIC_PERFORMANCE": 22,
+      "AUTO_SELECTED_RESPONSE": 24
+    },
+    "humanScoredCount": 37,
+    "mediaRequiredCount": 23,
+    "selectedResponseEligibleCount": 42,
+    "implementedOutcomeCount": 25,
+    "implementedItemCount": 41,
+    "uncoveredOutcomeCount": 51,
+    "productReady": false
+  },
+  "waveMetrics": {
+    "itemCount": 12,
+    "outcomeCount": 12,
+    "genreCount": 12,
+    "sourceModeCount": 12,
+    "answerDistribution": {
+      "A": 3,
+      "B": 3,
+      "C": 3,
+      "D": 3
+    },
+    "humanReviewStatus": "NOT_MEASURED",
+    "gameAdaptationAllowed": false,
+    "productReady": false
+  },
+  "errors": [],
+  "questions": [
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-01-context-ketum",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "soz-varligi",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-5"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "contextual-word-meaning",
+        "secondarySkills": [
+          "context-clue-integration",
+          "tone-reading"
+        ],
+        "cognitiveProcess": "inference",
+        "knowledgeComponents": [
+          "context-clue",
+          "behaviour-description",
+          "word-meaning"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": "Söyleşinin başında fotoğrafçı, yıllardır çektiği insan yüzlerinden uzun uzun söz etti. Konu kendi yaşamına gelince cümleleri kısaldı; hangi şehirde büyüdüğünü söyledi ama ailesine ve özel hayatına ilişkin soruları nazikçe geçiştirdi. Muhabir onun bu ketum tavrını soğukluk olarak yorumlamadı. Çünkü sanatçı başkalarının hikâyelerini anlatırken cömert, kendinden söz ederken ölçülüydü.",
+        "stimulusBlocks": null,
+        "stem": "Bu parçada “ketum” sözcüğüyle anlatılmak istenen aşağıdakilerden hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Kendisiyle ilgili soruları gereksiz bulduğu için konuşmayı başka konulara yönlendiren"
+          },
+          {
+            "id": "B",
+            "text": "İnsanlarla yakın ilişki kurmakta zorlandığı için söyleşide kısa cevaplar veren"
+          },
+          {
+            "id": "C",
+            "text": "Kendi duygu ve özel yaşamını açıklama konusunda ölçülü ve kapalı davranan"
+          },
+          {
+            "id": "D",
+            "text": "Söyleşide yanlış anlaşılmamak için yalnız doğrulanabilir ayrıntıları paylaşan"
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 2,
+            "claim": "Kendi yaşamı sorulduğunda cevapları kısalır."
+          },
+          {
+            "id": "e2",
+            "sentence": 2,
+            "claim": "Özel hayat sorularını nazikçe geçiştirir."
+          },
+          {
+            "id": "e3",
+            "sentence": 4,
+            "claim": "Başkalarını anlatırken açık, kendinden söz ederken ölçülüdür."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "Kendisiyle ilgili soruları gereksiz bulduğu için konuşmayı başka konulara yönlendiren",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2"
+            ],
+            "contradictions": [],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "silence-as-dismissal"
+          },
+          {
+            "id": "B",
+            "text": "İnsanlarla yakın ilişki kurmakta zorlandığı için söyleşide kısa cevaplar veren",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1"
+            ],
+            "contradictions": [
+              "e3"
+            ],
+            "scope": "expanded",
+            "claimFit": "partial",
+            "misconceptionId": "privacy-as-social-distance"
+          },
+          {
+            "id": "C",
+            "text": "Kendi duygu ve özel yaşamını açıklama konusunda ölçülü ve kapalı davranan",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "D",
+            "text": "Söyleşide yanlış anlaşılmamak için yalnız doğrulanabilir ayrıntıları paylaşan",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2"
+            ],
+            "contradictions": [],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "privacy-as-fact-checking"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "C",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "sözcüğün çevresindeki davranışları bul",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Kısa cevaplar ve özel soruları geçiştirme, paylaşım sınırını gösterir."
+        },
+        {
+          "id": "s2",
+          "action": "bu davranışın soğukluk olup olmadığını ayır",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Başkalarının hikâyelerinde açık olması, genel bir iletişim sorunu olmadığını gösterir."
+        },
+        {
+          "id": "s3",
+          "action": "davranışları ortak bir anlamda birleştir",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "evidence": "Ketumluk, kişinin kendisiyle ilgili bilgileri ölçülü biçimde saklı tutmasıdır."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Sanatçı kendi yaşamı sorulunca ne yapıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Aynı kişi başkalarından söz ederken nasıl davranıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru anlam hem kısa cevapları hem özel hayat sınırını açıklamalı.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "silence-as-dismissal",
+          "text": "Sanatçı soruları değersiz bulduğunu göstermiyor; özel yaşamını paylaşma sınırı koyuyor ve bunu nazik bir tutumla yapıyor.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "privacy-as-social-distance",
+          "text": "Kısa cevaplar yalnız kendi yaşamı söz konusu olduğunda görülüyor; başkalarının hikâyelerini anlatırken iletişim kurmakta güçlük çekmiyor.",
+          "supportingEvidenceIds": [
+            "e1"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Sözcüğün anlamı üç davranıştan çıkarılır: cevapları kısaltma, özel soruları geçiştirme ve kendinden söz ederken sınır koyma.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "privacy-as-fact-checking",
+          "text": "Parçada doğrulama kaygısından söz edilmiyor; anlatılan tutum, kişinin kendisiyle ilgili ayrıntıları paylaşmaya isteksiz ve ölçülü oluşudur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "silence-as-dismissal",
+        "privacy-as-social-distance",
+        "privacy-as-fact-checking"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "portre-yazisi",
+        "voice": "gozlemci",
+        "sourceMode": "ozgun-sanatci-portresi",
+        "rhetoricalMoves": [
+          "davranis-ornekleri",
+          "karsilastirma",
+          "baglamsal-tanim"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-02-expression-disorder-revision",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "soz-varligi",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-8"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "expression-disorder-repair",
+        "secondarySkills": [
+          "meaning-preservation",
+          "redundancy-detection"
+        ],
+        "cognitiveProcess": "analysis-and-revision",
+        "knowledgeComponents": [
+          "redundancy",
+          "quantity-scope",
+          "sentence-revision"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": "Bir okul dergisinin editörü şu cümleyi inceliyor: “Bu karar, kurul üyelerinin çoğu tarafından ortaklaşa birlikte alındı ve uygulamaya ertesi gün başlandı.” Editör, cümlede aynı anlamı karşılayan sözcüklerin yan yana kullanıldığını; buna karşılık kararın üyelerin tamamınca değil, çoğunluğunca alındığı bilgisinin korunması gerektiğini belirtiyor.",
+        "stimulusBlocks": null,
+        "stem": "Editörün iki uyarısını da karşılayan düzeltme aşağıdakilerden hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Kurul üyelerinin çoğu bu kararı aldı; uygulama çalışmaları ertesi gün başladı."
+          },
+          {
+            "id": "B",
+            "text": "Bu ortak karar kurul üyeleri tarafından alındı ve ertesi gün uygulamaya geçirildi."
+          },
+          {
+            "id": "C",
+            "text": "Kurul üyelerinin çoğu ortaklaşa karar aldı ve bu karar ertesi gün uygulanmaya başlandı."
+          },
+          {
+            "id": "D",
+            "text": "Kurul üyeleri kararın çoğunu birlikte aldı ve uygulamaya sonraki gün geçildi."
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 1,
+            "claim": "Ortaklaşa ve birlikte sözcükleri aynı anlamı tekrar eder."
+          },
+          {
+            "id": "e2",
+            "sentence": 2,
+            "claim": "Kararı üyelerin çoğu almıştır; tamamı değil."
+          },
+          {
+            "id": "e3",
+            "sentence": 1,
+            "claim": "Uygulamaya ertesi gün başlanmıştır."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "Kurul üyelerinin çoğu bu kararı aldı; uygulama çalışmaları ertesi gün başladı.",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "B",
+            "text": "Bu ortak karar kurul üyeleri tarafından alındı ve ertesi gün uygulamaya geçirildi.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e3"
+            ],
+            "contradictions": [
+              "e2"
+            ],
+            "scope": "expanded",
+            "claimFit": "partial",
+            "misconceptionId": "majority-changed-to-all"
+          },
+          {
+            "id": "C",
+            "text": "Kurul üyelerinin çoğu ortaklaşa karar aldı ve bu karar ertesi gün uygulanmaya başlandı.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2",
+              "e3"
+            ],
+            "contradictions": [
+              "e1"
+            ],
+            "scope": "preserved",
+            "claimFit": "partial",
+            "misconceptionId": "redundancy-partly-retained"
+          },
+          {
+            "id": "D",
+            "text": "Kurul üyeleri kararın çoğunu birlikte aldı ve uygulamaya sonraki gün geçildi.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e3"
+            ],
+            "contradictions": [
+              "e2"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "quantity-attached-to-decision"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "A",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "gereksiz anlam tekrarını belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Ortaklaşa ve birlikte aynı birliktelik anlamını yineler."
+        },
+        {
+          "id": "s2",
+          "action": "korunması gereken nicelik bilgisini belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Kararı kurulun tamamı değil çoğunluğu almıştır."
+        },
+        {
+          "id": "s3",
+          "action": "zaman bilgisini de koruyan revizyonu seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "evidence": "Doğru düzeltme hem tekrarları kaldırır hem anlam ayrıntılarını korur."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Hangi iki sözcük aynı işi yapıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "“Çoğu” sözcüğü neyi niteliyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Seçenek, çoğunluk ve ertesi gün bilgilerini değiştirmemeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Gereksiz anlam tekrarını kaldırır; kararın çoğunluk tarafından alındığı ve uygulamanın ertesi gün başladığı bilgilerini korur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "majority-changed-to-all",
+          "text": "Anlatım sadeleşir; buna karşılık “çoğu” bilgisi silindiği için kararın kurulun tamamınca alındığı izlenimi doğar.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e2"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "redundancy-partly-retained",
+          "text": "Çoğunluk ve zaman bilgileri korunur; “çoğu” ile “ortaklaşa” aynı birliktelik anlamını gereksiz biçimde üst üste bindirir.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e1"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "quantity-attached-to-decision",
+          "text": "“Çoğu” sözcüğünü üyelere değil karara bağladığı için anlam değişir; kurulun hangi bölümünün karar aldığı bilgisi kaybolur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e2"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "majority-changed-to-all",
+        "redundancy-partly-retained",
+        "quantity-attached-to-decision"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "editor-notu",
+        "voice": "duzeltme-odakli",
+        "sourceMode": "ozgun-yayin-kurulu-senaryosu",
+        "rhetoricalMoves": [
+          "sorun-tespiti",
+          "anlam-siniri",
+          "revizyon"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-03-verbal-function",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "soz-varligi",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-9"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "verbal-function-analysis",
+        "secondarySkills": [
+          "word-class-in-context",
+          "sentence-element-awareness"
+        ],
+        "cognitiveProcess": "grammatical-analysis",
+        "knowledgeComponents": [
+          "adjective-verb",
+          "verbal-noun",
+          "modifier",
+          "subject-function"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": "“Kıyıya yaklaşan tekneleri izlemek, günün yorgunluğunu unutturuyordu.” cümlesinde “yaklaşan” sözcüğü teknelerin hangi durumda olduğunu belirtirken “izlemek” sözcüğü cümlede bir eylemin adını karşılamaktadır.",
+        "stimulusBlocks": null,
+        "stem": "Bu cümledeki fiilimsilerin görevleriyle ilgili doğru açıklama aşağıdakilerden hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "“Yaklaşan” isim-fiil olarak teknelerin adını, “izlemek” sıfat-fiil olarak yorgunluğun niteliğini bildirir."
+          },
+          {
+            "id": "B",
+            "text": "“Yaklaşan” zarf-fiil olarak izleme eyleminin zamanını, “izlemek” isim-fiil olarak yüklemin nedenini açıklar."
+          },
+          {
+            "id": "C",
+            "text": "İki sözcük de kalıcı isim hâline geldiği için cümlede fiilimsi özelliğini yitirmiş ve varlık adı olarak kullanılmıştır."
+          },
+          {
+            "id": "D",
+            "text": "“Yaklaşan” sıfat-fiil olarak tekneleri niteler, “izlemek” isim-fiil olarak özne görevinde kullanılan eylem adını oluşturur."
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 1,
+            "claim": "Yaklaşan sözcüğü tekneleri niteler."
+          },
+          {
+            "id": "e2",
+            "sentence": 1,
+            "claim": "İzlemek sözcüğü eylemin adını karşılar."
+          },
+          {
+            "id": "e3",
+            "sentence": 1,
+            "claim": "İzlemek sözcük grubu cümlenin öznesi görevindedir."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "“Yaklaşan” isim-fiil olarak teknelerin adını, “izlemek” sıfat-fiil olarak yorgunluğun niteliğini bildirir.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2"
+            ],
+            "contradictions": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "scope": "reversed",
+            "claimFit": "opposite",
+            "misconceptionId": "verbal-types-swapped"
+          },
+          {
+            "id": "B",
+            "text": "“Yaklaşan” zarf-fiil olarak izleme eyleminin zamanını, “izlemek” isim-fiil olarak yüklemin nedenini açıklar.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2"
+            ],
+            "contradictions": [
+              "e1",
+              "e3"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "modifier-read-as-adverb"
+          },
+          {
+            "id": "C",
+            "text": "İki sözcük de kalıcı isim hâline geldiği için cümlede fiilimsi özelliğini yitirmiş ve varlık adı olarak kullanılmıştır.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2"
+            ],
+            "contradictions": [
+              "e1",
+              "e3"
+            ],
+            "scope": "expanded",
+            "claimFit": "partial",
+            "misconceptionId": "all-infinitives-permanent-nouns"
+          },
+          {
+            "id": "D",
+            "text": "“Yaklaşan” sıfat-fiil olarak tekneleri niteler, “izlemek” isim-fiil olarak özne görevinde kullanılan eylem adını oluşturur.",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "D",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "yaklaşan sözcüğünün bağlandığı ismi bul",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Sözcük tekneleri nitelediği için sıfat-fiildir."
+        },
+        {
+          "id": "s2",
+          "action": "izlemek sözcüğünün anlam görevini belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Eylemi adlaştırdığı için isim-fiildir."
+        },
+        {
+          "id": "s3",
+          "action": "isim-fiilin cümledeki yerini belirle",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Yorgunluğu unutturan şey izleme eylemidir; grup özne olur."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "“Yaklaşan” hangi varlığın özelliğini bildiriyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "“İzlemek” burada çekimli bir eylem mi, eylemin adı mı?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "“Ne unutturuyordu?” sorusunun cevabı nedir?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "verbal-types-swapped",
+          "text": "İki fiilimsinin türü ters çevrilmiştir; “yaklaşan” bir ismi niteler, “izlemek” ise eylemi adlaştırarak özne görevine girer.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "modifier-read-as-adverb",
+          "text": "“Yaklaşan” izleme eylemini değil “tekneleri” niteler; “izlemek” de neden bildiren bir tamlayıcı değil, cümlenin öznesidir.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "all-infinitives-permanent-nouns",
+          "text": "Sözcükler eylem anlamını korur; biri tekneleri niteleyen sıfat-fiil, diğeri eylemi adlandıran isim-fiil görevindedir.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Açıklama hem fiilimsi türlerini hem cümledeki işlevlerini doğru kurar: niteleme ve eylemi adlaştırarak özne olma.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "verbal-types-swapped",
+        "modifier-read-as-adverb",
+        "all-infinitives-permanent-nouns"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "dil-inceleme-notu",
+        "voice": "cozumleyici",
+        "sourceMode": "ozgun-cumle-cozumlemesi",
+        "rhetoricalMoves": [
+          "ornek-cumle",
+          "islev-ayirma",
+          "karsilastirma"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-04-transition-functions",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "soz-varligi",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-10"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "transition-expression-function",
+        "secondarySkills": [
+          "logical-relation-analysis",
+          "cohesion"
+        ],
+        "cognitiveProcess": "relationship-analysis",
+        "knowledgeComponents": [
+          "contrast",
+          "addition",
+          "result",
+          "cohesion"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": "Serginin ilk salonunda yapıtlar kronolojik bir sırayla yerleştirilmişti. Oysa ikinci salonda tarihler yerine ortak temalar öne çıkarılmıştı. Bununla birlikte iki bölümde de sanatçının eskizlerine yer verilmişti. Dolayısıyla ziyaretçi, sanatçının zaman içindeki değişimini izlerken aynı temaya farklı dönemlerde nasıl döndüğünü de görebiliyordu.",
+        "stimulusBlocks": null,
+        "stem": "Bu parçadaki geçiş ve bağlantı ifadelerinin metne katkısı aşağıdakilerden hangisinde doğru verilmiştir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "“Oysa” serginin ilk salonunu açıklar, “bununla birlikte” örnek verir, “dolayısıyla” önceki yargıyı sınırlar."
+          },
+          {
+            "id": "B",
+            "text": "“Oysa” iki düzeni karşılaştırır, “bununla birlikte” ortak noktayı ekler, “dolayısıyla” bu düzenlerin sonucunu açıklar."
+          },
+          {
+            "id": "C",
+            "text": "“Oysa” ortak temayı örneklendirir, “bununla birlikte” önceki bilgiyi düzeltir, “dolayısıyla” yeni bir konuya geçiş yapar."
+          },
+          {
+            "id": "D",
+            "text": "“Oysa” zaman sırasını belirtir, “bununla birlikte” salonları neden-sonuçla bağlar, “dolayısıyla” benzerliği vurgular."
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 2,
+            "claim": "Oysa iki salonun düzenleme anlayışını karşılaştırır."
+          },
+          {
+            "id": "e2",
+            "sentence": 3,
+            "claim": "Bununla birlikte ortak bir özelliği ekler."
+          },
+          {
+            "id": "e3",
+            "sentence": 4,
+            "claim": "Dolayısıyla önceki düzenlemelerin ziyaretçiye sağladığı sonucu bildirir."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "“Oysa” serginin ilk salonunu açıklar, “bununla birlikte” örnek verir, “dolayısıyla” önceki yargıyı sınırlar.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2"
+            ],
+            "contradictions": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "scope": "reversed",
+            "claimFit": "opposite",
+            "misconceptionId": "connectors-labelled-by-position"
+          },
+          {
+            "id": "B",
+            "text": "“Oysa” iki düzeni karşılaştırır, “bununla birlikte” ortak noktayı ekler, “dolayısıyla” bu düzenlerin sonucunu açıklar.",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "C",
+            "text": "“Oysa” ortak temayı örneklendirir, “bununla birlikte” önceki bilgiyi düzeltir, “dolayısıyla” yeni bir konuya geçiş yapar.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2"
+            ],
+            "contradictions": [
+              "e1",
+              "e3"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "connector-meanings-shifted"
+          },
+          {
+            "id": "D",
+            "text": "“Oysa” zaman sırasını belirtir, “bununla birlikte” salonları neden-sonuçla bağlar, “dolayısıyla” benzerliği vurgular.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e3"
+            ],
+            "contradictions": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "scope": "reversed",
+            "claimFit": "opposite",
+            "misconceptionId": "logical-relations-reversed"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "B",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "oysa ile bağlanan iki yargıyı karşılaştır",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Salonların düzenlenişi birbirinden farklıdır."
+        },
+        {
+          "id": "s2",
+          "action": "bununla birlikte ifadesinin eklediği ortaklığı bul",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Farklı düzenlere rağmen iki bölümde de eskiz vardır."
+        },
+        {
+          "id": "s3",
+          "action": "dolayısıyla ile verilen sonucu belirle",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Düzenleme, iki farklı gelişimi birlikte izleme olanağı sağlar."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "İlk ve ikinci salon aynı ilkeye göre mi düzenlenmiş?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "İki salonun ortak özelliği hangi cümlede ekleniyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Son cümle önceki bilgilerin hangi sonucunu veriyor?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "connectors-labelled-by-position",
+          "text": "Bağlaçların işlevi metindeki sıralarına göre değil kurdukları ilişkiye göre belirlenir; burada karşıtlık, ekleme ve sonuç vardır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Üç ifade farklı bağlar kurar: salonlar arasında karşıtlık, iki bölüm arasında ortaklık ve düzenlemelerin ziyaretçiye sağladığı sonuç.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "connector-meanings-shifted",
+          "text": "İfadeler yeni konu açmıyor; salonların farkını, ortak özelliğini ve bunların doğurduğu izleme imkânını birbirine bağlıyor.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "logical-relations-reversed",
+          "text": "Zaman, neden ve benzerlik ilişkileri seçenek içinde yer değiştirmiştir; metindeki gerçek sıra karşıtlık, ek bilgi ve sonuçtur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "connectors-labelled-by-position",
+        "connector-meanings-shifted",
+        "logical-relations-reversed"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "kisa-elestiri",
+        "voice": "degerlendirici",
+        "sourceMode": "ozgun-sergi-elestirisi",
+        "rhetoricalMoves": [
+          "olumlu-yargı",
+          "karsitlik",
+          "ekleme",
+          "sonuc"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-05-title-memory-boxes",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "anlama",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-19"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "title-selection",
+        "secondarySkills": [
+          "central-theme-synthesis",
+          "detail-control"
+        ],
+        "cognitiveProcess": "synthesis",
+        "knowledgeComponents": [
+          "title-scope",
+          "central-theme",
+          "supporting-detail"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": "Çocukluğumdan kalan kutuları açtığımda içlerinden değerli eşyalar çıkmıyor: paslanmış bir anahtar, yarısı silinmiş bir bilet, kenarı kırık bir düğme... Yine de bu nesneleri atamıyorum. Çünkü her biri, artık ayrıntılarını hatırlayamadığım bir günün kapısını aralıyor. Bellek bazen geçmişi olduğu gibi saklamıyor; küçük bir nesneye dokununca onu yeniden kuruyor. Bu yüzden kutularım eşya değil, eksik anıların sessiz taslaklarıyla dolu.",
+        "stimulusBlocks": null,
+        "stem": "Bu parçaya en uygun başlık aşağıdakilerden hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Çocukluktan Kalan Değersiz Eşyalar"
+          },
+          {
+            "id": "B",
+            "text": "Geçmişi Olduğu Gibi Saklamak"
+          },
+          {
+            "id": "C",
+            "text": "Nesnelerle Yeniden Kurulan Bellek"
+          },
+          {
+            "id": "D",
+            "text": "Bir Koleksiyonun Düzenlenme Hikâyesi"
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 1,
+            "claim": "Kutularda maddi değeri düşük eski nesneler vardır."
+          },
+          {
+            "id": "e2",
+            "sentence": 3,
+            "claim": "Nesneler unutulmuş günleri çağrıştırır."
+          },
+          {
+            "id": "e3",
+            "sentence": 4,
+            "claim": "Bellek nesneler aracılığıyla geçmişi yeniden kurar."
+          },
+          {
+            "id": "e4",
+            "sentence": 5,
+            "claim": "Kutular eksik anıların taslaklarını taşır."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "Çocukluktan Kalan Değersiz Eşyalar",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2"
+            ],
+            "contradictions": [],
+            "scope": "narrowed",
+            "claimFit": "partial",
+            "misconceptionId": "detail-used-as-title"
+          },
+          {
+            "id": "B",
+            "text": "Geçmişi Olduğu Gibi Saklamak",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2"
+            ],
+            "contradictions": [
+              "e3"
+            ],
+            "scope": "reversed",
+            "claimFit": "partial",
+            "misconceptionId": "memory-as-exact-storage"
+          },
+          {
+            "id": "C",
+            "text": "Nesnelerle Yeniden Kurulan Bellek",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e2",
+              "e3",
+              "e4"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "D",
+            "text": "Bir Koleksiyonun Düzenlenme Hikâyesi",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e4"
+            ],
+            "contradictions": [],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "boxes-read-as-collection"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "C",
+        "supportingEvidenceIds": [
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "nesnelerin maddi özelliği ile işlevini ayır",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Nesneler değerli değildir; anıları çağırdıkları için saklanır."
+        },
+        {
+          "id": "s2",
+          "action": "bellekle ilgili temel yargıyı bul",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Bellek, geçmişi nesneler üzerinden yeniden kurar."
+        },
+        {
+          "id": "s3",
+          "action": "nesne ve bellek ilişkisini kapsayan başlığı seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Uygun başlık ayrıntıyı değil temel ilişkiyi yansıtır."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Yazar eşyaları neden atamıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Parçada belleğin nasıl çalıştığı söyleniyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Başlık hem nesneleri hem anıların yeniden kurulmasını içermeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "detail-used-as-title",
+          "text": "Başlık kutulardaki nesneleri belirtir; parçanın asıl odağı olan bu nesnelerin belleği harekete geçirip anıları yeniden kurması dışarıda kalır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "memory-as-exact-storage",
+          "text": "Parça belleğin geçmişi değişmeden sakladığını değil, küçük nesneler üzerinden eksik parçaları yeniden kurduğunu anlatır.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Başlık, nesnelerin unutulmuş günleri açması ile belleğin geçmişi yeniden kurması düşüncelerini aynı çatı altında toplar.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "boxes-read-as-collection",
+          "text": "Kutular bir koleksiyon düzeni içinde ele alınmıyor; parçanın merkezinde nesnelerin maddi sınıflandırması değil, anıları çağırma gücü bulunur.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "detail-used-as-title",
+        "memory-as-exact-storage",
+        "boxes-read-as-collection"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "kisisel-deneme",
+        "voice": "birinci-tekil",
+        "sourceMode": "ozgun-hafiza-denemesi",
+        "rhetoricalMoves": [
+          "nesne-anisi",
+          "zaman-karsilastirmasi",
+          "genelleme"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-06-story-elements-station",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "anlama",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-20"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "story-element-analysis",
+        "secondarySkills": [
+          "conflict-identification",
+          "setting-time-mapping"
+        ],
+        "cognitiveProcess": "narrative-analysis",
+        "knowledgeComponents": [
+          "character",
+          "setting",
+          "time",
+          "conflict"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": "Yağmur, akşam treninin kalkmasına on dakika kala eski istasyonun camlarına vuruyordu. Derya, bankın altında unutulmuş küçük bir çanta buldu. İçinden bir çocuk kimliği ve karşı perondaki kasabaya ait otobüs bileti çıktı. Anons, trenin kapılarının kapanacağını bildirirken Derya çantayı görevliye bırakmakla otobüs durağına koşup sahibini aramak arasında kaldı.",
+        "stimulusBlocks": null,
+        "stem": "Bu metindeki hikâye unsurlarını doğru eşleştiren seçenek aşağıdakilerden hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Mekân eski istasyon, zaman yağmurlu akşam, kişi Derya, çatışma trenine yetişme ile çantanın sahibine yardım etme arasında kalmasıdır."
+          },
+          {
+            "id": "B",
+            "text": "Mekân karşı kasaba, zaman sabah, kişi çantanın sahibi, çatışma otobüs bileti ile tren bileti arasındaki karışıklıktır."
+          },
+          {
+            "id": "C",
+            "text": "Mekân tren vagonu, zaman yolculuk sonrası, kişi istasyon görevlisi, çatışma kayıp kimliğin kime ait olduğunun belirlenmesidir."
+          },
+          {
+            "id": "D",
+            "text": "Mekân otobüs durağı, zaman tren kalktıktan sonra, kişi çocuk, çatışma çantanın görevliye teslim edilip edilmemesidir."
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 1,
+            "claim": "Olay yağmurlu bir akşam eski istasyonda geçer."
+          },
+          {
+            "id": "e2",
+            "sentence": 2,
+            "claim": "Başkişi Derya unutulmuş çantayı bulur."
+          },
+          {
+            "id": "e3",
+            "sentence": 4,
+            "claim": "Derya trenine yetişmek ile çantanın sahibini aramak arasında kalır."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "Mekân eski istasyon, zaman yağmurlu akşam, kişi Derya, çatışma trenine yetişme ile çantanın sahibine yardım etme arasında kalmasıdır.",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "B",
+            "text": "Mekân karşı kasaba, zaman sabah, kişi çantanın sahibi, çatışma otobüs bileti ile tren bileti arasındaki karışıklıktır.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2"
+            ],
+            "contradictions": [
+              "e1",
+              "e3"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "mentioned-place-as-setting"
+          },
+          {
+            "id": "C",
+            "text": "Mekân tren vagonu, zaman yolculuk sonrası, kişi istasyon görevlisi, çatışma kayıp kimliğin kime ait olduğunun belirlenmesidir.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2",
+              "e3"
+            ],
+            "contradictions": [
+              "e1"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "inferred-events-as-given-elements"
+          },
+          {
+            "id": "D",
+            "text": "Mekân otobüs durağı, zaman tren kalktıktan sonra, kişi çocuk, çatışma çantanın görevliye teslim edilip edilmemesidir.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2",
+              "e3"
+            ],
+            "contradictions": [
+              "e1"
+            ],
+            "scope": "narrowed",
+            "claimFit": "partial",
+            "misconceptionId": "one-choice-branch-as-whole-conflict"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "A",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "olayın geçtiği yer ve zamanı bul",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Eski istasyon ve yağmurlu akşam açıkça verilir."
+        },
+        {
+          "id": "s2",
+          "action": "olayı taşıyan kişiyi belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Çantayı bulan ve karar verecek kişi Derya’dır."
+        },
+        {
+          "id": "s3",
+          "action": "olayın düğümünü oluşturan ikilemi belirle",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Trene yetişme ile çantanın sahibine yardım etme çatışır."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "İlk cümle hangi yer ve zamanı kuruyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Olay boyunca karar vermesi gereken kişi kim?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Derya hangi iki seçenek arasında kalıyor?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Seçenek mekânı, zamanı, başkişiyi ve olayın düğümünü oluşturan ikilemi metindeki ayrıntılara uygun biçimde eşleştirir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "mentioned-place-as-setting",
+          "text": "Karşı kasaba yalnız bilete ait bilgidir; olay istasyonda ve akşam geçer, merkezdeki ikilem de bilet türleri değil Derya’nın kararıdır.",
+          "supportingEvidenceIds": [
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "inferred-events-as-given-elements",
+          "text": "Tren vagonu ve yolculuk sonrası metinde gerçekleşmez; görevli de başkişi değildir, asıl düğüm Derya’nın zaman baskısı altındaki seçimidir.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e1"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "one-choice-branch-as-whole-conflict",
+          "text": "Otobüs durağı yalnız olası hareket yönüdür ve tren henüz kalkmamıştır; çatışma tek bir teslim seçeneği değil iki sorumluluk arasında kalmadır.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e1"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "mentioned-place-as-setting",
+        "inferred-events-as-given-elements",
+        "one-choice-branch-as-whole-conflict"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "kisa-oyku",
+        "voice": "ucuncu-tekil",
+        "sourceMode": "ozgun-istasyon-oykusu",
+        "rhetoricalMoves": [
+          "mekan-kurma",
+          "zaman-baskisi",
+          "ikilem"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-07-problem-solution-library",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "anlama",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-22"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "solution-design",
+        "secondarySkills": [
+          "constraint-integration",
+          "stakeholder-balance"
+        ],
+        "cognitiveProcess": "evaluation-and-design",
+        "knowledgeComponents": [
+          "problem-causes",
+          "stakeholders",
+          "feasible-solution"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": "Mahalle kütüphanesinin tek büyük salonu gün içinde farklı amaçlarla kullanılıyor. Sınava hazırlanan öğrenciler sessizlik isterken yaşlı okurlar gazete üzerine konuşabilecekleri ortak bir alan talep ediyor. Binanın duvarları tarihî olduğu için kalıcı bölme yapılamıyor; bütçe de yeni salon eklemeye yetmiyor. Kütüphane yönetimi, iki grubun da mekândan vazgeçmeden yararlanmasını sağlayacak bir çözüm arıyor.",
+        "stimulusBlocks": null,
+        "stem": "Metindeki koşullar dikkate alındığında en işlevsel çözüm aşağıdakilerden hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Salonun gün boyu sessiz çalışma alanı yapılması ve sohbet etmek isteyenlerin yakın kafelere yönlendirilmesi"
+          },
+          {
+            "id": "B",
+            "text": "Salonun ortasına taşınabilir raflar konulması ve iki grubun aynı saatlerde kendi bölümünde bulunması"
+          },
+          {
+            "id": "C",
+            "text": "Konuşmalı etkinliklerin azaltılması ve salonun kullanımının başvuru sırasına göre gruplardan birine verilmesi"
+          },
+          {
+            "id": "D",
+            "text": "Belirli saatleri sessiz çalışmaya, belirli saatleri konuşmalı okumaya ayıran ve programı önceden duyuran dönüşümlü kullanım düzeni"
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 2,
+            "claim": "Öğrenciler sessiz çalışma ortamı ister."
+          },
+          {
+            "id": "e2",
+            "sentence": 2,
+            "claim": "Yaşlı okurlar konuşabilecekleri ortak alan ister."
+          },
+          {
+            "id": "e3",
+            "sentence": 3,
+            "claim": "Kalıcı bölme yapılamaz ve yeni salon bütçesi yoktur."
+          },
+          {
+            "id": "e4",
+            "sentence": 4,
+            "claim": "İki grup da mekândan vazgeçmeden yararlanmalıdır."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "Salonun gün boyu sessiz çalışma alanı yapılması ve sohbet etmek isteyenlerin yakın kafelere yönlendirilmesi",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e3"
+            ],
+            "contradictions": [
+              "e2",
+              "e4"
+            ],
+            "scope": "narrowed",
+            "claimFit": "partial",
+            "misconceptionId": "one-stakeholder-prioritized"
+          },
+          {
+            "id": "B",
+            "text": "Salonun ortasına taşınabilir raflar konulması ve iki grubun aynı saatlerde kendi bölümünde bulunması",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "partial",
+            "misconceptionId": "visual-divider-solves-sound"
+          },
+          {
+            "id": "C",
+            "text": "Konuşmalı etkinliklerin azaltılması ve salonun kullanımının başvuru sırasına göre gruplardan birine verilmesi",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "contradictions": [
+              "e4"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "turn-taking-with-exclusion"
+          },
+          {
+            "id": "D",
+            "text": "Belirli saatleri sessiz çalışmaya, belirli saatleri konuşmalı okumaya ayıran ve programı önceden duyuran dönüşümlü kullanım düzeni",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3",
+              "e4"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "D",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "iki grubun farklı ihtiyaçlarını ayır",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Bir grup sessizlik, diğer grup konuşmalı ortaklık ister."
+        },
+        {
+          "id": "s2",
+          "action": "fiziksel ve mali kısıtları belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Yeni oda ya da kalıcı bölme çözümü kullanılamaz."
+        },
+        {
+          "id": "s3",
+          "action": "iki grubu dışlamadan uygulanabilir çözümü seç",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Zaman temelli dönüşüm, fiziksel değişiklik yapmadan iki kullanımı mümkün kılar."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "İki grubun talepleri neden aynı anda çatışıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Hangi çözümler bina ve bütçe nedeniyle uygulanamaz?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru çözüm mekânı değil kullanım zamanını düzenlemeli.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "one-stakeholder-prioritized",
+          "text": "Öğrencilerin ihtiyacını karşılar; yaşlı okurların kütüphaneden yararlanma talebini dışarı taşıdığı için iki grubu birlikte gözetmez.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e2",
+            "e4"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "visual-divider-solves-sound",
+          "text": "Kalıcı duvar kısıtına uyulur; taşınabilir raflar konuşma sesini yeterince ayırmadığı için sessizlik gereksinimini güvenilir biçimde çözmez.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "turn-taking-with-exclusion",
+          "text": "Zaman paylaşımı düşüncesi içerir; başvuru sırası diğer grubu dönem dönem dışarıda bıraktığı için ortak ve öngörülebilir kullanım sağlamaz.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e4"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Yeni yapı gerektirmeden iki ihtiyacı farklı zamanlarda karşılar; her grubun kütüphaneyi kullanmasını ve programı önceden bilmesini sağlar.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "one-stakeholder-prioritized",
+        "visual-divider-solves-sound",
+        "turn-taking-with-exclusion"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "toplumsal-sorun-metni",
+        "voice": "nesnel-rapor",
+        "sourceMode": "ozgun-mahalle-kutuphanesi-vakasi",
+        "rhetoricalMoves": [
+          "sorun-tanimi",
+          "paydas-gorusleri",
+          "kisitlar"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-08-real-fiction-birds",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "anlama",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-24"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "real-fiction-distinction",
+        "secondarySkills": [
+          "verifiability",
+          "figurative-event-detection"
+        ],
+        "cognitiveProcess": "classification-and-justification",
+        "knowledgeComponents": [
+          "factual-claim",
+          "fictional-event",
+          "personification"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": null,
+        "stimulusBlocks": [
+          "I. Metin: Kıyı kuşlarına takılan hafif vericiler, bazı bireylerin sonbaharda aynı sulak alanlarda mola verdiğini göstermiştir. Araştırmacılar rota değişikliklerini rüzgâr yönü ve besin bulunabilirliğiyle birlikte incelemektedir.",
+          "II. Metin: Sürünün en genç kuşu, gece çöktüğünde ayın kendisine kuzeydeki gizli gölü fısıldadığını duydu. Kanatlarını çırpınca yıldızlar önünde bir yol açtı ve sürü o ışıklı patikayı izledi."
+        ],
+        "stem": "Bu iki metindeki gerçek ve kurgusal unsurlarla ilgili doğru değerlendirme aşağıdakilerden hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "I. metin kuşların aynı yerde durmasını anlattığı için kurguya, II. metin göç yönünü açıkladığı için gerçeğe dayanır."
+          },
+          {
+            "id": "B",
+            "text": "I. metin ölçülebilir araştırma verilerine dayanır, II. metin doğa varlıklarına insan özelliği vererek hayalî bir yolculuk kurar."
+          },
+          {
+            "id": "C",
+            "text": "İki metin de kuş göçünü anlattığı için gerçektir; ayrım yalnız birinin bilimsel, diğerinin şiirsel bir dille yazılmasıdır."
+          },
+          {
+            "id": "D",
+            "text": "İki metin de yazarın seçtiği ayrıntılara dayandığı için kurgusaldır; araştırma araçlarının anılması gerçeklik sağlamaz."
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 1,
+            "claim": "I. metin verici ölçümlerine dayanan araştırma bulgusu sunar."
+          },
+          {
+            "id": "e2",
+            "sentence": 1,
+            "claim": "I. metin rota değişikliklerini çevresel etkenlerle inceler."
+          },
+          {
+            "id": "e3",
+            "sentence": 2,
+            "claim": "II. metinde ay konuşur ve yıldızlar yol açar."
+          },
+          {
+            "id": "e4",
+            "sentence": 2,
+            "claim": "II. metin bilimsel ölçüm değil hayalî olay örgüsü kurar."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "I. metin kuşların aynı yerde durmasını anlattığı için kurguya, II. metin göç yönünü açıkladığı için gerçeğe dayanır.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e3"
+            ],
+            "contradictions": [
+              "e1",
+              "e4"
+            ],
+            "scope": "reversed",
+            "claimFit": "opposite",
+            "misconceptionId": "topic-used-instead-of-verifiability"
+          },
+          {
+            "id": "B",
+            "text": "I. metin ölçülebilir araştırma verilerine dayanır, II. metin doğa varlıklarına insan özelliği vererek hayalî bir yolculuk kurar.",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3",
+              "e4"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "C",
+            "text": "İki metin de kuş göçünü anlattığı için gerçektir; ayrım yalnız birinin bilimsel, diğerinin şiirsel bir dille yazılmasıdır.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e3"
+            ],
+            "contradictions": [
+              "e4"
+            ],
+            "scope": "expanded",
+            "claimFit": "partial",
+            "misconceptionId": "shared-topic-means-shared-reality"
+          },
+          {
+            "id": "D",
+            "text": "İki metin de yazarın seçtiği ayrıntılara dayandığı için kurgusaldır; araştırma araçlarının anılması gerçeklik sağlamaz.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e4"
+            ],
+            "contradictions": [
+              "e1",
+              "e2"
+            ],
+            "scope": "expanded",
+            "claimFit": "partial",
+            "misconceptionId": "all-written-text-is-fiction"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "B",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "birinci metindeki doğrulanabilir unsurları bul",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Verici ölçümleri ve çevresel etkenler araştırma yoluyla sınanabilir."
+        },
+        {
+          "id": "s2",
+          "action": "ikinci metindeki olağanüstü eylemleri belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Ayın fısıldaması ve yıldızların yol açması gerçek dışı olaylardır."
+        },
+        {
+          "id": "s3",
+          "action": "gerçeklik ölçütünü dil türünden ayır",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Ölçülebilir kanıt gerçek unsuru, olağanüstü olay örgüsü kurguyu gösterir."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Birinci metindeki bilgiler hangi araç ve değişkenlere dayanıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Doğadaki hangi varlıklar insan gibi davranıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek konuya değil doğrulanabilirlik ve olağanüstülüğe dayanmalı.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "topic-used-instead-of-verifiability",
+          "text": "Gerçeklik konuya göre değil sunuluş biçimine göre ayrılır; ölçüm ve araştırma birinci metni, olağanüstü olaylar ikinci metni belirler.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e4"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Birinci metindeki verici ve çevresel etkenler doğrulanabilir bilgi sunar; ikinci metindeki konuşan ay ve yol açan yıldızlar kurgusal unsurlardır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "shared-topic-means-shared-reality",
+          "text": "Ortak konu iki metni gerçek yapmaz; ikinci metindeki doğaüstü eylemler yalnız dil farkı değil, açık bir kurgu işaretidir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3"
+          ],
+          "contradictionEvidenceIds": [
+            "e4"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "all-written-text-is-fiction",
+          "text": "Yazılı olması bir metni kurgu yapmaz; birinci metin ölçülebilir araç ve araştırma ilişkileriyle doğrulanabilir iddialar kurar.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e2"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "topic-used-instead-of-verifiability",
+        "shared-topic-means-shared-reality",
+        "all-written-text-is-fiction"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "bilimsel-ve-edebi-iki-metin",
+        "voice": "karsilastirmali",
+        "sourceMode": "ozgun-kus-gocu-cift-metni",
+        "rhetoricalMoves": [
+          "bilgi-verme",
+          "kurgu",
+          "kisilestirme"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-09-emphasis-design",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "anlama",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-28"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "emphasis-form-analysis",
+        "secondarySkills": [
+          "layout-meaning",
+          "argument-focus"
+        ],
+        "cognitiveProcess": "multimodal-text-analysis",
+        "knowledgeComponents": [
+          "bolding",
+          "repetition",
+          "example-sequence",
+          "central-claim"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": null,
+        "stimulusBlocks": [
+          "Bir kentin belleğini yalnız büyük yapılar taşımaz. Bir çeşmenin kitabesi, eski bir dükkân tabelası, kaldırımdaki aşınmış taş da geçmişten söz eder.",
+          "Dergi tasarımında “küçük izler” sözü iki kez yinelenmiş; son cümledeki “Asıl kayıp, küçük izleri önemsiz saydığımızda başlar.” ifadesi koyu yazılmıştır."
+        ],
+        "stem": "Metindeki düşüncenin vurgulanış biçimiyle ilgili doğru değerlendirme aşağıdakilerden hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Örnekler kentin tarihini ayrıntılandırır, tekrar metnin ritmini artırır, koyu yazı yalnız sayfa düzenini dengeler."
+          },
+          {
+            "id": "B",
+            "text": "Örnekler büyük yapıların önemini azaltır, tekrar karşıt bir düşünce kurar, koyu yazı yeni bir konuya geçildiğini gösterir."
+          },
+          {
+            "id": "C",
+            "text": "Örnekler küçük izleri somutlaştırır, tekrar ana kavramı canlı tutar, koyu yazı temel yargının görsel olarak öne çıkmasını sağlar."
+          },
+          {
+            "id": "D",
+            "text": "Örnekler nesnel kanıt sunar, tekrar anlatıcının kararsızlığını gösterir, koyu yazı metindeki tek doğrulanabilir bilgiyi işaretler."
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 1,
+            "claim": "Çeşme, tabela ve taş örnekleri küçük izlerin kapsamını somutlaştırır."
+          },
+          {
+            "id": "e2",
+            "sentence": 2,
+            "claim": "Küçük izler sözü tekrar edilerek odak korunur."
+          },
+          {
+            "id": "e3",
+            "sentence": 2,
+            "claim": "Son yargı koyu yazılarak temel düşünce görsel olarak öne çıkarılır."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "Örnekler kentin tarihini ayrıntılandırır, tekrar metnin ritmini artırır, koyu yazı yalnız sayfa düzenini dengeler.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "contradictions": [],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "visual-emphasis-as-decoration"
+          },
+          {
+            "id": "B",
+            "text": "Örnekler büyük yapıların önemini azaltır, tekrar karşıt bir düşünce kurar, koyu yazı yeni bir konuya geçildiğini gösterir.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2"
+            ],
+            "contradictions": [
+              "e2",
+              "e3"
+            ],
+            "scope": "reversed",
+            "claimFit": "partial",
+            "misconceptionId": "emphasis-devices-as-topic-shift"
+          },
+          {
+            "id": "C",
+            "text": "Örnekler küçük izleri somutlaştırır, tekrar ana kavramı canlı tutar, koyu yazı temel yargının görsel olarak öne çıkmasını sağlar.",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "D",
+            "text": "Örnekler nesnel kanıt sunar, tekrar anlatıcının kararsızlığını gösterir, koyu yazı metindeki tek doğrulanabilir bilgiyi işaretler.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "contradictions": [],
+            "scope": "expanded",
+            "claimFit": "partial",
+            "misconceptionId": "examples-as-proof-and-repetition-as-doubt"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "C",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "örneklerin neyi görünür kıldığını belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Soyut küçük izler düşüncesi somut nesnelerle açıklanır."
+        },
+        {
+          "id": "s2",
+          "action": "tekrarın odak üzerindeki etkisini belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Ana kavramın metin boyunca unutulmaması sağlanır."
+        },
+        {
+          "id": "s3",
+          "action": "koyu yazının anlam görevini belirle",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Son cümledeki temel yargı görsel olarak öne çıkarılır."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Çeşme, tabela ve taş hangi kavramın örnekleri?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Hangi söz iki kez kullanılarak odakta tutuluyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Koyu yazılan cümle ayrıntı mı, temel sonuç mu?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "visual-emphasis-as-decoration",
+          "text": "Örnek ve tekrarın etkisini kısmen açıklar; koyu yazının yalnız süs olmadığını, temel yargıyı görünür kıldığını gözden kaçırır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "emphasis-devices-as-topic-shift",
+          "text": "Metin yeni konuya geçmez; örnek, tekrar ve koyu yazı aynı düşünceyi somutlaştırıp merkezde tutmak için birlikte kullanılır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e2",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Üç vurgu aracının işlevini birlikte açıklar: somut örnekleme, ana kavramı yineleme ve merkezî yargıyı tipografik olarak belirginleştirme.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "examples-as-proof-and-repetition-as-doubt",
+          "text": "Örnekler araştırma kanıtı değildir ve tekrar kararsızlık bildirmez; kullanılan araçlar aynı düşünceyi daha görünür ve akılda kalıcı kılar.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "visual-emphasis-as-decoration",
+        "emphasis-devices-as-topic-shift",
+        "examples-as-proof-and-repetition-as-doubt"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "dergi-sayfasi-taslagi",
+        "voice": "kulturel-yorum",
+        "sourceMode": "ozgun-tipografik-metin",
+        "rhetoricalMoves": [
+          "ornek-siralama",
+          "tekrar",
+          "koyu-vurgu"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-10-thought-development",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "anlama",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-34"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "thought-development-methods",
+        "secondarySkills": [
+          "evidence-purpose",
+          "method-distinction"
+        ],
+        "cognitiveProcess": "rhetorical-analysis",
+        "knowledgeComponents": [
+          "numerical-data",
+          "comparison",
+          "quotation",
+          "example"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": "Bir müzik okulunda başlangıç düzeyindeki 120 öğrenci iki gruba ayrıldı. İlk grup haftada bir kez altmış dakika, ikinci grup haftada üç kez yirmişer dakika çalıştı. Sekiz hafta sonunda ikinci grubun ritim hataları ortalama yüzde 28 azalırken ilk gruptaki azalma yüzde 11'de kaldı. Bu sonuç, toplam süre aynı olsa bile çalışmanın günlere yayılmasının öğrenmeyi destekleyebileceğini düşündürüyor.",
+        "stimulusBlocks": null,
+        "stem": "Bu parçada düşünceyi geliştirmek için başvurulan yollar ve bunların işlevi aşağıdakilerden hangisinde doğru verilmiştir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "Karşılaştırma ve sayısal veriler kullanılmış; iki çalışma düzeninin sonuçları ölçülebilir farklarla desteklenmiştir."
+          },
+          {
+            "id": "B",
+            "text": "Tanımlama ve örneklendirme kullanılmış; ritim çalışmasının ne olduğu tek bir okul örneği üzerinden açıklanmıştır."
+          },
+          {
+            "id": "C",
+            "text": "Tanık gösterme ve karşılaştırma kullanılmış; uzman görüşü iki grubun çalışma süresiyle ilişkilendirilmiştir."
+          },
+          {
+            "id": "D",
+            "text": "Benzetme ve sayısal veriler kullanılmış; çalışma düzeni bir ritim kalıbına benzetilerek yüzdelerle açıklanmıştır."
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 1,
+            "claim": "120 öğrenciden oluşan iki grup tanıtılır."
+          },
+          {
+            "id": "e2",
+            "sentence": 2,
+            "claim": "Çalışma düzenleri karşılaştırılır."
+          },
+          {
+            "id": "e3",
+            "sentence": 3,
+            "claim": "Yüzde 28 ve yüzde 11 sayısal sonuçları verilir."
+          },
+          {
+            "id": "e4",
+            "sentence": 4,
+            "claim": "Veriler çalışmayı günlere yayma düşüncesini destekler."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "Karşılaştırma ve sayısal veriler kullanılmış; iki çalışma düzeninin sonuçları ölçülebilir farklarla desteklenmiştir.",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3",
+              "e4"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "B",
+            "text": "Tanımlama ve örneklendirme kullanılmış; ritim çalışmasının ne olduğu tek bir okul örneği üzerinden açıklanmıştır.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2"
+            ],
+            "contradictions": [
+              "e3"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "study-as-single-example"
+          },
+          {
+            "id": "C",
+            "text": "Tanık gösterme ve karşılaştırma kullanılmış; uzman görüşü iki grubun çalışma süresiyle ilişkilendirilmiştir.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2",
+              "e4"
+            ],
+            "contradictions": [
+              "e1",
+              "e3"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "research-result-as-expert-quote"
+          },
+          {
+            "id": "D",
+            "text": "Benzetme ve sayısal veriler kullanılmış; çalışma düzeni bir ritim kalıbına benzetilerek yüzdelerle açıklanmıştır.",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e3",
+              "e4"
+            ],
+            "contradictions": [
+              "e2"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "implicit-analogy-assumed"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "A",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "iki grubun nasıl düzenlendiğini belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Toplam süre aynı, çalışma sıklığı farklı iki grup karşılaştırılır."
+        },
+        {
+          "id": "s2",
+          "action": "sonuçların hangi yolla desteklendiğini bul",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Ritim hatalarındaki azalma yüzdelerle gösterilir."
+        },
+        {
+          "id": "s3",
+          "action": "yöntemlerin düşünceye katkısını birleştir",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "evidence": "Karşılaştırma ve sayısal veri, çalışma düzeni hakkındaki sonucu destekler."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Gruplar arasında değişen temel özellik nedir?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Parçada hangi ölçülebilir değerler kullanılmış?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Doğru seçenek hem yöntemleri hem neden kullanıldıklarını açıklamalı.",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "İki grubun çalışma biçimleri karşılaştırılır ve başarı farkı yüzdelerle verilir; böylece sonuç ölçülebilir bir dayanağa bağlanır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "study-as-single-example",
+          "text": "Bir okul çalışması anlatılsa da amaç kavram tanımlamak değildir; iki düzen karşılaştırılır ve fark sayısal sonuçlarla gösterilir.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "research-result-as-expert-quote",
+          "text": "Parçada bir uzmanın sözüne yer verilmez; dayanak, iki grubun ölçülen sonuçları ve bu sonuçların sayısal karşılaştırmasıdır.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e1",
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "implicit-analogy-assumed",
+          "text": "Yüzdeler bulunur; çalışma düzenini başka bir varlığa benzeten ifade yoktur, temel yöntem iki grubun sonuçlarını karşılaştırmadır.",
+          "supportingEvidenceIds": [
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e2"
+          ]
+        }
+      ],
+      "misconceptionIds": [
+        "study-as-single-example",
+        "research-result-as-expert-quote",
+        "implicit-analogy-assumed"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "bilgilendirici-kose",
+        "voice": "aciklayici",
+        "sourceMode": "ozgun-muzik-egitimi-yazisi",
+        "rhetoricalMoves": [
+          "sayisal-veri",
+          "karsilastirma",
+          "sonuc"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-11-process-order-seed",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "anlama",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-35"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "process-step-comprehension",
+        "secondarySkills": [
+          "prerequisite-ordering",
+          "instruction-following"
+        ],
+        "cognitiveProcess": "sequencing",
+        "knowledgeComponents": [
+          "procedure",
+          "dependency",
+          "chronological-order"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": null,
+        "stimulusBlocks": [
+          "Bir tohum çimlendirme kartında şu basamaklar karışık verilmiştir:",
+          "I. Kök 2-3 santimetreye ulaştığında fideyi toprak dolu saksıya aktarın.",
+          "II. Kâğıt havluyu nemlendirin ve tohumları aralıklı biçimde üzerine yerleştirin.",
+          "III. Kabı ışık alan, doğrudan güneş görmeyen bir yerde tutup nemi her gün kontrol edin.",
+          "IV. Tohumların üzerini ikinci nemli havluyla kapatıp kabın kapağını gevşekçe örtün."
+        ],
+        "stem": "İşlemin uygulanabilir bir sıraya kavuşması için basamaklar nasıl düzenlenmelidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "II - III - IV - I"
+          },
+          {
+            "id": "B",
+            "text": "IV - II - III - I"
+          },
+          {
+            "id": "C",
+            "text": "II - IV - I - III"
+          },
+          {
+            "id": "D",
+            "text": "II - IV - III - I"
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 2,
+            "claim": "Önce havlu nemlendirilir ve tohumlar yerleştirilir."
+          },
+          {
+            "id": "e2",
+            "sentence": 4,
+            "claim": "Tohumlar yerleştirildikten sonra üzeri kapatılır."
+          },
+          {
+            "id": "e3",
+            "sentence": 3,
+            "claim": "Kap hazırlandıktan sonra uygun ortamda nem izlenir."
+          },
+          {
+            "id": "e4",
+            "sentence": 1,
+            "claim": "Kök geliştikten sonra saksıya aktarım yapılır."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "II - III - IV - I",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e3",
+              "e4"
+            ],
+            "contradictions": [
+              "e2"
+            ],
+            "scope": "preserved",
+            "claimFit": "partial",
+            "misconceptionId": "monitor-before-covering"
+          },
+          {
+            "id": "B",
+            "text": "IV - II - III - I",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e2",
+              "e3",
+              "e4"
+            ],
+            "contradictions": [
+              "e1"
+            ],
+            "scope": "reversed",
+            "claimFit": "partial",
+            "misconceptionId": "cover-before-placement"
+          },
+          {
+            "id": "C",
+            "text": "II - IV - I - III",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2",
+              "e4"
+            ],
+            "contradictions": [
+              "e3"
+            ],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "transfer-before-growth-monitoring"
+          },
+          {
+            "id": "D",
+            "text": "II - IV - III - I",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3",
+              "e4"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "D",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3",
+          "e4"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "hazırlık işlemlerini belirle",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1",
+            "e2"
+          ],
+          "evidence": "Tohumları yerleştirme, üzerini kapatmadan önce gelir."
+        },
+        {
+          "id": "s2",
+          "action": "izleme aşamasının yerini belirle",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Kap hazırlandıktan sonra nem ve gelişim takip edilir."
+        },
+        {
+          "id": "s3",
+          "action": "son koşula bağlı aktarımı sona yerleştir",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e4"
+          ],
+          "evidence": "Saksıya aktarım kök belirli uzunluğa ulaştığında yapılır."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Tohumların üzerini kapatabilmek için önce hangi işlem yapılmalı?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Günlük kontrol, kabın hazırlanmasından önce mi sonra mı yapılır?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Hangi işlem kökün büyümesi koşuluna bağlıdır?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "monitor-before-covering",
+          "text": "Tohumların üzeri kapatılmadan kabı izleme aşamasına geçilir; III. basamak, hazırlık tamamlandıktan sonra uygulanmalıdır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e2"
+          ]
+        },
+        {
+          "optionId": "B",
+          "correct": false,
+          "misconceptionId": "cover-before-placement",
+          "text": "İkinci havluyla kapatma işlemi tohumlar ilk havluya yerleştirildikten sonra yapılabilir; IV. basamak başlangıç olamaz.",
+          "supportingEvidenceIds": [
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e1"
+          ]
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "transfer-before-growth-monitoring",
+          "text": "Tohumlar hazırlanır; kök gelişimi izlenmeden saksıya aktarma aşamasına geçildiği için süreçte gerekli bekleme ve kontrol eksik kalır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e4"
+          ],
+          "contradictionEvidenceIds": [
+            "e3"
+          ]
+        },
+        {
+          "optionId": "D",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Önce tohumlar yerleştirilip kapatılır, sonra uygun ortamda gelişim izlenir ve kök yeterli uzunluğa geldiğinde saksıya aktarılır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "monitor-before-covering",
+        "cover-before-placement",
+        "transfer-before-growth-monitoring"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "uygulama-kilavuzu",
+        "voice": "yonerge",
+        "sourceMode": "ozgun-tohum-cimlendirme-karti",
+        "rhetoricalMoves": [
+          "hazirlik",
+          "kosul",
+          "izleme",
+          "aktarim"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    },
+    {
+      "schemaVersion": "3.0",
+      "id": "tr-g8-wave1-12-source-selection-heat-island",
+      "curriculum": {
+        "country": "TR",
+        "schoolYear": "2026-2027",
+        "programFamily": "PRE_TYMM",
+        "grade": 8,
+        "courseId": "turkce",
+        "unitId": "okuma",
+        "topicId": "anlama",
+        "outcomeIds": [
+          "tr.pre-tymm.g8.turkce.t-8-3-30"
+        ],
+        "sourceIds": [
+          "meb-legacy-programs"
+        ]
+      },
+      "construct": {
+        "primarySkill": "effective-source-use",
+        "secondarySkills": [
+          "source-purpose-matching",
+          "recency-and-method-evaluation"
+        ],
+        "cognitiveProcess": "evaluation-and-selection",
+        "knowledgeComponents": [
+          "primary-data",
+          "academic-explanation",
+          "commercial-source",
+          "research-question"
+        ],
+        "intendedDifficultyBand": "LGS_HIGH"
+      },
+      "content": {
+        "stimulus": null,
+        "stimulusBlocks": [
+          "Ece, “Mahallemizde yaz akşamları hangi bölgeler daha sıcak kalıyor ve bunun olası nedenleri nelerdir?” sorusunu araştıracaktır.",
+          "1. Belediyenin 2025 tarihli, sokaklara göre gece yüzey sıcaklıklarını gösteren açık veri haritası",
+          "2. Yazarı belirtilmeyen 2017 tarihli “Şehirde serin kalmanın on yolu” başlıklı blog yazısı",
+          "3. Bir üniversitenin 2024 tarihli, yapı yoğunluğu ve yeşil alanın gece sıcaklığıyla ilişkisini açıklayan araştırma özeti",
+          "4. Isı yalıtım ürünü satan bir firmanın kendi ürününü tanıttığı reklam broşürü"
+        ],
+        "stem": "Ece’nin araştırma sorusuna doğrudan veri ve açıklayıcı çerçeve sağlayacak kaynak çifti hangisidir?",
+        "options": [
+          {
+            "id": "A",
+            "text": "1 ve 2"
+          },
+          {
+            "id": "B",
+            "text": "1 ve 3"
+          },
+          {
+            "id": "C",
+            "text": "2 ve 4"
+          },
+          {
+            "id": "D",
+            "text": "3 ve 4"
+          }
+        ],
+        "evidenceMap": [
+          {
+            "id": "e1",
+            "sentence": 1,
+            "claim": "Araştırma hem mahalledeki sıcak bölgeleri hem nedenlerini sorar."
+          },
+          {
+            "id": "e2",
+            "sentence": 2,
+            "claim": "Kaynak 1 güncel ve konuma özgü sıcaklık verisi sunar."
+          },
+          {
+            "id": "e3",
+            "sentence": 4,
+            "claim": "Kaynak 3 yapı ve yeşil alanla sıcaklık ilişkisini açıklar."
+          },
+          {
+            "id": "e4",
+            "sentence": 3,
+            "claim": "Kaynak 2 yazarsız ve eski bir genel öneri metnidir."
+          },
+          {
+            "id": "e5",
+            "sentence": 5,
+            "claim": "Kaynak 4 ticari tanıtım amacı taşır."
+          }
+        ],
+        "optionSemantics": [
+          {
+            "id": "A",
+            "text": "1 ve 2",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e2",
+              "e4"
+            ],
+            "contradictions": [],
+            "scope": "narrowed",
+            "claimFit": "partial",
+            "misconceptionId": "general-advice-used-as-causal-source"
+          },
+          {
+            "id": "B",
+            "text": "1 ve 3",
+            "correct": true,
+            "semanticField": "item-specific-shared-field",
+            "support": [
+              "e1",
+              "e2",
+              "e3"
+            ],
+            "partialSupport": [],
+            "contradictions": [],
+            "scope": "preserved",
+            "claimFit": "full",
+            "misconceptionId": null
+          },
+          {
+            "id": "C",
+            "text": "2 ve 4",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e4",
+              "e5"
+            ],
+            "contradictions": [],
+            "scope": "shifted",
+            "claimFit": "partial",
+            "misconceptionId": "popular-and-commercial-sources-selected"
+          },
+          {
+            "id": "D",
+            "text": "3 ve 4",
+            "correct": false,
+            "semanticField": "item-specific-shared-field",
+            "support": [],
+            "partialSupport": [
+              "e1",
+              "e3",
+              "e5"
+            ],
+            "contradictions": [],
+            "scope": "narrowed",
+            "claimFit": "partial",
+            "misconceptionId": "explanation-without-local-data"
+          }
+        ],
+        "synthesisRequirement": {
+          "requiredEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "singleSentenceSufficient": false
+        },
+        "humanReview": {
+          "status": "NOT_MEASURED",
+          "calibrationBatch": "GRADE8_TURKISH_READING_LANGUAGE_WAVE1_12",
+          "gameAdaptationAllowed": false
+        }
+      },
+      "itemFormat": "single-choice",
+      "responseModel": {
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "optionCount": 4
+      },
+      "answerKey": {
+        "optionId": "B",
+        "supportingEvidenceIds": [
+          "e1",
+          "e2",
+          "e3"
+        ]
+      },
+      "solutionGraph": [
+        {
+          "id": "s1",
+          "action": "araştırma sorusunun iki bilgi ihtiyacını ayır",
+          "dependsOn": [],
+          "evidenceIds": [
+            "e1"
+          ],
+          "evidence": "Soru yerel sıcaklık dağılımı ile bu dağılımın nedenlerini birlikte ister."
+        },
+        {
+          "id": "s2",
+          "action": "yerel ve güncel veriyi sağlayan kaynağı seç",
+          "dependsOn": [
+            "s1"
+          ],
+          "evidenceIds": [
+            "e2"
+          ],
+          "evidence": "Belediye haritası sokak düzeyinde gece sıcaklığı verir."
+        },
+        {
+          "id": "s3",
+          "action": "nedenleri açıklayacak araştırma kaynağını eşleştir",
+          "dependsOn": [
+            "s2"
+          ],
+          "evidenceIds": [
+            "e3"
+          ],
+          "evidence": "Üniversite özeti yapı ve yeşil alan ilişkisini açıklar."
+        }
+      ],
+      "hints": [
+        {
+          "level": 1,
+          "text": "Ece yalnız sıcak yerleri mi, nedenlerini de mi araştırıyor?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 2,
+          "text": "Mahalle içindeki farkları hangi kaynak doğrudan gösterir?",
+          "revealsAnswer": false
+        },
+        {
+          "level": 3,
+          "text": "Sıcaklık farkının olası nedenlerini hangi kaynak yöntemli biçimde açıklıyor?",
+          "revealsAnswer": false
+        }
+      ],
+      "optionFeedback": [
+        {
+          "optionId": "A",
+          "correct": false,
+          "misconceptionId": "general-advice-used-as-causal-source",
+          "text": "Harita mahalle verisini sağlar; yazarsız ve eski blog, yapı ile yeşil alanın sıcaklığa etkisini güvenilir bir yöntemle açıklamaz.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e4"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "B",
+          "correct": true,
+          "misconceptionId": null,
+          "text": "Belediye haritası sıcak bölgeleri konuma göre gösterir; üniversite özeti bu dağılımı yapı yoğunluğu ve yeşil alanla açıklamak için çerçeve sağlar.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e2",
+            "e3"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "C",
+          "correct": false,
+          "misconceptionId": "popular-and-commercial-sources-selected",
+          "text": "İki kaynak da araştırma sorusuna özgü ölçüm sunmaz; biri yazarsız genel öneri, diğeri satış amacı taşıyan ürün tanıtımıdır.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e4",
+            "e5"
+          ],
+          "contradictionEvidenceIds": []
+        },
+        {
+          "optionId": "D",
+          "correct": false,
+          "misconceptionId": "explanation-without-local-data",
+          "text": "Üniversite özeti nedenleri açıklamaya yardım eder; reklam broşürü mahallede hangi bölgelerin sıcak kaldığını gösteren yerel veri sağlamaz.",
+          "supportingEvidenceIds": [
+            "e1",
+            "e3",
+            "e5"
+          ],
+          "contradictionEvidenceIds": []
+        }
+      ],
+      "misconceptionIds": [
+        "general-advice-used-as-causal-source",
+        "popular-and-commercial-sources-selected",
+        "explanation-without-local-data"
+      ],
+      "verifier": {
+        "solverId": "tr-g8-wave1-semantic-score-v1",
+        "independentVerifierId": "tr-g8-wave1-constraint-intersection-v1",
+        "verified": true
+      },
+      "styleProfile": {
+        "genre": "arastirma-planlama",
+        "voice": "ogrenci-projesi",
+        "sourceMode": "ozgun-kaynak-karti-seti",
+        "rhetoricalMoves": [
+          "soru-belirleme",
+          "kaynak-karsilastirma",
+          "amac-eslestirme"
+        ]
+      },
+      "provenance": {
+        "generatedFromSourceIds": [
+          "meb-legacy-programs"
+        ],
+        "styleReferenceIds": [
+          "user-ozdebir-paragraph-sample",
+          "user-approved-grade8-turkish-calibration-standard"
+        ],
+        "copiedText": false
+      },
+      "contentStatus": "HUMAN_REVIEW_REQUIRED",
+      "gameBindings": []
+    }
+  ]
+}
