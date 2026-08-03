@@ -94,7 +94,8 @@
     "assessment:v2:phase4l": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4l-lgs-core-completion.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
     "assessment:v2:phase4m": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4m-calibration-and-game-lab.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
     "assessment:v2:phase4n": "npm run assessment:v2:phase4m && node --test tests/premium-question-bank.test.mjs tests/premium-pilot-quality.test.mjs && node --test tests/stage04-*-families.test.mjs && node scripts/build-assessment-v2-phase4n-live-platform-stabilization.mjs",
-    "assessment:v2:stage09:20": "node scripts/build-stage09-live-platform-report.mjs 20"
+    "assessment:v2:stage09:20": "node scripts/build-stage09-live-platform-report.mjs 20",
+    "assessment:v2:phase4o": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4o-student-pilot.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs"
   },
   "engines": {
     "node": ">=20"

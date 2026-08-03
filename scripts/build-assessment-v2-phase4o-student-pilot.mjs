@@ -1,0 +1,27 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { buildSimulatedStudentPilotFixture } from '../js/assessment-v2/student-pilot-fixture.js';
+import { analyzeStudentPilot } from '../js/assessment-v2/item-analysis-engine.js';
+import { evaluateStudentPilotPublicationGate } from '../js/assessment-v2/student-pilot-publication-gate.js';
+import { ASSESSMENT_V2_STUDENT_PILOT_MANIFEST } from '../js/assessment-v2/student-pilot-manifest.js';
+
+const fixture=buildSimulatedStudentPilotFixture();
+const analysis=analyzeStudentPilot({pilotId:fixture.pilotId,responses:fixture.rows,itemDescriptors:fixture.descriptors});
+const gate=evaluateStudentPilotPublicationGate({analysis,humanReviewApproved:true,semanticRoundTripPassed:true});
+const errors=[];
+if(analysis.status!=='SIMULATION_ENGINE_PASS')errors.push(`analysis:${analysis.status}`);
+if(gate.publicationAllowed!==false)errors.push('simulation-publication-leak');
+if(!gate.blockers.includes('real-student-evidence-required'))errors.push('real-evidence-blocker-missing');
+const report={schemaVersion:'1.0',generatedAt:new Date().toISOString(),title:'Phase 4O — Student Pilot and Item Analysis Engine',status:errors.length?'RED':'STUDENT_PILOT_ENGINE_PASS_REAL_DATA_REQUIRED',productReady:false,publicationAllowed:false,manifest:ASSESSMENT_V2_STUDENT_PILOT_MANIFEST,simulationAnalysis:analysis,publicationGate:gate,errors};
+const jsonOut=path.resolve('quality-reports/assessment-engine-v2-phase4o-student-pilot.json');
+const publicOut=path.resolve('public/assessment-v2-student-pilot-dashboard.json');
+fs.writeFileSync(jsonOut,JSON.stringify(report,null,2));fs.writeFileSync(publicOut,JSON.stringify(report,null,2));
+const esc=value=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const rows=analysis.items.map(item=>`<tr><td>${esc(item.itemId)}</td><td>${item.uniqueParticipantCount}</td><td>${item.difficultyIndex}</td><td>${item.discriminationIndex}</td><td>${Math.round(item.omissionRate*100)}%</td><td>${item.nonFunctionalDistractorCount}</td><td><b>${esc(item.status)}</b></td></tr>`).join('');
+const html=`<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Assessment V2 Öğrenci Pilotu</title><style>body{font-family:Arial,sans-serif;background:#f5f7fb;color:#172033;margin:0;padding:24px}.wrap{max-width:1180px;margin:auto}.warn{background:#fff3cd;border:1px solid #e2b93b;padding:16px;border-radius:12px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:18px 0}.card{background:white;border:1px solid #dfe5ef;border-radius:14px;padding:16px}.n{font-size:28px;font-weight:800}table{width:100%;border-collapse:collapse;background:white}th,td{border:1px solid #dfe5ef;padding:10px;text-align:left}th{background:#edf2f8}.blocked{color:#9a3412}.pass{color:#166534}code{background:#eef2f7;padding:2px 5px;border-radius:5px}</style></head><body><div class="wrap"><h1>Assessment V2 — Öğrenci Pilotu ve Madde Analizi</h1><div class="warn"><b>Bu ekrandaki 600 yanıt gerçek öğrenci verisi değildir.</b> Yalnız analiz motorunu doğrulayan <code>SIMULATED_FIXTURE</code> verisidir. Yayın kapısı bu nedenle otomatik olarak kapalıdır.</div><div class="grid"><div class="card"><div>Motor durumu</div><div class="n pass">${esc(analysis.status)}</div></div><div class="card"><div>Simüle katılımcı</div><div class="n">${analysis.metrics.participantCount}</div></div><div class="card"><div>Simüle yanıt</div><div class="n">${analysis.metrics.responseCount}</div></div><div class="card"><div>Yayın</div><div class="n blocked">KAPALI</div></div></div><h2>Madde ölçümleri</h2><table><thead><tr><th>Görev</th><th>n</th><th>Güçlük p</th><th>Ayırt edicilik</th><th>Boş</th><th>İşlevsiz çeldirici</th><th>Durum</th></tr></thead><tbody>${rows}</tbody></table><h2>Gerçek pilot için zorunlu kapılar</h2><ul>${ASSESSMENT_V2_STUDENT_PILOT_MANIFEST.gates.map(g=>`<li>${esc(g)}</li>`).join('')}</ul><p><b>Yayın engelleri:</b> ${gate.blockers.map(esc).join(', ')}</p></div></body></html>`;
+const htmlOut=path.resolve('quality-reports/assessment-v2-phase4o-student-pilot-dashboard.html');fs.writeFileSync(htmlOut,html);
+const csvOut=path.resolve('public/assessment-v2-student-pilot-response-template.csv');
+fs.writeFileSync(csvOut,'responseId,pilotId,datasetSource,participantAnonId,itemId,gameId,grade,selectedOptionId,omitted,score,maxScore,responseTimeMs,hintsUsed,attemptNumber,startedAt,submittedAt\n');
+const mdOut=path.resolve('ASSESSMENT_ENGINEERING_V2_PHASE4O_STUDENT_PILOT.md');
+fs.writeFileSync(mdOut,`# Assessment Engineering Engine V2 — Phase 4O\n\n- Durum: **${report.status}**\n- Gerçek öğrenci verisi: **YOK**\n- Simülasyon: **120 anonim katılımcı × 5 görev = 600 yanıt**\n- Madde analizi: güçlük, ayırt edicilik, boş bırakma, ipucu, süre ve çeldirici işlevi\n- Yayın: **KAPALI**\n- productReady: **false**\n\nGerçek pilot verisi yalnız \`REAL_STUDENT_PILOT\` kaynağı, en az 100 anonim katılımcı ve her görevde en az 80 yanıtla kabul edilir.\n`);
+console.log(JSON.stringify({status:report.status,files:[jsonOut,publicOut,htmlOut,csvOut,mdOut]},null,2));if(errors.length)process.exit(1);

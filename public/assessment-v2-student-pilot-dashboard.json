@@ -1,0 +1,396 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T23:10:56.020Z",
+  "title": "Phase 4O — Student Pilot and Item Analysis Engine",
+  "status": "STUDENT_PILOT_ENGINE_PASS_REAL_DATA_REQUIRED",
+  "productReady": false,
+  "publicationAllowed": false,
+  "manifest": {
+    "schemaVersion": "1.0",
+    "pilotId": "ASSESSMENT_V2_CONTROLLED_PILOT_001",
+    "status": "ENGINE_READY_AWAITING_REAL_PARTICIPANTS",
+    "productReady": false,
+    "publicationAllowed": false,
+    "datasetSourceRequired": "REAL_STUDENT_PILOT",
+    "privacy": {
+      "piiCollectionAllowed": false,
+      "anonymousParticipantIdRequired": true,
+      "consentRequired": true,
+      "rawResponseRetentionDays": 90,
+      "aggregateRetentionAllowed": true
+    },
+    "sampling": {
+      "minimumUniqueParticipants": 100,
+      "targetUniqueParticipants": 150,
+      "minimumResponsesPerItem": 80,
+      "gradeBands": [
+        8
+      ],
+      "pilotMode": "CONTROLLED_SCHOOL_OR_INVITED_COHORT"
+    },
+    "items": [
+      {
+        "itemId": "tr-g8-pilot02-01-idiom-contribution-community-oven",
+        "gameId": "meaning-hunt",
+        "itemFormat": "single-choice",
+        "correctOptionId": "B",
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "itemId": "tr-g8-pilot02-02-figurative-language-station",
+        "gameId": "meaning-hunt",
+        "itemFormat": "single-choice",
+        "correctOptionId": "C",
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "itemId": "tr-g8-pilot02-03-narration-description-workshop",
+        "gameId": "paragraph-detective",
+        "itemFormat": "single-choice",
+        "correctOptionId": "A",
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "itemId": "tr-g8-pilot02-04-author-view-story-ending",
+        "gameId": "paragraph-detective",
+        "itemFormat": "single-choice",
+        "correctOptionId": "D",
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      {
+        "itemId": "tr-g8-pilot02-05-text-types-essay-article",
+        "gameId": "meaning-hunt",
+        "itemFormat": "single-choice",
+        "correctOptionId": "B",
+        "optionIds": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      }
+    ],
+    "gates": [
+      "human-review-approved",
+      "semantic-round-trip-pass",
+      "real-student-pilot-evidence",
+      "item-difficulty-0.20-0.90",
+      "item-discrimination-at-least-0.20",
+      "maximum-one-nonfunctional-distractor",
+      "omission-rate-at-most-0.10"
+    ]
+  },
+  "simulationAnalysis": {
+    "schemaVersion": "1.0",
+    "pilotId": "ASSESSMENT_V2_SIMULATION_001",
+    "generatedAt": "2026-08-03T23:10:56.020Z",
+    "datasetSources": [
+      "SIMULATED_FIXTURE"
+    ],
+    "evidenceType": "SIMULATED_OR_MIXED",
+    "productReady": false,
+    "publicationAllowed": false,
+    "status": "SIMULATION_ENGINE_PASS",
+    "metrics": {
+      "responseCount": 600,
+      "participantCount": 120,
+      "itemCount": 5,
+      "technicalPassItemCount": 5
+    },
+    "thresholds": {
+      "minParticipants": 100,
+      "minResponsesPerItem": 80,
+      "minDifficulty": 0.2,
+      "maxDifficulty": 0.9,
+      "minDiscrimination": 0.2,
+      "maxOmissionRate": 0.1,
+      "maxNonFunctionalDistractors": 1
+    },
+    "items": [
+      {
+        "itemId": "tr-g8-pilot02-01-idiom-contribution-community-oven",
+        "gameId": "meaning-hunt",
+        "itemFormat": "single-choice",
+        "responseCount": 120,
+        "uniqueParticipantCount": 120,
+        "difficultyIndex": 0.6333,
+        "discriminationIndex": 0.375,
+        "discriminationUpperGroupSize": 32,
+        "discriminationLowerGroupSize": 32,
+        "omissionRate": 0.0417,
+        "hintUseRate": 0.2667,
+        "averageResponseTimeMs": 43371,
+        "medianResponseTimeMs": 43418,
+        "distractors": [
+          {
+            "optionId": "A",
+            "correct": false,
+            "count": 14,
+            "selectionRate": 0.1217,
+            "functional": true
+          },
+          {
+            "optionId": "B",
+            "correct": true,
+            "count": 76,
+            "selectionRate": 0.6609,
+            "functional": true
+          },
+          {
+            "optionId": "C",
+            "correct": false,
+            "count": 10,
+            "selectionRate": 0.087,
+            "functional": true
+          },
+          {
+            "optionId": "D",
+            "correct": false,
+            "count": 15,
+            "selectionRate": 0.1304,
+            "functional": true
+          }
+        ],
+        "nonFunctionalDistractorCount": 0,
+        "status": "SIMULATION_ENGINE_PASS",
+        "flags": [
+          "simulated-data-not-publishable"
+        ]
+      },
+      {
+        "itemId": "tr-g8-pilot02-02-figurative-language-station",
+        "gameId": "meaning-hunt",
+        "itemFormat": "single-choice",
+        "responseCount": 120,
+        "uniqueParticipantCount": 120,
+        "difficultyIndex": 0.6,
+        "discriminationIndex": 0.5,
+        "discriminationUpperGroupSize": 32,
+        "discriminationLowerGroupSize": 32,
+        "omissionRate": 0.0333,
+        "hintUseRate": 0.2583,
+        "averageResponseTimeMs": 49219,
+        "medianResponseTimeMs": 48912,
+        "distractors": [
+          {
+            "optionId": "A",
+            "correct": false,
+            "count": 16,
+            "selectionRate": 0.1379,
+            "functional": true
+          },
+          {
+            "optionId": "B",
+            "correct": false,
+            "count": 11,
+            "selectionRate": 0.0948,
+            "functional": true
+          },
+          {
+            "optionId": "C",
+            "correct": true,
+            "count": 72,
+            "selectionRate": 0.6207,
+            "functional": true
+          },
+          {
+            "optionId": "D",
+            "correct": false,
+            "count": 17,
+            "selectionRate": 0.1466,
+            "functional": true
+          }
+        ],
+        "nonFunctionalDistractorCount": 0,
+        "status": "SIMULATION_ENGINE_PASS",
+        "flags": [
+          "simulated-data-not-publishable"
+        ]
+      },
+      {
+        "itemId": "tr-g8-pilot02-03-narration-description-workshop",
+        "gameId": "paragraph-detective",
+        "itemFormat": "single-choice",
+        "responseCount": 120,
+        "uniqueParticipantCount": 120,
+        "difficultyIndex": 0.525,
+        "discriminationIndex": 0.4063,
+        "discriminationUpperGroupSize": 32,
+        "discriminationLowerGroupSize": 32,
+        "omissionRate": 0.0083,
+        "hintUseRate": 0.3167,
+        "averageResponseTimeMs": 54625,
+        "medianResponseTimeMs": 55463,
+        "distractors": [
+          {
+            "optionId": "A",
+            "correct": true,
+            "count": 63,
+            "selectionRate": 0.5294,
+            "functional": true
+          },
+          {
+            "optionId": "B",
+            "correct": false,
+            "count": 15,
+            "selectionRate": 0.1261,
+            "functional": true
+          },
+          {
+            "optionId": "C",
+            "correct": false,
+            "count": 20,
+            "selectionRate": 0.1681,
+            "functional": true
+          },
+          {
+            "optionId": "D",
+            "correct": false,
+            "count": 21,
+            "selectionRate": 0.1765,
+            "functional": true
+          }
+        ],
+        "nonFunctionalDistractorCount": 0,
+        "status": "SIMULATION_ENGINE_PASS",
+        "flags": [
+          "simulated-data-not-publishable"
+        ]
+      },
+      {
+        "itemId": "tr-g8-pilot02-04-author-view-story-ending",
+        "gameId": "paragraph-detective",
+        "itemFormat": "single-choice",
+        "responseCount": 120,
+        "uniqueParticipantCount": 120,
+        "difficultyIndex": 0.5,
+        "discriminationIndex": 0.4375,
+        "discriminationUpperGroupSize": 32,
+        "discriminationLowerGroupSize": 32,
+        "omissionRate": 0.0417,
+        "hintUseRate": 0.275,
+        "averageResponseTimeMs": 60144,
+        "medianResponseTimeMs": 59184,
+        "distractors": [
+          {
+            "optionId": "A",
+            "correct": false,
+            "count": 20,
+            "selectionRate": 0.1739,
+            "functional": true
+          },
+          {
+            "optionId": "B",
+            "correct": false,
+            "count": 15,
+            "selectionRate": 0.1304,
+            "functional": true
+          },
+          {
+            "optionId": "C",
+            "correct": false,
+            "count": 20,
+            "selectionRate": 0.1739,
+            "functional": true
+          },
+          {
+            "optionId": "D",
+            "correct": true,
+            "count": 60,
+            "selectionRate": 0.5217,
+            "functional": true
+          }
+        ],
+        "nonFunctionalDistractorCount": 0,
+        "status": "SIMULATION_ENGINE_PASS",
+        "flags": [
+          "simulated-data-not-publishable"
+        ]
+      },
+      {
+        "itemId": "tr-g8-pilot02-05-text-types-essay-article",
+        "gameId": "meaning-hunt",
+        "itemFormat": "single-choice",
+        "responseCount": 120,
+        "uniqueParticipantCount": 120,
+        "difficultyIndex": 0.525,
+        "discriminationIndex": 0.4063,
+        "discriminationUpperGroupSize": 32,
+        "discriminationLowerGroupSize": 32,
+        "omissionRate": 0.0333,
+        "hintUseRate": 0.2167,
+        "averageResponseTimeMs": 65534,
+        "medianResponseTimeMs": 65451,
+        "distractors": [
+          {
+            "optionId": "A",
+            "correct": false,
+            "count": 14,
+            "selectionRate": 0.1207,
+            "functional": true
+          },
+          {
+            "optionId": "B",
+            "correct": true,
+            "count": 63,
+            "selectionRate": 0.5431,
+            "functional": true
+          },
+          {
+            "optionId": "C",
+            "correct": false,
+            "count": 19,
+            "selectionRate": 0.1638,
+            "functional": true
+          },
+          {
+            "optionId": "D",
+            "correct": false,
+            "count": 20,
+            "selectionRate": 0.1724,
+            "functional": true
+          }
+        ],
+        "nonFunctionalDistractorCount": 0,
+        "status": "SIMULATION_ENGINE_PASS",
+        "flags": [
+          "simulated-data-not-publishable"
+        ]
+      }
+    ],
+    "errors": []
+  },
+  "publicationGate": {
+    "schemaVersion": "1.0",
+    "status": "BLOCKED",
+    "productReady": false,
+    "publicationAllowed": false,
+    "blockers": [
+      "real-student-pilot-not-passed",
+      "real-student-evidence-required",
+      "item-analysis-failure"
+    ],
+    "note": "Gerçek öğrenci pilotu ve bütün kanıt kapıları tamamlanmadan yayın açılamaz."
+  },
+  "errors": []
+}
