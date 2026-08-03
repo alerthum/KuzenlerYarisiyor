@@ -17,6 +17,7 @@ import {
   renderStrictAuditLivePanelHtml,
   shouldDeferLegacyEvidence
 } from '../quality/strict-audit-live-panel.js';
+import { renderAssessmentV2ProductionPanelHtml } from '../quality/assessment-v2-production-panel.js';
 import {
   loadCommandCenterExportBundle,
   loadCommandCenterShareBundle,
@@ -50,6 +51,7 @@ let syncedAttemptIds = new Set();
 let syncedReportIds = new Set();
 let questionEngineAnalysisCache = null;
 let strictAuditLiveCache = null;
+let assessmentV2ProductionCache = null;
 let strictAuditLiveFetchError = null;
 let strictAuditLiveTimer = null;
 let commandCenterExportBusy = false;
@@ -440,6 +442,20 @@ async function loadQuestionEngineAnalysis({ force=false }={}) {
   return questionEngineAnalysisCache;
 }
 
+async function loadAssessmentV2ProductionDashboard({ force = false } = {}) {
+  if (assessmentV2ProductionCache && !force) return assessmentV2ProductionCache;
+  try {
+    const response = await fetch(`/public/assessment-v2-production-dashboard.json?t=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (!data || typeof data !== 'object') throw new Error('Geçersiz üretim portföyü JSON');
+    assessmentV2ProductionCache = data;
+  } catch (error) {
+    assessmentV2ProductionCache = { fetchError: error?.message || 'Üretim portföyü okunamadı.' };
+  }
+  return assessmentV2ProductionCache;
+}
+
 async function loadStrictAuditLive({ force = false } = {}) {
   if (strictAuditLiveCache && !force && !strictAuditLiveFetchError) return strictAuditLiveCache;
   try {
@@ -710,11 +726,12 @@ function dv(value, suffix='') {
   return `${esc(String(value))}${suffix}`;
 }
 
-function questionEngineCommandCenterModule(analysis, liveState = null) {
+function questionEngineCommandCenterModule(analysis, liveState = null, productionPortfolio = null) {
   const livePanel = renderStrictAuditLivePanelHtml(liveState || strictAuditLiveCache, {
     fetchError: strictAuditLiveFetchError
   });
   const deferLegacy = shouldDeferLegacyEvidence(liveState || strictAuditLiveCache);
+  const productionPanel = renderAssessmentV2ProductionPanelHtml(productionPortfolio || assessmentV2ProductionCache);
 
   const exportToolbar = `<div class="command-center-actions">
       <button class="secondary-button" data-platform-action="admin-refresh-question-engine">🔄 Yeniden yükle</button>
@@ -733,12 +750,14 @@ function questionEngineCommandCenterModule(analysis, liveState = null) {
     return `<div class="module-heading"><div><span class="badge cyan">Otonom kalite motoru</span><h2>Soru Motoru Komuta Merkezi</h2><p>Canlı denetim üstte; analiz dosyası ayrıca yüklenir.</p></div>${exportToolbar}</div>
     <div id="cc-export-status" class="command-center-export-status" hidden></div>
     ${livePanel}
+    ${productionPanel}
     <div class="empty-state">Analiz verisi yok — <code>public/question-engine-analysis.json</code> henüz yüklenmedi.</div>`;
   }
   if (analysis.fetchError) {
     return `<div class="module-heading"><div><span class="badge orange">Hata</span><h2>Soru Motoru Komuta Merkezi</h2><p>Analiz dosyası okunamadı.</p></div>${exportToolbar}</div>
     <div id="cc-export-status" class="command-center-export-status" hidden></div>
     ${livePanel}
+    ${productionPanel}
     <div class="empty-state">Veri yok — ${esc(analysis.fetchError)}</div>`;
   }
 
@@ -817,6 +836,8 @@ function questionEngineCommandCenterModule(analysis, liveState = null) {
   <div id="cc-export-status" class="command-center-export-status" hidden></div>
 
   ${livePanel}
+
+  ${productionPanel}
 
   ${legacyMetrics}
 
@@ -932,7 +953,7 @@ function questionEngineCommandCenterModule(analysis, liveState = null) {
 }
 
 // Merkezi yönetim paneli — modül bazlı premium yönetim
-function adminManagement(accounts,classrooms,learners,schools,reports,metrics=new Map(),questionEngineAnalysis=null,strictAuditLive=null) {
+function adminManagement(accounts,classrooms,learners,schools,reports,metrics=new Map(),questionEngineAnalysis=null,strictAuditLive=null,assessmentV2Production=null) {
   const renderers={
     overview:()=>adminOverview(accounts,schools,classrooms,learners),
     analytics:()=>adminAnalytics(schools,classrooms,learners,metrics),
@@ -942,7 +963,7 @@ function adminManagement(accounts,classrooms,learners,schools,reports,metrics=ne
     parents:()=>adultsModule('parent',accounts,schools,classrooms,learners),
     learners:()=>learnersModule(learners,schools,classrooms,accounts),
     'question-reports':()=>questionReportsModule(reports,learners),
-    'question-engine':()=>questionEngineCommandCenterModule(questionEngineAnalysis, strictAuditLive),
+    'question-engine':()=>questionEngineCommandCenterModule(questionEngineAnalysis, strictAuditLive, assessmentV2Production),
     settings:()=>accountSettingsModule()
   };
   const renderSelected = renderers[adminSection] || renderers.overview;
@@ -1004,14 +1025,16 @@ async function renderAdultPortal() {
   const isRealAdmin=account.role==='admin'&&adminView==='admin';
   let questionEngineAnalysis=null;
   let strictAuditLive=null;
+  let assessmentV2Production=null;
   if (isRealAdmin && adminSection==='question-engine') {
     questionEngineAnalysis = await loadQuestionEngineAnalysis();
+    assessmentV2Production = await loadAssessmentV2ProductionDashboard();
     strictAuditLive = await loadStrictAuditLive({ force: true });
     startStrictAuditLivePolling();
   } else {
     stopStrictAuditLivePolling();
   }
-  const management=account.role==='admin'?(adminView==='teacher'?teacherManagement(classrooms,visibleLearners):adminView==='parent'?parentManagement(learners):adminManagement(adminAccounts,classrooms,learners,schools,adminReports,metrics,questionEngineAnalysis,strictAuditLive)):account.role==='parent'?parentManagement(learners):teacherManagement(classrooms,visibleLearners);
+  const management=account.role==='admin'?(adminView==='teacher'?teacherManagement(classrooms,visibleLearners):adminView==='parent'?parentManagement(learners):adminManagement(adminAccounts,classrooms,learners,schools,adminReports,metrics,questionEngineAnalysis,strictAuditLive,assessmentV2Production)):account.role==='parent'?parentManagement(learners):teacherManagement(classrooms,visibleLearners);
   const standardOverview=!isRealAdmin?`${metricCards(visibleLearners,metrics)}${management}<section class="section panel"><div class="section-header"><div><h2>${account.role==='teacher'?'Toplu sınıf analizi':'Çocuklarım'}</h2><p>Gelişim ve giriş bilgilerini görüntüleyin.</p></div><button class="secondary-button" data-platform-action="print-student-list">🖨️ PDF / Yazdır</button></div>${learnerTable(visibleLearners,metrics,classrooms)}</section>`:management;
   root.innerHTML=`<main class="platform-shell portal-shell premium-admin-page"><header class="portal-topbar"><div class="auth-brand"><div class="platform-logo">🏆</div><div><strong>${esc(config.appName)}</strong><span>${centerLabel}</span></div></div><div class="portal-user"><button class="portal-profile-button" data-platform-action="${isRealAdmin?'admin-section':'noop'}" ${isRealAdmin?'data-section="settings"':''}><span>${esc(account.displayName||currentUser.displayName||currentUser.email)}</span><small>Profil</small></button><button class="text-button" data-platform-action="logout">Çıkış</button></div></header>${account.role==='admin'&&adminView!=='admin'?`<nav class="admin-preview-return" aria-label="Admin görünüm seçici"><span>Önizleme: ${adminView==='teacher'?'Öğretmen':'Veli'}</span><button class="primary-button" data-platform-action="admin-view" data-view="admin">Admin merkezine dön</button></nav>`:''}${standardOverview}</main>`;
 }
@@ -1277,6 +1300,7 @@ async function handleAction(target) {
     }
     if (action==='admin-refresh-question-engine') {
       await loadQuestionEngineAnalysis({ force: true });
+      await loadAssessmentV2ProductionDashboard({ force: true });
       await loadStrictAuditLive({ force: true });
       await renderAdultPortal();
     }

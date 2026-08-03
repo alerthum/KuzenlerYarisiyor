@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-03T17:10:26.388Z",
+  "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
+  "status": "FOUNDATION_AND_PILOTS_IN_PROGRESS",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "legacy": {
+    "count": 604,
+    "status": "UNVERIFIED_LEGACY"
+  },
+  "architecture": {
+    "policyVersion": "3.1",
+    "pipelineOrder": [
+      "AUTHORITATIVE_CURRICULUM",
+      "SUBJECT_SPECIFIC_CONTENT_ENGINE",
+      "INDEPENDENT_ANSWER_VERIFICATION",
+      "PEDAGOGICAL_FEEDBACK",
+      "QUALITY_GATES",
+      "HUMAN_CALIBRATION",
+      "CANONICAL_PILOT_EXPANSION",
+      "GAME_ADAPTATION",
+      "SEMANTIC_ROUND_TRIP",
+      "STUDENT_PILOT",
+      "PUBLICATION"
+    ],
+    "sharedContractNotSharedGenerator": true,
+    "subjectSpecificEnginesRequired": true
+  },
+  "summary": {
+    "targetGradeCount": 12,
+    "activeGradeCount": 2,
+    "courseScheduleCellCount": 112,
+    "activeEngineCellCount": 4,
+    "activeEngineCellPercent": 3.6,
+    "curriculumOutcomeRecordCount": 91,
+    "coveredOutcomeCount": 46,
+    "canonicalQuestionCount": 66,
+    "humanApprovedQuestionCount": 5,
+    "humanReviewQueueCount": 61,
+    "gameAdaptedQuestionCount": 0,
+    "legacyQuarantineCount": 604
+  },
+  "rollout": [
+    {
+      "grade": 1,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 2,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 3,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 4,
+      "programFamily": "PRE_TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 5,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 6,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 7,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 8,
+      "programFamily": "PRE_TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 9,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 10,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 11,
+      "programFamily": "TYMM",
+      "status": "ACTIVE"
+    },
+    {
+      "grade": 12,
+      "programFamily": "PRE_TYMM",
+      "status": "ACTIVE"
+    }
+  ],
+  "engines": [
+    {
+      "id": "tr-g8-turkce-v2",
+      "grade": 8,
+      "courseId": "turkce",
+      "courseName": "Türkçe",
+      "programFamily": "PRE_TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 76,
+      "ingestedOutcomeCount": 76,
+      "coveredOutcomeCount": 31,
+      "courseCoveragePercent": 40.8,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 51,
+      "humanApprovedQuestionCount": 5,
+      "humanReviewQueueCount": 46,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "EXPANDING",
+      "engineType": "semantic-evidence + grammar + visual-reading",
+      "verifierType": "independent semantic/constraint verification",
+      "misconceptionCatalog": "tr-g8-turkish-domain-misconceptions",
+      "nextAction": "Kalan 45 kazanımı dinleme, konuşma, yazma ve eksik okuma dalgalarıyla kapat.",
+      "blockers": [
+        "45 kazanım henüz kanonik soru veya performans göreviyle kapsanmadı.",
+        "İnsan inceleme kuyruğu tamamlanmadı."
+      ]
+    },
+    {
+      "id": "tr-g8-matematik-v2",
+      "grade": 8,
+      "courseId": "matematik",
+      "courseName": "Matematik",
+      "programFamily": "PRE_TYMM",
+      "curriculumStatus": "PILOT_OUTCOMES_ONLY",
+      "officialOutcomeCount": null,
+      "ingestedOutcomeCount": 5,
+      "coveredOutcomeCount": 5,
+      "courseCoveragePercent": null,
+      "ingestionPercent": null,
+      "canonicalQuestionCount": 5,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 5,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "PILOT_VALIDATED",
+      "engineType": "symbolic/numeric solver-backed",
+      "verifierType": "independent alternate algorithm",
+      "misconceptionCatalog": "tr-g8-math-pilot-misconceptions",
+      "nextAction": "8. sınıf Matematik tam resmî kapsam matrisini çıkar ve ünite dalgalarını başlat.",
+      "blockers": [
+        "Tam ders kazanım aktarımı henüz yapılmadı.",
+        "İnsan gözle kalibrasyonu yapılmadı."
+      ]
+    },
+    {
+      "id": "tr-g8-fen-v2",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "courseName": "Fen Bilimleri",
+      "programFamily": "PRE_TYMM",
+      "curriculumStatus": "PILOT_OUTCOMES_ONLY",
+      "officialOutcomeCount": null,
+      "ingestedOutcomeCount": 5,
+      "coveredOutcomeCount": 5,
+      "courseCoveragePercent": null,
+      "ingestionPercent": null,
+      "canonicalQuestionCount": 5,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 5,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "PILOT_VALIDATED",
+      "engineType": "model/experiment/data reasoning",
+      "verifierType": "evidence-constraint + scientific model verification",
+      "misconceptionCatalog": "tr-g8-science-pilot-misconceptions",
+      "nextAction": "8. sınıf Fen Bilimleri tam resmî kapsam matrisini çıkar ve ünite dalgalarını başlat.",
+      "blockers": [
+        "Tam ders kazanım aktarımı henüz yapılmadı.",
+        "İnsan gözle kalibrasyonu yapılmadı."
+      ]
+    },
+    {
+      "id": "tr-g5-turkce-v2",
+      "grade": 5,
+      "courseId": "turkce",
+      "courseName": "Türkçe",
+      "programFamily": "TYMM",
+      "curriculumStatus": "PILOT_OUTCOMES_ONLY",
+      "officialOutcomeCount": null,
+      "ingestedOutcomeCount": 5,
+      "coveredOutcomeCount": 5,
+      "courseCoveragePercent": null,
+      "ingestionPercent": null,
+      "canonicalQuestionCount": 5,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 5,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "PILOT_VALIDATED",
+      "engineType": "age-calibrated semantic evidence",
+      "verifierType": "independent evidence intersection",
+      "misconceptionCatalog": "tr-g5-turkish-pilot-misconceptions",
+      "nextAction": "5. sınıf Türkçe TYMM tam öğrenme çıktısı matrisini çıkar ve yaşa özel dalgaları başlat.",
+      "blockers": [
+        "Tam ders öğrenme çıktısı aktarımı henüz yapılmadı.",
+        "İnsan gözle kalibrasyonu yapılmadı."
+      ]
+    }
+  ],
+  "pipeline": [
+    {
+      "id": "curriculum",
+      "label": "Resmî müfredat",
+      "status": "IN_PROGRESS",
+      "note": "Sınıf ve ders bazında sürüm yönlendirmesi zorunlu."
+    },
+    {
+      "id": "subject-engine",
+      "label": "Derse özel motor",
+      "status": "IN_PROGRESS",
+      "note": "Ortak üretici yok; ortak sözleşme var."
+    },
+    {
+      "id": "canonical-content",
+      "label": "Kanonik soru/görev",
+      "status": "IN_PROGRESS",
+      "note": "66 doğrulanan mühendislik nesnesi mevcut."
+    },
+    {
+      "id": "human-review",
+      "label": "İnsan kalibrasyonu",
+      "status": "BLOCKED",
+      "note": "5 onaylı, 61 inceleme bekliyor."
+    },
+    {
+      "id": "game-adaptation",
+      "label": "Oyun uyarlaması",
+      "status": "LOCKED",
+      "note": "Tam kapsam ve insan onayı öncesinde açılamaz."
+    },
+    {
+      "id": "student-pilot",
+      "label": "Öğrenci pilotu",
+      "status": "NOT_STARTED",
+      "note": "Madde analizi ve çeldirici performansı henüz ölçülmedi."
+    },
+    {
+      "id": "publication",
+      "label": "Yayın",
+      "status": "LOCKED",
+      "note": "productReady=false."
+    }
+  ],
+  "nextMilestones": [
+    {
+      "order": 1,
+      "id": "g8-math-full-scope",
+      "title": "8. sınıf Matematik tam kapsam matrisi",
+      "reason": "Çapraz pilot doğrulandı; ders ölçeğine geçilmeli."
+    },
+    {
+      "order": 2,
+      "id": "g8-science-full-scope",
+      "title": "8. sınıf Fen Bilimleri tam kapsam matrisi",
+      "reason": "Deney/model motoru ders ölçeğine genişletilmeli."
+    },
+    {
+      "order": 3,
+      "id": "g5-turkish-full-scope",
+      "title": "5. sınıf Türkçe TYMM tam kapsam matrisi",
+      "reason": "Yaş düzeyi aktarımı pilot sınırından çıkarılmalı."
+    },
+    {
+      "order": 4,
+      "id": "g8-turkish-remaining",
+      "title": "8. sınıf Türkçe kalan 45 kazanım",
+      "reason": "Tam kapsam kayıtlı; içerik boşlukları dalgalarla kapanmalı."
+    },
+    {
+      "order": 5,
+      "id": "human-review-ledger",
+      "title": "İnsan inceleme iş akışı",
+      "reason": "61 soru onay bekliyor; oyun kilidi bu kuyrukla bağlı."
+    }
+  ]
+}
