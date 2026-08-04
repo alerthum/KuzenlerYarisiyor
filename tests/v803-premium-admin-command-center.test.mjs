@@ -17,7 +17,7 @@ test('admin yönetimi tüm modülleri kalıcı komuta merkezinde sunar', () => {
 test('admin yalnız seçili modülü render eder ve menü seçiminde kapanır', () => {
   assert.match(platform, /const renderSelected = renderers\[adminSection\]/);
   assert.match(platform, /moduleHtml = renderSelected\(\)/);
-  assert.match(platform, /adminMenuOpen=false/);
+  assert.match(platform, /adminMenuOpen\s*=\s*false/);
 });
 
 test('premium modal uygulama dışındaki document delegasyonu ile kapanır', () => {

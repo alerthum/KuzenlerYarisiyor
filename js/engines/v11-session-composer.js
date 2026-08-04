@@ -158,6 +158,10 @@ export function composeV11Session(rounds = [], {
       if (cx) usedCx.add(cx);
       return true;
     };
+    // Kanıtlanmış tekrar eden yanılgı için seçilmiş sessiz telafi turları,
+    // görev-türü çeşitlendirmesinden önce yerleştirilir; aksi hâlde çeşitlilik
+    // kotası hedef turu oturumdan düşürebilir.
+    for (const round of selected.filter((item) => item.adaptivePlacement && weakSkeletons.has(skeletonOf(item)))) take(round);
     // Kaynakta birden çok görev türü varsa, oturum hedefi elverdiği ölçüde
     // her türden en az bir temsilci seç. Bu, sayısal/geometrik oyunlarda
     // bestecinin yalnız tek iskelet türüne yığılmasını engeller.
@@ -179,6 +183,12 @@ export function composeV11Session(rounds = [], {
     // oturum hedefi kaynak çeşitliliğini aşıyorsa farklı iskelet ve soru anahtarıyla
     // aynı aileden kontrollü tekrar kabul edilir.
     selected = unique;
+  }
+  if (firstExperience) {
+    const goldOpening = base.rounds.find((round) => round.premiumTier === 'GOLD' || round.premiumShowcase === true);
+    if (goldOpening) {
+      selected = [goldOpening, ...selected.filter((round) => roundKey(round) !== roundKey(goldOpening))].slice(0, limit);
+    }
   }
   let remediationCount = selected.filter(x=>x.adaptivePlacement).length;
   const rejectedForbidden = source.filter(x=>!selected.some(y=>roundKey(y)===roundKey(x)) && selected.some(y=>isForbidden(y,x))).map(x=>({

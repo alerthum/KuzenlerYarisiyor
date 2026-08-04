@@ -235,6 +235,8 @@ function createGoldShowcaseRound(gameId, game, profile, sessionSeed, seen = new 
     learningOutcomeId: question.learningOutcomeId,
     thinkingPatternId: question.thinkingPatternId,
     cognitiveDepth: question.cognitiveDepth,
+    reasoningStepCount: question.reasoningStepCount,
+    cognitiveTraits: question.cognitiveTraits,
     familyId: question.familyId,
     questionKey: question.questionKey,
     distractorValidation: question.distractorValidation,
@@ -1707,11 +1709,12 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   // Premium soru bankası: yalnız insan tarafından yazılmış, gerçek misconception
   // kayıtları ve çözüm kanıtı taşıyan havuz kullanılır. Premiuma taşınmış hiçbir
   // oyunda havuz tükendiğinde düşük kaliteli legacy içeriğe sessiz dönüş yapılmaz.
+  const premiumGrade = Number(profile?.grade);
   const premiumBank = generatePremiumRounds(gameId, {
     seed,
     count: Math.max(game.sessionLength * 4, 20),
     seenQuestionKeys: seen,
-    grade: Number(profile?.grade)
+    grade: Number.isInteger(premiumGrade) && premiumGrade >= 1 && premiumGrade <= 12 ? premiumGrade : null
   });
   // Aşama 04 aile motorları canlı oturumun birincil üreticisidir. Premium banka
   // bu oyunlarda aile motorunu ezmez; aile çıktısını kalite/ürün metadatasıyla
@@ -1732,11 +1735,15 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   // pilotu tükettiğinde bu doğal geçiştir; yalnız çağıranın açık seenQuestionKeys
   // listesi bankayı tamamen kapatmışsa sessiz fallback yasağı için underfill korunur.
   const pilotHasFullSession = Boolean(pilotProbe && pilotProbe.audit.unseenAvailable >= game.sessionLength);
-  const pilotLiveSource = Boolean(pilotProbe && ((currentSessionIndex <= 2 && pilotHasFullSession) || pilotExplicitlyExhausted));
   // Ürün bankası entegrasyon testleri ve tarihli canlı yayın çağrıları, aile
-  // motoru yerine doğrudan insan yazımı premium bankayı doğrular. Stage04 aile
-  // testleri ve yıllık besteci ise sertifikalı aile motorunu kullanmaya devam eder.
-  const forceDirectPremiumBank = Boolean(options.simulatedDate && !pilotLiveSource);
+  // motoru yerine doğrudan insan yazımı premium bankayı doğrular. Tarihli çağrı
+  // açık bir kaynak seçimi olduğundan ilk iki oturum pilot kalibrasyonundan önce gelir.
+  const forceDirectPremiumBank = Boolean(options.simulatedDate);
+  const pilotLiveSource = Boolean(!forceDirectPremiumBank
+    && pilotProbe
+    && ((currentSessionIndex <= 2 && pilotHasFullSession) || pilotExplicitlyExhausted));
+  // Stage04 aile testleri ve yıllık besteci sertifikalı aile motorunu kullanmaya
+  // devam eder; yalnız tarihli yayın çağrıları doğrudan premium bankayı seçer.
   const familyEngineOwnsLiveSession = Boolean(liveFamilyPool && !pilotLiveSource && !forceDirectPremiumBank);
   let premiumBankExhausted = false;
   if (premiumBank.audit.supported) {
@@ -1952,6 +1959,8 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   const gradeNum = Number(profile.grade || 0);
   const beforeGateCount = rounds.length;
   rounds = applyPublicationGates(rounds, gradeNum);
+  const approvedRemediationCandidates = rounds.filter((round) => round.v11Remediation && round.adaptivePlacement);
+  globalQualityAudit.v11MisconceptionRemediation.approvedCandidateCount = approvedRemediationCandidates.length;
   if (familyPool) {
     strictSessionFamilyUniqueness = new Set(rounds.map((round) => round.familyId).filter(Boolean)).size >= game.sessionLength;
     // Cooldown penceresi ham 48 iskelete değil, gerçek yayın kapılarından geçen
@@ -2096,6 +2105,22 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     })
     .sort((a, b) => rankAnnualFreshness(a) - rankAnnualFreshness(b));
 
+  // Yıllık tazelik sıralaması hedeflenmiş telafi turunu dışarıda bırakmışsa,
+  // yalnız daha önce bütün yayın kapılarından geçmiş adayı geri ekle. Böylece
+  // tekrar eden yanılgı için üretilen müdahale çeşitlilik sıralamasında kaybolmaz.
+  for (const candidate of approvedRemediationCandidates) {
+    if (rounds.some((round) => round.questionKey === candidate.questionKey)) continue;
+    if (candidate.questionKey && seen.has(candidate.questionKey)) continue;
+    const sfp = roundSurfaceFp(candidate);
+    // Hedefli pedagojik yeniden-pratik, öğrencinin tekrar ettiği aynı bilişsel
+    // iskeleti bilinçli olarak yeniden ölçer. Bu yüzden yıllık CX/structural/
+    // skeleton cooldown'u bu tek aday için engel değildir. Exact questionKey
+    // ve kalıcı yüzey parmak izi yasakları ise aynen korunur.
+    if (sfp && blockedSurfaceFingerprints.has(sfp)) continue;
+    rounds.unshift(candidate);
+  }
+
+  globalQualityAudit.v11MisconceptionRemediation.preComposerCandidateCount = rounds.filter((round) => round.v11Remediation && round.adaptivePlacement).length;
   // Aşama 09: kalite kapılarından geçen havuzu ortak besteci ile oturum uzunluğuna kes.
   premiumComposition = composeV11Session(rounds, {
     targetCount: game.sessionLength,
@@ -2105,6 +2130,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     misconceptionInterventions: v11Remediation.interventions
   });
   rounds = premiumComposition.rounds;
+  globalQualityAudit.v11MisconceptionRemediation.composedCandidateCount = rounds.filter((round) => round.v11Remediation && round.adaptivePlacement).length;
   if (familyPool) {
     strictSessionFamilyUniqueness = new Set(rounds.map((round) => round.familyId).filter(Boolean)).size >= game.sessionLength;
   }
@@ -2192,11 +2218,12 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     // soğuması bazı ailelerin dört iskeletini de geçici olarak kapatabilir;
     // bu durumda aile tekrarını yasaklamak yapay underfill üretir.
     const eligibleFamilyCount = new Set(rounds.filter((round) => {
+      const pedagogicalRepractice = Boolean(round.v11Remediation && round.adaptivePlacement);
       const cx = round.cognitiveExperienceId || buildCognitiveExperience(round).cognitiveExperienceId;
       const st = round.structuralId || buildCognitiveExperience(round).structuralId;
-      if (cx && recentCognitiveExperienceIds.has(cx)) return false;
-      if (st && recentStructuralIds.has(st)) return false;
-      if (round.skeletonId && recentSkeletonSet.has(round.skeletonId)) return false;
+      if (!pedagogicalRepractice && cx && recentCognitiveExperienceIds.has(cx)) return false;
+      if (!pedagogicalRepractice && st && recentStructuralIds.has(st)) return false;
+      if (!pedagogicalRepractice && round.skeletonId && recentSkeletonSet.has(round.skeletonId)) return false;
       return true;
     }).map((round) => round.familyId).filter(Boolean)).size;
     const enforceFinalFamilyUniqueness = strictSessionFamilyUniqueness && eligibleFamilyCount >= game.sessionLength;
@@ -2204,14 +2231,15 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
       if (final.length >= game.sessionLength) break;
       if (round.questionKey && seen.has(round.questionKey)) continue;
       if (round.questionKey && final.some((r) => r.questionKey === round.questionKey)) continue;
+      const pedagogicalRepractice = Boolean(round.v11Remediation && round.adaptivePlacement);
       const cx = round.cognitiveExperienceId || buildCognitiveExperience(round).cognitiveExperienceId;
-      if (cx && (usedCx.has(cx) || recentCognitiveExperienceIds.has(cx))) continue;
+      if (cx && (usedCx.has(cx) || (!pedagogicalRepractice && recentCognitiveExperienceIds.has(cx)))) continue;
       const st = round.structuralId || buildCognitiveExperience(round).structuralId;
-      if (st && (usedSt.has(st) || recentStructuralIds.has(st))) continue;
+      if (st && (usedSt.has(st) || (!pedagogicalRepractice && recentStructuralIds.has(st)))) continue;
       const sfp = roundSurfaceFp(round);
       if (sfp && blockedSurfaceFingerprints.has(sfp)) continue;
       if (enforceFinalFamilyUniqueness && round.familyId && usedFam.has(round.familyId)) continue;
-      if (round.skeletonId && (usedSkel.has(round.skeletonId) || recentSkeletonSet.has(round.skeletonId))) continue;
+      if (round.skeletonId && (usedSkel.has(round.skeletonId) || (!pedagogicalRepractice && recentSkeletonSet.has(round.skeletonId)))) continue;
       final.push(round);
       if (cx) usedCx.add(cx);
       if (st) usedSt.add(st);
@@ -2224,11 +2252,12 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
       for (const round of rounds) {
         if (final.length >= game.sessionLength) break;
         if (round.questionKey && (seen.has(round.questionKey) || final.some((r) => r.questionKey === round.questionKey))) continue;
+        const pedagogicalRepractice = Boolean(round.v11Remediation && round.adaptivePlacement);
         const cx = round.cognitiveExperienceId || buildCognitiveExperience(round).cognitiveExperienceId;
-        if (cx && (usedCx.has(cx) || recentCognitiveExperienceIds.has(cx))) continue;
+        if (cx && (usedCx.has(cx) || (!pedagogicalRepractice && recentCognitiveExperienceIds.has(cx)))) continue;
         const st = round.structuralId || buildCognitiveExperience(round).structuralId;
-        if (st && (usedSt.has(st) || recentStructuralIds.has(st))) continue;
-        if (round.skeletonId && (usedSkel.has(round.skeletonId) || recentSkeletonSet.has(round.skeletonId))) continue;
+        if (st && (usedSt.has(st) || (!pedagogicalRepractice && recentStructuralIds.has(st)))) continue;
+        if (round.skeletonId && (usedSkel.has(round.skeletonId) || (!pedagogicalRepractice && recentSkeletonSet.has(round.skeletonId)))) continue;
         if (enforceFinalFamilyUniqueness && round.familyId && usedFam.has(round.familyId)) continue;
         final.push(round);
         if (cx) usedCx.add(cx);
@@ -2308,6 +2337,9 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   globalQualityAudit.reports = finalGlobalQualityAudit.reports;
   globalQualityAudit.average = finalGlobalQualityAudit.average;
   globalQualityAudit.premiumComposition = premiumComposition.audit;
+  enforcement.accepted = rounds.length;
+  enforcement.complete = !enforcement.requested || rounds.length >= game.sessionLength;
+  enforcement.finalDeliveredCount = rounds.length;
   globalQualityAudit.classTarget = classTarget;
   globalQualityAudit.stage09BackfillInserted = backfillInserted;
   globalQualityAudit.finalRoundCount = rounds.length;
@@ -2340,6 +2372,13 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   } else {
     globalQualityAudit.capacityFailure = null;
   }
+
+  const deliveredGoldShowcase = rounds.find((round) => round.premiumShowcase === true
+    && (!goldCandidate?.questionKey || round.questionKey === goldCandidate.questionKey));
+  globalQualityAudit.goldShowcase.injected = Boolean(deliveredGoldShowcase);
+  globalQualityAudit.goldShowcase.blockedReason = goldCandidate && !deliveredGoldShowcase
+    ? 'PUBLICATION_OR_COMPOSITION_GATE_REJECTED'
+    : null;
 
   // Aşama 03: her oyunun her turu, hangi motor tarafından üretildiğine
   // bakılmaksızın ortak QuestionContract ile etiketlenir. Bilinmeyen alanlar

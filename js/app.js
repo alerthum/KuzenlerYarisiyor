@@ -113,7 +113,7 @@ function bottomNav() {
   return `
     <nav class="bottom-nav" aria-label="Ana menü">
       ${NAV_ITEMS.map(([screen, icon, label]) => `
-        <button class="nav-button ${ui.screen === screen ? 'active' : ''}" data-action="navigate" data-screen="${screen}">
+        <button class="nav-button ${ui.screen === screen ? 'active' : ''}" data-action="navigate" data-screen="${screen}" ${ui.screen === screen ? 'aria-current="page"' : ''}>
           <span class="nav-icon" aria-hidden="true">${icon}</span>
           <span>${label}</span>
         </button>`).join('')}
@@ -188,7 +188,7 @@ function renderDashboard() {
       <section class="dashboard-hero">
         <div class="welcome-card">
           <div class="welcome-row">
-            <div class="welcome-avatar">${escapeHtml(profile.avatar)}</div>
+            <div class="welcome-avatar" aria-hidden="true">${escapeHtml(profile.avatar)}</div>
             <div>
               <span class="badge orange">Seviye ${level.level}</span>
               <h1>Merhaba, ${escapeHtml(profile.name)}!</h1>
@@ -245,7 +245,7 @@ function renderDashboard() {
             const done = daily.completedGameIds.includes(gameId);
             return `
               <button class="mission-card ${done ? 'completed' : ''}" data-action="start-game" data-game-id="${game.id}">
-                <span class="mission-icon">${game.icon}</span>
+                <span class="mission-icon" aria-hidden="true">${game.icon}</span>
                 <span>
                   <small class="mission-category">${categoryLabel(game.category)}</small>
                   <h3>${index + 1}. ${escapeHtml(game.title)}</h3>
@@ -335,20 +335,20 @@ function geometryVisual(visual) {
   if (typeof visual === 'string') {
     if (visual === 'rectangle-8-5') return `<svg viewBox="0 0 420 230" role="img" aria-label="Uzun kenarı 8, kısa kenarı 5 birim olan dikdörtgen"><rect x="70" y="45" width="280" height="140" rx="6" ${common}/><text x="210" y="215" text-anchor="middle" fill="currentColor">8 birim</text><text x="40" y="120" text-anchor="middle" fill="currentColor">5</text></svg>`;
     if (visual === 'square-6') return `<svg viewBox="0 0 360 260" role="img" aria-label="Bir kenarı 6 birim olan kare"><rect x="80" y="30" width="200" height="200" rx="6" ${common}/><text x="180" y="252" text-anchor="middle" fill="currentColor">6 birim</text></svg>`;
-    if (visual === 'cut-rectangle') return `<svg viewBox="0 0 440 280" role="img"><path d="M55 35H385V235H210V150H55Z" ${common}/><text x="220" y="266" text-anchor="middle" fill="currentColor">10</text><text x="25" y="140" fill="currentColor">8</text><text x="295" y="142" fill="currentColor">4 × 3 çıkarıldı</text></svg>`;
-    if (visual === 'triangle-12-7') return `<svg viewBox="0 0 440 270" role="img"><path d="M55 220L385 220L235 35Z" ${common}/><path d="M235 35V220" stroke="rgba(249,115,22,.9)" stroke-width="3" stroke-dasharray="7 7"/><text x="220" y="252" text-anchor="middle" fill="currentColor">12</text><text x="250" y="132" fill="currentColor">7</text></svg>`;
+    if (visual === 'cut-rectangle') return `<svg viewBox="0 0 440 280" role="img" aria-label="Dikdörtgenden dört çarpı üçlük parça çıkarılmış birleşik şekil"><path d="M55 35H385V235H210V150H55Z" ${common}/><text x="220" y="266" text-anchor="middle" fill="currentColor">10</text><text x="25" y="140" fill="currentColor">8</text><text x="295" y="142" fill="currentColor">4 × 3 çıkarıldı</text></svg>`;
+    if (visual === 'triangle-12-7') return `<svg viewBox="0 0 440 270" role="img" aria-label="Tabanı on iki, yüksekliği yedi birim olan üçgen"><path d="M55 220L385 220L235 35Z" ${common}/><path d="M235 35V220" stroke="rgba(249,115,22,.9)" stroke-width="3" stroke-dasharray="7 7"/><text x="220" y="252" text-anchor="middle" fill="currentColor">12</text><text x="250" y="132" fill="currentColor">7</text></svg>`;
     return '';
   }
   const label = (x, y, text, anchor = 'middle') => `<text x="${x}" y="${y}" text-anchor="${anchor}" fill="currentColor">${escapeHtml(text)}</text>`;
   if (visual.type === 'rectangle' || visual.type === 'missingRectangle') {
     return `<svg viewBox="0 0 440 260" role="img" aria-label="Dikdörtgen görseli"><rect x="75" y="45" width="290" height="150" rx="8" ${common}/>${label(220,228,`${visual.width} birim`)}${label(48,125,visual.type === 'missingRectangle' ? '? birim' : `${visual.height} birim`)}${visual.perimeter ? label(220,28,`Çevre: ${visual.perimeter}`) : ''}</svg>`;
   }
-  if (visual.type === 'square') return `<svg viewBox="0 0 360 270" role="img"><rect x="80" y="30" width="200" height="200" rx="8" ${common}/>${label(180,258,`${visual.side} birim`)}</svg>`;
-  if (visual.type === 'triangle' || visual.type === 'angles') return `<svg viewBox="0 0 440 280" role="img"><path d="M55 225L385 225L235 35Z" ${common}/>${visual.type === 'triangle' ? `<path d="M235 35V225" stroke="rgba(249,115,22,.9)" stroke-width="3" stroke-dasharray="7 7"/>${label(220,258,`${visual.base} birim`)}${label(258,135,`${visual.height} birim`,'start')}` : `${label(95,212,`${visual.first}°`)}${label(338,212,`${visual.second}°`)}${label(235,82,'?°')}`}</svg>`;
-  if (visual.type === 'cube') return `<svg viewBox="0 0 420 300" role="img"><path d="M110 90L255 90L320 45L175 45Z M255 90V225L320 178V45 M110 90V225L255 225V90 M110 225L175 178L320 178" ${common}/>${label(185,260,`Ayrıt: ${visual.side}`)}</svg>`;
-  if (visual.type === 'prism') return `<svg viewBox="0 0 450 300" role="img"><path d="M75 105L285 105L365 55L155 55Z M285 105V225L365 175V55 M75 105V225L285 225V105 M75 225L155 175L365 175" ${common}/>${label(180,260,`${visual.width}`)}${label(338,246,`${visual.depth}`)}${label(55,165,`${visual.height}`)}</svg>`;
-  if (visual.type === 'trapezoid') return `<svg viewBox="0 0 440 270" role="img"><path d="M115 55H315L385 220H55Z" ${common}/><path d="M315 55V220" stroke="rgba(249,115,22,.9)" stroke-width="3" stroke-dasharray="7 7"/>${label(215,42,`${visual.a}`)}${label(220,250,`${visual.b}`)}${label(332,140,`${visual.height}`,'start')}</svg>`;
-  if (visual.type === 'composite') return `<svg viewBox="0 0 450 290" role="img"><path d="M55 35H390V240H235V155H55Z" ${common}/>${label(220,274,`${visual.width}`)}${label(25,140,`${visual.height}`)}${label(310,145,`${visual.cutW} × ${visual.cutH} çıkarıldı`)}</svg>`;
+  if (visual.type === 'square') return `<svg viewBox="0 0 360 270" role="img" aria-label="Bir kenarı ${visual.side} birim olan kare"><rect x="80" y="30" width="200" height="200" rx="8" ${common}/>${label(180,258,`${visual.side} birim`)}</svg>`;
+  if (visual.type === 'triangle' || visual.type === 'angles') return `<svg viewBox="0 0 440 280" role="img" aria-label="${visual.type === 'triangle' ? `Tabanı ${visual.base}, yüksekliği ${visual.height} birim olan üçgen` : `İki açısı ${visual.first} ve ${visual.second} derece olan üçgen`}"><path d="M55 225L385 225L235 35Z" ${common}/>${visual.type === 'triangle' ? `<path d="M235 35V225" stroke="rgba(249,115,22,.9)" stroke-width="3" stroke-dasharray="7 7"/>${label(220,258,`${visual.base} birim`)}${label(258,135,`${visual.height} birim`,'start')}` : `${label(95,212,`${visual.first}°`)}${label(338,212,`${visual.second}°`)}${label(235,82,'?°')}`}</svg>`;
+  if (visual.type === 'cube') return `<svg viewBox="0 0 420 300" role="img" aria-label="Ayrıtı ${visual.side} birim olan küp"><path d="M110 90L255 90L320 45L175 45Z M255 90V225L320 178V45 M110 90V225L255 225V90 M110 225L175 178L320 178" ${common}/>${label(185,260,`Ayrıt: ${visual.side}`)}</svg>`;
+  if (visual.type === 'prism') return `<svg viewBox="0 0 450 300" role="img" aria-label="Boyutları ${visual.width}, ${visual.depth} ve ${visual.height} birim olan dikdörtgenler prizması"><path d="M75 105L285 105L365 55L155 55Z M285 105V225L365 175V55 M75 105V225L285 225V105 M75 225L155 175L365 175" ${common}/>${label(180,260,`${visual.width}`)}${label(338,246,`${visual.depth}`)}${label(55,165,`${visual.height}`)}</svg>`;
+  if (visual.type === 'trapezoid') return `<svg viewBox="0 0 440 270" role="img" aria-label="Tabanları ${visual.a} ve ${visual.b}, yüksekliği ${visual.height} birim olan yamuk"><path d="M115 55H315L385 220H55Z" ${common}/><path d="M315 55V220" stroke="rgba(249,115,22,.9)" stroke-width="3" stroke-dasharray="7 7"/>${label(215,42,`${visual.a}`)}${label(220,250,`${visual.b}`)}${label(332,140,`${visual.height}`,'start')}</svg>`;
+  if (visual.type === 'composite') return `<svg viewBox="0 0 450 290" role="img" aria-label="${visual.width} çarpı ${visual.height} dikdörtgenden ${visual.cutW} çarpı ${visual.cutH} parça çıkarılmış birleşik şekil"><path d="M55 35H390V240H235V155H55Z" ${common}/>${label(220,274,`${visual.width}`)}${label(25,140,`${visual.height}`)}${label(310,145,`${visual.cutW} × ${visual.cutH} çıkarıldı`)}</svg>`;
   if (visual.type === 'squareGrid') {
     const size = visual.size;
     const cell = 220 / size;
@@ -431,7 +431,7 @@ function renderRoundInput(round) {
     return `
       <div class="target-box"><span>ANA KELİME</span><strong>${escapeHtml(round.source.toLocaleUpperCase('tr-TR'))}</strong></div>
       <div class="word-entry-row">
-        <input id="word-input" class="text-input" autocomplete="off" autocapitalize="none" placeholder="Yeni kelime yaz" ${ui.feedback ? 'disabled' : ''}>
+        <input id="word-input" class="text-input" autocomplete="off" autocapitalize="none" aria-label="Ana kelimeden türetilen yeni kelime" placeholder="Yeni kelime yaz" ${ui.feedback ? 'disabled' : ''}>
         <button data-action="add-word" aria-label="Kelimeyi ekle" ${ui.feedback ? 'disabled' : ''}>+</button>
       </div>
       <div class="word-cloud">${words.length ? words.map((item) => `<span class="word-token">${escapeHtml(item.word)} <small>+${item.score}</small></span>`).join('') : '<span class="muted">Bulduğun kelimeler burada görünecek.</span>'}</div>
@@ -479,7 +479,7 @@ function renderRoundInput(round) {
   if (round.kind === 'story') {
     return `
       <div class="target-box"><span>YASAK HARF</span><strong>${round.forbiddenLetter.toLocaleUpperCase('tr-TR')}</strong></div>
-      <div class="input-stack"><textarea id="story-input" class="story-input" placeholder="Hikâyeni buraya yaz…" ${ui.feedback ? 'disabled' : ''}>${escapeHtml(ui.roundData.story || '')}</textarea></div>
+      <div class="input-stack"><textarea id="story-input" class="story-input" aria-label="Yasak harfi kullanmadan yazılan hikâye" placeholder="Hikâyeni buraya yaz…" ${ui.feedback ? 'disabled' : ''}>${escapeHtml(ui.roundData.story || '')}</textarea></div>
       <p class="muted">En az ${round.minSentences} cümle ve ${round.minUniqueWords} farklı kelime kullan.</p>`;
   }
 
@@ -560,11 +560,11 @@ function renderTeachingSolution(round) {
 function renderStudentTools() {
   if (!ui.toolsOpen && !ui.whiteboardOpen) return '';
   if (ui.whiteboardOpen) return `<div class="tool-overlay" role="dialog" aria-modal="true" aria-label="Beyaz tahta">
-    <section class="tool-panel whiteboard-panel"><div class="section-header"><div><h2>✍️ Beyaz Tahta</h2><p>Sorudan çıkmadan parmağınla veya farenle işlem yap.</p></div><button class="icon-button" data-action="close-tools">×</button></div>
-    <canvas id="whiteboard-canvas" width="900" height="1100" aria-label="Çizim alanı"></canvas>
+    <section class="tool-panel whiteboard-panel"><div class="section-header"><div><h2>✍️ Beyaz Tahta</h2><p>Sorudan çıkmadan parmağınla veya farenle işlem yap.</p></div><button class="icon-button" data-action="close-tools" aria-label="Araçları kapat">×</button></div>
+    <canvas id="whiteboard-canvas" width="900" height="1100" role="img" aria-label="Serbest işlem ve çizim alanı"></canvas>
     <div class="button-row"><button class="secondary-button" data-action="whiteboard-clear">Temizle</button><button class="primary-button" data-action="close-tools">Soruma Dön</button></div></section></div>`;
-  return `<div class="tool-overlay" role="dialog" aria-modal="true" aria-label="Soru araçları"><section class="tool-panel"><div class="section-header"><div><h2>🧰 Soru Araçları</h2><p>Hesap makinesi öğrencinin isteğiyle açılır. Kullanımı soru kaydına işlenir.</p></div><button class="icon-button" data-action="close-tools">×</button></div>
-    <div class="calculator-display">${escapeHtml(ui.calculatorExpression || ui.calculatorValue)}</div>
+  return `<div class="tool-overlay" role="dialog" aria-modal="true" aria-label="Soru araçları"><section class="tool-panel"><div class="section-header"><div><h2>🧰 Soru Araçları</h2><p>Hesap makinesi öğrencinin isteğiyle açılır. Kullanımı soru kaydına işlenir.</p></div><button class="icon-button" data-action="close-tools" aria-label="Araçları kapat">×</button></div>
+    <div class="calculator-display" role="status" aria-live="polite" aria-label="Hesap makinesi ekranı">${escapeHtml(ui.calculatorExpression || ui.calculatorValue)}</div>
     <div class="calculator-grid">${['7','8','9','÷','4','5','6','×','1','2','3','−','0',',','C','+'].map(k=>`<button data-action="calculator-key" data-key="${k}">${k}</button>`).join('')}<button data-action="calculator-equals" class="equals">=</button></div>
     <button class="secondary-button full-width mt-12" data-action="open-whiteboard">✍️ Beyaz Tahtayı Aç</button>
   </section></div>`;
@@ -632,12 +632,12 @@ function renderGame() {
       <header class="game-header">
         <button class="back-button" data-action="quit-game" aria-label="Oyundan çık">←</button>
         <div class="game-header-copy"><h1>${game.icon} ${escapeHtml(game.title)}</h1><p>${categoryLabel(game.category)} • ${session.currentIndex + 1}/${session.rounds.length}</p></div>
-        <div class="game-header-actions"><button class="icon-button" data-action="toggle-pause" aria-label="${ui.paused ? 'Devam et' : 'Soruyu durdur'}">${ui.paused ? '▶' : 'Ⅱ'}</button><button class="icon-button" data-action="open-tools" aria-label="Araçları aç">🧰</button><button class="icon-button" data-action="student-profile" aria-label="Profil">👤</button><button class="icon-button" data-action="student-logout" aria-label="Çıkış yap">⎋</button>${state.settings.timer ? `<div id="timer-pill" class="timer-pill ${ui.timeLeft <= 10 ? 'danger' : ''}">${formatDuration(ui.timeLeft)}</div>` : '<span class="badge cyan">Serbest</span>'}</div>
+        <div class="game-header-actions"><button class="icon-button" data-action="toggle-pause" aria-label="${ui.paused ? 'Devam et' : 'Soruyu durdur'}">${ui.paused ? '▶' : 'Ⅱ'}</button><button class="icon-button" data-action="open-tools" aria-label="Araçları aç">🧰</button><button class="icon-button" data-action="student-profile" aria-label="Profil">👤</button><button class="icon-button" data-action="student-logout" aria-label="Çıkış yap">⎋</button>${state.settings.timer ? `<div id="timer-pill" class="timer-pill ${ui.timeLeft <= 10 ? 'danger' : ''}" role="timer" aria-live="off" aria-label="Kalan süre">${formatDuration(ui.timeLeft)}</div>` : '<span class="badge cyan">Serbest</span>'}</div>
       </header>
-      <div class="session-progress" style="grid-template-columns:repeat(${session.rounds.length},minmax(4px,1fr))">${session.rounds.map((_, index) => {
+      <div class="session-progress" role="progressbar" aria-label="Oyun turu ilerlemesi" aria-valuemin="1" aria-valuemax="${session.rounds.length}" aria-valuenow="${session.currentIndex + 1}" style="grid-template-columns:repeat(${session.rounds.length},minmax(4px,1fr))">${session.rounds.map((_, index) => {
         const answer = session.answers[index];
         const cls = index === session.currentIndex ? 'active' : answer ? (answer.correct ? 'correct' : 'wrong') : index < session.currentIndex ? 'done' : '';
-        return `<span class="session-step ${cls}"></span>`;
+        return `<span class="session-step ${cls}" aria-hidden="true"></span>`;
       }).join('')}</div>
 
       ${ui.paused ? `<section class="paused-card"><div class="pause-icon">Ⅱ</div><h2>Soru durduruldu</h2><p>Soru gizlendi ve süre durdu. Hazır olduğunda devam et.</p><button class="primary-button" data-action="toggle-pause">Devam Et</button></section>` : `<section class="question-card">`}
@@ -1386,10 +1386,12 @@ function askUserConfirm({title='İşlemi onayla',message,confirmText='Onayla',da
     const wrapper=document.createElement('div');
     wrapper.id='app-confirm-modal';
     wrapper.className='app-confirm-backdrop';
-    wrapper.innerHTML=`<section class="app-confirm-modal" role="dialog" aria-modal="true"><div class="app-confirm-icon">${danger?'⚠️':'✓'}</div><h2>${title}</h2><p>${message}</p><div class="app-confirm-actions"><button class="secondary-button" data-confirm-result="cancel">Vazgeç</button><button class="${danger?'danger-button':'primary-button'}" data-confirm-result="ok">${confirmText}</button></div></section>`;
+    const previousFocus=document.activeElement;
+    wrapper.innerHTML=`<section class="app-confirm-modal" role="dialog" aria-modal="true" aria-labelledby="app-confirm-title" aria-describedby="app-confirm-message"><div class="app-confirm-icon" aria-hidden="true">${danger?'⚠️':'✓'}</div><h2 id="app-confirm-title">${title}</h2><p id="app-confirm-message">${message}</p><div class="app-confirm-actions"><button class="secondary-button" data-confirm-result="cancel">Vazgeç</button><button class="${danger?'danger-button':'primary-button'}" data-confirm-result="ok">${confirmText}</button></div></section>`;
     document.body.appendChild(wrapper);
-    const finish=(result)=>{wrapper.remove();resolve(result);};
+    const finish=(result)=>{wrapper.remove();previousFocus?.focus?.();resolve(result);};
     wrapper.addEventListener('click',(event)=>{const result=event.target.closest('[data-confirm-result]')?.dataset.confirmResult;if(result)finish(result==='ok');else if(event.target===wrapper)finish(false);});
+    wrapper.addEventListener('keydown',(event)=>{if(event.key==='Escape'){event.preventDefault();finish(false);}});
     wrapper.querySelector('[data-confirm-result="ok"]')?.focus();
   });
 }

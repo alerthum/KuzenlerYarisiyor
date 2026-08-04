@@ -285,7 +285,13 @@ export function enforceSessionQuality(rounds=[], context={}, options={}) {
   if(firstExperience){
     const showcase=candidates.filter(q=>q.showcaseEligible);
     const approved=candidates.filter(q=>q.globalQualityStatus==='APPROVE');
-    selected=[...showcase,...approved].slice(0,targetCount||candidates.length);
+    const ordered=[...showcase,...approved];
+    const used=new Set();
+    selected=ordered.filter((round)=>{
+      const key=round.questionKey||`${round.familyId||''}|${round.prompt||''}`;
+      if(used.has(key))return false;
+      used.add(key);return true;
+    }).slice(0,targetCount||candidates.length);
   }else selected=candidates.slice(0,targetCount||candidates.length);
 
   const diversityWarnings=[];

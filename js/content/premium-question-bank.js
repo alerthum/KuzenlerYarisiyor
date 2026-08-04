@@ -1,4 +1,5 @@
 import { seededRandom } from '../utils.js';
+import { parsePremiumGradeBand } from './premium-grade-band.js';
 import {
   generatePremiumPilotRounds,
   PREMIUM_PILOT_GAME_IDS as LEGACY_PREMIUM_GAME_IDS,
@@ -133,6 +134,32 @@ function shuffleRounds(rounds, seed) {
   return result;
 }
 
+function gradeBandSpecificity(round) {
+  try {
+    const band = parsePremiumGradeBand(round?.gradeBand);
+    return band.max - band.min;
+  } catch {
+    return Number.MAX_SAFE_INTEGER;
+  }
+}
+
+function prioritizeGradeSpecificRounds(candidates, options, seed) {
+  if (options.grade === null || options.grade === undefined || options.grade === '') {
+    return shuffleRounds(candidates, seed);
+  }
+
+  const tiers = new Map();
+  for (const round of candidates) {
+    const specificity = gradeBandSpecificity(round);
+    if (!tiers.has(specificity)) tiers.set(specificity, []);
+    tiers.get(specificity).push(round);
+  }
+
+  return [...tiers.entries()]
+    .sort(([left], [right]) => left - right)
+    .flatMap(([specificity, rounds]) => shuffleRounds(rounds, `${seed}:band-span-${specificity}`));
+}
+
 export function generatePremiumRounds(gameId, options = {}) {
   const matchingPacks = SOURCE_PACKS.filter((pack) => pack.gameIds.includes(gameId));
   if (!matchingPacks.length) {
@@ -164,10 +191,9 @@ export function generatePremiumRounds(gameId, options = {}) {
   });
 
   const candidates = packResults.flatMap((entry) => entry.rounds);
-  const rounds = shuffleRounds(
-    candidates,
-    `${gameId}:${options.seed ?? 1}:${options.grade ?? 'all'}:${PREMIUM_BANK_VERSION}`
-  ).slice(0, requested);
+  const selectionSeed = `${gameId}:${options.seed ?? 1}:${options.grade ?? 'all'}:${PREMIUM_BANK_VERSION}`;
+  const prioritizedCandidates = prioritizeGradeSpecificRounds(candidates, options, selectionSeed);
+  const rounds = prioritizedCandidates.slice(0, requested);
 
   return {
     rounds,
@@ -180,6 +206,8 @@ export function generatePremiumRounds(gameId, options = {}) {
       gradeFilterApplied: options.grade != null,
       gradeEligibleAvailable: packResults.reduce((sum, entry) => sum + Number(entry.audit.gradeEligibleAvailable ?? entry.audit.available ?? 0), 0),
       gradeBandsAvailable: [...new Set(packResults.flatMap((entry) => entry.audit.gradeBandsAvailable || []))],
+      gradeBandsSelected: [...new Set(rounds.map((round) => round.gradeBand).filter(Boolean))],
+      gradeSpecificityPriorityApplied: options.grade !== null && options.grade !== undefined && options.grade !== '',
       unseenAvailable: candidates.length,
       requested,
       produced: rounds.length,

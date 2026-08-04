@@ -24,7 +24,16 @@ export function evaluateCoreGameReleaseReadiness({
   add('human-review','Çekirdek görevlerin insan incelemesi',reviewPlan.sprints.every(s=>s.metrics.pending===0)&&reviewPlan.totalItems>0,{total:reviewPlan.totalItems,pending:reviewPlan.sprints.reduce((n,s)=>n+s.metrics.pending,0)},'Çekirdek görevlerde insan incelemesi bekleyen kayıt var.');
   add('semantic-adapter','Onaylı içerikte semantik round-trip',ASSESSMENT_V2_GAME_ADAPTATION_LAB_AUDIT.ok===true&&ASSESSMENT_V2_GAME_ADAPTATION_LAB_AUDIT.metrics.adaptedCount>0,ASSESSMENT_V2_GAME_ADAPTATION_LAB_AUDIT.metrics,'Onaylı oyun adaptasyon laboratuvarı geçmedi.');
   add('real-student-pilot','Gerçek öğrenci pilotu',studentPilot?.publicationAllowed===true&&studentPilot?.evidenceSource==='REAL_STUDENT_PILOT'&&studentPilot?.status==='PILOT_PASS',studentPilot||{status:'MISSING'},'Gerçek öğrenci pilotu tamamlanmadı.');
-  add('live-game-battery','23 oyun × 500 oturum',liveBattery?.gameCount===23&&liveBattery?.sessionsPerGame>=500&&liveBattery?.underfill===0&&liveBattery?.semanticRepeats===0&&liveBattery?.failedGames?.length===0,liveBattery||{status:'MISSING'},'23 oyun × 500 oturum canlı bataryası tamamlanmadı.');
+  const liveBatteryPassed=liveBattery?.meetsStageGate===true
+    && liveBattery?.allGamesOnSharedComposer===true
+    && liveBattery?.gameCount===23
+    && liveBattery?.sessionsPerGame>=500
+    && liveBattery?.totalSessions>=11500
+    && liveBattery?.underfill===0
+    && liveBattery?.semanticRepeats===0
+    && Array.isArray(liveBattery?.failedGames)
+    && liveBattery.failedGames.length===0;
+  add('live-game-battery','23 oyun × 500 oturum',liveBatteryPassed,liveBattery||{status:'MISSING'},'23 oyun × 500 oturum canlı bataryası tamamlanmadı.');
   add('production-build','Production build',buildEvidence?.status==='PASS',buildEvidence,'Production build PASS değil.');
   add('accessibility','Çekirdek oyun erişilebilirliği',accessibilityEvidence?.status==='PASS',accessibilityEvidence,'Çekirdek oyun erişilebilirliği tamamlanmadı.');
   add('security','Çekirdek oyun güvenliği',securityEvidence?.status==='PASS',securityEvidence,'Çekirdek oyun güvenliği tamamlanmadı.');

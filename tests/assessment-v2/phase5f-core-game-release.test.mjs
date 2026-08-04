@@ -30,10 +30,24 @@ test('geniş okul kapsamı eksik olsa bile çekirdek kapı yalnız ana ders ve o
 test('test/build kanıtı tek başına insan incelemesi ve gerçek pilot kapısını açamaz',()=>{
   const result=evaluateCoreGameReleaseReadiness({
     buildEvidence:{status:'PASS'},accessibilityEvidence:{status:'PASS'},securityEvidence:{status:'PASS'},
-    liveBattery:{gameCount:23,sessionsPerGame:500,underfill:0,semanticRepeats:0,failedGames:[]},
+    liveBattery:{meetsStageGate:true,allGamesOnSharedComposer:true,gameCount:23,sessionsPerGame:500,totalSessions:11500,underfill:0,semanticRepeats:0,failedGames:[]},
     studentPilot:{publicationAllowed:false,evidenceSource:'SIMULATED_FIXTURE',status:'PILOT_PASS'}
   });
   assert.equal(result.publicationAllowed,false);
   assert.equal(result.checks.find(c=>c.id==='real-student-pilot').passed,false);
   assert.equal(result.checks.find(c=>c.id==='human-review').passed,false);
+});
+
+
+test('eksik veya yüzeysel ağır batarya kanıtı çekirdek yayın kapısını açamaz',()=>{
+  const shallow=evaluateCoreGameReleaseReadiness({
+    liveBattery:{gameCount:23,sessionsPerGame:500,underfill:0,semanticRepeats:0,failedGames:[]},
+    buildEvidence:{status:'PASS'},accessibilityEvidence:{status:'PASS'},securityEvidence:{status:'PASS'}
+  });
+  assert.equal(shallow.checks.find(c=>c.id==='live-game-battery').passed,false);
+  const complete=evaluateCoreGameReleaseReadiness({
+    liveBattery:{meetsStageGate:true,allGamesOnSharedComposer:true,gameCount:23,sessionsPerGame:500,totalSessions:11500,underfill:0,semanticRepeats:0,failedGames:[]},
+    buildEvidence:{status:'PASS'},accessibilityEvidence:{status:'PASS'},securityEvidence:{status:'PASS'}
+  });
+  assert.equal(complete.checks.find(c=>c.id==='live-game-battery').passed,true);
 });

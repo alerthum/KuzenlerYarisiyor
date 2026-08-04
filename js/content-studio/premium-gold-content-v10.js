@@ -7,10 +7,45 @@ function hashSeed(value=''){
   return hash>>>0;
 }
 function pick(list,seed,offset=0){ return list[(seed+offset)%list.length]; }
+const TRAITS_BY_PATTERN=Object.freeze({
+  ERROR_ANALYSIS:['errorAnalysis','multiStepInference'],
+  TEXT_INFERENCE:['informationLinking','multiStepInference'],
+  VARIABLE_CONTROL:['conditionEvaluation','hypothesisEvaluation'],
+  SOURCE_COMPARISON:['informationLinking','conditionEvaluation'],
+  CONCEPT_TRANSFER:['conditionEvaluation','strategySelection'],
+  CONTEXT_INFERENCE:['informationLinking','conditionEvaluation'],
+  CONSTRAINT_PROPAGATION:['constraintPropagation','multiStepInference'],
+  INVARIANT_REASONING:['strategySelection','usingIntermediateResultInNewDecision'],
+  ORDERING:['constraintPropagation','conditionEvaluation'],
+  DATA_INTERPRETATION:['informationLinking','hypothesisEvaluation'],
+  CAUSE_EFFECT_CHAIN:['informationLinking','multiStepInference'],
+  ETHICAL_DILEMMA:['conditionEvaluation','strategySelection'],
+  DIALOGUE_INFERENCE:['informationLinking','conditionEvaluation'],
+  PROOF_STRATEGY:['strategySelection','hypothesisEvaluation']
+});
 function finalize(question){
   const options=[...question.options];
   const answerIndex=options.indexOf(question.answerValue);
-  return Object.freeze({...question,kind:'choice',answerIndex,distractorValidation:question.distractorValidation||{verified:true,rationales:options.filter((_,i)=>i!==answerIndex).map((option,index)=>`Çeldirici ${index+1}, hedeflenen öğrenci yanılgısını temsil eder: ${option}`)},questionKey:question.questionKey||`${question.familyId}:${hashSeed(question.context+question.prompt)}`});
+  const traits=[...new Set([...(question.cognitiveTraits||[]),...(TRAITS_BY_PATTERN[question.thinkingPatternId]||['informationLinking','conditionEvaluation'])])];
+  const optionDiagnostics=options.map((option,index)=>index===answerIndex?{
+    optionIndex:index,optionText:option,isCorrect:true,misconceptionId:null,rationale:'Doğru seçenek çözüm kanıtıyla uyumludur.'
+  }:{
+    optionIndex:index,optionText:option,isCorrect:false,
+    misconceptionId:`${question.familyId}_M${index+1}`,
+    misconception:`${question.familyId} ailesinde ${index+1}. yanlış düşünme yolu`,
+    rationale:`Öğrenci ${option} seçeneğini, koşullardan birini eksik uyguladığı veya kanıtlar arasındaki ilişkiyi yanlış kurduğu için seçebilir.`,
+    whyStudentChoosesThis:`Koşullardan birini eksik uygulama ya da kanıt ilişkisini yanlış kurma.`,
+    constructionRule:`gold-family-${question.familyId}-misconception-${index+1}`,
+    plausibilityScore:0.82
+  });
+  const distractorValidation=question.distractorValidation||{
+    verified:true,
+    diagnosticCount:options.length-1,
+    distinctMisconceptions:options.length-1,
+    violations:[],
+    rationales:optionDiagnostics.filter((item)=>!item.isCorrect).map((item)=>item.rationale)
+  };
+  return Object.freeze({...question,kind:'choice',answerIndex,reasoningStepCount:Math.max(3,Number(question.reasoningStepCount||0)),cognitiveTraits:traits,optionDiagnostics,distractorValidation,questionKey:question.questionKey||`${question.familyId}:${hashSeed(question.context+question.prompt)}`});
 }
 
 const BUILDERS={
@@ -20,7 +55,7 @@ const BUILDERS={
     const wrongDiscount=rate;
     return finalize({familyId:'math-error-chain',subjectId:'mathematics',visibleCardId:'yanlis-cozumu-yakala',topicId:'operations',learningOutcomeId:'multi-step-error-analysis',thinkingPatternId:'ERROR_ANALYSIS',cognitiveDepth:4,difficulty:4,
       context:`Bir öğrenci ${base} TL etiket fiyatlı ürüne %${rate} indirim uyguluyor ve şu çözümü yazıyor: 1) ${base} × ${rate} = ${base*rate}  2) ${base*rate} ÷ 100 = ${correctDiscount}  3) ${base} − ${wrongDiscount} = ${base-wrongDiscount} TL.`,
-      prompt:'Çözümdeki ilk hata hangi adımdadır?',options:['1. adım; yüzde hesabında çarpma yapılmamalıydı.','2. adım; yüzdeyi bulmak için 100’e bölünmemeliydi.','3. adım; etiket fiyatından indirim oranı değil, indirim tutarı çıkarılmalıydı.','Hiçbir adımda hata yoktur.'],answerValue:'3. adım; etiket fiyatından indirim oranı değil, indirim tutarı çıkarılmalıydı.',explanation:`İlk iki adım indirim tutarını ${correctDiscount} TL olarak doğru bulur. Son adımda ${rate} sayısı çıkarıldığı için ilk hata 3. adımdadır; doğru fiyat ${after} TL olur.`,hints:['Her adımı önceki adımdan bağımsız kontrol et.','Oran ile para tutarının aynı şey olmadığını düşün.']});
+      prompt:'Çözümdeki ilk hata hangi adımdadır?',options:['1. adım; yüzde hesabında çarpma yerine doğrudan bölme yapılmalıydı.','2. adım; çarpım yüzdelik değere çevrilirken 100 yerine oran kullanılmalıydı.','3. adım; etiket fiyatından indirim oranı değil, indirim tutarı çıkarılmalıydı.','Adımların tümü doğrudur; bulunan değer indirimli satış fiyatını verir.'],answerValue:'3. adım; etiket fiyatından indirim oranı değil, indirim tutarı çıkarılmalıydı.',explanation:`İlk iki adım indirim tutarını ${correctDiscount} TL olarak doğru bulur. Son adımda ${rate} sayısı çıkarıldığı için ilk hata 3. adımdadır; doğru fiyat ${after} TL olur.`,hints:['Her adımı önceki adımdan bağımsız kontrol et.','Oran ile para tutarının aynı şey olmadığını düşün.']});
   },
   'tr-inference-evidence':(seed)=>{
     const place=pick(['mahalle kütüphanesi','okulun bilim atölyesi','yerel tarih müzesi'],seed);

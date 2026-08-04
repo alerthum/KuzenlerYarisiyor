@@ -1,7 +1,7 @@
 import http from 'node:http';
 import { stat } from 'node:fs/promises';
 import { createReadStream } from 'node:fs';
-import { extname, join, normalize, relative } from 'node:path';
+import { extname, join, normalize, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import os from 'node:os';
 import { loadProjectConfig } from './scripts/project-config.mjs';
@@ -15,7 +15,9 @@ import {
   SHARE_PATH
 } from './scripts/lib/command-center-share.mjs';
 
-const root = fileURLToPath(new URL('.', import.meta.url));
+const projectRoot = fileURLToPath(new URL('.', import.meta.url));
+const rootArgIndex = process.argv.findIndex((arg) => arg === '--root');
+const root = rootArgIndex >= 0 ? resolve(projectRoot, process.argv[rootArgIndex + 1] || '.') : projectRoot;
 const projectConfig = await loadProjectConfig();
 const cliPortIndex = process.argv.findIndex((arg) => arg === '--port' || arg === '-p');
 const cliPort = cliPortIndex >= 0 ? Number(process.argv[cliPortIndex + 1]) : undefined;
@@ -28,6 +30,60 @@ const contentTypes = {
   '.webmanifest': 'application/manifest+json; charset=utf-8', '.png': 'image/png', '.svg': 'image/svg+xml',
   '.ico': 'image/x-icon', '.txt': 'text/plain; charset=utf-8', '.md': 'text/markdown; charset=utf-8'
 };
+
+const securityHeaders = Object.freeze({
+  'X-Content-Type-Options': 'nosniff',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Cross-Origin-Opener-Policy': 'same-origin',
+  'Cross-Origin-Resource-Policy': 'same-origin',
+  'X-Frame-Options': 'DENY',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=()',
+  'Content-Security-Policy': [
+    "default-src 'self'",
+    "base-uri 'self'",
+    "frame-ancestors 'none'",
+    "form-action 'self'",
+    "script-src 'self' https://www.gstatic.com https://www.googleapis.com",
+    "connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com",
+    "img-src 'self' data: blob:",
+    "style-src 'self' 'unsafe-inline'",
+    "font-src 'self' data:",
+    "worker-src 'self' blob:",
+    "manifest-src 'self'"
+  ].join('; ')
+});
+
+const blockedPathSegments = new Set([
+  '.git', '.github', 'node_modules', 'scripts', 'tests', 'test-results', 'playwright-report', 'coverage'
+]);
+const blockedFileNames = new Set([
+  '.env', 'kuzENLER_AYARLARI.env'.toLowerCase(), 'package.json', 'package-lock.json',
+  'server.mjs', 'playwright.config.mjs', 'stryker.config.mjs'
+]);
+
+function writeResponse(response, status, body, headers = {}) {
+  response.writeHead(status, {
+    ...securityHeaders,
+    'Content-Type': 'text/plain; charset=utf-8',
+    'Cache-Control': 'no-cache, no-store, must-revalidate',
+    ...headers
+  });
+  response.end(body);
+}
+
+function isLoopback(address = '') {
+  return address === '127.0.0.1' || address === '::1' || address === '::ffff:127.0.0.1';
+}
+
+function isBlockedRequestPath(urlPath) {
+  let decoded;
+  try { decoded = decodeURIComponent(urlPath.split('?')[0]); } catch { return true; }
+  const normalized = decoded.replace(/\\/g, '/').toLowerCase();
+  const segments = normalized.split('/').filter(Boolean);
+  if (segments.some((segment) => segment === '..' || blockedPathSegments.has(segment))) return true;
+  const name = segments.at(-1) || '';
+  return blockedFileNames.has(name) || name.startsWith('.env.') || name.endsWith('.env');
+}
 
 let exportRebuildInFlight = null;
 let shareRebuildInFlight = null;
@@ -49,6 +105,7 @@ async function handleRebuildExport(response) {
     runId: result.meta.runId
   });
   response.writeHead(200, {
+    ...securityHeaders,
     'Content-Type': 'application/json; charset=utf-8',
     'Cache-Control': 'no-cache, no-store, must-revalidate'
   });
@@ -73,6 +130,7 @@ async function handleRebuildShare(response) {
     runId: result.meta.runId
   });
   response.writeHead(200, {
+    ...securityHeaders,
     'Content-Type': 'application/json; charset=utf-8',
     'Cache-Control': 'no-cache, no-store, must-revalidate'
   });
@@ -80,7 +138,9 @@ async function handleRebuildShare(response) {
 }
 
 function safePath(urlPath) {
-  const decoded = decodeURIComponent(urlPath.split('?')[0]);
+  if (isBlockedRequestPath(urlPath)) return null;
+  let decoded;
+  try { decoded = decodeURIComponent(urlPath.split('?')[0]); } catch { return null; }
   const cleaned = normalize(decoded).replace(/^([/\\])+/, '');
   const fullPath = join(root, cleaned || 'index.html');
   const rel = relative(root, fullPath);
@@ -90,47 +150,59 @@ function safePath(urlPath) {
 
 async function resolveFile(requestPath) {
   let target = safePath(requestPath);
-  if (!target) return null;
+  if (!target) return { kind: 'blocked' };
   try {
     const info = await stat(target);
     if (info.isDirectory()) target = join(target, 'index.html');
-    return target;
+    return { kind: 'file', path: target };
   } catch {
-    return join(root, 'index.html');
+    const pathname = (requestPath || '/').split('?')[0];
+    if (extname(pathname)) return { kind: 'missing' };
+    return { kind: 'file', path: join(root, 'index.html') };
   }
 }
 
 const server = http.createServer(async (request, response) => {
   try {
     const urlPath = (request.url || '/').split('?')[0];
-    if (urlPath === '/api/rebuild-command-center-export'
-      && (request.method === 'POST' || request.method === 'GET')) {
-      await handleRebuildExport(response);
+    const isRebuildEndpoint = urlPath === '/api/rebuild-command-center-export'
+      || urlPath === '/api/rebuild-command-center-share';
+    if (isRebuildEndpoint) {
+      if (request.method !== 'POST') {
+        writeResponse(response, 405, 'Yalnız POST desteklenir.', { Allow: 'POST' });
+        return;
+      }
+      if (projectConfig.mode !== 'local' || !isLoopback(request.socket.remoteAddress)) {
+        writeResponse(response, 403, 'Bu bakım işlemi yalnız yerel geliştirme ortamında kullanılabilir.');
+        return;
+      }
+      if (urlPath.endsWith('-export')) await handleRebuildExport(response);
+      else await handleRebuildShare(response);
       return;
     }
-    if (urlPath === '/api/rebuild-command-center-share'
-      && (request.method === 'POST' || request.method === 'GET')) {
-      await handleRebuildShare(response);
+    if (!['GET', 'HEAD'].includes(request.method || 'GET')) {
+      writeResponse(response, 405, 'Yalnız GET ve HEAD desteklenir.', { Allow: 'GET, HEAD' });
       return;
     }
-    const filePath = await resolveFile(request.url || '/');
-    if (!filePath) { response.writeHead(400); response.end('Geçersiz istek'); return; }
+    const resolved = await resolveFile(request.url || '/');
+    if (resolved.kind === 'blocked') { writeResponse(response, 404, 'Bulunamadı'); return; }
+    if (resolved.kind === 'missing') { writeResponse(response, 404, 'Bulunamadı'); return; }
+    const filePath = resolved.path;
     const info = await stat(filePath);
     const extension = extname(filePath).toLowerCase();
     const headers = {
       'Content-Type': contentTypes[extension] || 'application/octet-stream',
       'Content-Length': info.size,
-      'X-Content-Type-Options': 'nosniff',
-      'Referrer-Policy': 'strict-origin-when-cross-origin',
-      'Cross-Origin-Opener-Policy': 'same-origin',
+      ...securityHeaders,
       'Cache-Control': filePath.endsWith('sw.js') ? 'no-cache, no-store, must-revalidate' : 'no-cache'
     };
     if (filePath.endsWith('sw.js')) headers['Service-Worker-Allowed'] = '/';
     response.writeHead(200, headers);
-    createReadStream(filePath).pipe(response);
+    if (request.method === 'HEAD') response.end();
+    else createReadStream(filePath).pipe(response);
   } catch (error) {
-    response.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
-    response.end(`Sunucu hatası: ${error instanceof Error ? error.message : String(error)}`);
+    console.error(error);
+    writeResponse(response, 500, 'Sunucu hatası');
   }
 });
 

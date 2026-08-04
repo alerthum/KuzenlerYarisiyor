@@ -109,7 +109,14 @@
     "assessment:v2:phase4z": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4z-middle-school-computing.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
     "assessment:v2:phase5a": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5a-middle-school-physical-education.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
     "assessment:v2:phase5b": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5b-grade4-pre-tymm-core.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
-    "assessment:v2:phase5f": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5f-core-game-release.mjs"
+    "assessment:v2:phase5f": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5f-core-game-release.mjs",
+    "assessment:v2:stage09:500": "node scripts/run-stage09-sharded-battery.mjs 500 100",
+    "assessment:v2:phase5g:report": "node scripts/build-assessment-v2-phase5g-technical-release.mjs",
+    "assessment:v2:phase5g:review": "node scripts/build-assessment-v2-phase5g-core-review-workbench.mjs",
+    "assessment:v2:phase5g:a11y": "node scripts/run-core-accessibility-audit.mjs",
+    "assessment:v2:phase5g:security": "node scripts/run-core-security-audit.mjs",
+    "assessment:v2:phase5g:technical": "npm run assessment:v2:phase5g:a11y && npm run assessment:v2:phase5g:security && npm run assessment:v2:phase5g:report",
+    "test:sharded": "node scripts/run-test-files-sharded.mjs 4 180000 1"
   },
   "engines": {
     "node": ">=20"
