@@ -1,0 +1,6 @@
+import { GRADE4_PRE_TYMM_ENGINE_RECORDS } from './grade4-pre-tymm-core-engines.js';
+const freeze=value=>Object.freeze(value);
+const rows=GRADE4_PRE_TYMM_ENGINE_RECORDS.flatMap(record=>[record.items[0],record.items[Math.floor(record.items.length/2)]].map(item=>freeze({questionId:item.id,grade:4,courseId:record.courseId,courseName:record.courseName,itemFormat:item.itemFormat,outcomeIds:item.curriculum.outcomeIds,context:item.content.context,stem:item.content.stem,rubricCriteria:item.responseModel.rubricCriteria,hints:item.hints.map(h=>h.text),misconceptionIds:item.misconceptionIds,mediaStatus:item.content.media?.status||'NO_EXTERNAL_MEDIA_REQUIRED',humanReviewStatus:item.content.humanReview.status,gameAdaptationAllowed:item.content.humanReview.gameAdaptationAllowed})));
+export const GRADE4_PRE_TYMM_REVIEW_SAMPLE=freeze({schemaVersion:'1.0',status:'HUMAN_REVIEW_REQUIRED',rows:freeze(rows)});
+const errors=[];if(rows.length!==16)errors.push(`item-count:${rows.length}`);if(new Set(rows.map(r=>r.courseId)).size!==8)errors.push('course-count');if(rows.some(r=>r.humanReviewStatus!=='NOT_MEASURED'||r.gameAdaptationAllowed!==false))errors.push('review-or-game-lock');
+export const GRADE4_PRE_TYMM_REVIEW_SAMPLE_AUDIT=freeze({ok:errors.length===0,errors:freeze(errors),metrics:freeze({engineCount:8,itemCount:16,perEngine:2,approved:0,pending:16})});

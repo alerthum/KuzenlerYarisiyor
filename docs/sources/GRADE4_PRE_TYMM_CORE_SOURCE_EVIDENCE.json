@@ -1,0 +1,73 @@
+{
+  "schemaVersion": "1.0",
+  "schoolYear": "2026-2027",
+  "grade": 4,
+  "programFamily": "PRE_TYMM",
+  "sourceCount": 8,
+  "sources": [
+    {
+      "sourceId": "meb-turkce-2019",
+      "courseId": "turkce",
+      "grade": 4,
+      "localDocument": "docs/sources/TURKCE_1_8_2019.pdf",
+      "sha256": "10e55d403a708d35abc192710977a47df933210a0c54a15e86ea7b9d09401633",
+      "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+    },
+    {
+      "sourceId": "meb-matematik-2018",
+      "courseId": "matematik",
+      "grade": 4,
+      "localDocument": "docs/sources/MATEMATIK_1_8_2018.pdf",
+      "sha256": "ca94096da33478c822772425b1384bacdbe40548b0813302257fec7e8c9f9c8b",
+      "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+    },
+    {
+      "sourceId": "meb-sosyal-bilgiler-2018",
+      "courseId": "sosyal-bilgiler",
+      "grade": 4,
+      "localDocument": "docs/sources/SOSYAL_BILGILER_4_7_2018.pdf",
+      "sha256": "b7525cf93fce45c0f97f047f93e6f5496d071071f4510544a2815467304381f1",
+      "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+    },
+    {
+      "sourceId": "meb-insan-haklari-2018",
+      "courseId": "insan-haklari-vatandaslik-ve-demokrasi",
+      "grade": 4,
+      "localDocument": "docs/sources/INSAN_HAKLARI_YURTTASLIK_DEMOKRASI_G4_2018.pdf",
+      "sha256": "331193e8674e1578481796f7cf20ed8ceb11ae097d8bbcf690f0b9dea4eeb9d7",
+      "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+    },
+    {
+      "sourceId": "meb-gorsel-sanatlar-2018",
+      "courseId": "gorsel-sanatlar",
+      "grade": 4,
+      "localDocument": "docs/sources/GORSEL_SANATLAR_1_8_2018.pdf",
+      "sha256": "64a0b245a583935b54c0cfced1b1c85abe25f41510950ee192822930f5bea59f",
+      "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+    },
+    {
+      "sourceId": "meb-muzik-2018",
+      "courseId": "muzik",
+      "grade": 4,
+      "localDocument": "docs/sources/MUZIK_1_8_2018.pdf",
+      "sha256": "7d6f00f44bc904d8bc8474b20a9942566eb100dbf4206ad403c6c052c8ba2d42",
+      "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+    },
+    {
+      "sourceId": "meb-beden-egitimi-ve-oyun-2018",
+      "courseId": "beden-egitimi-ve-oyun",
+      "grade": 4,
+      "localDocument": "docs/sources/BEDEN_EGITIMI_VE_OYUN_1_4_2018.pdf",
+      "sha256": "87d4418ebd1896401f8662dca6c44e59c59009c1022f868ac15c24a898350b7c",
+      "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+    },
+    {
+      "sourceId": "meb-trafik-guvenligi-2018",
+      "courseId": "trafik-guvenligi",
+      "grade": 4,
+      "localDocument": "docs/sources/TRAFIK_GUVENLIGI_G4_2018.pdf",
+      "sha256": "26f3715de5d6f3d2c5aabdb43939ca087e0a871924d01573a84996a80e8f9575",
+      "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+    }
+  ]
+}

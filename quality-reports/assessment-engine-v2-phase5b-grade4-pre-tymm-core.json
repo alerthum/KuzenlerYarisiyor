@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T01:24:18.119Z",
+  "phase": "5B",
+  "status": "GRADE4_PRE_TYMM_ENGINEERING_SCOPE_COMPLETE",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "metrics": {
+    "newEngineCount": 8,
+    "newOfficialOutcomeCount": 292,
+    "newCanonicalTaskCount": 292,
+    "newHumanApprovedCount": 0,
+    "totalActiveEngineCount": 67,
+    "totalActiveGradeCount": 8,
+    "totalOfficialOutcomeCount": 2642,
+    "totalCanonicalTaskCount": 2667,
+    "humanReviewPending": 2662,
+    "unopenedCourseCells": 45
+  },
+  "engines": [
+    {
+      "courseId": "turkce",
+      "courseName": "Türkçe",
+      "officialOutcomeCount": 76,
+      "itemCount": 76,
+      "auditOk": true
+    },
+    {
+      "courseId": "matematik",
+      "courseName": "Matematik",
+      "officialOutcomeCount": 71,
+      "itemCount": 71,
+      "auditOk": true
+    },
+    {
+      "courseId": "sosyal-bilgiler",
+      "courseName": "Sosyal Bilgiler",
+      "officialOutcomeCount": 33,
+      "itemCount": 33,
+      "auditOk": true
+    },
+    {
+      "courseId": "insan-haklari-vatandaslik-ve-demokrasi",
+      "courseName": "İnsan Hakları, Vatandaşlık ve Demokrasi",
+      "officialOutcomeCount": 29,
+      "itemCount": 29,
+      "auditOk": true
+    },
+    {
+      "courseId": "gorsel-sanatlar",
+      "courseName": "Görsel Sanatlar",
+      "officialOutcomeCount": 16,
+      "itemCount": 16,
+      "auditOk": true
+    },
+    {
+      "courseId": "muzik",
+      "courseName": "Müzik",
+      "officialOutcomeCount": 21,
+      "itemCount": 21,
+      "auditOk": true
+    },
+    {
+      "courseId": "beden-egitimi-ve-oyun",
+      "courseName": "Beden Eğitimi ve Oyun",
+      "officialOutcomeCount": 25,
+      "itemCount": 25,
+      "auditOk": true
+    },
+    {
+      "courseId": "trafik-guvenligi",
+      "courseName": "Trafik Güvenliği",
+      "officialOutcomeCount": 21,
+      "itemCount": 21,
+      "auditOk": true
+    }
+  ],
+  "blockers": [
+    "292 yeni görev insan incelemesi bekliyor.",
+    "Gerçek ses, görsel, sanat ürünü, hareket alanı, harita ve güvenlik simülasyonu varlıkları tamamlanmadı.",
+    "Gerçek öğrenci pilotu ve madde analizi yapılmadı."
+  ]
+}

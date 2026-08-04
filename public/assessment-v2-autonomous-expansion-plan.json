@@ -1,16 +1,16 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-04T01:09:23.304Z",
+  "generatedAt": "2026-08-04T01:24:18.119Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "PRIMARY_ACADEMIC_CORE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
-    "activeEngineCount": 59,
-    "engineeringScopeCompleteEngineCount": 59,
+    "activeEngineCount": 67,
+    "engineeringScopeCompleteEngineCount": 67,
     "remainingOutcomeCount": 0,
-    "humanReviewQueueCount": 2370,
-    "unopenedCourseCellCount": 53
+    "humanReviewQueueCount": 2662,
+    "unopenedCourseCellCount": 45
   },
   "engines": [
     {
@@ -720,6 +720,102 @@
       "reviewQueueCount": 15,
       "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-turkce-pre-tymm-v2",
+      "grade": 4,
+      "courseId": "turkce",
+      "officialOutcomeCount": 76,
+      "coveredOutcomeCount": 76,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 76,
+      "reviewQueueCount": 76,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-matematik-pre-tymm-v2",
+      "grade": 4,
+      "courseId": "matematik",
+      "officialOutcomeCount": 71,
+      "coveredOutcomeCount": 71,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 71,
+      "reviewQueueCount": 71,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-sosyal-bilgiler-pre-tymm-v2",
+      "grade": 4,
+      "courseId": "sosyal-bilgiler",
+      "officialOutcomeCount": 33,
+      "coveredOutcomeCount": 33,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 33,
+      "reviewQueueCount": 33,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-insan-haklari-vatandaslik-ve-demokrasi-pre-tymm-v2",
+      "grade": 4,
+      "courseId": "insan-haklari-vatandaslik-ve-demokrasi",
+      "officialOutcomeCount": 29,
+      "coveredOutcomeCount": 29,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 29,
+      "reviewQueueCount": 29,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-gorsel-sanatlar-pre-tymm-v2",
+      "grade": 4,
+      "courseId": "gorsel-sanatlar",
+      "officialOutcomeCount": 16,
+      "coveredOutcomeCount": 16,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 16,
+      "reviewQueueCount": 16,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-muzik-pre-tymm-v2",
+      "grade": 4,
+      "courseId": "muzik",
+      "officialOutcomeCount": 21,
+      "coveredOutcomeCount": 21,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 21,
+      "reviewQueueCount": 21,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-beden-egitimi-ve-oyun-pre-tymm-v2",
+      "grade": 4,
+      "courseId": "beden-egitimi-ve-oyun",
+      "officialOutcomeCount": 25,
+      "coveredOutcomeCount": 25,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 25,
+      "reviewQueueCount": 25,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-trafik-guvenligi-pre-tymm-v2",
+      "grade": 4,
+      "courseId": "trafik-guvenligi",
+      "officialOutcomeCount": 21,
+      "coveredOutcomeCount": 21,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 21,
+      "reviewQueueCount": 21,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
     }
   ],
   "backlog": [
@@ -727,8 +823,8 @@
       "order": 1,
       "id": "calibrate-risk-sample",
       "kind": "HUMAN_REVIEW",
-      "scope": "59 aktif motor için risk tabakalı örneklem",
-      "reason": "2370 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
+      "scope": "67 aktif motor için risk tabakalı örneklem",
+      "reason": "2662 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
       "count": 126
     },
     {
@@ -760,8 +856,8 @@
       "id": "expand-grade-map",
       "kind": "NEW_ENGINE",
       "scope": "1–12 zorunlu ders hücreleri",
-      "reason": "112 hücrenin 59’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
-      "count": 53
+      "reason": "112 hücrenin 67’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
+      "count": 45
     }
   ]
 }

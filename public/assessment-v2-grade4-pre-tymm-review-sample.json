@@ -1,0 +1,486 @@
+{
+  "schemaVersion": "1.0",
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "rows": [
+    {
+      "questionId": "turkce-g4-t-4-1-1",
+      "grade": 4,
+      "courseId": "turkce",
+      "courseName": "Türkçe",
+      "itemFormat": "interactive-simulation",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-turkce-t-4-1-1"
+      ],
+      "context": "4. sınıf Türkçe dersinde “Dinleme/İzleme” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Görselden/görsellerden hareketle dinleyeceği/izleyeceği metnin konusunu tahmin eder. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Metin, görsel, ses veya dil yapısındaki gerekli kanıtı doğru belirler.",
+        "Kazanımın istediği anlama, anlatma, okuma ya da yazma işlemini yaş düzeyine uygun biçimde gerçekleştirir.",
+        "Yanıtını metindeki ayrıntı, dil kuralı veya açık bir öz değerlendirme ölçütüyle kontrol eder."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "turkce-tek-ayrintiya-odaklanma",
+        "turkce-kanitsiz-veya-kuralsiz-sonuc",
+        "turkce-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "REAL_ACCESSIBLE_MEDIA_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g4-t-4-3-22",
+      "grade": 4,
+      "courseId": "turkce",
+      "courseName": "Türkçe",
+      "itemFormat": "interactive-simulation",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-turkce-t-4-3-22"
+      ],
+      "context": "4. sınıf Türkçe dersinde “Okuma” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Şekil, sembol ve işaretlerin anlamlarını kavrar. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Metin, görsel, ses veya dil yapısındaki gerekli kanıtı doğru belirler.",
+        "Kazanımın istediği anlama, anlatma, okuma ya da yazma işlemini yaş düzeyine uygun biçimde gerçekleştirir.",
+        "Yanıtını metindeki ayrıntı, dil kuralı veya açık bir öz değerlendirme ölçütüyle kontrol eder."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "turkce-tek-ayrintiya-odaklanma",
+        "turkce-kanitsiz-veya-kuralsiz-sonuc",
+        "turkce-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "NO_EXTERNAL_MEDIA_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g4-m-4-1-1-1",
+      "grade": 4,
+      "courseId": "matematik",
+      "courseName": "Matematik",
+      "itemFormat": "open-response",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-matematik-m-4-1-1-1"
+      ],
+      "context": "4. sınıf Matematik dersinde “Sayılar ve İşlemler” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "4, 5 ve 6 basamaklı doğal sayıları okur ve yazar. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Verilenleri, isteneni ve matematiksel koşulları eksiksiz temsil eder.",
+        "İşlem, model, çizim veya ölçme yolunu doğru ve izlenebilir biçimde uygular.",
+        "Sonucu tahmin, ters işlem, alternatif gösterim veya ölçüm kontrolüyle doğrular."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "matematik-tek-ayrintiya-odaklanma",
+        "matematik-kanitsiz-veya-kuralsiz-sonuc",
+        "matematik-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "NO_EXTERNAL_MEDIA_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g4-m-4-2-1-2",
+      "grade": 4,
+      "courseId": "matematik",
+      "courseName": "Matematik",
+      "itemFormat": "open-response",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-matematik-m-4-2-1-2"
+      ],
+      "context": "4. sınıf Matematik dersinde “Geometri” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Kare ve dikdörtgenin kenar özelliklerini belirler. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Verilenleri, isteneni ve matematiksel koşulları eksiksiz temsil eder.",
+        "İşlem, model, çizim veya ölçme yolunu doğru ve izlenebilir biçimde uygular.",
+        "Sonucu tahmin, ters işlem, alternatif gösterim veya ölçüm kontrolüyle doğrular."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "matematik-tek-ayrintiya-odaklanma",
+        "matematik-kanitsiz-veya-kuralsiz-sonuc",
+        "matematik-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "NO_EXTERNAL_MEDIA_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "sosyal-bilgiler-g4-sb-4-1-1",
+      "grade": 4,
+      "courseId": "sosyal-bilgiler",
+      "courseName": "Sosyal Bilgiler",
+      "itemFormat": "open-response",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-sosyal-bilgiler-sb-4-1-1"
+      ],
+      "context": "4. sınıf Sosyal Bilgiler dersinde “Birey ve Toplum” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Resmî kimlik belgesini inceleyerek kişisel kimliğine ilişkin çıkarımlarda bulunur. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Kaynak, harita, kronoloji, görsel veya günlük yaşam durumundaki kanıtı doğru seçer.",
+        "Kanıtı değişim, süreklilik, konum, sorumluluk ya da neden-sonuç ilişkisiyle açıklar.",
+        "Genellemesini kaynağın sınırları içinde tutar ve farklı insanlara/kültürlere saygılı dil kullanır."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "sosyal-bilgiler-tek-ayrintiya-odaklanma",
+        "sosyal-bilgiler-kanitsiz-veya-kuralsiz-sonuc",
+        "sosyal-bilgiler-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "PROVENANCE_REVIEW_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "sosyal-bilgiler-g4-sb-4-4-2",
+      "grade": 4,
+      "courseId": "sosyal-bilgiler",
+      "courseName": "Sosyal Bilgiler",
+      "itemFormat": "open-response",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-sosyal-bilgiler-sb-4-4-2"
+      ],
+      "context": "4. sınıf Sosyal Bilgiler dersinde “Bilim, Teknoloji ve Toplum” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Teknolojik ürünlerin geçmişteki ve bugünkü kullanımlarını karşılaştırır. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Kaynak, harita, kronoloji, görsel veya günlük yaşam durumundaki kanıtı doğru seçer.",
+        "Kanıtı değişim, süreklilik, konum, sorumluluk ya da neden-sonuç ilişkisiyle açıklar.",
+        "Genellemesini kaynağın sınırları içinde tutar ve farklı insanlara/kültürlere saygılı dil kullanır."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "sosyal-bilgiler-tek-ayrintiya-odaklanma",
+        "sosyal-bilgiler-kanitsiz-veya-kuralsiz-sonuc",
+        "sosyal-bilgiler-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "NO_EXTERNAL_MEDIA_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "insan-haklari-vatandaslik-ve-demokrasi-g4-y-4-1-1",
+      "grade": 4,
+      "courseId": "insan-haklari-vatandaslik-ve-demokrasi",
+      "courseName": "İnsan Hakları, Vatandaşlık ve Demokrasi",
+      "itemFormat": "open-response",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-insan-haklari-vatandaslik-ve-demokrasi-y-4-1-1"
+      ],
+      "context": "4. sınıf İnsan Hakları, Vatandaşlık ve Demokrasi dersinde “İnsan Olmak” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "İnsan olmanın niteliklerini açıklar. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Hak, özgürlük, sorumluluk, eşitlik, adalet veya uzlaşı kavramını durum içinde doğru tanır.",
+        "Kararını şiddetsiz, demokratik ve çocuk haklarına uygun bir gerekçeyle açıklar.",
+        "Farklı kişilerin haklarını ve birlikte yaşama koşullarını gözeten uygulanabilir bir çözüm üretir."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "insan-haklari-vatandaslik-ve-demokrasi-tek-ayrintiya-odaklanma",
+        "insan-haklari-vatandaslik-ve-demokrasi-kanitsiz-veya-kuralsiz-sonuc",
+        "insan-haklari-vatandaslik-ve-demokrasi-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "NO_EXTERNAL_MEDIA_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "insan-haklari-vatandaslik-ve-demokrasi-g4-y-4-3-4",
+      "grade": 4,
+      "courseId": "insan-haklari-vatandaslik-ve-demokrasi",
+      "courseName": "İnsan Hakları, Vatandaşlık ve Demokrasi",
+      "itemFormat": "open-response",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-insan-haklari-vatandaslik-ve-demokrasi-y-4-3-4"
+      ],
+      "context": "4. sınıf İnsan Hakları, Vatandaşlık ve Demokrasi dersinde “Adalet ve Eşitlik” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Adaletin veya eşitliğin sağlandığı ve sağlanamadığı durumları karşılaştırır. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Hak, özgürlük, sorumluluk, eşitlik, adalet veya uzlaşı kavramını durum içinde doğru tanır.",
+        "Kararını şiddetsiz, demokratik ve çocuk haklarına uygun bir gerekçeyle açıklar.",
+        "Farklı kişilerin haklarını ve birlikte yaşama koşullarını gözeten uygulanabilir bir çözüm üretir."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "insan-haklari-vatandaslik-ve-demokrasi-tek-ayrintiya-odaklanma",
+        "insan-haklari-vatandaslik-ve-demokrasi-kanitsiz-veya-kuralsiz-sonuc",
+        "insan-haklari-vatandaslik-ve-demokrasi-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "NO_EXTERNAL_MEDIA_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "gorsel-sanatlar-g4-g-4-1-1",
+      "grade": 4,
+      "courseId": "gorsel-sanatlar",
+      "courseName": "Görsel Sanatlar",
+      "itemFormat": "interactive-simulation",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-gorsel-sanatlar-g-4-1-1"
+      ],
+      "context": "4. sınıf Görsel Sanatlar dersinde “Görsel İletişim ve Biçimlendirme” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Görsel sanat çalışmasını oluştururken biçimlendirme basamaklarını kullanır. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Fikir, kültürel bağlam, sanat elemanı veya tasarım ilkesini açık bir plan/eskizle ilişkilendirir.",
+        "Yaşa uygun gerçek malzemeyle özgün görsel çalışma ya da karşılaştırmalı sanat incelemesi üretir.",
+        "Eser/ürün hakkında etik, saygılı ve kanıta dayalı öz/akran değerlendirmesi yapar."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "gorsel-sanatlar-tek-ayrintiya-odaklanma",
+        "gorsel-sanatlar-kanitsiz-veya-kuralsiz-sonuc",
+        "gorsel-sanatlar-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "REAL_VISUAL_AND_PROVENANCE_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "gorsel-sanatlar-g4-g-4-2-2",
+      "grade": 4,
+      "courseId": "gorsel-sanatlar",
+      "courseName": "Görsel Sanatlar",
+      "itemFormat": "interactive-simulation",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-gorsel-sanatlar-g-4-2-2"
+      ],
+      "context": "4. sınıf Görsel Sanatlar dersinde “Kültürel Miras” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Türk kültürüne ve diğer kültürlere ait mimari yapıların belirgin özelliklerini karşılaştırır. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Fikir, kültürel bağlam, sanat elemanı veya tasarım ilkesini açık bir plan/eskizle ilişkilendirir.",
+        "Yaşa uygun gerçek malzemeyle özgün görsel çalışma ya da karşılaştırmalı sanat incelemesi üretir.",
+        "Eser/ürün hakkında etik, saygılı ve kanıta dayalı öz/akran değerlendirmesi yapar."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "gorsel-sanatlar-tek-ayrintiya-odaklanma",
+        "gorsel-sanatlar-kanitsiz-veya-kuralsiz-sonuc",
+        "gorsel-sanatlar-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "REAL_VISUAL_AND_PROVENANCE_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "muzik-g4-mu-4-a-1",
+      "grade": 4,
+      "courseId": "muzik",
+      "courseName": "Müzik",
+      "itemFormat": "interactive-simulation",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-muzik-mu-4-a-1"
+      ],
+      "context": "4. sınıf Müzik dersinde “Dinleme-Söyleme” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Birlikte söyleme kurallarına uyar. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Ses, ritim, hız, gürlük, ezgi veya müzik kültürü öğesini dinleme/görsel notasyon kanıtıyla doğru ayırt eder.",
+        "Söyleme, ritim, hareket, ezgi üretme ya da arşivleme görevini yaşa uygun biçimde uygular.",
+        "Müzik öğretmeni rubriğiyle tempo, uyum, ifade ve güvenli ses kullanımını gözden geçirir."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "muzik-tek-ayrintiya-odaklanma",
+        "muzik-kanitsiz-veya-kuralsiz-sonuc",
+        "muzik-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "REAL_AUDIO_AND_MUSIC_TEACHER_REVIEW_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "muzik-g4-mu-4-b-6",
+      "grade": 4,
+      "courseId": "muzik",
+      "courseName": "Müzik",
+      "itemFormat": "interactive-simulation",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-muzik-mu-4-b-6"
+      ],
+      "context": "4. sınıf Müzik dersinde “Müziksel Algı ve Bilgilenme” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Temel müzik yazı ve ögelerini (yükseklik, süre, hız, gürlük) bilişim destekli müzik teknolojilerini kullanarak ayırt eder. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Ses, ritim, hız, gürlük, ezgi veya müzik kültürü öğesini dinleme/görsel notasyon kanıtıyla doğru ayırt eder.",
+        "Söyleme, ritim, hareket, ezgi üretme ya da arşivleme görevini yaşa uygun biçimde uygular.",
+        "Müzik öğretmeni rubriğiyle tempo, uyum, ifade ve güvenli ses kullanımını gözden geçirir."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "muzik-tek-ayrintiya-odaklanma",
+        "muzik-kanitsiz-veya-kuralsiz-sonuc",
+        "muzik-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "REAL_AUDIO_AND_MUSIC_TEACHER_REVIEW_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-oyun-g4-bo-4-1-1-1",
+      "grade": 4,
+      "courseId": "beden-egitimi-ve-oyun",
+      "courseName": "Beden Eğitimi ve Oyun",
+      "itemFormat": "interactive-simulation",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-beden-egitimi-ve-oyun-bo-4-1-1-1"
+      ],
+      "context": "4. sınıf Beden Eğitimi ve Oyun dersinde “Hareket Yetkinliği” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Yer değiştirme hareketlerini artan kuvvet, hız ve çeviklikle yapar. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Hareket, oyun, fiziksel uygunluk veya güvenlik hedefini ve uygulama basamaklarını doğru tanımlar.",
+        "Beceriyi güvenli alan, yaşa uygun ekipman, kapsayıcı kural ve öğretmen gözetimiyle uygular.",
+        "Performansını başkalarının bedeniyle kıyaslamadan rubrik, öz değerlendirme ve geri bildirimle geliştirir."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "beden-egitimi-ve-oyun-tek-ayrintiya-odaklanma",
+        "beden-egitimi-ve-oyun-kanitsiz-veya-kuralsiz-sonuc",
+        "beden-egitimi-ve-oyun-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "PHYSICAL_EDUCATION_TEACHER_SUPERVISION_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-oyun-g4-bo-4-2-2-1",
+      "grade": 4,
+      "courseId": "beden-egitimi-ve-oyun",
+      "courseName": "Beden Eğitimi ve Oyun",
+      "itemFormat": "interactive-simulation",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-beden-egitimi-ve-oyun-bo-4-2-2-1"
+      ],
+      "context": "4. sınıf Beden Eğitimi ve Oyun dersinde “Aktif ve Sağlıklı Hayat” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Fiziksel uygunluğunu geliştirecek uygun programlar tasarlar. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Hareket, oyun, fiziksel uygunluk veya güvenlik hedefini ve uygulama basamaklarını doğru tanımlar.",
+        "Beceriyi güvenli alan, yaşa uygun ekipman, kapsayıcı kural ve öğretmen gözetimiyle uygular.",
+        "Performansını başkalarının bedeniyle kıyaslamadan rubrik, öz değerlendirme ve geri bildirimle geliştirir."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "beden-egitimi-ve-oyun-tek-ayrintiya-odaklanma",
+        "beden-egitimi-ve-oyun-kanitsiz-veya-kuralsiz-sonuc",
+        "beden-egitimi-ve-oyun-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "PHYSICAL_EDUCATION_TEACHER_SUPERVISION_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "trafik-guvenligi-g4-tg-4-1-1",
+      "grade": 4,
+      "courseId": "trafik-guvenligi",
+      "courseName": "Trafik Güvenliği",
+      "itemFormat": "open-response",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-trafik-guvenligi-tg-4-1-1"
+      ],
+      "context": "4. sınıf Trafik Güvenliği dersinde “Trafikte Güvenlik” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Trafikte kendisinin ve başkalarının hayatının önemli olduğunu fark eder. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Trafik durumundaki işaret, kural, risk, hak veya yardım ihtiyacını doğru tanır.",
+        "Yaya/yolcu güvenliğini koruyan kuralı ya da yardım isteme basamağını gerekçesiyle seçer.",
+        "Gerçek ilk yardım yerine yalnız öğretmen kontrollü simülasyonda hareket eder; acil durumda yetişkin ve 112 desteğini önceler."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "trafik-guvenligi-tek-ayrintiya-odaklanma",
+        "trafik-guvenligi-kanitsiz-veya-kuralsiz-sonuc",
+        "trafik-guvenligi-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "TEACHER_SAFETY_REVIEW_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "trafik-guvenligi-g4-tg-4-1-11",
+      "grade": 4,
+      "courseId": "trafik-guvenligi",
+      "courseName": "Trafik Güvenliği",
+      "itemFormat": "open-response",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-trafik-guvenligi-tg-4-1-11"
+      ],
+      "context": "4. sınıf Trafik Güvenliği dersinde “Trafikte Güvenlik” alanına bağlı, resmî program sınırları içinde yaşa uygun bir görev uygulanır.",
+      "stem": "Taşıtlara binerken, taşıtlardan inerken ve taşıtlarda yolculuk ederken kurallara uyar. kazanımını gözlenebilir ürün, performans veya gerekçeli yanıtla göster.",
+      "rubricCriteria": [
+        "Trafik durumundaki işaret, kural, risk, hak veya yardım ihtiyacını doğru tanır.",
+        "Yaya/yolcu güvenliğini koruyan kuralı ya da yardım isteme basamağını gerekçesiyle seçer.",
+        "Gerçek ilk yardım yerine yalnız öğretmen kontrollü simülasyonda hareket eder; acil durumda yetişkin ve 112 desteğini önceler."
+      ],
+      "hints": [
+        "Görevin senden hangi bilgi, beceri, ürün veya güvenli davranışı istediğini belirle.",
+        "Kullanacağın kanıtı, materyali, işlem sırasını ya da uygulama basamaklarını planla.",
+        "Son kontrolde üç rubrik ölçütünü ayrı ayrı karşıladığını ve güvenlik/etik sınırlarını koruduğunu göster."
+      ],
+      "misconceptionIds": [
+        "trafik-guvenligi-tek-ayrintiya-odaklanma",
+        "trafik-guvenligi-kanitsiz-veya-kuralsiz-sonuc",
+        "trafik-guvenligi-kontrol-guvenlik-ve-geri-bildirim-eksigi"
+      ],
+      "mediaStatus": "TEACHER_SAFETY_REVIEW_REQUIRED",
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    }
+  ]
+}
