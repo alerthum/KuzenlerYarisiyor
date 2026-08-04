@@ -1,0 +1,334 @@
+{
+  "schemaVersion": "1.0",
+  "sourceId": "meb-tymm-beden-egitimi-ve-spor-5-7-2024",
+  "authority": "MEB_TTKB",
+  "title": "Beden Eğitimi ve Spor Dersi Öğretim Programı — Temel Eğitim, 5–7. Sınıf TYMM",
+  "programFamily": "TYMM",
+  "schoolYear": "2026-2027",
+  "courseId": "beden-egitimi-ve-spor",
+  "grades": [
+    5,
+    6,
+    7
+  ],
+  "collectionMode": "OFFICIAL_TYMM_HTML_THEME_PAGES_EXTRACTED_AND_NORMALIZED",
+  "gradeIndexUrls": {
+    "5": "https://tymm.meb.gov.tr/ogretim-programlari/beden-egitimi-ve-spor-temel-egitim/6",
+    "6": "https://tymm.meb.gov.tr/ogretim-programlari/beden-egitimi-ve-spor-temel-egitim/7",
+    "7": "https://tymm.meb.gov.tr/ogretim-programlari/beden-egitimi-ve-spor-temel-egitim/8"
+  },
+  "themes": [
+    {
+      "grade": 5,
+      "themeId": "theme-1",
+      "themeName": "HAREKET VE ZİNDELİK",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/696",
+      "outcomes": [
+        {
+          "code": "BES.5.1.1",
+          "text": "Fiziksel aktiviteler sırasında vücudunda meydana gelen değişimleri sorgulayabilme"
+        },
+        {
+          "code": "BES.5.1.2",
+          "text": "Fiziksel hareketsizliğin getirdiği sonuçları yorumlayabilme"
+        },
+        {
+          "code": "BES.5.1.3",
+          "text": "Fiziksel aktivite ve zindelik ilişkisini çözümleyebilme"
+        },
+        {
+          "code": "BES.5.1.4",
+          "text": "Fiziksel uygunluk kavramını açıklayabilme"
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "themeId": "theme-2",
+      "themeName": "İŞ BİRLİKLİ OYUNLAR",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/698",
+      "outcomes": [
+        {
+          "code": "BES.5.2.1",
+          "text": "İş birlikli oyunlarda hareket kavramlarını uygulayabilme"
+        },
+        {
+          "code": "BES.5.2.2",
+          "text": "İş birlikli oyunlarda hareket becerisi sergileyebilme"
+        },
+        {
+          "code": "BES.5.2.3",
+          "text": "İş birlikli oyunlarda taktik ve strateji geliştirebilme"
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "themeId": "theme-3",
+      "themeName": "HAYALİMDEKİ OYUN",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/699",
+      "outcomes": [
+        {
+          "code": "BES.5.3.1",
+          "text": "Tasarlayacakları oyunlarda güvenli ortam oluşturabilme"
+        },
+        {
+          "code": "BES.5.3.2",
+          "text": "Oyunların farklı özelliklerinden yararlanarak özgün bir oyun sentezleyebilme"
+        },
+        {
+          "code": "BES.5.3.3",
+          "text": "Tasarlanan oyunlarda adil oyun anlayışına uygun davranabilme"
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "themeId": "theme-4",
+      "themeName": "HAREKETİN ESTETİĞİ VE RİTMİ",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/701",
+      "outcomes": [
+        {
+          "code": "BES.5.4.1",
+          "text": "Jimnastiğe ilişkin hareket kavramlarını uygulayabilme"
+        },
+        {
+          "code": "BES.5.4.2",
+          "text": "Jimnastiğe ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.5.4.3",
+          "text": "Müzik eşliğinde dansa özgü ritmik hareket edebilme"
+        }
+      ]
+    },
+    {
+      "grade": 5,
+      "themeId": "theme-5",
+      "themeName": "DAHA HIZLI, DAHA YÜKSEĞE, DAHA GÜÇLÜ VE BİRLİKTE",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/702",
+      "outcomes": [
+        {
+          "code": "BES.5.5.1",
+          "text": "Çocuk atletizmine ilişkin hareket kavramlarını uygulayabilme"
+        },
+        {
+          "code": "BES.5.5.2",
+          "text": "Çocuk atletizmine ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.5.5.3",
+          "text": "Olimpik ve paralimpik oyunların önemini açıklayabilme"
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "themeId": "theme-1",
+      "themeName": "SAĞLIKLA İLGİLİ FİZİKSEL UYGUNLUK",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/704",
+      "outcomes": [
+        {
+          "code": "BES.6.1.1",
+          "text": "Sağlıkla ilgili fiziksel uygunluğu sağlayabilme"
+        },
+        {
+          "code": "BES.6.1.2",
+          "text": "Fiziksel uygunluk ve zindelik arasındaki ilişkiyi çözümleyebilme"
+        },
+        {
+          "code": "BES.6.1.3",
+          "text": "Fiziksel aktivite sırasında meydana gelebilecek yaralanmalarda temel ilk yardım uygulamalarını sergileyebilme"
+        },
+        {
+          "code": "BES.6.1.4",
+          "text": "Fiziksel aktiviteye katılımı destekleyen teknolojik araçları belirleyebilme"
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "themeId": "theme-2",
+      "themeName": "HEDEF OYUNLARI",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/705",
+      "outcomes": [
+        {
+          "code": "BES.6.2.1",
+          "text": "Hedef oyunlarına ilişkin hareket kavramlarını uygulayabilme"
+        },
+        {
+          "code": "BES.6.2.2",
+          "text": "Hedef oyunlarına ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.6.2.3",
+          "text": "Hedef oyunlarına ilişkin taktik ve strateji geliştirebilme"
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "themeId": "theme-3",
+      "themeName": "SPOR ENGEL TANIMAZ",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/706",
+      "outcomes": [
+        {
+          "code": "BES.6.3.1",
+          "text": "Engelli sporlarına ilişkin hareket kavramlarını uygulayabilme"
+        },
+        {
+          "code": "BES.6.3.2",
+          "text": "Engelli sporlarına ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.6.3.3",
+          "text": "Engelli sporlarına ilişkin taktik ve strateji geliştirebilme"
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "themeId": "theme-4",
+      "themeName": "KÜLTÜREL BİRİKİMLERİMİZ VE OYUN",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/707",
+      "outcomes": [
+        {
+          "code": "BES.6.4.1",
+          "text": "Mustafa Kemal Atatürk’ün spora verdiği önemi yorumlayabilme"
+        },
+        {
+          "code": "BES.6.4.2",
+          "text": "Seçili halk oyununa ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.6.4.3",
+          "text": "Geleneksel oyunlara ilişkin hareket becerilerini sergileyebilme"
+        }
+      ]
+    },
+    {
+      "grade": 6,
+      "themeId": "theme-5",
+      "themeName": "HÜCUM OYUNLARI",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/708",
+      "outcomes": [
+        {
+          "code": "BES.6.5.1",
+          "text": "Hücum oyunlarında güvenli ortam oluşturabilme"
+        },
+        {
+          "code": "BES.6.5.2",
+          "text": "Hücum oyunlarına ilişkin hareket kavramlarını uygulayabilme"
+        },
+        {
+          "code": "BES.6.5.3",
+          "text": "Hücum oyunlarına ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.6.5.4",
+          "text": "Hücum oyunlarına ilişkin taktik ve strateji geliştirebilme"
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "themeId": "theme-1",
+      "themeName": "PERFORMANSLA İLGİLİ FİZİKSEL UYGUNLUK",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/709",
+      "outcomes": [
+        {
+          "code": "BES.7.1.1",
+          "text": "Egzersiz ve beslenme ilişkisini yorumlayabilme"
+        },
+        {
+          "code": "BES.7.1.2",
+          "text": "Performansla ilgili fiziksel uygunluğu sağlayabilme"
+        },
+        {
+          "code": "BES.7.1.3",
+          "text": "Egzersiz ve beslenme konusunda medyada yer alan kaynakların güvenirliğini sorgulayabilme"
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "themeId": "theme-2",
+      "themeName": "FİLE VE DUVAR OYUNLARI",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/710",
+      "outcomes": [
+        {
+          "code": "BES.7.2.1",
+          "text": "File ve duvar oyunlarına ilişkin hareket kavramlarını uygulayabilme"
+        },
+        {
+          "code": "BES.7.2.2",
+          "text": "File ve duvar oyunlarına ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.7.2.3",
+          "text": "File ve duvar oyunlarına ilişkin taktik ve strateji geliştirebilme"
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "themeId": "theme-3",
+      "themeName": "AÇIK ALAN VE MACERA ETKİNLİKLERİ",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/711",
+      "outcomes": [
+        {
+          "code": "BES.7.3.1",
+          "text": "Açık alan ve macera etkinliklerinde güvenli ortam oluşturabilme"
+        },
+        {
+          "code": "BES.7.3.2",
+          "text": "Açık alan ve macera etkinliklerine ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.7.3.3",
+          "text": "Açık alan ve macera etkinliklerinde grup liderliği sergileyebilme"
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "themeId": "theme-4",
+      "themeName": "KÜLTÜREL BİRİKİMLERİMİZ VE OYUN",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/712",
+      "outcomes": [
+        {
+          "code": "BES.7.4.1",
+          "text": "Beden eğitimi ve spor alanının öncülerini tanıyabilme"
+        },
+        {
+          "code": "BES.7.4.2",
+          "text": "Halk oyununa ilişkin hareket örüntülerini sergileyebilme"
+        },
+        {
+          "code": "BES.7.4.3",
+          "text": "Geleneksel oyunlara ilişkin hareket becerilerini sergileyebilme"
+        }
+      ]
+    },
+    {
+      "grade": 7,
+      "themeId": "theme-5",
+      "themeName": "HÜCUM OYUNLARI",
+      "url": "https://tymm.meb.gov.tr/beden-egitimi-ve-spor-temel-egitim/unite/713",
+      "outcomes": [
+        {
+          "code": "BES.7.5.1",
+          "text": "Hücum oyunlarına ilişkin hareket kavramlarını uygulayabilme"
+        },
+        {
+          "code": "BES.7.5.2",
+          "text": "Hücum oyunlarına ilişkin hareket becerilerini sergileyebilme"
+        },
+        {
+          "code": "BES.7.5.3",
+          "text": "Hücum oyunlarına ilişkin farklı zorluk seviyelerinde taktik ve strateji geliştirebilme"
+        }
+      ]
+    }
+  ]
+}

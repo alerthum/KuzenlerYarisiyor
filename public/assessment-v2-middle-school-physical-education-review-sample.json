@@ -1,0 +1,329 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T01:09:23.133Z",
+  "status": "HUMAN_PHYSICAL_EDUCATION_TEACHER_AND_SAFETY_REVIEW_REQUIRED",
+  "metrics": {
+    "engineCount": 3,
+    "itemCount": 9,
+    "perEngine": 3,
+    "approved": 0,
+    "pending": 9
+  },
+  "rows": [
+    {
+      "questionId": "beden-egitimi-ve-spor-g5-bes-5-1-1",
+      "engineKey": "g5:beden-egitimi-ve-spor",
+      "grade": 5,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g5-beden-egitimi-ve-spor-bes-5-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "5. sınıf Beden Eğitimi ve Spor dersinde “HAREKET VE ZİNDELİK” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "Fiziksel aktiviteler sırasında vücudunda meydana gelen değişimleri sorgulayabilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Hareket kavramını veya beceri basamaklarını görsel, model ve öğretmen gösterimiyle doğru ayırt eder.",
+        "Beceriyi güvenli alan, uygun ekipman ve kişisel sınırlar içinde kontrollü biçimde uygular.",
+        "Öz/akran değerlendirmesini saygılı geri bildirimle kullanır ve sonraki denemede somut bir düzeltme yapar."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "safe-physical-space-and-age-appropriate-equipment",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-spor-g5-bes-5-3-1",
+      "engineKey": "g5:beden-egitimi-ve-spor",
+      "grade": 5,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g5-beden-egitimi-ve-spor-bes-5-3-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "5. sınıf Beden Eğitimi ve Spor dersinde “HAYALİMDEKİ OYUN” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "Tasarlayacakları oyunlarda güvenli ortam oluşturabilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Etkinlik alanındaki riski veya örnek yaralanma durumunu gözlemleyip doğru biçimde tanımlar; gerçek yaralanmada yetişkin/sağlık desteğine başvurur.",
+        "Yalnız öğretmenin hazırladığı güvenli simülasyonda, yaş düzeyine uygun önleyici tedbir ya da temel ilk yardım basamaklarını doğru sırayla gösterir.",
+        "Kişisel sınırlar, hijyen, ekipman ve çevre güvenliği kurallarını korur; tehlikeli müdahale yapmaz."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "teacher-prepared-safety-scenario",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-spor-g5-bes-5-2-3",
+      "engineKey": "g5:beden-egitimi-ve-spor",
+      "grade": 5,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g5-beden-egitimi-ve-spor-bes-5-2-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "5. sınıf Beden Eğitimi ve Spor dersinde “İŞ BİRLİKLİ OYUNLAR” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "İş birlikli oyunlarda taktik ve strateji geliştirebilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Oyun ya da etkinlikteki taktiksel problemi veya liderlik ihtiyacını gözlemleyerek açıkça tanımlar.",
+        "Alan, zamanlama, iletişim, iş birliği ve katılımcı güvenliğini gözeten uygulanabilir bir çözüm önerir.",
+        "Seçtiği taktik/stratejiyi öğretmen gözetiminde uygular; sonuç ve geri bildirime göre düzenler."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "safe-physical-space-and-age-appropriate-equipment",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-spor-g6-bes-6-1-1",
+      "engineKey": "g6:beden-egitimi-ve-spor",
+      "grade": 6,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g6-beden-egitimi-ve-spor-bes-6-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "6. sınıf Beden Eğitimi ve Spor dersinde “SAĞLIKLA İLGİLİ FİZİKSEL UYGUNLUK” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "Sağlıkla ilgili fiziksel uygunluğu sağlayabilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Hareket kavramını veya beceri basamaklarını görsel, model ve öğretmen gösterimiyle doğru ayırt eder.",
+        "Beceriyi güvenli alan, uygun ekipman ve kişisel sınırlar içinde kontrollü biçimde uygular.",
+        "Öz/akran değerlendirmesini saygılı geri bildirimle kullanır ve sonraki denemede somut bir düzeltme yapar."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "safe-physical-space-and-age-appropriate-equipment",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-spor-g6-bes-6-1-3",
+      "engineKey": "g6:beden-egitimi-ve-spor",
+      "grade": 6,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g6-beden-egitimi-ve-spor-bes-6-1-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "6. sınıf Beden Eğitimi ve Spor dersinde “SAĞLIKLA İLGİLİ FİZİKSEL UYGUNLUK” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "Fiziksel aktivite sırasında meydana gelebilecek yaralanmalarda temel ilk yardım uygulamalarını sergileyebilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Etkinlik alanındaki riski veya örnek yaralanma durumunu gözlemleyip doğru biçimde tanımlar; gerçek yaralanmada yetişkin/sağlık desteğine başvurur.",
+        "Yalnız öğretmenin hazırladığı güvenli simülasyonda, yaş düzeyine uygun önleyici tedbir ya da temel ilk yardım basamaklarını doğru sırayla gösterir.",
+        "Kişisel sınırlar, hijyen, ekipman ve çevre güvenliği kurallarını korur; tehlikeli müdahale yapmaz."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "teacher-prepared-safety-scenario",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-spor-g6-bes-6-2-3",
+      "engineKey": "g6:beden-egitimi-ve-spor",
+      "grade": 6,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g6-beden-egitimi-ve-spor-bes-6-2-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "6. sınıf Beden Eğitimi ve Spor dersinde “HEDEF OYUNLARI” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "Hedef oyunlarına ilişkin taktik ve strateji geliştirebilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Oyun ya da etkinlikteki taktiksel problemi veya liderlik ihtiyacını gözlemleyerek açıkça tanımlar.",
+        "Alan, zamanlama, iletişim, iş birliği ve katılımcı güvenliğini gözeten uygulanabilir bir çözüm önerir.",
+        "Seçtiği taktik/stratejiyi öğretmen gözetiminde uygular; sonuç ve geri bildirime göre düzenler."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "safe-physical-space-and-age-appropriate-equipment",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-spor-g7-bes-7-1-1",
+      "engineKey": "g7:beden-egitimi-ve-spor",
+      "grade": 7,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g7-beden-egitimi-ve-spor-bes-7-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "7. sınıf Beden Eğitimi ve Spor dersinde “PERFORMANSLA İLGİLİ FİZİKSEL UYGUNLUK” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "Egzersiz ve beslenme ilişkisini yorumlayabilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Fiziksel uygunluk, zindelik, egzersiz, beslenme veya hareketsizlik bileşenlerini yaşa uygun kanıtla açıklar.",
+        "Öğretmen gözetimindeki güvenli etkinlik/veri kaydında vücudundaki değişimi veya uygunluk bileşenini doğru gözlemler.",
+        "Kişisel veriyi karşılaştırma ya da yargılama amacıyla kullanmadan, kendi gelişimi için güvenli ve gerçekçi bir iyileştirme hedefi belirler."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "safe-physical-space-and-age-appropriate-equipment",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-spor-g7-bes-7-3-1",
+      "engineKey": "g7:beden-egitimi-ve-spor",
+      "grade": 7,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g7-beden-egitimi-ve-spor-bes-7-3-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "7. sınıf Beden Eğitimi ve Spor dersinde “AÇIK ALAN VE MACERA ETKİNLİKLERİ” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "Açık alan ve macera etkinliklerinde güvenli ortam oluşturabilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Etkinlik alanındaki riski veya örnek yaralanma durumunu gözlemleyip doğru biçimde tanımlar; gerçek yaralanmada yetişkin/sağlık desteğine başvurur.",
+        "Yalnız öğretmenin hazırladığı güvenli simülasyonda, yaş düzeyine uygun önleyici tedbir ya da temel ilk yardım basamaklarını doğru sırayla gösterir.",
+        "Kişisel sınırlar, hijyen, ekipman ve çevre güvenliği kurallarını korur; tehlikeli müdahale yapmaz."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "teacher-prepared-safety-scenario",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-spor-g7-bes-7-2-3",
+      "engineKey": "g7:beden-egitimi-ve-spor",
+      "grade": 7,
+      "courseId": "beden-egitimi-ve-spor",
+      "outcomeIds": [
+        "tr-tymm-g7-beden-egitimi-ve-spor-bes-7-2-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "7. sınıf Beden Eğitimi ve Spor dersinde “FİLE VE DUVAR OYUNLARI” teması için öğretmen tarafından risk değerlendirmesi yapılmış güvenli alan, yaşa uygun ekipman ve kapsayıcı katılım düzeni kullanılır.",
+      "stem": "File ve duvar oyunlarına ilişkin taktik ve strateji geliştirebilme öğrenme çıktısını güvenli uygulama, gözlem ve gerekçeli öz değerlendirme kanıtıyla göster.",
+      "rubricCriteria": [
+        "Oyun ya da etkinlikteki taktiksel problemi veya liderlik ihtiyacını gözlemleyerek açıkça tanımlar.",
+        "Alan, zamanlama, iletişim, iş birliği ve katılımcı güvenliğini gözeten uygulanabilir bir çözüm önerir.",
+        "Seçtiği taktik/stratejiyi öğretmen gözetiminde uygular; sonuç ve geri bildirime göre düzenler."
+      ],
+      "hints": [
+        "Önce görevin hareket, güvenlik, zindelik, taktik, kültür ya da kaynak değerlendirme boyutlarından hangisini ölçtüğünü belirle.",
+        "Uygulamadan önce alanı, ekipmanı, kişisel sınırları ve öğretmen güvenlik yönergesini ayrı ayrı kontrol et.",
+        "Son kontrolde rubriğin üç ölçütü için gözlenebilir kanıt ver; performansını başkalarının bedeni veya başarısıyla kıyaslama."
+      ],
+      "misconceptionIds": [
+        "hız-veya-kuvveti-tek-başına-doğru-performans-sanma",
+        "güvenlik-ve-kişisel-sınırları-ikincil-görme",
+        "geri-bildirim-yerine-sonuca-veya-kazanmaya-odaklanma"
+      ],
+      "media": {
+        "type": "safe-physical-space-and-age-appropriate-equipment",
+        "status": "SAFE_SPACE_EQUIPMENT_AND_TEACHER_SUPERVISION_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+      "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+      "gameAdaptationAllowed": false
+    }
+  ]
+}

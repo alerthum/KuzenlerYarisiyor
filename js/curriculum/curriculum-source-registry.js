@@ -142,6 +142,11 @@ export const CURRICULUM_SOURCES = Object.freeze([
     copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original safe digital tasks.', notes: 'Local authoritative PDF: docs/sources/BILISIM_TEKNOLOJILERI_VE_YAZILIM_5_6_TYMM.pdf. Active for grades 5-6 in 2026-2027. Real credentials and personal student data are prohibited; school-managed or offline sandbox required.'
   }),
   defineCurriculumSource({
+    id: 'meb-tymm-beden-egitimi-ve-spor-5-7-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Beden Eğitimi ve Spor Dersi Öğretim Programı — Temel Eğitim, 5-7. Sınıf TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari/beden-egitimi-ve-spor-temel-egitim', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; create original safe performance tasks.', notes: 'Local extracted authoritative HTML evidence: docs/sources/BEDEN_EGITIMI_VE_SPOR_5_7_TYMM_HTML_EVIDENCE.json. Active for grades 5-7 in 2026-2027. Safe space, age-appropriate equipment, teacher supervision, inclusive adaptation and human observation rubric are mandatory.'
+  }),
+  defineCurriculumSource({
     id: 'meb-legacy-programs',
     kind: 'official-curriculum',
     useMode: 'AUTHORITATIVE_DATA',

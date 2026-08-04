@@ -5,10 +5,11 @@ export const PRIMARY_TYMM_SOURCE_EVIDENCE=Object.freeze([
   Object.freeze({sourceId:'meb-tymm-body-play-1-4-2024',courseIds:Object.freeze(['beden-egitimi-ve-oyun']),grades:Object.freeze([1,2,3]),localDocument:'docs/sources/BEDEN_EGITIMI_VE_OYUN_1_4_TYMM.pdf',sha256:'17f595871c0599c29cbab671a04a28a2f165d75a53466389f5fbc67e5fb76cf0',status:'LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED'}),
   Object.freeze({sourceId:'meb-tymm-visual-arts-1-8-2024',courseIds:Object.freeze(['gorsel-sanatlar']),grades:Object.freeze([1,2,3,5,6,7]),localDocument:'docs/sources/GORSEL_SANATLAR_1_8_TYMM.pdf',sha256:'399fdc9ee183b69f5c5b9f535e7e9943224ebdfe58c627b7a2b6c67641e3eecb',status:'LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED'}),
   Object.freeze({sourceId:'meb-tymm-primary-music-1-8-2024',courseIds:Object.freeze(['muzik']),grades:Object.freeze([1,2,3,5,6,7]),localDocument:'docs/sources/MUZIK_1_8_TYMM_TEMEL_EGITIM.pdf',sha256:'f55ad0facf5ffc4d0be0d514f46c463fb7c1cff55402ce170ca480e5ae9b7c42',status:'LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED'}),
-  Object.freeze({sourceId:'meb-tymm-bilisim-5-6-2024',courseIds:Object.freeze(['bilisim-teknolojileri-ve-yazilim']),grades:Object.freeze([5,6]),localDocument:'docs/sources/BILISIM_TEKNOLOJILERI_VE_YAZILIM_5_6_TYMM.pdf',sha256:'432a22b3a5a34abf64057ee0ea460662de056dd29b66bce32f4761813a8231c7',status:'LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED'})
+  Object.freeze({sourceId:'meb-tymm-bilisim-5-6-2024',courseIds:Object.freeze(['bilisim-teknolojileri-ve-yazilim']),grades:Object.freeze([5,6]),localDocument:'docs/sources/BILISIM_TEKNOLOJILERI_VE_YAZILIM_5_6_TYMM.pdf',sha256:'432a22b3a5a34abf64057ee0ea460662de056dd29b66bce32f4761813a8231c7',status:'LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED'}),
+  Object.freeze({sourceId:'meb-tymm-beden-egitimi-ve-spor-5-7-2024',courseIds:Object.freeze(['beden-egitimi-ve-spor']),grades:Object.freeze([5,6,7]),localDocument:'docs/sources/BEDEN_EGITIMI_VE_SPOR_5_7_TYMM_HTML_EVIDENCE.json',sha256:'6d28806d22287f0f3404408c8febd37cb272f86edd1c459769fad9bb7052687c',status:'LOCAL_EXTRACTED_AUTHORITATIVE_HTML_EVIDENCE_VERIFIED'})
 ]);
 
 export const PRIMARY_TYMM_SOURCE_EVIDENCE_AUDIT=Object.freeze({
-  ok:PRIMARY_TYMM_SOURCE_EVIDENCE.length===7&&PRIMARY_TYMM_SOURCE_EVIDENCE.every(row=>['LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED','LOCAL_EXTRACTED_AUTHORITATIVE_HTML_EVIDENCE_VERIFIED'].includes(row.status)&&/^[a-f0-9]{64}$/.test(row.sha256)),
-  metrics:Object.freeze({sourceCount:PRIMARY_TYMM_SOURCE_EVIDENCE.length,gradeCount:3,courseCount:7,localEvidenceCount:PRIMARY_TYMM_SOURCE_EVIDENCE.length})
+  ok:PRIMARY_TYMM_SOURCE_EVIDENCE.length===8&&PRIMARY_TYMM_SOURCE_EVIDENCE.every(row=>['LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED','LOCAL_EXTRACTED_AUTHORITATIVE_HTML_EVIDENCE_VERIFIED'].includes(row.status)&&/^[a-f0-9]{64}$/.test(row.sha256)),
+  metrics:Object.freeze({sourceCount:PRIMARY_TYMM_SOURCE_EVIDENCE.length,gradeCount:3,courseCount:8,localEvidenceCount:PRIMARY_TYMM_SOURCE_EVIDENCE.length})
 });

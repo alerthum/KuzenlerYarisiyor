@@ -24,6 +24,7 @@ import { buildPrimaryTymmMusicTasks } from './primary-tymm-music-engines.js';
 import { buildMiddleSchoolTymmVisualArtsTasks } from './middle-school-tymm-visual-arts-engines.js';
 import { buildMiddleSchoolTymmMusicTasks } from './middle-school-tymm-music-engines.js';
 import { buildMiddleSchoolTymmComputingTasks } from './middle-school-tymm-computing-engines.js';
+import { buildMiddleSchoolTymmPhysicalEducationTasks } from './middle-school-tymm-physical-education-engines.js';
 
 const freezeRows=rows=>Object.freeze(rows.map(row=>Object.freeze(row)));
 
@@ -58,13 +59,14 @@ export function buildAssessmentV2CanonicalCatalog(){
     ...buildPrimaryTymmMusicTasks(),
     ...buildMiddleSchoolTymmVisualArtsTasks(),
     ...buildMiddleSchoolTymmMusicTasks(),
-    ...buildMiddleSchoolTymmComputingTasks()
+    ...buildMiddleSchoolTymmComputingTasks(),
+    ...buildMiddleSchoolTymmPhysicalEducationTasks()
   ]);
 }
 
 export function auditAssessmentV2CanonicalCatalog(items=buildAssessmentV2CanonicalCatalog()){
   const errors=[];
-  if(items.length!==2327)errors.push(`item-count:${items.length}`);
+  if(items.length!==2375)errors.push(`item-count:${items.length}`);
   if(new Set(items.map(item=>item.id)).size!==items.length)errors.push('duplicate-item-id');
   for(const item of items){
     if(!item.curriculum?.grade||!item.curriculum?.courseId)errors.push(`${item.id}:curriculum`);

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-04T00:59:17.517Z",
+  "generatedAt": "2026-08-04T01:09:23.593Z",
   "phase": "4H",
   "title": "Assessment V2 Ürün Şekillendirme ve Ders Motorları Panosu",
   "status": "ENGINEERING_PASS_HUMAN_REVIEW_IN_PROGRESS",
@@ -13,13 +13,13 @@
       "targetGradeCount": 12,
       "activeGradeCount": 8,
       "courseScheduleCellCount": 112,
-      "activeEngineCellCount": 56,
-      "activeEngineCellPercent": 50,
-      "curriculumOutcomeRecordCount": 2302,
-      "coveredOutcomeCount": 2302,
-      "canonicalQuestionCount": 2327,
+      "activeEngineCellCount": 59,
+      "activeEngineCellPercent": 52.7,
+      "curriculumOutcomeRecordCount": 2350,
+      "coveredOutcomeCount": 2350,
+      "canonicalQuestionCount": 2375,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 2322,
+      "humanReviewQueueCount": 2370,
       "gameAdaptedQuestionCount": 5,
       "legacyQuarantineCount": 604,
       "unmatchedActiveCourseCellCount": 0
@@ -27,7 +27,7 @@
   },
   "portfolio": {
     "schemaVersion": "3.5",
-    "generatedAt": "2026-08-04T00:59:17.515Z",
+    "generatedAt": "2026-08-04T01:09:23.592Z",
     "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
     "status": "PRIMARY_ACADEMIC_CORE_AND_GRADES5_8_ENGINEERING_SCOPE_COMPLETE",
     "productReady": false,
@@ -59,13 +59,13 @@
       "targetGradeCount": 12,
       "activeGradeCount": 8,
       "courseScheduleCellCount": 112,
-      "activeEngineCellCount": 56,
-      "activeEngineCellPercent": 50,
-      "curriculumOutcomeRecordCount": 2302,
-      "coveredOutcomeCount": 2302,
-      "canonicalQuestionCount": 2327,
+      "activeEngineCellCount": 59,
+      "activeEngineCellPercent": 52.7,
+      "curriculumOutcomeRecordCount": 2350,
+      "coveredOutcomeCount": 2350,
+      "canonicalQuestionCount": 2375,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 2322,
+      "humanReviewQueueCount": 2370,
       "gameAdaptedQuestionCount": 5,
       "legacyQuarantineCount": 604,
       "unmatchedActiveCourseCellCount": 0
@@ -1700,6 +1700,90 @@
           "25 görev insan incelemesi bekliyor.",
           "Güvenli çevrim dışı/okul yönetimli dijital sandbox, erişilebilir ürün örnekleri ve öğretmen rubrikleri tamamlanmadı."
         ]
+      },
+      {
+        "id": "tr-g5-beden-egitimi-ve-spor-tymm-v2",
+        "grade": 5,
+        "courseId": "beden-egitimi-ve-spor",
+        "scheduleCourseId": "beden-egitimi-ve-spor",
+        "courseName": "Beden Eğitimi ve Spor",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 16,
+        "ingestedOutcomeCount": 16,
+        "coveredOutcomeCount": 16,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 16,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 16,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "safe physical performance, fitness inquiry, tactics and sports culture engine",
+        "verifierType": "independent safety contract, teacher observation and analytic rubric verification",
+        "misconceptionCatalog": "g5-physical-education-misconceptions-v1",
+        "nextAction": "16 görevi beden eğitimi öğretmeni, güvenli alan, ekipman, kapsayıcılık ve yaş uygunluğu açısından kalibre et.",
+        "blockers": [
+          "16 görev insan incelemesi bekliyor.",
+          "Gerçek güvenli alan, yaşa uygun ekipman ve öğretmen gözlem rubrikleri tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g6-beden-egitimi-ve-spor-tymm-v2",
+        "grade": 6,
+        "courseId": "beden-egitimi-ve-spor",
+        "scheduleCourseId": "beden-egitimi-ve-spor",
+        "courseName": "Beden Eğitimi ve Spor",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 17,
+        "ingestedOutcomeCount": 17,
+        "coveredOutcomeCount": 17,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 17,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 17,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "safe physical performance, fitness inquiry, tactics and sports culture engine",
+        "verifierType": "independent safety contract, teacher observation and analytic rubric verification",
+        "misconceptionCatalog": "g6-physical-education-misconceptions-v1",
+        "nextAction": "17 görevi beden eğitimi öğretmeni, güvenli alan, ekipman, kapsayıcılık ve yaş uygunluğu açısından kalibre et.",
+        "blockers": [
+          "17 görev insan incelemesi bekliyor.",
+          "Gerçek güvenli alan, yaşa uygun ekipman ve öğretmen gözlem rubrikleri tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g7-beden-egitimi-ve-spor-tymm-v2",
+        "grade": 7,
+        "courseId": "beden-egitimi-ve-spor",
+        "scheduleCourseId": "beden-egitimi-ve-spor",
+        "courseName": "Beden Eğitimi ve Spor",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 15,
+        "ingestedOutcomeCount": 15,
+        "coveredOutcomeCount": 15,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 15,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 15,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "safe physical performance, fitness inquiry, tactics and sports culture engine",
+        "verifierType": "independent safety contract, teacher observation and analytic rubric verification",
+        "misconceptionCatalog": "g7-physical-education-misconceptions-v1",
+        "nextAction": "15 görevi beden eğitimi öğretmeni, güvenli alan, ekipman, kapsayıcılık ve yaş uygunluğu açısından kalibre et.",
+        "blockers": [
+          "15 görev insan incelemesi bekliyor.",
+          "Gerçek güvenli alan, yaşa uygun ekipman ve öğretmen gözlem rubrikleri tamamlanmadı."
+        ]
       }
     ],
     "pipeline": [
@@ -1707,7 +1791,7 @@
         "id": "curriculum",
         "label": "Resmî müfredat",
         "status": "PASS_FOR_ACTIVE_ENGINES",
-        "note": "56 aktif motorun resmî kapsamı tam aktarıldı."
+        "note": "59 aktif motorun resmî kapsamı tam aktarıldı."
       },
       {
         "id": "subject-engine",
@@ -1719,13 +1803,13 @@
         "id": "canonical-content",
         "label": "Kanonik soru/görev",
         "status": "ENGINEERING_SCOPE_COMPLETE",
-        "note": "2327 kanonik mühendislik nesnesi mevcut."
+        "note": "2375 kanonik mühendislik nesnesi mevcut."
       },
       {
         "id": "human-review",
         "label": "İnsan kalibrasyonu",
         "status": "BLOCKED",
-        "note": "5 onaylı, 2322 inceleme bekliyor."
+        "note": "5 onaylı, 2370 inceleme bekliyor."
       },
       {
         "id": "game-adaptation",
@@ -1769,7 +1853,7 @@
         "order": 4,
         "id": "expand-grade-map",
         "title": "1–12 sınıf-ders hücrelerini genişlet",
-        "reason": "112 zorunlu hücrenin 56’si aktif."
+        "reason": "112 zorunlu hücrenin 59’si aktif."
       }
     ]
   }

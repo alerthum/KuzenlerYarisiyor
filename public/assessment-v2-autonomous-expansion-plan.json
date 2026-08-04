@@ -1,16 +1,16 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-04T00:59:17.234Z",
+  "generatedAt": "2026-08-04T01:09:23.304Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "PRIMARY_ACADEMIC_CORE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
-    "activeEngineCount": 56,
-    "engineeringScopeCompleteEngineCount": 56,
+    "activeEngineCount": 59,
+    "engineeringScopeCompleteEngineCount": 59,
     "remainingOutcomeCount": 0,
-    "humanReviewQueueCount": 2322,
-    "unopenedCourseCellCount": 56
+    "humanReviewQueueCount": 2370,
+    "unopenedCourseCellCount": 53
   },
   "engines": [
     {
@@ -684,6 +684,42 @@
       "reviewQueueCount": 25,
       "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g5-beden-egitimi-ve-spor-tymm-v2",
+      "grade": 5,
+      "courseId": "beden-egitimi-ve-spor",
+      "officialOutcomeCount": 16,
+      "coveredOutcomeCount": 16,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 16,
+      "reviewQueueCount": 16,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g6-beden-egitimi-ve-spor-tymm-v2",
+      "grade": 6,
+      "courseId": "beden-egitimi-ve-spor",
+      "officialOutcomeCount": 17,
+      "coveredOutcomeCount": 17,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 17,
+      "reviewQueueCount": 17,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g7-beden-egitimi-ve-spor-tymm-v2",
+      "grade": 7,
+      "courseId": "beden-egitimi-ve-spor",
+      "officialOutcomeCount": 15,
+      "coveredOutcomeCount": 15,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 15,
+      "reviewQueueCount": 15,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
     }
   ],
   "backlog": [
@@ -691,8 +727,8 @@
       "order": 1,
       "id": "calibrate-risk-sample",
       "kind": "HUMAN_REVIEW",
-      "scope": "56 aktif motor için risk tabakalı örneklem",
-      "reason": "2322 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
+      "scope": "59 aktif motor için risk tabakalı örneklem",
+      "reason": "2370 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
       "count": 126
     },
     {
@@ -724,8 +760,8 @@
       "id": "expand-grade-map",
       "kind": "NEW_ENGINE",
       "scope": "1–12 zorunlu ders hücreleri",
-      "reason": "112 hücrenin 56’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
-      "count": 56
+      "reason": "112 hücrenin 59’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
+      "count": 53
     }
   ]
 }

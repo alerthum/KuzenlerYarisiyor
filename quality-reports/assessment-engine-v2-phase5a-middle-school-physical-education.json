@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T01:09:23.304Z",
+  "phase": "5A",
+  "title": "5–7. Sınıf TYMM Beden Eğitimi ve Spor Motorları",
+  "status": "MIDDLE_SCHOOL_PHYSICAL_EDUCATION_ENGINEERING_SCOPE_COMPLETE",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "errors": [],
+  "audits": {
+    "physicalEducation": {
+      "ok": true,
+      "metrics": {
+        "engineCount": 3,
+        "officialOutcomeCount": 48,
+        "itemCount": 48,
+        "humanReviewStatus": "NOT_MEASURED",
+        "safeSpaceAndEquipmentStatus": "REQUIRED_NOT_ATTACHED",
+        "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "reviewSample": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "engineCount": 3,
+        "itemCount": 9,
+        "perEngine": 3,
+        "approved": 0,
+        "pending": 9
+      }
+    },
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 8,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 59,
+        "activeEngineCellPercent": 52.7,
+        "curriculumOutcomeRecordCount": 2350,
+        "coveredOutcomeCount": 2350,
+        "canonicalQuestionCount": 2375,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 2370,
+        "gameAdaptedQuestionCount": 5,
+        "legacyQuarantineCount": 604,
+        "unmatchedActiveCourseCellCount": 0
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 2375,
+        "byEngine": {
+          "g8:turkce": 96,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 61,
+          "g5:turkce": 105,
+          "g8:t-c-inkilap-tarihi-ve-ataturkculuk": 33,
+          "g8:din-kulturu-ve-ahlak-bilgisi": 28,
+          "g8:ingilizce": 70,
+          "g5:matematik": 23,
+          "g5:fen-bilimleri": 28,
+          "g5:sosyal-bilgiler": 19,
+          "g5:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g5:yabanci-dil": 184,
+          "g6:turkce": 100,
+          "g6:matematik": 24,
+          "g6:fen-bilimleri": 36,
+          "g6:sosyal-bilgiler": 18,
+          "g6:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g6:yabanci-dil": 184,
+          "g7:turkce": 103,
+          "g7:matematik": 30,
+          "g7:fen-bilimleri": 36,
+          "g7:sosyal-bilgiler": 17,
+          "g7:din-kulturu-ve-ahlak-bilgisi": 17,
+          "g7:yabanci-dil": 191,
+          "g2:yabanci-dil": 138,
+          "g3:yabanci-dil": 138,
+          "g3:fen-bilimleri": 20,
+          "g4:fen-bilimleri": 43,
+          "g4:din-kulturu-ve-ahlak-bilgisi": 19,
+          "g4:yabanci-dil": 47,
+          "g1:turkce": 17,
+          "g2:turkce": 20,
+          "g3:turkce": 20,
+          "g1:matematik": 19,
+          "g2:matematik": 25,
+          "g3:matematik": 33,
+          "g1:hayat-bilgisi": 23,
+          "g2:hayat-bilgisi": 23,
+          "g3:hayat-bilgisi": 20,
+          "g1:beden-egitimi-ve-oyun": 13,
+          "g2:beden-egitimi-ve-oyun": 12,
+          "g3:beden-egitimi-ve-oyun": 13,
+          "g1:gorsel-sanatlar": 11,
+          "g2:gorsel-sanatlar": 11,
+          "g3:gorsel-sanatlar": 11,
+          "g1:muzik": 13,
+          "g2:muzik": 12,
+          "g3:muzik": 12,
+          "g5:gorsel-sanatlar": 10,
+          "g6:gorsel-sanatlar": 10,
+          "g7:gorsel-sanatlar": 10,
+          "g5:muzik": 15,
+          "g6:muzik": 13,
+          "g7:muzik": 16,
+          "g5:bilisim-teknolojileri-ve-yazilim": 24,
+          "g6:bilisim-teknolojileri-ve-yazilim": 25,
+          "g5:beden-egitimi-ve-spor": 16,
+          "g6:beden-egitimi-ve-spor": 17,
+          "g7:beden-egitimi-ve-spor": 15
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    },
+    "reviewQueue": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "total": 2375,
+        "approved": 5,
+        "pending": 2370,
+        "highComplexityPending": 2219
+      }
+    },
+    "autonomousPlan": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "activeEngineCount": 59,
+        "engineeringScopeCompleteEngineCount": 59,
+        "remainingOutcomeCount": 0,
+        "humanReviewQueueCount": 2370,
+        "unopenedCourseCellCount": 53
+      }
+    }
+  },
+  "sourceEvidence": {
+    "sourceId": "meb-tymm-beden-egitimi-ve-spor-5-7-2024",
+    "courseIds": [
+      "beden-egitimi-ve-spor"
+    ],
+    "grades": [
+      5,
+      6,
+      7
+    ],
+    "localDocument": "docs/sources/BEDEN_EGITIMI_VE_SPOR_5_7_TYMM_HTML_EVIDENCE.json",
+    "sha256": "6d28806d22287f0f3404408c8febd37cb272f86edd1c459769fad9bb7052687c",
+    "status": "LOCAL_EXTRACTED_AUTHORITATIVE_HTML_EVIDENCE_VERIFIED"
+  },
+  "metrics": {
+    "newEngineCount": 3,
+    "newOfficialOutcomeCount": 48,
+    "newCanonicalTaskCount": 48,
+    "newHumanApprovedCount": 0,
+    "totalActiveEngineCount": 59,
+    "totalActiveGradeCount": 8,
+    "totalOfficialOutcomeCount": 2350,
+    "totalCanonicalTaskCount": 2375,
+    "humanReviewPending": 2370,
+    "unopenedCourseCells": 53
+  },
+  "honesty": {
+    "humanReviewStatus": "NOT_MEASURED",
+    "safePhysicalSpaceAndEquipment": "REQUIRED_NOT_ATTACHED",
+    "physicalEducationTeacherCalibration": "NOT_COMPLETED",
+    "realStudentPilot": "NOT_COMPLETED",
+    "medicalDiagnosisOrTreatmentProvided": false,
+    "studentBodyComparisonAllowed": false
+  }
+}
