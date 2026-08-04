@@ -11,7 +11,7 @@ test('simüle öğrenci verisi gerçek pilot yerine geçemez',()=>{const result=
 
 test('20 oturumluk canlı batarya 500 oturum kapısını açamaz',()=>{const result=evaluateAssessmentV2ProductReadiness({liveBattery:{gameCount:23,sessionsPerGame:20,underfill:0,semanticRepeats:0,failedGames:[]}});assert.equal(result.checks.find(c=>c.id==='live-session-battery').passed,false);});
 
-test('aktif kırk sekiz motorun kendi kapsamı tam olsa da 112 hücre hedefi açıktır',()=>{const result=evaluateAssessmentV2ProductReadiness({portfolio:ASSESSMENT_V2_PRODUCTION_PORTFOLIO});assert.equal(result.checks.find(c=>c.id==='active-engine-curriculum').passed,true);assert.equal(result.checks.find(c=>c.id==='course-cell-coverage').passed,false);assert.equal(result.productReady,false);});
+test('aktif elli dört motorun kendi kapsamı tam olsa da 112 hücre hedefi açıktır',()=>{const result=evaluateAssessmentV2ProductReadiness({portfolio:ASSESSMENT_V2_PRODUCTION_PORTFOLIO});assert.equal(result.checks.find(c=>c.id==='active-engine-curriculum').passed,true);assert.equal(result.checks.find(c=>c.id==='course-cell-coverage').passed,false);assert.equal(result.productReady,false);});
 
 test('bütün bağımsız kanıtlar sağlanmadan tek alan mutasyonu productReady üretemez',()=>{const base={
  portfolio:{...ASSESSMENT_V2_PRODUCTION_PORTFOLIO,summary:{...ASSESSMENT_V2_PRODUCTION_PORTFOLIO.summary,activeEngineCellCount:112,activeGradeCount:12}},

@@ -1,4 +1,4 @@
-const SOURCE=Object.freeze({"id":"meb-tymm-primary-music-1-8-2024","authority":"MEB_TTKB","title":"Müzik Dersi Öğretim Programı — Temel Eğitim, TYMM","status":"AUTHORITATIVE_ACTIVE_FOR_GRADE_1_2026_2027","localDocument":"docs/sources/MUZIK_1_3_TYMM_OFFICIAL_HTML_EVIDENCE.json","url":"https://tymm.meb.gov.tr/ogretim-programlari/ders/muzik-dersi-temel-egitim"});
+const SOURCE=Object.freeze({"id":"meb-tymm-primary-music-1-8-2024","authority":"MEB_TTKB","title":"Müzik Dersi Öğretim Programı — Temel Eğitim, TYMM","status":"AUTHORITATIVE_ACTIVE_FOR_GRADE_1_2026_2027","localDocument":"docs/sources/MUZIK_1_8_TYMM_TEMEL_EGITIM.pdf","url":"https://tymm.meb.gov.tr/upload/program/muzik-dersi-programi-tegm.pdf"});
 const RAW=[
   {
     "id": "tr-tymm-g1-muzik-muz-1-1-1",

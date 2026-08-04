@@ -133,8 +133,8 @@ export const CURRICULUM_SOURCES = Object.freeze([
   }),
   defineCurriculumSource({
     id: 'meb-tymm-primary-music-1-8-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
-    title: 'Müzik Dersi Öğretim Programı — Temel Eğitim, TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari/ders/muzik-dersi-temel-egitim', retrievedAt: '2026-08-04',
-    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; do not reproduce copyrighted song lyrics or recordings.', notes: 'Local extracted evidence snapshot: docs/sources/MUZIK_1_3_TYMM_OFFICIAL_HTML_EVIDENCE.json. Active for grades 1-3 in 2026-2027; licensed or human-recorded audio and music-teacher review remain mandatory.'
+    title: 'Müzik Dersi Öğretim Programı — Temel Eğitim, TYMM', url: 'https://tymm.meb.gov.tr/upload/program/muzik-dersi-programi-tegm.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; do not reproduce copyrighted song lyrics or recordings.', notes: 'Local authoritative PDF: docs/sources/MUZIK_1_8_TYMM_TEMEL_EGITIM.pdf. Active for grades 1-3 and 5-7 in 2026-2027; grade 4 remains on the previous program route. Licensed or human-recorded audio and music-teacher review remain mandatory.'
   }),
   defineCurriculumSource({
     id: 'meb-legacy-programs',

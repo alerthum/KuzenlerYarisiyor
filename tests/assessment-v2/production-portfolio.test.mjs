@@ -10,19 +10,19 @@ import { renderAssessmentV2ProductionPanelHtml } from '../../js/quality/assessme
 
 const portfolio = ASSESSMENT_V2_PRODUCTION_PORTFOLIO;
 
-test('ürün portföyü 1-12 hedefini ve mevcut 51 ders motorunu dürüst sayaçlarla gösterir', () => {
+test('ürün portföyü 1-12 hedefini ve mevcut 54 ders motorunu dürüst sayaçlarla gösterir', () => {
   assert.equal(ASSESSMENT_V2_PRODUCTION_PORTFOLIO_AUDIT.ok, true, ASSESSMENT_V2_PRODUCTION_PORTFOLIO_AUDIT.errors.join('\n'));
   assert.equal(portfolio.summary.targetGradeCount, 12);
   assert.equal(portfolio.summary.courseScheduleCellCount, 112);
-  assert.equal(portfolio.summary.activeEngineCellCount, 51);
-  assert.equal(portfolio.summary.canonicalQuestionCount, 2234);
-  assert.equal(portfolio.summary.curriculumOutcomeRecordCount, 2209);
-  assert.equal(portfolio.summary.coveredOutcomeCount, 2209);
+  assert.equal(portfolio.summary.activeEngineCellCount, 54);
+  assert.equal(portfolio.summary.canonicalQuestionCount, 2278);
+  assert.equal(portfolio.summary.curriculumOutcomeRecordCount, 2253);
+  assert.equal(portfolio.summary.coveredOutcomeCount, 2253);
 });
 
 test('insan incelemesi, oyun uyarlaması ve ürün yayını ayrı kapılar olarak kalır', () => {
   assert.equal(portfolio.summary.humanApprovedQuestionCount, 5);
-  assert.equal(portfolio.summary.humanReviewQueueCount, 2229);
+  assert.equal(portfolio.summary.humanReviewQueueCount, 2273);
   assert.equal(portfolio.summary.gameAdaptedQuestionCount, 5);
   assert.equal(portfolio.gameAdaptationAllowed, false);
   assert.equal(portfolio.productReady, false);
@@ -32,7 +32,7 @@ test('insan incelemesi, oyun uyarlaması ve ürün yayını ayrı kapılar olara
 
 test('ders motorları ortak üreticiye dönüşmeden alan kimliklerini korur', () => {
   assert.equal(new Set(portfolio.engines.map(row => row.engineType)).size >= 21, true);
-  assert.equal(new Set(portfolio.engines.map(row => row.misconceptionCatalog)).size, 51);
+  assert.equal(new Set(portfolio.engines.map(row => row.misconceptionCatalog)).size, 54);
   assert.equal(portfolio.architecture.sharedContractNotSharedGenerator, true);
   assert.equal(portfolio.architecture.subjectSpecificEnginesRequired, true);
 });
@@ -62,7 +62,7 @@ test('admin panel renderer kritik ürün durumunu ve motor kartlarını gösteri
   assert.match(html, /Fen Bilimleri/);
   assert.match(html, /5\. sınıf/);
   assert.match(html, /productReady=false/);
-  assert.match(html, /2229/);
+  assert.match(html, /2273/);
 });
 
 test('admin platformu üretim panosunu soru motoru modülüne bağlar', () => {
