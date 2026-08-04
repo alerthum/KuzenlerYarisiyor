@@ -1,16 +1,16 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-04T00:51:33.721Z",
+  "generatedAt": "2026-08-04T00:59:17.234Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "PRIMARY_ACADEMIC_CORE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
-    "activeEngineCount": 54,
-    "engineeringScopeCompleteEngineCount": 54,
+    "activeEngineCount": 56,
+    "engineeringScopeCompleteEngineCount": 56,
     "remainingOutcomeCount": 0,
-    "humanReviewQueueCount": 2273,
-    "unopenedCourseCellCount": 58
+    "humanReviewQueueCount": 2322,
+    "unopenedCourseCellCount": 56
   },
   "engines": [
     {
@@ -660,6 +660,30 @@
       "reviewQueueCount": 16,
       "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g5-bilisim-teknolojileri-ve-yazilim-tymm-v2",
+      "grade": 5,
+      "courseId": "bilisim-teknolojileri-ve-yazilim",
+      "officialOutcomeCount": 24,
+      "coveredOutcomeCount": 24,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 24,
+      "reviewQueueCount": 24,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g6-bilisim-teknolojileri-ve-yazilim-tymm-v2",
+      "grade": 6,
+      "courseId": "bilisim-teknolojileri-ve-yazilim",
+      "officialOutcomeCount": 25,
+      "coveredOutcomeCount": 25,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 25,
+      "reviewQueueCount": 25,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
     }
   ],
   "backlog": [
@@ -667,8 +691,8 @@
       "order": 1,
       "id": "calibrate-risk-sample",
       "kind": "HUMAN_REVIEW",
-      "scope": "54 aktif motor için risk tabakalı örneklem",
-      "reason": "2273 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
+      "scope": "56 aktif motor için risk tabakalı örneklem",
+      "reason": "2322 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
       "count": 126
     },
     {
@@ -700,8 +724,8 @@
       "id": "expand-grade-map",
       "kind": "NEW_ENGINE",
       "scope": "1–12 zorunlu ders hücreleri",
-      "reason": "112 hücrenin 54’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
-      "count": 58
+      "reason": "112 hücrenin 56’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
+      "count": 56
     }
   ]
 }

@@ -137,6 +137,11 @@ export const CURRICULUM_SOURCES = Object.freeze([
     copyrightPolicy: 'Preserve official learning-outcome wording and provenance; do not reproduce copyrighted song lyrics or recordings.', notes: 'Local authoritative PDF: docs/sources/MUZIK_1_8_TYMM_TEMEL_EGITIM.pdf. Active for grades 1-3 and 5-7 in 2026-2027; grade 4 remains on the previous program route. Licensed or human-recorded audio and music-teacher review remain mandatory.'
   }),
   defineCurriculumSource({
+    id: 'meb-tymm-bilisim-5-6-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Bilişim Teknolojileri ve Yazılım Dersi Öğretim Programı (5-6), TYMM 2024', url: 'https://tymm.meb.gov.tr/upload/program/bilisim-teknolojileri-ve-yazilim-tegm.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original safe digital tasks.', notes: 'Local authoritative PDF: docs/sources/BILISIM_TEKNOLOJILERI_VE_YAZILIM_5_6_TYMM.pdf. Active for grades 5-6 in 2026-2027. Real credentials and personal student data are prohibited; school-managed or offline sandbox required.'
+  }),
+  defineCurriculumSource({
     id: 'meb-legacy-programs',
     kind: 'official-curriculum',
     useMode: 'AUTHORITATIVE_DATA',

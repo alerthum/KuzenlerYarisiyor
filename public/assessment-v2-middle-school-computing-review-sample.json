@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T00:59:17.073Z",
+  "status": "HUMAN_COMPUTING_TEACHER_AND_SAFE_SANDBOX_REVIEW_REQUIRED",
+  "metrics": {
+    "engineCount": 2,
+    "itemCount": 6,
+    "perEngine": 3,
+    "approved": 0,
+    "pending": 6
+  },
+  "rows": [
+    {
+      "questionId": "bilisim-g5-bty-5-1-1",
+      "engineKey": "g5:bilisim-teknolojileri-ve-yazilim",
+      "grade": 5,
+      "courseId": "bilisim-teknolojileri-ve-yazilim",
+      "outcomeIds": [
+        "tr-tymm-g5-bilisim-bty-5-1-1"
+      ],
+      "itemFormat": "open-response",
+      "context": "5. sınıf Bilişim Teknolojileri ve Yazılım dersinde “BİLİŞİM TEKNOLOJİLERİNİN HAYATIMIZDAKİ YERİ” teması için çevrim dışı ya da okul tarafından yönetilen güvenli dijital çalışma alanı kullanılır. Gerçek parola, açık kimlik bilgisi, özel yazışma veya öğrenci kişisel verisi kullanılmaz.",
+      "stem": "Günlük yaşamda kullanılan bilişim teknolojilerini sınıflandırabilme öğrenme çıktısını güvenli dijital işlem, ürün veya açıklanabilir kanıtla göster.",
+      "rubricCriteria": [
+        "Bilişim kavramlarını kullanım amacı, bileşen ve etkilerine göre doğru sınıflandırır.",
+        "Birey, toplum, sağlık ve çevre üzerindeki olumlu/olumsuz etkileri kanıtla karşılaştırır.",
+        "Güvenli, dengeli ve erişilebilir kullanım için uygulanabilir karar geliştirip sonuçlarını değerlendirir."
+      ],
+      "hints": [
+        "Önce görevin amacını, kullanılacak veriyi ve güvenlik sınırlarını ayır.",
+        "İşlemi veya ürünü küçük adımlarla kur; her adım için görülebilir bir test kanıtı belirle.",
+        "Son kontrolde doğruluk, erişilebilirlik, telif, kişisel veri ve güvenlik ölçütlerini ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "arac-kullanmayi-ogrenme-ciktisiyla-karistirma",
+        "test-etmeden-urun-veya-algoritmayi-dogru-sayma",
+        "kisisel-veri-telif-ve-guvenlik-sinirlarini-yok-sayma"
+      ],
+      "media": {
+        "type": "teacher-curated-digital-case-and-interface",
+        "status": "SAFE_OFFLINE_OR_SCHOOL_MANAGED_DIGITAL_SANDBOX_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSandboxStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "bilisim-g5-bty-5-6-1",
+      "engineKey": "g5:bilisim-teknolojileri-ve-yazilim",
+      "grade": 5,
+      "courseId": "bilisim-teknolojileri-ve-yazilim",
+      "outcomeIds": [
+        "tr-tymm-g5-bilisim-bty-5-6-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "5. sınıf Bilişim Teknolojileri ve Yazılım dersinde “YAZILIM TASARIMI VE PROGRAMLAMA” teması için çevrim dışı ya da okul tarafından yönetilen güvenli dijital çalışma alanı kullanılır. Gerçek parola, açık kimlik bilgisi, özel yazışma veya öğrenci kişisel verisi kullanılmaz.",
+      "stem": "Problem çözümü için algoritmik düşünebilme öğrenme çıktısını güvenli dijital işlem, ürün veya açıklanabilir kanıtla göster.",
+      "rubricCriteria": [
+        "Problemi girdi, işlem, çıktı ve kısıtlarıyla açıkça tanımlar; algoritmayı izlenebilir adımlara böler.",
+        "Algoritmayı güvenli okul yönetimli ortamda uygular, en az iki test durumu kullanır ve hatayı kanıta göre düzeltir.",
+        "Çözümün doğruluğunu, verimliliğini, erişilebilirliğini ve dijital güvenlik etkisini rubrikle değerlendirir."
+      ],
+      "hints": [
+        "Önce görevin amacını, kullanılacak veriyi ve güvenlik sınırlarını ayır.",
+        "İşlemi veya ürünü küçük adımlarla kur; her adım için görülebilir bir test kanıtı belirle.",
+        "Son kontrolde doğruluk, erişilebilirlik, telif, kişisel veri ve güvenlik ölçütlerini ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "arac-kullanmayi-ogrenme-ciktisiyla-karistirma",
+        "test-etmeden-urun-veya-algoritmayi-dogru-sayma",
+        "kisisel-veri-telif-ve-guvenlik-sinirlarini-yok-sayma"
+      ],
+      "media": {
+        "type": "offline-block-coding-sandbox",
+        "status": "SAFE_OFFLINE_OR_SCHOOL_MANAGED_DIGITAL_SANDBOX_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSandboxStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "bilisim-g5-bty-5-4-2",
+      "engineKey": "g5:bilisim-teknolojileri-ve-yazilim",
+      "grade": 5,
+      "courseId": "bilisim-teknolojileri-ve-yazilim",
+      "outcomeIds": [
+        "tr-tymm-g5-bilisim-bty-5-4-2"
+      ],
+      "itemFormat": "open-response",
+      "context": "5. sınıf Bilişim Teknolojileri ve Yazılım dersinde “BİLİŞİM ETİĞİ VE SİBER GÜVENLİK” teması için çevrim dışı ya da okul tarafından yönetilen güvenli dijital çalışma alanı kullanılır. Gerçek parola, açık kimlik bilgisi, özel yazışma veya öğrenci kişisel verisi kullanılmaz.",
+      "stem": "Dijital ortamlarda gizlilik ve güvenlik önlemlerini yönetebilme öğrenme çıktısını güvenli dijital işlem, ürün veya açıklanabilir kanıtla göster.",
+      "rubricCriteria": [
+        "Durumdaki hak, sorumluluk, gizlilik, güvenlik, telif veya lisans riskini somut kanıtla belirler.",
+        "Kişisel veri paylaşmadan, güvenli ve hukuka/etik ilkelere uygun uygulanabilir önlem planı geliştirir.",
+        "Seçtiği önlemin olası sonuçlarını karşılaştırır; ihlal, yanlış izin ve sosyal mühendislik risklerini son kontrolde denetler."
+      ],
+      "hints": [
+        "Önce görevin amacını, kullanılacak veriyi ve güvenlik sınırlarını ayır.",
+        "İşlemi veya ürünü küçük adımlarla kur; her adım için görülebilir bir test kanıtı belirle.",
+        "Son kontrolde doğruluk, erişilebilirlik, telif, kişisel veri ve güvenlik ölçütlerini ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "arac-kullanmayi-ogrenme-ciktisiyla-karistirma",
+        "test-etmeden-urun-veya-algoritmayi-dogru-sayma",
+        "kisisel-veri-telif-ve-guvenlik-sinirlarini-yok-sayma"
+      ],
+      "media": {
+        "type": "teacher-curated-digital-case-and-interface",
+        "status": "SAFE_OFFLINE_OR_SCHOOL_MANAGED_DIGITAL_SANDBOX_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSandboxStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "bilisim-g6-bty-6-1-1",
+      "engineKey": "g6:bilisim-teknolojileri-ve-yazilim",
+      "grade": 6,
+      "courseId": "bilisim-teknolojileri-ve-yazilim",
+      "outcomeIds": [
+        "tr-tymm-g6-bilisim-bty-6-1-1"
+      ],
+      "itemFormat": "open-response",
+      "context": "6. sınıf Bilişim Teknolojileri ve Yazılım dersinde “BİLİŞİM TEKNOLOJİLERİNİN HAYATIMIZDAKİ YERİ” teması için çevrim dışı ya da okul tarafından yönetilen güvenli dijital çalışma alanı kullanılır. Gerçek parola, açık kimlik bilgisi, özel yazışma veya öğrenci kişisel verisi kullanılmaz.",
+      "stem": "Yenilikçi bilişim teknolojilerini sınıflandırabilme öğrenme çıktısını güvenli dijital işlem, ürün veya açıklanabilir kanıtla göster.",
+      "rubricCriteria": [
+        "Bilişim kavramlarını kullanım amacı, bileşen ve etkilerine göre doğru sınıflandırır.",
+        "Birey, toplum, sağlık ve çevre üzerindeki olumlu/olumsuz etkileri kanıtla karşılaştırır.",
+        "Güvenli, dengeli ve erişilebilir kullanım için uygulanabilir karar geliştirip sonuçlarını değerlendirir."
+      ],
+      "hints": [
+        "Önce görevin amacını, kullanılacak veriyi ve güvenlik sınırlarını ayır.",
+        "İşlemi veya ürünü küçük adımlarla kur; her adım için görülebilir bir test kanıtı belirle.",
+        "Son kontrolde doğruluk, erişilebilirlik, telif, kişisel veri ve güvenlik ölçütlerini ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "arac-kullanmayi-ogrenme-ciktisiyla-karistirma",
+        "test-etmeden-urun-veya-algoritmayi-dogru-sayma",
+        "kisisel-veri-telif-ve-guvenlik-sinirlarini-yok-sayma"
+      ],
+      "media": {
+        "type": "teacher-curated-digital-case-and-interface",
+        "status": "SAFE_OFFLINE_OR_SCHOOL_MANAGED_DIGITAL_SANDBOX_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSandboxStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "bilisim-g6-bty-6-6-1",
+      "engineKey": "g6:bilisim-teknolojileri-ve-yazilim",
+      "grade": 6,
+      "courseId": "bilisim-teknolojileri-ve-yazilim",
+      "outcomeIds": [
+        "tr-tymm-g6-bilisim-bty-6-6-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "6. sınıf Bilişim Teknolojileri ve Yazılım dersinde “YAZILIM TASARIMI VE PROGRAMLAMA” teması için çevrim dışı ya da okul tarafından yönetilen güvenli dijital çalışma alanı kullanılır. Gerçek parola, açık kimlik bilgisi, özel yazışma veya öğrenci kişisel verisi kullanılmaz.",
+      "stem": "Blok tabanlı ortamda yazılım geliştirme sürecinde kullanılan bileşenlerden yararlanabilme öğrenme çıktısını güvenli dijital işlem, ürün veya açıklanabilir kanıtla göster.",
+      "rubricCriteria": [
+        "Problemi girdi, işlem, çıktı ve kısıtlarıyla açıkça tanımlar; algoritmayı izlenebilir adımlara böler.",
+        "Algoritmayı güvenli okul yönetimli ortamda uygular, en az iki test durumu kullanır ve hatayı kanıta göre düzeltir.",
+        "Çözümün doğruluğunu, verimliliğini, erişilebilirliğini ve dijital güvenlik etkisini rubrikle değerlendirir."
+      ],
+      "hints": [
+        "Önce görevin amacını, kullanılacak veriyi ve güvenlik sınırlarını ayır.",
+        "İşlemi veya ürünü küçük adımlarla kur; her adım için görülebilir bir test kanıtı belirle.",
+        "Son kontrolde doğruluk, erişilebilirlik, telif, kişisel veri ve güvenlik ölçütlerini ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "arac-kullanmayi-ogrenme-ciktisiyla-karistirma",
+        "test-etmeden-urun-veya-algoritmayi-dogru-sayma",
+        "kisisel-veri-telif-ve-guvenlik-sinirlarini-yok-sayma"
+      ],
+      "media": {
+        "type": "offline-block-coding-sandbox",
+        "status": "SAFE_OFFLINE_OR_SCHOOL_MANAGED_DIGITAL_SANDBOX_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSandboxStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "bilisim-g6-bty-6-4-1",
+      "engineKey": "g6:bilisim-teknolojileri-ve-yazilim",
+      "grade": 6,
+      "courseId": "bilisim-teknolojileri-ve-yazilim",
+      "outcomeIds": [
+        "tr-tymm-g6-bilisim-bty-6-4-1"
+      ],
+      "itemFormat": "open-response",
+      "context": "6. sınıf Bilişim Teknolojileri ve Yazılım dersinde “BİLİŞİM ETİĞİ VE SİBER GÜVENLİK” teması için çevrim dışı ya da okul tarafından yönetilen güvenli dijital çalışma alanı kullanılır. Gerçek parola, açık kimlik bilgisi, özel yazışma veya öğrenci kişisel verisi kullanılmaz.",
+      "stem": "Bilişim etiği kapsamında güvenlik önlemlerini yönetebilme öğrenme çıktısını güvenli dijital işlem, ürün veya açıklanabilir kanıtla göster.",
+      "rubricCriteria": [
+        "Durumdaki hak, sorumluluk, gizlilik, güvenlik, telif veya lisans riskini somut kanıtla belirler.",
+        "Kişisel veri paylaşmadan, güvenli ve hukuka/etik ilkelere uygun uygulanabilir önlem planı geliştirir.",
+        "Seçtiği önlemin olası sonuçlarını karşılaştırır; ihlal, yanlış izin ve sosyal mühendislik risklerini son kontrolde denetler."
+      ],
+      "hints": [
+        "Önce görevin amacını, kullanılacak veriyi ve güvenlik sınırlarını ayır.",
+        "İşlemi veya ürünü küçük adımlarla kur; her adım için görülebilir bir test kanıtı belirle.",
+        "Son kontrolde doğruluk, erişilebilirlik, telif, kişisel veri ve güvenlik ölçütlerini ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "arac-kullanmayi-ogrenme-ciktisiyla-karistirma",
+        "test-etmeden-urun-veya-algoritmayi-dogru-sayma",
+        "kisisel-veri-telif-ve-guvenlik-sinirlarini-yok-sayma"
+      ],
+      "media": {
+        "type": "teacher-curated-digital-case-and-interface",
+        "status": "SAFE_OFFLINE_OR_SCHOOL_MANAGED_DIGITAL_SANDBOX_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "safeSandboxStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    }
+  ]
+}
