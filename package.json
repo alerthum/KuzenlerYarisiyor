@@ -108,7 +108,8 @@
     "assessment:v2:phase4y": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4y-middle-school-music.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
     "assessment:v2:phase4z": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4z-middle-school-computing.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
     "assessment:v2:phase5a": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5a-middle-school-physical-education.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
-    "assessment:v2:phase5b": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5b-grade4-pre-tymm-core.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs"
+    "assessment:v2:phase5b": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5b-grade4-pre-tymm-core.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
+    "assessment:v2:phase5f": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5f-core-game-release.mjs"
   },
   "engines": {
     "node": ">=20"

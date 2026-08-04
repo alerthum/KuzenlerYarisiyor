@@ -40,7 +40,8 @@ function profileFor(gameId, baseProfile) {
 export function runGameSessionBattery(gameId, {
   sessionsPerGame = STAGE09_SESSIONS_PER_GAME,
   profiles = STAGE09_PROFILES,
-  seeds = STAGE09_SEEDS
+  seeds = STAGE09_SEEDS,
+  startSessionIndex = 0
 } = {}) {
   const game = GAME_CATALOG.find((g) => g.id === gameId);
   if (!game) return { gameId, error: 'game_missing', underfill: 1, semanticRepeats: 1 };
@@ -48,7 +49,8 @@ export function runGameSessionBattery(gameId, {
   let semanticRepeats = 0;
   let produced = 0;
   let attempts = [];
-  for (let i = 0; i < sessionsPerGame; i += 1) {
+  for (let localIndex = 0; localIndex < sessionsPerGame; localIndex += 1) {
+    const i = startSessionIndex + localIndex;
     const profile = profileFor(gameId, profiles[i % profiles.length]);
     if (!isGameAvailableForProfile(game, profile)) {
       // Profil uyumsuzsa bir sonraki profile kaydır; oturumu sayma.
@@ -63,13 +65,15 @@ export function runGameSessionBattery(gameId, {
     if (session.rounds.length < game.sessionLength) underfill += 1;
     const rounds = session.rounds.map((r) => attachSemanticIdentity(r));
     semanticRepeats += findSessionSemanticRepeats(rounds).length;
+    // Composer yalnız son 40 denemeyi tüketiyor. Bütün geçmişi büyütmek
+    // 500 oturum bataryasında gereksiz O(n²) kopyalama maliyeti oluşturuyordu.
     attempts = attempts.concat(session.rounds.map((r) => ({
       gameId,
       questionKey: r.questionKey,
       familyId: r.familyId,
       skeletonId: r.skeletonId,
       correct: true
-    })));
+    }))).slice(-40);
   }
   return {
     gameId,

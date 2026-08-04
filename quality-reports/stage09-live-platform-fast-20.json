@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "1.0",
+  "executionMode": "MANUAL_ISOLATED_PROCESS_PER_GAME",
+  "sessionsPerGame": 20,
+  "gameCount": 23,
+  "totalSessions": 460,
+  "results": [
+    {
+      "gameId": "pattern-lab",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 1908
+    },
+    {
+      "gameId": "speed-math",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2120
+    },
+    {
+      "gameId": "target-number",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 1554
+    },
+    {
+      "gameId": "geometry-lab",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 1988
+    },
+    {
+      "gameId": "problem-hunter",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2214
+    },
+    {
+      "gameId": "error-detective",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2387
+    },
+    {
+      "gameId": "logic-station",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 3104
+    },
+    {
+      "gameId": "olympiad-ladder",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2941
+    },
+    {
+      "gameId": "word-mine",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2191
+    },
+    {
+      "gameId": "word-ladder",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2485
+    },
+    {
+      "gameId": "forbidden-story",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2054
+    },
+    {
+      "gameId": "meaning-hunt",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2906
+    },
+    {
+      "gameId": "paragraph-detective",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 668
+    },
+    {
+      "gameId": "english-vocabulary",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 4016
+    },
+    {
+      "gameId": "english-cloze",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2999
+    },
+    {
+      "gameId": "english-sentence-builder",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2176
+    },
+    {
+      "gameId": "social-time-travel",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2972
+    },
+    {
+      "gameId": "social-map-skills",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2652
+    },
+    {
+      "gameId": "social-citizenship",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2389
+    },
+    {
+      "gameId": "religion-practice",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2328
+    },
+    {
+      "gameId": "lgs-foundation",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 2632
+    },
+    {
+      "gameId": "science-lab",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 1892
+    },
+    {
+      "gameId": "science-reasoning",
+      "produced": 20,
+      "targetSessions": 20,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "ok": true,
+      "durationMs": 1867
+    }
+  ],
+  "underfill": 0,
+  "semanticRepeats": 0,
+  "failedGames": [],
+  "generatedAt": "2026-08-04T11:07:37.717Z",
+  "productReady": false,
+  "meetsStageGate": true
+}

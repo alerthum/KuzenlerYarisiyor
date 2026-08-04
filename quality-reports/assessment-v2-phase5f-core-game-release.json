@@ -1,0 +1,557 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "5F",
+  "generatedAt": "2026-08-04T11:00:34.094Z",
+  "status": "PASS",
+  "productReady": false,
+  "fullProductReady": false,
+  "coreReleaseReady": false,
+  "profile": {
+    "schemaVersion": "1.0",
+    "id": "CORE_GAME_RELEASE_5_8_V1",
+    "title": "5–8. sınıf ana dersler ve 23 oyun çekirdek yayını",
+    "productScope": "FIRST_PLAYABLE_CORE",
+    "fullProductScopeExcludedFromBlocking": [
+      "rehberlik",
+      "gorsel-sanatlar",
+      "muzik",
+      "beden-egitimi",
+      "bilisim",
+      "trafik",
+      "insan-haklari",
+      "lise-9-12"
+    ],
+    "grades": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "requiredCellKeys": [
+      "5:turkish",
+      "5:math",
+      "5:science",
+      "5:social",
+      "5:english",
+      "5:religion",
+      "6:turkish",
+      "6:math",
+      "6:science",
+      "6:social",
+      "6:english",
+      "6:religion",
+      "7:turkish",
+      "7:math",
+      "7:science",
+      "7:social",
+      "7:english",
+      "7:religion",
+      "8:turkish",
+      "8:math",
+      "8:science",
+      "8:social",
+      "8:english",
+      "8:religion"
+    ],
+    "activeCellKeys": [
+      "5:english",
+      "5:math",
+      "5:religion",
+      "5:science",
+      "5:social",
+      "5:turkish",
+      "6:english",
+      "6:math",
+      "6:religion",
+      "6:science",
+      "6:social",
+      "6:turkish",
+      "7:english",
+      "7:math",
+      "7:religion",
+      "7:science",
+      "7:social",
+      "7:turkish",
+      "8:english",
+      "8:math",
+      "8:religion",
+      "8:science",
+      "8:social",
+      "8:turkish"
+    ],
+    "engines": [
+      {
+        "id": "tr-g8-turkce-v2",
+        "grade": 8,
+        "courseId": "turkce",
+        "courseGroup": "turkish",
+        "officialOutcomeCount": 76,
+        "coveredOutcomeCount": 76,
+        "canonicalQuestionCount": 96,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewPending": 91
+      },
+      {
+        "id": "tr-g8-matematik-v2",
+        "grade": 8,
+        "courseId": "matematik",
+        "courseGroup": "math",
+        "officialOutcomeCount": 52,
+        "coveredOutcomeCount": 52,
+        "canonicalQuestionCount": 52,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 52
+      },
+      {
+        "id": "tr-g8-fen-v2",
+        "grade": 8,
+        "courseId": "fen-bilimleri",
+        "courseGroup": "science",
+        "officialOutcomeCount": 61,
+        "coveredOutcomeCount": 61,
+        "canonicalQuestionCount": 61,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 61
+      },
+      {
+        "id": "tr-g5-turkce-v2",
+        "grade": 5,
+        "courseId": "turkce",
+        "courseGroup": "turkish",
+        "officialOutcomeCount": 100,
+        "coveredOutcomeCount": 100,
+        "canonicalQuestionCount": 105,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 105
+      },
+      {
+        "id": "tr-g8-inkilap-v2",
+        "grade": 8,
+        "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+        "courseGroup": "social",
+        "officialOutcomeCount": 33,
+        "coveredOutcomeCount": 33,
+        "canonicalQuestionCount": 33,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 33
+      },
+      {
+        "id": "tr-g8-dkab-v2",
+        "grade": 8,
+        "courseId": "din-kulturu-ve-ahlak-bilgisi",
+        "courseGroup": "religion",
+        "officialOutcomeCount": 28,
+        "coveredOutcomeCount": 28,
+        "canonicalQuestionCount": 28,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 28
+      },
+      {
+        "id": "tr-g8-ingilizce-v2",
+        "grade": 8,
+        "courseId": "ingilizce",
+        "courseGroup": "english",
+        "officialOutcomeCount": 70,
+        "coveredOutcomeCount": 70,
+        "canonicalQuestionCount": 70,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 70
+      },
+      {
+        "id": "tr-g5-matematik-v2",
+        "grade": 5,
+        "courseId": "matematik",
+        "courseGroup": "math",
+        "officialOutcomeCount": 23,
+        "coveredOutcomeCount": 23,
+        "canonicalQuestionCount": 23,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 23
+      },
+      {
+        "id": "tr-g5-fen-v2",
+        "grade": 5,
+        "courseId": "fen-bilimleri",
+        "courseGroup": "science",
+        "officialOutcomeCount": 28,
+        "coveredOutcomeCount": 28,
+        "canonicalQuestionCount": 28,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 28
+      },
+      {
+        "id": "tr-g5-sosyal-v2",
+        "grade": 5,
+        "courseId": "sosyal-bilgiler",
+        "courseGroup": "social",
+        "officialOutcomeCount": 19,
+        "coveredOutcomeCount": 19,
+        "canonicalQuestionCount": 19,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 19
+      },
+      {
+        "id": "tr-g5-dkab-v2",
+        "grade": 5,
+        "courseId": "din-kulturu-ve-ahlak-bilgisi",
+        "courseGroup": "religion",
+        "officialOutcomeCount": 18,
+        "coveredOutcomeCount": 18,
+        "canonicalQuestionCount": 18,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 18
+      },
+      {
+        "id": "tr-g5-ingilizce-v2",
+        "grade": 5,
+        "courseId": "yabanci-dil",
+        "courseGroup": "english",
+        "officialOutcomeCount": 184,
+        "coveredOutcomeCount": 184,
+        "canonicalQuestionCount": 184,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 184
+      },
+      {
+        "id": "tr-g6-turkce-v2",
+        "grade": 6,
+        "courseId": "turkce",
+        "courseGroup": "turkish",
+        "officialOutcomeCount": 100,
+        "coveredOutcomeCount": 100,
+        "canonicalQuestionCount": 100,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 100
+      },
+      {
+        "id": "tr-g6-matematik-v2",
+        "grade": 6,
+        "courseId": "matematik",
+        "courseGroup": "math",
+        "officialOutcomeCount": 24,
+        "coveredOutcomeCount": 24,
+        "canonicalQuestionCount": 24,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 24
+      },
+      {
+        "id": "tr-g6-fen-bilimleri-v2",
+        "grade": 6,
+        "courseId": "fen-bilimleri",
+        "courseGroup": "science",
+        "officialOutcomeCount": 36,
+        "coveredOutcomeCount": 36,
+        "canonicalQuestionCount": 36,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 36
+      },
+      {
+        "id": "tr-g6-sosyal-bilgiler-v2",
+        "grade": 6,
+        "courseId": "sosyal-bilgiler",
+        "courseGroup": "social",
+        "officialOutcomeCount": 18,
+        "coveredOutcomeCount": 18,
+        "canonicalQuestionCount": 18,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 18
+      },
+      {
+        "id": "tr-g6-din-kulturu-ve-ahlak-bilgisi-v2",
+        "grade": 6,
+        "courseId": "din-kulturu-ve-ahlak-bilgisi",
+        "courseGroup": "religion",
+        "officialOutcomeCount": 18,
+        "coveredOutcomeCount": 18,
+        "canonicalQuestionCount": 18,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 18
+      },
+      {
+        "id": "tr-g6-yabanci-dil-v2",
+        "grade": 6,
+        "courseId": "yabanci-dil",
+        "courseGroup": "english",
+        "officialOutcomeCount": 184,
+        "coveredOutcomeCount": 184,
+        "canonicalQuestionCount": 184,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 184
+      },
+      {
+        "id": "tr-g7-turkce-v2",
+        "grade": 7,
+        "courseId": "turkce",
+        "courseGroup": "turkish",
+        "officialOutcomeCount": 103,
+        "coveredOutcomeCount": 103,
+        "canonicalQuestionCount": 103,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 103
+      },
+      {
+        "id": "tr-g7-matematik-v2",
+        "grade": 7,
+        "courseId": "matematik",
+        "courseGroup": "math",
+        "officialOutcomeCount": 30,
+        "coveredOutcomeCount": 30,
+        "canonicalQuestionCount": 30,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 30
+      },
+      {
+        "id": "tr-g7-fen-bilimleri-v2",
+        "grade": 7,
+        "courseId": "fen-bilimleri",
+        "courseGroup": "science",
+        "officialOutcomeCount": 36,
+        "coveredOutcomeCount": 36,
+        "canonicalQuestionCount": 36,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 36
+      },
+      {
+        "id": "tr-g7-sosyal-bilgiler-v2",
+        "grade": 7,
+        "courseId": "sosyal-bilgiler",
+        "courseGroup": "social",
+        "officialOutcomeCount": 17,
+        "coveredOutcomeCount": 17,
+        "canonicalQuestionCount": 17,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 17
+      },
+      {
+        "id": "tr-g7-din-kulturu-ve-ahlak-bilgisi-v2",
+        "grade": 7,
+        "courseId": "din-kulturu-ve-ahlak-bilgisi",
+        "courseGroup": "religion",
+        "officialOutcomeCount": 17,
+        "coveredOutcomeCount": 17,
+        "canonicalQuestionCount": 17,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 17
+      },
+      {
+        "id": "tr-g7-yabanci-dil-v2",
+        "grade": 7,
+        "courseId": "yabanci-dil",
+        "courseGroup": "english",
+        "officialOutcomeCount": 191,
+        "coveredOutcomeCount": 191,
+        "canonicalQuestionCount": 191,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewPending": 191
+      }
+    ],
+    "gameGroups": {
+      "turkish": [
+        "word-mine",
+        "word-ladder",
+        "forbidden-story",
+        "meaning-hunt",
+        "paragraph-detective"
+      ],
+      "math": [
+        "target-number",
+        "speed-math",
+        "pattern-lab",
+        "problem-hunter",
+        "geometry-lab",
+        "error-detective",
+        "olympiad-ladder",
+        "logic-station"
+      ],
+      "english": [
+        "english-vocabulary",
+        "english-cloze",
+        "english-sentence-builder"
+      ],
+      "social": [
+        "social-time-travel",
+        "social-map-skills",
+        "social-citizenship"
+      ],
+      "religion": [
+        "religion-practice"
+      ],
+      "science": [
+        "science-lab",
+        "science-reasoning"
+      ],
+      "mixed": [
+        "lgs-foundation"
+      ]
+    },
+    "gameIds": [
+      "word-mine",
+      "word-ladder",
+      "forbidden-story",
+      "meaning-hunt",
+      "paragraph-detective",
+      "target-number",
+      "speed-math",
+      "pattern-lab",
+      "problem-hunter",
+      "geometry-lab",
+      "error-detective",
+      "olympiad-ladder",
+      "logic-station",
+      "english-vocabulary",
+      "english-cloze",
+      "english-sentence-builder",
+      "social-time-travel",
+      "social-map-skills",
+      "social-citizenship",
+      "religion-practice",
+      "science-lab",
+      "science-reasoning",
+      "lgs-foundation"
+    ],
+    "metrics": {
+      "requiredCellCount": 24,
+      "activeCellCount": 24,
+      "missingCellCount": 0,
+      "engineCount": 24,
+      "officialOutcomeCount": 1466,
+      "coveredOutcomeCount": 1466,
+      "canonicalQuestionCount": 1491,
+      "humanApprovedQuestionCount": 5,
+      "humanReviewPending": 1486,
+      "requiredGameCount": 23,
+      "routedGameCount": 23,
+      "unknownGameIds": []
+    },
+    "publicationAllowed": false,
+    "productReady": false
+  },
+  "reviewMetrics": {
+    "totalItems": 1491,
+    "totalSprints": 25,
+    "approved": 5,
+    "pending": 1486
+  },
+  "readiness": {
+    "schemaVersion": "1.0",
+    "profileId": "CORE_GAME_RELEASE_5_8_V1",
+    "status": "CORE_GAME_RELEASE_BLOCKED",
+    "releaseReady": false,
+    "publicationAllowed": false,
+    "fullProductReady": false,
+    "checks": [
+      {
+        "id": "core-curriculum",
+        "label": "5–8 ana derslerde 24/24 hücre ve tam resmî kapsam",
+        "passed": true,
+        "evidence": {
+          "requiredCellCount": 24,
+          "activeCellCount": 24,
+          "missingCellCount": 0,
+          "engineCount": 24,
+          "officialOutcomeCount": 1466,
+          "coveredOutcomeCount": 1466,
+          "canonicalQuestionCount": 1491,
+          "humanApprovedQuestionCount": 5,
+          "humanReviewPending": 1486,
+          "requiredGameCount": 23,
+          "routedGameCount": 23,
+          "unknownGameIds": []
+        },
+        "blocker": null
+      },
+      {
+        "id": "game-routing",
+        "label": "23/23 oyun yönlendirme matrisi",
+        "passed": true,
+        "evidence": {
+          "routed": 23,
+          "required": 23,
+          "unknown": []
+        },
+        "blocker": null
+      },
+      {
+        "id": "human-review",
+        "label": "Çekirdek görevlerin insan incelemesi",
+        "passed": false,
+        "evidence": {
+          "total": 1491,
+          "pending": 1486
+        },
+        "blocker": "Çekirdek görevlerde insan incelemesi bekleyen kayıt var."
+      },
+      {
+        "id": "semantic-adapter",
+        "label": "Onaylı içerikte semantik round-trip",
+        "passed": true,
+        "evidence": {
+          "adaptedCount": 5,
+          "meaningHuntCount": 3,
+          "paragraphDetectiveCount": 2,
+          "publicationAllowed": false,
+          "studentPilotRequired": true
+        },
+        "blocker": null
+      },
+      {
+        "id": "real-student-pilot",
+        "label": "Gerçek öğrenci pilotu",
+        "passed": false,
+        "evidence": {
+          "status": "MISSING"
+        },
+        "blocker": "Gerçek öğrenci pilotu tamamlanmadı."
+      },
+      {
+        "id": "live-game-battery",
+        "label": "23 oyun × 500 oturum",
+        "passed": false,
+        "evidence": {
+          "status": "MISSING"
+        },
+        "blocker": "23 oyun × 500 oturum canlı bataryası tamamlanmadı."
+      },
+      {
+        "id": "production-build",
+        "label": "Production build",
+        "passed": false,
+        "evidence": {
+          "status": "NOT_MEASURED"
+        },
+        "blocker": "Production build PASS değil."
+      },
+      {
+        "id": "accessibility",
+        "label": "Çekirdek oyun erişilebilirliği",
+        "passed": false,
+        "evidence": {
+          "status": "NOT_MEASURED"
+        },
+        "blocker": "Çekirdek oyun erişilebilirliği tamamlanmadı."
+      },
+      {
+        "id": "security",
+        "label": "Çekirdek oyun güvenliği",
+        "passed": false,
+        "evidence": {
+          "status": "NOT_MEASURED"
+        },
+        "blocker": "Çekirdek oyun güvenliği tamamlanmadı."
+      }
+    ],
+    "blockers": [
+      "Çekirdek görevlerde insan incelemesi bekleyen kayıt var.",
+      "Gerçek öğrenci pilotu tamamlanmadı.",
+      "23 oyun × 500 oturum canlı bataryası tamamlanmadı.",
+      "Production build PASS değil.",
+      "Çekirdek oyun erişilebilirliği tamamlanmadı.",
+      "Çekirdek oyun güvenliği tamamlanmadı."
+    ],
+    "metrics": {
+      "checkCount": 9,
+      "passed": 3,
+      "blocked": 6
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "gameId": "pattern-lab",
+  "produced": 100,
+  "targetSessions": 100,
+  "underfill": 0,
+  "semanticRepeats": 0,
+  "ok": true,
+  "startSessionIndex": 300,
+  "durationMs": 12731
+}

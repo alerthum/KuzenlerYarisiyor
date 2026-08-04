@@ -1,0 +1,10 @@
+{
+  "gameId": "speed-math",
+  "produced": 100,
+  "targetSessions": 100,
+  "underfill": 0,
+  "semanticRepeats": 0,
+  "ok": true,
+  "startSessionIndex": 0,
+  "durationMs": 13643
+}

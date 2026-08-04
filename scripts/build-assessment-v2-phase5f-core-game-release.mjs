@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { CORE_GAME_RELEASE_PROFILE, CORE_GAME_RELEASE_PROFILE_AUDIT } from '../js/assessment-v2/core-game-release-profile.js';
+import { CORE_GAME_REVIEW_SPRINTS, CORE_GAME_REVIEW_SPRINTS_AUDIT } from '../js/assessment-v2/core-game-review-sprints.js';
+import { CORE_GAME_RELEASE_READINESS, CORE_GAME_RELEASE_READINESS_AUDIT } from '../js/assessment-v2/core-game-release-gate.js';
+const out=path.resolve('quality-reports');fs.mkdirSync(out,{recursive:true});
+const report={schemaVersion:'1.0',phase:'5F',generatedAt:new Date().toISOString(),status:[CORE_GAME_RELEASE_PROFILE_AUDIT.ok,CORE_GAME_REVIEW_SPRINTS_AUDIT.ok,CORE_GAME_RELEASE_READINESS_AUDIT.ok].every(Boolean)?'PASS':'FAIL',productReady:false,fullProductReady:false,coreReleaseReady:CORE_GAME_RELEASE_READINESS.releaseReady,profile:CORE_GAME_RELEASE_PROFILE,reviewMetrics:CORE_GAME_REVIEW_SPRINTS_AUDIT.metrics,readiness:CORE_GAME_RELEASE_READINESS};
+fs.writeFileSync(path.join(out,'assessment-v2-phase5f-core-game-release.json'),JSON.stringify(report,null,2));
+fs.writeFileSync(path.join(out,'assessment-v2-phase5f-core-review-sprints.json'),JSON.stringify(CORE_GAME_REVIEW_SPRINTS,null,2));
+const cards=CORE_GAME_RELEASE_PROFILE.engines.map(e=>`<article><h3>${e.grade}. sınıf · ${e.courseGroup}</h3><p>${e.coveredOutcomeCount}/${e.officialOutcomeCount} kazanım · ${e.canonicalQuestionCount} görev · ${e.humanApprovedQuestionCount} onay</p></article>`).join('');
+fs.writeFileSync(path.join(out,'assessment-v2-phase5f-core-game-dashboard.html'),`<!doctype html><html lang="tr"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Phase 5F Çekirdek Oyun Yayını</title><style>body{font:15px/1.55 Segoe UI;background:#07111f;color:#eef6ff;margin:auto;max-width:1100px;padding:28px}header,article{background:#10243d;border:1px solid #29445f;border-radius:18px;padding:18px;margin:12px}section{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.bad{color:#fdba74}.good{color:#86efac}</style><header><h1>5–8 Ana Dersler + 23 Oyun</h1><p>24/24 ana ders hücresi · ${CORE_GAME_RELEASE_PROFILE.metrics.canonicalQuestionCount} görev · ${CORE_GAME_RELEASE_PROFILE.metrics.routedGameCount}/23 oyun rotası</p><p class="bad">Yayın: ${CORE_GAME_RELEASE_READINESS.status}. İnsan incelemesi, gerçek öğrenci pilotu ve 23×500 canlı batarya tamamlanmadan açılamaz.</p></header><section>${cards}</section></html>`);
+console.log(JSON.stringify({status:report.status,profile:CORE_GAME_RELEASE_PROFILE_AUDIT.metrics,review:CORE_GAME_REVIEW_SPRINTS_AUDIT.metrics,readiness:CORE_GAME_RELEASE_READINESS.metrics},null,2));
+if(report.status!=='PASS')process.exitCode=1;
