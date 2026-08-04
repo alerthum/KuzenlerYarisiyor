@@ -63,9 +63,9 @@ export function buildAssessmentV2HumanReviewQueue(items=ASSESSMENT_V2_CANONICAL_
 
 export function auditAssessmentV2HumanReviewQueue(queue=buildAssessmentV2HumanReviewQueue()){
   const errors=[];
-  if(queue.metrics.total!==1896)errors.push(`total:${queue.metrics.total}`);
+  if(queue.metrics.total!==2134)errors.push(`total:${queue.metrics.total}`);
   if(queue.metrics.approved!==5)errors.push(`approved:${queue.metrics.approved}`);
-  if(queue.metrics.pending!==1891)errors.push(`pending:${queue.metrics.pending}`);
+  if(queue.metrics.pending!==2129)errors.push(`pending:${queue.metrics.pending}`);
   if(new Set(queue.rows.map(row=>row.questionId)).size!==queue.rows.length)errors.push('duplicate-question');
   if(queue.rows.some(row=>row.gameAdaptationAllowed!==false))errors.push('game-open');
   if(queue.productReady!==false||queue.gameAdaptationAllowed!==false)errors.push('product-ready-leak');

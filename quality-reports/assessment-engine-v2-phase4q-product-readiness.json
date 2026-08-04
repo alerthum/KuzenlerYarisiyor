@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-04T00:02:20.615Z",
+  "generatedAt": "2026-08-04T00:20:36.477Z",
   "phase": "4Q",
   "title": "Birleşik Ürün Hazırlık Kapısı",
   "status": "PRODUCT_READINESS_GATE_PASS_BLOCKERS_VISIBLE",
@@ -17,7 +17,7 @@
   },
   "result": {
     "schemaVersion": "1.0",
-    "generatedAt": "2026-08-04T00:02:20.614Z",
+    "generatedAt": "2026-08-04T00:20:36.477Z",
     "status": "PRODUCT_BLOCKED",
     "productReady": false,
     "publicationAllowed": false,
@@ -47,27 +47,27 @@
         "label": "112 zorunlu sınıf–ders hücresi",
         "passed": false,
         "evidence": {
-          "active": 30,
+          "active": 42,
           "required": 112
         },
-        "blocker": "82 sınıf–ders hücresi henüz açılmadı."
+        "blocker": "70 sınıf–ders hücresi henüz açılmadı."
       },
       {
         "id": "grade-coverage",
         "label": "1–12 sınıf kapsamı",
         "passed": false,
         "evidence": {
-          "active": 7,
+          "active": 8,
           "required": 12
         },
-        "blocker": "5 sınıf düzeyinde aktif motor yok."
+        "blocker": "4 sınıf düzeyinde aktif motor yok."
       },
       {
         "id": "active-engine-curriculum",
         "label": "Aktif motorlarda tam resmî kapsam",
         "passed": true,
         "evidence": {
-          "engines": 30
+          "engines": 42
         },
         "blocker": null
       },
@@ -156,8 +156,8 @@
       }
     ],
     "blockers": [
-      "82 sınıf–ders hücresi henüz açılmadı.",
-      "5 sınıf düzeyinde aktif motor yok.",
+      "70 sınıf–ders hücresi henüz açılmadı.",
+      "4 sınıf düzeyinde aktif motor yok.",
       "İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var.",
       "Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez.",
       "23 oyun için 500 oturumluk canlı tekrar/underfill kanıtı tamamlanmadı.",

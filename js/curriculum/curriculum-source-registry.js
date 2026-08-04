@@ -108,18 +108,23 @@ export const CURRICULUM_SOURCES = Object.freeze([
   }),
   defineCurriculumSource({
     id: 'meb-tymm-primary-turkish-1-4-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
-    title: 'İlkokul Türkçe Dersi Öğretim Programı (1-4), TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari', retrievedAt: '2026-08-04',
-    copyrightPolicy: 'Source acquisition registry only until the official PDF is locally ingested and validated.', notes: 'Pending local evidence ingestion for grades 1-3; no outcome is activated from this registry row alone.'
+    title: 'İlkokul Türkçe Dersi Öğretim Programı (1-4), TYMM 2024', url: 'https://tymm.meb.gov.tr/upload/program/2024programtur1234Onayli.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Local evidence copy: docs/sources/TURKCE_1_4_TYMM_2024.pdf. Active for grades 1-3 in 2026-2027; grade 4 remains on the previous program route.'
   }),
   defineCurriculumSource({
     id: 'meb-tymm-primary-math-1-4-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
-    title: 'İlkokul Matematik Dersi Öğretim Programı (1-4), TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari', retrievedAt: '2026-08-04',
-    copyrightPolicy: 'Source acquisition registry only until the official PDF is locally ingested and validated.', notes: 'Pending local evidence ingestion for grades 1-3; no outcome is activated from this registry row alone.'
+    title: 'İlkokul Matematik Dersi Öğretim Programı (1-4), TYMM 2024', url: 'https://tymm.meb.gov.tr/upload/program/2024programmat1234Onayli.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Local evidence copy: docs/sources/MATEMATIK_1_4_TYMM_2024.pdf. Active for grades 1-3 in 2026-2027; grade 4 remains on the previous program route.'
   }),
   defineCurriculumSource({
     id: 'meb-tymm-life-science-1-3-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
-    title: 'Hayat Bilgisi Dersi Öğretim Programı (1-3), TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari', retrievedAt: '2026-08-04',
-    copyrightPolicy: 'Source acquisition registry only until the official PDF is locally ingested and validated.', notes: 'Pending local evidence ingestion; no outcome is activated from this registry row alone.'
+    title: 'Hayat Bilgisi Dersi Öğretim Programı (1-3), TYMM 2024', url: 'https://tymm.meb.gov.tr/upload/program/2024programhay123Onayli.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Local evidence copy: docs/sources/HAYAT_BILGISI_1_3_TYMM_2024.pdf. Active for grades 1-3 in 2026-2027.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-body-play-1-4-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Beden Eğitimi ve Oyun Dersi Öğretim Programı (1-4), TYMM 2024', url: 'https://tymm.meb.gov.tr/upload/program/beden-egitimi-ve-oyun-programi.pdf', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Local evidence copy: docs/sources/BEDEN_EGITIMI_VE_OYUN_1_4_TYMM.pdf. Active for grades 1-3 in 2026-2027; grade 4 remains on the previous program route.'
   }),
   defineCurriculumSource({
     id: 'meb-tymm-primary-arts-movement', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',

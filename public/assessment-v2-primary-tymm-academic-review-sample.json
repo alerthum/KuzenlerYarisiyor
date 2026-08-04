@@ -1,0 +1,782 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T00:23:30.150Z",
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "metrics": {
+    "engineCount": 12,
+    "itemCount": 24,
+    "perEngine": 2,
+    "approved": 0,
+    "pending": 24
+  },
+  "rows": [
+    {
+      "questionId": "turkce-g1-t-d-1-1",
+      "engineKey": "g1:turkce",
+      "grade": 1,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g1-turkce-t-d-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-turkish-listening",
+      "difficultyBand": "G1_CHALLENGING",
+      "context": "1. sınıf Türkçe çalışmasında “Dinleme/İzleme” becerisi için kısa, somut, yaşa uygun ve özgün bir metin, görsel, konuşma veya yazma durumu kullanılır.",
+      "stem": "Dinleme/izlemeyi yönetebilme öğrenme çıktısını gösterecek yanıtı oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, ses veya görseldeki gerekli bilgiyi doğru belirler.",
+        "Bilgiyi görevin istediği anlam ilişkisiyle açıklar; tek sözcük eşleştirmesiyle yetinmez.",
+        "Yanıtını materyaldeki kanıta bağlar ve desteklenmeyen ayrıntı eklemez."
+      ],
+      "hints": [
+        "Önce görevin senden dinleme, konuşma, okuma veya yazmanın hangisini istediğini belirle.",
+        "Metindeki ya da iletişim durumundaki ana ipucunu bul ve yanıtını bu ipucuna bağla.",
+        "Son kontrolde yanıtının açık, yaşa uygun ve verilen kanıtla destekli olduğunu denetle."
+      ],
+      "misconceptionIds": [
+        "tek-sözcüğe-takılma",
+        "iletişim-amacını-kaçırma",
+        "kanıtsız-ayrıntı-ekleme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g1-t-k-1-1",
+      "engineKey": "g1:turkce",
+      "grade": 1,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g1-turkce-t-k-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-turkish-speaking",
+      "difficultyBand": "G1_CORE",
+      "context": "1. sınıf Türkçe çalışmasında “Konuşma” becerisi için kısa, somut, yaşa uygun ve özgün bir metin, görsel, konuşma veya yazma durumu kullanılır.",
+      "stem": "Konuşmalarını yönetebilme öğrenme çıktısını gösterecek yanıtı oluştur.",
+      "rubricCriteria": [
+        "İletişim amacına uygun içerik ve sıralama oluşturur.",
+        "Yaş düzeyine uygun açık, anlaşılır ve kurallı bir anlatım kullanır.",
+        "Ürününü verilen ölçütlere göre gözden geçirir ve gerekli düzeltmeyi yapar."
+      ],
+      "hints": [
+        "Önce görevin senden dinleme, konuşma, okuma veya yazmanın hangisini istediğini belirle.",
+        "Metindeki ya da iletişim durumundaki ana ipucunu bul ve yanıtını bu ipucuna bağla.",
+        "Son kontrolde yanıtının açık, yaşa uygun ve verilen kanıtla destekli olduğunu denetle."
+      ],
+      "misconceptionIds": [
+        "tek-sözcüğe-takılma",
+        "iletişim-amacını-kaçırma",
+        "kanıtsız-ayrıntı-ekleme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g2-t-d-2-1",
+      "engineKey": "g2:turkce",
+      "grade": 2,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g2-turkce-t-d-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-turkish-listening",
+      "difficultyBand": "G2_CHALLENGING",
+      "context": "2. sınıf Türkçe çalışmasında “Dinleme/İzleme” becerisi için kısa, somut, yaşa uygun ve özgün bir metin, görsel, konuşma veya yazma durumu kullanılır.",
+      "stem": "Dinleme/izlemeyi yönetebilme öğrenme çıktısını gösterecek yanıtı oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, ses veya görseldeki gerekli bilgiyi doğru belirler.",
+        "Bilgiyi görevin istediği anlam ilişkisiyle açıklar; tek sözcük eşleştirmesiyle yetinmez.",
+        "Yanıtını materyaldeki kanıta bağlar ve desteklenmeyen ayrıntı eklemez."
+      ],
+      "hints": [
+        "Önce görevin senden dinleme, konuşma, okuma veya yazmanın hangisini istediğini belirle.",
+        "Metindeki ya da iletişim durumundaki ana ipucunu bul ve yanıtını bu ipucuna bağla.",
+        "Son kontrolde yanıtının açık, yaşa uygun ve verilen kanıtla destekli olduğunu denetle."
+      ],
+      "misconceptionIds": [
+        "tek-sözcüğe-takılma",
+        "iletişim-amacını-kaçırma",
+        "kanıtsız-ayrıntı-ekleme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g2-t-k-2-1",
+      "engineKey": "g2:turkce",
+      "grade": 2,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g2-turkce-t-k-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-turkish-speaking",
+      "difficultyBand": "G2_CHALLENGING",
+      "context": "2. sınıf Türkçe çalışmasında “Konuşma” becerisi için kısa, somut, yaşa uygun ve özgün bir metin, görsel, konuşma veya yazma durumu kullanılır.",
+      "stem": "Konuşmalarını yönetebilme öğrenme çıktısını gösterecek yanıtı oluştur.",
+      "rubricCriteria": [
+        "İletişim amacına uygun içerik ve sıralama oluşturur.",
+        "Yaş düzeyine uygun açık, anlaşılır ve kurallı bir anlatım kullanır.",
+        "Ürününü verilen ölçütlere göre gözden geçirir ve gerekli düzeltmeyi yapar."
+      ],
+      "hints": [
+        "Önce görevin senden dinleme, konuşma, okuma veya yazmanın hangisini istediğini belirle.",
+        "Metindeki ya da iletişim durumundaki ana ipucunu bul ve yanıtını bu ipucuna bağla.",
+        "Son kontrolde yanıtının açık, yaşa uygun ve verilen kanıtla destekli olduğunu denetle."
+      ],
+      "misconceptionIds": [
+        "tek-sözcüğe-takılma",
+        "iletişim-amacını-kaçırma",
+        "kanıtsız-ayrıntı-ekleme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g3-t-d-3-1",
+      "engineKey": "g3:turkce",
+      "grade": 3,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g3-turkce-t-d-3-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-turkish-listening",
+      "difficultyBand": "G3_CHALLENGING",
+      "context": "3. sınıf Türkçe çalışmasında “Dinleme/İzleme” becerisi için kısa, somut, yaşa uygun ve özgün bir metin, görsel, konuşma veya yazma durumu kullanılır.",
+      "stem": "Dinleme/izlemeyi yönetebilme öğrenme çıktısını gösterecek yanıtı oluştur.",
+      "rubricCriteria": [
+        "Verilen metin, ses veya görseldeki gerekli bilgiyi doğru belirler.",
+        "Bilgiyi görevin istediği anlam ilişkisiyle açıklar; tek sözcük eşleştirmesiyle yetinmez.",
+        "Yanıtını materyaldeki kanıta bağlar ve desteklenmeyen ayrıntı eklemez."
+      ],
+      "hints": [
+        "Önce görevin senden dinleme, konuşma, okuma veya yazmanın hangisini istediğini belirle.",
+        "Metindeki ya da iletişim durumundaki ana ipucunu bul ve yanıtını bu ipucuna bağla.",
+        "Son kontrolde yanıtının açık, yaşa uygun ve verilen kanıtla destekli olduğunu denetle."
+      ],
+      "misconceptionIds": [
+        "tek-sözcüğe-takılma",
+        "iletişim-amacını-kaçırma",
+        "kanıtsız-ayrıntı-ekleme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "turkce-g3-t-k-3-1",
+      "engineKey": "g3:turkce",
+      "grade": 3,
+      "courseId": "turkce",
+      "outcomeIds": [
+        "tr-tymm-g3-turkce-t-k-3-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-turkish-speaking",
+      "difficultyBand": "G3_CHALLENGING",
+      "context": "3. sınıf Türkçe çalışmasında “Konuşma” becerisi için kısa, somut, yaşa uygun ve özgün bir metin, görsel, konuşma veya yazma durumu kullanılır.",
+      "stem": "Konuşmalarını yönetebilme öğrenme çıktısını gösterecek yanıtı oluştur.",
+      "rubricCriteria": [
+        "İletişim amacına uygun içerik ve sıralama oluşturur.",
+        "Yaş düzeyine uygun açık, anlaşılır ve kurallı bir anlatım kullanır.",
+        "Ürününü verilen ölçütlere göre gözden geçirir ve gerekli düzeltmeyi yapar."
+      ],
+      "hints": [
+        "Önce görevin senden dinleme, konuşma, okuma veya yazmanın hangisini istediğini belirle.",
+        "Metindeki ya da iletişim durumundaki ana ipucunu bul ve yanıtını bu ipucuna bağla.",
+        "Son kontrolde yanıtının açık, yaşa uygun ve verilen kanıtla destekli olduğunu denetle."
+      ],
+      "misconceptionIds": [
+        "tek-sözcüğe-takılma",
+        "iletişim-amacını-kaçırma",
+        "kanıtsız-ayrıntı-ekleme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g1-mat-1-1-1",
+      "engineKey": "g1:matematik",
+      "grade": 1,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g1-matematik-mat-1-1-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "primary-mathematical-reasoning",
+      "difficultyBand": "G1_CHALLENGING",
+      "context": "1. sınıf Matematik çalışmasında “SAYILAR VE NİCELİKLER (1)” için nesne, sayı kartı, ölçme aracı, şekil, tablo veya kısa gerçek yaşam durumu kullanılır.",
+      "stem": "Rakamları ve 20’ye kadar olan sayıları (20 dâhil), niceliklerin büyüklüklerini temsil etmek için kullanabilme öğrenme çıktısını gösterecek matematiksel çözümü veya modeli oluştur.",
+      "rubricCriteria": [
+        "Verilen nicelikleri, şekilleri veya ilişkileri doğru matematiksel temsile dönüştürür.",
+        "Yaş düzeyine uygun bir stratejiyle işlemi, modeli, sınıflandırmayı ya da ölçümü gerçekleştirir.",
+        "Sonucunu farklı temsil, ters işlem, tahmin veya somut kontrol yoluyla doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri nesne, sayı, şekil veya ölçü olarak ayır.",
+        "Hangi işlem, karşılaştırma, örüntü veya modelin ilişkiyi gösterdiğini belirle.",
+        "Sonucunu başka bir temsil, ters işlem ya da tahminle kontrol et."
+      ],
+      "misconceptionIds": [
+        "temsili-yanlış-okuma",
+        "işlem-veya-ilişkiyi-karıştırma",
+        "sonucu-kontrol-etmeme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g1-mat-1-1-6",
+      "engineKey": "g1:matematik",
+      "grade": 1,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g1-matematik-mat-1-1-6"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-mathematical-reasoning",
+      "difficultyBand": "G1_CHALLENGING",
+      "context": "1. sınıf Matematik çalışmasında “SAYILAR VE NİCELİKLER (1)” için nesne, sayı kartı, ölçme aracı, şekil, tablo veya kısa gerçek yaşam durumu kullanılır.",
+      "stem": "Artan veya azalan sayı ve şekil örüntülerini çözümleyebilme öğrenme çıktısını gösterecek matematiksel çözümü veya modeli oluştur.",
+      "rubricCriteria": [
+        "Verilen nicelikleri, şekilleri veya ilişkileri doğru matematiksel temsile dönüştürür.",
+        "Yaş düzeyine uygun bir stratejiyle işlemi, modeli, sınıflandırmayı ya da ölçümü gerçekleştirir.",
+        "Sonucunu farklı temsil, ters işlem, tahmin veya somut kontrol yoluyla doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri nesne, sayı, şekil veya ölçü olarak ayır.",
+        "Hangi işlem, karşılaştırma, örüntü veya modelin ilişkiyi gösterdiğini belirle.",
+        "Sonucunu başka bir temsil, ters işlem ya da tahminle kontrol et."
+      ],
+      "misconceptionIds": [
+        "temsili-yanlış-okuma",
+        "işlem-veya-ilişkiyi-karıştırma",
+        "sonucu-kontrol-etmeme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g2-mat-2-1-1",
+      "engineKey": "g2:matematik",
+      "grade": 2,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g2-matematik-mat-2-1-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "primary-mathematical-reasoning",
+      "difficultyBand": "G2_CHALLENGING",
+      "context": "2. sınıf Matematik çalışmasında “SAYILAR VE NİCELİKLER (1)” için nesne, sayı kartı, ölçme aracı, şekil, tablo veya kısa gerçek yaşam durumu kullanılır.",
+      "stem": "100’e kadar olan niceliklerin büyüklüklerini temsil etmede sayıların sembolik temsillerinden yararlanabilme öğrenme çıktısını gösterecek matematiksel çözümü veya modeli oluştur.",
+      "rubricCriteria": [
+        "Verilen nicelikleri, şekilleri veya ilişkileri doğru matematiksel temsile dönüştürür.",
+        "Yaş düzeyine uygun bir stratejiyle işlemi, modeli, sınıflandırmayı ya da ölçümü gerçekleştirir.",
+        "Sonucunu farklı temsil, ters işlem, tahmin veya somut kontrol yoluyla doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri nesne, sayı, şekil veya ölçü olarak ayır.",
+        "Hangi işlem, karşılaştırma, örüntü veya modelin ilişkiyi gösterdiğini belirle.",
+        "Sonucunu başka bir temsil, ters işlem ya da tahminle kontrol et."
+      ],
+      "misconceptionIds": [
+        "temsili-yanlış-okuma",
+        "işlem-veya-ilişkiyi-karıştırma",
+        "sonucu-kontrol-etmeme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g2-mat-2-1-5",
+      "engineKey": "g2:matematik",
+      "grade": 2,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g2-matematik-mat-2-1-5"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-mathematical-reasoning",
+      "difficultyBand": "G2_CORE",
+      "context": "2. sınıf Matematik çalışmasında “SAYILAR VE NİCELİKLER (1)” için nesne, sayı kartı, ölçme aracı, şekil, tablo veya kısa gerçek yaşam durumu kullanılır.",
+      "stem": "Sayı ve sayı temsiline dönüşen şekil örüntülerine dayalı çıkarım yapabilme d) öğrenme çıktısını gösterecek matematiksel çözümü veya modeli oluştur.",
+      "rubricCriteria": [
+        "Verilen nicelikleri, şekilleri veya ilişkileri doğru matematiksel temsile dönüştürür.",
+        "Yaş düzeyine uygun bir stratejiyle işlemi, modeli, sınıflandırmayı ya da ölçümü gerçekleştirir.",
+        "Sonucunu farklı temsil, ters işlem, tahmin veya somut kontrol yoluyla doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri nesne, sayı, şekil veya ölçü olarak ayır.",
+        "Hangi işlem, karşılaştırma, örüntü veya modelin ilişkiyi gösterdiğini belirle.",
+        "Sonucunu başka bir temsil, ters işlem ya da tahminle kontrol et."
+      ],
+      "misconceptionIds": [
+        "temsili-yanlış-okuma",
+        "işlem-veya-ilişkiyi-karıştırma",
+        "sonucu-kontrol-etmeme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g3-mat-3-1-1",
+      "engineKey": "g3:matematik",
+      "grade": 3,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g3-matematik-mat-3-1-1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "primary-mathematical-reasoning",
+      "difficultyBand": "G3_CHALLENGING",
+      "context": "3. sınıf Matematik çalışmasında “SAYILAR VE NİCELİKLER (1)” için nesne, sayı kartı, ölçme aracı, şekil, tablo veya kısa gerçek yaşam durumu kullanılır.",
+      "stem": "Niceliklerin büyüklüklerine karşılık gelen 1000’e kadar olan sayıların temsillerinden yararlanabilme öğrenme çıktısını gösterecek matematiksel çözümü veya modeli oluştur.",
+      "rubricCriteria": [
+        "Verilen nicelikleri, şekilleri veya ilişkileri doğru matematiksel temsile dönüştürür.",
+        "Yaş düzeyine uygun bir stratejiyle işlemi, modeli, sınıflandırmayı ya da ölçümü gerçekleştirir.",
+        "Sonucunu farklı temsil, ters işlem, tahmin veya somut kontrol yoluyla doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri nesne, sayı, şekil veya ölçü olarak ayır.",
+        "Hangi işlem, karşılaştırma, örüntü veya modelin ilişkiyi gösterdiğini belirle.",
+        "Sonucunu başka bir temsil, ters işlem ya da tahminle kontrol et."
+      ],
+      "misconceptionIds": [
+        "temsili-yanlış-okuma",
+        "işlem-veya-ilişkiyi-karıştırma",
+        "sonucu-kontrol-etmeme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "matematik-g3-mat-3-1-7",
+      "engineKey": "g3:matematik",
+      "grade": 3,
+      "courseId": "matematik",
+      "outcomeIds": [
+        "tr-tymm-g3-matematik-mat-3-1-7"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-mathematical-reasoning",
+      "difficultyBand": "G3_CORE",
+      "context": "3. sınıf Matematik çalışmasında “SAYILAR VE NİCELİKLER (1)” için nesne, sayı kartı, ölçme aracı, şekil, tablo veya kısa gerçek yaşam durumu kullanılır.",
+      "stem": "Sayı ve sayı temsiline dönüşen şekil örüntülerine dayalı çıkarım yapabilme öğrenme çıktısını gösterecek matematiksel çözümü veya modeli oluştur.",
+      "rubricCriteria": [
+        "Verilen nicelikleri, şekilleri veya ilişkileri doğru matematiksel temsile dönüştürür.",
+        "Yaş düzeyine uygun bir stratejiyle işlemi, modeli, sınıflandırmayı ya da ölçümü gerçekleştirir.",
+        "Sonucunu farklı temsil, ters işlem, tahmin veya somut kontrol yoluyla doğrular."
+      ],
+      "hints": [
+        "Önce verilenleri nesne, sayı, şekil veya ölçü olarak ayır.",
+        "Hangi işlem, karşılaştırma, örüntü veya modelin ilişkiyi gösterdiğini belirle.",
+        "Sonucunu başka bir temsil, ters işlem ya da tahminle kontrol et."
+      ],
+      "misconceptionIds": [
+        "temsili-yanlış-okuma",
+        "işlem-veya-ilişkiyi-karıştırma",
+        "sonucu-kontrol-etmeme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "hayat-bilgisi-g1-hb-1-1-1",
+      "engineKey": "g1:hayat-bilgisi",
+      "grade": 1,
+      "courseId": "hayat-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g1-hayat-bilgisi-hb-1-1-1"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "primary-life-and-civic-reasoning",
+      "difficultyBand": "G1_CHALLENGING",
+      "context": "1. sınıf Hayat Bilgisi çalışmasında “BEN VE OKULUM” için okul, aile, güvenlik, yaşadığı yer, doğa veya bilim-teknoloji bağlamından somut bir durum kullanılır.",
+      "stem": "Öğretmeni ve arkadaşlarıyla tanışabilme öğrenme çıktısını gösterecek güvenli ve gerekçeli yanıtı oluştur.",
+      "rubricCriteria": [
+        "Durumdaki kişi, yer, kural, ihtiyaç veya riski doğru belirler.",
+        "Yaşına uygun güvenli, saygılı ve uygulanabilir bir davranış ya da çözüm seçer.",
+        "Seçimini verilen durumdaki kanıta ve sorumluluk ilişkisine dayandırır."
+      ],
+      "hints": [
+        "Durumda kimlerin, hangi yerin veya hangi güvenlik kuralının önemli olduğunu bul.",
+        "Seçeceğin davranışın güvenli, saygılı ve uygulanabilir olup olmadığını düşün.",
+        "Cevabını durumdaki ayrıntıyla gerekçelendir ve başka bir kişiye zarar vermediğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "durumdaki-riski-fark-etmeme",
+        "kuralı-bağlamdan-koparma",
+        "gerekçesiz-davranış-seçme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "hayat-bilgisi-g1-hb-1-1-3",
+      "engineKey": "g1:hayat-bilgisi",
+      "grade": 1,
+      "courseId": "hayat-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g1-hayat-bilgisi-hb-1-1-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-life-and-civic-reasoning",
+      "difficultyBand": "G1_CORE",
+      "context": "1. sınıf Hayat Bilgisi çalışmasında “BEN VE OKULUM” için okul, aile, güvenlik, yaşadığı yer, doğa veya bilim-teknoloji bağlamından somut bir durum kullanılır.",
+      "stem": "Sınıf ve okul ortamında kurallara uygun davranabilme öğrenme çıktısını gösterecek güvenli ve gerekçeli yanıtı oluştur.",
+      "rubricCriteria": [
+        "Durumdaki kişi, yer, kural, ihtiyaç veya riski doğru belirler.",
+        "Yaşına uygun güvenli, saygılı ve uygulanabilir bir davranış ya da çözüm seçer.",
+        "Seçimini verilen durumdaki kanıta ve sorumluluk ilişkisine dayandırır."
+      ],
+      "hints": [
+        "Durumda kimlerin, hangi yerin veya hangi güvenlik kuralının önemli olduğunu bul.",
+        "Seçeceğin davranışın güvenli, saygılı ve uygulanabilir olup olmadığını düşün.",
+        "Cevabını durumdaki ayrıntıyla gerekçelendir ve başka bir kişiye zarar vermediğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "durumdaki-riski-fark-etmeme",
+        "kuralı-bağlamdan-koparma",
+        "gerekçesiz-davranış-seçme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "hayat-bilgisi-g2-hb-2-1-1",
+      "engineKey": "g2:hayat-bilgisi",
+      "grade": 2,
+      "courseId": "hayat-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g2-hayat-bilgisi-hb-2-1-1"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "primary-life-and-civic-reasoning",
+      "difficultyBand": "G2_CHALLENGING",
+      "context": "2. sınıf Hayat Bilgisi çalışmasında “BEN VE OKULUM” için okul, aile, güvenlik, yaşadığı yer, doğa veya bilim-teknoloji bağlamından somut bir durum kullanılır.",
+      "stem": "Arkadaşlık ilişkilerini düzenleyebilme öğrenme çıktısını gösterecek güvenli ve gerekçeli yanıtı oluştur.",
+      "rubricCriteria": [
+        "Durumdaki kişi, yer, kural, ihtiyaç veya riski doğru belirler.",
+        "Yaşına uygun güvenli, saygılı ve uygulanabilir bir davranış ya da çözüm seçer.",
+        "Seçimini verilen durumdaki kanıta ve sorumluluk ilişkisine dayandırır."
+      ],
+      "hints": [
+        "Durumda kimlerin, hangi yerin veya hangi güvenlik kuralının önemli olduğunu bul.",
+        "Seçeceğin davranışın güvenli, saygılı ve uygulanabilir olup olmadığını düşün.",
+        "Cevabını durumdaki ayrıntıyla gerekçelendir ve başka bir kişiye zarar vermediğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "durumdaki-riski-fark-etmeme",
+        "kuralı-bağlamdan-koparma",
+        "gerekçesiz-davranış-seçme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "hayat-bilgisi-g2-hb-2-1-4",
+      "engineKey": "g2:hayat-bilgisi",
+      "grade": 2,
+      "courseId": "hayat-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g2-hayat-bilgisi-hb-2-1-4"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-life-and-civic-reasoning",
+      "difficultyBand": "G2_CORE",
+      "context": "2. sınıf Hayat Bilgisi çalışmasında “BEN VE OKULUM” için okul, aile, güvenlik, yaşadığı yer, doğa veya bilim-teknoloji bağlamından somut bir durum kullanılır.",
+      "stem": "Sınıf içi karar alma süreçlerine katılım sağlayabilme öğrenme çıktısını gösterecek güvenli ve gerekçeli yanıtı oluştur.",
+      "rubricCriteria": [
+        "Durumdaki kişi, yer, kural, ihtiyaç veya riski doğru belirler.",
+        "Yaşına uygun güvenli, saygılı ve uygulanabilir bir davranış ya da çözüm seçer.",
+        "Seçimini verilen durumdaki kanıta ve sorumluluk ilişkisine dayandırır."
+      ],
+      "hints": [
+        "Durumda kimlerin, hangi yerin veya hangi güvenlik kuralının önemli olduğunu bul.",
+        "Seçeceğin davranışın güvenli, saygılı ve uygulanabilir olup olmadığını düşün.",
+        "Cevabını durumdaki ayrıntıyla gerekçelendir ve başka bir kişiye zarar vermediğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "durumdaki-riski-fark-etmeme",
+        "kuralı-bağlamdan-koparma",
+        "gerekçesiz-davranış-seçme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "hayat-bilgisi-g3-hb-3-1-1",
+      "engineKey": "g3:hayat-bilgisi",
+      "grade": 3,
+      "courseId": "hayat-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g3-hayat-bilgisi-hb-3-1-1"
+      ],
+      "itemFormat": "matching",
+      "primarySkill": "primary-life-and-civic-reasoning",
+      "difficultyBand": "G3_CHALLENGING",
+      "context": "3. sınıf Hayat Bilgisi çalışmasında “BEN VE OKULUM” için okul, aile, güvenlik, yaşadığı yer, doğa veya bilim-teknoloji bağlamından somut bir durum kullanılır.",
+      "stem": "Kendini geliştirmek istediği alana ilişkin plan yapabilme öğrenme çıktısını gösterecek güvenli ve gerekçeli yanıtı oluştur.",
+      "rubricCriteria": [
+        "Durumdaki kişi, yer, kural, ihtiyaç veya riski doğru belirler.",
+        "Yaşına uygun güvenli, saygılı ve uygulanabilir bir davranış ya da çözüm seçer.",
+        "Seçimini verilen durumdaki kanıta ve sorumluluk ilişkisine dayandırır."
+      ],
+      "hints": [
+        "Durumda kimlerin, hangi yerin veya hangi güvenlik kuralının önemli olduğunu bul.",
+        "Seçeceğin davranışın güvenli, saygılı ve uygulanabilir olup olmadığını düşün.",
+        "Cevabını durumdaki ayrıntıyla gerekçelendir ve başka bir kişiye zarar vermediğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "durumdaki-riski-fark-etmeme",
+        "kuralı-bağlamdan-koparma",
+        "gerekçesiz-davranış-seçme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "hayat-bilgisi-g3-hb-3-1-2",
+      "engineKey": "g3:hayat-bilgisi",
+      "grade": 3,
+      "courseId": "hayat-bilgisi",
+      "outcomeIds": [
+        "tr-tymm-g3-hayat-bilgisi-hb-3-1-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-life-and-civic-reasoning",
+      "difficultyBand": "G3_CORE",
+      "context": "3. sınıf Hayat Bilgisi çalışmasında “BEN VE OKULUM” için okul, aile, güvenlik, yaşadığı yer, doğa veya bilim-teknoloji bağlamından somut bir durum kullanılır.",
+      "stem": "Okuldaki hak ve sorumluluklarına uygun davranabilme öğrenme çıktısını gösterecek güvenli ve gerekçeli yanıtı oluştur.",
+      "rubricCriteria": [
+        "Durumdaki kişi, yer, kural, ihtiyaç veya riski doğru belirler.",
+        "Yaşına uygun güvenli, saygılı ve uygulanabilir bir davranış ya da çözüm seçer.",
+        "Seçimini verilen durumdaki kanıta ve sorumluluk ilişkisine dayandırır."
+      ],
+      "hints": [
+        "Durumda kimlerin, hangi yerin veya hangi güvenlik kuralının önemli olduğunu bul.",
+        "Seçeceğin davranışın güvenli, saygılı ve uygulanabilir olup olmadığını düşün.",
+        "Cevabını durumdaki ayrıntıyla gerekçelendir ve başka bir kişiye zarar vermediğini kontrol et."
+      ],
+      "misconceptionIds": [
+        "durumdaki-riski-fark-etmeme",
+        "kuralı-bağlamdan-koparma",
+        "gerekçesiz-davranış-seçme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-oyun-g1-beo-1-1-1",
+      "engineKey": "g1:beden-egitimi-ve-oyun",
+      "grade": 1,
+      "courseId": "beden-egitimi-ve-oyun",
+      "outcomeIds": [
+        "tr-tymm-g1-beden-egitimi-ve-oyun-beo-1-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-physical-literacy",
+      "difficultyBand": "G1_CHALLENGING",
+      "context": "1. sınıf Beden Eğitimi ve Oyun çalışmasında “HAREKET EDIYORUM” için güvenli alan, yaşa uygun ekipman, hareket istasyonu veya kurallı oyun kullanılır.",
+      "stem": "Oyunlarda hareket kavramlarını uygulayabilme öğrenme çıktısını güvenli bir performansla göster.",
+      "rubricCriteria": [
+        "Hareketin, oyunun veya fiziksel etkinliğin amacını ve güvenlik koşullarını doğru açıklar.",
+        "Hareketi, kuralı, ritmi veya iş birliği davranışını yaş düzeyine uygun biçimde sergiler.",
+        "Kendi performansını güvenlik, adil oyun ve hareket ölçütlerine göre değerlendirir."
+      ],
+      "hints": [
+        "Önce hareket alanını, ekipmanı ve güvenlik kuralını kontrol et.",
+        "Hareketin basamaklarını yavaşça planla; sıra, ritim veya oyun kuralını unutma.",
+        "Uygulama sonunda güvenliğini, adil davranışını ve hareketin basamaklarını ayrı ayrı değerlendir."
+      ],
+      "misconceptionIds": [
+        "güvenlik-kuralını-atlama",
+        "hareket-basamaklarını-karıştırma",
+        "adil-oyun-ve-is-birligini-ihmal-etme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-oyun-g1-beo-1-2-1",
+      "engineKey": "g1:beden-egitimi-ve-oyun",
+      "grade": 1,
+      "courseId": "beden-egitimi-ve-oyun",
+      "outcomeIds": [
+        "tr-tymm-g1-beden-egitimi-ve-oyun-beo-1-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-physical-literacy",
+      "difficultyBand": "G1_CHALLENGING",
+      "context": "1. sınıf Beden Eğitimi ve Oyun çalışmasında “OYUNU KURALINA GÖRE OYNUYORUM” için güvenli alan, yaşa uygun ekipman, hareket istasyonu veya kurallı oyun kullanılır.",
+      "stem": "Oyunlarda temel hareket becerilerini sergileyebilme öğrenme çıktısını güvenli bir performansla göster.",
+      "rubricCriteria": [
+        "Hareketin, oyunun veya fiziksel etkinliğin amacını ve güvenlik koşullarını doğru açıklar.",
+        "Hareketi, kuralı, ritmi veya iş birliği davranışını yaş düzeyine uygun biçimde sergiler.",
+        "Kendi performansını güvenlik, adil oyun ve hareket ölçütlerine göre değerlendirir."
+      ],
+      "hints": [
+        "Önce hareket alanını, ekipmanı ve güvenlik kuralını kontrol et.",
+        "Hareketin basamaklarını yavaşça planla; sıra, ritim veya oyun kuralını unutma.",
+        "Uygulama sonunda güvenliğini, adil davranışını ve hareketin basamaklarını ayrı ayrı değerlendir."
+      ],
+      "misconceptionIds": [
+        "güvenlik-kuralını-atlama",
+        "hareket-basamaklarını-karıştırma",
+        "adil-oyun-ve-is-birligini-ihmal-etme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-oyun-g2-beo-2-1-1",
+      "engineKey": "g2:beden-egitimi-ve-oyun",
+      "grade": 2,
+      "courseId": "beden-egitimi-ve-oyun",
+      "outcomeIds": [
+        "tr-tymm-g2-beden-egitimi-ve-oyun-beo-2-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-physical-literacy",
+      "difficultyBand": "G2_CHALLENGING",
+      "context": "2. sınıf Beden Eğitimi ve Oyun çalışmasında “HAREKETİMİ GELİŞTİRİYORUM” için güvenli alan, yaşa uygun ekipman, hareket istasyonu veya kurallı oyun kullanılır.",
+      "stem": "Temel hareket becerilerini sergileyebilme öğrenme çıktısını güvenli bir performansla göster.",
+      "rubricCriteria": [
+        "Hareketin, oyunun veya fiziksel etkinliğin amacını ve güvenlik koşullarını doğru açıklar.",
+        "Hareketi, kuralı, ritmi veya iş birliği davranışını yaş düzeyine uygun biçimde sergiler.",
+        "Kendi performansını güvenlik, adil oyun ve hareket ölçütlerine göre değerlendirir."
+      ],
+      "hints": [
+        "Önce hareket alanını, ekipmanı ve güvenlik kuralını kontrol et.",
+        "Hareketin basamaklarını yavaşça planla; sıra, ritim veya oyun kuralını unutma.",
+        "Uygulama sonunda güvenliğini, adil davranışını ve hareketin basamaklarını ayrı ayrı değerlendir."
+      ],
+      "misconceptionIds": [
+        "güvenlik-kuralını-atlama",
+        "hareket-basamaklarını-karıştırma",
+        "adil-oyun-ve-is-birligini-ihmal-etme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-oyun-g2-beo-2-2-1",
+      "engineKey": "g2:beden-egitimi-ve-oyun",
+      "grade": 2,
+      "courseId": "beden-egitimi-ve-oyun",
+      "outcomeIds": [
+        "tr-tymm-g2-beden-egitimi-ve-oyun-beo-2-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-physical-literacy",
+      "difficultyBand": "G2_CORE",
+      "context": "2. sınıf Beden Eğitimi ve Oyun çalışmasında “OYUNUN KURALLARINI UYGULUYORUM” için güvenli alan, yaşa uygun ekipman, hareket istasyonu veya kurallı oyun kullanılır.",
+      "stem": "Oyunlarda hareket kavramlarını uygulayabilme öğrenme çıktısını güvenli bir performansla göster.",
+      "rubricCriteria": [
+        "Hareketin, oyunun veya fiziksel etkinliğin amacını ve güvenlik koşullarını doğru açıklar.",
+        "Hareketi, kuralı, ritmi veya iş birliği davranışını yaş düzeyine uygun biçimde sergiler.",
+        "Kendi performansını güvenlik, adil oyun ve hareket ölçütlerine göre değerlendirir."
+      ],
+      "hints": [
+        "Önce hareket alanını, ekipmanı ve güvenlik kuralını kontrol et.",
+        "Hareketin basamaklarını yavaşça planla; sıra, ritim veya oyun kuralını unutma.",
+        "Uygulama sonunda güvenliğini, adil davranışını ve hareketin basamaklarını ayrı ayrı değerlendir."
+      ],
+      "misconceptionIds": [
+        "güvenlik-kuralını-atlama",
+        "hareket-basamaklarını-karıştırma",
+        "adil-oyun-ve-is-birligini-ihmal-etme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-oyun-g3-beo-3-1-1",
+      "engineKey": "g3:beden-egitimi-ve-oyun",
+      "grade": 3,
+      "courseId": "beden-egitimi-ve-oyun",
+      "outcomeIds": [
+        "tr-tymm-g3-beden-egitimi-ve-oyun-beo-3-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-physical-literacy",
+      "difficultyBand": "G3_CHALLENGING",
+      "context": "3. sınıf Beden Eğitimi ve Oyun çalışmasında “İŞ BIRLIKLI OYUNLARLA HAREKET EDIYORUM” için güvenli alan, yaşa uygun ekipman, hareket istasyonu veya kurallı oyun kullanılır.",
+      "stem": "İş birlikli oyunlarda adil oyun anlayışına uygun davranabilme öğrenme çıktısını güvenli bir performansla göster.",
+      "rubricCriteria": [
+        "Hareketin, oyunun veya fiziksel etkinliğin amacını ve güvenlik koşullarını doğru açıklar.",
+        "Hareketi, kuralı, ritmi veya iş birliği davranışını yaş düzeyine uygun biçimde sergiler.",
+        "Kendi performansını güvenlik, adil oyun ve hareket ölçütlerine göre değerlendirir."
+      ],
+      "hints": [
+        "Önce hareket alanını, ekipmanı ve güvenlik kuralını kontrol et.",
+        "Hareketin basamaklarını yavaşça planla; sıra, ritim veya oyun kuralını unutma.",
+        "Uygulama sonunda güvenliğini, adil davranışını ve hareketin basamaklarını ayrı ayrı değerlendir."
+      ],
+      "misconceptionIds": [
+        "güvenlik-kuralını-atlama",
+        "hareket-basamaklarını-karıştırma",
+        "adil-oyun-ve-is-birligini-ihmal-etme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "beden-egitimi-ve-oyun-g3-beo-3-2-1",
+      "engineKey": "g3:beden-egitimi-ve-oyun",
+      "grade": 3,
+      "courseId": "beden-egitimi-ve-oyun",
+      "outcomeIds": [
+        "tr-tymm-g3-beden-egitimi-ve-oyun-beo-3-2-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "primary-physical-literacy",
+      "difficultyBand": "G3_CORE",
+      "context": "3. sınıf Beden Eğitimi ve Oyun çalışmasında “OYUNUN KURALLARINI YENIDEN OLUŞTURUYORUM” için güvenli alan, yaşa uygun ekipman, hareket istasyonu veya kurallı oyun kullanılır.",
+      "stem": "Oyunlarda birleştirilmiş hareket becerilerini sergileyebilme öğrenme çıktısını güvenli bir performansla göster.",
+      "rubricCriteria": [
+        "Hareketin, oyunun veya fiziksel etkinliğin amacını ve güvenlik koşullarını doğru açıklar.",
+        "Hareketi, kuralı, ritmi veya iş birliği davranışını yaş düzeyine uygun biçimde sergiler.",
+        "Kendi performansını güvenlik, adil oyun ve hareket ölçütlerine göre değerlendirir."
+      ],
+      "hints": [
+        "Önce hareket alanını, ekipmanı ve güvenlik kuralını kontrol et.",
+        "Hareketin basamaklarını yavaşça planla; sıra, ritim veya oyun kuralını unutma.",
+        "Uygulama sonunda güvenliğini, adil davranışını ve hareketin basamaklarını ayrı ayrı değerlendir."
+      ],
+      "misconceptionIds": [
+        "güvenlik-kuralını-atlama",
+        "hareket-basamaklarını-karıştırma",
+        "adil-oyun-ve-is-birligini-ihmal-etme"
+      ],
+      "media": [],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    }
+  ]
+}

@@ -18,6 +18,7 @@ import { buildGrade8EnglishFullScopeTasks } from './english-g8-full-scope-engine
 import { buildGrade5MathFullScopeTasks, buildGrade5ScienceFullScopeTasks, buildGrade5SocialFullScopeTasks, buildGrade5DkabFullScopeTasks, buildGrade5EnglishFullScopeTasks } from './grade5-core-full-scope-engines.js';
 import { buildMiddleSchoolTymmCoreTasks } from './middle-school-tymm-core-engines.js';
 import { buildPrimaryBridgeCoreTasks } from './primary-bridge-core-engines.js';
+import { buildPrimaryTymmAcademicCoreTasks } from './primary-tymm-academic-core-engines.js';
 
 const freezeRows=rows=>Object.freeze(rows.map(row=>Object.freeze(row)));
 
@@ -46,13 +47,14 @@ export function buildAssessmentV2CanonicalCatalog(){
     ...buildGrade5DkabFullScopeTasks(),
     ...buildGrade5EnglishFullScopeTasks(),
     ...buildMiddleSchoolTymmCoreTasks(),
-    ...buildPrimaryBridgeCoreTasks()
+    ...buildPrimaryBridgeCoreTasks(),
+    ...buildPrimaryTymmAcademicCoreTasks()
   ]);
 }
 
 export function auditAssessmentV2CanonicalCatalog(items=buildAssessmentV2CanonicalCatalog()){
   const errors=[];
-  if(items.length!==1896)errors.push(`item-count:${items.length}`);
+  if(items.length!==2134)errors.push(`item-count:${items.length}`);
   if(new Set(items.map(item=>item.id)).size!==items.length)errors.push('duplicate-item-id');
   for(const item of items){
     if(!item.curriculum?.grade||!item.curriculum?.courseId)errors.push(`${item.id}:curriculum`);

@@ -1,16 +1,16 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-04T00:02:30.921Z",
+  "generatedAt": "2026-08-04T00:23:30.279Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
-  "status": "PRIMARY_BRIDGE_AND_GRADES5_8_CORE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
+  "status": "PRIMARY_ACADEMIC_CORE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
-    "activeEngineCount": 30,
-    "engineeringScopeCompleteEngineCount": 30,
+    "activeEngineCount": 42,
+    "engineeringScopeCompleteEngineCount": 42,
     "remainingOutcomeCount": 0,
-    "humanReviewQueueCount": 1891,
-    "unopenedCourseCellCount": 82
+    "humanReviewQueueCount": 2129,
+    "unopenedCourseCellCount": 70
   },
   "engines": [
     {
@@ -372,6 +372,150 @@
       "reviewQueueCount": 47,
       "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g1-turkce-tymm-v2",
+      "grade": 1,
+      "courseId": "turkce",
+      "officialOutcomeCount": 17,
+      "coveredOutcomeCount": 17,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 17,
+      "reviewQueueCount": 17,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g2-turkce-tymm-v2",
+      "grade": 2,
+      "courseId": "turkce",
+      "officialOutcomeCount": 20,
+      "coveredOutcomeCount": 20,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 20,
+      "reviewQueueCount": 20,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g3-turkce-tymm-v2",
+      "grade": 3,
+      "courseId": "turkce",
+      "officialOutcomeCount": 20,
+      "coveredOutcomeCount": 20,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 20,
+      "reviewQueueCount": 20,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g1-matematik-tymm-v2",
+      "grade": 1,
+      "courseId": "matematik",
+      "officialOutcomeCount": 19,
+      "coveredOutcomeCount": 19,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 19,
+      "reviewQueueCount": 19,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g2-matematik-tymm-v2",
+      "grade": 2,
+      "courseId": "matematik",
+      "officialOutcomeCount": 25,
+      "coveredOutcomeCount": 25,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 25,
+      "reviewQueueCount": 25,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g3-matematik-tymm-v2",
+      "grade": 3,
+      "courseId": "matematik",
+      "officialOutcomeCount": 33,
+      "coveredOutcomeCount": 33,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 33,
+      "reviewQueueCount": 33,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g1-hayat-bilgisi-tymm-v2",
+      "grade": 1,
+      "courseId": "hayat-bilgisi",
+      "officialOutcomeCount": 23,
+      "coveredOutcomeCount": 23,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 23,
+      "reviewQueueCount": 23,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g2-hayat-bilgisi-tymm-v2",
+      "grade": 2,
+      "courseId": "hayat-bilgisi",
+      "officialOutcomeCount": 23,
+      "coveredOutcomeCount": 23,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 23,
+      "reviewQueueCount": 23,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g3-hayat-bilgisi-tymm-v2",
+      "grade": 3,
+      "courseId": "hayat-bilgisi",
+      "officialOutcomeCount": 20,
+      "coveredOutcomeCount": 20,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 20,
+      "reviewQueueCount": 20,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g1-beden-egitimi-ve-oyun-tymm-v2",
+      "grade": 1,
+      "courseId": "beden-egitimi-ve-oyun",
+      "officialOutcomeCount": 13,
+      "coveredOutcomeCount": 13,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 13,
+      "reviewQueueCount": 13,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g2-beden-egitimi-ve-oyun-tymm-v2",
+      "grade": 2,
+      "courseId": "beden-egitimi-ve-oyun",
+      "officialOutcomeCount": 12,
+      "coveredOutcomeCount": 12,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 12,
+      "reviewQueueCount": 12,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g3-beden-egitimi-ve-oyun-tymm-v2",
+      "grade": 3,
+      "courseId": "beden-egitimi-ve-oyun",
+      "officialOutcomeCount": 13,
+      "coveredOutcomeCount": 13,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 13,
+      "reviewQueueCount": 13,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
     }
   ],
   "backlog": [
@@ -379,9 +523,9 @@
       "order": 1,
       "id": "calibrate-risk-sample",
       "kind": "HUMAN_REVIEW",
-      "scope": "30 aktif motor için risk tabakalı örneklem",
-      "reason": "1891 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
-      "count": 113
+      "scope": "42 aktif motor için risk tabakalı örneklem",
+      "reason": "2129 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
+      "count": 126
     },
     {
       "order": 2,
@@ -412,8 +556,8 @@
       "id": "expand-grade-map",
       "kind": "NEW_ENGINE",
       "scope": "1–12 zorunlu ders hücreleri",
-      "reason": "112 hücrenin 30’u aktif; yerel resmî kanıtı bulunan köprü hücreleri açıldı, kalanlar kaynak edinimi sonrası ilerlemeli.",
-      "count": 82
+      "reason": "112 hücrenin 42’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
+      "count": 70
     }
   ]
 }
