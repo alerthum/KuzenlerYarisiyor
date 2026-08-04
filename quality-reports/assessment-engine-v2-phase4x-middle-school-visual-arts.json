@@ -1,0 +1,173 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T00:45:43.659Z",
+  "phase": "4X",
+  "title": "5–7. Sınıf TYMM Görsel Sanatlar Motorları",
+  "status": "MIDDLE_SCHOOL_VISUAL_ARTS_ENGINEERING_SCOPE_COMPLETE",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "errors": [],
+  "audits": {
+    "visualArts": {
+      "ok": true,
+      "metrics": {
+        "engineCount": 3,
+        "officialOutcomeCount": 30,
+        "itemCount": 30,
+        "humanReviewStatus": "NOT_MEASURED",
+        "realArtworkStatus": "REQUIRED_NOT_ATTACHED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "reviewSample": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "engineCount": 3,
+        "itemCount": 6,
+        "perEngine": 2,
+        "approved": 0,
+        "pending": 6
+      }
+    },
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 8,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 51,
+        "activeEngineCellPercent": 45.5,
+        "curriculumOutcomeRecordCount": 2209,
+        "coveredOutcomeCount": 2209,
+        "canonicalQuestionCount": 2234,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 2229,
+        "gameAdaptedQuestionCount": 5,
+        "legacyQuarantineCount": 604,
+        "unmatchedActiveCourseCellCount": 0
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 2234,
+        "byEngine": {
+          "g8:turkce": 96,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 61,
+          "g5:turkce": 105,
+          "g8:t-c-inkilap-tarihi-ve-ataturkculuk": 33,
+          "g8:din-kulturu-ve-ahlak-bilgisi": 28,
+          "g8:ingilizce": 70,
+          "g5:matematik": 23,
+          "g5:fen-bilimleri": 28,
+          "g5:sosyal-bilgiler": 19,
+          "g5:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g5:yabanci-dil": 184,
+          "g6:turkce": 100,
+          "g6:matematik": 24,
+          "g6:fen-bilimleri": 36,
+          "g6:sosyal-bilgiler": 18,
+          "g6:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g6:yabanci-dil": 184,
+          "g7:turkce": 103,
+          "g7:matematik": 30,
+          "g7:fen-bilimleri": 36,
+          "g7:sosyal-bilgiler": 17,
+          "g7:din-kulturu-ve-ahlak-bilgisi": 17,
+          "g7:yabanci-dil": 191,
+          "g2:yabanci-dil": 138,
+          "g3:yabanci-dil": 138,
+          "g3:fen-bilimleri": 20,
+          "g4:fen-bilimleri": 43,
+          "g4:din-kulturu-ve-ahlak-bilgisi": 19,
+          "g4:yabanci-dil": 47,
+          "g1:turkce": 17,
+          "g2:turkce": 20,
+          "g3:turkce": 20,
+          "g1:matematik": 19,
+          "g2:matematik": 25,
+          "g3:matematik": 33,
+          "g1:hayat-bilgisi": 23,
+          "g2:hayat-bilgisi": 23,
+          "g3:hayat-bilgisi": 20,
+          "g1:beden-egitimi-ve-oyun": 13,
+          "g2:beden-egitimi-ve-oyun": 12,
+          "g3:beden-egitimi-ve-oyun": 13,
+          "g1:gorsel-sanatlar": 11,
+          "g2:gorsel-sanatlar": 11,
+          "g3:gorsel-sanatlar": 11,
+          "g1:muzik": 13,
+          "g2:muzik": 12,
+          "g3:muzik": 12,
+          "g5:gorsel-sanatlar": 10,
+          "g6:gorsel-sanatlar": 10,
+          "g7:gorsel-sanatlar": 10
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    },
+    "reviewQueue": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "total": 2234,
+        "approved": 5,
+        "pending": 2229,
+        "highComplexityPending": 2078
+      }
+    },
+    "autonomousPlan": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "activeEngineCount": 51,
+        "engineeringScopeCompleteEngineCount": 51,
+        "remainingOutcomeCount": 0,
+        "humanReviewQueueCount": 2229,
+        "unopenedCourseCellCount": 61
+      }
+    }
+  },
+  "sourceEvidence": {
+    "sourceId": "meb-tymm-visual-arts-1-8-2024",
+    "courseIds": [
+      "gorsel-sanatlar"
+    ],
+    "grades": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7
+    ],
+    "localDocument": "docs/sources/GORSEL_SANATLAR_1_8_TYMM.pdf",
+    "sha256": "399fdc9ee183b69f5c5b9f535e7e9943224ebdfe58c627b7a2b6c67641e3eecb",
+    "status": "LOCAL_AUTHORITATIVE_EVIDENCE_VERIFIED"
+  },
+  "metrics": {
+    "newEngineCount": 3,
+    "newOfficialOutcomeCount": 30,
+    "newCanonicalTaskCount": 30,
+    "newHumanApprovedCount": 0,
+    "totalActiveEngineCount": 51,
+    "totalActiveGradeCount": 8,
+    "totalOfficialOutcomeCount": 2209,
+    "totalCanonicalTaskCount": 2234,
+    "humanReviewPending": 2229,
+    "unopenedCourseCells": 61
+  },
+  "honesty": {
+    "humanReviewStatus": "NOT_MEASURED",
+    "realArtworkAndMuseumAssets": "REQUIRED_NOT_ATTACHED",
+    "studentPortfolioCalibration": "NOT_COMPLETED",
+    "realStudentPilot": "NOT_COMPLETED",
+    "musicBasicEducationSource": "PRIMARY_1_3_ENGINEERING_SCOPE_COMPLETE"
+  }
+}

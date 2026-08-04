@@ -1,6 +1,6 @@
 {
   "schemaVersion": "3.5",
-  "generatedAt": "2026-08-04T00:39:48.152Z",
+  "generatedAt": "2026-08-04T00:45:43.913Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "PRIMARY_ACADEMIC_CORE_AND_GRADES5_8_ENGINEERING_SCOPE_COMPLETE",
   "productReady": false,
@@ -32,13 +32,13 @@
     "targetGradeCount": 12,
     "activeGradeCount": 8,
     "courseScheduleCellCount": 112,
-    "activeEngineCellCount": 48,
-    "activeEngineCellPercent": 42.9,
-    "curriculumOutcomeRecordCount": 2179,
-    "coveredOutcomeCount": 2179,
-    "canonicalQuestionCount": 2204,
+    "activeEngineCellCount": 51,
+    "activeEngineCellPercent": 45.5,
+    "curriculumOutcomeRecordCount": 2209,
+    "coveredOutcomeCount": 2209,
+    "canonicalQuestionCount": 2234,
     "humanApprovedQuestionCount": 5,
-    "humanReviewQueueCount": 2199,
+    "humanReviewQueueCount": 2229,
     "gameAdaptedQuestionCount": 5,
     "legacyQuarantineCount": 604,
     "unmatchedActiveCourseCellCount": 0
@@ -1449,6 +1449,90 @@
         "12 görev insan incelemesi bekliyor.",
         "Lisanslı veya insan kayıtlı müzik/ses varlıkları ve performans rubrikleri tamamlanmadı."
       ]
+    },
+    {
+      "id": "tr-g5-gorsel-sanatlar-tymm-v2",
+      "grade": 5,
+      "courseId": "gorsel-sanatlar",
+      "scheduleCourseId": "gorsel-sanatlar",
+      "courseName": "Görsel Sanatlar",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 10,
+      "ingestedOutcomeCount": 10,
+      "coveredOutcomeCount": 10,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 10,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 10,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "middle-school visual analysis, artistic production and portfolio engine",
+      "verifierType": "independent visible-evidence, portfolio and rubric verification",
+      "misconceptionCatalog": "g5-visual-arts-misconceptions-v1",
+      "nextAction": "10 görevi görsel sanatlar öğretmeni, yaş uygunluğu, malzeme güvenliği ve gerçek eser/öğrenci ürünü açısından kalibre et.",
+      "blockers": [
+        "10 görev insan incelemesi bekliyor.",
+        "Gerçek sanat eseri, müze görseli, öğrenci ürünü ve portfolyo rubriği varlıkları tamamlanmadı."
+      ]
+    },
+    {
+      "id": "tr-g6-gorsel-sanatlar-tymm-v2",
+      "grade": 6,
+      "courseId": "gorsel-sanatlar",
+      "scheduleCourseId": "gorsel-sanatlar",
+      "courseName": "Görsel Sanatlar",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 10,
+      "ingestedOutcomeCount": 10,
+      "coveredOutcomeCount": 10,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 10,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 10,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "middle-school visual analysis, artistic production and portfolio engine",
+      "verifierType": "independent visible-evidence, portfolio and rubric verification",
+      "misconceptionCatalog": "g6-visual-arts-misconceptions-v1",
+      "nextAction": "10 görevi görsel sanatlar öğretmeni, yaş uygunluğu, malzeme güvenliği ve gerçek eser/öğrenci ürünü açısından kalibre et.",
+      "blockers": [
+        "10 görev insan incelemesi bekliyor.",
+        "Gerçek sanat eseri, müze görseli, öğrenci ürünü ve portfolyo rubriği varlıkları tamamlanmadı."
+      ]
+    },
+    {
+      "id": "tr-g7-gorsel-sanatlar-tymm-v2",
+      "grade": 7,
+      "courseId": "gorsel-sanatlar",
+      "scheduleCourseId": "gorsel-sanatlar",
+      "courseName": "Görsel Sanatlar",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 10,
+      "ingestedOutcomeCount": 10,
+      "coveredOutcomeCount": 10,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 10,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 10,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "middle-school visual analysis, artistic production and portfolio engine",
+      "verifierType": "independent visible-evidence, portfolio and rubric verification",
+      "misconceptionCatalog": "g7-visual-arts-misconceptions-v1",
+      "nextAction": "10 görevi görsel sanatlar öğretmeni, yaş uygunluğu, malzeme güvenliği ve gerçek eser/öğrenci ürünü açısından kalibre et.",
+      "blockers": [
+        "10 görev insan incelemesi bekliyor.",
+        "Gerçek sanat eseri, müze görseli, öğrenci ürünü ve portfolyo rubriği varlıkları tamamlanmadı."
+      ]
     }
   ],
   "pipeline": [
@@ -1456,7 +1540,7 @@
       "id": "curriculum",
       "label": "Resmî müfredat",
       "status": "PASS_FOR_ACTIVE_ENGINES",
-      "note": "48 aktif motorun resmî kapsamı tam aktarıldı."
+      "note": "51 aktif motorun resmî kapsamı tam aktarıldı."
     },
     {
       "id": "subject-engine",
@@ -1468,13 +1552,13 @@
       "id": "canonical-content",
       "label": "Kanonik soru/görev",
       "status": "ENGINEERING_SCOPE_COMPLETE",
-      "note": "2204 kanonik mühendislik nesnesi mevcut."
+      "note": "2234 kanonik mühendislik nesnesi mevcut."
     },
     {
       "id": "human-review",
       "label": "İnsan kalibrasyonu",
       "status": "BLOCKED",
-      "note": "5 onaylı, 2199 inceleme bekliyor."
+      "note": "5 onaylı, 2229 inceleme bekliyor."
     },
     {
       "id": "game-adaptation",
@@ -1518,7 +1602,7 @@
       "order": 4,
       "id": "expand-grade-map",
       "title": "1–12 sınıf-ders hücrelerini genişlet",
-      "reason": "112 zorunlu hücrenin 48’si aktif."
+      "reason": "112 zorunlu hücrenin 51’si aktif."
     }
   ]
 }

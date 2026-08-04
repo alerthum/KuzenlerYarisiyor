@@ -21,6 +21,7 @@ import { buildPrimaryBridgeCoreTasks } from './primary-bridge-core-engines.js';
 import { buildPrimaryTymmAcademicCoreTasks } from './primary-tymm-academic-core-engines.js';
 import { buildPrimaryTymmVisualArtsTasks } from './primary-tymm-visual-arts-engines.js';
 import { buildPrimaryTymmMusicTasks } from './primary-tymm-music-engines.js';
+import { buildMiddleSchoolTymmVisualArtsTasks } from './middle-school-tymm-visual-arts-engines.js';
 
 const freezeRows=rows=>Object.freeze(rows.map(row=>Object.freeze(row)));
 
@@ -52,13 +53,14 @@ export function buildAssessmentV2CanonicalCatalog(){
     ...buildPrimaryBridgeCoreTasks(),
     ...buildPrimaryTymmAcademicCoreTasks(),
     ...buildPrimaryTymmVisualArtsTasks(),
-    ...buildPrimaryTymmMusicTasks()
+    ...buildPrimaryTymmMusicTasks(),
+    ...buildMiddleSchoolTymmVisualArtsTasks()
   ]);
 }
 
 export function auditAssessmentV2CanonicalCatalog(items=buildAssessmentV2CanonicalCatalog()){
   const errors=[];
-  if(items.length!==2204)errors.push(`item-count:${items.length}`);
+  if(items.length!==2234)errors.push(`item-count:${items.length}`);
   if(new Set(items.map(item=>item.id)).size!==items.length)errors.push('duplicate-item-id');
   for(const item of items){
     if(!item.curriculum?.grade||!item.curriculum?.courseId)errors.push(`${item.id}:curriculum`);

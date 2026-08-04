@@ -59,8 +59,8 @@ test('altı köprü motoru 405 görevi bağımsız doğrulama ve kapalı oyun s�
 test('aktif köprü motorları ders çizelgesi hücreleriyle eşleşir ve kapsam sayaçları dürüsttür',()=>{
   const cells=new Set(COURSE_SCHEDULE_REGISTRY_2026_2027.map(x=>`${x.grade}:${x.courseId}`));
   assert.equal(PRIMARY_BRIDGE_ENGINE_RECORDS.every(r=>cells.has(`${r.grade}:${r.courseId}`)),true);
-  assert.equal(ASSESSMENT_V2_PRODUCTION_PORTFOLIO.summary.activeEngineCellCount,48);
-  assert.equal(ASSESSMENT_V2_PRODUCTION_PORTFOLIO.summary.canonicalQuestionCount,2204);
+  assert.equal(ASSESSMENT_V2_PRODUCTION_PORTFOLIO.summary.activeEngineCellCount,51);
+  assert.equal(ASSESSMENT_V2_PRODUCTION_PORTFOLIO.summary.canonicalQuestionCount,2234);
   assert.equal(ASSESSMENT_V2_PRODUCTION_PORTFOLIO.summary.unmatchedActiveCourseCellCount,0);
 });
 
