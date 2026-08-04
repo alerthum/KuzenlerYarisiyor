@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "2.1",
+  "status": "PASS",
+  "command": "npm run build",
+  "exitCode": 0,
+  "mode": "local-release-validation",
+  "artifact": "dist",
+  "artifactExists": true,
+  "releaseVersion": "13.6.0-premium-migration-dev",
+  "baseCommit": "33ef9cd9d9392429844937c3d75dc758f4e08538",
+  "testedWorkingTree": true,
+  "sourceFileSha256": {
+    "js/app.js": "b762c5eedb1bb8eb873180c2c731e44a711d56a5702100d5b67f2b73a8d201ad",
+    "server.mjs": "f324e6b96abedaf6d814f6104e4161e6fea8feadfc524bdceb1eef2a76a4e9af",
+    "js/assessment-v2/core-game-release-gate.js": "3662f40f4a77ea85e7376e2ff7e75f8bccd14d712b8c5258b6e00a4fe6429f86",
+    "scripts/run-stage09-sharded-battery.mjs": "7bda859ca6efe9342721bdbba7a112f62bccb5a62861f088baf4fce1ac3c5bc0",
+    "scripts/lib/stage09-source-fingerprint.mjs": "34d12ad9b0d68933a0210f3314b32dbdb653b92a7f174bc5c08c9b7aa5d81139",
+    "package.json": "2992c4397ab139db7e26802caee09b846eda79532a5ff5f9b5feaf587ca541a0"
+  },
+  "stage09SourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
+  "generatedAt": "2026-08-04T14:27:04.587Z",
+  "sourceCommit": "33ef9cd9d9392429844937c3d75dc758f4e08538"
+}

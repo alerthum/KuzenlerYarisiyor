@@ -1,0 +1,2040 @@
+{
+  "schemaVersion": "2.0",
+  "status": "PASS",
+  "executionMode": "PROCESS_GROUP_PER_TEST_FILE_WITH_TIMEOUT_RETRY_PROGRESS_AND_FINGERPRINT_CACHE",
+  "command": "node scripts/run-test-files-sharded.mjs 4 180000 1",
+  "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+  "concurrency": 4,
+  "timeoutMs": 180000,
+  "retryCount": 1,
+  "excludedFiles": [],
+  "includedFiles": [],
+  "totalFiles": 105,
+  "passedFiles": 105,
+  "failedFiles": 0,
+  "cachedFiles": 104,
+  "metrics": {
+    "tests": 646,
+    "pass": 646,
+    "fail": 0
+  },
+  "durationMs": 52461,
+  "failures": [],
+  "results": [
+    {
+      "file": "tests/capacity-policy-generic-motor.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 92,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Repetition Policy V2 config is game/subject/grade independent\nok 1 - Repetition Policy V2 config is game/subject/grade independent\n  ---\n  duration_ms: 1.346092\n  type: 'test'\n  ...\n# Subtest: capacity planner does not require lgs-foundation gameId\nok 2 - capacity planner does not require lgs-foundation gameId\n  ---\n  duration_ms: 0.488257\n  type: 'test'\n  ...\n# Subtest: registry capacity helpers have no targeted gameId allowlists\nok 3 - registry capacity helpers have no targeted gameId allowlists\n  ---\n  duration_ms: 1.808851\n  type: 'test'\n  ...\n# Subtest: curriculum graph covers catalog subjects and grades 1-12 skeleton\nok 4 - curriculum graph covers catalog subjects and grades 1-12 skeleton\n  ---\n  duration_ms: 1.0822\n  type: 'test'\n  ...\n# Subtest: question evidence contract and analyzer adapters exist\nok 5 - question evidence contract and analyzer adapters exist\n  ---\n  duration_ms: 0.407536\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 67.340578\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/command-center-export.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 1130,
+      "error": null,
+      "metrics": {
+        "tests": 17,
+        "pass": 17,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: command-center-export builder\n    # Subtest: writes atomic unified export with all sections\n    ok 1 - writes atomic unified export with all sections\n      ---\n      duration_ms: 0.904325\n      type: 'test'\n      ...\n    # Subtest: includes markdown context snapshot as string\n    ok 2 - includes markdown context snapshot as string\n      ---\n      duration_ms: 0.138997\n      type: 'test'\n      ...\n    # Subtest: keeps raw arrays untrimmed in rawSources / content samples\n    ok 3 - keeps raw arrays untrimmed in rawSources / content samples\n      ---\n      duration_ms: 0.112727\n      type: 'test'\n      ...\n    # Subtest: produces valid JSON text\n    ok 4 - produces valid JSON text\n      ---\n      duration_ms: 58.312407\n      type: 'test'\n      ...\n    # Subtest: atomic write leaves no tmp and readable JSON\n    ok 5 - atomic write leaves no tmp and readable JSON\n      ---\n      duration_ms: 1.514433\n      type: 'test'\n      ...\n    # Subtest: reports PARTIAL when required source missing\n    ok 6 - reports PARTIAL when required source missing\n      ---\n      duration_ms: 0.423841\n      type: 'test'\n      ...\n    # Subtest: reports INVALID for broken JSON source\n    ok 7 - reports INVALID for broken JSON source\n      ---\n      duration_ms: 0.587054\n      type: 'test'\n      ...\n    # Subtest: masks secret keys and values\n    ok 8 - masks secret keys and values\n      ---\n      duration_ms: 0.212897\n      type: 'test'\n      ...\n    # Subtest: computes export size and section count\n    ok 9 - computes export size and section count\n      ---\n      duration_ms: 0.488987\n      type: 'test'\n      ...\n    # Subtest: live summary does not mix old final PASS as current live\n    ok 10 - live summary does not mix old final PASS as current live\n      ---\n      duration_ms: 0.38975\n      type: 'test'\n      ...\n    # Subtest: download text equals clipboard text from same bundle\n    ok 11 - download text equals clipboard text from same bundle\n      ---\n      duration_ms: 165.786007\n      type: 'test'\n      ...\n    1..11\nok 1 - command-center-export builder\n  ---\n  duration_ms: 1016.234442\n  type: 'suite'\n  ...\n# Subtest: command-center-export client helpers\n    # Subtest: clipboard fallback path exists (textarea)\n    ok 1 - clipboard fallback path exists (textarea)\n      ---\n      duration_ms: 0.365273\n      type: 'test'\n      ...\n    # Subtest: success message includes section/source/size/status\n    ok 2 - success message includes section/source/size/status\n      ---\n      duration_ms: 0.204904\n      type: 'test'\n      ...\n    # Subtest: PARTIAL success becomes warn\n    ok 3 - PARTIAL success becomes warn\n      ---\n      duration_ms: 0.083394\n      type: 'test'\n      ...\n    # Subtest: client live summary matches builder shape\n    ok 4 - client live summary matches builder shape\n      ---\n      duration_ms: 0.186948\n      type: 'test'\n      ...\n    # Subtest: formatSize consistent\n    ok 5 - formatSize consistent\n      ---\n      duration_ms: 0.062283\n      type: 'test'\n      ...\n    # Subtest: parallel export guard: inFlight shared then cleared\n    ok 6 - parallel export guard: inFlight shared then cleared\n      ---\n      duration_ms: 21.763306\n      type: 'test'\n      ...\n    1..6\nok 2 - command-center-export client helpers\n  ---\n  duration_ms: 22.851264\n  type: 'suite'\n  ...\n1..2\n# tests 17\n# suites 2\n# pass 17\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1107.102849\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/command-center-share.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 387,
+      "error": null,
+      "metrics": {
+        "tests": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: command-center-share compact JSON\n    # Subtest: compact JSON under 750 KB\n    ok 1 - compact JSON under 750 KB\n      ---\n      duration_ms: 0.718629\n      type: 'test'\n      ...\n    # Subtest: rawSources absent from compact export\n    ok 2 - rawSources absent from compact export\n      ---\n      duration_ms: 0.258054\n      type: 'test'\n      ...\n    # Subtest: keeps all open blockers\n    ok 3 - keeps all open blockers\n      ---\n      duration_ms: 0.18836\n      type: 'test'\n      ...\n    # Subtest: includes failed shard summaries when underfill events exist\n    ok 4 - includes failed shard summaries when underfill events exist\n      ---\n      duration_ms: 0.123544\n      type: 'test'\n      ...\n    # Subtest: preserves critical decision and productReady=false\n    ok 5 - preserves critical decision and productReady=false\n      ---\n      duration_ms: 0.133639\n      type: 'test'\n      ...\n    # Subtest: full export path unchanged / not deleted\n    ok 6 - full export path unchanged / not deleted\n      ---\n      duration_ms: 0.16797\n      type: 'test'\n      ...\n    # Subtest: compact and full download use different files\n    ok 7 - compact and full download use different files\n      ---\n      duration_ms: 1.833397\n      type: 'test'\n      ...\n    # Subtest: omittedData has correct counts\n    ok 8 - omittedData has correct counts\n      ---\n      duration_ms: 0.32208\n      type: 'test'\n      ...\n    # Subtest: clipboard-ready valid JSON text\n    ok 9 - clipboard-ready valid JSON text\n      ---\n      duration_ms: 0.923344\n      type: 'test'\n      ...\n    # Subtest: STALE marked for ABORTED live status\n    ok 10 - STALE marked for ABORTED live status\n      ---\n      duration_ms: 0.24236\n      type: 'test'\n      ...\n    # Subtest: success message for share mentions KB and shards\n    ok 11 - success message for share mentions KB and shards\n      ---\n      duration_ms: 0.181901\n      type: 'test'\n      ...\n    # Subtest: summarizeAuditProgress aggregates shards without dumping all events\n    ok 12 - summarizeAuditProgress aggregates shards without dumping all events\n      ---\n      duration_ms: 0.203483\n      type: 'test'\n      ...\n    1..12\nok 1 - command-center-share compact JSON\n  ---\n  duration_ms: 283.064673\n  type: 'suite'\n  ...\n1..1\n# tests 12\n# suites 1\n# pass 12\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 352.374496\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/content-integrity.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 4924,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: tüm çoktan seçmeli soruların geçerli tek cevabı vardır\nok 1 - tüm çoktan seçmeli soruların geçerli tek cevabı vardır\n  ---\n  duration_ms: 1.254467\n  type: 'test'\n  ...\n# Subtest: kelime madeni örnekleri ana kelimenin harfleriyle kurulabilir\nok 2 - kelime madeni örnekleri ana kelimenin harfleriyle kurulabilir\n  ---\n  duration_ms: 4.130164\n  type: 'test'\n  ...\n# Subtest: kelime merdiveni yolları her adımda tek harf değiştirir\nok 3 - kelime merdiveni yolları her adımda tek harf değiştirir\n  ---\n  duration_ms: 0.288679\n  type: 'test'\n  ...\n# Subtest: her oyun iki profil için en az bir tur üretir\nok 4 - her oyun iki profil için en az bir tur üretir\n  ---\n  duration_ms: 4668.988943\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 4883.395459\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/family-skeleton-engine.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 100,
+      "error": null,
+      "metrics": {
+        "tests": 7,
+        "pass": 7,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: validateFamilyDefinition eksik skeletonId/generate/reasoningPaths/cognitiveTraits alanlarını hata olarak yakalar\nok 1 - validateFamilyDefinition eksik skeletonId/generate/reasoningPaths/cognitiveTraits alanlarını hata olarak yakalar\n  ---\n  duration_ms: 0.930764\n  type: 'test'\n  ...\n# Subtest: validateFamilyDefinition hedefin altındaki iskelet/yol sayısını uyarı olarak (hata değil) işaretler\nok 2 - validateFamilyDefinition hedefin altındaki iskelet/yol sayısını uyarı olarak (hata değil) işaretler\n  ---\n  duration_ms: 0.331904\n  type: 'test'\n  ...\n# Subtest: capacityReport hedeflere (12 aile / 4 iskelet / 3 yol) ulaşılıp ulaşılmadığını doğru hesaplar\nok 3 - capacityReport hedeflere (12 aile / 4 iskelet / 3 yol) ulaşılıp ulaşılmadığını doğru hesaplar\n  ---\n  duration_ms: 0.737708\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies havuz yeterliyken bir oturumda aynı familyId ve skeletonId tekrar etmez\nok 4 - generateFromFamilies havuz yeterliyken bir oturumda aynı familyId ve skeletonId tekrar etmez\n  ---\n  duration_ms: 1.408956\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies önceki oturumdan gelen recentFamilyIds/recentSkeletonIds havuz yeterliyken öncelik dışı bırakılır\nok 5 - generateFromFamilies önceki oturumdan gelen recentFamilyIds/recentSkeletonIds havuz yeterliyken öncelik dışı bırakılır\n  ---\n  duration_ms: 2.134996\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies her turu doğru familyId/skeletonId/reasoningPathId ile etiketler\nok 6 - generateFromFamilies her turu doğru familyId/skeletonId/reasoningPathId ile etiketler\n  ---\n  duration_ms: 0.350011\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies geçersiz aile tanımlarını sessizce yok saymaz, havuzdan çıkarır\nok 7 - generateFromFamilies geçersiz aile tanımlarını sessizce yok saymaz, havuzdan çıkarır\n  ---\n  duration_ms: 0.341038\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 73.745861\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/math-engine.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 105,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: kesir işlemleri tam değerle çalışır\nok 1 - kesir işlemleri tam değerle çalışır\n  ---\n  duration_ms: 0.827461\n  type: 'test'\n  ...\n# Subtest: işlem önceliği ve parantez doğru uygulanır\nok 2 - işlem önceliği ve parantez doğru uygulanır\n  ---\n  duration_ms: 1.035776\n  type: 'test'\n  ...\n# Subtest: hedef sayı verilen sayıların her birini bir kez ister\nok 3 - hedef sayı verilen sayıların her birini bir kez ister\n  ---\n  duration_ms: 0.293266\n  type: 'test'\n  ...\n# Subtest: üretilen hedef sayı sorularının çözümü hedefi verir\nok 4 - üretilen hedef sayı sorularının çözümü hedefi verir\n  ---\n  duration_ms: 4.563118\n  type: 'test'\n  ...\n# Subtest: üretilen işlem ve örüntü sorularında doğru cevap seçeneklerde bulunur\nok 5 - üretilen işlem ve örüntü sorularında doğru cevap seçeneklerde bulunur\n  ---\n  duration_ms: 2.307833\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 76.50478\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/mutation-gate-harness.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 142,
+      "error": null,
+      "metrics": {
+        "tests": 12,
+        "pass": 12,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: choice integrity: non-choice not applicable\nok 1 - choice integrity: non-choice not applicable\n  ---\n  duration_ms: 1.255568\n  type: 'test'\n  ...\n# Subtest: choice integrity: option count and answer index\nok 2 - choice integrity: option count and answer index\n  ---\n  duration_ms: 0.534355\n  type: 'test'\n  ...\n# Subtest: choice integrity: quantitative and compact label paths pass\nok 3 - choice integrity: quantitative and compact label paths pass\n  ---\n  duration_ms: 1.393724\n  type: 'test'\n  ...\n# Subtest: choice integrity: length beacon and absolute pattern\nok 4 - choice integrity: length beacon and absolute pattern\n  ---\n  duration_ms: 0.871747\n  type: 'test'\n  ...\n# Subtest: choice integrity: irrelevant distractors and title exception\nok 5 - choice integrity: irrelevant distractors and title exception\n  ---\n  duration_ms: 0.880259\n  type: 'test'\n  ...\n# Subtest: choice integrity: warnings and attach statuses\nok 6 - choice integrity: warnings and attach statuses\n  ---\n  duration_ms: 0.708985\n  type: 'test'\n  ...\n# Subtest: choice integrity: answerValue resolution and metrics finiteness\nok 7 - choice integrity: answerValue resolution and metrics finiteness\n  ---\n  duration_ms: 0.355979\n  type: 'test'\n  ...\n# Subtest: final evidence targets are strict floors\nok 8 - final evidence targets are strict floors\n  ---\n  duration_ms: 0.148691\n  type: 'test'\n  ...\n# Subtest: final evidence rejects each missing counter independently\nok 9 - final evidence rejects each missing counter independently\n  ---\n  duration_ms: 0.728829\n  type: 'test'\n  ...\n# Subtest: assertEvidenceAllowsPass mirrors adequacy\nok 10 - assertEvidenceAllowsPass mirrors adequacy\n  ---\n  duration_ms: 0.738018\n  type: 'test'\n  ...\n# Subtest: evaluateFinalEvidence actual mirror rejects false flags\nok 11 - evaluateFinalEvidence actual mirror rejects false flags\n  ---\n  duration_ms: 0.150103\n  type: 'test'\n  ...\n# Subtest: custom targets override defaults when provided\nok 12 - custom targets override defaults when provided\n  ---\n  duration_ms: 0.09395\n  type: 'test'\n  ...\n1..12\n# tests 12\n# suites 0\n# pass 12\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 89.761261\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-blueprint-core.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 157,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: blueprint motoru her varyantın doğru cevabını çözer ve üç yanlış değeri doğrulayıcıyla reddeder\nok 1 - blueprint motoru her varyantın doğru cevabını çözer ve üç yanlış değeri doğrulayıcıyla reddeder\n  ---\n  duration_ms: 11.808026\n  type: 'test'\n  ...\n# Subtest: blueprint motoru doğrulayıcıdan geçen sahte çeldiriciyi paket oluşurken reddeder\nok 2 - blueprint motoru doğrulayıcıdan geçen sahte çeldiriciyi paket oluşurken reddeder\n  ---\n  duration_ms: 0.45031\n  type: 'test'\n  ...\n# Subtest: blueprint motoru aynı varyant kimliğini ve doğrulanmayan solver sonucunu kabul etmez\nok 3 - blueprint motoru aynı varyant kimliğini ve doğrulanmayan solver sonucunu kabul etmez\n  ---\n  duration_ms: 0.286526\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 132.712923\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-grade35-wave-k.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 468,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 3–5 premium dalga K beş oyunda 50 bağımsız soru taşır\nok 1 - 3–5 premium dalga K beş oyunda 50 bağımsız soru taşır\n  ---\n  duration_ms: 1.347835\n  type: 'test'\n  ...\n# Subtest: dalga K içeriğinin tamamı beş yayın kapısından geçer\nok 2 - dalga K içeriğinin tamamı beş yayın kapısından geçer\n  ---\n  duration_ms: 32.472447\n  type: 'test'\n  ...\n# Subtest: 4. sınıf canlı oturumları legacy içeriğe düşmeden eksiksiz dolar\nok 3 - 4. sınıf canlı oturumları legacy içeriğe düşmeden eksiksiz dolar\n  ---\n  duration_ms: 167.663571\n  type: 'test'\n  ...\n# Subtest: dalga K soruları 2. ve 6. sınıfa yanlışlıkla açılmaz\nok 4 - dalga K soruları 2. ve 6. sınıfa yanlışlıkla açılmaz\n  ---\n  duration_ms: 0.603028\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 401.023273\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-grade35-wave-l.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 474,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 3–5 premium dalga L beş oyunda 62 bağımsız soru taşır\nok 1 - 3–5 premium dalga L beş oyunda 62 bağımsız soru taşır\n  ---\n  duration_ms: 1.737495\n  type: 'test'\n  ...\n# Subtest: dalga L içeriğinin tamamı beş yayın kapısından geçer\nok 2 - dalga L içeriğinin tamamı beş yayın kapısından geçer\n  ---\n  duration_ms: 44.055198\n  type: 'test'\n  ...\n# Subtest: 4. sınıf canlı oturumları dalga L oyunlarında yalnız premium içerikle eksiksiz dolar\nok 3 - 4. sınıf canlı oturumları dalga L oyunlarında yalnız premium içerikle eksiksiz dolar\n  ---\n  duration_ms: 171.863884\n  type: 'test'\n  ...\n# Subtest: dalga L soruları 2. ve 6. sınıfa yanlışlıkla açılmaz\nok 4 - dalga L soruları 2. ve 6. sınıfa yanlışlıkla açılmaz\n  ---\n  duration_ms: 0.541676\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 447.745247\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-grade35-wave-m.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 340,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 3–5 premium dalga M üç görev oyununda 30 bağımsız görev taşır\nok 1 - 3–5 premium dalga M üç görev oyununda 30 bağımsız görev taşır\n  ---\n  duration_ms: 1.197071\n  type: 'test'\n  ...\n# Subtest: dalga M görevlerinin tamamı sözleşme, solver, fabrika ve derinlik kapılarından geçer\nok 2 - dalga M görevlerinin tamamı sözleşme, solver, fabrika ve derinlik kapılarından geçer\n  ---\n  duration_ms: 11.905871\n  type: 'test'\n  ...\n# Subtest: 4. sınıf canlı görev oturumları yalnız premium içerikle eksiksiz dolar\nok 3 - 4. sınıf canlı görev oturumları yalnız premium içerikle eksiksiz dolar\n  ---\n  duration_ms: 55.898536\n  type: 'test'\n  ...\n# Subtest: dalga M görevleri 2. ve 6. sınıfa yanlışlıkla açılmaz\nok 4 - dalga M görevleri 2. ve 6. sınıfa yanlışlıkla açılmaz\n  ---\n  duration_ms: 0.352855\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 300.230605\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-highschool-wave-n.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 438,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 9–10 premium dalga N 18 blueprint ve 36 bağımsız doğrulanmış varyant taşır\nok 1 - 9–10 premium dalga N 18 blueprint ve 36 bağımsız doğrulanmış varyant taşır\n  ---\n  duration_ms: 1.196319\n  type: 'test'\n  ...\n# Subtest: dalga N içeriğinin tamamı beş yayın kapısından ve bağımsız solverdan geçer\nok 2 - dalga N içeriğinin tamamı beş yayın kapısından ve bağımsız solverdan geçer\n  ---\n  duration_ms: 42.376926\n  type: 'test'\n  ...\n# Subtest: aynı blueprint varyantları aynı yapısal ve bilişsel kimliği, farklı yüzey kimliğini taşır\nok 3 - aynı blueprint varyantları aynı yapısal ve bilişsel kimliği, farklı yüzey kimliğini taşır\n  ---\n  duration_ms: 1.266714\n  type: 'test'\n  ...\n# Subtest: 9. ve 10. sınıf canlı oturumları üç oyunda yalnız premium blueprint içeriğiyle dolar\nok 4 - 9. ve 10. sınıf canlı oturumları üç oyunda yalnız premium blueprint içeriğiyle dolar\n  ---\n  duration_ms: 168.911988\n  type: 'test'\n  ...\n# Subtest: dalga N 8. ve 11. sınıfa sızmaz\nok 5 - dalga N 8. ve 11. sınıfa sızmaz\n  ---\n  duration_ms: 0.399124\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 409.295554\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-highschool-wave-o.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 407,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 9–10 premium dalga O 19 blueprint ve 38 bağımsız doğrulanmış varyant taşır\nok 1 - 9–10 premium dalga O 19 blueprint ve 38 bağımsız doğrulanmış varyant taşır\n  ---\n  duration_ms: 1.295107\n  type: 'test'\n  ...\n# Subtest: dalga O içeriğinin tamamı beş yayın kapısından ve bağımsız solverdan geçer\nok 2 - dalga O içeriğinin tamamı beş yayın kapısından ve bağımsız solverdan geçer\n  ---\n  duration_ms: 33.489059\n  type: 'test'\n  ...\n# Subtest: dalga O aynı blueprint varyantlarında yapısal kimliği korur, yüzey kimliğini ayırır\nok 3 - dalga O aynı blueprint varyantlarında yapısal kimliği korur, yüzey kimliğini ayırır\n  ---\n  duration_ms: 1.421264\n  type: 'test'\n  ...\n# Subtest: 9. ve 10. sınıf canlı oturumları dalga O oyunlarında yalnız premium blueprint içeriğiyle dolar\nok 4 - 9. ve 10. sınıf canlı oturumları dalga O oyunlarında yalnız premium blueprint içeriğiyle dolar\n  ---\n  duration_ms: 150.736519\n  type: 'test'\n  ...\n# Subtest: dalga O 8. ve 11. sınıfa sızmaz\nok 5 - dalga O 8. ve 11. sınıfa sızmaz\n  ---\n  duration_ms: 0.512593\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 380.494168\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-highschool-wave-p.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 475,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 9–10 premium dalga P 22 blueprint ve 44 bağımsız doğrulanmış varyant taşır\nok 1 - 9–10 premium dalga P 22 blueprint ve 44 bağımsız doğrulanmış varyant taşır\n  ---\n  duration_ms: 1.193526\n  type: 'test'\n  ...\n# Subtest: dalga P içeriğinin tamamı beş yayın kapısından ve bağımsız solverdan geçer\nok 2 - dalga P içeriğinin tamamı beş yayın kapısından ve bağımsız solverdan geçer\n  ---\n  duration_ms: 33.185938\n  type: 'test'\n  ...\n# Subtest: dalga P aynı blueprint varyantlarında yapısal kimliği korur, yüzey kimliğini ayırır\nok 3 - dalga P aynı blueprint varyantlarında yapısal kimliği korur, yüzey kimliğini ayırır\n  ---\n  duration_ms: 1.570977\n  type: 'test'\n  ...\n# Subtest: 9. ve 10. sınıf canlı oturumları dalga P oyunlarında yalnız premium blueprint içeriğiyle dolar\nok 4 - 9. ve 10. sınıf canlı oturumları dalga P oyunlarında yalnız premium blueprint içeriğiyle dolar\n  ---\n  duration_ms: 181.86721\n  type: 'test'\n  ...\n# Subtest: dalga P 8. ve 11. sınıfa sızmaz\nok 5 - dalga P 8. ve 11. sınıfa sızmaz\n  ---\n  duration_ms: 0.611509\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 450.884968\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-pilot-quality.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 433,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: premium pilot envanteri üç ders grubunda yeterli başlangıç havuzu taşır\nok 1 - premium pilot envanteri üç ders grubunda yeterli başlangıç havuzu taşır\n  ---\n  duration_ms: 1.205103\n  type: 'test'\n  ...\n# Subtest: 34 insan yazımı pilot sorunun tamamı gerçek kalite kapılarından geçer\nok 2 - 34 insan yazımı pilot sorunun tamamı gerçek kalite kapılarından geçer\n  ---\n  duration_ms: 26.425671\n  type: 'test'\n  ...\n# Subtest: canlı çocuk oturumları yalnız premium pilot sorularıyla eksiksiz dolar\nok 3 - canlı çocuk oturumları yalnız premium pilot sorularıyla eksiksiz dolar\n  ---\n  duration_ms: 110.373079\n  type: 'test'\n  ...\n# Subtest: pilot havuzu tükenirse düşük kaliteli legacy içeriğe sessiz dönüş yapılmaz\nok 4 - pilot havuzu tükenirse düşük kaliteli legacy içeriğe sessiz dönüş yapılmaz\n  ---\n  duration_ms: 76.233907\n  type: 'test'\n  ...\n# Subtest: explicit evidence isteyen yeni soruda otomatik genel misconception uydurulmaz\nok 5 - explicit evidence isteyen yeni soruda otomatik genel misconception uydurulmaz\n  ---\n  duration_ms: 0.360847\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 408.255947\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-question-bank.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 1535,
+      "error": null,
+      "metrics": {
+        "tests": 7,
+        "pass": 7,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: premium soru bankası yirmi yedi akademik oyunda 604 insan yazımı soru taşır\nok 1 - premium soru bankası yirmi yedi akademik oyunda 604 insan yazımı soru taşır\n  ---\n  duration_ms: 3.061294\n  type: 'test'\n  ...\n# Subtest: 604 premium soru ve görevin tamamı ortak fabrika, seçenek, bütünlük, derinlik ve solver kapılarından geçer\nok 2 - 604 premium soru ve görevin tamamı ortak fabrika, seçenek, bütünlük, derinlik ve solver kapılarından geçer\n  ---\n  duration_ms: 237.740268\n  type: 'test'\n  ...\n# Subtest: yirmi yedi premium oyunun canlı oturumu yalnız premium bankadan eksiksiz dolar\nok 3 - yirmi yedi premium oyunun canlı oturumu yalnız premium bankadan eksiksiz dolar\n  ---\n  duration_ms: 641.826222\n  type: 'test'\n  ...\n# Subtest: aynı düşünme ailesindeki premium sorular sahte soru-kimliği ekiyle ayrıştırılmaz\nok 4 - aynı düşünme ailesindeki premium sorular sahte soru-kimliği ekiyle ayrıştırılmaz\n  ---\n  duration_ms: 0.641224\n  type: 'test'\n  ...\n# Subtest: premium banka uygun sınıf içeriğini üretir, yanlış sınıfa sızmaz ve açığı gizlemez\nok 5 - premium banka uygun sınıf içeriğini üretir, yanlış sınıfa sızmaz ve açığı gizlemez\n  ---\n  duration_ms: 1.25712\n  type: 'test'\n  ...\n# Subtest: canlı oturum doğru sınıfta premium içerikle dolar ve legacy havuza düşmez\nok 6 - canlı oturum doğru sınıfta premium içerikle dolar ve legacy havuza düşmez\n  ---\n  duration_ms: 27.76203\n  type: 'test'\n  ...\n# Subtest: premium bankası tükenirse hiçbir premium oyunda legacy içeriğe sessiz dönüş olmaz\nok 7 - premium bankası tükenirse hiçbir premium oyunda legacy içeriğe sessiz dönüş olmaz\n  ---\n  duration_ms: 367.921039\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1489.114981\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/premium-task-engine.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 179,
+      "error": null,
+      "metrics": {
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: iki harfi aynı adımda değiştiren premium kelime merdiveni tanım aşamasında reddedilir\nok 1 - iki harfi aynı adımda değiştiren premium kelime merdiveni tanım aşamasında reddedilir\n  ---\n  duration_ms: 1.213575\n  type: 'test'\n  ...\n# Subtest: beşten az sözcüklü premium cümle kurma görevi reddedilir\nok 2 - beşten az sözcüklü premium cümle kurma görevi reddedilir\n  ---\n  duration_ms: 0.182211\n  type: 'test'\n  ...\n# Subtest: düşük cümle ve kelime eşiği taşıyan hikâye görevi reddedilir\nok 3 - düşük cümle ve kelime eşiği taşıyan hikâye görevi reddedilir\n  ---\n  duration_ms: 0.122212\n  type: 'test'\n  ...\n# Subtest: 4. ve 8. sınıf canlı premium görevlerin sözleşmesi bağımsız çözücü tarafından doğrulanır\nok 4 - 4. ve 8. sınıf canlı premium görevlerin sözleşmesi bağımsız çözücü tarafından doğrulanır\n  ---\n  duration_ms: 14.945484\n  type: 'test'\n  ...\n# Subtest: sonradan bozulan premium merdiven yolu bağımsız çözücüden geçmez\nok 5 - sonradan bozulan premium merdiven yolu bağımsız çözücüden geçmez\n  ---\n  duration_ms: 0.749335\n  type: 'test'\n  ...\n# Subtest: kaynak harflerle kurulamayan premium kelime madeni tanım aşamasında reddedilir\nok 6 - kaynak harflerle kurulamayan premium kelime madeni tanım aşamasında reddedilir\n  ---\n  duration_ms: 0.226277\n  type: 'test'\n  ...\n# Subtest: hedefe ulaşmayan premium sayı ifadesi tanım aşamasında reddedilir\nok 7 - hedefe ulaşmayan premium sayı ifadesi tanım aşamasında reddedilir\n  ---\n  duration_ms: 0.22801\n  type: 'test'\n  ...\n# Subtest: sonradan bozulan kelime madeni ve hedef sayı görevleri bağımsız çözücüden geçmez\nok 8 - sonradan bozulan kelime madeni ve hedef sayı görevleri bağımsız çözücüden geçmez\n  ---\n  duration_ms: 1.076201\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 152.067069\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/quality-pilot-release-mode.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 175,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: premium geliştirme modu canlı yapılandırmada açıktır\nok 1 - premium geliştirme modu canlı yapılandırmada açıktır\n  ---\n  duration_ms: 0.551871\n  type: 'test'\n  ...\n# Subtest: premium geliştirme modunda yalnız kalite kapısından geçmiş yirmi yedi oyun görünür\nok 2 - premium geliştirme modunda yalnız kalite kapısından geçmiş yirmi yedi oyun görünür\n  ---\n  duration_ms: 0.577699\n  type: 'test'\n  ...\n# Subtest: premium envanteri toplam 604 insan yazımı soru taşır\nok 3 - premium envanteri toplam 604 insan yazımı soru taşır\n  ---\n  duration_ms: 7.691753\n  type: 'test'\n  ...\n# Subtest: çocuk arayüzü premium oyun filtresi ve doğrudan başlatma koruması taşır\nok 4 - çocuk arayüzü premium oyun filtresi ve doğrudan başlatma koruması taşır\n  ---\n  duration_ms: 6.301174\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 151.094527\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/repetition-policy-v2.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 104,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: policy v2 config is single source and forbids lifetime CX\nok 1 - policy v2 config is single source and forbids lifetime CX\n  ---\n  duration_ms: 0.963453\n  type: 'test'\n  ...\n# Subtest: V1 blocks lifetime CX; V2 only previous 2 sessions\nok 2 - V1 blocks lifetime CX; V2 only previous 2 sessions\n  ---\n  duration_ms: 6.348175\n  type: 'test'\n  ...\n# Subtest: V2 skeleton lookback is 3 sessions; structural 12\nok 3 - V2 skeleton lookback is 3 sessions; structural 12\n  ---\n  duration_ms: 0.422048\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 80.232164\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage01-family-skeleton-identity.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 9024,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: legacy oyunların her turu familyId ve skeletonId taşır\nok 1 - legacy oyunların her turu familyId ve skeletonId taşır\n  ---\n  duration_ms: 2967.18467\n  type: 'test'\n  ...\n# Subtest: bir oturumda havuz yeterliyken aynı skeletonId ikinci kez kullanılmaz\nok 2 - bir oturumda havuz yeterliyken aynı skeletonId ikinci kez kullanılmaz\n  ---\n  duration_ms: 3767.199507\n  type: 'test'\n  ...\n# Subtest: önceki oturumda kullanılan iskelet, öğrenci geçmişi (attempts) üzerinden havuz yeterliyken sonraki oturumda öncelik dışı kalır\nok 3 - önceki oturumda kullanılan iskelet, öğrenci geçmişi (attempts) üzerinden havuz yeterliyken sonraki oturumda öncelik dışı kalır\n  ---\n  duration_ms: 2046.58063\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 8998.266562\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage02-admin-command-center.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 114,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: admin panelinde ayrı bir Soru Motoru Komuta Merkezi sekmesi tanımlı\nok 1 - admin panelinde ayrı bir Soru Motoru Komuta Merkezi sekmesi tanımlı\n  ---\n  duration_ms: 0.797617\n  type: 'test'\n  ...\n# Subtest: komuta merkezi modülü canlı analiz dosyasını fetch ile okur ve veri yoksa \"Veri yok\" gösterir\nok 2 - komuta merkezi modülü canlı analiz dosyasını fetch ile okur ve veri yoksa \"Veri yok\" gösterir\n  ---\n  duration_ms: 0.15447\n  type: 'test'\n  ...\n# Subtest: komuta merkezi modülü zorunlu göstergelerin tamamını render eder\nok 3 - komuta merkezi modülü zorunlu göstergelerin tamamını render eder\n  ---\n  duration_ms: 1.099796\n  type: 'test'\n  ...\n# Subtest: public/question-engine-analysis.json geçerli JSON ve Aşama 02 asgari alanlarını içerir\nok 4 - public/question-engine-analysis.json geçerli JSON ve Aşama 02 asgari alanlarını içerir\n  ---\n  duration_ms: 0.625441\n  type: 'test'\n  ...\n# Subtest: analiz dosyası ölçülmemiş metrikler için uydurma pozitif değer içermez\nok 5 - analiz dosyası ölçülmemiş metrikler için uydurma pozitif değer içermez\n  ---\n  duration_ms: 0.451932\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 78.196558\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage03-question-contract.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 9187,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: her oyunun her turu ortak QuestionContract taşır ve mevcut alanlar korunur\nok 1 - her oyunun her turu ortak QuestionContract taşır ve mevcut alanlar korunur\n  ---\n  duration_ms: 4569.998331\n  type: 'test'\n  ...\n# Subtest: familyId ve skeletonId bilinen oyunlarda sözleşme bunu \"explicit\" olarak işaretler ve semanticFingerprint üretir\nok 2 - familyId ve skeletonId bilinen oyunlarda sözleşme bunu \"explicit\" olarak işaretler ve semanticFingerprint üretir\n  ---\n  duration_ms: 2075.692218\n  type: 'test'\n  ...\n# Subtest: surfaceFingerprint ve questionKey her turda dolu olmalı (tekrar denetimi için asgari zorunluluk)\nok 3 - surfaceFingerprint ve questionKey her turda dolu olmalı (tekrar denetimi için asgari zorunluluk)\n  ---\n  duration_ms: 2273.916171\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 9155.398742\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-admin-dashboard-expansion.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 117,
+      "error": null,
+      "metrics": {
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Aşama 04: admin komuta merkezi genişletilmiş bölümlerin tamamını render eder\nok 1 - Aşama 04: admin komuta merkezi genişletilmiş bölümlerin tamamını render eder\n  ---\n  duration_ms: 0.864937\n  type: 'test'\n  ...\n# Subtest: gameProgressMatrix: pattern-lab, speed-math ve target-number PASS, gerçek 12/12 aile ve 48/48 iskelet ile işaretli; uydurma satır yok\nok 2 - gameProgressMatrix: pattern-lab, speed-math ve target-number PASS, gerçek 12/12 aile ve 48/48 iskelet ile işaretli; uydurma satır yok\n  ---\n  duration_ms: 0.183312\n  type: 'test'\n  ...\n# Subtest: stage06OptionQualityInfra: 13 alanın tamamı NOT_MEASURED_YET (uydurma pozitif değer yok)\nok 3 - stage06OptionQualityInfra: 13 alanın tamamı NOT_MEASURED_YET (uydurma pozitif değer yok)\n  ---\n  duration_ms: 0.148981\n  type: 'test'\n  ...\n# Subtest: stageProgressView: 15 aşamanın tamamı listelenir ve Aşama 1-4 PASS görünür\nok 4 - stageProgressView: 15 aşamanın tamamı listelenir ve Aşama 1-4 PASS görünür\n  ---\n  duration_ms: 0.163252\n  type: 'test'\n  ...\n# Subtest: blockerView: hiçbir blocker CRITICAL değil ve B-006 RESOLVED\nok 5 - blockerView: hiçbir blocker CRITICAL değil ve B-006 RESOLVED\n  ---\n  duration_ms: 0.199217\n  type: 'test'\n  ...\n# Subtest: testCostAndQuota: yalnız gerçekten çalıştırılan komutlar var, kota/token tahmini uydurulmamış\nok 6 - testCostAndQuota: yalnız gerçekten çalıştırılan komutlar var, kota/token tahmini uydurulmamış\n  ---\n  duration_ms: 0.106839\n  type: 'test'\n  ...\n# Subtest: liveGeneratedQuestionSamples.samples: options her zaman Array; expression NOT_APPLICABLE; kimlik alanları dolu\nok 7 - liveGeneratedQuestionSamples.samples: options her zaman Array; expression NOT_APPLICABLE; kimlik alanları dolu\n  ---\n  duration_ms: 0.178295\n  type: 'test'\n  ...\n# Subtest: gameProgressMatrix.summary: 23 PASS / 0 WAITING / 23 total (rows ile uyumlu)\nok 8 - gameProgressMatrix.summary: 23 PASS / 0 WAITING / 23 total (rows ile uyumlu)\n  ---\n  duration_ms: 0.12055\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 87.776729\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-analysis-options-contract.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 109,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 1) options Array olduğunda render — seçenekler listelenir\nok 1 - 1) options Array olduğunda render — seçenekler listelenir\n  ---\n  duration_ms: 1.075991\n  type: 'test'\n  ...\n# Subtest: 2) options [] + questionKind expression — serbest cevap metni\nok 2 - 2) options [] + questionKind expression — serbest cevap metni\n  ---\n  duration_ms: 0.16797\n  type: 'test'\n  ...\n# Subtest: 3) options undefined — kontrollü görünüm (çökmez)\nok 3 - 3) options undefined — kontrollü görünüm (çökmez)\n  ---\n  duration_ms: 0.249791\n  type: 'test'\n  ...\n# Subtest: 4) options string legacy — Array + NOT_APPLICABLE normalize\nok 4 - 4) options string legacy — Array + NOT_APPLICABLE normalize\n  ---\n  duration_ms: 0.200668\n  type: 'test'\n  ...\n# Subtest: 5) options object — INVALID_CONTRACT + tip/kimlik bilgisi\nok 5 - 5) options object — INVALID_CONTRACT + tip/kimlik bilgisi\n  ---\n  duration_ms: 0.598801\n  type: 'test'\n  ...\n# Subtest: 6) multiple-choice ve expression aynı listede render\nok 6 - 6) multiple-choice ve expression aynı listede render\n  ---\n  duration_ms: 0.341038\n  type: 'test'\n  ...\n# Subtest: 7) gerçek public/question-engine-analysis.json — options hiçbir yerde string değil; render PASS\nok 7 - 7) gerçek public/question-engine-analysis.json — options hiçbir yerde string değil; render PASS\n  ---\n  duration_ms: 0.562437\n  type: 'test'\n  ...\n# Subtest: 8) admin ekranı hiçbir örnekte çökmez (bozuk örnek kardeşleri bozmaz)\nok 8 - 8) admin ekranı hiçbir örnekte çökmez (bozuk örnek kardeşleri bozmaz)\n  ---\n  duration_ms: 0.323341\n  type: 'test'\n  ...\n# Subtest: gameProgressMatrix.summary rows ile aynı tek kaynaktan (23 PASS / 0 WAITING / 23)\nok 9 - gameProgressMatrix.summary rows ile aynı tek kaynaktan (23 PASS / 0 WAITING / 23)\n  ---\n  duration_ms: 0.311383\n  type: 'test'\n  ...\n# Subtest: platform: analysis-sample-contract import + renderLiveSampleCardHtml kullanır; ham .map(options) yok\nok 10 - platform: analysis-sample-contract import + renderLiveSampleCardHtml kullanır; ham .map(options) yok\n  ---\n  duration_ms: 0.331032\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 85.709423\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-english-cloze-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 777,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: english-cloze aileleri yapısal olarak geçerlidir\nok 1 - english-cloze aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.89393\n  type: 'test'\n  ...\n# Subtest: english-cloze Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - english-cloze Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.327747\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve ec-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve ec-* önekine sahiptir\n  ---\n  duration_ms: 0.303611\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 16.287379\n  type: 'test'\n  ...\n# Subtest: article forced ARTIKEL zorunluluğu\nok 5 - article forced ARTIKEL zorunluluğu\n  ---\n  duration_ms: 0.224484\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-boşluk türünü kapsar\nok 6 - misread-taxonomy dört yanlış-boşluk türünü kapsar\n  ---\n  duration_ms: 0.314708\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:10 üretir\nok 7 - generateFromFamilies sessionLength:10 üretir\n  ---\n  duration_ms: 1.319994\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession english-cloze yeni motor (sessionLength 10)\nok 8 - CANLI: createGameSession english-cloze yeni motor (sessionLength 10)\n  ---\n  duration_ms: 186.596125\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 320.33245\n  type: 'test'\n  ...\n# Subtest: subject-verb spot uyum ihlalini yakalar\nok 10 - subject-verb spot uyum ihlalini yakalar\n  ---\n  duration_ms: 0.560774\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 750.816399\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-english-sentence-builder-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 546,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: english-sentence-builder aileleri yapısal olarak geçerlidir\nok 1 - english-sentence-builder aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 2.299821\n  type: 'test'\n  ...\n# Subtest: english-sentence-builder Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - english-sentence-builder Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.34336\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve esb-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve esb-* önekine sahiptir\n  ---\n  duration_ms: 0.319816\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli tur üretir (wordOrder veya choice)\nok 4 - her kombinasyon geçerli tur üretir (wordOrder veya choice)\n  ---\n  duration_ms: 5.276249\n  type: 'test'\n  ...\n# Subtest: select-valid iskeletleri wordOrder üretir\nok 5 - select-valid iskeletleri wordOrder üretir\n  ---\n  duration_ms: 0.264012\n  type: 'test'\n  ...\n# Subtest: misorder-taxonomy dört yanlış-sıra türünü kapsar\nok 6 - misorder-taxonomy dört yanlış-sıra türünü kapsar\n  ---\n  duration_ms: 0.351693\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:10 üretir\nok 7 - generateFromFamilies sessionLength:10 üretir\n  ---\n  duration_ms: 1.311671\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession english-sentence-builder yeni motor\nok 8 - CANLI: createGameSession english-sentence-builder yeni motor\n  ---\n  duration_ms: 123.756574\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 195.856962\n  type: 'test'\n  ...\n# Subtest: svo forced özne ile başlar\nok 10 - svo forced özne ile başlar\n  ---\n  duration_ms: 0.486745\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 513.86949\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-english-vocabulary-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 890,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: english-vocabulary aileleri yapısal olarak geçerlidir\nok 1 - english-vocabulary aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.848252\n  type: 'test'\n  ...\n# Subtest: english-vocabulary Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - english-vocabulary Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.339265\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve ev-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve ev-* önekine sahiptir\n  ---\n  duration_ms: 0.370551\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 7.43438\n  type: 'test'\n  ...\n# Subtest: synonym forced ESANLAM zorunluluğu\nok 5 - synonym forced ESANLAM zorunluluğu\n  ---\n  duration_ms: 0.197424\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.428748\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:20 üretir\nok 7 - generateFromFamilies sessionLength:20 üretir\n  ---\n  duration_ms: 1.861479\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession english-vocabulary yeni motor (sessionLength 20)\nok 8 - CANLI: createGameSession english-vocabulary yeni motor (sessionLength 20)\n  ---\n  duration_ms: 213.269015\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 416.486932\n  type: 'test'\n  ...\n# Subtest: false-friend spot yanlış dostu yakalar\nok 10 - false-friend spot yanlış dostu yakalar\n  ---\n  duration_ms: 0.479293\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 846.747408\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-error-detective-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 425,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: error-detective aileleri yapısal olarak geçerlidir\nok 1 - error-detective aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.969732\n  type: 'test'\n  ...\n# Subtest: error-detective Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - error-detective Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.327747\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir\nok 3 - familyId/skeletonId benzersizdir\n  ---\n  duration_ms: 0.173879\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 16.795265\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: operator-priority identify-wrong-result\nok 5 - bağımsız doğrulama: operator-priority identify-wrong-result\n  ---\n  duration_ms: 0.400957\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: perimeter-area identify-wrong-result\nok 6 - bağımsız doğrulama: perimeter-area identify-wrong-result\n  ---\n  duration_ms: 0.26922\n  type: 'test'\n  ...\n# Subtest: find-first-error-step cevap indeksi adım seçenekleriyle uyumludur\nok 7 - find-first-error-step cevap indeksi adım seçenekleriyle uyumludur\n  ---\n  duration_ms: 0.286116\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies oturum içi tekrarsızlık\nok 8 - generateFromFamilies oturum içi tekrarsızlık\n  ---\n  duration_ms: 0.88027\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession error-detective yeni motor\nok 9 - CANLI: createGameSession error-detective yeni motor\n  ---\n  duration_ms: 85.404205\n  type: 'test'\n  ...\n# Subtest: CANLI: ilk iki pilot oturumu 0 questionKey tekrar ve 0 underfill üretir\nok 10 - CANLI: ilk iki pilot oturumu 0 questionKey tekrar ve 0 underfill üretir\n  ---\n  duration_ms: 56.134181\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 397.555989\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-forbidden-story-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 542,
+      "error": null,
+      "metrics": {
+        "tests": 9,
+        "pass": 9,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: forbidden-story aileleri yapısal olarak geçerlidir\nok 1 - forbidden-story aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.815053\n  type: 'test'\n  ...\n# Subtest: forbidden-story Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - forbidden-story Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.314578\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve fs-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve fs-* önekine sahiptir\n  ---\n  duration_ms: 0.30277\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli tur üretir (story veya choice)\nok 4 - her kombinasyon geçerli tur üretir (story veya choice)\n  ---\n  duration_ms: 15.986472\n  type: 'test'\n  ...\n# Subtest: vowel/consonant/soft ailelerinde forced güvenli, spot güvensiz\nok 5 - vowel/consonant/soft ailelerinde forced güvenli, spot güvensiz\n  ---\n  duration_ms: 7.565314\n  type: 'test'\n  ...\n# Subtest: violation-taxonomy dört ihlal türünü kapsar\nok 6 - violation-taxonomy dört ihlal türünü kapsar\n  ---\n  duration_ms: 0.422799\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies count:1 çalışır\nok 7 - generateFromFamilies count:1 çalışır\n  ---\n  duration_ms: 0.643087\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession forbidden-story yeni motor\nok 8 - CANLI: createGameSession forbidden-story yeni motor\n  ---\n  duration_ms: 99.60203\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 167.359187\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 515.318712\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-geometry-lab-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 3154,
+      "error": null,
+      "metrics": {
+        "tests": 11,
+        "pass": 11,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: geometry-lab ailelerinin her biri yapısal olarak geçerlidir (familyId, skeletonId, generate, reasoningPathIds, cognitiveTraits)\nok 1 - geometry-lab ailelerinin her biri yapısal olarak geçerlidir (familyId, skeletonId, generate, reasoningPathIds, cognitiveTraits)\n  ---\n  duration_ms: 0.848953\n  type: 'test'\n  ...\n# Subtest: geometry-lab, Aşama 04 hedeflerinin tamamına ulaşır: >=12 aile, aile başına >=4 iskelet, iskelet başına >=3 düşünme yolu\nok 2 - geometry-lab, Aşama 04 hedeflerinin tamamına ulaşır: >=12 aile, aile başına >=4 iskelet, iskelet başına >=3 düşünme yolu\n  ---\n  duration_ms: 0.407135\n  type: 'test'\n  ...\n# Subtest: bütün familyId ve skeletonId değerleri global olarak benzersizdir\nok 3 - bütün familyId ve skeletonId değerleri global olarak benzersizdir\n  ---\n  duration_ms: 0.144195\n  type: 'test'\n  ...\n# Subtest: direct-compute (raw-numeric yolu): her ailenin değeri, prompt/context METNİNDEN çıkarılan sayılarla, üretim kodundan bağımsız FARKLI bir formülle yeniden hesaplanınca aynı sonucu verir\nok 4 - direct-compute (raw-numeric yolu): her ailenin değeri, prompt/context METNİNDEN çıkarılan sayılarla, üretim kodundan bağımsız FARKLI bir formülle yeniden hesaplanınca aynı sonucu verir\n  ---\n  duration_ms: 3.181142\n  type: 'test'\n  ...\n# Subtest: missing-dimension-reverse (raw-numeric yolu): eksik boyut, context metninden çıkarılan sayılarla bağımsız TERS formülle yeniden hesaplanınca üretimle aynı sonucu verir\nok 5 - missing-dimension-reverse (raw-numeric yolu): eksik boyut, context metninden çıkarılan sayılarla bağımsız TERS formülle yeniden hesaplanınca üretimle aynı sonucu verir\n  ---\n  duration_ms: 2.254163\n  type: 'test'\n  ...\n# Subtest: verify-and-correct (raw-numeric yolu): arkadaşın \"yanlış\" sonucu bağımsız yanılgı-formülüyle teyit edilir ve doğru cevaptan FARKLIDIR\nok 6 - verify-and-correct (raw-numeric yolu): arkadaşın \"yanlış\" sonucu bağımsız yanılgı-formülüyle teyit edilir ve doğru cevaptan FARKLIDIR\n  ---\n  duration_ms: 1.463006\n  type: 'test'\n  ...\n# Subtest: compare-two-shapes (her yol): açıklamadaki A/B değerlerinin farkı, bağımsız çıkarma işlemiyle doğru cevap seçeneğine eşittir\nok 7 - compare-two-shapes (her yol): açıklamadaki A/B değerlerinin farkı, bağımsız çıkarma işlemiyle doğru cevap seçeneğine eşittir\n  ---\n  duration_ms: 1.767259\n  type: 'test'\n  ...\n# Subtest: her iskelet-yol kombinasyonunda tam olarak 4 benzersiz, negatif olmayan tam sayı seçenek üretilir (100+ seed)\nok 8 - her iskelet-yol kombinasyonunda tam olarak 4 benzersiz, negatif olmayan tam sayı seçenek üretilir (100+ seed)\n  ---\n  duration_ms: 5.268678\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies: geometry-lab havuzundan tam bir oturum (6 tur) üretildiğinde aynı familyId/skeletonId oturum içinde tekrar etmez\nok 9 - generateFromFamilies: geometry-lab havuzundan tam bir oturum (6 tur) üretildiğinde aynı familyId/skeletonId oturum içinde tekrar etmez\n  ---\n  duration_ms: 1.053938\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: createGameSession(\"geometry-lab\", ...) yeni aile motorunu kullanır, questionContract EXPLICIT_MULTI_PATH işaretler\nok 10 - CANLI ENTEGRASYON: createGameSession(\"geometry-lab\", ...) yeni aile motorunu kullanır, questionContract EXPLICIT_MULTI_PATH işaretler\n  ---\n  duration_ms: 120.600463\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: 30 ardışık geometry-lab oturumu (farklı seed, aynı öğrenci) hiçbir turda questionKey tekrar etmez, underfill olmaz ve zamanla her 4 görev türü de kullanılır\nok 11 - CANLI ENTEGRASYON: 30 ardışık geometry-lab oturumu (farklı seed, aynı öğrenci) hiçbir turda questionKey tekrar etmez, underfill olmaz ve zamanla her 4 görev türü de kullanılır\n  ---\n  duration_ms: 2798.115508\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3129.524165\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-lgs-foundation-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 699,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: lgs-foundation aileleri yapısal olarak geçerlidir\nok 1 - lgs-foundation aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.876083\n  type: 'test'\n  ...\n# Subtest: lgs-foundation Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - lgs-foundation Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.321989\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve lgs-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve lgs-* önekine sahiptir\n  ---\n  duration_ms: 0.30888\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 4.49099\n  type: 'test'\n  ...\n# Subtest: ratio forced ORAN-BIRIM zorunluluğu\nok 5 - ratio forced ORAN-BIRIM zorunluluğu\n  ---\n  duration_ms: 0.21525\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.498532\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:10 üretir\nok 7 - generateFromFamilies sessionLength:10 üretir\n  ---\n  duration_ms: 1.289118\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession lgs-foundation yeni motor\nok 8 - CANLI: createGameSession lgs-foundation yeni motor\n  ---\n  duration_ms: 167.333389\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 279.945715\n  type: 'test'\n  ...\n# Subtest: variable-control spot iki-degisken yakalar\nok 10 - variable-control spot iki-degisken yakalar\n  ---\n  duration_ms: 0.486483\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 669.169133\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-logic-station-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 2963,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: logic-station aileleri yapısal olarak geçerlidir\nok 1 - logic-station aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.892057\n  type: 'test'\n  ...\n# Subtest: logic-station Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - logic-station Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.322159\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir\nok 3 - familyId/skeletonId benzersizdir\n  ---\n  duration_ms: 0.135211\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 4.955452\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: direction-route net yer değiştirme\nok 5 - bağımsız doğrulama: direction-route net yer değiştirme\n  ---\n  duration_ms: 0.464071\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: two-step-code dönüşüm\nok 6 - bağımsız doğrulama: two-step-code dönüşüm\n  ---\n  duration_ms: 0.86722\n  type: 'test'\n  ...\n# Subtest: binary-switches A,B,A sırası 2 ve 3 açık\nok 7 - binary-switches A,B,A sırası 2 ve 3 açık\n  ---\n  duration_ms: 0.20807\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies oturum içi tekrarsızlık\nok 8 - generateFromFamilies oturum içi tekrarsızlık\n  ---\n  duration_ms: 0.994419\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession logic-station yeni motor\nok 9 - CANLI: createGameSession logic-station yeni motor\n  ---\n  duration_ms: 159.867193\n  type: 'test'\n  ...\n# Subtest: CANLI: 20 ardışık oturum 0 underfill\nok 10 - CANLI: 20 ardışık oturum 0 underfill\n  ---\n  duration_ms: 2551.886536\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2934.98252\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-meaning-hunt-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 623,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: meaning-hunt aileleri yapısal olarak geçerlidir\nok 1 - meaning-hunt aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.850365\n  type: 'test'\n  ...\n# Subtest: meaning-hunt Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - meaning-hunt Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.338274\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve mh-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve mh-* önekine sahiptir\n  ---\n  duration_ms: 0.368808\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 5.29697\n  type: 'test'\n  ...\n# Subtest: literal-vs-figurative forced mecaz zorunluluğu\nok 5 - literal-vs-figurative forced mecaz zorunluluğu\n  ---\n  duration_ms: 0.2349\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.338774\n  type: 'test'\n  ...\n# Subtest: idiom spot sözel çeviri ihlalini yakalar\nok 7 - idiom spot sözel çeviri ihlalini yakalar\n  ---\n  duration_ms: 0.237533\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies oturum içi tekrarsızlık\nok 8 - generateFromFamilies oturum içi tekrarsızlık\n  ---\n  duration_ms: 0.805398\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession meaning-hunt yeni motor\nok 9 - CANLI: createGameSession meaning-hunt yeni motor\n  ---\n  duration_ms: 142.278086\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 10 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 246.982768\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 599.208197\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-olympiad-ladder-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 3519,
+      "error": null,
+      "metrics": {
+        "tests": 11,
+        "pass": 11,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: olympiad-ladder aileleri yapısal olarak geçerlidir\nok 1 - olympiad-ladder aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.938325\n  type: 'test'\n  ...\n# Subtest: olympiad-ladder Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - olympiad-ladder Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.316911\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir\nok 3 - familyId/skeletonId benzersizdir\n  ---\n  duration_ms: 0.138146\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 5.862751\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: digit-reversal AB−BA = 9|A−B|\nok 5 - bağımsız doğrulama: digit-reversal AB−BA = 9|A−B|\n  ---\n  duration_ms: 0.431812\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: pigeonhole C×(W−1)+1\nok 6 - bağımsız doğrulama: pigeonhole C×(W−1)+1\n  ---\n  duration_ms: 0.356731\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: set-inclusion A+B−both\nok 7 - bağımsız doğrulama: set-inclusion A+B−both\n  ---\n  duration_ms: 0.444351\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: reverse-machine ters işlem\nok 8 - bağımsız doğrulama: reverse-machine ters işlem\n  ---\n  duration_ms: 0.380817\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies oturum içi tekrarsızlık\nok 9 - generateFromFamilies oturum içi tekrarsızlık\n  ---\n  duration_ms: 0.98853\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession olympiad-ladder yeni motor\nok 10 - CANLI: createGameSession olympiad-ladder yeni motor\n  ---\n  duration_ms: 160.629502\n  type: 'test'\n  ...\n# Subtest: CANLI: 20 ardışık oturum 0 underfill\nok 11 - CANLI: 20 ardışık oturum 0 underfill\n  ---\n  duration_ms: 3092.21981\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3484.823343\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-paragraph-detective-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 346,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: paragraph-detective aileleri yapısal olarak geçerlidir\nok 1 - paragraph-detective aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.905377\n  type: 'test'\n  ...\n# Subtest: paragraph-detective Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - paragraph-detective Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.321388\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve pd-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve pd-* önekine sahiptir\n  ---\n  duration_ms: 0.30932\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 6.583644\n  type: 'test'\n  ...\n# Subtest: main-idea forced ANA-DUSUNCE zorunluluğu\nok 5 - main-idea forced ANA-DUSUNCE zorunluluğu\n  ---\n  duration_ms: 0.267448\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 1.500502\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:8 üretir\nok 7 - generateFromFamilies sessionLength:8 üretir\n  ---\n  duration_ms: 1.080097\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession paragraph-detective yeni motor\nok 8 - CANLI: createGameSession paragraph-detective yeni motor\n  ---\n  duration_ms: 47.644627\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 58.569289\n  type: 'test'\n  ...\n# Subtest: irrelevant-info spot gerekli bilgiyi gereksiz sanmaz\nok 10 - irrelevant-info spot gerekli bilgiyi gereksiz sanmaz\n  ---\n  duration_ms: 0.440826\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 316.284483\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-pattern-lab-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 2760,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: pattern-lab ailelerinin her biri yapısal olarak geçerlidir (familyId, skeletonId, generate, reasoningPathIds, cognitiveTraits)\nok 1 - pattern-lab ailelerinin her biri yapısal olarak geçerlidir (familyId, skeletonId, generate, reasoningPathIds, cognitiveTraits)\n  ---\n  duration_ms: 0.917915\n  type: 'test'\n  ...\n# Subtest: pattern-lab, Aşama 04 hedeflerinin tamamına ulaşır: >=12 aile, aile başına >=4 iskelet, iskelet başına >=3 düşünme yolu\nok 2 - pattern-lab, Aşama 04 hedeflerinin tamamına ulaşır: >=12 aile, aile başına >=4 iskelet, iskelet başına >=3 düşünme yolu\n  ---\n  duration_ms: 0.335038\n  type: 'test'\n  ...\n# Subtest: bütün familyId ve skeletonId değerleri global olarak benzersizdir (aynı isim iki ailede tekrar etmiyor)\nok 3 - bütün familyId ve skeletonId değerleri global olarak benzersizdir (aynı isim iki ailede tekrar etmiyor)\n  ---\n  duration_ms: 0.135602\n  type: 'test'\n  ...\n# Subtest: her aile-iskelet-yol kombinasyonu geçerli bir soru üretir: 4 benzersiz negatif olmayan seçenek, geçerli answerIndex, dolu questionKey\nok 4 - her aile-iskelet-yol kombinasyonu geçerli bir soru üretir: 4 benzersiz negatif olmayan seçenek, geçerli answerIndex, dolu questionKey\n  ---\n  duration_ms: 5.79453\n  type: 'test'\n  ...\n# Subtest: bağımsız yeniden hesaplama: next-term (induction-raw) cevabı, dizinin kendi kuralından doğru şekilde türetilir (üreticiden bağımsız doğrulama)\nok 5 - bağımsız yeniden hesaplama: next-term (induction-raw) cevabı, dizinin kendi kuralından doğru şekilde türetilir (üreticiden bağımsız doğrulama)\n  ---\n  duration_ms: 0.317132\n  type: 'test'\n  ...\n# Subtest: bağımsız yeniden hesaplama: error-detection doğru cevabı, bozuk olmayan komşu terimlerden çıkarılan kuralla tutarlıdır (fibonacci ailesi)\nok 6 - bağımsız yeniden hesaplama: error-detection doğru cevabı, bozuk olmayan komşu terimlerden çıkarılan kuralla tutarlıdır (fibonacci ailesi)\n  ---\n  duration_ms: 0.226117\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies: pattern-lab havuzundan tam bir oturum (8 tur) üretildiğinde aynı familyId/skeletonId oturum içinde tekrar etmez\nok 7 - generateFromFamilies: pattern-lab havuzundan tam bir oturum (8 tur) üretildiğinde aynı familyId/skeletonId oturum içinde tekrar etmez\n  ---\n  duration_ms: 1.244792\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies: önceki oturumun familyId/skeletonId geçmişi, havuz yeterliyken sonraki oturumda öncelik dışı bırakılır\nok 8 - generateFromFamilies: önceki oturumun familyId/skeletonId geçmişi, havuz yeterliyken sonraki oturumda öncelik dışı bırakılır\n  ---\n  duration_ms: 1.339663\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: createGameSession(\"pattern-lab\", ...) yeni aile motorunu kullanır, questionContract EXPLICIT_MULTI_PATH işaretler\nok 9 - CANLI ENTEGRASYON: createGameSession(\"pattern-lab\", ...) yeni aile motorunu kullanır, questionContract EXPLICIT_MULTI_PATH işaretler\n  ---\n  duration_ms: 110.185235\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: 20 ardışık pattern-lab oturumu (farklı seed, aynı öğrenci) hiçbir turda familyId+skeletonId+questionKey üçlüsünü tekrar etmez\nok 10 - CANLI ENTEGRASYON: 20 ardışık pattern-lab oturumu (farklı seed, aynı öğrenci) hiçbir turda familyId+skeletonId+questionKey üçlüsünü tekrar etmez\n  ---\n  duration_ms: 2343.144983\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2703.794925\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-problem-hunter-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 3980,
+      "error": null,
+      "metrics": {
+        "tests": 11,
+        "pass": 11,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: problem-hunter ailelerinin her biri yapısal olarak geçerlidir\nok 1 - problem-hunter ailelerinin her biri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.848232\n  type: 'test'\n  ...\n# Subtest: problem-hunter Aşama 04 hedeflerine ulaşır: >=12 aile, >=4 iskelet, >=3 yol\nok 2 - problem-hunter Aşama 04 hedeflerine ulaşır: >=12 aile, >=4 iskelet, >=3 yol\n  ---\n  duration_ms: 0.328108\n  type: 'test'\n  ...\n# Subtest: familyId ve skeletonId değerleri global olarak benzersizdir\nok 3 - familyId ve skeletonId değerleri global olarak benzersizdir\n  ---\n  duration_ms: 0.137334\n  type: 'test'\n  ...\n# Subtest: her aile-iskelet-yol kombinasyonu geçerli soru üretir\nok 4 - her aile-iskelet-yol kombinasyonu geçerli soru üretir\n  ---\n  duration_ms: 5.651857\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: multiply-then-subtract direct-solve cevabı üretimden bağımsız yeniden hesaplanır\nok 5 - bağımsız doğrulama: multiply-then-subtract direct-solve cevabı üretimden bağımsız yeniden hesaplanır\n  ---\n  duration_ms: 0.407646\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: percent-of-base reverse cevabı üretimden bağımsız yeniden hesaplanır\nok 6 - bağımsız doğrulama: percent-of-base reverse cevabı üretimden bağımsız yeniden hesaplanır\n  ---\n  duration_ms: 0.262019\n  type: 'test'\n  ...\n# Subtest: linear aile trivialLinear/trivialPrompt desenlerini üretmez (B-002 koruması)\nok 7 - linear aile trivialLinear/trivialPrompt desenlerini üretmez (B-002 koruması)\n  ---\n  duration_ms: 0.765578\n  type: 'test'\n  ...\n# Subtest: verify-and-correct yanlış değer doğru cevaptan farklıdır\nok 8 - verify-and-correct yanlış değer doğru cevaptan farklıdır\n  ---\n  duration_ms: 0.46361\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies: oturum içi familyId/skeletonId tekrarı olmaz\nok 9 - generateFromFamilies: oturum içi familyId/skeletonId tekrarı olmaz\n  ---\n  duration_ms: 0.991395\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: createGameSession(\"problem-hunter\") yeni motoru kullanır\nok 10 - CANLI ENTEGRASYON: createGameSession(\"problem-hunter\") yeni motoru kullanır\n  ---\n  duration_ms: 189.508718\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: 30 ardışık oturum 0 questionKey tekrarı, 0 underfill (B-002 kapanışı bu oyun için)\nok 11 - CANLI ENTEGRASYON: 30 ardışık oturum 0 questionKey tekrarı, 0 underfill (B-002 kapanışı bu oyun için)\n  ---\n  duration_ms: 3520.498248\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3941.819947\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-religion-practice-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 799,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: religion-practice aileleri yapısal olarak geçerlidir\nok 1 - religion-practice aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.992857\n  type: 'test'\n  ...\n# Subtest: religion-practice Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - religion-practice Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.352774\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve rp-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve rp-* önekine sahiptir\n  ---\n  duration_ms: 6.136529\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 21.895493\n  type: 'test'\n  ...\n# Subtest: belief-practice forced INANC-PRATIK zorunluluğu\nok 5 - belief-practice forced INANC-PRATIK zorunluluğu\n  ---\n  duration_ms: 0.433494\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.851887\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:10 üretir\nok 7 - generateFromFamilies sessionLength:10 üretir\n  ---\n  duration_ms: 3.532105\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession religion-practice yeni motor\nok 8 - CANLI: createGameSession religion-practice yeni motor\n  ---\n  duration_ms: 210.608947\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 280.998721\n  type: 'test'\n  ...\n# Subtest: respect-diversity spot ihlali yakalar\nok 10 - respect-diversity spot ihlali yakalar\n  ---\n  duration_ms: 0.633522\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 774.275862\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-science-lab-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 790,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: science-lab aileleri yapısal olarak geçerlidir\nok 1 - science-lab aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 1.308727\n  type: 'test'\n  ...\n# Subtest: science-lab Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - science-lab Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.493745\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve sl-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve sl-* önekine sahiptir\n  ---\n  duration_ms: 0.496528\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 7.22605\n  type: 'test'\n  ...\n# Subtest: phase-change forced HAL-DEGISTIR zorunluluğu\nok 5 - phase-change forced HAL-DEGISTIR zorunluluğu\n  ---\n  duration_ms: 0.400195\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.61786\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:6 üretir\nok 7 - generateFromFamilies sessionLength:6 üretir\n  ---\n  duration_ms: 1.395937\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession science-lab yeni motor\nok 8 - CANLI: createGameSession science-lab yeni motor\n  ---\n  duration_ms: 156.270337\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 278.080059\n  type: 'test'\n  ...\n# Subtest: light-source-reflector spot yanlış etiketi yakalar\nok 10 - light-source-reflector spot yanlış etiketi yakalar\n  ---\n  duration_ms: 0.622676\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 766.035974\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-science-reasoning-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 375,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: science-reasoning aileleri yapısal olarak geçerlidir\nok 1 - science-reasoning aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 1.307665\n  type: 'test'\n  ...\n# Subtest: science-reasoning Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - science-reasoning Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.476449\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve sr-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve sr-* önekine sahiptir\n  ---\n  duration_ms: 0.427046\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 11.597593\n  type: 'test'\n  ...\n# Subtest: independent-variable forced BAGIMSIZ zorunluluğu\nok 5 - independent-variable forced BAGIMSIZ zorunluluğu\n  ---\n  duration_ms: 0.344383\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.488847\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:5 üretir\nok 7 - generateFromFamilies sessionLength:5 üretir\n  ---\n  duration_ms: 1.399893\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession science-reasoning yeni motor\nok 8 - CANLI: createGameSession science-reasoning yeni motor\n  ---\n  duration_ms: 66.579901\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 42.764347\n  type: 'test'\n  ...\n# Subtest: confounding spot ihlali yakalar\nok 10 - confounding spot ihlali yakalar\n  ---\n  duration_ms: 0.403961\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 346.562095\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-social-citizenship-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 698,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: social-citizenship aileleri yapısal olarak geçerlidir\nok 1 - social-citizenship aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.879759\n  type: 'test'\n  ...\n# Subtest: social-citizenship Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - social-citizenship Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.389279\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve sc-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve sc-* önekine sahiptir\n  ---\n  duration_ms: 0.31597\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 4.159448\n  type: 'test'\n  ...\n# Subtest: rights-duties forced ayrim zorunluluğu\nok 5 - rights-duties forced ayrim zorunluluğu\n  ---\n  duration_ms: 0.234308\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.542547\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:10 üretir\nok 7 - generateFromFamilies sessionLength:10 üretir\n  ---\n  duration_ms: 1.3915\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession social-citizenship yeni motor (sessionLength 10)\nok 8 - CANLI: createGameSession social-citizenship yeni motor (sessionLength 10)\n  ---\n  duration_ms: 138.376102\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 292.506425\n  type: 'test'\n  ...\n# Subtest: equality spot eşitlik ihlalini yakalar\nok 10 - equality spot eşitlik ihlalini yakalar\n  ---\n  duration_ms: 0.664468\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 670.837985\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-social-map-skills-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 737,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: social-map-skills aileleri yapısal olarak geçerlidir\nok 1 - social-map-skills aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.808904\n  type: 'test'\n  ...\n# Subtest: social-map-skills Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - social-map-skills Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.348549\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve sm-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve sm-* önekine sahiptir\n  ---\n  duration_ms: 0.301138\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 3.966421\n  type: 'test'\n  ...\n# Subtest: cardinal-direction forced yon zorunluluğu\nok 5 - cardinal-direction forced yon zorunluluğu\n  ---\n  duration_ms: 0.267077\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.350542\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:10 üretir\nok 7 - generateFromFamilies sessionLength:10 üretir\n  ---\n  duration_ms: 1.262057\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession social-map-skills yeni motor (sessionLength 10)\nok 8 - CANLI: createGameSession social-map-skills yeni motor (sessionLength 10)\n  ---\n  duration_ms: 153.630915\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 363.490118\n  type: 'test'\n  ...\n# Subtest: scale-distance spot ölçek ihlalini yakalar\nok 10 - scale-distance spot ölçek ihlalini yakalar\n  ---\n  duration_ms: 0.708344\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 707.553991\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-social-time-travel-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 870,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: social-time-travel aileleri yapısal olarak geçerlidir\nok 1 - social-time-travel aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 0.87374\n  type: 'test'\n  ...\n# Subtest: social-time-travel Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - social-time-travel Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.335519\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve stt-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve stt-* önekine sahiptir\n  ---\n  duration_ms: 0.299265\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli choice turu üretir\nok 4 - her kombinasyon geçerli choice turu üretir\n  ---\n  duration_ms: 5.456347\n  type: 'test'\n  ...\n# Subtest: primary-source forced dogudan zorunluluğu\nok 5 - primary-source forced dogudan zorunluluğu\n  ---\n  duration_ms: 0.231093\n  type: 'test'\n  ...\n# Subtest: misread-taxonomy dört yanlış-okuma türünü kapsar\nok 6 - misread-taxonomy dört yanlış-okuma türünü kapsar\n  ---\n  duration_ms: 0.408047\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:10 üretir\nok 7 - generateFromFamilies sessionLength:10 üretir\n  ---\n  duration_ms: 1.205524\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession social-time-travel yeni motor (sessionLength 10)\nok 8 - CANLI: createGameSession social-time-travel yeni motor (sessionLength 10)\n  ---\n  duration_ms: 229.33801\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez\n  ---\n  duration_ms: 397.826086\n  type: 'test'\n  ...\n# Subtest: anachronism spot çağdışı ihlali yakalar\nok 10 - anachronism spot çağdışı ihlali yakalar\n  ---\n  duration_ms: 0.487865\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 843.862151\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-speed-math-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 2773,
+      "error": null,
+      "metrics": {
+        "tests": 11,
+        "pass": 11,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: speed-math ailelerinin her biri yapısal olarak geçerlidir (familyId, skeletonId, generate, reasoningPathIds, cognitiveTraits)\nok 1 - speed-math ailelerinin her biri yapısal olarak geçerlidir (familyId, skeletonId, generate, reasoningPathIds, cognitiveTraits)\n  ---\n  duration_ms: 0.950164\n  type: 'test'\n  ...\n# Subtest: speed-math, Aşama 04 hedeflerinin tamamına ulaşır: >=12 aile, aile başına >=4 iskelet, iskelet başına >=3 düşünme yolu\nok 2 - speed-math, Aşama 04 hedeflerinin tamamına ulaşır: >=12 aile, aile başına >=4 iskelet, iskelet başına >=3 düşünme yolu\n  ---\n  duration_ms: 0.377211\n  type: 'test'\n  ...\n# Subtest: bütün familyId ve skeletonId değerleri global olarak benzersizdir (aynı isim iki ailede tekrar etmiyor)\nok 3 - bütün familyId ve skeletonId değerleri global olarak benzersizdir (aynı isim iki ailede tekrar etmiyor)\n  ---\n  duration_ms: 0.135191\n  type: 'test'\n  ...\n# Subtest: her aile-iskelet-yol kombinasyonu geçerli bir soru üretir: 4 benzersiz negatif olmayan seçenek, geçerli answerIndex, dolu questionKey\nok 4 - her aile-iskelet-yol kombinasyonu geçerli bir soru üretir: 4 benzersiz negatif olmayan seçenek, geçerli answerIndex, dolu questionKey\n  ---\n  duration_ms: 5.845336\n  type: 'test'\n  ...\n# Subtest: bağımsız yeniden hesaplama: two-term-addition/direct-compute (raw-expression) cevabı, promptaki iki sayının toplamıyla üreticiden bağımsız doğrulanır\nok 5 - bağımsız yeniden hesaplama: two-term-addition/direct-compute (raw-expression) cevabı, promptaki iki sayının toplamıyla üreticiden bağımsız doğrulanır\n  ---\n  duration_ms: 0.297622\n  type: 'test'\n  ...\n# Subtest: bağımsız yeniden hesaplama: exact-division/missing-operand (raw-expression) — gizli bölen, bölünen÷bölüm ile üreticiden bağımsız doğrulanır\nok 6 - bağımsız yeniden hesaplama: exact-division/missing-operand (raw-expression) — gizli bölen, bölünen÷bölüm ile üreticiden bağımsız doğrulanır\n  ---\n  duration_ms: 0.29616\n  type: 'test'\n  ...\n# Subtest: bağımsız yeniden hesaplama: compare-two-instances (raw-expression) farkı, A ve B ifadelerinin ayrı ayrı hesaplanmasıyla doğrulanır\nok 7 - bağımsız yeniden hesaplama: compare-two-instances (raw-expression) farkı, A ve B ifadelerinin ayrı ayrı hesaplanmasıyla doğrulanır\n  ---\n  duration_ms: 1.04182\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies: speed-math havuzundan tam bir oturum (8 tur) üretildiğinde aynı familyId/skeletonId oturum içinde tekrar etmez\nok 8 - generateFromFamilies: speed-math havuzundan tam bir oturum (8 tur) üretildiğinde aynı familyId/skeletonId oturum içinde tekrar etmez\n  ---\n  duration_ms: 1.753408\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies: önceki oturumun familyId/skeletonId geçmişi, havuz yeterliyken sonraki oturumda öncelik dışı bırakılır\nok 9 - generateFromFamilies: önceki oturumun familyId/skeletonId geçmişi, havuz yeterliyken sonraki oturumda öncelik dışı bırakılır\n  ---\n  duration_ms: 2.537355\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: createGameSession(\"speed-math\", ...) yeni aile motorunu kullanır, questionContract EXPLICIT_MULTI_PATH işaretler\nok 10 - CANLI ENTEGRASYON: createGameSession(\"speed-math\", ...) yeni aile motorunu kullanır, questionContract EXPLICIT_MULTI_PATH işaretler\n  ---\n  duration_ms: 141.476044\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: 20 ardışık speed-math oturumu (farklı seed, aynı öğrenci) hiçbir turda questionKey tekrar etmez ve underfill olmaz\nok 11 - CANLI ENTEGRASYON: 20 ardışık speed-math oturumu (farklı seed, aynı öğrenci) hiçbir turda questionKey tekrar etmez ve underfill olmaz\n  ---\n  duration_ms: 2352.172908\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2748.454191\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-target-number-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 2957,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: target-number ailelerinin her biri yapısal olarak geçerlidir (familyId, skeletonId, generate, reasoningPathIds, cognitiveTraits)\nok 1 - target-number ailelerinin her biri yapısal olarak geçerlidir (familyId, skeletonId, generate, reasoningPathIds, cognitiveTraits)\n  ---\n  duration_ms: 0.948871\n  type: 'test'\n  ...\n# Subtest: target-number, Aşama 04 hedeflerinin tamamına ulaşır: >=12 aile, aile başına >=4 iskelet, iskelet başına >=3 düşünme yolu\nok 2 - target-number, Aşama 04 hedeflerinin tamamına ulaşır: >=12 aile, aile başına >=4 iskelet, iskelet başına >=3 düşünme yolu\n  ---\n  duration_ms: 0.375178\n  type: 'test'\n  ...\n# Subtest: bütün familyId ve skeletonId değerleri global olarak benzersizdir\nok 3 - bütün familyId ve skeletonId değerleri global olarak benzersizdir\n  ---\n  duration_ms: 0.131936\n  type: 'test'\n  ...\n# Subtest: kind:\"expression\" iskeletlerinde (direct-reach, verify-and-correct) üretilen `solution`, `numbers` ve `target` ile mevcut validateTargetExpression tarafından bağımsız doğrulanır\nok 4 - kind:\"expression\" iskeletlerinde (direct-reach, verify-and-correct) üretilen `solution`, `numbers` ve `target` ile mevcut validateTargetExpression tarafından bağımsız doğrulanır\n  ---\n  duration_ms: 34.907409\n  type: 'test'\n  ...\n# Subtest: verify-and-correct: arkadaşın \"yanlış\" sonucu, bağımsız Function-tabanlı yeniden hesaplamayla da hedeften FARKLI çıkar\nok 5 - verify-and-correct: arkadaşın \"yanlış\" sonucu, bağımsız Function-tabanlı yeniden hesaplamayla da hedeften FARKLI çıkar\n  ---\n  duration_ms: 3.322203\n  type: 'test'\n  ...\n# Subtest: kind:\"choice\" iskeletlerinde (missing-number-reverse, compare-two-expressions) tam olarak 1 doğru seçenek var ve bu, bağımsız Function-tabanlı yeniden hesaplamayla teyit edilir\nok 6 - kind:\"choice\" iskeletlerinde (missing-number-reverse, compare-two-expressions) tam olarak 1 doğru seçenek var ve bu, bağımsız Function-tabanlı yeniden hesaplamayla teyit edilir\n  ---\n  duration_ms: 15.821366\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies: target-number havuzundan tam bir oturum (4 tur) üretildiğinde aynı familyId/skeletonId oturum içinde tekrar etmez\nok 7 - generateFromFamilies: target-number havuzundan tam bir oturum (4 tur) üretildiğinde aynı familyId/skeletonId oturum içinde tekrar etmez\n  ---\n  duration_ms: 1.107558\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies: önceki oturumun familyId/skeletonId geçmişi, havuz yeterliyken sonraki oturumda öncelik dışı bırakılır\nok 8 - generateFromFamilies: önceki oturumun familyId/skeletonId geçmişi, havuz yeterliyken sonraki oturumda öncelik dışı bırakılır\n  ---\n  duration_ms: 0.984765\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: createGameSession(\"target-number\", ...) yeni aile motorunu kullanır, questionContract EXPLICIT_MULTI_PATH işaretler\nok 9 - CANLI ENTEGRASYON: createGameSession(\"target-number\", ...) yeni aile motorunu kullanır, questionContract EXPLICIT_MULTI_PATH işaretler\n  ---\n  duration_ms: 122.490274\n  type: 'test'\n  ...\n# Subtest: CANLI ENTEGRASYON: 30 ardışık target-number oturumu (farklı seed, aynı öğrenci) hiçbir turda questionKey tekrar etmez, underfill olmaz ve zamanla her 4 görev türü de kullanılır\nok 10 - CANLI ENTEGRASYON: 30 ardışık target-number oturumu (farklı seed, aynı öğrenci) hiçbir turda questionKey tekrar etmez, underfill olmaz ve zamanla her 4 görev türü de kullanılır\n  ---\n  duration_ms: 2473.22633\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2917.794876\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-word-ladder-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 778,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: word-ladder aileleri yapısal olarak geçerlidir\nok 1 - word-ladder aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 1.306443\n  type: 'test'\n  ...\n# Subtest: word-ladder Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - word-ladder Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.623538\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir ve wl-* önekine sahiptir\nok 3 - familyId/skeletonId benzersizdir ve wl-* önekine sahiptir\n  ---\n  duration_ms: 0.467465\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli tur üretir (wordLadder veya choice)\nok 4 - her kombinasyon geçerli tur üretir (wordLadder veya choice)\n  ---\n  duration_ms: 34.476908\n  type: 'test'\n  ...\n# Subtest: analyzeLadderPath hata türlerini ayırır\nok 5 - analyzeLadderPath hata türlerini ayırır\n  ---\n  duration_ms: 0.794351\n  type: 'test'\n  ...\n# Subtest: alternatif geçerli yollar tek sabit yola indirgenmez\nok 6 - alternatif geçerli yollar tek sabit yola indirgenmez\n  ---\n  duration_ms: 0.5375\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies sessionLength:10 üretir\nok 7 - generateFromFamilies sessionLength:10 üretir\n  ---\n  duration_ms: 2.41992\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession word-ladder yeni motor\nok 8 - CANLI: createGameSession word-ladder yeni motor\n  ---\n  duration_ms: 167.769248\n  type: 'test'\n  ...\n# Subtest: öğrenci geçmişi aynı iskeleti erken tekrar seçmez (soğuma)\nok 9 - öğrenci geçmişi aynı iskeleti erken tekrar seçmez (soğuma)\n  ---\n  duration_ms: 275.669869\n  type: 'test'\n  ...\n# Subtest: error-taxonomy ailesi beş hata türünü kapsar\nok 10 - error-taxonomy ailesi beş hata türünü kapsar\n  ---\n  duration_ms: 0.694213\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 745.350598\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage04-word-mine-families.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 2901,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: word-mine aileleri yapısal olarak geçerlidir\nok 1 - word-mine aileleri yapısal olarak geçerlidir\n  ---\n  duration_ms: 5.584799\n  type: 'test'\n  ...\n# Subtest: word-mine Aşama 04 hedeflerine ulaşır: 12/4/3\nok 2 - word-mine Aşama 04 hedeflerine ulaşır: 12/4/3\n  ---\n  duration_ms: 0.454266\n  type: 'test'\n  ...\n# Subtest: familyId/skeletonId benzersizdir\nok 3 - familyId/skeletonId benzersizdir\n  ---\n  duration_ms: 0.186277\n  type: 'test'\n  ...\n# Subtest: her kombinasyon geçerli tur üretir (wordMine veya choice)\nok 4 - her kombinasyon geçerli tur üretir (wordMine veya choice)\n  ---\n  duration_ms: 47.459592\n  type: 'test'\n  ...\n# Subtest: wordMine: allowed kelimelerin tamamı canBuildWord geçer\nok 5 - wordMine: allowed kelimelerin tamamı canBuildWord geçer\n  ---\n  duration_ms: 42.600073\n  type: 'test'\n  ...\n# Subtest: bağımsız doğrulama: forced-fact cevabı canBuildWord; spot-violation cevabı değil\nok 6 - bağımsız doğrulama: forced-fact cevabı canBuildWord; spot-violation cevabı değil\n  ---\n  duration_ms: 23.35935\n  type: 'test'\n  ...\n# Subtest: generateFromFamilies count:1 (sessionLength) çalışır\nok 7 - generateFromFamilies count:1 (sessionLength) çalışır\n  ---\n  duration_ms: 1.121157\n  type: 'test'\n  ...\n# Subtest: CANLI: createGameSession word-mine yeni motor\nok 8 - CANLI: createGameSession word-mine yeni motor\n  ---\n  duration_ms: 130.646043\n  type: 'test'\n  ...\n# Subtest: CANLI: 20 ardışık word-mine oturumu 0 underfill\nok 9 - CANLI: 20 ardışık word-mine oturumu 0 underfill\n  ---\n  duration_ms: 2308.057981\n  type: 'test'\n  ...\n# Subtest: choice cevap kodları normalize uzunlukta 12 karakterden kısa\nok 10 - choice cevap kodları normalize uzunlukta 12 karakterden kısa\n  ---\n  duration_ms: 5.924203\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2862.559782\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage05-cognitive-depth.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 21360,
+      "error": null,
+      "metrics": {
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: hard etiketi tek başına evidenceSupportedHard vermez\nok 1 - hard etiketi tek başına evidenceSupportedHard vermez\n  ---\n  duration_ms: 2.584124\n  type: 'test'\n  ...\n# Subtest: iki yüksek özellik + iki adım hard yayın bandı verir\nok 2 - iki yüksek özellik + iki adım hard yayın bandı verir\n  ---\n  duration_ms: 0.43651\n  type: 'test'\n  ...\n# Subtest: grade≥3 easy/medium yayını engellenir\nok 3 - grade≥3 easy/medium yayını engellenir\n  ---\n  duration_ms: 0.36292\n  type: 'test'\n  ...\n# Subtest: grade<3 muaf tutulur\nok 4 - grade<3 muaf tutulur\n  ---\n  duration_ms: 0.231314\n  type: 'test'\n  ...\n# Subtest: yalnız büyük sayı / uzun metin zor sayılmaz\nok 5 - yalnız büyük sayı / uzun metin zor sayılmaz\n  ---\n  duration_ms: 0.252886\n  type: 'test'\n  ...\n# Subtest: HIGH_COGNITIVE_TRAITS en az 8 özellik içerir\nok 6 - HIGH_COGNITIVE_TRAITS en az 8 özellik içerir\n  ---\n  duration_ms: 0.142552\n  type: 'test'\n  ...\n# Subtest: CANLI: 23 oyun × grade≥3 oturumlarında easy/medium yayın = 0 ve skor ≥95\nok 7 - CANLI: 23 oyun × grade≥3 oturumlarında easy/medium yayın = 0 ve skor ≥95\n  ---\n  duration_ms: 20976.327016\n  type: 'test'\n  ...\n# Subtest: CANLI: grade≥3 oturumunda sığ tur filtrelenir (underfill yerine yayınlama yok)\nok 8 - CANLI: grade≥3 oturumunda sığ tur filtrelenir (underfill yerine yayınlama yok)\n  ---\n  duration_ms: 90.589062\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 21313.250016\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage06-premium-options.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 2873,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: alakasız/saçma/tek olumsuz/biçimsel ipucu yakalanır\nok 1 - alakasız/saçma/tek olumsuz/biçimsel ipucu yakalanır\n  ---\n  duration_ms: 3.234311\n  type: 'test'\n  ...\n# Subtest: kör denetçi stem olmadan tahmin edilebilir seçeneği yakalar\nok 2 - kör denetçi stem olmadan tahmin edilebilir seçeneği yakalar\n  ---\n  duration_ms: 0.226818\n  type: 'test'\n  ...\n# Subtest: misconception kaydı zorunlu; attach doldurur\nok 3 - misconception kaydı zorunlu; attach doldurur\n  ---\n  duration_ms: 0.548826\n  type: 'test'\n  ...\n# Subtest: CANLI: yayınlanan choice turlarında seçenek kalitesi ≥95 ve kritik sayaçlar 0\nok 4 - CANLI: yayınlanan choice turlarında seçenek kalitesi ≥95 ve kritik sayaçlar 0\n  ---\n  duration_ms: 2558.67141\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2837.044199\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage07-independent-solver.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 19470,
+      "error": null,
+      "metrics": {
+        "tests": 2,
+        "pass": 2,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: çoklu doğru / doğru yok / açıklama eksik yakalanır\nok 1 - çoklu doğru / doğru yok / açıklama eksik yakalanır\n  ---\n  duration_ms: 0.913889\n  type: 'test'\n  ...\n# Subtest: CANLI: yayınlanan turlarda doğruluk %100 ve kritik sayaçlar 0\nok 2 - CANLI: yayınlanan turlarda doğruluk %100 ve kritik sayaçlar 0\n  ---\n  duration_ms: 19242.671632\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 19445.098723\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage08-semantic-repeat.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 7563,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: sayı/isim değişimi aynı solutionShape ailesinde yakalanır\nok 1 - sayı/isim değişimi aynı solutionShape ailesinde yakalanır\n  ---\n  duration_ms: 1.249449\n  type: 'test'\n  ...\n# Subtest: oturum içi tekrar denetçisi aynı fingerprint çiftini bulur\nok 2 - oturum içi tekrar denetçisi aynı fingerprint çiftini bulur\n  ---\n  duration_ms: 0.317583\n  type: 'test'\n  ...\n# Subtest: CANLI: 60 oturumda semantik tekrar 0 ve kimlik alanları dolu\nok 3 - CANLI: 60 oturumda semantik tekrar 0 ve kimlik alanları dolu\n  ---\n  duration_ms: 7288.097055\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 7539.463519\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage09-session-composer.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 52432,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Aşama 09 sabitleri: 500 oturum, 6 profil, 3 seed, 23 oyun\nok 1 - Aşama 09 sabitleri: 500 oturum, 6 profil, 3 seed, 23 oyun\n  ---\n  duration_ms: 0.617749\n  type: 'test'\n  ...\n# Subtest: smoke: her oyunda 20 oturum underfill=0 ve semantik tekrar=0\nok 2 - smoke: her oyunda 20 oturum underfill=0 ve semantik tekrar=0\n  ---\n  duration_ms: 52213.574541\n  type: 'test'\n  ...\n# Subtest: KANIT: güncel kaynakla 23 oyun × 500 oturum — underfill=0, semantik tekrar=0\nok 3 - KANIT: güncel kaynakla 23 oyun × 500 oturum — underfill=0, semantik tekrar=0\n  ---\n  duration_ms: 21.91457\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 52402.951748\n",
+      "stderrTail": ""
+    },
+    {
+      "file": "tests/stage10-child-mind.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 7199,
+      "error": null,
+      "metrics": {
+        "tests": 2,
+        "pass": 2,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: yapay dil ve öğretici olmayan soru kritik ret\nok 1 - yapay dil ve öğretici olmayan soru kritik ret\n  ---\n  duration_ms: 0.884356\n  type: 'test'\n  ...\n# Subtest: CANLI: 1–12 yaş bantlarında çocuk aklı ≥90 ve kritik ret 0\nok 2 - CANLI: 1–12 yaş bantlarında çocuk aklı ≥90 ve kritik ret 0\n  ---\n  duration_ms: 6934.608632\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 7172.734274\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage11-ai-jury-budget.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 73,
+      "error": null,
+      "metrics": {
+        "tests": 2,
+        "pass": 2,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: aynı hata ikinci kez escalate edilmez\nok 1 - aynı hata ikinci kez escalate edilmez\n  ---\n  duration_ms: 0.659472\n  type: 'test'\n  ...\n# Subtest: bütçe planı sınırda/düşük örneklere öncelik verir ve bütçeyi aşmaz\nok 2 - bütçe planı sınırda/düşük örneklere öncelik verir ve bütçeyi aşmaz\n  ---\n  duration_ms: 0.293546\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 43.600351\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage12-publication-integration.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 2554,
+      "error": null,
+      "metrics": {
+        "tests": 1,
+        "pass": 1,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 23 oyun ortak yayın kapılarından geçer; legacy direct publish yok\nok 1 - 23 oyun ortak yayın kapılarından geçer; legacy direct publish yok\n  ---\n  duration_ms: 2338.238975\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2520.522168\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage13-e2e-bridge.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 102,
+      "error": null,
+      "metrics": {
+        "tests": 2,
+        "pass": 2,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Playwright ve axe-core köprü dosyaları mevcut\nok 1 - Playwright ve axe-core köprü dosyaları mevcut\n  ---\n  duration_ms: 0.822494\n  type: 'test'\n  ...\n# Subtest: E2E smoke script tanımlı ve harici araçlar yeniden yazılmamış\nok 2 - E2E smoke script tanımlı ve harici araçlar yeniden yazılmamış\n  ---\n  duration_ms: 0.329991\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 76.263211\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage14-final-evidence-gate.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 88,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: kanıt yetersizken PASS üretilmez; 23x500 metni sayılmaz\nok 1 - kanıt yetersizken PASS üretilmez; 23x500 metni sayılmaz\n  ---\n  duration_ms: 0.962242\n  type: 'test'\n  ...\n# Subtest: FINAL_EVIDENCE_INDEX.json gerçek sayaç taşır ve adequacy ile uyumludur\nok 2 - FINAL_EVIDENCE_INDEX.json gerçek sayaç taşır ve adequacy ile uyumludur\n  ---\n  duration_ms: 0.190403\n  type: 'test'\n  ...\n# Subtest: yeterli kanıtta PASS yolu açık\nok 3 - yeterli kanıtta PASS yolu açık\n  ---\n  duration_ms: 0.203543\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 53.95187\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage14-release-scoring.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 85,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: kritik ihlalde puandan bağımsız FAIL\nok 1 - kritik ihlalde puandan bağımsız FAIL\n  ---\n  duration_ms: 0.815573\n  type: 'test'\n  ...\n# Subtest: HIGH blocker varken genel kapı FAIL\nok 2 - HIGH blocker varken genel kapı FAIL\n  ---\n  duration_ms: 0.871928\n  type: 'test'\n  ...\n# Subtest: eşikler ve kanıt sağlandığında PASS\nok 3 - eşikler ve kanıt sağlandığında PASS\n  ---\n  duration_ms: 0.156523\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 50.25762\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/stage15-final-acceptance.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 233,
+      "error": null,
+      "metrics": {
+        "tests": 1,
+        "pass": 1,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: FINAL_RELEASE_DECISION yalnız gerçek FINAL_EVIDENCE_INDEX sayaçlarıyla PASS olabilir\nok 1 - FINAL_RELEASE_DECISION yalnız gerçek FINAL_EVIDENCE_INDEX sayaçlarıyla PASS olabilir\n  ---\n  duration_ms: 1.348145\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 190.783019\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/strict-audit-live.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 124,
+      "error": null,
+      "metrics": {
+        "tests": 13,
+        "pass": 13,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: strict-audit-live atomic write\n    # Subtest: writes complete JSON via tmp rename\n    ok 1 - writes complete JSON via tmp rename\n      ---\n      duration_ms: 1.25757\n      type: 'test'\n      ...\n    1..1\nok 1 - strict-audit-live atomic write\n  ---\n  duration_ms: 4.047721\n  type: 'suite'\n  ...\n# Subtest: heartbeat / stall / abort\n    # Subtest: detects STALLED after silence\n    ok 1 - detects STALLED after silence\n      ---\n      duration_ms: 0.528576\n      type: 'test'\n      ...\n    # Subtest: does not stall when heartbeat fresh\n    ok 2 - does not stall when heartbeat fresh\n      ---\n      duration_ms: 0.165436\n      type: 'test'\n      ...\n    # Subtest: finalize ABORTED when exit code missing\n    ok 3 - finalize ABORTED when exit code missing\n      ---\n      duration_ms: 0.138626\n      type: 'test'\n      ...\n    # Subtest: never PASS without exit 0 + gate decision\n    ok 4 - never PASS without exit 0 + gate decision\n      ---\n      duration_ms: 0.375359\n      type: 'test'\n      ...\n    # Subtest: FAIL on non-zero exit\n    ok 5 - FAIL on non-zero exit\n      ---\n      duration_ms: 0.100199\n      type: 'test'\n      ...\n    1..5\nok 2 - heartbeat / stall / abort\n  ---\n  duration_ms: 1.582394\n  type: 'suite'\n  ...\n# Subtest: checkpoint resume helpers\n    # Subtest: progressPercent null when total unknown\n    ok 1 - progressPercent null when total unknown\n      ---\n      duration_ms: 0.203653\n      type: 'test'\n      ...\n    # Subtest: applies game_complete into checkpoint without re-running logic\n    ok 2 - applies game_complete into checkpoint without re-running logic\n      ---\n      duration_ms: 0.352825\n      type: 'test'\n      ...\n    1..2\nok 3 - checkpoint resume helpers\n  ---\n  duration_ms: 0.790766\n  type: 'suite'\n  ...\n# Subtest: dashboard live panel\n    # Subtest: renders Canlı Motor Çalışması at top content\n    ok 1 - renders Canlı Motor Çalışması at top content\n      ---\n      duration_ms: 11.85811\n      type: 'test'\n      ...\n    # Subtest: malformed/missing live does not throw; shows recovery message\n    ok 2 - malformed/missing live does not throw; shows recovery message\n      ---\n      duration_ms: 0.292875\n      type: 'test'\n      ...\n    # Subtest: defers legacy evidence while live running\n    ok 3 - defers legacy evidence while live running\n      ---\n      duration_ms: 0.104165\n      type: 'test'\n      ...\n    # Subtest: STALLED shows minutes warning\n    ok 4 - STALLED shows minutes warning\n      ---\n      duration_ms: 0.110965\n      type: 'test'\n      ...\n    # Subtest: ABORTED shows stopped message\n    ok 5 - ABORTED shows stopped message\n      ---\n      duration_ms: 0.084406\n      type: 'test'\n      ...\n    1..5\nok 4 - dashboard live panel\n  ---\n  duration_ms: 12.594616\n  type: 'suite'\n  ...\n1..4\n# tests 13\n# suites 4\n# pass 13\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 100.187181\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha10-cognitive-reports.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 85,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: bilişsel kalıp adları kullanıcıya Türkçe gösterilir\nok 1 - bilişsel kalıp adları kullanıcıya Türkçe gösterilir\n  ---\n  duration_ms: 2.26227\n  type: 'test'\n  ...\n# Subtest: veli ve öğretmen için kanıta dayalı bilişsel anlatım üretir\nok 2 - veli ve öğretmen için kanıta dayalı bilişsel anlatım üretir\n  ---\n  duration_ms: 0.335159\n  type: 'test'\n  ...\n# Subtest: eylem planı zayıf alanı geliştirir ve güçlü alanı korur\nok 3 - eylem planı zayıf alanı geliştirir ve güçlü alanı korur\n  ---\n  duration_ms: 1.111203\n  type: 'test'\n  ...\n# Subtest: sınıf bilişsel özeti ağırlıklı güç puanı üretir\nok 4 - sınıf bilişsel özeti ağırlıklı güç puanı üretir\n  ---\n  duration_ms: 0.346045\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 60.967447\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha11-premium-content-transition.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 303,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: premium geçiş motoru eksik oturumu GOLD varyasyonlarla tamamlar\nok 1 - premium geçiş motoru eksik oturumu GOLD varyasyonlarla tamamlar\n  ---\n  duration_ms: 6.519338\n  type: 'test'\n  ...\n# Subtest: karantinadaki premium aile geçiş havuzuna alınmaz\nok 2 - karantinadaki premium aile geçiş havuzuna alınmaz\n  ---\n  duration_ms: 2.096789\n  type: 'test'\n  ...\n# Subtest: gerçek oturum kalite geçiş raporu taşır\nok 3 - gerçek oturum kalite geçiş raporu taşır\n  ---\n  duration_ms: 54.170836\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 278.709275\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha13-full-gold-coverage.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 128,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Alpha 13 temel ders kartlarında en az iki GOLD aile bulunur\nok 1 - Alpha 13 temel ders kartlarında en az iki GOLD aile bulunur\n  ---\n  duration_ms: 0.734583\n  type: 'test'\n  ...\n# Subtest: Alpha 13 yeni aile planları yayınlanabilir kalitededir\nok 2 - Alpha 13 yeni aile planları yayınlanabilir kalitededir\n  ---\n  duration_ms: 0.365364\n  type: 'test'\n  ...\n# Subtest: Alpha 13 yeni GOLD üreticileri deterministik ve yayınlanabilir sonuç üretir\nok 3 - Alpha 13 yeni GOLD üreticileri deterministik ve yayınlanabilir sonuç üretir\n  ---\n  duration_ms: 18.479215\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 99.727217\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha4-quality-orchestra.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 82,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Node ortamında localStorage yokken kayıt fonksiyonları sessiz ve güvenlidir\nok 1 - Node ortamında localStorage yokken kayıt fonksiyonları sessiz ve güvenlidir\n  ---\n  duration_ms: 0.627674\n  type: 'test'\n  ...\n# Subtest: Quality Orchestra tüm derslerde ortak, ders özel eşiklerle çalışır\nok 2 - Quality Orchestra tüm derslerde ortak, ders özel eşiklerle çalışır\n  ---\n  duration_ms: 0.597539\n  type: 'test'\n  ...\n# Subtest: kritik bilişsel kalite düşüklüğü zor soruyu yayından reddeder\nok 3 - kritik bilişsel kalite düşüklüğü zor soruyu yayından reddeder\n  ---\n  duration_ms: 2.918992\n  type: 'test'\n  ...\n# Subtest: ilk deneyimde REVIEW soruları vitrin oturumuna alınmaz\nok 4 - ilk deneyimde REVIEW soruları vitrin oturumuna alınmaz\n  ---\n  duration_ms: 2.596973\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 58.155794\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha5-premium-family-studio.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 76,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Premium Family Studio sekiz temel alan için en az bir aile içerir\nok 1 - Premium Family Studio sekiz temel alan için en az bir aile içerir\n  ---\n  duration_ms: 0.695505\n  type: 'test'\n  ...\n# Subtest: başlangıç premium aile kataloğunun tamamı yayın tasarım kapısını geçer\nok 2 - başlangıç premium aile kataloğunun tamamı yayın tasarım kapısını geçer\n  ---\n  duration_ms: 0.48425\n  type: 'test'\n  ...\n# Subtest: dekoratif bağlamı çözümden bağımsız aile engellenir\nok 3 - dekoratif bağlamı çözümden bağımsız aile engellenir\n  ---\n  duration_ms: 0.16134\n  type: 'test'\n  ...\n# Subtest: geçerli aile deterministik varyasyon üretim sözleşmesi oluşturur\nok 4 - geçerli aile deterministik varyasyon üretim sözleşmesi oluşturur\n  ---\n  duration_ms: 0.200208\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 52.041248\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha6-gold-content.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 155,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: sekiz premium aile çalışır GOLD örnek soru üretir\nok 1 - sekiz premium aile çalışır GOLD örnek soru üretir\n  ---\n  duration_ms: 16.393217\n  type: 'test'\n  ...\n# Subtest: üretilen premium sorular tek ve geçerli cevap taşır\nok 2 - üretilen premium sorular tek ve geçerli cevap taşır\n  ---\n  duration_ms: 9.369108\n  type: 'test'\n  ...\n# Subtest: aynı seed aynı varyasyonu üretir\nok 3 - aynı seed aynı varyasyonu üretir\n  ---\n  duration_ms: 1.503737\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 119.384544\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha7-gold-showcase-session.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 1207,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: ilk oyun deneyiminde desteklenen kartlara GOLD vitrin sorusu eklenir\nok 1 - ilk oyun deneyiminde desteklenen kartlara GOLD vitrin sorusu eklenir\n  ---\n  duration_ms: 860.282789\n  type: 'test'\n  ...\n# Subtest: daha önce oynanan kartta GOLD vitrin zorla tekrar eklenmez\nok 2 - daha önce oynanan kartta GOLD vitrin zorla tekrar eklenmez\n  ---\n  duration_ms: 20.830398\n  type: 'test'\n  ...\n# Subtest: karantinadaki premium aile vitrine giremez\nok 3 - karantinadaki premium aile vitrine giremez\n  ---\n  duration_ms: 91.644252\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1178.364571\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha8-premium-session-composer.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 267,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: premium besteci GOLD açılış ve güçlü kapanış oluşturur\nok 1 - premium besteci GOLD açılış ve güçlü kapanış oluşturur\n  ---\n  duration_ms: 0.909633\n  type: 'test'\n  ...\n# Subtest: premium besteci sessiz telafiyi oturumun dörtte biriyle sınırlar\nok 2 - premium besteci sessiz telafiyi oturumun dörtte biriyle sınırlar\n  ---\n  duration_ms: 0.25546\n  type: 'test'\n  ...\n# Subtest: gerçek oturum premium besteci denetimi taşır\nok 3 - gerçek oturum premium besteci denetimi taşır\n  ---\n  duration_ms: 52.453391\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 237.017519\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-alpha9-student-brain-profile.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 410,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: öğrenci beyin profili zayıf ve güçlü düşünme kalıplarını ayırır\nok 1 - öğrenci beyin profili zayıf ve güçlü düşünme kalıplarını ayırır\n  ---\n  duration_ms: 0.859259\n  type: 'test'\n  ...\n# Subtest: premium besteci beyin profili politikasını denetim kaydına işler\nok 2 - premium besteci beyin profili politikasını denetim kaydına işler\n  ---\n  duration_ms: 0.659161\n  type: 'test'\n  ...\n# Subtest: gerçek oyun oturumu öğrenci beyin profilini taşır\nok 3 - gerçek oyun oturumu öğrenci beyin profilini taşır\n  ---\n  duration_ms: 182.701872\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 378.628728\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-cognitive-engine.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 263,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 8. sınıf mantık oturumu aynı aile ve düşünme kalıbını tekrarlamaz\nok 1 - 8. sınıf mantık oturumu aynı aile ve düşünme kalıbını tekrarlamaz\n  ---\n  duration_ms: 19.596292\n  type: 'test'\n  ...\n# Subtest: 8. sınıfta zayıf mini egzersiz aileleri oturuma alınmaz\nok 2 - 8. sınıfta zayıf mini egzersiz aileleri oturuma alınmaz\n  ---\n  duration_ms: 138.462461\n  type: 'test'\n  ...\n# Subtest: cevabı metinde aynen veren soru kalite kapısından geçmez\nok 3 - cevabı metinde aynen veren soru kalite kapısından geçmez\n  ---\n  duration_ms: 0.31582\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 214.780979\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-final-release-safety.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 94,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: yüksek blokaj ve eksik havuz yeterli kanıtla emekli edilir\nok 1 - yüksek blokaj ve eksik havuz yeterli kanıtla emekli edilir\n  ---\n  duration_ms: 0.814792\n  type: 'test'\n  ...\n# Subtest: tek kötü örnek aileyi erken emekli etmez\nok 2 - tek kötü örnek aileyi erken emekli etmez\n  ---\n  duration_ms: 0.12109\n  type: 'test'\n  ...\n# Subtest: sağlıklı aile aktif kalır\nok 3 - sağlıklı aile aktif kalır\n  ---\n  duration_ms: 0.195831\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 61.832323\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-global-quality-engine.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 1048,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: cevabı kökte veren soru tüm derslerde reddedilir\nok 1 - cevabı kökte veren soru tüm derslerde reddedilir\n  ---\n  duration_ms: 3.646875\n  type: 'test'\n  ...\n# Subtest: kalite motoru yalnız sözel mantığa bağlı değildir\nok 2 - kalite motoru yalnız sözel mantığa bağlı değildir\n  ---\n  duration_ms: 1.093106\n  type: 'test'\n  ...\n# Subtest: oturum denetimi baskın düşünme kalıbını bildirir\nok 3 - oturum denetimi baskın düşünme kalıbını bildirir\n  ---\n  duration_ms: 1.944452\n  type: 'test'\n  ...\n# Subtest: farklı oyun oturumları global kalite raporu taşır\nok 4 - farklı oyun oturumları global kalite raporu taşır\n  ---\n  duration_ms: 783.826511\n  type: 'test'\n  ...\n# Subtest: çok adımlı kanıtlı mantık sorusunda paralel seçenekler answer leak sayılmaz\nok 5 - çok adımlı kanıtlı mantık sorusunda paralel seçenekler answer leak sayılmaz\n  ---\n  duration_ms: 0.412063\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1016.908169\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-premium-family-pool.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 91,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: kritik kartlar birden fazla GOLD aile taşır\nok 1 - kritik kartlar birden fazla GOLD aile taşır\n  ---\n  duration_ms: 0.671619\n  type: 'test'\n  ...\n# Subtest: yeni premium ailelerin GOLD örnekleri yayın kapısından geçer\nok 2 - yeni premium ailelerin GOLD örnekleri yayın kapısından geçer\n  ---\n  duration_ms: 6.973984\n  type: 'test'\n  ...\n# Subtest: geçiş motoru aynı kartta aile çeşitliliği üretir\nok 3 - geçiş motoru aynı kartta aile çeşitliliği üretir\n  ---\n  duration_ms: 1.844453\n  type: 'test'\n  ...\n# Subtest: karantinadaki aile havuzdan atlanır\nok 4 - karantinadaki aile havuzdan atlanır\n  ---\n  duration_ms: 0.106037\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 65.645365\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-quality-enforcement.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 266,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: yapay bağlam ve ilgisiz çeldiriciler üst sınıfta yayını durdurur\nok 1 - yapay bağlam ve ilgisiz çeldiriciler üst sınıfta yayını durdurur\n  ---\n  duration_ms: 3.709679\n  type: 'test'\n  ...\n# Subtest: kalite uygulama katmanı reddedilen soruyu oturuma almaz\nok 2 - kalite uygulama katmanı reddedilen soruyu oturuma almaz\n  ---\n  duration_ms: 2.094707\n  type: 'test'\n  ...\n# Subtest: gerçek oyun oturumları yayın engelleme raporu taşır\nok 3 - gerçek oyun oturumları yayın engelleme raporu taşır\n  ---\n  duration_ms: 42.92741\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 235.06586\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v10-turkish-ui-and-paragraph-diversity.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 159,
+      "error": null,
+      "metrics": {
+        "tests": 2,
+        "pass": 2,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: admin bilişsel profilinde İngilizce teknik kimlik gösterilmez\nok 1 - admin bilişsel profilinde İngilizce teknik kimlik gösterilmez\n  ---\n  duration_ms: 1.282809\n  type: 'test'\n  ...\n# Subtest: paragraf dedektifi oturumunda renkli başlık ve yapay dosya çerçevesi kullanılmaz\nok 2 - paragraf dedektifi oturumunda renkli başlık ve yapay dosya çerçevesi kullanılmaz\n  ---\n  duration_ms: 30.05107\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 115.344845\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-content-directorate.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 100,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: V11 kataloğu 40 benzersiz iskelet ve 8 aile içerir\nok 1 - V11 kataloğu 40 benzersiz iskelet ve 8 aile içerir\n  ---\n  duration_ms: 0.608805\n  type: 'test'\n  ...\n# Subtest: her iskelet üç ayrı çeldirici planı ve üç zorluk seviyesi taşır\nok 2 - her iskelet üç ayrı çeldirici planı ve üç zorluk seviyesi taşır\n  ---\n  duration_ms: 0.319145\n  type: 'test'\n  ...\n# Subtest: her iskelet gerçek varyasyon, yüzeysel makyaj ve ret kuralı taşır\nok 3 - her iskelet gerçek varyasyon, yüzeysel makyaj ve ret kuralı taşır\n  ---\n  duration_ms: 0.16783\n  type: 'test'\n  ...\n# Subtest: aynı oturum yasakları tanımlı iskelet kimliği biçimindedir\nok 4 - aynı oturum yasakları tanımlı iskelet kimliği biçimindedir\n  ---\n  duration_ms: 1.097122\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 70.603556\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-product-content-hardening.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 3469,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Paragraf Dedektifi eski V4 soru üreticisini kullanmaz\nok 1 - Paragraf Dedektifi eski V4 soru üreticisini kullanmaz\n  ---\n  duration_ms: 1.341916\n  type: 'test'\n  ...\n# Subtest: premium paragraf motoru 15 bilişsel aile ve en az 90 çekirdek varyasyon kapasitesi taşır\nok 2 - premium paragraf motoru 15 bilişsel aile ve en az 90 çekirdek varyasyon kapasitesi taşır\n  ---\n  duration_ms: 0.171645\n  type: 'test'\n  ...\n# Subtest: Paragraf Dedektifi farklı seedlerde sekiz yayınlanabilir ve dengeli tur üretir\nok 3 - Paragraf Dedektifi farklı seedlerde sekiz yayınlanabilir ve dengeli tur üretir\n  ---\n  duration_ms: 732.179344\n  type: 'test'\n  ...\n# Subtest: bütün canlı çoktan seçmeli oyunlar ortak seçenek bütünlüğü raporu taşır\nok 4 - bütün canlı çoktan seçmeli oyunlar ortak seçenek bütünlüğü raporu taşır\n  ---\n  duration_ms: 2491.156323\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3429.600497\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage10-ai-generation-contract.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 106,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 40 iskeletin tamamı benzersiz AI üretim sözleşmesi taşır\nok 1 - 40 iskeletin tamamı benzersiz AI üretim sözleşmesi taşır\n  ---\n  duration_ms: 0.651439\n  type: 'test'\n  ...\n# Subtest: AI promptu iskelet, zorluk, varyasyon ve üç yanılgıyı açıkça taşır\nok 2 - AI promptu iskelet, zorluk, varyasyon ve üç yanılgıyı açıkça taşır\n  ---\n  duration_ms: 0.418282\n  type: 'test'\n  ...\n# Subtest: markdown veya geçersiz JSON çıktısı kabul edilmez\nok 3 - markdown veya geçersiz JSON çıktısı kabul edilmez\n  ---\n  duration_ms: 0.745288\n  type: 'test'\n  ...\n# Subtest: katı çıktı doğrulaması izlenebilir doğru cevap ve üç özgün yanılgı ister\nok 4 - katı çıktı doğrulaması izlenebilir doğru cevap ve üç özgün yanılgı ister\n  ---\n  duration_ms: 0.434887\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 59.742304\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage11-publication-gate.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 92,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: tam geçerli üretim yalnız PUBLISH kararıyla öğrenciye açılır\nok 1 - tam geçerli üretim yalnız PUBLISH kararıyla öğrenciye açılır\n  ---\n  duration_ms: 1.949766\n  type: 'test'\n  ...\n# Subtest: geçerli fakat zayıf metin editör REVIEW kuyruğuna gider\nok 2 - geçerli fakat zayıf metin editör REVIEW kuyruğuna gider\n  ---\n  duration_ms: 0.316791\n  type: 'test'\n  ...\n# Subtest: bozuk JSON ve düzeltilebilir sözleşme hataları QUARANTINE olur\nok 3 - bozuk JSON ve düzeltilebilir sözleşme hataları QUARANTINE olur\n  ---\n  duration_ms: 0.3098\n  type: 'test'\n  ...\n# Subtest: bilinmeyen veya kimliği değiştirilmiş sözleşme REJECT edilir ve kuyruklar ayrılır\nok 4 - bilinmeyen veya kimliği değiştirilmiş sözleşme REJECT edilir ve kuyruklar ayrılır\n  ---\n  duration_ms: 1.489025\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 60.648933\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage12-final-acceptance.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 86,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: iskelet sözleşmesinden çalıştırılabilir AI promptu ve geçerli aday soru üretilir\nok 1 - iskelet sözleşmesinden çalıştırılabilir AI promptu ve geçerli aday soru üretilir\n  ---\n  duration_ms: 0.973538\n  type: 'test'\n  ...\n# Subtest: geçerli aday yalnız yayın kapısından PUBLISH olarak geçer\nok 2 - geçerli aday yalnız yayın kapısından PUBLISH olarak geçer\n  ---\n  duration_ms: 0.676036\n  type: 'test'\n  ...\n# Subtest: oynanabilir turdaki yanlış seçenek tanısı kalıcı profile yazılır\nok 3 - oynanabilir turdaki yanlış seçenek tanısı kalıcı profile yazılır\n  ---\n  duration_ms: 0.270893\n  type: 'test'\n  ...\n# Subtest: tekrar eden yanılgı sessiz telafi ve V11 oturum bestecisine bağlanır\nok 4 - tekrar eden yanılgı sessiz telafi ve V11 oturum bestecisine bağlanır\n  ---\n  duration_ms: 1.265532\n  type: 'test'\n  ...\n# Subtest: tanılanmış tekrar öğretmen ve veli gelişim raporuna dönüşür\nok 5 - tanılanmış tekrar öğretmen ve veli gelişim raporuna dönüşür\n  ---\n  duration_ms: 0.574294\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 60.805791\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage2-inventory.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 96,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: V11 Aşama 2 içerik envanteri gerçek JS kaynaklarını tarar\nok 1 - V11 Aşama 2 içerik envanteri gerçek JS kaynaklarını tarar\n  ---\n  duration_ms: 0.585301\n  type: 'test'\n  ...\n# Subtest: envanter kayıtları kaynak dosya ve kaynak türü taşır\nok 2 - envanter kayıtları kaynak dosya ve kaynak türü taşır\n  ---\n  duration_ms: 0.232717\n  type: 'test'\n  ...\n# Subtest: otomatik iskelet eşleştirmeleri insan onayı zorunluluğu taşır\nok 3 - otomatik iskelet eşleştirmeleri insan onayı zorunluluğu taşır\n  ---\n  duration_ms: 0.111837\n  type: 'test'\n  ...\n# Subtest: eşleşme önerileri yalnız mevcut V11 kimlik biçimini kullanır\nok 4 - eşleşme önerileri yalnız mevcut V11 kimlik biçimini kullanır\n  ---\n  duration_ms: 0.302771\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 66.324822\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage3-paragraph-identity.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 109,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Paragraf Dedektifi 16 ailesinin tamamı kesin V11 kimliği taşır\nok 1 - Paragraf Dedektifi 16 ailesinin tamamı kesin V11 kimliği taşır\n  ---\n  duration_ms: 1.035691\n  type: 'test'\n  ...\n# Subtest: üretilen her paragraf sorusu Question Identity Card alanlarını taşır\nok 2 - üretilen her paragraf sorusu Question Identity Card alanlarını taşır\n  ---\n  duration_ms: 7.382863\n  type: 'test'\n  ...\n# Subtest: bilinmeyen aileye sessizce kimlik uydurulmaz\nok 3 - bilinmeyen aileye sessizce kimlik uydurulmaz\n  ---\n  duration_ms: 0.146218\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 82.068046\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage4-evidence-map.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 206,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: her paragraf sorusu doğru cevabı metin kanıtlarına bağlar\nok 1 - her paragraf sorusu doğru cevabı metin kanıtlarına bağlar\n  ---\n  duration_ms: 36.283566\n  type: 'test'\n  ...\n# Subtest: her seçenek tanısal kimlik taşır ve yalnız bir seçenek doğrudur\nok 2 - her seçenek tanısal kimlik taşır ve yalnız bir seçenek doğrudur\n  ---\n  duration_ms: 21.263387\n  type: 'test'\n  ...\n# Subtest: üç yanlış seçenek üç iskelet yanılgısına bağlanır\nok 3 - üç yanlış seçenek üç iskelet yanılgısına bağlanır\n  ---\n  duration_ms: 22.00507\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 177.775779\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage5-misconception-persistence.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 351,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Paragraf Dedektifi turu V11 tanı metadata alanlarını oturuma taşır\nok 1 - Paragraf Dedektifi turu V11 tanı metadata alanlarını oturuma taşır\n  ---\n  duration_ms: 50.137456\n  type: 'test'\n  ...\n# Subtest: yanlış seçenek seçimi gerçek yanılgı kimliğine dönüştürülür\nok 2 - yanlış seçenek seçimi gerçek yanılgı kimliğine dönüştürülür\n  ---\n  duration_ms: 0.220128\n  type: 'test'\n  ...\n# Subtest: recordAttempt yanılgıyı hem cevap kaydına hem öğrenci profiline kalıcı işler\nok 3 - recordAttempt yanılgıyı hem cevap kaydına hem öğrenci profiline kalıcı işler\n  ---\n  duration_ms: 7.725052\n  type: 'test'\n  ...\n# Subtest: doğru cevap ve süre aşımı yanlış yanılgı kaydı üretmez\nok 4 - doğru cevap ve süre aşımı yanlış yanılgı kaydı üretmez\n  ---\n  duration_ms: 0.143503\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 290.193109\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage6-misconception-remediation.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 366,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: tekrar eden yanılgı hedefli müdahaleye dönüşür; tek hata dönüşmez\nok 1 - tekrar eden yanılgı hedefli müdahaleye dönüşür; tek hata dönüşmez\n  ---\n  duration_ms: 1.598708\n  type: 'test'\n  ...\n# Subtest: yanılgı mikro öğretimi kısa strateji, örnek ve dikkat noktası taşır\nok 2 - yanılgı mikro öğretimi kısa strateji, örnek ve dikkat noktası taşır\n  ---\n  duration_ms: 0.210684\n  type: 'test'\n  ...\n# Subtest: sessiz telafi yalnız hedef iskelete bağlanır ve oturumun yüzde 25ini aşmaz\nok 3 - sessiz telafi yalnız hedef iskelete bağlanır ve oturumun yüzde 25ini aşmaz\n  ---\n  duration_ms: 1.226134\n  type: 'test'\n  ...\n# Subtest: gerçek paragraf oturumu tekrar eden yanılgıya göre sessiz telafi denetimi taşır\nok 4 - gerçek paragraf oturumu tekrar eden yanılgıya göre sessiz telafi denetimi taşır\n  ---\n  duration_ms: 110.959757\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 340.632193\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage7-misconception-report.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 108,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: V11 yanılgı raporu yalnız tanılanmış yanlışları sayar\nok 1 - V11 yanılgı raporu yalnız tanılanmış yanlışları sayar\n  ---\n  duration_ms: 1.852375\n  type: 'test'\n  ...\n# Subtest: tekrar eden yeni yanılgı destek önceliğine dönüşür\nok 2 - tekrar eden yeni yanılgı destek önceliğine dönüşür\n  ---\n  duration_ms: 1.166871\n  type: 'test'\n  ...\n# Subtest: önceki dönemde olup yeni dönemde görülmeyen yanılgı azalıyor sayılır\nok 3 - önceki dönemde olup yeni dönemde görülmeyen yanılgı azalıyor sayılır\n  ---\n  duration_ms: 0.655885\n  type: 'test'\n  ...\n# Subtest: veli ve sınıf özetleri teknik kimlik göstermeden üretilir\nok 4 - veli ve sınıf özetleri teknik kimlik göstermeden üretilir\n  ---\n  duration_ms: 0.415358\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 72.988535\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage8-session-composer.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 108,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: V11 besteci yasaklı iskeletleri aynı oturuma almaz\nok 1 - V11 besteci yasaklı iskeletleri aynı oturuma almaz\n  ---\n  duration_ms: 1.647731\n  type: 'test'\n  ...\n# Subtest: V11 besteci bilişsel aile çeşitliliğini korur\nok 2 - V11 besteci bilişsel aile çeşitliliğini korur\n  ---\n  duration_ms: 0.31606\n  type: 'test'\n  ...\n# Subtest: V11 besteci sessiz telafiyi yüzde 25 ile sınırlar\nok 3 - V11 besteci sessiz telafiyi yüzde 25 ile sınırlar\n  ---\n  duration_ms: 0.402218\n  type: 'test'\n  ...\n# Subtest: V11 besteci hedeflenen yanılgı iskeletini önceliklendirebilir\nok 4 - V11 besteci hedeflenen yanılgı iskeletini önceliklendirebilir\n  ---\n  duration_ms: 0.771247\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 63.54455\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v11-stage9-question-blueprint.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 84,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 40 iskeletin tamamı çalıştırılabilir blueprint taşır\nok 1 - 40 iskeletin tamamı çalıştırılabilir blueprint taşır\n  ---\n  duration_ms: 0.738448\n  type: 'test'\n  ...\n# Subtest: her blueprint üç ayrı yanılgı ve üç zorluk seviyesi taşır\nok 2 - her blueprint üç ayrı yanılgı ve üç zorluk seviyesi taşır\n  ---\n  duration_ms: 0.234128\n  type: 'test'\n  ...\n# Subtest: üretim sözleşmesi katalog dışı varyasyon eksenini reddeder\nok 3 - üretim sözleşmesi katalog dışı varyasyon eksenini reddeder\n  ---\n  duration_ms: 0.324593\n  type: 'test'\n  ...\n# Subtest: aday soru kalite denetimi kanıt, seçenek ve yanılgı sözleşmesini uygular\nok 4 - aday soru kalite denetimi kanıt, seçenek ve yanılgı sözleşmesini uygular\n  ---\n  duration_ms: 0.249161\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 59.2552\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v13-question-factory-gates.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 556,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: V13.5 GOLD benchmark soruları yayınlanabilir kabul edilir\nok 1 - V13.5 GOLD benchmark soruları yayınlanabilir kabul edilir\n  ---\n  duration_ms: 5.569446\n  type: 'test'\n  ...\n# Subtest: V13.5 REJECT benchmark sahte premium soruları reddeder\nok 2 - V13.5 REJECT benchmark sahte premium soruları reddeder\n  ---\n  duration_ms: 0.853249\n  type: 'test'\n  ...\n# Subtest: 10. sınıf doğrudan iki sayı toplama hard kabul edilemez\nok 3 - 10. sınıf doğrudan iki sayı toplama hard kabul edilemez\n  ---\n  duration_ms: 0.321789\n  type: 'test'\n  ...\n# Subtest: cognitiveExperienceId sayı/dekor değişiminden bağımsız aynı yapıyı yakalar\nok 4 - cognitiveExperienceId sayı/dekor değişiminden bağımsız aynı yapıyı yakalar\n  ---\n  duration_ms: 0.279897\n  type: 'test'\n  ...\n# Subtest: canlı 8. sınıf matematik oturumu sahte hard/direct toplama yayınlamaz\nok 5 - canlı 8. sınıf matematik oturumu sahte hard/direct toplama yayınlamaz\n  ---\n  duration_ms: 315.853632\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 525.275739\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v2-features.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 68410,
+      "error": null,
+      "metrics": {
+        "tests": 16,
+        "pass": 16,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: V2 çoktan seçmeli içeriklerinin seçenekleri ve cevapları geçerlidir\nok 1 - V2 çoktan seçmeli içeriklerinin seçenekleri ve cevapları geçerlidir\n  ---\n  duration_ms: 0.918166\n  type: 'test'\n  ...\n# Subtest: V2 kelime madeni örnekleri gerçekten ana kelimeden kurulabilir\nok 2 - V2 kelime madeni örnekleri gerçekten ana kelimeden kurulabilir\n  ---\n  duration_ms: 1.388456\n  type: 'test'\n  ...\n# Subtest: V2 kelime merdivenlerinin her adımında tek harf değişir\nok 3 - V2 kelime merdivenlerinin her adımında tek harf değişir\n  ---\n  duration_ms: 0.3359\n  type: 'test'\n  ...\n# Subtest: karşılaştırmalar kelimesinden araştırma ve araştırmalar kabul edilir\nok 4 - karşılaştırmalar kelimesinden araştırma ve araştırmalar kabul edilir\n  ---\n  duration_ms: 0.221239\n  type: 'test'\n  ...\n# Subtest: günlük plan ilk oluşturulduğu hâliyle sabit kalır\nok 5 - günlük plan ilk oluşturulduğu hâliyle sabit kalır\n  ---\n  duration_ms: 0.823145\n  type: 'test'\n  ...\n# Subtest: cevaplanan soru profilin kalıcı görülmüş soru listesine eklenir\nok 6 - cevaplanan soru profilin kalıcı görülmüş soru listesine eklenir\n  ---\n  duration_ms: 0.872768\n  type: 'test'\n  ...\n# Subtest: günlük görev tam olarak Türkçe, matematik, olimpiyat ve zekâ kategorilerinden oluşur\nok 7 - günlük görev tam olarak Türkçe, matematik, olimpiyat ve zekâ kategorilerinden oluşur\n  ---\n  duration_ms: 0.746691\n  type: 'test'\n  ...\n# Subtest: İngilizce havuzu en az yirmi günlük yeni kelime içerir\nok 8 - İngilizce havuzu en az yirmi günlük yeni kelime içerir\n  ---\n  duration_ms: 0.253287\n  type: 'test'\n  ...\n# Subtest: günlük İngilizce 20 farklı ve daha önce görülmemiş kelime üretir\nok 9 - günlük İngilizce 20 farklı ve daha önce görülmemiş kelime üretir\n  ---\n  duration_ms: 2.389675\n  type: 'test'\n  ...\n# Subtest: aynı profile tamamlanan sorular tekrar verilmez\nok 10 - aynı profile tamamlanan sorular tekrar verilmez\n  ---\n  duration_ms: 8595.352727\n  type: 'test'\n  ...\n# Subtest: üretilen bütün oyun turlarının cevap indeksi geçerlidir\nok 11 - üretilen bütün oyun turlarının cevap indeksi geçerlidir\n  ---\n  duration_ms: 59495.370036\n  type: 'test'\n  ...\n# Subtest: dinamik zekâ motoru geçerli ve yüzlerce farklı soru üretir\nok 12 - dinamik zekâ motoru geçerli ve yüzlerce farklı soru üretir\n  ---\n  duration_ms: 42.84652\n  type: 'test'\n  ...\n# Subtest: geometri motoru yüzlerce geçerli ve çeşitli soru üretir\nok 13 - geometri motoru yüzlerce geçerli ve çeşitli soru üretir\n  ---\n  duration_ms: 1.752788\n  type: 'test'\n  ...\n# Subtest: problem, olimpiyat ve hata avı üreticileri geçerli cevaplar üretir\nok 14 - problem, olimpiyat ve hata avı üreticileri geçerli cevaplar üretir\n  ---\n  duration_ms: 4.607344\n  type: 'test'\n  ...\n# Subtest: hedef sayı dört işlem işaretlerinin tamamını zorunlu tutmaz\nok 15 - hedef sayı dört işlem işaretlerinin tamamını zorunlu tutmaz\n  ---\n  duration_ms: 0.230563\n  type: 'test'\n  ...\n# Subtest: yasak harf V2 görevlerinin kuralları eksiksizdir\nok 16 - yasak harf V2 görevlerinin kuralları eksiksizdir\n  ---\n  duration_ms: 0.145156\n  type: 'test'\n  ...\n1..16\n# tests 16\n# suites 0\n# pass 16\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 68383.957136\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v3-features.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 1527,
+      "error": null,
+      "metrics": {
+        "tests": 10,
+        "pass": 10,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: KASA → KARA → PARA → PARE alternatif merdiveni doğru kabul edilir\nok 1 - KASA → KARA → PARA → PARE alternatif merdiveni doğru kabul edilir\n  ---\n  duration_ms: 0.801682\n  type: 'test'\n  ...\n# Subtest: V3 kelime merdiveni havuzu 3, 4, 5 ve 6 harfli geçerli yollar içerir\nok 2 - V3 kelime merdiveni havuzu 3, 4, 5 ve 6 harfli geçerli yollar içerir\n  ---\n  duration_ms: 1.268787\n  type: 'test'\n  ...\n# Subtest: her İngilizce kelimenin gösterilebilir İngilizce örneği ve Türkçe karşılığı vardır\nok 3 - her İngilizce kelimenin gösterilebilir İngilizce örneği ve Türkçe karşılığı vardır\n  ---\n  duration_ms: 2.658515\n  type: 'test'\n  ...\n# Subtest: İngilizce boşluk ve cümle kurma oyunları onar soru üretir\nok 4 - İngilizce boşluk ve cümle kurma oyunları onar soru üretir\n  ---\n  duration_ms: 263.296732\n  type: 'test'\n  ...\n# Subtest: Sosyal Bilgiler üç ayrı oyun olarak iki yaş seviyesinde çalışır\nok 5 - Sosyal Bilgiler üç ayrı oyun olarak iki yaş seviyesinde çalışır\n  ---\n  duration_ms: 781.936143\n  type: 'test'\n  ...\n# Subtest: Din ve LGS alanları büyük kuzen için on soru üretir ve ödül dışıdır\nok 6 - Din ve LGS alanları büyük kuzen için on soru üretir ve ödül dışıdır\n  ---\n  duration_ms: 218.911924\n  type: 'test'\n  ...\n# Subtest: ödül dışı bir cevap XP ve yıldız kazandırmaz\nok 7 - ödül dışı bir cevap XP ve yıldız kazandırmaz\n  ---\n  duration_ms: 0.88083\n  type: 'test'\n  ...\n# Subtest: soru bildirimi soruyu aynı profil için hemen engeller ve cevapları saklar\nok 8 - soru bildirimi soruyu aynı profil için hemen engeller ve cevapları saklar\n  ---\n  duration_ms: 0.306176\n  type: 'test'\n  ...\n# Subtest: olimpiyat motoru farklı soru stilleri ve soru tipine göre süre üretir\nok 9 - olimpiyat motoru farklı soru stilleri ve soru tipine göre süre üretir\n  ---\n  duration_ms: 4.225747\n  type: 'test'\n  ...\n# Subtest: oyun kataloğu genişletilmiş dersleri içerir\nok 10 - oyun kataloğu genişletilmiş dersleri içerir\n  ---\n  duration_ms: 0.388037\n  type: 'test'\n  ...\n1..10\n# tests 10\n# suites 0\n# pass 10\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1472.393621\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v4-foundation.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 9211,
+      "error": null,
+      "metrics": {
+        "tests": 11,
+        "pass": 11,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 1–12. sınıf içerik omurgasının tamamı tanımlıdır\nok 1 - 1–12. sınıf içerik omurgasının tamamı tanımlıdır\n  ---\n  duration_ms: 1.177942\n  type: 'test'\n  ...\n# Subtest: V4 yüksek değerli içerik aileleri dar bir havuz değildir\nok 2 - V4 yüksek değerli içerik aileleri dar bir havuz değildir\n  ---\n  duration_ms: 0.314548\n  type: 'test'\n  ...\n# Subtest: olimpiyat oturumları on farklı aile ve sınıf karışımı üretir\nok 3 - olimpiyat oturumları on farklı aile ve sınıf karışımı üretir\n  ---\n  duration_ms: 241.72057\n  type: 'test'\n  ...\n# Subtest: zekâ oturumunda sekiz soru sekiz ayrı düşünme ailesinden gelir\nok 4 - zekâ oturumunda sekiz soru sekiz ayrı düşünme ailesinden gelir\n  ---\n  duration_ms: 539.446394\n  type: 'test'\n  ...\n# Subtest: paragraf oturumları sekiz ayrı okuma becerisi üretir\nok 5 - paragraf oturumları sekiz ayrı okuma becerisi üretir\n  ---\n  duration_ms: 2.76976\n  type: 'test'\n  ...\n# Subtest: görülen dinamik soru anahtarı aynı profile tekrar verilmez\nok 6 - görülen dinamik soru anahtarı aynı profile tekrar verilmez\n  ---\n  duration_ms: 24.583481\n  type: 'test'\n  ...\n# Subtest: küçük kuzen Din ve LGS alanlarını hiçbir yerde açamaz\nok 7 - küçük kuzen Din ve LGS alanlarını hiçbir yerde açamaz\n  ---\n  duration_ms: 2.496463\n  type: 'test'\n  ...\n# Subtest: tek ayar dosyası yerel çalışma için okunabilir\nok 8 - tek ayar dosyası yerel çalışma için okunabilir\n  ---\n  duration_ms: 29.743607\n  type: 'test'\n  ...\n# Subtest: aynı profil 60 oturum boyunca aynı dinamik soruyu yeniden görmez\nok 9 - aynı profil 60 oturum boyunca aynı dinamik soruyu yeniden görmez\n  ---\n  duration_ms: 3284.921919\n  type: 'test'\n  ...\n# Subtest: V4 kritik matematik ve mantık ailelerinin sonuçları kurallarıyla uyumludur\nok 10 - V4 kritik matematik ve mantık ailelerinin sonuçları kurallarıyla uyumludur\n  ---\n  duration_ms: 520.428522\n  type: 'test'\n  ...\n# Subtest: iç içe kutu sorularında renk değişimi ilişki zincirini bozmaz\nok 11 - iç içe kutu sorularında renk değişimi ilişki zincirini bozmaz\n  ---\n  duration_ms: 4338.157008\n  type: 'test'\n  ...\n1..11\n# tests 11\n# suites 0\n# pass 11\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 9179.578632\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v5-platform-quality.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 3483,
+      "error": null,
+      "metrics": {
+        "tests": 20,
+        "pass": 20,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: kalite kayıtlarındaki kritik aileler challenge havuzunda karantinadadır\nok 1 - kalite kayıtlarındaki kritik aileler challenge havuzunda karantinadadır\n  ---\n  duration_ms: 2072.599031\n  type: 'test'\n  ...\n# Subtest: olimpiyat ve zekâ challenge soruları en az iki kademeli, soruya bağlı ipucu taşır\nok 2 - olimpiyat ve zekâ challenge soruları en az iki kademeli, soruya bağlı ipucu taşır\n  ---\n  duration_ms: 1245.102887\n  type: 'test'\n  ...\n# Subtest: dikdörtgen sayma sorusu formülün nedenini adım adım öğretir\nok 3 - dikdörtgen sayma sorusu formülün nedenini adım adım öğretir\n  ---\n  duration_ms: 4.982172\n  type: 'test'\n  ...\n# Subtest: aktif yüksek değerli aile sayısı 10 ve 8 soruluk farklı oturumları destekler\nok 4 - aktif yüksek değerli aile sayısı 10 ve 8 soruluk farklı oturumları destekler\n  ---\n  duration_ms: 0.203663\n  type: 'test'\n  ...\n# Subtest: yerel mod hesap zorunluluğu olmadan çalışır, canlı mod Firebase ve giriş ister\nok 5 - yerel mod hesap zorunluluğu olmadan çalışır, canlı mod Firebase ve giriş ister\n  ---\n  duration_ms: 6.612627\n  type: 'test'\n  ...\n# Subtest: canlı platform veli, öğretmen ve öğrenci akışlarını içerir\nok 6 - canlı platform veli, öğretmen ve öğrenci akışlarını içerir\n  ---\n  duration_ms: 6.503244\n  type: 'test'\n  ...\n# Subtest: öğrenci kodu üretimi yetkisiz genel Firestore sorgusu yapmaz ve canlı panel oyun bazında analiz sunar\nok 7 - öğrenci kodu üretimi yetkisiz genel Firestore sorgusu yapmaz ve canlı panel oyun bazında analiz sunar\n  ---\n  duration_ms: 1.395206\n  type: 'test'\n  ...\n# Subtest: Firestore kuralları rol ve öğrenci sahipliğine göre merkezi veriyi korur\nok 8 - Firestore kuralları rol ve öğrenci sahipliğine göre merkezi veriyi korur\n  ---\n  duration_ms: 0.993458\n  type: 'test'\n  ...\n# Subtest: Firestore kuralları istemci tarafından rol yükseltmeyi ve sahiplik alanı değiştirmeyi engeller\nok 9 - Firestore kuralları istemci tarafından rol yükseltmeyi ve sahiplik alanı değiştirmeyi engeller\n  ---\n  duration_ms: 0.990363\n  type: 'test'\n  ...\n# Subtest: soru kalite kayıtlarının tamamı V5 paketinde bulunur\nok 10 - soru kalite kayıtlarının tamamı V5 paketinde bulunur\n  ---\n  duration_ms: 0.962441\n  type: 'test'\n  ...\n# Subtest: admin görünüm seçici komuta merkezinde kalıcıdır ve çıkış ekranı doğrudan yeniler\nok 11 - admin görünüm seçici komuta merkezinde kalıcıdır ve çıkış ekranı doğrudan yeniler\n  ---\n  duration_ms: 1.535524\n  type: 'test'\n  ...\n# Subtest: öğrenci listesi PIN sütunu ve PDF yazdırma aksiyonu içerir\nok 12 - öğrenci listesi PIN sütunu ve PDF yazdırma aksiyonu içerir\n  ---\n  duration_ms: 1.010583\n  type: 'test'\n  ...\n# Subtest: V5.1 merkezi yönetim okul, sınıf, öğretmen, veli ve öğrenci modüllerini içerir\nok 13 - V5.1 merkezi yönetim okul, sınıf, öğretmen, veli ve öğrenci modüllerini içerir\n  ---\n  duration_ms: 1.183851\n  type: 'test'\n  ...\n# Subtest: V5.1 yönetim listeleri arama filtreleme ve kontrollü silme taşır\nok 14 - V5.1 yönetim listeleri arama filtreleme ve kontrollü silme taşır\n  ---\n  duration_ms: 1.228578\n  type: 'test'\n  ...\n# Subtest: V5.2 bütün soru çalışmalarını gelişime dahil eder ve öğrenci araçlarını taşır\nok 15 - V5.2 bütün soru çalışmalarını gelişime dahil eder ve öğrenci araçlarını taşır\n  ---\n  duration_ms: 1.288928\n  type: 'test'\n  ...\n# Subtest: V5.3 kalıcı çıkış, sıralama ve sınav planlarını içerir\nok 16 - V5.3 kalıcı çıkış, sıralama ve sınav planlarını içerir\n  ---\n  duration_ms: 5.06801\n  type: 'test'\n  ...\n# Subtest: V5.3 ifade bozukluğu bildirimi ve lise kelime merdiveni karantinası vardır\nok 17 - V5.3 ifade bozukluğu bildirimi ve lise kelime merdiveni karantinası vardır\n  ---\n  duration_ms: 2.217208\n  type: 'test'\n  ...\n# Subtest: V5.4 bütün sorularda görünür durdurma ve aynı soru bildirimi sunar\nok 18 - V5.4 bütün sorularda görünür durdurma ve aynı soru bildirimi sunar\n  ---\n  duration_ms: 2.045513\n  type: 'test'\n  ...\n# Subtest: V5.4 admin soru inceleme merkezi ve otomatik sınav planları içerir\nok 19 - V5.4 admin soru inceleme merkezi ve otomatik sınav planları içerir\n  ---\n  duration_ms: 1.845195\n  type: 'test'\n  ...\n# Subtest: V5.5 sıralama tüm üyeler, aynı sınıf ve aynı yaş kartlarını ayrı gösterir\nok 20 - V5.5 sıralama tüm üyeler, aynı sınıf ve aynı yaş kartlarını ayrı gösterir\n  ---\n  duration_ms: 4.904245\n  type: 'test'\n  ...\n1..20\n# tests 20\n# suites 0\n# pass 20\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3426.89704\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v561-regression-registry.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 105,
+      "error": null,
+      "metrics": {
+        "tests": 2,
+        "pass": 2,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: öğrenci kartı kritik işlemleri yeni tasarımlarda kaybolmaz\nok 1 - öğrenci kartı kritik işlemleri yeni tasarımlarda kaybolmaz\n  ---\n  duration_ms: 0.949192\n  type: 'test'\n  ...\n# Subtest: özellik envanteri kritik öğrenci işlemlerini kayıt altında tutar\nok 2 - özellik envanteri kritik öğrenci işlemlerini kayıt altında tutar\n  ---\n  duration_ms: 0.159197\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 71.465113\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v65-ai-curriculum-regression.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 104,
+      "error": null,
+      "metrics": {
+        "tests": 8,
+        "pass": 8,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: AI orkestrasında en az on uzman ajan tanımlıdır\nok 1 - AI orkestrasında en az on uzman ajan tanımlıdır\n  ---\n  duration_ms: 1.02816\n  type: 'test'\n  ...\n# Subtest: sınav planları sınıfa göre otomatik atanır\nok 2 - sınav planları sınıfa göre otomatik atanır\n  ---\n  duration_ms: 0.540624\n  type: 'test'\n  ...\n# Subtest: 12. sınıf ders omurgası TYT AYT ve KPSS içerir\nok 3 - 12. sınıf ders omurgası TYT AYT ve KPSS içerir\n  ---\n  duration_ms: 0.110995\n  type: 'test'\n  ...\n# Subtest: lise öğrencisine tek adımlı aşırı kolay cebir sorusu geçmez\nok 4 - lise öğrencisine tek adımlı aşırı kolay cebir sorusu geçmez\n  ---\n  duration_ms: 0.433705\n  type: 'test'\n  ...\n# Subtest: aynı soru aynı oturumda tekrar seçilmez\nok 5 - aynı soru aynı oturumda tekrar seçilmez\n  ---\n  duration_ms: 0.381908\n  type: 'test'\n  ...\n# Subtest: çeşit motoru tek aileyi oturuma doldurmaz\nok 6 - çeşit motoru tek aileyi oturuma doldurmaz\n  ---\n  duration_ms: 0.456048\n  type: 'test'\n  ...\n# Subtest: öğrenci modeli ve günlük rota veri yokken de çalışır\nok 7 - öğrenci modeli ve günlük rota veri yokken de çalışır\n  ---\n  duration_ms: 0.462869\n  type: 'test'\n  ...\n# Subtest: soru denetçisi tekrar sinyalini karantina önerisine dönüştürür\nok 8 - soru denetçisi tekrar sinyalini karantina önerisine dönüştürür\n  ---\n  duration_ms: 0.330532\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 67.903946\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v651-onboarding-difficulty.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 366,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: ilk kullanım mesajları eksiklik değil meydan okuma dili kullanır\nok 1 - ilk kullanım mesajları eksiklik değil meydan okuma dili kullanır\n  ---\n  duration_ms: 0.998215\n  type: 'test'\n  ...\n# Subtest: kolay soru kalite kapısından geçmez\nok 2 - kolay soru kalite kapısından geçmez\n  ---\n  duration_ms: 0.493539\n  type: 'test'\n  ...\n# Subtest: oyun oturumları en az orta-üstü zorlukta başlar\nok 3 - oyun oturumları en az orta-üstü zorlukta başlar\n  ---\n  duration_ms: 153.891729\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 342.683089\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v652-stabilization-acceptance.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 236,
+      "error": null,
+      "metrics": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 8. sınıf yalnız LGS sınav kategorisini görür\nok 1 - 8. sınıf yalnız LGS sınav kategorisini görür\n  ---\n  duration_ms: 0.662426\n  type: 'test'\n  ...\n# Subtest: 11. sınıf TYT ve AYT kategorilerini görür; LGS ve KPSS görmez\nok 2 - 11. sınıf TYT ve AYT kategorilerini görür; LGS ve KPSS görmez\n  ---\n  duration_ms: 0.160198\n  type: 'test'\n  ...\n# Subtest: 12. sınıf TYT AYT KPSS kategorilerini görür; LGS ve Din filtresi görmez\nok 3 - 12. sınıf TYT AYT KPSS kategorilerini görür; LGS ve Din filtresi görmez\n  ---\n  duration_ms: 0.101831\n  type: 'test'\n  ...\n# Subtest: sınav oyunlarının kategori etiketleri tanımlıdır\nok 4 - sınav oyunlarının kategori etiketleri tanımlıdır\n  ---\n  duration_ms: 0.167299\n  type: 'test'\n  ...\n# Subtest: analizde görülen bütün oyun kimliklerinin Türkçe adı vardır\nok 5 - analizde görülen bütün oyun kimliklerinin Türkçe adı vardır\n  ---\n  duration_ms: 0.204845\n  type: 'test'\n  ...\n# Subtest: kullanıcı arayüzü kategori sözlüğüne doğrudan undefined basmaz\nok 6 - kullanıcı arayüzü kategori sözlüğüne doğrudan undefined basmaz\n  ---\n  duration_ms: 17.913503\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 213.092452\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v8-mega-release.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 242,
+      "error": null,
+      "metrics": {
+        "tests": 6,
+        "pass": 6,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: 8, 11 ve 12. sınıf sınav kategorileri doğru ayrılır\nok 1 - 8, 11 ve 12. sınıf sınav kategorileri doğru ayrılır\n  ---\n  duration_ms: 0.783095\n  type: 'test'\n  ...\n# Subtest: katalogdaki her kategori güvenli Türkçe etikete sahiptir\nok 2 - katalogdaki her kategori güvenli Türkçe etikete sahiptir\n  ---\n  duration_ms: 0.229612\n  type: 'test'\n  ...\n# Subtest: lig motoru haftalık XP, lig ve rozet üretir\nok 3 - lig motoru haftalık XP, lig ve rozet üretir\n  ---\n  duration_ms: 0.708875\n  type: 'test'\n  ...\n# Subtest: AI orkestrası yerel sağlayıcıyla öğrenciyi analiz eder\nok 4 - AI orkestrası yerel sağlayıcıyla öğrenciyi analiz eder\n  ---\n  duration_ms: 0.607323\n  type: 'test'\n  ...\n# Subtest: öğrenci arayüzünde lig ekranı ve teknik metin güvenliği vardır\nok 5 - öğrenci arayüzünde lig ekranı ve teknik metin güvenliği vardır\n  ---\n  duration_ms: 0.730837\n  type: 'test'\n  ...\n# Subtest: Firestore sosyal ve AI koleksiyonlarını rol bazlı korur\nok 6 - Firestore sosyal ve AI koleksiyonlarını rol bazlı korur\n  ---\n  duration_ms: 0.428448\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 215.411411\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v801-admin-metrics-regression.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 80,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: admin analiz modülü Map türündeki metrik koleksiyonunu kabul eder\nok 1 - admin analiz modülü Map türündeki metrik koleksiyonunu kabul eder\n  ---\n  duration_ms: 0.823239\n  type: 'test'\n  ...\n# Subtest: admin modülleri seçilmeden topluca render edilmez\nok 2 - admin modülleri seçilmeden topluca render edilmez\n  ---\n  duration_ms: 0.334027\n  type: 'test'\n  ...\n# Subtest: tek modül hatası tüm yetişkin portalını çökertmez\nok 3 - tek modül hatası tüm yetişkin portalını çökertmez\n  ---\n  duration_ms: 0.198345\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 48.35241\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v801-premium-mobile-admin.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 80,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: mobil alt menü beş öğeyi tek satırda tutar\nok 1 - mobil alt menü beş öğeyi tek satırda tutar\n  ---\n  duration_ms: 0.654404\n  type: 'test'\n  ...\n# Subtest: kullanıcı işlemlerinde tarayıcı prompt alert confirm kullanılmaz\nok 2 - kullanıcı işlemlerinde tarayıcı prompt alert confirm kullanılmaz\n  ---\n  duration_ms: 0.558681\n  type: 'test'\n  ...\n# Subtest: admin paneli ayrı modüllü premium menü ve analiz içerir\nok 3 - admin paneli ayrı modüllü premium menü ve analiz içerir\n  ---\n  duration_ms: 0.939798\n  type: 'test'\n  ...\n# Subtest: admin dışındaki sayfalarda eski uzun admin hero akışı kullanılmaz\nok 4 - admin dışındaki sayfalarda eski uzun admin hero akışı kullanılmaz\n  ---\n  duration_ms: 0.176463\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 56.134457\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v803-premium-admin-command-center.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 99,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: admin yönetimi tüm modülleri kalıcı komuta merkezinde sunar\nok 1 - admin yönetimi tüm modülleri kalıcı komuta merkezinde sunar\n  ---\n  duration_ms: 0.907349\n  type: 'test'\n  ...\n# Subtest: admin yalnız seçili modülü render eder ve menü seçiminde kapanır\nok 2 - admin yalnız seçili modülü render eder ve menü seçiminde kapanır\n  ---\n  duration_ms: 0.184655\n  type: 'test'\n  ...\n# Subtest: premium modal uygulama dışındaki document delegasyonu ile kapanır\nok 3 - premium modal uygulama dışındaki document delegasyonu ile kapanır\n  ---\n  duration_ms: 0.202341\n  type: 'test'\n  ...\n# Subtest: yönetim tarafında native prompt alert confirm kullanılmaz\nok 4 - yönetim tarafında native prompt alert confirm kullanılmaz\n  ---\n  duration_ms: 0.4842\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 64.378171\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v9-academic-mastery-quarantine.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 473,
+      "error": null,
+      "metrics": {
+        "tests": 7,
+        "pass": 7,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: her cevap akademik kimlik ile normalize edilir\nok 1 - her cevap akademik kimlik ile normalize edilir\n  ---\n  duration_ms: 1.632298\n  type: 'test'\n  ...\n# Subtest: recordAttempt akademik alanları kalıcı kayda ekler\nok 2 - recordAttempt akademik alanları kalıcı kayda ekler\n  ---\n  duration_ms: 1.481304\n  type: 'test'\n  ...\n# Subtest: ustalık motoru farklı gün, ipucu ve soru ailesini değerlendirir\nok 3 - ustalık motoru farklı gün, ipucu ve soru ailesini değerlendirir\n  ---\n  duration_ms: 0.630017\n  type: 'test'\n  ...\n# Subtest: sessiz telafi zayıf konuyu sınırlı oranla önerir\nok 4 - sessiz telafi zayıf konuyu sınırlı oranla önerir\n  ---\n  duration_ms: 0.277984\n  type: 'test'\n  ...\n# Subtest: öğrenci bildirimi soru ve aileyi anında karantinaya alır\nok 5 - öğrenci bildirimi soru ve aileyi anında karantinaya alır\n  ---\n  duration_ms: 0.780371\n  type: 'test'\n  ...\n# Subtest: state raporu global soru ve aile blok listesine işler\nok 6 - state raporu global soru ve aile blok listesine işler\n  ---\n  duration_ms: 0.234739\n  type: 'test'\n  ...\n# Subtest: karantinadaki aile yeni oturumdan elenir\nok 7 - karantinadaki aile yeni oturumdan elenir\n  ---\n  duration_ms: 236.814806\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 448.210895\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v9-alpha2-mastery-ui.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 85,
+      "error": null,
+      "metrics": {
+        "tests": 4,
+        "pass": 4,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: konu kimlikleri kullanıcıya Türkçe adla gösterilir\nok 1 - konu kimlikleri kullanıcıya Türkçe adla gösterilir\n  ---\n  duration_ms: 0.564349\n  type: 'test'\n  ...\n# Subtest: mikro öğretim uzun ders yerine kısa strateji üretir\nok 2 - mikro öğretim uzun ders yerine kısa strateji üretir\n  ---\n  duration_ms: 0.174931\n  type: 'test'\n  ...\n# Subtest: sessiz telafi planı toplam oturumu ele geçirmez\nok 3 - sessiz telafi planı toplam oturumu ele geçirmez\n  ---\n  duration_ms: 0.736436\n  type: 'test'\n  ...\n# Subtest: öğrenci gelişim ekranı konu ustalığı ve mikro öğretimi içerir\nok 4 - öğrenci gelişim ekranı konu ustalığı ve mikro öğretimi içerir\n  ---\n  duration_ms: 7.60274\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 59.413685\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/v9-alpha3-session-composer.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 75,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: adaptive targets only use topics supported by the card\nok 1 - adaptive targets only use topics supported by the card\n  ---\n  duration_ms: 1.164172\n  type: 'test'\n  ...\n# Subtest: composer injects at most 25 percent remediation rounds\nok 2 - composer injects at most 25 percent remediation rounds\n  ---\n  duration_ms: 0.667583\n  type: 'test'\n  ...\n# Subtest: academic metadata infers function topic from actual question text\nok 3 - academic metadata infers function topic from actual question text\n  ---\n  duration_ms: 0.29543\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 51.361657\n",
+      "stderrTail": "",
+      "cached": true
+    },
+    {
+      "file": "tests/word-engine.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 88,
+      "error": null,
+      "metrics": {
+        "tests": 5,
+        "pass": 5,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Türkçe küçük harf dönüşümü doğru çalışır\nok 1 - Türkçe küçük harf dönüşümü doğru çalışır\n  ---\n  duration_ms: 0.814351\n  type: 'test'\n  ...\n# Subtest: kelime yalnızca ana kelimenin harflerinden kurulabilir\nok 2 - kelime yalnızca ana kelimenin harflerinden kurulabilir\n  ---\n  duration_ms: 0.261359\n  type: 'test'\n  ...\n# Subtest: kelime madeni tekrarı ve geçersiz harfi reddeder\nok 3 - kelime madeni tekrarı ve geçersiz harfi reddeder\n  ---\n  duration_ms: 1.019066\n  type: 'test'\n  ...\n# Subtest: kelime merdiveninde tam bir harf değişir\nok 4 - kelime merdiveninde tam bir harf değişir\n  ---\n  duration_ms: 0.170774\n  type: 'test'\n  ...\n# Subtest: kelime merdiveni zinciri doğrulanır\nok 5 - kelime merdiveni zinciri doğrulanır\n  ---\n  duration_ms: 0.246306\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 52.487431\n",
+      "stderrTail": "",
+      "cached": true
+    }
+  ],
+  "attempts": [
+    {
+      "file": "tests/stage09-session-composer.test.mjs",
+      "attempt": 1,
+      "fingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc",
+      "status": "PASS",
+      "exitCode": 0,
+      "signal": null,
+      "timedOut": false,
+      "durationMs": 52432,
+      "error": null,
+      "metrics": {
+        "tests": 3,
+        "pass": 3,
+        "fail": 0
+      },
+      "stdoutTail": "TAP version 13\n# Subtest: Aşama 09 sabitleri: 500 oturum, 6 profil, 3 seed, 23 oyun\nok 1 - Aşama 09 sabitleri: 500 oturum, 6 profil, 3 seed, 23 oyun\n  ---\n  duration_ms: 0.617749\n  type: 'test'\n  ...\n# Subtest: smoke: her oyunda 20 oturum underfill=0 ve semantik tekrar=0\nok 2 - smoke: her oyunda 20 oturum underfill=0 ve semantik tekrar=0\n  ---\n  duration_ms: 52213.574541\n  type: 'test'\n  ...\n# Subtest: KANIT: güncel kaynakla 23 oyun × 500 oturum — underfill=0, semantik tekrar=0\nok 3 - KANIT: güncel kaynakla 23 oyun × 500 oturum — underfill=0, semantik tekrar=0\n  ---\n  duration_ms: 21.91457\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 52402.951748\n",
+      "stderrTail": ""
+    }
+  ],
+  "generatedAt": "2026-08-04T14:23:31.036Z"
+}

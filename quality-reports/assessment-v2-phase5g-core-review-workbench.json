@@ -1,0 +1,314 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "5G",
+  "status": "PASS",
+  "generatedAt": "2026-08-04T13:21:22.874Z",
+  "totalItems": 1491,
+  "totalSprints": 25,
+  "outputDirectory": "/mnt/data/zihin_phase5f_work/quality-reports/assessment-v2-phase5g-core-review",
+  "indexFile": "/mnt/data/zihin_phase5f_work/quality-reports/assessment-v2-phase5g-core-review/index.html",
+  "sprintFiles": [
+    {
+      "sprintNo": 1,
+      "file": "sprint-01.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 60,
+        "mediumRisk": 0,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 2,
+      "file": "sprint-02.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 60,
+        "mediumRisk": 0,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 3,
+      "file": "sprint-03.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 60,
+        "mediumRisk": 0,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 4,
+      "file": "sprint-04.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 60,
+        "mediumRisk": 0,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 5,
+      "file": "sprint-05.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 60,
+        "mediumRisk": 0,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 6,
+      "file": "sprint-06.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 60,
+        "mediumRisk": 0,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 7,
+      "file": "sprint-07.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 60,
+        "mediumRisk": 0,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 8,
+      "file": "sprint-08.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 3,
+        "mediumRisk": 57,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 9,
+      "file": "sprint-09.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 10,
+      "file": "sprint-10.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 11,
+      "file": "sprint-11.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 12,
+      "file": "sprint-12.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 13,
+      "file": "sprint-13.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 14,
+      "file": "sprint-14.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 15,
+      "file": "sprint-15.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 16,
+      "file": "sprint-16.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 17,
+      "file": "sprint-17.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 18,
+      "file": "sprint-18.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 19,
+      "file": "sprint-19.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 20,
+      "file": "sprint-20.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 21,
+      "file": "sprint-21.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 22,
+      "file": "sprint-22.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 60,
+        "lowRisk": 0,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 23,
+      "file": "sprint-23.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 15,
+        "lowRisk": 45,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 24,
+      "file": "sprint-24.html",
+      "metrics": {
+        "itemCount": 60,
+        "highRisk": 0,
+        "mediumRisk": 0,
+        "lowRisk": 60,
+        "approved": 0,
+        "pending": 60
+      }
+    },
+    {
+      "sprintNo": 25,
+      "file": "sprint-25.html",
+      "metrics": {
+        "itemCount": 51,
+        "highRisk": 0,
+        "mediumRisk": 0,
+        "lowRisk": 51,
+        "approved": 5,
+        "pending": 46
+      }
+    }
+  ],
+  "publicationAllowed": false,
+  "automaticApproval": false
+}

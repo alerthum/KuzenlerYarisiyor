@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "5G",
+  "status": "PASS",
+  "topLevelRegression": {
+    "runner": "node scripts/run-test-files-sharded.mjs 8 180000 1",
+    "fileCount": 105,
+    "passedFileCount": 105,
+    "testCount": 646,
+    "passCount": 646,
+    "failCount": 0,
+    "report": "quality-reports/phase5g-sharded-regression.json",
+    "workspaceFingerprint": "f165a50147f6bf230308dbec680144aaef716e8f86a1d8eaabc12b8c64e7addc"
+  },
+  "assessmentV2Regression": {
+    "command": "node --test tests/assessment-v2/*.test.mjs",
+    "testCount": 263,
+    "passCount": 263,
+    "failCount": 0
+  },
+  "combined": {
+    "testCount": 909,
+    "passCount": 909,
+    "failCount": 0
+  },
+  "generatedAt": "2026-08-04T14:27:17.279Z",
+  "sourceCommit": "33ef9cd9d9392429844937c3d75dc758f4e08538"
+}

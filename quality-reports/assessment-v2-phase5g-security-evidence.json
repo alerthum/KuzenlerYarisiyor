@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "2.0",
+  "status": "PASS",
+  "evidenceSource": "DYNAMIC_LOCAL_HTTP_ATTACK_SURFACE_AND_STATIC_FIRESTORE_RULE_AUDIT",
+  "scope": {
+    "httpSecurityHeaders": true,
+    "sensitiveFileExposure": true,
+    "pathTraversal": true,
+    "methodRestrictions": true,
+    "maintenanceApi": true,
+    "errorDisclosure": true,
+    "firestoreRuleContract": true,
+    "privateKeyPatternScan": true
+  },
+  "checks": [
+    {
+      "id": "root-serves-app",
+      "pass": true,
+      "detail": "Uygulama kökü yalnız statik build içeriğini sunar.",
+      "evidence": {
+        "status": 200
+      }
+    },
+    {
+      "id": "content-type-nosniff",
+      "pass": true,
+      "detail": "MIME sniffing kapalıdır.",
+      "evidence": "nosniff"
+    },
+    {
+      "id": "frame-protection",
+      "pass": true,
+      "detail": "Clickjacking iki katmanlı olarak engellenir.",
+      "evidence": {
+        "xFrameOptions": "DENY",
+        "csp": "default-src 'self'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; script-src 'self' https://www.gstatic.com https://www.googleapis.com; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; worker-src 'self' blob:; manifest-src 'self'"
+      }
+    },
+    {
+      "id": "content-security-policy",
+      "pass": true,
+      "detail": "CSP kaynak, base URI ve form hedeflerini sınırlar.",
+      "evidence": "default-src 'self'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; script-src 'self' https://www.gstatic.com https://www.googleapis.com; connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; worker-src 'self' blob:; manifest-src 'self'"
+    },
+    {
+      "id": "permissions-policy",
+      "pass": true,
+      "detail": "Kamera, mikrofon ve konum varsayılan olarak kapalıdır.",
+      "evidence": "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    },
+    {
+      "id": "referrer-policy",
+      "pass": true,
+      "detail": "Referer sızıntısı sınırlandırılır.",
+      "evidence": "strict-origin-when-cross-origin"
+    },
+    {
+      "id": "cross-origin-isolation-headers",
+      "pass": true,
+      "detail": "Çapraz kaynak pencere ve kaynak kullanımı sınırlandırılır.",
+      "evidence": {
+        "coop": "same-origin",
+        "corp": "same-origin"
+      }
+    },
+    {
+      "id": "sensitive-path-denylist",
+      "pass": true,
+      "detail": "Kaynak kontrolü, ortam ayarları, sunucu kodu, testler ve dosya geçişi denemeleri 404 döndürür.",
+      "evidence": [
+        {
+          "path": "/.git/HEAD",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/%2eGit/HEAD",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/KUZENLER_AYARLARI.env",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/.env",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/.env.local",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/package.json",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/package-lock.json",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/server.mjs",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/scripts/project-config.mjs",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/tests/assessment-v2/phase5f-core-game-release.test.mjs",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/../KUZENLER_AYARLARI.env",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/%2e%2e/KUZENLER_AYARLARI.env",
+          "status": 404,
+          "body": "Bulunamadı"
+        },
+        {
+          "path": "/missing-sensitive-file.js",
+          "status": 404,
+          "body": "Bulunamadı"
+        }
+      ]
+    },
+    {
+      "id": "static-method-restriction",
+      "pass": true,
+      "detail": "Statik sunucu yalnız GET/HEAD kabul eder.",
+      "evidence": {
+        "status": 405,
+        "allow": "GET, HEAD"
+      }
+    },
+    {
+      "id": "maintenance-api-method-restriction",
+      "pass": true,
+      "detail": "Bakım API’si GET ile tetiklenemez; yalnız POST kabul eder.",
+      "evidence": {
+        "status": 405,
+        "allow": "POST"
+      }
+    },
+    {
+      "id": "head-contract",
+      "pass": true,
+      "detail": "HEAD isteği gövdesiz yanıtlanır.",
+      "evidence": {
+        "status": 200,
+        "bodyLength": 0
+      }
+    },
+    {
+      "id": "safe-spa-fallback",
+      "pass": true,
+      "detail": "Uzantısız uygulama rotaları güvenli index fallback kullanır.",
+      "evidence": {
+        "status": 200
+      }
+    },
+    {
+      "id": "missing-asset-no-spa-fallback",
+      "pass": true,
+      "detail": "Eksik dosya uzantıları index içeriğiyle maskelenmez.",
+      "evidence": {
+        "status": 404
+      }
+    },
+    {
+      "id": "no-error-detail-leak",
+      "pass": true,
+      "detail": "HTTP hata yanıtları stack trace veya iç dosya yolu sızdırmaz.",
+      "evidence": null
+    },
+    {
+      "id": "firestore-rules-v2",
+      "pass": true,
+      "detail": "Firestore rules v2 kullanılır.",
+      "evidence": null
+    },
+    {
+      "id": "firestore-auth-guard",
+      "pass": true,
+      "detail": "Kimlik doğrulama ortak signedIn korumasıyla tanımlıdır.",
+      "evidence": null
+    },
+    {
+      "id": "firestore-default-deny",
+      "pass": true,
+      "detail": "Tanımsız bütün Firestore yolları varsayılan olarak reddedilir.",
+      "evidence": null
+    },
+    {
+      "id": "firestore-attempt-immutability",
+      "pass": true,
+      "detail": "Öğrenci deneme kayıtları oluşturulduktan sonra değiştirilemez ve silinemez.",
+      "evidence": null
+    },
+    {
+      "id": "firestore-content-admin-only",
+      "pass": true,
+      "detail": "Yayın içerikleri yalnız admin rolüyle yazılabilir.",
+      "evidence": null
+    },
+    {
+      "id": "firestore-no-unconditional-allow",
+      "pass": true,
+      "detail": "Firestore kurallarında koşulsuz allow true bulunmaz.",
+      "evidence": null
+    },
+    {
+      "id": "no-private-key-material",
+      "pass": true,
+      "detail": "Kaynak kodunda özel anahtar veya servis hesabı sırrı deseni bulunmaz.",
+      "evidence": []
+    }
+  ],
+  "failureCount": 0,
+  "failures": [],
+  "generatedAt": "2026-08-04T14:24:19.417Z",
+  "infrastructure": {
+    "command": "node scripts/run-core-security-audit.mjs 6222",
+    "serverStdout": "\nZihin Arenası hazır.\nÇalışma modu: local • Veri: local\nBilgisayar: http://localhost:6222\nTelefon:     http://172.26.36.30:6222\n\nKapatmak için Ctrl+C tuşlarına basın.\n\n",
+    "serverStderr": ""
+  }
+}

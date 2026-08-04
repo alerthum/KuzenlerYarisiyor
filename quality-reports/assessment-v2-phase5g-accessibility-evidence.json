@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "2.0",
+  "status": "PASS",
+  "evidenceSource": "DETERMINISTIC_STATIC_CORE_UI_ACCESSIBILITY_CONTRACT",
+  "scope": {
+    "coreScreens": [
+      "profiles",
+      "dashboard",
+      "library",
+      "game",
+      "game-result"
+    ],
+    "sharedGameRenderer": true,
+    "expectedGameCount": 23,
+    "coveredGameCount": 23,
+    "wcagIntent": [
+      "keyboard-focus",
+      "names-and-labels",
+      "landmarks",
+      "dialogs",
+      "status-and-progress",
+      "non-text-content"
+    ]
+  },
+  "checks": [
+    {
+      "id": "document-language",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Kök belge Türkçe dilini bildirir."
+    },
+    {
+      "id": "document-title",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Belge başlığı mevcuttur."
+    },
+    {
+      "id": "viewport-mobile",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Mobil görünüm bildirimi mevcuttur."
+    },
+    {
+      "id": "live-regions",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Uygulama ve uyarı canlı bölgeleri tanımlıdır."
+    },
+    {
+      "id": "single-shared-main-renderer",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Profil, panel, oyun, sonuç ve yönetim ekranları main landmark kullanır."
+    },
+    {
+      "id": "core-screen-headings",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Çekirdek ekranların görünür h1 başlık sözleşmesi vardır."
+    },
+    {
+      "id": "navigation-name",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Alt gezinme erişilebilir ad taşır."
+    },
+    {
+      "id": "navigation-current-page",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Etkin gezinme öğesi aria-current ile bildirilir."
+    },
+    {
+      "id": "keyboard-focus-visible",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Klavye odağı görünür bir outline ile işaretlenir."
+    },
+    {
+      "id": "no-positive-tabindex",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Pozitif tabindex kullanılmaz."
+    },
+    {
+      "id": "game-progress-semantics",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Oyun ilerlemesi progressbar semantiği taşır."
+    },
+    {
+      "id": "timer-semantics",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Süre sayacı adlandırılmış timer rolü taşır."
+    },
+    {
+      "id": "core-text-input-names",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Kelime, hikâye ve merdiven girişleri erişilebilir ada sahiptir."
+    },
+    {
+      "id": "whiteboard-name",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Beyaz tahta çizim alanı adlandırılmıştır."
+    },
+    {
+      "id": "calculator-live-output",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Hesap makinesi sonucu durum bölgesi olarak bildirilir."
+    },
+    {
+      "id": "modal-names",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Bütün dialog açılış etiketleri modal ve adlandırılmıştır."
+    },
+    {
+      "id": "confirm-focus-return",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Onay penceresi kapanınca odağı geri verir ve Escape destekler."
+    },
+    {
+      "id": "icon-button-names",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "İkon ve geri düğmeleri erişilebilir ada sahiptir."
+    },
+    {
+      "id": "image-alternatives",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Tüm img öğeleri alt niteliği taşır."
+    },
+    {
+      "id": "svg-image-names",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Görsel rolündeki SVG öğeleri adlandırılmıştır."
+    },
+    {
+      "id": "decorative-icons-hidden",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Dekoratif emoji ve simgeler erişilebilirlik ağacından çıkarılır."
+    },
+    {
+      "id": "local-bootstrap-contract",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "Yerel çekirdek uygulama ortak erişilebilir UI rendererını açar."
+    },
+    {
+      "id": "all-core-games-shared-renderer",
+      "pass": true,
+      "severity": "SERIOUS",
+      "detail": "23 çekirdek oyunun tamamı ortak oyun rendererında kayıtlıdır. Eksik: yok."
+    }
+  ],
+  "seriousFailureCount": 0,
+  "warningCount": 0,
+  "seriousFailures": [],
+  "warnings": [],
+  "environmentNote": "Tarayıcı tabanlı axe çalıştırıcısı paket aynası ve çalışma ortamının Chromium URLBlocklist politikası nedeniyle bu koşuda kullanılamadı. Bu kanıt, kaynak ve build sözleşmesini bağımlılıksız ve deterministik olarak doğrular; dağıtım ortamında resmi Playwright/axe kapısı ayrıca korunmaktadır.",
+  "officialBrowserGate": {
+    "configured": true,
+    "command": "npm run test:a11y",
+    "executionStatus": "BLOCKED_BY_CURRENT_EXECUTION_ENVIRONMENT"
+  },
+  "generatedAt": "2026-08-04T14:24:19.097Z"
+}
