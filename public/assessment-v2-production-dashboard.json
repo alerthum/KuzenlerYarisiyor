@@ -1,6 +1,6 @@
 {
   "schemaVersion": "3.5",
-  "generatedAt": "2026-08-04T00:30:52.351Z",
+  "generatedAt": "2026-08-04T00:39:48.152Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "PRIMARY_ACADEMIC_CORE_AND_GRADES5_8_ENGINEERING_SCOPE_COMPLETE",
   "productReady": false,
@@ -32,13 +32,13 @@
     "targetGradeCount": 12,
     "activeGradeCount": 8,
     "courseScheduleCellCount": 112,
-    "activeEngineCellCount": 45,
-    "activeEngineCellPercent": 40.2,
-    "curriculumOutcomeRecordCount": 2142,
-    "coveredOutcomeCount": 2142,
-    "canonicalQuestionCount": 2167,
+    "activeEngineCellCount": 48,
+    "activeEngineCellPercent": 42.9,
+    "curriculumOutcomeRecordCount": 2179,
+    "coveredOutcomeCount": 2179,
+    "canonicalQuestionCount": 2204,
     "humanApprovedQuestionCount": 5,
-    "humanReviewQueueCount": 2162,
+    "humanReviewQueueCount": 2199,
     "gameAdaptedQuestionCount": 5,
     "legacyQuarantineCount": 604,
     "unmatchedActiveCourseCellCount": 0
@@ -1365,6 +1365,90 @@
         "11 görev insan incelemesi bekliyor.",
         "Gerçek sanat eseri, müze görseli, öğrenci ürünü ve portfolyo rubriği varlıkları tamamlanmadı."
       ]
+    },
+    {
+      "id": "tr-g1-muzik-tymm-v2",
+      "grade": 1,
+      "courseId": "muzik",
+      "scheduleCourseId": "muzik",
+      "courseName": "Müzik",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 13,
+      "ingestedOutcomeCount": 13,
+      "coveredOutcomeCount": 13,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 13,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 13,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "primary listening, singing, rhythm and movement performance engine",
+      "verifierType": "independent audio evidence, performance and rubric verification",
+      "misconceptionCatalog": "g1-music-misconceptions-v1",
+      "nextAction": "13 görevi müzik öğretmeni, yaş uygunluğu, ses güvenliği ve gerçek ses kaydı açısından kalibre et.",
+      "blockers": [
+        "13 görev insan incelemesi bekliyor.",
+        "Lisanslı veya insan kayıtlı müzik/ses varlıkları ve performans rubrikleri tamamlanmadı."
+      ]
+    },
+    {
+      "id": "tr-g2-muzik-tymm-v2",
+      "grade": 2,
+      "courseId": "muzik",
+      "scheduleCourseId": "muzik",
+      "courseName": "Müzik",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 12,
+      "ingestedOutcomeCount": 12,
+      "coveredOutcomeCount": 12,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 12,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 12,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "primary listening, singing, rhythm and movement performance engine",
+      "verifierType": "independent audio evidence, performance and rubric verification",
+      "misconceptionCatalog": "g2-music-misconceptions-v1",
+      "nextAction": "12 görevi müzik öğretmeni, yaş uygunluğu, ses güvenliği ve gerçek ses kaydı açısından kalibre et.",
+      "blockers": [
+        "12 görev insan incelemesi bekliyor.",
+        "Lisanslı veya insan kayıtlı müzik/ses varlıkları ve performans rubrikleri tamamlanmadı."
+      ]
+    },
+    {
+      "id": "tr-g3-muzik-tymm-v2",
+      "grade": 3,
+      "courseId": "muzik",
+      "scheduleCourseId": "muzik",
+      "courseName": "Müzik",
+      "programFamily": "TYMM",
+      "curriculumStatus": "FULL_SCOPE_INGESTED",
+      "officialOutcomeCount": 12,
+      "ingestedOutcomeCount": 12,
+      "coveredOutcomeCount": 12,
+      "courseCoveragePercent": 100,
+      "ingestionPercent": 100,
+      "canonicalQuestionCount": 12,
+      "humanApprovedQuestionCount": 0,
+      "humanReviewQueueCount": 12,
+      "gameAdaptedQuestionCount": 0,
+      "gameAdaptationAllowed": false,
+      "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+      "engineType": "primary listening, singing, rhythm and movement performance engine",
+      "verifierType": "independent audio evidence, performance and rubric verification",
+      "misconceptionCatalog": "g3-music-misconceptions-v1",
+      "nextAction": "12 görevi müzik öğretmeni, yaş uygunluğu, ses güvenliği ve gerçek ses kaydı açısından kalibre et.",
+      "blockers": [
+        "12 görev insan incelemesi bekliyor.",
+        "Lisanslı veya insan kayıtlı müzik/ses varlıkları ve performans rubrikleri tamamlanmadı."
+      ]
     }
   ],
   "pipeline": [
@@ -1372,7 +1456,7 @@
       "id": "curriculum",
       "label": "Resmî müfredat",
       "status": "PASS_FOR_ACTIVE_ENGINES",
-      "note": "45 aktif motorun resmî kapsamı tam aktarıldı."
+      "note": "48 aktif motorun resmî kapsamı tam aktarıldı."
     },
     {
       "id": "subject-engine",
@@ -1384,13 +1468,13 @@
       "id": "canonical-content",
       "label": "Kanonik soru/görev",
       "status": "ENGINEERING_SCOPE_COMPLETE",
-      "note": "2167 kanonik mühendislik nesnesi mevcut."
+      "note": "2204 kanonik mühendislik nesnesi mevcut."
     },
     {
       "id": "human-review",
       "label": "İnsan kalibrasyonu",
       "status": "BLOCKED",
-      "note": "5 onaylı, 2162 inceleme bekliyor."
+      "note": "5 onaylı, 2199 inceleme bekliyor."
     },
     {
       "id": "game-adaptation",
@@ -1434,7 +1518,7 @@
       "order": 4,
       "id": "expand-grade-map",
       "title": "1–12 sınıf-ders hücrelerini genişlet",
-      "reason": "112 zorunlu hücrenin 45’si aktif."
+      "reason": "112 zorunlu hücrenin 48’si aktif."
     }
   ]
 }

@@ -2,7 +2,7 @@ import { ASSESSMENT_V2_CANONICAL_CATALOG } from './canonical-catalog.js';
 import { GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS } from './turkish-g8-human-review-registry.js';
 
 const approvedIds=new Set(GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS.map(row=>row.questionId));
-const priorityByCourse=Object.freeze({'matematik':1,'fen-bilimleri':2,'t-c-inkilap-tarihi-ve-ataturkculuk':3,'din-kulturu-ve-ahlak-bilgisi':4,'ingilizce':5,'yabanci-dil':5,'sosyal-bilgiler':6,'turkce':7,'gorsel-sanatlar':8});
+const priorityByCourse=Object.freeze({'matematik':1,'fen-bilimleri':2,'t-c-inkilap-tarihi-ve-ataturkculuk':3,'din-kulturu-ve-ahlak-bilgisi':4,'ingilizce':5,'yabanci-dil':5,'sosyal-bilgiler':6,'turkce':7,'gorsel-sanatlar':8,'muzik':8});
 
 function reviewComplexity(item){
   let score=1;
@@ -63,9 +63,9 @@ export function buildAssessmentV2HumanReviewQueue(items=ASSESSMENT_V2_CANONICAL_
 
 export function auditAssessmentV2HumanReviewQueue(queue=buildAssessmentV2HumanReviewQueue()){
   const errors=[];
-  if(queue.metrics.total!==2167)errors.push(`total:${queue.metrics.total}`);
+  if(queue.metrics.total!==2204)errors.push(`total:${queue.metrics.total}`);
   if(queue.metrics.approved!==5)errors.push(`approved:${queue.metrics.approved}`);
-  if(queue.metrics.pending!==2162)errors.push(`pending:${queue.metrics.pending}`);
+  if(queue.metrics.pending!==2199)errors.push(`pending:${queue.metrics.pending}`);
   if(new Set(queue.rows.map(row=>row.questionId)).size!==queue.rows.length)errors.push('duplicate-question');
   if(queue.rows.some(row=>row.gameAdaptationAllowed!==false))errors.push('game-open');
   if(queue.productReady!==false||queue.gameAdaptationAllowed!==false)errors.push('product-ready-leak');

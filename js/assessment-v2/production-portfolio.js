@@ -52,6 +52,7 @@ import { MIDDLE_SCHOOL_TYMM_ENGINE_RECORDS } from './middle-school-tymm-core-eng
 import { PRIMARY_BRIDGE_ENGINE_RECORDS } from './primary-bridge-core-engines.js';
 import { PRIMARY_TYMM_ACADEMIC_ENGINE_RECORDS } from './primary-tymm-academic-core-engines.js';
 import { PRIMARY_TYMM_VISUAL_ARTS_ENGINE_RECORDS } from './primary-tymm-visual-arts-engines.js';
+import { PRIMARY_TYMM_MUSIC_ENGINE_RECORDS } from './primary-tymm-music-engines.js';
 
 export const ASSESSMENT_V2_TARGET_STATEMENT='1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.';
 const LEGACY_QUARANTINE_COUNT=604;
@@ -111,6 +112,7 @@ export function buildAssessmentV2ProductionPortfolio(){
   });
   const primaryTymmRows=PRIMARY_TYMM_ACADEMIC_ENGINE_RECORDS.map(record=>{const meta=primaryTymmCourseMeta[record.courseId];return engineRow({id:`tr-g${record.grade}-${record.courseId}-tymm-v2`,grade:record.grade,courseId:record.courseId,courseName:meta.courseName,programFamily:'TYMM',officialOutcomeCount:record.officialOutcomeCount,coveredOutcomeCount:record.audit.metrics.implementedOutcomeCount,items:record.items,engineType:meta.engineType,verifierType:meta.verifierType,misconceptionCatalog:`g${record.grade}-${meta.misconceptionCatalog}`,nextAction:`${record.items.length} görevi sınıf öğretmeni/alan uzmanı, yaş uygunluğu ve gerçek materyal açısından kalibre et.`,blockers:[`${record.items.length} görev insan incelemesi bekliyor.`,'Ses, görsel, somut materyal, hareket güvenliği veya performans rubriği gereken görevlerin gerçek varlıkları tamamlanmadı.']});});
   const primaryVisualArtsRows=PRIMARY_TYMM_VISUAL_ARTS_ENGINE_RECORDS.map(record=>engineRow({id:`tr-g${record.grade}-gorsel-sanatlar-tymm-v2`,grade:record.grade,courseId:'gorsel-sanatlar',courseName:'Görsel Sanatlar',programFamily:'TYMM',officialOutcomeCount:record.officialOutcomeCount,coveredOutcomeCount:record.audit.metrics.implementedOutcomeCount,items:record.items,engineType:'primary visual analysis, artistic production and portfolio engine',verifierType:'independent visible-evidence, portfolio and rubric verification',misconceptionCatalog:`g${record.grade}-visual-arts-misconceptions-v1`,nextAction:`${record.items.length} görevi görsel sanatlar öğretmeni, yaş uygunluğu, malzeme güvenliği ve gerçek eser/öğrenci ürünü açısından kalibre et.`,blockers:[`${record.items.length} görev insan incelemesi bekliyor.`,'Gerçek sanat eseri, müze görseli, öğrenci ürünü ve portfolyo rubriği varlıkları tamamlanmadı.']}));
+  const primaryMusicRows=PRIMARY_TYMM_MUSIC_ENGINE_RECORDS.map(record=>engineRow({id:`tr-g${record.grade}-muzik-tymm-v2`,grade:record.grade,courseId:'muzik',courseName:'Müzik',programFamily:'TYMM',officialOutcomeCount:record.officialOutcomeCount,coveredOutcomeCount:record.audit.metrics.implementedOutcomeCount,items:record.items,engineType:'primary listening, singing, rhythm and movement performance engine',verifierType:'independent audio evidence, performance and rubric verification',misconceptionCatalog:`g${record.grade}-music-misconceptions-v1`,nextAction:`${record.items.length} görevi müzik öğretmeni, yaş uygunluğu, ses güvenliği ve gerçek ses kaydı açısından kalibre et.`,blockers:[`${record.items.length} görev insan incelemesi bekliyor.`,'Lisanslı veya insan kayıtlı müzik/ses varlıkları ve performans rubrikleri tamamlanmadı.']}));
   const engines=frozenArray([
     engineRow({id:'tr-g8-turkce-v2',grade:8,courseId:'turkce',courseName:'Türkçe',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE_8_TURKISH_OUTCOMES_2019.length,coveredOutcomeCount:GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8TurkishItems,approvedQuestionIds:approvedTurkishIds,gameAdaptedQuestionCount:5,engineType:'semantic-evidence + grammar + visual-reading + performance-rubric',verifierType:'independent semantic/constraint verification',misconceptionCatalog:'tr-g8-turkish-domain-misconceptions',nextAction:'96 Türkçe görevini alan ve yaş uygunluğu açısından insan kalibrasyonundan geçir.',blockers:['91 Türkçe görevi insan incelemesi bekliyor.','Dinleme/konuşma görevleri gerçek medya ve rubrik kalibrasyonu gerektiriyor.']}),
     engineRow({id:'tr-g8-matematik-v2',grade:8,courseId:'matematik',courseName:'Matematik',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE8_MATH_OUTCOMES_2018.length,coveredOutcomeCount:GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8MathItems,engineType:'symbolic/numeric/geometry solver-backed + interactive construction',verifierType:'independent alternate algorithm and invariant checks',misconceptionCatalog:'tr-g8-math-full-scope-misconceptions',nextAction:'52 Matematik görevini insan örneklemiyle kalibre et.',blockers:['52 Matematik görevinin insan gözle kalibrasyonu yapılmadı.','Etkileşimli çizim görevlerinin UI bileşenleri bağlanmadı.']}),
@@ -127,7 +129,8 @@ export function buildAssessmentV2ProductionPortfolio(){
     ...middleSchoolRows,
     ...primaryBridgeRows,
     ...primaryTymmRows,
-    ...primaryVisualArtsRows
+    ...primaryVisualArtsRows,
+    ...primaryMusicRows
   ]);
   const questionCount=engines.reduce((s,r)=>s+r.canonicalQuestionCount,0);
   const approvedCount=engines.reduce((s,r)=>s+r.humanApprovedQuestionCount,0);
@@ -164,15 +167,15 @@ export function auditAssessmentV2ProductionPortfolio(portfolio=buildAssessmentV2
   const errors=[];
   if(portfolio.summary.targetGradeCount!==12)errors.push('target-grade-count');
   if(portfolio.summary.courseScheduleCellCount!==112)errors.push(`course-cell-count:${portfolio.summary.courseScheduleCellCount}`);
-  if(portfolio.engines.length!==45)errors.push(`engine-count:${portfolio.engines.length}`);
+  if(portfolio.engines.length!==48)errors.push(`engine-count:${portfolio.engines.length}`);
   if(new Set(portfolio.engines.map(r=>r.id)).size!==portfolio.engines.length)errors.push('duplicate-engine-id');
-  if(portfolio.summary.activeEngineCellCount!==45)errors.push(`active-cell-count:${portfolio.summary.activeEngineCellCount}`);
+  if(portfolio.summary.activeEngineCellCount!==48)errors.push(`active-cell-count:${portfolio.summary.activeEngineCellCount}`);
   if(portfolio.summary.unmatchedActiveCourseCellCount!==0)errors.push(`unmatched-active-cells:${portfolio.summary.unmatchedActiveCourseCellCount}`);
-  if(portfolio.summary.canonicalQuestionCount!==2167)errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
-  if(portfolio.summary.curriculumOutcomeRecordCount!==2142)errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
-  if(portfolio.summary.coveredOutcomeCount!==2142)errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
+  if(portfolio.summary.canonicalQuestionCount!==2204)errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
+  if(portfolio.summary.curriculumOutcomeRecordCount!==2179)errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
+  if(portfolio.summary.coveredOutcomeCount!==2179)errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
   if(portfolio.summary.humanApprovedQuestionCount!==5)errors.push(`approved-count:${portfolio.summary.humanApprovedQuestionCount}`);
-  if(portfolio.summary.humanReviewQueueCount!==2162)errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
+  if(portfolio.summary.humanReviewQueueCount!==2199)errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
   if(portfolio.productReady!==false||portfolio.publicationAllowed!==false)errors.push('product-ready-leak');
   if(portfolio.gameAdaptationAllowed!==false||portfolio.summary.gameAdaptedQuestionCount!==5||!ASSESSMENT_V2_GAME_ADAPTATION_LAB_AUDIT.ok)errors.push('game-adaptation-lab-or-global-lock');
   if(portfolio.legacy.count!==604||portfolio.legacy.status!=='UNVERIFIED_LEGACY')errors.push('legacy-policy');

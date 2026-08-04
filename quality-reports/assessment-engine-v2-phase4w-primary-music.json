@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T00:39:47.884Z",
+  "phase": "4W",
+  "title": "1–3. Sınıf TYMM Müzik Motorları",
+  "status": "PRIMARY_MUSIC_ENGINEERING_SCOPE_COMPLETE",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "errors": [],
+  "audits": {
+    "music": {
+      "ok": true,
+      "metrics": {
+        "engineCount": 3,
+        "officialOutcomeCount": 37,
+        "itemCount": 37,
+        "humanReviewStatus": "NOT_MEASURED",
+        "licensedAudioStatus": "REQUIRED_NOT_ATTACHED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "reviewSample": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "engineCount": 3,
+        "itemCount": 6,
+        "perEngine": 2,
+        "approved": 0,
+        "pending": 6
+      }
+    },
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 8,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 48,
+        "activeEngineCellPercent": 42.9,
+        "curriculumOutcomeRecordCount": 2179,
+        "coveredOutcomeCount": 2179,
+        "canonicalQuestionCount": 2204,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 2199,
+        "gameAdaptedQuestionCount": 5,
+        "legacyQuarantineCount": 604,
+        "unmatchedActiveCourseCellCount": 0
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 2204,
+        "byEngine": {
+          "g8:turkce": 96,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 61,
+          "g5:turkce": 105,
+          "g8:t-c-inkilap-tarihi-ve-ataturkculuk": 33,
+          "g8:din-kulturu-ve-ahlak-bilgisi": 28,
+          "g8:ingilizce": 70,
+          "g5:matematik": 23,
+          "g5:fen-bilimleri": 28,
+          "g5:sosyal-bilgiler": 19,
+          "g5:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g5:yabanci-dil": 184,
+          "g6:turkce": 100,
+          "g6:matematik": 24,
+          "g6:fen-bilimleri": 36,
+          "g6:sosyal-bilgiler": 18,
+          "g6:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g6:yabanci-dil": 184,
+          "g7:turkce": 103,
+          "g7:matematik": 30,
+          "g7:fen-bilimleri": 36,
+          "g7:sosyal-bilgiler": 17,
+          "g7:din-kulturu-ve-ahlak-bilgisi": 17,
+          "g7:yabanci-dil": 191,
+          "g2:yabanci-dil": 138,
+          "g3:yabanci-dil": 138,
+          "g3:fen-bilimleri": 20,
+          "g4:fen-bilimleri": 43,
+          "g4:din-kulturu-ve-ahlak-bilgisi": 19,
+          "g4:yabanci-dil": 47,
+          "g1:turkce": 17,
+          "g2:turkce": 20,
+          "g3:turkce": 20,
+          "g1:matematik": 19,
+          "g2:matematik": 25,
+          "g3:matematik": 33,
+          "g1:hayat-bilgisi": 23,
+          "g2:hayat-bilgisi": 23,
+          "g3:hayat-bilgisi": 20,
+          "g1:beden-egitimi-ve-oyun": 13,
+          "g2:beden-egitimi-ve-oyun": 12,
+          "g3:beden-egitimi-ve-oyun": 13,
+          "g1:gorsel-sanatlar": 11,
+          "g2:gorsel-sanatlar": 11,
+          "g3:gorsel-sanatlar": 11,
+          "g1:muzik": 13,
+          "g2:muzik": 12,
+          "g3:muzik": 12
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    },
+    "reviewQueue": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "total": 2204,
+        "approved": 5,
+        "pending": 2199,
+        "highComplexityPending": 2048
+      }
+    },
+    "autonomousPlan": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "activeEngineCount": 48,
+        "engineeringScopeCompleteEngineCount": 48,
+        "remainingOutcomeCount": 0,
+        "humanReviewQueueCount": 2199,
+        "unopenedCourseCellCount": 64
+      }
+    }
+  },
+  "sourceEvidence": {
+    "sourceId": "meb-tymm-primary-music-1-8-2024",
+    "courseIds": [
+      "muzik"
+    ],
+    "grades": [
+      1,
+      2,
+      3
+    ],
+    "localDocument": "docs/sources/MUZIK_1_3_TYMM_OFFICIAL_HTML_EVIDENCE.json",
+    "sha256": "4993e60291f47c9ecafa0ce7add7a7c56924d81d7640056e63e0e102608d326a",
+    "status": "LOCAL_EXTRACTED_AUTHORITATIVE_HTML_EVIDENCE_VERIFIED"
+  },
+  "metrics": {
+    "newEngineCount": 3,
+    "newOfficialOutcomeCount": 37,
+    "newCanonicalTaskCount": 37,
+    "newHumanApprovedCount": 0,
+    "totalActiveEngineCount": 48,
+    "totalActiveGradeCount": 8,
+    "totalOfficialOutcomeCount": 2179,
+    "totalCanonicalTaskCount": 2204,
+    "humanReviewPending": 2199,
+    "unopenedCourseCells": 64
+  },
+  "honesty": {
+    "humanReviewStatus": "NOT_MEASURED",
+    "licensedOrHumanRecordedAudio": "REQUIRED_NOT_ATTACHED",
+    "musicTeacherCalibration": "NOT_COMPLETED",
+    "realStudentPilot": "NOT_COMPLETED",
+    "copyrightedLyricsCopied": false
+  }
+}

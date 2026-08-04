@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T00:39:47.724Z",
+  "status": "HUMAN_MUSIC_TEACHER_AND_LICENSED_AUDIO_REVIEW_REQUIRED",
+  "metrics": {
+    "engineCount": 3,
+    "itemCount": 6,
+    "perEngine": 2,
+    "approved": 0,
+    "pending": 6
+  },
+  "rows": [
+    {
+      "questionId": "muzik-g1-muz-1-1-1",
+      "engineKey": "g1:muzik",
+      "grade": 1,
+      "courseId": "muzik",
+      "outcomeIds": [
+        "tr-tymm-g1-muzik-muz-1-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "1. sınıf Müzik dersinde “MÜZİKLE TANIŞIYORUM” teması için öğretmen tarafından seçilmiş, yaşa uygun ve lisans/provenansı doğrulanmış kısa ses örnekleri ile güvenli sınıf içi performans ortamı kullanılır.",
+      "stem": "İstiklâl Marşı’nın başlıca ögelerini çözümleyebilme öğrenme çıktısını gerçek dinleme ya da performans kanıtıyla göster.",
+      "rubricCriteria": [
+        "Dinlediği ses, eser veya çalgı örneğinin istenen özelliğini dikkatle ayırt eder.",
+        "Karşılaştırma veya yorumunu yalnız duyduğu müziksel kanıta dayandırır.",
+        "Sesin incelik-kalınlık, süre, ritim, çalgı niteliği ya da marş ögesiyle ilgili kararını yaş düzeyine uygun açıklar."
+      ],
+      "hints": [
+        "Önce dinleme ya da söyleme görevinin hangi özelliği ölçtüğünü belirle: ses, süre, ritim, söz, çalgı veya hareket.",
+        "Duyduğun müziksel işareti seç ve performansını o işaretle eşleştir.",
+        "Son kontrolde zamanlama, güvenli katılım, dinleme kuralı ve rubrik ölçütlerini ayrı ayrı gözden geçir."
+      ],
+      "misconceptionIds": [
+        "müziksel-kanıt-yerine-tahmin",
+        "ritim-süre-ve-ses-özelliğini-karıştırma",
+        "yüksek-ses-veya-hızın-doğru-performans-olduğunu-sanma"
+      ],
+      "media": {
+        "type": "official-or-authorized-anthem-reference",
+        "status": "LICENSED_OR_HUMAN_RECORDED_MUSIC_AUDIO_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "licensedAudioStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "muzik-g1-muz-1-1-4",
+      "engineKey": "g1:muzik",
+      "grade": 1,
+      "courseId": "muzik",
+      "outcomeIds": [
+        "tr-tymm-g1-muzik-muz-1-1-4"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "1. sınıf Müzik dersinde “MÜZİKLE TANIŞIYORUM” teması için öğretmen tarafından seçilmiş, yaşa uygun ve lisans/provenansı doğrulanmış kısa ses örnekleri ile güvenli sınıf içi performans ortamı kullanılır.",
+      "stem": "Farklı türdeki eserleri söyleyebilme öğrenme çıktısını gerçek dinleme ya da performans kanıtıyla göster.",
+      "rubricCriteria": [
+        "Yaş düzeyine uygun ses yüksekliği, nefes ve başlangıç-bitiş düzeniyle eseri söyler.",
+        "Söz, ritim ve toplu söyleme kurallarına dikkat eder; başkasının sesini bastırmaz.",
+        "Performansını öğretmen ölçütlerine göre gözden geçirir ve bir geliştirme noktası belirtir."
+      ],
+      "hints": [
+        "Önce dinleme ya da söyleme görevinin hangi özelliği ölçtüğünü belirle: ses, süre, ritim, söz, çalgı veya hareket.",
+        "Duyduğun müziksel işareti seç ve performansını o işaretle eşleştir.",
+        "Son kontrolde zamanlama, güvenli katılım, dinleme kuralı ve rubrik ölçütlerini ayrı ayrı gözden geçir."
+      ],
+      "misconceptionIds": [
+        "müziksel-kanıt-yerine-tahmin",
+        "ritim-süre-ve-ses-özelliğini-karıştırma",
+        "yüksek-ses-veya-hızın-doğru-performans-olduğunu-sanma"
+      ],
+      "media": {
+        "type": "licensed-or-human-recorded-age-appropriate-music-audio",
+        "status": "LICENSED_OR_HUMAN_RECORDED_MUSIC_AUDIO_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "licensedAudioStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "muzik-g2-muz-2-1-1",
+      "engineKey": "g2:muzik",
+      "grade": 2,
+      "courseId": "muzik",
+      "outcomeIds": [
+        "tr-tymm-g2-muzik-muz-2-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "2. sınıf Müzik dersinde “MÜZİKLE TANIŞIYORUM” teması için öğretmen tarafından seçilmiş, yaşa uygun ve lisans/provenansı doğrulanmış kısa ses örnekleri ile güvenli sınıf içi performans ortamı kullanılır.",
+      "stem": "İstiklâl Marşı’nın sözcüklerini yorumlayabilme öğrenme çıktısını gerçek dinleme ya da performans kanıtıyla göster.",
+      "rubricCriteria": [
+        "Dinlediği ses, eser veya çalgı örneğinin istenen özelliğini dikkatle ayırt eder.",
+        "Karşılaştırma veya yorumunu yalnız duyduğu müziksel kanıta dayandırır.",
+        "Sesin incelik-kalınlık, süre, ritim, çalgı niteliği ya da marş ögesiyle ilgili kararını yaş düzeyine uygun açıklar."
+      ],
+      "hints": [
+        "Önce dinleme ya da söyleme görevinin hangi özelliği ölçtüğünü belirle: ses, süre, ritim, söz, çalgı veya hareket.",
+        "Duyduğun müziksel işareti seç ve performansını o işaretle eşleştir.",
+        "Son kontrolde zamanlama, güvenli katılım, dinleme kuralı ve rubrik ölçütlerini ayrı ayrı gözden geçir."
+      ],
+      "misconceptionIds": [
+        "müziksel-kanıt-yerine-tahmin",
+        "ritim-süre-ve-ses-özelliğini-karıştırma",
+        "yüksek-ses-veya-hızın-doğru-performans-olduğunu-sanma"
+      ],
+      "media": {
+        "type": "official-or-authorized-anthem-reference",
+        "status": "LICENSED_OR_HUMAN_RECORDED_MUSIC_AUDIO_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "licensedAudioStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "muzik-g2-muz-2-1-3",
+      "engineKey": "g2:muzik",
+      "grade": 2,
+      "courseId": "muzik",
+      "outcomeIds": [
+        "tr-tymm-g2-muzik-muz-2-1-3"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "2. sınıf Müzik dersinde “MÜZİKLE TANIŞIYORUM” teması için öğretmen tarafından seçilmiş, yaşa uygun ve lisans/provenansı doğrulanmış kısa ses örnekleri ile güvenli sınıf içi performans ortamı kullanılır.",
+      "stem": "Farklı türdeki eserleri söyleyebilme öğrenme çıktısını gerçek dinleme ya da performans kanıtıyla göster.",
+      "rubricCriteria": [
+        "Yaş düzeyine uygun ses yüksekliği, nefes ve başlangıç-bitiş düzeniyle eseri söyler.",
+        "Söz, ritim ve toplu söyleme kurallarına dikkat eder; başkasının sesini bastırmaz.",
+        "Performansını öğretmen ölçütlerine göre gözden geçirir ve bir geliştirme noktası belirtir."
+      ],
+      "hints": [
+        "Önce dinleme ya da söyleme görevinin hangi özelliği ölçtüğünü belirle: ses, süre, ritim, söz, çalgı veya hareket.",
+        "Duyduğun müziksel işareti seç ve performansını o işaretle eşleştir.",
+        "Son kontrolde zamanlama, güvenli katılım, dinleme kuralı ve rubrik ölçütlerini ayrı ayrı gözden geçir."
+      ],
+      "misconceptionIds": [
+        "müziksel-kanıt-yerine-tahmin",
+        "ritim-süre-ve-ses-özelliğini-karıştırma",
+        "yüksek-ses-veya-hızın-doğru-performans-olduğunu-sanma"
+      ],
+      "media": {
+        "type": "licensed-or-human-recorded-age-appropriate-music-audio",
+        "status": "LICENSED_OR_HUMAN_RECORDED_MUSIC_AUDIO_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "licensedAudioStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "muzik-g3-muz-3-1-1",
+      "engineKey": "g3:muzik",
+      "grade": 3,
+      "courseId": "muzik",
+      "outcomeIds": [
+        "tr-tymm-g3-muzik-muz-3-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "3. sınıf Müzik dersinde “MÜZİKLE TANIŞIYORUM” teması için öğretmen tarafından seçilmiş, yaşa uygun ve lisans/provenansı doğrulanmış kısa ses örnekleri ile güvenli sınıf içi performans ortamı kullanılır.",
+      "stem": "İstiklâl Marşı’nı sözlerine dikkat ederek söyleyebilme öğrenme çıktısını gerçek dinleme ya da performans kanıtıyla göster.",
+      "rubricCriteria": [
+        "Yaş düzeyine uygun ses yüksekliği, nefes ve başlangıç-bitiş düzeniyle eseri söyler.",
+        "Söz, ritim ve toplu söyleme kurallarına dikkat eder; başkasının sesini bastırmaz.",
+        "Performansını öğretmen ölçütlerine göre gözden geçirir ve bir geliştirme noktası belirtir."
+      ],
+      "hints": [
+        "Önce dinleme ya da söyleme görevinin hangi özelliği ölçtüğünü belirle: ses, süre, ritim, söz, çalgı veya hareket.",
+        "Duyduğun müziksel işareti seç ve performansını o işaretle eşleştir.",
+        "Son kontrolde zamanlama, güvenli katılım, dinleme kuralı ve rubrik ölçütlerini ayrı ayrı gözden geçir."
+      ],
+      "misconceptionIds": [
+        "müziksel-kanıt-yerine-tahmin",
+        "ritim-süre-ve-ses-özelliğini-karıştırma",
+        "yüksek-ses-veya-hızın-doğru-performans-olduğunu-sanma"
+      ],
+      "media": {
+        "type": "official-or-authorized-anthem-reference",
+        "status": "LICENSED_OR_HUMAN_RECORDED_MUSIC_AUDIO_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "licensedAudioStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "muzik-g3-muz-3-1-2",
+      "engineKey": "g3:muzik",
+      "grade": 3,
+      "courseId": "muzik",
+      "outcomeIds": [
+        "tr-tymm-g3-muzik-muz-3-1-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "3. sınıf Müzik dersinde “MÜZİKLE TANIŞIYORUM” teması için öğretmen tarafından seçilmiş, yaşa uygun ve lisans/provenansı doğrulanmış kısa ses örnekleri ile güvenli sınıf içi performans ortamı kullanılır.",
+      "stem": "Doğadan, çevreden ve nesnelerden duyulan seslerin süre özelliklerini karşılaştırabilme öğrenme çıktısını gerçek dinleme ya da performans kanıtıyla göster.",
+      "rubricCriteria": [
+        "Dinlediği ses, eser veya çalgı örneğinin istenen özelliğini dikkatle ayırt eder.",
+        "Karşılaştırma veya yorumunu yalnız duyduğu müziksel kanıta dayandırır.",
+        "Sesin incelik-kalınlık, süre, ritim, çalgı niteliği ya da marş ögesiyle ilgili kararını yaş düzeyine uygun açıklar."
+      ],
+      "hints": [
+        "Önce dinleme ya da söyleme görevinin hangi özelliği ölçtüğünü belirle: ses, süre, ritim, söz, çalgı veya hareket.",
+        "Duyduğun müziksel işareti seç ve performansını o işaretle eşleştir.",
+        "Son kontrolde zamanlama, güvenli katılım, dinleme kuralı ve rubrik ölçütlerini ayrı ayrı gözden geçir."
+      ],
+      "misconceptionIds": [
+        "müziksel-kanıt-yerine-tahmin",
+        "ritim-süre-ve-ses-özelliğini-karıştırma",
+        "yüksek-ses-veya-hızın-doğru-performans-olduğunu-sanma"
+      ],
+      "media": {
+        "type": "licensed-or-human-recorded-age-appropriate-music-audio",
+        "status": "LICENSED_OR_HUMAN_RECORDED_MUSIC_AUDIO_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "licensedAudioStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    }
+  ]
+}

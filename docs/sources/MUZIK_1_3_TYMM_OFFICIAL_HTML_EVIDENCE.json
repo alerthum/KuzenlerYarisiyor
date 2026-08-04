@@ -1,0 +1,251 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Müzik Dersi Temel Eğitim TYMM — 1–3. Sınıf Resmî HTML Kanıt Özeti",
+  "authority": "T.C. Millî Eğitim Bakanlığı Türkiye Yüzyılı Maarif Modeli",
+  "retrievedAt": "2026-08-04",
+  "sourceKind": "EXTRACTED_AUTHORITATIVE_HTML_EVIDENCE_SNAPSHOT",
+  "rootUrl": "https://tymm.meb.gov.tr/ogretim-programlari/ders/muzik-dersi-temel-egitim",
+  "notice": "Bu dosya resmî MEB sayfalarındaki 1–3. sınıf öğrenme çıktılarının yerel, makine-okunur kanıt özetidir; resmî sayfanın/PDF'nin kopyası değildir. Şarkı sözü veya telifli eser içeriği içermez.",
+  "grades": [
+    {
+      "grade": 1,
+      "outcomeCount": 13,
+      "outcomes": [
+        {
+          "code": "MÜZ.1.1.1",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "İstiklâl Marşı’nın başlıca ögelerini çözümleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/628"
+        },
+        {
+          "code": "MÜZ.1.1.2",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Doğadan, çevreden ve nesnelerden duyulan seslerin özelliklerini karşılaştırabilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/628"
+        },
+        {
+          "code": "MÜZ.1.1.3",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Müziksel dinleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/628"
+        },
+        {
+          "code": "MÜZ.1.1.4",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Farklı türdeki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/628"
+        },
+        {
+          "code": "MÜZ.1.1.5",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Belirli gün ve haftalarla ilgili eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/628"
+        },
+        {
+          "code": "MÜZ.1.1.6",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Ortak repertuvardaki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/628"
+        },
+        {
+          "code": "MÜZ.1.1.7",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Müzik eserlerine bedensel hareketlerle eşlik edebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/628"
+        },
+        {
+          "code": "MÜZ.1.2.1",
+          "theme": "MÜZİK DİLİ",
+          "text": "Müzik dinleme ve söyleme kurallarını çözümleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/635"
+        },
+        {
+          "code": "MÜZ.1.2.2",
+          "theme": "MÜZİK DİLİ",
+          "text": "Ritim veren vurmalı çalgıların özelliklerini karşılaştırabilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/635"
+        },
+        {
+          "code": "MÜZ.1.2.3",
+          "theme": "MÜZİK DİLİ",
+          "text": "Farklı türdeki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/635"
+        },
+        {
+          "code": "MÜZ.1.2.4",
+          "theme": "MÜZİK DİLİ",
+          "text": "Belirli gün ve haftalarla ilgili eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/635"
+        },
+        {
+          "code": "MÜZ.1.2.5",
+          "theme": "MÜZİK DİLİ",
+          "text": "Ortak repertuvardaki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/635"
+        },
+        {
+          "code": "MÜZ.1.2.6",
+          "theme": "MÜZİK DİLİ",
+          "text": "Müzik eserlerine bedensel hareketlerle eşlik edebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/635"
+        }
+      ]
+    },
+    {
+      "grade": 2,
+      "outcomeCount": 12,
+      "outcomes": [
+        {
+          "code": "MÜZ.2.1.1",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "İstiklâl Marşı’nın sözcüklerini yorumlayabilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/636"
+        },
+        {
+          "code": "MÜZ.2.1.2",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Doğadan, çevreden ve nesnelerden duyulan seslerin incelik-kalınlık özelliklerini karşılaştırabilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/636"
+        },
+        {
+          "code": "MÜZ.2.1.3",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Farklı türdeki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/636"
+        },
+        {
+          "code": "MÜZ.2.1.4",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Belirli gün ve haftalarla ilgili eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/636"
+        },
+        {
+          "code": "MÜZ.2.1.5",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Ortak repertuvardaki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/636"
+        },
+        {
+          "code": "MÜZ.2.1.6",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Müzik eserlerine bedensel hareketlerle eşlik edebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/636"
+        },
+        {
+          "code": "MÜZ.2.2.1",
+          "theme": "MÜZİK DİLİ",
+          "text": "İstiklâl Marşı’nın başlıca ögelerini çözümleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/638"
+        },
+        {
+          "code": "MÜZ.2.2.2",
+          "theme": "MÜZİK DİLİ",
+          "text": "Ezgi veren vurmalı çalgıların özelliklerini karşılaştırabilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/638"
+        },
+        {
+          "code": "MÜZ.2.2.3",
+          "theme": "MÜZİK DİLİ",
+          "text": "Farklı türdeki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/638"
+        },
+        {
+          "code": "MÜZ.2.2.4",
+          "theme": "MÜZİK DİLİ",
+          "text": "Belirli gün ve haftalarla ilgili eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/638"
+        },
+        {
+          "code": "MÜZ.2.2.5",
+          "theme": "MÜZİK DİLİ",
+          "text": "Ortak repertuvardaki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/638"
+        },
+        {
+          "code": "MÜZ.2.2.6",
+          "theme": "MÜZİK DİLİ",
+          "text": "Müzik eserlerine bedensel hareketlerle eşlik edebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/638"
+        }
+      ]
+    },
+    {
+      "grade": 3,
+      "outcomeCount": 12,
+      "outcomes": [
+        {
+          "code": "MÜZ.3.1.1",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "İstiklâl Marşı’nı sözlerine dikkat ederek söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/640"
+        },
+        {
+          "code": "MÜZ.3.1.2",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Doğadan, çevreden ve nesnelerden duyulan seslerin süre özelliklerini karşılaştırabilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/640"
+        },
+        {
+          "code": "MÜZ.3.1.3",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Farklı türdeki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/640"
+        },
+        {
+          "code": "MÜZ.3.1.4",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Belirli gün ve haftalarla ilgili eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/640"
+        },
+        {
+          "code": "MÜZ.3.1.5",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Ortak repertuvardaki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/640"
+        },
+        {
+          "code": "MÜZ.3.1.6",
+          "theme": "MÜZİKLE TANIŞIYORUM",
+          "text": "Müzik eserlerine bedensel hareketlerle eşlik edebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/640"
+        },
+        {
+          "code": "MÜZ.3.2.1",
+          "theme": "MÜZİK DİLİ",
+          "text": "İstiklâl Marşı’nın başlıca ögelerini çözümleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/643"
+        },
+        {
+          "code": "MÜZ.3.2.2",
+          "theme": "MÜZİK DİLİ",
+          "text": "Telli çalgıların özelliklerini karşılaştırabilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/643"
+        },
+        {
+          "code": "MÜZ.3.2.3",
+          "theme": "MÜZİK DİLİ",
+          "text": "Farklı türdeki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/643"
+        },
+        {
+          "code": "MÜZ.3.2.4",
+          "theme": "MÜZİK DİLİ",
+          "text": "Belirli gün ve haftalarla ilgili eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/643"
+        },
+        {
+          "code": "MÜZ.3.2.5",
+          "theme": "MÜZİK DİLİ",
+          "text": "Ortak repertuvardaki eserleri söyleyebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/643"
+        },
+        {
+          "code": "MÜZ.3.2.6",
+          "theme": "MÜZİK DİLİ",
+          "text": "Müzik eserlerine bedensel hareketlerle eşlik edebilme",
+          "url": "https://tymm.meb.gov.tr/muzik-dersi-temel-egitim/unite/643"
+        }
+      ]
+    }
+  ]
+}

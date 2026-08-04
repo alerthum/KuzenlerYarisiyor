@@ -4,9 +4,9 @@ import { ASSESSMENT_V2_CANONICAL_CATALOG, ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT,
 import { ASSESSMENT_V2_HUMAN_REVIEW_QUEUE, ASSESSMENT_V2_HUMAN_REVIEW_QUEUE_AUDIT, auditAssessmentV2HumanReviewQueue } from '../../js/assessment-v2/human-review-queue.js';
 import { ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN, ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN_AUDIT } from '../../js/assessment-v2/autonomous-expansion-plan.js';
 
-test('kanonik katalog kırk beş aktif ders motorundan 2167 benzersiz görev toplar',()=>{
+test('kanonik katalog kırk sekiz aktif ders motorundan 2204 benzersiz görev toplar',()=>{
   assert.equal(ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT.ok,true,ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT.errors.join('\n'));
-  assert.equal(ASSESSMENT_V2_CANONICAL_CATALOG.length,2167);
+  assert.equal(ASSESSMENT_V2_CANONICAL_CATALOG.length,2204);
   assert.deepEqual(ASSESSMENT_V2_CANONICAL_CATALOG_AUDIT.metrics.byEngine,{
     'g8:turkce':96,'g8:matematik':52,'g8:fen-bilimleri':61,'g5:turkce':105,
     'g8:t-c-inkilap-tarihi-ve-ataturkculuk':33,'g8:din-kulturu-ve-ahlak-bilgisi':28,'g8:ingilizce':70,'g5:matematik':23,'g5:fen-bilimleri':28,'g5:sosyal-bilgiler':19,
@@ -16,24 +16,25 @@ test('kanonik katalog kırk beş aktif ders motorundan 2167 benzersiz görev top
     'g2:yabanci-dil':138,'g3:yabanci-dil':138,'g3:fen-bilimleri':20,'g4:fen-bilimleri':43,'g4:din-kulturu-ve-ahlak-bilgisi':19,'g4:yabanci-dil':47,
     'g1:turkce':17,'g2:turkce':20,'g3:turkce':20,'g1:matematik':19,'g2:matematik':25,'g3:matematik':33,
     'g1:hayat-bilgisi':23,'g2:hayat-bilgisi':23,'g3:hayat-bilgisi':20,'g1:beden-egitimi-ve-oyun':13,'g2:beden-egitimi-ve-oyun':12,'g3:beden-egitimi-ve-oyun':13,
-    'g1:gorsel-sanatlar':11,'g2:gorsel-sanatlar':11,'g3:gorsel-sanatlar':11
+    'g1:gorsel-sanatlar':11,'g2:gorsel-sanatlar':11,'g3:gorsel-sanatlar':11,
+    'g1:muzik':13,'g2:muzik':12,'g3:muzik':12
   });
 });
 
-test('insan inceleme kuyruğu 5 onaylı ve 2162 bekleyen görevi önceliklendirir',()=>{
+test('insan inceleme kuyruğu 5 onaylı ve 2199 bekleyen görevi önceliklendirir',()=>{
   assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE_AUDIT.ok,true,ASSESSMENT_V2_HUMAN_REVIEW_QUEUE_AUDIT.errors.join('\n'));
-  assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.total,2167);
+  assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.total,2204);
   assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.approved,5);
-  assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.pending,2162);
+  assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.metrics.pending,2199);
   assert.equal(ASSESSMENT_V2_HUMAN_REVIEW_QUEUE.rows.every(row=>row.gameAdaptationAllowed===false),true);
 });
 
-test('otonom plan kırk beş aktif motorun mühendislik kapsamını tam ve insan incelemesini açık gösterir',()=>{
+test('otonom plan kırk sekiz aktif motorun mühendislik kapsamını tam ve insan incelemesini açık gösterir',()=>{
   assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN_AUDIT.ok,true,ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN_AUDIT.errors.join('\n'));
-  assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.engines.length,45);
+  assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.engines.length,48);
   assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.engines.every(row=>row.engineeringScopeComplete),true);
   assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.metrics.remainingOutcomeCount,0);
-  assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.metrics.humanReviewQueueCount,2162);
+  assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.metrics.humanReviewQueueCount,2199);
   assert.equal(ASSESSMENT_V2_AUTONOMOUS_EXPANSION_PLAN.backlog[0].id,'calibrate-risk-sample');
 });
 

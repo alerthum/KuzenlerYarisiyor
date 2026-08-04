@@ -132,9 +132,9 @@ export const CURRICULUM_SOURCES = Object.freeze([
     copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Local evidence copy: docs/sources/GORSEL_SANATLAR_1_8_TYMM.pdf. Active for grades 1-3 in 2026-2027; real artworks, student products and museum visuals remain human-reviewed assets.'
   }),
   defineCurriculumSource({
-    id: 'meb-tymm-primary-music-pending', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
-    title: 'Müzik Dersi Öğretim Programı — Temel Eğitim', url: 'https://tymm.meb.gov.tr/ogretim-programlari/ders/muzik-dersi-temel-egitim', retrievedAt: '2026-08-04',
-    copyrightPolicy: 'Source acquisition registry only until the official basic-education evidence is locally ingested and validated.', notes: 'Pending local evidence ingestion; music outcomes, listening assets and performance rubrics must not be fabricated or confused with the high-school music program.'
+    id: 'meb-tymm-primary-music-1-8-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Müzik Dersi Öğretim Programı — Temel Eğitim, TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari/ders/muzik-dersi-temel-egitim', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official learning-outcome wording and provenance; do not reproduce copyrighted song lyrics or recordings.', notes: 'Local extracted evidence snapshot: docs/sources/MUZIK_1_3_TYMM_OFFICIAL_HTML_EVIDENCE.json. Active for grades 1-3 in 2026-2027; licensed or human-recorded audio and music-teacher review remain mandatory.'
   }),
   defineCurriculumSource({
     id: 'meb-legacy-programs',
