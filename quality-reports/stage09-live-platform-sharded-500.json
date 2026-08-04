@@ -6,12 +6,12 @@
   "shardCount": 5,
   "gameCount": 23,
   "totalSessions": 11500,
-  "durationMs": 414133,
+  "durationMs": 354613,
   "concurrency": 4,
-  "timeoutMs": 360000,
+  "timeoutMs": 300000,
   "maxRetries": 1,
-  "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-  "sourceFileCount": 307,
+  "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+  "sourceFileCount": 316,
   "sourceFiles": [
     "js/ai/memory.js",
     "js/ai/orchestrator.js",
@@ -21,6 +21,7 @@
     "js/assessment-v2/canonical-catalog.js",
     "js/assessment-v2/canonical-question-contract.js",
     "js/assessment-v2/contracts.js",
+    "js/assessment-v2/controlled-launch-pilot-gate.js",
     "js/assessment-v2/core-game-release-gate.js",
     "js/assessment-v2/core-game-release-profile.js",
     "js/assessment-v2/core-game-review-sprints.js",
@@ -39,6 +40,14 @@
     "js/assessment-v2/human-review-decision-contract.js",
     "js/assessment-v2/human-review-queue.js",
     "js/assessment-v2/item-analysis-engine.js",
+    "js/assessment-v2/launch-pilot-adaptation.js",
+    "js/assessment-v2/launch-pilot-assignment-plan.js",
+    "js/assessment-v2/launch-pilot-candidate-pool.js",
+    "js/assessment-v2/launch-pilot-content-quality.js",
+    "js/assessment-v2/launch-pilot-human-review.js",
+    "js/assessment-v2/launch-pilot-manifest.js",
+    "js/assessment-v2/launch-pilot-premium-bank.js",
+    "js/assessment-v2/launch-pilot-student-analysis.js",
     "js/assessment-v2/legacy-policy.js",
     "js/assessment-v2/logic-solver.js",
     "js/assessment-v2/materialize.js",
@@ -330,7 +339,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 52746,
+      "durationMs": 49715,
       "shards": [
         {
           "gameId": "pattern-lab",
@@ -340,10 +349,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 10408,
+          "durationMs": 9957,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "pattern-lab",
@@ -353,10 +362,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 10549,
+          "durationMs": 9927,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "pattern-lab",
@@ -366,10 +375,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 10556,
+          "durationMs": 10071,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "pattern-lab",
@@ -379,10 +388,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 10269,
+          "durationMs": 9844,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "pattern-lab",
@@ -392,10 +401,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 10964,
+          "durationMs": 9916,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -408,7 +417,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 56495,
+      "durationMs": 53492,
       "shards": [
         {
           "gameId": "speed-math",
@@ -418,10 +427,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 11580,
+          "durationMs": 10394,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "speed-math",
@@ -431,10 +440,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 11619,
+          "durationMs": 10107,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "speed-math",
@@ -444,10 +453,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 11590,
+          "durationMs": 10326,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "speed-math",
@@ -457,10 +466,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 10943,
+          "durationMs": 11373,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "speed-math",
@@ -470,10 +479,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 10763,
+          "durationMs": 11292,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -486,7 +495,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 42121,
+      "durationMs": 43843,
       "shards": [
         {
           "gameId": "target-number",
@@ -496,10 +505,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 8309,
+          "durationMs": 8588,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "target-number",
@@ -509,10 +518,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 8606,
+          "durationMs": 9389,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "target-number",
@@ -522,10 +531,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 8684,
+          "durationMs": 8741,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "target-number",
@@ -535,10 +544,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 8222,
+          "durationMs": 8619,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "target-number",
@@ -548,10 +557,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 8300,
+          "durationMs": 8506,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -564,7 +573,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 52368,
+      "durationMs": 49317,
       "shards": [
         {
           "gameId": "geometry-lab",
@@ -574,10 +583,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 9765,
+          "durationMs": 9965,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "geometry-lab",
@@ -587,10 +596,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 10447,
+          "durationMs": 9837,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "geometry-lab",
@@ -600,10 +609,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 10485,
+          "durationMs": 9709,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "geometry-lab",
@@ -613,10 +622,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 10553,
+          "durationMs": 9878,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "geometry-lab",
@@ -626,10 +635,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 11118,
+          "durationMs": 9928,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -642,7 +651,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 117694,
+      "durationMs": 54459,
       "shards": [
         {
           "gameId": "problem-hunter",
@@ -652,10 +661,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 22331,
+          "durationMs": 10962,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "problem-hunter",
@@ -665,10 +674,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 22712,
+          "durationMs": 10465,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "problem-hunter",
@@ -678,10 +687,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 20469,
+          "durationMs": 10682,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "problem-hunter",
@@ -691,10 +700,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 28594,
+          "durationMs": 11130,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "problem-hunter",
@@ -704,10 +713,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 23588,
+          "durationMs": 11220,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -720,7 +729,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 97147,
+      "durationMs": 60737,
       "shards": [
         {
           "gameId": "error-detective",
@@ -730,10 +739,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 26540,
+          "durationMs": 12578,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "error-detective",
@@ -743,10 +752,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 26879,
+          "durationMs": 11925,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "error-detective",
@@ -756,10 +765,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 18469,
+          "durationMs": 12504,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "error-detective",
@@ -769,10 +778,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 12529,
+          "durationMs": 11651,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "error-detective",
@@ -782,10 +791,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 12730,
+          "durationMs": 12079,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -798,7 +807,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 88421,
+      "durationMs": 82974,
       "shards": [
         {
           "gameId": "logic-station",
@@ -808,10 +817,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 16726,
+          "durationMs": 15464,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "logic-station",
@@ -821,10 +830,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 17232,
+          "durationMs": 16099,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "logic-station",
@@ -834,10 +843,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 17936,
+          "durationMs": 17067,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "logic-station",
@@ -847,10 +856,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 17866,
+          "durationMs": 17206,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "logic-station",
@@ -860,10 +869,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 18661,
+          "durationMs": 17138,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -876,7 +885,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 84034,
+      "durationMs": 75657,
       "shards": [
         {
           "gameId": "olympiad-ladder",
@@ -886,10 +895,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 17079,
+          "durationMs": 15570,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "olympiad-ladder",
@@ -899,10 +908,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 17230,
+          "durationMs": 15079,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "olympiad-ladder",
@@ -912,10 +921,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 16392,
+          "durationMs": 14782,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "olympiad-ladder",
@@ -925,10 +934,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 16506,
+          "durationMs": 15003,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "olympiad-ladder",
@@ -938,10 +947,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 16827,
+          "durationMs": 15223,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -954,7 +963,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 68810,
+      "durationMs": 56567,
       "shards": [
         {
           "gameId": "word-mine",
@@ -964,10 +973,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 13548,
+          "durationMs": 10908,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "word-mine",
@@ -977,10 +986,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 14682,
+          "durationMs": 11043,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "word-mine",
@@ -990,10 +999,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 14698,
+          "durationMs": 11726,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "word-mine",
@@ -1003,10 +1012,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 13293,
+          "durationMs": 11597,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "word-mine",
@@ -1016,10 +1025,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 12589,
+          "durationMs": 11293,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1032,7 +1041,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 67092,
+      "durationMs": 61911,
       "shards": [
         {
           "gameId": "word-ladder",
@@ -1042,10 +1051,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 12975,
+          "durationMs": 12285,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "word-ladder",
@@ -1055,10 +1064,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 13257,
+          "durationMs": 12352,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "word-ladder",
@@ -1068,10 +1077,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 13685,
+          "durationMs": 12306,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "word-ladder",
@@ -1081,10 +1090,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 13645,
+          "durationMs": 12343,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "word-ladder",
@@ -1094,10 +1103,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 13530,
+          "durationMs": 12625,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1110,7 +1119,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 57533,
+      "durationMs": 53681,
       "shards": [
         {
           "gameId": "forbidden-story",
@@ -1120,10 +1129,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 11591,
+          "durationMs": 10351,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "forbidden-story",
@@ -1133,10 +1142,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 11921,
+          "durationMs": 10664,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "forbidden-story",
@@ -1146,10 +1155,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 11819,
+          "durationMs": 10688,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "forbidden-story",
@@ -1159,10 +1168,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 11598,
+          "durationMs": 10807,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "forbidden-story",
@@ -1172,10 +1181,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 10604,
+          "durationMs": 11171,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1188,7 +1197,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 74833,
+      "durationMs": 70358,
       "shards": [
         {
           "gameId": "meaning-hunt",
@@ -1198,10 +1207,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 13744,
+          "durationMs": 14777,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "meaning-hunt",
@@ -1211,10 +1220,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 14783,
+          "durationMs": 14614,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "meaning-hunt",
@@ -1224,10 +1233,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 15233,
+          "durationMs": 14159,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "meaning-hunt",
@@ -1237,10 +1246,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 15342,
+          "durationMs": 13391,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "meaning-hunt",
@@ -1250,10 +1259,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 15731,
+          "durationMs": 13417,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1266,7 +1275,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 15147,
+      "durationMs": 13683,
       "shards": [
         {
           "gameId": "paragraph-detective",
@@ -1276,10 +1285,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 3006,
+          "durationMs": 2789,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "paragraph-detective",
@@ -1289,10 +1298,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 2953,
+          "durationMs": 2616,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "paragraph-detective",
@@ -1302,10 +1311,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 3119,
+          "durationMs": 2731,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "paragraph-detective",
@@ -1315,10 +1324,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 3129,
+          "durationMs": 2798,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "paragraph-detective",
@@ -1328,10 +1337,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 2940,
+          "durationMs": 2749,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1344,7 +1353,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 140054,
+      "durationMs": 94998,
       "shards": [
         {
           "gameId": "english-vocabulary",
@@ -1354,10 +1363,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 30212,
+          "durationMs": 18896,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-vocabulary",
@@ -1367,10 +1376,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 30653,
+          "durationMs": 18726,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-vocabulary",
@@ -1380,10 +1389,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 29921,
+          "durationMs": 18715,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-vocabulary",
@@ -1393,10 +1402,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 30026,
+          "durationMs": 18991,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-vocabulary",
@@ -1406,10 +1415,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 19242,
+          "durationMs": 19670,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1422,7 +1431,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 79480,
+      "durationMs": 81738,
       "shards": [
         {
           "gameId": "english-cloze",
@@ -1432,10 +1441,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 15684,
+          "durationMs": 15742,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-cloze",
@@ -1445,10 +1454,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 15462,
+          "durationMs": 16143,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-cloze",
@@ -1458,10 +1467,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 15469,
+          "durationMs": 16114,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-cloze",
@@ -1471,10 +1480,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 16255,
+          "durationMs": 16901,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-cloze",
@@ -1484,10 +1493,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 16610,
+          "durationMs": 16838,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1500,7 +1509,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 57313,
+      "durationMs": 56084,
       "shards": [
         {
           "gameId": "english-sentence-builder",
@@ -1510,10 +1519,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 11659,
+          "durationMs": 11486,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-sentence-builder",
@@ -1523,10 +1532,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 12097,
+          "durationMs": 11560,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-sentence-builder",
@@ -1536,10 +1545,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 10892,
+          "durationMs": 11409,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-sentence-builder",
@@ -1549,10 +1558,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 11309,
+          "durationMs": 11230,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "english-sentence-builder",
@@ -1562,10 +1571,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 11356,
+          "durationMs": 10399,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1578,7 +1587,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 99777,
+      "durationMs": 72253,
       "shards": [
         {
           "gameId": "social-time-travel",
@@ -1588,10 +1597,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 15474,
+          "durationMs": 14317,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-time-travel",
@@ -1601,10 +1610,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 21490,
+          "durationMs": 14734,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-time-travel",
@@ -1614,10 +1623,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 21161,
+          "durationMs": 14475,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-time-travel",
@@ -1627,10 +1636,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 21383,
+          "durationMs": 13986,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-time-travel",
@@ -1640,10 +1649,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 20269,
+          "durationMs": 14741,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1656,7 +1665,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 65471,
+      "durationMs": 65966,
       "shards": [
         {
           "gameId": "social-map-skills",
@@ -1666,10 +1675,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 13253,
+          "durationMs": 13224,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-map-skills",
@@ -1679,10 +1688,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 13178,
+          "durationMs": 12972,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-map-skills",
@@ -1692,10 +1701,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 12855,
+          "durationMs": 13331,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-map-skills",
@@ -1705,10 +1714,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 12823,
+          "durationMs": 12881,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-map-skills",
@@ -1718,10 +1727,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 13362,
+          "durationMs": 13558,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1734,7 +1743,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 61221,
+      "durationMs": 59911,
       "shards": [
         {
           "gameId": "social-citizenship",
@@ -1744,10 +1753,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 11758,
+          "durationMs": 11922,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-citizenship",
@@ -1757,10 +1766,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 12410,
+          "durationMs": 11916,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-citizenship",
@@ -1770,10 +1779,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 12463,
+          "durationMs": 11696,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-citizenship",
@@ -1783,10 +1792,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 12285,
+          "durationMs": 12299,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "social-citizenship",
@@ -1796,10 +1805,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 12305,
+          "durationMs": 12078,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1812,7 +1821,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 62243,
+      "durationMs": 59478,
       "shards": [
         {
           "gameId": "religion-practice",
@@ -1822,10 +1831,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 11837,
+          "durationMs": 12161,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "religion-practice",
@@ -1835,10 +1844,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 11834,
+          "durationMs": 12378,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "religion-practice",
@@ -1848,10 +1857,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 12659,
+          "durationMs": 11482,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "religion-practice",
@@ -1861,10 +1870,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 13049,
+          "durationMs": 11599,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "religion-practice",
@@ -1874,10 +1883,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 12864,
+          "durationMs": 11858,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1890,7 +1899,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 74214,
+      "durationMs": 65488,
       "shards": [
         {
           "gameId": "lgs-foundation",
@@ -1900,10 +1909,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 15784,
+          "durationMs": 13045,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "lgs-foundation",
@@ -1913,10 +1922,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 14847,
+          "durationMs": 13383,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "lgs-foundation",
@@ -1926,10 +1935,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 14892,
+          "durationMs": 13158,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "lgs-foundation",
@@ -1939,10 +1948,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 14418,
+          "durationMs": 12992,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "lgs-foundation",
@@ -1952,10 +1961,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 14273,
+          "durationMs": 12910,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -1968,7 +1977,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 52497,
+      "durationMs": 51067,
       "shards": [
         {
           "gameId": "science-lab",
@@ -1978,10 +1987,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 10190,
+          "durationMs": 9920,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "science-lab",
@@ -1991,10 +2000,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 10513,
+          "durationMs": 10256,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "science-lab",
@@ -2004,10 +2013,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 10591,
+          "durationMs": 10252,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "science-lab",
@@ -2017,10 +2026,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 10648,
+          "durationMs": 10255,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "science-lab",
@@ -2030,10 +2039,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 10555,
+          "durationMs": 10384,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -2046,7 +2055,7 @@
       "underfill": 0,
       "semanticRepeats": 0,
       "failedShards": [],
-      "durationMs": 52778,
+      "durationMs": 51324,
       "shards": [
         {
           "gameId": "science-reasoning",
@@ -2056,10 +2065,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 0,
-          "durationMs": 11278,
+          "durationMs": 10803,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "science-reasoning",
@@ -2069,10 +2078,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 100,
-          "durationMs": 11012,
+          "durationMs": 11539,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "science-reasoning",
@@ -2082,10 +2091,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 200,
-          "durationMs": 10544,
+          "durationMs": 9976,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "science-reasoning",
@@ -2095,10 +2104,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 300,
-          "durationMs": 10261,
+          "durationMs": 9544,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         },
         {
           "gameId": "science-reasoning",
@@ -2108,10 +2117,10 @@
           "semanticRepeats": 0,
           "ok": true,
           "startSessionIndex": 400,
-          "durationMs": 9683,
+          "durationMs": 9462,
           "attemptNo": 1,
-          "sourceFingerprint": "36c1a58fb637c5826c870f4e2935084c56bc4f67fa3f9dfc7af0e91130058866",
-          "sourceFileCount": 307
+          "sourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+          "sourceFileCount": 316
         }
       ],
       "ok": true
@@ -2121,7 +2130,7 @@
   "semanticRepeats": 0,
   "failedGames": [],
   "allGamesOnSharedComposer": true,
-  "generatedAt": "2026-08-04T14:22:17.232Z",
+  "generatedAt": "2026-08-04T19:53:25.232Z",
   "productReady": false,
   "meetsStageGate": true
 }

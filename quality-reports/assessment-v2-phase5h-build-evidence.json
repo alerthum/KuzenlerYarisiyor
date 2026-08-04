@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "5H",
+  "status": "PASS",
+  "command": "npm run build",
+  "exitCode": 0,
+  "mode": "controlled-launch-release-validation",
+  "artifact": "dist",
+  "artifactExists": true,
+  "releaseVersion": "13.6.0-premium-migration-dev",
+  "baseCommit": "26f94d441ce94d95437d68be434c89851ed3c73f",
+  "testedWorkingTree": true,
+  "stage09SourceFingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+  "sourceFileSha256": {
+    "js/app.js": "b762c5eedb1bb8eb873180c2c731e44a711d56a5702100d5b67f2b73a8d201ad",
+    "server.mjs": "f324e6b96abedaf6d814f6104e4161e6fea8feadfc524bdceb1eef2a76a4e9af",
+    "js/assessment-v2/launch-pilot-premium-bank.js": "99993cd1be34cad6658cd0bca66c55a1d3170747866c34544f69b6cd899d7b31",
+    "js/assessment-v2/launch-pilot-content-quality.js": "508f95277790ab9cae7ec7bfa73d3bd060b14a3b65fdc3beb55387ac9fda3a10",
+    "js/assessment-v2/controlled-launch-pilot-gate.js": "07f9be2197b903caf4b90f730552634379aed42e3ae7e3df6799ff94f718ec00",
+    "scripts/build-assessment-v2-phase5h-controlled-launch-pilot.mjs": "a81db04065a5afed9235d98390aae321f68f46fde77a14e11fdbeae61945097f",
+    "package.json": "da947dab4d84479931cb760dc30c7d8a8ae203b77c2fc603b155706e68e8c312"
+  },
+  "generatedAt": "2026-08-04T19:59:41.907Z"
+}

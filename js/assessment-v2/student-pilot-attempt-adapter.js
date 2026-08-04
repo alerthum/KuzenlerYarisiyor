@@ -14,11 +14,13 @@ export function adaptAttemptToStudentPilotResponse({ attempt = {}, pilotId, pilo
   const submittedAt=attempt.answeredAt||attempt.createdAt||new Date().toISOString();
   const responseTimeMs=Math.max(0,Math.round(Number(attempt.responseTimeMs??Number(attempt.elapsedSeconds||0)*1000)));
   const startedAt=attempt.startedAt||new Date(Date.parse(submittedAt)-responseTimeMs).toISOString();
-  const omitted=attempt.omitted===true||attempt.selectedOptionId==null;
-  const selectedOptionId=omitted?null:String(attempt.selectedOptionId);
-  const correct=!omitted&&itemDescriptor.itemFormat==='single-choice'
-    ? selectedOptionId===itemDescriptor.correctOptionId
-    : Boolean(attempt.correct);
+  const choiceMode=itemDescriptor.itemFormat==='single-choice';
+  const responseMode=choiceMode?'CHOICE':(itemDescriptor.itemFormat==='matching'?'MATCHING':itemDescriptor.itemFormat==='interactive-simulation'?'INTERACTION':'RUBRIC');
+  const omitted=attempt.omitted===true||(choiceMode&&attempt.selectedOptionId==null);
+  const selectedOptionId=omitted||attempt.selectedOptionId==null?null:String(attempt.selectedOptionId);
+  const correct=!omitted&&choiceMode?selectedOptionId===itemDescriptor.correctOptionId:Boolean(attempt.correct);
+  const score=choiceMode?(correct?1:0):Math.max(0,Number(attempt.score??(correct?1:0)));
+  const maxScore=choiceMode?1:Math.max(0.000001,Number(attempt.maxScore??1));
   return defineStudentPilotResponse({
     responseId:String(attempt.id||`pilot_${hashString(`${profileId}:${itemDescriptor.itemId}:${submittedAt}`).toString(36)}`),
     pilotId,
@@ -27,10 +29,11 @@ export function adaptAttemptToStudentPilotResponse({ attempt = {}, pilotId, pilo
     itemId:itemDescriptor.itemId,
     gameId:itemDescriptor.gameId,
     grade:Number(attempt.grade||8),
+    responseMode,
     selectedOptionId,
     omitted,
-    score:correct?1:0,
-    maxScore:1,
+    score,
+    maxScore,
     responseTimeMs,
     hintsUsed:Number(attempt.hintsUsed??attempt.hintCount??0),
     attemptNumber:Number(attempt.attemptNumber||1),

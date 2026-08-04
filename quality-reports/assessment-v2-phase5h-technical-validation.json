@@ -1,0 +1,98 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "5H",
+  "status": "PASS",
+  "releaseClassification": "CONTROLLED_PILOT_PACKAGE_READY_FOR_REAL_HUMAN_REVIEW",
+  "publicProductionReleaseAllowed": false,
+  "productReady": false,
+  "source": {
+    "baseCommit": "26f94d441ce94d95437d68be434c89851ed3c73f",
+    "stage09Fingerprint": "8ca57e6c5e68816ab80eb990e18a577ba31ad1eb358b8a083663fd3e10293a50",
+    "stage09FingerprintFileCount": 316
+  },
+  "automatedEvidence": {
+    "assessmentEngine": {
+      "tests": 277,
+      "pass": 277,
+      "fail": 0
+    },
+    "topLevelRegression": {
+      "files": 105,
+      "passedFiles": 105,
+      "tests": 646,
+      "pass": 646,
+      "fail": 0,
+      "cachedFiles": 103
+    },
+    "combinedTests": {
+      "tests": 923,
+      "pass": 923,
+      "fail": 0
+    },
+    "gameBattery": {
+      "games": 23,
+      "sessions": 11500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "failedGames": [],
+      "durationMs": 354613
+    },
+    "build": {
+      "status": "PASS",
+      "artifact": "dist",
+      "artifactExists": true
+    },
+    "accessibility": {
+      "status": "PASS",
+      "checks": 23,
+      "seriousFailures": 0
+    },
+    "security": {
+      "status": "PASS",
+      "checks": 21,
+      "failures": 0
+    }
+  },
+  "pilotPackage": {
+    "candidates": 30,
+    "curriculumCells": 24,
+    "games": 23,
+    "contentQualityPassed": 30,
+    "choiceItems": 25,
+    "interactiveItems": 5,
+    "participants": 100,
+    "itemsPerParticipant": 24,
+    "totalResponses": 2400,
+    "responsesPerItem": 80,
+    "requiredHumanDecisions": 49,
+    "singleReviewItems": 11,
+    "doubleReviewItems": 19,
+    "automaticApproval": false
+  },
+  "controlledGate": {
+    "status": "CONTROLLED_LAUNCH_PILOT_BLOCKED",
+    "passed": 4,
+    "blocked": 4,
+    "blockers": [
+      "30 pilot görevinin insan incelemesi tamamlanmadı.",
+      "İnsan onaylı görevlerin oyun adaptasyonu ve semantik round-trip kanıtı eksik.",
+      "Gerçek öğrenci pilotu yayın eşiğini geçmedi.",
+      "Pilot gizlilik, onam, okul yetkisi, anonimleştirme saltı veya saklama politikası tamamlanmadı."
+    ]
+  },
+  "checks": {
+    "assessmentRegression": true,
+    "topLevelRegression": true,
+    "liveGameBattery": true,
+    "batteryFingerprintCurrent": true,
+    "productionBuild": true,
+    "accessibility": true,
+    "security": true,
+    "candidatePool": true,
+    "contentQuality": true,
+    "assignmentPlan": true,
+    "noSyntheticHumanOrStudentEvidence": true,
+    "publicProductionStillLocked": true
+  },
+  "generatedAt": "2026-08-04T19:59:41.912Z"
+}

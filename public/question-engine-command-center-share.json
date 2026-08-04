@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "exportMeta": {
-    "exportedAt": "2026-08-03T22:23:05.956Z",
+    "exportedAt": "2026-08-04T19:55:06.339Z",
     "projectName": "Zihin Arenası",
     "screen": "Soru Motoru Komuta Merkezi",
     "kind": "chatgpt-share",
@@ -12,7 +12,7 @@
     "failedShardCount": 6,
     "liveStatus": "ABORTED",
     "compactMaxBytes": 768000,
-    "exportSizeBytes": 54152,
+    "exportSizeBytes": 54153,
     "exportSize": "53 KB"
   },
   "currentLiveOperation": {
@@ -268,7 +268,7 @@
     }
   },
   "qualityScore": {
-    "overall": 100,
+    "overall": null,
     "technicalQualityScorePercent": 100,
     "finalEvidenceAdequacy": "PASS",
     "file": {
@@ -2309,9 +2309,9 @@
       "source": "public/question-engine-analysis.json",
       "required": true,
       "status": "OK",
-      "updatedAt": "2026-08-02T23:53:53.000Z",
+      "updatedAt": "2026-08-03T22:38:13.000Z",
       "error": null,
-      "bytes": 108747
+      "bytes": 109503
     },
     {
       "source": "PRODUCT_ACCEPTANCE_DECISION.json",
@@ -2381,9 +2381,9 @@
       "source": "public/question-engine-command-center-export.json",
       "required": false,
       "status": "OK",
-      "updatedAt": "2026-08-03T22:15:36.000Z",
+      "updatedAt": "2026-08-04T19:30:20.335Z",
       "error": null,
-      "bytes": 19799989
+      "bytes": 19813992
     }
   ],
   "recentEvents": [
@@ -2770,8 +2770,8 @@
         "originalItemCount": 15
       }
     ],
-    "originalSizeBytes": 19799989,
-    "compactSizeBytes": 54152,
-    "compressionRatio": 365.64
+    "originalSizeBytes": 19813992,
+    "compactSizeBytes": 54153,
+    "compressionRatio": 365.89
   }
 }

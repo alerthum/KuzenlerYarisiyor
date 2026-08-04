@@ -1,4 +1,5 @@
 const DATASET_SOURCES = new Set(['SIMULATED_FIXTURE', 'REAL_STUDENT_PILOT']);
+const RESPONSE_MODES = new Set(['CHOICE', 'RUBRIC', 'MATCHING', 'INTERACTION']);
 const PII_KEYS = new Set(['name','fullName','email','phone','address','tcKimlik','nationalId','birthDate']);
 
 function requiredText(value, field) {
@@ -29,8 +30,12 @@ export function defineStudentPilotResponse(input = {}) {
   if (!DATASET_SOURCES.has(datasetSource)) throw new Error('datasetSource:unsupported');
   const participantAnonId = requiredText(input.participantAnonId, 'participantAnonId');
   if (!/^anon_[a-z0-9_-]{8,80}$/i.test(participantAnonId)) throw new Error('participantAnonId:not-anonymous');
+  const responseMode = String(input.responseMode || 'CHOICE').trim().toUpperCase();
+  if (!RESPONSE_MODES.has(responseMode)) throw new Error('responseMode:unsupported');
   const omitted = input.omitted === true;
-  const selectedOptionId = omitted ? null : requiredText(input.selectedOptionId, 'selectedOptionId');
+  const selectedOptionId = omitted
+    ? null
+    : (responseMode === 'CHOICE' ? requiredText(input.selectedOptionId, 'selectedOptionId') : (String(input.selectedOptionId ?? '').trim() || null));
   const startedAt = requiredText(input.startedAt, 'startedAt');
   const submittedAt = requiredText(input.submittedAt, 'submittedAt');
   if (!Number.isFinite(Date.parse(startedAt)) || !Number.isFinite(Date.parse(submittedAt))) throw new Error('timestamp:invalid');
@@ -47,6 +52,7 @@ export function defineStudentPilotResponse(input = {}) {
     itemId: requiredText(input.itemId, 'itemId'),
     gameId: requiredText(input.gameId, 'gameId'),
     grade: Math.trunc(finite(input.grade, 'grade', 1, 12)),
+    responseMode,
     selectedOptionId,
     omitted,
     score,

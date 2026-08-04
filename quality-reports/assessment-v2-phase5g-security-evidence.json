@@ -229,10 +229,10 @@
   ],
   "failureCount": 0,
   "failures": [],
-  "generatedAt": "2026-08-04T14:24:19.417Z",
+  "generatedAt": "2026-08-04T19:54:57.684Z",
   "infrastructure": {
-    "command": "node scripts/run-core-security-audit.mjs 6222",
-    "serverStdout": "\nZihin Arenası hazır.\nÇalışma modu: local • Veri: local\nBilgisayar: http://localhost:6222\nTelefon:     http://172.26.36.30:6222\n\nKapatmak için Ctrl+C tuşlarına basın.\n\n",
+    "command": "node scripts/run-core-security-audit.mjs 6233",
+    "serverStdout": "\nZihin Arenası hazır.\nÇalışma modu: vercel • Veri: firebase\nBilgisayar: http://localhost:6233\nTelefon:     http://172.26.36.27:6233\n\nKapatmak için Ctrl+C tuşlarına basın.\n\n",
     "serverStderr": ""
   }
 }

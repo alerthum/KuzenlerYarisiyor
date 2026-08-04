@@ -1,0 +1,840 @@
+{
+  "schemaVersion": "2.0",
+  "phase": "5H",
+  "pilotId": "ASSESSMENT_V2_CONTROLLED_LAUNCH_PILOT_30",
+  "title": "5–8 ana dersler ve 23 oyun kontrollü canlı öğrenci pilotu",
+  "status": "ENGINE_AND_ASSIGNMENT_READY_HUMAN_REVIEW_REQUIRED",
+  "productReady": false,
+  "publicationAllowed": false,
+  "datasetSourceRequired": "REAL_STUDENT_PILOT",
+  "privacy": {
+    "piiCollectionAllowed": false,
+    "anonymousParticipantIdRequired": true,
+    "informedConsentRequired": true,
+    "guardianConsentRequiredForMinors": true,
+    "rawResponseRetentionDays": 90,
+    "aggregateRetentionAllowed": true,
+    "assignmentSlotsContainRealIdentity": false
+  },
+  "sampling": {
+    "minimumUniqueParticipants": 100,
+    "targetUniqueParticipants": 100,
+    "minimumResponsesPerItem": 80,
+    "itemCount": 30,
+    "itemsPerParticipant": 24,
+    "sessionsPerParticipant": 4,
+    "itemsPerSession": 6,
+    "expectedTotalResponses": 2400,
+    "gradeBands": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "pilotMode": "CONTROLLED_SCHOOL_OR_INVITED_COHORT"
+  },
+  "items": [
+    {
+      "candidateId": "launch-candidate:phase5h:5:word-mine:word-mine-premium-05-scc0je",
+      "itemId": "phase5h:5:word-mine:word-mine-premium-05-scc0je",
+      "gameId": "word-mine",
+      "grade": 5,
+      "courseId": "turkce",
+      "courseGroup": "turkish",
+      "curriculumReferenceQuestionId": "turkish-g5-complete-t-y-5-18",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g5-turkish-t-y-5-18"
+      ],
+      "itemFormat": "interactive-simulation",
+      "responseMode": "INTERACTION",
+      "correctOptionId": null,
+      "optionIds": [],
+      "maximumRubricScore": 4,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:6:word-ladder:ladder-nar-kol-01-1ti8nxf",
+      "itemId": "phase5h:6:word-ladder:ladder-nar-kol-01-1ti8nxf",
+      "gameId": "word-ladder",
+      "grade": 6,
+      "courseId": "turkce",
+      "courseGroup": "turkish",
+      "curriculumReferenceQuestionId": "turkce-g6-t-o-6-21",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g6-turkce-t-o-6-21"
+      ],
+      "itemFormat": "interactive-simulation",
+      "responseMode": "INTERACTION",
+      "correctOptionId": null,
+      "optionIds": [],
+      "maximumRubricScore": 4,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:7:forbidden-story:story-forbidden-u-01-1ujd3uf",
+      "itemId": "phase5h:7:forbidden-story:story-forbidden-u-01-1ujd3uf",
+      "gameId": "forbidden-story",
+      "grade": 7,
+      "courseId": "turkce",
+      "courseGroup": "turkish",
+      "curriculumReferenceQuestionId": "turkce-g7-t-y-7-1",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g7-turkce-t-y-7-1"
+      ],
+      "itemFormat": "open-response",
+      "responseMode": "RUBRIC",
+      "correctOptionId": null,
+      "optionIds": [],
+      "maximumRubricScore": 4,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:meaning-hunt:meaning-isik-tutmak-01-aq5911",
+      "itemId": "phase5h:8:meaning-hunt:meaning-isik-tutmak-01-aq5911",
+      "gameId": "meaning-hunt",
+      "grade": 8,
+      "courseId": "turkce",
+      "courseGroup": "turkish",
+      "curriculumReferenceQuestionId": "tr-g8-pilot02-01-idiom-contribution-community-oven",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-6"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "A",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:paragraph-detective:tr-main-idea-01-122remb",
+      "itemId": "phase5h:8:paragraph-detective:tr-main-idea-01-122remb",
+      "gameId": "paragraph-detective",
+      "grade": 8,
+      "courseId": "turkce",
+      "courseGroup": "turkish",
+      "curriculumReferenceQuestionId": "tr-g8-reading-calibration-01-restoration-main-idea",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.turkce.t-8-3-17"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "B",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:5:target-number:target-number-premium-03-287srg",
+      "itemId": "phase5h:5:target-number:target-number-premium-03-287srg",
+      "gameId": "target-number",
+      "grade": 5,
+      "courseId": "matematik",
+      "courseGroup": "math",
+      "curriculumReferenceQuestionId": "math-g5-mat-5-1-2",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g5-matematik-mat-5-1-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "responseMode": "INTERACTION",
+      "correctOptionId": null,
+      "optionIds": [],
+      "maximumRubricScore": 4,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:6:speed-math:speed-percent-sale-01-y9orlf",
+      "itemId": "phase5h:6:speed-math:speed-percent-sale-01-y9orlf",
+      "gameId": "speed-math",
+      "grade": 6,
+      "courseId": "matematik",
+      "courseGroup": "math",
+      "curriculumReferenceQuestionId": "matematik-g6-mat-6-1-8",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g6-matematik-mat-6-1-8"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "C",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:7:pattern-lab:pattern-matchsticks-01-jmob3w",
+      "itemId": "phase5h:7:pattern-lab:pattern-matchsticks-01-jmob3w",
+      "gameId": "pattern-lab",
+      "grade": 7,
+      "courseId": "matematik",
+      "courseGroup": "math",
+      "curriculumReferenceQuestionId": "matematik-g7-mat-7-2-4",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g7-matematik-mat-7-2-4"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "D",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:problem-hunter:g8-linear-tank-01",
+      "itemId": "phase5h:8:problem-hunter:g8-linear-tank-01",
+      "gameId": "problem-hunter",
+      "grade": 8,
+      "courseId": "matematik",
+      "courseGroup": "math",
+      "curriculumReferenceQuestionId": "math-g8-cross-03-linear-tank",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-2-2-5"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "A",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:5:geometry-lab:g35-geometry-composite-area-01-8grgur",
+      "itemId": "phase5h:5:geometry-lab:g35-geometry-composite-area-01-8grgur",
+      "gameId": "geometry-lab",
+      "grade": 5,
+      "courseId": "matematik",
+      "courseGroup": "math",
+      "curriculumReferenceQuestionId": "math-g5-mat-5-4-4",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g5-matematik-mat-5-4-4"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "B",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:6:error-detective:math-equation-error-01-nl452y",
+      "itemId": "phase5h:6:error-detective:math-equation-error-01-nl452y",
+      "gameId": "error-detective",
+      "grade": 6,
+      "courseId": "matematik",
+      "courseGroup": "math",
+      "curriculumReferenceQuestionId": "matematik-g6-mat-6-2-1",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g6-matematik-mat-6-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "C",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:7:olympiad-ladder:olympiad-pigeonhole-remainder-01-144voa7",
+      "itemId": "phase5h:7:olympiad-ladder:olympiad-pigeonhole-remainder-01-144voa7",
+      "gameId": "olympiad-ladder",
+      "grade": 7,
+      "courseId": "matematik",
+      "courseGroup": "math",
+      "curriculumReferenceQuestionId": "matematik-g7-mat-7-2-3",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g7-matematik-mat-7-2-3"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "D",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:logic-station:logic-schedule-possible-01-mssrym",
+      "itemId": "phase5h:8:logic-station:logic-schedule-possible-01-mssrym",
+      "gameId": "logic-station",
+      "grade": 8,
+      "courseId": "matematik",
+      "courseGroup": "math",
+      "curriculumReferenceQuestionId": "math-g8-complete-33-sample-space",
+      "curriculumAlignmentStatus": "EXPLICIT_SKILL_TRANSFER_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "SKILL_TRANSFER",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-5-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "A",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:5:english-vocabulary:g35-en-vocab-protect-01-18is450",
+      "itemId": "phase5h:5:english-vocabulary:g35-en-vocab-protect-01-18is450",
+      "gameId": "english-vocabulary",
+      "grade": 5,
+      "courseId": "yabanci-dil",
+      "courseGroup": "english",
+      "curriculumReferenceQuestionId": "english-g5-eng-5-7-v1",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g5-ingilizce-eng-5-7-v1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "B",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:6:english-cloze:eng-cloze-cause-result-01-19phl4r",
+      "itemId": "phase5h:6:english-cloze:eng-cloze-cause-result-01-19phl4r",
+      "gameId": "english-cloze",
+      "grade": 6,
+      "courseId": "yabanci-dil",
+      "courseGroup": "english",
+      "curriculumReferenceQuestionId": "yabanci-dil-g6-eng-6-4-g1",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g6-yabanci-dil-eng-6-4-g1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "C",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:7:english-sentence-builder:order-if-finish-01-11i74e",
+      "itemId": "phase5h:7:english-sentence-builder:order-if-finish-01-11i74e",
+      "gameId": "english-sentence-builder",
+      "grade": 7,
+      "courseId": "yabanci-dil",
+      "courseGroup": "english",
+      "curriculumReferenceQuestionId": "yabanci-dil-g7-eng-7-2-g1",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g7-yabanci-dil-eng-7-2-g1"
+      ],
+      "itemFormat": "matching",
+      "responseMode": "MATCHING",
+      "correctOptionId": null,
+      "optionIds": [],
+      "maximumRubricScore": 4,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:english-vocabulary:english-vocab-context-12-1jd1pbt",
+      "itemId": "phase5h:8:english-vocabulary:english-vocab-context-12-1jd1pbt",
+      "gameId": "english-vocabulary",
+      "grade": 8,
+      "courseId": "ingilizce",
+      "courseGroup": "english",
+      "curriculumReferenceQuestionId": "english-g8-e8-4-r1",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-english-e8-4-r1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "D",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:5:social-time-travel:g5-first-settlements-evidence-01",
+      "itemId": "phase5h:5:social-time-travel:g5-first-settlements-evidence-01",
+      "gameId": "social-time-travel",
+      "grade": 5,
+      "courseId": "sosyal-bilgiler",
+      "courseGroup": "social",
+      "curriculumReferenceQuestionId": "social-g5-sb-5-3-2",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-tymm-g5-sosyal-bilgiler-sb-5-3-2"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "A",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:6:social-map-skills:g6-relative-location-01",
+      "itemId": "phase5h:6:social-map-skills:g6-relative-location-01",
+      "gameId": "social-map-skills",
+      "grade": 6,
+      "courseId": "sosyal-bilgiler",
+      "courseGroup": "social",
+      "curriculumReferenceQuestionId": "sosyal-bilgiler-g6-sb-6-2-1",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-tymm-g6-sosyal-bilgiler-sb-6-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "B",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:7:social-citizenship:g7-accessibility-equality-01",
+      "itemId": "phase5h:7:social-citizenship:g7-accessibility-equality-01",
+      "gameId": "social-citizenship",
+      "grade": 7,
+      "courseId": "sosyal-bilgiler",
+      "courseGroup": "social",
+      "curriculumReferenceQuestionId": "sosyal-bilgiler-g7-sb-7-1-2",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-tymm-g7-sosyal-bilgiler-sb-7-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "C",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:social-time-travel:g8-national-struggle-source-01",
+      "itemId": "phase5h:8:social-time-travel:g8-national-struggle-source-01",
+      "gameId": "social-time-travel",
+      "grade": 8,
+      "courseId": "t-c-inkilap-tarihi-ve-ataturkculuk",
+      "courseGroup": "social",
+      "curriculumReferenceQuestionId": "history-g8-2-1",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-inkilap-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "D",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:5:science-lab:g5-conductor-evidence-01",
+      "itemId": "phase5h:5:science-lab:g5-conductor-evidence-01",
+      "gameId": "science-lab",
+      "grade": 5,
+      "courseId": "fen-bilimleri",
+      "courseGroup": "science",
+      "curriculumReferenceQuestionId": "science-g5-fb-5-6-1-2",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-tymm-g5-fen-bilimleri-fb-5-6-1-2"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "A",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:6:science-reasoning:g6-bulb-brightness-variable-01",
+      "itemId": "phase5h:6:science-reasoning:g6-bulb-brightness-variable-01",
+      "gameId": "science-reasoning",
+      "grade": 6,
+      "courseId": "fen-bilimleri",
+      "courseGroup": "science",
+      "curriculumReferenceQuestionId": "fen-bilimleri-g6-fb-6-6-2-1",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-tymm-g6-fen-bilimleri-fb-6-6-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "B",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:7:science-lab:science-ecosystem-chain-01-1gv13n3",
+      "itemId": "phase5h:7:science-lab:science-ecosystem-chain-01-1gv13n3",
+      "gameId": "science-lab",
+      "grade": 7,
+      "courseId": "fen-bilimleri",
+      "courseGroup": "science",
+      "curriculumReferenceQuestionId": "fen-bilimleri-g7-fb-7-7-1-1",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-tymm-g7-fen-bilimleri-fb-7-7-1-1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "C",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:science-reasoning:g8-photosynthesis-light-01",
+      "itemId": "phase5h:8:science-reasoning:g8-photosynthesis-light-01",
+      "gameId": "science-reasoning",
+      "grade": 8,
+      "courseId": "fen-bilimleri",
+      "courseGroup": "science",
+      "curriculumReferenceQuestionId": "science-g8-broad-25-photosynthesis-factor",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-2018-g8-science-f-8-6-2-2"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "D",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:5:religion-practice:g5-ihlas-meaning-01",
+      "itemId": "phase5h:5:religion-practice:g5-ihlas-meaning-01",
+      "gameId": "religion-practice",
+      "grade": 5,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "courseGroup": "religion",
+      "curriculumReferenceQuestionId": "dkab-g5-dkab-5-1-4",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-tymm-g5-din-kulturu-ve-ahlak-bilgisi-dkab-5-1-4"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "A",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:6:religion-practice:g6-truthfulness-01",
+      "itemId": "phase5h:6:religion-practice:g6-truthfulness-01",
+      "gameId": "religion-practice",
+      "grade": 6,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "courseGroup": "religion",
+      "curriculumReferenceQuestionId": "din-kulturu-ve-ahlak-bilgisi-g6-dkab-6-3-1",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-tymm-g6-din-kulturu-ve-ahlak-bilgisi-dkab-6-3-1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "B",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:7:religion-practice:g7-belief-behaviour-01",
+      "itemId": "phase5h:7:religion-practice:g7-belief-behaviour-01",
+      "gameId": "religion-practice",
+      "grade": 7,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "courseGroup": "religion",
+      "curriculumReferenceQuestionId": "din-kulturu-ve-ahlak-bilgisi-g7-dkab-7-1-3",
+      "curriculumAlignmentStatus": "EXACT_OUTCOME_REFERENCE",
+      "curriculumAlignmentMode": "EXACT_OUTCOME",
+      "outcomeIds": [
+        "tr-tymm-g7-din-kulturu-ve-ahlak-bilgisi-dkab-7-1-3"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "C",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:religion-practice:religion-help-dignity-01-1sq4xqq",
+      "itemId": "phase5h:8:religion-practice:religion-help-dignity-01-1sq4xqq",
+      "gameId": "religion-practice",
+      "grade": 8,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "courseGroup": "religion",
+      "curriculumReferenceQuestionId": "dkab-g8-8-2-1",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr-pre-tymm-g8-dkab-8-2-1"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "D",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    },
+    {
+      "candidateId": "launch-candidate:phase5h:8:lgs-foundation:lgs-probability-bag-01-10u5ryk",
+      "itemId": "phase5h:8:lgs-foundation:lgs-probability-bag-01-10u5ryk",
+      "gameId": "lgs-foundation",
+      "grade": 8,
+      "courseId": "matematik",
+      "courseGroup": "mixed",
+      "curriculumReferenceQuestionId": "math-g8-cross-05-probability-cards",
+      "curriculumAlignmentStatus": "EXPLICIT_CURRICULUM_REFERENCE_HUMAN_CONFIRMATION_REQUIRED",
+      "curriculumAlignmentMode": "EXPLICIT_REFERENCE",
+      "outcomeIds": [
+        "tr.pre-tymm.g8.matematik.m-8-5-1-5"
+      ],
+      "itemFormat": "single-choice",
+      "responseMode": "CHOICE",
+      "correctOptionId": "A",
+      "optionIds": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "maximumRubricScore": 1,
+      "humanReviewRequired": true,
+      "gameAdaptationAllowed": false,
+      "publicationAllowed": false
+    }
+  ],
+  "assignmentPlanId": "ASSESSMENT_V2_CONTROLLED_LAUNCH_PILOT_30",
+  "gates": [
+    "30-of-30-engineering-content-quality-pass",
+    "30-of-30-human-review-approved-for-adaptation",
+    "23-of-23-game-routes-confirmed-by-human-review",
+    "24-of-24-grade-course-cells-retained",
+    "curriculum-reference-confirmed-by-human-review",
+    "30-of-30-semantic-round-trip-pass",
+    "real-student-pilot-evidence-only",
+    "at-least-100-anonymous-participants",
+    "at-least-80-responses-per-item",
+    "item-difficulty-0.20-0.90",
+    "item-discrimination-at-least-0.20",
+    "maximum-one-nonfunctional-distractor-for-choice-items",
+    "omission-rate-at-most-0.10",
+    "technical-release-evidence-pass"
+  ]
+}

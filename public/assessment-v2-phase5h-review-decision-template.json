@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "5H",
+  "reviewerAnonId": "reviewer_uzman01",
+  "reviewerRole": "CONTENT_AND_GAME_REVIEWER",
+  "decisions": [],
+  "dimensions": [
+    "correctness",
+    "curriculumAlignment",
+    "optionOrRubricQuality",
+    "ageLanguageFit",
+    "hintNonLeakage",
+    "feedbackTeachingValue",
+    "naturalness",
+    "gameFit",
+    "pilotSuitability"
+  ],
+  "warning": "Otomatik onay yoktur. APPROVE için dokuz boyutun tamamı en az 4 olmalı ve kritik engel bulunmamalıdır. Exact olmayan kazanım eşleşmelerinde en az bir CURRICULUM_REVIEWER kararı zorunludur."
+}

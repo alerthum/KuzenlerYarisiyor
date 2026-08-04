@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "5H",
+  "status": "PENDING",
+  "piiCollectionAllowed": false,
+  "consentEvidenceRecorded": false,
+  "guardianConsentTemplatePrepared": true,
+  "schoolAuthorizationRecorded": false,
+  "pilotSaltStoredOutsideClient": false,
+  "retentionPolicyAccepted": false,
+  "rawDataRetentionDays": 90,
+  "note": "Gerçek öğrenci başlamadan okul yetkisi, veli/onam, anonimleştirme anahtarı ve saklama politikası insan tarafından doğrulanmalıdır."
+}

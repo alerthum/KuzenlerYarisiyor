@@ -116,7 +116,11 @@
     "assessment:v2:phase5g:a11y": "node scripts/run-core-accessibility-audit.mjs",
     "assessment:v2:phase5g:security": "node scripts/run-core-security-audit.mjs",
     "assessment:v2:phase5g:technical": "npm run assessment:v2:phase5g:a11y && npm run assessment:v2:phase5g:security && npm run assessment:v2:phase5g:report",
-    "test:sharded": "node scripts/run-test-files-sharded.mjs 4 180000 1"
+    "test:sharded": "node scripts/run-test-files-sharded.mjs 4 180000 1",
+    "assessment:v2:phase5h": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5h-controlled-launch-pilot.mjs",
+    "assessment:v2:phase5h:reviews": "node scripts/analyze-assessment-v2-phase5h-reviews.mjs",
+    "test:phase5h": "node --test tests/assessment-v2/phase5h-controlled-launch-pilot.test.mjs",
+    "assessment:v2:phase5h:pilot": "node scripts/analyze-assessment-v2-phase5h-student-pilot.mjs"
   },
   "engines": {
     "node": ">=20"
