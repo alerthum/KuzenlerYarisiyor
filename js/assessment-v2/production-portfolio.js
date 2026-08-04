@@ -49,6 +49,7 @@ import { GRADE8_TURKISH_HUMAN_REVIEW_DECISIONS } from './turkish-g8-human-review
 import { QUESTION_ARCHITECTURE_POLICY } from './question-architecture-policy.js';
 import { ASSESSMENT_V2_GAME_ADAPTATION_LAB_AUDIT } from './game-adaptation-lab.js';
 import { MIDDLE_SCHOOL_TYMM_ENGINE_RECORDS } from './middle-school-tymm-core-engines.js';
+import { PRIMARY_BRIDGE_ENGINE_RECORDS } from './primary-bridge-core-engines.js';
 
 export const ASSESSMENT_V2_TARGET_STATEMENT='1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.';
 const LEGACY_QUARANTINE_COUNT=604;
@@ -94,6 +95,12 @@ export function buildAssessmentV2ProductionPortfolio(){
     const meta=middleSchoolCourseMeta[record.courseId];
     return engineRow({id:`tr-g${record.grade}-${record.courseId}-v2`,grade:record.grade,courseId:record.courseId,courseName:meta.courseName,programFamily:'TYMM',officialOutcomeCount:record.officialOutcomeCount,coveredOutcomeCount:record.audit.metrics.implementedOutcomeCount,items:record.items,engineType:meta.engineType,verifierType:meta.verifierType,misconceptionCatalog:`g${record.grade}-${meta.misconceptionCatalog}`,nextAction:`${record.items.length} görevi alan uzmanı ve yaş uygunluğu açısından kalibre et.`,blockers:[`${record.items.length} görev insan incelemesi bekliyor.`,'Gerçek ses, harita, deney veya performans varlıkları gereken görevler tamamlanmadı.']});
   });
+  const primaryCourseMeta=Object.freeze({
+    'fen-bilimleri':{courseName:'Fen Bilimleri',engineType:'primary observation, safe experiment and model engine',verifierType:'independent observation/evidence and rubric verification',misconceptionCatalog:'primary-science-misconceptions-v1'},
+    'din-kulturu-ve-ahlak-bilgisi':{courseName:'Din Kültürü ve Ahlak Bilgisi',engineType:'neutral primary curriculum-bound concept and ethical reasoning engine',verifierType:'independent evidence and rubric verification',misconceptionCatalog:'primary-dkab-misconceptions-v1'},
+    'yabanci-dil':{courseName:'İngilizce',engineType:'primary communicative language and multimodal performance engine',verifierType:'independent communication goal and rubric verification',misconceptionCatalog:'primary-english-misconceptions-v1'}
+  });
+  const primaryBridgeRows=PRIMARY_BRIDGE_ENGINE_RECORDS.map(record=>{const meta=primaryCourseMeta[record.courseId];return engineRow({id:`tr-g${record.grade}-${record.courseId}-primary-bridge-v2`,grade:record.grade,courseId:record.courseId,courseName:meta.courseName,programFamily:record.grade===4?'PRE_TYMM':'TYMM',officialOutcomeCount:record.officialOutcomeCount,coveredOutcomeCount:record.audit.metrics.implementedOutcomeCount,items:record.items,engineType:meta.engineType,verifierType:meta.verifierType,misconceptionCatalog:`g${record.grade}-${meta.misconceptionCatalog}`,nextAction:`${record.items.length} görevi sınıf öğretmeni/alan uzmanı, yaş uygunluğu ve gerçek medya açısından kalibre et.`,blockers:[`${record.items.length} görev insan incelemesi bekliyor.`,'Ses, görsel, deney veya kültürel varlık gereken görevlerin gerçek materyalleri tamamlanmadı.']});});
   const engines=frozenArray([
     engineRow({id:'tr-g8-turkce-v2',grade:8,courseId:'turkce',courseName:'Türkçe',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE_8_TURKISH_OUTCOMES_2019.length,coveredOutcomeCount:GRADE8_TURKISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8TurkishItems,approvedQuestionIds:approvedTurkishIds,gameAdaptedQuestionCount:5,engineType:'semantic-evidence + grammar + visual-reading + performance-rubric',verifierType:'independent semantic/constraint verification',misconceptionCatalog:'tr-g8-turkish-domain-misconceptions',nextAction:'96 Türkçe görevini alan ve yaş uygunluğu açısından insan kalibrasyonundan geçir.',blockers:['91 Türkçe görevi insan incelemesi bekliyor.','Dinleme/konuşma görevleri gerçek medya ve rubrik kalibrasyonu gerektiriyor.']}),
     engineRow({id:'tr-g8-matematik-v2',grade:8,courseId:'matematik',courseName:'Matematik',programFamily:'PRE_TYMM',officialOutcomeCount:GRADE8_MATH_OUTCOMES_2018.length,coveredOutcomeCount:GRADE8_MATH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade8MathItems,engineType:'symbolic/numeric/geometry solver-backed + interactive construction',verifierType:'independent alternate algorithm and invariant checks',misconceptionCatalog:'tr-g8-math-full-scope-misconceptions',nextAction:'52 Matematik görevini insan örneklemiyle kalibre et.',blockers:['52 Matematik görevinin insan gözle kalibrasyonu yapılmadı.','Etkileşimli çizim görevlerinin UI bileşenleri bağlanmadı.']}),
@@ -107,7 +114,8 @@ export function buildAssessmentV2ProductionPortfolio(){
     engineRow({id:'tr-g5-sosyal-v2',grade:5,courseId:'sosyal-bilgiler',courseName:'Sosyal Bilgiler',programFamily:'TYMM',officialOutcomeCount:GRADE5_SOCIAL_OUTCOMES_TYMM_2024.length,coveredOutcomeCount:GRADE5_SOCIAL_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5SocialItems,engineType:'map/source/civic project social inquiry engine',verifierType:'independent source and rubric constraint verification',misconceptionCatalog:'g5-social-evidence-misconceptions-v1',nextAction:'19 Sosyal Bilgiler görevine gerçek harita ve kaynak paketleri bağla.',blockers:['Harita ve kaynak varlıkları tamamlanmadı.','19 görev insan incelemesi bekliyor.']}),
     engineRow({id:'tr-g5-dkab-v2',grade:5,courseId:'din-kulturu-ve-ahlak-bilgisi',courseName:'Din Kültürü ve Ahlak Bilgisi',programFamily:'TYMM',officialOutcomeCount:GRADE5_DKAB_OUTCOMES_TYMM_2024.length,coveredOutcomeCount:GRADE5_DKAB_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5DkabItems,engineType:'neutral curriculum-bound text/concept/ethical reasoning engine',verifierType:'independent evidence and rubric verification',misconceptionCatalog:'g5-dkab-curriculum-misconceptions-v1',nextAction:'18 görevi tarafsız dil, kaynak ve yaş uygunluğu açısından kalibre et.',blockers:['Kültürel görsellerin provenansı bekliyor.','18 görev insan incelemesi bekliyor.']}),
     engineRow({id:'tr-g5-ingilizce-v2',grade:5,courseId:'yabanci-dil',scheduleCourseId:'yabanci-dil',courseName:'İngilizce',programFamily:'TYMM',officialOutcomeCount:GRADE5_ENGLISH_OUTCOMES_TYMM_2025.length,coveredOutcomeCount:GRADE5_ENGLISH_FULL_SCOPE_AUDIT.metrics.implementedOutcomeCount,items:grade5EnglishItems,engineType:'CEFR A2.1 communicative listening/pronunciation/reading/speaking/writing engine',verifierType:'independent A2.1 task and rubric consistency',misconceptionCatalog:'g5-english-a2-1-misconceptions-v1',nextAction:'184 İngilizce görevi için gerçek ses, konuşma örnekleri ve öğretmen kalibrasyonu ekle.',blockers:['Dinleme ve konuşma görevleri gerçek ses varlığı bekliyor.','184 görev insan incelemesi bekliyor.']}),
-    ...middleSchoolRows
+    ...middleSchoolRows,
+    ...primaryBridgeRows
   ]);
   const questionCount=engines.reduce((s,r)=>s+r.canonicalQuestionCount,0);
   const approvedCount=engines.reduce((s,r)=>s+r.humanApprovedQuestionCount,0);
@@ -118,12 +126,12 @@ export function buildAssessmentV2ProductionPortfolio(){
   const unmatchedActiveCells=[...activeCellKeys].filter(key=>!scheduleCellKeys.has(key));
   const activeGrades=new Set(engines.map(row=>row.grade));
   return Object.freeze({
-    schemaVersion:'3.2',generatedAt:new Date().toISOString(),target:ASSESSMENT_V2_TARGET_STATEMENT,status:'GRADES5_7_AND_LGS_CORE_ENGINEERING_SCOPE_COMPLETE',productReady:false,publicationAllowed:false,gameAdaptationAllowed:false,
+    schemaVersion:'3.3',generatedAt:new Date().toISOString(),target:ASSESSMENT_V2_TARGET_STATEMENT,status:'PRIMARY_BRIDGE_AND_GRADES5_8_CORE_ENGINEERING_SCOPE_COMPLETE',productReady:false,publicationAllowed:false,gameAdaptationAllowed:false,
     legacy:Object.freeze({count:LEGACY_QUARANTINE_COUNT,status:'UNVERIFIED_LEGACY'}),architecture:Object.freeze({policyVersion:QUESTION_ARCHITECTURE_POLICY.version,pipelineOrder:QUESTION_ARCHITECTURE_POLICY.pipelineOrder,sharedContractNotSharedGenerator:true,subjectSpecificEnginesRequired:true}),
     summary:Object.freeze({targetGradeCount:12,activeGradeCount:activeGrades.size,courseScheduleCellCount:scheduleCellKeys.size,activeEngineCellCount:activeCellKeys.size,activeEngineCellPercent:percent(activeCellKeys.size,scheduleCellKeys.size),curriculumOutcomeRecordCount:ingestedOutcomeCount,coveredOutcomeCount,canonicalQuestionCount:questionCount,humanApprovedQuestionCount:approvedCount,humanReviewQueueCount:questionCount-approvedCount,gameAdaptedQuestionCount:engines.reduce((s,r)=>s+r.gameAdaptedQuestionCount,0),legacyQuarantineCount:LEGACY_QUARANTINE_COUNT,unmatchedActiveCourseCellCount:unmatchedActiveCells.length}),
     rollout:frozenArray(CURRICULUM_ROLLOUT_2026_2027.map(row=>({grade:row.grade,programFamily:row.programFamily,status:row.programVersionStatus}))),engines,
     pipeline:frozenArray([
-      {id:'curriculum',label:'Resmî müfredat',status:'PASS_FOR_ACTIVE_ENGINES',note:'24 aktif motorun resmî kapsamı tam aktarıldı.'},
+      {id:'curriculum',label:'Resmî müfredat',status:'PASS_FOR_ACTIVE_ENGINES',note:'30 aktif motorun resmî kapsamı tam aktarıldı.'},
       {id:'subject-engine',label:'Derse özel motor',status:'PASS_FOR_ACTIVE_ENGINES',note:'Her ders kendi çözücü/rubrik ve yanılgı kataloğuyla çalışıyor.'},
       {id:'canonical-content',label:'Kanonik soru/görev',status:'ENGINEERING_SCOPE_COMPLETE',note:`${questionCount} kanonik mühendislik nesnesi mevcut.`},
       {id:'human-review',label:'İnsan kalibrasyonu',status:'BLOCKED',note:`${approvedCount} onaylı, ${questionCount-approvedCount} inceleme bekliyor.`},
@@ -144,15 +152,15 @@ export function auditAssessmentV2ProductionPortfolio(portfolio=buildAssessmentV2
   const errors=[];
   if(portfolio.summary.targetGradeCount!==12)errors.push('target-grade-count');
   if(portfolio.summary.courseScheduleCellCount!==112)errors.push(`course-cell-count:${portfolio.summary.courseScheduleCellCount}`);
-  if(portfolio.engines.length!==24)errors.push(`engine-count:${portfolio.engines.length}`);
+  if(portfolio.engines.length!==30)errors.push(`engine-count:${portfolio.engines.length}`);
   if(new Set(portfolio.engines.map(r=>r.id)).size!==portfolio.engines.length)errors.push('duplicate-engine-id');
-  if(portfolio.summary.activeEngineCellCount!==24)errors.push(`active-cell-count:${portfolio.summary.activeEngineCellCount}`);
+  if(portfolio.summary.activeEngineCellCount!==30)errors.push(`active-cell-count:${portfolio.summary.activeEngineCellCount}`);
   if(portfolio.summary.unmatchedActiveCourseCellCount!==0)errors.push(`unmatched-active-cells:${portfolio.summary.unmatchedActiveCourseCellCount}`);
-  if(portfolio.summary.canonicalQuestionCount!==1491)errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
-  if(portfolio.summary.curriculumOutcomeRecordCount!==1466)errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
-  if(portfolio.summary.coveredOutcomeCount!==1466)errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
+  if(portfolio.summary.canonicalQuestionCount!==1896)errors.push(`question-count:${portfolio.summary.canonicalQuestionCount}`);
+  if(portfolio.summary.curriculumOutcomeRecordCount!==1871)errors.push(`outcome-record-count:${portfolio.summary.curriculumOutcomeRecordCount}`);
+  if(portfolio.summary.coveredOutcomeCount!==1871)errors.push(`covered-outcome-count:${portfolio.summary.coveredOutcomeCount}`);
   if(portfolio.summary.humanApprovedQuestionCount!==5)errors.push(`approved-count:${portfolio.summary.humanApprovedQuestionCount}`);
-  if(portfolio.summary.humanReviewQueueCount!==1486)errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
+  if(portfolio.summary.humanReviewQueueCount!==1891)errors.push(`review-queue:${portfolio.summary.humanReviewQueueCount}`);
   if(portfolio.productReady!==false||portfolio.publicationAllowed!==false)errors.push('product-ready-leak');
   if(portfolio.gameAdaptationAllowed!==false||portfolio.summary.gameAdaptedQuestionCount!==5||!ASSESSMENT_V2_GAME_ADAPTATION_LAB_AUDIT.ok)errors.push('game-adaptation-lab-or-global-lock');
   if(portfolio.legacy.count!==604||portfolio.legacy.status!=='UNVERIFIED_LEGACY')errors.push('legacy-policy');

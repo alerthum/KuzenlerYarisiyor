@@ -1,0 +1,572 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T00:02:20.018Z",
+  "status": "HUMAN_REVIEW_REQUIRED",
+  "metrics": {
+    "engineCount": 6,
+    "itemCount": 18,
+    "perEngine": 3,
+    "approved": 0,
+    "pending": 18
+  },
+  "rows": [
+    {
+      "questionId": "yabanci-dil-g2-eng-2-1-g1",
+      "engineKey": "g2:yabanci-dil",
+      "grade": 2,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g2-ingilizce-eng-2-1-g1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "pre_a1-g-communication",
+      "difficultyBand": "G2_CHALLENGING",
+      "context": "Grade 2 English task in the “School Life” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Pupils can select and use the language including target grammatical elements of the current content about “greetings and introductions at school; people and places at school; days of the week; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+      "rubricCriteria": [
+        "Includes every content point required by the communication goal.",
+        "Uses understandable age-appropriate words, chunks and interaction conventions.",
+        "Checks or repairs the message so another learner can follow it."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g2-eng-2-1-l1",
+      "engineKey": "g2:yabanci-dil",
+      "grade": 2,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g2-ingilizce-eng-2-1-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "pre_a1-l-communication",
+      "difficultyBand": "G2_CORE",
+      "context": "Grade 2 English task in the “School Life” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Pupils can get ready for the listening/watching-comprehension process for the current content on “greetings and introductions at school; people and places at school; days of the week; national days and celebrations”.",
+      "rubricCriteria": [
+        "Finds the required word, phrase, sound or meaning clue in the input.",
+        "Connects the clue to the communication goal instead of matching one isolated word.",
+        "Gives a short clear response without adding unsupported information."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g2-eng-2-1-r1",
+      "engineKey": "g2:yabanci-dil",
+      "grade": 2,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g2-ingilizce-eng-2-1-r1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "pre_a1-r-communication",
+      "difficultyBand": "G2_CORE",
+      "context": "Grade 2 English task in the “School Life” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Pupils can get ready for the reading-comprehension process about the current content on “greetings and introductions at school; people and places at school; days of the week; national days and celebrations”.",
+      "rubricCriteria": [
+        "Finds the required word, phrase, sound or meaning clue in the input.",
+        "Connects the clue to the communication goal instead of matching one isolated word.",
+        "Gives a short clear response without adding unsupported information."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g3-eng-3-1-g1",
+      "engineKey": "g3:yabanci-dil",
+      "grade": 3,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g3-ingilizce-eng-3-1-g1"
+      ],
+      "itemFormat": "short-answer",
+      "primarySkill": "pre_a1_plus-g-communication",
+      "difficultyBand": "G3_CHALLENGING",
+      "context": "Grade 3 English task in the “School Life” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Pupils can select and use the language including target grammatical elements of the current content about “school life with greetings and introductions at school, people and places at school, months of the year, ages and birthday celebrations; national days and celebrations” accurately, authentically, spontaneously, and naturally and use it appropriately and effectively when communicating with others.",
+      "rubricCriteria": [
+        "Includes every content point required by the communication goal.",
+        "Uses understandable age-appropriate words, chunks and interaction conventions.",
+        "Checks or repairs the message so another learner can follow it."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g3-eng-3-1-l1",
+      "engineKey": "g3:yabanci-dil",
+      "grade": 3,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g3-ingilizce-eng-3-1-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "pre_a1_plus-l-communication",
+      "difficultyBand": "G3_CORE",
+      "context": "Grade 3 English task in the “School Life” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Pupils can get ready for the listening/watching-comprehension process for the current content on “school life with greetings and introductions at school, people and places at school, months of the year, ages and birthday celebrations; national days and celebrations”.",
+      "rubricCriteria": [
+        "Finds the required word, phrase, sound or meaning clue in the input.",
+        "Connects the clue to the communication goal instead of matching one isolated word.",
+        "Gives a short clear response without adding unsupported information."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g3-eng-3-1-r1",
+      "engineKey": "g3:yabanci-dil",
+      "grade": 3,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-tymm-g3-ingilizce-eng-3-1-r1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "pre_a1_plus-r-communication",
+      "difficultyBand": "G3_CORE",
+      "context": "Grade 3 English task in the “School Life” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Pupils can get ready for the reading-comprehension process about the current content on “school life with greetings and introductions at school, people and places at school, months of the year, ages and birthday celebrations; national days and celebrations”.",
+      "rubricCriteria": [
+        "Finds the required word, phrase, sound or meaning clue in the input.",
+        "Connects the clue to the communication goal instead of matching one isolated word.",
+        "Gives a short clear response without adding unsupported information."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g3-fb-3-1-1",
+      "engineKey": "g3:fen-bilimleri",
+      "grade": 3,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g3-fen-bilimleri-fb-3-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "erken-bilimsel-muhakeme",
+      "difficultyBand": "G3_CHALLENGING",
+      "context": "3. sınıf Fen Bilimleri çalışmasında “Bi̇li̇msel Keşi̇f Yolculuğu” için güvenli bir gözlem, basit deney, model, görsel veya veri kartı kullanılır.",
+      "stem": "Bilimsel bilgiye ulaşma yollarını sorgulayabilme öğrenme çıktısını gösterecek gözlem, model veya açıklamayı oluştur.",
+      "rubricCriteria": [
+        "Gözlenebilir özellikleri ve görevin koşullarını doğru belirler.",
+        "Kanıtı uygun sınıflandırma, model veya neden-sonuç ilişkisiyle açıklar.",
+        "Sonucunu ikinci gözlem, karşılaştırma veya basit kontrol yoluyla gözden geçirir."
+      ],
+      "hints": [
+        "Önce yalnız görebildiğin, ölçebildiğin veya verilen kartta bulunan kanıtları ayır.",
+        "Benzerlik, farklılık ya da neden-sonuç ilişkisinden hangisinin istendiğini belirle.",
+        "Sonucunu başka bir gözlem veya karşılaştırmayla kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-yerine-tahmin-yazma",
+        "tek-özellikten-genelleme",
+        "modeli-gerçeğin-tam-kopyası-sanma"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g3-fb-3-2-1",
+      "engineKey": "g3:fen-bilimleri",
+      "grade": 3,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g3-fen-bilimleri-fb-3-2-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "erken-bilimsel-muhakeme",
+      "difficultyBand": "G3_CORE",
+      "context": "3. sınıf Fen Bilimleri çalışmasında “Canlilar Dünyasina Yolculuk” için güvenli bir gözlem, basit deney, model, görsel veya veri kartı kullanılır.",
+      "stem": "Canlıları; mikroskopla görülebilen canlılar, mantarlar, bitkiler ve hayvanlar olarak sınıflandırabilme öğrenme çıktısını gösterecek gözlem, model veya açıklamayı oluştur.",
+      "rubricCriteria": [
+        "Gözlenebilir özellikleri ve görevin koşullarını doğru belirler.",
+        "Kanıtı uygun sınıflandırma, model veya neden-sonuç ilişkisiyle açıklar.",
+        "Sonucunu ikinci gözlem, karşılaştırma veya basit kontrol yoluyla gözden geçirir."
+      ],
+      "hints": [
+        "Önce yalnız görebildiğin, ölçebildiğin veya verilen kartta bulunan kanıtları ayır.",
+        "Benzerlik, farklılık ya da neden-sonuç ilişkisinden hangisinin istendiğini belirle.",
+        "Sonucunu başka bir gözlem veya karşılaştırmayla kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-yerine-tahmin-yazma",
+        "tek-özellikten-genelleme",
+        "modeli-gerçeğin-tam-kopyası-sanma"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g3-fb-3-3-1",
+      "engineKey": "g3:fen-bilimleri",
+      "grade": 3,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-tymm-g3-fen-bilimleri-fb-3-3-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "erken-bilimsel-muhakeme",
+      "difficultyBand": "G3_CORE",
+      "context": "3. sınıf Fen Bilimleri çalışmasında “Yer Bi̇li̇mci̇ler İş Başinda” için güvenli bir gözlem, basit deney, model, görsel veya veri kartı kullanılır.",
+      "stem": "Kayaçlar, madenler ve mineraller ile ilgili tümdengelimsel akıl yürütebilme öğrenme çıktısını gösterecek gözlem, model veya açıklamayı oluştur.",
+      "rubricCriteria": [
+        "Gözlenebilir özellikleri ve görevin koşullarını doğru belirler.",
+        "Kanıtı uygun sınıflandırma, model veya neden-sonuç ilişkisiyle açıklar.",
+        "Sonucunu ikinci gözlem, karşılaştırma veya basit kontrol yoluyla gözden geçirir."
+      ],
+      "hints": [
+        "Önce yalnız görebildiğin, ölçebildiğin veya verilen kartta bulunan kanıtları ayır.",
+        "Benzerlik, farklılık ya da neden-sonuç ilişkisinden hangisinin istendiğini belirle.",
+        "Sonucunu başka bir gözlem veya karşılaştırmayla kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-yerine-tahmin-yazma",
+        "tek-özellikten-genelleme",
+        "modeli-gerçeğin-tam-kopyası-sanma"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g4-f-4-1-1-1",
+      "engineKey": "g4:fen-bilimleri",
+      "grade": 4,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-science-f-4-1-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "erken-bilimsel-muhakeme",
+      "difficultyBand": "G4_CHALLENGING",
+      "context": "4. sınıf Fen Bilimleri çalışmasında “Yer Kabuğu ve Dünya’mızın Hareketleri” için güvenli bir gözlem, basit deney, model, görsel veya veri kartı kullanılır.",
+      "stem": "Yer kabuğunun kara tabakasının kayaçlardan oluştuğunu belirtir. öğrenme çıktısını gösterecek gözlem, model veya açıklamayı oluştur.",
+      "rubricCriteria": [
+        "Gözlenebilir özellikleri ve görevin koşullarını doğru belirler.",
+        "Kanıtı uygun sınıflandırma, model veya neden-sonuç ilişkisiyle açıklar.",
+        "Sonucunu ikinci gözlem, karşılaştırma veya basit kontrol yoluyla gözden geçirir."
+      ],
+      "hints": [
+        "Önce yalnız görebildiğin, ölçebildiğin veya verilen kartta bulunan kanıtları ayır.",
+        "Benzerlik, farklılık ya da neden-sonuç ilişkisinden hangisinin istendiğini belirle.",
+        "Sonucunu başka bir gözlem veya karşılaştırmayla kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-yerine-tahmin-yazma",
+        "tek-özellikten-genelleme",
+        "modeli-gerçeğin-tam-kopyası-sanma"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g4-f-4-2-1-1",
+      "engineKey": "g4:fen-bilimleri",
+      "grade": 4,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-science-f-4-2-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "erken-bilimsel-muhakeme",
+      "difficultyBand": "G4_CORE",
+      "context": "4. sınıf Fen Bilimleri çalışmasında “Besinlerimiz” için güvenli bir gözlem, basit deney, model, görsel veya veri kartı kullanılır.",
+      "stem": "Canlı yaşamı ve besin içerikleri arasındaki ilişkiyi açıklar. a. Protein, karbonhidrat, yağ, vitamin, su ve minerallerin ayrıntılı yapısına girilmeden yalnızca önemleri vurgulanır. b. Vitamin çeşitlerine girilmez. öğrenme çıktısını gösterecek gözlem, model veya açıklamayı oluştur.",
+      "rubricCriteria": [
+        "Gözlenebilir özellikleri ve görevin koşullarını doğru belirler.",
+        "Kanıtı uygun sınıflandırma, model veya neden-sonuç ilişkisiyle açıklar.",
+        "Sonucunu ikinci gözlem, karşılaştırma veya basit kontrol yoluyla gözden geçirir."
+      ],
+      "hints": [
+        "Önce yalnız görebildiğin, ölçebildiğin veya verilen kartta bulunan kanıtları ayır.",
+        "Benzerlik, farklılık ya da neden-sonuç ilişkisinden hangisinin istendiğini belirle.",
+        "Sonucunu başka bir gözlem veya karşılaştırmayla kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-yerine-tahmin-yazma",
+        "tek-özellikten-genelleme",
+        "modeli-gerçeğin-tam-kopyası-sanma"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "fen-bilimleri-g4-f-4-3-1-1",
+      "engineKey": "g4:fen-bilimleri",
+      "grade": 4,
+      "courseId": "fen-bilimleri",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-science-f-4-3-1-1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "erken-bilimsel-muhakeme",
+      "difficultyBand": "G4_CORE",
+      "context": "4. sınıf Fen Bilimleri çalışmasında “Kuvvetin Etkileri” için güvenli bir gözlem, basit deney, model, görsel veya veri kartı kullanılır.",
+      "stem": "Kuvvetin, cisimlere hareket kazandırmasına ve cisimlerin şekillerini değiştirmesine yönelik deneyler yapar. öğrenme çıktısını gösterecek gözlem, model veya açıklamayı oluştur.",
+      "rubricCriteria": [
+        "Gözlenebilir özellikleri ve görevin koşullarını doğru belirler.",
+        "Kanıtı uygun sınıflandırma, model veya neden-sonuç ilişkisiyle açıklar.",
+        "Sonucunu ikinci gözlem, karşılaştırma veya basit kontrol yoluyla gözden geçirir."
+      ],
+      "hints": [
+        "Önce yalnız görebildiğin, ölçebildiğin veya verilen kartta bulunan kanıtları ayır.",
+        "Benzerlik, farklılık ya da neden-sonuç ilişkisinden hangisinin istendiğini belirle.",
+        "Sonucunu başka bir gözlem veya karşılaştırmayla kontrol et."
+      ],
+      "misconceptionIds": [
+        "gözlem-yerine-tahmin-yazma",
+        "tek-özellikten-genelleme",
+        "modeli-gerçeğin-tam-kopyası-sanma"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g4-4-1-1",
+      "engineKey": "g4:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 4,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-dkab-4-1-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "temel-dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G4_CHALLENGING",
+      "context": "4. sınıf Din Kültürü ve Ahlak Bilgisi çalışmasında “Günlük Hayattaki̇ Di̇nî İfadeler” için kısa, tarafsız ve programla sınırlı metin, kavram kartı, görsel veya günlük yaşam durumu verilir.",
+      "stem": "Dinî ifadeleri, günlük konuşmalarda doğru ve yerinde kullanır. kazanımını gösterecek biçimde yanıtını oluştur ve gerekçeni materyaldeki kanıta bağla.",
+      "rubricCriteria": [
+        "Metin, kavram veya görseldeki ana bilgiyi doğru belirler.",
+        "Bilgiyi programdaki kavram ve günlük yaşam örneğiyle ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde açıklar."
+      ],
+      "hints": [
+        "Metindeki ya da görseldeki ana kavramı bul.",
+        "Bu kavramın günlük yaşamda hangi davranış veya örnekle ilişkili olduğunu düşün.",
+        "Cevabında yalnız verilen materyalin desteklediği gerekçeyi kullan."
+      ],
+      "misconceptionIds": [
+        "kavramları-karıştırma",
+        "metni-bağlamından-koparma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g4-4-2-1",
+      "engineKey": "g4:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 4,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-dkab-4-2-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "temel-dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G4_CHALLENGING",
+      "context": "4. sınıf Din Kültürü ve Ahlak Bilgisi çalışmasında “İslam’I Taniyalim” için kısa, tarafsız ve programla sınırlı metin, kavram kartı, görsel veya günlük yaşam durumu verilir.",
+      "stem": "İslam’ın inanç esaslarını sıralar. kazanımını gösterecek biçimde yanıtını oluştur ve gerekçeni materyaldeki kanıta bağla.",
+      "rubricCriteria": [
+        "Metin, kavram veya görseldeki ana bilgiyi doğru belirler.",
+        "Bilgiyi programdaki kavram ve günlük yaşam örneğiyle ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde açıklar."
+      ],
+      "hints": [
+        "Metindeki ya da görseldeki ana kavramı bul.",
+        "Bu kavramın günlük yaşamda hangi davranış veya örnekle ilişkili olduğunu düşün.",
+        "Cevabında yalnız verilen materyalin desteklediği gerekçeyi kullan."
+      ],
+      "misconceptionIds": [
+        "kavramları-karıştırma",
+        "metni-bağlamından-koparma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "din-kulturu-ve-ahlak-bilgisi-g4-4-3-1",
+      "engineKey": "g4:din-kulturu-ve-ahlak-bilgisi",
+      "grade": 4,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-dkab-4-3-1"
+      ],
+      "itemFormat": "open-response",
+      "primarySkill": "temel-dinî-ve-ahlaki-muhakeme",
+      "difficultyBand": "G4_CHALLENGING",
+      "context": "4. sınıf Din Kültürü ve Ahlak Bilgisi çalışmasında “Güzel Ahlak” için kısa, tarafsız ve programla sınırlı metin, kavram kartı, görsel veya günlük yaşam durumu verilir.",
+      "stem": "Bireyin güzel ahlaklı olmasında dinin rolünü fark eder. kazanımını gösterecek biçimde yanıtını oluştur ve gerekçeni materyaldeki kanıta bağla.",
+      "rubricCriteria": [
+        "Metin, kavram veya görseldeki ana bilgiyi doğru belirler.",
+        "Bilgiyi programdaki kavram ve günlük yaşam örneğiyle ilişkilendirir.",
+        "Gerekçesini saygılı, tarafsız ve materyalin sınırları içinde açıklar."
+      ],
+      "hints": [
+        "Metindeki ya da görseldeki ana kavramı bul.",
+        "Bu kavramın günlük yaşamda hangi davranış veya örnekle ilişkili olduğunu düşün.",
+        "Cevabında yalnız verilen materyalin desteklediği gerekçeyi kullan."
+      ],
+      "misconceptionIds": [
+        "kavramları-karıştırma",
+        "metni-bağlamından-koparma",
+        "gerekçesiz-değer-yargısı"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g4-e4-1-l1",
+      "engineKey": "g4:yabanci-dil",
+      "grade": 4,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-english-e4-1-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a1-l-communication",
+      "difficultyBand": "G4_CHALLENGING",
+      "context": "Grade 4 English task in the “Classroom Rules” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Students will be able to understand short and clear utterances about requests.",
+      "rubricCriteria": [
+        "Finds the required word, phrase, sound or meaning clue in the input.",
+        "Connects the clue to the communication goal instead of matching one isolated word.",
+        "Gives a short clear response without adding unsupported information."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g4-e4-2-l1",
+      "engineKey": "g4:yabanci-dil",
+      "grade": 4,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-english-e4-2-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a1-l-communication",
+      "difficultyBand": "G4_CORE",
+      "context": "Grade 4 English task in the “Nationality” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Students will be able to recognize information about other people.",
+      "rubricCriteria": [
+        "Finds the required word, phrase, sound or meaning clue in the input.",
+        "Connects the clue to the communication goal instead of matching one isolated word.",
+        "Gives a short clear response without adding unsupported information."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "yabanci-dil-g4-e4-3-l1",
+      "engineKey": "g4:yabanci-dil",
+      "grade": 4,
+      "courseId": "yabanci-dil",
+      "outcomeIds": [
+        "tr-pre-tymm-g4-english-e4-3-l1"
+      ],
+      "itemFormat": "interactive-simulation",
+      "primarySkill": "a1-l-communication",
+      "difficultyBand": "G4_CORE",
+      "context": "Grade 4 English task in the “Cartoon Characters” theme. The learner uses short, concrete and age-appropriate language with visual, audio or interaction support.",
+      "stem": "Complete a short communicative task that demonstrates: Students will be able to get the main idea of a simple oral text about the abilities self and others.",
+      "rubricCriteria": [
+        "Finds the required word, phrase, sound or meaning clue in the input.",
+        "Connects the clue to the communication goal instead of matching one isolated word.",
+        "Gives a short clear response without adding unsupported information."
+      ],
+      "hints": [
+        "Look at or listen to the whole message before choosing one familiar word.",
+        "Match the clue with the speaker’s purpose or the picture situation.",
+        "Check that your answer completes the communication goal clearly."
+      ],
+      "misconceptionIds": [
+        "single-word-match-without-meaning",
+        "communication-goal-missed",
+        "message-incomplete-or-unclear"
+      ],
+      "humanReviewStatus": "NOT_MEASURED",
+      "gameAdaptationAllowed": false
+    }
+  ]
+}

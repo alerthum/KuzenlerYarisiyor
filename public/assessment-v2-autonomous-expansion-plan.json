@@ -1,16 +1,16 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-03T22:12:35.048Z",
+  "generatedAt": "2026-08-04T00:02:30.921Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
-  "status": "LGS_CORE_COMPLETE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
+  "status": "PRIMARY_BRIDGE_AND_GRADES5_8_CORE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
-    "activeEngineCount": 7,
-    "engineeringScopeCompleteEngineCount": 7,
+    "activeEngineCount": 30,
+    "engineeringScopeCompleteEngineCount": 30,
     "remainingOutcomeCount": 0,
-    "humanReviewQueueCount": 440,
-    "unopenedCourseCellCount": 105
+    "humanReviewQueueCount": 1891,
+    "unopenedCourseCellCount": 82
   },
   "engines": [
     {
@@ -96,6 +96,282 @@
       "reviewQueueCount": 70,
       "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g5-matematik-v2",
+      "grade": 5,
+      "courseId": "matematik",
+      "officialOutcomeCount": 23,
+      "coveredOutcomeCount": 23,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 23,
+      "reviewQueueCount": 23,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g5-fen-v2",
+      "grade": 5,
+      "courseId": "fen-bilimleri",
+      "officialOutcomeCount": 28,
+      "coveredOutcomeCount": 28,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 28,
+      "reviewQueueCount": 28,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g5-sosyal-v2",
+      "grade": 5,
+      "courseId": "sosyal-bilgiler",
+      "officialOutcomeCount": 19,
+      "coveredOutcomeCount": 19,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 19,
+      "reviewQueueCount": 19,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g5-dkab-v2",
+      "grade": 5,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "officialOutcomeCount": 18,
+      "coveredOutcomeCount": 18,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 18,
+      "reviewQueueCount": 18,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g5-ingilizce-v2",
+      "grade": 5,
+      "courseId": "yabanci-dil",
+      "officialOutcomeCount": 184,
+      "coveredOutcomeCount": 184,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 184,
+      "reviewQueueCount": 184,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g6-turkce-v2",
+      "grade": 6,
+      "courseId": "turkce",
+      "officialOutcomeCount": 100,
+      "coveredOutcomeCount": 100,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 100,
+      "reviewQueueCount": 100,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g6-matematik-v2",
+      "grade": 6,
+      "courseId": "matematik",
+      "officialOutcomeCount": 24,
+      "coveredOutcomeCount": 24,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 24,
+      "reviewQueueCount": 24,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g6-fen-bilimleri-v2",
+      "grade": 6,
+      "courseId": "fen-bilimleri",
+      "officialOutcomeCount": 36,
+      "coveredOutcomeCount": 36,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 36,
+      "reviewQueueCount": 36,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g6-sosyal-bilgiler-v2",
+      "grade": 6,
+      "courseId": "sosyal-bilgiler",
+      "officialOutcomeCount": 18,
+      "coveredOutcomeCount": 18,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 18,
+      "reviewQueueCount": 18,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g6-din-kulturu-ve-ahlak-bilgisi-v2",
+      "grade": 6,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "officialOutcomeCount": 18,
+      "coveredOutcomeCount": 18,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 18,
+      "reviewQueueCount": 18,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g6-yabanci-dil-v2",
+      "grade": 6,
+      "courseId": "yabanci-dil",
+      "officialOutcomeCount": 184,
+      "coveredOutcomeCount": 184,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 184,
+      "reviewQueueCount": 184,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g7-turkce-v2",
+      "grade": 7,
+      "courseId": "turkce",
+      "officialOutcomeCount": 103,
+      "coveredOutcomeCount": 103,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 103,
+      "reviewQueueCount": 103,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g7-matematik-v2",
+      "grade": 7,
+      "courseId": "matematik",
+      "officialOutcomeCount": 30,
+      "coveredOutcomeCount": 30,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 30,
+      "reviewQueueCount": 30,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g7-fen-bilimleri-v2",
+      "grade": 7,
+      "courseId": "fen-bilimleri",
+      "officialOutcomeCount": 36,
+      "coveredOutcomeCount": 36,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 36,
+      "reviewQueueCount": 36,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g7-sosyal-bilgiler-v2",
+      "grade": 7,
+      "courseId": "sosyal-bilgiler",
+      "officialOutcomeCount": 17,
+      "coveredOutcomeCount": 17,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 17,
+      "reviewQueueCount": 17,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g7-din-kulturu-ve-ahlak-bilgisi-v2",
+      "grade": 7,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "officialOutcomeCount": 17,
+      "coveredOutcomeCount": 17,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 17,
+      "reviewQueueCount": 17,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g7-yabanci-dil-v2",
+      "grade": 7,
+      "courseId": "yabanci-dil",
+      "officialOutcomeCount": 191,
+      "coveredOutcomeCount": 191,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 191,
+      "reviewQueueCount": 191,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g2-yabanci-dil-primary-bridge-v2",
+      "grade": 2,
+      "courseId": "yabanci-dil",
+      "officialOutcomeCount": 138,
+      "coveredOutcomeCount": 138,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 138,
+      "reviewQueueCount": 138,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g3-yabanci-dil-primary-bridge-v2",
+      "grade": 3,
+      "courseId": "yabanci-dil",
+      "officialOutcomeCount": 138,
+      "coveredOutcomeCount": 138,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 138,
+      "reviewQueueCount": 138,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g3-fen-bilimleri-primary-bridge-v2",
+      "grade": 3,
+      "courseId": "fen-bilimleri",
+      "officialOutcomeCount": 20,
+      "coveredOutcomeCount": 20,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 20,
+      "reviewQueueCount": 20,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-fen-bilimleri-primary-bridge-v2",
+      "grade": 4,
+      "courseId": "fen-bilimleri",
+      "officialOutcomeCount": 43,
+      "coveredOutcomeCount": 43,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 43,
+      "reviewQueueCount": 43,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-din-kulturu-ve-ahlak-bilgisi-primary-bridge-v2",
+      "grade": 4,
+      "courseId": "din-kulturu-ve-ahlak-bilgisi",
+      "officialOutcomeCount": 19,
+      "coveredOutcomeCount": 19,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 19,
+      "reviewQueueCount": 19,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g4-yabanci-dil-primary-bridge-v2",
+      "grade": 4,
+      "courseId": "yabanci-dil",
+      "officialOutcomeCount": 47,
+      "coveredOutcomeCount": 47,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 47,
+      "reviewQueueCount": 47,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
     }
   ],
   "backlog": [
@@ -103,9 +379,9 @@
       "order": 1,
       "id": "calibrate-risk-sample",
       "kind": "HUMAN_REVIEW",
-      "scope": "7 aktif motor için risk tabakalı örneklem",
-      "reason": "440 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
-      "count": 70
+      "scope": "30 aktif motor için risk tabakalı örneklem",
+      "reason": "1891 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
+      "count": 113
     },
     {
       "order": 2,
@@ -136,8 +412,8 @@
       "id": "expand-grade-map",
       "kind": "NEW_ENGINE",
       "scope": "1–12 zorunlu ders hücreleri",
-      "reason": "112 hücrenin 7’si aktif; ortak sözleşmeyle yeni sınıf-ders motorları açılmalı.",
-      "count": 105
+      "reason": "112 hücrenin 30’u aktif; yerel resmî kanıtı bulunan köprü hücreleri açıldı, kalanlar kaynak edinimi sonrası ilerlemeli.",
+      "count": 82
     }
   ]
 }

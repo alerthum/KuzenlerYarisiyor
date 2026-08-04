@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T00:02:20.163Z",
+  "phase": "4T",
+  "title": "İlkokul Köprü Ders Motorları",
+  "status": "PRIMARY_BRIDGE_ENGINEERING_SCOPE_COMPLETE",
+  "productReady": false,
+  "publicationAllowed": false,
+  "gameAdaptationAllowed": false,
+  "errors": [],
+  "audits": {
+    "primaryBridge": {
+      "ok": true,
+      "metrics": {
+        "engineCount": 6,
+        "officialOutcomeCount": 405,
+        "itemCount": 405,
+        "humanReviewStatus": "NOT_MEASURED",
+        "gameAdaptationAllowed": false
+      }
+    },
+    "reviewSample": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "engineCount": 6,
+        "itemCount": 18,
+        "perEngine": 3,
+        "approved": 0,
+        "pending": 18
+      }
+    },
+    "portfolio": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "targetGradeCount": 12,
+        "activeGradeCount": 7,
+        "courseScheduleCellCount": 112,
+        "activeEngineCellCount": 30,
+        "activeEngineCellPercent": 26.8,
+        "curriculumOutcomeRecordCount": 1871,
+        "coveredOutcomeCount": 1871,
+        "canonicalQuestionCount": 1896,
+        "humanApprovedQuestionCount": 5,
+        "humanReviewQueueCount": 1891,
+        "gameAdaptedQuestionCount": 5,
+        "legacyQuarantineCount": 604,
+        "unmatchedActiveCourseCellCount": 0
+      }
+    },
+    "catalog": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "itemCount": 1896,
+        "byEngine": {
+          "g8:turkce": 96,
+          "g8:matematik": 52,
+          "g8:fen-bilimleri": 61,
+          "g5:turkce": 105,
+          "g8:t-c-inkilap-tarihi-ve-ataturkculuk": 33,
+          "g8:din-kulturu-ve-ahlak-bilgisi": 28,
+          "g8:ingilizce": 70,
+          "g5:matematik": 23,
+          "g5:fen-bilimleri": 28,
+          "g5:sosyal-bilgiler": 19,
+          "g5:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g5:yabanci-dil": 184,
+          "g6:turkce": 100,
+          "g6:matematik": 24,
+          "g6:fen-bilimleri": 36,
+          "g6:sosyal-bilgiler": 18,
+          "g6:din-kulturu-ve-ahlak-bilgisi": 18,
+          "g6:yabanci-dil": 184,
+          "g7:turkce": 103,
+          "g7:matematik": 30,
+          "g7:fen-bilimleri": 36,
+          "g7:sosyal-bilgiler": 17,
+          "g7:din-kulturu-ve-ahlak-bilgisi": 17,
+          "g7:yabanci-dil": 191,
+          "g2:yabanci-dil": 138,
+          "g3:yabanci-dil": 138,
+          "g3:fen-bilimleri": 20,
+          "g4:fen-bilimleri": 43,
+          "g4:din-kulturu-ve-ahlak-bilgisi": 19,
+          "g4:yabanci-dil": 47
+        },
+        "gameAdaptedCount": 0,
+        "productReady": false
+      }
+    },
+    "reviewQueue": {
+      "ok": true,
+      "errors": [],
+      "metrics": {
+        "total": 1896,
+        "approved": 5,
+        "pending": 1891,
+        "highComplexityPending": 1740
+      }
+    }
+  },
+  "metrics": {
+    "newGradeCount": 3,
+    "newEngineCount": 6,
+    "newOfficialOutcomeCount": 405,
+    "newCanonicalTaskCount": 405,
+    "totalActiveGradeCount": 7,
+    "totalActiveEngineCount": 30,
+    "totalOfficialOutcomeCount": 1871,
+    "totalCanonicalTaskCount": 1896,
+    "humanReviewPending": 1891,
+    "unopenedCourseCells": 82
+  },
+  "honesty": {
+    "humanReviewStatus": "NOT_MEASURED",
+    "realMediaAssets": "INCOMPLETE",
+    "realStudentPilot": "NOT_COMPLETED",
+    "unopenedPrimaryCells": "WAITING_FOR_LOCAL_AUTHORITATIVE_SOURCE_INGESTION"
+  }
+}

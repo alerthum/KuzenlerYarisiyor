@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T23:43:35.700Z",
+  "generatedAt": "2026-08-04T00:02:31.241Z",
   "phase": "4H",
   "title": "Assessment V2 Ürün Şekillendirme ve Ders Motorları Panosu",
   "status": "ENGINEERING_PASS_HUMAN_REVIEW_IN_PROGRESS",
@@ -11,25 +11,25 @@
     "errors": [],
     "metrics": {
       "targetGradeCount": 12,
-      "activeGradeCount": 4,
+      "activeGradeCount": 7,
       "courseScheduleCellCount": 112,
-      "activeEngineCellCount": 24,
-      "activeEngineCellPercent": 21.4,
-      "curriculumOutcomeRecordCount": 1466,
-      "coveredOutcomeCount": 1466,
-      "canonicalQuestionCount": 1491,
+      "activeEngineCellCount": 30,
+      "activeEngineCellPercent": 26.8,
+      "curriculumOutcomeRecordCount": 1871,
+      "coveredOutcomeCount": 1871,
+      "canonicalQuestionCount": 1896,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 1486,
+      "humanReviewQueueCount": 1891,
       "gameAdaptedQuestionCount": 5,
       "legacyQuarantineCount": 604,
       "unmatchedActiveCourseCellCount": 0
     }
   },
   "portfolio": {
-    "schemaVersion": "3.2",
-    "generatedAt": "2026-08-03T23:43:35.699Z",
+    "schemaVersion": "3.3",
+    "generatedAt": "2026-08-04T00:02:31.239Z",
     "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
-    "status": "GRADES5_7_AND_LGS_CORE_ENGINEERING_SCOPE_COMPLETE",
+    "status": "PRIMARY_BRIDGE_AND_GRADES5_8_CORE_ENGINEERING_SCOPE_COMPLETE",
     "productReady": false,
     "publicationAllowed": false,
     "gameAdaptationAllowed": false,
@@ -57,15 +57,15 @@
     },
     "summary": {
       "targetGradeCount": 12,
-      "activeGradeCount": 4,
+      "activeGradeCount": 7,
       "courseScheduleCellCount": 112,
-      "activeEngineCellCount": 24,
-      "activeEngineCellPercent": 21.4,
-      "curriculumOutcomeRecordCount": 1466,
-      "coveredOutcomeCount": 1466,
-      "canonicalQuestionCount": 1491,
+      "activeEngineCellCount": 30,
+      "activeEngineCellPercent": 26.8,
+      "curriculumOutcomeRecordCount": 1871,
+      "coveredOutcomeCount": 1871,
+      "canonicalQuestionCount": 1896,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 1486,
+      "humanReviewQueueCount": 1891,
       "gameAdaptedQuestionCount": 5,
       "legacyQuarantineCount": 604,
       "unmatchedActiveCourseCellCount": 0
@@ -804,6 +804,174 @@
           "191 görev insan incelemesi bekliyor.",
           "Gerçek ses, harita, deney veya performans varlıkları gereken görevler tamamlanmadı."
         ]
+      },
+      {
+        "id": "tr-g2-yabanci-dil-primary-bridge-v2",
+        "grade": 2,
+        "courseId": "yabanci-dil",
+        "scheduleCourseId": "yabanci-dil",
+        "courseName": "İngilizce",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 138,
+        "ingestedOutcomeCount": 138,
+        "coveredOutcomeCount": 138,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 138,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 138,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "primary communicative language and multimodal performance engine",
+        "verifierType": "independent communication goal and rubric verification",
+        "misconceptionCatalog": "g2-primary-english-misconceptions-v1",
+        "nextAction": "138 görevi sınıf öğretmeni/alan uzmanı, yaş uygunluğu ve gerçek medya açısından kalibre et.",
+        "blockers": [
+          "138 görev insan incelemesi bekliyor.",
+          "Ses, görsel, deney veya kültürel varlık gereken görevlerin gerçek materyalleri tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g3-yabanci-dil-primary-bridge-v2",
+        "grade": 3,
+        "courseId": "yabanci-dil",
+        "scheduleCourseId": "yabanci-dil",
+        "courseName": "İngilizce",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 138,
+        "ingestedOutcomeCount": 138,
+        "coveredOutcomeCount": 138,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 138,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 138,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "primary communicative language and multimodal performance engine",
+        "verifierType": "independent communication goal and rubric verification",
+        "misconceptionCatalog": "g3-primary-english-misconceptions-v1",
+        "nextAction": "138 görevi sınıf öğretmeni/alan uzmanı, yaş uygunluğu ve gerçek medya açısından kalibre et.",
+        "blockers": [
+          "138 görev insan incelemesi bekliyor.",
+          "Ses, görsel, deney veya kültürel varlık gereken görevlerin gerçek materyalleri tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g3-fen-bilimleri-primary-bridge-v2",
+        "grade": 3,
+        "courseId": "fen-bilimleri",
+        "scheduleCourseId": "fen-bilimleri",
+        "courseName": "Fen Bilimleri",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 20,
+        "ingestedOutcomeCount": 20,
+        "coveredOutcomeCount": 20,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 20,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 20,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "primary observation, safe experiment and model engine",
+        "verifierType": "independent observation/evidence and rubric verification",
+        "misconceptionCatalog": "g3-primary-science-misconceptions-v1",
+        "nextAction": "20 görevi sınıf öğretmeni/alan uzmanı, yaş uygunluğu ve gerçek medya açısından kalibre et.",
+        "blockers": [
+          "20 görev insan incelemesi bekliyor.",
+          "Ses, görsel, deney veya kültürel varlık gereken görevlerin gerçek materyalleri tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g4-fen-bilimleri-primary-bridge-v2",
+        "grade": 4,
+        "courseId": "fen-bilimleri",
+        "scheduleCourseId": "fen-bilimleri",
+        "courseName": "Fen Bilimleri",
+        "programFamily": "PRE_TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 43,
+        "ingestedOutcomeCount": 43,
+        "coveredOutcomeCount": 43,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 43,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 43,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "primary observation, safe experiment and model engine",
+        "verifierType": "independent observation/evidence and rubric verification",
+        "misconceptionCatalog": "g4-primary-science-misconceptions-v1",
+        "nextAction": "43 görevi sınıf öğretmeni/alan uzmanı, yaş uygunluğu ve gerçek medya açısından kalibre et.",
+        "blockers": [
+          "43 görev insan incelemesi bekliyor.",
+          "Ses, görsel, deney veya kültürel varlık gereken görevlerin gerçek materyalleri tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g4-din-kulturu-ve-ahlak-bilgisi-primary-bridge-v2",
+        "grade": 4,
+        "courseId": "din-kulturu-ve-ahlak-bilgisi",
+        "scheduleCourseId": "din-kulturu-ve-ahlak-bilgisi",
+        "courseName": "Din Kültürü ve Ahlak Bilgisi",
+        "programFamily": "PRE_TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 19,
+        "ingestedOutcomeCount": 19,
+        "coveredOutcomeCount": 19,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 19,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 19,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "neutral primary curriculum-bound concept and ethical reasoning engine",
+        "verifierType": "independent evidence and rubric verification",
+        "misconceptionCatalog": "g4-primary-dkab-misconceptions-v1",
+        "nextAction": "19 görevi sınıf öğretmeni/alan uzmanı, yaş uygunluğu ve gerçek medya açısından kalibre et.",
+        "blockers": [
+          "19 görev insan incelemesi bekliyor.",
+          "Ses, görsel, deney veya kültürel varlık gereken görevlerin gerçek materyalleri tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g4-yabanci-dil-primary-bridge-v2",
+        "grade": 4,
+        "courseId": "yabanci-dil",
+        "scheduleCourseId": "yabanci-dil",
+        "courseName": "İngilizce",
+        "programFamily": "PRE_TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 47,
+        "ingestedOutcomeCount": 47,
+        "coveredOutcomeCount": 47,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 47,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 47,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "primary communicative language and multimodal performance engine",
+        "verifierType": "independent communication goal and rubric verification",
+        "misconceptionCatalog": "g4-primary-english-misconceptions-v1",
+        "nextAction": "47 görevi sınıf öğretmeni/alan uzmanı, yaş uygunluğu ve gerçek medya açısından kalibre et.",
+        "blockers": [
+          "47 görev insan incelemesi bekliyor.",
+          "Ses, görsel, deney veya kültürel varlık gereken görevlerin gerçek materyalleri tamamlanmadı."
+        ]
       }
     ],
     "pipeline": [
@@ -811,7 +979,7 @@
         "id": "curriculum",
         "label": "Resmî müfredat",
         "status": "PASS_FOR_ACTIVE_ENGINES",
-        "note": "24 aktif motorun resmî kapsamı tam aktarıldı."
+        "note": "30 aktif motorun resmî kapsamı tam aktarıldı."
       },
       {
         "id": "subject-engine",
@@ -823,13 +991,13 @@
         "id": "canonical-content",
         "label": "Kanonik soru/görev",
         "status": "ENGINEERING_SCOPE_COMPLETE",
-        "note": "1491 kanonik mühendislik nesnesi mevcut."
+        "note": "1896 kanonik mühendislik nesnesi mevcut."
       },
       {
         "id": "human-review",
         "label": "İnsan kalibrasyonu",
         "status": "BLOCKED",
-        "note": "5 onaylı, 1486 inceleme bekliyor."
+        "note": "5 onaylı, 1891 inceleme bekliyor."
       },
       {
         "id": "game-adaptation",
@@ -873,7 +1041,7 @@
         "order": 4,
         "id": "expand-grade-map",
         "title": "1–12 sınıf-ders hücrelerini genişlet",
-        "reason": "112 zorunlu hücrenin 24’si aktif."
+        "reason": "112 zorunlu hücrenin 30’si aktif."
       }
     ]
   }

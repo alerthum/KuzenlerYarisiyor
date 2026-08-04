@@ -92,6 +92,41 @@ export const CURRICULUM_SOURCES = Object.freeze([
     copyrightPolicy: 'Preserve official learning-outcome wording and provenance; produce original assessment content.', notes: 'Active source for grade 5 English in 2026-2027.'
   }),
   defineCurriculumSource({
+    id: 'meb-fen-bilimleri-2018', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Fen Bilimleri Dersi Öğretim Programı (3-8, 2018)', url: 'https://mufredat.meb.gov.tr/Programlar.aspx', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official outcome wording and provenance; produce original assessment content.', notes: 'Local evidence copy: docs/sources/FEN_BILIMLERI_2018.pdf. Active source for grade 4 in 2026-2027.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-dkab-4-8-2018', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Din Kültürü ve Ahlak Bilgisi Dersi Öğretim Programı (4-8, 2018)', url: 'https://mufredat.meb.gov.tr/Programlar.aspx', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official outcome wording and provenance; produce original assessment content.', notes: 'Local evidence copy: docs/sources/DKAB_4_8_2018.pdf. Active source for grade 4 in 2026-2027.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-english-2-8-2018', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'İngilizce Dersi Öğretim Programı (2-8, 2018)', url: 'https://mufredat.meb.gov.tr/Programlar.aspx', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Preserve official outcome wording and provenance; produce original assessment content.', notes: 'Local evidence copy: docs/sources/INGILIZCE_2_8_2018.pdf. Active source for grade 4 in 2026-2027.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-primary-turkish-1-4-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'İlkokul Türkçe Dersi Öğretim Programı (1-4), TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Source acquisition registry only until the official PDF is locally ingested and validated.', notes: 'Pending local evidence ingestion for grades 1-3; no outcome is activated from this registry row alone.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-primary-math-1-4-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'İlkokul Matematik Dersi Öğretim Programı (1-4), TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Source acquisition registry only until the official PDF is locally ingested and validated.', notes: 'Pending local evidence ingestion for grades 1-3; no outcome is activated from this registry row alone.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-life-science-1-3-2024', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Hayat Bilgisi Dersi Öğretim Programı (1-3), TYMM', url: 'https://tymm.meb.gov.tr/ogretim-programlari', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Source acquisition registry only until the official PDF is locally ingested and validated.', notes: 'Pending local evidence ingestion; no outcome is activated from this registry row alone.'
+  }),
+  defineCurriculumSource({
+    id: 'meb-tymm-primary-arts-movement', kind: 'official-curriculum', useMode: 'AUTHORITATIVE_DATA', authority: 'T.C. Millî Eğitim Bakanlığı Talim ve Terbiye Kurulu Başkanlığı',
+    title: 'Görsel Sanatlar, Müzik ve Beden Eğitimi/Oyun Öğretim Programları', url: 'https://tymm.meb.gov.tr/ogretim-programlari', retrievedAt: '2026-08-04',
+    copyrightPolicy: 'Source acquisition registry only until official PDFs are locally ingested and validated.', notes: 'Pending local evidence ingestion; performance outcomes must not be fabricated or reduced to multiple choice.'
+  }),
+  defineCurriculumSource({
     id: 'meb-legacy-programs',
     kind: 'official-curriculum',
     useMode: 'AUTHORITATIVE_DATA',

@@ -89,7 +89,7 @@
     "assessment:v2:phase4h": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
     "assessment:v2:phase4i": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4i-g8-math-full-scope.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
     "assessment:v2:phase4j": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4j-mega-expansion.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
-    "assessment:v2:autonomous": "npm run assessment:v2:phase4s",
+    "assessment:v2:autonomous": "npm run assessment:v2:phase4t",
     "assessment:v2:phase4k": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4k-science-completion.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
     "assessment:v2:phase4l": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4l-lgs-core-completion.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
     "assessment:v2:phase4m": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4m-calibration-and-game-lab.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
@@ -99,7 +99,8 @@
     "assessment:v2:phase4p": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4p-human-review-workflow.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs",
     "assessment:v2:phase4q": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
     "assessment:v2:phase4r": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4r-grade5-core.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
-    "assessment:v2:phase4s": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4s-middle-school-tymm.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs"
+    "assessment:v2:phase4s": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4s-middle-school-tymm.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs",
+    "assessment:v2:phase4t": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase4t-primary-bridge.mjs && node scripts/build-assessment-v2-phase4h-production-dashboard.mjs && node scripts/build-assessment-v2-phase4q-product-readiness.mjs"
   },
   "engines": {
     "node": ">=20"

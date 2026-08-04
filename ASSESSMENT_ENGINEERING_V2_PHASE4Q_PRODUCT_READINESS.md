@@ -7,8 +7,8 @@
 - publicationAllowed: **false**
 
 ## Açık engeller
-- 88 sınıf–ders hücresi henüz açılmadı.
-- 8 sınıf düzeyinde aktif motor yok.
+- 82 sınıf–ders hücresi henüz açılmadı.
+- 5 sınıf düzeyinde aktif motor yok.
 - İnsan incelemesi tamamlanmadı veya revizyon/reddedilen görev var.
 - Gerçek öğrenci pilotu kanıtı yok; simülasyon yayın yetkisi vermez.
 - 23 oyun için 500 oturumluk canlı tekrar/underfill kanıtı tamamlanmadı.
