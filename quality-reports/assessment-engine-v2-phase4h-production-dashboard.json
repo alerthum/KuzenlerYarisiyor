@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-04T00:20:36.217Z",
+  "generatedAt": "2026-08-04T00:30:52.352Z",
   "phase": "4H",
   "title": "Assessment V2 Ürün Şekillendirme ve Ders Motorları Panosu",
   "status": "ENGINEERING_PASS_HUMAN_REVIEW_IN_PROGRESS",
@@ -13,21 +13,21 @@
       "targetGradeCount": 12,
       "activeGradeCount": 8,
       "courseScheduleCellCount": 112,
-      "activeEngineCellCount": 42,
-      "activeEngineCellPercent": 37.5,
-      "curriculumOutcomeRecordCount": 2109,
-      "coveredOutcomeCount": 2109,
-      "canonicalQuestionCount": 2134,
+      "activeEngineCellCount": 45,
+      "activeEngineCellPercent": 40.2,
+      "curriculumOutcomeRecordCount": 2142,
+      "coveredOutcomeCount": 2142,
+      "canonicalQuestionCount": 2167,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 2129,
+      "humanReviewQueueCount": 2162,
       "gameAdaptedQuestionCount": 5,
       "legacyQuarantineCount": 604,
       "unmatchedActiveCourseCellCount": 0
     }
   },
   "portfolio": {
-    "schemaVersion": "3.4",
-    "generatedAt": "2026-08-04T00:20:36.216Z",
+    "schemaVersion": "3.5",
+    "generatedAt": "2026-08-04T00:30:52.351Z",
     "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
     "status": "PRIMARY_ACADEMIC_CORE_AND_GRADES5_8_ENGINEERING_SCOPE_COMPLETE",
     "productReady": false,
@@ -59,13 +59,13 @@
       "targetGradeCount": 12,
       "activeGradeCount": 8,
       "courseScheduleCellCount": 112,
-      "activeEngineCellCount": 42,
-      "activeEngineCellPercent": 37.5,
-      "curriculumOutcomeRecordCount": 2109,
-      "coveredOutcomeCount": 2109,
-      "canonicalQuestionCount": 2134,
+      "activeEngineCellCount": 45,
+      "activeEngineCellPercent": 40.2,
+      "curriculumOutcomeRecordCount": 2142,
+      "coveredOutcomeCount": 2142,
+      "canonicalQuestionCount": 2167,
       "humanApprovedQuestionCount": 5,
-      "humanReviewQueueCount": 2129,
+      "humanReviewQueueCount": 2162,
       "gameAdaptedQuestionCount": 5,
       "legacyQuarantineCount": 604,
       "unmatchedActiveCourseCellCount": 0
@@ -1308,6 +1308,90 @@
           "13 görev insan incelemesi bekliyor.",
           "Ses, görsel, somut materyal, hareket güvenliği veya performans rubriği gereken görevlerin gerçek varlıkları tamamlanmadı."
         ]
+      },
+      {
+        "id": "tr-g1-gorsel-sanatlar-tymm-v2",
+        "grade": 1,
+        "courseId": "gorsel-sanatlar",
+        "scheduleCourseId": "gorsel-sanatlar",
+        "courseName": "Görsel Sanatlar",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 11,
+        "ingestedOutcomeCount": 11,
+        "coveredOutcomeCount": 11,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 11,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 11,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "primary visual analysis, artistic production and portfolio engine",
+        "verifierType": "independent visible-evidence, portfolio and rubric verification",
+        "misconceptionCatalog": "g1-visual-arts-misconceptions-v1",
+        "nextAction": "11 görevi görsel sanatlar öğretmeni, yaş uygunluğu, malzeme güvenliği ve gerçek eser/öğrenci ürünü açısından kalibre et.",
+        "blockers": [
+          "11 görev insan incelemesi bekliyor.",
+          "Gerçek sanat eseri, müze görseli, öğrenci ürünü ve portfolyo rubriği varlıkları tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g2-gorsel-sanatlar-tymm-v2",
+        "grade": 2,
+        "courseId": "gorsel-sanatlar",
+        "scheduleCourseId": "gorsel-sanatlar",
+        "courseName": "Görsel Sanatlar",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 11,
+        "ingestedOutcomeCount": 11,
+        "coveredOutcomeCount": 11,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 11,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 11,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "primary visual analysis, artistic production and portfolio engine",
+        "verifierType": "independent visible-evidence, portfolio and rubric verification",
+        "misconceptionCatalog": "g2-visual-arts-misconceptions-v1",
+        "nextAction": "11 görevi görsel sanatlar öğretmeni, yaş uygunluğu, malzeme güvenliği ve gerçek eser/öğrenci ürünü açısından kalibre et.",
+        "blockers": [
+          "11 görev insan incelemesi bekliyor.",
+          "Gerçek sanat eseri, müze görseli, öğrenci ürünü ve portfolyo rubriği varlıkları tamamlanmadı."
+        ]
+      },
+      {
+        "id": "tr-g3-gorsel-sanatlar-tymm-v2",
+        "grade": 3,
+        "courseId": "gorsel-sanatlar",
+        "scheduleCourseId": "gorsel-sanatlar",
+        "courseName": "Görsel Sanatlar",
+        "programFamily": "TYMM",
+        "curriculumStatus": "FULL_SCOPE_INGESTED",
+        "officialOutcomeCount": 11,
+        "ingestedOutcomeCount": 11,
+        "coveredOutcomeCount": 11,
+        "courseCoveragePercent": 100,
+        "ingestionPercent": 100,
+        "canonicalQuestionCount": 11,
+        "humanApprovedQuestionCount": 0,
+        "humanReviewQueueCount": 11,
+        "gameAdaptedQuestionCount": 0,
+        "gameAdaptationAllowed": false,
+        "engineStatus": "ENGINEERING_SCOPE_COMPLETE",
+        "engineType": "primary visual analysis, artistic production and portfolio engine",
+        "verifierType": "independent visible-evidence, portfolio and rubric verification",
+        "misconceptionCatalog": "g3-visual-arts-misconceptions-v1",
+        "nextAction": "11 görevi görsel sanatlar öğretmeni, yaş uygunluğu, malzeme güvenliği ve gerçek eser/öğrenci ürünü açısından kalibre et.",
+        "blockers": [
+          "11 görev insan incelemesi bekliyor.",
+          "Gerçek sanat eseri, müze görseli, öğrenci ürünü ve portfolyo rubriği varlıkları tamamlanmadı."
+        ]
       }
     ],
     "pipeline": [
@@ -1315,7 +1399,7 @@
         "id": "curriculum",
         "label": "Resmî müfredat",
         "status": "PASS_FOR_ACTIVE_ENGINES",
-        "note": "42 aktif motorun resmî kapsamı tam aktarıldı."
+        "note": "45 aktif motorun resmî kapsamı tam aktarıldı."
       },
       {
         "id": "subject-engine",
@@ -1327,13 +1411,13 @@
         "id": "canonical-content",
         "label": "Kanonik soru/görev",
         "status": "ENGINEERING_SCOPE_COMPLETE",
-        "note": "2134 kanonik mühendislik nesnesi mevcut."
+        "note": "2167 kanonik mühendislik nesnesi mevcut."
       },
       {
         "id": "human-review",
         "label": "İnsan kalibrasyonu",
         "status": "BLOCKED",
-        "note": "5 onaylı, 2129 inceleme bekliyor."
+        "note": "5 onaylı, 2162 inceleme bekliyor."
       },
       {
         "id": "game-adaptation",
@@ -1377,7 +1461,7 @@
         "order": 4,
         "id": "expand-grade-map",
         "title": "1–12 sınıf-ders hücrelerini genişlet",
-        "reason": "112 zorunlu hücrenin 42’si aktif."
+        "reason": "112 zorunlu hücrenin 45’si aktif."
       }
     ]
   }

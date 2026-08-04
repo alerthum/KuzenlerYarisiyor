@@ -1,16 +1,16 @@
 {
   "schemaVersion": "2.0",
-  "generatedAt": "2026-08-04T00:23:30.279Z",
+  "generatedAt": "2026-08-04T00:30:52.114Z",
   "target": "1–12. sınıf, tüm dersler ve ilgili merkezî sınavlar için müfredata bağlı ayrı ders motorları; doğrulanmış sorular oyunlara en son uyarlanır.",
   "status": "PRIMARY_ACADEMIC_CORE_AUTONOMOUS_REVIEW_AND_EXPANSION_PLAN",
   "productReady": false,
   "gameAdaptationAllowed": false,
   "metrics": {
-    "activeEngineCount": 42,
-    "engineeringScopeCompleteEngineCount": 42,
+    "activeEngineCount": 45,
+    "engineeringScopeCompleteEngineCount": 45,
     "remainingOutcomeCount": 0,
-    "humanReviewQueueCount": 2129,
-    "unopenedCourseCellCount": 70
+    "humanReviewQueueCount": 2162,
+    "unopenedCourseCellCount": 67
   },
   "engines": [
     {
@@ -516,6 +516,42 @@
       "reviewQueueCount": 13,
       "engineeringScopeComplete": true,
       "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g1-gorsel-sanatlar-tymm-v2",
+      "grade": 1,
+      "courseId": "gorsel-sanatlar",
+      "officialOutcomeCount": 11,
+      "coveredOutcomeCount": 11,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 11,
+      "reviewQueueCount": 11,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g2-gorsel-sanatlar-tymm-v2",
+      "grade": 2,
+      "courseId": "gorsel-sanatlar",
+      "officialOutcomeCount": 11,
+      "coveredOutcomeCount": 11,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 11,
+      "reviewQueueCount": 11,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
+    },
+    {
+      "engineId": "tr-g3-gorsel-sanatlar-tymm-v2",
+      "grade": 3,
+      "courseId": "gorsel-sanatlar",
+      "officialOutcomeCount": 11,
+      "coveredOutcomeCount": 11,
+      "remainingOutcomeCount": 0,
+      "canonicalQuestionCount": 11,
+      "reviewQueueCount": 11,
+      "engineeringScopeComplete": true,
+      "gameAdaptationAllowed": false
     }
   ],
   "backlog": [
@@ -523,8 +559,8 @@
       "order": 1,
       "id": "calibrate-risk-sample",
       "kind": "HUMAN_REVIEW",
-      "scope": "42 aktif motor için risk tabakalı örneklem",
-      "reason": "2129 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
+      "scope": "45 aktif motor için risk tabakalı örneklem",
+      "reason": "2162 görevin tümünü sırayla okumadan önce her format, kazanım ve zorluk katmanından dengeli örneklem onaylanmalı.",
       "count": 126
     },
     {
@@ -556,8 +592,8 @@
       "id": "expand-grade-map",
       "kind": "NEW_ENGINE",
       "scope": "1–12 zorunlu ders hücreleri",
-      "reason": "112 hücrenin 42’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
-      "count": 70
+      "reason": "112 hücrenin 45’si aktif; kalanlar yalnız resmî kaynak edinimi ve doğrulama sonrasında açılmalı.",
+      "count": 67
     }
   ]
 }

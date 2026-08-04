@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-08-04T00:30:51.957Z",
+  "status": "HUMAN_AND_REAL_ARTWORK_REVIEW_REQUIRED",
+  "metrics": {
+    "engineCount": 3,
+    "itemCount": 6,
+    "perEngine": 2,
+    "approved": 0,
+    "pending": 6
+  },
+  "rows": [
+    {
+      "questionId": "gorsel-sanatlar-g1-gs-1-1-1",
+      "engineKey": "g1:gorsel-sanatlar",
+      "grade": 1,
+      "courseId": "gorsel-sanatlar",
+      "outcomeIds": [
+        "tr-tymm-g1-gorsel-sanatlar-gs-1-1-1"
+      ],
+      "itemFormat": "open-response",
+      "context": "1. sınıf Görsel Sanatlar çalışmasında “HAYAT VE SANAT” teması için yaşa uygun gerçek nesne, sanat eseri görseli, doğal/yapay malzeme, okul çevresi veya müze koleksiyonu kullanılır.",
+      "stem": "Çevresindeki nesnelerin renklerini ve geometrik şekillerini algılayabilme öğrenme çıktısını özgün bir görsel inceleme ya da sanat ürünüyle göster.",
+      "rubricCriteria": [
+        "Görseldeki renk, çizgi, şekil, sembol, konu veya düzenleme özelliklerini doğru gözlemler ve adlandırır.",
+        "Yorumunu görselde doğrudan görülebilen ayrıntılara dayandırır; eserde bulunmayan anlamlar eklemez.",
+        "Benzerlik, farklılık, ileti veya sınıflandırma kararını yaş düzeyine uygun açık bir gerekçeyle ifade eder."
+      ],
+      "hints": [
+        "Önce görselde ya da yapacağın çalışmada öne çıkan renk, çizgi, şekil, sembol ve malzemeleri belirle.",
+        "Bu görsel ögelerin konuya, iletiye veya oluşturmak istediğin duyguya nasıl hizmet ettiğini düşün.",
+        "Son kontrolde çalışmanın güvenli, özgün, anlaşılır ve verilen ölçütlerle uyumlu olduğunu ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "görsel-ayrıntıyı-atlama",
+        "malzeme-ve-amacı-uyumsuz-seçme",
+        "kanıtsız-yorum-veya-kopya-üretim"
+      ],
+      "media": {
+        "type": "licensed-artwork-or-student-material",
+        "status": "REAL_ARTWORK_OR_STUDENT_MATERIAL_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "realArtworkStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "gorsel-sanatlar-g1-gs-1-1-2",
+      "engineKey": "g1:gorsel-sanatlar",
+      "grade": 1,
+      "courseId": "gorsel-sanatlar",
+      "outcomeIds": [
+        "tr-tymm-g1-gorsel-sanatlar-gs-1-1-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "1. sınıf Görsel Sanatlar çalışmasında “HAYAT VE SANAT” teması için yaşa uygun gerçek nesne, sanat eseri görseli, doğal/yapay malzeme, okul çevresi veya müze koleksiyonu kullanılır.",
+      "stem": "Farklı renkler ve geometrik şekillerdeki doğal ve yapay malzemelerle kolaj yapabilme öğrenme çıktısını özgün bir görsel inceleme ya da sanat ürünüyle göster.",
+      "rubricCriteria": [
+        "Sanat çalışmasının amacına uygun renk, çizgi, şekil, malzeme ve düzenleme kararları verir.",
+        "Seçtiği görsel ögeleri güvenli, özgün ve anlaşılır bir bütün oluşturacak biçimde uygular.",
+        "Çalışmasını verilen ölçütlere göre inceler; anlatmak istediği düşünce ile görsel seçimleri arasındaki ilişkiyi açıklar."
+      ],
+      "hints": [
+        "Önce görselde ya da yapacağın çalışmada öne çıkan renk, çizgi, şekil, sembol ve malzemeleri belirle.",
+        "Bu görsel ögelerin konuya, iletiye veya oluşturmak istediğin duyguya nasıl hizmet ettiğini düşün.",
+        "Son kontrolde çalışmanın güvenli, özgün, anlaşılır ve verilen ölçütlerle uyumlu olduğunu ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "görsel-ayrıntıyı-atlama",
+        "malzeme-ve-amacı-uyumsuz-seçme",
+        "kanıtsız-yorum-veya-kopya-üretim"
+      ],
+      "media": {
+        "type": "licensed-artwork-or-student-material",
+        "status": "REAL_ARTWORK_OR_STUDENT_MATERIAL_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "realArtworkStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "gorsel-sanatlar-g2-gs-2-1-1",
+      "engineKey": "g2:gorsel-sanatlar",
+      "grade": 2,
+      "courseId": "gorsel-sanatlar",
+      "outcomeIds": [
+        "tr-tymm-g2-gorsel-sanatlar-gs-2-1-1"
+      ],
+      "itemFormat": "open-response",
+      "context": "2. sınıf Görsel Sanatlar çalışmasında “HAYAT VE SANAT” teması için yaşa uygun gerçek nesne, sanat eseri görseli, doğal/yapay malzeme, okul çevresi veya müze koleksiyonu kullanılır.",
+      "stem": "Çevresindeki nesnelerin ana renklerini, ara renklerini ve doğadaki tekrarlarını algılayabilme öğrenme çıktısını özgün bir görsel inceleme ya da sanat ürünüyle göster.",
+      "rubricCriteria": [
+        "Görseldeki renk, çizgi, şekil, sembol, konu veya düzenleme özelliklerini doğru gözlemler ve adlandırır.",
+        "Yorumunu görselde doğrudan görülebilen ayrıntılara dayandırır; eserde bulunmayan anlamlar eklemez.",
+        "Benzerlik, farklılık, ileti veya sınıflandırma kararını yaş düzeyine uygun açık bir gerekçeyle ifade eder."
+      ],
+      "hints": [
+        "Önce görselde ya da yapacağın çalışmada öne çıkan renk, çizgi, şekil, sembol ve malzemeleri belirle.",
+        "Bu görsel ögelerin konuya, iletiye veya oluşturmak istediğin duyguya nasıl hizmet ettiğini düşün.",
+        "Son kontrolde çalışmanın güvenli, özgün, anlaşılır ve verilen ölçütlerle uyumlu olduğunu ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "görsel-ayrıntıyı-atlama",
+        "malzeme-ve-amacı-uyumsuz-seçme",
+        "kanıtsız-yorum-veya-kopya-üretim"
+      ],
+      "media": {
+        "type": "licensed-artwork-or-student-material",
+        "status": "REAL_ARTWORK_OR_STUDENT_MATERIAL_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "realArtworkStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "gorsel-sanatlar-g2-gs-2-1-2",
+      "engineKey": "g2:gorsel-sanatlar",
+      "grade": 2,
+      "courseId": "gorsel-sanatlar",
+      "outcomeIds": [
+        "tr-tymm-g2-gorsel-sanatlar-gs-2-1-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "2. sınıf Görsel Sanatlar çalışmasında “HAYAT VE SANAT” teması için yaşa uygun gerçek nesne, sanat eseri görseli, doğal/yapay malzeme, okul çevresi veya müze koleksiyonu kullanılır.",
+      "stem": "Renk ve biçim ilişkisini kurarak insan ve çevre bağlamındaki düşüncelerine yönelik sanatsal üretim yapabilme öğrenme çıktısını özgün bir görsel inceleme ya da sanat ürünüyle göster.",
+      "rubricCriteria": [
+        "Sanat çalışmasının amacına uygun renk, çizgi, şekil, malzeme ve düzenleme kararları verir.",
+        "Seçtiği görsel ögeleri güvenli, özgün ve anlaşılır bir bütün oluşturacak biçimde uygular.",
+        "Çalışmasını verilen ölçütlere göre inceler; anlatmak istediği düşünce ile görsel seçimleri arasındaki ilişkiyi açıklar."
+      ],
+      "hints": [
+        "Önce görselde ya da yapacağın çalışmada öne çıkan renk, çizgi, şekil, sembol ve malzemeleri belirle.",
+        "Bu görsel ögelerin konuya, iletiye veya oluşturmak istediğin duyguya nasıl hizmet ettiğini düşün.",
+        "Son kontrolde çalışmanın güvenli, özgün, anlaşılır ve verilen ölçütlerle uyumlu olduğunu ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "görsel-ayrıntıyı-atlama",
+        "malzeme-ve-amacı-uyumsuz-seçme",
+        "kanıtsız-yorum-veya-kopya-üretim"
+      ],
+      "media": {
+        "type": "licensed-artwork-or-student-material",
+        "status": "REAL_ARTWORK_OR_STUDENT_MATERIAL_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "realArtworkStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "gorsel-sanatlar-g3-gs-3-1-1",
+      "engineKey": "g3:gorsel-sanatlar",
+      "grade": 3,
+      "courseId": "gorsel-sanatlar",
+      "outcomeIds": [
+        "tr-tymm-g3-gorsel-sanatlar-gs-3-1-1"
+      ],
+      "itemFormat": "open-response",
+      "context": "3. sınıf Görsel Sanatlar çalışmasında “HAYAT VE SANAT” teması için yaşa uygun gerçek nesne, sanat eseri görseli, doğal/yapay malzeme, okul çevresi veya müze koleksiyonu kullanılır.",
+      "stem": "Doğadaki ve sanat eserlerindeki sıcak ve soğuk renk uyumlarını algılayabilme öğrenme çıktısını özgün bir görsel inceleme ya da sanat ürünüyle göster.",
+      "rubricCriteria": [
+        "Görseldeki renk, çizgi, şekil, sembol, konu veya düzenleme özelliklerini doğru gözlemler ve adlandırır.",
+        "Yorumunu görselde doğrudan görülebilen ayrıntılara dayandırır; eserde bulunmayan anlamlar eklemez.",
+        "Benzerlik, farklılık, ileti veya sınıflandırma kararını yaş düzeyine uygun açık bir gerekçeyle ifade eder."
+      ],
+      "hints": [
+        "Önce görselde ya da yapacağın çalışmada öne çıkan renk, çizgi, şekil, sembol ve malzemeleri belirle.",
+        "Bu görsel ögelerin konuya, iletiye veya oluşturmak istediğin duyguya nasıl hizmet ettiğini düşün.",
+        "Son kontrolde çalışmanın güvenli, özgün, anlaşılır ve verilen ölçütlerle uyumlu olduğunu ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "görsel-ayrıntıyı-atlama",
+        "malzeme-ve-amacı-uyumsuz-seçme",
+        "kanıtsız-yorum-veya-kopya-üretim"
+      ],
+      "media": {
+        "type": "licensed-artwork-or-student-material",
+        "status": "REAL_ARTWORK_OR_STUDENT_MATERIAL_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "realArtworkStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    },
+    {
+      "questionId": "gorsel-sanatlar-g3-gs-3-1-2",
+      "engineKey": "g3:gorsel-sanatlar",
+      "grade": 3,
+      "courseId": "gorsel-sanatlar",
+      "outcomeIds": [
+        "tr-tymm-g3-gorsel-sanatlar-gs-3-1-2"
+      ],
+      "itemFormat": "interactive-simulation",
+      "context": "3. sınıf Görsel Sanatlar çalışmasında “HAYAT VE SANAT” teması için yaşa uygun gerçek nesne, sanat eseri görseli, doğal/yapay malzeme, okul çevresi veya müze koleksiyonu kullanılır.",
+      "stem": "Sıcak veya soğuk renk uyumunu kullanarak Türkiye’deki tarihî mekânlara ve doğal güzelliklere ilişkin izlenimlerini yansıtan resim yapabilme öğrenme çıktısını özgün bir görsel inceleme ya da sanat ürünüyle göster.",
+      "rubricCriteria": [
+        "Sanat çalışmasının amacına uygun renk, çizgi, şekil, malzeme ve düzenleme kararları verir.",
+        "Seçtiği görsel ögeleri güvenli, özgün ve anlaşılır bir bütün oluşturacak biçimde uygular.",
+        "Çalışmasını verilen ölçütlere göre inceler; anlatmak istediği düşünce ile görsel seçimleri arasındaki ilişkiyi açıklar."
+      ],
+      "hints": [
+        "Önce görselde ya da yapacağın çalışmada öne çıkan renk, çizgi, şekil, sembol ve malzemeleri belirle.",
+        "Bu görsel ögelerin konuya, iletiye veya oluşturmak istediğin duyguya nasıl hizmet ettiğini düşün.",
+        "Son kontrolde çalışmanın güvenli, özgün, anlaşılır ve verilen ölçütlerle uyumlu olduğunu ayrı ayrı denetle."
+      ],
+      "misconceptionIds": [
+        "görsel-ayrıntıyı-atlama",
+        "malzeme-ve-amacı-uyumsuz-seçme",
+        "kanıtsız-yorum-veya-kopya-üretim"
+      ],
+      "media": {
+        "type": "licensed-artwork-or-student-material",
+        "status": "REAL_ARTWORK_OR_STUDENT_MATERIAL_REQUIRED"
+      },
+      "humanReviewStatus": "NOT_MEASURED",
+      "realArtworkStatus": "REQUIRED_NOT_ATTACHED",
+      "gameAdaptationAllowed": false
+    }
+  ]
+}
