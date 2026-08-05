@@ -28,7 +28,13 @@ function parseBoolean(value, fallback = false) {
 }
 
 export async function loadProjectConfig() {
-  const [text, packageText] = await Promise.all([readFile(configPath, 'utf8'), readFile(packagePath, 'utf8')]);
+  const [text, packageText] = await Promise.all([
+    readFile(configPath, 'utf8').catch((error) => {
+      if (error?.code === 'ENOENT') return '';
+      throw error;
+    }),
+    readFile(packagePath, 'utf8')
+  ]);
   const packageVersion = JSON.parse(packageText).version || '0.0.0';
   const raw = {};
   for (const sourceLine of text.split(/\r?\n/)) {
@@ -40,6 +46,7 @@ export async function loadProjectConfig() {
     const value = line.slice(separator + 1).trim();
     raw[key] = value;
   }
+  Object.assign(raw, process.env);
 
   const requestedMode = String(raw.CALISMA_MODU || raw.APP_MODE || 'local').trim().toLocaleLowerCase('tr-TR');
   const mode = ['canli', 'canlı', 'live', 'vercel', 'production'].includes(requestedMode) ? 'vercel' : 'local';
