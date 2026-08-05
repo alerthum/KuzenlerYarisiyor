@@ -78,6 +78,7 @@ import {
 import { createLogicRound } from '../engines/logic-engine.js';
 import { createPremiumParagraphSession } from '../engines/premium-paragraph-engine-v11.js';
 import { hashString, pick, seededRandom, shuffle } from '../utils.js';
+import { controlledLiveBetaRounds } from '../assessment-v2/controlled-live-beta-bank.js';
 import { EXAM_QUESTIONS_V53 } from '../content-exams-v53.js';
 import { enrichRoundAcademicMetadata } from '../curriculum/academic-metadata-v9.js';
 import { isRoundQuarantined } from '../quality/quarantine-v9.js';
@@ -382,8 +383,8 @@ export const GAME_CATALOG = [
   },
   {
     id: 'religion-practice', title: 'Din Kültürü Öğrenme Alanı', shortTitle: 'Din Kültürü', category: 'religion', skill: 'religion', icon: '📚',
-    color: 'rgba(250, 204, 21, .76)', description: 'LGS kazanımlarını açıklamalı seçeneklerle çalış. Bu bölüm XP kazandırmaz.',
-    minAge: 12, maxAge: 19, duration: '10 dk', sessionLength: 10, rewardEligible: false
+    color: 'rgba(250, 204, 21, .76)', description: 'Sınıf düzeyine uygun kazanımları açıklamalı seçeneklerle çalış. Bu bölüm XP kazandırmaz.',
+    minAge: 10, maxAge: 19, duration: '10 dk', sessionLength: 10, rewardEligible: false
   },
   {
     id: 'lgs-foundation', title: 'LGS Soru Kalıbı Arşivi', shortTitle: 'LGS Kalıpları', category: 'lgs', skill: 'lgsFamiliarity', icon: '🎓',
@@ -404,7 +405,7 @@ export const GAME_CATALOG = [
 
 const GRADE_RULES = {
   'word-ladder': { minGrade: 1, maxGrade: 8 },
-  'religion-practice': { minGrade: 8, maxGrade: 12 },
+  'religion-practice': { minGrade: 5, maxGrade: 12 },
   'lgs-foundation': { minGrade: 8, maxGrade: 8 },
   'lgs-focus': { minGrade: 7, maxGrade: 8 },
   'tyt-focus': { minGrade: 11, maxGrade: 12 },
@@ -1806,6 +1807,14 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     }
   }
 
+  const controlledLiveBeta = options.controlledLaunchPilot === true
+    ? controlledLiveBetaRounds(gameId, profile, { seenQuestionKeys: seen })
+    : { rounds: [], audit: { version: null, eligibleCount: 0, disabled: true } };
+  if (controlledLiveBeta.rounds.length) {
+    const pilotKeys = new Set(controlledLiveBeta.rounds.map((round) => round.questionKey));
+    rounds = [...controlledLiveBeta.rounds, ...rounds.filter((round) => !pilotKeys.has(round.questionKey))];
+  }
+
   const isFirstGameExperience = options.completedSessionCount === 0;
   const goldCandidate = isFirstGameExperience
     ? createGoldShowcaseRound(gameId, game, profile, sessionSeed, seen, blockedFamilies)
@@ -1907,6 +1916,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   globalQualityAudit.enforcement = enforcement;
   globalQualityAudit.premiumTransition = premiumTransition.audit;
   globalQualityAudit.premiumBank = premiumBank.audit;
+  globalQualityAudit.controlledLiveBeta = controlledLiveBeta.audit;
   globalQualityAudit.goldShowcase = {
     eligible: Boolean(GOLD_FAMILY_BY_GAME[gameId]),
     firstExperience: isFirstGameExperience,
@@ -2075,7 +2085,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     const id = attachSemanticIdentity(round).semanticIdentity || {};
     const cx = round.cognitiveExperienceId || buildCognitiveExperience(round).cognitiveExperienceId;
     const fam = round.familyId || id.familyId;
-    let score = 0;
+    let score = round.controlledLaunchPilot === true ? -100 : 0;
     if (rankingFamilyIds.includes(fam)) score += 4;
     if (familyShareBlocked.has(fam)) score += 8;
     if (previousDominantFamilyId && fam === previousDominantFamilyId) score += 6;
@@ -2324,6 +2334,23 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   // gold/transition/backfill adımı alternatif kaynak sızdıramaz.
   if (premiumBankExhausted) rounds = [];
 
+  // Kontrollü beta havuzu Phase 5H'de 30/30 mühendislik ve ürün sahibi
+  // görsel denetiminden geçti. Genel besteci etkileşimli bir turu veya tekil
+  // editoryal adayı çeşitlilik amacıyla dışarıda bırakmışsa, yalnız bu özel
+  // beta işaretli ve görülmemiş adayı final oturumuna geri al. Bu yol formal
+  // müfredat sertifikası vermez; telemetri ve otomatik karantina zorunludur.
+  const controlledCandidate = controlledLiveBeta.rounds[0] || null;
+  if (controlledCandidate
+      && !seen.has(controlledCandidate.questionKey)
+      && !rounds.some((round) => round.questionKey === controlledCandidate.questionKey)) {
+    const candidate = attachGlobalQuality(
+      enrichRoundAcademicMetadata(gameId, controlledCandidate),
+      { grade: gradeNum, gameId, subjectId: controlledCandidate.subjectId || game.category || '' }
+    );
+    const withoutDuplicate = rounds.filter((round) => round.questionKey !== candidate.questionKey);
+    rounds = [candidate, ...withoutDuplicate].slice(0, game.sessionLength);
+  }
+
   // Telemetri aday havuzunu değil, çocuğa gerçekten teslim edilen final oturumu
   // raporlamalıdır. Aksi hâlde reports.length ile rounds.length ayrışır.
   const finalGlobalQualityAudit = auditGlobalSession(rounds, {
@@ -2379,6 +2406,16 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   globalQualityAudit.goldShowcase.blockedReason = goldCandidate && !deliveredGoldShowcase
     ? 'PUBLICATION_OR_COMPOSITION_GATE_REJECTED'
     : null;
+
+  const deliveredControlledLiveRound = rounds.find((round) => round.controlledLaunchPilot === true);
+  globalQualityAudit.controlledLiveBeta = {
+    ...controlledLiveBeta.audit,
+    delivered: Boolean(deliveredControlledLiveRound),
+    deliveredQuestionKey: deliveredControlledLiveRound?.questionKey || null,
+    blockedReason: controlledLiveBeta.rounds.length && !deliveredControlledLiveRound
+      ? 'PUBLICATION_OR_COMPOSITION_GATE_REJECTED'
+      : null
+  };
 
   // Aşama 03: her oyunun her turu, hangi motor tarafından üretildiğine
   // bakılmaksızın ortak QuestionContract ile etiketlenir. Bilinmeyen alanlar

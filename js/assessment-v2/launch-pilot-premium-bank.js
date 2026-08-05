@@ -9,7 +9,7 @@ const freeze = (value) => {
 export const LAUNCH_PILOT_PREMIUM_SLOTS = freeze([
   { slotId: 'turkish:5:word-mine', grade: 5, courseGroup: 'turkish', gameId: 'word-mine', sourceKey: 'premium-task:2.5.0:word-mine:word-mine-premium-05:scc0je', curriculumReferenceId: 'turkish-g5-complete-t-y-5-18' },
   { slotId: 'turkish:6:word-ladder', grade: 6, courseGroup: 'turkish', gameId: 'word-ladder', sourceKey: 'premium-task:2.3.0:word-ladder:ladder-nar-kol-01:1ti8nxf', curriculumReferenceId: 'turkce-g6-t-o-6-21' },
-  { slotId: 'turkish:7:forbidden-story', grade: 7, courseGroup: 'turkish', gameId: 'forbidden-story', sourceKey: 'premium-task:2.3.0:forbidden-story:story-forbidden-u-01:1ujd3uf', curriculumReferenceId: 'turkce-g7-t-y-7-1' },
+  { slotId: 'turkish:7:forbidden-story', grade: 7, courseGroup: 'turkish', gameId: 'forbidden-story', sourceKey: 'premium-task:2.3.0:forbidden-story:story-forbidden-u-01:18jt3g8', curriculumReferenceId: 'turkce-g7-t-y-7-1' },
   { slotId: 'turkish:8:meaning-hunt', grade: 8, courseGroup: 'turkish', gameId: 'meaning-hunt', sourceKey: 'premium:2.1.0:meaning-hunt:meaning-isik-tutmak-01:aq5911', curriculumReferenceId: 'tr-g8-pilot02-01-idiom-contribution-community-oven' },
   { slotId: 'turkish:8:paragraph-detective', grade: 8, courseGroup: 'turkish', gameId: 'paragraph-detective', sourceKey: 'premium-pilot:paragraph-detective:tr-main-idea-01:122remb', curriculumReferenceId: 'tr-g8-reading-calibration-01-restoration-main-idea' },
 
@@ -20,7 +20,7 @@ export const LAUNCH_PILOT_PREMIUM_SLOTS = freeze([
   { slotId: 'math:5:geometry-lab', grade: 5, courseGroup: 'math', gameId: 'geometry-lab', sourceKey: 'premium:3.0.0:geometry-lab:g35-geometry-composite-area-01:8grgur', curriculumReferenceId: 'math-g5-mat-5-4-4' },
   { slotId: 'math:6:error-detective', grade: 6, courseGroup: 'math', gameId: 'error-detective', sourceKey: 'premium-pilot:error-detective:math-equation-error-01:nl452y', curriculumReferenceId: 'matematik-g6-mat-6-2-1' },
   { slotId: 'math:7:olympiad-ladder', grade: 7, courseGroup: 'math', gameId: 'olympiad-ladder', sourceKey: 'premium:2.6.0:olympiad-ladder:olympiad-pigeonhole-remainder-01:144voa7', curriculumReferenceId: 'matematik-g7-mat-7-2-3' },
-  { slotId: 'math:8:logic-station', grade: 8, courseGroup: 'math', gameId: 'logic-station', sourceKey: 'premium:2.0.0:logic-station:logic-schedule-possible-01:mssrym', curriculumReferenceId: 'math-g8-complete-33-sample-space', alignmentMode: 'SKILL_TRANSFER' },
+  { slotId: 'math:8:logic-station', grade: 8, courseGroup: 'math', gameId: 'logic-station', sourceKey: 'premium:2.0.0:logic-station:logic-schedule-possible-01:j2453h', curriculumReferenceId: 'math-g8-complete-33-sample-space', alignmentMode: 'SKILL_TRANSFER' },
 
   { slotId: 'english:5:english-vocabulary', grade: 5, courseGroup: 'english', gameId: 'english-vocabulary', sourceKey: 'premium:3.1.0:english-vocabulary:g35-en-vocab-protect-01:18is450', curriculumReferenceId: 'english-g5-eng-5-7-v1' },
   { slotId: 'english:6:english-cloze', grade: 6, courseGroup: 'english', gameId: 'english-cloze', sourceKey: 'premium:2.0.0:english-cloze:eng-cloze-cause-result-01:19phl4r', curriculumReferenceId: 'yabanci-dil-g6-eng-6-4-g1' },

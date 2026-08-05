@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "policyVersion": "phase5i-v1",
+  "severeReporterThreshold": 3,
+  "duplicateReporterThreshold": 3,
+  "tooEasyMinimumAttempts": 40,
+  "tooEasyAccuracyThreshold": 0.85,
+  "shortResponseSeconds": {
+    "choice": 18,
+    "memory": 18,
+    "story": 45,
+    "open": 45,
+    "interactive": 25,
+    "default": 22
+  },
+  "perProfileImmediateBlock": true,
+  "globalFamilyBlockFromStudentThreshold": false,
+  "cloudAdminSweep": true
+}

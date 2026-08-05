@@ -4,6 +4,7 @@ import { previousDayKey, todayKey, uid } from './utils.js';
 import { normalizeAcademicAttempt } from './curriculum/academic-metadata-v9.js';
 import { buildQuarantineRecords, questionFamilyFromPayload, shouldImmediatelyQuarantine } from './quality/quarantine-v9.js';
 import { updateV11MisconceptionProfile } from './engines/v11-misconception-profile.js';
+import { refreshQuestionHealth } from './quality/question-health-monitor.js';
 
 const DEFAULT_SKILLS = {
   vocabulary: 42,
@@ -47,7 +48,7 @@ function baseProfile(overrides) {
 }
 
 export const DEFAULT_STATE = {
-  version: 8,
+  version: 9,
   activeProfileId: null,
   profiles: [
     baseProfile({
@@ -90,6 +91,7 @@ export const DEFAULT_STATE = {
   badges: [],
   seenQuestions: {},
   questionReports: [],
+  questionHealth: {},
   blockedQuestionKeys: {},
   blockedQuestionFamilies: {},
   social: { seasonHistory: [], clubMemberships: [], familyLeagueIds: [] },
@@ -123,7 +125,7 @@ export function createInitialState(stored) {
   return {
     ...structuredClone(DEFAULT_STATE),
     ...stored,
-    version: 8,
+    version: 9,
     platform: { ...DEFAULT_STATE.platform, ...(stored.platform || {}) },
     organizations: Array.isArray(stored.organizations) ? stored.organizations : [],
     classrooms: Array.isArray(stored.classrooms) ? stored.classrooms : [],
@@ -135,6 +137,7 @@ export function createInitialState(stored) {
     badges: Array.isArray(stored.badges) ? stored.badges : [],
     seenQuestions: stored.seenQuestions || {},
     questionReports: Array.isArray(stored.questionReports) ? stored.questionReports : [],
+    questionHealth: stored.questionHealth || {},
     blockedQuestionKeys: stored.blockedQuestionKeys || {},
     blockedQuestionFamilies: stored.blockedQuestionFamilies || {},
     social: { ...DEFAULT_STATE.social, ...(stored.social || {}) },
@@ -183,6 +186,7 @@ export function recordAttempt(state, payload) {
   });
   state.attempts.push(attempt);
   updateV11MisconceptionProfile(state, attempt);
+  if (payload.questionKey) refreshQuestionHealth(state, payload.questionKey, payload.responseKind || payload.kind || 'default');
 
   if (payload.questionKey) {
     state.seenQuestions[payload.profileId] ||= {};
@@ -260,6 +264,9 @@ export function reportQuestion(state, payload) {
     if (quarantine.question) state.blockedQuestionKeys.__global[quarantine.question.questionKey] = quarantine.question.blockedAt;
     if (quarantine.family) state.blockedQuestionFamilies.__global[quarantine.family.questionFamilyId] = quarantine.family.blockedAt;
   }
+  report.healthEvaluation = payload.questionKey
+    ? refreshQuestionHealth(state, payload.questionKey, payload.responseKind || payload.kind || 'default')
+    : null;
   saveStoredState(state);
   return report;
 }

@@ -81,6 +81,8 @@ export async function loadProjectConfig() {
       parentAnalytics: parseBoolean(raw.ENABLE_PARENT_ANALYTICS, true),
       pwa: parseBoolean(raw.ENABLE_PWA, true),
       qualityPilotMode: parseBoolean(raw.QUALITY_PILOT_MODE, false),
+      controlledLaunchPilotMode: parseBoolean(raw.CONTROLLED_LAUNCH_PILOT_MODE, false),
+      controlledLaunchPilotVersion: String(raw.CONTROLLED_LAUNCH_PILOT_VERSION || '').trim(),
       requireAuthInLive: parseBoolean(raw.REQUIRE_AUTH_IN_LIVE, true),
       allowPublicSignup: parseBoolean(raw.ALLOW_PUBLIC_SIGNUP, true),
       parentAccounts: parseBoolean(raw.ENABLE_PARENT_ACCOUNTS, true),
@@ -110,6 +112,9 @@ export function validateProjectConfig(config) {
     }
     if (!config.features.requireAuthInLive) errors.push('Canlı modda REQUIRE_AUTH_IN_LIVE=true zorunludur.');
     if (config.features.allowAnonymousPlay) errors.push('Canlı modda ALLOW_ANONYMOUS_PLAY=false zorunludur.');
+    if (config.features.controlledLaunchPilotMode && !config.features.controlledLaunchPilotVersion) {
+      errors.push('Kontrollü canlı pilot modunda CONTROLLED_LAUNCH_PILOT_VERSION zorunludur.');
+    }
   }
   return errors;
 }

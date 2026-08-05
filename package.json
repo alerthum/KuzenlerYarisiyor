@@ -1,6 +1,6 @@
 {
   "name": "zihin-arenasi",
-  "version": "13.6.0-premium-migration-dev",
+  "version": "13.7.0-phase5i-controlled-live-beta",
   "private": true,
   "type": "module",
   "description": "Zihin Arenası V13.6 geliştirme: 27 oyun ortak premium banka, sınıf güvenliği ve doğrulanmış görev sözleşmeleri.",
@@ -120,7 +120,9 @@
     "assessment:v2:phase5h": "node --test tests/assessment-v2/*.test.mjs && node scripts/build-assessment-v2-phase5h-controlled-launch-pilot.mjs",
     "assessment:v2:phase5h:reviews": "node scripts/analyze-assessment-v2-phase5h-reviews.mjs",
     "test:phase5h": "node --test tests/assessment-v2/phase5h-controlled-launch-pilot.test.mjs",
-    "assessment:v2:phase5h:pilot": "node scripts/analyze-assessment-v2-phase5h-student-pilot.mjs"
+    "assessment:v2:phase5h:pilot": "node scripts/analyze-assessment-v2-phase5h-student-pilot.mjs",
+    "test:phase5i": "node --test --test-force-exit tests/assessment-v2/phase5i-controlled-live-beta.test.mjs tests/question-health-monitor.test.mjs",
+    "assessment:v2:phase5i": "node --test --test-force-exit tests/assessment-v2/*.test.mjs tests/question-health-monitor.test.mjs && node scripts/build-assessment-v2-phase5i-controlled-live-beta.mjs"
   },
   "engines": {
     "node": ">=20"

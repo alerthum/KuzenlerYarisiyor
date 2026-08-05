@@ -8,3 +8,5 @@ Thumbs.db
 .firebase/
 
 *.env
+quality-reports/*.progress.json
+quality-reports/phase5g-sharded-regression-cache/

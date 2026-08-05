@@ -16,18 +16,18 @@ const LOGIC_ITEMS = [
     evidence: ['Aylin, Bora’dan önce olmalı.', 'Bora ile Ceren yan yana ve Bora önce olmalı.', 'Deniz dördüncü sırada olamaz.']
   }),
   definePremiumChoice({
-    id: 'logic-schedule-possible-01', gameId: 'logic-station', familyId: 'premium-logic-scheduling', skeletonId: 'premium-logic-scheduling:three-day', subjectId: 'logic', topicId: 'scheduling', learningOutcomeId: 'build-valid-three-slot-schedule',
-    context: 'Resim, Kodlama ve Müzik atölyeleri pazartesi, salı ve çarşamba günlerine birer kez yerleştirilecektir. Kodlama, Müzik’ten sonra yapılacaktır. Resim salı günü yapılmayacaktır.',
-    prompt: 'Hangi program mümkündür?',
-    answer: 'Pazartesi Müzik – Salı Kodlama – Çarşamba Resim',
+    id: 'logic-schedule-possible-01', gameId: 'logic-station', familyId: 'premium-logic-scheduling', skeletonId: 'premium-logic-scheduling:five-day-forced', subjectId: 'logic', topicId: 'scheduling', learningOutcomeId: 'derive-forced-five-slot-schedule',
+    context: 'Resim, Kodlama, Müzik, Drama ve Fen atölyeleri pazartesiden cumaya birer kez yapılacaktır. Kodlama, Resim’in hemen ertesi günü yapılacaktır. Müzik, Drama’dan önce yapılacaktır. Fen pazartesi veya cuma günü yapılmayacaktır. Drama çarşamba günü yapılmayacaktır.',
+    prompt: 'Buna göre aşağıdakilerden hangisi kesinlikle doğrudur?',
+    answer: 'Drama salı veya cuma günü yapılır.',
     distractors: [
-      { text: 'Pazartesi Kodlama – Salı Müzik – Çarşamba Resim', misconceptionId: 'logic:reverse-temporal-condition', why: 'Kodlama ile Müzik arasındaki önce–sonra ilişkisini ters çevirir.', constructionRule: 'reverse-after-condition' },
-      { text: 'Pazartesi Müzik – Salı Resim – Çarşamba Kodlama', misconceptionId: 'logic:ignore-fixed-day-ban', why: 'Kodlama koşulunu sağlarken Resim’in salı günü olamayacağını gözden kaçırır.', constructionRule: 'satisfy-one-ignore-one' },
-      { text: 'Pazartesi Resim – Salı Kodlama – Çarşamba Müzik', misconceptionId: 'logic:check-only-resim-condition', why: 'Resim koşulunu kontrol eder ancak Kodlama’nın Müzik’ten sonra olması gerektiğini sınamaz.', constructionRule: 'partial-condition-verification' }
+      { text: 'Kodlama salı günü yapılır.', misconceptionId: 'logic:fix-adjacent-pair-too-early', why: 'Resim–Kodlama ikilisinin art arda gelmesini, ikilinin yalnız pazartesi–salı günlerine yerleşebileceği biçiminde yorumlar.', constructionRule: 'prematurely-fix-adjacent-pair' },
+      { text: 'Resim, Fen’den önce yapılır.', misconceptionId: 'logic:infer-relative-order-without-proof', why: 'Resim–Kodlama ardışıklığından Resim ile Fen arasında zorunlu bir sıralama varmış gibi sonuç çıkarır.', constructionRule: 'invent-cross-constraint-order' },
+      { text: 'Müzik pazartesi günü yapılır.', misconceptionId: 'logic:force-earliest-before-slot', why: 'Müzik Drama’dan önce olmalı koşulunu, Müzik mutlaka ilk gün yapılmalı biçiminde aşırı geneller.', constructionRule: 'replace-before-with-first' }
     ],
-    explanation: 'Müzik pazartesi, Kodlama salı olduğunda Kodlama Müzik’ten sonra gelir. Resim de salı dışında, çarşamba günü yapılır.',
-    cognitiveTraits: ['constraintTracking', 'scheduleConstruction', 'elimination', 'multiStepInference', 'conditionEvaluation'], reasoningStepCount: 3,
-    evidence: ['Kodlama günü Müzik gününden sonra olmalı.', 'Resim salı gününe yerleşemez.', 'Her atölye farklı bir güne yerleşir.']
+    explanation: 'Drama çarşamba olamaz. Müzik Drama’dan önce olduğundan Drama pazartesi de olamaz. Drama perşembe kabul edilirse Müzik pazartesi–çarşamba aralığında kalır; Fen salı, çarşamba veya perşembe olmalı ve Resim–Kodlama için art arda iki boş gün kalmaz. Bu nedenle Drama yalnız salı veya cuma olabilir.',
+    cognitiveTraits: ['constraintTracking', 'scheduleConstruction', 'caseAnalysis', 'forcedInference', 'elimination', 'multiStepInference', 'conditionEvaluation'], reasoningStepCount: 5,
+    evidence: ['Kodlama, Resim’in hemen ertesi günüdür.', 'Müzik, Drama’dan önce olmalıdır.', 'Fen pazartesi veya cuma olamaz.', 'Drama çarşamba olamaz.', 'Drama perşembe olduğunda kalan günler Resim–Kodlama ardışık ikilisini barındıramaz.']
   }),
   definePremiumChoice({
     id: 'logic-matching-forced-01', gameId: 'logic-station', familyId: 'premium-logic-matching', skeletonId: 'premium-logic-matching:forced-assignment', subjectId: 'logic', topicId: 'matching', learningOutcomeId: 'derive-forced-one-to-one-match',

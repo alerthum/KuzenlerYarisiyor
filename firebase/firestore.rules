@@ -133,6 +133,11 @@ service cloud.firestore {
       allow update, delete: if false;
     }
 
+    match /questionHealth/{questionKey} {
+      allow read, create, update: if roleIs('admin');
+      allow delete: if false;
+    }
+
     match /blockedQuestions/{questionKey} {
       allow read: if signedIn();
       allow create: if signedIn() && (

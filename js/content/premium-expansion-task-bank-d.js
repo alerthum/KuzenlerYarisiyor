@@ -105,7 +105,7 @@ const ORDER_ITEMS = [
   orderTask({ id:'order-third-conditional-01', sentence:'I would have called you if I had known', translation:'Bilseydim seni arardım.', focus:'third conditional', misconceptionA:'If yan cümlesi ile sonuç cümlesinin yardımcı fiilleri birbirine aktarılır.', misconceptionB:'“would have called” ve “had known” fiil zincirleri kendi içinde bozulur.', misconceptionC:'“you” nesnesi called fiiline bağlanmayacak yere taşınır.' })
 ];
 
-function storyTask({ id, letter, topic, focus, plan }) {
+function storyTask({ id, letter, topic, focus, plan, instruction = null }) {
   return definePremiumTask({
     id,
     gameId: 'forbidden-story',
@@ -117,7 +117,7 @@ function storyTask({ id, letter, topic, focus, plan }) {
     topicId: 'creative-writing',
     learningOutcomeId: 'write-coherent-text-under-letter-constraint',
     prompt: topic,
-    context: `Metinde “${letter.toLocaleUpperCase('tr-TR')}” harfi hiç kullanılmayacak. En az 3 cümle ve 18 farklı kelime gereklidir.`,
+    context: instruction || `Kural yalnızca cevap alanına yazdığın metin için geçerlidir. Cevabında “${letter.toLocaleUpperCase('tr-TR')}” veya “${letter.toLocaleLowerCase('tr-TR')}” harfini hiç kullanma. En az 3 cümle ve 18 farklı kelime yaz.`,
     explanation: 'Başarılı metin; yasak harfi kullanmaz, olay akışını korur, en az üç cümle kurar ve yeterli kelime çeşitliliğine ulaşır.',
     hints: [`Önce “${letter.toLocaleUpperCase('tr-TR')}” harfi içermeyen kişi, yer ve eylem sözcükleri seç.`, 'Taslağı bitirdikten sonra yasak harf, cümle sayısı ve kelime çeşitliliğini ayrı ayrı denetle.'],
     cognitiveTraits: [...HARD, 'creativeConstraintPlanning', 'selfMonitoring'],
@@ -148,7 +148,7 @@ const STORY_ITEMS = [
   storyTask({ id:'story-forbidden-e-01', letter:'e', focus:'discovery', topic:'Eski bir gözlemevinde gizli bir yıldız haritası bulan iki arkadaşın yaşadıklarını anlat.', plan:['gözlemevine giriş','haritanın bulunması','işaretlerin çözülmesi'] }),
   storyTask({ id:'story-forbidden-i-01', letter:'i', focus:'journey', topic:'Sisli bir ormanda yönünü bulan gezginin karşılaştığı güçlüğü ve çözümünü anlat.', plan:['yolun kaybolması','doğa işaretlerinin kullanılması','güvenli çıkış'] }),
   storyTask({ id:'story-forbidden-o-01', letter:'o', focus:'invention', topic:'Okul sergisinde çalışan çevreci bir aracın nasıl geliştirildiğini anlat.', plan:['sorunun fark edilmesi','tasarımın denenmesi','sergide sunulması'] }),
-  storyTask({ id:'story-forbidden-u-01', letter:'u', focus:'cooperation', topic:'Bir köyde bozulan köprüyü birlikte onaran insanların dayanışmasını anlat.', plan:['köprünün bozulması','görev paylaşımı','yeniden geçişin sağlanması'] }),
+  storyTask({ id:'story-forbidden-u-01', letter:'u', focus:'cooperation', topic:'Bozulan bir geçidi birlikte onaran insanların dayanışmasını anlat.', instruction:'Kural yalnızca cevap alanına yazdığın metin için geçerlidir. Cevabında “U” veya “u” harfini hiç kullanma. En az 3 cümle ve 18 farklı kelime yaz.', plan:['geçidin bozulması','görev paylaşımı','yeniden geçişin sağlanması'] }),
   storyTask({ id:'story-forbidden-r-01', letter:'r', focus:'mystery', topic:'Müzede gece duyulan gizemli sesin kaynağını araştıran çocuğun öyküsünü yaz.', plan:['sesin duyulması','ipuçlarının izlenmesi','gerçek kaynağın bulunması'] }),
   storyTask({ id:'story-forbidden-s-01', letter:'s', focus:'nature', topic:'Deniz kıyısında yaralı bir kuşa yardım eden bir ailenin öyküsünü anlat.', plan:['kuşun bulunması','güvenli bakım','doğaya bırakılması'] }),
   storyTask({ id:'story-forbidden-k-01', letter:'k', focus:'time-capsule', topic:'Bahçede eski bir zaman kutusu bulan öğrencilerin içindeki ipuçlarını çözmesini anlat.', plan:['kutunun bulunması','notların okunması','geçmişle bağ kurulması'] }),

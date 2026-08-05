@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0",
+  "status": "PASS",
+  "tests": 285,
+  "pass": 285,
+  "fail": 0,
+  "cancelled": 0,
+  "skipped": 0,
+  "todo": 0,
+  "command": "node --test --test-force-exit tests/assessment-v2/*.test.mjs tests/question-health-monitor.test.mjs",
+  "generatedAt": "2026-08-05T05:15:22.561098+00:00"
+}

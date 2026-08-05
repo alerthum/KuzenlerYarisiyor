@@ -53,6 +53,7 @@ const state = createInitialState(window.__KUZENLER_INITIAL_STATE__ || loadStored
 document.title = RUNTIME_CONFIG.appName;
 
 const QUALITY_PILOT_ENABLED = Boolean(RUNTIME_CONFIG.features?.qualityPilotMode);
+const CONTROLLED_LAUNCH_PILOT_ENABLED = Boolean(RUNTIME_CONFIG.features?.controlledLaunchPilotMode);
 const USER_GAME_CATALOG = QUALITY_PILOT_ENABLED
   ? GAME_CATALOG.filter((game) => PREMIUM_GAME_IDS.includes(game.id))
   : GAME_CATALOG;
@@ -477,13 +478,52 @@ function renderRoundInput(round) {
   }
 
   if (round.kind === 'story') {
+    const metrics = storyProgressMetrics(ui.roundData.story || '', round);
     return `
       <div class="target-box"><span>YASAK HARF</span><strong>${round.forbiddenLetter.toLocaleUpperCase('tr-TR')}</strong></div>
-      <div class="input-stack"><textarea id="story-input" class="story-input" aria-label="Yasak harfi kullanmadan yazılan hikâye" placeholder="Hikâyeni buraya yaz…" ${ui.feedback ? 'disabled' : ''}>${escapeHtml(ui.roundData.story || '')}</textarea></div>
-      <p class="muted">En az ${round.minSentences} cümle ve ${round.minUniqueWords} farklı kelime kullan.</p>`;
+      <p class="story-scope-note">Kural yalnızca aşağıdaki cevap alanına yazdığın metin için geçerlidir.</p>
+      <div class="input-stack"><textarea id="story-input" class="story-input" aria-label="Yasak harfi kullanmadan yazılan hikâye" aria-describedby="story-progress" placeholder="Hikâyeni buraya yaz…" ${ui.feedback ? 'disabled' : ''}>${escapeHtml(ui.roundData.story || '')}</textarea></div>
+      <div id="story-progress" class="story-progress" role="status" aria-live="polite">
+        <span data-story-metric="sentences" class="${metrics.sentences >= round.minSentences ? 'complete' : ''}">Cümle: <strong>${metrics.sentences}/${round.minSentences}</strong></span>
+        <span data-story-metric="unique" class="${metrics.uniqueWords >= round.minUniqueWords ? 'complete' : ''}">Farklı kelime: <strong>${metrics.uniqueWords}/${round.minUniqueWords}</strong></span>
+        <span data-story-metric="forbidden" class="${metrics.forbiddenCount === 0 ? 'complete' : 'warning'}">Yasak harf: <strong>${metrics.forbiddenCount}</strong></span>
+      </div>`;
   }
 
   return '';
+}
+
+
+function storyProgressMetrics(text, round) {
+  const normalizedText = String(text || '');
+  const letter = String(round?.forbiddenLetter || '').toLocaleLowerCase('tr-TR');
+  const forbiddenCount = letter
+    ? [...normalizedText.toLocaleLowerCase('tr-TR')].filter((character) => character === letter).length
+    : 0;
+  return {
+    sentences: sentenceCount(normalizedText),
+    uniqueWords: uniqueWordCount(normalizedText),
+    forbiddenCount
+  };
+}
+
+function updateStoryProgress(text) {
+  const round = ui.session?.rounds?.[ui.session.currentIndex];
+  if (!round || round.kind !== 'story') return;
+  const metrics = storyProgressMetrics(text, round);
+  const rows = {
+    sentences: [metrics.sentences, round.minSentences, metrics.sentences >= round.minSentences],
+    unique: [metrics.uniqueWords, round.minUniqueWords, metrics.uniqueWords >= round.minUniqueWords],
+    forbidden: [metrics.forbiddenCount, null, metrics.forbiddenCount === 0]
+  };
+  for (const [name, [value, target, complete]] of Object.entries(rows)) {
+    const element = document.querySelector(`[data-story-metric="${name}"]`);
+    if (!element) continue;
+    const strong = element.querySelector('strong');
+    if (strong) strong.textContent = target === null ? String(value) : `${value}/${target}`;
+    element.classList.toggle('complete', complete);
+    element.classList.toggle('warning', name === 'forbidden' && !complete);
+  }
 }
 
 
@@ -521,7 +561,7 @@ function renderReportModal(round) {
   if (!ui.reportModalOpen) return '';
   return `<div class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="report-title">
     <section class="report-modal">
-      <div class="section-header"><div><h2 id="report-title">Soruyu bildir</h2><p>Sistem soruyu otomatik değiştirmez. Bildirim; verdiğin cevap, sistem cevabı ve notunla birlikte kaydedilir. Bu soru bu profile tekrar gösterilmez ve ebeveyn ekranında incelenir.</p></div><button class="icon-button" data-action="close-report" aria-label="Kapat">×</button></div>
+      <div class="section-header"><div><h2 id="report-title">Soruyu bildir</h2><p>Bildirim; verdiğin cevap, sistem cevabı ve notunla birlikte kaydedilir. Bu soru sana tekrar gösterilmez; bağımsız bildirimler birleştiğinde sistem soruyu otomatik olarak global karantinaya alır.</p></div><button class="icon-button" data-action="close-report" aria-label="Kapat">×</button></div>
       <div class="report-question-preview">${escapeHtml(round.prompt)}</div>
       <div class="form-field mt-18"><label for="report-reason">Sorundaki durum</label><select id="report-reason">
         <option value="answer-wrong">Doğru cevap veya açıklama yanlış</option>
@@ -1029,7 +1069,8 @@ function startGame(gameId) {
     recentFamilyIds: recentFamilyIds(profile.id, gameId),
     completedSessionCount,
     attempts: profileAttempts,
-    classTarget
+    classTarget,
+    controlledLaunchPilot: CONTROLLED_LAUNCH_PILOT_ENABLED
   });
   const candidateRounds = [];
   for (let index = 1; index <= 4; index += 1) {
@@ -1040,7 +1081,8 @@ function startGame(gameId) {
       recentFamilyIds: recentFamilyIds(profile.id, gameId),
       completedSessionCount,
       attempts: profileAttempts,
-      classTarget
+      classTarget,
+      controlledLaunchPilot: CONTROLLED_LAUNCH_PILOT_ENABLED
     });
     candidateRounds.push(...candidate.rounds);
   }
@@ -1063,7 +1105,8 @@ function startGame(gameId) {
       preferredEnglishWordIds: gameId === 'english-vocabulary' ? daily.englishWordIds : [],
       recentFamilyIds: recentFamilyIds(profile.id, gameId),
       completedSessionCount,
-      attempts: profileAttempts
+      attempts: profileAttempts,
+      controlledLaunchPilot: CONTROLLED_LAUNCH_PILOT_ENABLED
     });
     session.reviewMode = true;
     if (session.rounds.length) showToast('Yeni havuz tamamlandı; daha önce görülen sorular aralıklı tekrar amacıyla yeniden karıştırıldı.', 'success');
@@ -1152,6 +1195,10 @@ function finalizeRound(correct, message, rawScore = correct ? 100 : 25, response
     profileId: activeProfile().id,
     gameId: session.game.id,
     questionKey: round.questionKey,
+    responseKind: round.kind || 'default',
+    controlledLaunchPilot: Boolean(round.controlledLaunchPilot),
+    controlledLaunchVersion: round.controlledLaunchVersion || null,
+    controlledLaunchSlotId: round.controlledLaunchSlotId || null,
     skill: round.skill,
     correct,
     difficulty: round.difficulty,
@@ -1340,12 +1387,16 @@ function saveCurrentQuestionReport() {
   const round = ui.session.rounds[ui.session.currentIndex];
   const reason = document.querySelector('#report-reason')?.value || 'other';
   const note = document.querySelector('#report-note')?.value?.trim() || '';
-  reportQuestion(state, {
+  const savedReport = reportQuestion(state, {
     profileId: activeProfile().id,
     profileName: activeProfile().name,
     gameId: ui.session.game.id,
     gameTitle: ui.session.game.title,
     questionKey: round.questionKey,
+    responseKind: round.kind || 'default',
+    controlledLaunchPilot: Boolean(round.controlledLaunchPilot),
+    controlledLaunchVersion: round.controlledLaunchVersion || null,
+    controlledLaunchSlotId: round.controlledLaunchSlotId || null,
     questionFamilyId: round.questionFamilyId || round.familyId || null,
     subjectId: round.subjectId,
     visibleCardId: round.visibleCardId,
@@ -1368,7 +1419,10 @@ function saveCurrentQuestionReport() {
     note
   });
   ui.reportModalOpen = false;
-  showToast('Bildirim kaydedildi. Soru ve soru ailesi admin incelemesine kadar tüm öğrenciler için karantinaya alındı.', 'success');
+  const globalQuarantine = Boolean(savedReport.healthEvaluation?.quarantine);
+  showToast(globalQuarantine
+    ? 'Bildirim kaydedildi. Bağımsız bildirim eşiği aşıldığı için soru tüm öğrenciler için karantinaya alındı.'
+    : 'Bildirim kaydedildi. Bu soru sana tekrar gösterilmeyecek; bağımsız bildirimler kalite takibinde birleştirilecek.', 'success');
   render();
 }
 
@@ -1577,7 +1631,10 @@ root.addEventListener('keydown', (event) => {
 });
 
 root.addEventListener('input', (event) => {
-  if (event.target.id === 'story-input') ui.roundData.story = event.target.value;
+  if (event.target.id === 'story-input') {
+    ui.roundData.story = event.target.value;
+    updateStoryProgress(event.target.value);
+  }
   if (event.target.matches('[data-ladder-index]')) {
     const index = Number(event.target.dataset.ladderIndex);
     ui.roundData.ladderInputs ||= [];

@@ -36,7 +36,9 @@ export function saveStoredState(state) {
       activeProfileId: state.activeProfileId,
       seenQuestions: state.seenQuestions,
       questionReports: state.questionReports.slice(-500),
+      questionHealth: state.questionHealth || {},
       blockedQuestionKeys: state.blockedQuestionKeys || {},
+      blockedQuestionFamilies: state.blockedQuestionFamilies || {},
       platform: state.platform || {}
     };
     storage.setItem(STORAGE_KEY, JSON.stringify(durableState));

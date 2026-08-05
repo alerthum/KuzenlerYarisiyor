@@ -1,0 +1,1450 @@
+{
+  "schemaVersion": "1.0",
+  "phase": "5I",
+  "generatedAt": "2026-08-05T05:15:29.313Z",
+  "releaseVersion": "PHASE5I_PILOT_1",
+  "status": "CONTROLLED_LIVE_BETA_READY",
+  "gate": {
+    "schemaVersion": "1.0",
+    "phase": "5I",
+    "releaseVersion": "PHASE5I_PILOT_1",
+    "status": "CONTROLLED_LIVE_BETA_READY",
+    "controlledLiveBetaAllowed": true,
+    "formalCurriculumCertification": false,
+    "formalExpertReviewComplete": false,
+    "realStudentPilotComplete": false,
+    "fullPublicProductionReleaseAllowed": false,
+    "fullProductReady": false,
+    "checks": [
+      {
+        "id": "candidate-pool",
+        "label": "30 görev, 24 ana ders hücresi ve 23 oyun kapsamı",
+        "passed": true,
+        "evidence": {
+          "ok": true,
+          "errors": [],
+          "metrics": {
+            "uniqueQuestionCount": 30,
+            "uniqueSourceQuestionCount": 30,
+            "representedCurriculumCellCount": 24,
+            "representedGameCount": 23,
+            "lowRiskCount": 25,
+            "mediumRiskCount": 5,
+            "highRiskCount": 0,
+            "independentlyVerifiedCount": 30,
+            "priorHumanContentApprovalCount": 0,
+            "exactCurriculumReferenceCount": 11,
+            "curriculumHumanConfirmationRequiredCount": 30,
+            "routeConfidence": {
+              "high": 30,
+              "medium": 0,
+              "low": 0
+            },
+            "gameCounts": {
+              "english-cloze": 1,
+              "english-sentence-builder": 1,
+              "english-vocabulary": 2,
+              "error-detective": 1,
+              "forbidden-story": 1,
+              "geometry-lab": 1,
+              "lgs-foundation": 1,
+              "logic-station": 1,
+              "meaning-hunt": 1,
+              "olympiad-ladder": 1,
+              "paragraph-detective": 1,
+              "pattern-lab": 1,
+              "problem-hunter": 1,
+              "religion-practice": 4,
+              "science-lab": 2,
+              "science-reasoning": 2,
+              "social-citizenship": 1,
+              "social-map-skills": 1,
+              "social-time-travel": 2,
+              "speed-math": 1,
+              "target-number": 1,
+              "word-ladder": 1,
+              "word-mine": 1
+            },
+            "cellCounts": {
+              "5:turkish": 1,
+              "5:math": 2,
+              "5:science": 1,
+              "5:social": 1,
+              "5:english": 1,
+              "5:religion": 1,
+              "6:turkish": 1,
+              "6:math": 2,
+              "6:science": 1,
+              "6:social": 1,
+              "6:english": 1,
+              "6:religion": 1,
+              "7:turkish": 1,
+              "7:math": 2,
+              "7:science": 1,
+              "7:social": 1,
+              "7:english": 1,
+              "7:religion": 1,
+              "8:turkish": 2,
+              "8:math": 2,
+              "8:science": 1,
+              "8:social": 1,
+              "8:english": 1,
+              "8:religion": 1
+            },
+            "answerPositionCounts": {
+              "A": 7,
+              "B": 6,
+              "C": 6,
+              "D": 6
+            }
+          }
+        },
+        "blocker": null
+      },
+      {
+        "id": "content-quality",
+        "label": "30/30 mühendislik ve içerik kalite denetimi",
+        "passed": true,
+        "evidence": {
+          "schemaVersion": "1.0",
+          "phase": "5H",
+          "ok": true,
+          "generatedAt": "2026-08-05T05:15:23.847Z",
+          "globalErrors": [],
+          "metrics": {
+            "total": 30,
+            "passed": 30,
+            "failed": 0,
+            "choiceCount": 25,
+            "taskCount": 5,
+            "goldCount": 30,
+            "exactOutcomeReferenceCount": 11,
+            "explicitCurriculumReferenceCount": 18,
+            "skillTransferReferenceCount": 1,
+            "answerPositionCounts": {
+              "A": 7,
+              "B": 6,
+              "C": 6,
+              "D": 6
+            },
+            "answerBalanceSpread": 1
+          },
+          "rows": [
+            {
+              "candidateId": "launch-candidate:phase5h:5:word-mine:word-mine-premium-05-scc0je",
+              "questionId": "phase5h:5:word-mine:word-mine-premium-05-scc0je",
+              "gameId": "word-mine",
+              "grade": 5,
+              "courseGroup": "turkish",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:6:word-ladder:ladder-nar-kol-01-1ti8nxf",
+              "questionId": "phase5h:6:word-ladder:ladder-nar-kol-01-1ti8nxf",
+              "gameId": "word-ladder",
+              "grade": 6,
+              "courseGroup": "turkish",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:7:forbidden-story:story-forbidden-u-01-18jt3g8",
+              "questionId": "phase5h:7:forbidden-story:story-forbidden-u-01-18jt3g8",
+              "gameId": "forbidden-story",
+              "grade": 7,
+              "courseGroup": "turkish",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:meaning-hunt:meaning-isik-tutmak-01-aq5911",
+              "questionId": "phase5h:8:meaning-hunt:meaning-isik-tutmak-01-aq5911",
+              "gameId": "meaning-hunt",
+              "grade": 8,
+              "courseGroup": "turkish",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:paragraph-detective:tr-main-idea-01-122remb",
+              "questionId": "phase5h:8:paragraph-detective:tr-main-idea-01-122remb",
+              "gameId": "paragraph-detective",
+              "grade": 8,
+              "courseGroup": "turkish",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:5:target-number:target-number-premium-03-287srg",
+              "questionId": "phase5h:5:target-number:target-number-premium-03-287srg",
+              "gameId": "target-number",
+              "grade": 5,
+              "courseGroup": "math",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:6:speed-math:speed-percent-sale-01-y9orlf",
+              "questionId": "phase5h:6:speed-math:speed-percent-sale-01-y9orlf",
+              "gameId": "speed-math",
+              "grade": 6,
+              "courseGroup": "math",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:7:pattern-lab:pattern-matchsticks-01-jmob3w",
+              "questionId": "phase5h:7:pattern-lab:pattern-matchsticks-01-jmob3w",
+              "gameId": "pattern-lab",
+              "grade": 7,
+              "courseGroup": "math",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:problem-hunter:g8-linear-tank-01",
+              "questionId": "phase5h:8:problem-hunter:g8-linear-tank-01",
+              "gameId": "problem-hunter",
+              "grade": 8,
+              "courseGroup": "math",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:5:geometry-lab:g35-geometry-composite-area-01-8grgur",
+              "questionId": "phase5h:5:geometry-lab:g35-geometry-composite-area-01-8grgur",
+              "gameId": "geometry-lab",
+              "grade": 5,
+              "courseGroup": "math",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:6:error-detective:math-equation-error-01-nl452y",
+              "questionId": "phase5h:6:error-detective:math-equation-error-01-nl452y",
+              "gameId": "error-detective",
+              "grade": 6,
+              "courseGroup": "math",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:7:olympiad-ladder:olympiad-pigeonhole-remainder-01-144voa7",
+              "questionId": "phase5h:7:olympiad-ladder:olympiad-pigeonhole-remainder-01-144voa7",
+              "gameId": "olympiad-ladder",
+              "grade": 7,
+              "courseGroup": "math",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:logic-station:logic-schedule-possible-01-j2453h",
+              "questionId": "phase5h:8:logic-station:logic-schedule-possible-01-j2453h",
+              "gameId": "logic-station",
+              "grade": 8,
+              "courseGroup": "math",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:5:english-vocabulary:g35-en-vocab-protect-01-18is450",
+              "questionId": "phase5h:5:english-vocabulary:g35-en-vocab-protect-01-18is450",
+              "gameId": "english-vocabulary",
+              "grade": 5,
+              "courseGroup": "english",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:6:english-cloze:eng-cloze-cause-result-01-19phl4r",
+              "questionId": "phase5h:6:english-cloze:eng-cloze-cause-result-01-19phl4r",
+              "gameId": "english-cloze",
+              "grade": 6,
+              "courseGroup": "english",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:7:english-sentence-builder:order-if-finish-01-11i74e",
+              "questionId": "phase5h:7:english-sentence-builder:order-if-finish-01-11i74e",
+              "gameId": "english-sentence-builder",
+              "grade": 7,
+              "courseGroup": "english",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:english-vocabulary:english-vocab-context-12-1jd1pbt",
+              "questionId": "phase5h:8:english-vocabulary:english-vocab-context-12-1jd1pbt",
+              "gameId": "english-vocabulary",
+              "grade": 8,
+              "courseGroup": "english",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:5:social-time-travel:g5-first-settlements-evidence-01",
+              "questionId": "phase5h:5:social-time-travel:g5-first-settlements-evidence-01",
+              "gameId": "social-time-travel",
+              "grade": 5,
+              "courseGroup": "social",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:6:social-map-skills:g6-relative-location-01",
+              "questionId": "phase5h:6:social-map-skills:g6-relative-location-01",
+              "gameId": "social-map-skills",
+              "grade": 6,
+              "courseGroup": "social",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:7:social-citizenship:g7-accessibility-equality-01",
+              "questionId": "phase5h:7:social-citizenship:g7-accessibility-equality-01",
+              "gameId": "social-citizenship",
+              "grade": 7,
+              "courseGroup": "social",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:social-time-travel:g8-national-struggle-source-01",
+              "questionId": "phase5h:8:social-time-travel:g8-national-struggle-source-01",
+              "gameId": "social-time-travel",
+              "grade": 8,
+              "courseGroup": "social",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:5:science-lab:g5-conductor-evidence-01",
+              "questionId": "phase5h:5:science-lab:g5-conductor-evidence-01",
+              "gameId": "science-lab",
+              "grade": 5,
+              "courseGroup": "science",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:6:science-reasoning:g6-bulb-brightness-variable-01",
+              "questionId": "phase5h:6:science-reasoning:g6-bulb-brightness-variable-01",
+              "gameId": "science-reasoning",
+              "grade": 6,
+              "courseGroup": "science",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:7:science-lab:science-ecosystem-chain-01-1gv13n3",
+              "questionId": "phase5h:7:science-lab:science-ecosystem-chain-01-1gv13n3",
+              "gameId": "science-lab",
+              "grade": 7,
+              "courseGroup": "science",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:science-reasoning:g8-photosynthesis-light-01",
+              "questionId": "phase5h:8:science-reasoning:g8-photosynthesis-light-01",
+              "gameId": "science-reasoning",
+              "grade": 8,
+              "courseGroup": "science",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:5:religion-practice:g5-ihlas-meaning-01",
+              "questionId": "phase5h:5:religion-practice:g5-ihlas-meaning-01",
+              "gameId": "religion-practice",
+              "grade": 5,
+              "courseGroup": "religion",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:6:religion-practice:g6-truthfulness-01",
+              "questionId": "phase5h:6:religion-practice:g6-truthfulness-01",
+              "gameId": "religion-practice",
+              "grade": 6,
+              "courseGroup": "religion",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:7:religion-practice:g7-belief-behaviour-01",
+              "questionId": "phase5h:7:religion-practice:g7-belief-behaviour-01",
+              "gameId": "religion-practice",
+              "grade": 7,
+              "courseGroup": "religion",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:religion-practice:religion-help-dignity-01-1sq4xqq",
+              "questionId": "phase5h:8:religion-practice:religion-help-dignity-01-1sq4xqq",
+              "gameId": "religion-practice",
+              "grade": 8,
+              "courseGroup": "religion",
+              "ok": true,
+              "errors": []
+            },
+            {
+              "candidateId": "launch-candidate:phase5h:8:lgs-foundation:lgs-probability-bag-01-10u5ryk",
+              "questionId": "phase5h:8:lgs-foundation:lgs-probability-bag-01-10u5ryk",
+              "gameId": "lgs-foundation",
+              "grade": 8,
+              "courseGroup": "mixed",
+              "ok": true,
+              "errors": []
+            }
+          ]
+        },
+        "blocker": null
+      },
+      {
+        "id": "product-owner-review",
+        "label": "Ürün sahibi görsel değerlendirmesi ve iki somut düzeltmenin kapanması",
+        "passed": true,
+        "evidence": {
+          "schemaVersion": "1.0",
+          "phase": "5I",
+          "reviewType": "PRODUCT_OWNER_VISUAL_REVIEW",
+          "reviewDate": "2026-08-04",
+          "formalCurriculumReview": false,
+          "formalContentExpertApproval": false,
+          "positiveOverallAssessmentRecorded": true,
+          "namedConcerns": [
+            {
+              "slotId": "turkish:7:forbidden-story",
+              "concern": "Yasak harf kuralının yalnız öğrenci cevap alanına ait olduğu ilk okumada anlaşılmıyordu.",
+              "resolution": "Kural kapsamı açıklaştırıldı ve canlı cümle, farklı kelime, yasak harf sayaçları eklendi.",
+              "status": "RESOLVED"
+            },
+            {
+              "slotId": "math:8:logic-station",
+              "concern": "Üç günlük ve iki koşullu program sorusu 8. sınıf için çok kolaydı.",
+              "resolution": "Beş günlük, beş atölyeli, dört kısıtlı ve zorunlu sonuç gerektiren solver-doğrulamalı sürümle değiştirildi.",
+              "status": "RESOLVED"
+            }
+          ],
+          "statement": "Ürün sahibi yeni havuzun eski canlı havuzdan belirgin biçimde daha iyi olduğunu bildirmiş; iki somut sorunu işaretlemiş ve kontrollü canlı beta yaklaşımını onaylamıştır."
+        },
+        "blocker": null
+      },
+      {
+        "id": "runtime-delivery",
+        "label": "30/30 pilot slotunun gerçek sınıf ve oyun oturumuna teslimi",
+        "passed": true,
+        "evidence": {
+          "schemaVersion": "1.0",
+          "phase": "5I",
+          "status": "PASS",
+          "slotCount": 30,
+          "deliveredCount": 30,
+          "representedGameCount": 23,
+          "representedGradeCourseSlotCount": 30,
+          "legacyLeakCount": 0,
+          "rows": [
+            {
+              "slotId": "turkish:5:word-mine",
+              "grade": 5,
+              "gameId": "word-mine",
+              "sourceQuestionKey": "premium-task:2.5.0:word-mine:word-mine-premium-05:scc0je",
+              "delivered": true,
+              "deliveredQuestionKey": "premium-task:2.5.0:word-mine:word-mine-premium-05:scc0je",
+              "roundCount": 1,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "turkish:6:word-ladder",
+              "grade": 6,
+              "gameId": "word-ladder",
+              "sourceQuestionKey": "premium-task:2.3.0:word-ladder:ladder-nar-kol-01:1ti8nxf",
+              "delivered": true,
+              "deliveredQuestionKey": "premium-task:2.3.0:word-ladder:ladder-nar-kol-01:1ti8nxf",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "turkish:7:forbidden-story",
+              "grade": 7,
+              "gameId": "forbidden-story",
+              "sourceQuestionKey": "premium-task:2.3.0:forbidden-story:story-forbidden-u-01:18jt3g8",
+              "delivered": true,
+              "deliveredQuestionKey": "premium-task:2.3.0:forbidden-story:story-forbidden-u-01:18jt3g8",
+              "roundCount": 1,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "turkish:8:meaning-hunt",
+              "grade": 8,
+              "gameId": "meaning-hunt",
+              "sourceQuestionKey": "premium:2.1.0:meaning-hunt:meaning-isik-tutmak-01:aq5911",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.1.0:meaning-hunt:meaning-isik-tutmak-01:aq5911",
+              "roundCount": 5,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "turkish:8:paragraph-detective",
+              "grade": 8,
+              "gameId": "paragraph-detective",
+              "sourceQuestionKey": "premium-pilot:paragraph-detective:tr-main-idea-01:122remb",
+              "delivered": true,
+              "deliveredQuestionKey": "premium-pilot:paragraph-detective:tr-main-idea-01:122remb",
+              "roundCount": 8,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "math:5:target-number",
+              "grade": 5,
+              "gameId": "target-number",
+              "sourceQuestionKey": "premium-task:2.5.0:target-number:target-number-premium-03:287srg",
+              "delivered": true,
+              "deliveredQuestionKey": "premium-task:2.5.0:target-number:target-number-premium-03:287srg",
+              "roundCount": 4,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "math:6:speed-math",
+              "grade": 6,
+              "gameId": "speed-math",
+              "sourceQuestionKey": "premium:2.6.0:speed-math:speed-percent-sale-01:y9orlf",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.6.0:speed-math:speed-percent-sale-01:y9orlf",
+              "roundCount": 8,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "math:7:pattern-lab",
+              "grade": 7,
+              "gameId": "pattern-lab",
+              "sourceQuestionKey": "premium:2.2.0:pattern-lab:pattern-matchsticks-01:jmob3w",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.2.0:pattern-lab:pattern-matchsticks-01:jmob3w",
+              "roundCount": 5,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "math:8:problem-hunter",
+              "grade": 8,
+              "gameId": "problem-hunter",
+              "sourceQuestionKey": "phase5h:math:g8:linear-tank-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:math:g8:linear-tank-01",
+              "roundCount": 5,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "math:5:geometry-lab",
+              "grade": 5,
+              "gameId": "geometry-lab",
+              "sourceQuestionKey": "premium:3.0.0:geometry-lab:g35-geometry-composite-area-01:8grgur",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:3.0.0:geometry-lab:g35-geometry-composite-area-01:8grgur",
+              "roundCount": 6,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "math:6:error-detective",
+              "grade": 6,
+              "gameId": "error-detective",
+              "sourceQuestionKey": "premium-pilot:error-detective:math-equation-error-01:nl452y",
+              "delivered": true,
+              "deliveredQuestionKey": "premium-pilot:error-detective:math-equation-error-01:nl452y",
+              "roundCount": 5,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "math:7:olympiad-ladder",
+              "grade": 7,
+              "gameId": "olympiad-ladder",
+              "sourceQuestionKey": "premium:2.6.0:olympiad-ladder:olympiad-pigeonhole-remainder-01:144voa7",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.6.0:olympiad-ladder:olympiad-pigeonhole-remainder-01:144voa7",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "math:8:logic-station",
+              "grade": 8,
+              "gameId": "logic-station",
+              "sourceQuestionKey": "premium:2.0.0:logic-station:logic-schedule-possible-01:j2453h",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.0.0:logic-station:logic-schedule-possible-01:j2453h",
+              "roundCount": 8,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "english:5:english-vocabulary",
+              "grade": 5,
+              "gameId": "english-vocabulary",
+              "sourceQuestionKey": "premium:3.1.0:english-vocabulary:g35-en-vocab-protect-01:18is450",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:3.1.0:english-vocabulary:g35-en-vocab-protect-01:18is450",
+              "roundCount": 20,
+              "legacyLeakCount": 0,
+              "globalQualityOk": false,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "english:6:english-cloze",
+              "grade": 6,
+              "gameId": "english-cloze",
+              "sourceQuestionKey": "premium:2.0.0:english-cloze:eng-cloze-cause-result-01:19phl4r",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.0.0:english-cloze:eng-cloze-cause-result-01:19phl4r",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "english:7:english-sentence-builder",
+              "grade": 7,
+              "gameId": "english-sentence-builder",
+              "sourceQuestionKey": "premium-task:2.3.0:english-sentence-builder:order-if-finish-01:11i74e",
+              "delivered": true,
+              "deliveredQuestionKey": "premium-task:2.3.0:english-sentence-builder:order-if-finish-01:11i74e",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "english:8:english-vocabulary",
+              "grade": 8,
+              "gameId": "english-vocabulary",
+              "sourceQuestionKey": "premium:2.2.0:english-vocabulary:english-vocab-context-12:1jd1pbt",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.2.0:english-vocabulary:english-vocab-context-12:1jd1pbt",
+              "roundCount": 20,
+              "legacyLeakCount": 0,
+              "globalQualityOk": false,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "social:5:social-time-travel",
+              "grade": 5,
+              "gameId": "social-time-travel",
+              "sourceQuestionKey": "phase5h:social:g5:first-settlements-evidence-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:social:g5:first-settlements-evidence-01",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "social:6:social-map-skills",
+              "grade": 6,
+              "gameId": "social-map-skills",
+              "sourceQuestionKey": "phase5h:social:g6:relative-location-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:social:g6:relative-location-01",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": false,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "social:7:social-citizenship",
+              "grade": 7,
+              "gameId": "social-citizenship",
+              "sourceQuestionKey": "phase5h:social:g7:accessibility-equality-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:social:g7:accessibility-equality-01",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": false,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "social:8:social-time-travel",
+              "grade": 8,
+              "gameId": "social-time-travel",
+              "sourceQuestionKey": "phase5h:social:g8:national-struggle-source-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:social:g8:national-struggle-source-01",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "science:5:science-lab",
+              "grade": 5,
+              "gameId": "science-lab",
+              "sourceQuestionKey": "phase5h:science:g5:conductor-evidence-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:science:g5:conductor-evidence-01",
+              "roundCount": 6,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "science:6:science-reasoning",
+              "grade": 6,
+              "gameId": "science-reasoning",
+              "sourceQuestionKey": "phase5h:science:g6:bulb-brightness-variable-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:science:g6:bulb-brightness-variable-01",
+              "roundCount": 5,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "science:7:science-lab",
+              "grade": 7,
+              "gameId": "science-lab",
+              "sourceQuestionKey": "premium:2.1.0:science-lab:science-ecosystem-chain-01:1gv13n3",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.1.0:science-lab:science-ecosystem-chain-01:1gv13n3",
+              "roundCount": 6,
+              "legacyLeakCount": 0,
+              "globalQualityOk": false,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "science:8:science-reasoning",
+              "grade": 8,
+              "gameId": "science-reasoning",
+              "sourceQuestionKey": "phase5h:science:g8:photosynthesis-light-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:science:g8:photosynthesis-light-01",
+              "roundCount": 5,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "religion:5:religion-practice",
+              "grade": 5,
+              "gameId": "religion-practice",
+              "sourceQuestionKey": "phase5h:religion:g5:ihlas-meaning-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:religion:g5:ihlas-meaning-01",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "religion:6:religion-practice",
+              "grade": 6,
+              "gameId": "religion-practice",
+              "sourceQuestionKey": "phase5h:religion:g6:truthfulness-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:religion:g6:truthfulness-01",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "religion:7:religion-practice",
+              "grade": 7,
+              "gameId": "religion-practice",
+              "sourceQuestionKey": "phase5h:religion:g7:belief-behaviour-01",
+              "delivered": true,
+              "deliveredQuestionKey": "phase5h:religion:g7:belief-behaviour-01",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "religion:8:religion-practice",
+              "grade": 8,
+              "gameId": "religion-practice",
+              "sourceQuestionKey": "premium:2.4.0:religion-practice:religion-help-dignity-01:1sq4xqq",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.4.0:religion-practice:religion-help-dignity-01:1sq4xqq",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            },
+            {
+              "slotId": "mixed:8:lgs-foundation",
+              "grade": 8,
+              "gameId": "lgs-foundation",
+              "sourceQuestionKey": "premium:2.6.0:lgs-foundation:lgs-probability-bag-01:10u5ryk",
+              "delivered": true,
+              "deliveredQuestionKey": "premium:2.6.0:lgs-foundation:lgs-probability-bag-01:10u5ryk",
+              "roundCount": 10,
+              "legacyLeakCount": 0,
+              "globalQualityOk": true,
+              "formalCurriculumCertification": false,
+              "telemetryRequired": true
+            }
+          ]
+        },
+        "blocker": null
+      },
+      {
+        "id": "telemetry-quarantine",
+        "label": "Bağımsız bildirim, tekrar ve çok kolay soru otomatik karantinası",
+        "passed": true,
+        "evidence": {
+          "status": "PASS",
+          "policyVersion": "phase5i-v1",
+          "severeReporterThreshold": 3,
+          "duplicateReporterThreshold": 3,
+          "tooEasyMinimumAttempts": 40,
+          "tooEasyAccuracyThreshold": 0.85,
+          "shortResponseSeconds": {
+            "choice": 18,
+            "memory": 18,
+            "story": 45,
+            "open": 45,
+            "interactive": 25,
+            "default": 22
+          },
+          "perProfileImmediateBlock": true,
+          "globalFamilyBlockFromStudentThreshold": false,
+          "cloudAdminSweep": true
+        },
+        "blocker": null
+      },
+      {
+        "id": "technical-baseline",
+        "label": "Phase 5G teknik yayın tabanı",
+        "passed": true,
+        "evidence": {
+          "sourcePhase": "5I",
+          "technicalStatus": "PASS",
+          "liveBattery": {
+            "status": "PASS",
+            "gameCount": 23,
+            "totalSessions": 11500,
+            "underfill": 0,
+            "semanticRepeats": 0,
+            "failedGames": [],
+            "sourceFingerprint": "e16c81462736ed4d568fcaa68dec3a1d35358d046762a3e32b788aeffc45a72a"
+          },
+          "topLevelRegression": {
+            "status": "PASS",
+            "files": 106,
+            "passedFiles": 106,
+            "tests": 651,
+            "pass": 651,
+            "fail": 0
+          },
+          "assessmentV2Regression": {
+            "status": "PASS",
+            "tests": 285,
+            "pass": 285,
+            "fail": 0
+          },
+          "productionBuildStatus": "PASS",
+          "accessibility": {
+            "status": "PASS",
+            "checks": 23,
+            "seriousFailureCount": 0
+          },
+          "security": {
+            "status": "PASS",
+            "checks": 21,
+            "failureCount": 0
+          }
+        },
+        "blocker": null
+      }
+    ],
+    "blockers": [],
+    "metrics": {
+      "checkCount": 6,
+      "passed": 6,
+      "blocked": 0
+    }
+  },
+  "gateAudit": {
+    "ok": true,
+    "errors": [],
+    "metrics": {
+      "checkCount": 6,
+      "passed": 6,
+      "blocked": 0
+    }
+  },
+  "runtimeAudit": {
+    "schemaVersion": "1.0",
+    "phase": "5I",
+    "status": "PASS",
+    "slotCount": 30,
+    "deliveredCount": 30,
+    "representedGameCount": 23,
+    "representedGradeCourseSlotCount": 30,
+    "legacyLeakCount": 0,
+    "rows": [
+      {
+        "slotId": "turkish:5:word-mine",
+        "grade": 5,
+        "gameId": "word-mine",
+        "sourceQuestionKey": "premium-task:2.5.0:word-mine:word-mine-premium-05:scc0je",
+        "delivered": true,
+        "deliveredQuestionKey": "premium-task:2.5.0:word-mine:word-mine-premium-05:scc0je",
+        "roundCount": 1,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "turkish:6:word-ladder",
+        "grade": 6,
+        "gameId": "word-ladder",
+        "sourceQuestionKey": "premium-task:2.3.0:word-ladder:ladder-nar-kol-01:1ti8nxf",
+        "delivered": true,
+        "deliveredQuestionKey": "premium-task:2.3.0:word-ladder:ladder-nar-kol-01:1ti8nxf",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "turkish:7:forbidden-story",
+        "grade": 7,
+        "gameId": "forbidden-story",
+        "sourceQuestionKey": "premium-task:2.3.0:forbidden-story:story-forbidden-u-01:18jt3g8",
+        "delivered": true,
+        "deliveredQuestionKey": "premium-task:2.3.0:forbidden-story:story-forbidden-u-01:18jt3g8",
+        "roundCount": 1,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "turkish:8:meaning-hunt",
+        "grade": 8,
+        "gameId": "meaning-hunt",
+        "sourceQuestionKey": "premium:2.1.0:meaning-hunt:meaning-isik-tutmak-01:aq5911",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.1.0:meaning-hunt:meaning-isik-tutmak-01:aq5911",
+        "roundCount": 5,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "turkish:8:paragraph-detective",
+        "grade": 8,
+        "gameId": "paragraph-detective",
+        "sourceQuestionKey": "premium-pilot:paragraph-detective:tr-main-idea-01:122remb",
+        "delivered": true,
+        "deliveredQuestionKey": "premium-pilot:paragraph-detective:tr-main-idea-01:122remb",
+        "roundCount": 8,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "math:5:target-number",
+        "grade": 5,
+        "gameId": "target-number",
+        "sourceQuestionKey": "premium-task:2.5.0:target-number:target-number-premium-03:287srg",
+        "delivered": true,
+        "deliveredQuestionKey": "premium-task:2.5.0:target-number:target-number-premium-03:287srg",
+        "roundCount": 4,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "math:6:speed-math",
+        "grade": 6,
+        "gameId": "speed-math",
+        "sourceQuestionKey": "premium:2.6.0:speed-math:speed-percent-sale-01:y9orlf",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.6.0:speed-math:speed-percent-sale-01:y9orlf",
+        "roundCount": 8,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "math:7:pattern-lab",
+        "grade": 7,
+        "gameId": "pattern-lab",
+        "sourceQuestionKey": "premium:2.2.0:pattern-lab:pattern-matchsticks-01:jmob3w",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.2.0:pattern-lab:pattern-matchsticks-01:jmob3w",
+        "roundCount": 5,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "math:8:problem-hunter",
+        "grade": 8,
+        "gameId": "problem-hunter",
+        "sourceQuestionKey": "phase5h:math:g8:linear-tank-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:math:g8:linear-tank-01",
+        "roundCount": 5,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "math:5:geometry-lab",
+        "grade": 5,
+        "gameId": "geometry-lab",
+        "sourceQuestionKey": "premium:3.0.0:geometry-lab:g35-geometry-composite-area-01:8grgur",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:3.0.0:geometry-lab:g35-geometry-composite-area-01:8grgur",
+        "roundCount": 6,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "math:6:error-detective",
+        "grade": 6,
+        "gameId": "error-detective",
+        "sourceQuestionKey": "premium-pilot:error-detective:math-equation-error-01:nl452y",
+        "delivered": true,
+        "deliveredQuestionKey": "premium-pilot:error-detective:math-equation-error-01:nl452y",
+        "roundCount": 5,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "math:7:olympiad-ladder",
+        "grade": 7,
+        "gameId": "olympiad-ladder",
+        "sourceQuestionKey": "premium:2.6.0:olympiad-ladder:olympiad-pigeonhole-remainder-01:144voa7",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.6.0:olympiad-ladder:olympiad-pigeonhole-remainder-01:144voa7",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "math:8:logic-station",
+        "grade": 8,
+        "gameId": "logic-station",
+        "sourceQuestionKey": "premium:2.0.0:logic-station:logic-schedule-possible-01:j2453h",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.0.0:logic-station:logic-schedule-possible-01:j2453h",
+        "roundCount": 8,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "english:5:english-vocabulary",
+        "grade": 5,
+        "gameId": "english-vocabulary",
+        "sourceQuestionKey": "premium:3.1.0:english-vocabulary:g35-en-vocab-protect-01:18is450",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:3.1.0:english-vocabulary:g35-en-vocab-protect-01:18is450",
+        "roundCount": 20,
+        "legacyLeakCount": 0,
+        "globalQualityOk": false,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "english:6:english-cloze",
+        "grade": 6,
+        "gameId": "english-cloze",
+        "sourceQuestionKey": "premium:2.0.0:english-cloze:eng-cloze-cause-result-01:19phl4r",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.0.0:english-cloze:eng-cloze-cause-result-01:19phl4r",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "english:7:english-sentence-builder",
+        "grade": 7,
+        "gameId": "english-sentence-builder",
+        "sourceQuestionKey": "premium-task:2.3.0:english-sentence-builder:order-if-finish-01:11i74e",
+        "delivered": true,
+        "deliveredQuestionKey": "premium-task:2.3.0:english-sentence-builder:order-if-finish-01:11i74e",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "english:8:english-vocabulary",
+        "grade": 8,
+        "gameId": "english-vocabulary",
+        "sourceQuestionKey": "premium:2.2.0:english-vocabulary:english-vocab-context-12:1jd1pbt",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.2.0:english-vocabulary:english-vocab-context-12:1jd1pbt",
+        "roundCount": 20,
+        "legacyLeakCount": 0,
+        "globalQualityOk": false,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "social:5:social-time-travel",
+        "grade": 5,
+        "gameId": "social-time-travel",
+        "sourceQuestionKey": "phase5h:social:g5:first-settlements-evidence-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:social:g5:first-settlements-evidence-01",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "social:6:social-map-skills",
+        "grade": 6,
+        "gameId": "social-map-skills",
+        "sourceQuestionKey": "phase5h:social:g6:relative-location-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:social:g6:relative-location-01",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": false,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "social:7:social-citizenship",
+        "grade": 7,
+        "gameId": "social-citizenship",
+        "sourceQuestionKey": "phase5h:social:g7:accessibility-equality-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:social:g7:accessibility-equality-01",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": false,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "social:8:social-time-travel",
+        "grade": 8,
+        "gameId": "social-time-travel",
+        "sourceQuestionKey": "phase5h:social:g8:national-struggle-source-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:social:g8:national-struggle-source-01",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "science:5:science-lab",
+        "grade": 5,
+        "gameId": "science-lab",
+        "sourceQuestionKey": "phase5h:science:g5:conductor-evidence-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:science:g5:conductor-evidence-01",
+        "roundCount": 6,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "science:6:science-reasoning",
+        "grade": 6,
+        "gameId": "science-reasoning",
+        "sourceQuestionKey": "phase5h:science:g6:bulb-brightness-variable-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:science:g6:bulb-brightness-variable-01",
+        "roundCount": 5,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "science:7:science-lab",
+        "grade": 7,
+        "gameId": "science-lab",
+        "sourceQuestionKey": "premium:2.1.0:science-lab:science-ecosystem-chain-01:1gv13n3",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.1.0:science-lab:science-ecosystem-chain-01:1gv13n3",
+        "roundCount": 6,
+        "legacyLeakCount": 0,
+        "globalQualityOk": false,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "science:8:science-reasoning",
+        "grade": 8,
+        "gameId": "science-reasoning",
+        "sourceQuestionKey": "phase5h:science:g8:photosynthesis-light-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:science:g8:photosynthesis-light-01",
+        "roundCount": 5,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "religion:5:religion-practice",
+        "grade": 5,
+        "gameId": "religion-practice",
+        "sourceQuestionKey": "phase5h:religion:g5:ihlas-meaning-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:religion:g5:ihlas-meaning-01",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "religion:6:religion-practice",
+        "grade": 6,
+        "gameId": "religion-practice",
+        "sourceQuestionKey": "phase5h:religion:g6:truthfulness-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:religion:g6:truthfulness-01",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "religion:7:religion-practice",
+        "grade": 7,
+        "gameId": "religion-practice",
+        "sourceQuestionKey": "phase5h:religion:g7:belief-behaviour-01",
+        "delivered": true,
+        "deliveredQuestionKey": "phase5h:religion:g7:belief-behaviour-01",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "religion:8:religion-practice",
+        "grade": 8,
+        "gameId": "religion-practice",
+        "sourceQuestionKey": "premium:2.4.0:religion-practice:religion-help-dignity-01:1sq4xqq",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.4.0:religion-practice:religion-help-dignity-01:1sq4xqq",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      },
+      {
+        "slotId": "mixed:8:lgs-foundation",
+        "grade": 8,
+        "gameId": "lgs-foundation",
+        "sourceQuestionKey": "premium:2.6.0:lgs-foundation:lgs-probability-bag-01:10u5ryk",
+        "delivered": true,
+        "deliveredQuestionKey": "premium:2.6.0:lgs-foundation:lgs-probability-bag-01:10u5ryk",
+        "roundCount": 10,
+        "legacyLeakCount": 0,
+        "globalQualityOk": true,
+        "formalCurriculumCertification": false,
+        "telemetryRequired": true
+      }
+    ]
+  },
+  "technicalEvidence": {
+    "sourcePhase": "5I",
+    "technicalStatus": "PASS",
+    "liveBattery": {
+      "status": "PASS",
+      "gameCount": 23,
+      "totalSessions": 11500,
+      "underfill": 0,
+      "semanticRepeats": 0,
+      "failedGames": [],
+      "sourceFingerprint": "e16c81462736ed4d568fcaa68dec3a1d35358d046762a3e32b788aeffc45a72a"
+    },
+    "topLevelRegression": {
+      "status": "PASS",
+      "files": 106,
+      "passedFiles": 106,
+      "tests": 651,
+      "pass": 651,
+      "fail": 0
+    },
+    "assessmentV2Regression": {
+      "status": "PASS",
+      "tests": 285,
+      "pass": 285,
+      "fail": 0
+    },
+    "productionBuildStatus": "PASS",
+    "accessibility": {
+      "status": "PASS",
+      "checks": 23,
+      "seriousFailureCount": 0
+    },
+    "security": {
+      "status": "PASS",
+      "checks": 21,
+      "failureCount": 0
+    }
+  },
+  "telemetryEvidence": {
+    "status": "PASS",
+    "policyVersion": "phase5i-v1",
+    "severeReporterThreshold": 3,
+    "duplicateReporterThreshold": 3,
+    "tooEasyMinimumAttempts": 40,
+    "tooEasyAccuracyThreshold": 0.85,
+    "shortResponseSeconds": {
+      "choice": 18,
+      "memory": 18,
+      "story": 45,
+      "open": 45,
+      "interactive": 25,
+      "default": 22
+    },
+    "perProfileImmediateBlock": true,
+    "globalFamilyBlockFromStudentThreshold": false,
+    "cloudAdminSweep": true
+  },
+  "productOwnerReviewEvidence": {
+    "schemaVersion": "1.0",
+    "phase": "5I",
+    "reviewType": "PRODUCT_OWNER_VISUAL_REVIEW",
+    "reviewDate": "2026-08-04",
+    "formalCurriculumReview": false,
+    "formalContentExpertApproval": false,
+    "positiveOverallAssessmentRecorded": true,
+    "namedConcerns": [
+      {
+        "slotId": "turkish:7:forbidden-story",
+        "concern": "Yasak harf kuralının yalnız öğrenci cevap alanına ait olduğu ilk okumada anlaşılmıyordu.",
+        "resolution": "Kural kapsamı açıklaştırıldı ve canlı cümle, farklı kelime, yasak harf sayaçları eklendi.",
+        "status": "RESOLVED"
+      },
+      {
+        "slotId": "math:8:logic-station",
+        "concern": "Üç günlük ve iki koşullu program sorusu 8. sınıf için çok kolaydı.",
+        "resolution": "Beş günlük, beş atölyeli, dört kısıtlı ve zorunlu sonuç gerektiren solver-doğrulamalı sürümle değiştirildi.",
+        "status": "RESOLVED"
+      }
+    ],
+    "statement": "Ürün sahibi yeni havuzun eski canlı havuzdan belirgin biçimde daha iyi olduğunu bildirmiş; iki somut sorunu işaretlemiş ve kontrollü canlı beta yaklaşımını onaylamıştır."
+  },
+  "corrections": [
+    {
+      "slotId": "turkish:7:forbidden-story",
+      "status": "RESOLVED",
+      "changes": [
+        "Cevap alanı kapsamı açıklaştırıldı.",
+        "Cümle sayacı eklendi.",
+        "Farklı kelime sayacı eklendi.",
+        "Yasak harf sayacı eklendi."
+      ]
+    },
+    {
+      "slotId": "math:8:logic-station",
+      "status": "RESOLVED",
+      "changes": [
+        "3 gün/3 atölye sorusu kaldırıldı.",
+        "5 gün/5 atölye ve 4 kısıtlı zorunluluk sorusu eklendi.",
+        "Tüm geçerli programlar bağımsız permütasyon testiyle doğrulandı."
+      ]
+    },
+    {
+      "slotId": "religion:5-7:religion-practice",
+      "status": "RESOLVED",
+      "changes": [
+        "Oyun katalog erişimi 8–12 yerine 5–12 sınıfa düzeltildi."
+      ]
+    }
+  ],
+  "releaseBoundaries": {
+    "controlledLiveBetaAllowed": true,
+    "formalCurriculumCertification": false,
+    "formalExpertReviewComplete": false,
+    "realStudentPilotComplete": false,
+    "fullPublicProductionReleaseAllowed": false,
+    "fullProductReady": false
+  }
+}

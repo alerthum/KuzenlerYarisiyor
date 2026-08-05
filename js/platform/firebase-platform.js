@@ -9,6 +9,8 @@ import {
 } from 'https://www.gstatic.com/firebasejs/12.16.0/firebase-firestore.js';
 import { socialSnapshot } from '../social/league-engine.js';
 import { buildQuarantineRecords, shouldImmediatelyQuarantine } from '../quality/quarantine-v9.js';
+import { analyzeQuestionHealth } from '../quality/question-health-monitor.js';
+import { ASSESSMENT_V2_LAUNCH_PILOT_PREMIUM_BANK } from '../assessment-v2/launch-pilot-premium-bank.js';
 import { buildStudentBrainProfile } from '../engines/student-brain-profile-v10.js';
 import { buildCognitiveNarrative, buildCognitiveActionPlan, buildClassCognitiveSummary, cognitivePatternLabel } from '../engines/cognitive-report-v10.js';
 import { buildV11MisconceptionDevelopmentReport, buildV11MisconceptionNarrative } from '../engines/v11-misconception-report.js';
@@ -56,6 +58,7 @@ let strictAuditLiveFetchError = null;
 let strictAuditLiveTimer = null;
 let commandCenterExportBusy = false;
 let commandCenterExportMenuOpen = false;
+let lastQuestionHealthSweepAt = 0;
 
 const esc = (value) => String(value ?? '').replace(/[&<>'"]/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
 const fmtDate = (value) => value?.toDate ? value.toDate().toLocaleString('tr-TR') : value ? new Date(value).toLocaleString('tr-TR') : '—';
@@ -284,7 +287,7 @@ function defaultProfile(learnerId,name,grade,age) {
 }
 
 function defaultCloudState(learnerId,name,grade,age) {
-  return { version:5, activeProfileId:learnerId, profiles:[defaultProfile(learnerId,name,grade,age)], settings:{sound:true,timer:true,dailyMinutes:25,parentPin:'1453'}, daily:{}, badges:[], seenQuestions:{}, blockedQuestionKeys:{}, updatedAt:serverTimestamp() };
+  return { version:9, activeProfileId:learnerId, profiles:[defaultProfile(learnerId,name,grade,age)], settings:{sound:true,timer:true,dailyMinutes:25,parentPin:'1453'}, daily:{}, badges:[], seenQuestions:{}, questionReports:[], questionHealth:{}, blockedQuestionKeys:{}, blockedQuestionFamilies:{}, updatedAt:serverTimestamp() };
 }
 
 function emptyMetrics(learnerId,name,grade,classroomIds=[]) {
@@ -1014,6 +1017,51 @@ function renderPlatformFailure(error) {
   root.innerHTML=authLayout(`<section class="auth-card"><span class="badge orange">Bağlantı veya yetki hatası</span><h1>Veriler yüklenemedi</h1><p>${esc(firebaseErrorMessage(error))}</p><p class="muted">Bu ekran artık yüklemede takılı kalmaz. Firebase hesabı, accounts belgesi ve Firestore kuralları kontrol edilmelidir.</p><button class="primary-button full-width" data-platform-action="retry-route">Yeniden dene</button><button class="text-button full-width" data-platform-action="logout">Çıkış yap</button></section>`);
 }
 
+
+async function applyAdminQuestionHealthSweep({ force = false } = {}) {
+  if (account?.role !== 'admin') return { skipped: true, reason: 'admin-only' };
+  const now = Date.now();
+  if (!force && now - lastQuestionHealthSweepAt < 120_000) return { skipped: true, reason: 'throttled' };
+  lastQuestionHealthSweepAt = now;
+  const pilotKeys = new Set(ASSESSMENT_V2_LAUNCH_PILOT_PREMIUM_BANK.rows.map((row) => row.round.questionKey));
+  const [reportSnap, attemptSnap] = await Promise.all([
+    getDocs(query(collection(db,'questionReports'),limit(2000))),
+    getDocs(query(collection(db,'attempts'),limit(5000)))
+  ]);
+  const reports = reportSnap.docs.map((row) => ({ id: row.id, ...row.data() })).filter((row) => pilotKeys.has(row.questionKey));
+  const attempts = attemptSnap.docs.map((row) => ({ id: row.id, ...row.data() })).filter((row) => pilotKeys.has(row.questionKey));
+  const healthBatch = writeBatch(db);
+  let quarantined = 0;
+  for (const questionKey of pilotKeys) {
+    const sample = attempts.find((row) => row.questionKey === questionKey) || reports.find((row) => row.questionKey === questionKey) || {};
+    const result = analyzeQuestionHealth({
+      questionKey,
+      reports,
+      attempts,
+      responseKind: sample.responseKind || sample.kind || 'default'
+    });
+    healthBatch.set(doc(db,'questionHealth',questionKey), {
+      ...result,
+      controlledLaunchVersion: 'PHASE5I_PILOT_1',
+      updatedAt: serverTimestamp()
+    }, { merge: true });
+    if (result.quarantine) {
+      quarantined += 1;
+      healthBatch.set(doc(db,'blockedQuestions',questionKey), {
+        questionKey,
+        status: 'temporary-blocked',
+        reason: result.quarantineReason,
+        source: 'phase5i-question-health-sweep',
+        policyVersion: result.policyVersion,
+        blockedBy: currentUser.uid,
+        blockedAt: serverTimestamp()
+      }, { merge: true });
+    }
+  }
+  await healthBatch.commit();
+  return { skipped: false, questionCount: pilotKeys.size, reportCount: reports.length, attemptCount: attempts.length, quarantined };
+}
+
 async function renderAdultPortal() {
   root.innerHTML = '<main class="platform-shell"><div class="portal-loading">Veriler hazırlanıyor…</div></main>';
   const [learners,classrooms,adminAccounts,schools]=await Promise.all([accessibleLearners(),classroomsForTeacher(),allAccountsForAdmin(),allSchoolsForAdmin()]);
@@ -1023,6 +1071,7 @@ async function renderAdultPortal() {
   const centerLabel=account.role==='admin'?(adminView==='teacher'?'Öğretmen görünümü':adminView==='parent'?'Veli görünümü':'Admin yönetim merkezi'):account.role==='teacher'?'Öğretmen merkezi':'Veli merkezi';
   const adminReports=account.role==='admin'?(await getDocs(query(collection(db,'questionReports'),limit(1000)))).docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>String(b.createdAt||'').localeCompare(String(a.createdAt||''))):[];
   const isRealAdmin=account.role==='admin'&&adminView==='admin';
+  if (isRealAdmin) applyAdminQuestionHealthSweep().catch((error)=>console.warn('Soru sağlık taraması:',error));
   let questionEngineAnalysis=null;
   let strictAuditLive=null;
   let assessmentV2Production=null;
@@ -1155,7 +1204,7 @@ async function loadLearnerState(learnerId) {
   const globalBlockedFamilies=Object.fromEntries(blockedFamilySnap.docs.filter(x=>['blocked','temporary-blocked'].includes(x.data().status)).map(x=>[x.id,true]));
   const mergedBlocked={...(base.blockedQuestionKeys||{}),__global:{...(base.blockedQuestionKeys?.__global||{}),...globalBlocked},[learnerId]:{...(base.blockedQuestionKeys?.[learnerId]||{})}};
   const mergedBlockedFamilies={...(base.blockedQuestionFamilies||{}),__global:{...(base.blockedQuestionFamilies?.__global||{}),...globalBlockedFamilies}};
-  return {...base,blockedQuestionKeys:mergedBlocked,version:9,activeProfileId:learnerId,profiles:[{...defaultProfile(learnerId,learner.name,learner.grade,learner.age),...(base.profiles?.[0]||{}),id:learnerId,name:learner.name,grade:learner.grade,age:learner.age,examPlans:effectiveExamPlans(learner),examPlansCustomized:Boolean(learner.examPlansCustomized),examField:learner.examField||''}],attempts,questionReports:reports,blockedQuestionFamilies:mergedBlockedFamilies};
+  return {...base,blockedQuestionKeys:mergedBlocked,questionHealth:base.questionHealth||{},version:9,activeProfileId:learnerId,profiles:[{...defaultProfile(learnerId,learner.name,learner.grade,learner.age),...(base.profiles?.[0]||{}),id:learnerId,name:learner.name,grade:learner.grade,age:learner.age,examPlans:effectiveExamPlans(learner),examPlansCustomized:Boolean(learner.examPlansCustomized),examField:learner.examField||''}],attempts,questionReports:reports,blockedQuestionFamilies:mergedBlockedFamilies};
 }
 
 function computeMetrics(state,learner) {
@@ -1177,7 +1226,7 @@ async function syncStateNow(learnerId,state) {
   const learnerSnap=await getDoc(doc(db,'learners',learnerId));
   if (!learnerSnap.exists()) return;
   const learner={id:learnerSnap.id,...learnerSnap.data()};
-  const durable={version:8,profiles:state.profiles,settings:state.settings,daily:state.daily,badges:state.badges,activeProfileId:learnerId,seenQuestions:state.seenQuestions,blockedQuestionKeys:state.blockedQuestionKeys||{},blockedQuestionFamilies:state.blockedQuestionFamilies||{},updatedAt:serverTimestamp()};
+  const durable={version:9,profiles:state.profiles,settings:state.settings,daily:state.daily,badges:state.badges,activeProfileId:learnerId,seenQuestions:state.seenQuestions,questionHealth:state.questionHealth||{},blockedQuestionKeys:state.blockedQuestionKeys||{},blockedQuestionFamilies:state.blockedQuestionFamilies||{},updatedAt:serverTimestamp()};
   const batch=writeBatch(db);
   batch.set(doc(db,'learnerStates',learnerId),durable,{merge:true});
   for (const attempt of (state.attempts||[])) {
