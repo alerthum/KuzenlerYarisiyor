@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 
 const app = await readFile(new URL('../js/app.js', import.meta.url), 'utf8');
 const platform = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
-const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
+const css = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
 
 test('mobil alt menü beş öğeyi tek satırda tutar', () => {
   assert.match(css, /grid-template-columns:repeat\(5,minmax\(0,1fr\)\)/);

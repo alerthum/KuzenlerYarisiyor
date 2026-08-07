@@ -30,7 +30,7 @@
     "tests/premium-pilot-quality.test.mjs",
     "tests/quality-pilot-release-mode.test.mjs",
     "quality-reports/premium-pilot-release.json",
-    "PREMIUM_PILOT_RELEASE.md",
+    "md/arsiv/PREMIUM_PILOT_RELEASE.md",
     "KUZENLER_AYARLARI.env",
     "package.json"
   ],

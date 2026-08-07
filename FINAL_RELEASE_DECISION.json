@@ -1,27 +1,84 @@
 {
-  "schemaVersion": "1.0",
-  "decidedAt": "2026-08-02T21:08:05.587Z",
-  "decision": "PASS",
-  "autoReturnToStage14": false,
-  "overallScorePercent": 100,
-  "overallScoreDisplay": "100",
-  "finalEvidenceAdequacy": "PASS",
-  "criticalFailures": [],
-  "evidenceGaps": [],
-  "evidence": {
-    "index": "FINAL_EVIDENCE_INDEX.json",
-    "actual": {
-      "minSessionsPerGame": 500,
-      "gamesMeetingSessionTarget": 23,
-      "solverSamples": 50000,
-      "optionSamples": 10000,
-      "mutationScorePercent": 96.2,
-      "fullE2E": true,
-      "childMindStructuredBands": true,
-      "underfillCount": 0,
-      "sessionSemanticRepeatCount": 0,
-      "e2eSmokeOnly": 0
-    }
+  "schemaVersion": "6.0",
+  "decidedAt": "2026-08-06T15:47:22.383901Z",
+  "decision": "PARTIAL_SAFE_PILOT",
+  "wholeProductReady": false,
+  "productReady": false,
+  "publicationAllowed": true,
+  "publicationMode": "EXPLICIT_TRUSTED_CELL_WHITELIST",
+  "fallbackToLegacyAllowed": false,
+  "finalEvidenceAdequacy": "LIMITED_SCOPE_PASS",
+  "currentCheckpoint": "MATH_TURKISH_SCIENCE_ENGINES_4_8",
+  "criticalFailures": [
+    "WHOLE_PRODUCT_NOT_READY"
+  ],
+  "evidenceGaps": [
+    "4. ve 8. sınıf İngilizce ve sosyal alan motorlarının tamamı henüz bağlam/kanıt motoru kapsamına alınmadı.",
+    "Whitelist dışındaki sınıf-oyun hücreleri son öğrenci yüzeyi incelemesinden geçmedi.",
+    "Tarayıcı E2E doğrulaması çalışma ortamındaki yönetici politikası nedeniyle çalıştırılamadı."
+  ],
+  "mathEngine": {
+    "status": "PASS",
+    "grade4FamilyCount": 15,
+    "grade8FamilyCount": 15,
+    "familyCount": 30,
+    "skeletonCount": 90,
+    "solverVerifiedOutputCount": 204,
+    "safeCellCount": 6,
+    "supportedGames": [
+      "problem-hunter",
+      "error-detective",
+      "geometry-lab"
+    ],
+    "adjacentFamilyRepeatCount": 0,
+    "adjacentExperienceRepeatCount": 0,
+    "legacyFallbackDetected": false
   },
-  "note": "Gerçek final kanıt eşikleri karşılandı."
+  "trustedScope": {
+    "safeGameCount": 12,
+    "safeCellCount": 29,
+    "approvedQuestionAssignments": 496,
+    "uniqueApprovedQuestionCount": 456,
+    "finalSurfaceReviewStatus": "PASS",
+    "finalSurfaceReviewedQuestionCount": 496,
+    "finalSurfaceFailedQuestionCount": 0,
+    "legacyFallbackDetected": false,
+    "source": "public/trusted-live-release.json"
+  },
+  "note": "Ürünün tamamı hazır değildir. 4. ve 8. sınıfta Matematik 204, Türkçe 72 ve Fen 75 doğrulanmış motor çıktısı olarak canlıya güvenli biçimde bağlanmıştır. Yalnız trustedScope hücreleri yayınlanabilir.",
+  "turkishEngine": {
+    "status": "PASS",
+    "grade4FamilyCount": 12,
+    "grade8FamilyCount": 12,
+    "familyCount": 24,
+    "skeletonCount": 72,
+    "evidenceVerifiedOutputCount": 72,
+    "safeCellCount": 4,
+    "supportedGames": [
+      "paragraph-detective",
+      "meaning-hunt"
+    ],
+    "randomSentenceCompositionCount": 0,
+    "adjacentSourceRepeatCount": 0,
+    "adjacentTaskRepeatCount": 0,
+    "legacyFallbackDetected": false
+  },
+  "scienceEngine": {
+    "status": "PASS",
+    "grade4FamilyCount": 12,
+    "grade8FamilyCount": 13,
+    "familyCount": 25,
+    "skeletonCount": 75,
+    "evidenceVerifiedOutputCount": 75,
+    "safeCellCount": 4,
+    "supportedGames": [
+      "science-reasoning",
+      "science-lab"
+    ],
+    "experimentDesignCount": 25,
+    "reasoningCount": 50,
+    "randomSentenceCompositionCount": 0,
+    "adjacentFamilyRepeatCount": 0,
+    "legacyFallbackDetected": false
+  }
 }

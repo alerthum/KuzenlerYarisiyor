@@ -25,7 +25,7 @@ function seededRandomLike(seedValue) {
 }
 
 // Üretim kodunun kullandığı `evaluateExpression`den TAMAMEN bağımsız, yerel
-// bir ikinci hesaplama yolu (bkz. DIFF_ANALYSIS.md §6).
+// bir ikinci hesaplama yolu (bkz. md/arsiv/DIFF_ANALYSIS.md §6).
 function independentEval(expr) {
   const jsExpr = expr.replaceAll('×', '*').replaceAll('÷', '/');
   // eslint-disable-next-line no-new-func

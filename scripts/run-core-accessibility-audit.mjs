@@ -6,7 +6,7 @@ import { STAGE09_ACTIVE_GAMES } from '../js/quality/session-composer-audit.js';
 const read = (file) => fs.readFileSync(path.resolve(file), 'utf8');
 const index = read('index.html');
 const app = read('js/app.js');
-const styles = read('styles.css');
+const styles = read('css/styles.css');
 const bootstrap = read('js/bootstrap.js');
 const output = path.resolve('quality-reports/assessment-v2-phase5g-accessibility-evidence.json');
 

@@ -7,7 +7,7 @@ import { hashString, seededRandom } from '../utils.js';
 // mantık içermez; her oyun kendi aile tanımlarını (bkz. js/content/families/*)
 // bu motora verir.
 //
-// Hedefler (00_AUTONOMOUS_MASTER.md / docs/stages/04_FAMILY_SKELETON_ARCHITECTURE.md):
+// Hedefler (md/arsiv/00_AUTONOMOUS_MASTER.md / docs/stages/04_FAMILY_SKELETON_ARCHITECTURE.md):
 //   - Kritik kart başına en az FAMILY_TARGET gerçek aile
 //   - Her aile en az SKELETON_TARGET_PER_FAMILY gerçekten farklı iskelet
 //   - Her iskelet en az PATH_TARGET_PER_SKELETON farklı düşünme yolu

@@ -9,7 +9,8 @@ export const REBUILD_URL = '/api/rebuild-command-center-export';
 export const REBUILD_SHARE_URL = '/api/rebuild-command-center-share';
 
 const BROWSER_SOURCES = [
-  { path: 'public/strict-audit-live.json', url: '/public/strict-audit-live.json', required: true },
+  { path: 'public/trusted-live-release.json', url: '/public/trusted-live-release.json', required: true },
+  { path: 'public/strict-audit-live.json', url: '/public/strict-audit-live.json', required: false },
   { path: 'public/question-engine-analysis.json', url: '/public/question-engine-analysis.json', required: true },
   { path: 'PRODUCT_ACCEPTANCE_DECISION.json', url: '/PRODUCT_ACCEPTANCE_DECISION.json', required: true },
   { path: 'FINAL_EVIDENCE_INDEX.json', url: '/FINAL_EVIDENCE_INDEX.json', required: true },
@@ -17,7 +18,7 @@ const BROWSER_SOURCES = [
   { path: 'PROJECT_STATE.json', url: '/PROJECT_STATE.json', required: true },
   { path: 'QUALITY_SCORE.json', url: '/QUALITY_SCORE.json', required: true },
   { path: 'BLOCKERS.json', url: '/BLOCKERS.json', required: true },
-  { path: 'CONTEXT_SNAPSHOT.md', url: '/CONTEXT_SNAPSHOT.md', required: true },
+  { path: 'md/arsiv/CONTEXT_SNAPSHOT.md', url: '/md/arsiv/CONTEXT_SNAPSHOT.md', required: true },
   { path: 'quality-reports/strict-audit-progress.json', url: '/quality-reports/strict-audit-progress.json', required: false },
   { path: 'quality-reports/strict-audit-checkpoint.json', url: '/quality-reports/strict-audit-checkpoint.json', required: false },
   { path: 'quality-reports/product-acceptance/annual-student.json', url: '/quality-reports/product-acceptance/annual-student.json', required: false },
@@ -84,34 +85,68 @@ export function downloadJsonFile(text, filename) {
 }
 
 export function buildLiveSummaryFromExport(doc) {
-  const live = doc?.currentLiveOperation || {};
-  const openBlockers = Array.isArray(doc?.blockers)
-    ? doc.blockers
-    : (doc?.blockers?.blockers || []);
+  const trusted = doc?.trustedLiveRelease || {};
+  const truth = doc?.currentTruth || {};
+  const live = doc?.liveProgress || doc?.currentLiveOperation || {};
+  const work = doc?.currentWork || trusted?.currentWork || {};
+  const releaseSummary = trusted?.summary || {};
+  const blockerRows = Array.isArray(doc?.currentBlockers)
+    ? doc.currentBlockers
+    : Array.isArray(doc?.blockers)
+      ? doc.blockers
+      : (doc?.blockers?.blockers || []);
+
+  const status = truth.status || trusted.releaseStatus || live.status || 'IDLE';
+  const safeGameCount = truth.safeGameCount ?? releaseSummary.safeGameCount ?? 0;
+  const safeCellCount = truth.safeCellCount ?? releaseSummary.safeCellCount ?? 0;
+  const approvedQuestionAssignments = truth.approvedQuestionAssignments
+    ?? releaseSummary.approvedQuestionAssignments
+    ?? releaseSummary.approvedQuestionAssignmentCount
+    ?? 0;
+  const uniqueApprovedQuestionCount = truth.uniqueApprovedQuestionCount
+    ?? releaseSummary.uniqueApprovedQuestionCount
+    ?? 0;
+
   return {
-    schemaVersion: '1.0',
-    kind: 'live-operation-summary',
+    schemaVersion: '2.0',
+    kind: 'trusted-live-status-summary',
     exportedAt: new Date().toISOString(),
-    status: live.status || null,
+    projectName: doc?.exportMeta?.projectName || 'Zihin Arenası',
+    appVersion: doc?.exportMeta?.appVersion || null,
+    dataFreshness: doc?.exportMeta?.dataFreshness || null,
+    status,
+    wholeProductReady: truth.wholeProductReady === true || trusted.wholeProductReady === true,
+    productReady: truth.productReady === true || trusted.productReady === true,
+    partialSafePilotAllowed: truth.partialSafePilotAllowed === true || status === 'PARTIAL_SAFE_PILOT',
+    publicationMode: truth.publicationMode || trusted.publicationMode || null,
+    fallbackToLegacyAllowed: truth.fallbackToLegacyAllowed === true || trusted.fallbackToLegacyAllowed === true,
+    safeGameCount,
+    totalGameCount: truth.totalGameCount ?? releaseSummary.totalGameCount ?? 23,
+    safeCellCount,
+    approvedQuestionAssignments,
+    uniqueApprovedQuestionCount,
+    finalSurfaceReview: truth.finalSurfaceReview || {
+      status: releaseSummary.finalSurfaceReviewStatus || null,
+      reviewed: releaseSummary.finalSurfaceReviewedQuestionCount ?? null,
+      failed: releaseSummary.finalSurfaceFailedQuestionCount ?? null,
+      legacyFallbackDetected: releaseSummary.legacyFallbackDetected ?? null
+    },
+    currentTask: work.currentTask || work.title || live.currentTask || null,
+    nextAction: work.nextAction || live.nextAction || null,
     phase: live.phase || null,
     phaseLabel: live.phaseLabel || null,
-    elapsedSeconds: live.elapsedSeconds ?? null,
-    startedAt: live.startedAt || null,
-    lastHeartbeatAt: live.lastHeartbeatAt || null,
+    progressPercent: live.progressPercent ?? null,
     lastActivityMessage: live.lastActivityMessage || null,
-    currentGameId: live.currentGameId || null,
-    currentGradeBand: live.currentGradeBand || null,
-    currentSessionIndex: live.currentSessionIndex ?? null,
+    lastRealTestResult: live.lastRealTestResult || null,
     checkpoint: live.checkpoint || doc?.auditSummary?.checkpoint || doc?.strictAuditProgress?.checkpoint || null,
-    blockers: {
-      openCriticalCount: doc?.blockerCounts?.openCriticalCount ?? doc?.blockers?.openCriticalCount ?? null,
-      openHighCount: doc?.blockerCounts?.openHighCount ?? doc?.blockers?.openHighCount ?? null,
-      openTitles: openBlockers
-        .filter((b) => b.status === 'OPEN' || !b.status)
-        .map((b) => ({ id: b.id, severity: b.severity, title: b.title }))
-    },
+    blockers: blockerRows.map((b) => ({
+      id: b.id || b.scope || null,
+      severity: b.severity || b.status || null,
+      title: b.title || null,
+      reason: b.reason || null
+    })),
     recentEvents: Array.isArray(live.recentEvents) ? live.recentEvents.slice(-20) : [],
-    note: 'Bu özet canlı çalışma içindir; eski final kanıtlarla karıştırılmaz.'
+    note: 'Bu özet güncel güvenli yayın gerçeğini ve devam eden işi birlikte taşır; eski Stage PASS sayaçları ürünün tamamı için kullanılmaz.'
   };
 }
 
@@ -228,6 +263,7 @@ async function assembleFromBrowserSources() {
     sourceHealth.push(health);
   }
   const analysis = loaded['public/question-engine-analysis.json'] || {};
+  const trusted = loaded['public/trusted-live-release.json'] || {};
   const live = loaded['public/strict-audit-live.json'] || {};
   const missingRequired = sourceHealth.filter((h) => h.required && h.status !== 'OK');
   const data = {
@@ -238,7 +274,7 @@ async function assembleFromBrowserSources() {
       screen: 'Soru Motoru Komuta Merkezi',
       appVersion: loaded['package.json']?.version || 'unknown',
       runId: live.runId || null,
-      dataFreshness: missingRequired.length ? 'PARTIAL' : 'LIVE',
+      dataFreshness: missingRequired.length ? 'PARTIAL' : (trusted.generatedAt ? 'LIVE' : 'STALE'),
       sourceCount: sourceHealth.length,
       exportSizeBytes: 0,
       sectionCount: 28,
@@ -246,6 +282,7 @@ async function assembleFromBrowserSources() {
       missingRequiredSources: missingRequired.map((h) => h.source),
       assembledInBrowser: true
     },
+    trustedLiveRelease: trusted,
     currentLiveOperation: live,
     strictAuditProgress: loaded['quality-reports/strict-audit-progress.json'] || {},
     questionEngineAnalysis: analysis,
@@ -292,13 +329,16 @@ async function assembleFromBrowserSources() {
       lastAutomatedAction: analysis.lastAutomatedAction || null
     },
     quotaAndTestCost: analysis.testCostAndQuota || {},
-    contextSnapshot: loaded['CONTEXT_SNAPSHOT.md'] || '',
+    contextSnapshot: loaded['md/arsiv/CONTEXT_SNAPSHOT.md'] || '',
     recentEvents: Array.isArray(live.recentEvents) ? live.recentEvents : [],
     dashboardComputedValues: {
       deferLegacyEvidence: ['RUNNING', 'STARTING', 'STALLED'].includes(live.status),
-      productReadyEffective: loaded['PRODUCT_ACCEPTANCE_DECISION.json']?.productReady === true
-        && loaded['PRODUCT_ACCEPTANCE_DECISION.json']?.decision === 'PASS',
-      liveStatus: live.status || 'IDLE'
+      productReadyEffective: trusted.wholeProductReady === true,
+      partialSafePilot: trusted.releaseStatus === 'PARTIAL_SAFE_PILOT',
+      safeGameCount: trusted.summary?.safeGameCount ?? 0,
+      safeCellCount: trusted.summary?.safeCellCount ?? 0,
+      approvedAssignments: trusted.summary?.approvedQuestionAssignmentCount ?? trusted.summary?.approvedQuestionAssignments ?? 0,
+      liveStatus: trusted.releaseStatus || live.status || 'IDLE'
     },
     sourceHealth,
     rawSources

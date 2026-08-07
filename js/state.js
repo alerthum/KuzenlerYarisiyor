@@ -155,14 +155,28 @@ export function setActiveProfile(state, profileId) {
   saveStoredState(state);
 }
 
-export function ensureDailyPlan(state, profileId, date, missionIds, englishWordIds) {
+export function ensureDailyPlan(state, profileId, date, missionIds, englishWordIds, options = {}) {
   const dailyKey = `${profileId}:${date}`;
   const current = state.daily[dailyKey] || {};
   const daily = {
     completedGameIds: Array.isArray(current.completedGameIds) ? current.completedGameIds : [],
     sessionCount: Number(current.sessionCount || 0),
     bestScores: current.bestScores || {},
-    missionIds: Array.isArray(current.missionIds) && current.missionIds.length === 4 ? current.missionIds : missionIds,
+    missionIds: (() => {
+      const generated = Array.isArray(missionIds) ? missionIds.filter(Boolean) : [];
+      if (options.replaceInvalidMissions === true) {
+        const allowed = new Set(generated);
+        const currentAllowed = Array.isArray(current.missionIds)
+          ? current.missionIds.filter((gameId) => allowed.has(gameId))
+          : [];
+        return currentAllowed.length === generated.length && generated.length > 0
+          ? currentAllowed
+          : generated;
+      }
+      return Array.isArray(current.missionIds) && current.missionIds.length === 4
+        ? current.missionIds
+        : generated;
+    })(),
     englishWordIds: Array.isArray(current.englishWordIds) && current.englishWordIds.length ? current.englishWordIds : englishWordIds,
     createdAt: current.createdAt || new Date().toISOString()
   };

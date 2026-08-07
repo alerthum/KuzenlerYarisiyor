@@ -349,6 +349,7 @@ function shrinkShare(doc) {
 
 export function buildCommandCenterShare({ write = true } = {}) {
   const securityWarnings = [];
+  const trusted = readJson('public/trusted-live-release.json', {});
   const liveRaw = readJson('public/strict-audit-live.json', {});
   const progress = readJson('quality-reports/strict-audit-progress.json', {});
   const decision = readJson('PRODUCT_ACCEPTANCE_DECISION.json', {});
@@ -391,7 +392,8 @@ export function buildCommandCenterShare({ write = true } = {}) {
     ].slice(0, 20);
 
   const health = sourceHealthCompact([
-    { path: 'public/strict-audit-live.json', required: true },
+    { path: 'public/trusted-live-release.json', required: true },
+    { path: 'public/strict-audit-live.json', required: false },
     { path: 'public/question-engine-analysis.json', required: true },
     { path: 'PRODUCT_ACCEPTANCE_DECISION.json', required: true },
     { path: 'QUALITY_SCORE.json', required: true },
@@ -414,18 +416,11 @@ export function buildCommandCenterShare({ write = true } = {}) {
     });
   }
 
-  const liveUpdated = Date.parse(live.updatedAt || live.lastHeartbeatAt || 0);
-  const staleMs = Date.now() - (Number.isFinite(liveUpdated) ? liveUpdated : 0);
-  const isStale = !Number.isFinite(liveUpdated)
-    || (staleMs > 10 * 60 * 1000 && !['RUNNING', 'STARTING'].includes(live.status));
+  const trustedUpdated = Date.parse(trusted.generatedAt || 0);
+  const trustedAgeMs = Date.now() - (Number.isFinite(trustedUpdated) ? trustedUpdated : 0);
   const missingRequired = health.filter((h) => h.required && h.status !== 'OK');
-  let dataFreshness = 'LIVE';
-  if (missingRequired.length) dataFreshness = 'PARTIAL';
-  else if (isStale || live.status === 'ABORTED' || live.status === 'FAIL' || live.status === 'PASS') {
-    dataFreshness = isStale ? 'STALE' : (live.status === 'ABORTED' ? 'STALE' : 'LIVE');
-  }
-  // ABORTED teşhis paylaşımları STALE işaretlensin (eski koşu)
-  if (live.status === 'ABORTED' || live.status === 'FAIL' || live.status === 'PASS') {
+  let dataFreshness = missingRequired.length ? 'PARTIAL' : 'LIVE';
+  if (!Number.isFinite(trustedUpdated) || trustedAgeMs > 30 * 24 * 60 * 60 * 1000) {
     dataFreshness = missingRequired.length ? 'PARTIAL' : 'STALE';
   }
 
@@ -438,7 +433,7 @@ export function buildCommandCenterShare({ write = true } = {}) {
     { section: 'strictAuditProgress.events', reason: 'Binlerce event yerine shard özetleri', originalItemCount: Array.isArray(progress.events) ? progress.events.length : 0 },
     { section: 'solver-50k', reason: 'Full export / final-evidence içinde', originalItemCount: null },
     { section: 'options-10k', reason: 'Full export / final-evidence içinde', originalItemCount: null },
-    { section: 'CONTEXT_SNAPSHOT.md full text', reason: 'Full export içinde; kompaktta yok', originalItemCount: 1 },
+    { section: 'md/arsiv/CONTEXT_SNAPSHOT.md full text', reason: 'Full export içinde; kompaktta yok', originalItemCount: 1 },
     { section: 'liveGeneratedQuestionSamples full', reason: 'En fazla 20 temsilî soru', originalItemCount: liveSamples.length }
   ];
 
@@ -450,157 +445,101 @@ export function buildCommandCenterShare({ write = true } = {}) {
       screen: 'Soru Motoru Komuta Merkezi',
       kind: 'chatgpt-share',
       appVersion: pkg.version || 'unknown',
-      runId: live.runId || progress.runId || null,
+      runId: live.runId || trusted.runId || null,
       dataFreshness,
       sourceCount: health.filter((h) => h.source !== '__security__').length,
-      failedShardCount: audit.failedShards.length,
-      liveStatus: live.status || null,
+      liveStatus: trusted.releaseStatus || live.status || null,
       compactMaxBytes: MAX_SHARE_BYTES
     },
-    currentLiveOperation: live,
-    latestDecision: {
-      decision: decision.decision || null,
-      productReady: decision.productReady === true,
-      dimensions: decision.dimensions || null,
-      failureHighlights: decision.failureHighlights || null,
-      updatedAt: decision.updatedAt || null,
-      note: decision.note || null,
-      elapsedMs: decision.elapsedMs ?? null
-    },
-    productAcceptance: {
-      decision: decision.decision || null,
-      productReady: decision.productReady === true,
-      dimensions: decision.dimensions || null,
-      failureHighlights: decision.failureHighlights || null,
-      fromAnalysis: analysis.productAcceptance || null
-    },
-    qualityScore: {
-      overall: qualityScore.overall ?? qualityScore.overallQualityScorePercent ?? analysis.overallQualityScorePercent ?? null,
-      technicalQualityScorePercent: analysis.technicalQualityScorePercent ?? null,
-      finalEvidenceAdequacy: evidence.finalEvidenceAdequacy || analysis.finalEvidenceAdequacy || null,
-      file: {
-        schemaVersion: qualityScore.schemaVersion || null,
-        updatedAt: qualityScore.updatedAt || qualityScore.lastUpdated || null
-      }
-    },
-    projectStateSummary: {
-      currentStage: projectState.currentStage ?? null,
-      overallStatus: projectState.overallStatus ?? null,
-      lastUpdated: projectState.lastUpdated ?? null,
-      productAcceptance: projectState.productAcceptance || null
-    },
-    blockers: blockerSummary.open,
-    blockersClosedSummary: blockerSummary.closedSummary,
-    blockerCounts: {
-      openCriticalCount: blockerSummary.openCriticalCount,
-      openHighCount: blockerSummary.openHighCount,
-      openMediumCount: blockerSummary.openMediumCount
-    },
-    stageProgress: analysis.stageProgressView || analysis.currentAutonomousStage || {},
-    auditSummary: audit.auditSummary,
-    capacitySummary: {
-      annual: {
-        pass: annual.pass ?? null,
-        gates: annual.gates || null,
-        attemptCount: annual.metrics?.attemptCount ?? annual.attemptCount ?? null,
-        failureHighlights: decision.failureHighlights?.annual || []
+    currentTruth: {
+      status: trusted.releaseStatus || 'BLOCKED',
+      wholeProductReady: trusted.wholeProductReady === true,
+      productReady: trusted.productReady === true,
+      partialSafePilotAllowed: trusted.publicationAllowed === true,
+      publicationMode: trusted.publicationMode || null,
+      fallbackToLegacyAllowed: trusted.fallbackToLegacyAllowed === true,
+      policyVersion: trusted.policyVersion || null,
+      safeGameCount: trusted.summary?.safeGameCount ?? 0,
+      totalGameCount: trusted.summary?.totalGameCount ?? 23,
+      safeCellCount: trusted.summary?.safeCellCount ?? 0,
+      approvedQuestionAssignments: trusted.summary?.approvedQuestionAssignments ?? 0,
+      uniqueApprovedQuestionCount: trusted.summary?.uniqueApprovedQuestionCount ?? 0,
+      finalSurfaceReview: {
+        status: trusted.summary?.finalSurfaceReviewStatus || 'NOT_GENERATED',
+        reviewed: trusted.summary?.finalSurfaceReviewedQuestionCount ?? 0,
+        failed: trusted.summary?.finalSurfaceFailedQuestionCount ?? null,
+        legacyFallbackDetected: trusted.summary?.legacyFallbackDetected ?? null
       },
-      class30: {
-        pass: class30.pass ?? null,
-        gates: class30.gates || null
-      },
-      perceived: {
-        pass: perceived.pass ?? null,
-        gates: perceived.gates || null,
-        summary: perceived.summary || null
-      },
-      contentReview: {
-        pass: content.pass ?? null,
-        gates: content.gates || null,
-        metrics: content.metrics || null,
-        sampleCount: contentSamples.length
-      }
+      note: 'Bu alan güncel yayın gerçeğidir. Eski Stage 14/15 PASS sayaçları ürünün tamamı için geçerli kabul edilmez.'
     },
-    capacityPolicyDiagnosis: capacityDiagnosis ? {
-      topDefects: (capacityDiagnosis.topDefects || []).slice(0, 6),
-      answers: capacityDiagnosis.answers || null,
-      liveStatus: capacityDiagnosis.liveStatus || null,
-      nextAction: capacityDiagnosis.nextAction || null
-    } : null,
-    oldVsNewPolicy: counterfactual ? {
-      generatedAt: counterfactual.generatedAt || null,
-      stageA: counterfactual.stageA || null,
-      shards: (counterfactual.shards || []).map((s) => ({
-        shard: s.shard,
-        targetedPass: s.targetedPass,
-        oldFill: s.oldPolicy?.singleStudent100?.metrics?.fillRate ?? null,
-        newFill: s.newPolicy?.singleStudent100?.metrics?.fillRate ?? null,
-        oldUnderfill: s.oldPolicy?.singleStudent100?.metrics?.underfillRate ?? null,
-        newUnderfill: s.newPolicy?.singleStudent100?.metrics?.underfillRate ?? null,
-        failReasons: s.newPolicy?.singleStudent100?.failReasons || []
-      }))
-    } : null,
-    targetedShardResults: (counterfactual?.shards || []).map((s) => ({
-      shard: s.shard,
-      pass: s.targetedPass,
-      newMetrics: s.newPolicy?.singleStudent100?.metrics || null,
-      class30Fill: s.newPolicy?.class30x20?.metrics?.fillRate ?? null
-    })),
-    capacityPlannerResults: (counterfactual?.capacityPlannerResults || []).slice(0, 10),
-    addedBlueprints: capacityDev?.addedBlueprintCount ?? live.addedBlueprintCount ?? 0,
-    failedShard: counterfactual?.stageA?.failedShards?.[0]
-      || audit.failedShards?.[0]?.gameId
-      || null,
-    nextDevelopmentAction: capacityDev?.currentTask
-      || live.currentTask
-      || capacityDiagnosis?.nextAction
-      || null,
-    developmentLive: {
-      workType: live.workType || capacityDev?.workType || null,
-      currentTask: live.currentTask || capacityDev?.currentTask || null,
-      rootCause: live.rootCause || capacityDev?.rootCause || null,
-      completedShard: live.completedShard || capacityDev?.completedShard || null,
-      nextShard: live.nextShard || capacityDev?.nextShard || null,
-      lastRealTestResult: live.lastRealTestResult || capacityDev?.lastRealTestResult || null
+    safeCells: Array.isArray(trusted.safeCells) ? trusted.safeCells : [],
+    blockedScopes: Array.isArray(trusted.blockedPriorities) ? trusted.blockedPriorities : [],
+    currentWork: {
+      status: trusted.currentWork?.status || live.status || null,
+      currentTask: trusted.currentWork?.currentTask || live.currentTask || null,
+      completed: Array.isArray(trusted.currentWork?.completed) ? trusted.currentWork.completed : [],
+      nextAction: trusted.currentWork?.nextAction || live.nextShard || null,
+      changedFiles: Array.isArray(trusted.currentWork?.changedFiles) ? trusted.currentWork.changedFiles : [],
+      generatedAt: trusted.generatedAt || null
     },
-    failedShards: audit.failedShards,
-    gameBandSummary: audit.gameBandSummary,
-    topRejectionReasons: audit.topRejectionReasons,
-    blockedFamilySummary: audit.blockedFamilySummary,
-    blockedSkeletonSummary: audit.blockedSkeletonSummary,
-    blockedCognitiveExperienceSummary: audit.blockedCognitiveExperienceSummary,
-    testSummary: {
-      lastAutomatedAction: analysis.lastAutomatedAction || null,
-      lastTestCommandsAndResults: Array.isArray(analysis.lastTestCommandsAndResults)
-        ? analysis.lastTestCommandsAndResults.map((t) => ({
-          command: t.command || t.name || null,
-          result: t.result || t.status || null,
-          passed: t.passed ?? (String(t.result || '').includes('PASS') ? true : null),
-          failed: t.failed ?? null,
-          total: t.total ?? null,
-          durationMs: t.durationMs ?? t.elapsedMs ?? null,
-          timestamp: t.timestamp || null
-        }))
-        : [],
-      finalEvidence: {
-        adequacy: evidence.finalEvidenceAdequacy || null,
-        actual: evidence.actual || null,
-        targets: evidence.targets || null
+    liveProgress: {
+      status: live.status || null,
+      phaseLabel: live.phaseLabel || null,
+      completedWorkUnits: live.completedWorkUnits ?? null,
+      totalWorkUnits: live.totalWorkUnits ?? null,
+      progressPercent: live.progressPercent ?? null,
+      lastCompletedStep: live.lastCompletedStep || null,
+      lastActivityMessage: live.lastActivityMessage || null,
+      lastRealTestResult: live.lastRealTestResult || null,
+      updatedAt: live.updatedAt || live.lastHeartbeatAt || null,
+      recentEvents: Array.isArray(live.recentEvents) ? live.recentEvents.slice(-12) : []
+    },
+    latestTests: [
+      ...(Array.isArray(trusted.latestTests) ? trusted.latestTests : []),
+      ...(trusted.latestTest ? [trusted.latestTest] : [])
+    ].filter((row, index, rows) => row && rows.findIndex((x) => x?.command === row?.command && x?.result === row?.result) === index),
+    currentBlockers: [
+      ...(Array.isArray(trusted.blockedPriorities) ? trusted.blockedPriorities.map((item) => ({
+        id: item.scope,
+        severity: 'BLOCKING_SCOPE',
+        title: item.title,
+        reason: item.reason
+      })) : []),
+      {
+        id: 'BROWSER_E2E_POLICY',
+        severity: 'VERIFICATION_GAP',
+        title: 'Gerçek tarayıcı E2E tamamlanmadı',
+        reason: 'Çalışma ortamındaki yönetici politikası Chromium çalıştırılmasını engelledi.'
       }
+    ],
+    legacyDiagnostics: {
+      wholeProductAcceptanceDecision: decision.decision || null,
+      wholeProductReady: decision.productReady === true,
+      historicalOpenBlockerCount: blockerSummary.open.length,
+      note: 'Bu bölüm yalnız tarihsel teşhis içindir; güncel yayın kararı currentTruth alanındadır.'
+    },
+    evidenceFiles: {
+      trustedRelease: 'public/trusted-live-release.json',
+      finalSurfaceReviewJson: 'quality-reports/trusted-live-review.json',
+      finalSurfaceReviewHtml: 'quality-reports/trusted-live-review.html',
+      liveProgress: 'public/strict-audit-live.json',
+      projectState: 'PROJECT_STATE.json',
+      fullTechnicalExport: 'public/question-engine-command-center-export.json'
     },
     sourceHealth: health,
-    recentEvents: live.recentEvents || [],
-    representativeQuestionSamples,
     omittedData: {
       fullExportAvailable: fullMeta.exists,
       fullExportFile: 'question-engine-command-center-export.json',
-      omittedSections,
+      omittedSections: [
+        { section: 'rawSources', reason: 'Tam teknik export içinde mevcut' },
+        { section: 'eski stage/capacity/shard tabloları', reason: 'Güncel yayın kararını karıştırmaması için kompakt paylaşımdan çıkarıldı' },
+        { section: 'binlerce eski soru örneği ve event', reason: 'Son-ekran kanıtı ayrı HTML/JSON dosyasındadır' }
+      ],
       originalSizeBytes,
       compactSizeBytes: 0,
       compressionRatio: 0
     }
   };
-
   doc = shrinkShare(doc);
   const warnings = [];
   doc = redactSecrets(doc, 'share', warnings);

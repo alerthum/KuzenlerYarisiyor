@@ -248,7 +248,7 @@ ${controlledGate.checks.map((check) => `- ${check.passed ? 'PASS' : 'BLOCKED'} �
 
 ${Object.values(report.files).map((file) => `- \`${file}\``).join('\n')}
 `;
-fs.writeFileSync(path.resolve(root, 'ASSESSMENT_ENGINEERING_V2_PHASE5H_CONTROLLED_LAUNCH_PILOT.md'), md);
+fs.writeFileSync(path.resolve(root, 'md/arsiv/ASSESSMENT_ENGINEERING_V2_PHASE5H_CONTROLLED_LAUNCH_PILOT.md'), md);
 
 const operations = `# Phase 5H Gerçek Öğrenci Pilotu Operasyon Rehberi
 
@@ -262,7 +262,7 @@ const operations = `# Phase 5H Gerçek Öğrenci Pilotu Operasyon Rehberi
 8. Her görevde en az 80 yanıt ve toplam en az 100 anonim öğrenci olmadan madde analizi yayın kanıtı sayılamaz.
 9. Kontrollü pilot PASS olsa bile kamu production yayını ayrıca açılır; bu paket tam ürün onayı vermez.
 `;
-fs.writeFileSync(path.resolve(root, 'PHASE5H_STUDENT_PILOT_OPERATIONS.md'), operations);
+fs.writeFileSync(path.resolve(root, 'md/arsiv/PHASE5H_STUDENT_PILOT_OPERATIONS.md'), operations);
 
 console.log(JSON.stringify({
   status: report.status,

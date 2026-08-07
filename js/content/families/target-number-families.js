@@ -3,13 +3,13 @@
 //
 // Bir ailenin kimliğini SAYI DEĞERİ değil, İFADENİN YAPISI belirler: 12 aile,
 // hangi işlemlerin hangi sırada/gruplamada birleştiği arasındaki GERÇEK
-// yapısal farkı temsil eder (bkz. DIFF_ANALYSIS.md §5).
+// yapısal farkı temsil eder (bkz. md/arsiv/DIFF_ANALYSIS.md §5).
 //
 // target-number'ın arayüz kısıtı (serbest ifade kurucu yalnız "verilen tüm
 // sayıları birer kez kullanarak hedefe ulaş" görevini destekler) nedeniyle 4
 // görev türünün 2'si `kind:'expression'` (mevcut arayüz, değişmedi), 2'si
 // `kind:'choice'` (pattern-lab/speed-math'te zaten var olan ortak arayüz)
-// kullanır — bkz. DIFF_ANALYSIS.md §4.
+// kullanır — bkz. md/arsiv/DIFF_ANALYSIS.md §4.
 //
 //   İskeletler (görev):
 //     - direct-reach            (expression): sayılar+hedef verilir, serbest ifade kur

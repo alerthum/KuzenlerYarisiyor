@@ -405,7 +405,7 @@ export const GAME_CATALOG = [
 
 const GRADE_RULES = {
   'word-ladder': { minGrade: 1, maxGrade: 8 },
-  'religion-practice': { minGrade: 5, maxGrade: 12 },
+  'religion-practice': { minGrade: 4, maxGrade: 12 },
   'lgs-foundation': { minGrade: 8, maxGrade: 8 },
   'lgs-focus': { minGrade: 7, maxGrade: 8 },
   'tyt-focus': { minGrade: 11, maxGrade: 12 },
@@ -498,7 +498,7 @@ function unseenRounds(items, game, difficulty, age, random, seen, count, mapper 
 // oturumda aynı iskeleti havuz yeterliyken tekrar etmez, (2) önceki oturumlarda
 // görülen iskeletleri (recentSkeletonIds) havuz yeterliyken öncelik dışı bırakır,
 // (3) havuz gerçekten yetersizse oturumu boş bırakmak yerine tekrara izin verir
-// (bkz. DIFF_ANALYSIS.md). `skeletonAware` verilmezse davranış birebir eskisiyle
+// (bkz. md/arsiv/DIFF_ANALYSIS.md). `skeletonAware` verilmezse davranış birebir eskisiyle
 // aynıdır — diğer oyunları (religion, lgs-foundation, social) etkilememesi ve
 // üreticilerindeki bağımsız performans sınırlarını (ör. `numericOptions` içindeki
 // ret-örnekleme döngüsü) tetiklememesi için varsayılan kapalıdır.
@@ -776,6 +776,75 @@ export function createGameSession(gameId, profile, sessionSeed = Date.now(), opt
   const currentSessionIndex = Number.isFinite(Number(options.currentSessionIndex))
     ? Number(options.currentSessionIndex)
     : Math.max(Number(options.completedSessionCount || 0), inferredNextSessionIndex);
+
+  // Güvenli canlı pilot eski aile/jeneratör/besteci hattına hiç girmez.
+  // Öğrenciye teslim edilen oturum yalnız açık questionKey whitelist'i ve son
+  // ekran kalite kapısından geçen sorulardan kurulur. Bu erken dönüş özellikle
+  // İngilizce 20 kelime gibi aynı pedagojik ailedeki farklı soruların genel
+  // çeşitlilik bestecisi tarafından 1-2 soruya düşürülmesini de engeller.
+  if (options.controlledLaunchPilot === true) {
+    const controlledLiveBeta = controlledLiveBetaRounds(gameId, profile, {
+      seenQuestionKeys: seen,
+      seed: sessionSeed
+    });
+    const trustedRounds = controlledLiveBeta.rounds
+      .slice(0, game.sessionLength)
+      .map((round) => enrichRoundAcademicMetadata(gameId, round))
+      .map((round) => attachGlobalQuality(round, {
+        grade: Number(profile.grade || 0),
+        gameId,
+        subjectId: round.subjectId || game.category || ''
+      }))
+      .map(attachQuestionContract);
+    const trustedAudit = auditGlobalSession(trustedRounds, {
+      grade: Number(profile.grade || 0),
+      gameId,
+      subjectId: game.category || ''
+    });
+    trustedAudit.controlledLiveBeta = {
+      ...controlledLiveBeta.audit,
+      delivered: trustedRounds.length > 0,
+      deliveredQuestionKey: trustedRounds[0]?.questionKey || null,
+      deliveredCount: trustedRounds.length,
+      requestedCount: game.sessionLength,
+      underfill: trustedRounds.length < game.sessionLength
+    };
+    trustedAudit.premiumBank = {
+      liveSource: trustedRounds.length ? 'TRUSTED_LIVE_WHITELIST' : 'TRUSTED_LIVE_CELL_BLOCKED',
+      fallbackToLegacy: false
+    };
+    trustedAudit.finalRoundCount = trustedRounds.length;
+    trustedAudit.underfill = trustedRounds.length < game.sessionLength;
+    trustedAudit.capacityFailure = trustedRounds.length < game.sessionLength ? {
+      gameId,
+      grade: Number(profile.grade || 0),
+      requestedCount: game.sessionLength,
+      producedCount: trustedRounds.length,
+      policyVersion: controlledLiveBeta.audit?.trustedPolicyVersion || null,
+      note: trustedRounds.length
+        ? 'Güvenli whitelist kalan soruları oturumu tam doldurmadı; eski/fallback içerik açılmadı.'
+        : 'Bu sınıf-oyun hücresi henüz güvenli whitelist içinde değil; eski/fallback içerik açılmadı.'
+    } : null;
+
+    return {
+      id: `${gameId}-${sessionSeed}`,
+      game,
+      difficulty,
+      rounds: trustedRounds,
+      globalQualityAudit: trustedAudit,
+      goldShowcase: { eligible: false, firstExperience: false, injected: false },
+      studentBrainProfile: earlyBrain,
+      classTarget: options.classTarget || null,
+      currentIndex: 0,
+      answers: [],
+      score: 0,
+      startedAt: Date.now(),
+      roundStartedAt: Date.now(),
+      completed: false,
+      rewardEligible: game.rewardEligible !== false
+    };
+  }
+
   const policyVersion = options.repetitionPolicyVersion || options.policyVersion || 'v2';
   const stage09PoolForCapacity = STAGE09_FAMILY_POOLS[gameId] || null;
   const stage09SkeletonPoolSize = Array.isArray(stage09PoolForCapacity)
@@ -1449,7 +1518,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     // görev türü × 3 yol = 48 gerçekten farklı varyasyon) kullanır. Arayüz
     // kısıtı nedeniyle 2 görev türü `kind:'expression'` (serbest ifade
     // kurucu), 2 görev türü `kind:'choice'` üretir — her ikisi de mevcut
-    // app.js arayüzlerini kullanır, yeni UI eklenmedi (bkz. DIFF_ANALYSIS.md,
+    // app.js arayüzlerini kullanır, yeni UI eklenmedi (bkz. md/arsiv/DIFF_ANALYSIS.md,
     // Aşama 04, math-group-1/3).
     const { rounds: familyRounds } = generateFromFamilies(TARGET_NUMBER_FAMILIES, {
       seed, count: familyGenerateCount, seenQuestionKeys: seen, recentFamilyIds, recentSkeletonIds
@@ -1499,7 +1568,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     // Aşama 04: speed-math artık ad-hoc 3-5 "mode" listesi yerine ortak
     // aile-iskelet-düşünme yolu motorunu (12 gerçek işlem-yapısı ailesi × 4
     // iskelet × 3 yol = 48 gerçekten farklı varyasyon) kullanır (bkz.
-    // DIFF_ANALYSIS.md, Aşama 04, math-group-1/2).
+    // md/arsiv/DIFF_ANALYSIS.md, Aşama 04, math-group-1/2).
     const { rounds: familyRounds } = generateFromFamilies(SPEED_MATH_FAMILIES, {
       seed, count: familyGenerateCount, seenQuestionKeys: seen, recentFamilyIds, recentSkeletonIds
     });
@@ -1534,7 +1603,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   if (gameId === 'pattern-lab') {
     // Aşama 04: pattern-lab artık ad-hoc "mode" listesi yerine ortak
     // aile-iskelet-düşünme yolu motorunu (12 aile × 4 iskelet × 3 yol = 48
-    // gerçekten farklı varyasyon) kullanır (bkz. DIFF_ANALYSIS.md, Aşama 04).
+    // gerçekten farklı varyasyon) kullanır (bkz. md/arsiv/DIFF_ANALYSIS.md, Aşama 04).
     const { rounds: familyRounds } = generateFromFamilies(PATTERN_LAB_FAMILIES, {
       seed, count: familyGenerateCount, seenQuestionKeys: seen, recentFamilyIds, recentSkeletonIds
     });
@@ -1570,7 +1639,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     // Aşama 04: geometry-lab artık ad-hoc 10-mode listesi yerine ortak
     // aile-iskelet-düşünme yolu motorunu (12 gerçek formül-yapısı ailesi × 4
     // görev türü × 3 yol = 48 gerçekten farklı varyasyon) kullanır (bkz.
-    // DIFF_ANALYSIS.md, Aşama 04, math-group-1/4). `visual` alanı js/app.js'deki
+    // md/arsiv/DIFF_ANALYSIS.md, Aşama 04, math-group-1/4). `visual` alanı js/app.js'deki
     // MEVCUT şekil render tiplerini (rectangle/square/triangle/cube/prism/
     // trapezoid/composite/angles) birebir yeniden kullanır, yeni UI eklenmedi.
     const { rounds: familyRounds } = generateFromFamilies(GEOMETRY_LAB_FAMILIES, {
@@ -1807,16 +1876,23 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     }
   }
 
-  const controlledLiveBeta = options.controlledLaunchPilot === true
-    ? controlledLiveBetaRounds(gameId, profile, { seenQuestionKeys: seen })
+  // Kontrollü canlı pilot fail-closed çalışır: doğrulanmış pilot turu varsa
+  // yalnız o tur(lar) teslim edilir; eski aile/premium/fallback havuzları aynı
+  // oturuma karıştırılmaz. İlgili sınıf-oyun hücresinde doğrulanmış tur yoksa
+  // boş oturum döner ve uygulama kullanıcıya oyunun güncellendiğini bildirir.
+  const strictControlledLiveBeta = options.controlledLaunchPilot === true;
+  const controlledLiveBeta = strictControlledLiveBeta
+    ? controlledLiveBetaRounds(gameId, profile, { seenQuestionKeys: seen, seed: sessionSeed })
     : { rounds: [], audit: { version: null, eligibleCount: 0, disabled: true } };
-  if (controlledLiveBeta.rounds.length) {
-    const pilotKeys = new Set(controlledLiveBeta.rounds.map((round) => round.questionKey));
-    rounds = [...controlledLiveBeta.rounds, ...rounds.filter((round) => !pilotKeys.has(round.questionKey))];
+  if (strictControlledLiveBeta) {
+    rounds = [...controlledLiveBeta.rounds];
+    premiumBank.audit.liveSource = controlledLiveBeta.rounds.length
+      ? 'CONTROLLED_LIVE_BETA_ONLY'
+      : 'CONTROLLED_LIVE_BETA_UNAVAILABLE';
   }
 
   const isFirstGameExperience = options.completedSessionCount === 0;
-  const goldCandidate = isFirstGameExperience
+  const goldCandidate = isFirstGameExperience && !strictControlledLiveBeta
     ? createGoldShowcaseRound(gameId, game, profile, sessionSeed, seen, blockedFamilies)
     : null;
   // Kapı öncesi surplus havuzu korunur; sessionLength'e kesmek underfill üretir.
@@ -2004,7 +2080,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   // Backfill birleşiminden sonra semantik filtre TÜM oturum havuzuna yeniden uygulanır
   // (yalnız yeni partiyi filtrelemek aynı çözüm grafiğini tekrar sokabilir).
   let backfillInserted = 0;
-  if (familyPool && rounds.length < game.sessionLength) {
+  if (!strictControlledLiveBeta && familyPool && rounds.length < game.sessionLength) {
     const occupied = new Set([...seen, ...rounds.map((round) => round.questionKey).filter(Boolean)]);
     const occupiedFp = new Set();
     const occupiedShape = new Set();
@@ -2145,7 +2221,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     strictSessionFamilyUniqueness = new Set(rounds.map((round) => round.familyId).filter(Boolean)).size >= game.sessionLength;
   }
   // Besteci aile tekilliği underfill bıraktıysa: oturum içi tekillik korunur, yıllık recent gevşetilir.
-  if (familyPool && rounds.length < game.sessionLength) {
+  if (!strictControlledLiveBeta && familyPool && rounds.length < game.sessionLength) {
     const occupied = new Set([...seen, ...rounds.map((round) => round.questionKey).filter(Boolean)]);
     const sessionFamilies = rounds.map((round) => round.familyId).filter(Boolean);
     const sessionSkeletons = rounds.map((round) => round.skeletonId).filter(Boolean);
@@ -2284,7 +2360,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
   // aile motorundan yeni ve pencereye uygun iskelet üretir; hiçbir cooldown,
   // questionKey, structural/CX veya yüzey yasağını gevşetmez. Aile tekrarına
   // yalnız farklı ve taze iskeletle izin verilir; underfill yerine kalite korunur.
-  if (familyPool && !premiumBankExhausted && rounds.length < game.sessionLength) {
+  if (!strictControlledLiveBeta && familyPool && !premiumBankExhausted && rounds.length < game.sessionLength) {
     const occupied = new Set([...seen, ...rounds.map((round) => round.questionKey).filter(Boolean)]);
     const sessionSkeletons = new Set(rounds.map((round) => round.skeletonId).filter(Boolean));
     const sessionCx = new Set(rounds.map((round) => round.cognitiveExperienceId || buildCognitiveExperience(round).cognitiveExperienceId).filter(Boolean));
@@ -2332,7 +2408,7 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
 
   // Premium banka uygun sınıf havuzu tamamen tüketildiyse hiçbir sonraki
   // gold/transition/backfill adımı alternatif kaynak sızdıramaz.
-  if (premiumBankExhausted) rounds = [];
+  if (premiumBankExhausted && !strictControlledLiveBeta) rounds = [];
 
   // Kontrollü beta havuzu Phase 5H'de 30/30 mühendislik ve ürün sahibi
   // görsel denetiminden geçti. Genel besteci etkileşimli bir turu veya tekil
@@ -2349,6 +2425,12 @@ ${question.context || ''}`, sourceLabel:'Özgün LGS soru kalıbı', questionKey
     );
     const withoutDuplicate = rounds.filter((round) => round.questionKey !== candidate.questionKey);
     rounds = [candidate, ...withoutDuplicate].slice(0, game.sessionLength);
+  }
+
+  if (strictControlledLiveBeta) {
+    rounds = rounds
+      .filter((round) => round.controlledLaunchPilot === true)
+      .slice(0, game.sessionLength);
   }
 
   // Telemetri aday havuzunu değil, çocuğa gerçekten teslim edilen final oturumu

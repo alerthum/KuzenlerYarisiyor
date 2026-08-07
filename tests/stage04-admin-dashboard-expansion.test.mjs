@@ -6,18 +6,16 @@ const platform = await readFile(new URL('../js/platform/firebase-platform.js', i
 const analysisRaw = await readFile(new URL('../public/question-engine-analysis.json', import.meta.url), 'utf8');
 const analysis = JSON.parse(analysisRaw);
 
-test('Aşama 04: admin komuta merkezi genişletilmiş bölümlerin tamamını render eder', () => {
+test('teknik komuta merkezi ayrıntıları sade ekranın altında kapalı bölümlerde korunur', () => {
   const requiredFragments = [
+    'Canlı çalışma ayrıntısını göster',
+    'Müfredat ve soru portföyü ayrıntısını göster',
+    'Teknik kalite ayrıntılarını göster',
     'Oyun İlerleme Matrisi',
-    'Semantik Kalite Matrisi',
-    'Aile Kalite Detayı',
-    'Aşama İlerleme Görünümü',
-    'Blocker Görünümü',
-    'Test Maliyeti ve Kota Takibi',
-    'Aşama 06 Seçenek Kalitesi — Veri Altyapısı'
+    'Semantik Kalite Matrisi'
   ];
   for (const fragment of requiredFragments) {
-    assert.ok(platform.includes(fragment), `Komuta merkezinde eksik genişletilmiş bölüm: ${fragment}`);
+    assert.ok(platform.includes(fragment), `Komuta merkezinde eksik ayrıntı: ${fragment}`);
   }
 });
 

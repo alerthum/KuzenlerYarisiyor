@@ -227,7 +227,7 @@ const md = `# Assessment Engineering Engine V2 — Phase 5I Kontrollü Canlı Be
 `- Öğrenci eşiği bütün soru ailesini otomatik cezalandırmaz.\n\n`+
 `## Sınır\n\n`+
 `Bu paket kontrollü canlı beta içindir. İnsan uzman incelemesi ve gerçek öğrenci pilotu tamamlanmış gibi gösterilmez.\n`;
-fs.writeFileSync(path.resolve(root, 'ASSESSMENT_ENGINEERING_V2_PHASE5I_CONTROLLED_LIVE_BETA.md'), md);
+fs.writeFileSync(path.resolve(root, 'md/arsiv/ASSESSMENT_ENGINEERING_V2_PHASE5I_CONTROLLED_LIVE_BETA.md'), md);
 
 const checkRows = gate.checks.map((check) => `<tr><td>${esc(check.label)}</td><td class="${check.passed ? 'pass' : 'fail'}">${check.passed ? 'PASS' : 'BLOCKED'}</td></tr>`).join('');
 const slotRows = runtimeRows.map((row) => `<tr><td>${esc(row.slotId)}</td><td>${row.grade}</td><td>${esc(row.gameId)}</td><td class="${row.delivered ? 'pass' : 'fail'}">${row.delivered ? 'TESLİM' : 'YOK'}</td></tr>`).join('');

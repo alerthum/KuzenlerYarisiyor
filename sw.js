@@ -2,7 +2,7 @@ const CACHE_NAME = 'zihin-arenasi-v9-alpha3';
 const APP_SHELL = [
   '/',
   '/index.html',
-  '/styles.css',
+  '/css/styles.css',
   '/manifest.webmanifest',
   '/icons/icon-192.png',
   '/icons/icon-512.png',

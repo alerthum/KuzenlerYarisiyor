@@ -8,16 +8,28 @@ const execFileAsync = promisify(execFile);
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const required = [
-  'KUZENLER_AYARLARI.env', 'index.html', 'styles.css', 'server.mjs', 'sw.js', 'manifest.webmanifest', 'vercel.json',
+  'KUZENLER_AYARLARI.env.ORNEK', 'index.html', 'css/styles.css', 'server.mjs', 'sw.js', 'manifest.webmanifest', 'vercel.json',
   'js/bootstrap.js', 'js/app.js', 'js/content.js', 'js/content-v2.js', 'js/content-v3.js', 'js/content-v4.js', 'js/runtime-config.js',
   'js/state.js', 'js/storage.js', 'js/engines/word-engine.js', 'js/engines/math-engine.js',
   'js/engines/logic-engine.js', 'js/engines/learning-engine-v4.js', 'js/content-quality-v5.js', 'js/platform/firebase-platform.js', 'js/engines/paragraph-engine-v4.js', 'js/engines/social-engine.js',
   'js/engines/adaptive-engine.js', 'js/games/registry.js', 'scripts/project-config.mjs',
-  'icons/icon-192.png', 'icons/icon-512.png', 'README.md', 'GELISIM_PLANI.md', 'DEPLOY_REHBERI.md',
-  'ICERIK_KALITE_KURALLARI.md', 'SORU_KALITE_KAYITLARI.md', 'TEST_RAPORU.md', 'firebase/firestore.rules', 'firebase/firestore.indexes.json', 'firebase/firebase.json'
+  'icons/icon-192.png', 'icons/icon-512.png', 'README.md',
+  'md/guncel/GUVENLI_CANLI_DURUM.md', 'md/guncel/TEST_VE_YAYIN_KANITI.md', 'md/arsiv/CONTEXT_SNAPSHOT.md',
+  'config/playwright.config.mjs', 'public/trusted-live-release.json', 'quality-reports/trusted-live-review.json',
+  'js/assessment-v2/trusted-live-policy.js', 'js/assessment-v2/trusted-authored-g7-core-deep-bank.js',
+  'firebase/firestore.rules', 'firebase/firestore.indexes.json', 'firebase/firebase.json'
 ];
 
 for (const file of required) await access(resolve(root, file));
+
+const envPath = resolve(root, 'KUZENLER_AYARLARI.env');
+const envExamplePath = resolve(root, 'KUZENLER_AYARLARI.env.ORNEK');
+try {
+  await access(envPath);
+} catch {
+  await access(envExamplePath);
+  console.log('Bilgi: Gerçek KUZENLER_AYARLARI.env yok; örnek ayar ve ortam değişkenleriyle kontrol sürüyor.');
+}
 const html = await readFile(resolve(root, 'index.html'), 'utf8');
 if (!html.includes('lang="tr"') || !html.includes('/js/bootstrap.js')) throw new Error('index.html temel bağlantıları eksik.');
 const manifest = JSON.parse(await readFile(resolve(root, 'manifest.webmanifest'), 'utf8'));

@@ -38,7 +38,7 @@ describe('command-center-export builder', () => {
 
   it('includes markdown context snapshot as string', () => {
     assert.equal(typeof built.exportDoc.contextSnapshot, 'string');
-    assert.ok(built.exportDoc.contextSnapshot.length > 0 || built.exportDoc.sourceHealth.some((h) => h.source === 'CONTEXT_SNAPSHOT.md'));
+    assert.ok(built.exportDoc.contextSnapshot.length > 0 || built.exportDoc.sourceHealth.some((h) => h.source === 'md/arsiv/CONTEXT_SNAPSHOT.md'));
   });
 
   it('keeps raw arrays untrimmed in rawSources / content samples', () => {

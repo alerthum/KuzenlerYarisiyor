@@ -4,11 +4,12 @@ import { readFile } from 'node:fs/promises';
 import { PREMIUM_GAME_IDS, premiumQuestionSummary } from '../js/content/premium-question-bank.js';
 import { RUNTIME_CONFIG } from '../js/runtime-config.js';
 
-test('premium geliştirme modu canlı yapılandırmada açıktır', () => {
-  assert.equal(RUNTIME_CONFIG.features.qualityPilotMode, true);
+test('kontrollü canlı pilot açıktır; eski premium geliştirme modu kapalıdır', () => {
+  assert.equal(RUNTIME_CONFIG.features.controlledLaunchPilotMode, true);
+  assert.equal(RUNTIME_CONFIG.features.qualityPilotMode, false);
 });
 
-test('premium geliştirme modunda yalnız kalite kapısından geçmiş yirmi yedi oyun görünür', () => {
+test('premium banka envanterinde kalite kapısından geçmiş yirmi yedi oyun tanımlıdır', () => {
   assert.deepEqual([...PREMIUM_GAME_IDS].sort(), [
     'ayt-focus',
     'english-cloze',

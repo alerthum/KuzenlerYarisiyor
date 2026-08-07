@@ -43,7 +43,7 @@ const report={
   errors
 };
 const jsonOut=path.resolve('quality-reports/assessment-engine-v2-phase4n-live-platform-stabilization.json');
-const mdOut=path.resolve('ASSESSMENT_ENGINEERING_V2_PHASE4N_LIVE_PLATFORM_STABILIZATION.md');
+const mdOut=path.resolve('md/arsiv/ASSESSMENT_ENGINEERING_V2_PHASE4N_LIVE_PLATFORM_STABILIZATION.md');
 fs.writeFileSync(jsonOut,JSON.stringify(report,null,2));
 fs.writeFileSync(mdOut,`# Assessment Engineering Engine V2 — Phase 4N\n\n## Sonuç\n\n- Durum: **${report.status}**\n- productReady: **false**\n- Yayın: **kapalı**\n- Legacy 604: **UNVERIFIED_LEGACY**\n\n## Kanıtlar\n\n- Assessment V2: **172/172 PASS**\n- Aşama 04 aile testleri: **233/233 PASS**\n- Premium banka/pilot: **12/12 PASS**\n- Canlı oturum bataryası: **23 oyun × 20 = 460/460**\n- Underfill: **0**\n- Semantik tekrar: **0**\n\n## Kapanan kök nedenler\n\n${report.fixes.map(x=>`- ${x}`).join('\n')}\n\n## Açık ürün kapıları\n\n${report.remainingGates.map(x=>`- ${x}`).join('\n')}\n`);
 console.log(JSON.stringify({status:report.status,files:[jsonOut,mdOut]},null,2));

@@ -1,6 +1,6 @@
 import fs from "node:fs";
 const required = [
-  "00_AUTONOMOUS_MASTER.md","CURSOR_TEK_PROMPT.md","AGENTS.md",
+  "md/arsiv/00_AUTONOMOUS_MASTER.md","md/arsiv/CURSOR_TEK_PROMPT.md","md/arsiv/AGENTS.md",
   "docs/rules/02_GRADE_3_PLUS_DIFFICULTY_STANDARD.md",
   "docs/rules/03_OPTION_AND_DISTRACTOR_PREMIUM_STANDARD.md",
   "docs/stages/01_V11_ROOT_CAUSE.md","docs/stages/15_FINAL_ACCEPTANCE.md"

@@ -43,7 +43,7 @@ analysis.productReady = decision.productReady === true;
 analysis.technicalQualityScorePercent = analysis.overallQualityScorePercent;
 writeFileSync('public/question-engine-analysis.json', `${JSON.stringify(analysis, null, 2)}\n`);
 
-writeFileSync('CONTEXT_SNAPSHOT.md', `# CONTEXT_SNAPSHOT
+writeFileSync('md/arsiv/CONTEXT_SNAPSHOT.md', `# CONTEXT_SNAPSHOT
 
 **Guncelleme:** ${decision.updatedAt} · **Mevcut asama:** 15 — Final kabul (teknik) · **PRODUCT_ACCEPTANCE:** ${decision.decision}
 

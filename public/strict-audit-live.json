@@ -1,168 +1,202 @@
 {
-    "schemaVersion":  "1.0",
-    "runId":  "dede0f23-8979-42a4-83a5-9c2a6c181793",
-    "command":  "npm run quality:product-acceptance:strict:core",
-    "status":  "ABORTED",
-    "pid":  0,
-    "startedAt":  "2026-08-02T14:35:15.637Z",
-    "updatedAt":  "2026-08-02T16:12:34.178Z",
-    "lastHeartbeatAt":  "2026-08-02T16:12:34.178Z",
-    "finishedAt":  "2026-08-02T16:12:34.178Z",
-    "elapsedSeconds":  1811,
-    "phase":  "session",
-    "phaseLabel":  "DEVELOPMENT",
-    "currentGameId":  "science-reasoning",
-    "currentGameName":  "science-reasoning",
-    "currentGrade":  4,
-    "currentGradeBand":  "3-5",
-    "currentSessionIndex":  29,
-    "currentSessionTarget":  720,
-    "completedGames":  0,
-    "totalGames":  23,
-    "completedWorkUnits":  154,
-    "totalWorkUnits":  4100,
-    "progressPercent":  3.8,
-    "attemptedCandidates":  1200,
-    "acceptedCandidates":  825,
-    "rejectedCandidates":  375,
-    "underfillCount":  3660,
-    "semanticRepeatCount":  0,
-    "lastCompletedStep":  "science-reasoning oturum 29",
-    "lastActivityMessage":  "Proje kaynak kodunun doğrudan incelenmesi için kullanıcı tarafından güvenli şekilde durduruldu.",
-    "exitCode":  null,
-    "lastError":  null,
-    "hangFail":  null,
-    "checkpoint":  {
-                       "lastCompletedGameId":  null,
-                       "lastCompletedGradeBand":  null,
-                       "nextGameId":  null,
-                       "nextGradeBand":  "perceived",
-                       "completedPhases":  [
-                                               "annual",
-                                               "class30"
-                                           ],
-                       "completedGames":  [
-
-                                          ],
-                       "completedGameBands":  [
-
-                                              ]
-                   },
-    "recentEvents":  [
-                         {
-                             "time":  "2026-08-02T15:05:09.227Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:09.470Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:09.692Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:09.898Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:10.029Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:10.180Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:10.379Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:10.556Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:10.700Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:10.826Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:10.974Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:11.099Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:14.910Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:15.096Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:15.293Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:15.708Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:16.199Z",
-                             "level":  "WARN",
-                             "message":  "Underfill: kapasite yetersiz. Kalite filtresi gevşetilmedi; eski soru/CX tekrar edilmedi."
-                         },
-                         {
-                             "time":  "2026-08-02T15:05:27.260Z",
-                             "level":  "ERROR",
-                             "message":  "Underfill kapasite sorunu nedeniyle kullanıcı tarafından teşhis için durduruldu."
-                         },
-                         {
-                             "time":  "2026-08-02T16:07:19.380Z",
-                             "level":  "INFO",
-                             "message":  "Repetition Policy V2 counterfactual shard’ları çalışıyor"
-                         },
-                         {
-                             "time":  "2026-08-02T16:07:19.385Z",
-                             "level":  "INFO",
-                             "message":  "Counterfactual: lgs-foundation / 8 (V1 vs V2)"
-                         }
-                     ],
-    "workType":  "DEVELOPMENT",
-    "currentTask":  "Counterfactual: lgs-foundation / 8 (V1 vs V2)",
-    "rootCause":  null,
-    "changedFiles":  [
-
-                     ],
-    "previousFillRate":  null,
-    "newFillRate":  null,
-    "previousUnderfill":  null,
-    "newUnderfill":  null,
-    "capacityDeficit":  null,
-    "addedBlueprintCount":  0,
-    "completedShard":  null,
-    "nextShard":  "lgs-foundation / 8",
-    "lastRealTestResult":  null
+  "schemaVersion": "6.0",
+  "runId": "math-turkish-science-engines-20260806",
+  "command": "npm test && node scripts/check-project.mjs && npm run build",
+  "status": "PASS",
+  "pid": 0,
+  "startedAt": null,
+  "updatedAt": "2026-08-06T15:47:22.383901Z",
+  "lastHeartbeatAt": "2026-08-06T15:47:22.383901Z",
+  "finishedAt": "2026-08-06T15:47:22.383901Z",
+  "elapsedSeconds": null,
+  "phase": "math-turkish-science-engines",
+  "phaseLabel": "4–8. SINIF MATEMATİK + TÜRKÇE + FEN MOTORLARI",
+  "currentGameId": null,
+  "currentGameName": null,
+  "currentGrade": null,
+  "currentGradeBand": "4,8",
+  "completedGames": 12,
+  "totalGames": 23,
+  "completedWorkUnits": 351,
+  "totalWorkUnits": 351,
+  "progressPercent": 100,
+  "attemptedCandidates": 351,
+  "acceptedCandidates": 351,
+  "rejectedCandidates": 0,
+  "underfillCount": 0,
+  "semanticRepeatCount": 0,
+  "lastCompletedStep": "79 motor ailesi, 237 iskelet ve 351 doğrulanmış motor çıktısı canlıya bağlandı",
+  "lastActivityMessage": "Fen motoru insan yazımı deney/veri vakalarıyla Fen Akıl Yürütme ve Fen Bilimleri Laboratuvarı canlı yollarına bağlandı.",
+  "exitCode": 0,
+  "lastError": null,
+  "hangFail": null,
+  "checkpoint": {
+    "completedPhases": [
+      "p0-live-output-safety",
+      "p1-command-center-v2",
+      "p2-grade8-hard-core",
+      "p3-grade7-hard-core",
+      "p4-priority-grade4-grade8-wave1",
+      "p5-solver-backed-math-engine",
+      "p6-evidence-backed-turkish-engine",
+      "p7-evidence-backed-science-engine"
+    ],
+    "completedGames": [
+      "problem-hunter",
+      "error-detective",
+      "geometry-lab",
+      "paragraph-detective",
+      "meaning-hunt",
+      "science-reasoning",
+      "science-lab"
+    ],
+    "completedGameBands": [
+      "problem-hunter:4",
+      "error-detective:4",
+      "geometry-lab:4",
+      "problem-hunter:8",
+      "error-detective:8",
+      "geometry-lab:8",
+      "paragraph-detective:4",
+      "meaning-hunt:4",
+      "paragraph-detective:8",
+      "meaning-hunt:8",
+      "science-reasoning:4",
+      "science-lab:4",
+      "science-reasoning:8",
+      "science-lab:8"
+    ],
+    "nextGameId": "english-vocabulary",
+    "nextGradeBand": "4,8"
+  },
+  "recentEvents": [
+    {
+      "time": "2026-08-06T15:07:25.237931Z",
+      "level": "INFO",
+      "message": "46/46 canlı çıktı, 385/385 son-ekran, 26/26 yönetim testi ve production build PASS."
+    },
+    {
+      "time": "2026-08-06T15:07:25.237931Z",
+      "level": "INFO",
+      "message": "Matematik oturumlarında ardışık aile/deneyim tekrarı ve eski fallback sıfırlandı."
+    },
+    {
+      "time": "2026-08-06T15:27:23.484424Z",
+      "level": "INFO",
+      "message": "4. ve 8. sınıf Türkçe motoru 24 aile, 72 iskelet ve 72 kanıt-doğrulamalı çıktıyla canlıya bağlandı."
+    },
+    {
+      "time": "2026-08-06T15:27:23.484424Z",
+      "level": "INFO",
+      "message": "51/51 canlı çıktı, 437/437 son-ekran, 26/26 yönetim testi, proje kontrolü ve production build PASS."
+    },
+    {
+      "time": "2026-08-06T15:27:23.484424Z",
+      "level": "INFO",
+      "message": "Türkçe motorunda rastgele cümle birleştirme, ardışık kaynak/görev tekrarı ve eski fallback sıfırlandı."
+    },
+    {
+      "time": "2026-08-06T15:47:22.383901Z",
+      "level": "INFO",
+      "message": "4. ve 8. sınıf Fen motoru 25 aile, 75 iskelet ve 75 deney/veri doğrulamalı çıktıyla canlıya bağlandı."
+    },
+    {
+      "time": "2026-08-06T15:47:22.383901Z",
+      "level": "INFO",
+      "message": "56/56 canlı çıktı, 496/496 son-ekran ve 26/26 yönetim testi PASS."
+    },
+    {
+      "time": "2026-08-06T15:47:22.383901Z",
+      "level": "INFO",
+      "message": "Fen Akıl Yürütme ve Fen Laboratuvarı oturumlarında eski fallback sıfırlandı."
+    }
+  ],
+  "workType": "DEVELOPMENT",
+  "currentTask": "4. ve 8. sınıf İngilizce bağlam, diyalog ve kısa okuma motoru sırada.",
+  "rootCause": "Fen için sabit güvenli bankalar çocukları koruyordu ancak kazanım bazlı deney/veri motoru ve Fen Laboratuvarı canlı adaptasyonu eksikti.",
+  "changedFiles": [
+    "js/assessment-v2/solver-backed-math-family-engine.js",
+    "js/assessment-v2/solver-backed-g4-math-families.js",
+    "js/assessment-v2/solver-backed-g8-math-families.js",
+    "js/assessment-v2/solver-backed-priority-math-bank.js",
+    "js/assessment-v2/evidence-backed-turkish-family-engine.js",
+    "js/assessment-v2/evidence-backed-g4-turkish-families.js",
+    "js/assessment-v2/evidence-backed-g8-turkish-families.js",
+    "js/assessment-v2/evidence-backed-priority-turkish-bank.js",
+    "js/assessment-v2/evidence-backed-science-family-engine.js",
+    "js/assessment-v2/evidence-backed-g4-science-families.js",
+    "js/assessment-v2/evidence-backed-g8-science-families.js",
+    "js/assessment-v2/evidence-backed-priority-science-bank.js",
+    "js/assessment-v2/trusted-live-policy.js",
+    "js/assessment-v2/controlled-live-beta-bank.js",
+    "tests/live-output/evidence-backed-priority-science-engine.test.mjs",
+    "tests/live-output/trusted-g8-science-deep-bank.test.mjs",
+    "tests/live-output/trusted-priority-grade4-grade8-wave1.test.mjs",
+    "scripts/build-trusted-live-release.mjs",
+    "PROJECT_STATE.json",
+    "FINAL_RELEASE_DECISION.json",
+    "public/strict-audit-live.json",
+    "package.json",
+    "package-lock.json"
+  ],
+  "completedShard": "4. ve 8. sınıf Matematik + Türkçe + Fen motorları",
+  "nextShard": "4. ve 8. sınıf İngilizce bağlam, diyalog ve kısa okuma motoru",
+  "lastRealTestResult": "npm test PASS; live-output 56/56 PASS; final surface 496/496 PASS; Matematik 30 aile/204 çıktı; Türkçe 24 aile/72 çıktı; Fen 25 aile/75 çıktı PASS; admin 26/26 PASS; check-project ve production build PASS; fallback 0.",
+  "engineMetrics": {
+    "math": {
+      "status": "PASS",
+      "grade4FamilyCount": 15,
+      "grade8FamilyCount": 15,
+      "familyCount": 30,
+      "skeletonCount": 90,
+      "solverVerifiedOutputCount": 204,
+      "safeCellCount": 6,
+      "supportedGames": [
+        "problem-hunter",
+        "error-detective",
+        "geometry-lab"
+      ],
+      "adjacentFamilyRepeatCount": 0,
+      "adjacentExperienceRepeatCount": 0,
+      "legacyFallbackDetected": false
+    },
+    "turkish": {
+      "status": "PASS",
+      "grade4FamilyCount": 12,
+      "grade8FamilyCount": 12,
+      "familyCount": 24,
+      "skeletonCount": 72,
+      "evidenceVerifiedOutputCount": 72,
+      "safeCellCount": 4,
+      "supportedGames": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "randomSentenceCompositionCount": 0,
+      "adjacentSourceRepeatCount": 0,
+      "adjacentTaskRepeatCount": 0,
+      "legacyFallbackDetected": false
+    },
+    "science": {
+      "status": "PASS",
+      "grade4FamilyCount": 12,
+      "grade8FamilyCount": 13,
+      "familyCount": 25,
+      "skeletonCount": 75,
+      "evidenceVerifiedOutputCount": 75,
+      "safeCellCount": 4,
+      "supportedGames": [
+        "science-reasoning",
+        "science-lab"
+      ],
+      "experimentDesignCount": 25,
+      "reasoningCount": 50,
+      "randomSentenceCompositionCount": 0,
+      "adjacentFamilyRepeatCount": 0,
+      "legacyFallbackDetected": false
+    },
+    "combinedFamilyCount": 79,
+    "combinedSkeletonCount": 237,
+    "verifiedEngineOutputCount": 351
+  }
 }

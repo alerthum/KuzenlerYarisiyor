@@ -1,16 +1,17 @@
 {
-  "schemaVersion": "1.0",
-  "runId": "autonomous-2026-08-01",
-  "lastUpdated": "2026-08-02T14:36:00.000Z",
-  "currentStage": 15,
-  "currentStageFile": "docs/stages/15_FINAL_ACCEPTANCE.md",
+  "schemaVersion": "2.0",
+  "runId": "math-turkish-science-engines-20260806",
+  "lastUpdated": "2026-08-06T15:47:22.383901Z",
+  "currentStage": "EVIDENCE_BACKED_SCIENCE_ENGINE_CHECKPOINT",
+  "currentStageFile": "public/trusted-live-release.json",
   "overallStatus": "IN_PROGRESS",
   "productAcceptance": {
     "decision": "FAIL",
     "productReady": false,
+    "trustedPartialPilotAllowed": true,
     "liveTelemetry": "public/strict-audit-live.json",
-    "command": "npm run quality:product-acceptance:strict",
-    "note": "Canlı koşu Admin > Soru Motoru Komuta Merkezi en üstünde; terminal zorunlu değil"
+    "trustedRelease": "public/trusted-live-release.json",
+    "note": "Eski bütün-ürün kabulü FAIL kalır. Yalnız açık whitelist hücreleri son-ekran incelemesi PASS olduğu için kısmi pilotta açılabilir."
   },
   "stage4ScopeDecision": {
     "decidedBy": "user",
@@ -256,7 +257,7 @@
       "file": "docs/stages/01_V11_ROOT_CAUSE.md",
       "status": "PASS",
       "completedAt": "2026-08-01T01:00:00.000Z",
-      "reportFile": "reports/STAGE_01_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_01_REPORT.md",
       "filesChanged": [
         "js/engines/math-engine.js",
         "js/games/registry.js"
@@ -272,7 +273,7 @@
       "file": "docs/stages/02_ADMIN_COMMAND_CENTER.md",
       "status": "PASS",
       "completedAt": "2026-08-01T01:20:00.000Z",
-      "reportFile": "reports/STAGE_02_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_02_REPORT.md",
       "filesChanged": [
         "js/platform/firebase-platform.js"
       ],
@@ -287,7 +288,7 @@
       "file": "docs/stages/03_COMMON_QUESTION_CONTRACT.md",
       "status": "PASS",
       "completedAt": "2026-08-01T01:40:00.000Z",
-      "reportFile": "reports/STAGE_03_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_03_REPORT.md",
       "filesChanged": [
         "js/quality/question-contract-v11.js",
         "js/games/registry.js"
@@ -304,7 +305,7 @@
       "status": "PASS",
       "startedAt": "2026-08-01T02:00:00.000Z",
       "completedAt": "2026-08-01T21:10:00.000Z",
-      "reportFile": "reports/STAGE_04_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_04_REPORT.md",
       "filesChanged": [
         "js/quality/family-skeleton-engine.js",
         "js/content/families/*-families.js",
@@ -324,7 +325,7 @@
       "status": "PASS",
       "note": "Aşama 04 PASS sonrası sıradaki",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_05_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_05_REPORT.md",
       "filesChanged": [
         "js/quality/cognitive-depth-engine.js",
         "js/games/registry.js"
@@ -340,7 +341,7 @@
       "file": "docs/stages/06_PREMIUM_OPTIONS_ENGINE.md",
       "status": "PASS",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_06_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_06_REPORT.md",
       "filesChanged": [
         "js/quality/premium-options-engine.js",
         "js/games/registry.js"
@@ -356,7 +357,7 @@
       "file": "docs/stages/07_INDEPENDENT_SOLVER.md",
       "status": "PASS",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_07_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_07_REPORT.md",
       "filesChanged": [
         "js/quality/independent-solver.js",
         "js/games/registry.js"
@@ -372,7 +373,7 @@
       "file": "docs/stages/08_SEMANTIC_REPEAT_ENGINE.md",
       "status": "PASS",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_08_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_08_REPORT.md",
       "filesChanged": [
         "js/quality/semantic-repeat-engine.js",
         "js/games/registry.js"
@@ -388,7 +389,7 @@
       "file": "docs/stages/09_SESSION_COMPOSER.md",
       "status": "PASS",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_09_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_09_REPORT.md",
       "filesChanged": [
         "js/quality/session-composer-audit.js",
         "js/games/registry.js"
@@ -404,7 +405,7 @@
       "file": "docs/stages/10_HUMAN_CHILD_REVIEW.md",
       "status": "PASS",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_10_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_10_REPORT.md",
       "filesChanged": [
         "js/quality/child-mind-review.js",
         "js/games/registry.js"
@@ -420,7 +421,7 @@
       "file": "docs/stages/11_AI_JURY_TOKEN_BUDGET.md",
       "status": "PASS",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_11_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_11_REPORT.md",
       "filesChanged": [
         "js/quality/ai-jury-budget.js",
         "js/games/registry.js"
@@ -436,7 +437,7 @@
       "file": "docs/stages/12_ALL_GAMES_INTEGRATION.md",
       "status": "PASS",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_12_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_12_REPORT.md",
       "filesChanged": [
         "js/quality/publication-integration-gate.js",
         "js/games/registry.js"
@@ -452,7 +453,7 @@
       "file": "docs/stages/13_LIVE_E2E.md",
       "status": "PASS",
       "completedAt": "2026-08-01T23:44:25.853Z",
-      "reportFile": "reports/STAGE_13_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_13_REPORT.md",
       "filesChanged": [
         "js/quality/e2e+a11y.js",
         "js/games/registry.js"
@@ -468,7 +469,7 @@
       "file": "docs/stages/14_SCORING_RELEASE_GATE.md",
       "status": "PASS",
       "completedAt": "2026-08-02T00:49:36.780Z",
-      "reportFile": "reports/STAGE_14_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_14_REPORT.md",
       "filesChanged": [
         "js/quality/release-scoring-gate.js",
         "js/games/registry.js"
@@ -485,7 +486,7 @@
       "file": "docs/stages/15_FINAL_ACCEPTANCE.md",
       "status": "PASS",
       "completedAt": "2026-08-02T00:49:36.780Z",
-      "reportFile": "reports/STAGE_15_REPORT.md",
+      "reportFile": "md/raporlar/STAGE_15_REPORT.md",
       "filesChanged": [
         "js/quality/FINAL_RELEASE_DECISION.js",
         "js/games/registry.js"
@@ -541,13 +542,13 @@
     },
     {
       "date": "2026-08-01",
-      "decision": "math-group-1 / speed-math (2. oyun) TAMAMLANDI: bir ailenin kimliği sayı değeri değil İŞLEM YAPISI ile belirlenir (12 gerçek yapı: iki-terimli 4 işlem, öncelikli/parantezli 4 kombinasyon, dört-terimli karışık, iki zincirleme, bölme+toplama karışık). Her aile aynı 4 sabit görev türüyle (direct-compute/verify-and-correct/missing-operand/compare-two-instances — pattern-lab'ın next-term/missing-middle/extended-position/error-detection'ına karşılık gelen, arithmetic'e özgü görev seti) ve aynı 3 sabit temsil yoluyla (raw-expression/context-embedded/structured-instruction) birleştirilir; toplam 12×4×3=144 üretim yolu / 48 iskelet-yol kombinasyonu. Boşluk sembolü olarak harf 'x' değil '?' kullanıldı (registry.js'nin grade>=4 trivialLinear filtresiyle çakışmayı önlemek için — bkz. DIFF_ANALYSIS.md). js/engines/math-engine.js'deki eski createArithmeticRound (3-5 iskelet) silinmedi, yalnız aşırı geniş 'seen' geçmişine karşı güvenlik ağı olarak korundu (pattern-lab'daki desenin birebir aynısı).",
+      "decision": "math-group-1 / speed-math (2. oyun) TAMAMLANDI: bir ailenin kimliği sayı değeri değil İŞLEM YAPISI ile belirlenir (12 gerçek yapı: iki-terimli 4 işlem, öncelikli/parantezli 4 kombinasyon, dört-terimli karışık, iki zincirleme, bölme+toplama karışık). Her aile aynı 4 sabit görev türüyle (direct-compute/verify-and-correct/missing-operand/compare-two-instances — pattern-lab'ın next-term/missing-middle/extended-position/error-detection'ına karşılık gelen, arithmetic'e özgü görev seti) ve aynı 3 sabit temsil yoluyla (raw-expression/context-embedded/structured-instruction) birleştirilir; toplam 12×4×3=144 üretim yolu / 48 iskelet-yol kombinasyonu. Boşluk sembolü olarak harf 'x' değil '?' kullanıldı (registry.js'nin grade>=4 trivialLinear filtresiyle çakışmayı önlemek için — bkz. md/arsiv/DIFF_ANALYSIS.md). js/engines/math-engine.js'deki eski createArithmeticRound (3-5 iskelet) silinmedi, yalnız aşırı geniş 'seen' geçmişine karşı güvenlik ağı olarak korundu (pattern-lab'daki desenin birebir aynısı).",
       "model": "Sonnet 5 High",
       "supersededBy": null
     },
     {
       "date": "2026-08-01",
-      "decision": "math-group-1 / target-number (3. oyun) TAMAMLANDI. target-number'ın arayüz kısıtı (serbest ifade kurucu, kind:'expression', yalnız 'verilen tüm sayıları birer kez kullanarak hedefe ulaş' görevini destekler) nedeniyle 4 görev türünün 2'si (direct-reach, verify-and-correct) mevcut kind:'expression' arayüzünü, 2'si (missing-number-reverse, compare-two-expressions) pattern-lab/speed-math'te zaten var olan kind:'choice' arayüzünü kullanacak şekilde tasarlandı — AYNI oyun içinde karışık round türü; js/app.js veya js/engines/math-engine.js'de HİÇBİR değişiklik yapılmadı (mevcut arayüzler yeterliydi). 12 aile, ifadenin YAPISINA göre ayrışır (parantez/öncelik/iç-içe-parantez/zincir/bölme kombinasyonları). 3. düşünme yolu pattern-lab/speed-math'teki 'structured-instruction'dan kasıtlı olarak farklı tasarlandı ('staged-strategy-hint': tam çözüm ASLA ifşa edilmez, yalnız soyut bir strateji iskeleti verilir) çünkü target-number'da tam yapıyı baştan söylemek 'hangi kombinasyonun hedefe ulaştığını bulma' görevini yok ederdi (bkz. DIFF_ANALYSIS.md gerekçesi). Üretim kodu, öğrencinin/seçeneklerin doğruluğunu `evaluateExpression` ile bağımsız hesaplar (elle yazılmış sonuç yok); testler ayrıca üretim kodundan TAMAMEN ayrı bir yerel `Function`-tabanlı ikinci hesaplama yoluyla da doğrular. js/engines/math-engine.js'deki eski createTargetRound silinmedi, yalnız aşırı geniş 'seen' geçmişine karşı güvenlik ağı olarak korundu.",
+      "decision": "math-group-1 / target-number (3. oyun) TAMAMLANDI. target-number'ın arayüz kısıtı (serbest ifade kurucu, kind:'expression', yalnız 'verilen tüm sayıları birer kez kullanarak hedefe ulaş' görevini destekler) nedeniyle 4 görev türünün 2'si (direct-reach, verify-and-correct) mevcut kind:'expression' arayüzünü, 2'si (missing-number-reverse, compare-two-expressions) pattern-lab/speed-math'te zaten var olan kind:'choice' arayüzünü kullanacak şekilde tasarlandı — AYNI oyun içinde karışık round türü; js/app.js veya js/engines/math-engine.js'de HİÇBİR değişiklik yapılmadı (mevcut arayüzler yeterliydi). 12 aile, ifadenin YAPISINA göre ayrışır (parantez/öncelik/iç-içe-parantez/zincir/bölme kombinasyonları). 3. düşünme yolu pattern-lab/speed-math'teki 'structured-instruction'dan kasıtlı olarak farklı tasarlandı ('staged-strategy-hint': tam çözüm ASLA ifşa edilmez, yalnız soyut bir strateji iskeleti verilir) çünkü target-number'da tam yapıyı baştan söylemek 'hangi kombinasyonun hedefe ulaştığını bulma' görevini yok ederdi (bkz. md/arsiv/DIFF_ANALYSIS.md gerekçesi). Üretim kodu, öğrencinin/seçeneklerin doğruluğunu `evaluateExpression` ile bağımsız hesaplar (elle yazılmış sonuç yok); testler ayrıca üretim kodundan TAMAMEN ayrı bir yerel `Function`-tabanlı ikinci hesaplama yoluyla da doğrular. js/engines/math-engine.js'deki eski createTargetRound silinmedi, yalnız aşırı geniş 'seen' geçmişine karşı güvenlik ağı olarak korundu.",
       "model": "Sonnet 5 High",
       "supersededBy": null
     },
@@ -557,5 +558,80 @@
       "model": "Sonnet 5 High",
       "supersededBy": null
     }
-  ]
+  ],
+  "wholeProductReady": false,
+  "productReady": false,
+  "trustedLiveRelease": {
+    "status": "PARTIAL_SAFE_PILOT",
+    "safeGameCount": 12,
+    "safeCellCount": 29,
+    "approvedQuestionAssignments": 496,
+    "uniqueApprovedQuestionCount": 456,
+    "finalSurfaceReviewStatus": "PASS",
+    "finalSurfaceReviewedQuestionCount": 496,
+    "legacyFallbackDetected": false,
+    "source": "public/trusted-live-release.json"
+  },
+  "currentWork": {
+    "status": "PASS",
+    "completed": "4. ve 8. sınıf Matematik + Türkçe + Fen motor checkpoint’i",
+    "mathEngine": {
+      "status": "PASS",
+      "grade4FamilyCount": 15,
+      "grade8FamilyCount": 15,
+      "familyCount": 30,
+      "skeletonCount": 90,
+      "solverVerifiedOutputCount": 204,
+      "safeCellCount": 6,
+      "supportedGames": [
+        "problem-hunter",
+        "error-detective",
+        "geometry-lab"
+      ],
+      "adjacentFamilyRepeatCount": 0,
+      "adjacentExperienceRepeatCount": 0,
+      "legacyFallbackDetected": false
+    },
+    "turkishEngine": {
+      "status": "PASS",
+      "grade4FamilyCount": 12,
+      "grade8FamilyCount": 12,
+      "familyCount": 24,
+      "skeletonCount": 72,
+      "evidenceVerifiedOutputCount": 72,
+      "safeCellCount": 4,
+      "supportedGames": [
+        "paragraph-detective",
+        "meaning-hunt"
+      ],
+      "randomSentenceCompositionCount": 0,
+      "adjacentSourceRepeatCount": 0,
+      "adjacentTaskRepeatCount": 0,
+      "legacyFallbackDetected": false
+    },
+    "scienceEngine": {
+      "status": "PASS",
+      "grade4FamilyCount": 12,
+      "grade8FamilyCount": 13,
+      "familyCount": 25,
+      "skeletonCount": 75,
+      "evidenceVerifiedOutputCount": 75,
+      "safeCellCount": 4,
+      "supportedGames": [
+        "science-reasoning",
+        "science-lab"
+      ],
+      "experimentDesignCount": 25,
+      "reasoningCount": 50,
+      "randomSentenceCompositionCount": 0,
+      "adjacentFamilyRepeatCount": 0,
+      "legacyFallbackDetected": false
+    },
+    "combinedFamilyCount": 79,
+    "combinedSkeletonCount": 237,
+    "verifiedEngineOutputCount": 351,
+    "safeEngineCellCount": 14,
+    "fallbackToLegacyAllowed": false,
+    "nextAction": "4. ve 8. sınıf İngilizce bağlam, diyalog ve kısa okuma motorunu oluştur."
+  }
 }

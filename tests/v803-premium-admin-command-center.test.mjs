@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const platform = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
-const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
+const css = await readFile(new URL('../css/styles.css', import.meta.url), 'utf8');
 
 test('admin yönetimi tüm modülleri kalıcı komuta merkezinde sunar', () => {
   for (const label of ['Genel Bakış','Analizler','Okullar','Sınıflar','Öğretmenler','Veliler','Öğrenciler','Soru İnceleme','Hesabım']) {

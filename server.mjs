@@ -44,7 +44,7 @@ const securityHeaders = Object.freeze({
     "frame-ancestors 'none'",
     "form-action 'self'",
     "script-src 'self' https://www.gstatic.com https://www.googleapis.com",
-    "connect-src 'self' https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com",
+    "connect-src 'self' https://www.gstatic.com https://*.googleapis.com https://*.firebaseio.com wss://*.firebaseio.com",
     "img-src 'self' data: blob:",
     "style-src 'self' 'unsafe-inline'",
     "font-src 'self' data:",
@@ -54,11 +54,11 @@ const securityHeaders = Object.freeze({
 });
 
 const blockedPathSegments = new Set([
-  '.git', '.github', 'node_modules', 'scripts', 'tests', 'test-results', 'playwright-report', 'coverage'
+  '.git', '.github', 'node_modules', 'scripts', 'tests', 'test-results', 'playwright-report', 'coverage', 'config'
 ]);
 const blockedFileNames = new Set([
   '.env', 'kuzENLER_AYARLARI.env'.toLowerCase(), 'package.json', 'package-lock.json',
-  'server.mjs', 'playwright.config.mjs', 'stryker.config.mjs'
+  'server.mjs'
 ]);
 
 function writeResponse(response, status, body, headers = {}) {

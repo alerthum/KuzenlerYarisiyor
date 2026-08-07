@@ -54,6 +54,7 @@ let syncedReportIds = new Set();
 let questionEngineAnalysisCache = null;
 let strictAuditLiveCache = null;
 let assessmentV2ProductionCache = null;
+let trustedLiveReleaseCache = null;
 let strictAuditLiveFetchError = null;
 let strictAuditLiveTimer = null;
 let commandCenterExportBusy = false;
@@ -459,6 +460,20 @@ async function loadAssessmentV2ProductionDashboard({ force = false } = {}) {
   return assessmentV2ProductionCache;
 }
 
+async function loadTrustedLiveRelease({ force = false } = {}) {
+  if (trustedLiveReleaseCache && !force) return trustedLiveReleaseCache;
+  try {
+    const response = await fetch(`/public/trusted-live-release.json?t=${Date.now()}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (!data || data.kind !== 'trusted-live-release-status') throw new Error('Geçersiz güvenli canlı durum JSON');
+    trustedLiveReleaseCache = data;
+  } catch (error) {
+    trustedLiveReleaseCache = { fetchError: error?.message || 'Güvenli canlı durum okunamadı.' };
+  }
+  return trustedLiveReleaseCache;
+}
+
 async function loadStrictAuditLive({ force = false } = {}) {
   if (strictAuditLiveCache && !force && !strictAuditLiveFetchError) return strictAuditLiveCache;
   try {
@@ -558,8 +573,12 @@ async function handleCommandCenterExportAction(action) {
   }
 }
 
+function shouldPollStrictAuditLive(status) {
+  return ['STARTING', 'RUNNING', 'STALLED'].includes(String(status || '').toUpperCase());
+}
+
 function startStrictAuditLivePolling() {
-  if (strictAuditLiveTimer) return;
+  if (strictAuditLiveTimer || !shouldPollStrictAuditLive(strictAuditLiveCache?.status)) return;
   strictAuditLiveTimer = setInterval(async () => {
     if (adminSection !== 'question-engine') {
       stopStrictAuditLivePolling();
@@ -568,15 +587,20 @@ function startStrictAuditLivePolling() {
     const prevStatus = strictAuditLiveCache?.status;
     await loadStrictAuditLive({ force: true });
     const panel = document.querySelector('[data-testid="live-audit-panel"]');
-    if (!panel) return;
-    // Yalnız canlı paneli güncelle — tüm portalı yeniden boyama
-    try {
-      const html = renderStrictAuditLivePanelHtml(strictAuditLiveCache, {
-        fetchError: strictAuditLiveFetchError
-      });
-      panel.outerHTML = html;
-    } catch (err) {
-      console.warn('Canlı panel güncellenemedi', err);
+    if (panel) {
+      // Yalnız canlı paneli güncelle — tüm portalı yeniden boyama
+      try {
+        const html = renderStrictAuditLivePanelHtml(strictAuditLiveCache, {
+          fetchError: strictAuditLiveFetchError
+        });
+        panel.outerHTML = html;
+      } catch (err) {
+        console.warn('Canlı panel güncellenemedi', err);
+      }
+    }
+    if (!shouldPollStrictAuditLive(strictAuditLiveCache?.status)) {
+      stopStrictAuditLivePolling();
+      return;
     }
     // Durum değişiminde alt kanıtların defer bayrağı için tam yenile
     if (prevStatus !== strictAuditLiveCache?.status) {
@@ -729,12 +753,57 @@ function dv(value, suffix='') {
   return `${esc(String(value))}${suffix}`;
 }
 
-function questionEngineCommandCenterModule(analysis, liveState = null, productionPortfolio = null) {
-  const livePanel = renderStrictAuditLivePanelHtml(liveState || strictAuditLiveCache, {
-    fetchError: strictAuditLiveFetchError
-  });
-  const deferLegacy = shouldDeferLegacyEvidence(liveState || strictAuditLiveCache);
-  const productionPanel = renderAssessmentV2ProductionPanelHtml(productionPortfolio || assessmentV2ProductionCache);
+function questionEngineCommandCenterModule(analysis, liveState = null, productionPortfolio = null, trustedLiveRelease = null) {
+  const live = liveState || strictAuditLiveCache || {};
+  const production = productionPortfolio || assessmentV2ProductionCache || {};
+  const trusted = trustedLiveRelease || trustedLiveReleaseCache || {};
+  const productAcceptance = analysis?.productAcceptance || {};
+  const dimensions = productAcceptance.dimensions || {};
+  const wholeProductReady = productAcceptance.decision === 'PASS'
+    && productAcceptance.productReady === true
+    && production.productReady === true
+    && production.publicationAllowed === true;
+  const trustedSummary = trusted.summary || {};
+  const safeGameCount = Number(trustedSummary.safeGameCount || 0);
+  const safeCellCount = Number(trustedSummary.safeCellCount || 0);
+  const approvedAssignments = Number(trustedSummary.approvedQuestionAssignmentCount || 0);
+  const uniqueApprovedQuestions = Number(trustedSummary.uniqueApprovedQuestionCount || 0);
+  const finalSurfaceReviewed = Number(trustedSummary.finalSurfaceReviewedQuestionCount || 0);
+  const finalSurfaceReviewStatus = trustedSummary.finalSurfaceReviewStatus || 'NOT_GENERATED';
+  const partialSafe = !wholeProductReady
+    && trusted.publicationScope === 'ONLY_EXPLICIT_SAFE_CELLS'
+    && trusted.fallbackToLegacyAllowed === false
+    && safeCellCount > 0;
+  const releaseLabel = wholeProductReady ? 'YAYINA HAZIR' : partialSafe ? 'KISMİ GÜVENLİ PİLOT' : 'YAYINA KAPALI';
+  const releaseBadge = wholeProductReady ? 'green' : partialSafe ? 'cyan' : 'orange';
+  const releaseClass = wholeProductReady ? 'is-ready' : partialSafe ? 'is-partial' : 'is-blocked';
+
+  const productionSummary = production.summary || {};
+  const canonicalCount = Number(productionSummary.canonicalQuestionCount || 0);
+  const approvedCount = Number(productionSummary.humanApprovedQuestionCount || 0);
+  const adaptedCount = Number(productionSummary.gameAdaptedQuestionCount || 0);
+  const currentTask = trusted.currentWork?.title
+    || live.currentTask
+    || live.lastActivityMessage
+    || analysis?.lastAutomatedAction?.action
+    || 'Aktif geliştirme kaydı yok.';
+  const trustedLastTest = trusted.latestTest || (Array.isArray(trusted.latestTests) ? trusted.latestTests[0] : trusted.latestTests);
+  const lastTest = trustedLastTest?.result
+    ? `${trustedLastTest.result} · ${trustedLastTest.command || ''}`
+    : (live.lastRealTestResult || analysis?.lastAutomatedAction?.testResult || 'Henüz güncel gerçek test kaydı yok.');
+  const nextAction = trusted.currentWork?.next?.[0]
+    || live.nextShard
+    || live.checkpoint?.nextGameId
+    || live.checkpoint?.nextGradeBand
+    || 'Canlı çıktı kalite kapısını tamamla.';
+  const changedFiles = Array.isArray(trusted.currentWork?.changedFiles)
+    ? trusted.currentWork.changedFiles
+    : (Array.isArray(live.changedFiles) ? live.changedFiles : []);
+  const blockedPriorities = Array.isArray(trusted.blockedPriorities) ? trusted.blockedPriorities : [];
+  const safeCells = Array.isArray(trusted.safeCells) ? trusted.safeCells : [];
+  const safeGames = Array.isArray(trusted.safeGames) ? trusted.safeGames : [];
+  const failedDimensions = Object.entries(dimensions).filter(([, value]) => value !== 'PASS').map(([key]) => key);
+  const generatedAt = trusted.generatedAt || production.generatedAt || analysis?.generatedAt || live.updatedAt || null;
 
   const exportToolbar = `<div class="command-center-actions">
       <button class="secondary-button" data-platform-action="admin-refresh-question-engine">🔄 Yeniden yükle</button>
@@ -749,214 +818,96 @@ function questionEngineCommandCenterModule(analysis, liveState = null, productio
       </div>
     </div>`;
 
-  if (!analysis) {
-    return `<div class="module-heading"><div><span class="badge cyan">Otonom kalite motoru</span><h2>Soru Motoru Komuta Merkezi</h2><p>Canlı denetim üstte; analiz dosyası ayrıca yüklenir.</p></div>${exportToolbar}</div>
-    <div id="cc-export-status" class="command-center-export-status" hidden></div>
-    ${livePanel}
-    ${productionPanel}
-    <div class="empty-state">Analiz verisi yok — <code>public/question-engine-analysis.json</code> henüz yüklenmedi.</div>`;
-  }
-  if (analysis.fetchError) {
-    return `<div class="module-heading"><div><span class="badge orange">Hata</span><h2>Soru Motoru Komuta Merkezi</h2><p>Analiz dosyası okunamadı.</p></div>${exportToolbar}</div>
-    <div id="cc-export-status" class="command-center-export-status" hidden></div>
-    ${livePanel}
-    ${productionPanel}
-    <div class="empty-state">Veri yok — ${esc(analysis.fetchError)}</div>`;
-  }
+  const livePanel = renderStrictAuditLivePanelHtml(live, { fetchError: strictAuditLiveFetchError });
+  const productionPanel = renderAssessmentV2ProductionPanelHtml(production);
+  const releaseExplanation = wholeProductReady
+    ? 'Bütün yayın kapıları geçti.'
+    : partialSafe
+      ? 'Yalnız aşağıdaki sınıf-oyun hücreleri açıktır. Doğrulanmamış içerik ve eski fallback kesin olarak kapalıdır.'
+      : 'Doğrulanmamış veya eksik içerik öğrenciye açılmaz.';
 
-  const stage = analysis.currentAutonomousStage || {};
-  const lastAction = analysis.lastAutomatedAction || {};
-  const blockers = analysis.blockers || {};
-  const difficulty = analysis.difficultyCompliance || {};
-  const options = analysis.optionQuality || {};
-  const semantic = analysis.semanticRepeat || {};
-  const family = analysis.familyStatus || {};
-  const capacity = analysis.realCapacityByGradeSubjectGame || {};
-  const sixty = analysis.sixtySessionSimulation || {};
-  const samples = analysis.liveGeneratedQuestionSamples || {};
-  const misconceptions = analysis.misconceptionRationalePerWrongOption || {};
-  const testCommands = Array.isArray(analysis.lastTestCommandsAndResults) ? analysis.lastTestCommandsAndResults : [];
-  const capacityRows = Array.isArray(capacity.rows) ? capacity.rows : [];
-  const stage06Infra = analysis.stage06OptionQualityInfra || {};
-  const gameMatrix = analysis.gameProgressMatrix || {};
-  const gameMatrixRows = Array.isArray(gameMatrix.rows) ? gameMatrix.rows : [];
-  // Sayaçlar tek kaynaktan: rows. Stale summary JSON'da kalsa bile ekran doğru gösterir.
-  const gameMatrixSummary = summarizeGameProgress(gameMatrixRows);
-  const semanticMatrix = analysis.semanticQualityMatrix || {};
-  const semanticMatrixRows = Array.isArray(semanticMatrix.rows) ? semanticMatrix.rows : [];
-  const familyDetail = analysis.familyQualityDetail || {};
-  const familyDetailGames = familyDetail.games || {};
-  const liveSamplesRaw = Array.isArray(analysis.liveGeneratedQuestionSamples?.samples) ? analysis.liveGeneratedQuestionSamples.samples : [];
-  // Veri sınırı: options her zaman Array; legacy string/object burada normalize edilir.
-  const liveSamples = liveSamplesRaw.map((sample, index) => normalizeAnalysisSample(sample, { sourceHint: `liveSamples[${index}]` }));
-  const stageProgress = analysis.stageProgressView || {};
-  const stageProgressRows = Array.isArray(stageProgress.stages) ? stageProgress.stages : [];
-  const blockerView = analysis.blockerView || {};
-  const blockerViewRows = Array.isArray(blockerView.blockers) ? blockerView.blockers : [];
-  const testCost = analysis.testCostAndQuota || {};
-  const finalEvidence = analysis.finalEvidence || {};
-  const feActual = finalEvidence.actual || {};
-  const feTargets = finalEvidence.targets || {};
-  const feAdequacy = finalEvidence.finalEvidenceAdequacy || analysis.finalEvidenceAdequacy || 'FAIL';
-  const feBadge = feAdequacy === 'PASS' ? 'green' : 'orange';
-  const productAcceptance = analysis.productAcceptance || {};
-  const paDims = productAcceptance.dimensions || {};
-  const paDecision = productAcceptance.decision || 'FAIL';
-  const productReady = productAcceptance.productReady === true && paDecision === 'PASS';
-  const paBadge = (value) => (value === 'PASS' ? 'green' : 'orange');
-  const overallDisplay = feAdequacy === 'PASS'
-    ? dv(analysis.technicalQualityScorePercent ?? analysis.overallQualityScorePercent, '%')
-    : '<span class="badge orange">Kanıt yetersiz</span>';
-  const overallNote = feAdequacy === 'PASS'
-    ? 'Teknik Kalite Puanı — yıllık ürün kabulü değildir.'
-    : 'Final kanıt eşikleri karşılanmadan Teknik Kalite Puanı 100 gösterilmez.';
-  const productReadyDisplay = productReady
-    ? '<span class="badge green">Ürün Hazır</span>'
-    : '<span class="badge orange">Ürün Hazır değil</span>';
-  const productReadyNote = productReady
-    ? 'PRODUCT_ACCEPTANCE_DECISION = PASS'
-    : 'PRODUCT_ACCEPTANCE_DECISION PASS olmadan Ürün Hazır gösterilemez.';
+  const safeCellRows = safeCells.length
+    ? safeCells.map((cell) => `<tr><td>${Number(cell.grade || 0)}. sınıf</td><td>${esc(cell.gameTitle || cell.gameId)}</td><td>${Number(cell.approvedQuestionCount || 0)}</td><td><span class="badge green">Güvenli pilot</span></td></tr>`).join('')
+    : '<tr><td colspan="4">Henüz güvenli canlı hücre yok.</td></tr>';
+  const blockedRows = blockedPriorities.length
+    ? blockedPriorities.map((item) => `<article class="owner-blocked-card"><div><span class="badge orange">KAPALI</span><strong>${esc(item.title || item.gameId)}</strong></div><p>${esc(item.reason || 'Canlı inceleme bekliyor.')}</p></article>`).join('')
+    : '<div class="empty-state">Öncelikli kapalı oyun kaydı yok.</div>';
 
-  const legacyMetrics = deferLegacy
-    ? `<section class="analytics-section"><h3>Eski final kanıtlar (canlı koşu bitmeden güncel sonuç değildir)</h3>
-        <p class="muted">Canlı strict audit sürerken aşağıdaki skorlar arşiv kanıtıdır; canlı paneli esas alın.</p>
-        <div class="platform-metric-grid">
-          <div class="metric-card"><div class="metric-label">Arşiv Teknik Kalite</div><div class="metric-value">${overallDisplay}</div></div>
-          <div class="metric-card"><div class="metric-label">Arşiv Ürün Hazır</div><div class="metric-value">${productReadyDisplay}</div></div>
-        </div>
-      </section>`
-    : `<div class="platform-metric-grid">
-    <div class="metric-card"><div class="metric-label">Genel kalite puanı / Teknik Kalite Puanı</div><div class="metric-value">${overallDisplay}</div><div class="metric-note">${overallNote}</div></div>
-    <div class="metric-card"><div class="metric-label">Ürün Hazır</div><div class="metric-value">${productReadyDisplay}</div><div class="metric-note">${esc(productReadyNote)}</div></div>
-    <div class="metric-card"><div class="metric-label">Final kanıt yeterliliği</div><div class="metric-value"><span class="badge ${feBadge}">${esc(feAdequacy)}</span></div><div class="metric-note">${esc((finalEvidence.gaps || []).slice(0, 4).join(' • ') || 'Sayaçlar FINAL_EVIDENCE_INDEX.json')}</div></div>
-    <div class="metric-card"><div class="metric-label">Mevcut otonom aşama</div><div class="metric-value">${dv(stage.id)}</div><div class="metric-note">${dv(stage.name)} — ${dv(stage.status)}</div></div>
-    <div class="metric-card"><div class="metric-label">Kritik engel</div><div class="metric-value">${dv(blockers.criticalCount)}</div><div class="metric-note">Yüksek: ${dv(blockers.highCount)} • Orta: ${dv(blockers.mediumCount)}</div></div>
-  </div>`;
-
-  return `<div class="module-heading"><div><span class="badge cyan">Otonom kalite motoru</span><h2>Soru Motoru Komuta Merkezi</h2><p>Üretildi: ${esc(analysis.generatedAt ? new Date(analysis.generatedAt).toLocaleString('tr-TR') : 'Veri yok')} • Kaynak aşama: ${dv(analysis.generatedByStage)}</p></div>
-    ${exportToolbar}
-  </div>
+  return `<div class="module-heading"><div><span class="badge ${releaseBadge}">Gerçek ürün durumu</span><h2>Soru Motoru Komuta Merkezi</h2><p>Son veri: ${generatedAt ? esc(new Date(generatedAt).toLocaleString('tr-TR')) : 'Veri yok'}</p></div>${exportToolbar}</div>
   <div id="cc-export-status" class="command-center-export-status" hidden></div>
 
-  ${livePanel}
-
-  ${productionPanel}
-
-  ${legacyMetrics}
-
-  <section class="analytics-section"><h3>Ürün kabul (yıllık / sınıf kapasitesi)</h3>
-    <p class="muted">Stage 14 teknik PASS, yıllık kullanım kabulü değildir. Kaynak: <code>PRODUCT_ACCEPTANCE_DECISION.json</code></p>
-    <div class="platform-metric-grid">
-      <div class="metric-card"><div class="metric-label">Teknik kalite</div><div class="metric-value"><span class="badge ${paBadge(paDims.technicalQuality)}">${esc(paDims.technicalQuality || 'FAIL')}</span></div></div>
-      <div class="metric-card"><div class="metric-label">Yıllık öğrenci kapasitesi</div><div class="metric-value"><span class="badge ${paBadge(paDims.annualStudentCapacity)}">${esc(paDims.annualStudentCapacity || 'FAIL')}</span></div></div>
-      <div class="metric-card"><div class="metric-label">30 kişilik sınıf kapasitesi</div><div class="metric-value"><span class="badge ${paBadge(paDims.class30Capacity)}">${esc(paDims.class30Capacity || 'FAIL')}</span></div></div>
-      <div class="metric-card"><div class="metric-label">Algılanan çeşitlilik</div><div class="metric-value"><span class="badge ${paBadge(paDims.perceivedDiversity)}">${esc(paDims.perceivedDiversity || 'FAIL')}</span></div></div>
-      <div class="metric-card"><div class="metric-label">Gerçek içerik inceleme</div><div class="metric-value"><span class="badge ${paBadge(paDims.contentReview)}">${esc(paDims.contentReview || 'FAIL')}</span></div></div>
-    </div>
-    ${productAcceptance.failureHighlights ? `<p class="muted mt-12">Başarısız kapılar: ${esc(JSON.stringify(productAcceptance.failureHighlights))}</p>` : ''}
-  </section>
-
-  <section class="analytics-section"><h3>Final kanıt sayaçları (gerçek)</h3>
-    <div class="platform-metric-grid">
-      <div class="metric-card"><div class="metric-label">Oturum / oyun</div><div class="metric-value">${dv(feActual.minSessionsPerGame)}/${dv(feTargets.sessionsPerGame || 500)}</div><div class="metric-note">500 hedef; metin iddiası sayılmaz</div></div>
-      <div class="metric-card"><div class="metric-label">Solver örnekleri</div><div class="metric-value">${dv(feActual.solverSamples)}/${dv(feTargets.solverSamples || 50000)}</div></div>
-      <div class="metric-card"><div class="metric-label">Seçenek örnekleri</div><div class="metric-value">${dv(feActual.optionSamples)}/${dv(feTargets.optionSamples || 10000)}</div></div>
-      <div class="metric-card"><div class="metric-label">Mutation</div><div class="metric-value">${dv(feActual.mutationScorePercent)}%/${dv(feTargets.mutationScorePercent || 90)}%</div></div>
-      <div class="metric-card"><div class="metric-label">Tam E2E</div><div class="metric-value">${feActual.fullE2E === true ? 'PASS' : 'Eksik'}</div><div class="metric-note">Smoke: ${dv(feActual.e2eSmokeOnly)}</div></div>
-      <div class="metric-card"><div class="metric-label">Child-mind yaş bantları</div><div class="metric-value">${feActual.childMindStructuredBands === true ? 'PASS' : 'Eksik'}</div></div>
+  <section class="owner-command-summary ${releaseClass}">
+    <div class="owner-command-status"><span>ÜRÜN DURUMU</span><strong>${releaseLabel}</strong><p>${releaseExplanation}</p></div>
+    <div class="owner-command-metrics">
+      <article><small>Güvenli oyun</small><strong>${safeGameCount}/23</strong><span>Yalnız onaylı sınıflarda</span></article>
+      <article><small>Güvenli sınıf-oyun hücresi</small><strong>${safeCellCount}</strong><span>Açık whitelist</span></article>
+      <article><small>Benzersiz onaylı soru</small><strong>${uniqueApprovedQuestions}</strong><span>Gerçek soru sayısı</span></article>
+      <article><small>Onaylı soru ataması</small><strong>${approvedAssignments}</strong><span>Sınıf-oyun dağılımı</span></article>
+      <article><small>Son ekran incelemesi</small><strong>${finalSurfaceReviewed}</strong><span>${esc(finalSurfaceReviewStatus)}</span></article>
+      <article><small>Kapalı kapsam grubu</small><strong>${blockedPriorities.length}</strong><span>Doğrulanana kadar açılmaz</span></article>
     </div>
   </section>
 
-  <section class="analytics-section"><h3>Son otomatik işlem</h3>
-    <div class="report-item"><h3>${dv(lastAction.action)}</h3><p><small>${esc(lastAction.timestamp ? new Date(lastAction.timestamp).toLocaleString('tr-TR') : 'Veri yok')}</small></p><p><strong>Değişen dosyalar:</strong> ${Array.isArray(lastAction.filesChanged) && lastAction.filesChanged.length ? lastAction.filesChanged.map(f=>`<code>${esc(f)}</code>`).join(', ') : 'Veri yok'}</p><p><strong>Test sonucu:</strong> ${dv(lastAction.testResult)}</p></div>
-  </section>
-
-  ${Array.isArray(blockers.highBlockerTitles) && blockers.highBlockerTitles.length ? `<section class="analytics-section"><h3>Açık yüksek/kritik engeller</h3><div class="admin-card-list">${blockers.highBlockerTitles.map(title=>`<article class="admin-entity-card"><div class="entity-icon">⚠️</div><div class="entity-main"><h4>${esc(title)}</h4></div></article>`).join('')}</div></section>` : `<section class="analytics-section"><h3>Açık yüksek/kritik engeller</h3><div class="empty-state">Veri yok</div></section>`}
-
-  <section class="analytics-section"><h3>3. sınıf sonrası zorluk ve seçenek denetimi</h3>
-    <div class="platform-metric-grid">
-      <div class="metric-card"><div class="metric-label">3. sınıf+ kolay/orta yayınlanan soru</div><div class="metric-value">${dv(difficulty.grade3PlusEasyMediumPublishedCount)}</div></div>
-      <div class="metric-card"><div class="metric-label">Alakasız seçenek sayısı</div><div class="metric-value">${dv(options.irrelevantOptionCount)}</div></div>
-      <div class="metric-card"><div class="metric-label">Biçimsel ipucu veren seçenek</div><div class="metric-value">${dv(options.formCueGiveawayCount)}</div></div>
-      <div class="metric-card"><div class="metric-label">Tüm seçenekleri okumadan cevaplanabilen</div><div class="metric-value">${dv(options.answerableWithoutReadingAllOptionsCount)}</div></div>
+  <section class="analytics-section owner-now-panel">
+    <h3>Şu anda yapılan iş</h3>
+    <div class="owner-now-grid">
+      <article><small>Mevcut görev</small><strong>${esc(currentTask)}</strong></article>
+      <article><small>Son gerçek test</small><strong>${esc(lastTest)}</strong></article>
+      <article><small>Sıradaki kesin adım</small><strong>${esc(nextAction)}</strong></article>
+      <article><small>Yayın ilkesi</small><strong>${trusted.fallbackToLegacyAllowed === false ? 'Fail-closed · eski fallback kapalı' : 'Veri yok'}</strong></article>
     </div>
+    ${changedFiles.length ? `<p class="muted mt-12"><strong>Değişen dosyalar:</strong> ${changedFiles.map((file) => `<code>${esc(file)}</code>`).join(', ')}</p>` : ''}
   </section>
 
-  <section class="analytics-section"><h3>Semantik tekrar</h3>
-    <div class="platform-metric-grid"><div class="metric-card"><div class="metric-label">Legacy matematik oyunları (iskelet tekrarı)</div><div class="metric-value">${dv(semantic.legacyGamesSkeletonRepeatCount)}</div><div class="metric-note">${dv(semantic.legacyGamesSkeletonRepeatNote)}</div></div></div>
-    <p class="muted mt-12">${dv(semantic.otherGamesNote)}</p>
+  <section class="analytics-section owner-safe-cells">
+    <div class="section-header"><div><h3>Şu an öğrenciye açılabilen içerik</h3><p>Bu tablo oyun adından çok sınıf-oyun hücresini esas alır. Listede olmayan hücre soru uydurmaz.</p></div><span class="badge green">${safeCellCount} hücre</span></div>
+    <div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Sınıf</th><th>Oyun</th><th>Onaylı soru</th><th>Durum</th></tr></thead><tbody>${safeCellRows}</tbody></table></div>
   </section>
 
-  <section class="analytics-section"><h3>Aile kalite dağılımı</h3>
-    <div class="platform-metric-grid">
-      <div class="metric-card"><div class="metric-label">GOLD</div><div class="metric-value">${dv(family.GOLD)}</div></div>
-      <div class="metric-card"><div class="metric-label">REVIEW</div><div class="metric-value">${dv(family.REVIEW)}</div></div>
-      <div class="metric-card"><div class="metric-label">QUARANTINE</div><div class="metric-value">${dv(family.QUARANTINE)}</div></div>
-    </div>
+  <section class="analytics-section owner-blocked-priorities">
+    <div class="section-header"><div><h3>Açık ürün sorunları</h3><p>Bu oyunlar eski veya doğrulanmamış soruya geri dönmez.</p></div></div>
+    <div class="owner-blocked-grid">${blockedRows}</div>
   </section>
 
-  <section class="analytics-section"><h3>Sınıf / ders / oyun bazında gerçek kapasite</h3>
-    ${capacityRows.length ? `<div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Oyun</th><th>Yaş</th><th>Ayrık iskelet</th><th>Oturum uzunluğu</th></tr></thead><tbody>${capacityRows.map(row=>`<tr><td>${esc(row.game)}</td><td>${dv(row.age)}</td><td>${dv(row.distinctSkeletons)}</td><td>${dv(row.sessionLength)}</td></tr>`).join('')}</tbody></table></div>` : '<div class="empty-state">Veri yok</div>'}
-    <p class="muted mt-12">${dv(capacity.otherGames)}</p>
-  </section>
+  <details class="admin-details command-center-details">
+    <summary>İnsan inceleme ilerlemesi ve geçmiş göstergeler</summary>
+    <section class="analytics-section">
+      <div class="platform-metric-grid">
+        <div class="metric-card"><div class="metric-label">İnsan inceleme ilerlemesi</div><div class="metric-value">${approvedCount}/${canonicalCount || 0}</div></div>
+        <div class="metric-card"><div class="metric-label">Tam güvenli oyun</div><div class="metric-value">${wholeProductReady ? '23/23' : '0/23'}</div></div>
+        <div class="metric-card"><div class="metric-label">İnsan onaylı soru</div><div class="metric-value">${approvedCount}</div></div>
+        <div class="metric-card"><div class="metric-label">Oyuna uyarlanan</div><div class="metric-value">${adaptedCount}</div></div>
+      </div>
+      <p>Bu eski portföy göstergeleri, yukarıdaki güvenli canlı whitelist sayılarıyla karıştırılmaz.</p>
+    </section>
+  </details>
 
-  <section class="analytics-section"><h3>60 oturum simülasyonu</h3>
-    <div class="empty-state">${sixty.run ? esc(JSON.stringify(sixty)) : `Veri yok — ${dv(sixty.note)}`}</div>
-  </section>
+  <details class="admin-details command-center-details">
+    <summary>Canlı çalışma ayrıntısını göster</summary>
+    ${livePanel}
+  </details>
 
-  <section class="analytics-section"><h3>Oyun İlerleme Matrisi</h3>
-    <p class="muted">Hedef: aktif oyun başına ≥12 aile × ≥4 iskelet × ≥3 düşünme yolu (Aşama 04). Uydurma sayı yok.</p>
-    ${gameMatrixRows.length ? `<div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Oyun</th><th>Ders</th><th>Yaş</th><th>Hedef aile</th><th>Tamamlanan aile</th><th>Hedef iskelet</th><th>Doğrulanmış iskelet</th><th>Düşünme yolu</th><th>Çözüm grafiği</th><th>Çeldirici planı</th><th>Oturum uzunluğu</th><th>Gerçek kapasite</th><th>Durum</th><th>Son güncelleme</th><th>Açık blocker</th></tr></thead><tbody>${gameMatrixRows.map(row=>`<tr><td>${esc(row.game)}</td><td>${dv(row.subject)}</td><td>${dv(row.gradeAgeRange)}</td><td>${dv(row.targetFamilies)}</td><td>${dv(row.completedFamilies)}</td><td>${dv(row.targetSkeletons)}</td><td>${dv(row.verifiedSkeletons)}</td><td>${dv(row.distinctReasoningPaths)}</td><td>${dv(row.distinctSolutionGraphs)}</td><td>${dv(row.distinctDistractorPlans)}</td><td>${dv(row.sessionLength)}</td><td>${dv(row.realCapacity)}</td><td><span class="badge ${row.status==='PASS'?'green':row.status==='BLOCKED'?'orange':''}">${dv(row.status)}</span></td><td>${esc(row.lastUpdated && row.lastUpdated!=='Veri yok' ? new Date(row.lastUpdated).toLocaleString('tr-TR') : 'Veri yok')}</td><td>${dv(row.openBlockers)}</td></tr>`).join('')}</tbody></table></div>` : '<div class="empty-state">Veri yok</div>'}
-    <p class="muted mt-12">PASS: ${dv(gameMatrixSummary.pass)} • IN_PROGRESS: ${dv(gameMatrixSummary.inProgress)} • WAITING: ${dv(gameMatrixSummary.waiting)} • BLOCKED: ${dv(gameMatrixSummary.blocked)} • Toplam: ${dv(gameMatrixSummary.totalGames)}</p>
-  </section>
+  <details class="admin-details command-center-details">
+    <summary>Müfredat ve soru portföyü ayrıntısını göster</summary>
+    ${productionPanel}
+  </details>
 
-  <section class="analytics-section"><h3>Semantik Kalite Matrisi</h3>
-    <p class="muted">${dv(semanticMatrix.note)}</p>
-    ${semanticMatrixRows.length ? `<div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>Oyun</th><th>questionKey tekrarı</th><th>familyId tekrarı</th><th>skeletonId tekrarı</th><th>Aynı oturum sonucu</th><th>Oturumlar arası sonuç</th><th>20 oturum testi</th><th>60 oturum testi</th><th>Seed sayısı</th></tr></thead><tbody>${semanticMatrixRows.map(row=>`<tr><td>${esc(row.game)}</td><td>${dv(row.questionKeyRepeatCount)}</td><td>${dv(row.familyIdRepeatCount_sameSession)}</td><td>${dv(row.skeletonIdRepeatCount_sameSession)}</td><td>${dv(row.sameSessionRepeatResult)}</td><td>${dv(row.crossSessionRepeatResult)}</td><td>${dv(row.twentySessionTest)}</td><td>${dv(row.sixtySessionTest)}</td><td>${dv(row.seedsUsed)}</td></tr>`).join('')}</tbody></table></div>` : '<div class="empty-state">Veri yok</div>'}
-  </section>
-
-  <section class="analytics-section"><h3>Aile Kalite Detayı</h3>
-    ${Object.keys(familyDetailGames).length ? Object.entries(familyDetailGames).map(([gameId, families]) => `<details class="admin-details"><summary>${esc(gameId)} (${families.length} aile)</summary><div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>familyId</th><th>Aile adı</th><th>Öğretim amacı</th><th>İskelet</th><th>Yol</th><th>Çözüm grafiği</th><th>Çeldirici planı</th><th>Bilişsel özellikler</th><th>Durum</th><th>Doğruluk</th><th>İnsan gözü</th><th>Son test</th></tr></thead><tbody>${families.map(f=>`<tr><td><code>${esc(f.familyId)}</code></td><td>${esc(f.name)}</td><td>${esc(f.teachingPurpose)}</td><td>${dv(f.skeletonCount)}</td><td>${dv(f.pathCount)}</td><td>${dv(f.solutionGraphCount)}</td><td>${dv(f.distractorPlanCount)}</td><td>${esc((f.cognitiveTraits||[]).join(', '))}</td><td>${esc(f.status)}</td><td>${esc(f.accuracyStatus)}</td><td>${dv(f.humanEyeStatus)}</td><td>${dv(f.lastTestDate)}</td></tr>`).join('')}</tbody></table></div></details>`).join('') : '<div class="empty-state">Veri yok</div>'}
-  </section>
-
-  <section class="analytics-section"><h3>Canlı üretilen soru örnekleri</h3>
-    ${liveSamples.length ? `<div class="admin-card-list">${liveSamples.map((sample) => renderLiveSampleCardHtml(sample, esc)).join('')}</div>` : `<div class="empty-state">${dv(samples.note)}</div>`}
-  </section>
-
-  <section class="analytics-section"><h3>Yanlış seçenek yanılgı gerekçeleri</h3><div class="empty-state">${dv(misconceptions.note)}</div></section>
-
-  <section class="analytics-section"><h3>Aşama 06 Seçenek Kalitesi — Veri Altyapısı (henüz ölçülmüyor)</h3>
-    <div class="platform-metric-grid">
-      ${Object.entries(stage06Infra).filter(([key])=>key!=='note').map(([key,value])=>`<div class="metric-card"><div class="metric-label">${esc(key)}</div><div class="metric-value">${esc(String(value))}</div></div>`).join('')}
-    </div>
-    <p class="muted mt-12">${dv(stage06Infra.note)}</p>
-  </section>
-
-  <section class="analytics-section"><h3>Aşama İlerleme Görünümü (15 aşama)</h3>
-    ${stageProgressRows.length ? `<div class="analytics-table-wrap"><table class="analytics-table"><thead><tr><th>#</th><th>Ad</th><th>Durum</th><th>%</th><th>Son rapor</th><th>Son işlem</th><th>Açık blocker</th><th>Sonraki işlem</th></tr></thead><tbody>${stageProgressRows.map(s=>`<tr><td>${dv(s.id)}</td><td>${esc(s.name)}</td><td><span class="badge ${s.status==='PASS'?'green':s.status==='BLOCKED'?'orange':''}">${dv(s.status)}</span></td><td>${dv(s.percentComplete,'%')}</td><td>${s.lastReport?`<code>${esc(s.lastReport)}</code>`:'Veri yok'}</td><td>${dv(s.lastAction)}</td><td>${dv(s.openBlockers)}</td><td>${esc(s.nextAction||'')}</td></tr>`).join('')}</tbody></table></div>` : '<div class="empty-state">Veri yok</div>'}
-  </section>
-
-  <section class="analytics-section"><h3>Blocker Görünümü</h3>
-    ${blockerViewRows.length ? `<div class="admin-card-list">${blockerViewRows.map(b=>`<article class="admin-entity-card"><div class="entity-icon">${b.severity==='HIGH'?'🟠':b.severity==='CRITICAL'?'🔴':'🟡'}</div><div class="entity-main"><h4>${esc(b.id)} — <span class="badge ${b.severity==='CRITICAL'?'orange':''}">${esc(b.severity)}</span> <span class="badge">${esc(b.status)}</span></h4><p>${esc(b.title)}</p><p><small><strong>Kanıt:</strong> ${esc(b.evidence)}</small></p><p><small><strong>Kök neden dosyası:</strong> ${dv(b.rootCauseFile)} • <strong>Sorumlu aşama:</strong> ${dv(b.ownerStage)}</small></p><p><small><strong>İlerleme:</strong> ${esc(b.resolutionProgress)} • <strong>Sonraki işlem:</strong> ${esc(b.nextAction)}</small></p></div></article>`).join('')}</div>` : '<div class="empty-state">Veri yok</div>'}
-  </section>
-
-  <section class="analytics-section"><h3>Test Maliyeti ve Kota Takibi</h3>
-    <div class="platform-metric-grid">
-      <div class="metric-card"><div class="metric-label">Son ilgili test</div><div class="metric-value">${dv(testCost.lastRelevantTest?.result)}</div><div class="metric-note">${testCost.lastRelevantTest?`<code>${esc(testCost.lastRelevantTest.command)}</code>`:'Veri yok'}</div></div>
-      <div class="metric-card"><div class="metric-label">Son kalite kapısı</div><div class="metric-value">${dv(testCost.lastQualityGate?.result)}</div></div>
-      <div class="metric-card"><div class="metric-label">Son tam regresyon</div><div class="metric-value">${dv(testCost.lastFullRegression?.result)}</div><div class="metric-note">Süre: ${dv(testCost.lastFullRegression?.durationMsApprox,' ms')} • Neden: ${dv(testCost.lastFullRegression?.whyRun)}</div></div>
-      <div class="metric-card"><div class="metric-label">Bu aşamada tam regresyon sayısı</div><div class="metric-value">${dv(testCost.fullRegressionRunCountThisStage)}</div></div>
-    </div>
-    <p class="muted mt-12">${dv(testCost.noUnnecessaryRepeatTestingRecord)}</p>
-  </section>
-
-  <section class="analytics-section"><h3>Son test komutları ve gerçek sonuçları</h3>
-    ${testCommands.length ? `<div class="admin-card-list">${testCommands.map(entry=>`<article class="admin-entity-card"><div class="entity-icon">✅</div><div class="entity-main"><h4><code>${esc(entry.command)}</code></h4><p>${esc(entry.result)}</p><small>${esc(entry.timestamp ? new Date(entry.timestamp).toLocaleString('tr-TR') : '')}</small></div></article>`).join('')}</div>` : '<div class="empty-state">Veri yok</div>'}
-  </section>`;
+  <details class="admin-details command-center-details">
+    <summary>Teknik kalite ayrıntılarını göster</summary>
+    <section class="analytics-section"><h3>Oyun İlerleme Matrisi</h3><p>Eski aile/iskelet tamamlanma metrikleri yalnız teknik geçmiş kanıtıdır; canlı whitelist izni vermez.</p></section>
+    <section class="analytics-section"><h3>Semantik Kalite Matrisi</h3><p>Güncel canlı kararda son-ekran denetimi ve açık questionKey whitelist sonucu esas alınır.</p></section>
+    <section class="analytics-section"><h3>Ürün kabul</h3>
+      <div class="platform-metric-grid">
+        ${Object.entries(dimensions).map(([key, value]) => `<div class="metric-card"><div class="metric-label">${esc(key)}</div><div class="metric-value"><span class="badge ${value === 'PASS' ? 'green' : 'orange'}">${esc(value || 'FAIL')}</span></div></div>`).join('') || '<div class="empty-state">Ürün kabul verisi yok.</div>'}
+      </div>
+    </section>
+    <section class="analytics-section"><h3>Eski portföy sayıları</h3><p>Kanonik: ${canonicalCount} · İnsan onaylı: ${approvedCount} · Oyuna uyarlanan: ${adaptedCount}. Bu sayılar tek başına canlı yayın izni vermez.</p></section>
+    <section class="analytics-section"><h3>Başarısız ürün boyutları</h3><p>${failedDimensions.length ? esc(failedDimensions.join(', ')) : 'Yok'}</p></section>
+    <section class="analytics-section"><h3>Final kanıt yeterliliği</h3><p>${esc(analysis?.finalEvidenceAdequacy || 'Veri yok')}</p></section>
+  </details>`;
 }
-
 // Merkezi yönetim paneli — modül bazlı premium yönetim
-function adminManagement(accounts,classrooms,learners,schools,reports,metrics=new Map(),questionEngineAnalysis=null,strictAuditLive=null,assessmentV2Production=null) {
+function adminManagement(accounts,classrooms,learners,schools,reports,metrics=new Map(),questionEngineAnalysis=null,strictAuditLive=null,assessmentV2Production=null,trustedLiveRelease=null) {
   const renderers={
     overview:()=>adminOverview(accounts,schools,classrooms,learners),
     analytics:()=>adminAnalytics(schools,classrooms,learners,metrics),
@@ -966,7 +917,7 @@ function adminManagement(accounts,classrooms,learners,schools,reports,metrics=ne
     parents:()=>adultsModule('parent',accounts,schools,classrooms,learners),
     learners:()=>learnersModule(learners,schools,classrooms,accounts),
     'question-reports':()=>questionReportsModule(reports,learners),
-    'question-engine':()=>questionEngineCommandCenterModule(questionEngineAnalysis, strictAuditLive, assessmentV2Production),
+    'question-engine':()=>questionEngineCommandCenterModule(questionEngineAnalysis, strictAuditLive, assessmentV2Production, trustedLiveRelease),
     settings:()=>accountSettingsModule()
   };
   const renderSelected = renderers[adminSection] || renderers.overview;
@@ -1071,19 +1022,22 @@ async function renderAdultPortal() {
   const centerLabel=account.role==='admin'?(adminView==='teacher'?'Öğretmen görünümü':adminView==='parent'?'Veli görünümü':'Admin yönetim merkezi'):account.role==='teacher'?'Öğretmen merkezi':'Veli merkezi';
   const adminReports=account.role==='admin'?(await getDocs(query(collection(db,'questionReports'),limit(1000)))).docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>String(b.createdAt||'').localeCompare(String(a.createdAt||''))):[];
   const isRealAdmin=account.role==='admin'&&adminView==='admin';
-  if (isRealAdmin) applyAdminQuestionHealthSweep().catch((error)=>console.warn('Soru sağlık taraması:',error));
+  // Eski Phase5I Firestore sağlık taraması otomatik çalıştırılmaz.
+  // Trusted-live son ekran kapısı dosya tabanlıdır; yönetim ekranı açılırken gereksiz yazma/yetki hatası üretmez.
   let questionEngineAnalysis=null;
   let strictAuditLive=null;
   let assessmentV2Production=null;
+  let trustedLiveRelease=null;
   if (isRealAdmin && adminSection==='question-engine') {
     questionEngineAnalysis = await loadQuestionEngineAnalysis();
     assessmentV2Production = await loadAssessmentV2ProductionDashboard();
+    trustedLiveRelease = await loadTrustedLiveRelease();
     strictAuditLive = await loadStrictAuditLive({ force: true });
     startStrictAuditLivePolling();
   } else {
     stopStrictAuditLivePolling();
   }
-  const management=account.role==='admin'?(adminView==='teacher'?teacherManagement(classrooms,visibleLearners):adminView==='parent'?parentManagement(learners):adminManagement(adminAccounts,classrooms,learners,schools,adminReports,metrics,questionEngineAnalysis,strictAuditLive,assessmentV2Production)):account.role==='parent'?parentManagement(learners):teacherManagement(classrooms,visibleLearners);
+  const management=account.role==='admin'?(adminView==='teacher'?teacherManagement(classrooms,visibleLearners):adminView==='parent'?parentManagement(learners):adminManagement(adminAccounts,classrooms,learners,schools,adminReports,metrics,questionEngineAnalysis,strictAuditLive,assessmentV2Production,trustedLiveRelease)):account.role==='parent'?parentManagement(learners):teacherManagement(classrooms,visibleLearners);
   const standardOverview=!isRealAdmin?`${metricCards(visibleLearners,metrics)}${management}<section class="section panel"><div class="section-header"><div><h2>${account.role==='teacher'?'Toplu sınıf analizi':'Çocuklarım'}</h2><p>Gelişim ve giriş bilgilerini görüntüleyin.</p></div><button class="secondary-button" data-platform-action="print-student-list">🖨️ PDF / Yazdır</button></div>${learnerTable(visibleLearners,metrics,classrooms)}</section>`:management;
   root.innerHTML=`<main class="platform-shell portal-shell premium-admin-page"><header class="portal-topbar"><div class="auth-brand"><div class="platform-logo">🏆</div><div><strong>${esc(config.appName)}</strong><span>${centerLabel}</span></div></div><div class="portal-user"><button class="portal-profile-button" data-platform-action="${isRealAdmin?'admin-section':'noop'}" ${isRealAdmin?'data-section="settings"':''}><span>${esc(account.displayName||currentUser.displayName||currentUser.email)}</span><small>Profil</small></button><button class="text-button" data-platform-action="logout">Çıkış</button></div></header>${account.role==='admin'&&adminView!=='admin'?`<nav class="admin-preview-return" aria-label="Admin görünüm seçici"><span>Önizleme: ${adminView==='teacher'?'Öğretmen':'Veli'}</span><button class="primary-button" data-platform-action="admin-view" data-view="admin">Admin merkezine dön</button></nav>`:''}${standardOverview}</main>`;
 }
@@ -1350,6 +1304,7 @@ async function handleAction(target) {
     if (action==='admin-refresh-question-engine') {
       await loadQuestionEngineAnalysis({ force: true });
       await loadAssessmentV2ProductionDashboard({ force: true });
+      await loadTrustedLiveRelease({ force: true });
       await loadStrictAuditLive({ force: true });
       await renderAdultPortal();
     }

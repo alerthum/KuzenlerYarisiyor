@@ -88,8 +88,8 @@ export async function loadProjectConfig() {
       parentAnalytics: parseBoolean(raw.ENABLE_PARENT_ANALYTICS, true),
       pwa: parseBoolean(raw.ENABLE_PWA, true),
       qualityPilotMode: parseBoolean(raw.QUALITY_PILOT_MODE, false),
-      controlledLaunchPilotMode: parseBoolean(raw.CONTROLLED_LAUNCH_PILOT_MODE, false),
-      controlledLaunchPilotVersion: String(raw.CONTROLLED_LAUNCH_PILOT_VERSION || '').trim(),
+      controlledLaunchPilotMode: parseBoolean(raw.CONTROLLED_LAUNCH_PILOT_MODE, true),
+      controlledLaunchPilotVersion: String(raw.CONTROLLED_LAUNCH_PILOT_VERSION || 'PHASE5I_PILOT_1').trim(),
       requireAuthInLive: parseBoolean(raw.REQUIRE_AUTH_IN_LIVE, true),
       allowPublicSignup: parseBoolean(raw.ALLOW_PUBLIC_SIGNUP, true),
       parentAccounts: parseBoolean(raw.ENABLE_PARENT_ACCOUNTS, true),
@@ -150,7 +150,7 @@ export async function writeRuntimeConfig(config, targetRoot = projectRoot) {
   return target;
 }
 
-const COPY_EXCLUDES = new Set(['dist', '.git', 'node_modules', 'KUZENLER_AYARLARI.env', 'tests', 'scripts', 'docs', 'TEST_RAPORU.md', 'package-lock.json']);
+const COPY_EXCLUDES = new Set(['dist', '.git', 'node_modules', 'KUZENLER_AYARLARI.env', 'tests', 'test-results', 'scripts', 'docs', 'md', 'ps', 'quality-reports', 'package-lock.json']);
 
 async function copyDirectory(source, target) {
   await mkdir(target, { recursive: true });

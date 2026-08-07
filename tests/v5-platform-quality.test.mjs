@@ -100,7 +100,7 @@ test('Firestore kuralları istemci tarafından rol yükseltmeyi ve sahiplik alan
 });
 
 test('soru kalite kayıtlarının tamamı V5 paketinde bulunur',async()=>{
-  const records=await readFile(new URL('../SORU_KALITE_KAYITLARI.md',import.meta.url),'utf8');
+  const records=await readFile(new URL('../md/arsiv/SORU_KALITE_KAYITLARI.md',import.meta.url),'utf8');
   for(let no=1;no<=11;no+=1) assert.ok(records.includes(`Kayıt ${String(no).padStart(3,'0')}`),`Kayıt ${no}`);
 });
 

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
 const platform = await readFile(new URL('../js/platform/firebase-platform.js', import.meta.url), 'utf8');
-const registry = await readFile(new URL('../FEATURE_REGISTRY.md', import.meta.url), 'utf8');
+const registry = await readFile(new URL('../md/arsiv/FEATURE_REGISTRY.md', import.meta.url), 'utf8');
 
 const requiredFeatures = [
   ['learner-edit', 'Öğrenci düzenle'],

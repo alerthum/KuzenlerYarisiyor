@@ -479,7 +479,7 @@ ${decision.nextExactCommand
   ? `\`${decision.nextExactCommand}\` — FAIL sonrasi yalniz basarisiz orkestrasyon katmanini duzelt; mimariyi yeniden yazma.`
   : 'Yok (PRODUCT_ACCEPTANCE PASS).'}
 `;
-writeFileSync('CONTEXT_SNAPSHOT.md', snap, 'utf8');
+writeFileSync('md/arsiv/CONTEXT_SNAPSHOT.md', snap, 'utf8');
 
 progress.decision = decision.decision;
 progress.productReady = decision.productReady;

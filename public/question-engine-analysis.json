@@ -2131,7 +2131,7 @@
         "name": "V11 kök neden analizi",
         "status": "PASS",
         "percentComplete": 100,
-        "lastReport": "reports/STAGE_01_REPORT.md",
+        "lastReport": "md/raporlar/STAGE_01_REPORT.md",
         "lastAction": "6 legacy matematik oyununda familyId/skeletonId eksikliği düzeltildi",
         "openBlockers": 0,
         "nextAction": "Yok — kapalı"
@@ -2141,7 +2141,7 @@
         "name": "Admin soru motoru komuta merkezi",
         "status": "PASS",
         "percentComplete": 100,
-        "lastReport": "reports/STAGE_02_REPORT.md",
+        "lastReport": "md/raporlar/STAGE_02_REPORT.md",
         "lastAction": "Soru Motoru Komuta Merkezi admin sekmesi eklendi",
         "openBlockers": 0,
         "nextAction": "Yok — kapalı"
@@ -2151,7 +2151,7 @@
         "name": "Ortak soru sözleşmesi",
         "status": "PASS",
         "percentComplete": 100,
-        "lastReport": "reports/STAGE_03_REPORT.md",
+        "lastReport": "md/raporlar/STAGE_03_REPORT.md",
         "lastAction": "questionContract tüm oyunlara eklendi",
         "openBlockers": 0,
         "nextAction": "Yok — kapalı"
@@ -2161,7 +2161,7 @@
         "name": "Aile-iskelet-düşünme yolu mimarisi",
         "status": "PASS",
         "percentComplete": 100,
-        "lastReport": "reports/STAGE_04_REPORT.md",
+        "lastReport": "md/raporlar/STAGE_04_REPORT.md",
         "lastAction": "23/23 oyun 12×4×3=48 PASS; Aşama 04 kapandı",
         "openBlockers": 0,
         "nextAction": "Yok — kapalı",

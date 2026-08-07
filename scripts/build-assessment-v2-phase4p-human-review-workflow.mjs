@@ -66,7 +66,7 @@ const outputs={
   publicJson:'public/assessment-v2-human-review-workbench.json',
   template:'public/assessment-v2-human-review-decision-template.json',
   report:'quality-reports/assessment-engine-v2-phase4p-human-review-workflow.json',
-  md:'ASSESSMENT_ENGINEERING_V2_PHASE4P_HUMAN_REVIEW_WORKFLOW.md'
+  md:'md/arsiv/ASSESSMENT_ENGINEERING_V2_PHASE4P_HUMAN_REVIEW_WORKFLOW.md'
 };
 for(const file of Object.values(outputs))fs.mkdirSync(path.dirname(q(file)),{recursive:true});
 fs.writeFileSync(q(outputs.html),html);fs.writeFileSync(q(outputs.publicJson),JSON.stringify(ASSESSMENT_V2_PHASE4P_HUMAN_REVIEW_BATCH,null,2)+'\n');fs.writeFileSync(q(outputs.template),JSON.stringify(template,null,2)+'\n');fs.writeFileSync(q(outputs.report),JSON.stringify(report,null,2)+'\n');fs.writeFileSync(q(outputs.md),md);

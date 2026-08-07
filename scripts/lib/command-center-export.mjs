@@ -20,17 +20,18 @@ const SECRET_KEY_RE = /(private[_-]?key|refresh[_-]?token|access[_-]?token|id[_-
 const SECRET_VALUE_RE = /-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----|AIza[0-9A-Za-z_-]{20,}|ya29\.[0-9A-Za-z._-]+/i;
 
 export const REQUIRED_SOURCES = Object.freeze([
-  'public/strict-audit-live.json',
+  'public/trusted-live-release.json',
   'public/question-engine-analysis.json',
   'PRODUCT_ACCEPTANCE_DECISION.json',
   'FINAL_EVIDENCE_INDEX.json',
   'PROJECT_STATE.json',
   'QUALITY_SCORE.json',
   'BLOCKERS.json',
-  'CONTEXT_SNAPSHOT.md'
+  'md/arsiv/CONTEXT_SNAPSHOT.md'
 ]);
 
 export const OPTIONAL_SOURCES = Object.freeze([
+  'public/strict-audit-live.json',
   'quality-reports/strict-audit-progress.json',
   'quality-reports/strict-audit-checkpoint.json',
   'FINAL_RELEASE_DECISION.json',
@@ -48,6 +49,7 @@ export const OPTIONAL_SOURCES = Object.freeze([
 ]);
 
 export const EXPORT_SECTION_KEYS = Object.freeze([
+  'trustedLiveRelease',
   'currentLiveOperation',
   'strictAuditProgress',
   'questionEngineAnalysis',
@@ -216,6 +218,7 @@ export function buildCommandCenterExport(options = {}) {
   }
 
   const analysis = loaded['public/question-engine-analysis.json'] || {};
+  const trusted = loaded['public/trusted-live-release.json'] || {};
   const live = loaded['public/strict-audit-live.json'] || {};
   const progress = loaded['quality-reports/strict-audit-progress.json'] || {};
   const decision = loaded['PRODUCT_ACCEPTANCE_DECISION.json'] || {};
@@ -233,11 +236,15 @@ export function buildCommandCenterExport(options = {}) {
   const missingRequired = sourceHealth.filter((h) => h.required && h.status !== 'OK' && h.status !== 'STALE');
   const dataFreshness = missingRequired.length
     ? 'PARTIAL'
-    : (live?.status && ['RUNNING', 'STARTING', 'STALLED'].includes(live.status) ? 'LIVE' : 'STALE');
+    : (trusted?.generatedAt ? 'LIVE' : 'STALE');
 
   const dashboardComputedValues = {
     deferLegacyEvidence: ['RUNNING', 'STARTING', 'STALLED'].includes(live?.status),
-    productReadyEffective: decision?.productReady === true && decision?.decision === 'PASS',
+    productReadyEffective: trusted?.wholeProductReady === true,
+    partialSafePilot: trusted?.releaseStatus === 'PARTIAL_SAFE_PILOT',
+    safeGameCount: trusted?.summary?.safeGameCount ?? 0,
+    safeCellCount: trusted?.summary?.safeCellCount ?? 0,
+    approvedAssignments: trusted?.summary?.approvedQuestionAssignmentCount ?? trusted?.summary?.approvedQuestionAssignments ?? 0,
     technicalScorePercent: analysis?.technicalQualityScorePercent ?? analysis?.overallQualityScorePercent ?? null,
     finalEvidenceAdequacy: evidence?.finalEvidenceAdequacy || analysis?.finalEvidenceAdequacy || null,
     liveStatus: live?.status || 'IDLE',
@@ -267,6 +274,7 @@ export function buildCommandCenterExport(options = {}) {
       missingRequiredCount: missingRequired.length,
       missingRequiredSources: missingRequired.map((h) => h.source)
     },
+    trustedLiveRelease: trusted || {},
     currentLiveOperation: live || {},
     strictAuditProgress: progress || {},
     questionEngineAnalysis: analysis || {},
@@ -316,7 +324,7 @@ export function buildCommandCenterExport(options = {}) {
       e2eFull: loaded['quality-reports/final-evidence/e2e-full.json'] || null
     },
     quotaAndTestCost: analysis?.testCostAndQuota || {},
-    contextSnapshot: loaded['CONTEXT_SNAPSHOT.md'] || '',
+    contextSnapshot: loaded['md/arsiv/CONTEXT_SNAPSHOT.md'] || '',
     recentEvents: Array.isArray(live?.recentEvents) ? live.recentEvents : [],
     dashboardComputedValues,
     sourceHealth,
@@ -362,12 +370,20 @@ export function buildCommandCenterExport(options = {}) {
 }
 
 export function buildLiveSummaryExport(exportDoc) {
+  const trusted = exportDoc?.trustedLiveRelease || {};
   const live = exportDoc?.currentLiveOperation || {};
   return {
     schemaVersion: '1.0',
     kind: 'live-operation-summary',
     exportedAt: new Date().toISOString(),
-    status: live.status || null,
+    status: trusted.releaseStatus || live.status || null,
+    wholeProductReady: trusted.wholeProductReady === true,
+    safeGameCount: trusted.summary?.safeGameCount ?? 0,
+    safeCellCount: trusted.summary?.safeCellCount ?? 0,
+    approvedQuestionAssignments: trusted.summary?.approvedQuestionAssignments ?? 0,
+    fallbackToLegacyAllowed: trusted.fallbackToLegacyAllowed === true,
+    currentTask: trusted.currentWork?.currentTask || null,
+    nextAction: trusted.currentWork?.nextAction || null,
     phase: live.phase || null,
     phaseLabel: live.phaseLabel || null,
     elapsedSeconds: live.elapsedSeconds ?? null,

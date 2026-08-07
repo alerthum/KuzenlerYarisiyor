@@ -25,7 +25,7 @@ function seededRandomLike(seedValue) {
 
 // Üretim kodundan (js/content/families/geometry-lab-families.js) TAMAMEN
 // BAĞIMSIZ, her aile için formülü FARKLI bir şekilde yeniden ifade eden ikinci
-// hesaplama yolları (bkz. DIFF_ANALYSIS.md §6). Sayılar, üretilen prompt/context
+// hesaplama yolları (bkz. md/arsiv/DIFF_ANALYSIS.md §6). Sayılar, üretilen prompt/context
 // METNİNDEN regex ile çıkarılır — üretim kodunun iç değişkenlerine ASLA erişilmez.
 const DIRECT_CHECKS = {
   'geometry-rectangle-perimeter': {

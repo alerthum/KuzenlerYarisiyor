@@ -22,6 +22,6 @@ const html=`<!doctype html><html lang="tr"><head><meta charset="utf-8"><meta nam
 const htmlOut=path.resolve('quality-reports/assessment-v2-phase4o-student-pilot-dashboard.html');fs.writeFileSync(htmlOut,html);
 const csvOut=path.resolve('public/assessment-v2-student-pilot-response-template.csv');
 fs.writeFileSync(csvOut,'responseId,pilotId,datasetSource,participantAnonId,itemId,gameId,grade,selectedOptionId,omitted,score,maxScore,responseTimeMs,hintsUsed,attemptNumber,startedAt,submittedAt\n');
-const mdOut=path.resolve('ASSESSMENT_ENGINEERING_V2_PHASE4O_STUDENT_PILOT.md');
+const mdOut=path.resolve('md/arsiv/ASSESSMENT_ENGINEERING_V2_PHASE4O_STUDENT_PILOT.md');
 fs.writeFileSync(mdOut,`# Assessment Engineering Engine V2 — Phase 4O\n\n- Durum: **${report.status}**\n- Gerçek öğrenci verisi: **YOK**\n- Simülasyon: **120 anonim katılımcı × 5 görev = 600 yanıt**\n- Madde analizi: güçlük, ayırt edicilik, boş bırakma, ipucu, süre ve çeldirici işlevi\n- Yayın: **KAPALI**\n- productReady: **false**\n\nGerçek pilot verisi yalnız \`REAL_STUDENT_PILOT\` kaynağı, en az 100 anonim katılımcı ve her görevde en az 80 yanıtla kabul edilir.\n`);
 console.log(JSON.stringify({status:report.status,files:[jsonOut,publicOut,htmlOut,csvOut,mdOut]},null,2));if(errors.length)process.exit(1);

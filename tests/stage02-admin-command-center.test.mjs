@@ -17,26 +17,23 @@ test('komuta merkezi modülü canlı analiz dosyasını fetch ile okur ve veri y
   assert.match(platform, /Veri yok/);
 });
 
-test('komuta merkezi modülü zorunlu göstergelerin tamamını render eder', () => {
+test('komuta merkezi sade patron görünümünün zorunlu göstergelerini render eder', () => {
   const requiredFragments = [
-    'Genel kalite puanı',
-    'Mevcut otonom aşama',
-    'Son otomatik işlem',
-    'Açık yüksek/kritik engeller',
-    '3. sınıf+ kolay/orta yayınlanan soru',
-    'Alakasız seçenek sayısı',
-    'Biçimsel ipucu veren seçenek',
-    'Tüm seçenekleri okumadan cevaplanabilen',
-    'Semantik tekrar',
-    'Aile kalite dağılımı',
-    'Sınıf / ders / oyun bazında gerçek kapasite',
-    '60 oturum simülasyonu',
-    'Canlı üretilen soru örnekleri',
-    'Yanlış seçenek yanılgı gerekçeleri',
-    'Son test komutları ve gerçek sonuçları'
+    'Gerçek ürün durumu',
+    'ÜRÜN DURUMU',
+    'YAYINA KAPALI',
+    'İnsan inceleme ilerlemesi',
+    'Tam güvenli oyun',
+    'İnsan onaylı soru',
+    'Oyuna uyarlanan',
+    'Şu anda yapılan iş',
+    'Son gerçek test',
+    'Sıradaki kesin adım',
+    'Açık ürün sorunları',
+    'ChatGPT İçin JSON Kopyala'
   ];
   for (const fragment of requiredFragments) {
-    assert.ok(platform.includes(fragment), `Komuta merkezinde eksik bölüm: ${fragment}`);
+    assert.ok(platform.includes(fragment), `Komuta merkezinde eksik sade gösterge: ${fragment}`);
   }
 });
 

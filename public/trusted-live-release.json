@@ -1,0 +1,554 @@
+{
+  "schemaVersion": "2.0",
+  "kind": "trusted-live-release-status",
+  "generatedAt": "2026-08-07T12:07:46.681Z",
+  "releaseStatus": "PARTIAL_SAFE_PILOT",
+  "wholeProductReady": false,
+  "productReady": false,
+  "publicationAllowed": true,
+  "publicationMode": "EXPLICIT_TRUSTED_CELL_WHITELIST",
+  "publicationScope": "ONLY_EXPLICIT_SAFE_CELLS",
+  "policyVersion": "7.0.0",
+  "fallbackToLegacyAllowed": false,
+  "versions": {
+    "controlledLaunch": "PHASE5I_PILOT_1",
+    "trustedPolicy": "7.0.0",
+    "liveOutputGate": "2.0.0"
+  },
+  "summary": {
+    "totalGameCount": 23,
+    "safeGameCount": 12,
+    "safeCellCount": 29,
+    "approvedQuestionAssignmentCount": 496,
+    "approvedQuestionAssignments": 496,
+    "uniqueApprovedQuestionCount": 456,
+    "finalSurfaceReviewStatus": "PASS",
+    "finalSurfaceReviewedQuestionCount": 496,
+    "finalSurfaceFailedQuestionCount": 0,
+    "legacyFallbackDetected": false,
+    "uniqueQuestionCountNote": "İngilizce 6–8. sınıf aynı 20 bağlamsal kelime sorusunu paylaşır; atama ve benzersiz soru sayıları bu nedenle ayrı gösterilir.",
+    "blockedPriorityCount": 3
+  },
+  "safeGames": [
+    {
+      "gameId": "social-time-travel",
+      "title": "Zaman Yolculuğu",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        8,
+        4
+      ],
+      "approvedQuestionAssignments": 10
+    },
+    {
+      "gameId": "religion-practice",
+      "title": "Din Kültürü Öğrenme Alanı",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        8,
+        4
+      ],
+      "approvedQuestionAssignments": 10
+    },
+    {
+      "gameId": "paragraph-detective",
+      "title": "Paragraf Dedektifi",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        4,
+        7,
+        8
+      ],
+      "approvedQuestionAssignments": 40
+    },
+    {
+      "gameId": "meaning-hunt",
+      "title": "Anlam Avı",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        4,
+        7,
+        8
+      ],
+      "approvedQuestionAssignments": 40
+    },
+    {
+      "gameId": "problem-hunter",
+      "title": "Problem Avcısı",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        4,
+        7,
+        8
+      ],
+      "approvedQuestionAssignments": 98
+    },
+    {
+      "gameId": "error-detective",
+      "title": "Hata Dedektifi",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        4,
+        8
+      ],
+      "approvedQuestionAssignments": 90
+    },
+    {
+      "gameId": "geometry-lab",
+      "title": "Geometri Laboratuvarı",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        4,
+        8
+      ],
+      "approvedQuestionAssignments": 24
+    },
+    {
+      "gameId": "science-reasoning",
+      "title": "Fen Akıl Yürütme",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        4,
+        7,
+        8
+      ],
+      "approvedQuestionAssignments": 58
+    },
+    {
+      "gameId": "science-lab",
+      "title": "Fen Bilimleri Laboratuvarı",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        4,
+        8
+      ],
+      "approvedQuestionAssignments": 25
+    },
+    {
+      "gameId": "english-vocabulary",
+      "title": "Günün 20 İngilizce Kelimesi",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "approvedQuestionAssignments": 84
+    },
+    {
+      "gameId": "logic-station",
+      "title": "Zekâ İstasyonu",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        8
+      ],
+      "approvedQuestionAssignments": 8
+    },
+    {
+      "gameId": "olympiad-ladder",
+      "title": "Olimpiyat Merdiveni",
+      "status": "SAFE_ONLY_FOR_LISTED_GRADES",
+      "grades": [
+        8
+      ],
+      "approvedQuestionAssignments": 9
+    }
+  ],
+  "safeCells": [
+    {
+      "cellId": "social-time-travel:8",
+      "label": "8. sınıf T.C. İnkılap Tarihi · Kaynak ve Neden-Sonuç",
+      "status": "SAFE_PILOT_HARD_ONLY",
+      "approvedQuestionCount": 6,
+      "gameId": "social-time-travel",
+      "grade": 8,
+      "gameTitle": "Zaman Yolculuğu"
+    },
+    {
+      "cellId": "religion-practice:8",
+      "label": "8. sınıf Din Kültürü · Gerekçeli Ahlaki Muhakeme",
+      "status": "SAFE_PILOT_HARD_ONLY",
+      "approvedQuestionCount": 6,
+      "gameId": "religion-practice",
+      "grade": 8,
+      "gameTitle": "Din Kültürü Öğrenme Alanı"
+    },
+    {
+      "cellId": "paragraph-detective:4",
+      "label": "4. sınıf Türkçe · Kanıt Temelli Paragraf Motoru",
+      "status": "SAFE_ENGINE_CHALLENGING",
+      "approvedQuestionCount": 18,
+      "gameId": "paragraph-detective",
+      "grade": 4,
+      "gameTitle": "Paragraf Dedektifi"
+    },
+    {
+      "cellId": "meaning-hunt:4",
+      "label": "4. sınıf Türkçe · Bağlam ve Anlam Motoru",
+      "status": "SAFE_ENGINE_CHALLENGING",
+      "approvedQuestionCount": 18,
+      "gameId": "meaning-hunt",
+      "grade": 4,
+      "gameTitle": "Anlam Avı"
+    },
+    {
+      "cellId": "problem-hunter:4",
+      "label": "4. sınıf Matematik · Solver Destekli Problem Motoru",
+      "status": "SAFE_ENGINE_CHALLENGING",
+      "approvedQuestionCount": 45,
+      "gameId": "problem-hunter",
+      "grade": 4,
+      "gameTitle": "Problem Avcısı"
+    },
+    {
+      "cellId": "error-detective:4",
+      "label": "4. sınıf Matematik · Solver Destekli Hata Dedektifi",
+      "status": "SAFE_ENGINE_CHALLENGING",
+      "approvedQuestionCount": 45,
+      "gameId": "error-detective",
+      "grade": 4,
+      "gameTitle": "Hata Dedektifi"
+    },
+    {
+      "cellId": "geometry-lab:4",
+      "label": "4. sınıf Matematik · Solver Destekli Geometri Laboratuvarı",
+      "status": "SAFE_ENGINE_CHALLENGING",
+      "approvedQuestionCount": 9,
+      "gameId": "geometry-lab",
+      "grade": 4,
+      "gameTitle": "Geometri Laboratuvarı"
+    },
+    {
+      "cellId": "science-reasoning:4",
+      "label": "4. sınıf Fen Bilimleri · Kanıt ve Çıkarım Motoru",
+      "status": "SAFE_ENGINE_CHALLENGING",
+      "approvedQuestionCount": 24,
+      "gameId": "science-reasoning",
+      "grade": 4,
+      "gameTitle": "Fen Akıl Yürütme"
+    },
+    {
+      "cellId": "science-lab:4",
+      "label": "4. sınıf Fen Bilimleri · Kontrollü Deney Laboratuvarı",
+      "status": "SAFE_ENGINE_CHALLENGING",
+      "approvedQuestionCount": 12,
+      "gameId": "science-lab",
+      "grade": 4,
+      "gameTitle": "Fen Bilimleri Laboratuvarı"
+    },
+    {
+      "cellId": "social-time-travel:4",
+      "label": "4. sınıf Sosyal Bilgiler · Harita, Kaynak ve Sorumluluk",
+      "status": "SAFE_PILOT_CHALLENGING",
+      "approvedQuestionCount": 4,
+      "gameId": "social-time-travel",
+      "grade": 4,
+      "gameTitle": "Zaman Yolculuğu"
+    },
+    {
+      "cellId": "english-vocabulary:4",
+      "label": "4. sınıf İngilizce · Bağlamsal Kelime ve Yönerge",
+      "status": "SAFE_PILOT_CHALLENGING",
+      "approvedQuestionCount": 4,
+      "gameId": "english-vocabulary",
+      "grade": 4,
+      "gameTitle": "Günün 20 İngilizce Kelimesi"
+    },
+    {
+      "cellId": "religion-practice:4",
+      "label": "4. sınıf Din Kültürü · Değer ve Davranış",
+      "status": "SAFE_PILOT_CHALLENGING",
+      "approvedQuestionCount": 4,
+      "gameId": "religion-practice",
+      "grade": 4,
+      "gameTitle": "Din Kültürü Öğrenme Alanı"
+    },
+    {
+      "cellId": "paragraph-detective:7",
+      "label": "7. sınıf Türkçe · Paragraf Dedektifi",
+      "status": "SAFE_PILOT_HARD_ONLY",
+      "approvedQuestionCount": 4,
+      "gameId": "paragraph-detective",
+      "grade": 7,
+      "gameTitle": "Paragraf Dedektifi"
+    },
+    {
+      "cellId": "meaning-hunt:7",
+      "label": "7. sınıf Türkçe · Anlam Avı",
+      "status": "SAFE_PILOT_HARD_ONLY",
+      "approvedQuestionCount": 4,
+      "gameId": "meaning-hunt",
+      "grade": 7,
+      "gameTitle": "Anlam Avı"
+    },
+    {
+      "cellId": "problem-hunter:7",
+      "label": "7. sınıf Matematik · Çok Adımlı Problem Avcısı",
+      "status": "SAFE_PILOT_HARD_ONLY",
+      "approvedQuestionCount": 8,
+      "gameId": "problem-hunter",
+      "grade": 7,
+      "gameTitle": "Problem Avcısı"
+    },
+    {
+      "cellId": "science-reasoning:7",
+      "label": "7. sınıf Fen · Çoklu Kanıt ve Deney",
+      "status": "SAFE_PILOT_HARD_ONLY",
+      "approvedQuestionCount": 8,
+      "gameId": "science-reasoning",
+      "grade": 7,
+      "gameTitle": "Fen Akıl Yürütme"
+    },
+    {
+      "cellId": "paragraph-detective:8",
+      "label": "8. sınıf Türkçe · Kanıt Temelli Paragraf Motoru",
+      "status": "SAFE_ENGINE_HARD_ONLY",
+      "approvedQuestionCount": 18,
+      "gameId": "paragraph-detective",
+      "grade": 8,
+      "gameTitle": "Paragraf Dedektifi"
+    },
+    {
+      "cellId": "meaning-hunt:8",
+      "label": "8. sınıf Türkçe · Bağlam ve Anlam Motoru",
+      "status": "SAFE_ENGINE_HARD_ONLY",
+      "approvedQuestionCount": 18,
+      "gameId": "meaning-hunt",
+      "grade": 8,
+      "gameTitle": "Anlam Avı"
+    },
+    {
+      "cellId": "science-reasoning:8",
+      "label": "8. sınıf Fen · Kanıt, Veri ve Nedensellik Motoru",
+      "status": "SAFE_ENGINE_HARD_ONLY",
+      "approvedQuestionCount": 26,
+      "gameId": "science-reasoning",
+      "grade": 8,
+      "gameTitle": "Fen Akıl Yürütme"
+    },
+    {
+      "cellId": "science-lab:8",
+      "label": "8. sınıf Fen · Kontrollü Deney Tasarımı Laboratuvarı",
+      "status": "SAFE_ENGINE_HARD_ONLY",
+      "approvedQuestionCount": 13,
+      "gameId": "science-lab",
+      "grade": 8,
+      "gameTitle": "Fen Bilimleri Laboratuvarı"
+    },
+    {
+      "cellId": "problem-hunter:8",
+      "label": "8. sınıf Matematik · Solver Destekli Problem Motoru",
+      "status": "SAFE_ENGINE_HARD_ONLY",
+      "approvedQuestionCount": 45,
+      "gameId": "problem-hunter",
+      "grade": 8,
+      "gameTitle": "Problem Avcısı"
+    },
+    {
+      "cellId": "error-detective:8",
+      "label": "8. sınıf Matematik · Solver Destekli Hata Dedektifi",
+      "status": "SAFE_ENGINE_HARD_ONLY",
+      "approvedQuestionCount": 45,
+      "gameId": "error-detective",
+      "grade": 8,
+      "gameTitle": "Hata Dedektifi"
+    },
+    {
+      "cellId": "geometry-lab:8",
+      "label": "8. sınıf Matematik · Solver Destekli Geometri Laboratuvarı",
+      "status": "SAFE_ENGINE_HARD_ONLY",
+      "approvedQuestionCount": 15,
+      "gameId": "geometry-lab",
+      "grade": 8,
+      "gameTitle": "Geometri Laboratuvarı"
+    },
+    {
+      "cellId": "logic-station:8",
+      "label": "8. sınıf · Zekâ İstasyonu",
+      "status": "SAFE_PILOT_HARD_ONLY",
+      "approvedQuestionCount": 8,
+      "gameId": "logic-station",
+      "grade": 8,
+      "gameTitle": "Zekâ İstasyonu"
+    },
+    {
+      "cellId": "olympiad-ladder:8",
+      "label": "8. sınıf · Olimpiyat Merdiveni",
+      "status": "SAFE_PILOT_HARD_ONLY",
+      "approvedQuestionCount": 9,
+      "gameId": "olympiad-ladder",
+      "grade": 8,
+      "gameTitle": "Olimpiyat Merdiveni"
+    },
+    {
+      "cellId": "english-vocabulary:5",
+      "label": "5. sınıf · Günün 20 İngilizce Kelimesi",
+      "status": "SAFE_PILOT_REVIEWED",
+      "approvedQuestionCount": 20,
+      "gameId": "english-vocabulary",
+      "grade": 5,
+      "gameTitle": "Günün 20 İngilizce Kelimesi"
+    },
+    {
+      "cellId": "english-vocabulary:6",
+      "label": "6. sınıf · Günün 20 İngilizce Kelimesi",
+      "status": "SAFE_PILOT_REVIEWED",
+      "approvedQuestionCount": 20,
+      "gameId": "english-vocabulary",
+      "grade": 6,
+      "gameTitle": "Günün 20 İngilizce Kelimesi"
+    },
+    {
+      "cellId": "english-vocabulary:7",
+      "label": "7. sınıf · Günün 20 İngilizce Kelimesi",
+      "status": "SAFE_PILOT_REVIEWED",
+      "approvedQuestionCount": 20,
+      "gameId": "english-vocabulary",
+      "grade": 7,
+      "gameTitle": "Günün 20 İngilizce Kelimesi"
+    },
+    {
+      "cellId": "english-vocabulary:8",
+      "label": "8. sınıf · Günün 20 İngilizce Kelimesi",
+      "status": "SAFE_PILOT_REVIEWED",
+      "approvedQuestionCount": 20,
+      "gameId": "english-vocabulary",
+      "grade": 8,
+      "gameTitle": "Günün 20 İngilizce Kelimesi"
+    }
+  ],
+  "blockedPriorities": [
+    {
+      "scope": "GRADES_1_3_5_6_NON_ENGLISH",
+      "title": "1–3 ve 5–6. sınıf İngilizce dışındaki ders ve oyunlar",
+      "status": "BLOCKED",
+      "reason": "Zor seviye ve son öğrenci yüzeyi insan incelemesi tamamlanmadı; eski jeneratörler öğrenciye açılmıyor."
+    },
+    {
+      "scope": "REMAINING_GAMES",
+      "title": "Whitelist dışındaki oyunlar ve LGS karma havuzu",
+      "status": "BLOCKED",
+      "reason": "Son-ekran incelemesi, gerçek zorluk ve çeldirici sözleşmesi tamamlanmadı."
+    },
+    {
+      "scope": "GRADES_9_12",
+      "title": "9–12. sınıf kapsamı",
+      "status": "BLOCKED",
+      "reason": "Mevcut projede doğrulanmış müfredat ve güvenli canlı soru paketi bulunmuyor."
+    }
+  ],
+  "currentWork": {
+    "status": "MATH_TURKISH_SCIENCE_ENGINE_CHECKPOINT_PASS",
+    "currentTask": "4. ve 8. sınıf Matematik, Türkçe ve Fen motorları canlıya bağlandı; İngilizce bağlam motoru sırada",
+    "title": "4. ve 8. sınıf Matematik + Türkçe + Fen motor checkpoint’i tamamlandı",
+    "engineMetrics": {
+      "math": {
+        "grade4FamilyCount": 15,
+        "grade8FamilyCount": 15,
+        "familyCount": 30,
+        "grade4RoundCount": 99,
+        "grade8RoundCount": 105,
+        "roundCount": 204,
+        "distinctSkeletonCount": 90,
+        "solverVerifiedCount": 204,
+        "safeCellCount": 6,
+        "supportedGameCount": 3
+      },
+      "turkish": {
+        "grade4FamilyCount": 12,
+        "grade8FamilyCount": 12,
+        "familyCount": 24,
+        "grade4RoundCount": 36,
+        "grade8RoundCount": 36,
+        "roundCount": 72,
+        "distinctSkeletonCount": 72,
+        "evidenceVerifiedCount": 72,
+        "randomSentenceCompositionCount": 0,
+        "safeCellCount": 4,
+        "supportedGameCount": 2
+      },
+      "science": {
+        "grade4FamilyCount": 12,
+        "grade8FamilyCount": 13,
+        "familyCount": 25,
+        "grade4RoundCount": 36,
+        "grade8RoundCount": 39,
+        "roundCount": 75,
+        "distinctSkeletonCount": 75,
+        "evidenceVerifiedCount": 75,
+        "experimentDesignCount": 25,
+        "reasoningCount": 50,
+        "randomSentenceCompositionCount": 0,
+        "safeCellCount": 4,
+        "supportedGameCount": 2
+      }
+    },
+    "completed": [
+      "Matematikte 30 kazanım ailesi, 90 iskelet ve 204 solver-doğrulamalı çıktı canlıya bağlandı.",
+      "Türkçede 24 insan yazımı metin ailesi, 72 görev iskeleti ve 72 kanıt-doğrulamalı çıktı canlıya bağlandı.",
+      "Fende 25 insan yazımı deney/veri ailesi, 75 görev iskeleti ve 75 bağımsız değişken-kanıt doğrulamalı çıktı canlıya bağlandı.",
+      "Fen içerikleri Fen Akıl Yürütme ve Fen Bilimleri Laboratuvarı olarak dört ayrı 4/8. sınıf hücresine uyarlandı.",
+      "Fen motorunda desteklenen sonuç, kontrollü deney tasarımı ve kanıt sınırı aynı kaynak vakadan üç farklı düşünme deneyimi olarak üretiliyor.",
+      "Matematik, Türkçe ve Fen sabit bankaları canlı kaynak olmaktan çıkarıldı; yalnız golden sample ve regresyon kanıtı olarak korunuyor.",
+      "Üç motorun whitelist’i tükendiğinde eski jeneratör veya fallback açılmıyor.",
+      "Öğrencinin gördüğü prompt, bağlam, seçenek, ipucu ve çözüm yüzeyi 496/496 PASS verdi."
+    ],
+    "next": [
+      "4. ve 8. sınıf İngilizce için ayrı kelime, kısa diyalog, cümle tamamlama ve kısa okuma motorlarını kur.",
+      "Türkçe-İngilizce karışımını yapısal yayın engeli olarak koru ve her görev için tek dil sözleşmesi uygula.",
+      "İngilizce motorunu Günün 20 Kelimesi, Cloze ve Cümle Kurucu oyunlarına farklı deneyimler olarak bağla."
+    ],
+    "nextAction": "4. ve 8. sınıf İngilizce bağlam, diyalog ve kısa okuma motorunu oluştur.",
+    "changedFiles": [
+      "js/assessment-v2/solver-backed-math-family-engine.js",
+      "js/assessment-v2/solver-backed-g4-math-families.js",
+      "js/assessment-v2/solver-backed-g8-math-families.js",
+      "js/assessment-v2/solver-backed-priority-math-bank.js",
+      "js/assessment-v2/evidence-backed-turkish-family-engine.js",
+      "js/assessment-v2/evidence-backed-g4-turkish-families.js",
+      "js/assessment-v2/evidence-backed-g8-turkish-families.js",
+      "js/assessment-v2/evidence-backed-priority-turkish-bank.js",
+      "js/assessment-v2/evidence-backed-science-family-engine.js",
+      "js/assessment-v2/evidence-backed-g4-science-families.js",
+      "js/assessment-v2/evidence-backed-g8-science-families.js",
+      "js/assessment-v2/evidence-backed-priority-science-bank.js",
+      "js/assessment-v2/trusted-live-policy.js",
+      "js/assessment-v2/controlled-live-beta-bank.js",
+      "tests/live-output/solver-backed-priority-math-engine.test.mjs",
+      "tests/live-output/evidence-backed-priority-turkish-engine.test.mjs",
+      "tests/live-output/evidence-backed-priority-science-engine.test.mjs",
+      "tests/live-output/trusted-g8-math-bank.test.mjs",
+      "tests/live-output/trusted-g8-turkish-deep-bank.test.mjs",
+      "tests/live-output/trusted-g8-science-deep-bank.test.mjs",
+      "tests/live-output/trusted-priority-grade4-grade8-wave1.test.mjs",
+      "scripts/build-trusted-live-release.mjs",
+      "PROJECT_STATE.json",
+      "FINAL_RELEASE_DECISION.json",
+      "public/strict-audit-live.json",
+      "package.json",
+      "package-lock.json"
+    ]
+  },
+  "latestTest": {
+    "command": "node scripts/build-trusted-live-review.mjs",
+    "result": "PASS · 496/496",
+    "notes": "Öğrencinin gördüğü son prompt, bağlam, seçenek, ipucu ve çözüm yüzeyi denetlendi."
+  },
+  "latestTests": [
+    {
+      "command": "npm run test:live-output",
+      "result": "56/56 PASS"
+    },
+    {
+      "command": "node scripts/build-trusted-live-review.mjs",
+      "result": "PASS · 496/496"
+    }
+  ],
+  "limitations": [
+    "Bu karar ürünün tamamı için yayın onayı değildir.",
+    "Yalnız safeCells listesinde bulunan sınıf-oyun eşleşmeleri açılabilir.",
+    "Tarayıcı E2E doğrulaması çalışma ortamındaki yönetici politikası nedeniyle tamamlanamamıştır."
+  ]
+}

@@ -4,6 +4,7 @@ import { OFFICIAL_LGS_ARCHIVE } from './content-v3.js';
 import { PREMIUM_GAME_IDS } from './content/premium-question-bank.js';
 import { V4_QUALITY_POLICY } from './content-v4.js';
 import { RUNTIME_CONFIG } from './runtime-config.js';
+import { trustedLiveCell } from './assessment-v2/trusted-live-policy.js';
 import { createProactivePlan, runAiOrchestra } from './ai/orchestrator.js';
 import { curriculumMatrix } from './curriculum/meb-curriculum.js';
 import { socialSnapshot } from './social/league-engine.js';
@@ -59,8 +60,21 @@ const USER_GAME_CATALOG = QUALITY_PILOT_ENABLED
   : GAME_CATALOG;
 const USER_GAME_IDS = new Set(USER_GAME_CATALOG.map((game) => game.id));
 
-function isGameVisibleInCurrentRelease(gameId) {
-  return !QUALITY_PILOT_ENABLED || USER_GAME_IDS.has(gameId);
+function gamesForProfile(profile) {
+  if (!profile) return [];
+  const grade = Number(profile.grade || Math.max(1, Number(profile.age || 6) - 5));
+  return USER_GAME_CATALOG.filter((game) => {
+    if (!isGameAvailableForProfile(game, profile)) return false;
+    if (!CONTROLLED_LAUNCH_PILOT_ENABLED) return true;
+    return Boolean(trustedLiveCell(game.id, grade));
+  });
+}
+
+function isGameVisibleInCurrentRelease(gameId, profile = activeProfile()) {
+  if (!USER_GAME_IDS.has(gameId) && QUALITY_PILOT_ENABLED) return false;
+  if (!CONTROLLED_LAUNCH_PILOT_ENABLED) return !QUALITY_PILOT_ENABLED || USER_GAME_IDS.has(gameId);
+  const grade = Number(profile?.grade || Math.max(1, Number(profile?.age || 6) - 5));
+  return Boolean(trustedLiveCell(gameId, grade));
 }
 
 const ui = {
@@ -84,15 +98,38 @@ const ui = {
   whiteboardOpen: false
 };
 
-const NAV_ITEMS = PLATFORM.mode === 'live'
-  ? [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['ranking', '🏅', 'Sıralama'], ['social', '🏆', 'Lig']]
-  : [['dashboard', '⌂', 'Ana Sayfa'], ['library', '◈', 'Oyunlar'], ['progress', '◒', 'Gelişim'], ['ranking', '🏅', 'Sıralama'], ['social', '🏆', 'Lig'], ['parent', '⚙', 'Yerel Ayarlar']];
+const NAV_ITEMS = Object.freeze([
+  ['dashboard', '⌂', 'Ana Sayfa'],
+  ['library', '◈', 'Oyunlar'],
+  ['progress', '◒', 'Gelişim'],
+  ['ranking', '🏅', 'Sıralama'],
+  ['social', '🏆', 'Lig']
+]);
 
 function activeProfile() {
   return getProfile(state);
 }
 
 function topbar({ back = false, compact = false } = {}) {
+  const profile = activeProfile();
+  const showPrimaryNav = Boolean(state.activeProfileId) && !back && !['game', 'profiles'].includes(ui.screen);
+  const desktopNav = showPrimaryNav ? `
+    <nav class="desktop-primary-nav" aria-label="Masaüstü ana menü">
+      ${NAV_ITEMS.map(([screen, icon, label]) => `
+        <button class="desktop-nav-button ${ui.screen === screen ? 'active' : ''}" data-action="navigate" data-screen="${screen}" ${ui.screen === screen ? 'aria-current="page"' : ''}>
+          <span aria-hidden="true">${icon}</span><b>${label}</b>
+        </button>`).join('')}
+    </nav>` : '';
+  const desktopAccount = state.activeProfileId && PLATFORM.mode === 'live'
+    ? `<div class="desktop-account-actions"><button class="desktop-profile-button" data-action="student-profile"><span>${escapeHtml(profile?.avatar || '👤')}</span><b>${escapeHtml(profile?.name || 'Profilim')}</b><small>Profilim</small></button><button class="desktop-logout-button" data-action="student-logout">Çıkış Yap</button></div>`
+    : state.activeProfileId && PLATFORM.mode !== 'live'
+      ? `<div class="desktop-account-actions"><button class="desktop-profile-button" data-action="profiles"><span>${escapeHtml(profile?.avatar || '👤')}</span><b>${escapeHtml(profile?.name || 'Profil')}</b><small>Profil değiştir</small></button><button class="desktop-logout-button" data-action="navigate" data-screen="parent">Yerel Ayarlar</button></div>`
+      : '';
+  const mobileAccount = state.activeProfileId && PLATFORM.mode === 'live'
+    ? '<button class="icon-button mobile-topbar-action" data-action="student-profile" aria-label="Profil ve gelişim">👤</button><button class="icon-button mobile-topbar-action" data-action="student-logout" aria-label="Çıkış yap">⎋</button>'
+    : state.activeProfileId && !back && PLATFORM.mode !== 'live'
+      ? `<button class="icon-button mobile-topbar-action" data-action="navigate" data-screen="parent" aria-label="Yerel Ayarlar">⚙</button><button class="icon-button mobile-topbar-action" data-action="profiles" aria-label="Profil değiştir">${escapeHtml(profile?.avatar || '👤')}</button>`
+      : '';
   return `
     <header class="topbar">
       <div class="brand">
@@ -102,9 +139,12 @@ function topbar({ back = false, compact = false } = {}) {
           ${compact ? '' : '<p class="brand-subtitle">Türkçe • Matematik • İngilizce • Fen • Sosyal • Zekâ • Olimpiyat</p>'}
         </div>
       </div>
-      <div class="button-row" style="flex-wrap:nowrap">
+      ${desktopNav}
+      <div class="topbar-actions">
         ${ui.deferredInstallPrompt ? '<button class="icon-button" data-action="install" aria-label="Uygulamayı telefona kur">⇩</button>' : ''}
-        ${PLATFORM.adultPreview ? '<button class="icon-button" data-action="return-platform" aria-label="Yönetim paneline dön">⇱</button>' : ''}${state.activeProfileId && PLATFORM.mode === 'live' ? '<button class="icon-button" data-action="student-profile" aria-label="Profil ve gelişim">👤</button><button class="icon-button" data-action="student-logout" aria-label="Çıkış yap">⎋</button>' : ''}${state.activeProfileId && !back && PLATFORM.mode !== 'live' ? `<button class="icon-button" data-action="profiles" aria-label="Profil değiştir">${escapeHtml(activeProfile()?.avatar || '👤')}</button>` : ''}
+        ${PLATFORM.adultPreview ? '<button class="icon-button" data-action="return-platform" aria-label="Yönetim paneline dön">⇱</button>' : ''}
+        ${desktopAccount}
+        ${mobileAccount}
       </div>
     </header>`;
 }
@@ -155,16 +195,25 @@ function renderProfiles() {
 function getDailyData(profile) {
   const date = todayKey();
   const seen = seenQuestionKeysForProfile(state, profile.id);
-  const generatedMissions = createDailyMissionIds(profile, USER_GAME_CATALOG, date);
+  const generatedMissions = createDailyMissionIds(profile, gamesForProfile(profile), date);
   const generatedEnglish = createDailyEnglishWordIds(profile, ENGLISH_WORDS, seen, date, 20);
-  const daily = ensureDailyPlan(state, profile.id, date, generatedMissions, generatedEnglish);
+  const daily = ensureDailyPlan(
+    state,
+    profile.id,
+    date,
+    generatedMissions,
+    generatedEnglish,
+    { replaceInvalidMissions: CONTROLLED_LAUNCH_PILOT_ENABLED }
+  );
   const todayAttempts = attemptsForProfile(state, profile.id).filter((attempt) => attempt.date === date);
   const learnedEnglishKeys = new Set(
     todayAttempts
       .filter((attempt) => attempt.gameId === 'english-vocabulary' && attempt.questionKey)
       .map((attempt) => attempt.questionKey)
   );
-  const englishLearned = daily.englishWordIds.filter((wordId) => learnedEnglishKeys.has(`english-vocabulary:${wordId}`)).length;
+  const englishLearned = CONTROLLED_LAUNCH_PILOT_ENABLED
+    ? Math.min(20, learnedEnglishKeys.size)
+    : daily.englishWordIds.filter((wordId) => learnedEnglishKeys.has(`english-vocabulary:${wordId}`)).length;
   return { ...daily, englishLearned };
 }
 
@@ -177,9 +226,11 @@ function renderDashboard() {
   const accuracy = accuracyForAttempts(recent);
   const daily = getDailyData(profile);
   const completed = daily.missionIds.filter((id) => daily.completedGameIds.includes(id)).length;
-  const englishTarget = daily.englishWordIds.length || 20;
+  const missionTarget = daily.missionIds.length;
+  const englishTarget = CONTROLLED_LAUNCH_PILOT_ENABLED ? 20 : (daily.englishWordIds.length || 20);
   const englishDone = daily.englishLearned >= englishTarget && englishTarget > 0;
-  const scienceGame = USER_GAME_CATALOG.find((game) => game.id === 'science-reasoning') || USER_GAME_CATALOG[0];
+  const safeCatalog = gamesForProfile(profile);
+  const scienceGame = safeCatalog.find((game) => game.id === 'science-reasoning') || null;
   const aiPlan = createProactivePlan(profile, attempts);
   const curriculum = curriculumMatrix(profile, attempts);
 
@@ -205,10 +256,10 @@ function renderDashboard() {
           </div>
         </div>
         <div class="daily-card">
-          <div class="daily-ring">${completed}/4</div>
+          <div class="daily-ring">${completed}/${missionTarget}</div>
           <div>
             <h3>Günlük ana arena</h3>
-            <p>${completed === 4 ? 'Türkçe, matematik, olimpiyat ve zekâ görevlerini tamamladın.' : `${4 - completed} ana görev kaldı • yaklaşık ${state.settings.dailyMinutes} dakika`}</p>
+            <p>${missionTarget === 0 ? 'Bu sınıf için güvenli ana görev bankası hazırlanıyor.' : completed === missionTarget ? 'Bugünün doğrulanmış ana görevlerini tamamladın.' : `${missionTarget - completed} doğrulanmış ana görev kaldı • yaklaşık ${state.settings.dailyMinutes} dakika`}</p>
           </div>
         </div>
       </section>
@@ -237,11 +288,11 @@ function renderDashboard() {
 
       <section class="section">
         <div class="section-header">
-          <div><h2>Bugünün dört ana görevi</h2><p>Her gün bir Türkçe, bir matematik, bir olimpiyat ve bir zekâ oyunu.</p></div>
+          <div><h2>Bugünün doğrulanmış ana görevleri</h2><p>Yalnız bu sınıf için son-ekran incelemesinden geçen oyunlar gösterilir.</p></div>
           <button class="text-button" data-action="navigate" data-screen="library">Tüm oyunlar</button>
         </div>
         <div class="mission-list">
-          ${daily.missionIds.map((gameId, index) => {
+          ${daily.missionIds.length ? daily.missionIds.map((gameId, index) => {
             const game = getGame(gameId);
             const done = daily.completedGameIds.includes(gameId);
             return `
@@ -254,20 +305,21 @@ function renderDashboard() {
                 </span>
                 <span class="mission-status ${done ? 'done' : ''}">${done ? '✓ Tamamlandı • Devam et' : 'Başla →'}</span>
               </button>`;
-          }).join('')}
+          }).join('') : '<article class="panel empty-state"><h3>Bu sınıfın ana görevleri kalite incelemesinde</h3><p>Doğrulanmamış veya eski yedek soru gösterilmeyecek. Güvenli içerik tamamlandıkça görevler burada açılacak.</p></article>'}
         </div>
       </section>
 
       ${QUALITY_PILOT_ENABLED ? `
       <section class="section panel">
         <div class="section-header"><div><span class="badge green">KALİTE PİLOTU</span><h2>Çocuk testi için onaylı içerik</h2><p>Bu sürümde yalnız insan tarafından yazılmış, çözümü ve üç ayrı öğrenci yanılgısı doğrulanmış Matematik, Türkçe ve Fen oyunları açıktır.</p></div></div>
-        <div class="game-grid compact-grid">${USER_GAME_CATALOG.filter((game) => isGameAvailableForProfile(game, profile)).map((game) => gameCard(game, daily)).join('')}</div>
+        <div class="game-grid compact-grid">${safeCatalog.map((game) => gameCard(game, daily)).join('')}</div>
       </section>` : `
       <section class="section">
         <div class="section-header"><div><h2>Günlük öğrenme takviyesi</h2><p>İngilizce kelimeler zorunlu günlük ilerleme; Fen ise istediğin zaman oynayabileceğin ek ders.</p></div></div>
         <div class="supplement-grid">
-          <button class="supplement-card english ${englishDone ? 'completed' : ''}" data-action="start-game" data-game-id="english-vocabulary"><span class="supplement-icon">🌍</span><span><small>GÜNLÜK İNGİLİZCE</small><h3>${daily.englishLearned}/${englishTarget} yeni kelime</h3><p>${englishDone ? 'Günlük hedef tamamlandı.' : 'Her kelime yalnız bir kez gelir.'}</p></span><span class="mission-status">Devam →</span></button>
-          <button class="supplement-card science" data-action="start-game" data-game-id="${scienceGame.id}"><span class="supplement-icon">🔬</span><span><small>FEN BONUSU</small><h3>${escapeHtml(scienceGame.title)}</h3><p>${escapeHtml(scienceGame.description)}</p></span><span class="mission-status">Oyna →</span></button>
+          ${isGameVisibleInCurrentRelease('english-vocabulary', profile) ? `<button class="supplement-card english ${englishDone ? 'completed' : ''}" data-action="start-game" data-game-id="english-vocabulary"><span class="supplement-icon">🌍</span><span><small>GÜNLÜK İNGİLİZCE</small><h3>${daily.englishLearned}/${englishTarget} yeni kelime</h3><p>${englishDone ? 'Günlük hedef tamamlandı.' : 'Her kelime yalnız bir kez gelir.'}</p></span><span class="mission-status">Devam →</span></button>` : ''}
+          ${scienceGame ? `<button class="supplement-card science" data-action="start-game" data-game-id="${scienceGame.id}"><span class="supplement-icon">🔬</span><span><small>FEN BONUSU</small><h3>${escapeHtml(scienceGame.title)}</h3><p>${escapeHtml(scienceGame.description)}</p></span><span class="mission-status">Oyna →</span></button>` : ''}
+          ${!isGameVisibleInCurrentRelease('english-vocabulary', profile) && !scienceGame ? '<article class="panel empty-state"><h3>Ek ders bankası hazırlanıyor</h3><p>Bu sınıf için doğrulanmış ek ders içeriği henüz açılmadı.</p></article>' : ''}
         </div>
       </section>`}
 
@@ -289,7 +341,7 @@ function renderDashboard() {
       <section class="section">
         <div class="section-header"><div><h2>Hızlı başlangıç</h2><p>Bugün oynadığın oyunlarda yeşil “Bugün oynandı” işareti görünür.</p></div></div>
         <div class="game-grid">
-          ${USER_GAME_CATALOG.filter((game) => isGameAvailableForProfile(game, profile)).slice(0, 6).map((game) => gameCard(game, daily)).join('')}
+          ${safeCatalog.slice(0, 6).map((game) => gameCard(game, daily)).join('') || '<article class="panel empty-state"><h3>Güvenli oyun hazırlanıyor</h3><p>Bu sınıf için doğrulanmamış oyunlar gizlendi.</p></article>'}
         </div>
       </section>
       ${bottomNav()}
@@ -314,7 +366,7 @@ function renderLibrary() {
   const daily = getDailyData(profile);
   const filters = categoryFiltersForProfile(profile);
   if (!filters.some(([value]) => value === ui.filter)) ui.filter = 'all';
-  const games = USER_GAME_CATALOG.filter((game) => isGameAvailableForProfile(game, profile) && (ui.filter === 'all' || game.category === ui.filter));
+  const games = gamesForProfile(profile).filter((game) => ui.filter === 'all' || game.category === ui.filter);
   return `
     <main class="app-shell">
       ${topbar()}
@@ -324,7 +376,7 @@ function renderLibrary() {
           ${filters.map(([value, label]) => `<button class="chip-button ${ui.filter === value ? 'active' : ''}" data-action="filter" data-filter="${value}">${label}</button>`).join('')}
         </div>
         ${profile.grade === 8 && (ui.filter === 'all' || ui.filter === 'lgs') ? `<section class="lgs-archive-card"><div><span class="badge orange">Resmî arşiv</span><h3>LGS yayımlanmış sorular: ${OFFICIAL_LGS_ARCHIVE.years}</h3><p>${escapeHtml(OFFICIAL_LGS_ARCHIVE.note)} Uygulamadaki sorular özgündür; resmî kitapçıklara aşağıdaki bağlantılardan ulaşılır.</p></div><div class="button-row"><a class="secondary-button" href="${OFFICIAL_LGS_ARCHIVE.url}" target="_blank" rel="noreferrer">Resmî sınav arşivi</a><a class="secondary-button" href="${OFFICIAL_LGS_ARCHIVE.examplesUrl}" target="_blank" rel="noreferrer">MEB örnek sorular</a></div></section>` : ''}
-        <div class="game-grid mt-12">${games.map((game) => gameCard(game, daily)).join('')}</div>
+        <div class="game-grid mt-12">${games.map((game) => gameCard(game, daily)).join('') || '<article class="panel empty-state"><h3>Bu filtrede doğrulanmış oyun yok</h3><p>Eski veya kalite incelemesi tamamlanmamış sorular öğrenciye gösterilmiyor.</p></article>'}</div>
       </section>
       ${bottomNav()}
     </main>`;
@@ -786,6 +838,10 @@ function renderProgress() {
   return `
     <main class="app-shell">
       ${topbar()}
+      <section class="profile-action-bar" aria-label="Profil işlemleri">
+        <button class="secondary-button" data-action="navigate" data-screen="dashboard">← Ana sayfaya dön</button>
+        <button class="danger-button" data-action="student-logout">Çıkış Yap</button>
+      </section>
       <section class="section mt-0">
         <div class="section-header"><div><h2>${escapeHtml(profile.name)} gelişim haritası</h2><p>Ezber değil; beceri bazlı ilerleme gösterilir.</p></div></div>
         <div class="metric-grid">
@@ -1072,32 +1128,44 @@ function startGame(gameId) {
     classTarget,
     controlledLaunchPilot: CONTROLLED_LAUNCH_PILOT_ENABLED
   });
-  const candidateRounds = [];
-  for (let index = 1; index <= 4; index += 1) {
-    const candidate = createGameSession(gameId, profile, sessionSeed + index * 7919, {
-      seenQuestionKeys: seen,
-      blockedQuestionFamilies: blockedFamilies,
-      preferredEnglishWordIds: gameId === 'english-vocabulary' ? daily.englishWordIds : [],
-      recentFamilyIds: recentFamilyIds(profile.id, gameId),
-      completedSessionCount,
+  if (CONTROLLED_LAUNCH_PILOT_ENABLED) {
+    // Güvenli canlı modda registry'nin son-ekran kalite kapısından geçen dar
+    // whitelist oturumu olduğu gibi korunur. Aday havuzu/adaptive composer eski
+    // veya tekrar eden içerik ekleyemez.
+    session.adaptivePlan = {
+      mode: 'TRUSTED_LIVE_DIRECT',
+      policy: 'EXPLICIT_TRUSTED_CELL_WHITELIST',
+      injectedCount: 0
+    };
+    session.adaptiveInjectedCount = 0;
+  } else {
+    const candidateRounds = [];
+    for (let index = 1; index <= 4; index += 1) {
+      const candidate = createGameSession(gameId, profile, sessionSeed + index * 7919, {
+        seenQuestionKeys: seen,
+        blockedQuestionFamilies: blockedFamilies,
+        preferredEnglishWordIds: gameId === 'english-vocabulary' ? daily.englishWordIds : [],
+        recentFamilyIds: recentFamilyIds(profile.id, gameId),
+        completedSessionCount,
+        attempts: profileAttempts,
+        classTarget,
+        controlledLaunchPilot: false
+      });
+      candidateRounds.push(...candidate.rounds);
+    }
+    const adaptive = composeAdaptiveSession({
+      baseRounds: session.rounds,
+      candidateRounds,
       attempts: profileAttempts,
-      classTarget,
-      controlledLaunchPilot: CONTROLLED_LAUNCH_PILOT_ENABLED
+      academicDefinition: academicDefinitionForGame(gameId),
+      maxShare: classTarget ? Math.max(0.25, Number(classTarget.focusShare) || 0.3) : 0.25,
+      classTargetTopicIds: classTarget?.topicIds || []
     });
-    candidateRounds.push(...candidate.rounds);
+    session.rounds = adaptive.rounds;
+    session.adaptivePlan = adaptive.plan;
+    session.adaptiveInjectedCount = adaptive.injectedCount;
   }
-  const adaptive = composeAdaptiveSession({
-    baseRounds: session.rounds,
-    candidateRounds,
-    attempts: profileAttempts,
-    academicDefinition: academicDefinitionForGame(gameId),
-    maxShare: classTarget ? Math.max(0.25, Number(classTarget.focusShare) || 0.3) : 0.25,
-    classTargetTopicIds: classTarget?.topicIds || []
-  });
-  session.rounds = adaptive.rounds;
-  session.adaptivePlan = adaptive.plan;
-  session.adaptiveInjectedCount = adaptive.injectedCount;
-  if (!session.rounds.length) {
+  if (!session.rounds.length && !CONTROLLED_LAUNCH_PILOT_ENABLED) {
     const blocked = new Set(Object.keys(state.blockedQuestionKeys?.[profile.id] || {}));
     session = createGameSession(gameId, profile, Date.now() + 977, {
       seenQuestionKeys: blocked,
@@ -1112,7 +1180,12 @@ function startGame(gameId) {
     if (session.rounds.length) showToast('Yeni havuz tamamlandı; daha önce görülen sorular aralıklı tekrar amacıyla yeniden karıştırıldı.', 'success');
   }
   if (!session.rounds.length) {
-    showToast('Bu oyunda şu anda kullanılabilir soru kalmadı. Bildirilen sorular tekrar gösterilmez.', 'error');
+    showToast(
+      CONTROLLED_LAUNCH_PILOT_ENABLED
+        ? 'Bu oyun için sınıfına uygun doğrulanmış soru henüz hazır değil. Kalitesiz yedek soru gösterilmeyecek.'
+        : 'Bu oyunda şu anda kullanılabilir soru kalmadı. Bildirilen sorular tekrar gösterilmez.',
+      'error'
+    );
     return;
   }
   session.rewardEligible = true;
@@ -1154,6 +1227,7 @@ function roundTimeLimit(round, gameId) {
   if (gameId === 'forbidden-story') return 240;
   if (gameId === 'word-ladder') return 150;
   if (gameId === 'olympiad-ladder') return activeProfile().age <= 10 ? 180 : 150;
+  if (gameId === 'logic-station') return Number(round?.difficulty || 0) >= 5 ? 210 : 150;
   if (gameId === 'paragraph-detective' || gameId === 'problem-hunter' || gameId === 'lgs-foundation') return 150;
   if (gameId.startsWith('english-')) return 120;
   return 90;
