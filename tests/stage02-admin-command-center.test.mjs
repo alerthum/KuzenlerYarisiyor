@@ -7,7 +7,7 @@ const analysisRaw = await readFile(new URL('../public/question-engine-analysis.j
 
 test('admin panelinde ayrı bir Soru Motoru Komuta Merkezi sekmesi tanımlı', () => {
   assert.match(platform, /\['question-engine','Soru Motoru Komuta Merkezi'/);
-  assert.match(platform, /'question-engine':\s*\(\)\s*=>\s*questionEngineCommandCenterModule/);
+  assert.match(platform, /'question-engine':\s*\(\)\s*=>\s*questionEngineCommandCenterModule\s*=>\s*questionEngineCommandCenterModule/);
   assert.match(platform, /function questionEngineCommandCenterModule\(/);
 });
 
