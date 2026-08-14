@@ -8,6 +8,10 @@ import {
 } from '../../js/assessment-v2/trusted-authored-g8-turkish-deep-bank.js';
 import { createGameSession } from '../../js/games/registry.js';
 import { EVIDENCE_BACKED_PRIORITY_TURKISH_KEYS } from '../../js/assessment-v2/evidence-backed-priority-turkish-bank.js';
+import {
+  ZIHIN_FACTORY_APPROVED_TR8_KEYS,
+  ZIHIN_FACTORY_APPROVED_TR8_ROUNDS
+} from '../../js/assessment-v2/zihin-factory-approved-tr8-pilot.js';
 import { auditLiveOutputRound, normalizeTrustedLiveRound } from '../../js/quality/live-output-gate.js';
 
 const profile = { id: 'trusted-g8-turkish-deep', name: '8. Sınıf Türkçe Testi', age: 14, grade: 8, level: 10, skills: {} };
@@ -39,12 +43,17 @@ test('8. sınıf Türkçe derin banka 4 paragraf ve 5 anlam-dil sorusu içerir',
   }
 });
 
-test('sabit Türkçe bankaları golden sample olarak kalır; canlı oturumlar 18+18 kanıt motoru çıktısını teslim eder', () => {
+test('sabit Türkçe bankaları golden sample olarak kalır; canlı oturumlar kanıt motoru ve onaylı fabrika çıktılarının tamamını teslim eder', () => {
+  assert.equal(ZIHIN_FACTORY_APPROVED_TR8_KEYS.length, ZIHIN_FACTORY_APPROVED_TR8_ROUNDS.length);
+  assert.equal(new Set(ZIHIN_FACTORY_APPROVED_TR8_KEYS).size, ZIHIN_FACTORY_APPROVED_TR8_KEYS.length);
   for (const [gameId, expectedKeys] of [
-    ['paragraph-detective', EVIDENCE_BACKED_PRIORITY_TURKISH_KEYS.grade8.paragraphDetective],
+    ['paragraph-detective', [
+      ...ZIHIN_FACTORY_APPROVED_TR8_KEYS,
+      ...EVIDENCE_BACKED_PRIORITY_TURKISH_KEYS.grade8.paragraphDetective
+    ]],
     ['meaning-hunt', EVIDENCE_BACKED_PRIORITY_TURKISH_KEYS.grade8.meaningHunt]
   ]) {
-    assert.equal(expectedKeys.length, 18);
+    assert.ok(expectedKeys.length >= 18);
     const seen = new Set();
     for (let pass = 0; pass < 10 && seen.size < expectedKeys.length; pass += 1) {
       const session = createGameSession(gameId, profile, 2026081300 + pass, {
