@@ -24,6 +24,7 @@ test('cloud import is manual, explicit and creates only a draft content PR', () 
   assert.match(workflow, /approved-package/);
   assert.match(workflow, /gh pr create --draft/);
   assert.match(workflow, /gh workflow run quality-gates\.yml/);
+  assert.match(workflow, /kontrollü canlı whitelist/);
   assert.doesNotMatch(workflow, /gh pr merge|vercel --prod|firebase deploy|wrangler deploy/i);
 });
 

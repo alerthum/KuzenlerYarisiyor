@@ -7,13 +7,14 @@ Bu hat, yalnız Factory'nin `approved-package` kapısından geçen 8. sınıf T�
 - Factory sürümü tam olarak `0.10.1` olmalıdır.
 - İş 20 soruluk calibration işi olmalı; 20/20 soru insan tarafından incelenmeli ve en az 16 soru kabul edilmelidir.
 - KuzenlerYarisiyor Actions secret'ı `FACTORY_ADMIN_TOKEN` bulunmalıdır. Değer, Factory admin token'ıyla aynı olmalı; GitHub bu değeri loglarda göstermemelidir.
+- KuzenlerYarisiyor → Settings → Actions → General altında workflow için **Read and write permissions** ve **Allow GitHub Actions to create and approve pull requests** etkin olmalıdır.
 - Vercel Production Branch Tracking `production/vercel` olarak doğrulanmalıdır.
 
 ## Çalıştırma
 
 GitHub Actions içinden **Import approved Zihin Factory TR8 pilot** seçilir. `job_id` girilir ve onay alanına `IMPORT_APPROVED_TR8_PILOT` yazılır.
 
-Workflow yalnız şu tek sonucu üretir: `factory/tr8-pilot-<job-id>` dalında, gerçek paket verisini taşıyan taslak bir içerik PR'ı. Main'e merge, production deploy veya gizli bir API çağrısıyla yayın yapmaz. PR'ın kendi kalite kontrolleri ayrıca çalıştırılır.
+Workflow yalnız şu tek sonucu üretir: `factory/tr8-pilot-<job-id>` dalında, gerçek paket verisini taşıyan taslak bir içerik PR'ı. Main'e merge, production deploy veya gizli bir API çağrısıyla yayın yapmaz. PR'ın kendi kalite kontrolleri ayrıca çalıştırılır. Bu içerik PR'ının ileride insan tarafından main'e alınması açık whitelist kararıdır; o birleşimden önce son öğrenci yüzeyi ve Vercel production koruması yeniden doğrulanır.
 
 ## Fail-closed sınırı
 
