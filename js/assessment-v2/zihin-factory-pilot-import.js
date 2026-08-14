@@ -180,6 +180,7 @@ export function validateZihinFactoryPilotPackage(input = {}) {
 
   const gate = input.releaseGate || {};
   if (Number(gate.engineeringPassCount) !== 20
+    || Number(gate.blindReviewCount) !== 20
     || Number(gate.humanReviewCount) !== 20
     || Number(gate.humanApprovalCount) < 16
     || Number(gate.humanApprovalRate) < 0.8

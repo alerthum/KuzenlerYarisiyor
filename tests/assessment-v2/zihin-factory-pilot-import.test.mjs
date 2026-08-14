@@ -159,7 +159,7 @@ function approvedPackage() {
       gameId: 'paragraph-detective', familyId: 'tr8.paragraph.main-idea-synthesis.v1'
     },
     releaseGate: {
-      engineeringPassCount: 20, humanReviewCount: 20, humanDecisionCount: 20,
+      engineeringPassCount: 20, blindReviewCount: 20, humanReviewCount: 20, humanDecisionCount: 20,
       humanApprovalCount: 16, humanApprovalRate: 0.8, exportableQuestionCount: 16,
       completeCoverage: true, pilotEligible: true
     },
@@ -195,6 +195,16 @@ test('a weak human score blocks the product import even if the package claims el
   const input = approvedPackage();
   input.reviewEvidence[0].minimumScores.feedbackTeachingValue = 3;
   assert.throws(() => validateZihinFactoryPilotPackage(input), /human-score/);
+});
+
+test('the product rejects packages without twenty locked blind answer resolutions', () => {
+  const missing = approvedPackage();
+  delete missing.releaseGate.blindReviewCount;
+  assert.throws(() => validateZihinFactoryPilotPackage(missing), /release-gate/);
+
+  const short = approvedPackage();
+  short.releaseGate.blindReviewCount = 19;
+  assert.throws(() => validateZihinFactoryPilotPackage(short), /release-gate/);
 });
 
 test('duplicate accepted surfaces are rejected again on the product side', () => {
