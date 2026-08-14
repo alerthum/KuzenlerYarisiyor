@@ -5,6 +5,12 @@ import {
   importZihinFactoryPilotPackage,
   validateZihinFactoryPilotPackage
 } from '../../js/assessment-v2/zihin-factory-pilot-import.js';
+import { renderZihinFactoryPilotModule } from '../../js/assessment-v2/zihin-factory-pilot-module.js';
+import {
+  ZIHIN_FACTORY_APPROVED_TR8_KEYS,
+  ZIHIN_FACTORY_APPROVED_TR8_ROUNDS,
+  ZIHIN_FACTORY_APPROVED_TR8_SOURCE
+} from '../../js/assessment-v2/zihin-factory-approved-tr8-pilot.js';
 
 const themes = [
   'mahalle arşivindeki fotoğraf ve ses kayıtları',
@@ -140,7 +146,7 @@ function approvedPackage() {
     },
     target: {
       repository: 'alerthum/KuzenlerYarisiyor', grade: 8, courseId: 'turkce',
-      gameId: 'paragraph-detective', familyId: 'tr8-turkish-main-idea-v1'
+      gameId: 'paragraph-detective', familyId: 'tr8.paragraph.main-idea-synthesis.v1'
     },
     releaseGate: {
       engineeringPassCount: 20, humanReviewCount: 20, humanDecisionCount: 20,
@@ -166,6 +172,8 @@ test('approved factory package is independently validated and adapted to paragra
   assert.equal(imported.rounds.every((round) => round.gameId === 'paragraph-detective'), true);
   assert.equal(imported.rounds.every((round) => round.optionDiagnostics.length === 4), true);
   assert.equal(imported.rounds.every((round) => round.trustedHumanReview.status === 'APPROVED'), true);
+  assert.deepEqual(imported.rounds.map((round) => round.trustedSessionOrder), Array.from({ length: 16 }, (_, index) => index));
+  assert.equal(imported.rounds.every((round) => round.trustedLivePriority === 1000), true);
   assert.equal(imported.autoPublishAllowed, false);
   assert.equal(imported.publicationStatus, 'EXPLICIT_TRUSTED_LIVE_WHITELIST_PR_REQUIRED');
 });
@@ -180,6 +188,26 @@ test('duplicate accepted surfaces are rejected again on the product side', () =>
   const input = approvedPackage();
   input.questions[1].content = structuredClone(input.questions[0].content);
   assert.throws(() => validateZihinFactoryPilotPackage(input), /exact-question-duplicate/);
+});
+
+test('unexpected factory release or item family is rejected before module generation', () => {
+  const wrongVersion = approvedPackage();
+  wrongVersion.source.factoryVersion = '0.10.2';
+  assert.throws(() => validateZihinFactoryPilotPackage(wrongVersion), /source/);
+
+  const wrongFamily = approvedPackage();
+  wrongFamily.target.familyId = 'tr8.paragraph.free-form.v1';
+  assert.throws(() => validateZihinFactoryPilotPackage(wrongFamily), /target/);
+});
+
+test('renderer emits a self-validating module while the committed bank stays empty', () => {
+  const source = renderZihinFactoryPilotModule(approvedPackage());
+  assert.match(source, /importZihinFactoryPilotPackage\(FACTORY_PACKAGE\)/);
+  assert.match(source, /00000000-0000-4000-8000-000000000001/);
+  assert.match(source, /ZIHIN_FACTORY_APPROVED_TR8_ROUNDS/);
+  assert.equal(ZIHIN_FACTORY_APPROVED_TR8_SOURCE, null);
+  assert.deepEqual(ZIHIN_FACTORY_APPROVED_TR8_ROUNDS, []);
+  assert.deepEqual(ZIHIN_FACTORY_APPROVED_TR8_KEYS, []);
 });
 
 test('the importer cannot modify the live whitelist or publish by itself', () => {

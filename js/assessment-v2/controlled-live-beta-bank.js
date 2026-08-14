@@ -12,6 +12,7 @@ import { TRUSTED_PRIORITY_4_8_ROUNDS } from './trusted-authored-priority-4-8-ban
 import { SOLVER_BACKED_PRIORITY_MATH_ROUNDS } from './solver-backed-priority-math-bank.js';
 import { EVIDENCE_BACKED_PRIORITY_TURKISH_ROUNDS } from './evidence-backed-priority-turkish-bank.js';
 import { EVIDENCE_BACKED_PRIORITY_SCIENCE_ROUNDS } from './evidence-backed-priority-science-bank.js';
+import { ZIHIN_FACTORY_APPROVED_TR8_ROUNDS } from './zihin-factory-approved-tr8-pilot.js';
 import {
   TRUSTED_LIVE_POLICY_VERSION,
   trustedLiveCell,
@@ -46,27 +47,35 @@ function stableHash(value) {
 }
 
 function deterministicOrder(rows, seed) {
-  const hasExplicitSessionPlan = rows.length > 0
-    && rows.every((row) => Number.isInteger(Number(row.trustedSessionOrder)));
-
-  if (hasExplicitSessionPlan) {
-    return [...rows].sort((left, right) => (
-      Number(left.trustedSessionOrder) - Number(right.trustedSessionOrder)
-      || String(left.questionKey).localeCompare(String(right.questionKey))
-    ));
+  const tiers = new Map();
+  for (const row of rows) {
+    const priority = Number(row.trustedLivePriority || 0);
+    if (!tiers.has(priority)) tiers.set(priority, []);
+    tiers.get(priority).push(row);
   }
-
-  return [...rows].sort((left, right) => {
-    const a = stableHash(`${seed}:${left.questionKey}`);
-    const b = stableHash(`${seed}:${right.questionKey}`);
-    return a - b || String(left.questionKey).localeCompare(String(right.questionKey));
-  });
+  return [...tiers.entries()]
+    .sort(([left], [right]) => right - left)
+    .flatMap(([priority, tierRows]) => {
+      const hasExplicitSessionPlan = tierRows.length > 0
+        && tierRows.every((row) => Number.isInteger(Number(row.trustedSessionOrder)));
+      if (hasExplicitSessionPlan) {
+        return [...tierRows].sort((left, right) => (
+          Number(left.trustedSessionOrder) - Number(right.trustedSessionOrder)
+          || String(left.questionKey).localeCompare(String(right.questionKey))
+        ));
+      }
+      return [...tierRows].sort((left, right) => {
+        const a = stableHash(`${seed}:${priority}:${left.questionKey}`);
+        const b = stableHash(`${seed}:${priority}:${right.questionKey}`);
+        return a - b || String(left.questionKey).localeCompare(String(right.questionKey));
+      });
+    });
 }
 
 function resolvedApprovedRounds(gameId, grade, policy) {
   const candidates = new Map();
 
-  for (const round of [...TRUSTED_AUTHORED_LIVE_ROUNDS, ...TRUSTED_G8_CORE_WAVE2_ROUNDS, ...TRUSTED_G8_MATH_DEEP_ROUNDS, ...TRUSTED_G8_SCIENCE_DEEP_ROUNDS, ...TRUSTED_G8_TURKISH_DEEP_ROUNDS, ...TRUSTED_G8_LOGIC_DEEP_ROUNDS, ...TRUSTED_G7_CORE_DEEP_ROUNDS, ...TRUSTED_PRIORITY_4_8_ROUNDS, ...SOLVER_BACKED_PRIORITY_MATH_ROUNDS, ...EVIDENCE_BACKED_PRIORITY_TURKISH_ROUNDS, ...EVIDENCE_BACKED_PRIORITY_SCIENCE_ROUNDS]) {
+  for (const round of [...TRUSTED_AUTHORED_LIVE_ROUNDS, ...TRUSTED_G8_CORE_WAVE2_ROUNDS, ...TRUSTED_G8_MATH_DEEP_ROUNDS, ...TRUSTED_G8_SCIENCE_DEEP_ROUNDS, ...TRUSTED_G8_TURKISH_DEEP_ROUNDS, ...TRUSTED_G8_LOGIC_DEEP_ROUNDS, ...TRUSTED_G7_CORE_DEEP_ROUNDS, ...TRUSTED_PRIORITY_4_8_ROUNDS, ...SOLVER_BACKED_PRIORITY_MATH_ROUNDS, ...EVIDENCE_BACKED_PRIORITY_TURKISH_ROUNDS, ...EVIDENCE_BACKED_PRIORITY_SCIENCE_ROUNDS, ...ZIHIN_FACTORY_APPROVED_TR8_ROUNDS]) {
     candidates.set(round.questionKey, round);
   }
 

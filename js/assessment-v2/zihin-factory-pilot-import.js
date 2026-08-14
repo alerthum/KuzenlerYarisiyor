@@ -140,11 +140,15 @@ function validateBatchSurface(questions) {
 
 export function validateZihinFactoryPilotPackage(input = {}) {
   if (input.schemaVersion !== '1.0' || input.kind !== 'zihin-factory-approved-tr8-paragraph-pilot') fail('package-contract');
-  if (input.source?.repository !== 'alerthum/zihin-factory' || !text(input.source?.jobId) || !text(input.source?.batchId)) fail('source');
+  if (input.source?.repository !== 'alerthum/zihin-factory'
+    || input.source?.factoryVersion !== '0.10.1'
+    || !text(input.source?.jobId)
+    || !text(input.source?.batchId)) fail('source');
   if (input.target?.repository !== 'alerthum/KuzenlerYarisiyor'
     || Number(input.target?.grade) !== 8
     || input.target?.courseId !== 'turkce'
-    || input.target?.gameId !== 'paragraph-detective') fail('target');
+    || input.target?.gameId !== 'paragraph-detective'
+    || input.target?.familyId !== 'tr8.paragraph.main-idea-synthesis.v1') fail('target');
 
   const gate = input.releaseGate || {};
   if (Number(gate.engineeringPassCount) !== 20
@@ -184,7 +188,7 @@ export function validateZihinFactoryPilotPackage(input = {}) {
 
 export function importZihinFactoryPilotPackage(input = {}) {
   const validated = validateZihinFactoryPilotPackage(input);
-  const rounds = validated.questions.map((question) => {
+  const rounds = validated.questions.map((question, questionIndex) => {
     const base = canonicalChoiceItemToTrustedRound(question, {
       gameId: 'paragraph-detective',
       subjectId: 'turkce',
@@ -202,6 +206,8 @@ export function importZihinFactoryPilotPackage(input = {}) {
       },
       factoryPilotSource: structuredClone(validated.source),
       publicationStatus: 'IMPORT_REVIEW_REQUIRED',
+      trustedLivePriority: 1000,
+      trustedSessionOrder: questionIndex,
       controlledLaunchPilot: false,
       formalCurriculumCertification: false
     });
