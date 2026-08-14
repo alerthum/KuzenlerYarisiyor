@@ -56,6 +56,9 @@ function question(index) {
   const theme = themes[index];
   const detail = distinctDetails[index];
   const correctIndex = index % 4;
+  const discourseStructures = ['contrast-with-qualification', 'cause-evidence-with-limit', 'problem-attempt-revision', 'change-and-continuity', 'claim-counterexample-synthesis'];
+  const reasoningPaths = ['multi-source-convergence', 'exception-bounded-inference', 'chronology-causality-separation', 'evidence-weighting'];
+  const genres = ['cultural-essay', 'science-observation', 'reflective-critique', 'historical-exposition', 'daily-life-analysis'];
   const correctText = `${theme} birlikte incelendiğinde farklı kanıtların ortak yönü, değişim ile sürekliliği aynı kapsam içinde açıklamaktadır.`;
   const wrong = [
     `${theme} içindeki tek bir ayrıntı, bütün süreci başka kanıta gerek kalmadan kesin biçimde açıklamakta; haftalık raporların diğer bölümlerini de gereksiz saymaktadır.`,
@@ -116,7 +119,14 @@ function question(index) {
     optionFeedback,
     misconceptionIds,
     verifier: { solverId: 'factory-reading-solver-v1', independentVerifierId: 'factory-independent-reviewer-v1', verified: true },
-    styleProfile: { genre: 'natural-expository', voice: 'age-appropriate' },
+    styleProfile: {
+      genre: genres[(index * 2 + Math.floor(index / 5)) % genres.length],
+      genreId: genres[(index * 2 + Math.floor(index / 5)) % genres.length],
+      voice: 'age-appropriate',
+      diversityPlanId: `tr8-main-idea-diversity-${String(index + 1).padStart(2, '0')}`,
+      discourseStructureId: discourseStructures[index % discourseStructures.length],
+      reasoningPathId: reasoningPaths[Math.floor(index / discourseStructures.length)]
+    },
     provenance: { generatedFromSourceIds: ['meb-grade8-turkish-program'], styleReferenceIds: [], copiedText: false },
     contentStatus: 'PILOT_READY'
   };
@@ -155,7 +165,10 @@ function approvedPackage() {
     },
     qualityEvidence: {
       semanticDuplicatePairCount: 0, longestCorrectRate: 0.25,
-      correctPositionCounts: [5, 5, 5, 5], maximumObservedSimilarity: 0.42
+      correctPositionCounts: [5, 5, 5, 5], maximumObservedSimilarity: 0.42,
+      structuralDuplicatePairCount: 0, distinctDiversityPlanCount: 20,
+      distinctDiscourseStructureCount: 5, distinctReasoningPathCount: 4, distinctGenreCount: 5,
+      maximumDiscourseStructureShare: 0.2, maximumReasoningPathShare: 0.25
     },
     approvedQuestionIds: questions.map((item) => item.id),
     reviewEvidence: questions.map((item) => reviewEvidence(item.id)),
@@ -188,6 +201,12 @@ test('duplicate accepted surfaces are rejected again on the product side', () =>
   const input = approvedPackage();
   input.questions[1].content = structuredClone(input.questions[0].content);
   assert.throws(() => validateZihinFactoryPilotPackage(input), /exact-question-duplicate/);
+});
+
+test('structurally repeated templates are rejected even when surface words differ', () => {
+  const input = approvedPackage();
+  input.questions[1].styleProfile = structuredClone(input.questions[0].styleProfile);
+  assert.throws(() => validateZihinFactoryPilotPackage(input), /duplicate-diversity-plan|structural-template-duplicate/);
 });
 
 test('unexpected factory release or item family is rejected before module generation', () => {

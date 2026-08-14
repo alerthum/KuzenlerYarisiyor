@@ -102,6 +102,9 @@ function validateCanonical(raw) {
   if (question.solutionGraph.length < 3 || question.solutionGraph.some((step) => !text(step.evidence))) {
     fail(`solution-evidence:${question.id}`);
   }
+  for (const field of ['diversityPlanId', 'discourseStructureId', 'reasoningPathId', 'genreId']) {
+    if (!text(question.styleProfile?.[field])) fail(`structural-diversity:${question.id}:${field}`);
+  }
   return question;
 }
 
@@ -135,7 +138,32 @@ function validateBatchSurface(questions) {
     fail(`answer-position-imbalance:${positionCounts.join('-')}`);
   }
   if (uniqueLongestCorrect / questions.length > 0.35) fail('longest-option-answer-leakage');
-  return deepFreeze({ positionCounts, uniqueLongestCorrectRate: uniqueLongestCorrect / questions.length });
+  const profiles = questions.map((question) => question.styleProfile);
+  const planIds = profiles.map((profile) => profile.diversityPlanId);
+  if (new Set(planIds).size !== planIds.length) fail('duplicate-diversity-plan');
+  const structuralFingerprints = profiles.map((profile) => `${profile.discourseStructureId}:${profile.reasoningPathId}`);
+  if (new Set(structuralFingerprints).size !== structuralFingerprints.length) fail('structural-template-duplicate');
+  const discourseStructures = profiles.map((profile) => profile.discourseStructureId);
+  const reasoningPaths = profiles.map((profile) => profile.reasoningPathId);
+  const genres = profiles.map((profile) => profile.genreId);
+  if (new Set(discourseStructures).size < 4) fail('insufficient-discourse-structure-diversity');
+  if (new Set(reasoningPaths).size < 4) fail('insufficient-reasoning-path-diversity');
+  if (new Set(genres).size < 4) fail('insufficient-genre-diversity');
+  const maximumShare = (values) => {
+    const counts = new Map();
+    for (const value of values) counts.set(value, (counts.get(value) || 0) + 1);
+    return Math.max(...counts.values()) / values.length;
+  };
+  if (maximumShare(discourseStructures) > 0.4) fail('discourse-structure-overconcentration');
+  if (maximumShare(reasoningPaths) > 0.4) fail('reasoning-path-overconcentration');
+  return deepFreeze({
+    positionCounts,
+    uniqueLongestCorrectRate: uniqueLongestCorrect / questions.length,
+    distinctDiversityPlanCount: new Set(planIds).size,
+    distinctDiscourseStructureCount: new Set(discourseStructures).size,
+    distinctReasoningPathCount: new Set(reasoningPaths).size,
+    distinctGenreCount: new Set(genres).size
+  });
 }
 
 export function validateZihinFactoryPilotPackage(input = {}) {
@@ -175,6 +203,11 @@ export function validateZihinFactoryPilotPackage(input = {}) {
 
   const batchSurface = validateBatchSurface(questions);
   if (Number(input.qualityEvidence?.semanticDuplicatePairCount) !== 0) fail('factory-semantic-duplicate-evidence');
+  if (Number(input.qualityEvidence?.structuralDuplicatePairCount) !== 0) fail('factory-structural-duplicate-evidence');
+  if (Number(input.qualityEvidence?.distinctDiversityPlanCount) !== 20) fail('factory-diversity-plan-evidence');
+  if (Number(input.qualityEvidence?.distinctDiscourseStructureCount) < 5) fail('factory-discourse-diversity-evidence');
+  if (Number(input.qualityEvidence?.distinctReasoningPathCount) < 4) fail('factory-reasoning-diversity-evidence');
+  if (Number(input.qualityEvidence?.distinctGenreCount) < 5) fail('factory-genre-diversity-evidence');
   if (Number(input.qualityEvidence?.longestCorrectRate) > 0.35) fail('factory-longest-option-evidence');
   return deepFreeze({
     ok: true,

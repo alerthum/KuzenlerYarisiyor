@@ -17,4 +17,4 @@ Workflow yalnız şu tek sonucu üretir: `factory/tr8-pilot-<job-id>` dalında, 
 
 ## Fail-closed sınırı
 
-Yanlış Factory sürümü, eksik insan incelemesi, zayıf kalite puanı, tekrar, cevap konumu dengesizliği, uzun doğru cevap sızıntısı veya son öğrenci ekranı kapısı hatası dosya yazılmadan önce işlemi durdurur.
+Yanlış Factory sürümü, eksik insan incelemesi, zayıf kalite puanı, kelime veya yapısal kalıp tekrarı, yetersiz söylem/akıl-yürütme çeşitliliği, cevap konumu dengesizliği, uzun doğru cevap sızıntısı veya son öğrenci ekranı kapısı hatası dosya yazılmadan önce işlemi durdurur.
