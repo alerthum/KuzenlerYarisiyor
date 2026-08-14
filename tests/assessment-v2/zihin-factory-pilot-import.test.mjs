@@ -184,11 +184,23 @@ test('approved factory package is independently validated and adapted to paragra
   assert.equal(imported.rounds.length, 16);
   assert.equal(imported.rounds.every((round) => round.gameId === 'paragraph-detective'), true);
   assert.equal(imported.rounds.every((round) => round.optionDiagnostics.length === 4), true);
+  assert.equal(imported.rounds.every((round) => round.detailedOptions.length === 4), true);
+  assert.equal(imported.rounds.every((round) => round.hints.length === 3), true);
+  assert.equal(imported.rounds.every((round) => round.teachingSolution.steps.length >= 3), true);
+  assert.equal(imported.rounds.every((round) => round.teachingSolution.mainIdea.length > 0), true);
+  assert.equal(imported.rounds.every((round) => round.teachingSolution.transfer === round.hints[2]), true);
   assert.equal(imported.rounds.every((round) => round.trustedHumanReview.status === 'APPROVED'), true);
   assert.deepEqual(imported.rounds.map((round) => round.trustedSessionOrder), Array.from({ length: 16 }, (_, index) => index));
   assert.equal(imported.rounds.every((round) => round.trustedLivePriority === 1000), true);
   assert.equal(imported.autoPublishAllowed, false);
   assert.equal(imported.publicationStatus, 'EXPLICIT_TRUSTED_LIVE_WHITELIST_PR_REQUIRED');
+});
+
+test('factory teaching evidence is wired to the real answer-feedback screen', () => {
+  const appSource = readFileSync(new URL('../../js/app.js', import.meta.url), 'utf8');
+  assert.match(appSource, /renderTeachingSolution\(round\)/);
+  assert.match(appSource, /renderDetailedOptionAnalysis\(round\)/);
+  assert.match(appSource, /round\.hints\?\.\[ui\.hintIndex - 1\]/);
 });
 
 test('a weak human score blocks the product import even if the package claims eligibility', () => {

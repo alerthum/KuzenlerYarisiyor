@@ -108,6 +108,32 @@ function validateCanonical(raw) {
   return question;
 }
 
+function factoryTeachingLayer(question) {
+  const hints = (question.hints || []).map((hint) => text(hint?.text ?? hint)).filter(Boolean);
+  if (hints.length !== 3) fail(`teaching-hints:${question.id}`);
+  const steps = (question.solutionGraph || []).map((step) => {
+    const action = text(step?.action);
+    const evidence = text(step?.evidence);
+    return action && evidence ? `${action}: ${evidence}` : '';
+  }).filter(Boolean);
+  if (steps.length < 3) fail(`teaching-steps:${question.id}`);
+  const correctFeedback = (question.optionFeedback || [])
+    .find((row) => row.optionId === question.answerKey?.optionId && row.correct === true);
+  const mainIdea = text(correctFeedback?.text);
+  if (!mainIdea) fail(`teaching-main-idea:${question.id}`);
+  return deepFreeze({
+    hints,
+    teachingSolution: {
+      simplify: hints[0],
+      mainIdea,
+      steps,
+      why: mainIdea,
+      check: hints[1],
+      transfer: hints[2]
+    }
+  });
+}
+
 function validateBatchSurface(questions) {
   const surfaces = questions.map(surface);
   if (new Set(surfaces.map((value) => text(value).toLocaleLowerCase('tr-TR'))).size !== questions.length) {
@@ -230,8 +256,11 @@ export function importZihinFactoryPilotPackage(input = {}) {
       sourceLabel: `Zihin Factory · ${validated.source.batchId} · İnsan Onaylı Pilot`,
       questionKeyPrefix: 'factory-pilot:1.0'
     });
+    const teaching = factoryTeachingLayer(question);
     const round = deepFreeze({
       ...base,
+      hints: teaching.hints,
+      teachingSolution: teaching.teachingSolution,
       gameId: 'paragraph-detective',
       trustedHumanReview: {
         status: 'APPROVED',
@@ -245,6 +274,12 @@ export function importZihinFactoryPilotPackage(input = {}) {
       controlledLaunchPilot: false,
       formalCurriculumCertification: false
     });
+    if (round.hints.length !== 3
+      || round.teachingSolution.steps.length < 3
+      || round.detailedOptions.length !== 4
+      || round.optionDiagnostics.length !== 4) {
+      fail(`student-teaching-surface:${question.id}`);
+    }
     const liveAudit = auditLiveOutputRound(round, { gameId: 'paragraph-detective', grade: 8 });
     if (!liveAudit.ok) fail(`live-output:${question.id}:${liveAudit.errors.join(',')}`);
     return round;
