@@ -12,6 +12,7 @@
     "test": "npm run verify:hotfix",
     "check": "npm run prepare && npm test && node scripts/check-project.mjs && npm run build",
     "test:live-output": "node --test tests/live-output/*.test.mjs",
+    "test:property": "node --test tests/property/*.test.mjs",
     "verify:trusted-live": "npm run test:live-output && npm run quality:trusted-live-review && npm run quality:trusted-live",
     "verify:hotfix": "node --check js/games/registry.js && node --check js/app.js && node --check js/platform/firebase-platform.js && node --check js/quality/command-center-export-client.js && npm run verify:trusted-live && node --test tests/stage02-admin-command-center.test.mjs tests/stage04-admin-dashboard-expansion.test.mjs tests/strict-audit-live.test.mjs",
     "quality:trusted-live-review": "node scripts/build-trusted-live-review.mjs",
@@ -30,9 +31,10 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "@playwright/test": "1.62.0",
     "@axe-core/playwright": "4.12.1",
     "@firebase/rules-unit-testing": "5.0.1",
+    "@playwright/test": "1.62.0",
+    "fast-check": "4.9.0",
     "firebase": "12.17.0",
     "firebase-tools": "15.25.0"
   }
