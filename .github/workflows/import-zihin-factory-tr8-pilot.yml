@@ -1,0 +1,91 @@
+name: Import approved Zihin Factory TR8 pilot
+
+on:
+  workflow_dispatch:
+    inputs:
+      job_id:
+        description: "20 soruluk, tamamı incelenmiş Factory benchmark job UUID"
+        required: true
+        type: string
+      confirmation:
+        description: "IMPORT_APPROVED_TR8_PILOT yazın"
+        required: true
+        type: string
+
+concurrency:
+  group: zihin-factory-tr8-import
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  import-approved-pilot:
+    if: inputs.confirmation == 'IMPORT_APPROVED_TR8_PILOT'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      FACTORY_BASE_URL: https://zihin-factory-governor.alerthum.workers.dev
+      FACTORY_JOB_ID: ${{ inputs.job_id }}
+      FACTORY_ADMIN_TOKEN: ${{ secrets.FACTORY_ADMIN_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.22.0
+
+      - name: Validate explicit input and secret
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$FACTORY_JOB_ID" =~ ^[0-9a-fA-F-]{36}$ ]] || { echo "job_id must be a UUID"; exit 1; }
+          [[ -n "$FACTORY_ADMIN_TOKEN" ]] || { echo "FACTORY_ADMIN_TOKEN is missing"; exit 1; }
+
+      - name: Download protected approved package
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --silent --show-error \
+            --retry 2 --retry-all-errors --max-time 45 \
+            -H "Authorization: Bearer $FACTORY_ADMIN_TOKEN" \
+            "$FACTORY_BASE_URL/admin/tr8-benchmark/$FACTORY_JOB_ID/approved-package" \
+            --output "$RUNNER_TEMP/zihin-factory-approved-tr8.json"
+
+      - name: Revalidate and render the candidate bank
+        run: >-
+          node scripts/import-zihin-factory-tr8-pilot.mjs
+          --input "$RUNNER_TEMP/zihin-factory-approved-tr8.json"
+          --output js/assessment-v2/zihin-factory-approved-tr8-pilot.js
+
+      - name: Run fail-closed product gates
+        run: |
+          node --check js/assessment-v2/zihin-factory-approved-tr8-pilot.js
+          node --test tests/assessment-v2/zihin-factory-pilot-import.test.mjs tests/assessment-v2/zihin-factory-cloud-delivery.test.mjs
+          npm run test:live-output
+
+      - name: Create a separate candidate branch and draft PR
+        shell: bash
+        run: |
+          set -euo pipefail
+          branch="factory/tr8-pilot-${FACTORY_JOB_ID}"
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null 2>&1; then
+            echo "Candidate branch already exists: $branch"
+            exit 1
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add js/assessment-v2/zihin-factory-approved-tr8-pilot.js
+          git diff --cached --quiet && { echo "Approved package produced no content change"; exit 1; }
+          git commit -m "content: stage approved TR8 factory pilot"
+          git push origin "$branch"
+          gh pr create --draft --base main --head "$branch" \
+            --title "content: stage approved 8. sınıf Türkçe factory pilot" \
+            --body "Factory job \`$FACTORY_JOB_ID\` tarafından üretilen, 20/20 insan incelemesi ve ürün tarafı tekrar doğrulamasından geçen pilot adayını taşır. Bu taslak PR kendi kendine merge veya production deploy yapmaz. UYARI: Bu içerik PR'ının daha sonra main'e alınması, soru anahtarlarını kontrollü canlı whitelist'e ekler; son öğrenci yüzeyi ve Vercel production koruması doğrulanmadan merge edilmemelidir."
+          gh workflow run quality-gates.yml --ref "$branch"

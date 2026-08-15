@@ -8,6 +8,7 @@ import { TRUSTED_PRIORITY_4_8_KEYS } from './trusted-authored-priority-4-8-bank.
 import { SOLVER_BACKED_PRIORITY_MATH_KEYS } from './solver-backed-priority-math-bank.js';
 import { EVIDENCE_BACKED_PRIORITY_TURKISH_KEYS } from './evidence-backed-priority-turkish-bank.js';
 import { EVIDENCE_BACKED_PRIORITY_SCIENCE_KEYS } from './evidence-backed-priority-science-bank.js';
+import { ZIHIN_FACTORY_APPROVED_TR8_KEYS } from './zihin-factory-approved-tr8-pilot.js';
 
 /**
  * Öğrenciye açılmasına izin verilen dar ve açık soru listesi.
@@ -126,7 +127,10 @@ const POLICY = Object.freeze({
   'paragraph-detective:8': Object.freeze({
     label: '8. sınıf Türkçe · Kanıt Temelli Paragraf Motoru',
     status: 'SAFE_ENGINE_HARD_ONLY',
-    keys: EVIDENCE_BACKED_PRIORITY_TURKISH_KEYS.grade8.paragraphDetective
+    keys: Object.freeze([
+      ...ZIHIN_FACTORY_APPROVED_TR8_KEYS,
+      ...EVIDENCE_BACKED_PRIORITY_TURKISH_KEYS.grade8.paragraphDetective
+    ])
   }),
   'meaning-hunt:8': Object.freeze({
     label: '8. sınıf Türkçe · Bağlam ve Anlam Motoru',
